@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デイリーニュースダイジェスト — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --card2: #21253a;
+      --text: #e8eaf0;
+      --muted: #9098b0;
+      --border: #2e3352;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #12142a 0%, #0d1520 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header .date-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #7c6aff 0%, #00d4aa 50%, #e8b84b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+    header p { color: var(--muted); font-size: 0.95rem; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1.25rem;
+    }
+    .nav-card {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 2rem;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: transform 0.15s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .nav-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+    .nav-card.ai    { border-left: 4px solid #7c6aff; }
+    .nav-card.ai:hover    { border-color: #7c6aff; }
+    .nav-card.reddit { border-left: 4px solid #ff4500; }
+    .nav-card.reddit:hover { border-color: #ff4500; }
+    .nav-card.world  { border-left: 4px solid #e8b84b; }
+    .nav-card.world:hover  { border-color: #e8b84b; }
+    .nav-card.qz     { border-left: 4px solid #3ea8ff; }
+    .nav-card.qz:hover     { border-color: #3ea8ff; }
+    .card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .card-category {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .ai     .card-category { color: #a89fff; }
+    .reddit .card-category { color: #ff6633; }
+    .world  .card-category { color: #e8b84b; }
+    .qz     .card-category { color: #3ea8ff; }
+    .nav-card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .nav-card p  { font-size: 0.87rem; color: var(--muted); line-height: 1.6; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 1rem; }
+    .pill {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+    }
+    .arrow {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      gap: 0.3rem;
+    }
+    .ai     .arrow { color: #7c6aff; }
+    .reddit .arrow { color: #ff4500; }
+    .world  .arrow { color: #e8b84b; }
+    .qz     .arrow { color: #3ea8ff; }
+    .summary-banner {
+      background: linear-gradient(135deg, rgba(124,106,255,0.08) 0%, rgba(0,212,170,0.05) 50%, rgba(232,184,75,0.06) 100%);
+      border: 1px solid rgba(124,106,255,0.2);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .summary-banner h2 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+    .summary-banner p  { font-size: 0.88rem; color: var(--muted); }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="date-badge">2026年5月10日 日曜日</div>
+  <h1>デイリーニュースダイジェスト</h1>
+  <p>AI / Reddit / 世界情勢 / 技術トレンド — 今日の重要ニュースをまとめました</p>
+</header>
+
+<div class="container">
+
+  <div class="summary-banner">
+    <h2>今日のハイライト</h2>
+    <p>Anthropicが Claude Managed Agents に Dreaming・Outcomes・マルチエージェントの3機能を追加。OpenAIはGPT-5.5搭載のCodexをほぼ汎用AIツールへ進化させた。世界情勢ではトランプ大統領がロシア・ウクライナ停戦と米イラン停戦を同時仲介。日経平均は史上初の63,000円台に。開発者コミュニティではClaudeCodeとMCP関連記事が引き続きトレンド上位。</p>
+  </div>
+
+  <div class="grid">
+
+    <a href="ai-agent-news.html" class="nav-card ai">
+      <div class="card-icon">🤖</div>
+      <div class="card-category">AI Agent News</div>
+      <h2>AIエージェント最新ニュース</h2>
+      <p>Claude Code・Codex・その他AIエージェントの最新動向。Claude Opus 4.7発表、Managed Agents新機能、Codex汎用化など大型アップデートを網羅。</p>
+      <div class="pill-list">
+        <span class="pill">Claude Opus 4.7</span>
+        <span class="pill">Managed Agents</span>
+        <span class="pill">Codex GPT-5.5</span>
+        <span class="pill">ClaudeBleed</span>
+        <span class="pill">Finance Agents</span>
+      </div>
+      <div class="arrow">記事を読む →</div>
+    </a>
+
+    <a href="reddit-ai-agent.html" class="nav-card reddit">
+      <div class="card-icon">💬</div>
+      <div class="card-category">Reddit Digest</div>
+      <h2>Reddit AIエージェント記事まとめ</h2>
+      <p>r/ClaudeAI・r/MachineLearning・r/LocalLLaMAなどのホットスレッドを集約。500人以上の開発者が語るClaude Code vs Codexの本音、実運用の壁とは。</p>
+      <div class="pill-list">
+        <span class="pill">Claude Code vs Codex</span>
+        <span class="pill">コスト問題</span>
+        <span class="pill">本番Agent事例</span>
+        <span class="pill">Markdownファースト</span>
+      </div>
+      <div class="arrow">記事を読む →</div>
+    </a>
+
+    <a href="world-news.html" class="nav-card world">
+      <div class="card-icon">🌍</div>
+      <div class="card-category">World News</div>
+      <h2>世界情勢 重要ニュース</h2>
+      <p>ロシア・ウクライナ3日間停戦、米イラン停戦合意、インド・パキスタン緊張1年、日経平均6.3万円突破、IMF世界経済見通し。</p>
+      <div class="pill-list">
+        <span class="pill">露ウ停戦 5/9〜11</span>
+        <span class="pill">ホルムズ海峡</span>
+        <span class="pill">印パ1周年</span>
+        <span class="pill">日経63,000円</span>
+        <span class="pill">IMF成長率</span>
+      </div>
+      <div class="arrow">記事を読む →</div>
+    </a>
+
+    <a href="qiita-zenn-trending.html" class="nav-card qz">
+      <div class="card-icon">📝</div>
+      <div class="card-category">Qiita / Zenn Trending</div>
+      <h2>Qiita / Zenn 人気記事まとめ</h2>
+      <p>今週のQiita週間トレンドTOP10とZenn週間トレンドTOP10。ClaudeCode・MCP・Anthropic SDKが上位を席巻。Zennではコンテスト応募記事も多数ランクイン。</p>
+      <div class="pill-list">
+        <span class="pill">Claude Code Routines</span>
+        <span class="pill">MCP入門</span>
+        <span class="pill">Anthropic SDK</span>
+        <span class="pill">Vercel AI SDK</span>
+        <span class="pill">セキュリティ</span>
+      </div>
+      <div class="arrow">記事を読む →</div>
+    </a>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>Generated: 2026年5月10日 | Claude Code Routines | cross9111/claude-code-routines-test</p>
+</footer>
+</body>
+</html>

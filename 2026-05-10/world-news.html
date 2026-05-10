@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界情勢ニュース — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #21253a;
+      --accent: #e8b84b;
+      --accent2: #4fc3f7;
+      --accent3: #ef5350;
+      --accent4: #66bb6a;
+      --text: #e8eaf0;
+      --muted: #9098b0;
+      --border: #2e3352;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0d1520 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      text-align: center;
+    }
+    header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #e8b84b, #4fc3f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .news-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .news-card:hover { border-color: var(--accent); }
+    .region-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+    .tag-europe    { background: rgba(79,195,247,0.15); color: #4fc3f7; }
+    .tag-asia      { background: rgba(102,187,106,0.15); color: #66bb6a; }
+    .tag-mideast   { background: rgba(239,83,80,0.15); color: #ef5350; }
+    .tag-economy   { background: rgba(232,184,75,0.15); color: #e8b84b; }
+    .tag-japan     { background: rgba(255,120,130,0.2); color: #ff7b80; }
+    .tag-us        { background: rgba(140,158,255,0.15); color: #8c9eff; }
+    .news-card h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .news-card p  { color: var(--muted); font-size: 0.92rem; }
+    .impact-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+    .impact-label { font-size: 0.72rem; color: var(--muted); }
+    .impact-dots { display: flex; gap: 3px; }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+    }
+    .dot.active-critical { background: var(--accent3); }
+    .dot.active-high     { background: var(--accent); }
+    .dot.active-medium   { background: var(--accent2); }
+    .detail-list {
+      margin-top: 0.85rem;
+      padding-left: 1.2rem;
+    }
+    .detail-list li {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 0.3rem;
+      list-style: disc;
+    }
+    .detail-list li strong { color: var(--text); }
+    .quote-box {
+      background: rgba(255,255,255,0.03);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 0.75rem 1rem;
+      margin-top: 0.85rem;
+      font-size: 0.88rem;
+      color: var(--text);
+      font-style: italic;
+    }
+    .section-header {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ticker-bar {
+      background: #0a0c14;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1.25rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .ticker-item { font-size: 0.85rem; }
+    .ticker-item .label { color: var(--muted); font-size: 0.75rem; display: block; }
+    .ticker-item .value { font-weight: 700; }
+    .val-up   { color: var(--accent4); }
+    .val-down { color: var(--accent3); }
+    .val-neutral { color: var(--accent); }
+    .source-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .source-link:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="badge">WORLD NEWS</div>
+  <h1>世界情勢 重要ニュース</h1>
+  <p>2026年5月10日 — ロシア・ウクライナ / 中東 / インド・パキスタン / 経済</p>
+</header>
+
+<div class="container">
+
+  <div class="ticker-bar">
+    <div class="ticker-item">
+      <span class="label">日経平均</span>
+      <span class="value val-up">¥63,000+ ↑ 史上最高値</span>
+    </div>
+    <div class="ticker-item">
+      <span class="label">USD/JPY</span>
+      <span class="value val-down">¥155〜158 変動大</span>
+    </div>
+    <div class="ticker-item">
+      <span class="label">ウクライナ停戦</span>
+      <span class="value val-neutral">3日間停戦 (5/9〜5/11)</span>
+    </div>
+    <div class="ticker-item">
+      <span class="label">中東停戦</span>
+      <span class="value val-up">米イラン 2週間停戦中</span>
+    </div>
+    <div class="ticker-item">
+      <span class="label">印パ情勢</span>
+      <span class="value val-down">衝突1周年 緊張継続</span>
+    </div>
+  </div>
+
+  <div class="section-header">🇺🇦 ロシア・ウクライナ</div>
+
+  <div class="news-card">
+    <span class="region-tag tag-europe">🇪🇺 欧州 / 安全保障</span>
+    <h2>ロシア・ウクライナが3日間停戦に合意 — 捕虜各1,000人交換</h2>
+    <p>トランプ大統領の仲介により、ロシアとウクライナが5月9日〜11日の3日間停戦に合意した。停戦中は「すべての動的活動の停止」と両国による各1,000人の捕虜交換が実施される。</p>
+    <ul class="detail-list">
+      <li><strong>停戦期間:</strong> 2026年5月9日〜5月11日</li>
+      <li><strong>捕虜交換:</strong> 双方各1,000人</li>
+      <li><strong>5月9日:</strong> ロシアの「戦勝記念日」と重なるタイミング</li>
+      <li>ゼレンスキー大統領・プーチン大統領の外交アドバイザーが双方合意を確認</li>
+    </ul>
+    <div class="quote-box">
+      "停戦は良い出発点だが、恒久的な和平へのロードマップなしにはその後の交渉が難しい" — 欧州外交アナリスト（NPR報道より）
+    </div>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-critical"></div><div class="dot active-critical"></div>
+        <div class="dot active-critical"></div><div class="dot active-critical"></div><div class="dot active-critical"></div>
+      </div>
+      <span class="impact-label">最高度</span>
+    </div>
+    <a href="https://www.npr.org/2026/05/09/nx-s1-5816478/trump-russia-ukraine-ceasefire" class="source-link">→ Source: NPR</a>
+  </div>
+
+  <div class="section-header">🌍 中東情勢</div>
+
+  <div class="news-card">
+    <span class="region-tag tag-mideast">🕌 中東 / 安全保障</span>
+    <h2>米・イランがホルムズ海峡解放を条件に2週間停戦 — パキスタンが仲介</h2>
+    <p>パキスタンの仲介によって、米国とイランはホルムズ海峡の安全航行保障を条件に2週間の停戦に合意した。米軍はホルムズ海峡での「プロジェクト・フリーダム」（商船支援作戦）を一時停止した。</p>
+    <ul class="detail-list">
+      <li><strong>停戦条件:</strong> ホルムズ海峡の民間船舶通航保障</li>
+      <li><strong>仲介国:</strong> パキスタン（シャリフ首相主導）</li>
+      <li>JPMorgan試算：OECD各国の石油在庫が5月9〜30日の間に枯渇リスク</li>
+      <li>中国は「外交的解決」を求めるもイランへの直接圧力は回避</li>
+    </ul>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-critical"></div><div class="dot active-critical"></div>
+        <div class="dot active-critical"></div><div class="dot active-critical"></div><div class="dot"></div>
+      </div>
+      <span class="impact-label">非常に高</span>
+    </div>
+    <a href="https://www.jetro.go.jp/biznews/2026/05/70b7e8f4824f053e.html" class="source-link">→ Source: ジェトロ</a>
+  </div>
+
+  <div class="section-header">🇮🇳 インド・パキスタン</div>
+
+  <div class="news-card">
+    <span class="region-tag tag-asia">🌏 南アジア / 安全保障</span>
+    <h2>印パ武力衝突から1年 — 緊張継続・水資源問題・外交の変容</h2>
+    <p>2025年5月にインドがパキスタンを軍事攻撃してから1年が経過。武力衝突は表面上は停戦状態にあるが、インダス川水利条約の停止を巡る対立が続いており、地域の安定は依然として脆弱だ。</p>
+    <ul class="detail-list">
+      <li><strong>発端:</strong> 2025年4月22日、カシミールでのテロ事件</li>
+      <li><strong>インドの立場:</strong> インダス川条約履行停止、軍拡継続</li>
+      <li><strong>パキスタンの外交:</strong> 米イラン停戦仲介でトランプ政権の信頼を獲得</li>
+      <li><strong>関税問題:</strong> 米国はインドに50%の高関税を維持</li>
+      <li>パキスタン、トランプ大統領をノーベル平和賞に推薦</li>
+    </ul>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-critical"></div><div class="dot active-critical"></div>
+        <div class="dot active-critical"></div><div class="dot active-high"></div><div class="dot"></div>
+      </div>
+      <span class="impact-label">高</span>
+    </div>
+    <a href="https://www.nikkei.com/article/DGXZQOGM062TI0W6A500C2000000/" class="source-link">→ Source: 日本経済新聞</a>
+  </div>
+
+  <div class="section-header">💹 経済・市場</div>
+
+  <div class="news-card">
+    <span class="region-tag tag-japan">🇯🇵 日本経済</span>
+    <h2>日経平均、史上初の6.3万円台突破（5月7日）</h2>
+    <p>中東情勢の安定化への期待と半導体業界の好況ニュースを背景に、日経平均株価が初めて63,000円台に到達した。</p>
+    <ul class="detail-list">
+      <li><strong>上昇要因:</strong> 中東停戦期待・半導体セクター好況・円安</li>
+      <li>4月末に円が1ドル=155円台まで急騰、日銀が市場介入との見方</li>
+      <li>外需関連・輸出株が牽引</li>
+    </ul>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-high"></div><div class="dot active-high"></div>
+        <div class="dot active-high"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <span class="impact-label">中</span>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <span class="region-tag tag-economy">🌐 世界経済</span>
+    <h2>IMF: 中東紛争長期化シナリオで2026年成長率2.5%に引き下げ</h2>
+    <p>国際通貨基金（IMF）は中東紛争が長期化する「悪化シナリオ」において、2026年の世界経済成長率を2.5%（2027年は3.0%）まで引き下げる見通しを示した。エネルギー供給の不安定化が主因。</p>
+    <ul class="detail-list">
+      <li><strong>基本シナリオ:</strong> 停戦が維持された場合、成長率は3.1〜3.2%程度</li>
+      <li><strong>悪化シナリオ:</strong> ホルムズ封鎖再燃で2.5%に低下</li>
+      <li>石油在庫：JPMorganは5月末までに枯渇リスクを試算</li>
+    </ul>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-high"></div><div class="dot active-high"></div>
+        <div class="dot active-high"></div><div class="dot active-high"></div><div class="dot"></div>
+      </div>
+      <span class="impact-label">高</span>
+    </div>
+    <a href="https://www.jetro.go.jp/biznews/2026/04/fe897643ebf4c971.html" class="source-link">→ Source: ジェトロ</a>
+  </div>
+
+  <div class="news-card">
+    <span class="region-tag tag-us">🇺🇸 米国外交</span>
+    <h2>トランプ大統領、ロシア・ウクライナ停戦とイラン停戦を同時仲介</h2>
+    <p>トランプ大統領は5月第2週、ロシア・ウクライナの3日間停戦とパキスタン経由の米イラン停戦を同時に主導。パキスタンからのノーベル平和賞推薦も話題を呼んでいる。一方、インドとは依然として関税問題で緊張が残る。</p>
+    <ul class="detail-list">
+      <li>ウクライナ・ロシア停戦：5月9〜11日の3日間</li>
+      <li>米イラン停戦：パキスタン仲介で2週間</li>
+      <li>インドへの50%高関税は継続中</li>
+    </ul>
+    <div class="impact-bar">
+      <span class="impact-label">影響度</span>
+      <div class="impact-dots">
+        <div class="dot active-critical"></div><div class="dot active-critical"></div>
+        <div class="dot active-critical"></div><div class="dot active-critical"></div><div class="dot"></div>
+      </div>
+      <span class="impact-label">非常に高</span>
+    </div>
+    <a href="https://www.npr.org/2026/05/09/nx-s1-5816478/trump-russia-ukraine-ceasefire" class="source-link">→ Source: NPR</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>収集日時: 2026年5月10日 | データソース: NPR, 日本経済新聞, ジェトロ, 時事ドットコム, Bloomberg, IMF, JPMorgan Chase</p>
+</footer>
+</body>
+</html>

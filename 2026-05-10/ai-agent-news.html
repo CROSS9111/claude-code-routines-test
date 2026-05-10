@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIエージェント最新ニュース — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --card: #21253a;
+      --accent: #7c6aff;
+      --accent2: #00d4aa;
+      --accent3: #ff6b6b;
+      --text: #e8eaf0;
+      --muted: #9098b0;
+      --border: #2e3352;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #12142a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      text-align: center;
+    }
+    header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #7c6aff, #00d4aa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .news-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .news-card:hover { border-color: var(--accent); }
+    .news-card .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+    .tag-anthropic { background: rgba(124,106,255,0.2); color: #a89fff; }
+    .tag-openai    { background: rgba(0,212,170,0.15); color: #00d4aa; }
+    .tag-security  { background: rgba(255,107,107,0.15); color: #ff6b6b; }
+    .tag-market    { background: rgba(255,200,60,0.15); color: #ffc83c; }
+    .tag-compare   { background: rgba(130,180,255,0.15); color: #82b4ff; }
+    .news-card h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .news-card p  { color: var(--muted); font-size: 0.92rem; }
+    .news-card .highlights {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .highlight-pill {
+      font-size: 0.76rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .source-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .source-link:hover { text-decoration: underline; }
+    h3.section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .summary-box {
+      background: linear-gradient(135deg, rgba(124,106,255,0.1), rgba(0,212,170,0.05));
+      border: 1px solid rgba(124,106,255,0.3);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .summary-box p { font-size: 0.93rem; color: var(--text); }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="badge">AI AGENT NEWS</div>
+  <h1>AIエージェント最新ニュース</h1>
+  <p>2026年5月10日 — Claude Code / OpenAI Codex / その他AIエージェント動向</p>
+</header>
+
+<div class="container">
+
+  <div class="summary-box">
+    <p>2026年5月第2週は、AnthropicとOpenAIの双方が大型アップデートを発表した週となった。Claude Managed Agentsに3つの革新機能が追加され、OpenAIはCodexをGPT-5.5で強化した。AI開発ツール市場ではClaudeCodeが初めてGitHub Copilotを抜いて利用者数1位となった。</p>
+  </div>
+
+  <div class="section-label">Anthropic — Claude Code & Managed Agents</div>
+
+  <div class="news-card">
+    <span class="tag tag-anthropic">ANTHROPIC</span>
+    <h2>Claude Managed Agentsに3つの新機能：Dreaming・Outcomes・マルチエージェント</h2>
+    <p>Anthropicは「Claude Managed Agents」の大型アップデートを発表。3つの新機能が追加された。</p>
+    <div class="highlights">
+      <span class="highlight-pill">🧠 Dreaming — 過去セッションを分析して自己改善</span>
+      <span class="highlight-pill">🎯 Outcomes — 成功基準の定義で目標指向型動作</span>
+      <span class="highlight-pill">🔀 Multiagent Orchestration — リードAgentが作業分割・委任</span>
+    </div>
+    <p style="margin-top:0.85rem"><strong>Dreaming</strong>は研究プレビュー機能で、エージェントが過去のセッションを振り返ってパターンを見つけ、自己改善を行う。<strong>Outcomes</strong>では「何が成功か」をルーブリックで定義することで、エージェントが目標に向かって自律的に動作する。<strong>Multiagent Orchestration</strong>では、リードエージェントがタスクを複数の専門エージェントに委任できる。</p>
+    <a href="https://claude.com/blog/new-in-claude-managed-agents" class="source-link">→ Source: claude.com/blog</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-anthropic">ANTHROPIC</span>
+    <h2>Claude Code 制限を2倍に拡大 ＆ SpaceX Colossusと提携</h2>
+    <p>「Code w/ Claude 2026」イベントにおいて、Claude CodeのPro・Max・Enterpriseユーザー向けに従来の5時間制限が倍増（10時間）されることが発表された。インフラ面ではSpaceXのColossusデータセンターとの提携も明らかにされ、大規模なコンピューティングリソースを確保する。</p>
+    <div class="highlights">
+      <span class="highlight-pill">Pro / Max / Enterprise 対象</span>
+      <span class="highlight-pill">利用時間 2倍</span>
+      <span class="highlight-pill">SpaceX Colossus連携</span>
+    </div>
+    <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" class="source-link">→ Source: simonwillison.net</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-anthropic">ANTHROPIC</span>
+    <h2>Claude Opus 4.7 リリース — 推論・コーディング・エージェント能力を強化</h2>
+    <p>AnthropicはClaude Opus 4.7を正式リリース。推論、コーディング、エージェントワークフローにおける直近の進歩を統合した最新フラッグシップモデル。モデルID: <code>claude-opus-4-7</code>。</p>
+    <div class="highlights">
+      <span class="highlight-pill">最新フラッグシップ</span>
+      <span class="highlight-pill">reasoning強化</span>
+      <span class="highlight-pill">agentic workflow対応</span>
+    </div>
+    <a href="https://www.anthropic.com/news/claude-opus-4-7" class="source-link">→ Source: anthropic.com</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-anthropic">ANTHROPIC</span>
+    <h2>金融業界向けClaude AI Agentテンプレートを10種類公開</h2>
+    <p>銀行・保険会社・金融企業向けに、あらかじめ構築されたClaudeエージェントテンプレートが10種類リリース。ピッチブック作成、顧客確認処理、月次決算管理など労働集約的なタスクを自動化する。</p>
+    <div class="highlights">
+      <span class="highlight-pill">ピッチブック作成</span>
+      <span class="highlight-pill">KYC処理</span>
+      <span class="highlight-pill">月次決算管理</span>
+    </div>
+    <a href="https://ts2.tech/en/anthropic-launches-claude-ai-finance-agents-to-take-on-wall-streets-grunt-work/" class="source-link">→ Source: ts2.tech</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-security">SECURITY</span>
+    <h2>「ClaudeBleed」— Chrome拡張の脆弱性でエージェント乗っ取りリスク</h2>
+    <p>ClaudeのChrome拡張機能に重大な脆弱性「ClaudeBleed」が発見された。他のChrome拡張機能がClaudeに対してコマンドを実行できる過度な権限と、コマンド発信元への信頼実装の不備が組み合わさり、攻撃者がAIエージェントを乗っ取れる可能性があった。Anthropicは対応中。</p>
+    <div class="highlights">
+      <span class="highlight-pill">Chrome拡張機能の権限過多</span>
+      <span class="highlight-pill">コマンド発信元検証不備</span>
+      <span class="highlight-pill">Anthropic対応中</span>
+    </div>
+    <a href="https://www.securityweek.com/vulnerability-in-claude-extension-for-chrome-exposes-ai-agent-to-takeover/" class="source-link">→ Source: securityweek.com</a>
+  </div>
+
+  <h3 class="section-title">OpenAI — Codex アップデート</h3>
+
+  <div class="news-card">
+    <span class="tag tag-openai">OPENAI</span>
+    <h2>GPT-5.5がCodexに統合 — NVIDIA環境でも展開</h2>
+    <p>OpenAIはGPT-5.5をCodexに組み込んだことを発表。専門業務向けの最先端フロンティアモデルで、推論・コーディング・エージェントワークフローを横断した能力を持つ。NVIDIA社内ではすでに10,000人以上がGPT-5.5搭載Codexを利用しているという。</p>
+    <div class="highlights">
+      <span class="highlight-pill">GPT-5.5統合</span>
+      <span class="highlight-pill">NVIDIA社内10,000人以上利用</span>
+      <span class="highlight-pill">推論・コーディング特化</span>
+    </div>
+    <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" class="source-link">→ Source: nvidia.com/blog</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-openai">OPENAI</span>
+    <h2>「Codex for almost everything」— コード編集から汎用ツールへ進化</h2>
+    <p>OpenAIはCodexをコード編集専用ツールから汎用エージェントへと転換する「Codex for almost everything」を発表。主な新機能は3つ。</p>
+    <div class="highlights">
+      <span class="highlight-pill">🖥 Computer Use — カーソル操作で全アプリを操作</span>
+      <span class="highlight-pill">🌐 Browser Integration — インブラウザ注釈で指示</span>
+      <span class="highlight-pill">🔌 Chrome Extension — バックグラウンドでタブ並列処理</span>
+    </div>
+    <p style="margin-top:0.85rem"><strong>Computer Use</strong>では複数のエージェントがMac上で並列動作可能。<strong>Browser Integration</strong>ではページ上にコメントして精密な指示が出せる。<strong>Chrome Extension</strong>はブラウザを占有せずバックグラウンドで動作する。</p>
+    <a href="https://openai.com/index/codex-for-almost-everything/" class="source-link">→ Source: openai.com</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-openai">OPENAI</span>
+    <h2>ChatGPTにWorkspace Agents登場 — クラウド型ワークフロー自動化</h2>
+    <p>ChatGPTにCodex搭載の「Workspace Agents」が導入された。複雑なワークフローをクラウド上で自動化し、チームがツールをまたいで作業をスケールできる。セキュリティ面での企業対応も強調されている。</p>
+    <a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" class="source-link">→ Source: openai.com</a>
+  </div>
+
+  <h3 class="section-title">市場動向・エコシステム</h3>
+
+  <div class="news-card">
+    <span class="tag tag-market">MARKET</span>
+    <h2>Claude Code、GitHub Copilotを抜いてAIコーディングツール利用者数1位に</h2>
+    <p>2025年5月のリリースからわずか8ヶ月でClaudeCodeがGitHub CopilotやCursorを抜いてAIコーディングツールの首位に立った。調査によると開発者の95%が少なくとも週1回AIツールを使用、75%が仕事の半分以上にAIを活用している。</p>
+    <div class="highlights">
+      <span class="highlight-pill">リリース8ヶ月でNo.1</span>
+      <span class="highlight-pill">95%が週1回以上利用</span>
+      <span class="highlight-pill">75%が業務の50%以上をAIで</span>
+    </div>
+    <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026" class="source-link">→ Source: pragmaticengineer.com</a>
+  </div>
+
+  <div class="news-card">
+    <span class="tag tag-market">ECOSYSTEM</span>
+    <h2>Snyk × Claude / Opsera × Cursor パートナーシップ発表</h2>
+    <p>セキュリティツール大手SnykとAnthropicのClaude、開発自動化プラットフォームOpseraとCursorがそれぞれパートナーシップを締結。また「Coder Agents」の新規ローンチも発表された。AIエージェントのエコシステム拡大が加速している。</p>
+    <a href="https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/" class="source-link">→ Source: sdtimes.com</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>収集日時: 2026年5月10日 | データソース: Anthropic, OpenAI, SecurityWeek, SD Times, The New Stack, Pragmatic Engineer</p>
+</footer>
+</body>
+</html>

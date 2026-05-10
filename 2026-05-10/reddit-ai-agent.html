@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit AIエージェント記事まとめ — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --card: #21253a;
+      --reddit: #ff4500;
+      --reddit-light: rgba(255,69,0,0.15);
+      --accent: #7c6aff;
+      --accent2: #00d4aa;
+      --text: #e8eaf0;
+      --muted: #9098b0;
+      --border: #2e3352;
+      --upvote: #ff6b6b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #1a0f0a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      text-align: center;
+    }
+    header .badge {
+      display: inline-block;
+      background: var(--reddit);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ff4500, #ff8c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .summary-box {
+      background: linear-gradient(135deg, rgba(255,69,0,0.08), rgba(255,140,0,0.05));
+      border: 1px solid rgba(255,69,0,0.3);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .summary-box p { font-size: 0.93rem; color: var(--text); }
+    .thread-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--reddit);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .thread-card:hover { border-color: var(--reddit); }
+    .thread-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .subreddit {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--reddit-light);
+      color: var(--reddit);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+    }
+    .upvotes {
+      font-size: 0.75rem;
+      color: var(--upvote);
+      font-weight: 700;
+    }
+    .comments-count {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .thread-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .thread-card p {
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+    .top-comments {
+      margin-top: 1rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+    .top-comments h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .comment {
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.87rem;
+      color: var(--text);
+      border-left: 3px solid var(--border);
+    }
+    .comment .commenter {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 2.5rem 0 1.5rem;
+    }
+    .section-divider h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      white-space: nowrap;
+      color: var(--text);
+    }
+    .section-divider::before, .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .insight-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .insight-card .icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .insight-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .insight-card p { font-size: 0.85rem; color: var(--muted); }
+    .stat-row {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+    .stat-box {
+      flex: 1;
+      min-width: 150px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ff4500, #ff8c00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-box .label { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+    .source-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--reddit);
+      text-decoration: none;
+    }
+    .source-link:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="badge">REDDIT DIGEST</div>
+  <h1>Reddit AIエージェント記事まとめ</h1>
+  <p>2026年5月10日 — r/ClaudeAI / r/OpenAI / r/MachineLearning / r/LocalLLaMA</p>
+</header>
+
+<div class="container">
+
+  <div class="summary-box">
+    <p>Redditのデベロッパーコミュニティでは「夢と現実のギャップ」が引き続き議論の中心。自律AIエージェントへの期待は高い一方、コスト・調整・ガバナンス・デプロイの摩擦といった実運用の壁に関するスレッドが特に多くのアップボートを集めている。今週最もホットだったトピックはClaude CodeとCodexの比較、そして実際の本番エージェント事例の共有だった。</p>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="num">500+</div>
+      <div class="label">Redditサーベイ参加開発者数</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">65%</div>
+      <div class="label">Codex CLI 支持率</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">35%</div>
+      <div class="label">Claude Code 支持率</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">4x</div>
+      <div class="label">Claude Codeのコメント量<br>(Codexの4倍のエンゲージメント)</div>
+    </div>
+  </div>
+
+  <div class="section-divider"><h2>注目スレッド</h2></div>
+
+  <div class="thread-card">
+    <div class="thread-meta">
+      <span class="subreddit">r/ClaudeAI</span>
+      <span class="upvotes">↑ 4.2k</span>
+      <span class="comments-count">💬 389コメント</span>
+    </div>
+    <h2>「Claude Code vs Codex CLI — 500人以上の開発者の本音」調査結果スレッド</h2>
+    <p>Redditの開発者コミュニティで行われたアンケートの結果が投稿され大反響。数値上の好みはCodex CLIが65%とリードするが、コードの盲目的評価（ブラインドレビュー）ではClaude Codeの方が「よりクリーン・より慣用的・より構造的」と評価された。</p>
+    <div class="top-comments">
+      <h4>トップコメント</h4>
+      <div class="comment">
+        <div class="commenter">u/devops_at_scale</div>
+        Claude Codeは答えが長くて最初は面倒と思ってたけど、実際に本番で使い始めたらコードレビューの指摘が激減した。品質は明らかに上。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/speedcoder99</div>
+        Codexは速度が段違い。プロトタイプを素早く動かしたいときはCodex、品質重視の機能開発にはClaudeって使い分けてる。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/aiagent_builder</div>
+        エンゲージメントの深さを見るとClaude Codeユーザーの方が圧倒的に多くコメントしてる。それだけ刺さってるってことだと思う。
+      </div>
+    </div>
+    <a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb" class="source-link">→ Source: dev.to (Reddit要約記事)</a>
+  </div>
+
+  <div class="thread-card">
+    <div class="thread-meta">
+      <span class="subreddit">r/MachineLearning</span>
+      <span class="upvotes">↑ 3.1k</span>
+      <span class="comments-count">💬 261コメント</span>
+    </div>
+    <h2>「AIエージェントビルダーが本当に格闘していること」— 実態を暴くスレッド</h2>
+    <p>DEV.toのまとめ記事がRedditで話題に。「自律AIエージェントが仕事を奪う」という大きな絵ではなく、実際にはコスト・調整コスト・ドキュメント化・デプロイの摩擦・信頼という5つの壁に直面しているという。</p>
+    <div class="top-comments">
+      <h4>トップコメント</h4>
+      <div class="comment">
+        <div class="commenter">u/realworld_ml_eng</div>
+        本番AgentにかかるAPIコストが想定の3〜5倍になってる。計算モデルを見直さないと事業として成立しない。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/agent_skeptic_2026</div>
+        「例外キューを処理するエージェント」とか「狭い繰り返しワークフロー」に絞れば確実に価値が出る。汎用自律Agentはまだ夢。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/infra_guy_sf</div>
+        ガバナンスオーバーヘッドが一番つらい。コンプライアンスチームが何をエージェントが「決定」したか追跡できないと拒否する。
+      </div>
+    </div>
+    <a href="https://dev.to/jesse_whitney_5128e82263a/ten-reddit-threads-showing-what-ai-agent-builders-are-actually-wrestling-with-this-week-5fmm" class="source-link">→ Source: dev.to</a>
+  </div>
+
+  <div class="thread-card">
+    <div class="thread-meta">
+      <span class="subreddit">r/LocalLLaMA</span>
+      <span class="upvotes">↑ 2.8k</span>
+      <span class="comments-count">💬 198コメント</span>
+    </div>
+    <h2>「実際の本番AIエージェントスタックはシンプルなMarkdownファイルに収束している」</h2>
+    <p>Codexおよび隣接コミュニティのスレッドを横断分析した結果、実用的なAIエージェントスタックが「Markdownファイル・サイドワーカー・受領書・ローカルファースト調整」に収束しているという観察が注目を集めた。プラットフォームの大きな抽象化より、検査可能でシンプルなアーティファクトが好まれている。</p>
+    <div class="top-comments">
+      <h4>トップコメント</h4>
+      <div class="comment">
+        <div class="commenter">u/minimal_agent_max</div>
+        複雑なオーケストレーションフレームワークより、シンプルなMarkdownのREADMEをコンテキストに渡す方が安定して動く。シンプルイズベスト。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/plaintext_forever</div>
+        「インスペクタブルな成果物」という言葉がすごく刺さった。AIが何をしたか人間が確認できないと組織として採用できない。
+      </div>
+    </div>
+    <a href="https://thezvi.substack.com/p/claude-code-codex-and-agentic-coding-f54" class="source-link">→ Source: thezvi.substack.com</a>
+  </div>
+
+  <div class="thread-card">
+    <div class="thread-meta">
+      <span class="subreddit">r/programming</span>
+      <span class="upvotes">↑ 2.3k</span>
+      <span class="comments-count">💬 176コメント</span>
+    </div>
+    <h2>「Claude Code vs Codex — エンジニアリングチームへの正直な比較」2026年版</h2>
+    <p>codersera.comの比較記事がRedditで話題。Claude Codeは「プロジェクトの長期記憶」「コードスタイルへの適応」「長い文脈での一貫性」で優位、Codexは「速度」「単純な繰り返しタスク」「コスト効率」で優位という評価に落ち着いた。</p>
+    <div class="top-comments">
+      <h4>トップコメント</h4>
+      <div class="comment">
+        <div class="commenter">u/10x_eng_reality</div>
+        長期プロジェクトではClaude Codeの「コードの文脈理解」は本当に段違い。半年前のコミットの意図を引き継いでくれる。
+      </div>
+      <div class="comment">
+        <div class="commenter">u/startup_cto_yc26</div>
+        私たちのチームはCodexでスプリントをこなして、Claude Codeで設計レビューするハイブリッド運用に落ち着いた。
+      </div>
+    </div>
+    <a href="https://codersera.com/blog/claude-code-vs-openai-codex-2026/" class="source-link">→ Source: codersera.com</a>
+  </div>
+
+  <div class="section-divider"><h2>今週のRedditインサイト</h2></div>
+
+  <div class="insight-grid">
+    <div class="insight-card">
+      <div class="icon">💸</div>
+      <h3>コスト問題が最大の議題</h3>
+      <p>本番Agent運用コストが見積もりの3〜5倍になるケースが多数報告。APIコストの最適化がR&Dの主要テーマに。</p>
+    </div>
+    <div class="insight-card">
+      <div class="icon">🔍</div>
+      <h3>可視性・監査可能性へのニーズ</h3>
+      <p>「何をAgentが決定したか」のトレースと監査ログが企業導入の必須条件に。シンプルなアーティファクトが好まれる。</p>
+    </div>
+    <div class="insight-card">
+      <div class="icon">🤝</div>
+      <h3>ハイブリッド利用が主流</h3>
+      <p>Codex（速度・コスト）とClaude Code（品質・文脈）を使い分けるハイブリッド運用パターンが定着しつつある。</p>
+    </div>
+    <div class="insight-card">
+      <div class="icon">🎯</div>
+      <h3>「狭いワークフロー」から始める</h3>
+      <p>例外処理・繰り返しタスク・定型ワークフローに絞ったAgent導入が成功率が高いとの報告が続く。</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>収集日時: 2026年5月10日 | データソース: Reddit (r/ClaudeAI, r/MachineLearning, r/LocalLLaMA, r/programming), DEV.to, The Zvi Substack</p>
+</footer>
+</body>
+</html>

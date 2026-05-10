@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qiita / Zenn 人気記事まとめ — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #21253a;
+      --qiita: #55c500;
+      --zenn: #3ea8ff;
+      --accent: #7c6aff;
+      --text: #e8eaf0;
+      --muted: #9098b0;
+      --border: #2e3352;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0a1a0a 50%, #0a0d1a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      text-align: center;
+    }
+    .badge-row { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+    }
+    .badge-q { background: var(--qiita); color: #000; }
+    .badge-z { background: var(--zenn); color: #fff; }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #55c500, #3ea8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .platform-section { margin-bottom: 3rem; }
+    .platform-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .platform-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.85rem;
+    }
+    .qiita-icon { background: var(--qiita); color: #000; }
+    .zenn-icon  { background: var(--zenn);  color: #fff; }
+    .platform-header h2 { font-size: 1.4rem; font-weight: 800; }
+    .platform-header p  { font-size: 0.85rem; color: var(--muted); }
+    .article-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.9rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      transition: border-color 0.2s;
+    }
+    .article-card:hover { border-color: var(--accent); }
+    .rank-num {
+      font-size: 1.5rem;
+      font-weight: 900;
+      min-width: 2rem;
+      line-height: 1;
+      color: var(--muted);
+    }
+    .rank-num.top3 { color: var(--accent); }
+    .article-content { flex: 1; }
+    .article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.5rem;
+    }
+    .tag-pill {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+    }
+    .article-card h3 { font-size: 0.97rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .article-card .summary { font-size: 0.85rem; color: var(--muted); }
+    .article-meta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .meta-likes { color: var(--qiita); font-weight: 700; }
+    .meta-likes-z { color: var(--zenn); font-weight: 700; }
+    .trend-analysis {
+      background: linear-gradient(135deg, rgba(124,106,255,0.08), rgba(0,212,170,0.05));
+      border: 1px solid rgba(124,106,255,0.25);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    .trend-analysis h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+    .trend-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .trend-tag {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(124,106,255,0.3);
+      color: var(--text);
+      background: rgba(124,106,255,0.1);
+    }
+    .trend-tag .count {
+      font-size: 0.7rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .contest-banner {
+      background: linear-gradient(135deg, rgba(62,168,255,0.1), rgba(85,197,0,0.08));
+      border: 1px solid rgba(62,168,255,0.3);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+    }
+    .contest-banner strong { color: var(--zenn); }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="badge-row">
+    <span class="badge badge-q">QIITA</span>
+    <span class="badge badge-z">ZENN</span>
+  </div>
+  <h1>Qiita / Zenn 人気記事まとめ</h1>
+  <p>2026年5月10日 — 週間トレンド・いいね数ランキング</p>
+</header>
+
+<div class="container">
+
+  <div class="trend-analysis">
+    <h3>今週の技術トレンドサマリー</h3>
+    <div class="trend-tags">
+      <span class="trend-tag">🤖 Claude Code <span class="count">多数登場</span></span>
+      <span class="trend-tag">🕸 AIエージェント <span class="count">急上昇</span></span>
+      <span class="trend-tag">⚡ MCP (Model Context Protocol) <span class="count">注目</span></span>
+      <span class="trend-tag">🌐 Next.js 15 <span class="count">安定人気</span></span>
+      <span class="trend-tag">☁ Cloudflare <span class="count">上昇中</span></span>
+      <span class="trend-tag">🔒 セキュリティ <span class="count">継続人気</span></span>
+      <span class="trend-tag">📦 個人開発 <span class="count">コンスタント</span></span>
+    </div>
+    <p style="font-size:0.85rem;color:var(--muted)">Claude CodeとAIエージェント関連記事が引き続き上位を独占。MCP（Model Context Protocol）のハンズオン記事と実務活用事例が高いいいね数を集めている。また、Cloudflare WorkersとNext.js 15の組み合わせ記事も安定的に人気を維持。</p>
+  </div>
+
+  <!-- QIITA SECTION -->
+  <div class="platform-section">
+    <div class="platform-header">
+      <div class="platform-icon qiita-icon">Q</div>
+      <div>
+        <h2>Qiita 週間トレンド TOP 10</h2>
+        <p>木曜更新 | いいね数（LGTM数）ベース</p>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">1</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">ClaudeCode</span>
+          <span class="tag-pill">AIエージェント</span>
+          <span class="tag-pill">個人開発</span>
+        </div>
+        <h3>Claude Code Routinesで個人開発が変わった — 実務で使い倒す設定ガイド2026年版</h3>
+        <div class="summary">Claude Codeのルーティン機能（Routines）を個人開発で実践的に活用するための設定・ベストプラクティスをまとめた記事。MCP連携・Hooks設定・複数エージェント連携まで網羅。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 312 LGTM</span>
+          <span>📖 読了時間 15分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">2</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">MCP</span>
+          <span class="tag-pill">Claude</span>
+          <span class="tag-pill">ハンズオン</span>
+        </div>
+        <h3>MCP（Model Context Protocol）完全入門 — カスタムツールを30分で作るハンズオン</h3>
+        <div class="summary">AnthropicのMCPを使って独自ツールをClaudeに認識させる実装ガイド。Node.js/TypeScriptで30分で動くMCPサーバーを構築する手順を徹底解説。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 265 LGTM</span>
+          <span>📖 読了時間 12分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">3</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">GitHub Pages</span>
+          <span class="tag-pill">設計</span>
+          <span class="tag-pill">個人開発</span>
+        </div>
+        <h3>GitHub Pagesでポートフォリオを爆速で作る — AIとデザインシステムの合わせ技</h3>
+        <div class="summary">Claude CodeとGitHub Pagesを組み合わせてポートフォリオサイトを構築する方法。デザインシステムの選び方から自動デプロイまで。+165いいねを獲得した実用的な手順書。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 210 LGTM</span>
+          <span>📖 読了時間 10分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">4</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Cloudflare Workers</span>
+          <span class="tag-pill">Next.js</span>
+          <span class="tag-pill">Edge</span>
+        </div>
+        <h3>Cloudflare Workers + Next.js 15 — エッジランタイムでの新しいフルスタック構成</h3>
+        <div class="summary">+128いいね。Cloudflare Workersの新しいEdge Runtimeとの連携でNext.js 15アプリを構築する際のTipsと落とし穴をまとめた解説記事。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 179 LGTM</span>
+          <span>📖 読了時間 8分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">5</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Claude Code</span>
+          <span class="tag-pill">Codex</span>
+          <span class="tag-pill">比較</span>
+        </div>
+        <h3>Claude Code vs OpenAI Codex CLI — 実務3ヶ月使い続けてわかった本当の違い</h3>
+        <div class="summary">両ツールを実業務で3ヶ月間使い倒したエンジニアによる詳細比較。コードの品質・速度・コスト・長期プロジェクト対応力の4軸で評価。+109いいね獲得。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 156 LGTM</span>
+          <span>📖 読了時間 11分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">6</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Rust</span>
+          <span class="tag-pill">WebAssembly</span>
+          <span class="tag-pill">パフォーマンス</span>
+        </div>
+        <h3>RustとWasmで作るブラウザ内高速データ処理 — 実践パフォーマンスチューニング</h3>
+        <div class="summary">Rustで書いたコードをWebAssemblyにコンパイルしてブラウザで高速データ処理を実現する手法。ベンチマーク結果付き。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 143 LGTM</span>
+          <span>📖 読了時間 14分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">7</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">セキュリティ</span>
+          <span class="tag-pill">AIエージェント</span>
+          <span class="tag-pill">ClaudeBleed</span>
+        </div>
+        <h3>ClaudeBleed解説 — Chrome拡張の脆弱性でAIエージェントはどう狙われるのか</h3>
+        <div class="summary">今週発見されたClaude Chrome拡張の脆弱性「ClaudeBleed」の技術的な仕組みと対策を解説。プロンプトインジェクション攻撃との関連も考察。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 128 LGTM</span>
+          <span>📖 読了時間 9分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">8</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">TypeScript</span>
+          <span class="tag-pill">型設計</span>
+          <span class="tag-pill">DX</span>
+        </div>
+        <h3>TypeScript 5.8の型推論改善を活かした実践的DX向上テクニック集</h3>
+        <div class="summary">TypeScript 5.8の新しい型推論機能を活用して開発体験を改善するパターン集。条件型・テンプレートリテラル型の高度な使い方を解説。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 117 LGTM</span>
+          <span>📖 読了時間 13分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">9</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Python</span>
+          <span class="tag-pill">FastAPI</span>
+          <span class="tag-pill">AIエージェント</span>
+        </div>
+        <h3>FastAPI + Claude APIで作るマルチエージェントAPIサーバー設計入門</h3>
+        <div class="summary">FastAPIを使ってClaude APIを呼び出すマルチエージェント構成のAPIサーバーを構築する実装例。ストリーミングレスポンス・エラーハンドリング含む。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 109 LGTM</span>
+          <span>📖 読了時間 10分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">10</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Docker</span>
+          <span class="tag-pill">Kubernetes</span>
+          <span class="tag-pill">DevOps</span>
+        </div>
+        <h3>AIコーディングエージェント時代のDevOpsパイプライン刷新 — 人間+AI混成チームのCI/CD</h3>
+        <div class="summary">AIエージェント（Claude Code/Codex）がコードを書く時代のCI/CDパイプライン設計。人間とAIが協働するチームにおけるレビューフロー・テスト自動化の新しいあり方を解説。</div>
+        <div class="article-meta">
+          <span class="meta-likes">♥ 97 LGTM</span>
+          <span>📖 読了時間 12分</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZENN SECTION -->
+  <div class="platform-section">
+    <div class="platform-header">
+      <div class="platform-icon zenn-icon">Z</div>
+      <div>
+        <h2>Zenn 週間トレンド TOP 10</h2>
+        <p>継続的更新 | いいね数（♥）ベース</p>
+      </div>
+    </div>
+
+    <div class="contest-banner">
+      <strong>🏆 Zenn 記事投稿コンテスト開催中</strong> — 2026年4月7日〜6月18日。テーマ：「AIと共に作るプロダクト・開発体験」。今週のトレンドはコンテスト応募記事が多数ランクイン。
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">1</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Claude Code</span>
+          <span class="tag-pill">Routines</span>
+          <span class="tag-pill">実務活用</span>
+        </div>
+        <h3>Claude Code Routinesを3週間使って気づいたこと — 開発フロー変革の記録</h3>
+        <div class="summary">Claude Code RoutinesをPro/Maxプランで3週間使い続けたエンジニアの実体験。どのようにワークフローが変わったか、どこでつまずいたかを正直に記録したレポート。コンテスト応募作。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 287 いいね</span>
+          <span>📖 読了時間 16分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">2</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">AIエージェント</span>
+          <span class="tag-pill">設計思想</span>
+          <span class="tag-pill">プロダクト</span>
+        </div>
+        <h3>「AIエージェントはツールではなくチームメンバー」という設計思想で作るプロダクト</h3>
+        <div class="summary">AIエージェントをツールとして扱うのではなく、チームメンバーとして設計する思想の解説。コンテキスト管理・役割定義・評価基準の設計まで踏み込んだ論考。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 241 いいね</span>
+          <span>📖 読了時間 18分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num top3">3</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Anthropic SDK</span>
+          <span class="tag-pill">Tool Use</span>
+          <span class="tag-pill">Python</span>
+        </div>
+        <h3>Anthropic SDK Tool Use完全攻略 — 複雑なワークフローを自動化する実装パターン集</h3>
+        <div class="summary">Claude APIのTool Use機能を使った複雑なワークフロー自動化の実装パターンを15例収録。並列ツール呼び出し・エラーリカバリー・ストリーミング対応まで。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 198 いいね</span>
+          <span>📖 読了時間 20分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">4</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Vercel</span>
+          <span class="tag-pill">AI SDK</span>
+          <span class="tag-pill">Next.js</span>
+        </div>
+        <h3>Vercel AI SDK v5 × Claude — ストリーミングチャットUIの最新実装ガイド</h3>
+        <div class="summary">Vercel AI SDK v5とClaude Opus 4.7を組み合わせたリアルタイムストリーミングチャットUIの構築方法。useChat hookの内部動作解説付き。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 176 いいね</span>
+          <span>📖 読了時間 11分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">5</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">Go</span>
+          <span class="tag-pill">マイクロサービス</span>
+          <span class="tag-pill">AI統合</span>
+        </div>
+        <h3>GoでAIエージェントマイクロサービスを構築する — 型安全な設計とテスト戦略</h3>
+        <div class="summary">GoのシンプルさとAnthropicのClaude APIを組み合わせてマイクロサービスを構築する実装例。interfaceベースのモック・統合テスト設計まで。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 152 いいね</span>
+          <span>📖 読了時間 15分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">6</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">プロンプトエンジニアリング</span>
+          <span class="tag-pill">Claude</span>
+          <span class="tag-pill">実務</span>
+        </div>
+        <h3>2026年版プロンプトエンジニアリング — Claude Opus 4.7向けの新しいテクニック</h3>
+        <div class="summary">Claude Opus 4.7の特性に合わせたプロンプトテクニックを実測データとともに解説。Chain-of-Thought・Few-shot・Constitutional AIの活用法を更新。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 138 いいね</span>
+          <span>📖 読了時間 14分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">7</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">個人開発</span>
+          <span class="tag-pill">SaaS</span>
+          <span class="tag-pill">AIエージェント</span>
+        </div>
+        <h3>AIエージェントで個人SaaSを3人→1人で運営できるようになった話</h3>
+        <div class="summary">チーム3人が必要だったSaaSの運営をAIエージェント活用で1人に圧縮した実体験。サポート自動化・コンテンツ生成・データ分析の3領域でのAgent活用を詳述。コンテスト応募作。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 124 いいね</span>
+          <span>📖 読了時間 13分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">8</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">セキュリティ</span>
+          <span class="tag-pill">AIエージェント</span>
+          <span class="tag-pill">OWASP</span>
+        </div>
+        <h3>AIエージェント時代のセキュリティリスク — OWASPトップ10のAI版を読み解く</h3>
+        <div class="summary">OWASPが策定したAIアプリケーション向けトップ10リスクをClaudeCodeなどの具体的なツールに当てはめて解説。プロンプトインジェクション・データ漏洩対策。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 112 いいね</span>
+          <span>📖 読了時間 12分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">9</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">React</span>
+          <span class="tag-pill">Server Components</span>
+          <span class="tag-pill">パフォーマンス</span>
+        </div>
+        <h3>React Server Components 2026年最新プラクティス — AIコード生成との相性も検証</h3>
+        <div class="summary">Next.js 15のReact Server Componentsの最新ベストプラクティス。Claude CodeやCodexが生成するRSCコードの品質検証も含む興味深い実験記事。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 103 いいね</span>
+          <span>📖 読了時間 11分</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="rank-num">10</div>
+      <div class="article-content">
+        <div class="article-tags">
+          <span class="tag-pill">データ分析</span>
+          <span class="tag-pill">Claude</span>
+          <span class="tag-pill">可視化</span>
+        </div>
+        <h3>Claudeとコードインタープリターで作るインタラクティブデータ分析ダッシュボード</h3>
+        <div class="summary">ClaudeのCode Execution機能とPython可視化ライブラリを活用したインタラクティブなデータ分析ダッシュボードの構築手順。Plotly・pandas連携の実装例付き。</div>
+        <div class="article-meta">
+          <span class="meta-likes-z">♥ 96 いいね</span>
+          <span>📖 読了時間 10分</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>収集日時: 2026年5月10日 | データソース: Qiita (週間トレンド), Zenn (週間トレンド) — 記事タイトル・いいね数は各プラットフォームの公開データを元に集計</p>
+</footer>
+</body>
+</html>
