@@ -3,9 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月10日（アーカイブ）</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月10日</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --accent: #7c6af7;
+      --accent2: #4fc3f7;
+      --accent3: #66bb6a;
+      --accent4: #ffa726;
+      --accent5: #ef5350;
+      --text: #e8eaf6;
+      --muted: #9ea7c7;
+      --border: #2e3355;
+      --tag-bg: #2a2d4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      background: linear-gradient(135deg, #1a1040 0%, #0f1117 60%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.4rem;
+    }
+    header .subtitle { color: var(--muted); font-size: 0.9rem; }
+    header .date-badge {
+      display: inline-block;
+      margin-top: 0.7rem;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.2rem 1rem;
+      font-size: 0.85rem;
+      color: var(--accent2);
+    }
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      transition: color 0.15s, background 0.15s;
+    }
+    nav a:hover { color: var(--text); background: var(--tag-bg); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .section-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .icon-ai { background: linear-gradient(135deg, #4a2fa0, #7c6af7); }
+    .icon-reddit { background: linear-gradient(135deg, #b33000, #ff5722); }
+    .icon-world { background: linear-gradient(135deg, #0d47a1, #4fc3f7); }
+    .icon-zenn { background: linear-gradient(135deg, #1a5276, #2196f3); }
+    .section-title { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    .section-desc { color: var(--muted); font-size: 0.82rem; margin-top: 0.1rem; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.3rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.7rem;
+    }
+    .label-anthropic { background: #2d1e6b; color: #b39ddb; }
+    .label-openai { background: #1a3a2a; color: #80cbc4; }
+    .label-google { background: #2a2010; color: #ffcc80; }
+    .label-cursor { background: #1a2a3a; color: #80deea; }
+    .label-windsurf { background: #1a2a20; color: #a5d6a7; }
+    .label-reddit { background: #3a1a10; color: #ff8a65; }
+    .label-world { background: #10202a; color: #80cbc4; }
+    .label-economy { background: #2a2010; color: #ffe082; }
+    .label-war { background: #2a1010; color: #ef9a9a; }
+    .label-zenn { background: #10203a; color: #90caf9; }
+    .label-qiita { background: #1a2a10; color: #a5d6a7; }
+    .card h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; line-height: 1.4; }
+    .card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .card ul { padding-left: 1.1rem; margin-top: 0.5rem; }
+    .card ul li { font-size: 0.87rem; color: var(--muted); margin-bottom: 0.3rem; }
+    .card ul li strong { color: var(--text); }
+    .card-footer {
+      margin-top: 0.9rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .card-footer a { color: var(--accent2); font-size: 0.78rem; }
+    .card-wide {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+    .card-wide:hover { border-color: var(--accent); }
+    .card-wide h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--text); }
+    .card-wide p { font-size: 0.88rem; color: var(--muted); }
+    .card-wide ul { padding-left: 1.1rem; margin-top: 0.5rem; }
+    .card-wide ul li { font-size: 0.87rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .card-wide ul li strong { color: var(--text); }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.87rem; margin-top: 0.8rem; }
+    th { background: var(--surface2); color: var(--accent2); padding: 0.5rem 0.9rem; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    td { padding: 0.5rem 0.9rem; border-bottom: 1px solid var(--border); color: var(--muted); }
+    td strong { color: var(--text); }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--surface2); }
+    .stat-row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.8rem; }
+    .stat-pill {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.25rem 0.9rem;
+      font-size: 0.82rem;
+    }
+    .stat-pill span { color: var(--accent); font-weight: 700; }
+    .trend-list { list-style: none; padding: 0; }
+    .trend-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.87rem;
+      color: var(--muted);
+    }
+    .trend-list li:last-child { border-bottom: none; }
+    .trend-num {
+      width: 24px; height: 24px;
+      background: var(--tag-bg);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; font-weight: 700;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .trend-list li strong { color: var(--text); display: block; margin-bottom: 0.15rem; }
+    .alert {
+      background: #1e0a0a;
+      border: 1px solid #5c2020;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      font-size: 0.85rem;
+      color: #ef9a9a;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent2); }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<p>このファイルは2026年5月10日に作成されたニュースまとめのアーカイブです。最新版は <a href="../index.html">こちら</a></p>
+
+<header>
+  <h1>AI &amp; 世界情勢ニュースまとめ</h1>
+  <p class="subtitle">Claude Code / Codex などの AIエージェント ・ Reddit ・ 世界情勢 ・ Zenn/Qiita トレンド</p>
+  <span class="date-badge">2026年5月10日（日）取得 【アーカイブ】</span>
+</header>
+
+<nav>
+  <a href="#ai-agent">🤖 AIエージェント最新ニュース</a>
+  <a href="#reddit">💬 Reddit AIエージェント記事</a>
+  <a href="#world">🌏 世界情勢</a>
+  <a href="#zenn-qiita">📝 Zenn / Qiita トレンド</a>
+  <a href="../index.html">🏠 最新版へ</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="ai-agent">
+    <div class="section-header">
+      <div class="section-icon icon-ai">🤖</div>
+      <div>
+        <div class="section-title">AIエージェント最新ニュース</div>
+        <div class="section-desc">Claude Code・Codex・Cursor・Geminiなど主要AIコーディングエージェントの動向（2026年5月）</div>
+      </div>
+    </div>
+
+    <div class="card-wide">
+      <span class="card-label label-anthropic">Anthropic / Claude Code</span>
+      <h3>Code w/ Claude 2026イベント ＆ Claude Opus 4.7 正式リリース（5月6〜7日）</h3>
+      <p>Anthropicが開催した年次開発者イベント「Code w/ Claude 2026」で複数の大型アップデートを発表。</p>
+      <ul>
+        <li><strong>利用制限を2倍に拡大：</strong> Pro / Max / Team / Enterprise のClaude Code 5時間レート制限を倍増。</li>
+        <li><strong>SpaceX Colossus 1データセンター契約：</strong> 300MW超・22万基超のNVIDIA GPUへのアクセスを獲得。</li>
+        <li><strong>Claude Opus 4.7：</strong> SWE-bench Verified スコア 87.6%（全ベンダー最高）。</li>
+        <li><strong>Code Reviewフィーチャー：</strong> CI auto-fix搭載。</li>
+      </ul>
+      <div class="stat-row">
+        <div class="stat-pill">Q1年換算収益 <span>80倍成長</span></div>
+        <div class="stat-pill">PRレビュー済み <span>50万件超</span></div>
+      </div>
+    </div>
+
+    <div class="card-wide">
+      <span class="card-label label-anthropic">Anthropic / Claude Managed Agents</span>
+      <h3>Claude Managed Agents — 3つの新機能（5月7日）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>機能</th><th>概要</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Dreaming</strong></td><td>過去セッションを振り返り自己改善</td></tr>
+            <tr><td><strong>Outcomes</strong></td><td>成功基準をルーブリックで定義</td></tr>
+            <tr><td><strong>Multiagent Orchestration</strong></td><td>リードエージェントがタスクを分割し並列実行</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-label label-openai">OpenAI / Codex</span>
+        <h3>GPT-5.5搭載 &amp; Codex for（ほぼ）すべてのタスク</h3>
+        <ul>
+          <li><strong>GPT-5.5 採用：</strong> GPT-5.4比で少ないトークンで高品質な出力。</li>
+          <li><strong>PCuse &amp; インアプリブラウザ：</strong> マルチタブ操作・Web DevToolsサポート。</li>
+          <li><strong>GPT-5.3-Codex-Spark：</strong> 毎秒1000トークン超の超高速コーディングモデル。</li>
+        </ul>
+        <div class="card-footer">週間アクティブユーザー <strong style="color:var(--accent);">400万人超</strong>（年初比8倍）</div>
+      </div>
+      <div class="card">
+        <span class="card-label label-cursor">Cursor</span>
+        <h3>ARR 10億ドル突破 &amp; DevSecOps統合</h3>
+        <ul>
+          <li><strong>Opsera連携：</strong> DevSecOpsエージェントをCursor IDEに統合。</li>
+          <li><strong>2026年ベストAIコードエディタ：</strong> 複数レビューサイトで1位。</li>
+        </ul>
+        <div class="card-footer">ARR <strong style="color:var(--accent);">$1B+</strong> 突破</div>
+      </div>
+      <div class="card">
+        <span class="card-label label-google">Google / Gemini</span>
+        <h3>Google Cloud Next '26 &amp; Gemini最新動向</h3>
+        <ul>
+          <li><strong>Gemini Enterprise Agent Platform：</strong> エンタープライズ向けエージェント基盤。</li>
+          <li><strong>Gemma 4：</strong> パラメータ数比で最高性能のオープンウェイトモデル。</li>
+          <li><strong>Gemini 3.1 Pro：</strong> コーディングベンチマークでTier A到達。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-icon icon-reddit">💬</div>
+      <div>
+        <div class="section-title">Reddit — AIエージェント記事まとめ</div>
+        <div class="section-desc">r/ClaudeAI・r/ClaudeCode・r/LocalLLaMAなどの主要スレッドより（2026年5月）</div>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-label label-reddit">コミュニティ規模</span>
+        <h3>r/ClaudeCode が急成長、Codex比3倍超</h3>
+        <p>r/ClaudeCode の週間アクティブ投稿者数は <strong style="color:var(--text);">4,200人超</strong>。r/Codexの1,200人を大幅に上回る。</p>
+      </div>
+      <div class="card">
+        <span class="card-label label-reddit">開発者の評価</span>
+        <h3>「Claude Codeの方がコードが綺麗」—500人調査</h3>
+        <ul>
+          <li>日常コーディングには65%がCodexを選択（速度・コスト）</li>
+          <li>ブラインドレビューではClaude Codeが「よりクリーン・慣用的」と評価</li>
+          <li>対話型デバッグでClaude Codeが圧倒的優位</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="card-label label-reddit">主要不満</span>
+        <h3>レート制限とメモリ問題が最大の不満点</h3>
+        <ul>
+          <li><strong>コスト/レート制限：</strong> Pro ($20/月) で約12回の重い操作でリミットに。</li>
+          <li><strong>コンテキスト保持：</strong> セッションをまたぐたびにリポジトリを再発見。</li>
+          <li><strong>Opus 4.7 退行報告：</strong> 免責事項の追加・不要な確認要求。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="card-label label-reddit">運用トレンド</span>
+        <h3>「AIエージェントが運用フェーズに突入」</h3>
+        <ul>
+          <li><strong>トークンコスト管理：</strong> キャッシュ挙動・コンテキスト最適化が第一級の話題</li>
+          <li><strong>使い分け定着：</strong> Claude Codeは精密編集、Codexは広範リファクタリング</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-icon icon-world">🌏</div>
+      <div>
+        <div class="section-title">世界情勢ニュース</div>
+        <div class="section-desc">2026年5月9〜10日 主要国際ニュース</div>
+      </div>
+    </div>
+    <div class="alert">⚠️ 複数の地域で軍事的緊張が継続中。以下は報道ベースの事実記録です。</div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-label label-war">ロシア・ウクライナ</span>
+        <h3>トランプ大統領が3日間停戦を発表（5月9〜11日）</h3>
+        <ul>
+          <li>全戦闘行為の停止 &amp; 双方1,000名の捕虜交換</li>
+          <li>トランプ大統領「この戦争の<strong>終わりの始まり</strong>になりうる」</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="card-label label-war">中東情勢</span>
+        <h3>イラン停戦71日目 — 不安定な均衡</h3>
+        <ul>
+          <li>Operation Epic Fury終結後も地域緊張継続</li>
+          <li>英仏主導の多国籍連合がホルムズ海峡防衛</li>
+          <li>イランが米国艦船への攻撃継続を警告</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="card-label label-economy">米国 / 関税</span>
+        <h3>米国際貿易裁判所がトランプの一律10%関税を違法と判断</h3>
+        <ul>
+          <li>トランプ関税は <strong>GDP比で1993年以来最大の増税</strong></li>
+          <li>米家庭への平均負担増 <strong>年間$1,500</strong></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="card-label label-world">テクノロジー / 世界</span>
+        <h3>AIが世界経済・安全保障の中心的議題に浮上</h3>
+        <ul>
+          <li><strong>Anthropic：</strong> Q1年換算収益80倍成長、Googleと$2,000億クラウド契約。</li>
+          <li><strong>米中AI競争：</strong> DeepSeek V4が西洋フロンティアと同等水準へ。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="zenn-qiita">
+    <div class="section-header">
+      <div class="section-icon icon-zenn">📝</div>
+      <div>
+        <div class="section-title">Zenn / Qiita — 人気トレンド記事まとめ</div>
+        <div class="section-desc">2026年5月上旬のZenn・Qiita国内エンジニアコミュニティ注目記事</div>
+      </div>
+    </div>
+    <ul class="trend-list">
+      <li>
+        <div class="trend-num">1</div>
+        <div><strong>Claude Code Routines で週次生成AIトレンド記事を自動生成する（Zenn）</strong>Claude Code の Routines 機能を使って、生成AIニュース収集・記事化・Zenn投稿を完全自動化した実践記録。<span style="font-size:0.8rem; color:var(--accent2);">#ClaudeCode #Routines #自動化</span></div>
+      </li>
+      <li>
+        <div class="trend-num">2</div>
+        <div><strong>Codex vs Claude Code 2026 ── 判断軸とやらない判断（Zenn）</strong>タスク別の使い分けフェーズに入ったことを論じた比較記事。<span style="font-size:0.8rem; color:var(--accent2);">#Codex #ClaudeCode #比較</span></div>
+      </li>
+      <li>
+        <div class="trend-num">3</div>
+        <div><strong>【React×Claude/Cursor】MCPを取り入れたら開発が非常に楽になった話（Zenn）</strong>MCP導入でコード検索精度向上とAPIコスト削減を同時達成。<span style="font-size:0.8rem; color:var(--accent2);">#MCP #React #Cursor</span></div>
+      </li>
+      <li>
+        <div class="trend-num">4</div>
+        <div><strong>非エンジニアがClaude Codeを使ってみた正直な感想（Zenn）</strong>プログラミング未経験者によるClaude Code + Cursor体験記。<span style="font-size:0.8rem; color:var(--accent2);">#ClaudeCode #Cursor #非エンジニア</span></div>
+      </li>
+      <li>
+        <div class="trend-num">5</div>
+        <div><strong>Claude Opus 4.7 の effort レベル5段階を徹底比較（Qiita）</strong>low〜maxの5段階をベンチマーク形式で比較した実測記事。<span style="font-size:0.8rem; color:var(--accent2);">#ClaudeOpus #ベンチマーク</span></div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>収集日: 2026年5月10日（日）【アーカイブ】 | <a href="../index.html">最新版はこちら</a></p>
+</footer>
+
 </body>
 </html>
