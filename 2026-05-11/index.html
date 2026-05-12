@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月11日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.2rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月11日（月）</p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#codex">OpenAI Codex</a>
+  <a href="#aiother">その他AIエージェント</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude Code -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>注目:</strong> Claude Opus 4.7 が正式GAに。Claude Code が「Auto Mode」を一般提供し、デスクトップアプリも並列エージェント対応で全面刷新。APIの年間利用量は前年比17倍を記録。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">×17</div><div class="stat-label">API利用量（前年比）</div></div>
+      <div class="stat-card"><div class="stat-value">Opus 4.7</div><div class="stat-label">最新モデルGA</div></div>
+      <div class="stat-card"><div class="stat-value">Auto</div><div class="stat-label">自律モード一般提供</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Opus 4.7 正式リリース ― ソフトウェアエンジニアリングと長時間タスクが大幅強化</div>
+      <div class="card-meta">
+        <span class="badge">Model Update</span>
+        <span class="card-source">Source: Anthropic — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Claude Opus 4.7 が正式GA。ソフトウェアエンジニアリングと複雑・長時間コーディングタスクの精度が向上し、高解像度画像を扱うビジョン能力も強化。価格は前世代の Opus 4.6 と同一（$5 / $25 per MTok）に据え置かれ、コストを上げずに能力を引き上げた。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code Auto Mode ― 承認ゲート付き自律コーディングが一般提供へ</div>
+      <div class="card-meta">
+        <span class="badge">New Feature</span>
+        <span class="card-source">Source: Anthropic / InfoQ — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropicが「Auto Mode」を一般提供。開発者が目標を定義すると、Claude Codeがコード生成・実行・ツール呼び出し・反復改善を自律処理し、機密性の高い操作のみ人間の承認を要求する「ヒューマン・アプルーバル・ゲート」方式を採用。</p>
+        <ul>
+          <li>高速フィルターで大多数のツール呼び出しを自動判定、リスクが不確かな操作のみ深層分析にエスカレーション</li>
+          <li>承認確認時はスピナーが赤色に変わり視覚的にわかりやすく通知</li>
+          <li>Auto Mode ハード拒否ルールにより特定アクションを無条件ブロック可能</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code デスクトップアプリ全面刷新 ― 並列エージェント対応・統合ターミナル搭載</div>
+      <div class="card-meta">
+        <span class="badge">App Update</span>
+        <span class="card-source">Source: Anthropic Blog / The New Stack — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Pro・Max・Team・Enterprise 全ユーザー向けにデスクトップアプリを全面刷新。複数セッションを管理するサイドバー、ドラッグ＆ドロップでワークスペースを整理できるレイアウト、統合ターミナルとファイルエディタ、高速差分表示、Mac向けSSHサポートを追加。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code 5月アップデート ― Ultrareview自動化・プラグインZIP読み込み・worktree.baseRef</div>
+      <div class="card-meta">
+        <span class="badge">Changelog</span>
+        <span class="card-source">Source: Releasebot / Claude Code Docs — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Ultrareview 自動化対応（Week 19: 5月4〜8日リリース）</li>
+          <li>Windows での PowerShell フォールバック追加</li>
+          <li>プラグインが .zip アーカイブおよびURLから読み込み可能に</li>
+          <li>worktree.baseRef でリモートデフォルトかローカルHEADかを選択可能</li>
+          <li>フックがアクティブなエフォートレベルを参照可能に</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude、Microsoft 365 全スイートに展開 ― Excel・Word・PowerPoint・Outlook 対応</div>
+      <div class="card-meta">
+        <span class="badge">Integration</span>
+        <span class="card-source">Source: Anthropic / AI News Briefs — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>AnthropicがMicrosoft 365との連携を拡大し、Excel・Word・PowerPoint・Outlook へ Claude を展開。オフィスワークフロー全体でのAIアシスト利用が可能になり、エンタープライズ採用の加速が見込まれる。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI Codex -->
+  <section class="section" id="codex">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Codex を OpenAI で安全に動かす」― セキュリティ運用指針を公開（5月11日）</div>
+      <div class="card-meta">
+        <span class="badge">Security</span>
+        <span class="card-source">Source: OpenAI — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が本日「Running Codex safely at OpenAI」を公開。本番環境でのCodex利用における権限管理・監査・サンドボックス設計のベストプラクティスをまとめた内部知見をドキュメント化。エンタープライズ展開が進むなかでの安全運用指針として注目される。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex に搭載 ― エージェントコーディング・コンピューター使用で大幅向上</div>
+      <div class="card-meta">
+        <span class="badge">Model Update</span>
+        <span class="card-source">Source: OpenAI / NVIDIA Blog — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>GPT-5.5 が Plus・Pro・Business・Enterprise ユーザー向けにChatGPTおよびCodexへロールアウト。エージェントコーディング・コンピューター使用・知識作業・初期科学研究で特に大きな能力向上を達成。コードのデバッグ、オンライン調査、データ分析、ドキュメント生成、ソフトウェア操作が強化。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex モバイル体験が登場 ― PC稼働中はスマホからもシームレスに作業継続</div>
+      <div class="card-meta">
+        <span class="badge">Mobile</span>
+        <span class="card-source">Source: OpenAI Changelog — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Codexのモバイル体験が確認される。PCが起動している間、スマートフォンからもCodexを使い続けられる仕組みで、移動中や外出先での作業継続を可能にする。Codexが「ターミナルツール」から「常時利用エージェント」へ進化する方向性を示す。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex for Chrome ― 並列ブラウザ作業・マルチタブ対応の拡張機能でWebエージェントが本格化</div>
+      <div class="card-meta">
+        <span class="badge">Browser</span>
+        <span class="card-source">Source: MacRumors / OpenAI — 2026.05.07</span>
+      </div>
+      <div class="card-body">
+        <p>Chrome拡張「Codex for Chrome」により、ブラウザ上での並列作業が可能に。サイトアクセスをユーザーがコントロールしながら、複数タブをまたいだコンテキスト収集・テスト・デバッグを実行。Webアプリ開発のワークフローをブラウザ内で完結させる設計。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- その他AIエージェント -->
+  <section class="section" id="aiother">
+    <div class="section-header">
+      <div class="section-title">その他 AIエージェント / コーディングツール</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GitHub Copilot ― 6月から使用量ベース課金へ、Gemini 2.5 Pro が全ユーザーに一般提供</div>
+      <div class="card-meta">
+        <span class="badge">GitHub</span>
+        <span class="card-source">Source: GitHub Docs — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>6月1日よりGitHub Copilotの課金がリクエストベースから使用量ベースへ移行。Copilot Chat では GPT-5.4 / Claude Sonnet 4.6 / Gemini 2.5 Pro を切り替え可能で、Gemini 2.5 Pro が全ユーザーへ一般提供開始。マルチファイル編集・ターミナルコマンド実行・Lintエラー自動修正が利用可能。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AIコーディングツール市場2026 ― Cursor + Copilot + Claude Code で市場の70%超を占有</div>
+      <div class="card-meta">
+        <span class="badge">Market</span>
+        <span class="card-source">Source: The New Stack / MightyBot — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>2026年5月時点でターミナルAIエージェントは「成熟期」へ移行。Cursor + GitHub Copilot + Claude Code の3ツールで市場シェアの<strong>70%超</strong>を占有。モデルルーティング（重いタスクはOpus 4.7、日常作業はSonnet 4.6、高速応答はHaiku 4.5）がデファクトの運用パターンに。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ローカルAIコーディングエージェントの台頭 ― Qwen3.6-27B・Pi Coding Agent・Cline が注目</div>
+      <div class="card-meta">
+        <span class="badge">OSS</span>
+        <span class="card-source">Source: Zenn / Dev Community — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>コスト懸念を背景にローカル実行型AIエージェントへの関心が高まる。Qwen3.6-27B、Pi Coding Agent、エディタ拡張のClineが有力な選択肢として浮上。クラウドAPIのコスト制限・プライバシー問題を回避しながら開発生産性を維持する戦略として注目。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ― AIエージェント開発者の声</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「AIエージェントは運用フェーズへ」― コスト・調整・信頼性が最大の関心事に</div>
+      <div class="card-meta">
+        <span class="badge">Hot Topic</span>
+        <span class="card-source">Source: DEV Community / Reddit — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>AI エージェント市場の議論が「できる・できない」から「コスト・調整・ドキュメント・デプロイ摩擦・信頼性」へシフト。Abstract な能力論よりも、実際の運用で直面する課題を正直に語るスレッドが高評価を獲得。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">コンテキスト保持とリポジトリ再発見コストが最大の痛点 ― 実践的解法が共有される</div>
+      <div class="card-meta">
+        <span class="badge">Pain Point</span>
+        <span class="card-source">Source: Reddit / aitooldiscovery.com — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>モデルIQよりも「プロジェクト状態を保持し、リポジトリ再発見を避け、最初の有用な編集に素早く到達できるか」が評価軸に。コミュニティ推奨の対策: /clear・/compact の使い分け、サブエージェントでメインコンテキストを保護、AGENTS.md のデナイリストでコスト安のモデルへルーティング。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">マルチエージェント設計とガバナンス不安 ― 「誰が認可し、何に触れ、どう監査するか」</div>
+      <div class="card-meta">
+        <span class="badge">Architecture</span>
+        <span class="card-source">Source: DEV Community — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>単一コンテキストウィンドウの限界への実践的応答としてマルチエージェント設計が注目。ただし複数エージェントがAPI・データストア横断でアクションを連鎖させると、「機能するか」より「誰が認可したか・何に触れられるか・監査範囲はどこか」という統制の問いが前景化。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AGENTS.md デナイリストパターン ― 低リスク作業を安価モデルへルーティングするコスト設計</div>
+      <div class="card-meta">
+        <span class="badge">Cost Tip</span>
+        <span class="card-source">Source: Reddit / DEV Community — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>高スコアを得た実践知: AGENTS.md 内でデナイリストルーティングを設定し、低リスクの「ジャニター作業」を安価サブモデルへ、マージ判断・アーキテクチャ決定は高品質モデルへ振り分ける。「安いモデルを使え」という抽象論でなく、具体的なルーティング実装が評価される時代に。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">米イラン ― トランプ「停戦は命綱頼み」、イランが主権・賠償を要求し交渉が暗礁</div>
+      <div class="card-meta">
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: CNN / STL News — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領は米イラン停戦交渉が「massive life support（命綱頼み）」だと表明。イランの逆提案はホルムズ海峡の主権認定と賠償要求を含み、トランプ氏は「simply unacceptable（到底受け入れられない）」と拒絶。紛争開始から72日が経過し、交渉は難航している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ホルムズ海峡封鎖10週間 ― 米家計に$284の負担、サウジアラムコが「年内解決困難」と警告</div>
+      <div class="card-meta">
+        <span class="badge">Energy</span>
+        <span class="card-source">Source: CNBC / The Street — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>ホルムズ海峡が封鎖されて10週が経過。サウジアラムコが「年内解決は困難」と公式警告を発出。ガソリン・ディーゼル価格の急騰で米消費者への打撃は合計370億ドル超・1世帯あたり<strong>284ドル</strong>に上ると試算。株式市場も下落傾向が続き、スタグフレーションリスクが再燃。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ・習近平首脳会談へ ― 貿易・台湾・イラン・ホルムズが議題、エネルギー危機の鍵を握る</div>
+      <div class="card-meta">
+        <span class="badge">US-China</span>
+        <span class="card-source">Source: CNBC — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ・習近平の首脳会談が設定され、シンガポール・ブリュッセルをはじめ各国首脳が注視。貿易戦争・台湾問題・イラン戦争・ホルムズ海峡という複合的な議題を抱える。米中のホルムズ協力が実現すれば原油価格が短期的に緩和される可能性があり、最大の焦点となっている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">モロッコ軍事演習で行方不明の米兵 ― 大西洋で遺体発見、もう1名は捜索継続</div>
+      <div class="card-meta">
+        <span class="badge">Military</span>
+        <span class="card-source">Source: Global Developments — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>モロッコでの軍事演習中に行方不明となった米兵2名のうち1名の遺体が大西洋で発見された。もう1名の捜索が継続中。NATO同盟国との合同訓練中の事故として米国内でも報道が広がっている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude 2026 参加レポート ― Anthropicが示した「開発者の3層構造」とは</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/noah33/articles/code-with-claude-2026-sf-keynote" target="_blank" rel="noopener">zenn.dev/noah33</a></span>
+      </div>
+      <div class="card-body">
+        <p>「Code with Claude 2026」サンフランシスコ会場からの参加レポート。Anthropicが基調講演で示した「アーキテクト・オーケストレーター・エグゼキューター」の3層構造と、各層での開発者の役割変化を日本語で詳細解説。Claude Code Auto Modeとの実務連携の考え方が人気を集める。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code Routines で週次トレンド記事を自動生成する</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/tm_dev/articles/2026-05-06-zenn-auto-publish-schedule" target="_blank" rel="noopener">zenn.dev/tm_dev</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code Routinesの /schedule コマンドを活用して、週次のAIトレンド記事をZennへ自動生成・投稿するパイプラインを構築した実践記事。MCPサーバーとの連携・GitHub push・HTML生成の組み合わせが参考になると好評。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Codeですべての日常業務を爆速化しよう</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/minorun365/items/114f53def8cb0db60f47" target="_blank" rel="noopener">qiita.com/minorun365</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Codeを日常開発・業務に組み込むための具体的テクニックを網羅。ターミナル操作、ドキュメント生成、テストコード作成、PRレビュー補助など実務ユースケース別に手順を解説。初中級者向けのわかりやすさで多くのLGTMを獲得。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">育休中の個人開発でClaude Codeを活用して学んだことメモ</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/zawascript/articles/2026-01-unity-debug-sheet-hierarchy" target="_blank" rel="noopener">zenn.dev/zawascript</a></span>
+      </div>
+      <div class="card-body">
+        <p>育休中にUnity個人開発でClaude Codeを使い込んだ経験をまとめた記事。「限られた時間でどこまでAIに任せられるか」という視点から、AIとペアプログラミングの境界線・失敗談・うまくいった指示パターンを率直に共有。個人開発者からの共感を多数集める。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">技術記事ダイジェスト 2026年4〜5月 ― Qiita / Zenn / Dev.to 人気記事セレクション</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/hageoyaji/articles/2026-04-19-digest" target="_blank" rel="noopener">zenn.dev/hageoyaji</a></span>
+      </div>
+      <div class="card-body">
+        <p>Qiita・Zenn・Dev.toを横断する人気記事まとめ。AIエージェント活用、TypeScript + LLM、マルチエージェント設計、セキュリティ（プロンプトインジェクション対策）の記事が上位にランクイン。前月比でAIエージェント関連の記事投稿数が約1.5倍に増加している。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月11日（月）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> ·
+    <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> ·
+    <a href="https://www.infoq.com/news/2026/05/anthropic-claude-code-auto-mode/" target="_blank" rel="noopener">InfoQ</a> ·
+    <a href="https://thenewstack.io/claude-code-desktop-redesign/" target="_blank" rel="noopener">The New Stack</a> ·
+    <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://edition.cnn.com/2026/05/11/world/live-news/iran-war-proposal-trump" target="_blank" rel="noopener">CNN</a> ·
+    <a href="https://www.cnbc.com/2026/05/11/trump-xi-summit-beijing-global-leaders-iran-war-taiwan-strait-of-hormuz-.html" target="_blank" rel="noopener">CNBC</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
