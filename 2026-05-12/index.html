@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月12日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.2rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月12日（火）</p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#codex">OpenAI Codex</a>
+  <a href="#aiother">その他AIエージェント</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude Code -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>注目:</strong> Claude Code に「Agent View」が追加され、全バックグラウンドセッションを1つのCLIダッシュボードで管理可能に。Code with Claude 2026 イベントで発表された5機能（Dreaming・Outcomes・マルチエージェント・Claude Finance・Add-ins）の詳細が明らかになった。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">5</div><div class="stat-label">新機能（Code w/ Claude）</div></div>
+      <div class="stat-card"><div class="stat-value">×2</div><div class="stat-label">レート制限上限拡大</div></div>
+      <div class="stat-card"><div class="stat-value">Agent View</div><div class="stat-label">新ダッシュボード</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code Agent View 正式リリース ― 全バックグラウンドセッションを1画面で管理</div>
+      <div class="card-meta">
+        <span class="badge">New Feature</span>
+        <span class="card-source">Source: Anthropic / buildfastwithai.com — 2026.05.11</span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code に「Agent View」機能が追加。CLI の単一ダッシュボード上で全バックグラウンドエージェントセッションを一覧表示し、どのエージェントがユーザー入力待ちかをひと目で把握できる。コンテキストを失わずに返信・アタッチ・委任が可能で、並列マルチエージェント運用の管理コストを大幅削減する。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude 2026 — Dreaming・Outcomes・Claude Finance ほか5機能を一挙発表</div>
+      <div class="card-meta">
+        <span class="badge">Event</span>
+        <span class="card-source">Source: MindStudio / SD Times — 2026.05.06〜08</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropicが開発者向けイベント「Code with Claude 2026」（サンフランシスコ・ロンドン・東京）で5機能を同時発表。需要増加により会期を延長して開催。</p>
+        <ul>
+          <li><strong>Dreaming</strong> — 計画フェーズで複数アプローチを並列に検討するエージェント機能</li>
+          <li><strong>Outcomes</strong> — 別グレーディングエージェントが成果を採点し再実行を判断、内部ベンチマークでPowerPoint生成品質が10.1%向上</li>
+          <li><strong>マルチエージェントオーケストレーション</strong> — Claude Code Routines とマネージドエージェントの統合強化</li>
+          <li><strong>Claude Finance</strong> — 金融ドメイン向け10種のプリビルトエージェント</li>
+          <li><strong>Add-ins</strong> — サードパーティ拡張のエコシステム基盤</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Pro/Max/Enterprise のレート制限が2倍に ― 5時間上限を倍増、ヘビーユーザーの要望に応える</div>
+      <div class="card-meta">
+        <span class="badge">Limit Update</span>
+        <span class="card-source">Source: Anthropic / Simon Willison — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Code with Claude 2026 の発表に合わせ、Claude Code API の Pro・Max・Enterprise プランに適用される5時間ウィンドウあたりのレート制限が従来比2倍に拡張。大規模リポジトリの一括解析や長時間の自律タスクをより実施しやすくなった。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Snyk × Claude Code 提携 ― セキュリティスキャンが開発ループに直接統合</div>
+      <div class="card-meta">
+        <span class="badge">Integration</span>
+        <span class="card-source">Source: SD Times — 2026.05.08</span>
+      </div>
+      <div class="card-body">
+        <p>DevSecOpsツールのSnykがClaude Codeとの公式パートナーシップを発表。コード生成・修正のループ内でSnykの脆弱性スキャンを直接呼び出し、セキュリティ修正をClaudeが提案する統合フローを実現。シフトレフトセキュリティの新標準として注目される。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code Routines — マネージドエージェントのスケジュール実行が正式機能に</div>
+      <div class="card-meta">
+        <span class="badge">Routines</span>
+        <span class="card-source">Source: Anthropic Docs / SD Times — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code Routines のスケジュール実行とマネージドエージェント連携が正式機能として統合。定期レポート生成・リポジトリ監視・ニュースダイジェスト作成などの自動化タスクを設定でき、今号のような日次ニュースまとめもRoutinesで運用可能になった。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI Codex -->
+  <section class="section" id="codex">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Codex got better because Claude Code got weird」― 競争激化でCodexが市場シェア奪回の動き</div>
+      <div class="card-meta">
+        <span class="badge">Analysis</span>
+        <span class="card-source">Source: Anthony Maio Substack — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>注目のSubstack記事が話題に。Claude Codeがエンタープライズ・マルチエージェント方向へ進む中、Codexがシンプルさと直感性でユーザーを取り戻しつつあると分析。「Codex vs Claude Codeは今やGPT vs Opusよりも重要な競争」と結論付けており、AI コーディングツール選定の論点を整理している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex CLI vs Claude Code 2026 ― コンピューター使用・長時間タスク比較</div>
+      <div class="card-meta">
+        <span class="badge">Comparison</span>
+        <span class="card-source">Source: The New Stack / MindStudio — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>実践比較レポートが多数公開。コンピューター使用（ブラウザ・GUI操作）での完成度はClaude Codeが優位。一方、Codexは /goal コマンドによる目標設定の簡潔さと低レイテンシで評価が高い。エージェント設計・コンテキスト管理・価格の3軸で詳細なトレードオフが示されている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI、セキュリティAIイニシアティブ「Daybreak」を発表 ― Claude Mythos への対抗策</div>
+      <div class="card-meta">
+        <span class="badge">Security AI</span>
+        <span class="card-source">Source: Silicon Republic — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAIがセキュリティ特化型AIイニシアティブ「Daybreak」を発表。AnthropicのClaude Mythosに対抗し、脅威検知・インシデント対応・コード脆弱性分析に特化したモデルと専用ツールチェーンを提供。SOCアナリストの作業効率化が主要ターゲット。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- その他AIエージェント -->
+  <section class="section" id="aiother">
+    <div class="section-header">
+      <div class="section-title">その他 AIエージェント / コーディングツール</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Cursor × Opsera 提携 ― DevOpsパイプラインへのAIコーディング統合が加速</div>
+      <div class="card-meta">
+        <span class="badge">Partnership</span>
+        <span class="card-source">Source: SD Times — 2026.05.08</span>
+      </div>
+      <div class="card-body">
+        <p>AIコードエディタCursorがDevOpsオーケストレーション企業Operaと提携。CI/CDパイプライン内でCursorのAI補完・バグ修正・テスト生成をシームレスに利用できる統合を提供。コード生成からデプロイまでのループ全体をAI化する動きが加速している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GitHub Copilot ― 6月より使用量ベース課金へ移行、Gemini 2.5 Pro も全ユーザーに提供</div>
+      <div class="card-meta">
+        <span class="badge">GitHub</span>
+        <span class="card-source">Source: GitHub Docs — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>6月1日よりCopilotの課金モデルがリクエストベースから使用量ベースへ変更。Copilot Chat で GPT-5.4・Claude Sonnet 4.6・Gemini 2.5 Pro を自由に切り替え可能となり、Gemini 2.5 Pro が全ユーザーへ一般提供。マルチファイル編集・Lintエラー自動修正が強化。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Apple Xcode 26.3 ― エージェント型コーディングを解放、iOS/macOSネイティブ開発の生産性が激変</div>
+      <div class="card-meta">
+        <span class="badge">Apple</span>
+        <span class="card-source">Source: Apple Newsroom — 2026.02（5月注目記事）</span>
+      </div>
+      <div class="card-body">
+        <p>Apple が Xcode 26.3 で「エージェント型コーディング」機能を解放し、iOS・macOS ネイティブ開発でもAIエージェントによる自律的なコード生成・リファクタリングが可能に。Swift/SwiftUI エコシステムに最適化されたエージェント対応が実現し、アップル開発者コミュニティで大きな注目を集めている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ― AIエージェント開発者の声</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">tmux 並列サブエージェントパターンが広まる ― 1つのエージェントがもう1つに委任・検証</div>
+      <div class="card-meta">
+        <span class="badge">Workflow</span>
+        <span class="card-source">Source: Reddit r/ClaudeCode / aitooldiscovery.com — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>r/ClaudeCode のパワーユーザー間で「tmux並列サブエージェント」パターンが定着。複数の tmux ペインで Claude Code インスタンスを起動し、1つが生成・もう1つが検証するレビュー委任ループを構成。メインコンテキストの汚染を避けながら品質チェックを内製化できる実践的設計として高評価。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「ハーネスエンジニアリング」が新技術領域に ― コンテキスト管理が開発者の核心スキルへ</div>
+      <div class="card-meta">
+        <span class="badge">Trending</span>
+        <span class="card-source">Source: DEV Community / Reddit — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>「プロンプトエンジニアリング → コンテキストエンジニアリング → ハーネスエンジニアリング」という進化の軸が Reddit で広く共有される。AIエージェントのコスト・品質・速度を制御する「ハーネス設計」が専門スキルとして認知され始めており、AGENTS.md 設計・モデルルーティング・タスク分解が3大要素として挙げられる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「最初の有用な編集まで何分かかるか」― モデル評価軸が能力論から実測値へ</div>
+      <div class="card-meta">
+        <span class="badge">Benchmark</span>
+        <span class="card-source">Source: Reddit r/LocalLLaMA / r/ClaudeCode — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Redditで反響を呼んだスレッド: モデルの「知能」よりも「リポジトリ再発見なしに最初の有用な編集へ到達するまでの時間」で実用性を測るべきという議論。この指標でGPT-5.5・Claude Opus 4.7・Gemini 2.5 Proを実測比較したユーザーのデータが多数リプライを獲得。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/ClaudeCode で Code with Claude 2026 振り返り ― Outcomes 機能への期待と懸念が交錯</div>
+      <div class="card-meta">
+        <span class="badge">Community</span>
+        <span class="card-source">Source: Reddit r/ClaudeCode — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Code with Claude 2026 発表後のコミュニティ反応まとめ。Outcomes（再実行付きグレーディング）は「品質保証の自動化として革新的」という評価と「余計なトークン消費とコスト増が心配」という懸念が拮抗。Claude Finance への「金融ドメイン特化は参入障壁を下げる」という肯定的評価も目立つ。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ大統領、北京訪問へ出発 ― 習近平との首脳会談で貿易・台湾・イラン・ホルムズを協議</div>
+      <div class="card-meta">
+        <span class="badge">US-China</span>
+        <span class="card-source">Source: CNBC — 2026.05.12</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領が習近平国家主席との首脳会談のため北京へ向け出発。貿易戦争・台湾問題・イラン紛争・ホルムズ海峡危機という4つの複合的アジェンダを抱え、世界が注視する。米中がホルムズ協力で一致すれば原油価格急落の可能性があり、エネルギー市場に最大の注目が集まる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">英国地方選挙 ― スターマー労働党が大敗、改革党・保守党が躍進</div>
+      <div class="card-meta">
+        <span class="badge">UK Politics</span>
+        <span class="card-source">Source: Wikipedia Current Events / NPR — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>イングランド・スコットランド・ウェールズで実施された大規模地方選挙で、キア・スターマー首相率いる労働党が大幅な議席減。6名の市長選、議会5,066議席（136評議会）を含む選挙で改革党とナイジェル・ファラージュ率いる勢力が大幅躍進。スターマー政権への審判として政治的打撃となった。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ユーロビジョン・ソング・コンテスト 2026 がウィーンで開幕 ― 5月12〜16日</div>
+      <div class="card-meta">
+        <span class="badge">Culture</span>
+        <span class="card-source">Source: Wikipedia / European Broadcasting Union — 2026.05.12</span>
+      </div>
+      <div class="card-body">
+        <p>第71回ユーロビジョン・ソング・コンテスト 2026 がオーストリア・ウィーンで本日開幕（5月12〜16日）。ベネチア・ビエンナーレではイスラエル参加に抗議する芸術家のストライキが続いており、ウィーン開催にも一部団体が抗議活動を予定。欧州の文化外交と政治の交錯が注目される。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">中国元国防相2名に「死刑執行猶予2年」― 習近平の汚職一掃が最高幹部に到達</div>
+      <div class="card-meta">
+        <span class="badge">China</span>
+        <span class="card-source">Source: Wikipedia Current Events — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>元国防相の李尚福・魏鳳和の両氏が汚職罪で有罪となり、いずれも「死刑・執行猶予2年（事実上の無期懲役）」の判決を受けた。習近平指導部の反腐敗キャンペーンが人民解放軍の最高幹部に適用された歴史的判決で、軍内の権力構造と人事に広範な影響を与えるとみられる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ShinyHunters が教育プラットフォーム Canvas を再侵害 ― 2億7500万人の学生・教師に影響</div>
+      <div class="card-meta">
+        <span class="badge">Cybersecurity</span>
+        <span class="card-source">Source: Wikipedia Current Events — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>サイバー犯罪グループ ShinyHunters が教育プラットフォームの Instructure Canvas への侵害を2度目として発表。少なくとも<strong>2億7500万人</strong>の教師・学生の個人データが影響を受けたとされる。教育機関のクラウドセキュリティ対策が緊急課題として浮上。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GitHubトレンドまとめ（2026年5月7日） ― AIエージェント時代の「実用化」が加速</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/mori790/items/8f3b9dcefdd62a014fe3" target="_blank" rel="noopener">qiita.com/mori790</a></span>
+      </div>
+      <div class="card-body">
+        <p>5月7日時点のGitHubトレンドを分析した記事が多くのLGTMを獲得。「AIを使って何かを作る」フェーズから「AIエージェントが実際に仕事をこなす」フェーズへの移行が、具体的なリポジトリの形で可視化されている。上位には金融向けAnthropicモノレポ・Pydanticスキーマ集など実用系が並ぶ。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AIエージェント時代、正直しんどい話</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/ryo369/articles/d02561ddaacc62" target="_blank" rel="noopener">zenn.dev/ryo369</a></span>
+      </div>
+      <div class="card-body">
+        <p>AIエージェントに仕事を任せる日々を率直に振り返った記事。「思ったより指示が難しい」「コンテキストが飛んで最初からやり直し」「コストが読めない」といった現場の悩みを正直に書いたことで、同様の体験を持つ開発者から共感コメントが殺到。AIエージェント賛否両論の議論を呼んでいる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">バズりツイートから考察する2026年のAIエージェントプロダクト開発</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/chiku_dev/articles/7602829910d94f" target="_blank" rel="noopener">zenn.dev/chiku_dev</a></span>
+      </div>
+      <div class="card-body">
+        <p>SNSで話題になったAIエージェント関連投稿を軸に、2026年のプロダクト開発トレンドを考察。「ハーネスエンジニアリング」「コンテキストエンジニアリング」という概念の登場を整理し、単なる「プロンプトを工夫する」段階からシステム設計の問題へ移行したことを論じる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【業界動向】AIエージェントが「本番」に入った年 ― 57%のエンタープライズが直面する現実と壁</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/tai0921/items/04d123bf684e55ce0cd4" target="_blank" rel="noopener">qiita.com/tai0921</a></span>
+      </div>
+      <div class="card-body">
+        <p>2026年が企業AIエージェント導入の「本番稼働年」であることを数字で示した記事。調査によれば企業の57%がAIエージェントを本番環境で稼働させているが、ROI測定・ガバナンス・コスト管理の3点で壁に直面しているという。2024年「概念実証元年」→ 2025年「PoC年」→ 2026年「本番年」の変遷が詳述されている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">今年の生成AIのテーマは「シミュレーション」である</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/tesla/articles/545165ed6334c7" target="_blank" rel="noopener">zenn.dev/tesla</a></span>
+      </div>
+      <div class="card-body">
+        <p>2026年の生成AIトレンドを「シミュレーション」という切り口で読み解く考察記事。クラウド上で並列エージェントが複数シナリオを同時検討する設計が当たり前になりつつある現状を分析。Dreamingや Outcomes などの機能がまさにこの「シミュレーション」アーキテクチャの具現化と論じる。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月12日（火）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> ·
+    <a href="https://www.buildfastwithai.com/blogs/claude-code-agent-view-guide" target="_blank" rel="noopener">Build Fast w/ AI</a> ·
+    <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features" target="_blank" rel="noopener">MindStudio</a> ·
+    <a href="https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/" target="_blank" rel="noopener">SD Times</a> ·
+    <a href="https://thenewstack.io/openai-codex-claude-code/" target="_blank" rel="noopener">The New Stack</a> ·
+    <a href="https://anthonymaio.substack.com/p/codex-got-better-because-claude-code" target="_blank" rel="noopener">Anthony Maio</a> ·
+    <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> ·
+    <a href="https://en.wikipedia.org/wiki/Portal:Current_events/May_2026" target="_blank" rel="noopener">Wikipedia Current Events</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
