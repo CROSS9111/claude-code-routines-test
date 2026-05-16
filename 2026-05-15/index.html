@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月15日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月15日（金）— アーカイブ</p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#codex">OpenAI Codex</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> Microsoft が数千人分の Claude Code ライセンスをキャンセルし、開発者を GitHub Copilot CLI に移行すると発表（期限：6月30日）。同時に Claude Code 創始者・Boris Cherny 氏が「毎晩数千のサブエージェントを走らせている」と語りコミュニティに衝撃を与えた。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">6/30</div><div class="stat-label">Microsoft 社内 Claude Code 廃止期限</div></div>
+      <div class="stat-card"><div class="stat-value">数千</div><div class="stat-label">Boris Cherny 氏の一晩のサブエージェント数</div></div>
+      <div class="stat-card"><div class="stat-value">82.7%</div><div class="stat-label">GPT-5.5 の Terminal-Bench 2.0 スコア</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Microsoft、社内 Claude Code ライセンスをキャンセル ― 6月30日までに GitHub Copilot CLI へ全面移行</div>
+      <div class="card-meta">
+        <span class="badge">Breaking</span>
+        <span class="card-source">Source: <a href="https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives" target="_blank" rel="noopener">Windows Central</a> / <a href="https://www.techradar.com/pro/microsoft-may-discontinue-claude-code-internally-as-it-looks-to-push-users-towards-github-copilot" target="_blank" rel="noopener">TechRadar</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>Microsoft の Experiences + Devices 部門が、社員に付与していた Claude Code ライセンスの大半をキャンセルし、GitHub Copilot CLI への移行を命じた。移行期限は2026年6月30日（Microsoft 会計年度末）。</p>
+        <ul>
+          <li>2025年12月に数千人に展開した Claude Code が想定外に普及し、Copilot CLI の社内採用を妨げていた</li>
+          <li>財務的動機も指摘: Claude Code は Anthropic への外部コストが発生するが、Copilot CLI は Microsoft が直接収益を得るモデル</li>
+          <li>Anthropic との「Foundry 契約」は維持。Copilot CLI 経由で Claude モデル自体は引き続き利用可能</li>
+          <li>社内エンジニアの反発は大きく「品質が落ちる」「生産性が下がる」という声が上がっている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code 創始者、「毎晩数千のサブエージェントをスマートフォンから管理」― Sequoia CA との対談で衝撃の作業スタイルを披露</div>
+      <div class="card-meta">
+        <span class="badge">Insight</span>
+        <span class="card-source">Source: <a href="https://letsdatascience.com/news/claude-code-creator-runs-thousands-of-sub-agents-overnight-dfb6e8f5" target="_blank" rel="noopener">Let's Data Science</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code のリードエンジニア Boris Cherny 氏が Sequoia Capital とのインタビューで衝撃的な作業スタイルを披露。通常「5〜10のセッション」を並行維持し、各セッションが数十のサブエージェントをスポーン。鍵となる機能は <code>/loops</code> と <strong>Routines</strong>（サーバーサイドの定期タスク）で、「Claude Code はコーディングツールではなく、エージェント実行インフラだ」という認識が注目された。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic、サードパーティエージェントを Claude サブスクリプションで再有効化 ― 6月15日からクレジット分離方式で</div>
+      <div class="card-meta">
+        <span class="badge">Billing</span>
+        <span class="card-source">Source: <a href="https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html" target="_blank" rel="noopener">InfoWorld</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が6月15日から導入するクレジット分離の全詳細を公式発表。Pro: 月$20 / Max 5x: 月$100 / Max 20x: 月$200 相当の Agent SDK クレジットを付与。Claude Code CLI・GitHub Actions は引き続き通常のプラン枠から利用可能。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AIエージェントインフラとしての Claude Code ― ソフトウェア開発・サイバーセキュリティ・企業生産性に展開する基盤化の動き</div>
+      <div class="card-meta">
+        <span class="badge">Analysis</span>
+        <span class="card-source">Source: <a href="https://peerlist.io/cnyouzige/articles/ai-agents-news--may-15-2026-claude-code-expansion-microsoft-" target="_blank" rel="noopener">Peerlist</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>AIは独立したチャットボットを超えてソフトウェア開発・サイバーセキュリティ・エンタープライズ生産性にまたがる「基盤インフラ層」へと急速に進化。企業間の競争は開発者採用・ワークフロー自動化・インフラスケーラビリティを軸に展開しており、Microsoft のライセンスキャンセルはこのインフラ争奪戦の象徴的事例と位置づけられる。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="codex">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex / ChatGPT にロールアウト開始 ― Terminal-Bench 2.0 で82.7%、SWE-Bench Pro で58.6%</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI</a></span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が「最強のエージェント型コーディングモデル」として GPT-5.5 を発表し、Plus・Pro・Business・Enterprise 向けに段階的ロールアウトを開始。Terminal-Bench 2.0: <strong>82.7%</strong>、SWE-Bench Pro: <strong>58.6%</strong>。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex がモバイルアプリに対応 ― iPhone/Android からリモートで開発ワークフローを監視・管理</div>
+      <div class="card-meta">
+        <span class="badge">Mobile</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.14</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex の ChatGPT アプリへの統合を発表。スマートフォンからバックグラウンドで並列処理するタスクの進捗確認・承認・キャンセルが可能になる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Sea Limited が全社開発者に Codex を展開 ― 社内調査で週次アクティブ利用率87%を記録</div>
+      <div class="card-meta">
+        <span class="badge">Enterprise</span>
+        <span class="card-source">Source: <a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/sea-bets-big-on-ai-coding-with-openai-codex" target="_blank" rel="noopener">StartupHub.ai</a></span>
+      </div>
+      <div class="card-body">
+        <p>東南アジア最大のテクノロジー企業 Sea Limited（Shopee・Garena の親会社）が OpenAI Codex を全社展開。社内データでは<strong>週次アクティブ利用率87%</strong>を記録。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ― AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Microsoft が Claude Code を切った」― r/ClaudeCode で怒りと不安が噴出</div>
+      <div class="card-meta">
+        <span class="badge">Hot Thread</span>
+        <span class="card-source">Source: <a href="https://letsdatascience.com/news/microsoft-cancels-claude-code-licenses-shifts-developers-to-4a042e96" target="_blank" rel="noopener">Let's Data Science</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>「Microsoft は品質より財務的都合でツールを選ぶ」「Copilot CLI は Claude Code の1/3の品質」という批判が目立つ一方、「Copilot CLI でも Claude モデルは使えると分かって安心した」という声も。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「AIエージェントは『オペレーション時代』に入った」― r/MachineLearning で可能性より実用性を問うスレが席巻</div>
+      <div class="card-meta">
+        <span class="badge">Trend</span>
+        <span class="card-source">Source: <a href="https://dev.to/nance_craft_6cffbc0c3a042/ten-reddit-threads-showing-ai-agents-have-entered-their-operations-era-3gak" target="_blank" rel="noopener">DEV Community</a></span>
+      </div>
+      <div class="card-body">
+        <p>5月のRedditで最も支持された議論の変化は「エージェントは可能か」から「エージェントは経済的か・2週目も動くか・メモリはどう設計するか」へのシフト。トークンオーバーヘッド・キャッシュ挙動・ハーネスコストが一次的な討論トピックとして定着。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">コスト・信頼性・実業務 ― Reddit の AI エージェント議論が「経営者目線」にシフトした週</div>
+      <div class="card-meta">
+        <span class="badge">Ops</span>
+        <span class="card-source">Source: <a href="https://dev.to/lura_cardena_7de06f82aacd/ai-agents-on-reddit-late-april-to-early-may-2026-ten-threads-about-cost-reliability-and-real-4f20" target="_blank" rel="noopener">DEV Community まとめ</a></span>
+      </div>
+      <div class="card-body">
+        <p>キャッシュミス・暴走したトークン消費・長時間セッションの質劣化が「信頼問題」として認識。ツールオーバーヘッドが予算を食い尽くして本来の仕事が始まる前に燃え尽きる事例が多数報告されている。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ホルムズ海峡で緊張高まる ― 船舶拿捕・撃沈が相次ぐ中、トランプ・習近平が「海峡開放維持」で合意</div>
+      <div class="card-meta">
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: <a href="https://www.pbs.org/newshour/world/tensions-flare-near-strait-of-hormuz-as-one-ship-is-seized-and-another-is-sunk" target="_blank" rel="noopener">PBS News</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>UAE 沖の船舶が拿捕、別の船舶がオマーン沖で攻撃を受け沈没。米国はイランへの海上封鎖を実施中。トランプ・習近平首脳会談では「ホルムズ海峡は開放されなければならない」と両国が合意。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">イスラエル・レバノン停戦を45日間延長 ― 米国務省がワシントン協議後に発表</div>
+      <div class="card-meta">
+        <span class="badge">Lebanon</span>
+        <span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-05-15/israel-lebanon-extend-ceasefire-45-days-after-washington-talks" target="_blank" rel="noopener">Bloomberg</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>米国務省は15日、イスラエルとレバノンが停戦を45日間延長することに合意したと発表。次回協議は2026年6月2〜3日。停戦中もイスラエル軍のヒズボラへの攻撃は継続。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ローマ法王レオ14世、AI兵器への投資が「絶滅への螺旋」をもたらすと警告</div>
+      <div class="card-meta">
+        <span class="badge">Vatican</span>
+        <span class="card-source">Source: <a href="https://www.npr.org/2026/05/15/g-s1-122205/pope-decries-rise-of-ai-directed-warfare" target="_blank" rel="noopener">NPR</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>ラ・サピエンツァ大学を訪問したレオ14世が、AI と高度兵器への投資が世界を「絶滅への螺旋」に導いていると非難。ウクライナ・ガザ・レバノン・イランを名指しし、近日公開の初回勅でAI問題をさらに詳述する見通し。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">エボラ出血熱がコンゴ・イトゥリ州で新規発生 ― バンディブジョ株・承認ワクチンなし、246例・65人死亡</div>
+      <div class="card-meta">
+        <span class="badge">Health</span>
+        <span class="card-source">Source: <a href="https://www.washingtonpost.com/world/2026/05/15/congo-ebola-outbreak-ituri-province/625a3304-502d-11f1-97e7-22c6c29ff0d8_story.html" target="_blank" rel="noopener">Washington Post</a> / <a href="https://www.cnn.com/2026/05/15/health/ebola-outbreak-deaths-congo" target="_blank" rel="noopener">CNN</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>アフリカCDCがコンゴ民主共和国・イトゥリ州での新規エボラ出血熱アウトブレイクを正式確認（コンゴで17回目）。疑い例246件・死者65人。今回の株は<strong>バンディブジョ株</strong>で承認ワクチンが存在しない。ウガンダでも輸入症例1人の死亡が確認。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ケビン・ウォーシュ、FRB議長に正式就任 ― 利下げ圧力と独立性維持の綱引きが即座に始まる</div>
+      <div class="card-meta">
+        <span class="badge">US Economy</span>
+        <span class="card-source">Source: <a href="https://www.washingtonpost.com/business/2026/05/14/warsh-be-confirmed-fed-chair-trump-allies-warn-rate-cuts/" target="_blank" rel="noopener">Washington Post</a> — 2026.05.15</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領が指名したケビン・ウォーシュ氏がパウエル氏の後任としてFRB議長に就任。トランプ支持派議員は就任直後の利下げを強く要求。インフレは依然目標2%を上回っており、スタグフレーションリスクへの懸念もある。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code 5月アップデート総括 ― skills 検索 / async hooks / HTTP hooks を個人開発パイプラインへ組み込む</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/creolab_dev/items/5f058d93b1f88c43f339" target="_blank" rel="noopener">qiita.com/creolab_dev</a></span>
+      </div>
+      <div class="card-body">
+        <p>async hooks は非同期で動かすことで主フローをブロックせず Discord 通知などで移行時間を30〜60秒短縮。HTTP hooks は外部CI・Issue トラッカーへ直接イベントを飛ばせる。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【保存版】Claude Code Hooks 全21イベント完全解説 ― イベント駆動でAI開発ワークフローを自動化しよう</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/miruky/items/e33ccda99281b40ad97b" target="_blank" rel="noopener">qiita.com/miruky</a></span>
+      </div>
+      <div class="card-body">
+        <p>PreToolUse / PostToolUse / Notification / Stop など21イベントの用途・発火タイミング・設定例を網羅した保存版リファレンス。AWS との統合パターンも収録。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【保存版】Claude Code 完全設定ガイド 2026 ― Hooks / Skills / MCP / 権限を全部入りで本番運用する</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/emi_ndk/items/56b2fc8bf4e7ed5ba7f3" target="_blank" rel="noopener">qiita.com/emi_ndk</a></span>
+      </div>
+      <div class="card-body">
+        <p>settings.json の完全サンプル・ローカル設定 vs プロジェクト設定の使い分け・allowedTools の書き方・権限エラーのトラブルシューティングを収録した2026年版本番運用ガイド。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【激震】OpenAI Codex CLI に「ゴール永続化」が来た！― Claude Code を脅かす MultiAgentV2 の全貌</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/emi_ndk/items/377f89d24b6ea520e90b" target="_blank" rel="noopener">qiita.com/emi_ndk</a></span>
+      </div>
+      <div class="card-body">
+        <p>セッションを跨いでゴールを保持し、割り込みや再起動後も自動的に目標を再開する MultiAgentV2 アーキテクチャの仕組みを詳説。「Claude Code の Routines に近い概念だが再開ロジックがより堅牢」と分析。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月15日（金）— アーカイブ</p>
+</footer>
+
+</body>
+</html>
