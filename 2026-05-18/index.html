@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月18日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月18日（月）</p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#codex">OpenAI Codex</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> Claude Code v2.1.139 が Agent View（全セッションを1画面で管理）と <code>/goal</code> コマンド（完了条件を指定して自律的に何ターンでも動き続ける）を同時リリース。さらに London 拡張イベント（5月20〜21日）が目前に迫り、Anthropic は Claude 4 世代の展開を本格化させている。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">v2.1.139</div><div class="stat-label">Claude Code 最新バージョン（Agent View 搭載）</div></div>
+      <div class="stat-card"><div class="stat-value">12+</div><div class="stat-label">Claude Code 同時セッション管理（Agent View）</div></div>
+      <div class="stat-card"><div class="stat-value">May 20</div><div class="stat-label">Code with Claude London 開幕</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.139 ― Agent View でセッション一覧ダッシュボードが登場、Research Preview として公開</div>
+      <div class="card-meta">
+        <span class="badge">Feature</span>
+        <span class="card-source">Source: <a href="https://pasqualepillitteri.it/en/news/2384/claude-code-agent-view-cli-dashboard-sessions-2026" target="_blank" rel="noopener">Pasquale Pillitteri</a> / <a href="https://www.buildfastwithai.com/blogs/claude-code-agent-view-guide" target="_blank" rel="noopener">Build Fast with AI</a> — 2026.05.12</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が5月12日にリリースした Claude Code v2.1.139 の目玉機能。<code>claude agents</code> コマンドで起動し、実行中・待機中・完了済みのすべてのセッションを一覧で確認できる CLI ダッシュボード。</p>
+        <ul>
+          <li>塗りつぶしアイコン＝ライブセッション、点線アイコン＝終了済みセッション、ループ記号＝<code>/loop</code> でスリープ中のセッション</li>
+          <li>複数ターミナルタブや tmux の乱立を解消し、「どのエージェントが待っているか」を一目で把握できる</li>
+          <li>Pro・Max・Team・Enterprise・Claude API 利用者が対象</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">/goal コマンド ― 完了条件を設定して Claude が自律的に何ターンでも作業し続ける</div>
+      <div class="card-meta">
+        <span class="badge">Command</span>
+        <span class="card-source">Source: <a href="https://explainx.ai/blog/claude-code-goal-command-long-running-agents-2026" target="_blank" rel="noopener">ExplainX.ai</a> / <a href="https://www.geeky-gadgets.com/claude-code-agent-view-update/" target="_blank" rel="noopener">Geeky Gadgets</a> — 2026.05.12</span>
+      </div>
+      <div class="card-body">
+        <p>Agent View と同時リリースされた <code>/goal</code> コマンドは、タスクの完了条件を指定すると Claude が条件が満たされるかスタックするまで自律的に作業し続ける機能。早期採用者の間では「2026年で最も過小評価されているAI機能」と呼ばれている。</p>
+        <ul>
+          <li>手動でのターン操作が不要になり、数時間〜数日規模のバックグラウンド作業が現実的に</li>
+          <li>Claude Code Hooks・Skills・Routines との組み合わせで「完全自律型開発パイプライン」を構築する実験が始まっている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude 4 シリーズ正式展開 ― Opus 4「世界最高のコーディングモデル」・Sonnet 4 が開発者向けに提供開始</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-4" target="_blank" rel="noopener">Anthropic News</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が Claude 4 シリーズを正式展開。Claude Code GA 移行: 拡大研究プレビュー期間中の肯定的なフィードバックを受けて正式リリース。法律業界向けに20以上の Legal MCP コネクタと12の実務領域プラグインも同時リリース。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic、Claude セキュリティ開示5件で外部からの精査を受ける</div>
+      <div class="card-meta">
+        <span class="badge">Security</span>
+        <span class="card-source">Source: <a href="https://cryptobriefing.com/anthropic-claude-security-flaws-scrutiny/" target="_blank" rel="noopener">Crypto Briefing</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>2026年5月に複数のセキュリティ開示が相次ぎ、Anthropic の Claude がアーキテクチャ上の欠陥について外部の精査を受けている。Claude Code のエージェント実行モデルが攻撃対象領域を拡大する可能性があるとの指摘が含まれる。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="codex">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> GPT-5.3-Codex が5月17日付で GitHub Copilot Business・Enterprise の基盤モデルに昇格。本日5月18日には Python SDK が <code>openai-codex</code> に改名され、Codex エコシステムのブランド統一が完了した。
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.3-Codex、GitHub Copilot Business・Enterprise の基盤モデルに昇格（5月17日）</div>
+      <div class="card-meta">
+        <span class="badge">Breaking</span>
+        <span class="card-source">Source: <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> — 2026.05.17</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI は5月17日、GPT-5.3-Codex をすべての Copilot Business・Enterprise 組織の基盤モデルとして採用。SWE-Bench Pro・Terminal-Bench で業界最高スコアを記録し、かつ25%高速化したモデル。新規ワークスペースは自動的に GPT-5.3-Codex を使用する。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Python SDK が <code>openai-codex</code> に改名（5月18日）― Codex ブランド統一が完了</div>
+      <div class="card-meta">
+        <span class="badge">SDK</span>
+        <span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">OpenAI Codex Changelog</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>本日、OpenAI Codex の Python SDK が <code>openai-codex</code> に正式改名。既存の import 文は互換性レイヤーで引き続き動作するが、新規プロジェクトでは <code>openai-codex</code> の使用が推奨される。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI が「Codex for （almost） everything」を公開 ― コーディング以外のタスクへのエージェント拡張</div>
+      <div class="card-meta">
+        <span class="badge">Feature</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/codex-for-almost-everything/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI は Codex を「コーディングツール」から「ソフトウェア開発全般のエージェント」へ位置づけを変更し、機能・バグ修正・PR 提案・コードベース質問への回答を並列で行える点を強調。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">IntuitionLabs が Codex App マルチエージェントガイドを公開</div>
+      <div class="card-meta">
+        <span class="badge">Guide</span>
+        <span class="card-source">Source: <a href="https://intuitionlabs.ai/articles/openai-codex-app-ai-coding-agents" target="_blank" rel="noopener">IntuitionLabs</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>複数タスクの並列実行・スマートフォンからの承認フロー・GitHub への自動 PR 提出などの運用パターンを体系化。Claude Code の Agent View と機能面で直接比較できる内容として開発者の間で参照されている。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ― AIエージェント開発者の声</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Agent View は便利だが /goal こそ真打ち」― r/ClaudeCode で使用報告が続々</div>
+      <div class="card-meta">
+        <span class="badge">Hot Thread</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>v2.1.139 リリース直後から r/ClaudeCode にレポートが続出。「12セッション並列で /goal を設定したら翌朝すべて完了していた」という体験談が複数。「ただし /goal の条件が曖昧だとスタックしてトークンを無駄にする」という失敗報告も。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AI エージェント市場の議論が「熱狂」から「実運用精査」へ ― r/MachineLearning の雰囲気変化</div>
+      <div class="card-meta">
+        <span class="badge">Trend</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>「AIは何でもできる」という広範な熱狂から「メモリ帯域・レイテンシ・ツールループのオーバーヘッドをどう乗り越えるか」という実運用精査へと移行。数字・アーキテクチャ・失敗分析を含む投稿が評価される傾向。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.3-Codex が Copilot の基盤に ― r/programming で「GitHub 全エンジニアの環境が変わった」と話題</div>
+      <div class="card-meta">
+        <span class="badge">Discussion</span>
+        <span class="card-source">Source: <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> — 2026.05.17</span>
+      </div>
+      <div class="card-body">
+        <p>「オプトインでなくデフォルトで適用された点が重要。ベースを引き上げれば平均品質が上がる」という意見が高評価。「Copilot はバックグラウンド稼働が弱い・Claude Code の /goal に相当する機能が欲しい」という声も。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「明日の Google I/O で何が来るか」― r/Googleplex・r/artificial が前夜の予測で盛り上がる</div>
+      <div class="card-meta">
+        <span class="badge">Preview</span>
+        <span class="card-source">Source: <a href="https://www.tomsguide.com/phones/google-pixel-phones/google-i-o-2026-date-time-potential-announcements-and-everything-else-you-need-to-know" target="_blank" rel="noopener">Tom's Guide</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>明日5月19日に Google I/O 2026 の基調講演が行われることを前に、前夜の Reddit では予測スレッドが活況。Gemini Spark（永続型AIエージェント）が発表されれば Claude Code の /goal・Codex の並列実行と三つ巴になるという分析が高評価。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">WHO、DRC・ウガンダのエボラ（バンディブジョ株）アウトブレイクを PHEIC 宣言 ― 約500例・116人死亡</div>
+      <div class="card-meta">
+        <span class="badge">Health</span>
+        <span class="card-source">Source: <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">WHO</a> / <a href="https://www.npr.org/2026/05/18/g-s1-122655/ebola-outbreak-democratic-republic-congo-uganda" target="_blank" rel="noopener">NPR</a> — 2026.05.16〜18</span>
+      </div>
+      <div class="card-body">
+        <p>WHO は5月16〜17日、コンゴ民主共和国（DRC）とウガンダで拡大中のエボラウイルス病（バンディブジョウイルス）を PHEIC に認定。感染者は約500例、死者116人（致死率25〜40%）。承認済みワクチン・治療薬なし。本日、DRC 在住の米国人1人の感染が確認され米国は入国制限を発動。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">UAE バラカ原子力発電所の敷地内でドローン攻撃・火災 ― IAEA が放射線レベルを監視</div>
+      <div class="card-meta">
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/17/drone-strike-sparks-fire-at-uaes-barakah-nuclear-power-plant" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.bloomberg.com/news/articles/2026-05-18/how-drone-strike-near-uae-s-barakah-plant-shows-nuclear-sites-vulnerability" target="_blank" rel="noopener">Bloomberg</a> — 2026.05.17〜18</span>
+      </div>
+      <div class="card-body">
+        <p>UAE 唯一の原子力発電所バラカで5月17日、ドローン攻撃により屋外発電機が炎上。IAEA が放射線レベルを継続監視中。現時点で放射線への影響なし。Bloomberg は「ドローン攻撃が原子力施設の脆弱性を改めて示した」と分析。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ロシア、ウクライナ8地域に過去最大規模のドローン・ミサイル攻撃 ― 524機のドローンと22発</div>
+      <div class="card-meta">
+        <span class="badge">Ukraine</span>
+        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/18/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.euronews.com/video/2026/05/18/latest-news-bulletin-may-18th-2026-midday" target="_blank" rel="noopener">Euronews</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>ロシア軍は5月17〜18日、ウクライナの8地域に攻撃ドローン524機と弾道・巡航ミサイル22発を発射。市民24人以上が負傷。欧州各国は防空システムの追加供与を協議中。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">中国・広西でM5.2地震 ― 2人死亡・7,000人以上が柳州市から避難</div>
+      <div class="card-meta">
+        <span class="badge">Disaster</span>
+        <span class="card-source">Source: <a href="https://www.volcanodiscovery.com/earthquake/news/302750/World-Earthquake-Report-for-Monday-18-May-2026.html" target="_blank" rel="noopener">VolcanoDiscovery</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>5月18日早朝、中国南西部の広西チワン族自治区でM5.2の地震が発生し、柳州市で2人が死亡、7,000人以上が緊急避難。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ大統領の2026年第1四半期の取引が開示 ― Microsoft・Meta・Nvidia など2.2〜7.5億ドル</div>
+      <div class="card-meta">
+        <span class="badge">US Politics</span>
+        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/18/headlines" target="_blank" rel="noopener">Democracy Now!</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>米国政府倫理局が公開した財務開示書類によると、トランプ大統領は2026年Q1に2億2,000万〜7億5,000万ドル相当の証券取引を行っていた。対象にはMicrosoft・Meta・Nvidia・Apple・Goldman Sachs が含まれ、利益相反への懸念から議会の一部が説明を求めている。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex vs Claude Code 2026 ── 判断軸とやらない判断</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/miyan/articles/ai-code-codex-vs-claude-code-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
+      </div>
+      <div class="card-body">
+        <p>両ツールを実務で使い込んだ著者が「何をやらせるか・何をやらせないか」という判断軸で整理した実践ガイド。Claude Code は「長期自律・コンテキスト保持・Hooks 連携」、Codex は「GitHub 統合・モバイルからの承認」に強みがあるとし、「二択ではなく役割分担」を提案。今週最多ブックマーク記事。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">自律 AI 秘書を Claude Code で組む — 5層と7つの境界</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
+      </div>
+      <div class="card-body">
+        <p>「情報収集層・判断層・実行層・記憶層・監査層」の5層と「人間が承認すべき7つの境界」を定義し、/goal コマンドを使った長期自律ループをどう安全に設計するかを解説。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Codeですべての日常業務を爆速化しよう！</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/minorun365/items/114f53def8cb0db60f47" target="_blank" rel="noopener">qiita.com/minorun365</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を「定型作業の自動化ツール」ではなく「仕事を任せるパートナー」として捉え直すことを主軸に、CLAUDE.md の設定・タスク委任のコツ・ハルシネーション対策まで幅広く解説。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code と Zenn 執筆環境を一から育てた記録</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/shimo4228/items/1513ae9a3a11769df170" target="_blank" rel="noopener">qiita.com/shimo4228</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を使って Zenn 記事の執筆・校正・公開フローを構築した個人プロジェクトの記録。Python スクリプトで記事の草稿生成・差分チェック・画像キャプション提案を自動化し、Zenn CLI と組み合わせてワンコマンドで公開まで通す構成を紹介。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月18日（月）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
+    <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> ·
+    <a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a> ·
+    <a href="https://www.aljazeera.com/" target="_blank" rel="noopener">Al Jazeera</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>

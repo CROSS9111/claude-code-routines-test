@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月18日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月19日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -195,13 +195,14 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code / AIエージェント / 世界情勢 / 開発者トレンド</p>
-  <p class="date">2026年5月18日（月）</p>
+  <p class="subtitle">Claude Code / AIエージェント / Google I/O / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月19日（火）</p>
 </header>
 
 <nav>
   <a href="#claude">Claude Code</a>
-  <a href="#codex">OpenAI Codex</a>
+  <a href="#openai">OpenAI Codex</a>
+  <a href="#googleio">Google I/O</a>
   <a href="#reddit">Reddit</a>
   <a href="#world">世界情勢</a>
   <a href="#dev">Qiita/Zenn</a>
@@ -213,142 +214,206 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目:</strong> Claude Code v2.1.139 が Agent View（全セッションを1画面で管理）と <code>/goal</code> コマンド（完了条件を指定して自律的に何ターンでも動き続ける）を同時リリース。さらに London 拡張イベント（5月20〜21日）が目前に迫り、Anthropic は Claude 4 世代の展開を本格化させている。
+      <strong>本日の注目:</strong> KPMG 27万6千人全員へ Claude を展開する戦略的グローバル同盟を本日発表（Digital Gateway Powered by Claude）。最新 Claude Code アップデートでは <code>/resume</code> がバックグラウンドセッションに正式対応し、起動時に最大75秒ハングしていた問題を15秒タイムアウトで修正。Code with Claude London は本日開幕。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">v2.1.139</div><div class="stat-label">Claude Code 最新バージョン（Agent View 搭載）</div></div>
-      <div class="stat-card"><div class="stat-value">12+</div><div class="stat-label">Claude Code 同時セッション管理（Agent View）</div></div>
-      <div class="stat-card"><div class="stat-value">May 20</div><div class="stat-label">Code with Claude London 開幕</div></div>
+      <div class="stat-card"><div class="stat-value">276,000+</div><div class="stat-label">KPMG 全従業員が Claude を利用</div></div>
+      <div class="stat-card"><div class="stat-value">15s</div><div class="stat-label">API タイムアウト短縮（旧: 最大75秒ハング）</div></div>
+      <div class="stat-card"><div class="stat-value">May 19</div><div class="stat-label">Code with Claude London 開幕</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.139 ― Agent View でセッション一覧ダッシュボードが登場、Research Preview として公開</div>
+      <div class="card-title">KPMG × Anthropic 戦略的グローバル同盟 ─ Digital Gateway Powered by Claude で27万6千人が Claude を活用</div>
       <div class="card-meta">
-        <span class="badge">Feature</span>
-        <span class="card-source">Source: <a href="https://pasqualepillitteri.it/en/news/2384/claude-code-agent-view-cli-dashboard-sessions-2026" target="_blank" rel="noopener">Pasquale Pillitteri</a> / <a href="https://www.buildfastwithai.com/blogs/claude-code-agent-view-guide" target="_blank" rel="noopener">Build Fast with AI</a> / <a href="https://rits.shanghai.nyu.edu/ai/anthropic-ships-agent-view-a-multi-session-dashboard-for-claude-code/" target="_blank" rel="noopener">NYU Shanghai</a> — 2026.05.12</span>
+        <span class="badge">Enterprise</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">Anthropic</a> / <a href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html" target="_blank" rel="noopener">KPMG</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が5月12日にリリースした Claude Code v2.1.139 の目玉機能。<code>claude agents</code> コマンドで起動し、実行中・待機中・完了済みのすべてのセッションを一覧で確認できる CLI ダッシュボード。</p>
+        <p>本日、KPMG と Anthropic が世界的な戦略同盟を締結し、「KPMG Digital Gateway Powered by Claude」を正式発表した。KPMG の276,000人超の全従業員が Claude へのアクセスを得る。</p>
         <ul>
-          <li>塗りつぶしアイコン＝ライブセッション（即時返信可）、点線アイコン＝終了済みセッション（応答可）、ループ記号＝<code>/loop</code> でスリープ中のセッション</li>
-          <li>複数ターミナルタブや tmux の乱立を解消し、「どのエージェントが待っているか」を一目で把握できる</li>
-          <li>Pro・Max・Team・Enterprise・Claude API 利用者が対象。Research Preview として提供開始</li>
-          <li>The New Stack は「より良いダッシュボードなのになぜ開発者は半信半疑か」と題し、UX への懐疑的意見も紹介</li>
+          <li>Digital Gateway は Microsoft Azure 上に構築された KPMG のグローバル技術プラットフォームで、税務インサイト・独自ツール・クライアントデータを一元管理している</li>
+          <li>AI エージェントを使って税規制変更への対応ワークフローを構築するのに、以前は数週間かかっていた作業が「数分」に短縮されたと説明</li>
+          <li>プライベートエクイティ向け製品にも Claude を組み込み、ポートフォリオ企業向けの新製品を共同開発予定</li>
+          <li>サイバーセキュリティ分野でも活用し、脆弱性の発見・修正を支援</li>
+          <li>大手会計事務所の Claude 採用は PwC に続いて2社目。Big Four のうち半数が Anthropic と提携したことになる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">/goal コマンド ― 完了条件を設定して Claude が自律的に何ターンでも（数日でも）作業し続ける</div>
+      <div class="card-title">Claude Code 最新アップデート ─ /resume でバックグラウンドセッション対応、起動ハング75秒を修正</div>
       <div class="card-meta">
-        <span class="badge">Command</span>
-        <span class="card-source">Source: <a href="https://explainx.ai/blog/claude-code-goal-command-long-running-agents-2026" target="_blank" rel="noopener">ExplainX.ai</a> / <a href="https://www.geeky-gadgets.com/claude-code-agent-view-update/" target="_blank" rel="noopener">Geeky Gadgets</a> — 2026.05.12</span>
+        <span class="badge">Update</span>
+        <span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code Changelog</a> / <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>Agent View と同時リリースされた <code>/goal</code> コマンドは、タスクの完了条件を指定すると Claude が条件が満たされるかスタックするまで自律的に作業し続ける機能。早期採用者の間では「2026年で最も過小評価されているAI機能」と呼ばれている。</p>
+        <p>最新 Claude Code リリースはバックグラウンドセッション対応と信頼性向上が中心。</p>
         <ul>
-          <li>手動でのターン操作が不要になり、数時間〜数日規模のバックグラウンド作業が現実的に</li>
-          <li><code>/loop</code> コマンドとの使い分けが議論されており、反復型タスクには <code>/loop</code>、条件達成型タスクには <code>/goal</code> が適しているとされる</li>
-          <li>Claude Code Hooks・Skills・Routines との組み合わせで「完全自律型開発パイプライン」を構築する実験が始まっている</li>
+          <li><code>/resume</code> のバックグラウンドセッション対応 ─ <code>claude --bg</code> や Agent View で開始したセッションが、インタラクティブセッションと並んで「bg」マーク付きで一覧表示されるようになった</li>
+          <li>バックグラウンドサブエージェント完了通知に経過時間を追加（例: 「Agent completed · 3h 2m 5s」）</li>
+          <li><code>/model</code> は現セッションのみモデルを変更するよう変更。新規セッションのデフォルトはモデルピッカーの「d」キーで設定</li>
+          <li>「extra usage」を「usage credits」に改称。<code>/usage-credits</code> コマンドに統一（旧コマンドも引き続き動作）</li>
+          <li>起動時に <code>api.anthropic.com</code> が応答しない場合（キャプティブポータル・VPN・ファイアウォール）に最大75秒ハングしていた問題を修正 ─ サイドチャネルのAPI呼び出しが15秒でタイムアウトするよう改善</li>
+          <li>VS Code のスプリットペイン調整など window-resize イベント欠落後のターミナル文字化けを自動修復</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude 4 シリーズ正式展開 ― Opus 4「世界最高のコーディングモデル」・Sonnet 4 が開発者向けに提供開始</div>
+      <div class="card-title">Code with Claude London 本日開幕 ─ Managed Agents 三機能・API レート制限倍増・SpaceX Colossus 1 提携が目玉</div>
       <div class="card-meta">
-        <span class="badge">Model</span>
-        <span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-4" target="_blank" rel="noopener">Anthropic News</a> / <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> — 2026.05</span>
+        <span class="badge">Conference</span>
+        <span class="card-source">Source: <a href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">Anthropic</a> / <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Simon Willison</a> / <a href="https://www.aiexpertmagazine.com/anthropic-code-with-claude-2026-everything-you-need-to-know/" target="_blank" rel="noopener">AI Expert Magazine</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が Claude 4 シリーズを正式展開。Claude Opus 4 は「世界最高のコーディングモデル」として発表され、Claude Sonnet 4 は優れたコーディング・推論性能をより手軽な価格で提供する。Claude Code はこれらのモデルを基盤として研究プレビューを終え一般提供（GA）となった。</p>
+        <p>Anthropic 開発者カンファレンス「Code with Claude」のロンドン会場が本日5月19日に開幕（Extended London は翌20日）。全基調講演・ブレークアウトセッションをライブストリーム配信予定。サンフランシスコ会場（5月6日）でのキー発表を改めて整理：</p>
         <ul>
-          <li>Claude Code GA 移行: 拡大研究プレビュー期間中の肯定的なフィードバックを受けて正式リリース</li>
-          <li>法律業界向けに20以上の Legal MCP コネクタと12の実務領域プラグインも同時リリース</li>
-          <li>Code with Claude London（5月20〜21日）・Tokyo（6月5〜6日）でさらなる発表が予定されており、基調講演はライブストリーム配信</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Anthropic、Claude セキュリティ開示5件で外部からの精査を受ける ― アーキテクチャ上の脆弱性指摘</div>
-      <div class="card-meta">
-        <span class="badge">Security</span>
-        <span class="card-source">Source: <a href="https://cryptobriefing.com/anthropic-claude-security-flaws-scrutiny/" target="_blank" rel="noopener">Crypto Briefing</a> — 2026.05</span>
-      </div>
-      <div class="card-body">
-        <p>2026年5月に入り複数のセキュリティ開示が相次いだことで、Anthropic の Claude がアーキテクチャ上の欠陥について外部の精査を受けている。具体的な脆弱性の詳細は開示プロセスに従い段階的に公表される予定で、Anthropic は修正対応を進めていると声明を出した。</p>
-        <ul>
-          <li>Claude Code のエージェント実行モデルが攻撃対象領域を拡大する可能性があるとの指摘が含まれる</li>
-          <li>OpenAI が GPT-5.3-Codex でサイバーセキュリティ「High capability」扱いの前例を作ったことで、エージェント型AIのセキュリティ評価基準が業界全体で再議論されている</li>
+          <li>Claude Managed Agents に3機能追加 ─ 「Multiagent Orchestration」（複雑タスクをフリートに分解）、「Outcomes」（成功基準を定義してエージェントが反復改善）、「Dreaming」（過去セッションを想起して作業を引き継ぐ）</li>
+          <li>Claude Code API レート制限を2倍に拡大。Claude Opus の API 上限も引き上げ</li>
+          <li>SpaceX Colossus 1 とのコンピュート提携で大幅な処理能力増強</li>
+          <li>ロンドン会場ではプラットフォーム・ツール系のさらなる発表が予定。次世代フロンティアモデルのリリースはアナウンスなし</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- OpenAI Codex -->
-  <section class="section" id="codex">
+  <section class="section" id="openai">
     <div class="section-header">
       <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> OpenAI と Dell Technologies がハイブリッド・オンプレミス向け Codex エンタープライズパートナーシップを発表（5月18日）。GPT-5.5 が Plus/Pro/Business/Enterprise へ順次展開中で、週間アクティブユーザーが400万人超に到達。コンテンツ来歴（Content Provenance）機能も本日公開。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">4M+</div><div class="stat-label">Codex 週間アクティブユーザー</div></div>
+      <div class="stat-card"><div class="stat-value">GPT-5.5</div><div class="stat-label">全プランへ展開中の最新モデル</div></div>
+      <div class="stat-card"><div class="stat-value">Dell</div><div class="stat-label">新オンプレミスパートナー</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI × Dell Technologies ─ Codex をハイブリッド・オンプレミス環境へ展開するエンタープライズパートナーシップ</div>
+      <div class="card-meta">
+        <span class="badge">Partnership</span>
+        <span class="card-source">Source: <a href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">Releasebot / OpenAI</a> / <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>5月18日、OpenAI と Dell Technologies が Codex のオンプレミス・ハイブリッドクラウド展開に向けた企業向けパートナーシップを発表した。セキュリティポリシー上クラウドのみに頼れない大企業・政府機関向けに、Codex のエージェント機能をプライベート環境で利用できるようにする。</p>
+        <ul>
+          <li>NVIDIA インフラとの連携により、GPT-5.5 ベースの Codex エージェントを企業内サーバーへデプロイ</li>
+          <li>既存の Codex Windows Sandbox（ファイアウォール制御・専用バイナリ）との統合が強化される見込み</li>
+          <li>KPMG が Anthropic と提携したタイミングと重なり、エンタープライズ AI エージェント市場での OpenAI との競争が鮮明に</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が ChatGPT・Codex 全プランへ展開開始 ─ 週間ユーザー400万人超に</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI</a> / <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が GPT-5.5 を Plus・Pro・Business・Enterprise ユーザーへ順次展開中。Codex の週間アクティブユーザーが400万人を突破したことも公表された。</p>
+        <ul>
+          <li>Codex モバイルアプリのプレビューが ChatGPT アプリに追加 ─ スマートフォンから作業のレビュー・コマンド承認・スレッドの操作が可能に</li>
+          <li>Codex Windows Sandbox が強化 ─ 専用セットアップ・ランナーバイナリ、ファイアウォール制御ネットワークブロック、厳格なファイル書き込み制御</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI、コンテンツ来歴（Content Provenance）機能を発表 ─ AI 生成コンテンツの透明性強化</div>
+      <div class="card-meta">
+        <span class="badge">Safety</span>
+        <span class="card-source">Source: <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI News</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>本日、OpenAI は AI 生成コンテンツの透明性を確保するための「コンテンツ来歴（Content Provenance）」機能の進歩を発表した。C2PA 規格に準拠したメタデータを AI 生成物に埋め込み、「これは AI が生成した」という情報を第三者が検証できるエコシステムを目指す。Codex が生成したコードへの応用も今後検討される。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google I/O -->
+  <section class="section" id="googleio">
+    <div class="section-header">
+      <div class="section-title">Google I/O 2026 ─ 本日の全発表まとめ</div>
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目:</strong> GPT-5.3-Codex が5月17日付で GitHub Copilot Business・Enterprise の基盤モデルに昇格。本日5月18日には Python SDK が <code>openai-codex</code> に改名され、Codex エコシステムのブランド統一が完了した。明日の Google I/O を前に OpenAI と Anthropic の両社が矢継ぎ早にアップデートを展開している。
+      <strong>本日の注目:</strong> Google I/O 2026 基調講演（日本時間5月20日 午前2時）が本日開催。Gemini Spark（24時間稼働のパーソナルAIエージェント）・Gemini 3.5 Flash（フロンティアモデル比4倍高速）・Gemini Omni（マルチモーダル動画生成）・Android XR グラス（4社パートナー・今秋発売）が相次いで発表された。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">4x</div><div class="stat-label">Gemini 3.5 Flash の出力速度（他社フロンティア比）</div></div>
+      <div class="stat-card"><div class="stat-value">来週</div><div class="stat-label">Gemini Spark 先行公開（AI Ultra 会員）</div></div>
+      <div class="stat-card"><div class="stat-value">4社</div><div class="stat-label">Android XR グラス パートナー</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.3-Codex、GitHub Copilot Business・Enterprise の基盤モデルに昇格（5月17日）</div>
+      <div class="card-title">Gemini Spark ─「デジタルライフを自律的にこなす24時間パーソナルAIエージェント」Claude Code /goal・Codex 並列実行と三つ巴へ</div>
       <div class="card-meta">
-        <span class="badge">Breaking</span>
-        <span class="card-source">Source: <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> / <a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener">OpenAI</a> — 2026.05.17</span>
+        <span class="badge">Agent</span>
+        <span class="card-source">Source: <a href="https://www.tomsguide.com/news/live/google-io-2026-live-news-updates" target="_blank" rel="noopener">Tom's Guide</a> / <a href="https://tech.yahoo.com/ai/gemini/article/google-launches-gemini-spark-a-personal-ai-agent-and-more-ai-updates-at-google-io-2026-172856405.html" target="_blank" rel="noopener">Yahoo Tech</a> / <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>OpenAI は5月17日、GPT-5.3-Codex をすべての Copilot Business・Copilot Enterprise 組織の基盤モデルとして採用すると発表した。GPT-5.3-Codex は GPT-5.2-Codex のコーディング性能と GPT-5.2 の推論・専門知識を統合し、かつ25%高速化したモデルとして2月にリリースされていた。</p>
+        <p>Google が I/O 2026 で発表した Gemini Spark は、Gemini を「質問に答えるアシスタント」から「ユーザーに代わって実際に作業を行うアクティブなパートナー」へと転換させる24時間稼働の個人エージェント。来週より Google AI Ultra 会員（米国）に先行提供される。</p>
         <ul>
-          <li>SWE-Bench Pro・Terminal-Bench で業界最高スコアを記録し、OSWorld・GDPval でも強い性能</li>
-          <li>OpenAI Preparedness Framework でサイバーセキュリティ「High capability」扱い ― 「そのレベルに達しているとは断言できないが、否定もできないため予防的に高リスク区分とする」と声明</li>
-          <li>GitHub Copilot のエンタープライズ展開への影響は即日。新規ワークスペースは自動的に GPT-5.3-Codex を使用</li>
+          <li>クラウドベースのため、スマートフォンをロックしても Spark はバックグラウンドで稼働し続ける</li>
+          <li>活用例: 毎月のクレジットカード明細を自動解析して隠れた費用や新規サブスクを検出 / 子供の学校からのメールを監視して締め切りをまとめて報告</li>
+          <li>Gemini アプリは「Daily Brief」機能と UI リデザインも同時に展開</li>
+          <li>Reddit の r/Bard・r/google では「opt-in を慎重に確認すべき」という冷静な声が高評価を得ており、データアクセス範囲への懸念が主なトピック</li>
+          <li>Claude Code <code>/goal</code>・OpenAI Codex の並列実行との比較では「コーディング特化 vs 日常作業特化」という棲み分け論が浮上している</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Python SDK が <code>openai-codex</code> に改名（5月18日）― Codex ブランド統一が完了</div>
+      <div class="card-title">Gemini 3.5 Flash ─ フロンティアモデル比4倍の出力速度、エージェントタスクで 3.1 Pro を上回る</div>
       <div class="card-meta">
-        <span class="badge">SDK</span>
-        <span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">OpenAI Codex Changelog</a> — 2026.05.18</span>
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener">9to5Google</a> / <a href="https://www.engadget.com/2176173/google-io-live-blog-gemini-ai/" target="_blank" rel="noopener">Engadget</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>本日、OpenAI Codex の Python SDK が <code>openai-codex</code> に正式改名された。先週の ChatGPT・Codex・Developer API 統合（Greg Brockman 主導）に続くブランド再編の一環で、開発者向けドキュメントのエントリーポイントも <code>developers.openai.com/codex</code> に統一される。</p>
+        <p>Gemini 3.5 Flash は、フロンティアレベルの知性とエージェントタスク実行能力を Flash シリーズのコスト・速度で提供する新モデル。本日より Gemini アプリ・Google Search・Antigravity 2.0・Gemini API で順次展開。</p>
         <ul>
-          <li>既存の import 文は互換性レイヤーで引き続き動作するが、新規プロジェクトでは <code>openai-codex</code> の使用が推奨される</li>
-          <li>Codex CLI・Codex App（iOS/Android）・Copilot の3チャネルで一貫したブランド体験が実現</li>
+          <li>コーディング・エージェント・マルチモーダルのベンチマークで Gemini 3.1 Pro を上回り、他社フロンティアモデルより出力トークン毎秒が4倍高速</li>
+          <li>Gemini 3.5 Pro は現在テスト中で翌月公開予定</li>
+          <li>エージェント開発者向けに Gemini API で即日利用可能</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI が「Codex for （almost） everything」を公開 ― コーディング以外のタスクへのエージェント拡張</div>
+      <div class="card-title">Gemini Omni ─ 実世界の知識に基づいた動画を生成する新マルチモーダルモデル</div>
       <div class="card-meta">
-        <span class="badge">Feature</span>
-        <span class="card-source">Source: <a href="https://openai.com/index/codex-for-almost-everything/" target="_blank" rel="noopener">OpenAI</a> / <a href="https://devops.com/openai-codex-transforming-software-development-with-ai-agents/" target="_blank" rel="noopener">DevOps.com</a> — 2026.05</span>
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener">9to5Google</a> / <a href="https://www.analyticsinsight.net/news/google-io-2026-gemini-omni-spark-android-xr-launch-expected-in-biggest-ai-push-yet" target="_blank" rel="noopener">Analytics Insight</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>OpenAI は Codex を「コーディングツール」から「ソフトウェア開発全般のエージェント」へ位置づけを変更し、機能・バグ修正・PR 提案・コードベース質問への回答を並列で行える点を強調。インフラも強化され、クラウド上の隔離コンテナで GitHub リポジトリのコードとプリインストール依存関係のみと対話する設計が改めて説明された。</p>
+        <p>Gemini Omni は Gemini の推論能力と生成能力を組み合わせた新シリーズで、画像・音声・動画・テキストを入力として受け取り、実世界の知識に根ざした動画を出力する。Google Flow・Flow Music のモバイルアプリとも連携する。</p>
+        <ul>
+          <li>Google Flow（クリエイティブ動画生成アプリ）: Android ベータ版が本日公開、iOS 版は近日提供</li>
+          <li>Google Flow Music（AI 音楽生成）: iOS 版が本日公開、Android 版は近日提供</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">IntuitionLabs が Codex App マルチエージェントガイドを公開 ― GPT-5.3 時代の実践的運用パターン</div>
+      <div class="card-title">Android XR グラス ─ Samsung・XREAL・Warby Parker・Gentle Monster の4社パートナーで今秋発売</div>
       <div class="card-meta">
-        <span class="badge">Guide</span>
-        <span class="card-source">Source: <a href="https://intuitionlabs.ai/articles/openai-codex-app-ai-coding-agents" target="_blank" rel="noopener">IntuitionLabs</a> — 2026.05</span>
+        <span class="badge">Hardware</span>
+        <span class="card-source">Source: <a href="https://www.tomsguide.com/news/live/google-io-2026-live-news-updates" target="_blank" rel="noopener">Tom's Guide</a> / <a href="https://www.engadget.com/2176173/google-io-live-blog-gemini-ai/" target="_blank" rel="noopener">Engadget</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>IntuitionLabs が Codex App でのマルチエージェント AI コーディングの実践的なガイドを公開。複数タスクの並列実行・スマートフォンからの承認フロー・GitHub への自動 PR 提出などの運用パターンを体系化し、Claude Code の Agent View と機能面で直接比較できる内容として開発者の間で参照されている。</p>
+        <p>Google が Android XR プラットフォームを搭載した「インテリジェントアイウェア」を今秋に4社のパートナーから発売すると発表。昨年発表の Samsung Jinju（Project Moohan の後継？）のほか、XREAL の Project Aura・Warby Parker・Gentle Monster が登壇し、それぞれデザインのアプローチを披露した。</p>
+        <ul>
+          <li>Gemini との連携が核心で、視野内の情報をリアルタイムでエージェント処理する機能が実演された</li>
+          <li>Apple Vision Pro や Meta Ray-Ban との競合が本格化するタイミングで、Google は「4社によるエコシステム」を強調</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -356,70 +421,53 @@
   <!-- Reddit -->
   <section class="section" id="reddit">
     <div class="section-header">
-      <div class="section-title">Reddit コミュニティ ― AIエージェント開発者の声</div>
-      <span class="section-count">4 トピック</span>
+      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
     </div>
 
     <div class="card">
-      <div class="card-title">「Agent View は便利だが /goal こそ真打ち」― r/ClaudeCode で使用報告が続々</div>
+      <div class="card-title">Gemini Spark は「革命」か「監視ツール」か ─ r/Bard・r/google で opt-in の範囲に懸念集中</div>
       <div class="card-meta">
         <span class="badge">Hot Thread</span>
-        <span class="card-source">Source: <a href="https://devtoolpicks.com/blog/claude-code-agent-view-launch-indie-hackers-2026" target="_blank" rel="noopener">DevToolPicks</a> / <a href="https://devtoolpicks.hashnode.dev/claude-code-agent-view-just-launched-what-it-does-and-how-to-use-it" target="_blank" rel="noopener">Hashnode</a> — 2026.05</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://tech.yahoo.com/ai/gemini/article/google-launches-gemini-spark-a-personal-ai-agent-and-more-ai-updates-at-google-io-2026-172856405.html" target="_blank" rel="noopener">Yahoo Tech</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>v2.1.139 リリース直後から r/ClaudeCode にレポートが続出。Agent View の視認性向上は評価されつつも、「最も革命的なのは /goal だ」という意見が多数のアップボートを集めた。「設定した完了条件が達成されるまで Claude が寝ずに働く ― これは自動化ではなく委任の感覚」との投稿が特に共感を得ている。</p>
+        <p>Google I/O での Gemini Spark 発表直後、Reddit では「興奮より慎重論」が優勢に。r/Bard・r/google の双方で「watch out for what you opt into」という警句が高評価を得ており、メールや決済情報へのアクセス範囲が最大の論点となっている。</p>
         <ul>
-          <li>「12セッション並列で /goal を設定したら翌朝すべて完了していた」という体験談が複数</li>
-          <li>「ただし /goal の条件が曖昧だとスタックしてトークンを無駄にする」という失敗報告も。条件記述の精度がスキルとして注目され始めている</li>
-          <li>The New Stack の「なぜ開発者は半信半疑か」記事への反論コメントも多数：「実際に使えば納得する」</li>
+          <li>「Claude Code の /goal やOpenAI Codex の並列実行はコードに閉じているが、Spark は個人データに踏み込む」という比較論が多数</li>
+          <li>「Google のプライバシー実績への不信感から、良い機能でも使う気になれない」という反応も目立つ</li>
+          <li>AI Ultra 限定の先行展開に対し「高額プラン加入者を実験台にするのか」という批判も</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">AI エージェント市場の議論が「熱狂」から「実運用精査」へ ― r/MachineLearning の雰囲気変化</div>
-      <div class="card-meta">
-        <span class="badge">Trend</span>
-        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community / liv_melendez</a> — 2026.05</span>
-      </div>
-      <div class="card-body">
-        <p>2026年5月の Reddit AI エージェントコミュニティを分析した記事によると、議論の質が「AIは何でもできる」という広範な熱狂から「メモリ帯域・レイテンシ・ツールループのオーバーヘッドをどう乗り越えるか」という実運用精査へと移行している。</p>
-        <ul>
-          <li>ターミナルを主たる IDE として使うか・アーキテクチャや法令判断は手書きコードを残すか、という実践的な分断が可視化</li>
-          <li>「AI が何でも変える」という証拠なき投稿はアップボートされなくなり、数字・アーキテクチャ・失敗分析を含む投稿が評価される傾向</li>
-          <li>Claude Code・Cursor・Codex CLI・Gemini CLI を横断した「エージェントスキル」のマーケットプレイス論が新興の議題として浮上</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">GPT-5.3-Codex が Copilot の基盤に ― r/programming で「GitHub 全エンジニアの環境が変わった」と話題</div>
+      <div class="card-title">KPMG × Anthropic を受けた r/MachineLearning の反応 ─「エンタープライズ AI の基準が変わる」</div>
       <div class="card-meta">
         <span class="badge">Discussion</span>
-        <span class="card-source">Source: <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> — 2026.05.17</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">Anthropic</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>GPT-5.3-Codex の Copilot Business・Enterprise 採用が発表された昨日（17日）、r/programming で「これは GitHub を使う全エンジニアの日常が静かに書き換わった瞬間だ」というコメントが高評価を得た。</p>
+        <p>KPMG の27万6千人全員へ Claude を展開するニュースに対し、r/MachineLearning では「これが本当の意味でのエンタープライズ採用だ」という声が集まった。</p>
         <ul>
-          <li>「オプトインでなくデフォルトで適用された点が重要。ベースを引き上げれば平均品質が上がる」という意見</li>
-          <li>サイバーセキュリティ「High capability」区分への懸念も：「脆弱性発見の効率が上がる一方で悪用リスクも上がる」</li>
-          <li>Claude Code との直接比較として「Copilot はバックグラウンド稼働が弱い・Claude Code の /goal に相当する機能が欲しい」という声</li>
+          <li>「Big Four の半分が Anthropic と組んだ。次は Deloitte か EY か」という予測スレッドが浮上</li>
+          <li>「税務・法務・監査という高度専門職で Claude を使うのは、ハルシネーションリスクをどう管理するのかが問われる」という実務的懸念も</li>
+          <li>「27万人規模の同時展開はモデル評価の最大の実験場になる」という研究者視点のコメントも高評価</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">「明日の Google I/O で何が来るか」― r/Googleplex・r/artificial が前夜の予測で盛り上がる</div>
+      <div class="card-title">「実運用精査」の流れ継続 ─ コスト・レイテンシ・プロダクション投入に関する具体的議論が加速</div>
       <div class="card-meta">
-        <span class="badge">Preview</span>
-        <span class="card-source">Source: <a href="https://www.aixploria.com/en/ai-radar/google-io-2026-gemini-announcements-preview/" target="_blank" rel="noopener">AIxploria</a> / <a href="https://www.tomsguide.com/phones/google-pixel-phones/google-i-o-2026-date-time-potential-announcements-and-everything-else-you-need-to-know" target="_blank" rel="noopener">Tom's Guide</a> — 2026.05.18</span>
+        <span class="badge">Trend</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>明日5月19日に Google I/O 2026 の基調講演（日本時間5月20日 午前2時）が行われることを前に、前夜の Reddit では予測スレッドが活況。Gemini 4.0・Android XR グラス・Aluminium OS（Android と ChromeOS の統合）などが主要予測として並ぶ。</p>
+        <p>Reddit AI エージェントコミュニティでは「概念の紹介」より「どこまで本番環境に入れたか」を問う投稿がトレンドの中心に。Claude Code・Codex・Gemini CLI を組み合わせた具体的なコスト試算や障害報告が最も共有されている。</p>
         <ul>
-          <li>「Gemini Spark（永続型AIエージェント）が発表されれば Claude Code の /goal・Codex の並列実行と三つ巴になる」という分析が高評価</li>
-          <li>Android XR グラスには Samsung（Jinju）・XREAL（Project Aura）・Warby Parker・Gentle Monster の4社がパートナーとして登壇予定</li>
-          <li>「Aluminium OS は夢のようだが互換性問題で数年は混乱するだろう」という冷静な予測も</li>
+          <li>「Google I/O でも Anthropic でも発表は多いが、プロダクション投入の壁はモデル性能より組織の変更管理だ」という意見が多数の共感を集める</li>
+          <li>Claude Code <code>/goal</code> + KPMG 規模の展開で「AIエージェント組織設計」がホットトピックに浮上</li>
         </ul>
       </div>
     </div>
@@ -433,74 +481,73 @@
     </div>
 
     <div class="card">
-      <div class="card-title">WHO、DRC・ウガンダのエボラ（バンディブジョ株）アウトブレイクを PHEIC 宣言 ― 約500例・116人死亡、承認ワクチンなし</div>
+      <div class="card-title">WHO 第79回世界保健総会開幕 ─ テドロス事務局長がエボラ PHEIC 対応強化を訴え、国際的資金拠出を要請</div>
       <div class="card-meta">
         <span class="badge">Health</span>
-        <span class="card-source">Source: <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">WHO</a> / <a href="https://www.cnn.com/2026/05/17/africa/ebola-outbreak-congo-uganda-explainer-intl" target="_blank" rel="noopener">CNN</a> / <a href="https://www.npr.org/2026/05/18/g-s1-122655/ebola-outbreak-democratic-republic-congo-uganda" target="_blank" rel="noopener">NPR</a> — 2026.05.16〜18</span>
+        <span class="card-source">Source: <a href="https://www.who.int/news-room/speeches/item/who-director-general-s-address-to-member-states-at-the-79th-world-health-assembly---19-may-2026" target="_blank" rel="noopener">WHO</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>WHO は5月16〜17日、コンゴ民主共和国（DRC）とウガンダで拡大中のエボラウイルス病（原因: バンディブジョウイルス）を「国際的に懸念される公衆衛生上の緊急事態（PHEIC）」に認定した。感染者は約500例（疑い含む）、死者116人（致死率25〜40%）に達している。</p>
+        <p>本日、WHO 第79回世界保健総会（WHA79）がジュネーブで開幕した。テドロス事務局長は加盟国への演説で、DRC・ウガンダのエボラウイルス（バンディブジョ株）PHEIC への緊急対応として、承認済みワクチンがない状況での研究推進・国際的資金拠出・航空便による人道支援の維持を要請した。</p>
         <ul>
-          <li>バンディブジョ株はこれまでに2回の限定的アウトブレイクのみで、標準的な野外検査で検出が難しく、承認済みワクチンも治療薬も存在しない</li>
-          <li>本日（18日）、DRC 在住の米国人1人の感染が確認され、米国は当該地域からの入国を制限する公衆衛生法を発動</li>
-          <li>CDC は30人超のスタッフを DRC に派遣済みで、さらなる増員を準備中</li>
-          <li>Al Jazeera は「エボラとハンタウイルスが同時期に浮上 ― 世界は次のパンデミックに備えているか」と特集を掲載</li>
+          <li>今回の PHEIC 宣言は、テドロス事務局長が緊急委員会を召集せずに独自判断で認定した初のケースとして記録される</li>
+          <li>DRC 在住の米国人感染者が確認されたことで、米国の関与が一段と高まる見込み</li>
+          <li>バンディブジョ株は致死率25〜40%で、承認されたワクチン・治療薬がなく、野外での標準的な検査では検出が難しいという三重の困難</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">UAE バラカ原子力発電所の敷地内でドローン攻撃・火災 ― IAEA が放射線レベルを監視、けが人なし</div>
-      <div class="card-meta">
-        <span class="badge">Middle East</span>
-        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/17/drone-strike-sparks-fire-at-uaes-barakah-nuclear-power-plant" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.thenationalnews.com/news/uae/2026/05/17/uae-launches-investigation-into-source-of-drone-strike-on-barakah-nuclear-plant/" target="_blank" rel="noopener">The National</a> / <a href="https://www.bloomberg.com/news/articles/2026-05-18/how-drone-strike-near-uae-s-barakah-plant-shows-nuclear-sites-vulnerability" target="_blank" rel="noopener">Bloomberg</a> — 2026.05.17〜18</span>
-      </div>
-      <div class="card-body">
-        <p>UAE 唯一の原子力発電所バラカ（アブダビ州アル・ダフラ地区）の敷地周辺で5月17日、ドローン攻撃により屋外発電機が炎上した。UAE 軍はドローン3機のうち2機を迎撃したが、1機が内部フェンス外で火災を引き起こした。</p>
-        <ul>
-          <li>IAEA が UAE 当局と連絡を保ちながら放射線レベルを継続監視中。現時点で放射線への影響はなし</li>
-          <li>ユニット3は緊急ディーゼル発電機で電力供給中。他のユニットは通常稼働</li>
-          <li>UAE はイランとの緊張が高まる中でイスラエルの防空システム・人員を受け入れており、「UAE へのメッセージ」との観測（エルサレム・ポスト）</li>
-          <li>Bloomberg は「ドローン攻撃が原子力施設の脆弱性を改めて示した」と分析。国際的な核施設防護の見直しを促す声が上がっている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">ロシア、ウクライナ8地域に過去最大規模のドローン・ミサイル攻撃 ― 524機のドローンと22発の弾道・巡航ミサイル</div>
+      <div class="card-title">ウクライナ北部ポクロウスク「ほぼ包囲」状態 ─ 米がロシアへの石油制裁免除を2度目の更新</div>
       <div class="card-meta">
         <span class="badge">Ukraine</span>
-        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/18/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.euronews.com/video/2026/05/18/latest-news-bulletin-may-18th-2026-midday" target="_blank" rel="noopener">Euronews</a> — 2026.05.18</span>
+        <span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> / <a href="https://index.minfin.com.ua/en/russian-invading/casualties/" target="_blank" rel="noopener">Minfin</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>ロシア軍は今夜（現地時間5月17〜18日）、ウクライナの8つの地域を標的に攻撃ドローン524機と弾道・巡航ミサイル22発を発射した。地元当局によると市民24人以上（子ども3人含む）が負傷した。</p>
+        <p>ウクライナ軍のポクロウスク北部陣地がロシア軍の圧力でほぼ包囲状態に陥っている。ロシア軍のドローン優勢により、部隊の交代・避難・補給が事実上困難な状況。</p>
         <ul>
-          <li>前週にゼレンスキー大統領がキーウへのミサイル攻撃を受けて公式服喪を宣言したばかりで、今回の攻撃は規模が前回を上回る</li>
-          <li>ウクライナ空軍は多数のドローンを迎撃したと発表したが、いくつかは防空網を突破した</li>
-          <li>欧州各国は防空システムの追加供与を協議中。トランプ政権は「停戦交渉を優先する」との立場を維持</li>
+          <li>ウクライナはザポリージャ州ステプノヒルスクの制圧を主張し、同地域での反撃を継続</li>
+          <li>ウクライナが初の国産グライドボム（原始的だが破壊力が高い兵器）を公開</li>
+          <li>トランプ政権が以前の発言に反してロシアへの石油制裁免除を2回目更新 ─ 「停戦交渉を優先する」姿勢を維持</li>
+          <li>ロシアの累計損失: 戦車11,940両・装甲車24,584両・火砲42,340門（ウクライナ国防省発表）</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">中国・広西でM5.2地震 ― 2人死亡・7,000人以上が柳州市から避難</div>
+      <div class="card-title">米・イラン核交渉 ─ トランプ「深刻な協議中」で軍事攻撃を延期、イランはウラン濃縮権限で妥協拒否</div>
       <div class="card-meta">
-        <span class="badge">Disaster</span>
-        <span class="card-source">Source: <a href="https://www.legion.org/information-center/news/security/2026/may/five-things-to-know-may-18-2026" target="_blank" rel="noopener">The American Legion</a> / <a href="https://www.volcanodiscovery.com/earthquake/news/302750/World-Earthquake-Report-for-Monday-18-May-2026.html" target="_blank" rel="noopener">VolcanoDiscovery</a> — 2026.05.18</span>
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations" target="_blank" rel="noopener">Wikipedia</a> / <a href="https://slate.com/news-and-politics/2026/05/trump-iran-peace-deal-war-news-oil.html" target="_blank" rel="noopener">Slate</a> / <a href="https://www.cnbc.com/2026/05/11/iran-war-trump-negotiation-hormuz-nuclear-talks.html" target="_blank" rel="noopener">CNBC</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>5月18日早朝、中国南西部の広西チワン族自治区でマグニチュード5.2の地震が発生し、柳州市で2人が死亡、7,000人以上が緊急避難した。中国当局は捜索救助活動を展開しており、インフラ被害の詳細な調査が進んでいる。</p>
+        <p>トランプ大統領は、火曜日（本日）に予定していたイランへの軍事攻撃を「深刻な交渉が進行中」として延期したと述べた。湾岸諸国がトランプ政権を説得し、軍事攻撃ではなく外交解決を促したとの報道もある。</p>
+        <ul>
+          <li>米国はすべてのウラン濃縮禁止を要求。イランは高濃縮ウランの廃棄と1.5%以下への濃縮制限を提案したが、米側は不十分と判断</li>
+          <li>イランの交渉担当アラグチ外相は合意の見通しについて「不明」と述べ、ハメネイ師の顧問シャムハニ氏はトランプが求める核プログラムへの管理権限を「ファンタジー」と一蹴</li>
+          <li>イスラム革命防衛隊はこれまでの米・イスラエルによる大規模爆撃を生き延び、むしろ権力を強化したとの見方がある</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">トランプ大統領の2026年第1四半期の取引が開示 ― Microsoft・Meta・Nvidia・Apple・Goldman の売買で2.2〜7.5億ドル</div>
+      <div class="card-title">ベラルーシ、ロシアと核ドリルを開始 ─ ゼレンスキーのNATO攻撃警告から数日後</div>
       <div class="card-meta">
-        <span class="badge">US Politics</span>
-        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/18/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://albertmohler.com/2026/05/18/briefing-5-18-26/" target="_blank" rel="noopener">AlbertMohler.com</a> — 2026.05.18</span>
+        <span class="badge">Security</span>
+        <span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>米国政府倫理局（OGE）が公開した財務開示書類によると、トランプ大統領は2026年第1四半期（1〜3月）に2億2,000万〜7億5,000万ドル相当の証券取引を行っていたことが明らかになった。対象にはMicrosoft・Meta・Nvidia・Apple・Goldman Sachs が含まれ、利益相反への懸念から議会の一部が説明を求めている。</p>
+        <p>ベラルーシがロシアとの合同核演習を開始した。ゼレンスキー大統領がウクライナ・NATO双方への攻撃リスクを警告してから数日後のタイミングで、NATO 加盟国の間に緊張が走っている。ロシアがベラルーシを戦争に深く引き込もうとしているとの懸念が欧州安全保障関係者から出ている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ペルーでM5.9地震 ─ イカ州沖で発生、大きな被害報告なし</div>
+      <div class="card-meta">
+        <span class="badge">Disaster</span>
+        <span class="card-source">Source: <a href="https://www.volcanodiscovery.com/earthquake/news/302819/World-Earthquake-Report-for-Tuesday-19-May-2026.html" target="_blank" rel="noopener">VolcanoDiscovery</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>本日5月19日、ペルーのイカ州沖でM5.9の地震が発生した。周辺地域で揺れが感知されたが、主要な人的被害・構造物被害・津波警報の発令は報告されていない。</p>
       </div>
     </div>
   </section>
@@ -509,50 +556,44 @@
   <section class="section" id="dev">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex vs Claude Code 2026 ── 判断軸とやらない判断</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/miyan/articles/ai-code-codex-vs-claude-code-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
-      </div>
-      <div class="card-body">
-        <p>両ツールを実務で使い込んだ著者が「どちらを選ぶか」ではなく「何をやらせるか・何をやらせないか」という判断軸で整理した実践ガイド。Claude Code は「長期自律・コンテキスト保持・Hooks 連携」、Codex は「GitHub 統合・ChatGPT との往復・モバイルからの承認」に強みがあるとし、「二択ではなく役割分担」を提案する構成が高評価を得ている。Agent View・/goal コマンドリリース後に更新され、今週最多ブックマーク記事となっている。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">自律 AI 秘書を Claude Code で組む — 5層と7つの境界</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
-      </div>
-      <div class="card-body">
-        <p>Claude Code を「自律AI秘書」として設計するためのアーキテクチャ論。「情報収集層・判断層・実行層・記憶層・監査層」の5層と「人間が承認すべき7つの境界」を定義し、/goal コマンドを使った長期自律ループをどう安全に設計するかを解説。Claude Code の Hooks・MCP・Routines を組み合わせたサンプル構成も掲載されており、Agent View リリースのタイミングで注目が集まった。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Claude Codeですべての日常業務を爆速化しよう！</div>
+      <div class="card-title">Claude Code Agent Teams ─ 16台のAIが書いた10万行コンパイラが突きつける「組織設計」という新命題</div>
       <div class="card-meta">
         <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/minorun365/items/114f53def8cb0db60f47" target="_blank" rel="noopener">qiita.com/minorun365</a></span>
+        <span class="card-source"><a href="https://qiita.com/nogataka/items/4996f462dcbdf73adae6" target="_blank" rel="noopener">qiita.com/nogataka</a></span>
       </div>
       <div class="card-body">
-        <p>「2026年年明けから Claude の性能向上が凄まじく、日常業務のあらゆる場面で効果を実感する」という書き出しで始まる入門〜実践記事。Claude Code を「定型作業の自動化ツール」ではなく「仕事を任せるパートナー」として捉え直すことを主軸に、CLAUDE.md の設定・タスク委任のコツ・注意すべきハルシネーション対策まで幅広く解説。/goal コマンドの登場でさらに「任せる」実感が増したと後記が追加されている。</p>
+        <p>Claude Code を使って16台のAIエージェント（チームリーダー1台＋メンバー複数台）が約10万行のコンパイラを共同作成した実験の記録。チームリーダーが各メンバーに独立セッションを割り当て、JSONファイルを介したピアツーピア通信で作業を分担・統合する仕組みを詳述している。</p>
+        <ul>
+          <li>10万行超の出力を得ながら、人間のレビューが必要な「7つの境界」があることを実感として報告</li>
+          <li>「AI が AI を管理する組織設計をどう考えるか」という問いが、KPMG の27万人展開ニュースと共鳴して注目を集めている</li>
+          <li>Agent View・/goal リリース後のタイミングで公開され、「今まさに実験できる」として多数ブックマーク</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code と Zenn 執筆環境を一から育てた記録</div>
+      <div class="card-title">AIエージェント時代、正直しんどい話 ─ Agent OS と仕様駆動開発の現実的課題</div>
       <div class="card-meta">
-        <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/shimo4228/items/1513ae9a3a11769df170" target="_blank" rel="noopener">qiita.com/shimo4228</a></span>
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/ryo369/articles/d02561ddaacc62" target="_blank" rel="noopener">zenn.dev/ryo369</a></span>
       </div>
       <div class="card-body">
-        <p>Claude Code を使って Zenn 記事の執筆・校正・公開フローを構築した個人プロジェクトの記録。Python スクリプトで記事の草稿生成・差分チェック・画像キャプション提案を自動化し、Zenn の CLI と組み合わせてワンコマンドで公開まで通す構成を紹介。「AIがAIについての記事を書く補助をしている」という自己言及的な状況を楽しんで書かれており、ユーモアと実用性を兼ね備えた記事として注目を集めている。</p>
+        <p>「Agent OS」と呼ばれる Claude Code 拡張ツールを使った仕様駆動開発の実体験をもとに、「複数のAIエージェント全員と対話しなければならない疲弊感」と「それでも手放せない生産性向上」のジレンマを率直に語る記事。技術的な詳細だけでなく、エージェント時代の精神的負荷にも踏み込んでいる点が多くの開発者の共感を呼んだ。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Codeを"優秀な新卒部下"として使い倒す ─ 個人開発爆速化の全ワークフロー</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を「優秀だが文脈を共有しないと動けない新卒」と捉え直し、プロジェクト文脈の伝え方・タスク粒度の設計・成果物の受け取り方までを体系的に解説。<code>CLAUDE.md</code> の書き方から始まり、複数セッション管理・Agent View の活用・承認ポイントの設計まで、個人開発者が一人で大きなプロダクトを作るための実践的なフレームワークを提案している。</p>
       </div>
     </div>
   </section>
@@ -560,18 +601,17 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年5月18日（月）</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月19日（火）</p>
   <p style="margin-top:0.5rem;">
     Sources:
     <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
-    <a href="https://pasqualepillitteri.it/en/news/2384/claude-code-agent-view-cli-dashboard-sessions-2026" target="_blank" rel="noopener">Pasquale Pillitteri</a> ·
-    <a href="https://explainx.ai/blog/anthropic-claude-code-agent-view-goal-command" target="_blank" rel="noopener">ExplainX.ai</a> ·
-    <a href="https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Changelog</a> ·
-    <a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener">OpenAI</a> ·
-    <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">WHO</a> ·
-    <a href="https://www.aljazeera.com/news/2026/5/17/drone-strike-sparks-fire-at-uaes-barakah-nuclear-power-plant" target="_blank" rel="noopener">Al Jazeera</a> ·
-    <a href="https://www.democracynow.org/2026/5/18/headlines" target="_blank" rel="noopener">Democracy Now!</a> ·
-    <a href="https://www.aixploria.com/en/ai-radar/google-io-2026-gemini-announcements-preview/" target="_blank" rel="noopener">AIxploria</a> ·
+    <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code Changelog</a> ·
+    <a href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html" target="_blank" rel="noopener">KPMG</a> ·
+    <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener">9to5Google</a> ·
+    <a href="https://www.tomsguide.com/news/live/google-io-2026-live-news-updates" target="_blank" rel="noopener">Tom's Guide</a> ·
+    <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a> ·
+    <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> ·
     <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
     <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
   </p>
