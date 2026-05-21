@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月19日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / Google I/O / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月19日（火）</p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#openai">OpenAI Codex</a>
+  <a href="#googleio">Google I/O</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude Code -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> KPMG 27万6千人全員へ Claude を展開する戦略的グローバル同盟を本日発表（Digital Gateway Powered by Claude）。最新 Claude Code アップデートでは <code>/resume</code> がバックグラウンドセッションに正式対応し、起動時に最大75秒ハングしていた問題を15秒タイムアウトで修正。Code with Claude London は本日開幕。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">276,000+</div><div class="stat-label">KPMG 全従業員が Claude を利用</div></div>
+      <div class="stat-card"><div class="stat-value">15s</div><div class="stat-label">API タイムアウト短縮（旧: 最大75秒ハング）</div></div>
+      <div class="stat-card"><div class="stat-value">May 19</div><div class="stat-label">Code with Claude London 開幕</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">KPMG × Anthropic 戦略的グローバル同盟 ─ Digital Gateway Powered by Claude で27万6千人が Claude を活用</div>
+      <div class="card-meta">
+        <span class="badge">Enterprise</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">Anthropic</a> / <a href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html" target="_blank" rel="noopener">KPMG</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>本日、KPMG と Anthropic が世界的な戦略同盟を締結し、「KPMG Digital Gateway Powered by Claude」を正式発表した。KPMG の276,000人超の全従業員が Claude へのアクセスを得る。</p>
+        <ul>
+          <li>Digital Gateway は Microsoft Azure 上に構築された KPMG のグローバル技術プラットフォームで、税務インサイト・独自ツール・クライアントデータを一元管理している</li>
+          <li>AI エージェントを使って税規制変更への対応ワークフローを構築するのに、以前は数週間かかっていた作業が「数分」に短縮されたと説明</li>
+          <li>プライベートエクイティ向け製品にも Claude を組み込み、ポートフォリオ企業向けの新製品を共同開発予定</li>
+          <li>大手会計事務所の Claude 採用は PwC に続いて2社目。Big Four のうち半数が Anthropic と提携したことになる</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code 最新アップデート ─ /resume でバックグラウンドセッション対応、起動ハング75秒を修正</div>
+      <div class="card-meta">
+        <span class="badge">Update</span>
+        <span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code Changelog</a> / <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>最新 Claude Code リリースはバックグラウンドセッション対応と信頼性向上が中心。</p>
+        <ul>
+          <li><code>/resume</code> のバックグラウンドセッション対応 ─ <code>claude --bg</code> や Agent View で開始したセッションが一覧表示されるようになった</li>
+          <li>バックグラウンドサブエージェント完了通知に経過時間を追加（例: 「Agent completed · 3h 2m 5s」）</li>
+          <li><code>/model</code> は現セッションのみモデルを変更するよう変更。新規セッションのデフォルトはモデルピッカーの「d」キーで設定</li>
+          <li>起動時に最大75秒ハングしていた問題を修正 ─ サイドチャネルのAPI呼び出しが15秒でタイムアウトするよう改善</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude London 本日開幕 ─ Managed Agents 三機能・API レート制限倍増・SpaceX Colossus 1 提携が目玉</div>
+      <div class="card-meta">
+        <span class="badge">Conference</span>
+        <span class="card-source">Source: <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Simon Willison</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic 開発者カンファレンス「Code with Claude」のロンドン会場が本日5月19日に開幕（Extended London は翌20日）。Claude Managed Agents に3機能追加、API レート制限を2倍に拡大、SpaceX Colossus 1 とのコンピュート提携が主な発表内容。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI Codex -->
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI × Dell Technologies ─ Codex をハイブリッド・オンプレミス環境へ展開するエンタープライズパートナーシップ</div>
+      <div class="card-meta">
+        <span class="badge">Partnership</span>
+        <span class="card-source">Source: <a href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">OpenAI / Releasebot</a> — 2026.05.18</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI と Dell Technologies が Codex のオンプレミス・ハイブリッドクラウド展開に向けた企業向けパートナーシップを発表。セキュリティポリシー上クラウドのみに頼れない大企業・政府機関向けに Codex のエージェント機能をプライベート環境で利用できるようにする。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.5 が ChatGPT・Codex 全プランへ展開開始 ─ 週間ユーザー400万人超に</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>GPT-5.5 を Plus・Pro・Business・Enterprise ユーザーへ順次展開中。Codex の週間アクティブユーザーが400万人を突破。Codex モバイルアプリのプレビューが ChatGPT アプリに追加された。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI、コンテンツ来歴（Content Provenance）機能を発表 ─ AI 生成コンテンツの透明性強化</div>
+      <div class="card-meta">
+        <span class="badge">Safety</span>
+        <span class="card-source">Source: <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI News</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>C2PA 規格に準拠したメタデータを AI 生成物に埋め込み、「これは AI が生成した」という情報を第三者が検証できるエコシステムを目指す。Codex が生成したコードへの応用も今後検討される。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google I/O -->
+  <section class="section" id="googleio">
+    <div class="section-header">
+      <div class="section-title">Google I/O 2026 ─ 本日の全発表まとめ</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> Gemini Spark（24時間稼働のパーソナルAIエージェント）・Gemini 3.5 Flash（フロンティアモデル比4倍高速）・Gemini Omni（マルチモーダル動画生成）・Android XR グラス（4社パートナー・今秋発売）が相次いで発表された。
+    </div>
+    <div class="card">
+      <div class="card-title">Gemini Spark ─「デジタルライフを自律的にこなす24時間パーソナルAIエージェント」</div>
+      <div class="card-meta">
+        <span class="badge">Agent</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>Google が I/O 2026 で発表した Gemini Spark は、Gemini を「質問に答えるアシスタント」から「ユーザーに代わって実際に作業を行うアクティブなパートナー」へと転換させる24時間稼働の個人エージェント。来週より Google AI Ultra 会員（米国）に先行提供。</p>
+        <ul>
+          <li>クラウドベースのため、スマートフォンをロックしても Spark はバックグラウンドで稼働し続ける</li>
+          <li>活用例: 毎月のクレジットカード明細を自動解析して隠れた費用を検出 / 子供の学校からのメールを監視して締め切りをまとめて報告</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Gemini 3.5 Flash ─ フロンティアモデル比4倍の出力速度、エージェントタスクで 3.1 Pro を上回る</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener">9to5Google</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>コーディング・エージェント・マルチモーダルのベンチマークで Gemini 3.1 Pro を上回り、他社フロンティアモデルより出力トークン毎秒が4倍高速。本日より Gemini アプリ・Google Search・Gemini API で順次展開。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Gemini Omni ─ 実世界の知識に基づいた動画を生成する新マルチモーダルモデル</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener">9to5Google</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>画像・音声・動画・テキストを入力として受け取り、実世界の知識に根ざした動画を出力する新シリーズ。Google Flow（Android ベータ版）・Google Flow Music（iOS版）と連携。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Android XR グラス ─ Samsung・XREAL・Warby Parker・Gentle Monster の4社パートナーで今秋発売</div>
+      <div class="card-meta">
+        <span class="badge">Hardware</span>
+        <span class="card-source">Source: <a href="https://www.tomsguide.com/news/live/google-io-2026-live-news-updates" target="_blank" rel="noopener">Tom's Guide</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>Google が Android XR プラットフォームを搭載した「インテリジェントアイウェア」を今秋に4社のパートナーから発売すると発表。Gemini との連携で視野内の情報をリアルタイムでエージェント処理する機能が実演された。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Gemini Spark は「革命」か「監視ツール」か ─ r/Bard・r/google で opt-in の範囲に懸念集中</div>
+      <div class="card-meta">
+        <span class="badge">Hot Thread</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>Google I/O での Gemini Spark 発表直後、Reddit では「興奮より慎重論」が優勢に。メールや決済情報へのアクセス範囲が最大の論点となっており、「Claude Code /goal や Codex はコードに閉じているが、Spark は個人データに踏み込む」という比較論が多数見られた。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">KPMG × Anthropic を受けた r/MachineLearning の反応 ─「エンタープライズ AI の基準が変わる」</div>
+      <div class="card-meta">
+        <span class="badge">Discussion</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">Anthropic</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>「Big Four の半分が Anthropic と組んだ。次は Deloitte か EY か」という予測スレッドが浮上。「27万人規模の同時展開はモデル評価の最大の実験場になる」という研究者視点のコメントも高評価を集めた。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「実運用精査」の流れ継続 ─ コスト・レイテンシ・プロダクション投入に関する具体的議論が加速</div>
+      <div class="card-meta">
+        <span class="badge">Trend</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>Reddit AI エージェントコミュニティでは「概念の紹介」より「どこまで本番環境に入れたか」を問う投稿がトレンドの中心に。「プロダクション投入の壁はモデル性能より組織の変更管理だ」という意見が多数の共感を集めている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">WHO 第79回世界保健総会開幕 ─ エボラ PHEIC 対応強化を訴え、国際的資金拠出を要請</div>
+      <div class="card-meta">
+        <span class="badge">Health</span>
+        <span class="card-source">Source: <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>WHO 第79回世界保健総会（WHA79）がジュネーブで開幕。DRC・ウガンダのエボラウイルス（バンディブジョ株）PHEIC への緊急対応として、承認済みワクチンがない状況での研究推進・国際的資金拠出を要請。致死率25〜40%で、承認されたワクチン・治療薬がなく野外での標準的な検査では検出が難しいという三重の困難がある。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ北部ポクロウスク「ほぼ包囲」状態 ─ 米がロシアへの石油制裁免除を2度目の更新</div>
+      <div class="card-meta">
+        <span class="badge">Ukraine</span>
+        <span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>ウクライナ軍のポクロウスク北部陣地がロシア軍の圧力でほぼ包囲状態に。トランプ政権がロシアへの石油制裁免除を2回目更新し「停戦交渉を優先する」姿勢を維持。ロシアの累計損失: 戦車11,940両・装甲車24,584両（ウクライナ国防省発表）。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン核交渉 ─ トランプ「深刻な協議中」で軍事攻撃を延期</div>
+      <div class="card-meta">
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: <a href="https://www.cnbc.com/2026/05/11/iran-war-trump-negotiation-hormuz-nuclear-talks.html" target="_blank" rel="noopener">CNBC</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領は「深刻な交渉が進行中」として軍事攻撃を延期。米国はすべてのウラン濃縮禁止を要求。イランは1.5%以下への濃縮制限を提案したが不十分と判断されている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ベラルーシ、ロシアと核ドリルを開始 ─ ゼレンスキーのNATO攻撃警告から数日後</div>
+      <div class="card-meta">
+        <span class="badge">Security</span>
+        <span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>ベラルーシがロシアとの合同核演習を開始。NATO 加盟国の間に緊張が走っており、ロシアがベラルーシを戦争に深く引き込もうとしているとの懸念が欧州安全保障関係者から出ている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ペルーでM5.9地震 ─ イカ州沖で発生、大きな被害報告なし</div>
+      <div class="card-meta">
+        <span class="badge">Disaster</span>
+        <span class="card-source">Source: <a href="https://www.volcanodiscovery.com/" target="_blank" rel="noopener">VolcanoDiscovery</a> — 2026.05.19</span>
+      </div>
+      <div class="card-body">
+        <p>ペルーのイカ州沖でM5.9の地震が発生。主要な人的被害・構造物被害・津波警報の発令は報告されていない。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code Agent Teams ─ 16台のAIが書いた10万行コンパイラが突きつける「組織設計」という新命題</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/nogataka/items/4996f462dcbdf73adae6" target="_blank" rel="noopener">qiita.com/nogataka</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を使って16台のAIエージェントが約10万行のコンパイラを共同作成した実験の記録。10万行超の出力を得ながら、人間のレビューが必要な「7つの境界」があることを実感として報告。KPMG の27万人展開ニュースと共鳴して注目を集めている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AIエージェント時代、正直しんどい話 ─ Agent OS と仕様駆動開発の現実的課題</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/ryo369/articles/d02561ddaacc62" target="_blank" rel="noopener">zenn.dev/ryo369</a></span>
+      </div>
+      <div class="card-body">
+        <p>「Agent OS」を使った仕様駆動開発の実体験をもとに、「複数のAIエージェント全員と対話しなければならない疲弊感」と「それでも手放せない生産性向上」のジレンマを率直に語る記事。エージェント時代の精神的負荷にも踏み込んでいる点が多くの開発者の共感を呼んだ。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Codeを"優秀な新卒部下"として使い倒す ─ 個人開発爆速化の全ワークフロー</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を「優秀だが文脈を共有しないと動けない新卒」と捉え直し、<code>CLAUDE.md</code> の書き方から複数セッション管理・Agent View 活用・承認ポイントの設計まで体系的に解説。個人開発者が一人で大きなプロダクトを作るための実践的フレームワークを提案。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月19日（火）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
+    <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code Changelog</a> ·
+    <a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://9to5google.com" target="_blank" rel="noopener">9to5Google</a> ·
+    <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a> ·
+    <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
