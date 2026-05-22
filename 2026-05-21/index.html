@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / セキュリティ / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月21日（木）— <a href="../index.html">最新版へ</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#security">セキュリティ</a>
+  <a href="#openai">OpenAI Codex</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> Anthropic が Q2 売上 $10.9B・営業利益 $559M を見込み、<strong>創業5年で初の黒字化達成</strong>と報じられた（TechBriefly / TechCrunch）。Code with Claude London が最終日を迎え、Fortune が「AIソフトウェアエンジニアリングの主流化」を特集。Claude Agents では自社インフラ上でのエージェント稼働と MCP Tunnels が正式提供開始。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">$10.9B</div><div class="stat-label">Anthropic Q2 売上予測（前四半期比 2 倍以上）</div></div>
+      <div class="stat-card"><div class="stat-value">$559M</div><div class="stat-label">Q2 営業利益予測（初の黒字化）</div></div>
+      <div class="stat-card"><div class="stat-value">$1.25B/月</div><div class="stat-label">SpaceX Colossus 1 コンピュート契約（〜2029年5月）</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic、創業5年で初の四半期黒字化 ─ Q2 売上 $10.9B・営業利益 $559M、Netflix・KPMG・Spotify など大手が牽引</div>
+      <div class="card-meta">
+        <span class="badge">Finance</span>
+        <span class="card-source">Source: <a href="https://techbriefly.com/2026/05/21/anthropic-operating-profit-quarterly-revenue-109b/" target="_blank" rel="noopener">TechBriefly</a> / <a href="https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html" target="_blank" rel="noopener">CNBC</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が2026年第2四半期（4〜6月）の売上を少なくとも $10.9B と見込み、$559M の営業利益を投資家向け資料に記載していることが明らかになった。Q1（$4.8B）から2倍以上の急増で、同社創業以来初の黒字四半期となる見通しだ。</p>
+        <ul>
+          <li>エンタープライズ利用が Claude Code 売上の半数以上を占め、Netflix・Spotify・KPMG・L'Oréal・Salesforce など大手顧客が急増</li>
+          <li>消費者向け利用も「急激な増加（sharp rise）」を記録し、インフラへの負荷が「inevitable strain」と表現されるほど高まっている</li>
+          <li>コンピュートコスト対策として5月上旬に SpaceX と締結した Colossus 1 契約（メンフィス・テネシー州）は月額 $1.25B、2029年5月まで。この巨額コストにより年間を通じた黒字維持は不確定とされる</li>
+          <li>エンタープライズ需要の拡大と IPO 観測が重なり、OpenAI のバリュエーションを超える可能性を指摘するアナリストも（ソウル経済新聞）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude London 最終日 ─ Fortune「AIソフトウェアエンジニアリングと、それをめぐる不安が主流になった」</div>
+      <div class="card-meta">
+        <span class="badge">Conference</span>
+        <span class="card-source">Source: <a href="https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/" target="_blank" rel="noopener">Fortune</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic の開発者カンファレンス「Code with Claude」ロンドン会場（5月20〜21日）が最終日を迎えた。Fortune 誌が同イベントを現地取材し、「AIを使ったコーディングが主流となり、それに伴う不安（anxieties）も同様に主流になった」と報じている。</p>
+        <ul>
+          <li>Anthropic は今後のカンファレンス日程として東京（6月5〜6日）を予告。グローバル展開を加速</li>
+          <li>ロンドン会場ではプラットフォーム・ツール系の発表が中心で、次世代フロンティアモデルのリリースアナウンスはなし</li>
+          <li>「AI が書いたコードをどこまでレビューすべきか」「ソフトウェアエンジニアの役割はどう変わるか」といったパネルディスカッションが来場者の反響を集めた</li>
+          <li>Google I/O・OpenAI のモバイル展開・Code with Claude という三大イベントが一週間に集中し、AIエージェント「祭り週」として業界で話題に</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Agents 新機能 ─ 自社インフラ上のエージェント稼働（Sandboxes）と社内システムへの安全なアクセス（MCP Tunnels）を正式提供</div>
+      <div class="card-meta">
+        <span class="badge">Platform</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic</a> / <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が Claude Agents の新機能として、企業が自社インフラ上でエージェントを稼働させるための「Sandboxes」と、パブリックインターネットを経由せずに社内システムへアクセスできる「MCP Tunnels」を正式提供開始した。</p>
+        <ul>
+          <li>Sandboxes: 企業の AWS・Azure・GCP 等のプライベート環境上で Claude エージェントを実行可能。Cloudflare・Daytona・Modal・Vercel をサンドボックスパートナーとして選択可能</li>
+          <li>MCP Tunnels: 社内データベース・API・ツールへ、VPN 不要・ファイアウォール設定変更不要でエージェントからセキュアにアクセス。限定研究プレビューとして開始</li>
+          <li>KPMG の Digital Gateway Powered by Claude との連携強化にも直結する機能で、企業内展開の標準インフラになる可能性がある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="security">
+    <div class="section-header">
+      <div class="section-title">セキュリティ &amp; 業界動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code サンドボックス脆弱性（CVE-2026-39398）─ SOCKS5 Null-Byte インジェクションで5.5ヶ月・130バージョンにわたりデータ窃取が可能だった</div>
+      <div class="card-meta">
+        <span class="badge">Security</span>
+        <span class="card-source">Source: <a href="https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/" target="_blank" rel="noopener">SecurityWeek</a> / <a href="https://cybersecuritynews.com/claude-codes-network-sandbox-vulnerability/" target="_blank" rel="noopener">CybersecurityNews</a> — 2026.05.20</span>
+      </div>
+      <div class="card-body">
+        <p>セキュリティ研究者の Aonan Guan 氏が、Anthropic が Claude Code のネットワークサンドボックスに存在したバイパス脆弱性（CVE-2026-39398）をサイレントにパッチしていたことを公表した。2025年10月20日の Sandbox GA 版（v2.0.24）から v2.1.89 までの約130バージョン・5.5ヶ月間にわたり影響していた。</p>
+        <ul>
+          <li><strong>攻撃手法（SOCKS5 Hostname Null-Byte Injection）:</strong> <code>attacker.evil.com\x00.google.com</code> のようなホスト名を作成すると、JSフィルタは <code>.google.com</code> を見て許可判定、OS は <code>attacker.evil.com</code> へ実際に接続する</li>
+          <li>悪意ある MCP サーバー・npm パッケージを経由して、認証情報・ソースコード・環境変数などを外部に送信できた</li>
+          <li>Anthropic は3月27日に修正をコミット、3月31日の v2.1.88 でリリースしたが、リリースノートにセキュリティ修正を記載せず批判が相次いだ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Microsoft、社内 Claude Code ライセンスを廃止 ─ Experiences &amp; Devices 部門が6月末までに GitHub Copilot CLI へ移行</div>
+      <div class="card-meta">
+        <span class="badge">Industry</span>
+        <span class="card-source">Source: <a href="https://the-decoder.com/microsoft-pulls-claude-code-licenses-and-pushes-developers-back-toward-its-own-ai-tool/" target="_blank" rel="noopener">The Decoder</a> / <a href="https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives" target="_blank" rel="noopener">Windows Central</a> — 2026.05.14〜21</span>
+      </div>
+      <div class="card-body">
+        <p>5月14日、Microsoft が社内の Claude Code 実験を事実上終了した。Windows・Microsoft 365・Outlook・Teams・Surface を担当する Experiences &amp; Devices 部門が対象で、6月30日までにほとんどのライセンスが削除される。</p>
+        <ul>
+          <li>昨年12月に数千名の社員へ Claude Code を展開し、約5ヶ月間の大規模実験を実施</li>
+          <li>公式理由: 「今後は直接製品を形成できる Copilot CLI に標準化する」（Rajesh Jha EVP）</li>
+          <li>非公式の理由: 開発者が自社製品より Claude Code を好んで使い、コストが想定を超えて膨らんだことが主因とされる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex に搭載 ─ NVIDIA GB200 NVL72 上で稼働、モバイル展開も開始</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex に GPT-5.5 を統合した。GPT-5.5 は NVIDIA GB200 NVL72 ラックスケールシステム上で稼働し、GPT-5.4 より少ないトークンで優れた結果を提供する。Codex の ChatGPT モバイルアプリへの展開もプレビュー開始。</p>
+        <ul>
+          <li>Plus・Pro・Business・Enterprise ユーザー向けに順次ロールアウト</li>
+          <li>モバイルから作業の確認、コマンド承認、スレッド操作が可能に</li>
+          <li>週間アクティブユーザーは400万人超で推移</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Gartner Magic Quadrant「Leader」獲得 &amp; Goal Mode が正式機能に</div>
+      <div class="card-meta">
+        <span class="badge">Update</span>
+        <span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">Codex Changelog</a> / <a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-leads-in-ai-coding-agents" target="_blank" rel="noopener">StartupHub.ai</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Gartner の AI コーディングエージェント分野の Magic Quadrant で「Leader」指定を獲得。Cisco・Datadog・Dell・NVIDIA など大手企業での採用が評価された。Goal Mode が実験的機能を卒業し正式リリース。</p>
+        <ul>
+          <li>Goal Mode: 特定の目標に向けてエージェントが数時間〜数日単位で自律的に作業を継続</li>
+          <li>Windows Sandbox セキュリティ強化：ファイアウォール制御ネットワークブロック、厳格なファイル書き込み制御を追加</li>
+          <li>AWS Bedrock ログインサポートを追加 ─ IAM ロール・SSO を使って Codex エージェントへアクセス可能に</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Microsoft に裏切られた感」─ r/programming・r/microsoft で Claude Code 廃止への反発が広がる</div>
+      <div class="card-meta">
+        <span class="badge">Hot Thread</span>
+        <span class="card-source">Source: <a href="https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives" target="_blank" rel="noopener">Windows Central</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>Microsoft が社内 Claude Code ライセンスを廃止したニュースに対し、Reddit では「Microsoft が競合製品を囲い込むためにツールの選択肢を奪っている」という批判的スレッドが急増した。「Claude Code を使い続けるために個人ライセンスを自費購入する」という声も多数見られた。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic 黒字化に r/MachineLearning が沸く ─「AI は本当にビジネスになった」vs「SpaceX コンピュート費用で来期は赤字転落も」</div>
+      <div class="card-meta">
+        <span class="badge">Discussion</span>
+        <span class="card-source">Source: <a href="https://techbriefly.com/2026/05/21/anthropic-operating-profit-quarterly-revenue-109b/" target="_blank" rel="noopener">TechBriefly</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic 黒字化報道を受け、r/MachineLearning では「AI 産業全体の転換点」と捉える楽観論と、「Colossus 1 契約（月 $1.25B）が本格稼働すれば来期は再び赤字」という懐疑論が真っ向から対立した。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code サンドボックス脆弱性への開発者反応 ─「Anthropic の開示姿勢」を問う声が集まる</div>
+      <div class="card-meta">
+        <span class="badge">Security</span>
+        <span class="card-source">Source: <a href="https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/" target="_blank" rel="noopener">SecurityWeek</a> — 2026.05.20</span>
+      </div>
+      <div class="card-body">
+        <p>r/netsec・r/ClaudeAI では「5.5ヶ月間・130バージョンにわたって存在した脆弱性をリリースノートに一切記載しないのはセキュリティ通知の最低ラインを下回る」という批判が高評価を集めた。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">エボラ感染拡大 ─ 疑い例600件・死者139人、バンディブジョ株向けのワクチン・治療薬なし。WHO 緊急委が追加対策を協議</div>
+      <div class="card-meta">
+        <span class="badge">Health</span>
+        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">WHO</a> — 2026.05.20〜21</span>
+      </div>
+      <div class="card-body">
+        <p>WHO が5月16日に国際公衆衛生緊急事態（PHEIC）を宣言したコンゴ民主共和国・ウガンダのエボラ感染拡大が続く。疑い例約600件、死者139人（確認済み51件）。バンディブジョ株専用ワクチンの開発に「最長9ヶ月」かかると WHO が警告。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ウクライナ戦争 1548日目 ─ ロシアが1日で8,902機のドローンを投入、前24時間の戦闘交戦233件</div>
+      <div class="card-meta">
+        <span class="badge">Ukraine</span>
+        <span class="card-source">Source: <a href="https://empr.media/news/war/russia-ukraine-war-updates-key-developments-as-of-may-21-2026/" target="_blank" rel="noopener">EMPR Media</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>前24時間で1回のミサイル攻撃・98回の航空攻撃（誘導爆弾325発）・8,902機のカミカゼドローン・3,047回の地上攻撃を記録。ウクライナ軍はロシア側の損失を戦死・負傷910名と発表。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">米上院、イラン軍事攻撃制限決議を 50-47 で前進 ─ 共和党4名が賛成に回り、下院でも採決へ</div>
+      <div class="card-meta">
+        <span class="badge">US Politics</span>
+        <span class="card-source">Source: <a href="https://www.nbcnews.com/politics/congress/senate-advances-resolution-end-iran-war-trump-bill-cassidy-rcna346001" target="_blank" rel="noopener">NBC News</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>米上院は、トランプ大統領がイランへのさらなる軍事攻撃を命令する権限を制限する戦争権限決議を 50-47 で委員会から排出した。Rand Paul・Collins・Murkowski・Cassidy の共和党4名が賛成票を投じた。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">国連総会、気候変動対策義務の決議を 141-8 で採択 ─ 2025年 ICJ 意見書を支持</div>
+      <div class="card-meta">
+        <span class="badge">Climate</span>
+        <span class="card-source">Source: <a href="https://www.justsecurity.org/139509/early-edition-may-21-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>国連総会が2025年の ICJ 諮問意見「各国は気候変動に対処する法的義務を負う」を支持する決議を賛成141・反対8で採択。法的拘束力はないが、今後の気候変動訴訟・国連交渉の根拠として援用される可能性がある。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ミャンマー軍、インド・タイ国境2町を奪還 ─ トンザン・モータウンを制圧</div>
+      <div class="card-meta">
+        <span class="badge">Asia</span>
+        <span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-may-21-2026" target="_blank" rel="noopener">Morning Star</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>ミャンマー軍がインド国境近くのトンザン（チン州）とタイ国境上のモータウン（タニンダーリー地方）を約2週間の作戦の末に奪還したと発表。2025年の抵抗勢力の攻勢で占領されていた要衝。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">自律 AI 秘書を Claude Code で組む — 5層アーキテクチャと7つの境界</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を中心に「自律 AI 秘書」を設計・実装した実践録。スケジュール管理・メール要約・タスク優先度付けを担う5層構造と、エージェントに委ねてはいけない「7つの境界」（金銭支出・個人情報送信・外部公開など）を明文化。CLAUDE.md 設計テンプレートと hooks 実装例を GitHub で公開。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude CodeでPRレビューを自動化する設計と実装 ── 「AIレビューだけでマージ」を実現するまで</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/nogataka/items/ceae4e70fc4cca2e2c9e" target="_blank" rel="noopener">qiita.com/nogataka</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code エージェントを GitHub Actions に組み込み、PR の83%を人間レビューなしで自動マージする仕組みを実現。「エージェントが不確実と判断した場合は人間エスカレーション」を必須ルールとして組み込んだ実装。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">コードを書けない私が、AIに「チーム」を持たせるまで ─ Zenn Books で本を出しました</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/saitoko/items/2225ddd693e6ec1011ff" target="_blank" rel="noopener">qiita.com/saitoko</a></span>
+      </div>
+      <div class="card-body">
+        <p>プログラミング未経験の著者が Claude Code を使い、AIエージェント「チーム」でプロダクトを開発した経験をもとに Zenn Books で出版した告知記事。エージェントチームの役割分担設計と成果物検証プロセスを自然言語だけで構築するノウハウを体系化。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月21日（木）</p>
+  <p style="margin-top:0.5rem;">アーカイブ版 — <a href="../index.html">最新版へ戻る</a></p>
+</footer>
+
+</body>
+</html>
