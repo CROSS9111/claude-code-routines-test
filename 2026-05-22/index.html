@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月22日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1f2328;
+      margin-bottom: 0.3rem;
+    }
+    header h1 span {
+      border-bottom: 3px solid #0366d6;
+      padding-bottom: 2px;
+    }
+    header .subtitle {
+      color: #656d76;
+      font-size: 0.88rem;
+      margin-bottom: 0.5rem;
+    }
+    header .date {
+      font-size: 0.83rem;
+      color: #656d76;
+    }
+
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #656d76;
+      font-size: 0.83rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #0366d6;
+      border-color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .section { margin-bottom: 3rem; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1f2328;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: #0366d6;
+      border-radius: 2px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .section-count {
+      font-size: 0.78rem;
+      color: #656d76;
+      margin-left: auto;
+    }
+
+    .alert {
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #0366d6;
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.88rem;
+      color: #1f2328;
+      line-height: 1.65;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0366d6;
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      color: #656d76;
+      margin-top: 0.2rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.85rem;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .card-title {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: #1f2328;
+      margin-bottom: 0.45rem;
+      line-height: 1.45;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 3px;
+      border: 1px solid #e5e7eb;
+      color: #656d76;
+      background: #ffffff;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .card-source {
+      font-size: 0.78rem;
+      color: #656d76;
+    }
+    .card-body {
+      font-size: 0.875rem;
+      color: #1f2328;
+      line-height: 1.7;
+    }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1.4rem 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #656d76;
+    }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .container { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / OpenAI Codex / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月22日（金）&nbsp;|&nbsp; <a href="../2026-05-21/index.html">前日版（5/21）</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#openai">OpenAI Codex</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude Code -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目:</strong> MIT Technology Review が「Code with Claude は好むと好まざるとにかかわらずコーディングの未来を見せた」と総括。Anthropic が「<strong>Claude Code for State and Local Governments</strong>」ウェビナーを本日開催し、公共セクターへの本格展開を加速。Claude Managed Agents の Dreaming・MCP Tunnels・セルフホストサンドボックスの詳細が各メディアで解説される一日となった。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">276,000+</div><div class="stat-label">KPMG 全社員への Claude 展開規模</div></div>
+      <div class="stat-card"><div class="stat-value">$200M</div><div class="stat-label">Gates Foundation との AI 医療パートナーシップ</div></div>
+      <div class="stat-card"><div class="stat-value">6月5〜6日</div><div class="stat-label">Code with Claude Tokyo（次回開催）</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">MIT Technology Review「Code with Claude はコーディングの未来を見せた ─ 好むと好まざるとにかかわらず」</div>
+      <div class="card-meta">
+        <span class="badge">Analysis</span>
+        <span class="card-source">Source: <a href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">MIT Technology Review</a> — 2026.05.21</span>
+      </div>
+      <div class="card-body">
+        <p>MIT Technology Review が Code with Claude ロンドン会場の2日間を総括する詳細レポートを掲載した。タイトルの「whether you like it or not（好むと好まざるとにかかわらず）」が示す通り、AIによるソフトウェア開発の変容が不可逆であることを強調した内容となっている。</p>
+        <ul>
+          <li>同誌は「Anthropic 自身が認めるように、Claude Code によって書かれたコードが Anthropic 社内の大半を占める」という事実を最も象徴的なデータとして挙げた</li>
+          <li>カンファレンスで多くの登壇者が語った「AIとの協働不安」をレポートは「不安は主流化した（anxieties have gone mainstream）」と整理 ─ 一部の先進的開発者だけの問題ではなく、業界全体が向き合う課題になったと指摘</li>
+          <li>「AI がコードを書く世界で、ソフトウェアエンジニアは何をするのか」という問いに対し、登壇者・参加者の間では「判断・設計・倫理的ゲートキーピング」という方向性で概ね合意が形成されつつある</li>
+          <li>次回 Tokyo（6月5〜6日）は日本のエンタープライズ市場への本格アプローチとして注目される</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Claude Code for State and Local Governments」ウェビナー開催（本日）─ 公共セクターへの Claude 展開が本格化</div>
+      <div class="card-meta">
+        <span class="badge">Government</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/events" target="_blank" rel="noopener">Anthropic Events</a> — 2026.05.22</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が本日（5月22日）、米国の州・地方政府向けに Claude Code の活用を紹介するウェビナーを開催した。Anthropic 黒字化・エンタープライズ契約の急増という背景のもと、公共セクターへの展開が同社の次の成長フロンティアとして位置付けられている。</p>
+        <ul>
+          <li>行政サービスのデジタル化・レガシーシステムのモダナイゼーション・市民向けチャットボットの開発事例などが紹介された</li>
+          <li>連邦政府向けには既に別途の取り組みが進んでおり、州・地方レベルへの展開は Anthropic の公共セクター戦略の新段階を意味する</li>
+          <li>Gates Foundation との $200M パートナーシップ（医療・公衆衛生 AI）も公共セクター展開の一環として位置付けられている</li>
+          <li>KPMG の276,000名全社員展開・PwC の活用に続き、コンサルティング大手を通じた間接的な行政 DX 支援も加速する見通し</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Managed Agents 詳細解説 ─ Dreaming・Outcomes・MCP Tunnels・セルフホストサンドボックスの全体像が明らかに</div>
+      <div class="card-meta">
+        <span class="badge">Platform</span>
+        <span class="card-source">Source: <a href="https://9to5mac.com/2026/05/19/anthropic-enhances-claude-managed-agents-with-two-new-privacy-and-security-features/" target="_blank" rel="noopener">9to5Mac</a> / <a href="https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/" target="_blank" rel="noopener">The Decoder</a> / <a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/" target="_blank" rel="noopener">InfoQ</a> — 2026.05.19〜22</span>
+      </div>
+      <div class="card-body">
+        <p>Code with Claude カンファレンス終了を受け、複数のテックメディアが Claude Managed Agents の新機能群を改めて詳細解説。各機能の用途と制限が整理された。</p>
+        <ul>
+          <li><strong>Dreaming（夢）:</strong> エージェントがタスク終了後にトランスクリプトを内省し「次回の自分への注記」を生成。同じコードベースで後続エージェントがこの注記を参照し、過去のエラーパターンを回避できる。複数タスクを横断してパターンを統合・圧縮する機能も含む</li>
+          <li><strong>Outcomes（成果基準）:</strong> 「テストが全て通ること」「PR レビューが承認されること」など成功条件を事前定義し、エージェントがその条件達成を目標に自律的に作業する仕組み</li>
+          <li><strong>セルフホストサンドボックス（Public Beta）:</strong> Cloudflare・Daytona・Modal・Vercel をパートナーとして採用。エージェントのオーケストレーション・コンテキスト管理は Anthropic インフラ、ツール実行は自社環境で行う分割アーキテクチャ</li>
+          <li><strong>MCP Tunnels（Limited Research Preview）:</strong> 社内 MCP サーバーへのプライベートルーティング。VPN 不要・ファイアウォール変更不要で社内ナレッジベースをリアルタイム参照可能。現時点はアクセスリクエスト制</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI Codex -->
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex に搭載 ─ NVIDIA GB200 NVL72 上で稼働、GPT-5.4 より少ないトークンで高精度を実現</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex の基盤モデルを GPT-5.5 に更新した。NVIDIA GB200 NVL72 ラックスケールシステム上で稼働し、同等タスクで GPT-5.4 より少ないトークン消費で高い精度を発揮するとされる。Plus・Pro・Business・Enterprise ユーザーへ順次ロールアウト中。</p>
+        <ul>
+          <li>The New Stack が「実際の Python コードベースでテストした結果、これまでで最も強力な Claude Code のライバル」と評価</li>
+          <li>Codex の週間アクティブユーザーは400万人超を維持。Cisco・Datadog・Dell・NVIDIA などの大企業が主要顧客</li>
+          <li>Gartner Magic Quadrant AI コーディングエージェント部門で「Leader」指定を獲得。大規模ソフトウェア開発ワークフローのサポート能力が評価された</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex がスマートフォンに ─ ChatGPT モバイルアプリにプレビュー統合、Goal Mode も正式機能に昇格</div>
+      <div class="card-meta">
+        <span class="badge">Feature</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">Codex Changelog</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex を ChatGPT モバイルアプリに統合するプレビューを開始。移動中でも作業確認・コマンド承認・アクティブなコーディングタスクへの接続が可能になる。Goal Mode が実験的機能を卒業し、アプリ・IDE 拡張・CLI の全チャネルで正式利用可能に。</p>
+        <ul>
+          <li>Goal Mode: 特定の目標（例：「このバグを修正しテストを全通過させる」）に向けてエージェントが数時間〜数日単位で自律稼働する機能</li>
+          <li>タスク完了時のタブグループ作成を廃止し、タブアイコンによるステータス表示に変更 ─ UI の煩雑さが解消された</li>
+          <li>AWS Bedrock ログインサポートを追加。IAM ロール・SSO を使って既存の AWS 認証基盤から Codex エージェントへシームレスにアクセス可能</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/MachineLearning：AIエージェント議論が「演劇的」から「オペレーション重視」へ ─「どのモデルか」より「どのワークフローか」に関心が移行</div>
+      <div class="card-meta">
+        <span class="badge">Trend</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community（Reddit まとめ）</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>5月の Reddit AI エージェントコミュニティを俯瞰したレポートによると、議論の質が「AIが世界を変える」という広義の熱狂から、実際の運用課題（メモリ帯域・レイテンシ・ツールループのオーバーヘッド）に対する実務的な議論へと明確にシフトしている。</p>
+        <ul>
+          <li>「Claude Code・Cursor・Codex CLI・Gemini CLI 横断で使えるエージェントスキルのマーケットプレイス」という概念が注目を集め、「どのベースモデルか？」から「どの再利用可能なワークフロー成果物か？」という問いに関心が移った</li>
+          <li>「ターミナルをエージェント作業の主 IDE として扱う人」と「アーキテクチャ・コンプライアンス・デバッグは手書きコードを維持する人」のスタイル分裂が顕在化</li>
+          <li>数字・アーキテクチャ・失敗分析のないジェネリックな「AIが変える」コメントは評価されにくくなっており、コミュニティの成熟が見られる</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/investing・r/technology：SpaceX IPO 申請が「Musk をトリリオネアにするか」で沸騰 ─ $1.75〜2T 評価額への賛否</div>
+      <div class="card-meta">
+        <span class="badge">Hot Thread</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/20/the-spacex-ipo-filing-has-arrived/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/" target="_blank" rel="noopener">Fortune</a> — 2026.05.21〜22</span>
+      </div>
+      <div class="card-body">
+        <p>SpaceX IPO 申請を受け、r/investing では「$1.75〜2T の評価額は正当化できるか」を巡る議論が最大級のスレッドに。r/technology では Musk の議決権（85.1%）が示す「支配構造」への懸念が上位を占めた。</p>
+        <ul>
+          <li>「Starlink が売上の半分超（年間 $11B）を生み出している現実は無視できない」という強気派と、「2025年の損失 $4.9B・Starship コスト増加で投資妙味は薄い」という弱気派が拮抗</li>
+          <li>「Musk が DOGE 関与を縮小すれば SpaceX 株を買う」という条件付き支持コメントが多数の共感を集めた</li>
+          <li>「IPO 後も Musk の支配が続く構造では一般株主に意味がない」という批判も根強く、デュアルクラス株制度への懐疑が再燃</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：ウクライナのルハンスク攻撃報道に「民間人か軍施設か」で激論 ─ 情報戦の難しさを象徴</div>
+      <div class="card-meta">
+        <span class="badge">Discussion</span>
+        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/22/russia-labels-ukraine-attack-in-occupied-luhansk-monstrous-crime" target="_blank" rel="noopener">Al Jazeera</a> — 2026.05.22</span>
+      </div>
+      <div class="card-body">
+        <p>ロシアが「ウクライナが学生寮を攻撃した」と非難したのに対し、ウクライナが「実際はドローン司令部だった」と反論した件で、r/worldnews では「どちらの主張が正しいか」ではなく「どうすれば独立した検証が可能か」という議論が発展した。</p>
+        <ul>
+          <li>「オープンソース調査（OSINT）コミュニティが衛星画像・位置情報メタデータで独自検証している」という情報が高評価</li>
+          <li>「戦時下の両陣営の公式発表をそのまま受け入れることの危険性」を指摘するコメントが上位を独占し、メディアリテラシーの議論に発展</li>
+          <li>「米・ウクライナ和平交渉が行き詰まり（US admits peace talks at standstill）という報道と組み合わせると、今週は最も暗いニュースサイクルの一つ」という分析も</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ウクライナ戦争 1549日目 ─ ロシア「ルハンスク寮攻撃はテロ」とウクライナを非難、米・ウクライナ和平交渉が事実上の行き詰まり</div>
+      <div class="card-meta">
+        <span class="badge">Ukraine</span>
+        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/22/russia-labels-ukraine-attack-in-occupied-luhansk-monstrous-crime" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> — 2026.05.22</span>
+      </div>
+      <div class="card-body">
+        <p>5月22日はウクライナ大規模侵攻1549日目。本日最大の焦点は占領下のルハンスク州スタロビリスクにある学生寮への攻撃で、プーチン大統領が「モンストラスな犯罪（monstrous crime）」「3波にわたるテロ攻撃」と非難した。ウクライナは「民間施設ではなくロシア軍のドローン司令部を標的にした」と反論している。</p>
+        <ul>
+          <li>前24時間の戦闘記録: 253件の交戦、最激戦地はポクロウスク方面（52回のロシアの突撃をウクライナ軍が撃退）</li>
+          <li>ロシアの累計損失（2022年2月24日〜2026年5月22日）: 兵士約1,353,860名（前日比 880名）</li>
+          <li>米・ウクライナ和平交渉について米政府当局者が「行き詰まり（at standstill）」を認め、ゼレンスキー大統領は7月7〜8日の NATO アンカラ首脳会議に招待された</li>
+          <li>安保理では国連人道問題担当高官が「民間人被害のパターンは国際法を明らかに逸脱（defies international law）」と述べ、ロシアの行動を強く批判</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">SpaceX IPO 申請 ─ $75B 調達・$1.75〜2T 評価額で Nasdaq 上場へ。Musk の議決権 85.1% を維持</div>
+      <div class="card-meta">
+        <span class="badge">Business</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/20/the-spacex-ipo-filing-has-arrived/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/" target="_blank" rel="noopener">Fortune</a> / <a href="https://www.cnbc.com/2026/05/20/spacex-ipo-live-updates.html" target="_blank" rel="noopener">CNBC</a> — 2026.05.20〜22</span>
+      </div>
+      <div class="card-body">
+        <p>SpaceX が5月20日に IPO 目論見書を公開。Nasdaq にティッカー「SPCX」で上場予定で、$75B の調達を目指す。評価額は $1.75T〜$2T で、達成すれば2019年の Saudi Aramco（$1.7T）を超える史上最大の IPO となる。</p>
+        <ul>
+          <li>売上は Starlink が中心（2025年 $11B 超、全体売上 $18B 以上）。一方で2025年は $4.9B の損失を計上しており、Starship のコスト増大が収益性の課題</li>
+          <li>Musk は Class B 株の93.6%を保有し、議決権 85.1% を維持。CEO・CTO・取締役会長を兼任する予定で、上場後も完全支配が続く</li>
+          <li>目論見書に記載の「$28.5T の市場機会」の93%が AI 関連と分析されており（PYMNTS）、AI インフラとしての SpaceX という物語が投資家に強く訴求している</li>
+          <li>ロードショーが典型的なスケジュールで進むと、IPO 日程は6月18〜30日頃が想定される</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ、ポーランドへ5,000名増派を発表 ─ NATO 摩擦の中での方針転換、キューバ沖では USS ニミッツが展開</div>
+      <div class="card-meta">
+        <span class="badge">US Foreign Policy</span>
+        <span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-05-21/trump-to-deploy-5-000-us-troops-to-poland-nixing-planned-cuts" target="_blank" rel="noopener">Bloomberg</a> / <a href="https://www.upi.com/Top_News/US/2026/05/22/Trump-Poland-troops/9571779421297/" target="_blank" rel="noopener">UPI</a> — 2026.05.21〜22</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領がポーランドへの5,000名追加派兵を発表。欧州同盟国との対イラン軍事行動をめぐる摩擦（NATO 基地の使用拒否問題）の最中にあって、ポーランドの民族主義系大統領カロル・ナウロツキ氏の当選を契機に方針を転換した形だ。</p>
+        <ul>
+          <li>トランプ大統領は NATO 同盟国が対イラン作戦に基地を提供しなかったことへの不満を引き続き表明しており、「なぜ NATO にいるのか」という発言が波紋を広げている</li>
+          <li>キューバ沖では USS ニミッツ空母打撃群がカリブ海に進出。米政府は前日、ラウル・カストロ前議長への刑事訴追を発表しており、米・キューバ緊張が急激に高まっている</li>
+          <li>対イラン戦闘は4月7日を最後に停止状態。トランプは「今週1時間後に攻撃命令を出すところだったが湾岸諸国の説得で思いとどまった」と発言し、状況の流動性を改めて示した</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">エボラ PHEIC 継続 ─ タリバンが未成年婚姻含む結婚分離法令を発令、国連が「重大な懸念」を表明</div>
+      <div class="card-meta">
+        <span class="badge">Global Health / Afghanistan</span>
+        <span class="card-source">Source: <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">WHO</a> / <a href="https://news.un.org/en/story/2026/05/1167578" target="_blank" rel="noopener">UN News</a> — 2026.05.22</span>
+      </div>
+      <div class="card-body">
+        <p>WHO による PHEIC 宣言後（5月16日）、コンゴ民主共和国・ウガンダのエボラ（バンディブジョ株）感染拡大は疑い例600件・死者139人の状況が続いている。</p>
+        <ul>
+          <li>バンディブジョ株専用ワクチンは存在せず、開発には最長9ヶ月を要すると WHO が警告。DRC のイトゥリ州は紛争地帯で感染制御が困難な状況が続く</li>
+          <li>アフガニスタンではタリバン政府が未成年婚姻の規定を含む「結婚分離（separation in marriage）」法令を発令。国連は「深刻な懸念（grave concern）」を表明し、即時撤回を要求</li>
+          <li>キプロス議会選挙が今週日曜（5月24日）に予定されており、欧州南部の政治動向として注目される</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Honda、カナダ EV 工場建設計画を凍結 ─ 需要減速・米関税・日本での損失が重なり北米 EV 戦略を再検討</div>
+      <div class="card-meta">
+        <span class="badge">Economy</span>
+        <span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/May_2026" target="_blank" rel="noopener">Wikipedia Current Events</a> — 2026.05.22</span>
+      </div>
+      <div class="card-body">
+        <p>日本の自動車大手 Honda がオンタリオ州（カナダ）での電気自動車工場建設計画を凍結した。EV 需要の減速、米国による自動車関税のカナダ製造業への打撃、そして日本国内での損失拡大が重なった結果とされる。</p>
+        <ul>
+          <li>Honda はカナダ政府と工場建設に関する協議を続けていたが、今後の事業見通しを理由に計画の停止を決定。カナダの雇用・産業政策への影響が懸念される</li>
+          <li>トランプ政権下の対カナダ関税強化が北米のサプライチェーン再編を引き起こしており、Honda の判断はその象徴的な事例と見なされている</li>
+          <li>Toyota・Stellantis なども北米製造拠点の見直しを続けており、EV シフトと関税摩擦という二重の圧力が業界全体を揺さぶっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude 2026 サンフランシスコ基調講演の振り返り ─ Anthropic が示した「3つの層」と開発者の役割の変容</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/noah33/articles/code-with-claude-2026-sf-keynote" target="_blank" rel="noopener">zenn.dev/noah33</a></span>
+      </div>
+      <div class="card-body">
+        <p>5月上旬に開催された Code with Claude サンフランシスコ会場の基調講演を現地参加者が詳細にまとめた記事。Anthropic が「コード生成・エージェント実行・人間のゲートキーピング」という3層のフレームワークを提示したこと、そして「開発者は Claude に何を委ねて何を保持するかの判断者になる」というビジョンを解説した。</p>
+        <ul>
+          <li>Dreaming・Outcomes・MCP Tunnels などカンファレンスで発表された機能群が「3層フレームワーク」のどのレイヤーに対応するかを整理している点が好評</li>
+          <li>「Anthropic 自身の大半のコードが Claude によって書かれている」という宣言が持つ意味を、エンジニア倫理・雇用・品質保証の観点から多角的に考察</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code を「優秀な新卒部下」として使い倒す ─ 個人開発爆速化の全ワークフロー</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を「優秀だが文脈を持たない新卒社員」として扱い、業務指示・フィードバック・品質チェックのフローを人材育成のアナロジーで設計した実践記事。CLAUDE.md を「業務マニュアル」、hooks を「自動レビュー制度」として機能させるアプローチが人気を集めた。</p>
+        <ul>
+          <li>実測値として「一人開発の機能実装速度が約3.5倍、デバッグ時間が約60%削減」というデータを掲載</li>
+          <li>MIT Technology Review の「コーディングの未来」レポートと内容的に呼応しており、「個人規模での実践版」として同日トレンドに同時浮上した</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code と Zenn 執筆環境を一から育てた記録 ─ 技術記事執筆のエージェント化</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/shimo4228/items/1513ae9a3a11769df170" target="_blank" rel="noopener">qiita.com/shimo4228</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code を使って Zenn 記事の執筆・校正・画像代替テキスト生成・SEO チェック・公開までを一連のエージェントフローで自動化した実践記録。「コードを書くツール」という枠を超えた Claude Code の応用例として注目された。</p>
+        <ul>
+          <li>Zenn の Markdown 文法・画像アップロード仕様・scrap と article の違いなどプラットフォーム固有の知識を CLAUDE.md に記述し、エージェントがプラットフォームに最適化された原稿を生成できるようにした</li>
+          <li>「執筆中のリズムが壊れないよう、アウトライン作成と本文執筆は人間、SEO・校正・コードサンプル生成はエージェント」という役割分担が実用的と評価された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月22日（金）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
+    <a href="https://www.technologyreview.com" target="_blank" rel="noopener">MIT Technology Review</a> ·
+    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://the-decoder.com" target="_blank" rel="noopener">The Decoder</a> ·
+    <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">Codex Changelog</a> ·
+    <a href="https://blogs.nvidia.com" target="_blank" rel="noopener">NVIDIA Blog</a> ·
+    <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
+    <a href="https://kyivindependent.com" target="_blank" rel="noopener">Kyiv Independent</a> ·
+    <a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a> ·
+    <a href="https://fortune.com" target="_blank" rel="noopener">Fortune</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
