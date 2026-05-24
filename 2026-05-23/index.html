@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月23日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem; }
+    .stat-card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem; text-align: center; }
+    .stat-value { font-size: 1.35rem; font-weight: 700; color: #0366d6; }
+    .stat-label { font-size: 0.74rem; color: #656d76; margin-top: 0.2rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code / AIエージェント / OpenAI Codex / 世界情勢 / 開発者トレンド</p>
+  <p class="date">2026年5月23日（土）&nbsp;|&nbsp; <a href="../2026-05-22/index.html">前日版（5/22）</a>&nbsp;|&nbsp; <a href="../index.html">最新版</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude Code</a>
+  <a href="#openai">OpenAI Codex</a>
+  <a href="#reddit">Reddit</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+<div class="container">
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude Code / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert"><strong>本日の注目:</strong> Anthropic が SpaceX Colossus 1（220,000+ GPU）とのコンピュート契約を活かし、<strong>Claude Code の5時間制限を2倍化・週間制限を50%増</strong>（7月13日まで）。Qiita では「16台の AI が書いた10万行コンパイラ」という Agent Teams の実例レポートが爆発的に読まれている。Code with Claude Tokyo（6月5〜6日）まで残り約2週間。</div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">220,000+</div><div class="stat-label">SpaceX Colossus 1 の GPU 数</div></div>
+      <div class="stat-card"><div class="stat-value">+50%</div><div class="stat-label">Claude Code 週間制限増加（7/13まで）</div></div>
+      <div class="stat-card"><div class="stat-value">6月5〜6日</div><div class="stat-label">Code with Claude Tokyo</div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic × SpaceX Colossus 1 コンピュート契約 ─ Claude Code の制限が大幅緩和、5時間枠2倍・週間枠1.5倍が同時発動</div>
+      <div class="card-meta"><span class="badge">Infrastructure</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">Anthropic</a> / <a href="https://www.mindstudio.ai/blog/claude-code-hourly-limits-doubled-spacex-colossus-deal" target="_blank" rel="noopener">MindStudio</a> — 2026.05.06〜13</span></div>
+      <div class="card-body">
+        <p>Anthropic が SpaceX との大型コンピュート契約（Colossus 1 データセンター全容量・300 MW 超・220,000 以上の NVIDIA GPU）を締結し、即日で Claude Code の利用制限を引き上げた。Pro・Max・Team・Enterprise の全有料プランが対象。</p>
+        <ul>
+          <li><strong>5時間レート制限を2倍化:</strong> ピーク時間帯の Pro・Max 向け制限削減も廃止</li>
+          <li><strong>週間制限を50%増（7月13日 18:00 PDT まで）:</strong> 先に発表された5時間制限2倍と同時適用</li>
+          <li>Claude Opus 系の API レート制限も同時に引き上げ。エンタープライズ向けの大規模エージェント実行が現実的に</li>
+          <li>将来的に SpaceX と「軌道上 AI コンピュート（Orbital AI Compute）」の数 GW 規模での協業に意欲</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code Agent Teams 実践報告 ─ 16台の AI が10万行 Rust C コンパイラを書いた事例が示す「組織設計」の新命題</div>
+      <div class="card-meta"><span class="badge">Case Study</span><span class="card-source">Source: <a href="https://qiita.com/nogataka/items/4996f462dcbdf73adae6" target="_blank" rel="noopener">Qiita / nogataka</a> / <a href="https://www.cloudzero.com/blog/claude-code-agents/" target="_blank" rel="noopener">CloudZero</a> — 2026.05</span></div>
+      <div class="card-body">
+        <p>Anthropic が公開した事例によると、16 台の Claude エージェントが約 2,000 セッションにわたって並列稼働し、10 万行規模の Rust 製 C コンパイラを構築した。</p>
+        <ul>
+          <li><strong>品質検証メタスキル:</strong> AI が生成したコードを効率よくレビューする技術そのものがスキルセットとして確立しつつある</li>
+          <li><strong>コスト意識の変容:</strong> 「2026年の問いはどのモデルがクレジットを燃やさないか」というフレーズが広く共有された</li>
+          <li><strong>エラー増幅係数 17.2:</strong> 複数の AI エージェントが合意した結論ほど、一つの誤前提が増幅されやすい逆説的教訓</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Code with Claude Tokyo 直前 ─ 参加者向け事前情報・Dreaming / Outcomes の実装準備が活発化</div>
+      <div class="card-meta"><span class="badge">Event</span><span class="card-source">Source: <a href="https://www.infoq.com/news/2026/05/code-with-claude/" target="_blank" rel="noopener">InfoQ</a> — 2026.05</span></div>
+      <div class="card-body">
+        <p>6月5〜6日に開催される Code with Claude Tokyo まで残り約2週間。SF・London で発表された新機能群（Dreaming・Outcomes・セルフホストサンドボックス・MCP Tunnels）を日本のプロダクト環境に適用する検証が活発化している。</p>
+        <ul>
+          <li>Dreaming（エージェントが過去タスクのトランスクリプトから「次回への注記」を生成する機能）の CLAUDE.md との組み合わせ検証が Zenn・Qiita で相次いで報告</li>
+          <li>Tokyo では日本のエンタープライズ向けユースケース（金融・製造・公共 DX）の登壇が予告</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex 最新動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex vs Claude Code 2026 最新評価 ─「最強のライバル関係」が実際のコードベースで検証される</div>
+      <div class="card-meta"><span class="badge">Comparison</span><span class="card-source">Source: <a href="https://thenewstack.io/openai-codex-claude-code/" target="_blank" rel="noopener">The New Stack</a> — 2026.05</span></div>
+      <div class="card-body">
+        <p>The New Stack が GPT-5.5 搭載後の Codex を「実際の Python コードベースで検証し、これまでで最も強力な Claude Code のライバル」と評価。週間アクティブユーザーは400万人超を維持。</p>
+        <ul>
+          <li>Codex は AWS Bedrock との統合強化・HIPAA 対応・リモート SSH サポートを拡充し、エンタープライズでの採用障壁を下げた</li>
+          <li>競争軸が「精度」から「エコシステム適合性」に移ってきた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex Goal Mode が正式機能に昇格 ─ モバイルアプリからも自律タスクへのアクセスが可能に</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.14</span></div>
+      <div class="card-body">
+        <p>Goal Mode が実験的フェーズを卒業し、CLI・IDE 拡張・Web アプリの全チャネルで正式利用可能に。ChatGPT モバイルアプリへの Codex 統合（iOS/Android プレビュー）も全プラン向けに提供開始。</p>
+        <ul>
+          <li>モバイル統合により「移動中に実行中タスクのステータス確認・コマンド承認・スレッドへの接続」が可能に</li>
+          <li>Persisted /goal ワークフロー（セッションをまたいだ目標の継続）・より厳格なパーミッションプロファイルも同時リリース</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI：制限50%増に「神のタイミング」「SpaceX ありがとう」の声 ─ 一方で「7月14日以降はどうなる？」の懸念も</div>
+      <div class="card-meta"><span class="badge">Hot Thread</span><span class="card-source">Source: <a href="https://apidog.com/blog/claude-code-weekly-limits-50-percent-increase-july-2026/" target="_blank" rel="noopener">APIdog（Reddit まとめ）</a> — 2026.05</span></div>
+      <div class="card-body">
+        <p>Claude Code の週間制限50%増発表を受け、r/ClaudeAI では「Codex への対抗策として計算されたタイミング」という分析が上位を占めた。</p>
+        <ul>
+          <li>「先週 Codex に乗り換えたばかりなのに…」という皮肉混じりのコメントが多数の共感を集めた</li>
+          <li>「7月13日以降に元に戻るなら計画が立てられない」という不満も多く、Anthropic が期限後の方針を未公表であることへの懸念がスレッドを形成</li>
+          <li>SpaceX IPO との相互利益構造分析が注目を集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning：「サブエージェント設計の地雷5つ」スレッドが荒れる ─「エラー増幅係数17.2」への懐疑と実証の応酬</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Source: <a href="https://qiita.com/vincentmango_wen/items/a5ca3a6f5a79c5304e34" target="_blank" rel="noopener">Qiita（起点記事）</a> — 2026.05</span></div>
+      <div class="card-body">
+        <p>Claude Code で「仮想組織」を2週間運用した開発者の Qiita 記事が Reddit でも紹介され、数値の根拠を巡る議論が白熱した。</p>
+        <ul>
+          <li>「17.2 は恣意的な数字で再現性がない」という批判と「体験的にはまさにこの感覚」という支持が拮抗</li>
+          <li>「1つの Claude Code セッションを深く使いこなすほうが、並列セッションを管理するより ROI が高い場合が多い」という実務的結論が目立った</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldpolitics：Tulsi Gabbard DNI 辞任で「トランプ政権 intelligence 空白」を懸念</div>
+      <div class="card-meta"><span class="badge">Politics</span><span class="card-source">Source: <a href="https://www.foxnews.com/politics/exclusive-tulsi-gabbard-resigns-from-trump-cabinet" target="_blank" rel="noopener">Fox News</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>タルシー・ガバード国家情報長官（DNI）が夫の骨がん治療を支えるため6月30日付で辞任すると発表。r/worldpolitics では「純粋に家族への配慮」という論調と「イラン和平交渉の山場で辞めるタイミングが怪しい」という疑念が交錯した。</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">トランプ「イラン合意は大部分合意済み」─ ホルムズ海峡再開を含む枠組みが浮上</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cbsnews.com/live-updates/iran-war-trump-us-peace-talks-strait-of-hormuz-control/" target="_blank" rel="noopener">CBS News</a> / <a href="https://www.pbs.org/newshour/world/trump-says-deal-with-iran-including-opening-strait-of-hormuz-is-largely-negotiated" target="_blank" rel="noopener">PBS NewsHour</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>トランプ大統領が SNS 上で「米・イラン間の合意が大部分合意済み（largely negotiated）」と投稿。ホルムズ海峡の「通行料なしの再開」が主要条件として浮上している。合意が成立すればエネルギー市場・海運への影響は甚大で、WTI 原油先物は報道後に1.8%下落した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">タルシー・ガバード DNI 辞任 ─ 夫の骨がん治療を理由に6月30日付、後任はアーロン・ルーカス代行長官</div>
+      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: <a href="https://www.foxnews.com/politics/exclusive-tulsi-gabbard-resigns-from-trump-cabinet" target="_blank" rel="noopener">Fox News</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>国家情報長官（DNI）のタルシー・ガバード氏が夫のアブラハム・ウィリアムズ氏が希少な骨がんと診断されたことを受け、辞表を提出。就任から約15ヶ月での退任となる。イラン和平交渉・NATO 摩擦と山積する安全保障課題の最中での交代となり、後任人事が焦点に。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ルビオ国務長官、インド訪問 ─ Quad 外相会議（5/26）で中国・重要鉱物・インド太平洋安全保障を協議</div>
+      <div class="card-meta"><span class="badge">Indo-Pacific</span><span class="card-source">Source: <a href="https://www.npr.org/2026/05/23/nx-s1-5832394/rubio-arrives-india" target="_blank" rel="noopener">NPR</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>マルコ・ルビオ国務長官が本日インドに到着。26日にニューデリーで Quad 外相会議に臨む予定。重要鉱物サプライチェーンの分散・エネルギー安保が主要議題となる。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カリフォルニア州ガーデングローブで大型化学タンク爆発危機 ─ 当局が「数千ガロン漏洩または爆発」を警告、広域避難</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.foxnews.com/us/california-officials-warn-massive-chemical-tank-likely-spill-thousands-gallons-blow-up" target="_blank" rel="noopener">Fox News</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>カリフォルニア州オレンジ郡ガーデングローブで、大型化学貯蔵タンクが破裂・爆発寸前の危機的状態にあることが明らかになった。当局は「数千ガロンの漏洩か爆発は不可避」として広域避難を命令した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ戦争 1550日目 ─ キプロス議会選挙が明日開票、エボラ感染制御は依然困難</div>
+      <div class="card-meta"><span class="badge">Global Roundup</span><span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> / <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a> — 2026.05.23</span></div>
+      <div class="card-body">
+        <p>ウクライナ大規模侵攻1550日目。エボラ（コンゴ/ウガンダ）は WHO 緊急事態（PHEIC）宣言から1週間が経過し、疑い例は600件を超えた。バンディブジョ株専用ワクチン不在が制御を困難にしている。</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code Agent Teams：16台の AI が書いた10万行コンパイラが突きつける「組織設計」という新命題</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/nogataka/items/4996f462dcbdf73adae6" target="_blank" rel="noopener">qiita.com/nogataka</a></span></div>
+      <div class="card-body">
+        <p>Anthropic の公式事例を詳細に分析し、「エージェントを何台使うか」より「どう役割を定義し、合意プロセスを設計するか」という組織論的問いへの回答を試みた記事。「エラー増幅係数」「コスト意識の変容」の3論点が読者の強い共感を呼んだ。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code で「仮想組織」を2週間運用してわかった、サブエージェント設計の地雷5つ</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/vincentmango_wen/items/a5ca3a6f5a79c5304e34" target="_blank" rel="noopener">qiita.com/vincentmango_wen</a></span></div>
+      <div class="card-body">
+        <p>.claude/agents/ に16ファイルという構成で「秘書・マーケ・開発」を担うサブエージェントを2週間運用した実践レポート。コンテキスト汚染・役割の曖昧化・ループ地獄・トークン課金の見えにくさ・デバッグ困難性という5つの地雷が示された。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex vs Claude Code 2026 ── 判断軸とやらない判断</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/miyan/articles/ai-code-codex-vs-claude-code-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span></div>
+      <div class="card-body">
+        <p>「どちらが優れているか」ではなく「どのタスクにどちらを当てるか」という実務的な判断軸を整理した記事。設計・アーキテクチャ決定・セキュリティ要件の確認は人間が主導すべきという立場を明示。</p>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月23日（土）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic News</a> ·
+    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
+    <a href="https://www.cbsnews.com" target="_blank" rel="noopener">CBS News</a> ·
+    <a href="https://www.pbs.org/newshour" target="_blank" rel="noopener">PBS NewsHour</a> ·
+    <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
+    <a href="https://kyivindependent.com" target="_blank" rel="noopener">Kyiv Independent</a> ·
+    <a href="https://www.foxnews.com" target="_blank" rel="noopener">Fox News</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+</body>
+</html>
