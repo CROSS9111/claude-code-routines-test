@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月27日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月28日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -68,12 +68,12 @@
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
   <p class="subtitle">Claude Code / AIエージェント / OpenAI Codex / 世界情勢 / 開発者トレンド</p>
-  <p class="date">2026年5月27日（水）&nbsp;|&nbsp; <a href="2026-05-26/index.html">前日版（5/26）</a></p>
+  <p class="date">2026年5月28日（木）&nbsp;|&nbsp; <a href="2026-05-27/index.html">前日版（5/27）</a></p>
 </header>
 
 <nav>
   <a href="#claude">Claude Code</a>
-  <a href="#openai">OpenAI Codex</a>
+  <a href="#openai">OpenAI / Copilot</a>
   <a href="#reddit">Reddit</a>
   <a href="#world">世界情勢</a>
   <a href="#dev">Qiita/Zenn</a>
@@ -88,120 +88,116 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目:</strong> OpenAI 共同創業者・元 Tesla AI 責任者の <strong>Andrej Karpathy</strong> が Anthropic の事前学習チームに参画したことが正式に確認された（発表は5月19日）。「次の数年間はフロンティア LLM にとって特に形成的な時期になる」と述べ、Claude を用いた事前学習研究の加速を担う。AI タレント争いが新たな局面を迎えた。
+      <strong>本日の注目（5/28）:</strong> Anthropic が <strong>Claude Opus 4.8</strong> を本日リリース。Claude Code に「Dynamic Workflows」を追加し、1セッションで最大 <strong>1,000 のサブエージェント</strong> を並列実行できるようになった。SWE-bench Pro スコアは 69.2%（前モデル比 +4.9pt）で GPT-5.5 を上回り、コーディング精度で業界トップを更新した。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">Karpathy</div><div class="stat-label">Anthropic 事前学習チームへ参加、業界最大級の人材移動</div></div>
-      <div class="stat-card"><div class="stat-value">$380B</div><div class="stat-label">Anthropic の最新ポストマネー評価額（Series G・$30B 調達）</div></div>
-      <div class="stat-card"><div class="stat-value">広告なし</div><div class="stat-label">Claude の広告フリー方針を Anthropic が正式コミットメント化</div></div>
+      <div class="stat-card"><div class="stat-value">69.2%</div><div class="stat-label">SWE-bench Pro（Opus 4.7 は 64.3%）</div></div>
+      <div class="stat-card"><div class="stat-value">1,000</div><div class="stat-label">Dynamic Workflows での最大並列サブエージェント数</div></div>
+      <div class="stat-card"><div class="stat-value">96.7%</div><div class="stat-label">USAMO 2026 数学ベンチマーク（前モデル 69.3%）</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Andrej Karpathy、Anthropic の事前学習チームに参加 ─ OpenAI 共同創業者が Claude 研究を加速、AI タレント戦争が新局面へ</div>
+      <div class="card-title">Claude Opus 4.8、本日リリース ─ Dynamic Workflows で最大1,000並列サブエージェント、努力レベル制御、安価な Fast Mode を実装</div>
       <div class="card-meta">
-        <span class="badge">Talent</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html" target="_blank" rel="noopener">CNBC</a> / <a href="https://thenewstack.io/andrej-karpathy-anthropic-pretraining/" target="_blank" rel="noopener">The New Stack</a> — 2026.05.19</span>
+        <span class="badge">New Release</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://thenewstack.io/claude-opus-48-release/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://www.marktechpost.com/2026/05/28/anthropic-ships-claude-opus-4-8-alongside-dynamic-workflows-and-cheaper-fast-mode-with-workflows-capped-at-1000-subagents/" target="_blank" rel="noopener">MarkTechPost</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>AI 研究の世界で最も名の知られた存在の一人である Andrej Karpathy が Anthropic に加わった。5月19日に X（旧Twitter）で「I've joined Anthropic」と自ら発表し、事前学習チームリード Nick Joseph のもとで研究を進める。Karpathy は「Claude を活用して事前学習研究を加速させるチームを構築する」と述べており、Anthropic は AI 支援による研究加速が競争優位の核心になると見込んでいる。</p>
+        <p>Anthropic は本日、Claude Opus 4.8 を Claude API・Amazon Bedrock・Google Cloud Vertex AI・Microsoft Foundry で同時リリースした。価格は Opus 4.7 と同一（標準: $5/1M 入力・$25/1M 出力、Fast Mode: $10/$50）のまま、全性能指標で大幅な改善を達成している。</p>
         <ul>
-          <li><strong>キャリア歴:</strong> OpenAI 共同創業者・研究者（2015〜2017）→ Tesla AI 責任者（2017〜2022）→ OpenAI 復帰（2023〜2024）→ Anthropic（2026.05〜）。「karpathy/nn-zero-to-hero」など教育活動でも知られ、YouTube チャンネルの登録者は数百万人規模</li>
-          <li><strong>Anthropic の意図:</strong> 事前学習フェーズに AI エージェントを積極的に組み込むことで、研究サイクルの短縮と能力の飛躍的向上を目指す。Karpathy は「教育への情熱は変わらない。並行して続ける」とコメントしており、AI 人材育成への貢献も期待されている</li>
-          <li><strong>業界への影響:</strong> CNBC は「Anthropic にとって最大の人材獲得の一つ」と評価。OpenAI の元幹部が競合他社に移るという構図が改めて浮き彫りになり、フロンティア AI 開発の人材争奪戦が加熱している</li>
-          <li><strong>Anthropic の勢い:</strong> Q1 2026 の年換算収益が計画比 80倍超、Series G で $30B を調達し評価額は $380B に到達。Karpathy の参画はその勢いにさらに追い風を与えるとみられる</li>
+          <li><strong>Dynamic Workflows（研究プレビュー）:</strong> Claude Code の Enterprise・Team・Max プランで利用可能。Claude が大規模タスクを計画し、1セッション内で数十〜数百のサブエージェントを並列起動・検証・統合できる。最大上限は1,000サブエージェント。コードベース規模のマイグレーション（数十万行）をキックオフからマージまで自律実行できると Anthropic は説明している</li>
+          <li><strong>努力レベル制御（Effort Controls）:</strong> claude.ai の全ユーザーがモデルセレクター横のスライダーで「どれだけ深く考えるか」を調整できるようになった。高努力モードはより深く思考し、低努力モードはレート制限の消費を抑えながら高速に応答する</li>
+          <li><strong>Fast Mode の価格引き下げ:</strong> Opus 4.7 比で約 3 分の 1 のコストで高速推論が利用可能に。処理速度は 2.5 倍で、大量バッチ処理や開発ループの高速化に貢献する</li>
+          <li><strong>コーディング精度の改善:</strong> コードに潜む欠陥を見逃す確率が前モデル比で約 4 分の 1 に低下。重要な問題をユーザーに報告しない割合も 3.7% まで下がった（前モデルより大幅改善）</li>
+          <li><strong>数学・推論:</strong> USAMO 2026 で 96.7%（前モデル 69.3%）と飛躍的に向上。GPT-5.5 の同ベンチマークスコアを上回っており、科学・工学分野のユースケースにも注目が集まる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude に新機能「Dreaming・Outcomes・Finance」─ マルチエージェントオーケストレーションも強化、エージェント化が本格加速</div>
+      <div class="card-title">Agent View が一般提供へ ─ 実行中・ブロック中・完了タスクを一画面で可視化、大規模エージェント運用の管理性が向上</div>
       <div class="card-meta">
         <span class="badge">Feature</span>
-        <span class="card-source">Source: <a href="https://www.infoq.com/news/2026/05/code-with-claude/" target="_blank" rel="noopener">InfoQ</a> / <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features" target="_blank" rel="noopener">MindStudio</a> — 2026.05</span>
+        <span class="card-source">Source: <a href="https://code.claude.com/docs/en/whats-new" target="_blank" rel="noopener">Claude Code What's New</a> / <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>Code with Claude 2026 で発表された5つのエージェント機能の詳細が各メディアで詳しく報じられている。InfoQ はこれらを「Anthropic が単発の生産性ツールから継続的なソフトウェアライフサイクル管理へ移行するための布石」と位置づけた。</p>
+        <p>Claude Code の「Agent View」が正式提供となった。1つの画面で全 Claude Code セッションの状態（実行中・ブロック・完了）をリアルタイム監視できる機能で、Dynamic Workflows の大規模並列実行との組み合わせで真価を発揮する。</p>
         <ul>
-          <li><strong>Dreaming（ドリーミング）:</strong> Claude が事前に想定シナリオを複数生成し、最適な作業経路を選択するプランニング機能。複雑な長期タスクでの一貫性向上が狙い</li>
-          <li><strong>Outcomes（アウトカム）:</strong> タスク完了の定義を明確化し、エージェントが「どこまでやれば完了か」を判断する評価フレームワーク。曖昧な指示によるループ状態を防止する</li>
-          <li><strong>Claude Finance（クロード・ファイナンス）:</strong> 金融業務向けに最適化された10種類の事前構成済みエージェントを提供。決算書解析、与信評価、規制対応レポート生成などに対応</li>
-          <li><strong>マルチエージェントオーケストレーション強化:</strong> Managed Agents がサンドボックス内で動作し、プライベート MCP サーバーへの接続が可能に。エンタープライズ環境でのエージェント展開の安全性が大幅に向上した</li>
-          <li><strong>Add-ins（アドイン）:</strong> Claude UI に外部サービスのウィジェットを埋め込める拡張機能。Notion・Linear・GitHub 連携が先行して提供される</li>
+          <li><strong>主な機能:</strong> セッションごとの進捗・エラー・完了状態の一覧、ブロック要因の即時特定、手動介入が必要なサブエージェントへのワンクリックアクセス</li>
+          <li><strong>業界の評価:</strong> Neurometric AI の CEO Rob May は「摩擦を減らすが、根本的な課題は変わらない」とコメント。一方で、数百エージェントを同時管理する場面では可視性が大幅に改善されるという実務的な評価が多い</li>
+          <li>Dynamic Workflows と Agent View の組み合わせにより、「1人のエンジニアが数百のエージェントチームを監督する」というアーキテクチャが現実的なものになってきた</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Anthropic、Claude を広告フリーに永続コミット ─ 「Claude は考える場所」と宣言、OpenAI の広告実験と明確に差別化</div>
+      <div class="card-title">Claude Code、GitHub Copilot・Cursor との差別化が明確化 ─ ターミナル・大コンテキスト・カスタマイズ深度で独自ポジションを確立</div>
       <div class="card-meta">
-        <span class="badge">Strategy</span>
-        <span class="card-source">Source: <a href="https://www.theregister.com/2026/02/04/anthropic_no_advertising_in_claude/" target="_blank" rel="noopener">The Register</a> / <a href="https://www.techbuzz.ai/articles/anthropic-pledges-claude-stays-ad-free-as-chatgpt-embraces-ads" target="_blank" rel="noopener">TechBuzz.ai</a> — 2026.02.04 ／ 継続注目</span>
+        <span class="badge">Analysis</span>
+        <span class="card-source">Source: <a href="https://dev.to/alexmercedcoder/ai-weekly-google-reshapes-the-coding-stack-claude-pulls-ahead-and-the-agent-protocol-stack-17co" target="_blank" rel="noopener">DEV Community / AI Weekly</a> — 2026.05.13-20</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が2月に発表した「Claude は広告を表示しない」という方針が、Claude Code を含む全プロダクトで引き続き堅持されている。OpenAI が ChatGPT への広告実験を始めたとの報道が相次ぐ中、この差別化戦略が改めて注目を集めている。</p>
+        <p>DEV Community の AI Weekly（5月13〜20日版）は「Google がコーディングスタックを再編し、Claude が引き離しを図り、エージェントプロトコルスタックが固まりつつある」と総括した。Claude Code は Cursor・Copilot とは異なるポジションで存在感を示している。</p>
         <ul>
-          <li><strong>Anthropic の主張:</strong> 「広告インセンティブは真に役立つ AI アシスタントと根本的に相容れない。スポンサーリンクの表示も、広告主による回答への影響も、サードパーティの製品配置も行わない」と明言</li>
-          <li><strong>Claude Code への影響:</strong> Claude Code は Pro/Max/Enterprise のサブスクリプション収益のみで運営。エンタープライズ向けの価格競争力を保ちながら広告収入に頼らないモデルが成立しているのは、$30B の資金調達で十分なランウェイを確保したことによる</li>
-          <li>The Register は「$380B の評価額と広告フリーの約束を同時に成立させるには、サブスクリプション収益の急拡大が不可欠だ。計画比 80倍の収益成長はその現実可能性を示している」と分析</li>
+          <li><strong>Claude Code の独自優位:</strong> 200k トークンのコンテキスト、ターミナルネイティブ操作、CLAUDE.md / Hooks / MCP によるカスタマイズ深度、Dynamic Workflows による大規模並列処理。IDE プラグインとしての統合より「エージェントランタイム」としての役割を強化している</li>
+          <li><strong>GitHub Copilot の動向:</strong> 5月20日に Gemini モデルを Copilot Chat から削除し、GPT-5.3-Codex をデフォルトに変更。6月1日からはトークン課金の「AI Credits」制度へ移行し、エージェント重量ワークロードのコスト構造が変わる</li>
+          <li><strong>Cursor 3.4 の更新:</strong> Microsoft Teams 統合、並列エージェントのプラン実行高速化、マルチリポジトリ設定対応を追加</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- OpenAI Codex -->
+  <!-- OpenAI / GitHub Copilot -->
   <section class="section" id="openai">
     <div class="section-header">
-      <div class="section-title">OpenAI Codex 最新動向</div>
+      <div class="section-title">OpenAI Codex / GitHub Copilot 最新動向</div>
       <span class="section-count">3 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex がスマートフォンに ─ ChatGPT モバイルアプリでコーディングエージェントをどこでも操作、TUI 強化・@メンション検索も追加</div>
+      <div class="card-title">OpenAI Codex、GPT-5.5 搭載・モバイル対応・Dell オンプレ展開 ─ 週間アクティブ400万人超でエンタープライズ攻勢</div>
       <div class="card-meta">
-        <span class="badge">Mobile</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">Codex Changelog</a> — 2026.05.14</span>
+        <span class="badge">Codex</span>
+        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>OpenAI は ChatGPT モバイルアプリ（iOS・Android）で Codex をプレビュー提供開始した。外出先からコーディングタスクの進捗確認、コマンド承認、スレッドの軌道修正が可能になる。同時にデスクトップ向けにも複数のアップデートが適用された。</p>
+        <p>OpenAI Codex は GPT-5.5 を搭載し、ChatGPT モバイルアプリ（iOS・Android）での利用が可能になった。HIPAA 対応で医療機関への展開も解禁され、Dell との Codex Private Cloud 連携でオンプレミス展開にも対応した。Gartner Magic Quadrant で「Leader」に選出されており、週間アクティブユーザーは400万人を超えている。</p>
         <ul>
-          <li><strong>モバイル機能:</strong> 実行中のコーディングタスクを確認・承認・軌道修正できる。完全なコード編集よりも「監督・ステアリング」に特化した設計で、Codex Goal Mode との相性が高い</li>
-          <li><strong>TUI（テキストUI）の強化:</strong> より豊富なコントロール、改善された @メンション検索、プラグイン・リモートワークフローの拡張が追加。Python SDK の刷新と「codex doctor」診断コマンドも提供開始</li>
-          <li><strong>バックグラウンド・コンピュータ使用:</strong> 複数のエージェントが Mac 上でバックグラウンド動作し、見る・クリック・タイプを行う機能が強化。エージェント同士が干渉しないよう分離された実行環境が確保されている</li>
-          <li><strong>エンタープライズ向け:</strong> リモート SSH の拡張、アクセストークン管理、HIPAA 対応が追加。医療・金融分野での本格採用を見越した対応となっている</li>
-          <li>週間アクティブユーザーは400万人を超え、Gartner の Enterprise AI Coding Agents Magic Quadrant で「Leader」に選出されている</li>
+          <li><strong>モバイル機能:</strong> 実行中タスクの確認・承認・軌道修正が外出先から可能。「監督・ステアリング」に特化した設計でバッテリー・画面の制約を考慮している</li>
+          <li><strong>エンタープライズ:</strong> Cisco・Datadog・Dell・NVIDIA などが採用企業として紹介された。Dell 経由のオンプレ展開は規制産業（金融・医療）での差別化要素として注目される</li>
+          <li>The New Stack の実機テストでは「Codex Goal Mode は長期・非同期タスクに、Claude Code は単発タスクの高速実行に強みがある」と結論。競合というより補完的な関係にあるとの見方が広まっている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex と Claude Code の比較が各媒体で活発化 ─ 用途別の優位性が明確になりつつある</div>
+      <div class="card-title">GitHub Copilot、Gemini モデルを削除 ─ 6月1日から AI Credits 制度に移行、エージェント重量ワークロードのコストが変動</div>
       <div class="card-meta">
-        <span class="badge">Analysis</span>
-        <span class="card-source">Source: <a href="https://thenewstack.io/openai-codex-claude-code/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit" target="_blank" rel="noopener">AIToolDiscovery</a> — 2026.05</span>
+        <span class="badge">Copilot</span>
+        <span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/github-copilot-drops-gemini-model-shakeup-may-2026" target="_blank" rel="noopener">DigitalApplied</a> / <a href="https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web/" target="_blank" rel="noopener">GitHub Changelog</a> / <a href="https://byteiota.com/github-copilot-ai-credits-june-2026/" target="_blank" rel="noopener">ByteIota</a> — 2026.05.20</span>
       </div>
       <div class="card-body">
-        <p>The New Stack が行った実際の Python コードベースでのテストを踏まえ、各媒体が Codex と Claude Code の用途別比較を報じている。Reddit では Claude Code が4倍のディスカッション量を生み出しており、コミュニティ規模でも差がついている。</p>
+        <p>GitHub は5月20日に Copilot Chat（Web 版）から全 Gemini モデルおよびその他複数モデルを削除した。同時に、GPT-5.3-Codex を Business・Enterprise プランのデフォルトに設定。6月1日にはこれまでの「プレミアムリクエスト制」を廃止し、トークン課金の「AI Credits」制度に完全移行する。</p>
         <ul>
-          <li><strong>Codex Goal Mode の強み:</strong> マルチデイタスクでの一貫性に優れ、「放置して後で確認する」長期・非同期タスクに適している。特に大規模リポジトリの横断的リファクタリングで評価が高い</li>
-          <li><strong>Claude Code の強み:</strong> 単発タスクの高速実行、200k トークンの大コンテキスト、ターミナル操作との親和性。開発者コミュニティでは Claude Code が「標準的な自律タスク実行ツール」として定着しつつある</li>
-          <li><strong>Reddit のデータ:</strong> r/ClaudeAI・r/ChatGPTCoding でのディスカッション量を比較すると、Claude Code が Codex の約4倍。tmux でパラレルサブエージェントを走らせる「スタートアップチーム型」の使い方が特に話題</li>
-          <li>The New Stack のテスターは「単発タスクでは Sonnet 4.6 が依然として高速で実用的だった。Codex Goal Mode と Claude Code Auto Mode はどちらも長期タスクで本領を発揮するが、競合というより補完的なポジションにある」と結論づけた</li>
+          <li><strong>モデル構成の変化:</strong> 2026年の Copilot ピッカーは「OpenAI ファースト、Anthropic セカンド」の構成に。Google の Gemini との連携が断ち切られたことで、マルチベンダー路線からの転換を意味する</li>
+          <li><strong>AI Credits の影響:</strong> エージェントモードなど重量ワークロードはトークン消費が多いため、月次コストが従来より増加する可能性がある。開発者コミュニティでは「事実上の値上げ」と受け取る声も出ている</li>
+          <li>Copilot のエージェントモード利用者は、新課金体系に合わせたワークフロー設計の見直しが求められる。細粒度のモデルアクセス制御（Cursor 3.4 が対応済み）を競合が実装しており、Copilot の柔軟性への懸念が指摘されている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Codex、HIPAA 対応・リモート SSH 拡張・Dell オンプレミス展開でエンタープライズ攻勢を強化</div>
+      <div class="card-title">AI コーディングエージェント市場の成熟 ─ 「AI は全てを変える」論から「どれが週2以降も使えるか」への転換</div>
       <div class="card-meta">
-        <span class="badge">Enterprise</span>
-        <span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
+        <span class="badge">Market</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> / <a href="https://medium.com/@dave-patten/the-state-of-ai-coding-agents-2026-from-pair-programming-to-autonomous-ai-teams-b11f2b39232a" target="_blank" rel="noopener">Medium / Dave Patten</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>OpenAI は Codex のエンタープライズ展開を急速に拡大している。HIPAA 対応により医療機関での利用が正式に可能になったほか、Dell との Codex Private Cloud 連携でオンプレミス展開も可能になった。</p>
+        <p>DEV Community がまとめた2026年5月前半の Reddit AI エージェント議論分析によると、ディスカッションの質が劇的に変化している。「AI が変える」という期待論より「どのエージェントが経済的か」「メモリはどう設計すべきか」「ベースモデルより上のツール層は何か」という実務的な問いが高評価を集めるようになった。</p>
         <ul>
-          <li>Cisco・Datadog・Dell・NVIDIA など大手企業が採用企業として Gartner のレポートで挙げられた</li>
-          <li>Anthropic がオンプレミス版 Claude Code を提供していない現状で、Dell 経由のオンプレ展開オプションは規制産業において重要な差別化要素となっている</li>
-          <li>OpenAI は「週間アクティブユーザー400万人超」という数字を公開しており、Gartner Magic Quadrant での「Leader」選出とあわせてエンタープライズ採用の加速を示している</li>
+          <li><strong>経済性の重視:</strong> Token コストとタスク完了率のトレードオフが最大の議論テーマに。Claude Code と Codex を用途別に使い分けるハイブリッド運用が実務的な解として広がりつつある</li>
+          <li><strong>メモリ設計:</strong> エージェントがセッションをまたいで文脈を保持する仕組みをどう実装するかが中心的な技術課題として浮上。CLAUDE.md への蓄積、MCP サーバーによる外部メモリ参照などのアプローチが議論されている</li>
+          <li>Dave Patten（Medium）の分析によると「AI コーディングエージェント市場はペアプログラミングから自律 AI チームへの移行期にある。2026年は『エージェントがコードを書く』から『エージェントチームがシステムを運用する』へのパラダイム転換の年になる」</li>
         </ul>
       </div>
     </div>
@@ -210,74 +206,71 @@
   <!-- Reddit -->
   <section class="section" id="reddit">
     <div class="section-header">
-      <div class="section-title">Reddit コミュニティ ─ AIエージェント開発者の声</div>
+      <div class="section-title">Reddit コミュニティ ─ 本日の反応と議論</div>
       <span class="section-count">4 トピック</span>
     </div>
 
     <div class="card">
-      <div class="card-title">r/MachineLearning・r/artificial：「Karpathy の Anthropic 参画は何を意味するか」─ AI タレント争奪戦の本質と事前学習への影響</div>
+      <div class="card-title">r/ClaudeAI・r/MachineLearning：Opus 4.8 リリースに沸く ─「1,000サブエージェントは SF から現実になった」「事前リーク通りだった」</div>
       <div class="card-meta">
-        <span class="badge">Hot Thread</span>
-        <span class="card-source">Source: <a href="https://explainx.ai/blog/andrej-karpathy-joins-anthropic-pre-training-2026" target="_blank" rel="noopener">explainx.ai</a> / <a href="https://letsdatascience.com/blog/karpathy-joins-anthropic-pretraining-team-may-19-2026" target="_blank" rel="noopener">Let's Data Science</a> — 2026.05</span>
+        <span class="badge">Hot Today</span>
+        <span class="card-source">Source: <a href="https://thenewstack.io/claude-opus-48-release/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://aiweekly.co/alerts/claude-opus-48-brings-effort-modes-and-parallel-subagents" target="_blank" rel="noopener">AI Weekly</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>Karpathy の Anthropic 参画の報が伝わるや、r/MachineLearning と r/artificial で「これは単なる人材移動以上の意味を持つ」というスレッドが急速にアップボートを集めた。研究者・実務者のどちらの視点からも活発な議論が展開されている。</p>
+        <p>Claude Opus 4.8 と Dynamic Workflows の発表を受け、r/ClaudeAI と r/MachineLearning で本日最多アップボートのスレッドが立ち上がった。「1,000 並列サブエージェントはこれまで SF 的な話だったが、今日から API で呼べる現実になった」という書き込みが多くの共感を集めている。</p>
         <ul>
-          <li><strong>「事前学習に AI を使う」という戦略への反応:</strong> 「Karpathy の役割は Claude 自身が事前学習を改善するループを実装すること。これが成功すれば能力の飛躍的向上につながる」という解説が高評価を集めた</li>
-          <li><strong>OpenAI への影響:</strong> 「Karpathy は OpenAI から2度離れた。1度目は Tesla、2度目は Anthropic。彼は OpenAI の文化・方向性に何か不満があるのでは？」という疑問が多くの共感を集めた。OpenAI 側の反応コメントは現時点で表れていない</li>
-          <li><strong>教育コミュニティの反応:</strong> 「Karpathy の YouTube チャンネル（nn-zero-to-hero など）は AI 教育の金字塔。Anthropic に入っても教育活動は続けると言っているが、更新頻度が落ちないか心配だ」という声も多数</li>
-          <li><strong>評価の分かれ目:</strong> 「スター研究者の参加は短期の株価サプライズにはなるが、モデル能力への実際の貢献は数年後でないと評価できない」という慎重派と、「事前学習に注力するという Anthropic の戦略的明確化そのものが重要だ」という楽観派が対立している</li>
+          <li><strong>事前リークへの反応:</strong> Reddit では数日前に Opus 4.8 のリリースをほのめかすリークが出回っていたため、「ほぼ予告通りだった」という冷静な声も。一方で「SWE-bench Pro 69.2% は予想より高い」という驚きの反応も多数</li>
+          <li><strong>実務者の関心:</strong> 「Enterprise・Team・Max プランのみの研究プレビュー」という制限への不満が一部にある一方、「大規模コードベースのマイグレーションを完全自動化できるなら価格に見合う」という評価も</li>
+          <li><strong>USAMO 96.7% への反応:</strong> 「数学の世界選手権レベルで 97% 近いスコアを出す AI が出てきた。もはや何でも解ける」という驚きと、「ベンチマークと実務は別物」という懐疑派が対立する構図</li>
+          <li>r/ClaudeAI での本日のスレッドは投稿から数時間でトップ10入り。tmux 並列運用スレッドと合わせ、Claude Code の実務活用議論が活況を呈している</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI：「tmux で並列サブエージェント ─ Claude Code をスタートアップチームのように運用する方法」が大量のフォロワーを獲得</div>
-      <div class="card-meta">
-        <span class="badge">Tips</span>
-        <span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit" target="_blank" rel="noopener">AIToolDiscovery — Claude Code Reddit まとめ</a> — 2026.05</span>
-      </div>
-      <div class="card-body">
-        <p>r/ClaudeAI で「tmux を使って複数の Claude Code インスタンスをパネル分割で並列実行し、互いに問い合わせ・検証・委任させる」という高度な使い方が紹介され、スレッドに何百もの「試してみた」報告が集まっている。</p>
-        <ul>
-          <li><strong>「スタートアップチーム型」構成:</strong> フロントエンド担当・バックエンド担当・テスト担当のエージェントを tmux ペインに並べ、オーケストレーター役のエージェントが指示と統合を担う。1人の開発者が4〜6のエージェントを管理するスタイルが事例として共有されている</li>
-          <li><strong>実際の効果と限界:</strong> 「単純なモジュール分割タスクには非常に有効。しかしグローバルな状態管理や型定義の整合性維持はエージェント間でブレやすい」という実務的なフィードバックが多数</li>
-          <li><strong>MCP サーバー連携:</strong> Managed Agents のプライベート MCP サーバー対応が加わったことで、「社内専用のコンテキストを各エージェントに与える」設計が現実的になったという報告も</li>
-          <li>r/ClaudeAI の週間アクティブ投稿者は4,200人を超えており、実務的なノウハウ共有の場として機能が強まっている。Claude Code への言及は Codex の約4倍という統計も改めて注目を集めた</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/geopolitics・r/worldnews：中国の AI 人材渡航制限 ─ DeepSeek・Alibaba 幹部に政府承認が必要、「AI は核科学者と同格に」</div>
-      <div class="card-meta">
-        <span class="badge">Policy</span>
-        <span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms" target="_blank" rel="noopener">Bloomberg</a> / <a href="https://www.japantimes.co.jp/business/2026/05/27/tech/china-travel-curbs-ai-firms/" target="_blank" rel="noopener">The Japan Times</a> — 2026.05.26-27</span>
-      </div>
-      <div class="card-body">
-        <p>中国が DeepSeek・Alibaba などの私企業に所属する先端 AI 人材の海外渡航に政府承認を義務付ける措置を拡大したことが報じられると、r/geopolitics と r/worldnews で「これは AI 時代の頭脳流出防止策なのか規制強化なのか」という議論が活発化した。</p>
-        <ul>
-          <li><strong>措置の背景:</strong> 2025年12月に DeepSeek の幹部への適用から始まり、2026年に入り Alibaba・Manus（シンガポール移転スタートアップの共同創業者2名も対象）へ拡大。「AI 人材を核科学者・国有企業幹部と同格の国家安全保障資産と見なしている」と Bloomberg が分析</li>
-          <li><strong>Reddit の反応:</strong> 「これは頭脳流出を防ぎたい中国の焦りの表れだ。DeepSeek の成功があったとはいえ、米国側のモデルとの差に危機感を持っている」という見方が優勢。「逆に規制によって優秀な人材が離れるリスクも生じる」という反論も</li>
-          <li><strong>日本・欧州への影響:</strong> 日本タイムズは「中国からの AI 研究者が日欧の大学や研究機関に参加するケースが増える可能性がある」と指摘。国際的な AI 人材の再配置が加速するリスクを提示</li>
-          <li>AI 競争の地政学的側面がより鮮明になりつつあるとして、r/geopolitics のモデレーターが「AI 技術覇権」フレアの記事に注目スレッドを設けた</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/ExperiencedDevs：「Codex のモバイル対応は本当に使えるのか」─ 「監督するためだけにスマホを開くのは逆に疲れる」論争</div>
+      <div class="card-title">r/ChatGPTCoding：「Copilot が Gemini を切り捨てたのは何を意味するか」─ GitHub の OpenAI 依存深化とリスクを議論</div>
       <div class="card-meta">
         <span class="badge">Discussion</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> 記事への反応 — 2026.05</span>
+        <span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/github-copilot-drops-gemini-model-shakeup-may-2026" target="_blank" rel="noopener">DigitalApplied</a> 記事への Reddit 反応 — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>Codex のモバイルアプリ対応発表を受け、r/ExperiencedDevs で「AI エージェントをスマホから監督することの実用性」を議論するスレッドが立ち上がった。賛否が真っ二つに割れる展開となっている。</p>
+        <p>GitHub Copilot が Gemini モデルを削除したニュースを受け、r/ChatGPTCoding では「Microsoft/GitHub が OpenAI への依存を深めることのリスク」を論じるスレッドが人気を集めた。</p>
         <ul>
-          <li><strong>賛成派:</strong> 「長時間のビルドやテスト実行中に別の場所で作業しながら確認できるのは便利。エラーが出た瞬間に通知を受け取って方向転換できる」</li>
-          <li><strong>反対派:</strong> 「コードの文脈を理解せずにスマホの小画面でコマンドを承認するのは危険。疑問があっても確認がしにくく、ゴム印になる。結局ラップトップを開くことになる」</li>
-          <li><strong>中間意見:</strong> 「非同期の長期タスク（夜間バッチ処理、大規模テストスイート）の監視に限定すれば有効。リアルタイムのコーディングセッションには向かない」という実務的な落としどころを示す意見が最も多くのアップボートを獲得</li>
-          <li>「Claude Code が tmux ベースのターミナル操作に強みを持つのに対し、Codex はモバイル・クロスデバイス監督に本腰を入れている。これは単純な競争ではなくユーザー層の違いを反映しているのでは」という鋭い分析コメントも注目を集めた</li>
+          <li><strong>批判的な見方:</strong> 「Copilot からベンダー中立性が失われた。OpenAI との関係が悪化したらどうなる？」という依存リスクへの懸念。「Cursor や Claude Code のようにマルチモデルに対応できないことが競争劣位になる」という指摘</li>
+          <li><strong>擁護派の見方:</strong> 「GPT-5.3-Codex はコーディングに特化したモデルで、汎用 Gemini よりも精度が高い。選択肢を絞ることで品質を保証しようとしている」</li>
+          <li>6月1日からの AI Credits 移行については「事実上の値上げでは？」「エージェントを多用するチームにとってはコストインパクトが大きい」という声が多く、具体的な試算を共有する投稿が注目されている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：イラン・米草案合意 ─ 「トランプが署名するかどうかが全て」「ホルムズ再開なら原油価格が急落する」</div>
+      <div class="card-meta">
+        <span class="badge">Breaking</span>
+        <span class="card-source">Source: <a href="https://www.axios.com/2026/05/28/iran-peace-deal-trump-approval" target="_blank" rel="noopener">Axios</a> / <a href="https://abcnews.com/International/live-updates/iran-live-updates-peace-deal-work-progress-rubio/?id=133278077" target="_blank" rel="noopener">ABC News</a> — 2026.05.28</span>
+      </div>
+      <div class="card-body">
+        <p>米国とイランの交渉担当者が「ホルムズ海峡を60日かけて全面開放する」草案 MOU に合意したとの報道を受け、r/worldnews と r/geopolitics で「トランプが署名するかどうかが全てを決める」というスレッドが急上昇した。</p>
+        <ul>
+          <li><strong>合意の骨格:</strong> ①ホルムズ海峡を60日間かけて全面開放、②その後60日間の核交渉期間設定、③トランプの求める「高濃縮ウランの廃棄」が条件として含まれている。財務長官ベッセントは「全てはトランプ次第」とコメント</li>
+          <li><strong>原油市場への期待:</strong> 「ホルムズが完全再開されれば、イランからの輸出が戻ってくる。原油価格は数ドル単位で急落する可能性がある」という分析コメントが多くのアップボートを集めた</li>
+          <li><strong>懐疑論:</strong> 「交渉中も米軍がイランを空爆し、イランも対応している。停戦と呼べる状態ではない。草案が最終合意になるとは限らない」という冷静な見方も根強い</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/ExperiencedDevs：「AI コーディングエージェントの週2問題 ─ なぜ最初の1週間は最高なのに、2週目から使わなくなるのか」</div>
+      <div class="card-meta">
+        <span class="badge">Meta</span>
+        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community まとめ</a> — 2026.05</span>
+      </div>
+      <div class="card-body">
+        <p>r/ExperiencedDevs で「AI コーディングエージェントに熱狂した後、2週間で使わなくなる現象」を分析するスレッドが継続的な注目を集めている。「使い続けるためには何が必要か」という問いに対し、実務経験者からの具体的な回答が集まった。</p>
+        <ul>
+          <li><strong>「週2問題」の原因として挙げられた要素:</strong> ①コンテキストの断絶（セッションをまたぐと意図が引き継がれない）、②ドメイン特有のルールを毎回説明し直す手間、③エラー修正のループで逆に時間がかかる体験、④大規模コードベースでの精度低下</li>
+          <li><strong>「使い続けている」人の共通点:</strong> CLAUDE.md にプロジェクトのコンテキスト・ルール・禁止事項を詳細に記述している、MCP で社内ツールに接続している、小さなタスクに限定して使い大きな設計判断はしない、という3点が共通していた</li>
+          <li>「Claude Code はデフォルトのまま使うと凡庸なツール、カスタマイズすると開発チームのインフラになる。この非線形な学習コストが継続利用の壁になっている」というコメントが最多アップボートを獲得した</li>
         </ul>
       </div>
     </div>
@@ -291,88 +284,83 @@
     </div>
 
     <div class="card">
-      <div class="card-title">イラン・米停戦交渉、カタールで継続 ─ ルビオ国務長官「ホルムズ海峡再開の合意枠組みはほぼ固まった」、イランは原則合意を確認</div>
+      <div class="card-title">米・イラン、ホルムズ海峡60日開放の草案 MOU に合意 ─ トランプの最終承認待ち、軍事衝突は継続</div>
+      <div class="card-meta">
+        <span class="badge">Breaking</span>
+        <span class="card-source">Source: <a href="https://www.axios.com/2026/05/28/iran-peace-deal-trump-approval" target="_blank" rel="noopener">Axios</a> / <a href="https://www.washingtonpost.com/national-security/2026/05/28/us-iran-trade-strikes-trump-cites-no-pressure-peace-deal/" target="_blank" rel="noopener">Washington Post</a> / <a href="https://www.cnn.com/2026/05/28/world/live-news/iran-war-us-news" target="_blank" rel="noopener">CNN</a> — 2026.05.28</span>
+      </div>
+      <div class="card-body">
+        <p>米国とイランの交渉担当者は、ホルムズ海峡を60日かけて全面開放し、続く60日間で核問題を交渉するという草案覚書（MOU）に到達したと米当局者が発表した。ただし、トランプ大統領とイランの最高指導者モジュタバ・ハメネイ師はまだ最終承認を与えていない。</p>
+        <ul>
+          <li><strong>草案の骨格:</strong> ①ホルムズ海峡を段階的に全面開放（60日間）、②開放後に核交渉60日間を設定、③イランは高濃縮ウランを廃棄または国外移転、④米国は段階的制裁緩和と凍結資産（$120億超）の解放</li>
+          <li><strong>トランプの姿勢:</strong> ワシントン・ポストによると、トランプは「急がされる必要はない」と述べ、「イランにとって良い取引をするつもりはない」と発言。財務長官ベッセントは「全ては大統領次第」とコメント</li>
+          <li><strong>軍事衝突の継続:</strong> 4月8日に始まった停戦は公式には維持されているが、米軍によるイランへの「防衛的空爆」とイランの応射が断続的に続いている。交渉担当者はドーハを離れておらず、交渉継続の意思は示されている</li>
+          <li><strong>原油市場:</strong> 合意草案の報道で原油先物が下落。ホルムズ海峡が完全再開すれば日量数百万バレルの輸送が正常化するとの期待から OPEC+ 各国も動向を注視している</li>
+          <li>ABC News はライブ更新で「交渉担当者間では合意、首脳レベルでは未署名」という宙づり状態を「最も不安定な外交フェーズ」と表現している</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">イスラエル、ヒズボラへの攻撃を激化表明 ─ ガザ市のアパートへの空爆で子ども4名を含む10人死亡</div>
       <div class="card-meta">
         <span class="badge">Middle East</span>
-        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/5/25/rubio-says-us-will-find-another-way-if-iran-talks-fail" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.npr.org/2026/05/25/nx-s1-5833690/u-s-iran-negotiations-updates" target="_blank" rel="noopener">NPR</a> / <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" target="_blank" rel="noopener">Wikipedia — 2026 Iran ceasefire</a> — 2026.05.27</span>
+        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>カタール・ドーハを舞台にした米国とイランの停戦・和平交渉が続いている。米国のマルコ・ルビオ国務長官は5月27日、「ホルムズ海峡の再開とその見返りとなる制裁緩和の枠組みはほぼ固まっている」と述べた。イランも高濃縮ウランの廃棄と海峡再開に「原則合意」したと報じられており、最終合意への機運が高まっている。</p>
+        <p>イスラエル軍はレバノンのヒズボラに対する攻撃を強化すると表明した。同時に、ガザ市西部のアル＝リマル地区にあるアパートへの夜間空爆で少なくとも10人が死亡（負傷者20人以上）、うち子ども4名が含まれる。</p>
         <ul>
-          <li><strong>現状:</strong> 4月8日から続く停戦は維持されているものの、5月25〜26日の米軍によるイラン南部への「防衛的空爆」でイランが強く反発。それでも交渉チームはドーハを離脱しておらず、交渉継続の意思を示している</li>
-          <li><strong>合意の骨格:</strong> ①ホルムズ海峡の全面再開（現在はほぼ封鎖状態）、②イランの高濃縮ウランの廃棄または国外移転、③米国による対イラン制裁の段階的解除、④120億ドル超の凍結資産の解放。合意覚書（MOU）成立後に最終合意交渉のため60日間が設けられる予定</li>
-          <li><strong>ハードルと懸念:</strong> イランの保守派・革命防衛隊は「交渉を受け入れた政府は弱腰だ」と内部から批判。米国内ではタカ派が「核開発をゼロにしない合意は不十分だ」と主張。両国の国内政治が交渉を難航させている</li>
-          <li><strong>原油市場への影響:</strong> 合意成立観測が浮上するたびに原油先物価格が下落。ホルムズ海峡再開による供給増加への期待から、OPEC+ 各国も動向を注視している</li>
-          <li>パキスタンとカタールが共同調停役として引き続き機能しており、次のステップとして外相級会合が設定される可能性が報じられている</li>
+          <li><strong>ヒズボラ戦線:</strong> イスラエルは南レバノンでのヒズボラ陣地への攻撃を激化させる方針を発表。米国との外交ルートでは自制を求める声もあるが、イスラエル政府は独自の安全保障論理を優先している</li>
+          <li><strong>ガザの人道状況:</strong> アル＝リマル地区への空爆は住宅密集地を直撃。現地の医療機関は負傷者の受け入れに追われており、物資不足が深刻化している</li>
+          <li>米国のイラン和平交渉が進む一方で、イスラエルの対レバノン・対ガザ攻撃が激化するという矛盾した構図が中東の緊張をさらに複雑にしている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">英国・ポーランドが「ノーソルト条約」署名 ─ RAF ノーソルト基地でスターマー・トゥスク両首相が調印、欧州防衛協力が新局面に</div>
+      <div class="card-title">イランで数か月ぶりにインターネット接続が回復 ─ YouTube・Instagram は依然制限、断続的な低速サービス</div>
       <div class="card-meta">
-        <span class="badge">Europe</span>
-        <span class="card-source">Source: <a href="https://notesfrompoland.com/2026/05/27/poland-and-uk-sign-treaty-deepening-defence-and-security-ties/" target="_blank" rel="noopener">Notes From Poland</a> / <a href="https://www.euronews.com/my-europe/2026/05/27/uk-and-poland-sign-major-defence-treaty-as-starmer-continues-to-rebuild-ties-with-europe" target="_blank" rel="noopener">Euronews</a> / <a href="https://www.gov.uk/government/news/security-and-defence-partnership-treaty-the-projects-the-uk-and-poland-will-deliver-together" target="_blank" rel="noopener">GOV.UK</a> — 2026.05.27</span>
+        <span class="badge">Iran</span>
+        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>英国のキア・スターマー首相とポーランドのドナルド・トゥスク首相が5月27日、ロンドン郊外の RAF ノーソルト基地で二国間防衛・安全保障条約に署名した。第二次世界大戦中にポーランド人パイロットが拠点とした歴史的な場所が選ばれたことにも象徴的な意味がある。</p>
+        <p>イラン当局が数か月間にわたるインターネット封鎖を終了し、市民がネット接続を取り戻しつつある。ただし地域によってサービスは低速・断続的で、YouTube・Instagram などは依然として重度に制限されている。</p>
         <ul>
-          <li><strong>条約の主要内容:</strong> 次世代軍事システムの共同開発・生産（ミサイル防衛・中距離ミサイル・ドローン技術が優先領域）、合同軍事演習の拡充、情報共有の強化、サイバーセキュリティ・医療安全保障での協力</li>
-          <li><strong>スターマーの位置づけ:</strong> 「英国とポーランドの防衛・安全保障関係において一世代で最大の前進だ」と評価。英国が Brexit 後に欧州の安全保障から距離を置いてきた流れを転換し、欧州との関係再構築を加速させる動きとして注目されている</li>
-          <li><strong>地域的背景:</strong> ポーランドはロシアのウクライナ侵攻以降、GDP 比 4% 超の国防費を投じる欧州最大の防衛支出国の一つとなっている。NATO 東翼の重要国として英国との協力深化は戦略的に意味が大きい</li>
-          <li>英国はすでにフランス・ドイツとの二国間防衛枠組みを持っており、ポーランドとの条約でその「欧州防衛ネットワーク」がさらに拡大する形となった</li>
+          <li><strong>封鎖の背景:</strong> 米国との軍事衝突激化を受けて当局が通信管理を強化。情報統制と反政府デモの抑制が目的だったとみられている</li>
+          <li><strong>回復の現状:</strong> ユーザーの報告によると、接続はあるものの速度は非常に遅く、VPN 経由でも不安定。当局は「秩序ある段階的な回復」を続けると説明しているが、完全な回復時期は不明</li>
+          <li>和平交渉の進展と並行してインターネットが回復したことは、イラン政府が国内世論の管理を一定程度緩和するシグナルとして読む専門家もいる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">中国、DeepSeek・Alibaba などの AI 人材に海外渡航規制 ─ 「AI は核科学者と同格の国家安全保障資産」として管理強化</div>
-      <div class="card-meta">
-        <span class="badge">Tech Policy</span>
-        <span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms" target="_blank" rel="noopener">Bloomberg</a> / <a href="https://invezz.com/ng/news/2026/05/26/top-chinese-ai-talent-face-new-overseas-travel-restrictions/" target="_blank" rel="noopener">Invezz</a> / <a href="https://www.japantimes.co.jp/business/2026/05/27/tech/china-travel-curbs-ai-firms/" target="_blank" rel="noopener">The Japan Times</a> — 2026.05.26-27</span>
-      </div>
-      <div class="card-body">
-        <p>中国政府が先端 AI 研究に従事する民間企業の人材を対象に、海外渡航前の当局承認を義務付けていることが Bloomberg の報道で明らかになった。DeepSeek の幹部への適用（2025年12月）を皮切りに、Alibaba・Manus など私企業にも拡大している。</p>
-        <ul>
-          <li><strong>対象者の選定基準:</strong> 肩書や雇用主ではなく、当局が「国家にとって戦略的に重要」と判断した個人が対象。スタートアップ創業者・研究者・幹部が含まれる。Manus（シンガポール移転スタートアップ）の共同創業者2名も個別に渡航禁止となった事例も確認されている</li>
-          <li><strong>歴史的文脈:</strong> 従来この種の渡航制限は核科学者・国有企業幹部など国家機密を扱う層に限定されていた。私企業の AI 人材にまで適用が拡大したことは「AI を国家安全保障の中核技術と明確に定義した」ことを意味する</li>
-          <li><strong>頭脳流出防止 vs. 人材離脱リスク:</strong> 規制が強まることで有望な AI 研究者が海外移住を事前に選択し、むしろ国内からいなくなるという逆効果のリスクも指摘されている。研究者コミュニティでは「移住するなら規制前に」という動きが加速していたとの報告もある</li>
-          <li><strong>国際的影響:</strong> 日本・欧州の大学や AI 研究機関では「中国からの優秀な研究者を招聘するチャンスが生まれる可能性がある」という見方も出ており、AI 人材の地政学的再配置が加速するリスクを複数の専門家が指摘している</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">中国が神舟23号を打ち上げ ─ 3名の宇宙飛行士のうち1名が1年間の長期滞在、香港出身の女性飛行士も搭乗</div>
-      <div class="card-meta">
-        <span class="badge">Space</span>
-        <span class="card-source">Source: <a href="https://www.npr.org/2026/05/25/g-s1-124179/china-launches-shenzhou-23-spacecraft" target="_blank" rel="noopener">NPR</a> / <a href="https://english.news.cn/20260525/e71e193dd1d14e1193edc9173f3f0477/c.html" target="_blank" rel="noopener">Xinhua</a> — 2026.05.24-25</span>
-      </div>
-      <div class="card-body">
-        <p>中国は5月24日夜（現地時間）、酒泉衛星発射センターから有人宇宙船・神舟23号を打ち上げた。3名の乗組員のうち1名が天宮宇宙ステーションに1年間滞在する予定で、世界でも最長クラスの単独長期宇宙滞在となる。</p>
-        <ul>
-          <li><strong>乗組員:</strong> 指揮官の朱楊柱、張志遠、香港出身の賴可瑩（李佳英）。賴は香港初の宇宙飛行士として、香港市民と中国全土から熱い注目を集めている</li>
-          <li><strong>ミッション目標:</strong> 長期宇宙滞在が人間の適応能力と限界に与える影響の科学的解明。数十件の科学・応用実験を実施する予定で、神舟21号クルー（200日以上滞在）との軌道上交代も行う</li>
-          <li><strong>戦略的意義:</strong> 中国は国際宇宙ステーション（ISS）から除外されており、天宮を独自に運営している。人間の長期宇宙滞在データの蓄積は、月・火星探査に向けた将来計画に直結する</li>
-          <li>ISSへのアクセスを持たない中国が独自の長期滞在実験を重ねることで、宇宙医学・生理学の分野でも存在感を高めつつある</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">エボラ、DRC での感染拡大が続く ─ 死者220人超・疑い例900件超、WHO が「制御困難」と警告、10カ国がリスク指定</div>
+      <div class="card-title">エボラ出血熱、DRC での感染拡大が継続 ─ 死者220人超・疑い例900件、ウガンダへの越境感染も確認</div>
       <div class="card-meta">
         <span class="badge">Health</span>
-        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> / <a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda" target="_blank" rel="noopener">ECDC</a> / <a href="https://www.aljazeera.com/video/newsfeed/2026/5/24/ebola-spreads-in-the-drc-as-authorities-struggle-to-contain-outbreak" target="_blank" rel="noopener">Al Jazeera</a> — 2026.05.27</span>
+        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> / <a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda" target="_blank" rel="noopener">ECDC</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>コンゴ民主共和国（DRC）のエボラ（バンディブジョ株）アウトブレイクが悪化を続けている。WHO は「公衆衛生従事者が対応できるペースを超えて感染が広がっている」と警告。ウガンダでも7件の確定例が確認されており、越境感染の抑制が急務となっている。</p>
+        <p>コンゴ民主共和国（DRC）のイトゥリ州モングバル市を震源とするエボラ（バンディブジョ株）アウトブレイクが続いている。WHO は「医療従事者が対応できるペースを超えて感染が広がっている」と警告しており、ウガンダでも7件の確定例が報告されている。</p>
         <ul>
-          <li><strong>最新数字:</strong> DRC：確定105件（死者10人）・疑い906件（死者223人）、ウガンダ：確定7件（死者1人）。合計死者数は220人を超えている</li>
-          <li><strong>ワクチンの不在:</strong> バンディブジョ株に対して承認済みの有効なワクチンは存在しない。臨床試験中の候補ワクチンの緊急投与が検討されているが、接触者追跡と現地アクセスの困難さが大きな障壁となっている</li>
-          <li><strong>治安問題との複合:</strong> 感染地域と M23 武装グループの活動域が重複しており、WHO・MSF の感染制御チームが現地に入れないケースが続いている。感染者が施設から逃走する事例も確認されており、追跡が困難な状況</li>
-          <li><strong>欧州への波及:</strong> ウガンダから北イタリアに渡航した2名が出血熱症状で入院した事案があったが、検査でエボラは陰性となった。欧州各国保健当局は渡航後スクリーニングを強化している</li>
+          <li><strong>最新数字:</strong> DRC：確定105件（死者10人）・疑い906件（死者223人）、ウガンダ：確定7件（死者1人）</li>
+          <li><strong>ワクチン不在:</strong> バンディブジョ株に対して承認済みの有効なワクチンは存在しない。感染地域と M23 武装グループの活動域が重複しており、WHO・MSF の感染制御チームが現地に入れないケースが続いている</li>
           <li>アフリカ CDC はケニア・ルワンダ・ブルンジ・タンザニアなど10カ国を「高リスク」に指定。米 CDC は DRC・ウガンダ帰国者への21日間監視を推奨している</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Google 社員、Polymarket での内部情報取引で起訴 ─ AI 関連情報を利用した予測市場不正が初の連邦起訴事例に</div>
+      <div class="card-meta">
+        <span class="badge">Legal</span>
+        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
+      </div>
+      <div class="card-body">
+        <p>連邦政府は Google の社員を、社内の未公開情報を使って予測市場「Polymarket」で不正取引を行ったとして起訴した。AI 企業の機密情報を予測市場で悪用した事例として、初めて連邦刑事訴追の対象になったケースとして注目されている。</p>
+        <ul>
+          <li>Polymarket は AI・テクノロジー関連の出来事に多くの賭けが集中しており、インサイダー取引が発生しやすい構造的リスクが以前から指摘されていた</li>
+          <li>この事件は「予測市場における AI インサイダー情報の規制」という新しい法的問題を提起しており、SEC や CFTC の管轄範囲を巡る議論が始まっている</li>
+          <li>AI 企業の社員が自社モデル・製品リリース情報を持つことによる金融上のアドバンテージが表面化した事例として、業界全体での内部情報管理ポリシーの見直しを促す可能性がある</li>
         </ul>
       </div>
     </div>
@@ -382,54 +370,50 @@
   <section class="section" id="dev">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">ZennとQiitaにgit pushで同時公開する環境をClaudeと一緒に作った ─ Claude Code が自分の投稿インフラ構築を支援する新潮流</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/nognog/articles/zenn-qiita-auto-post-with-claude" target="_blank" rel="noopener">zenn.dev/nognog</a></span>
-      </div>
-      <div class="card-body">
-        <p>Zenn と Qiita の両プラットフォームに git push で自動同時公開できる環境を Claude Code と共同で構築した記事が注目を集めている。「AI エージェントに自分の技術記事公開ワークフローを設計させる」というメタ的な実践が多くの開発者の関心を引いた。</p>
-        <ul>
-          <li><strong>構成の概要:</strong> GitHub Actions を Claude Code が設計・実装し、push をトリガーに Zenn CLI・Qiita API を呼び出して両プラットフォームに同時公開。記事の frontmatter から自動でタグ変換・スラッグ生成も行う</li>
-          <li><strong>注目点:</strong> 著者が「Claude Code に設計方針を相談しながら作る」プロセスをそのまま記事にしたことで、「エージェントとのペアプロ」の実際の流れが可視化されている。「どんなプロンプトで指示したか」「どこで修正が必要だったか」も詳細に記録されている</li>
-          <li>コメント欄では「自分のアウトプットインフラをAIと作る時代になった」「開発者ツールの民主化が加速している」という感想が多数。Qiita の公式チームがこの記事を公式 X でリポストしたことも話題になった</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">「プログラミング雑記 2026年5月」─ Karpathy の Anthropic 参画と Claude Code 実務活用、週次で追うエンジニアの等身大レポート</div>
+      <div class="card-title">【決定版】Claude Code 全設定リファレンス 2026 ─ CLAUDE.md / Hooks / Permissions / MCP を1ページで網羅</div>
       <div class="card-meta">
         <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/ishisaka/items/64dcfc45029f1205c818" target="_blank" rel="noopener">qiita.com/ishisaka</a></span>
+        <span class="card-source"><a href="https://qiita.com/LemonCake/items/4f043eb440066319dfa6" target="_blank" rel="noopener">qiita.com/LemonCake</a></span>
       </div>
       <div class="card-body">
-        <p>個人エンジニアが AI 関連ニュースと自身の Claude Code 実務体験を週次でまとめる「プログラミング雑記」シリーズ。5月分では Karpathy の Anthropic 参画報道への個人的な感想と、Claude Code を使った実際のタスクレポートが好評を得ている。</p>
-        <ul>
-          <li><strong>Karpathy 参画への反応:</strong> 「YouTube の教育コンテンツが途絶えないか心配という気持ちと、Anthropic のモデルが次のステージに行くという期待が同時にある」という等身大のコメントが多くの共感を集めた</li>
-          <li><strong>Claude Code 実務体験:</strong> レガシーコードのテスト補完タスクで Claude Code を使用。「コードの意図を汲んでテストを生成する精度が想定より高かった。ただし Mock の設計は自分で方針を伝えないと迷走する」という正直なフィードバック</li>
-          <li>「大きなニュースを追いながら自分の手を動かし続ける」スタイルが支持されており、技術情報のキャッチアップと実践のバランスを取ろうとするエンジニアの模範的な姿として読者から評価されている</li>
-        </ul>
+        <p>Claude Code の全設定項目を1ページで参照できるリファレンスがQiitaで人気を集めている。CLAUDE.md の書き方、Hooks のイベント種別（32種類以上）と終了コードの意味、Permissions の設定文法、MCP サーバーの接続設定まで網羅している。Anthropic の2026年5月版ドキュメントを元に検証済みとされており、Claude Code を本番環境で運用する開発者のブックマーク必須記事として注目されている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Qiita/Zenn の ClaudeCode ダイジェスト記事から見えるトレンド ─ MCP・フック・サブエージェント・スキルの実践記事が急増</div>
+      <div class="card-title">Claude Codeを「優秀な新卒部下」として使い倒す ─ 個人開発爆速化の全ワークフロー</div>
       <div class="card-meta">
-        <span class="badge">Trend</span>
-        <span class="card-source"><a href="https://zenn.dev/hageoyaji/articles/2026-04-22-claudecode-digest" target="_blank" rel="noopener">zenn.dev/hageoyaji — ClaudeCode キーワードダイジェスト</a></span>
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
       </div>
       <div class="card-body">
-        <p>Qiita・Zenn の ClaudeCode タグ付き記事を定期的に収集・要約しているダイジェスト記事が、5月に入って言及数の急増を記録している。Managed Agents・MCP・フック・サブエージェントの実践解説記事が特に増加している。</p>
-        <ul>
-          <li><strong>急増しているテーマ:</strong> ①プライベート MCP サーバー構築（企業内データへのエージェントアクセス）、②SessionStart フックを使ったプロジェクト固有の初期化、③複数サブエージェントの tmux 運用、④CLAUDE.md のスキル定義によるカスタマイズ</li>
-          <li><strong>実践者の共通認識:</strong> 「Claude Code はデフォルト設定で試した段階では真価が分からない。CLAUDE.md・MCP・フックで自分のワークフローに合わせてカスタマイズして初めて実用域に入る」という声が多い</li>
-          <li>昨日（5/26）の前日アーカイブで取り上げた「AIエージェント時代しんどい話」や「第八回コーディングエージェントまとめ」は依然として人気を集めており、本日新規の Qiita/Zenn 記事の質・量の両面での充実が引き続き注目される</li>
-        </ul>
+        <p>「Claude Code を優秀な新卒のように扱う」というメタファーで、指示の出し方・MCP での外部ツール連携・タスク分割の粒度を丁寧に解説した記事。GitHub を MCP 経由で直接操作させ、PR 作成・マージまでを Claude Code に委任するワークフローが特に注目されている。「マイクロマネジメントではなく、権限を明確にして任せる」という思想が共感を集めている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【Claude Code入門】今から追いつくClaude Code 徹底解説 ─ CLAUDE.md・Plan Mode・Skills・Hooks・MCPを基礎から</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/i-inose/items/e644e9b620ee1c8d3c1b" target="_blank" rel="noopener">qiita.com/i-inose</a></span>
+      </div>
+      <div class="card-body">
+        <p>Claude Code の全主要機能を初学者向けにわかりやすく解説した入門記事。Plan Mode でのコードレビュー前確認、Skills によるカスタムコマンド定義、Hooks でのファイル保存・実行トリガー、MCP による外部ツール接続の4テーマを実際のコード例とともに説明している。Opus 4.8 の Dynamic Workflows と組み合わせた上級活用法への展望も触れられており、入門者から中級者まで幅広く読まれている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【2026年版】Claude Codeを最強にするプラグイン・MCP・ツール総まとめ ─ 9,000超のプラグインから選ぶ実践ガイド</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/shatolin/items/ca1810e419fee5fd963b" target="_blank" rel="noopener">qiita.com/shatolin</a></span>
+      </div>
+      <div class="card-body">
+        <p>2026年2月時点で9,000を超えるプラグインが存在する Claude Code エコシステムの中から、実務で本当に役立つ MCP サーバー・プラグイン・ツールを厳選して紹介する記事。GitHub・Slack・Linear・Notion・Jira といった定番ツールへの MCP 接続設定から、独自 MCP サーバーの構築方法まで網羅している。Opus 4.8 の Dynamic Workflows と組み合わせることで、エンタープライズ規模の自動化が現実的になったという視点から今後の方向性にも言及している。</p>
       </div>
     </div>
   </section>
@@ -437,22 +421,19 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年5月27日（水）</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月28日（木）</p>
   <p style="margin-top:0.5rem;">
     Sources:
     <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
-    <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> ·
     <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
-    <a href="https://www.infoq.com" target="_blank" rel="noopener">InfoQ</a> ·
-    <a href="https://www.mindstudio.ai" target="_blank" rel="noopener">MindStudio</a> ·
-    <a href="https://www.theregister.com" target="_blank" rel="noopener">The Register</a> ·
-    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch (Codex mobile)</a> ·
-    <a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a> ·
-    <a href="https://www.japantimes.co.jp" target="_blank" rel="noopener">The Japan Times</a> ·
-    <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
-    <a href="https://notesfrompoland.com" target="_blank" rel="noopener">Notes From Poland</a> ·
-    <a href="https://www.euronews.com" target="_blank" rel="noopener">Euronews</a> ·
-    <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
+    <a href="https://www.marktechpost.com" target="_blank" rel="noopener">MarkTechPost</a> ·
+    <a href="https://www.digitalapplied.com" target="_blank" rel="noopener">DigitalApplied</a> ·
+    <a href="https://aiweekly.co" target="_blank" rel="noopener">AI Weekly</a> ·
+    <a href="https://www.axios.com" target="_blank" rel="noopener">Axios</a> ·
+    <a href="https://www.washingtonpost.com" target="_blank" rel="noopener">Washington Post</a> ·
+    <a href="https://www.cnn.com" target="_blank" rel="noopener">CNN</a> ·
+    <a href="https://www.democracynow.org" target="_blank" rel="noopener">Democracy Now!</a> ·
+    <a href="https://www.justsecurity.org" target="_blank" rel="noopener">Just Security</a> ·
     <a href="https://www.who.int" target="_blank" rel="noopener">WHO</a> ·
     <a href="https://www.ecdc.europa.eu" target="_blank" rel="noopener">ECDC</a> ·
     <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
