@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月28日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年5月29日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -68,13 +68,13 @@
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
   <p class="subtitle">Claude Code / AIエージェント / OpenAI Codex / 世界情勢 / 開発者トレンド</p>
-  <p class="date">2026年5月28日（木）&nbsp;|&nbsp; <a href="2026-05-27/index.html">前日版（5/27）</a></p>
+  <p class="date">2026年5月29日（金）&nbsp;|&nbsp; <a href="2026-05-28/index.html">前日版（5/28）</a></p>
 </header>
 
 <nav>
   <a href="#claude">Claude Code</a>
-  <a href="#openai">OpenAI / Copilot</a>
-  <a href="#reddit">Reddit</a>
+  <a href="#openai">OpenAI / Google</a>
+  <a href="#reddit">Reddit / HN</a>
   <a href="#world">世界情勢</a>
   <a href="#dev">Qiita/Zenn</a>
 </nav>
@@ -88,189 +88,192 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目（5/28）:</strong> Anthropic が <strong>Claude Opus 4.8</strong> を本日リリース。Claude Code に「Dynamic Workflows」を追加し、1セッションで最大 <strong>1,000 のサブエージェント</strong> を並列実行できるようになった。SWE-bench Pro スコアは 69.2%（前モデル比 +4.9pt）で GPT-5.5 を上回り、コーディング精度で業界トップを更新した。
+      <strong>本日の注目（5/29）:</strong> Anthropic が <strong>無料のセキュリティガイダンスプラグイン</strong>を Claude Code 向けにリリース。リリースから24時間で<strong>15万7,000ダウンロード</strong>を突破し、内部テストでは PR のセキュリティ指摘コメントを<strong>30〜40%削減</strong>した。昨日発表の Dynamic Workflows（Bun ランタイムを11日間・75万行で Rust へ移植した事例）に対する Hacker News 上の議論も活発化している。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">69.2%</div><div class="stat-label">SWE-bench Pro（Opus 4.7 は 64.3%）</div></div>
-      <div class="stat-card"><div class="stat-value">1,000</div><div class="stat-label">Dynamic Workflows での最大並列サブエージェント数</div></div>
-      <div class="stat-card"><div class="stat-value">96.7%</div><div class="stat-label">USAMO 2026 数学ベンチマーク（前モデル 69.3%）</div></div>
+      <div class="stat-card"><div class="stat-value">157,000</div><div class="stat-label">セキュリティプラグイン 24h ダウンロード数</div></div>
+      <div class="stat-card"><div class="stat-value">30〜40%</div><div class="stat-label">PR セキュリティ指摘コメントの削減率（内部テスト）</div></div>
+      <div class="stat-card"><div class="stat-value">750,000</div><div class="stat-label">Bun → Rust 移植で生成した Rust コード行数（11日間）</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Opus 4.8、本日リリース ─ Dynamic Workflows で最大1,000並列サブエージェント、努力レベル制御、安価な Fast Mode を実装</div>
+      <div class="card-title">Claude Code 向け無料セキュリティガイダンスプラグインをリリース ─ SQLi・XSS・シークレットハードコードなど25クラスを3層でリアルタイム検出</div>
       <div class="card-meta">
-        <span class="badge">New Release</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://thenewstack.io/claude-opus-48-release/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://www.marktechpost.com/2026/05/28/anthropic-ships-claude-opus-4-8-alongside-dynamic-workflows-and-cheaper-fast-mode-with-workflows-capped-at-1000-subagents/" target="_blank" rel="noopener">MarkTechPost</a> — 2026.05.28</span>
+        <span class="badge">New Plugin</span>
+        <span class="card-source">Source: <a href="https://cybersecuritynews.com/anthropic-updates-claude-code/" target="_blank" rel="noopener">CyberSecurityNews</a> / <a href="https://www.helpnetsecurity.com/2026/05/27/anthropic-claude-code-security-guidance-plugin/" target="_blank" rel="noopener">Help Net Security</a> / <a href="https://www.securityweek.com/anthropic-releases-new-claude-sandbox-security-guidance-plugin/" target="_blank" rel="noopener">SecurityWeek</a> / <a href="https://aiweekly.co/alerts/anthropic-launches-free-claude-code-security-plugin" target="_blank" rel="noopener">AI Weekly</a> — 2026.05.27</span>
       </div>
       <div class="card-body">
-        <p>Anthropic は本日、Claude Opus 4.8 を Claude API・Amazon Bedrock・Google Cloud Vertex AI・Microsoft Foundry で同時リリースした。価格は Opus 4.7 と同一（標準: $5/1M 入力・$25/1M 出力、Fast Mode: $10/$50）のまま、全性能指標で大幅な改善を達成している。</p>
+        <p>Anthropic は5月27日、Claude Code の全プラン・全ユーザーに向けて無料のセキュリティガイダンスプラグインをリリースした。<code>/plugins</code> コマンドからプラグインマーケットプレイスに直接インストールでき、コードを書きながらリアルタイムで脆弱性パターンを検出する。</p>
         <ul>
-          <li><strong>Dynamic Workflows（研究プレビュー）:</strong> Claude Code の Enterprise・Team・Max プランで利用可能。Claude が大規模タスクを計画し、1セッション内で数十〜数百のサブエージェントを並列起動・検証・統合できる。最大上限は1,000サブエージェント。コードベース規模のマイグレーション（数十万行）をキックオフからマージまで自律実行できると Anthropic は説明している</li>
-          <li><strong>努力レベル制御（Effort Controls）:</strong> claude.ai の全ユーザーがモデルセレクター横のスライダーで「どれだけ深く考えるか」を調整できるようになった。高努力モードはより深く思考し、低努力モードはレート制限の消費を抑えながら高速に応答する</li>
-          <li><strong>Fast Mode の価格引き下げ:</strong> Opus 4.7 比で約 3 分の 1 のコストで高速推論が利用可能に。処理速度は 2.5 倍で、大量バッチ処理や開発ループの高速化に貢献する</li>
-          <li><strong>コーディング精度の改善:</strong> コードに潜む欠陥を見逃す確率が前モデル比で約 4 分の 1 に低下。重要な問題をユーザーに報告しない割合も 3.7% まで下がった（前モデルより大幅改善）</li>
-          <li><strong>数学・推論:</strong> USAMO 2026 で 96.7%（前モデル 69.3%）と飛躍的に向上。GPT-5.5 の同ベンチマークスコアを上回っており、科学・工学分野のユースケースにも注目が集まる</li>
+          <li><strong>検出対象（約25クラス）:</strong> SQL インジェクション、コマンドインジェクション、XSS、ハードコードされた API キーとシークレット、セキュアでないデシリアライゼーション、不適切な入力バリデーションなど</li>
+          <li><strong>3層レビュー体制:</strong> ①ファイル編集時、②モデルターン後、③コミット前、の3段階でコードをチェック。問題が検出されると、同一セッション内でインラインフィックスを提案する</li>
+          <li><strong>実績:</strong> 内部テストで PR のセキュリティ関連コメントを30〜40%削減。リリース24時間で157,000ダウンロードを記録し、Medium での独立したテスト記事（Joe Njenga 氏）でも「実際に隠れたバグを発見できた」と報告されている</li>
+          <li><strong>Claude Sandbox との併用:</strong> 同日リリースの Claude Sandbox（コードをサンドボックス環境で実行してリスクを最小化する機能）と組み合わせることで、コーディングから実行まで一貫したセキュリティカバレッジが得られる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Agent View が一般提供へ ─ 実行中・ブロック中・完了タスクを一画面で可視化、大規模エージェント運用の管理性が向上</div>
+      <div class="card-title">Dynamic Workflows 発表翌日の反響 ─ Bun の75万行 Rust 移植が「本当に動いた」ことで業界に衝撃、HN では制御機構への議論も</div>
       <div class="card-meta">
-        <span class="badge">Feature</span>
-        <span class="card-source">Source: <a href="https://code.claude.com/docs/en/whats-new" target="_blank" rel="noopener">Claude Code What's New</a> / <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> — 2026.05</span>
+        <span class="badge">Reaction</span>
+        <span class="card-source">Source: <a href="https://news.ycombinator.com/item?id=48311705" target="_blank" rel="noopener">Hacker News</a> / <a href="https://claudefa.st/blog/guide/development/dynamic-workflows" target="_blank" rel="noopener">ClaudeFa.st</a> / <a href="https://www.testingcatalog.com/anthropic-launches-dynamic-workflows-for-claude-code/" target="_blank" rel="noopener">TestingCatalog</a> — 2026.05.28-29</span>
       </div>
       <div class="card-body">
-        <p>Claude Code の「Agent View」が正式提供となった。1つの画面で全 Claude Code セッションの状態（実行中・ブロック・完了）をリアルタイム監視できる機能で、Dynamic Workflows の大規模並列実行との組み合わせで真価を発揮する。</p>
+        <p>昨日（5/28）発表された Dynamic Workflows は、Bun の創設者 Jarred Sumner による Zig→Rust 全面移植（約75万行・11日間・既存テスト99.8%パス）を旗艦事例として大きな反響を呼んでいる。</p>
         <ul>
-          <li><strong>主な機能:</strong> セッションごとの進捗・エラー・完了状態の一覧、ブロック要因の即時特定、手動介入が必要なサブエージェントへのワンクリックアクセス</li>
-          <li><strong>業界の評価:</strong> Neurometric AI の CEO Rob May は「摩擦を減らすが、根本的な課題は変わらない」とコメント。一方で、数百エージェントを同時管理する場面では可視性が大幅に改善されるという実務的な評価が多い</li>
-          <li>Dynamic Workflows と Agent View の組み合わせにより、「1人のエンジニアが数百のエージェントチームを監督する」というアーキテクチャが現実的なものになってきた</li>
+          <li><strong>ワークフローの内訳:</strong> ①全 Zig 構造体フィールドに適切な Rust ライフタイムをマッピングする並列エージェント群、②各 .zig ファイルを動作等価な .rs ファイルに変換する並列エージェント群（各ファイルにレビュアー2体）、③ビルドとテストが通るまでループで修正する検証エージェント群</li>
+          <li><strong>Hacker News の主要議論:</strong> 「長時間実行セッションへの割り込み手段が不足している」「途中経過のコードレビューを逐次挿入する仕組みが欲しい」という制御機構への要望が多い。上限16並列エージェント・計1,000エージェントという制約についても「十分か」という声も</li>
+          <li><strong>利用要件:</strong> Max・Team・API プランはデフォルト有効。Enterprise プランはデフォルト無効（管理者が設定で有効化可能）。Free プランは対象外</li>
+          <li>「普通の開発者が75万行のリファクタリングを11日でできるとは思えなかったが、これが現実になった。次の問いは『何をエージェントに任せ、何を手で書くか』だ」という声が高評価を集めている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code、GitHub Copilot・Cursor との差別化が明確化 ─ ターミナル・大コンテキスト・カスタマイズ深度で独自ポジションを確立</div>
+      <div class="card-title">MIT Technology Review「Code with Claude 2026 は開発の未来を見せた ─ 好むと好まざるとにかかわらず」</div>
       <div class="card-meta">
         <span class="badge">Analysis</span>
-        <span class="card-source">Source: <a href="https://dev.to/alexmercedcoder/ai-weekly-google-reshapes-the-coding-stack-claude-pulls-ahead-and-the-agent-protocol-stack-17co" target="_blank" rel="noopener">DEV Community / AI Weekly</a> — 2026.05.13-20</span>
+        <span class="card-source">Source: <a href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">MIT Technology Review</a> — 2026.05.21</span>
       </div>
       <div class="card-body">
-        <p>DEV Community の AI Weekly（5月13〜20日版）は「Google がコーディングスタックを再編し、Claude が引き離しを図り、エージェントプロトコルスタックが固まりつつある」と総括した。Claude Code は Cursor・Copilot とは異なるポジションで存在感を示している。</p>
+        <p>MIT Technology Review は5月21日付けで、5月6日にサンフランシスコで開催された Anthropic の開発者カンファレンス「Code with Claude 2026」を取り上げ、「AIコーディングの未来を見せた ─ 好むと好まざるとにかかわらず」と評した。</p>
         <ul>
-          <li><strong>Claude Code の独自優位:</strong> 200k トークンのコンテキスト、ターミナルネイティブ操作、CLAUDE.md / Hooks / MCP によるカスタマイズ深度、Dynamic Workflows による大規模並列処理。IDE プラグインとしての統合より「エージェントランタイム」としての役割を強化している</li>
-          <li><strong>GitHub Copilot の動向:</strong> 5月20日に Gemini モデルを Copilot Chat から削除し、GPT-5.3-Codex をデフォルトに変更。6月1日からはトークン課金の「AI Credits」制度へ移行し、エージェント重量ワークロードのコスト構造が変わる</li>
-          <li><strong>Cursor 3.4 の更新:</strong> Microsoft Teams 統合、並列エージェントのプラン実行高速化、マルチリポジトリ設定対応を追加</li>
+          <li><strong>カンファレンスの主要テーマ:</strong> Anthropic が提示した「開発者の役割の変化」。単一エージェントへの指示から、エージェントチームの設計・監督へのシフトが強調された</li>
+          <li><strong>三層構造の提示:</strong> ①ツール層（Claude Code CLI・MCP・Hooks）、②オーケストレーション層（Dynamic Workflows・Agent View）、③監督層（人間が担う設計・判断・倫理）という三層モデルが示された</li>
+          <li><strong>批判的な視点:</strong> 記事は「一部の開発者にとっては福音だが、コーディングの喜びや手作りの感覚を失うと感じる人も多い」と指摘。「ツールを使うかどうかの選択権は人間にあるが、使わない選択のコストは年々高まっている」と締めくくった</li>
+          <li>Anthropic は同カンファレンスで Dynamic Workflows・Agent View・セキュリティプラグインの三点セットを予告しており、5/28-29での立て続けのリリースはその実行となる</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- OpenAI / GitHub Copilot -->
+  <!-- OpenAI / Google -->
   <section class="section" id="openai">
     <div class="section-header">
-      <div class="section-title">OpenAI Codex / GitHub Copilot 最新動向</div>
+      <div class="section-title">OpenAI / Google Antigravity 最新動向</div>
       <span class="section-count">3 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Codex、GPT-5.5 搭載・モバイル対応・Dell オンプレ展開 ─ 週間アクティブ400万人超でエンタープライズ攻勢</div>
+      <div class="card-title">OpenAI、フロンティアガバナンスフレームワーク公開 ─ EU AI Act・カリフォルニア州透明性法への対応、リスクをサイバー・CBRN・操作・制御喪失の4カテゴリで管理</div>
+      <div class="card-meta">
+        <span class="badge">Governance</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/openai-frontier-governance-framework/" target="_blank" rel="noopener">OpenAI</a> / <a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-rolls-out-frontier-governance-framework" target="_blank" rel="noopener">StartupHub.ai</a> / <a href="https://www.techerati.com/news-hub/openais-frontier-signals-a-shift-in-enterprise-ai-governance/" target="_blank" rel="noopener">Techerati</a> — 2026.05.29</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI は本日（5/29）、「Frontier Governance Framework」を公開した。EU AI Act の汎用 AI 規範（Code of Practice for General Purpose AI）とカリフォルニア州の「フロンティア AI 透明性法」に対応するためのガバナンス文書で、既存の Preparedness Framework をベースに公開向けに整理されている。</p>
+        <ul>
+          <li><strong>4つのリスクカテゴリ:</strong> ①サイバーオフェンス（攻撃的なサイバー能力）、②CBRN（化学・生物・放射線・核リスク）、③有害な操作（malicious manipulation）、④制御喪失（loss of control）。各カテゴリにリスクティアを設け、段階的な評価プロセスを規定</li>
+          <li><strong>外部評価の義務化:</strong> 新しいリスクティアに接近するモデルに対して独立した第三者評価者によるストレステストを義務付け。内部の「安全諮問グループ（Safety Advisory Group）」に独立意見を提供する</li>
+          <li><strong>企業評価:</strong> Techerati は「OpenAI が自発的なガバナンス文書を公開したことはエンタープライズ AI ガバナンスのシフトを意味する」と評した。一方で「Anthropic の Constitutional AI アプローチや Google の Gemini 安全性ガイドラインとどう違うのか」という比較分析を求める声もある</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI Codex、5月アップデートまとめ ─ GPT-5.5 Instant がデフォルト、Goal Mode の永続エージェント化、MCP サポート強化</div>
       <div class="card-meta">
         <span class="badge">Codex</span>
-        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
+        <span class="card-source">Source: <a href="https://codersera.com/blog/openai-may-2026-updates-roundup/" target="_blank" rel="noopener">CoderSera</a> / <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">OpenAI Codex Changelog</a> / <a href="https://openai.com/index/introducing-upgrades-to-codex/" target="_blank" rel="noopener">OpenAI</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>OpenAI Codex は GPT-5.5 を搭載し、ChatGPT モバイルアプリ（iOS・Android）での利用が可能になった。HIPAA 対応で医療機関への展開も解禁され、Dell との Codex Private Cloud 連携でオンプレミス展開にも対応した。Gartner Magic Quadrant で「Leader」に選出されており、週間アクティブユーザーは400万人を超えている。</p>
+        <p>OpenAI は4月23日〜5月28日にかけて Codex に4回のアップデートを実施。5月のアップデートの核心は「Codex を時間をかけて自律実行できる永続エージェントランタイムにする」ことであり、Claude Code の Dynamic Workflows と正面から競合する方向性を打ち出した。</p>
         <ul>
-          <li><strong>モバイル機能:</strong> 実行中タスクの確認・承認・軌道修正が外出先から可能。「監督・ステアリング」に特化した設計でバッテリー・画面の制約を考慮している</li>
-          <li><strong>エンタープライズ:</strong> Cisco・Datadog・Dell・NVIDIA などが採用企業として紹介された。Dell 経由のオンプレ展開は規制産業（金融・医療）での差別化要素として注目される</li>
-          <li>The New Stack の実機テストでは「Codex Goal Mode は長期・非同期タスクに、Claude Code は単発タスクの高速実行に強みがある」と結論。競合というより補完的な関係にあるとの見方が広まっている</li>
+          <li><strong>GPT-5.5 Instant のデフォルト採用:</strong> 高リスクプロンプトでの幻覚が52.5%減少。ChatGPT のデフォルトモデルに昇格し、コーディング特化のベンチマークでも前モデルを上回る</li>
+          <li><strong>Goal Mode の永続化:</strong> Codex の「Goal Mode」がセッションをまたいで状態を保持できるようになった。長時間・非同期タスクへの対応が強化され、「数時間かけて自律実行できるエージェント」としての実用性が向上</li>
+          <li><strong>MCP サポートの拡充:</strong> Codex CLI から MCP サーバーへの接続がより豊富になり、外部ツール（GitHub・Slack・Jira 等）との連携が容易に。Claude Code の MCP エコシステムに対抗する形での整備が進む</li>
+          <li>週間アクティブユーザーは400万人超を維持。ChatGPT for Excel・Google Sheets でのコーディング支援機能も追加されており、エンタープライズ向けのすそ野拡大が続いている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GitHub Copilot、Gemini モデルを削除 ─ 6月1日から AI Credits 制度に移行、エージェント重量ワークロードのコストが変動</div>
+      <div class="card-title">Google Antigravity 2.0（I/O 2026）── Gemini 3.5 Flash で「IDE からエージェントプラットフォームへ」、AI Ultra は $200/月に値下げ</div>
       <div class="card-meta">
-        <span class="badge">Copilot</span>
-        <span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/github-copilot-drops-gemini-model-shakeup-may-2026" target="_blank" rel="noopener">DigitalApplied</a> / <a href="https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web/" target="_blank" rel="noopener">GitHub Changelog</a> / <a href="https://byteiota.com/github-copilot-ai-credits-june-2026/" target="_blank" rel="noopener">ByteIota</a> — 2026.05.20</span>
+        <span class="badge">Google</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/" target="_blank" rel="noopener">Google Blog</a> / <a href="https://cybernews.com/ai-news/google-io-2026-gemini-omni-antigravity-agentic-ai/" target="_blank" rel="noopener">CyberNews</a> — 2026.05.19</span>
       </div>
       <div class="card-body">
-        <p>GitHub は5月20日に Copilot Chat（Web 版）から全 Gemini モデルおよびその他複数モデルを削除した。同時に、GPT-5.3-Codex を Business・Enterprise プランのデフォルトに設定。6月1日にはこれまでの「プレミアムリクエスト制」を廃止し、トークン課金の「AI Credits」制度に完全移行する。</p>
+        <p>Google は5月19日の I/O 2026 で Antigravity 2.0 を発表。単体の AI IDE から「スタンドアロン デスクトップアプリ＋ターミナル CLI＋SDK＋Managed Agents ティア（Gemini API）」という統合プラットフォームへの拡張を果たした。Gemini 3.5 Flash により他社フロンティアモデル比4倍高速という強みを前面に出している。</p>
         <ul>
-          <li><strong>モデル構成の変化:</strong> 2026年の Copilot ピッカーは「OpenAI ファースト、Anthropic セカンド」の構成に。Google の Gemini との連携が断ち切られたことで、マルチベンダー路線からの転換を意味する</li>
-          <li><strong>AI Credits の影響:</strong> エージェントモードなど重量ワークロードはトークン消費が多いため、月次コストが従来より増加する可能性がある。開発者コミュニティでは「事実上の値上げ」と受け取る声も出ている</li>
-          <li>Copilot のエージェントモード利用者は、新課金体系に合わせたワークフロー設計の見直しが求められる。細粒度のモデルアクセス制御（Cursor 3.4 が対応済み）を競合が実装しており、Copilot の柔軟性への懸念が指摘されている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">AI コーディングエージェント市場の成熟 ─ 「AI は全てを変える」論から「どれが週2以降も使えるか」への転換</div>
-      <div class="card-meta">
-        <span class="badge">Market</span>
-        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community</a> / <a href="https://medium.com/@dave-patten/the-state-of-ai-coding-agents-2026-from-pair-programming-to-autonomous-ai-teams-b11f2b39232a" target="_blank" rel="noopener">Medium / Dave Patten</a> — 2026.05</span>
-      </div>
-      <div class="card-body">
-        <p>DEV Community がまとめた2026年5月前半の Reddit AI エージェント議論分析によると、ディスカッションの質が劇的に変化している。「AI が変える」という期待論より「どのエージェントが経済的か」「メモリはどう設計すべきか」「ベースモデルより上のツール層は何か」という実務的な問いが高評価を集めるようになった。</p>
-        <ul>
-          <li><strong>経済性の重視:</strong> Token コストとタスク完了率のトレードオフが最大の議論テーマに。Claude Code と Codex を用途別に使い分けるハイブリッド運用が実務的な解として広がりつつある</li>
-          <li><strong>メモリ設計:</strong> エージェントがセッションをまたいで文脈を保持する仕組みをどう実装するかが中心的な技術課題として浮上。CLAUDE.md への蓄積、MCP サーバーによる外部メモリ参照などのアプローチが議論されている</li>
-          <li>Dave Patten（Medium）の分析によると「AI コーディングエージェント市場はペアプログラミングから自律 AI チームへの移行期にある。2026年は『エージェントがコードを書く』から『エージェントチームがシステムを運用する』へのパラダイム転換の年になる」</li>
+          <li><strong>主要コンポーネント:</strong> デスクトップアプリ（複数エージェントの並列オーケストレーション・カスタムサブエージェントワークフロー設計・バックグラウンドタスクスケジューリング）、Antigravity CLI（ターミナルから同じエージェントハーネスを操作）</li>
+          <li><strong>価格改定:</strong> AI Ultra プランを $250→$200/月に値下げ（利用上限20×維持）。新設の $100/月 AI Ultra Starter は5× 利用上限。Claude Code や Codex より広い用途をカバーする「全部入り」を訴求</li>
+          <li><strong>注目デモ:</strong> Google DeepMind エンジニアが Antigravity と Gemini 3.5 Flash を使い、わずか12時間で動作する OS をスクラッチから構築するデモを披露</li>
+          <li><strong>業界の受け止め:</strong> Qiita では「Claude Code・Cursor に Google が宣戦布告」という見出しの記事が話題に。「開発者が監督者になる時代の幕開け」という評価が広まっている</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Reddit -->
+  <!-- Reddit / HN -->
   <section class="section" id="reddit">
     <div class="section-header">
-      <div class="section-title">Reddit コミュニティ ─ 本日の反応と議論</div>
+      <div class="section-title">Reddit / Hacker News ─ 本日の反応と議論</div>
       <span class="section-count">4 トピック</span>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI・r/MachineLearning：Opus 4.8 リリースに沸く ─「1,000サブエージェントは SF から現実になった」「事前リーク通りだった」</div>
+      <div class="card-title">HN・r/ClaudeAI：「セキュリティプラグイン24h 15万ダウンロード」に沸く ─「無料でここまでやるのか」「デフォルト同梱にすべき」</div>
       <div class="card-meta">
         <span class="badge">Hot Today</span>
-        <span class="card-source">Source: <a href="https://thenewstack.io/claude-opus-48-release/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://aiweekly.co/alerts/claude-opus-48-brings-effort-modes-and-parallel-subagents" target="_blank" rel="noopener">AI Weekly</a> — 2026.05.28</span>
+        <span class="card-source">Source: <a href="https://cybersecuritynews.com/free-security-plugin-for-claude-code/" target="_blank" rel="noopener">CyberSecurityNews</a> / <a href="https://medium.com/@joe.njenga/i-tested-anthropics-new-free-claude-code-security-plugin-found-hidden-bugs-b06f9696cfa7" target="_blank" rel="noopener">Medium</a> / <a href="https://socfortress.medium.com/anthropics-new-security-plugin-72fae3180c6e" target="_blank" rel="noopener">SOCFortress</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>Claude Opus 4.8 と Dynamic Workflows の発表を受け、r/ClaudeAI と r/MachineLearning で本日最多アップボートのスレッドが立ち上がった。「1,000 並列サブエージェントはこれまで SF 的な話だったが、今日から API で呼べる現実になった」という書き込みが多くの共感を集めている。</p>
+        <p>Claude Code セキュリティガイダンスプラグインのリリース24時間での15万7,000ダウンロードは、r/ClaudeAI と Hacker News で今日最もアップボートされたトピックの一つとなっている。</p>
         <ul>
-          <li><strong>事前リークへの反応:</strong> Reddit では数日前に Opus 4.8 のリリースをほのめかすリークが出回っていたため、「ほぼ予告通りだった」という冷静な声も。一方で「SWE-bench Pro 69.2% は予想より高い」という驚きの反応も多数</li>
-          <li><strong>実務者の関心:</strong> 「Enterprise・Team・Max プランのみの研究プレビュー」という制限への不満が一部にある一方、「大規模コードベースのマイグレーションを完全自動化できるなら価格に見合う」という評価も</li>
-          <li><strong>USAMO 96.7% への反応:</strong> 「数学の世界選手権レベルで 97% 近いスコアを出す AI が出てきた。もはや何でも解ける」という驚きと、「ベンチマークと実務は別物」という懐疑派が対立する構図</li>
-          <li>r/ClaudeAI での本日のスレッドは投稿から数時間でトップ10入り。tmux 並列運用スレッドと合わせ、Claude Code の実務活用議論が活況を呈している</li>
+          <li><strong>「無料で出した意図」への考察:</strong> 「Anthropic にとってセキュアなコードを書かせることは安全性の根幹。無料にして普及させる戦略的理由がある」という分析コメントが多数</li>
+          <li><strong>「デフォルト同梱にすべき」の声:</strong> 「プラグインマーケットから探してインストールしなければならないのは摩擦が大きい。オプトアウト式にして最初からONにすべきでは」という意見</li>
+          <li><strong>Medium の独立テスト:</strong> Joe Njenga 氏の記事「セキュリティプラグインをテストしたら隠れたバグが見つかった」が注目。既存コードベースで発見された具体的な脆弱性例が紹介されており、実用性の証拠として引用されている</li>
+          <li>SOCFortress（セキュリティ企業）は「商用セキュリティスキャナーとの比較では、クラス検出の幅は劣るが、開発フロー内でのリアルタイム提案という点は競合にない強み」と評価</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ChatGPTCoding：「Copilot が Gemini を切り捨てたのは何を意味するか」─ GitHub の OpenAI 依存深化とリスクを議論</div>
+      <div class="card-title">HN：「Dynamic Workflows で長期セッションをどう制御するか」─ 割り込み・途中コードレビュー・エラーリカバリの設計論が活発化</div>
       <div class="card-meta">
         <span class="badge">Discussion</span>
-        <span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/github-copilot-drops-gemini-model-shakeup-may-2026" target="_blank" rel="noopener">DigitalApplied</a> 記事への Reddit 反応 — 2026.05</span>
+        <span class="card-source">Source: <a href="https://news.ycombinator.com/item?id=48311705" target="_blank" rel="noopener">Hacker News</a> — 2026.05.28-29</span>
       </div>
       <div class="card-body">
-        <p>GitHub Copilot が Gemini モデルを削除したニュースを受け、r/ChatGPTCoding では「Microsoft/GitHub が OpenAI への依存を深めることのリスク」を論じるスレッドが人気を集めた。</p>
+        <p>Hacker News の Dynamic Workflows スレッドでは、技術的な可能性への賞賛と「制御機構が不十分では」という問題提起が並立している。</p>
         <ul>
-          <li><strong>批判的な見方:</strong> 「Copilot からベンダー中立性が失われた。OpenAI との関係が悪化したらどうなる？」という依存リスクへの懸念。「Cursor や Claude Code のようにマルチモデルに対応できないことが競争劣位になる」という指摘</li>
-          <li><strong>擁護派の見方:</strong> 「GPT-5.3-Codex はコーディングに特化したモデルで、汎用 Gemini よりも精度が高い。選択肢を絞ることで品質を保証しようとしている」</li>
-          <li>6月1日からの AI Credits 移行については「事実上の値上げでは？」「エージェントを多用するチームにとってはコストインパクトが大きい」という声が多く、具体的な試算を共有する投稿が注目されている</li>
+          <li><strong>最多アップボートのコメント系統:</strong> 「長時間実行セッションへの外部からの割り込み手段が必要。途中で方向を修正できないなら、完走してから後悔するしかない」。これに対して「Agent View でブロックしたエージェントには直接介入できる」という反論も</li>
+          <li><strong>コードレビューのタイミング問題:</strong> 「現状、コードレビューは新しいエージェントセッションを立ち上げて逐次確認するしかない。並列実行中のコードレビューを同じフローに組み込む方法が欲しい」という技術的要望</li>
+          <li><strong>Bun 事例への補足:</strong> Jarred Sumner 本人（Bun 創設者）が HN にコメントし、「11日というのはフルタイムで使った場合。最初の3日は Workflow の設計と CLAUDE.md の整備に費やした」と補足。「準備ゼロで投げても動かない」という注意が添えられた</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews：イラン・米草案合意 ─ 「トランプが署名するかどうかが全て」「ホルムズ再開なら原油価格が急落する」</div>
+      <div class="card-title">r/worldnews：「シャングリラ対話が今日開幕。米国が中東で戦争中なのにアジア太平洋安保の主要フォーラムに出席できるか？」</div>
       <div class="card-meta">
-        <span class="badge">Breaking</span>
-        <span class="card-source">Source: <a href="https://www.axios.com/2026/05/28/iran-peace-deal-trump-approval" target="_blank" rel="noopener">Axios</a> / <a href="https://abcnews.com/International/live-updates/iran-live-updates-peace-deal-work-progress-rubio/?id=133278077" target="_blank" rel="noopener">ABC News</a> — 2026.05.28</span>
+        <span class="badge">Geopolitics</span>
+        <span class="card-source">Source: <a href="https://www.iiss.org/events/shangri-la-dialogue/shangri-la-dialogue-2026/" target="_blank" rel="noopener">IISS</a> / <a href="https://www.mindef.gov.sg/news-and-events/latest-releases/28may26-nr/" target="_blank" rel="noopener">Singapore MINDEF</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>米国とイランの交渉担当者が「ホルムズ海峡を60日かけて全面開放する」草案 MOU に合意したとの報道を受け、r/worldnews と r/geopolitics で「トランプが署名するかどうかが全てを決める」というスレッドが急上昇した。</p>
+        <p>シンガポールで本日（5/29）から第23回シャングリラ対話が開幕。44カ国・54閣僚級代表が参加する今年のフォーラムは、米国がイランと交渉中・イスラエルとレバノンが緊張状態という中東の混乱と、南シナ海・台湾海峡のインド太平洋緊張が同時進行する複雑な背景のもとで開催される。</p>
         <ul>
-          <li><strong>合意の骨格:</strong> ①ホルムズ海峡を60日間かけて全面開放、②その後60日間の核交渉期間設定、③トランプの求める「高濃縮ウランの廃棄」が条件として含まれている。財務長官ベッセントは「全てはトランプ次第」とコメント</li>
-          <li><strong>原油市場への期待:</strong> 「ホルムズが完全再開されれば、イランからの輸出が戻ってくる。原油価格は数ドル単位で急落する可能性がある」という分析コメントが多くのアップボートを集めた</li>
-          <li><strong>懐疑論:</strong> 「交渉中も米軍がイランを空爆し、イランも対応している。停戦と呼べる状態ではない。草案が最終合意になるとは限らない」という冷静な見方も根強い</li>
+          <li><strong>基調講演:</strong> 5月29日はベトナムのトー・ラム大統領が基調講演。東南アジアの視点から安定・安全・包括的なインド太平洋ビジョンを提示する</li>
+          <li><strong>米国の立場:</strong> ピート・ヘグセス国防長官が出席。イランとの交渉が大詰めを迎える中で「米国のアジア太平洋コミットメントは変わらない」というメッセージを打ち出すことが期待されている</li>
+          <li><strong>r/worldnews の議論:</strong> 「米国が中東で消耗しているときにアジア太平洋の同盟国はどう動くか」という戦略的問いが高評価を集めた。「台湾海峡での抑止力に影響が出るのでは」という懸念も</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ExperiencedDevs：「AI コーディングエージェントの週2問題 ─ なぜ最初の1週間は最高なのに、2週目から使わなくなるのか」</div>
+      <div class="card-title">r/programming：「Zenn の『Codex vs Claude Code 2026』記事 ─ 選択基準と『やらない判断』が参考になる」</div>
       <div class="card-meta">
-        <span class="badge">Meta</span>
-        <span class="card-source">Source: <a href="https://dev.to/liv_melendez_4be3c47ea998/what-the-ai-agent-crowd-on-reddit-is-arguing-about-in-early-may-2026-4j7e" target="_blank" rel="noopener">DEV Community まとめ</a> — 2026.05</span>
+        <span class="badge">Dev</span>
+        <span class="card-source">Source: <a href="https://zenn.dev/miyan/articles/ai-code-codex-vs-claude-code-2026" target="_blank" rel="noopener">Zenn / miyan</a> — 2026.05</span>
       </div>
       <div class="card-body">
-        <p>r/ExperiencedDevs で「AI コーディングエージェントに熱狂した後、2週間で使わなくなる現象」を分析するスレッドが継続的な注目を集めている。「使い続けるためには何が必要か」という問いに対し、実務経験者からの具体的な回答が集まった。</p>
+        <p>Zenn の記事「Codex vs Claude Code 2026 ── 判断軸とやらない判断」が r/programming で英訳紹介され、日本の実務開発者視点でのツール比較として注目を集めた。</p>
         <ul>
-          <li><strong>「週2問題」の原因として挙げられた要素:</strong> ①コンテキストの断絶（セッションをまたぐと意図が引き継がれない）、②ドメイン特有のルールを毎回説明し直す手間、③エラー修正のループで逆に時間がかかる体験、④大規模コードベースでの精度低下</li>
-          <li><strong>「使い続けている」人の共通点:</strong> CLAUDE.md にプロジェクトのコンテキスト・ルール・禁止事項を詳細に記述している、MCP で社内ツールに接続している、小さなタスクに限定して使い大きな設計判断はしない、という3点が共通していた</li>
-          <li>「Claude Code はデフォルトのまま使うと凡庸なツール、カスタマイズすると開発チームのインフラになる。この非線形な学習コストが継続利用の壁になっている」というコメントが最多アップボートを獲得した</li>
+          <li><strong>記事の主旨:</strong> 「どちらが優れているかではなく、どのタスクにどちらを使うかを決める軸が重要」。Claude Code はターミナル操作・大コンテキスト・カスタマイズ性が強く、Codex は長時間非同期・Goal Mode の永続性・ChatGPT との統合が強み</li>
+          <li><strong>「やらない判断」:</strong> 記事が特に評価されたのは「AI コーディングエージェントを使うべきでないケース」の列挙。ドメイン知識が極めて重要な箇所、セキュリティクリティカルなコア実装、他者のレビューが必須な公開APIなどは人間が書くべきという主張</li>
+          <li>「日本の開発者が書いた実務的なツール比較は、英語の宣伝記事より信頼できる」というコメントが高評価。DeepL で読んだという報告が複数あった</li>
         </ul>
       </div>
     </div>
@@ -284,83 +287,83 @@
     </div>
 
     <div class="card">
-      <div class="card-title">米・イラン、ホルムズ海峡60日開放の草案 MOU に合意 ─ トランプの最終承認待ち、軍事衝突は継続</div>
+      <div class="card-title">シャングリラ対話2026、シンガポールで開幕 ─ 44カ国参加・米中・インド太平洋安保・中東余波が焦点</div>
       <div class="card-meta">
-        <span class="badge">Breaking</span>
-        <span class="card-source">Source: <a href="https://www.axios.com/2026/05/28/iran-peace-deal-trump-approval" target="_blank" rel="noopener">Axios</a> / <a href="https://www.washingtonpost.com/national-security/2026/05/28/us-iran-trade-strikes-trump-cites-no-pressure-peace-deal/" target="_blank" rel="noopener">Washington Post</a> / <a href="https://www.cnn.com/2026/05/28/world/live-news/iran-war-us-news" target="_blank" rel="noopener">CNN</a> — 2026.05.28</span>
+        <span class="badge">Asia Pacific</span>
+        <span class="card-source">Source: <a href="https://www.iiss.org/events/shangri-la-dialogue/shangri-la-dialogue-2026/" target="_blank" rel="noopener">IISS</a> / <a href="https://www.mindef.gov.sg/news-and-events/latest-releases/28may26-nr/" target="_blank" rel="noopener">Singapore MINDEF</a> / <a href="https://www.newkerala.com/news/a/india-outlines-vision-stable-secure-inclusive-indo-pacific-shangri-la-805.htm" target="_blank" rel="noopener">NewKerala</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>米国とイランの交渉担当者は、ホルムズ海峡を60日かけて全面開放し、続く60日間で核問題を交渉するという草案覚書（MOU）に到達したと米当局者が発表した。ただし、トランプ大統領とイランの最高指導者モジュタバ・ハメネイ師はまだ最終承認を与えていない。</p>
+        <p>アジア最大の安全保障フォーラム「第23回シャングリラ対話」が5月29〜31日の3日間、シンガポールで開幕した。44カ国・54閣僚級代表・42人超の軍参謀長クラスが参加する大規模会議で、今年は中東の緊張・エネルギー価格変動・グローバルサプライチェーンの不確実性が背景となっている。</p>
         <ul>
-          <li><strong>草案の骨格:</strong> ①ホルムズ海峡を段階的に全面開放（60日間）、②開放後に核交渉60日間を設定、③イランは高濃縮ウランを廃棄または国外移転、④米国は段階的制裁緩和と凍結資産（$120億超）の解放</li>
-          <li><strong>トランプの姿勢:</strong> ワシントン・ポストによると、トランプは「急がされる必要はない」と述べ、「イランにとって良い取引をするつもりはない」と発言。財務長官ベッセントは「全ては大統領次第」とコメント</li>
-          <li><strong>軍事衝突の継続:</strong> 4月8日に始まった停戦は公式には維持されているが、米軍によるイランへの「防衛的空爆」とイランの応射が断続的に続いている。交渉担当者はドーハを離れておらず、交渉継続の意思は示されている</li>
-          <li><strong>原油市場:</strong> 合意草案の報道で原油先物が下落。ホルムズ海峡が完全再開すれば日量数百万バレルの輸送が正常化するとの期待から OPEC+ 各国も動向を注視している</li>
-          <li>ABC News はライブ更新で「交渉担当者間では合意、首脳レベルでは未署名」という宙づり状態を「最も不安定な外交フェーズ」と表現している</li>
+          <li><strong>議題:</strong> ①アジアの戦略的ランドスケープ、②越境安全保障への対応、③海洋安全保障（南シナ海・マラッカ海峡・インド洋）、④中東戦争のインド太平洋への影響。米中関係は毎年最大の焦点</li>
+          <li><strong>インドの姿勢:</strong> 防衛長官ラジェシュ・クマール・シン氏が「安定・安全・包括的なインド太平洋」ビジョンを提示。QUAD の枠組みを通じた防衛産業協力への意欲を示した</li>
+          <li><strong>マレーシア:</strong> モハメド・ハレッド国防相が代表団を率いて出席。ASEAN の中立路線を維持しながら域内安全保障への貢献を強調する見通し</li>
+          <li>中東での米国の軍事的関与がアジア太平洋での抑止力にどう影響するかが今年の非公式の最大テーマとなっている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">イスラエル、ヒズボラへの攻撃を激化表明 ─ ガザ市のアパートへの空爆で子ども4名を含む10人死亡</div>
+      <div class="card-title">米・イラン和平交渉、今日も継続 ─ ホルムズ草案 MOU はトランプ未署名、イスラエル・レバノン協議も開始</div>
       <div class="card-meta">
         <span class="badge">Middle East</span>
-        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
+        <span class="card-source">Source: <a href="https://www.cnn.com/2026/05/28/world/live-news/iran-war-us-news" target="_blank" rel="noopener">CNN</a> / <a href="https://www.euronews.com/video/2026/05/29/latest-news-bulletin-may-29th-2026-midday" target="_blank" rel="noopener">Euronews</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>イスラエル軍はレバノンのヒズボラに対する攻撃を強化すると表明した。同時に、ガザ市西部のアル＝リマル地区にあるアパートへの夜間空爆で少なくとも10人が死亡（負傷者20人以上）、うち子ども4名が含まれる。</p>
+        <p>米国とイランの「ホルムズ海峡60日開放・核交渉60日」草案 MOU（昨日報道）はトランプ大統領がまだ署名しておらず、今日も交渉担当者がドーハに滞在して協議を継続している。Euronews の昼間ニュースは「イスラエルとレバノンの当局者が今日会合を持つ」と報じており、中東全体で複数の外交チャンネルが同時進行している。</p>
         <ul>
-          <li><strong>ヒズボラ戦線:</strong> イスラエルは南レバノンでのヒズボラ陣地への攻撃を激化させる方針を発表。米国との外交ルートでは自制を求める声もあるが、イスラエル政府は独自の安全保障論理を優先している</li>
-          <li><strong>ガザの人道状況:</strong> アル＝リマル地区への空爆は住宅密集地を直撃。現地の医療機関は負傷者の受け入れに追われており、物資不足が深刻化している</li>
-          <li>米国のイラン和平交渉が進む一方で、イスラエルの対レバノン・対ガザ攻撃が激化するという矛盾した構図が中東の緊張をさらに複雑にしている</li>
+          <li><strong>ドーハ交渉の現状:</strong> 米・イラン交渉担当者は継続的に協議。草案の詳細（高濃縮ウランの廃棄タイミング・制裁緩和の条件）の詰めが残っているとされる</li>
+          <li><strong>イスラエル・レバノン:</strong> 本日の協議は昨日のヒズボラ攻撃激化表明後の初めての公式接触。米国が仲介役を担う見通し</li>
+          <li><strong>原油市場:</strong> 合意への期待と不透明感が交錯し、WTI 原油先物は小幅の値動きが続いている。正式署名が確認された場合は数ドルの下落が予想されるとアナリストは指摘</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">イランで数か月ぶりにインターネット接続が回復 ─ YouTube・Instagram は依然制限、断続的な低速サービス</div>
+      <div class="card-title">ウクライナ：ロシアのドローン攻撃でルーマニアに着弾、ゼレンスキーが長距離作戦の新計画発表</div>
       <div class="card-meta">
-        <span class="badge">Iran</span>
-        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
+        <span class="badge">Ukraine</span>
+        <span class="card-source">Source: <a href="https://www.euronews.com/video/2026/05/29/latest-news-bulletin-may-29th-2026-midday" target="_blank" rel="noopener">Euronews</a> / <a href="https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-may-20-2026" target="_blank" rel="noopener">Russia Matters</a> / <a href="https://www.ukrinform.net/rubric-ato" target="_blank" rel="noopener">Ukrinform</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>イラン当局が数か月間にわたるインターネット封鎖を終了し、市民がネット接続を取り戻しつつある。ただし地域によってサービスは低速・断続的で、YouTube・Instagram などは依然として重度に制限されている。</p>
+        <p>5月27日夜のロシアによる大規模ドローン攻撃（計147機）のうち、撃ち漏らした機体がルーマニア東部のアパートに着弾し2人が負傷した。ウクライナのゼレンスキー大統領は軍参謀長と協議の上、ロシア領内への新たな長距離作戦を発表した。</p>
         <ul>
-          <li><strong>封鎖の背景:</strong> 米国との軍事衝突激化を受けて当局が通信管理を強化。情報統制と反政府デモの抑制が目的だったとみられている</li>
-          <li><strong>回復の現状:</strong> ユーザーの報告によると、接続はあるものの速度は非常に遅く、VPN 経由でも不安定。当局は「秩序ある段階的な回復」を続けると説明しているが、完全な回復時期は不明</li>
-          <li>和平交渉の進展と並行してインターネットが回復したことは、イラン政府が国内世論の管理を一定程度緩和するシグナルとして読む専門家もいる</li>
+          <li><strong>ウクライナ防空の成果:</strong> 147機中138機（93.9%）を撃墜。着弾したドローンはルーマニア領内に墜落しており、NATO 加盟国への「流れ弾」問題として外交的注目を集めている</li>
+          <li><strong>戦線の推移:</strong> 5月12〜19日の1週間でロシアは占領済みウクライナ領土の29平方マイルを喪失。前週（12平方マイル）を上回るペースでロシア側が後退している</li>
+          <li><strong>スウェーデン製グリペン:</strong> ウクライナ軍パイロットが Gripen 戦闘機の訓練を開始したとゼレンスキー大統領が明らかにした。F-16 に続く西側戦闘機の実戦配備に向けた動きとして注目される</li>
+          <li>ワシントン・ポスト紙の論評は「ウクライナ戦争はプーチンにとって計り知れないコストになっている」と指摘。2022年以来の累積損失は約136万人に達するとウクライナ軍は発表している</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">エボラ出血熱、DRC での感染拡大が継続 ─ 死者220人超・疑い例900件、ウガンダへの越境感染も確認</div>
+      <div class="card-title">WHO 事務局長、エボラ対応でコンゴ民主共和国・キンシャサを訪問 ─ バンディブジョ株アウトブレイクに国際的関心が集まる</div>
       <div class="card-meta">
         <span class="badge">Health</span>
-        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> / <a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda" target="_blank" rel="noopener">ECDC</a> — 2026.05.28</span>
+        <span class="card-source">Source: <a href="https://www.euronews.com/video/2026/05/29/latest-news-bulletin-may-29th-2026-midday" target="_blank" rel="noopener">Euronews</a> / <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>コンゴ民主共和国（DRC）のイトゥリ州モングバル市を震源とするエボラ（バンディブジョ株）アウトブレイクが続いている。WHO は「医療従事者が対応できるペースを超えて感染が広がっている」と警告しており、ウガンダでも7件の確定例が報告されている。</p>
+        <p>WHO のテドロス・アダノム・ゲブレイェスス事務局長が本日、コンゴ民主共和国の首都キンシャサを訪問し、エボラ（バンディブジョ株）アウトブレイクへの対応状況を直接視察した。ウガンダへの越境感染（確定7例）も含め、国際的な警戒レベルが高まっている。</p>
         <ul>
-          <li><strong>最新数字:</strong> DRC：確定105件（死者10人）・疑い906件（死者223人）、ウガンダ：確定7件（死者1人）</li>
-          <li><strong>ワクチン不在:</strong> バンディブジョ株に対して承認済みの有効なワクチンは存在しない。感染地域と M23 武装グループの活動域が重複しており、WHO・MSF の感染制御チームが現地に入れないケースが続いている</li>
-          <li>アフリカ CDC はケニア・ルワンダ・ブルンジ・タンザニアなど10カ国を「高リスク」に指定。米 CDC は DRC・ウガンダ帰国者への21日間監視を推奨している</li>
+          <li><strong>最新感染状況:</strong> DRC：確定105例（死者10人）・疑い906例（死者223人）。ウガンダ：確定7例（死者1人）</li>
+          <li><strong>対応の課題:</strong> バンディブジョ株に有効なワクチンが存在しない。感染地域と M23 武装グループの活動域が重複し、医療チームのアクセスが困難な地区が複数ある</li>
+          <li><strong>国際的支援:</strong> アフリカ CDC が10カ国を「高リスク」に指定。テドロス事務局長の訪問は国際社会の関与を象徴するシグナルとして受け取られており、追加支援の動員につながる可能性がある</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Google 社員、Polymarket での内部情報取引で起訴 ─ AI 関連情報を利用した予測市場不正が初の連邦起訴事例に</div>
+      <div class="card-title">OpenAI ガバナンス文書は今日の世界情勢とどう交わるか ─ 先端 AI の「フロンティア」はもはや純粋な技術問題ではない</div>
       <div class="card-meta">
-        <span class="badge">Legal</span>
-        <span class="card-source">Source: <a href="https://www.democracynow.org/2026/5/28/headlines" target="_blank" rel="noopener">Democracy Now!</a> / <a href="https://www.justsecurity.org/140153/early-edition-may-28-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.05.28</span>
+        <span class="badge">AI Policy</span>
+        <span class="card-source">Source: <a href="https://www.artificialintelligence-news.com/news/scaling-safe-enterprise-ai-openai-governance-frameworks/" target="_blank" rel="noopener">AI News</a> / <a href="https://blog.ibvl.in/index.php/2026/05/29/scaling-safe-enterprise-ai-with-openai-governance-frameworks/" target="_blank" rel="noopener">IBVL Blog</a> — 2026.05.29</span>
       </div>
       <div class="card-body">
-        <p>連邦政府は Google の社員を、社内の未公開情報を使って予測市場「Polymarket」で不正取引を行ったとして起訴した。AI 企業の機密情報を予測市場で悪用した事例として、初めて連邦刑事訴追の対象になったケースとして注目されている。</p>
+        <p>OpenAI が本日公開した Frontier Governance Framework は、中東の軍事衝突・エボラアウトブレイク・インド太平洋の安全保障が同時進行する今日の文脈で読むと、単なるコンプライアンス文書以上の意味を持つ。</p>
         <ul>
-          <li>Polymarket は AI・テクノロジー関連の出来事に多くの賭けが集中しており、インサイダー取引が発生しやすい構造的リスクが以前から指摘されていた</li>
-          <li>この事件は「予測市場における AI インサイダー情報の規制」という新しい法的問題を提起しており、SEC や CFTC の管轄範囲を巡る議論が始まっている</li>
-          <li>AI 企業の社員が自社モデル・製品リリース情報を持つことによる金融上のアドバンテージが表面化した事例として、業界全体での内部情報管理ポリシーの見直しを促す可能性がある</li>
+          <li><strong>CBRN リスクと現実の交差:</strong> フレームワークが想定する「CBRN（化学・生物・放射線・核）リスク」は、エボラ流行・イランの核交渉・中東の紛争という現在進行形のシナリオと交差する。AI モデルが生物・化学知識へのアクセスを容易にする懸念は今年に入ってから規制当局の関心が高まっている</li>
+          <li><strong>企業の自主規制の限界:</strong> EU AI Act は自主規制では不十分として拘束力ある規制を進めている。一方 OpenAI は「自発的な透明性」を前面に出す戦略を取っており、規制とのせめぎ合いは続く</li>
+          <li>「フロンティア AI のガバナンスは、もはや AI 企業だけが決める問題ではない。安全保障・保健・金融・民主主義的ガバナンスが絡み合う複合的課題になった」という専門家の声が AI News に掲載されている</li>
         </ul>
       </div>
     </div>
@@ -374,46 +377,46 @@
     </div>
 
     <div class="card">
-      <div class="card-title">【決定版】Claude Code 全設定リファレンス 2026 ─ CLAUDE.md / Hooks / Permissions / MCP を1ページで網羅</div>
-      <div class="card-meta">
-        <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/LemonCake/items/4f043eb440066319dfa6" target="_blank" rel="noopener">qiita.com/LemonCake</a></span>
-      </div>
-      <div class="card-body">
-        <p>Claude Code の全設定項目を1ページで参照できるリファレンスがQiitaで人気を集めている。CLAUDE.md の書き方、Hooks のイベント種別（32種類以上）と終了コードの意味、Permissions の設定文法、MCP サーバーの接続設定まで網羅している。Anthropic の2026年5月版ドキュメントを元に検証済みとされており、Claude Code を本番環境で運用する開発者のブックマーク必須記事として注目されている。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Claude Codeを「優秀な新卒部下」として使い倒す ─ 個人開発爆速化の全ワークフロー</div>
+      <div class="card-title">自律 AI 秘書を Claude Code で組む — 5 層と 7 つの境界（Zenn）</div>
       <div class="card-meta">
         <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
+        <span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
       </div>
       <div class="card-body">
-        <p>「Claude Code を優秀な新卒のように扱う」というメタファーで、指示の出し方・MCP での外部ツール連携・タスク分割の粒度を丁寧に解説した記事。GitHub を MCP 経由で直接操作させ、PR 作成・マージまでを Claude Code に委任するワークフローが特に注目されている。「マイクロマネジメントではなく、権限を明確にして任せる」という思想が共感を集めている。</p>
+        <p>Claude Code を「AI 秘書」として構築する設計論。メール・カレンダー・タスク管理を自律処理するエージェントアーキテクチャを「5層（知覚・判断・実行・記録・報告）と7つの境界（人間が介入すべきライン）」として整理した記事。Dynamic Workflows の研究プレビュー開始を受けて「そのまま応用できる」という反応が増えており、Zenn での注目度が急上昇している。CLAUDE.md への蓄積・MCP による外部ツール接続・Hooks による自動トリガーの組み合わせが設計の中核で、実装コード付きで解説されている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Claude Code入門】今から追いつくClaude Code 徹底解説 ─ CLAUDE.md・Plan Mode・Skills・Hooks・MCPを基礎から</div>
+      <div class="card-title">【激震】GoogleがClaude Code・Cursorに宣戦布告！Antigravity 2.0で「開発者は監督になる」時代の幕開け（Qiita）</div>
       <div class="card-meta">
         <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/i-inose/items/e644e9b620ee1c8d3c1b" target="_blank" rel="noopener">qiita.com/i-inose</a></span>
+        <span class="card-source"><a href="https://qiita.com/emi_ndk/items/6c46465da6e0180aa515" target="_blank" rel="noopener">qiita.com/emi_ndk</a></span>
       </div>
       <div class="card-body">
-        <p>Claude Code の全主要機能を初学者向けにわかりやすく解説した入門記事。Plan Mode でのコードレビュー前確認、Skills によるカスタムコマンド定義、Hooks でのファイル保存・実行トリガー、MCP による外部ツール接続の4テーマを実際のコード例とともに説明している。Opus 4.8 の Dynamic Workflows と組み合わせた上級活用法への展望も触れられており、入門者から中級者まで幅広く読まれている。</p>
+        <p>Google I/O 2026 での Antigravity 2.0 発表を受けた詳細解説記事。「AI が開発し、人間が監督する」という Antigravity のコンセプトが、Claude Code・Cursor の「AI がペアプログラミング相手になる」モデルとどう異なるかを分析している。Gemini 3.5 Flash の4倍高速という強みを使った12時間 OS ビルドデモのレビューも含まれており、「これは本当にできたのか検証した」という実験報告が高評価を得ている。Antigravity CLI の初期セットアップ手順と、Claude Code との使い分けガイドも付録されている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【2026年版】Claude Codeを最強にするプラグイン・MCP・ツール総まとめ ─ 9,000超のプラグインから選ぶ実践ガイド</div>
+      <div class="card-title">Codex vs Claude Code 2026 ── 判断軸とやらない判断（Zenn）</div>
       <div class="card-meta">
-        <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/shatolin/items/ca1810e419fee5fd963b" target="_blank" rel="noopener">qiita.com/shatolin</a></span>
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/miyan/articles/ai-code-codex-vs-claude-code-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
       </div>
       <div class="card-body">
-        <p>2026年2月時点で9,000を超えるプラグインが存在する Claude Code エコシステムの中から、実務で本当に役立つ MCP サーバー・プラグイン・ツールを厳選して紹介する記事。GitHub・Slack・Linear・Notion・Jira といった定番ツールへの MCP 接続設定から、独自 MCP サーバーの構築方法まで網羅している。Opus 4.8 の Dynamic Workflows と組み合わせることで、エンタープライズ規模の自動化が現実的になったという視点から今後の方向性にも言及している。</p>
+        <p>「どちらが優れているかではなく、どのタスクにどちらを使うかを決める軸が重要」という実務的な比較記事。Claude Code はターミナル直接操作・最大200k コンテキスト・CLAUDE.md と MCP による深いカスタマイズが強み。Codex は長時間非同期タスク・セッション持続の Goal Mode・ChatGPT および Excel/Sheets との統合が強み。r/programming で英訳紹介され国際的に注目を集めた。特に評価されたのは「AI エージェントを使うべきでないケース」の明示（ドメイン知識が極めて重要な箇所・セキュリティクリティカルなコア実装・公開 API の設計判断など）。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code による技術的特異点を見届けろ（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/mizchi/articles/claude-code-singularity-point" target="_blank" rel="noopener">zenn.dev/mizchi</a></span>
+      </div>
+      <div class="card-body">
+        <p>フロントエンドエンジニアとして著名な mizchi 氏による哲学的・技術的考察記事。「Bun の75万行 Rust 移植が11日で完了した今、私たちはコーディングの技術的特異点の手前にいる」という主張から始まり、エンジニアが今後持つべきスキルセット・思考様式・キャリア戦略を論じる。「コードを書く能力」から「エージェントを設計・監督する能力」への転換が不可逆的であるという立場で、その具体的な適応方法を提示している。Dynamic Workflows 発表翌日に公開され、Zenn の急上昇ランキングで1位を獲得した。</p>
       </div>
     </div>
   </section>
@@ -421,21 +424,23 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年5月28日（木）</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年5月29日（金）</p>
   <p style="margin-top:0.5rem;">
     Sources:
-    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://cybersecuritynews.com" target="_blank" rel="noopener">CyberSecurityNews</a> ·
+    <a href="https://www.helpnetsecurity.com" target="_blank" rel="noopener">Help Net Security</a> ·
+    <a href="https://www.securityweek.com" target="_blank" rel="noopener">SecurityWeek</a> ·
     <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
-    <a href="https://www.marktechpost.com" target="_blank" rel="noopener">MarkTechPost</a> ·
-    <a href="https://www.digitalapplied.com" target="_blank" rel="noopener">DigitalApplied</a> ·
-    <a href="https://aiweekly.co" target="_blank" rel="noopener">AI Weekly</a> ·
-    <a href="https://www.axios.com" target="_blank" rel="noopener">Axios</a> ·
-    <a href="https://www.washingtonpost.com" target="_blank" rel="noopener">Washington Post</a> ·
+    <a href="https://www.technologyreview.com" target="_blank" rel="noopener">MIT Technology Review</a> ·
+    <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://blog.google" target="_blank" rel="noopener">Google Blog</a> ·
+    <a href="https://news.ycombinator.com" target="_blank" rel="noopener">Hacker News</a> ·
+    <a href="https://www.iiss.org" target="_blank" rel="noopener">IISS</a> ·
+    <a href="https://www.euronews.com" target="_blank" rel="noopener">Euronews</a> ·
     <a href="https://www.cnn.com" target="_blank" rel="noopener">CNN</a> ·
-    <a href="https://www.democracynow.org" target="_blank" rel="noopener">Democracy Now!</a> ·
-    <a href="https://www.justsecurity.org" target="_blank" rel="noopener">Just Security</a> ·
     <a href="https://www.who.int" target="_blank" rel="noopener">WHO</a> ·
-    <a href="https://www.ecdc.europa.eu" target="_blank" rel="noopener">ECDC</a> ·
+    <a href="https://www.ukrinform.net" target="_blank" rel="noopener">Ukrinform</a> ·
     <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
     <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
   </p>
