@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月3日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月4日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,14 +67,14 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code / AIエージェント / OpenAI Codex / Microsoft Build 2026 / 世界情勢</p>
-  <p class="date">2026年6月3日（水）&nbsp;|&nbsp; <a href="2026-06-01/index.html">前版（6/1）</a></p>
+  <p class="subtitle">Claude Code / Claude Opus 4.8 / OpenAI Codex / GitHub Copilot App / 中東情勢</p>
+  <p class="date">2026年6月4日（木）&nbsp;|&nbsp; <a href="2026-06-03/index.html">前版（6/3）</a></p>
 </header>
 
 <nav>
   <a href="#claude">Claude / Anthropic</a>
-  <a href="#openai">OpenAI / Codex / Gemini</a>
-  <a href="#msbuild">Microsoft Build 2026</a>
+  <a href="#openai">OpenAI / Codex</a>
+  <a href="#copilot">GitHub Copilot</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
   <a href="#dev">Qiita/Zenn</a>
@@ -89,173 +89,163 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目（6/3）:</strong> Anthropic が6月1日に <strong>機密 S-1 を SEC に提出</strong>し、IPO に向けた準備を正式開始。評価額は約 <strong>$965 billion</strong>。また <strong>6月15日より Agent SDK 課金が別プールに分離</strong>され、$20 で $500 相当のエージェントを動かせた時代が終焉する。
+      <strong>本日の注目（6/4）:</strong> Claude Opus 4.8 が Dynamic Workflows と Effort Control を引っ提げてリリース済み（5/28）。<strong>エージェントコーディングスコアが 64.3% → 69.2%</strong> に向上し、Fast Mode は前世代比 <strong>2.5倍速・3倍安価</strong>に。Anthropic IPO の SEC 審査も進行中で10月上場を視野に入れる。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">$965B</div><div class="stat-label">Anthropic の最新評価額（Series H 後）</div></div>
-      <div class="stat-card"><div class="stat-value">6/15</div><div class="stat-label">Agent SDK 課金分離の適用日</div></div>
-      <div class="stat-card"><div class="stat-value">$20</div><div class="stat-label">Agent SDK 月次クレジット（Pro プラン）</div></div>
-      <div class="stat-card"><div class="stat-value">$200</div><div class="stat-label">Agent SDK 月次クレジット（Max 20x プラン）</div></div>
+      <div class="stat-card"><div class="stat-value">69.2%</div><div class="stat-label">Opus 4.8 エージェントコーディングスコア（4.7比 +4.9pt）</div></div>
+      <div class="stat-card"><div class="stat-value">2.5×</div><div class="stat-label">Fast Mode の速度向上（前世代比）</div></div>
+      <div class="stat-card"><div class="stat-value">$47B</div><div class="stat-label">Anthropic 年間収益ランレート（2026年5月時点）</div></div>
+      <div class="stat-card"><div class="stat-value">10月</div><div class="stat-label">Anthropic IPO 上場目標時期（予測）</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Anthropic、SEC に機密 S-1 を提出 ─ $965B 評価額で IPO 準備を正式開始。SpaceX・OpenAI と並ぶ「3兆ドル級上場」候補に</div>
+      <div class="card-title">Claude Opus 4.8 詳細解説 ─ Dynamic Workflows・Effort Control・Fast Mode で大規模エージェントタスクが現実的に</div>
       <div class="card-meta">
-        <span class="badge">Breaking</span>
-        <span class="card-source">Source: <a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noopener">Anthropic</a> / <a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html" target="_blank" rel="noopener">CNBC</a> / <a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-confidential-1-joins-161008569.html" target="_blank" rel="noopener">Yahoo Finance</a> — 2026.06.01</span>
+        <span class="badge">Model Release</span>
+        <span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Anthropic</a> / <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/" target="_blank" rel="noopener">AI News</a> — 2026.05.28</span>
       </div>
       <div class="card-body">
-        <p>Anthropic は6月1日（月）、Form S-1 の機密版草案を SEC に提出したと発表した。$65 億の Series H 調達からわずか数日後の申請で、評価額は約 $965 billion に達している。</p>
+        <p>Anthropic が Opus 4.7 からわずか41日でリリースした Opus 4.8 は、大規模コーディングエージェントを現実的な選択肢にする3つの機能を搭載した。</p>
         <ul>
-          <li><strong>3兆ドル級上場レース:</strong> Yahoo Finance は「今年 Anthropic・SpaceX・OpenAI の3社が兆ドル規模の株式公開を実施する可能性があり、AI 産業史上最大の資本市場イベントになる」と評した</li>
-          <li><strong>機密申請の意義:</strong> 重要な財務情報を SEC 審査期間中は非公開にできる手続きで、JOBS Act（2012年）以降の標準的手法。株式数・公開価格は未定</li>
-          <li><strong>収益ストーリー:</strong> InsiderFinance は「Claude の急速な商業化・Claude for Legal・Dynamic Workflows など縦展開の加速が IPO の収益ストーリーを支えている」と分析</li>
-          <li>Series H からわずか数日での申請は「2026年後半を本命シナリオとして見ていたことを示唆する」（CNBC）</li>
+          <li><strong>Dynamic Workflows（リサーチプレビュー）:</strong> 1セッションで数百のサブエージェントを並列調整。コードベース全体にわたるマイグレーションをキックオフからマージまで自律実行できるようになった。既存テストスイートを合否の判断基準として活用する</li>
+          <li><strong>Effort Control:</strong> claude.ai のモデルセレクター横に配置された新コントロール。高い Effort 設定では Claude がより頻繁・深く推論を行い、精度を高める。API でも調整可能</li>
+          <li><strong>Fast Mode 大幅改善:</strong> 2.5倍の速度で前世代比3倍安価に。大量サブエージェントを並列実行する Dynamic Workflows との相乗効果が大きい</li>
+          <li><strong>安全性の向上:</strong> 欠陥コードを無コメントで通過させる確率が Opus 4.7 比で4分の1に低減。エージェントが人間の確認なしに不完全なコードを流し込むリスクが大幅に改善</li>
+          <li><strong>価格据え置き:</strong> API 料金は Opus 4.7 と同一（入力 $5/百万トークン・出力 $25/百万トークン）</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Anthropic、6月15日より Agent SDK 課金を別プールへ分離 ─ $20 Pro プランの「無制限エージェント実行」時代が終焉</div>
+      <div class="card-title">Claude Code の最新アップデート ─ MCP ワークフロー改善・並列ツール処理・Linux クリップボード修正など</div>
       <div class="card-meta">
-        <span class="badge">Policy Change</span>
-        <span class="card-source">Source: <a href="https://thenewstack.io/anthropic-agent-sdk-credits/" target="_blank" rel="noopener">The New Stack</a> / <a href="https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026" target="_blank" rel="noopener">DevToolPicks</a> / <a href="https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/" target="_blank" rel="noopener">CoderSera</a> — 2026.06.02-03</span>
+        <span class="badge">Update</span>
+        <span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot / Anthropic Release Notes</a> / <a href="https://www.startuphub.ai/ai-news/technology/2026/claude-code-s-latest-updates" target="_blank" rel="noopener">StartupHub.ai</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>Anthropic は6月15日より、Claude Agent SDK・<code>claude -p</code>・Claude Code GitHub Actions・第三者製エージェントアプリの課金を、サブスクリプション通常枠から切り離して <strong>別の月次クレジットプール</strong> で管理する。クレジット上限は Pro: $20 / Max 5x: $100 / Max 20x: $200 相当で、フル API レートで消費される。</p>
+        <p>Claude Code は6月に入り継続的なマイナーアップデートが展開されている。</p>
         <ul>
-          <li><strong>変更の背景:</strong> Boris Cherny（Claude Code 責任者）は「$20 サブスクで $500〜数千ドル相当のトークンを消費するサードパーティ自動化が急増しており、このアービトラージは持続不可能」と説明</li>
-          <li><strong>変更されないもの:</strong> Claude.ai での通常チャット、Claude Code ターミナルでのインタラクティブ使用、Claude Cowork は引き続き通常枠でカウント</li>
-          <li><strong>ユーザーへの影響:</strong> 6月8日に Anthropic からクレジット請求用メールが届く予定。ヘビーな自動化ユーザーは実質値上げ、インタラクティブユーザーへの影響はほぼなし</li>
+          <li><strong>MCP ワークフロー:</strong> エージェントおよび MCP サーバー連携のセットアップフローが大幅に簡素化され、複数エージェントの協調作業がスムーズに</li>
+          <li><strong>並列ツール処理の改善:</strong> 複数ツールを同時呼び出しする際の競合・タイミング問題が解消され、Dynamic Workflows での並列実行安定性が向上</li>
+          <li><strong>Linux クリップボード修正:</strong> Linux 環境でのクリップボードアクセス挙動が修正。ターミナルレンダリングと VS Code グリフ表示も改善された</li>
+          <li><strong>メトリクスラベル強化:</strong> トークン消費・エージェント実行時間のメトリクスに詳細なラベルが追加され、コスト可視化が容易に。6/15 の課金分離を前に実用的な変更</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code Dynamic Workflows リサーチプレビュー ─ 数百のサブエージェントを並列調整、Opus 4.8 で長時間実行が可能に</div>
+      <div class="card-title">Anthropic IPO ─ SEC 審査進行中、10月上場を視野に Wilson Sonsini を法律顧問に起用</div>
       <div class="card-meta">
-        <span class="badge">Feature</span>
-        <span class="card-source">Source: <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/" target="_blank" rel="noopener">InfoQ</a> / <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features" target="_blank" rel="noopener">MindStudio</a> — 2026.06</span>
+        <span class="badge">IPO</span>
+        <span class="card-source">Source: <a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-confidential-1-joins-161008569.html" target="_blank" rel="noopener">Yahoo Finance</a> / <a href="https://www.tipranks.com/news/anthropic-pulls-the-trigger-on-2026-ipo-with-confidential-sec-s-1-filing" target="_blank" rel="noopener">TipRanks</a> / <a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">TechCrunch</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が Claude Code に追加した Dynamic Workflows が、CLI・デスクトップ・VS Code 拡張機能でリサーチプレビュー公開。1セッションで数百のサブエージェントを並列調整できる新しいエージェント調整レイヤーだ。</p>
+        <p>6月1日に SEC に提出された機密 S-1 の審査が進行中。Anthropic は2024年比4.7倍の $47B 年間収益ランレートを達成しており、上場申請の財務的根拠が整っている。</p>
         <ul>
-          <li><strong>対応プラン:</strong> Max・Team・Enterprise（管理者有効化必要）および Anthropic API・Amazon Bedrock・Vertex AI・Microsoft Foundry</li>
-          <li><strong>利用シナリオ:</strong> テストスイートの並列実行・マルチリポジトリのリファクタリング・ドキュメント一括生成など</li>
-          <li><strong>注意点:</strong> 6月15日以降は Agent SDK 別課金プールが適用されるため、多用するユーザーはクレジット上限に注意が必要</li>
+          <li><strong>法律顧問:</strong> Google の 2004 年 IPO を担当した Wilson Sonsini を起用。同事務所の起用は「2026年後半の上場を本命シナリオと見ていることを示唆する」とアナリストが指摘</li>
+          <li><strong>評価額 $965B の意味:</strong> OpenAI（$852B、2026年3月時点）を上回り、AI スタートアップ史上最高評価額。ただし公開価格・株式数は未定で市場環境次第で変動する</li>
+          <li><strong>リスク要因:</strong> 中東情勢の悪化による市場環境の不安定化・Agent SDK 課金変更に対するユーザー反発・競合モデル（GPT-5.5、MAI-Code-1）の台頭が主なダウンサイドリスクとして指摘されている</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- OpenAI / Codex / Gemini -->
+  <!-- OpenAI / Codex -->
   <section class="section" id="openai">
     <div class="section-header">
-      <div class="section-title">OpenAI / Codex / Google Gemini 最新動向</div>
+      <div class="section-title">OpenAI / Codex 最新動向</div>
       <span class="section-count">3 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Codex 大型アップデート ─ Sites・Annotations・職種別プラグイン6種を追加、週間アクティブユーザーが 500 万人突破</div>
+      <div class="card-title">OpenAI、Codex を「ホワイトカラー全般の OS」へ ─ 金融・法務・営業向け職種別プラグイン6種でエンタープライズ侵攻を加速</div>
       <div class="card-meta">
-        <span class="badge">Launch</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins/" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://openai.com/index/codex-for-almost-everything/" target="_blank" rel="noopener">OpenAI</a> — 2026.06.02</span>
+        <span class="badge">Strategy</span>
+        <span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-06-02/openai-plans-ai-tools-for-finance-legal-in-race-with-anthropic" target="_blank" rel="noopener">Bloomberg</a> / <a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins/" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://openai.com/index/introducing-upgrades-to-codex/" target="_blank" rel="noopener">OpenAI</a> — 2026.06.02</span>
       </div>
       <div class="card-body">
-        <p>OpenAI は6月2日（火）、Codex の大型アップデートを発表した。週間アクティブユーザーは 500 万人超となり、非開発者層が全体の約 20% を占め始めている。</p>
+        <p>OpenAI は Bloomberg が報じた「Finance・Legal 向け AI ツール計画」を具体化するかたちで、Codex に6種の職種別プラグインを投入した。週間アクティブユーザー 500 万人のうち非開発者が約 20% を占め始めており、開発者専用ツールから脱却する転換点を迎えている。</p>
         <ul>
-          <li><strong>Sites:</strong> Codex アプリ内でウェブサイト・ダッシュボード・内部ツール・ゲームを作成・デプロイできる機能がプレビュー公開。OpenAI ホスティングのため別途サーバー不要</li>
-          <li><strong>Annotations:</strong> 文書全体を再生成せず特定箇所のみ更新するインライン編集ツール。契約書・レポートの部分更新に有効</li>
-          <li><strong>職種別プラグイン6種:</strong> データ分析・クリエイティブ制作・営業・プロダクトデザイン・エクイティ投資・投資銀行向け。非エンジニア職へのリーチを大幅に広げる戦略的な動き</li>
-          <li>TechCrunch は「Codex は専門プログラミングアシスタントからホワイトカラー全般の日常オペレーション環境へ転換しようとしている」と評した</li>
+          <li><strong>6種のプラグイン:</strong> データ分析・クリエイティブ制作・営業・プロダクトデザイン・エクイティ投資・投資銀行向け。62 の業務アプリと 110 の自動化スキルをすぐに使える状態で提供</li>
+          <li><strong>Annotations:</strong> 文書全体を再生成せず特定箇所のみを更新するインライン編集機能。契約書・レポートの部分的な修正に有効で、法務部門での採用を促進</li>
+          <li><strong>Sites:</strong> Codex アプリ内でウェブサイト・ダッシュボード・内部ツール・ゲームを作成・デプロイ。OpenAI ホスティングのため別途サーバーは不要で、非エンジニアでも業務ツールを自作できる</li>
+          <li><strong>Anthropic との競合:</strong> Bloomberg は「Claude for Legal が90以上の AI エージェントを持つ Anthropic に対抗するため、OpenAI は法務・金融に特化したエージェントを急速展開している」と分析</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.5 が Microsoft Foundry で GA ─ 6月3日より一般提供、GPT-5.5 Pro もプレミアム向けに展開</div>
+      <div class="card-title">GPT-5-Codex が Amazon Bedrock でも利用可能に ─ AWS エンタープライズが本番環境でコーディングエージェントを活用</div>
       <div class="card-meta">
-        <span class="badge">Release</span>
-        <span class="card-source">Source: <a href="https://news.microsoft.com/build-2026/" target="_blank" rel="noopener">Microsoft Build 2026</a> / <a href="https://openai.com/index/introducing-upgrades-to-codex/" target="_blank" rel="noopener">OpenAI</a> — 2026.06.03</span>
+        <span class="badge">Cloud</span>
+        <span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog" target="_blank" rel="noopener">OpenAI Developers / Codex Changelog</a> / <a href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">Releasebot</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>OpenAI の GPT-5.5 が6月3日より Microsoft Foundry 上で GA 開始。Azure エンタープライズ顧客が本番ワークロードで利用可能に。AI モデル総合ランキングでは Claude Opus 4.8（61.4点）に次ぐ 60.2 点の2位を記録している。GPT-5.6 の内部テストも進んでいるとの情報があり、6月内のアップグレードを予測する声もある。</p>
+        <p>OpenAI の GPT-5-Codex（GPT-5 のエージェントコーディング特化版）が Amazon Bedrock で利用可能になった。コードのレビュー・デバッグ・レガシーシステム近代化に最適化されており、インタラクティブな短時間セッションから長時間の自律タスクまで両方をカバーする設計になっている。</p>
+        <ul>
+          <li>AWS 既存の IAM・VPC・CloudWatch と統合でき、エンタープライズセキュリティ要件を満たしやすい</li>
+          <li>Claude Code（Amazon Bedrock でも利用可能）との競合が AWS 上でも明確になってきた</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Google Gemini 3.5 Flash GA・Managed Agents パブリックプレビュー ─ Antigravity エージェントが単一 API コールで自律実行</div>
+      <div class="card-title">AI コーディングエージェント比較 2026 ─ Claude Code・Codex・Cursor・Kiro・Copilot・Antigravity・Windsurf の7社比較</div>
       <div class="card-meta">
-        <span class="badge">Release</span>
-        <span class="card-source">Source: <a href="https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://aidatainsider.com/ai/google-i-o-2026-gemini-3-5-flash-antigravity-and-managed-agents-explained/" target="_blank" rel="noopener">AI Data Insider</a> / <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank" rel="noopener">Google Blog</a> — 2026.05-06</span>
+        <span class="badge">Roundup</span>
+        <span class="card-source">Source: <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/" target="_blank" rel="noopener">Lushbinary</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>Google I/O 2026（5月）で発表された Gemini 3.5 Flash が GA となり、Managed Agents パブリックプレビューと汎用エージェント「Antigravity」が展開。Gemini 3.1 Pro をコーディング・エージェントタスクで上回りながら4倍高速という特性が注目されている。</p>
+        <p>主要 AI コーディングエージェント7製品の価格・機能・対応 IDE・強みを網羅した比較記事が注目を集めている。2026年のエージェント市場は「機能の差別化」から「エコシステム統合の深さ」での競争に移行しつつあるという分析が共有されている。</p>
         <ul>
-          <li><strong>Managed Agents:</strong> 単一 API コールでフル自律エージェントが起動し、Google ホスト環境の独立した Linux サンドボックスで推論・ツール使用・コード実行が行われる</li>
-          <li><strong>Antigravity エージェント:</strong> 計画・推論・コード実行・ファイル管理・Web ブラウジングをサンドボックス内で自律実行する汎用エージェント</li>
-          <li>Claude Code Dynamic Workflows・Microsoft MXC SDK と合わせ、主要3社が「管理されたエージェントインフラ」を同時期に打ち出したことで標準化競争が本格化</li>
+          <li><strong>Claude Code:</strong> 複雑な大規模タスクと長時間エージェント実行で最高評価。6/15 の課金変更がコスト計算を複雑にしている</li>
+          <li><strong>GitHub Copilot（MAI-Code-1）:</strong> VS Code・GitHub との統合深度が最高。MAI-Code-1 移行後の品質は実績が蓄積されていない</li>
+          <li><strong>Cursor / Windsurf:</strong> インタラクティブな小〜中規模タスクでのスピードと UX が評価される。価格競争力も高い</li>
+          <li><strong>Kiro・Antigravity:</strong> 特化領域でのパフォーマンスが注目されているが、エコシステムはまだ発展途上</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Microsoft Build 2026 -->
-  <section class="section" id="msbuild">
+  <!-- GitHub Copilot App -->
+  <section class="section" id="copilot">
     <div class="section-header">
-      <div class="section-title">Microsoft Build 2026 ─ 主要発表まとめ（6/2-3）</div>
-      <span class="section-count">3 記事</span>
+      <div class="section-title">GitHub Copilot ─ デスクトップアプリとして独立、エージェントネイティブ開発へ</div>
+      <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>Build 2026 総括:</strong> Windows を「AI エージェントのための OS」として再定義し、自社 AI モデル MAI シリーズを初公開。Claude Code 廃止と MAI-Code-1 投入は「AI 外部依存の内製化」戦略の両輪だと読める。
+      <strong>Build 2026 後続動向（6/4）:</strong> Microsoft Build 2026（6/2-3）で発表された GitHub Copilot デスクトップアプリが <strong>テクニカルプレビュー開始</strong>。Copilot Pro・Pro+・Business・Enterprise ユーザーが今すぐ試せる。MAI-Code-1 の実力評価が開発者コミュニティで始まりつつある。
     </div>
 
     <div class="card">
-      <div class="card-title">Microsoft、自社 AI モデル「MAI」シリーズを初公開 ─ 推論特化 MAI-Thinking-1・コーディング特化 MAI-Code-1 が GitHub Copilot に即日統合</div>
+      <div class="card-title">GitHub Copilot App テクニカルプレビュー開始 ─ My Work ビューで複数 AI エージェントを一元管理</div>
       <div class="card-meta">
-        <span class="badge">Announcement</span>
-        <span class="card-source">Source: <a href="https://news.microsoft.com/build-2026/" target="_blank" rel="noopener">Microsoft Build 2026</a> / <a href="https://www.gizbot.com/features/microsoft-build-2026-highlights-the-biggest-announcements-you-need-to-know-126021.html" target="_blank" rel="noopener">GizBot</a> / <a href="https://www.aguidetocloud.com/blog/microsoft-build-2026-recap/" target="_blank" rel="noopener">A Guide to Cloud & AI</a> — 2026.06.02</span>
+        <span class="badge">Launch</span>
+        <span class="card-source">Source: <a href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/" target="_blank" rel="noopener">GitHub Blog</a> / <a href="https://windowsreport.com/microsoft-launches-github-copilot-desktop-app-for-agent-native-development/" target="_blank" rel="noopener">WindowsReport</a> / <a href="https://devops.com/github-copilot-gets-its-own-app-and-agents-are-the-reason-why/" target="_blank" rel="noopener">DevOps.com</a> — 2026.06.02-04</span>
       </div>
       <div class="card-body">
-        <p>Microsoft は Build 2026 初日（6月2日）に自社開発の MAI（Microsoft AI）モデルシリーズを初公開。推論特化 MAI-Thinking-1・コーディング専用 MAI-Code-1・画像生成対応 MAI-Image-2.5 の3系列が発表され、MAI-Code-1 は GitHub Copilot と VS Code に即日統合された。</p>
+        <p>GitHub は独立したデスクトップアプリ「GitHub Copilot」をテクニカルプレビューで公開。IDEのプラグインとしてではなく「エージェントを管理する司令塔」として設計されており、GitHub の位置付けが大きく変わる可能性がある。</p>
         <ul>
-          <li><strong>MAI-Thinking-1:</strong> Microsoft 初の専用推論モデル。複雑な数学・論理・マルチステップ推論を得意とする設計で、OpenAI o シリーズに相当する役割を担う</li>
-          <li><strong>MAI-Code-1:</strong> GitHub 向けに特化して構築されたコーディングモデル。Claude Code 廃止後の後継ポジションを担う位置付けだ</li>
-          <li><strong>MAI-Image-2.5:</strong> テキスト→画像・画像→画像の両ワークロードに対応する Microsoft 初のマルチモーダル生成モデル</li>
-          <li>A Guide to Cloud & AI は「OpenAI 依存から脱却し Azure 独自のモデルスタックを構築する『Project Polaris』戦略の第一弾が MAI シリーズだ」と評した</li>
+          <li><strong>My Work ビュー:</strong> 接続されたすべてのリポジトリにまたがるアクティブなエージェントセッション・Issue・PR・バックグラウンド自動化をシングルビューで管理。「AIエージェントのプロジェクトマネジメントUI」と評されている</li>
+          <li><strong>Remote Control（GA）:</strong> github.com・GitHub Mobile からエージェントセッションをリモート操作する機能が一般提供開始。移動中でもエージェントのモニタリングと操作が可能に</li>
+          <li><strong>MAI-Code-1 統合:</strong> デフォルトのコーディングモデルとして Microsoft 自社開発 MAI-Code-1 が統合。Claude Code 廃止後の後継として実際の開発者に試される段階に入った</li>
+          <li><strong>対象プラン:</strong> Copilot Pro・Pro+・Business・Enterprise ユーザーが即日テクニカルプレビューにアクセス可能。一般提供（GA）の時期は未発表</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Windows が AI エージェントの OS に ─ MXC SDK・Windows Agent Store・Microsoft Scout「Autopilot」エージェントを発表</div>
+      <div class="card-title">MAI-Code-1 vs Claude Code ─ 開発者コミュニティで早速の比較検証が始まる</div>
       <div class="card-meta">
-        <span class="badge">Platform</span>
-        <span class="card-source">Source: <a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/" target="_blank" rel="noopener">Microsoft Blog</a> / <a href="https://news.microsoft.com/build-2026/" target="_blank" rel="noopener">Microsoft Build Live</a> — 2026.06.02-03</span>
+        <span class="badge">Community</span>
+        <span class="card-source">Source: <a href="https://tokenmix.ai/blog/github-copilot-ai-credits-billing-2026" target="_blank" rel="noopener">TokenMix Blog</a> / <a href="https://windowsforum.com/threads/microsoft-build-2026-ai-agents-copilot-super-app-and-the-next-windows-developer-era.421479/" target="_blank" rel="noopener">Windows Forum</a> — 2026.06.03-04</span>
       </div>
       <div class="card-body">
-        <p>Microsoft は Build 2026 で Windows を「AI エージェントの第一級実行環境」として再定義。ポリシー駆動のエージェント実行コンテナ「MXC SDK」・エージェント配布プラットフォーム「Windows Agent Store」・常時稼働エージェント「Microsoft Scout」を発表した。</p>
+        <p>Build 2026 発表翌日から、MAI-Code-1 を Claude Code および Codex と比較したレポートが開発者コミュニティに出始めている。</p>
         <ul>
-          <li><strong>MXC SDK（Microsoft Execution Containers）:</strong> Windows カーネルに組み込まれたポリシー駆動型エージェント実行レイヤー。管理者がエージェントのアクセス権限を詳細に定義できる</li>
-          <li><strong>Windows Agent Store:</strong> App Store モデルをエージェントに適用し、サードパーティ製エージェントの発見・インストール・管理を一元化</li>
-          <li><strong>Microsoft Scout:</strong> 「Autopilot」カテゴリ第一弾。ユーザーの代理として固有のアイデンティティを持って常時稼働する</li>
-          <li><strong>Microsoft IQ GA:</strong> GitHub Copilot・Foundry・Copilot Studio 横断で一般提供開始。Microsoft 365 の職場知識を統合した Work IQ が中核機能</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Azure Cobalt 200 VM・Surface RTX Spark Dev Box・Majorana 2 量子チップ ─ AI インフラ刷新を一挙発表</div>
-      <div class="card-meta">
-        <span class="badge">Infrastructure</span>
-        <span class="card-source">Source: <a href="https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/" target="_blank" rel="noopener">Azure Blog</a> / <a href="https://www.gizbot.com/features/microsoft-build-2026-highlights-the-biggest-announcements-you-need-to-know-126021.html" target="_blank" rel="noopener">GizBot</a> — 2026.06.02-03</span>
-      </div>
-      <div class="card-body">
-        <p>Build 2026 のハードウェア・インフラ発表は3本立て。Arm ベースの Azure Cobalt 200 VM・NVIDIA と共同開発した Surface RTX Spark Dev Box・量子チップ Majorana 2 が一斉に公開された。</p>
-        <ul>
-          <li><strong>Azure Cobalt 200 VM（アーリーアクセスプレビュー）:</strong> Microsoft 第2世代カスタム Arm プロセッサー搭載。クラウドネイティブかつ Linux ベースのエージェント AI ワークロードに最適化</li>
-          <li><strong>Surface RTX Spark Dev Box:</strong> NVIDIA と共同開発した1 petaflop の AI 演算能力を持つ開発者向けローカル AI ワークステーション。クラウド非依存でエージェントの開発・テストが可能</li>
-          <li><strong>Majorana 2 量子チップ:</strong> 前世代から量子ビット信頼性が 1000 倍向上し、寿命がミリ秒から平均 20 秒に延長。商用量子コンピューティングへの道が大きく開けた</li>
+          <li><strong>初期評価の傾向:</strong> VS Code との統合はシームレスでセットアップ体験が優れているという評価が多い一方、複雑な多ステップエージェントタスクでの精度は「まだ Claude Code には及ばない」という声が出ている</li>
+          <li><strong>GitHub Copilot 課金の注意点:</strong> TokenMix が整理したところによると、MAI-Code-1 利用はモデル選択によって AI クレジット消費量が異なり、特に Agent モードでのヘビー利用は Copilot Pro の月次クレジット上限に達するリスクがある</li>
+          <li>「Anthropic の Claude Code 廃止ライセンスと MAI-Code-1 の品質が揃えば完全移行も考える」という声と「当面 Claude Code の API 直接利用に切り替える」という反応の両方が出ている</li>
         </ul>
       </div>
     </div>
@@ -269,50 +259,49 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI：Agent SDK 課金分離の発表に波紋 ─「$20 で $500 相当のエージェントを回していた時代の終わり」</div>
+      <div class="card-title">r/ClaudeAI：Claude Code の料金上限問題が再燃 ─「$20 プランで 45 分しか使えない」は 6/15 前でもすでに起きていた</div>
       <div class="card-meta">
         <span class="badge">Hot Today</span>
-        <span class="card-source">Source: Reddit r/ClaudeAI / <a href="https://genaiunplugged.substack.com/p/claude-billing-change-workarounds-free-ai-automations" target="_blank" rel="noopener">GenAI Unplugged</a> / <a href="https://thenewstack.io/anthropic-agent-sdk-credits/" target="_blank" rel="noopener">The New Stack</a> — 2026.06.03</span>
+        <span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit" target="_blank" rel="noopener">MorphLLM / Reddit r/ClaudeAI</a> / <a href="https://www.aitooldiscovery.com/guides/claude-reddit" target="_blank" rel="noopener">AI Tool Discovery</a> — 2026.06.04</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が6月15日より Agent SDK 課金を別プールに分離すると発表したことで r/ClaudeAI が活発化。特に Cowork・Claude Code GitHub Actions・サードパーティエージェント自動化を多用していたユーザーからの反応が大きい。</p>
+        <p>r/ClaudeAI では「Claude Code は使った 45 分間は最高のツールだが、レート制限に達するとセッション途中でも止まる」という体験談に 600 以上のアップボートが集まっている。6/15 の Agent SDK 課金分離前でも Pro プランの限界感を訴えるユーザーが続出している。</p>
         <ul>
-          <li><strong>「予期できた変更」派:</strong> 「$20 で $500 分が使えていたのが異常だっただけ」という冷静な見方が多くアップボートを獲得</li>
-          <li><strong>「想定外のダメージ」派:</strong> 「複数の自動化を組み合わせていたインディーハッカーや小規模チームへの影響が大きい」という懸念も多数</li>
-          <li>GenAI Unplugged がまとめた「Cowork ベースに移行する workaround 手順」の記事が多数シェアされている</li>
-          <li>「Microsoft の Claude Code 撤退に続き Anthropic 自身も無制限エージェント時代に終止符を打ちに来た」という言説が注目を集めている</li>
+          <li><strong>コミュニティの対策例:</strong> ① インタラクティブ利用と自動化を意識的に分離 ② Max プランへのアップグレード ③ API 直接利用への切り替え ④ Cursor など代替ツールの併用</li>
+          <li><strong>「価値はある」派の意見:</strong> 「$20 で 45 分間がこのクオリティなら、Max プランの $100-$200 への移行コストは合理的」という逆算的な見方も多い</li>
+          <li>r/ClaudeCode サブレディットは2026年初頭から週間 4,200+ 投稿者数に成長しており、専門的な議論の場として機能しつつある</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/programming：Microsoft Build 2026 が「OpenAI 離脱の決定的な始まり」と話題 ─ MAI モデルと Claude Code 廃止を同一文脈で読む</div>
+      <div class="card-title">r/programming：GitHub Copilot アプリの「エージェントネイティブ」設計に賛否 ─「エージェントの管理が仕事の中心になる未来」を問う</div>
       <div class="card-meta">
         <span class="badge">Discussion</span>
-        <span class="card-source">Source: Reddit r/programming / <a href="https://www.aguidetocloud.com/blog/microsoft-build-2026-recap/" target="_blank" rel="noopener">A Guide to Cloud & AI</a> — 2026.06.03</span>
+        <span class="card-source">Source: Reddit r/programming / <a href="https://devops.com/github-copilot-gets-its-own-app-and-agents-are-the-reason-why/" target="_blank" rel="noopener">DevOps.com</a> — 2026.06.04</span>
       </div>
       <div class="card-body">
-        <p>Microsoft Build 2026 の MAI-Code-1 公開と Claude Code ライセンス廃止を「AI 外部依存からの脱却」の文脈として読む解釈が r/programming で多数派を占めている。</p>
+        <p>「エージェントを管理する My Work ビュー」という GitHub Copilot アプリのコンセプトに対して、r/programming では「開発者の仕事が根本的に変わるサインか」という哲学的な議論が展開されている。</p>
         <ul>
-          <li><strong>最多アップボート意見:</strong> 「Claude Code 廃止 → MAI-Code-1 投入のタイミングが完璧すぎる。偶然ではなく計画的なロードマップの実行だ」</li>
-          <li><strong>懐疑的意見:</strong> 「MAI-Code-1 が Claude Code や Codex に匹敵するかどうかはまだ不明。エンジニア生産性に影響が出れば反発が起きる」</li>
-          <li><strong>「ベンダーロックインの逆転」論:</strong> 「今回は Microsoft が切り替えた側だが、次はどの企業が切り替えられるか分からない」という普遍的な議論も盛り上がっている</li>
+          <li><strong>賛成意見:</strong> 「コードを書く時間よりエージェントのアウトプットをレビューする時間が増えるのは自然な流れ。これはエンジニアの役割進化だ」</li>
+          <li><strong>懐疑的意見:</strong> 「エージェントが生成したコードのレビューが主業務になると、コードを深く理解する能力が退化する可能性がある」</li>
+          <li><strong>「MAI-Code-1 が本当に使えるか問題」:</strong> Claude Code を使ってきた開発者が MAI-Code-1 に移行するか実際に試してから判断するというスタンスが多数派を占めている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/artificial：イラン・米国・湾岸の軍事衝突が AI・半導体産業に与える影響を議論 ─「Hormuz 封鎖でエネルギーコスト高騰→データセンターへの波及」を警戒</div>
+      <div class="card-title">r/worldnews：トランプ「イランと最終交渉中」発言に世界が注目 ─ 核合意・ホルムズ開放の可能性を市場が織り込み始める</div>
       <div class="card-meta">
         <span class="badge">Analysis</span>
-        <span class="card-source">Source: Reddit r/artificial / <a href="https://www.npr.org/2026/06/03/g-s1-125566/iran-war-updates" target="_blank" rel="noopener">NPR</a> — 2026.06.03</span>
+        <span class="card-source">Source: Reddit r/worldnews / <a href="https://abcnews.com/International/live-updates/iran-live-updates-irgc-claims-airbase-attack-after/?id=133475855" target="_blank" rel="noopener">ABC News</a> — 2026.06.04</span>
       </div>
       <div class="card-body">
-        <p>イランがクウェート国際空港とバーレーンの米第5艦隊基地を攻撃し、米軍がケシュム島を報復攻撃した6月3日のニュースを受け、r/artificial では「地政学リスクが AI 産業に与える中期的影響」の議論が展開されている。</p>
+        <p>トランプ大統領が「イランとの最終交渉の真っ最中だ」と発言し、新最高指導者との会談の可能性も示唆したことで、r/worldnews では「停戦・核合意・ホルムズ開放の可否」を巡る議論が白熱している。</p>
         <ul>
-          <li><strong>エネルギーコストへの懸念:</strong> ホルムズ海峡は実質閉鎖状態が続いており、原油価格が2%以上上昇。「AI データセンターのエネルギーコストは電力価格に連動するため、原油高騰は AI サービス料金に跳ね返る」との懸念が共有されている</li>
-          <li><strong>半導体供給への影響:</strong> 「湾岸緊張の長期化は台湾・韓国の半導体企業の供給チェーンに間接的影響を与える可能性がある」という分析も</li>
-          <li><strong>Anthropic IPO への影響:</strong> 「地政学リスクによる市場環境の悪化は $965B 評価での IPO にとって最大のリスクの一つ」という指摘も出ている</li>
+          <li><strong>市場の反応:</strong> 原油先物が交渉進展期待で一時軟化。「ホルムズ封鎖解除が実現すれば原油価格は急落し、エネルギーコスト依存の AI データセンター収益環境が改善する」という見方も出ている</li>
+          <li><strong>懐疑論:</strong> 「トランプの『交渉中』発言は過去にも繰り返されており、実際の合意条件は不透明なまま。ヘズボッラーの停戦拒否も交渉の障害になる」という慎重な見方が多数</li>
+          <li>核問題・米軍の対イラン制裁・ホルムズ封鎖の3点セットをどう一括解決するかが合意の最大の壁とされている</li>
         </ul>
       </div>
     </div>
@@ -326,72 +315,67 @@
     </div>
 
     <div class="card">
-      <div class="card-title">イランがクウェート国際空港・バーレーン米第5艦隊を攻撃 ─ 米軍がケシュム島を報復、湾岸全域で緊張最高潮</div>
+      <div class="card-title">トランプ「イランと最終交渉中・新最高指導者との会談も視野」 ─ 「核の塵」回収計画は却下していたことも明かす</div>
       <div class="card-meta">
         <span class="badge">Breaking</span>
-        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/6/3/iran-war-live-us-strikes-irans-qeshm-says-tehran-attacks-kuwait-bahrain" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.npr.org/2026/06/03/g-s1-125566/iran-war-updates" target="_blank" rel="noopener">NPR</a> / <a href="https://www.thenationalnews.com/news/gulf/2026/06/03/fresh-iran-strikes-on-bahrain-and-kuwait-test-failing-talks/" target="_blank" rel="noopener">The National</a> / <a href="https://www.militarytimes.com/news/your-military/2026/06/03/gulf-tensions-escalate-as-iran-hits-kuwait-us-strikes-near-hormuz/" target="_blank" rel="noopener">Military Times</a> — 2026.06.03</span>
+        <span class="card-source">Source: <a href="https://abcnews.com/International/live-updates/iran-live-updates-irgc-claims-airbase-attack-after/?id=133475855" target="_blank" rel="noopener">ABC News</a> / <a href="https://abc7ny.com/live-updates/iran-war-peace-talks-oil-prices-lebanon-strait-of-hormuz/19212967/" target="_blank" rel="noopener">ABC7</a> / <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" target="_blank" rel="noopener">Wikipedia: 2026 Iran war ceasefire</a> — 2026.06.04</span>
       </div>
       <div class="card-body">
-        <p>イランが6月3日早朝、バリスティックミサイルとドローンでクウェートとバーレーンを攻撃。クウェート国際空港の旅客ターミナルにドローンが直撃し1人が死亡。バーレーンでは米第5艦隊司令部を狙ったミサイルを米軍・バーレーン軍が迎撃。米軍はホルムズ海峡近くのケシュム島にあるイラン軍地上管制局を報復攻撃した。</p>
+        <p>トランプ大統領は6月4日、「イランとの最終交渉の真っ最中だ」と発言。イランの新最高指導者との直接会談の可能性について「合意があれば会うことに異存はない」と述べ、外交的解決への姿勢を示した。</p>
         <ul>
-          <li><strong>イランの主張:</strong> IRGC は「ケシュム島南方の通信設備へのアメリカの攻撃への報復だ」と発表。米軍はそのような先制攻撃の事実を否定している</li>
-          <li><strong>原油市場の反応:</strong> ホルムズ海峡を通じた石油輸送への懸念から原油先物が2%以上上昇。海峡は3ヶ月以上実質的に閉鎖状態が続いている</li>
-          <li><strong>停戦の崩壊:</strong> NPR は「イラン・レバノン・ガザの3つの停戦が同時に崩壊するリスクが現実化しつつある」と分析</li>
-          <li>EU は緊急声明で「全当事者に即時自制と対話復帰を求める」と発表。国連安保理の緊急会合が招集される見通し</li>
+          <li><strong>「核の塵」計画の却下:</strong> トランプは米軍をイランに派遣して濃縮ウランを回収する危険な計画が検討されたことを認め、最終的に却下したと明かした。計画の詳細は政権内で物議を醸している</li>
+          <li><strong>交渉の難所:</strong> 核問題の決着・Hormuz 封鎖解除・在湾岸米軍の地位の3点が最大の争点。「イランが米兵を殺傷した場合は戦闘再開の理由になる」とも警告した</li>
+          <li><strong>ヘズボッラーの停戦拒否:</strong> イスラエルとレバノン政府が実施に合意した停戦をヘズボッラーが拒否。イスラエルとヘズボッラーは合意から数時間以内に互いに攻撃を再開し、中東全体の停戦実現が一層困難になっている</li>
+          <li><strong>議会の動き:</strong> 米下院が可決したイラン軍事行動停止決議（戦争権限法に基づく）についてホワイトハウスは「非拘束的だ」と牽制</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">米下院、トランプ政権のイラン軍事行動に初の停止決議を可決 ─「戦争権限法」を盾に議会が行政府を牽制</div>
+      <div class="card-title">ウクライナ：EU が加盟交渉第1クラスター開始に全27カ国が合意 ─ 露軍は大規模ドローン攻撃でヘルソンを直撃、1,300 人の兵士を喪失</div>
+      <div class="card-meta">
+        <span class="badge">Europe</span>
+        <span class="card-source">Source: <a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent</a> / <a href="https://www.ukrinform.net/amp/rubric-ato/4130311-russia-loses-1300-troops-four-mlrs-systems-in-war-against-ukraine-over-past-day.html" target="_blank" rel="noopener">Ukrinform</a> / <a href="https://www.csis.org/analysis/russias-battlefield-woes-ukraine" target="_blank" rel="noopener">CSIS</a> — 2026.06.04</span>
+      </div>
+      <div class="card-body">
+        <p>EU 加盟交渉の第1クラスター開始に全27カ国が合意（ウクライナ・モルドバ同時）。外交的前進の一方、軍事面では露軍が大規模ドローン293機を発射し264機が迎撃されたが、残る機体がヘルソン市内11カ所を直撃、16人死亡・86人負傷。直近24時間の露軍損失は 1,300 人。</p>
+        <ul>
+          <li>ゼレンスキー大統領はウクライナのドローンがサンクトペテルブルクの石油ターミナルを攻撃・炎上させたと発表。プーチン主催の経済フォーラム開催中を狙った象徴的な攻撃</li>
+          <li>ウクライナは「今冬前に戦争の熱戦フェーズを終わらせることを議論中」と政府筋が明かした</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">アルバニア：クシュナー＆イヴァンカ主導の高級沿岸開発プロジェクトに首都ティラナで大規模抗議</div>
+      <div class="card-meta">
+        <span class="badge">Europe</span>
+        <span class="card-source">Source: <a href="https://www.euronews.com/video/2026/06/04/latest-news-bulletin-june-4th-2026-midday" target="_blank" rel="noopener">Euronews</a> / PBS NewsHour — 2026.06.04</span>
+      </div>
+      <div class="card-body">
+        <p>アルバニアの首都ティラナで市民が道路を封鎖する抗議活動が発生。ジャレッド・クシュナーとイヴァンカ・トランプが関与する高級沿岸開発プロジェクトへの環境影響と透明性への懸念が発端。アルバニア政府は「国家の変革をもたらすプロジェクトだ」と擁護している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ政権、複数の大統領令に署名 ─ 貿易・移民・エネルギー分野の規制緩和を中心に</div>
       <div class="card-meta">
         <span class="badge">US Politics</span>
-        <span class="card-source">Source: <a href="https://www.justsecurity.org/140915/early-edition-june-3-2026/" target="_blank" rel="noopener">Just Security</a> / <a href="https://morningstaronline.co.uk/article/world-brief-june-3-2026" target="_blank" rel="noopener">Morning Star</a> — 2026.06.03</span>
+        <span class="card-source">Source: <a href="https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-3-2026/" target="_blank" rel="noopener">White House</a> / PBS NewsHour — 2026.06.03-04</span>
       </div>
       <div class="card-body">
-        <p>米下院は6月3日、トランプ政権によるイランへの軍事行動を停止するよう求める決議を初めて可決した。「戦争権限法（War Powers Act）」に基づくもので、共和党の一部から造反が出たことが注目される。</p>
-        <ul>
-          <li><strong>決議の内容:</strong> 議会の明示的承認なしに継続されているイランへの軍事作戦の停止を要求。法的拘束力は限定的だが、政治的圧力として機能する</li>
-          <li><strong>ルビオ国務長官の証言:</strong> 開戦以来初の議会証言でトランプ政権のイラン戦略を擁護し「外交的解決を目指しているが、イランの行動への対応は必要だった」と主張</li>
-          <li>ホワイトハウスは「決議は非拘束的であり大統領の憲法上の権限に影響を与えない」と声明</li>
-        </ul>
+        <p>トランプ大統領が6月3日に複数の大統領令に署名。詳細はホワイトハウス公式サイトで公開された。貿易・移民・エネルギー分野の規制緩和が中心とされており、イラン情勢に加えて中間選挙（ミッドターム）の動向とも絡んで注目される。稀なトランプ政権への「議会の敵対的反応」として、議員1名の行方不明問題と合わせてメディアが報じている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">コロンビア大統領選 決選投票へ ─ デ・ラ・エスプリエリャ 43.74%・セペダ 40.90% で6月21日に最終決定</div>
-      <div class="card-meta">
-        <span class="badge">Americas</span>
-        <span class="card-source">Source: <a href="https://www.npr.org/2026/06/01/nx-s1-5842833/first-round-colombia-presidential-vote" target="_blank" rel="noopener">NPR</a> / <a href="https://www.cbsnews.com/news/colombia-presidential-election-ivan-cepeda-abelardo-de-la-espriella-paloma-valencia/" target="_blank" rel="noopener">CBS News</a> — 2026.06.01-03</span>
-      </div>
-      <div class="card-body">
-        <p>コロンビア大統領選第1回投票は右派デ・ラ・エスプリエリャが 43.74%・左派セペダが 40.90% を獲得し決選投票へ。第3候補バレンシア（中道右派）の票の行方が6月21日の勝敗を左右するとみられている。CBS News は「これほど対照的な2候補が決選に進んだのは異例で、コロンビアの社会的分断を象徴している」と報じた。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">バングラデシュ外相が第81代国連総会議長に選出 ─ グローバルサウスの声を国連に反映する役割に期待</div>
-      <div class="card-meta">
-        <span class="badge">UN</span>
-        <span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-june-3-2026" target="_blank" rel="noopener">Morning Star</a> / <a href="https://www.justsecurity.org/140915/early-edition-june-3-2026/" target="_blank" rel="noopener">Just Security</a> — 2026.06.03</span>
-      </div>
-      <div class="card-body">
-        <p>バングラデシュのタウヒード・ホサイン外相が第81回国連総会の議長に選出された。南アジア出身の総会議長就任は歴史的に見ても稀で、グローバルサウスの外交的存在感を高める象徴的な人事として注目されている。</p>
-        <ul>
-          <li><strong>バングラデシュの外交的文脈:</strong> ユヌス博士率いる暫定政権が2024年の政変後に政権を担い、2026年の民主化プロセスの進展が国際的に評価されていた</li>
-          <li>中東紛争・ウクライナ情勢・気候変動で主要国が対立する中、総会議長としての調停役が期待される</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">DRC エボラ流行 続報 ─ 確定患者 125 人・死者 17 人、Bundibugyo 株向け承認済みワクチンなしで WHO が実験的治療を加速</div>
+      <div class="card-title">DRC エボラ（Bundibugyo 株）続報 ─ ウガンダへの越境感染が続き WHO が実験的ワクチン臨床試験を加速</div>
       <div class="card-meta">
         <span class="badge">Health</span>
-        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> / <a href="https://news.un.org/en/story/2026/05/1167542" target="_blank" rel="noopener">UN News</a> — 2026.06.03</span>
+        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> — 2026.06.04</span>
       </div>
       <div class="card-body">
-        <p>DRC エボラ流行（Bundibugyo 株）はウガンダへも拡大が続いており、確定患者 125 人・疑い例 906 人、死者は確定ベースで 17 人。承認済みワクチン・治療薬の有効性が確認されていない特殊株で、WHO は実験的ワクチンの緊急臨床試験実施を研究機関に要請している。DRC 東部の不安定な治安と地域住民の医療機関への不信感が封じ込めを困難にしている。</p>
+        <p>前日と大きな変化はないが、ウガンダとの国境を越えた感染の連鎖が確認されており封じ込めには至っていない。Bundibugyo 株向けに承認済みのワクチン・治療薬が存在しないため、WHO は実験的製剤の緊急試験を研究機関に要請。DRC 東部の不安定な治安と地域住民の医療機関への不信が依然として対応の障壁となっている。</p>
       </div>
     </div>
   </section>
@@ -404,56 +388,60 @@
     </div>
 
     <div class="card">
-      <div class="card-title">「Claude Code を優秀な新卒部下として使い倒す」── 個人開発爆速化の全ワークフロー（Zenn）</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/yoshiaki0217/articles/9dd7a3666d475f" target="_blank" rel="noopener">zenn.dev/yoshiaki0217</a></span>
-      </div>
-      <div class="card-body">
-        <p>Claude Code を「新卒の優秀な部下」として捉え、タスクの委任・フィードバック・CLAUDE.md による個性付けまでを一貫して解説した記事が Zenn 週間上位に入っている。</p>
-        <ul>
-          <li><strong>「部下モデル」の有用性:</strong> 「仕様・コンテキスト・制約を十分に説明した上で委任する」という人材管理に近いアプローチが生産性向上に直結するという論旨</li>
-          <li><strong>CLAUDE.md の活用:</strong> プロジェクトごとのコーディングスタイル・NG パターン・よく使うコマンドを書き込むことで「個性付け」した Claude Code が期待通りに動作するテクニックが紹介</li>
-          <li>6/15 課金変更の発表翌日には「新卒部下を多数使い回す時代が終わるかもしれない」というコメントが皮肉交じりに付いている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">「自律 AI 秘書を Claude Code で組む ─ 5層と7つの境界」── エンタープライズ応用設計論（Zenn）</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span>
-      </div>
-      <div class="card-body">
-        <p>メール・カレンダー・Slack を自律的に管理する AI 秘書を Claude Code で構築する際の設計論を「5つの機能層」と「7つの境界設定」という枠組みで体系化した記事が高評価を受けている。</p>
-        <ul>
-          <li><strong>5層アーキテクチャ:</strong> 入力層→意図解析層→判断・優先付け層→アクション実行層→報告・学習層という5段構造で各層の責務を明確に分離</li>
-          <li><strong>7つの境界設定:</strong> 「絶対に自動実行しない範囲」「人間の確認が必要なトリガー」「エラー時のフォールバック先」などを明示的に設計し、エージェントの暴走を防ぐ実践論</li>
-          <li>「Agent SDK 課金分離後は、この5層のどこをインタラクティブ扱いにするかが重要になる」という追記が即座に反映されている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">「今から追いつく Claude Code 徹底解説」── 初心者向け入門記事が Qiita 週間ランキング上位継続中</div>
+      <div class="card-title">「コードを書けない私が、AI に『チーム』を持たせるまで」── Zenn Books で書籍化（Qiita）</div>
       <div class="card-meta">
         <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com/i-inose/items/e644e9b620ee1c8d3c1b" target="_blank" rel="noopener">qiita.com/i-inose</a></span>
+        <span class="card-source"><a href="https://qiita.com/saitoko/items/2225ddd693e6ec1011ff" target="_blank" rel="noopener">qiita.com/saitoko</a></span>
       </div>
       <div class="card-body">
-        <p>Claude Code の基本から Dynamic Workflows・MCP サーバー連携・6/15 の課金変更まで最新情報を網羅した入門記事が Qiita 週間ランキング上位をキープ。「部署への Claude Code 導入を担当することになった」というコメントが増えており、エンタープライズ普及フェーズへの移行が見て取れる。</p>
+        <p>SE 歴 26 年の管理職が Claude Code で9体の AI エージェント「編集部」を作り上げた10日間の記録が Zenn Books として出版された。非エンジニア向けの視点から「コードを書く」のではなく「AI チームを編成・マネジメントする」という新しいアプローチを体系化している点が注目されている。</p>
+        <ul>
+          <li><strong>「チーム編成」モデル:</strong> 記者エージェント・編集長エージェント・校閲エージェントなど役割を明示的に分割し、Claude Code の Dynamic Workflows 的な並列実行で協調させる設計</li>
+          <li><strong>読者層:</strong> 非エンジニア・マネージャー層からの反響が大きく「AIエージェントは専門家だけのツールではなくなりつつある」という時代感を反映</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">「Claude Code プラグインおすすめ 2026 ─ 公式マーケットプレイスから入れるべきプラグイン & MCP サーバー」（Zenn）</div>
+      <div class="card-title">「2026年5月時点の AI コーディングエージェントまとめ」── 国内目線での比較記事が Qiita で高評価（Qiita）</div>
       <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev/ino_h/articles/2026-04-23-claude-code-plugins-ranking" target="_blank" rel="noopener">zenn.dev/ino_h</a></span>
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/ochtum/items/8fd5952e920da136dd94" target="_blank" rel="noopener">qiita.com/ochtum</a></span>
       </div>
       <div class="card-body">
-        <p>160 以上のプラグインを実際に試した上で用途別ランキングを紹介した記事が継続的に読まれている。GitHub・Jira・Notion 連携 MCP サーバー群・ブラウザ自動操作系・セキュリティ脆弱性スキャン系が高評価。Build 2026 で Microsoft が Windows Agent Store を発表したことを受け、「Claude Code プラグインエコシステムとの競合・共存関係はどうなるか」というコメントも追加されている。</p>
+        <p>Claude Code・Codex・Cursor・Kiro・GitHub Copilot を日本語 UI・日本語コードコメント生成・日本語ドキュメント理解力の観点から比較した記事が Qiita 週間ランキング上位。Build 2026 で MAI-Code-1 が投入されたことを受けてコメント欄でも続報が追加されている。</p>
+        <ul>
+          <li>Claude Code が日本語指示への理解度で最高評価を獲得。一方、UI の日本語化対応は GitHub Copilot が優位</li>
+          <li>「6月から課金が変わるので乗り換えを検討している」という実用的なコメントが多数付いている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「1年間の育休に備えて『勝手に賢くなる』AI 情報収集基盤を作った」── Claude Code × RSS × GitHub Actions（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/tokium_dev/articles/20260427_ai_tech_researcher" target="_blank" rel="noopener">zenn.dev/tokium_dev</a></span>
+      </div>
+      <div class="card-body">
+        <p>育休中でも AI 技術トレンドをキャッチアップし続けられる自律情報収集基盤の構築記録。RSS フィード収集・Claude Code による要約・GitHub Actions での自動実行・Slack への通知という一連のパイプラインを詳述。「自動化×情報収集」という実用性の高さから継続的に読まれている。</p>
+        <ul>
+          <li>Anthropic の 6/15 課金変更後は「GitHub Actions からの claude -p 呼び出しが Agent SDK 課金に移行する」という追記を著者が行い、移行コスト試算も公開している</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Zenn に投稿した記事を Qiita と note に自動転載する Claude Code スキルを作った」── MCP × Claude Code の実践例（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/taroh_7/articles/2026-04-30-zenn-qiita-note-auto-crosspost" target="_blank" rel="noopener">zenn.dev/taroh_7</a></span>
+      </div>
+      <div class="card-body">
+        <p>Zenn に投稿した記事を Claude Code スキルと MCP を活用して Qiita・note に自動転載する仕組みを実装した記録。「プラットフォームごとの微妙な書式差異を Claude が自動補正する」という実装が特に注目されており、技術系ライターからのブックマーク数が多い。</p>
+        <ul>
+          <li>GitHub Actions 経由の自動実行部分は 6/15 以降に課金影響が出る可能性があり、著者が対応予定を告知している</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -461,27 +449,23 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月3日（水）</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月4日（木）</p>
   <p style="margin-top:0.5rem;">
     Sources:
     <a href="https://www.anthropic.com" target="_blank" rel="noopener">Anthropic</a> ·
     <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
-    <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> ·
-    <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
+    <a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a> ·
     <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
     <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> ·
-    <a href="https://news.microsoft.com" target="_blank" rel="noopener">Microsoft</a> ·
-    <a href="https://azure.microsoft.com" target="_blank" rel="noopener">Azure Blog</a> ·
-    <a href="https://blogs.microsoft.com" target="_blank" rel="noopener">Microsoft Official Blog</a> ·
-    <a href="https://blog.google" target="_blank" rel="noopener">Google Blog</a> ·
-    <a href="https://www.infoq.com" target="_blank" rel="noopener">InfoQ</a> ·
-    <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
-    <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
-    <a href="https://www.militarytimes.com" target="_blank" rel="noopener">Military Times</a> ·
-    <a href="https://www.justsecurity.org" target="_blank" rel="noopener">Just Security</a> ·
-    <a href="https://www.cbsnews.com" target="_blank" rel="noopener">CBS News</a> ·
+    <a href="https://github.blog" target="_blank" rel="noopener">GitHub Blog</a> ·
+    <a href="https://devops.com" target="_blank" rel="noopener">DevOps.com</a> ·
+    <a href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a> ·
+    <a href="https://www.tipranks.com" target="_blank" rel="noopener">TipRanks</a> ·
+    <a href="https://abcnews.com" target="_blank" rel="noopener">ABC News</a> ·
+    <a href="https://kyivindependent.com" target="_blank" rel="noopener">Kyiv Independent</a> ·
+    <a href="https://www.ukrinform.net" target="_blank" rel="noopener">Ukrinform</a> ·
+    <a href="https://www.euronews.com" target="_blank" rel="noopener">Euronews</a> ·
     <a href="https://www.who.int" target="_blank" rel="noopener">WHO</a> ·
-    <a href="https://news.un.org" target="_blank" rel="noopener">UN News</a> ·
     <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
     <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
   </p>
