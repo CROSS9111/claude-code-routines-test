@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月5日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem; }
+    .stat-card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem; text-align: center; }
+    .stat-value { font-size: 1.35rem; font-weight: 700; color: #0366d6; }
+    .stat-label { font-size: 0.74rem; color: #656d76; margin-top: 0.2rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Code w/ Claude 東京開幕 / Claudeが自社コードの80%を記述 / プーチン交渉拒否 / 米下院イラン戦争権限決議可決</p>
+  <p class="date">2026年6月5日（金）&nbsp;|&nbsp;<a href="../2026-06-04/index.html">前版（6/4）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#openai">OpenAI / Codex</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude / Anthropic -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目（6/5）:</strong> Anthropic の開発者イベント <strong>Code with Claude 東京</strong>（6/5-6）が本日開幕。同日、Anthropic は「<strong>Claudeが自社の本番コードの80%以上を書いた</strong>」と公表し、AI による再帰的自己改善へ向けた「グローバル・ポーズボタン」の必要性を訴えた。トランプ政権は AI 企業に対し、モデル公開30日前の政府への任意提供を求める大統領令に署名。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">80%+</div><div class="stat-label">Anthropic 社内コードのうち Claude が書いた割合（2026年5月）</div></div>
+      <div class="stat-card"><div class="stat-value">8×</div><div class="stat-label">エンジニア1人あたりの1日マージ量（2024年比）</div></div>
+      <div class="stat-card"><div class="stat-value">76%</div><div class="stat-label">複雑なオープンエンド問題での Claude 成功率（5月、+50pt/6か月）</div></div>
+      <div class="stat-card"><div class="stat-value">30日</div><div class="stat-label">トランプ AI 大統領令：公開前に政府へ任意提供する期間</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude 東京 開幕（6/5-6）─ ライブ基調講演・ワークショップ・1on1 オフィスアワーを Anthropic エンジニアと</div>
+      <div class="card-meta">
+        <span class="badge">Live Today</span>
+        <span class="card-source">Source: <a href="https://claude.com/code-with-claude/tokyo" target="_blank" rel="noopener">Claude / Code w/ Claude Tokyo</a> / <a href="https://claude.com/blog/code-with-claude-san-francisco-london-tokyo" target="_blank" rel="noopener">Anthropic Blog</a> — 2026.06.05-06</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic の開発者カンファレンス「Code with Claude」が東京会場で開幕。サンフランシスコ（5月）・ロンドン（5月）に続くシリーズ最終戦で、今回が最も規模の大きいイベントとなる。</p>
+        <ul>
+          <li><strong>1日目（本日6/5）の見どころ:</strong> Managed Agents のアーキテクチャ詳細・Dynamic Workflows の実践デモ・セキュリティプラグインによる脆弱性自動修正ライブデモ。すべての基調講演と技術セッションがライブストリーミング配信</li>
+          <li><strong>1on1 オフィスアワー:</strong> Claude Code チームのエンジニアと直接相談できる時間が設けられており、本番利用中の開発者からのフィードバック収集が目的のひとつ</li>
+          <li><strong>6/11 拡張イベント:</strong> 独立系開発者・早期スタートアップ向けの小規模イベントが6月11日に別途開催予定</li>
+          <li><strong>MIT Technology Review の評価:</strong> SF 会場の基調講演を「コーディングの未来を見せた─好むと好まざるとにかかわらず」と表現</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「AI が AI を作る」─ Anthropic、Claudeが自社本番コードの80%以上を執筆と公表、「グローバル・ポーズボタン」を提唱</div>
+      <div class="card-meta">
+        <span class="badge">Milestone</span>
+        <span class="card-source">Source: <a href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://thenextweb.com/news/anthropic-claude-recursive-self-improvement-code" target="_blank" rel="noopener">The Next Web</a> — 2026.06.05</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が「When AI builds itself」と題したブログで公表。2025年2月の Claude Code ローンチ時には「数パーセント」だったが、2026年5月には本番コードの80%超を Claude が書いている。</p>
+        <ul>
+          <li><strong>生産性向上の実数:</strong> 一般エンジニアの1日あたりマージ量が2024年比8倍に</li>
+          <li><strong>「再帰的自己改善」への言及:</strong> Claude が自社インフラを改善するコードを書き、そのインフラが次の Claude の学習を加速させるループが始まりつつある</li>
+          <li><strong>グローバル・ポーズボタンの提唱:</strong> 特定の閾値を超えたフロンティアモデルの開発・展開を協調して止めるオプションの設計を呼びかけた</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ政権、AI 大統領令に署名 ─ フロンティアモデルを公開30日前に政府へ任意提供、義務的な事前審査は禁止</div>
+      <div class="card-meta">
+        <span class="badge">Policy</span>
+        <span class="card-source">Source: <a href="https://www.cnbc.com/2026/06/02/trump-executive-order-ai.html" target="_blank" rel="noopener">CNBC</a> / <a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order" target="_blank" rel="noopener">NPR</a> — 2026.06.02</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ大統領が6月2日に署名した大統領令。フロンティア AI 企業に公開30日前のモデルへの政府アクセスを求める。ただし参加は任意で、義務的な事前審査・ライセンス要件は明示的に禁止されている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI / Codex -->
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI / Codex 最新動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI、Gartner「エンタープライズ AI コーディングエージェント」マジック・クアドラントで Leader 認定 ─ Codex 週間利用者 400 万人超</div>
+      <div class="card-meta">
+        <span class="badge">Recognition</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>Gartner のマジック・クアドラントで OpenAI が Leader として認定。Codex の週間アクティブユーザーは 400 万人超に達している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が NVIDIA インフラで Codex をパワーアップ ─ 大規模並列エージェント実行の基盤強化</div>
+      <div class="card-meta">
+        <span class="badge">Infrastructure</span>
+        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI の GPT-5.5 が NVIDIA の AI インフラ上で稼働。Codex のバックエンドに使用されており、並列エージェント実行の処理能力を大幅に強化している。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit / コミュニティ -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 本日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/ClaudeAI・r/programming：「Claude が Anthropic 自社コードの80%を書いた」─ 開発者の未来を巡る白熱議論</div>
+      <div class="card-meta"><span class="badge">Hot Today</span><span class="card-source">Reddit r/ClaudeAI / r/programming — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>楽観派「レビュアー・アーキテクトとしての人間の役割は残る」。懐疑派「76%の成功率は4件に1件は問題が起きているということだ」。「Anthropic が最も速く開発を進めているのにポーズボタンを提唱するパラドックス」という皮肉なコメントも多く票を集めた。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA：トランプ AI 大統領令に開発者コミュニティが反応 ─「任意提供は評価、でも政府がモデルを見るリスクは?」</div>
+      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>「義務的審査を明示禁止した点は評価できる」という声が優勢。一方「政府がモデルの詳細に30日間アクセスできることでセキュリティリスクが逆に増す可能性がある」という懸念も出ている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：プーチンがゼレンスキーの直接交渉提案を「無意味」と拒否 ─ 4年超の戦争の終わりはまだ遠い</div>
+      <div class="card-meta"><span class="badge">Hot Discussion</span><span class="card-source">Reddit r/worldnews — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>EU 加盟交渉の前進とプーチンの拒否が同日に重なり「ウクライナの外交的孤立は終わりつつある、問題は戦場だけだ」という見方も出ている。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">プーチン、ゼレンスキーの直接交渉提案を「無意味・無礼」と拒否 ─ サンクトペテルブルク経済フォーラムで表明</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source"><a href="https://www.bloomberg.com/news/articles/2026-06-05/putin-rejects-zelenskyy-call-for-peace-talks-tells-army-to-work" target="_blank" rel="noopener">Bloomberg</a> — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>ゼレンスキーの第三国での直接会談提案をプーチンが即座に拒否。ロシア軍に「作業を続けよ」と指示し、戦闘継続の意志を明確にした。EU 全27カ国がウクライナの加盟交渉第1クラスター開始に合意した発表と同日の出来事。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">イラン交渉が行き詰まり ─ イラン軍事顧問「ボールはトランプ側に」、米下院が戦争権限決議を 215-208 で可決</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source"><a href="https://www.cnn.com/2026/06/05/world/live-news/iran-trump-lebanon-israel-war-news" target="_blank" rel="noopener">CNN</a> — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>イランの上級軍事顧問が「交渉は行き詰まっており、ボールはトランプ側にある」と述べた。米下院は戦争権限法に基づくイラン軍事行動停止決議を 215-208 の僅差で可決（共和党4名が民主党と同調）。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">UK：スターマー首相がマスクに「英国政治への干渉をやめるよう」求める</div>
+      <div class="card-meta"><span class="badge">Europe</span><span class="card-source">2026.06.05</span></div>
+      <div class="card-body">
+        <p>マスクが X 上で英国の連続殺人事件報道を巡って扇動的な投稿を連発し、公的な騒乱・暴力デモに発展。英国政府はオンライン安全法の適用を X に改めて警告した。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">フィリピン・ベトナム、「強化された戦略的パートナーシップ」へ関係格上げ ─ 南シナ海での協調が背景</div>
+      <div class="card-meta"><span class="badge">Asia</span><span class="card-source">2026.06.05</span></div>
+      <div class="card-body">
+        <p>ベトナムのトー・ラム国家主席がマニラを国賓訪問し、二国間関係を「強化された戦略的パートナーシップ」に格上げ。南シナ海での中国の行動を牽制するため、ASEAN 内での連携強化の一環。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ、トッド・ブランチを司法長官に正式指名</div>
+      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source"><a href="https://www.npr.org/2026/06/05/nx-s1-5848057/the-news-roundup-for-june-5-2026" target="_blank" rel="noopener">NPR</a> — 2026.06.05</span></div>
+      <div class="card-body">
+        <p>トランプの刑事裁判で個人弁護士を務めたトッド・ブランチを正式な司法長官に指名。上院の承認審議では野党・民主党が利益相反を強く追及する見通し。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Claude Code の Agent Teams で複数 AI が協調するチームを作ろう」── tmux と組み合わせたリアルタイム並列実行（Zenn）</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/long910/articles/2026-02-23-claude-code-agent-teams" target="_blank" rel="noopener">zenn.dev/long910</a></span></div>
+      <div class="card-body">
+        <p>Claude Code の Agent Teams 機能で複数インスタンスが協調するアーキテクチャを解説。「Code with Claude 東京」開幕に合わせてブックマーク数が急増。バグ修正・レビュー・テスト・セキュリティ監査を並列エージェントに分担させる実装例を具体的に示している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「自律 AI 秘書を Claude Code で組む ─ 5 層と 7 つの境界」── メール・カレンダー・タスク管理の自動化設計（Zenn）</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026" target="_blank" rel="noopener">zenn.dev/miyan</a></span></div>
+      <div class="card-body">
+        <p>メールトリアージ・カレンダー管理・タスク優先度付けを Claude Code エージェントに担わせる「自律 AI 秘書」の設計論。5層アーキテクチャと7つのセーフティ境界で体系化。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「AI コーディングエージェント比較 2026 ─ Claude Code・Codex・Copilot・Cursor の違いと選び方」（Zenn）</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/ino_h/articles/2026-04-05-ai-coding-agent-comparison" target="_blank" rel="noopener">zenn.dev/ino_h</a></span></div>
+      <div class="card-body">
+        <p>国内向けに Claude Code・OpenAI Codex・GitHub Copilot・Cursor Agent を価格・機能・日本語対応・IDE 統合の観点で比較。「Code with Claude 東京」開幕を機にアクセスが急増。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「はじめての Agent Skills 12 選＆リポジトリ一覧！GitHub Copilot でも使える AI の手順書」（Qiita）</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/aktsmm/items/08eef2cdeeb0a32b69a2" target="_blank" rel="noopener">qiita.com/aktsmm</a></span></div>
+      <div class="card-body">
+        <p>Claude Code・GitHub Copilot どちらでも使える「Agent Skills」12 種をリポジトリ付きで紹介。スキルの作り方・呼び出し方・デバッグ手法まで日本語で解説しており、AI エージェント入門記事として継続的なアクセスを集めている。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月5日（金）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://claude.com/code-with-claude/tokyo" target="_blank" rel="noopener">Code w/ Claude Tokyo</a> ·
+    <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> ·
+    <a href="https://thenextweb.com" target="_blank" rel="noopener">The Next Web</a> ·
+    <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> ·
+    <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
+    <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://blogs.nvidia.com" target="_blank" rel="noopener">NVIDIA Blog</a> ·
+    <a href="https://www.bloomberg.com" target="_blank" rel="noopener">Bloomberg</a> ·
+    <a href="https://www.cnn.com" target="_blank" rel="noopener">CNN</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
