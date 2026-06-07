@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月6日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem; }
+    .stat-card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem; text-align: center; }
+    .stat-value { font-size: 1.35rem; font-weight: 700; color: #0366d6; }
+    .stat-label { font-size: 0.74rem; color: #656d76; margin-top: 0.2rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Anthropic IPO 準備 / Claude 障害回復 / 6/15 課金変更 / Codex が Amazon Bedrock で GA / イラン停戦違反 / 全仏テニス女子決勝</p>
+  <p class="date">2026年6月6日（土）&nbsp;|&nbsp;<a href="../2026-06-05/index.html">前版（6/5）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#openai">OpenAI / Codex</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目（6/6）:</strong> Anthropic が <strong>SEC に IPO 向け S-1 を機密提出</strong>（6/1、評価額 $965B・年収 $47B ペース）したことが各メディアで改めて報道。昨日（6/5）に発生した <strong>Claude 全サービス障害は本日 6/6 時点で完全回復</strong>。また <strong>6/15 の課金体系変更</strong>（Agent SDK 分離課金）を前に開発者の準備が加速している。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">$965B</div><div class="stat-label">Anthropic 最新評価額（IPO 申請前ラウンド）</div></div>
+      <div class="stat-card"><div class="stat-value">$47B</div><div class="stat-label">年収換算ランレート（2026年5月発表）</div></div>
+      <div class="stat-card"><div class="stat-value">6/15</div><div class="stat-label">Agent SDK 分離課金スタート日</div></div>
+      <div class="stat-card"><div class="stat-value">復旧済</div><div class="stat-label">6/5 障害 — 全モデル 18:27 UTC に完全復旧</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic、IPO に向け SEC へ機密 S-1 提出 ─ 評価額 $965B・年収ランレート $47B、OpenAI に先行</div>
+      <div class="card-meta">
+        <span class="badge">IPO</span>
+        <span class="card-source">Source: <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> / <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.washingtonpost.com" target="_blank" rel="noopener">Washington Post</a> — 2026.06.01</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が6月1日、SEC に Form S-1 の機密草案を提出。年間収益ランレートは 2025年の $100 億から 2026年5月時点で $470 億に急拡大。評価額は $9,650 億と OpenAI（$8,520 億）を上回る。</p>
+        <ul>
+          <li><strong>機密提出の意味:</strong> SEC のレビュー後、Anthropic は上場時期・株数・価格を独自に決定できる</li>
+          <li><strong>収益構造:</strong> Claude API・Claude Code・Claude Cowork のサブスクリプションが主収益源。Enterprise 向け API 比率が急拡大</li>
+          <li><strong>競合との対比:</strong> OpenAI も近く機密 S-1 提出を予定。AI インフラ大手2社のほぼ同時 IPO という前例のない状況が予想される</li>
+          <li><strong>PBC ステータス:</strong> AI の安全研究という社会的使命を定款に組み込んだ公益会社として上場する予定</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">6/5 Claude 全サービス障害 ─ 本日 6/6 完全復旧確認、根本原因はインフラ障害、データ漏洩なし</div>
+      <div class="card-meta">
+        <span class="badge">Incident</span>
+        <span class="card-source">Source: <a href="https://cybersecuritynews.com/anthropics-claude-services-down/" target="_blank" rel="noopener">CyberSecurityNews</a> / TechRadar — 2026.06.05-06</span>
+      </div>
+      <div class="card-body">
+        <p>6月5日 8:08 PT に claude.ai・Claude API・Claude Code・Claude Cowork にわたる広範な障害が発生。18:27 UTC に全モデルの完全復旧を確認。</p>
+        <ul>
+          <li><strong>根本原因:</strong> Anthropic エンジニアはインフラ障害と特定。セキュリティ侵害ではないと公式発表</li>
+          <li><strong>Code with Claude 東京との重複:</strong> イベント初日に重なり、多数の開発者から苦情が出た</li>
+          <li><strong>AI 依存度への警鐘:</strong> SLA・冗長化・フォールバック設計に関する議論が再燃</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">6/15 課金変更 直前まとめ ─ Agent SDK・claude -p・GitHub Actions が月額クレジット制に移行</div>
+      <div class="card-meta">
+        <span class="badge">Billing</span>
+        <span class="card-source">Source: CoderSera / The New Stack / Zed Blog — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>6月15日から、Claude Agent SDK・<code>claude -p</code>・Claude Code GitHub Actions のトークン消費が「Agent SDK クレジットプール」に移行。</p>
+        <ul>
+          <li><strong>クレジット額:</strong> Pro $20 / Max 5x $100 / Max 20x $200（月額・ロールオーバーなし）</li>
+          <li><strong>変わらないもの:</strong> claude.ai のチャット・インタラクティブターミナル利用は従来通り</li>
+          <li><strong>アクション期限:</strong> Anthropic から届くクレジット付与メールを 6/15 までに紐付ける必要あり</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Code with Claude 東京 2日目（本日 6/6）最終日 ─ 昨日の障害を乗り越えて閉幕へ</div>
+      <div class="card-meta">
+        <span class="badge">Event</span>
+        <span class="card-source">Source: InfoQ / Anthropic — 2026.06.06</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic の開発者カンファレンス「Code with Claude 東京」（6/5-6）が本日最終日を迎える。Managed Agents の本番運用パターン・Claude Code 運用コスト最適化が主要トピック。</p>
+        <ul>
+          <li><strong>6/11 拡張イベント:</strong> 独立系開発者・スタートアップ向けのフォローアップイベントが別途開催予定</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI / Codex 最新動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex・GPT-5.5 が Amazon Bedrock で一般提供開始（GA）─ 週間 500 万人ユーザーの AI コーディングエージェントが AWS に</div>
+      <div class="card-meta">
+        <span class="badge">GA</span>
+        <span class="card-source">Source: <a href="https://aws.amazon.com" target="_blank" rel="noopener">AWS Blog</a> / <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> — 2026.06.01</span>
+      </div>
+      <div class="card-body">
+        <p>GPT-5.5・GPT-5.4・Codex が Amazon Bedrock で6月1日に一般提供開始。週間 500 万人以上が使用する Codex が AWS のマネージドインフラから利用可能に。</p>
+        <ul>
+          <li><strong>価格:</strong> OpenAI ファーストパーティと同レートで提供。AWS コミットメントにカウントされる</li>
+          <li><strong>Daybreak 予告:</strong> Codex Security を含むサイバー防御ツールチェーンの次フェーズを予告</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex がスマートフォンアプリに対応 ─ モバイルからも AI コーディングエージェントを操作可能に</div>
+      <div class="card-meta">
+        <span class="badge">Mobile</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> — 2026.05.14</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex のスマートフォン対応を発表。モバイルアプリからエージェントへのタスク割り当て・進捗モニタリング・承認操作が可能に。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex、ほぼあらゆる業務に ─「ほぼすべてのことに Codex を使えるようになった」実務ユーザーによる長期評価</div>
+      <div class="card-meta">
+        <span class="badge">Review</span>
+        <span class="card-source">Source: <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が「Codex for (almost) everything」を公開。コーディング・テスト・デバッグ・ドキュメント・PR レビュー・デプロイ確認を Codex に委ねる実用段階に達したと主張。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 本日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/ClaudeAI：「6/5 の障害はなぜ起きた？IPO 前に信頼性を示せるか」</div>
+      <div class="card-meta"><span class="badge">Hot Today</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.05-06</span></div>
+      <div class="card-body">
+        <p>昨日の全サービス障害は r/ClaudeAI で急上昇スレッドに。「$965B 評価のサービスが3時間止まった」という皮肉コメントが多票を得た。フォールバック実装の議論も活発。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/investing・r/technology：「Anthropic IPO ─ $965B 評価は適正か、AI バブルか」</div>
+      <div class="card-meta"><span class="badge">IPO Watch</span><span class="card-source">Reddit r/investing / r/technology — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>「$47B 年収ランレートに対する約20倍の評価倍率」「API 価格競争激化で収益率が急落するリスク」「PBC 構造は一般株主にリスクか」という三論が対立している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/MachineLearning・r/programming：「6/15 Agent SDK 分離課金 ─ 実際どれだけコストが変わる？」</div>
+      <div class="card-meta"><span class="badge">Dev Community</span><span class="card-source">Reddit r/MachineLearning / r/programming — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>CI/CD で1日 200 回 claude -p を呼ぶ場合の試算スレッドがトレンド入り。「Max 5x の $100 クレジットでは足りない可能性がある」という試算が共有された。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：イラン停戦違反・米国がレーダー施設を攻撃</div>
+      <div class="card-meta"><span class="badge">World</span><span class="card-source">Reddit r/worldnews — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>イランが米国による停戦違反（シリク・ケシュム島のレーダー施設攻撃）を非難したニュースが r/worldnews でトップトレンドに。ペルー大統領選（6/7）も注目を集めている。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">米軍がイランのレーダー施設を攻撃 ─ 4月停戦合意に双方が違反、ホルムズ海峡を巡る緊張再燃</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: ABC News / CBS News — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>米軍がホルムズ海峡方向へのドローン発射に対する反撃として、イランのシリク地区とケシュム島の沿岸レーダー施設を攻撃。IRGC が報復を警告した。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">全仏オープン女子決勝 ─ アンドレーエワ vs フバリンスカ、どちらも初グランドスラム制覇を狙う</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: Olympics.com — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>第8シードのミラ・アンドレーエワ（ロシア）と予選通過のマヤ・フバリンスカ（ポーランド）が対戦。どちらが勝っても初グランドスラム制覇となる歴史的決勝。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ペルー大統領選 決選投票 ─ 6/7（明日）、フジモリ vs サンチェスの接戦</div>
+      <div class="card-meta"><span class="badge">Americas</span><span class="card-source">Source: Al Jazeera / Wikipedia — 2026.06.05-06</span></div>
+      <div class="card-body">
+        <p>ペルー大統領選の決選投票が明日6月7日に実施される。極右のケイコ・フジモリと左派のロベルト・サンチェスが対峙する構図で、世論調査では拮抗している。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">トランプ、新 $250 紙幣に自身の肖像を検討</div>
+      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: ABC News / MSNBC — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>トランプ大統領が新設される $250 紙幣に自身の肖像を入れる案を検討。歴代大統領の慣例を破ることへの批判が出ている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">NASA 実験機 X-59、史上初の市街地上空での低騒音超音速飛行テストに成功</div>
+      <div class="card-meta"><span class="badge">Science</span><span class="card-source">Source: ABC News / MSNBC — 2026.06.06</span></div>
+      <div class="card-body">
+        <p>NASA の静粛超音速実験機 X-59 が市街地上空での低ブーム超音速飛行テストを成功させた。コンコルド以来禁止されてきた陸上超音速旅客飛行の商業解禁に向けた道筋が前進した。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">4 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Zenn の記事を Qiita・note に自動転載する Claude Code スキルを作った」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a></span></div>
+      <div class="card-body">
+        <p>Claude Code の Skills 機能を使って Zenn 記事を Qiita と note に自動クロスポストするパイプラインの実装記事。6/15 課金変更の影響を受けるケースとしても注目されている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「育休中に『勝手に賢くなる』AI 情報収集基盤を作った」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a></span></div>
+      <div class="card-body">
+        <p>Claude Code を使って技術記事を自動収集・要約・Slack 通知する仕組みを構築した体験記。「育休から戻ったらチームより詳しくなっていた」と話題。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「GPT-5.2 vs Claude Sonnet 4.6 ─ 聴衆意識スコアリングの精度比較」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a></span></div>
+      <div class="card-body">
+        <p>日本語テキストの「聴衆意識」の観点から2モデルを比較。日本語特有の敬語・文体の使い分けでは Claude Sonnet 4.6 が優位という評価。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「技術記事ダイジェスト 2026 ─ Qiita / Zenn / Dev.to の人気記事43選まとめ」</div>
+      <div class="card-meta"><span class="badge">Digest</span><span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a></span></div>
+      <div class="card-body">
+        <p>週間人気記事の自動収集・要約シリーズ。Claude Code の Agent Teams・セキュリティプラグイン・6/15 課金変更対応が今週の Top3 テーマ。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月6日（土）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://www.cnbc.com" target="_blank" rel="noopener">CNBC</a> ·
+    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://aws.amazon.com" target="_blank" rel="noopener">AWS Blog</a> ·
+    <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://abcnews.go.com" target="_blank" rel="noopener">ABC News</a> ·
+    <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
+    <a href="https://www.olympics.com" target="_blank" rel="noopener">Olympics.com</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>
