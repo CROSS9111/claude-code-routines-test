@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月7日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; margin-bottom: 1.2rem; }
+    .stat-card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem; text-align: center; }
+    .stat-value { font-size: 1.35rem; font-weight: 700; color: #0366d6; }
+    .stat-label { font-size: 0.74rem; color: #656d76; margin-top: 0.2rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code Dynamic Workflows 公開 / Microsoft が Claude Code 契約打ち切り / Codex 非エンジニア拡大 / ペルー大統領選が本日投票 / 教皇スペイン訪問</p>
+  <p class="date">2026年6月7日（日）&nbsp;|&nbsp;<a href="../2026-06-06/index.html">前版（6/6）</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#openai">OpenAI / Codex</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#dev">Qiita/Zenn</a>
+</nav>
+
+<div class="container">
+
+  <!-- Claude / Anthropic -->
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の注目（6/7）:</strong> <strong>Claude Code Dynamic Workflows</strong> が研究プレビューとして Max・Team・Enterprise プランと API で公開。数十〜数百の並列サブエージェントを自動オーケストレーションし「四半期計画が数日で完了する」レベルのタスク自動化が可能に。一方、<strong>Microsoft が Experiences+Devices 部門の Claude Code ライセンスを 6/30 で全面打ち切り</strong>、GitHub Copilot に一本化する方針が明らかになった。
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-value">100s</div><div class="stat-label">Dynamic Workflows が1セッションで起動できる並列サブエージェント数</div></div>
+      <div class="stat-card"><div class="stat-value">11日</div><div class="stat-label">Bun を Zig→Rust に移植（750K行）した実証期間</div></div>
+      <div class="stat-card"><div class="stat-value">6/30</div><div class="stat-label">Microsoft による Claude Code ライセンス終了日</div></div>
+      <div class="stat-card"><div class="stat-value">2×</div><div class="stat-label">Anthropic がレート制限を倍増した倍率</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code Dynamic Workflows 公開 ─ 並列サブエージェントが「四半期規模の仕事を数日で」自動完了</div>
+      <div class="card-meta">
+        <span class="badge">New Feature</span>
+        <span class="card-source">Source: <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noopener">Anthropic Blog</a> / <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/" target="_blank" rel="noopener">InfoQ</a> / <a href="https://devops.com/claude-codes-dynamic-workflows-take-on-the-tasks-that-were-too-big-to-automate/" target="_blank" rel="noopener">DevOps.com</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が Claude Code の新機能「Dynamic Workflows」を研究プレビューで公開した。単一エージェントでは対処できない大規模・複雑なソフトウェアエンジニアリングタスクを、数十〜数百の並列サブエージェントを動的に生成・オーケストレーションすることで自動化する。</p>
+        <ul>
+          <li><strong>仕組み:</strong> Claude がタスクを分解し、オーケストレーションスクリプトを自動生成。サブエージェントが並列で実行し、結果を検証してから最終回答を提示する。人間が確認できるまで成果物が渡らない設計</li>
+          <li><strong>有効なユースケース:</strong> 広範なバグ調査・大規模マイグレーション・セキュリティ監査・パフォーマンスレビュー・複雑なアーキテクチャ分析など「1エージェントには複雑すぎるタスク」全般</li>
+          <li><strong>実証例:</strong> Jarred Sumner 氏が Dynamic Workflows を使い Bun ランタイムを Zig から Rust へ移植（約75万行）。既存テストスイートの99.8%がパスし、最初のコミットからマージまで11日で完了した</li>
+          <li><strong>有効化方法:</strong> 明示的にワークフロー作成を指示するか、新設の <code>ultracode</code> 設定を有効化すると Claude が自動判断してワークフローを起動する</li>
+          <li><strong>提供範囲:</strong> Claude Code CLI・Desktop・VS Code 拡張（Max / Team / Enterprise）、Claude API・Amazon Bedrock・Vertex AI・Microsoft Foundry で研究プレビュー提供中</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Microsoft が Claude Code ライセンスを 6/30 で全面打ち切り ─ Experiences+Devices 部門が GitHub Copilot に一本化</div>
+      <div class="card-meta">
+        <span class="badge">Enterprise</span>
+        <span class="card-source">Source: <a href="https://cybernews.com/ai-news/microsoft-claude-code-burn-yearly-ai-budget/" target="_blank" rel="noopener">Cybernews</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>Microsoft が Windows・Microsoft 365・Outlook・Teams・Surface を担当する Experiences+Devices 部門で、6月30日までに Claude Code ライセンスを打ち切ると社内通達した。数千人のエンジニアが GitHub Copilot に移行させられる見通し。</p>
+        <ul>
+          <li><strong>背景:</strong> AI コーディングツール予算の急速な消費が問題化。Microsoft は GitHub Copilot を所有しており、利用料が外部に流出しない内製ツールへの集約が財務的に合理的と判断された</li>
+          <li><strong>影響範囲:</strong> Experiences+Devices 部門に限定（現時点）。Azure・Xbox・Bing を含む他部門は独自判断での使用継続が認められているとされる</li>
+          <li><strong>Anthropic への影響:</strong> Microsoft は Anthropic の主要エンタープライズ顧客の一つだった。IPO の S-1 に顧客集中リスクの記載が必要になる可能性が指摘されている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic、レート制限を倍増 ─ Opus 4.8 が Max・Team・Enterprise のデフォルトモデルに昇格</div>
+      <div class="card-meta">
+        <span class="badge">Update</span>
+        <span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>Anthropic が Claude Code および Claude API のレート制限を開発者向けに倍増させた。同時に Claude Opus 4.8 が Max・Team Premium・Enterprise 従量制・Anthropic API アカウントの新デフォルトモデルに設定された。</p>
+        <ul>
+          <li><strong>Fast モード:</strong> /fast コマンドにより Opus モデルでも高速出力が可能。Sonnet 相当の速度で Opus 品質を引き出せる</li>
+          <li><strong>SpaceX との計算インフラ提携:</strong> 5月に締結した契約により、300MW超の計算能力を追加展開できる体制が整い、レート制限倍増の基盤となった</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code vs. Cursor vs. Codex vs. Antigravity ─ 6ヶ月間の実務比較で見えてきた「適材適所」</div>
+      <div class="card-meta">
+        <span class="badge">Analysis</span>
+        <span class="card-source">Source: <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/" target="_blank" rel="noopener">The New Stack</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>The New Stack が主要 AI コーディングエージェント4製品の6ヶ月実務比較を公開。単一ツール「最強論」を否定し、タスク特性ごとの使い分けが現実的なアプローチと結論付けている。</p>
+        <ul>
+          <li><strong>Claude Code:</strong> フロントエンド・UI 実装・プロンプトエンジニアリング・マルチファイル編集で最速。Skills エコシステムの成熟度が最高</li>
+          <li><strong>Codex:</strong> 大規模コードベースの複雑なリファクタリング・ハルシネーションが少ない長文脈タスクに優位。非同期スケジューリング機能はユニーク</li>
+          <li><strong>Cursor:</strong> IDE 統合のシームレスさで依然として評価が高い</li>
+          <li><strong>Antigravity 2.0:</strong> 新興勢力として特定の DevOps タスクで急速に支持を拡大中。価格競争力が際立つ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OpenAI / Codex -->
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI / Codex 最新動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Codex、非エンジニア向けに本格展開 ─ 財務・法律・マーケ向け6プラグインと「Sites」機能を追加</div>
+      <div class="card-meta">
+        <span class="badge">Product</span>
+        <span class="card-source">Source: <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/" target="_blank" rel="noopener">TechCrunch</a> — 2026.06.02</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Codex のメジャーアップデートを発表。「Sites」（エンタープライズ向けインタラクティブワークスペースの半プライベートホスティング）と「Annotations」を新たに追加した。</p>
+        <ul>
+          <li><strong>週間 500 万人のアクティブユーザー:</strong> 非エンジニアが約 20%を占め、エンジニアの3倍の速度で増加中</li>
+          <li><strong>6つの職種別プラグイン:</strong> データアナリティクス・クリエイティブプロダクション・セールス・プロダクトデザイン・エクイティ投資・投資銀行向けがリリース</li>
+          <li><strong>AWS 統合:</strong> OpenAI フロンティアモデルと Codex が AWS で一般提供開始</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex を強化 ─ Gartner Magic Quadrant for Enterprise AI Coding Agents でリーダー認定</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI が Gartner® Magic Quadrant™ for Enterprise AI Coding Agents でリーダーに選出された。GPT-5.5 が NVIDIA との協業により Codex の推論バックエンドに採用され、コード生成・解析の速度と精度を向上させている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">GPT-5.3-Codex を独立モデル ID として API 提供開始 ─ 汎用 GPT-5.3 より約30%安価</div>
+      <div class="card-meta">
+        <span class="badge">Model</span>
+        <span class="card-source">Source: <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>OpenAI がコーディング・デバッグ・コードレビューに特化した GPT-5.3-Codex を独立した API モデル ID として提供開始。汎用 GPT-5.3 より約30%安価で、コーディングエージェントのコスト最適化を検討する企業に選択肢が広がった。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit / コミュニティ -->
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 本日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/ClaudeAI：「Dynamic Workflows を試した ─ 本当に数百並列で動くのか？」</div>
+      <div class="card-meta">
+        <span class="badge">Hot Today</span>
+        <span class="card-source">Reddit r/ClaudeAI / r/ClaudeCode — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>Dynamic Workflows の発表を受け、実験レポートが続々投稿されている。「実際に並列サブエージェントが動いている」ことを確認できたという報告が相次いだ。</p>
+        <ul>
+          <li>「ultracode をオンにしたら、普通の質問でも勝手にワークフローを立ち上げようとして驚いた。デフォルト off のままにしておく方が安全」というアドバイスが共有された</li>
+          <li>「並列サブエージェントはトークン消費が爆発的に増える。6/15 課金変更後に Agent SDK クレジットがすぐ枯渇するのでは」という懸念も上位に</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/programming：「Claude Code vs Codex ─ 100時間使い込んでわかった使い分け」</div>
+      <div class="card-meta">
+        <span class="badge">Trending</span>
+        <span class="card-source">Reddit r/programming — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>100時間以上の使い込み比較レポートが r/programming でトレンド入り。「$20 ChatGPT Plus で得られる日常コーディング作業量は、Claude では Max 5x（$100）が必要」というコスト試算が注目を集めた。</p>
+        <ul>
+          <li><strong>Claude Code が優位:</strong> フロントエンド・UI 実装・プロンプト設計・マルチファイル編集・スキル拡張性</li>
+          <li><strong>Codex が優位:</strong> 大規模コードベースのリファクタリング・長期タスクの非同期スケジューリング</li>
+          <li>「ターミナルは Claude Code、エディタは Cursor か Codex という2ツール並走が最も生産性が高い」</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/MachineLearning：「Colorado AI 法が 6/30 施行 ─ 日本の AI 規制議論に何を示唆するか」</div>
+      <div class="card-meta">
+        <span class="badge">Policy</span>
+        <span class="card-source">Reddit r/MachineLearning — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>米コロラド州の包括的 AI 消費者保護法（高リスク AI システム開発者・展開者に「アルゴリズム差別」防止義務を課す米国初の州法）が 6/30 に施行されることを受け、国際的な波及効果が議論されている。</p>
+        <ul>
+          <li><strong>対象領域:</strong> 雇用・教育・金融サービス・医療・住宅・法務に関わる高リスク AI システム</li>
+          <li><strong>日本への示唆:</strong> 「日本でも同種の法律が近く議論されるはず。コロラドの実施状況が国際標準形成に影響する」</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：ペルー大統領選開票速報 ─「南米の左右対立の最新章」として世界が注目</div>
+      <div class="card-meta">
+        <span class="badge">World</span>
+        <span class="card-source">Reddit r/worldnews — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>ペルー大統領選の投票が本日実施されており、r/worldnews でリアルタイムスレッドが急上昇している。フジモリ vs サンチェスの超接戦が世界的注目を集めている。</p>
+        <ul>
+          <li>開票結果は現地時間の本日夜（日本時間8日早朝）に判明する見通し</li>
+          <li>「ラテンアメリカの右派回帰 vs 左派持続」の最新章として議論が活発</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 世界情勢 -->
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ペルー大統領選 本日投票 ─ フジモリ vs サンチェスの決選投票</div>
+      <div class="card-meta">
+        <span class="badge">Americas</span>
+        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/6/8/race-tied-between-left-and-right-wing-rivals-in-perus-presidential-vote" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.pbs.org/newshour/world/perus-fujimori-and-sanchez-to-meet-in-june-7-presidential-runoff" target="_blank" rel="noopener">PBS NewsHour</a> — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>ペルー大統領選の決選投票が本日（6/7）実施されている。極右のケイコ・フジモリと左派のロベルト・サンチェスが対峙。世論調査では接戦で、どちらが勝ってもペルーは「10年で9人目の大統領」を迎えることになる。</p>
+        <ul>
+          <li><strong>フジモリ:</strong> 1回目投票でトップ通過（17%）。「治安強化・60日非常事態宣言」を公約</li>
+          <li><strong>サンチェス:</strong> 鉱山税増税・先住民族権利・格差是正を主軸に訴える</li>
+          <li>開票結果は日本時間8日（月）早朝に判明する見通し</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">教皇レオ14世、スペインでコルプスクリスティのミサを主宰 ─ 15年ぶりの教皇スペイン訪問</div>
+      <div class="card-meta">
+        <span class="badge">Religion</span>
+        <span class="card-source">Source: NPR — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>教皇レオ14世がマドリードのシベレス広場でカトリックの祝日「コルプスクリスティ（聖体節）」のミサを主宰した。7日間のスペイン使徒的訪問の2日目で、スペインへの教皇訪問は15年ぶり。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">オハイオ州路上フェスティバルで銃撃 ─ 12人が負傷、犯人は逃走中</div>
+      <div class="card-meta">
+        <span class="badge">US</span>
+        <span class="card-source">Source: NPR — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>オハイオ州の路上フェスティバル近くで銃撃が発生し、少なくとも12人が負傷した。犯人は事件後に現場から逃走しており、地元警察が捜索を続けている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">インド、グレートニコバル島に $90 億のメガポート・空港・都市建設計画 ─ 原始林と先住民族への影響を批判</div>
+      <div class="card-meta">
+        <span class="badge">Asia</span>
+        <span class="card-source">Source: NPR — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>インド政府がアンダマン・ニコバル諸島の最南端に総額 90 億ドルのメガポート・国際空港・新都市を建設するプロジェクトを進めている。インド洋の海上覇権強化と中国への対抗を狙った戦略的インフラ投資だが、環境・人権面での批判が高まっている。</p>
+        <ul>
+          <li><strong>環境面の懸念:</strong> 原始熱帯雨林が伐採される見込みで、固有種の生態系への影響が甚大</li>
+          <li><strong>先住民族の問題:</strong> ションペン族（半孤立した先住民族）の生活圏が直接影響を受ける</li>
+          <li><strong>地政学的意義:</strong> マラッカ海峡の出口に位置し、中国の「真珠の首飾り」に対抗するインドの「島嶼鎖」戦略の要</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">PEPFAR 削減でアフリカの医療崩壊が加速 ─ 南アフリカ・モザンビークでHIV治療に深刻な空白</div>
+      <div class="card-meta">
+        <span class="badge">Global Health</span>
+        <span class="card-source">Source: NPR — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>トランプ政権による PEPFAR の削減・方向転換が、南アフリカとモザンビークのHIV治療・予防サービスに深刻な影響を与えている。「すでに命が失われている」という現地医療スタッフからの告発が NPR に掲載された。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita/Zenn -->
+  <section class="section" id="dev">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Claude Code Dynamic Workflows を早速試した ─ ultracode 設定と並列エージェント数の制御方法」（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a> — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>Dynamic Workflows 公開から数時間で Zenn に実践記事が登場。ultracode 設定の有効化手順・並列エージェント数のモニタリング方法・トークン消費量の試算が詳しく解説されている。</p>
+        <ul>
+          <li>「中規模プロジェクト（5万行前後）のセキュリティスキャンを試したところ、約20分・$2.3 の消費で完了した」という実測値が多くのブックマークを集めた</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Claude Code vs Codex 選定ガイド 2026年版 ─ チーム規模・用途・コストで決める」（Qiita）</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com" target="_blank" rel="noopener">qiita.com</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>個人・スタートアップ・エンタープライズの3ケースに分けて Claude Code と Codex を比較した選定ガイド。Microsoft の打ち切りニュースを受けて「大企業でも Claude Code を選ぶ理由と懸念点」のセクションが追記された。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Colorado AI 法施行直前解説 ─ 日本の SaaS 開発者が今すぐ確認すべき5つのポイント」（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a> — 2026.06.07</span>
+      </div>
+      <div class="card-body">
+        <p>6/30 施行の Colorado Consumer Protections for Artificial Intelligence Act について、日本の SaaS 開発者・AI サービス提供者が把握すべき要点をまとめた記事。</p>
+        <ul>
+          <li><strong>主な義務:</strong> 高リスク AI システムの開示・影響評価・苦情処理手続きの整備</li>
+          <li><strong>日本企業への適用:</strong> 「コロラド州居住者を1人でも対象にしているサービスは潜在的に対象」</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月7日（日）</p>
+  <p style="margin-top:0.5rem;">
+    Sources:
+    <a href="https://claude.com" target="_blank" rel="noopener">Anthropic Blog</a> ·
+    <a href="https://www.infoq.com" target="_blank" rel="noopener">InfoQ</a> ·
+    <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
+    <a href="https://cybernews.com" target="_blank" rel="noopener">Cybernews</a> ·
+    <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
+    <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> ·
+    <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
+    <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
+    <a href="https://www.pbs.org" target="_blank" rel="noopener">PBS NewsHour</a> ·
+    <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+  </p>
+</footer>
+
+</body>
+</html>

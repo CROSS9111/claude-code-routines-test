@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月7日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月8日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,8 +67,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code Dynamic Workflows 公開 / Microsoft が Claude Code 契約打ち切り / Codex 非エンジニア拡大 / ペルー大統領選が本日投票 / 教皇スペイン訪問</p>
-  <p class="date">2026年6月7日（日）&nbsp;|&nbsp;<a href="2026-06-06/index.html">前版（6/6）</a></p>
+  <p class="subtitle">フィリピン M7.8 地震 / イスラエル・イラン停戦交渉 / ペルー大統領選超接戦（開票中） / Claude Code Fast Mode に Opus 4.8 / DRC エボラ感染拡大</p>
+  <p class="date">2026年6月8日（月）&nbsp;|&nbsp;<a href="2026-06-07/index.html">前版（6/7）</a></p>
 </header>
 
 <nav>
@@ -88,80 +88,74 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目（6/7）:</strong> <strong>Claude Code Dynamic Workflows</strong> が研究プレビューとして Max・Team・Enterprise プランと API で公開。数十〜数百の並列サブエージェントを自動オーケストレーションし「四半期計画が数日で完了する」レベルのタスク自動化が可能に。一方、<strong>Microsoft が Experiences+Devices 部門の Claude Code ライセンスを 6/30 で全面打ち切り</strong>、GitHub Copilot に一本化する方針が明らかになった。
+      <strong>本日の注目（6/8）:</strong> <strong>Claude Code Fast Mode が Opus 4.8 をデフォルトに設定</strong>し、通常レートの2倍の価格で約2.5倍の速度を実現。Dynamic Workflows が Max・Team プランでデフォルト有効化され、<strong>ultracode 設定オンでオーケストレーションスクリプトの自動生成</strong>が可能に。<strong>claude plugin init コマンド</strong>で .claude/skills ディレクトリへのプラグイン自動ロードが利用可能になった。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">100s</div><div class="stat-label">Dynamic Workflows が1セッションで起動できる並列サブエージェント数</div></div>
-      <div class="stat-card"><div class="stat-value">11日</div><div class="stat-label">Bun を Zig→Rust に移植（750K行）した実証期間</div></div>
-      <div class="stat-card"><div class="stat-value">6/30</div><div class="stat-label">Microsoft による Claude Code ライセンス終了日</div></div>
-      <div class="stat-card"><div class="stat-value">2×</div><div class="stat-label">Anthropic がレート制限を倍増した倍率</div></div>
+      <div class="stat-card"><div class="stat-value">2.5×</div><div class="stat-label">Fast Mode Opus 4.8 の速度向上倍率</div></div>
+      <div class="stat-card"><div class="stat-value">$10/$50</div><div class="stat-label">Fast Mode の価格（input/output per MTok）</div></div>
+      <div class="stat-card"><div class="stat-value">300MW+</div><div class="stat-label">SpaceX 提携で追加された計算能力</div></div>
+      <div class="stat-card"><div class="stat-value">v2.1.150</div><div class="stat-label">Claude Code 最新バージョン</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code Dynamic Workflows 公開 ─ 並列サブエージェントが「四半期規模の仕事を数日で」自動完了</div>
-      <div class="card-meta">
-        <span class="badge">New Feature</span>
-        <span class="card-source">Source: <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noopener">Anthropic Blog</a> / <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/" target="_blank" rel="noopener">InfoQ</a> / <a href="https://devops.com/claude-codes-dynamic-workflows-take-on-the-tasks-that-were-too-big-to-automate/" target="_blank" rel="noopener">DevOps.com</a> — 2026.06</span>
-      </div>
-      <div class="card-body">
-        <p>Anthropic が Claude Code の新機能「Dynamic Workflows」を研究プレビューで公開した。単一エージェントでは対処できない大規模・複雑なソフトウェアエンジニアリングタスクを、数十〜数百の並列サブエージェントを動的に生成・オーケストレーションすることで自動化する。</p>
-        <ul>
-          <li><strong>仕組み:</strong> Claude がタスクを分解し、オーケストレーションスクリプトを自動生成。サブエージェントが並列で実行し、結果を検証してから最終回答を提示する。人間が確認できるまで成果物が渡らない設計</li>
-          <li><strong>有効なユースケース:</strong> 広範なバグ調査・大規模マイグレーション・セキュリティ監査・パフォーマンスレビュー・複雑なアーキテクチャ分析など「1エージェントには複雑すぎるタスク」全般</li>
-          <li><strong>実証例:</strong> Jarred Sumner 氏が Dynamic Workflows を使い Bun ランタイムを Zig から Rust へ移植（約75万行）。既存テストスイートの99.8%がパスし、最初のコミットからマージまで11日で完了した</li>
-          <li><strong>有効化方法:</strong> 明示的にワークフロー作成を指示するか、新設の <code>ultracode</code> 設定を有効化すると Claude が自動判断してワークフローを起動する</li>
-          <li><strong>提供範囲:</strong> Claude Code CLI・Desktop・VS Code 拡張（Max / Team / Enterprise）、Claude API・Amazon Bedrock・Vertex AI・Microsoft Foundry で研究プレビュー提供中</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Microsoft が Claude Code ライセンスを 6/30 で全面打ち切り ─ Experiences+Devices 部門が GitHub Copilot に一本化</div>
-      <div class="card-meta">
-        <span class="badge">Enterprise</span>
-        <span class="card-source">Source: <a href="https://cybernews.com/ai-news/microsoft-claude-code-burn-yearly-ai-budget/" target="_blank" rel="noopener">Cybernews</a> / <a href="https://spacedaily.com" target="_blank" rel="noopener">Space Daily</a> — 2026.06</span>
-      </div>
-      <div class="card-body">
-        <p>Microsoft が Windows・Microsoft 365・Outlook・Teams・Surface を担当する Experiences+Devices 部門で、6月30日までに Claude Code ライセンスを打ち切ると社内通達した。数千人のエンジニアが GitHub Copilot に移行させられる見通し。</p>
-        <ul>
-          <li><strong>背景:</strong> Uber が 2026 年の AI コーディングツール予算を Claude Code と Cursor に4ヶ月（4月まで）で使い果たした件と同様に、Microsoft 内でも AI ツールのコスト管理が問題化していた</li>
-          <li><strong>Microsoft の論理:</strong> GitHub Copilot は Microsoft が所有するサービスであり、利用料が外部に流出しない。Azure AI Credits との統合も容易なため、内製ツールへの集約が財務的に合理的と判断された</li>
-          <li><strong>影響範囲:</strong> Experiences+Devices 部門に限定（現時点）。Azure・Xbox・Bing を含む他部門は独自判断での使用継続が認められているとされる</li>
-          <li><strong>Anthropic への影響:</strong> Microsoft は Anthropic の主要エンタープライズ顧客の一つだった。IPO の S-1 に顧客集中リスクの記載が必要になる可能性が指摘されている</li>
-          <li><strong>皮肉な構図:</strong> Microsoft は Anthropic への出資者でありながら、Claude Code を社内から排除するという複雑な立場となった</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Anthropic、レート制限を倍増 ─ Opus 4.8 が Max・Team・Enterprise のデフォルトモデルに昇格</div>
+      <div class="card-title">Claude Code Fast Mode が Opus 4.8 をデフォルト採用 ─ 2.5倍速で標準レートの2倍の価格</div>
       <div class="card-meta">
         <span class="badge">Update</span>
-        <span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> / <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Anthropic</a> — 2026.06</span>
+        <span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Releasebot</a> / <a href="https://www.ai-souken.com/article/claude-code-updates-2026" target="_blank" rel="noopener">AI総合研究所</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>Anthropic が Claude Code および Claude API のレート制限を開発者向けに倍増させた。同時に Claude Opus 4.8 が Max・Team Premium・Enterprise 従量制・Anthropic API アカウントの新デフォルトモデルに設定された。</p>
+        <p>Claude Code の /fast コマンドで有効化できる「Fast Mode」が Opus 4.8 をデフォルトモデルとして採用した。価格は標準レート（$5/$25 per MTok）の2倍となる $10/$50 per MTok だが、出力速度は約2.5倍に向上する。</p>
         <ul>
-          <li><strong>レート制限倍増の背景:</strong> 6/15 の課金変更（Agent SDK 分離課金）を前に、開発者が自動化パイプラインの規模を拡大しやすくすることが目的とみられる</li>
-          <li><strong>Opus 4.8 の特徴:</strong> Dynamic Workflows との組み合わせを前提に最適化されており、長時間・大規模タスクのオーケストレーションで前世代比で大幅に性能向上</li>
-          <li><strong>Fast モード:</strong> Claude Code の /fast コマンドにより Opus モデルでも高速出力が可能。Sonnet 相当の速度で Opus 品質を引き出せるとされる</li>
+          <li><strong>Dynamic Workflows との連携:</strong> Max・Team プランでは Dynamic Workflows がデフォルト有効になり、<code>ultracode</code> 設定をオンにすると Claude が自動的にオーケストレーションスクリプトを生成してサブエージェントを起動する</li>
+          <li><strong>security-guidance プラグイン:</strong> コード変更のセキュリティ脆弱性を同一セッション内でレビューして自動修正する新プラグインが利用可能に</li>
+          <li><strong>claude plugin init コマンド:</strong> .claude/skills ディレクトリへのプラグイン自動ロードが実現。マーケットプレイス不要でプラグイン開発・配布が可能になった</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code vs. Cursor vs. Codex vs. Antigravity ─ 6ヶ月間の実務比較で見えてきた「適材適所」</div>
+      <div class="card-title">Claude Code v2.1.149〜v2.1.150 ─ /usage コマンド・PowerShell 権限修正・find によるクラッシュ解消</div>
       <div class="card-meta">
-        <span class="badge">Analysis</span>
-        <span class="card-source">Source: <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/" target="_blank" rel="noopener">The New Stack</a> — 2026.06</span>
+        <span class="badge">Bugfix</span>
+        <span class="card-source">Source: <a href="https://dev.classmethod.jp/en/articles/20260524-claude-code-updates-v2-1-150/" target="_blank" rel="noopener">DevelopersIO</a> / <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noopener">GitHub Releases</a> — 2026.05〜06</span>
       </div>
       <div class="card-body">
-        <p>The New Stack が主要 AI コーディングエージェント4製品の6ヶ月実務比較を公開。単一ツール「最強論」を否定し、タスク特性ごとの使い分けが現実的なアプローチと結論付けている。</p>
+        <p>最新版 v2.1.149〜v2.1.150 では使用量の可視化・セキュリティ修正・安定性向上が主な更新内容となっている。</p>
         <ul>
-          <li><strong>Claude Code:</strong> フロントエンド・UI 実装・プロンプトエンジニアリング・マルチファイル編集で最速。Skills エコシステムの成熟度が最高。6/15 課金変更で中規模 CI/CD 利用者のコストが増加する懸念がある</li>
-          <li><strong>Codex:</strong> 大規模コードベースの複雑なリファクタリング・ハルシネーションが少ない長文脈タスクに優位。非同期スケジューリング機能はユニーク</li>
-          <li><strong>Cursor:</strong> IDE 統合のシームレスさで依然として評価が高い。デイリー使用者にとっての生産性向上効果が最も体感しやすい</li>
-          <li><strong>Antigravity 2.0:</strong> 新興勢力として特定の DevOps タスクで急速に支持を拡大中。価格面での競争力が際立つ</li>
+          <li><strong>/usage コマンド:</strong> セッション内のトークン使用量の内訳をリアルタイムで確認できる新コマンドが追加された。6/15 課金変更を前にコスト把握が容易に</li>
+          <li><strong>PowerShell 権限回避の修正:</strong> Windows 環境での権限エスカレーションが可能だったセキュリティ問題が修正された</li>
+          <li><strong>find コマンドによるホストクラッシュを解消:</strong> 大規模ディレクトリに対して find を実行した際にホストが停止する問題が解決された</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Anthropic × SpaceX 計算インフラ提携の効果 ─ 300MW超の追加計算能力でレート制限を継続緩和</div>
+      <div class="card-meta">
+        <span class="badge">Infrastructure</span>
+        <span class="card-source">Source: <a href="https://forest.watch.impress.co.jp/docs/news/2106618.html" target="_blank" rel="noopener">窓の杜</a> / <a href="https://xtech.nikkei.com/atcl/nxt/news/24/03210/" target="_blank" rel="noopener">日経クロステック</a> — 2026.05〜06</span>
+      </div>
+      <div class="card-body">
+        <p>5月に締結された Anthropic と SpaceX の大規模計算インフラパートナーシップにより、300MW超の計算能力が追加展開された。これが6月のレート制限倍増とレイテンシ改善の基盤となっている。</p>
+        <ul>
+          <li><strong>Starlink 経由のエッジ展開:</strong> Starlink の低遅延衛星回線を活用して、地方・離島ユーザーへの Claude Code 提供品質が向上する計画が進行中</li>
+          <li><strong>今後の展望:</strong> 「Mythos」と呼ばれる Anthropic の開発者会議でさらなる API 上限緩和と新機能発表が予告されている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code 6/15 課金変更に向けた準備 ─ Agent SDK 分離課金と /usage コマンドの活用法</div>
+      <div class="card-meta">
+        <span class="badge">Billing</span>
+        <span class="card-source">Source: <a href="https://uravation.com/media/claude-code-v2-1-101-30-releases-5-weeks-guide-2026/" target="_blank" rel="noopener">Uravation</a> / <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>6月15日から開始される Agent SDK の分離課金変更に向け、コミュニティでコスト管理の議論が活発化している。</p>
+        <ul>
+          <li><strong>課金変更の概要:</strong> Agent SDK を利用したサブエージェントの並列実行が個別課金となり、Dynamic Workflows の大規模利用では従来比で大幅なコスト増が発生しうる</li>
+          <li><strong>/usage コマンドの活用:</strong> セッション開始前・中・後の3点でトークン消費量を確認し、月次予算に対する消費ペースを把握することが推奨されている</li>
+          <li><strong>コスト最適化のヒント:</strong> ultracode 設定はデフォルト off のまま、明示的にワークフロー作成を指示する際のみ使用するのが現時点での推奨とされている</li>
         </ul>
       </div>
     </div>
@@ -175,48 +169,47 @@
     </div>
 
     <div class="card">
-      <div class="card-title">Codex、非エンジニア向けに本格展開 ─ 財務・法律・マーケ向け6プラグインと「Sites」機能を追加</div>
+      <div class="card-title">Codex 週間 500 万 WAU 達成 ─ 非エンジニアがエンジニアの3倍速で増加し「コーディング専用」を脱却</div>
       <div class="card-meta">
-        <span class="badge">Product</span>
-        <span class="card-source">Source: <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> / <a href="https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://www.edtechinnovationhub.com" target="_blank" rel="noopener">EdTech Innovation Hub</a> — 2026.06.02</span>
+        <span class="badge">Growth</span>
+        <span class="card-source">Source: <a href="https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/" target="_blank" rel="noopener">TechCrunch</a> / <a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins" target="_blank" rel="noopener">VentureBeat</a> — 2026.06.02</span>
       </div>
       <div class="card-body">
-        <p>OpenAI が Codex のメジャーアップデートを発表。「Sites」（エンタープライズ向けインタラクティブワークスペースの半プライベートホスティング）と「Annotations」（局所的なデータ配列へのコンテキストスコーピング）を新たに追加した。</p>
+        <p>OpenAI の Codex が週間アクティブユーザー 500 万人を突破した。2月のデスクトップアプリ公開以来6倍以上の成長を遂げており、特に非エンジニア（財務アナリスト・マーケター・法務担当など）がユーザー全体の約20%を占め、エンジニアの3倍の速度で増加している。</p>
         <ul>
-          <li><strong>6つの職種別プラグイン:</strong> データアナリティクス・クリエイティブプロダクション・セールス・プロダクトデザイン・エクイティ投資・投資銀行向けがリリース。さらに企業財務・プライベートエクイティ・マーケ戦略・法務プラグインも予定</li>
-          <li><strong>ユーザー構成の変化:</strong> 週間 500 万人のアクティブユーザーのうち、非エンジニアが約 20% を占め、エンジニアの3倍の速度で増加中。「Codex をプログラミング専用ツールから日常業務基盤に転換する」という戦略の成果が数字に表れている</li>
-          <li><strong>Annotations の仕組み:</strong> ユーザーが財務モデルの特定セルを選択するとモデルがその配列のみをスコープとして処理。関連しないデータを誤って変更するリスクを減らす</li>
-          <li><strong>Bloomberg の報道:</strong> OpenAI が金融・法律向けに特化した AI ツール群の開発を進めており、Anthropic の Claude for Enterprise シリーズと直接競合する製品ラインになるとされる</li>
+          <li><strong>Sites 機能:</strong> エンタープライズ向けインタラクティブワークスペースの半プライベートホスティング。チーム内での成果物共有が容易に</li>
+          <li><strong>Annotations 機能:</strong> ユーザーが財務モデルの特定セルなどを選択すると、モデルがその配列のみをスコープとして処理。誤変更リスクを大幅に低減</li>
+          <li><strong>6つの職種別プラグイン:</strong> データアナリティクス・クリエイティブプロダクション・セールス・プロダクトデザイン・エクイティ投資・投資銀行向けがリリース。さらに企業財務・法務プラグインも開発中</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.5 が Codex を強化 ─ NVIDIA インフラで推論速度が向上、Gartner Magic Quadrant でリーダー認定</div>
+      <div class="card-title">Codex が AWS で一般提供開始 ─ OpenAI、Gartner Magic Quadrant for Enterprise AI Coding Agents でリーダー認定</div>
       <div class="card-meta">
-        <span class="badge">Model</span>
-        <span class="card-source">Source: <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> / <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+        <span class="badge">Enterprise</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/" target="_blank" rel="noopener">OpenAI</a> / <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/" target="_blank" rel="noopener">Gartner</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>OpenAI の GPT-5.5 が NVIDIA との協業により Codex の推論バックエンドに採用された。NVIDIA の最新 GPU クラスタを活用し、コード生成・解析の速度と精度を向上させている。</p>
+        <p>OpenAI フロンティアモデルと Codex が AWS で一般提供開始となった。AWS の既存顧客が AWS 環境から直接 Codex を利用できるようになり、エンタープライズ導入の障壁が大きく低下した。</p>
         <ul>
-          <li><strong>Gartner 認定:</strong> OpenAI が Gartner® Magic Quadrant™ for Enterprise AI Coding Agents でリーダーに選出。エンタープライズ規模での Codex 展開を評価された</li>
-          <li><strong>競合との差:</strong> Gartner レポートでは Claude Code も Challenger として掲載。「リーダー」と「チャレンジャー」の差がコミュニティで議論されている</li>
+          <li>Gartner® Magic Quadrant™ for Enterprise AI Coding Agents でリーダーに選出。同レポートでは Anthropic の Claude Code が Challenger として掲載されており、2社の差がコミュニティで議論されている</li>
+          <li>GPT-5.3-Codex（コーディング特化モデル）が独立 API ID として提供開始。汎用 GPT-5.3 より約30%安価で利用可能</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.3-Codex を発表 ─ コーディング特化モデルが独立モデルIDとして提供開始</div>
+      <div class="card-title">「Codex for (almost) everything」── OpenAI が掲げる「全てのホワイトカラー作業のコパイロット化」戦略</div>
       <div class="card-meta">
-        <span class="badge">Model</span>
-        <span class="card-source">Source: <a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
+        <span class="badge">Strategy</span>
+        <span class="card-source">Source: <a href="https://openai.com/index/codex-for-almost-everything/" target="_blank" rel="noopener">OpenAI</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>OpenAI が GPT-5.3-Codex を独立したモデル ID として API で提供開始。コーディング・デバッグ・コードレビューに特化したファインチューニングが施されており、汎用 GPT-5.3 より低レイテンシ・低コストでコーディングタスクを処理できる。</p>
+        <p>OpenAI が公開した戦略ドキュメント「Codex for (almost) everything」では、Codex をプログラミング専用ツールから「全てのホワイトカラー作業の基盤」へと転換する長期ビジョンが示されている。</p>
         <ul>
-          <li>Anthropic の Claude Code（Sonnet 4.6 ベース）に対する「コーディング専用モデル」での競合が明確になった</li>
-          <li>API 価格は GPT-5.3 より約30%安価。コーディングエージェントのコスト最適化を検討する企業に選択肢が広がった</li>
+          <li><strong>非同期スケジューリング:</strong> ユーザーが指示を与えた後、Codex がバックグラウンドで複数タスクを並行処理し、完了時に通知するワークフローが強調されている</li>
+          <li><strong>Claude Code との差別化:</strong> 「Claude Code はエンジニアリング業務の深化、Codex はビジネス全体の幅広い自動化」という棲み分けが業界内で定着しつつある</li>
         </ul>
       </div>
     </div>
@@ -230,67 +223,65 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI・r/ClaudeCode：「Dynamic Workflows を試した ─ 本当に数百並列で動くのか？」</div>
+      <div class="card-title">「Claude Code vs Codex ─ 500人以上の Reddit 開発者が選んだ『本当の勝者』」（DEV Community）</div>
       <div class="card-meta">
         <span class="badge">Hot Today</span>
-        <span class="card-source">Reddit r/ClaudeAI / r/ClaudeCode — 2026.06.07</span>
+        <span class="card-source"><a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb" target="_blank" rel="noopener">DEV Community</a> / Reddit r/ClaudeCode / r/programming — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>Dynamic Workflows の発表を受け、r/ClaudeAI と r/ClaudeCode で実験レポートが続々投稿されている。「実際に並列サブエージェントが動いている」ことを確認できたという報告が相次いだ。</p>
+        <p>500人以上の Reddit 開発者の声をまとめた比較記事が DEV Community でバイラル化している。ブラインドテストでは Claude Code が67%の勝率を記録した一方、「日常的に使えるかどうか」というコスト視点では Codex に軍配が上がるという結果が注目を集めている。</p>
         <ul>
-          <li><strong>実験報告:</strong> 「1万行超の Python コードベースのセキュリティ監査を動かしたら、15個のサブエージェントが同時に異なるモジュールをスキャンしていた」という投稿が多くの upvote を獲得</li>
-          <li><strong>コスト懸念:</strong> 「並列サブエージェントはトークン消費が爆発的に増える。6/15 課金変更後に Agent SDK クレジットがすぐ枯渇するのでは」という現実的な懸念も上位に</li>
-          <li><strong>ultracode 設定:</strong> 「ultracode をオンにしたら、普通の質問でも勝手にワークフローを立ち上げようとして驚いた。デフォルト off のままにしておく方が安全」というアドバイスが共有された</li>
-          <li><strong>Bun 移植の衝撃:</strong> 「750K行のRust変換が11日というのが本当なら、これは SWEbench を超える実用的なマイルストーン」という評価が議論を呼んでいる</li>
+          <li><strong>ブラインドテスト勝率:</strong> Claude Code 67%対 Codex 33%。コード品質・コンテキスト理解・マルチファイル編集で Claude Code が優位</li>
+          <li><strong>コスト問題:</strong> 「$20 ChatGPT Plus で得られる日常作業量を Claude Code でこなすには Max 5x（$100）が必要。品質は高いが財布が持たない」という声が最多 upvote</li>
+          <li><strong>Reddit の総評:</strong> 「Claude Code は議論量が4倍多い。しかし Codex は中断なく使い続けられる」。実際の生産性向上には「Claude Code で難しいタスク、Codex でルーティン作業」という分業が最適解とされている</li>
+          <li><strong>r/ClaudeAI（90万人）の温度感:</strong> Dynamic Workflows の発表後、「ultracode で本番コードが変更されそうになって怖かった」という安全懸念スレッドが上位に浮上</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/programming：「Claude Code vs Codex ─ 100時間使い込んでわかった使い分け」</div>
+      <div class="card-title">r/artificial：「2026年6月第1週 AI動向まとめ ─ エージェントが『実証実験』を抜けてPCとブラウザに溶け込んだ週」（Qiita）</div>
+      <div class="card-meta">
+        <span class="badge">Week Review</span>
+        <span class="card-source"><a href="https://qiita.com/syunichisato51/items/3ab509bde0a3633d6980" target="_blank" rel="noopener">Qiita</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>6月第1週の AI 動向まとめ記事（Qiita）が r/artificial でも共有され話題に。ServiceNow と Accenture が「FDE（Full-stack Deployment of Enterprise AI）」プログラムを開始し、エージェント型 AI の導入が「実証実験で止まる問題」の解消を目指していると報告されている。</p>
+        <ul>
+          <li><strong>エージェント浸透の指標:</strong> OS・ブラウザ・IDE・SaaS への組み込みが急速に進み、「意識して使う AI」から「気づかず使っている AI」への転換点を迎えたと分析</li>
+          <li><strong>FDE プログラムの意義:</strong> 企業が PoC から本番展開へ移行する際の技術的・組織的障壁を取り除くための標準化フレームワークを提供</li>
+          <li>Claude Code のスキルエコシステムと Codex の職種別プラグインがこのトレンドを象徴するとされている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/worldnews：フィリピン地震に津波警報 ─ 「学校初日」に M7.8 が直撃した衝撃をリアルタイムで共有</div>
+      <div class="card-meta">
+        <span class="badge">Breaking</span>
+        <span class="card-source">Reddit r/worldnews — 2026.06.08</span>
+      </div>
+      <div class="card-body">
+        <p>フィリピン・ミンダナオ島沖の M7.8 地震のニュースが r/worldnews で最速でトレンド入り。「年度最初の登校日（Philippines' first day of school）」に大地震が直撃したことで世界中から同情が集まり、24時間で数万 upvote を記録した。</p>
+        <ul>
+          <li>「320万人の生徒と12.8万人の教師が影響を受けた」という数字が特に反響を呼んでいる</li>
+          <li>沖縄への津波警戒呼びかけが Stars and Stripes で報じられ、日本語コメントも多数投稿された</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/geopolitics：ペルー大選 ─ 開票94%でサンチェスが4300票差リード「南米の選挙ドラマが最高潮」</div>
       <div class="card-meta">
         <span class="badge">Trending</span>
-        <span class="card-source">Reddit r/programming — 2026.06.07</span>
+        <span class="card-source">Reddit r/geopolitics / r/LatinAmerica — 2026.06.08</span>
       </div>
       <div class="card-body">
-        <p>100時間以上の使い込み比較レポートが r/programming でトレンド入り。「$20 ChatGPT Plus で得られる日常コーディング作業量は、Claude では Max 5x（$100）が必要」というコスト試算が注目を集めた。</p>
+        <p>昨日（6/7）投票が行われたペルー大統領選の開票が進み、集計率94%時点でロベルト・サンチェスが 50.01% 対 49.99% と約4300票差でリードしている。出口調査ではフジモリ優位（Datum: 50.53%、Ipsos: 50.7%）だったため、逆転の展開に r/geopolitics が沸いている。</p>
         <ul>
-          <li><strong>Claude Code が優位な領域:</strong> フロントエンド・UI 実装・プロンプト設計・マルチファイル編集・スキルによる拡張性</li>
-          <li><strong>Codex が優位な領域:</strong> 大規模コードベースの複雑なリファクタリング・バックエンド深掘り・長期タスクの非同期スケジューリング</li>
-          <li><strong>現実の結論:</strong> 「どちらか一方に絞る理由はない。ターミナルは Claude Code、エディタは Cursor か Codex という2ツール並走が最も生産性が高い」</li>
-          <li><strong>Microsoft 打ち切りへの反応:</strong> 「Microsoft は Copilot に誘導したいだけ。Claude Code ユーザーの生産性データを見せてから判断すべき」という批判的なコメントが上位</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/MachineLearning：「Colorado AI 法が 6/30 施行 ─ 日本の AI 規制議論に何を示唆するか」</div>
-      <div class="card-meta">
-        <span class="badge">Policy</span>
-        <span class="card-source">Reddit r/MachineLearning — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>米コロラド州の包括的 AI 消費者保護法（高リスク AI システム開発者・展開者に「アルゴリズム差別」防止義務を課す米国初の州法）が 6/30 に施行されることを受け、r/MachineLearning で国際的な波及効果が議論されている。</p>
-        <ul>
-          <li><strong>対象領域:</strong> 雇用・教育・金融サービス・医療・住宅・法務に関わる高リスク AI システムが対象。開発者と展開者の両方に開示・監査・差別防止義務が生じる</li>
-          <li><strong>日本への示唆:</strong> 「日本でも同種の法律が近く議論されるはず。コロラドの実施状況が国際標準形成に影響する」というコメントが日本語圏ユーザーからも投稿されている</li>
-          <li><strong>EU AI Act との比較:</strong> コロラド法は EU AI Act より適用範囲が狭いが、執行メカニズムが米国的（州 AG による訴訟）なため実効性が高いとも評価されている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/worldnews：ペルー大統領選開票速報 ─「南米の左右対立の最新章」として世界が注目</div>
-      <div class="card-meta">
-        <span class="badge">World</span>
-        <span class="card-source">Reddit r/worldnews — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>ペルー大統領選の投票が本日実施されており、r/worldnews でリアルタイムスレッドが急上昇している。「ラテンアメリカの右派回帰 vs 左派持続」の最新章として国際的な注目を集めている。</p>
-        <ul>
-          <li><strong>フジモリ陣営の論点:</strong> 治安悪化・ギャング問題を前面に出し「60日間非常事態宣言」を公約。父アルベルト・フジモリの評価が依然として票を分かつ最大要因</li>
-          <li><strong>サンチェス陣営の論点:</strong> 鉱山税増税・先住民族権利・格差是正を訴える。ペドロ・カスティジョ前大統領の「失敗した左派路線」からの差別化が課題</li>
-          <li>開票結果は現地時間の本日夜（日本時間8日早朝）に判明する見通し</li>
+          <li><strong>残票の性格:</strong> 未集計票の多くは都市部（サンチェス支持層が厚い）と海外在住ペルー人票とされており、サンチェスの優位が続く可能性が高いとの分析が多い</li>
+          <li><strong>フジモリ陣営の反応:</strong> 「票の改ざんを疑う」という声明を準備中との報道があり、2021年選挙の再現を懸念する声もある</li>
+          <li>最終確定は日本時間本日夜〜明日早朝の見込み</li>
         </ul>
       </div>
     </div>
@@ -304,80 +295,84 @@
     </div>
 
     <div class="card">
-      <div class="card-title">ペルー大統領選 本日投票 ─ フジモリ vs サンチェスの決選投票、「10年で9人目の大統領」を決める</div>
+      <div class="card-title">フィリピン・ミンダナオ島沖で M7.8 地震 ─ 死者32人以上・1m 津波・320万人の「学校初日」に直撃</div>
+      <div class="card-meta">
+        <span class="badge">Disaster</span>
+        <span class="card-source">Source: <a href="https://www.rnz.co.nz/news/world/597553/earthquake-of-magnitude-7-point-8-strikes-off-southern-philippines" target="_blank" rel="noopener">RNZ</a> / <a href="https://www.npr.org/2026/06/07/g-s1-126830/7-8-magnitude-quake-hits-southern-philippines-tsunami-risk-for-some-coasts" target="_blank" rel="noopener">NPR</a> / <a href="https://www.aljazeera.com/news/2026/6/8/tsunami-warnings-issued-after-8-2-magnitude-earthquake-off-philippines" target="_blank" rel="noopener">Al Jazeera</a> — 2026.06.08</span>
+      </div>
+      <div class="card-body">
+        <p>日本時間6月8日午前、フィリピン・サランガニ州の沖合を震源とするマグニチュード7.8の地震が発生した。1990年以来フィリピンで最大規模の地震で、少なくとも32人が死亡、200人以上が負傷した。フィリピンの「学校初日」に重なる最悪のタイミングとなった。</p>
+        <ul>
+          <li><strong>被害状況:</strong> サランガニ州の土砂崩れで13人死亡。General Santos 市でジョリビー入居ビルや高校校舎が倒壊。同市の St. Elizabeth 病院が部分損傷し患者を屋外に避難させた</li>
+          <li><strong>津波:</strong> キアンバ・マアシム（サランガニ）とカラマンシグ（スルタンクダラット）沿岸で約1mの津波を観測。沖縄にも津波注意報が発令された</li>
+          <li><strong>余震:</strong> M6.5 の余震を含む複数の余震が続いており、当局が警戒を呼びかけている</li>
+          <li><strong>教育への影響:</strong> 学校年度初日に当たり、320万人の生徒と12.8万人の教職員が影響を受けた。フィリピン教育省が被害状況の調査を開始した</li>
+          <li><strong>国際支援:</strong> 米国・日本・オーストラリアが人道支援の準備に入ったと各国政府が表明している</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">イスラエル・イラン、互いの攻撃を停止 ─ ただし「条件付き」で停戦確認には至らず、レバノン情勢が焦点</div>
+      <div class="card-meta">
+        <span class="badge">Middle East</span>
+        <span class="card-source">Source: <a href="https://www.cnn.com/2026/06/07/world/live-news/iran-war-trump-israel-lebanon" target="_blank" rel="noopener">CNN</a> / <a href="https://www.arabnews.com/node/2646308/middle-east" target="_blank" rel="noopener">Arab News</a> — 2026.06.07〜08</span>
+      </div>
+      <div class="card-body">
+        <p>イスラエルとイランが互いへの攻撃を停止した。トランプ大統領は両国が「即時停戦を目指している」と述べたが、イスラエルのネタニヤフ首相は停戦を公式には認めず、イランもレバノン南部のヒズボラへのイスラエル攻撃が続く限り「作戦再開を留保する」と警告している。</p>
+        <ul>
+          <li><strong>直近の経緯:</strong> 4月に一時停戦が成立した後、6月初旬にヒズボラによるイスラエル北部へのミサイル攻撃→イスラエルがベイルート南郊（ダヒエ）のヒズボラ指令センターを空爆→イランが報復としてイスラエルにミサイルを発射、という escalation が起きていた</li>
+          <li><strong>停戦の条件:</strong> イラン側は「米国が誠実に交渉に臨むことを確信できれば和平協議を進める意向」と表明。米国はイランへの「完全な勝利」を宣言する意向を2週間以内に表明するとトランプが示唆</li>
+          <li><strong>レバノン情勢:</strong> イスラエルは6月2日〜3日のイランによるクウェート空港・バーレーン攻撃に対する報復として、ヒズボラへの攻撃を継続中。これが停戦の主要な障害となっている</li>
+          <li><strong>今後の焦点:</strong> 米国・イラン間の水面下交渉の行方と、レバノン停戦の実現可否が地域安定の鍵を握る</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ペルー大統領選 ─ 開票94%でサンチェスが約4300票差リード、出口調査と逆転の展開</div>
       <div class="card-meta">
         <span class="badge">Americas</span>
-        <span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/6/7/peru-polls-open-in-keiko-fujimori-roberto-sanchez-presidential-runoff" target="_blank" rel="noopener">Al Jazeera</a> / <a href="https://www.pbs.org/newshour/world/perus-fujimori-and-sanchez-to-meet-in-june-7-presidential-runoff" target="_blank" rel="noopener">PBS NewsHour</a> — 2026.06.07</span>
+        <span class="card-source">Source: <a href="https://andina.pe/ingles/noticia-peru-2026-elections-keiko-fujimori-5053-roberto-sanchez-4947-datum-exit-poll-1078442.aspx" target="_blank" rel="noopener">ANDINA</a> / <a href="https://www.aljazeera.com/news/2026/6/8/race-tied-between-left-and-right-wing-rivals-in-perus-presidential-vote" target="_blank" rel="noopener">Al Jazeera</a> — 2026.06.08</span>
       </div>
       <div class="card-body">
-        <p>ペルー大統領選の決選投票が本日（6/7）実施されている。極右のケイコ・フジモリ（Fuerza Popular）と左派のロベルト・サンチェス（Juntos por el Perú）が対峙。世論調査では接戦で、どちらが勝ってもペルーは「10年で9人目の大統領」を迎えることになる。</p>
+        <p>昨日（6/7）投票が行われたペルー大統領決選投票の開票が進んでいる。集計率94%時点で左派のロベルト・サンチェスが 50.01%、右派のケイコ・フジモリが 49.99% と約4300票差でサンチェスがリードしている。</p>
         <ul>
-          <li><strong>フジモリ:</strong> 50歳、4度目の大統領選。1回目投票では 17% を獲得してトップ通過。「治安強化・テロ打倒・60日非常事態宣言」を公約。父の遺産への評価が賛否を二分する</li>
-          <li><strong>サンチェス:</strong> 元外務貿易大臣、1回目投票で 12% を獲得。鉱山税増税・先住民族権利・格差是正を主軸とするが、カスティジョ前政権との連携を問われている</li>
-          <li><strong>政治的文脈:</strong> ペルーは近年、汚職・弾劾・辞任が絡み合う「政治的回転ドア」状態が続く。今回の選挙でも「腐敗からの脱出」が最大の争点とされる</li>
-          <li><strong>地域への影響:</strong> 結果はアルゼンチン・ブラジル・チリとのイデオロギー的連携に直接影響し、南米の外交地図を塗り替える可能性がある</li>
-          <li>開票結果は日本時間8日（月）早朝に判明する見通し</li>
+          <li><strong>出口調査との乖離:</strong> Datum 出口調査ではフジモリ 50.53%、Ipsos では50.7%とフジモリ優位を示していたため、逆転が大きな驚きを呼んでいる</li>
+          <li><strong>残票の性格:</strong> 未集計票の多くは都市部票（サンチェス支持層が厚い）で、海外在住ペルー人票も残っておりサンチェスの優位が維持される可能性が高い</li>
+          <li><strong>政治的文脈:</strong> 「10年で9人目の大統領」となる今回の選挙。ペルー憲法裁判所による開票監視が続いており、最終確定まで数日かかる可能性がある</li>
+          <li>いずれが勝利しても、ラテンアメリカの外交地図に大きな影響を与えることは必至</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">教皇レオ14世、スペインでコルプスクリスティのミサを主宰 ─ 15年ぶりの教皇スペイン訪問が話題に</div>
-      <div class="card-meta">
-        <span class="badge">Religion</span>
-        <span class="card-source">Source: <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-sunday-june-7-2026" target="_blank" rel="noopener">Go Local Prov</a> / NPR — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>教皇レオ14世がマドリードのシベレス広場でカトリックの祝日「コルプスクリスティ（聖体節）」のミサを主宰した。7日間のスペイン本土およびカナリア諸島使徒的訪問の2日目で、スペインへの教皇訪問は15年ぶり。</p>
-        <ul>
-          <li>マドリードには数万人の信徒が集まり、広場周辺が一時封鎖された</li>
-          <li>教皇は就任後の積極的な欧州訪問を続けており、次はポーランドとポルトガルの訪問が予定されているとされる</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">オハイオ州路上フェスティバルで銃撃 ─ 12人が負傷、犯人は逃走中</div>
-      <div class="card-meta">
-        <span class="badge">US</span>
-        <span class="card-source">Source: <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-sunday-june-7-2026" target="_blank" rel="noopener">Go Local Prov</a> / NPR — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>オハイオ州の路上フェスティバル近くで銃撃が発生し、少なくとも12人が負傷した。イベント参加者が一斉に逃げ惑う中、別の参加者たちが負傷者の救護に当たる場面も。犯人は事件後に現場から逃走しており、地元警察が捜索を続けている。</p>
-        <ul>
-          <li>夏の屋外イベント・フェスティバルでの銃撃事件が今年も相次いでおり、公共イベントの警備体制強化を求める声が改めて広がっている</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">インド、グレートニコバル島に $90 億のメガポート・空港・都市建設計画 ─ 原始林と先住民族への影響を批判</div>
-      <div class="card-meta">
-        <span class="badge">Asia</span>
-        <span class="card-source">Source: NPR — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>インド政府がアンダマン・ニコバル諸島の最南端、グレートニコバル島に総額 90 億ドルのメガポート・国際空港・新都市を建設するプロジェクトを進めている。インド洋の海上覇権強化と中国への対抗を狙った戦略的インフラ投資だが、環境・人権面での批判が高まっている。</p>
-        <ul>
-          <li><strong>環境面の懸念:</strong> 島の大部分を占める原始熱帯雨林が伐採される見込みで、固有種の生態系への影響が甚大とされる</li>
-          <li><strong>先住民族の問題:</strong> 島に居住するションペン族（半孤立した先住民族）の生活圏が直接影響を受けるとして、人類学者や人権団体が抗議している</li>
-          <li><strong>地政学的意義:</strong> グレートニコバルはマラッカ海峡の出口に位置し、軍事的にも重要な戦略拠点。中国の「真珠の首飾り」に対抗するインドの「島嶼鎖」戦略の要とされる</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">PEPFAR 削減でアフリカの医療崩壊が加速 ─ 南アフリカ・モザンビークでHIV治療に深刻な空白</div>
+      <div class="card-title">DRC エボラ感染が「前例のないペース」で拡大 ─ 確認症例381人・ウガンダに越境、WHO が PHEIC 宣言済み</div>
       <div class="card-meta">
         <span class="badge">Global Health</span>
-        <span class="card-source">Source: NPR — 2026.06.07</span>
+        <span class="card-source">Source: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">WHO</a> / <a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outbreak-in-the-democratic-republic-of-the-congo-and-uganda-6-5-2026.html" target="_blank" rel="noopener">CDC</a> — 2026.06.05</span>
       </div>
       <div class="card-body">
-        <p>トランプ政権による米国大統領エイズ救済緊急計画（PEPFAR）の削減・方向転換が、南アフリカとモザンビークのHIV治療・予防サービスに深刻な影響を与えていることを現地医療従事者が証言している。</p>
+        <p>コンゴ民主共和国（DRC）のエボラ感染拡大について、アフリカ CDC が「前例のないペース」と警告を発した。確認症例381人・死者64人（確認）のうちイトゥリ州が最多（359症例）で、ウガンダにも19症例が越境している。WHO は5月17日に PHEIC（国際的に懸念される公衆衛生上の緊急事態）を宣言済み。</p>
         <ul>
-          <li><strong>現場の実態:</strong> 抗レトロウイルス薬の供給が停滞し、継続治療ができなくなった患者が増加。「すでに命が失われている」という現地医療スタッフからの告発が NPR に掲載された</li>
-          <li><strong>PEPFAR の歴史的意義:</strong> ブッシュ政権期に超党派で創設された PEPFAR は20年以上にわたりアフリカのHIV感染者数を劇的に削減した米国外交の象徴的プログラム</li>
-          <li><strong>国際社会の反応:</strong> EU・英国が代替資金提供を検討中だが、米国の拠出額全額を補填するには至っていない</li>
+          <li><strong>ウイルスの特性:</strong> 今回はワクチンも特異的治療薬もないブンディブグヨウイルス株が原因。CEPI が IAVI（320万ドル）・Moderna（5000万ドル）・オックスフォード大学（860万ドル）のワクチン候補を緊急資金援助中</li>
+          <li><strong>米国の対応:</strong> 国務省が6つの専用エボラ対応クリニックを設置し、総額1億6200万ドル超の外国援助を発表</li>
+          <li><strong>DRC の脆弱性:</strong> 紛争地帯・劣悪なインフラ・医療従事者不足が重なり、封じ込めが特に困難な状況。感染が広がる場合、隣国タンザニア・ルワンダへの越境も懸念される</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">教皇レオ14世、スペイン議会で演説 ─「立法府こそ道徳的刷新が必要」と訴える米国人教皇の欧州行脚</div>
+      <div class="card-meta">
+        <span class="badge">Religion</span>
+        <span class="card-source">Source: <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> — 2026.06.08</span>
+      </div>
+      <div class="card-body">
+        <p>スペインを使徒的訪問中の教皇レオ14世（米国人教皇）が、カトリック国家の立法府への初演説という歴史的な場でスペイン国会議員に向けて「立法府こそ道徳的刷新が必要であり、全ての人の固有の尊厳が尊重されるよう実効的な取り組みが求められる」と訴えた。</p>
+        <ul>
+          <li>教皇は7日間のスペイン訪問でマドリード・バルセロナ・カナリア諸島を回る予定。次の欧州訪問先はポーランドとポルトガルが予告されている</li>
+          <li>アメリカ出身の初の教皇として、ラテンアメリカ・欧州・北米を結ぶ橋渡し役として積極的な外交活動を展開しており、国際メディアが高い関心を寄せている</li>
         </ul>
       </div>
     </div>
@@ -387,54 +382,66 @@
   <section class="section" id="dev">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn 人気記事まとめ</div>
-      <span class="section-count">3 記事</span>
-    </div>
-    <div class="alert" style="font-size:0.83rem;">
-      ※ 前日（6/6版）の Qiita/Zenn まとめと実質同一の記事が多いため、Dynamic Workflows 公開を受けた新規エントリーのみ掲載しています。
+      <span class="section-count">4 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">「Claude Code Dynamic Workflows を早速試した ─ ultracode 設定と並列エージェント数の制御方法」（Zenn）</div>
-      <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a> — 2026.06.07</span>
-      </div>
-      <div class="card-body">
-        <p>Dynamic Workflows 公開から数時間で Zenn に実践記事が登場。ultracode 設定の有効化手順・並列エージェント数のモニタリング方法・トークン消費量の試算が詳しく解説されており、6/15 課金変更との関係も言及されている。</p>
-        <ul>
-          <li>「中規模プロジェクト（5万行前後）のセキュリティスキャンを試したところ、約20分・$2.3 の消費で完了した」という実測値が多くのブックマークを集めた</li>
-          <li>6/15 以降は Agent SDK クレジットから消費される可能性が高いとして、事前のトークン消費量把握を推奨する内容</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">「Claude Code vs Codex 選定ガイド 2026年版 ─ チーム規模・用途・コストで決める」（Qiita）</div>
+      <div class="card-title">「AIエージェント × 仕様駆動開発 ─ Claude Code で設計書からコードを自動生成する実践ガイド」（Qiita・+1220いいね）</div>
       <div class="card-meta">
         <span class="badge">Qiita</span>
-        <span class="card-source"><a href="https://qiita.com" target="_blank" rel="noopener">qiita.com</a> — 2026.06</span>
+        <span class="card-source"><a href="https://qiita.com/Qiita/items/616e8f6d4f69bd582ab5" target="_blank" rel="noopener">Qiita 月間トレンド</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>個人・スタートアップ・エンタープライズの3ケースに分けて Claude Code と Codex を比較した選定ガイド。Microsoft の打ち切りニュースを受けて「大企業でも Claude Code を選ぶ理由と懸念点」のセクションが追記された。</p>
+        <p>月間 +1220 いいねを獲得した Qiita 記事。「AIエージェント・ClaudeCode・仕様駆動開発」タグを持ち、設計書（OpenAPI/Mermaid）から Claude Code が自動でコード・テスト・ドキュメントを生成するパイプラインを詳細に解説している。</p>
         <ul>
-          <li>個人開発者向けの結論：「$100 Max 5x より $20 ChatGPT Plus + Codex の方が費用対効果が高い場合がある。ただし Claude Code のスキルエコシステムには代替がない」</li>
-          <li>スタートアップ向け：「Dynamic Workflows は強力だが 6/15 以降のコスト試算が必須。先にパイロット導入で消費量を計測してから本番移行を推奨」</li>
+          <li>Dynamic Workflows リリース後に閲覧数が急増。「仕様書を読み込ませてワークフローを起動すれば、複数モジュールの並列実装が自動化される」という応用例が追記された</li>
+          <li>6/15 課金変更を踏まえ、/usage コマンドでトークン消費量を管理しながら利用する方法も紹介している</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">「Colorado AI 法施行直前解説 ─ 日本の SaaS 開発者が今すぐ確認すべき5つのポイント」（Zenn）</div>
+      <div class="card-title">「2026年6月第1週 AI動向まとめ ─ エージェントが実証実験を抜けてPCとブラウザに溶け込んだ週」（Qiita）</div>
       <div class="card-meta">
-        <span class="badge">Zenn</span>
-        <span class="card-source"><a href="https://zenn.dev" target="_blank" rel="noopener">zenn.dev</a> — 2026.06.07</span>
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/syunichisato51/items/3ab509bde0a3633d6980" target="_blank" rel="noopener">qiita.com</a> — 2026.06</span>
       </div>
       <div class="card-body">
-        <p>6/30 施行の Colorado Consumer Protections for Artificial Intelligence Act について、日本の SaaS 開発者・AI サービス提供者が把握すべき要点をまとめた記事。「米国に顧客を持つサービスは対象になりうる」と警鐘を鳴らしている。</p>
+        <p>6月第1週の AI 動向まとめ記事。ServiceNow と Accenture が FDE（Full-stack Deployment of Enterprise AI）プログラムを開始し、AI エージェントの PoC から本番移行を加速する標準化フレームワークを提供したことが注目トピックとして取り上げられている。</p>
         <ul>
-          <li><strong>主な義務:</strong> 高リスク AI システムの開示・影響評価・苦情処理手続きの整備。開発者（モデル提供者）と展開者（SaaS 事業者）の双方に義務が生じる</li>
-          <li><strong>日本企業への適用可能性:</strong> 「コロラド州居住者を1人でも対象にしているサービスは潜在的に対象」というグローバル適用の可能性が議論されている</li>
-          <li>EU AI Act の施行スケジュールと組み合わせると、2026〜2027年は AI 規制対応コストが急増する年になるという見通し</li>
+          <li>Claude Code の Dynamic Workflows・Codex の Sites 機能・Grok の新コネクタ（Gmail/Drive/Slack/MCP）が「エージェントのインフラ溶け込み」の象徴として挙げられている</li>
+          <li>「GPT-5.5 Instant がデフォルトになりハルシネーションが減少した」との報告も記載されており、モデルの着実な改善が続いているとまとめている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「Obsidian × RAG × AIエージェント ─ Claude Code で個人ナレッジをコードリポジトリと接続する方法」（Qiita 週間トレンド）</div>
+      <div class="card-meta">
+        <span class="badge">Qiita</span>
+        <span class="card-source"><a href="https://qiita.com/Qiita/items/b5c1550c969776b65b9b" target="_blank" rel="noopener">Qiita 週間トレンド</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>Qiita 週間トレンド上位。個人の Obsidian ノートを RAG（Retrieval-Augmented Generation）でインデックス化し、Claude Code のスキルとして登録することで「自分専用の設計書・ドキュメントを参照しながらコードを書く」ワークフローを実現する方法を解説している。</p>
+        <ul>
+          <li>MCP（Model Context Protocol）を利用した Obsidian Vault への接続方法が詳述されており、設定ファイル例とともにすぐに試せる内容として評価が高い</li>
+          <li>「ドキュメントをコードと一緒に管理することで、AIへの指示が格段にクリアになった」という実感レポートが反響を呼んでいる</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">「バズりツイートから考察する2026年のAIエージェントプロダクト開発 ─ ユーザーが本当に求めているもの」（Zenn）</div>
+      <div class="card-meta">
+        <span class="badge">Zenn</span>
+        <span class="card-source"><a href="https://zenn.dev/chiku_dev/articles/7602829910d94f" target="_blank" rel="noopener">zenn.dev</a> — 2026.06</span>
+      </div>
+      <div class="card-body">
+        <p>2026年上半期に X（旧 Twitter）でバズった AI エージェント関連ツイートを分析し、ユーザーが本当に求めているものを考察した Zenn 記事。「ユーザーは AI の性能より『中断しない作業継続性』と『コスト予見可能性』を最重視している」という結論が共感を集めている。</p>
+        <ul>
+          <li><strong>中断しない継続性:</strong> レート制限・コンテキスト窓の枯渇・予期しないエラーによる作業中断が最大のペインポイントとして浮き彫りになっている</li>
+          <li><strong>コスト予見可能性:</strong> 「6/15 課金変更のように突然の価格体系変更が来ると計画が立てられない」という不満が Dynamic Workflows ユーザーから多く寄せられている</li>
+          <li>「Claude Code のスキルエコシステムは素晴らしいが、月額コストが不透明すぎる。/usage コマンドの追加は正しい方向性」という意見が多数</li>
         </ul>
       </div>
     </div>
@@ -443,22 +450,26 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月7日（日）</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月8日（月）</p>
   <p style="margin-top:0.5rem;">
     Sources:
-    <a href="https://claude.com" target="_blank" rel="noopener">Anthropic Blog</a> ·
-    <a href="https://www.infoq.com" target="_blank" rel="noopener">InfoQ</a> ·
-    <a href="https://thenewstack.io" target="_blank" rel="noopener">The New Stack</a> ·
-    <a href="https://cybernews.com" target="_blank" rel="noopener">Cybernews</a> ·
+    <a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Releasebot</a> ·
+    <a href="https://dev.classmethod.jp" target="_blank" rel="noopener">DevelopersIO</a> ·
+    <a href="https://forest.watch.impress.co.jp" target="_blank" rel="noopener">窓の杜</a> ·
+    <a href="https://xtech.nikkei.com" target="_blank" rel="noopener">日経クロステック</a> ·
     <a href="https://techcrunch.com" target="_blank" rel="noopener">TechCrunch</a> ·
     <a href="https://venturebeat.com" target="_blank" rel="noopener">VentureBeat</a> ·
     <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> ·
-    <a href="https://blogs.nvidia.com" target="_blank" rel="noopener">NVIDIA Blog</a> ·
+    <a href="https://dev.to" target="_blank" rel="noopener">DEV Community</a> ·
+    <a href="https://www.rnz.co.nz" target="_blank" rel="noopener">RNZ</a> ·
     <a href="https://www.aljazeera.com" target="_blank" rel="noopener">Al Jazeera</a> ·
-    <a href="https://www.pbs.org" target="_blank" rel="noopener">PBS NewsHour</a> ·
+    <a href="https://www.cnn.com" target="_blank" rel="noopener">CNN</a> ·
+    <a href="https://andina.pe" target="_blank" rel="noopener">ANDINA</a> ·
+    <a href="https://www.who.int" target="_blank" rel="noopener">WHO</a> ·
+    <a href="https://www.cdc.gov" target="_blank" rel="noopener">CDC</a> ·
     <a href="https://www.npr.org" target="_blank" rel="noopener">NPR</a> ·
-    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a> ·
-    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a>
+    <a href="https://qiita.com" target="_blank" rel="noopener">Qiita</a> ·
+    <a href="https://zenn.dev" target="_blank" rel="noopener">Zenn</a>
   </p>
 </footer>
 
