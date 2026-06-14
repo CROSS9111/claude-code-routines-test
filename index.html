@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月13日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月14日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,8 +67,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">USA 4-1 Paraguay W杯開幕 / 米イラン合意署名迫る / Trooping the Colour / Claude Code v2.1.176 / Antigravity CLI 移行まで5日</p>
-  <p class="date">2026年6月13日（土）&nbsp;|&nbsp;<a href="2026-06-12/index.html">前版（6/12）</a></p>
+  <p class="subtitle">日本 2-2 オランダ W杯初戦死闘 / トランプ80歳×UFC白ハウス / 米イラン合意署名へ / Claude Code 6/15課金変更は明日 / Codex白カラー作業機能</p>
+  <p class="date">2026年6月14日（日）&nbsp;|&nbsp;<a href="2026-06-13/index.html">前版（6/13）</a></p>
 </header>
 
 <nav>
@@ -76,6 +76,7 @@
   <a href="#openai">Codex / 他ツール</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
 </nav>
 
 <div class="container">
@@ -87,63 +88,62 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の注目（6/13）:</strong> <strong>Claude Code v2.1.176 が昨日夕方に配信</strong>。セッションタイトルが会話言語に合わせて自動生成される多言語対応と、フッターリンクカスタマイズ設定が追加。<code>availableModels</code> のエイリアス抜け穴修正など複数のセキュリティ修正も含む。<strong>6/15 の課金体系変更まで残り2日</strong>。
+      <strong>明日（6/15）が課金体系変更の当日:</strong> <code>claude-sonnet-4-20250514</code> および <code>claude-opus-4-20250514</code> が Claude API から正式引退。Claude Code の最新安定版は <strong>v2.1.176</strong>（6/12 配信）。サブエージェントは最大5階層まで対応済み。Fable 5 の <code>[1m]</code> サフィックス正規化バグは v2.1.172 で修正済み。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">2日後</div><div class="stat-label">6/15 課金変更まで</div></div>
-      <div class="stat-card"><div class="stat-value">v2.1.176</div><div class="stat-label">最新バージョン（6/12配信）</div></div>
+      <div class="stat-card"><div class="stat-value">明日</div><div class="stat-label">6/15 課金変更・旧モデル引退</div></div>
+      <div class="stat-card"><div class="stat-value">v2.1.176</div><div class="stat-label">Claude Code 最新安定版</div></div>
       <div class="stat-card"><div class="stat-value">5層</div><div class="stat-label">サブエージェント最大ネスト深度</div></div>
-      <div class="stat-card"><div class="stat-value">5日後</div><div class="stat-label">Antigravity CLI 移行期限（6/18）</div></div>
+      <div class="stat-card"><div class="stat-value">4日後</div><div class="stat-label">Antigravity CLI 移行期限（6/18）</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.176（6/12夕）— セッションタイトル多言語対応、フッターリンクカスタマイズ、Bedrock 認証情報キャッシュ改善</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: Claude Code Docs / Changelog — 2026.06.12</span></div>
+      <div class="card-title">【明日締切】6/15 Claude API 課金体系変更 — <code>claude-sonnet-4-20250514</code>・<code>claude-opus-4-20250514</code> が引退、Fable 5 課金正式化</div>
+      <div class="card-meta"><span class="badge">Urgent</span><span class="card-source">Source: Anthropic / Enterprise DNA — 2026.06</span></div>
       <div class="card-body">
-        <p>v2.1.176 では3つの新機能と多数のバグ修正が同梱された。</p>
+        <p>2026年6月15日（日本時間 6/16 早朝）をもって、Claude API の課金体系が変更される。旧モデル2本が引退し、後継モデルへの移行が必要。Max プランのクレジット消費ルールも更新される。</p>
         <ul>
-          <li><strong>多言語セッションタイトル:</strong> セッションタイトルが会話の言語で自動生成されるようになった（<code>language</code> 設定で変更可能）。日本語会話では日本語タイトルが生成される</li>
-          <li><strong>フッターリンクカスタマイズ:</strong> <code>footerLinksRegexes</code> 設定を追加。正規表現マッチしたリンクをフッター行にバッジ表示できる</li>
-          <li><strong>Bedrock 認証情報キャッシュ改善:</strong> <code>awsCredentialExport</code> から取得した認証情報を固定1時間ではなく、<code>Expiration</code> まで有効なキャッシュとして保存するように変更</li>
+          <li><strong>引退モデル:</strong> <code>claude-sonnet-4-20250514</code>、<code>claude-opus-4-20250514</code></li>
+          <li><strong>推奨後継:</strong> Fable 5（<code>claude-fable-5</code>）または最新 Sonnet/Opus エイリアスに切り替え</li>
+          <li><strong>確認事項:</strong> <code>availableModels</code> 設定・ハードコードされたモデル ID を全プロジェクトで確認・更新</li>
+          <li><strong>Fable 5 課金:</strong> 従来より高いトークン単価が適用されるため、月次コストの試算を推奨</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">v2.1.176 セキュリティ修正 — <code>ANTHROPIC_DEFAULT_*_MODEL</code> 環境変数による <code>availableModels</code> 許可リスト迂回を塞ぐ</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: Claude Code Docs / Changelog — 2026.06.12</span></div>
+      <div class="card-title">Claude Code v2.1.172（6/10）— サブエージェントが自身のサブエージェントを生成可能に、最大5階層のネストを正式サポート</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: Claude Code Docs / Changelog — 2026.06.10</span></div>
       <div class="card-body">
-        <p>v2.1.175 で追加された <code>enforceAvailableModels</code> に抜け穴があった。エイリアスモデルが <code>ANTHROPIC_DEFAULT_*_MODEL</code> 環境変数を経由することで許可リストを迂回できる問題を修正。マネージド環境でのモデル制御がより確実になった。</p>
+        <p>v2.1.172 でサブエージェントのネスト機能が強化され、サブエージェントが自身のサブエージェントを最大5階層まで再帰的にスポーンできるようになった。複雑なモノリシックリポジトリの分解や、レイヤー別の専任エージェント設計が現実的な選択肢となった。</p>
         <ul>
-          <li><strong>Fable 5 auto モード修正:</strong> Fable 5 の auto モードで組織が Opus 4.8 を持っていない場合、分類器が利用可能な最善の Opus モデルにフォールバックするよう修正</li>
-          <li><strong>フック条件修正:</strong> <code>Edit(src/**)</code>・<code>Read(~/.ssh/**)</code>・<code>Read(.env)</code> などのパスパターンを含む hook の <code>if</code> 条件が正しく評価されない問題を修正</li>
-          <li><strong>Linux サンドボックス修正:</strong> <code>.claude/settings.json</code> が絶対パスターゲットへのシンボリックリンクの場合に起動が失敗する問題を修正</li>
+          <li><strong>注意点:</strong> 深いネストはコスト増大とデバッグ難度の上昇を伴う。まず2〜3階層で動作確認を推奨</li>
+          <li><strong>Fable 5 <code>[1m]</code> 正規化修正:</strong> モデル名末尾の <code>[1m]</code> サフィックスが自動正規化されない問題もこのバージョンで修正</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">v2.1.176 その他バグ修正 — tmux/SSH でのクリップボード、Remote Control、<code>/cd</code> コマンド、Windows ネットワークパス</div>
-      <div class="card-meta"><span class="badge">Bugfix</span><span class="card-source">Source: Claude Code Docs / Changelog — 2026.06.12</span></div>
+      <div class="card-title">Claude Code v2.1.170（6/9）— Claude Fable 5 が一般利用可能に。「Mythos クラス」の安全性評価を通過した初のモデル</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: Claude Code Docs / Changelog · Anthropic — 2026.06.09</span></div>
       <div class="card-body">
+        <p>v2.1.170 で Claude Fable 5 が Claude Code に統合された。Fable 5 は Anthropic の内部評価フレームワーク「Mythos クラス」の安全性基準を初めて通過したモデルとされ、前世代モデルより長文・複雑タスクでの一貫性が向上している。</p>
         <ul>
-          <li><strong>クリップボード:</strong> tmux over SSH 環境での <code>/copy</code> およびコピーオンセレクトのクリップボードアクセスを修正</li>
-          <li><strong>Remote Control:</strong> モデル切り替えおよび切断通知の問題を修正</li>
-          <li><strong><code>/cd</code> コマンド:</strong> ワークツリー移動後に古い git ブランチ情報が残るバグを修正</li>
-          <li><strong>バックグラウンドセッション:</strong> <code>/bg</code> をターン途中で使用した場合およびウィンドウデタッチ時の問題を修正</li>
-          <li><strong>Windows:</strong> ネットワークパスおよび各種 CLI/UI のグリッチを修正</li>
+          <li><strong>利用方法:</strong> <code>/model claude-fable-5</code> または設定の <code>defaultModel</code> キーで切り替え</li>
+          <li><strong>v2.1.169 の <code>--safe-mode</code>:</strong> 前日配信の v2.1.169 ではすべてのカスタマイズを無効化した状態で起動できる <code>--safe-mode</code> フラグが追加されており、トラブルシューティングに活用できる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">6/15 課金体系変更まで残り2日 — Max プランの使用量クレジット上限と Fable 5 対応を再確認</div>
-      <div class="card-meta"><span class="badge">Billing</span><span class="card-source">Source: Enterprise DNA / Claude Code Docs — 2026.06</span></div>
+      <div class="card-title">Anthropic、Claude Code on the Web のプロアクティブワークフローと Managed Agents を正式化 — Dreaming・オーケストレーション・Webhook が本番対応</div>
+      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">Source: Anthropic / InfoQ — 2026.05-06</span></div>
       <div class="card-body">
-        <p>2026年6月15日に予定されている Claude API の課金体系変更まで残り2日。<code>claude-sonnet-4-20250514</code> および <code>claude-opus-4-20250514</code> の2モデルが API から引退し、Fable 5 の使用量クレジット消費も正式化される。</p>
+        <p>Anthropic は開発者プラットフォームの拡張として、Claude Code API の上限引き上げと Managed Agents 機能群（Dreaming・マルチエージェントオーケストレーション・Outcomes・Webhook）を正式リリースした。</p>
         <ul>
-          <li><strong>確認事項:</strong> <code>availableModels</code> リストに引退モデルが含まれている場合は更新が必要</li>
-          <li><strong>Enterprise 注意:</strong> Fable 5 課金バナーは v2.1.174 で修正済みだが、クレジット消費は引き続き発生する</li>
+          <li><strong>Dreaming:</strong> セッション終了後もクラウド上でエージェントが思考・改善を継続する機能。長期的な品質向上サイクルを自動化</li>
+          <li><strong>Outcomes &amp; Webhook:</strong> エージェントのタスク完了イベントを外部システム（Slack・Jira・CI 等）にリアルタイム通知</li>
+          <li><strong>Opus API 上限引き上げ:</strong> エンタープライズ向けに Opus モデルのレート制限が緩和された</li>
         </ul>
       </div>
     </div>
@@ -157,42 +157,54 @@
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI、Ona（旧 Gitpod GmbH）買収を正式発表（6/11）— デバイスやセッションをまたぐ長時間エージェント実行を Codex に実装へ</div>
-      <div class="card-meta"><span class="badge">M&amp;A</span><span class="card-source">Source: TechTimes / TechCrunch — 2026.06.11</span></div>
+      <div class="card-title">OpenAI Codex、ホワイトカラー向け新ツール群を発表（6/2）— ナレッジワーク対応・週間 MAU 500万人超</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: TechCrunch — 2026.06.02</span></div>
       <div class="card-body">
-        <p>OpenAI は Codex のエージェント継続性を高めるため、クラウドサンドボックスでエージェントを数時間・数日単位で実行し続ける技術を持つ Ona（旧 Gitpod GmbH）を買収すると正式に発表した。ユーザーが作業を委任したあとデバイスをオフにしても、クラウド上のエージェントが作業を継続できる仕組みを構築する。</p>
+        <p>OpenAI は Codex に対して、ソフトウェアエンジニアリング以外のナレッジワーク（文書作成・データ分析・調査業務等）を対象とした機能群をリリースした。同社の内部レポートも公開され、Codex の活用実態と ROI のデータが開示された。</p>
         <ul>
-          <li><strong>意義:</strong> Claude Code の「Dreaming 機能」（セッションをまたいだ改善の継続）に対抗する持続的エージェント基盤の獲得</li>
-          <li><strong>統合時期:</strong> 2026年後半の Codex に統合予定</li>
+          <li><strong>週間 MAU:</strong> 500万人超（2月のデスクトップアプリ発売以来6倍超）</li>
+          <li><strong>GPT-5.5 搭載:</strong> Terminal-Bench 2.1 で 83.4% を記録し、AI コーディングエージェント部門トップ</li>
+          <li><strong>Goal モード:</strong> 長期タスクを委任してデバイス不問で継続実行するモードが正式化</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Gartner MQ「エンタープライズ AI コーディングエージェント」— OpenAI（Codex）がリーダー認定、週間 MAU 500万人超</div>
-      <div class="card-meta"><span class="badge">Industry</span><span class="card-source">Source: OpenAI / Gartner — 2026.06</span></div>
+      <div class="card-title">OpenAI、Ona（旧 Gitpod GmbH）買収を正式発表（6/11）— セッション横断エージェント実行基盤を Codex に統合へ</div>
+      <div class="card-meta"><span class="badge">M&amp;A</span><span class="card-source">Source: TechCrunch / PYMNTS — 2026.06.11</span></div>
       <div class="card-body">
-        <p>OpenAI が Gartner® Magic Quadrant™ for Enterprise AI Coding Agents でリーダーとして認定された。Codex は GPT-5.5 搭載に加え、NVIDIA インフラとの連携によって高速化を実現しており、週間アクティブユーザーが500万人を超えた（2月のデスクトップアプリ発売以来6倍超）。</p>
+        <p>OpenAI は Codex のエージェント継続性を高めるため、クラウドサンドボックスでエージェントを数時間・数日単位で実行し続ける技術を持つ Ona を買収した。「ユーザーが作業を委任した後にデバイスをオフにしてもクラウドのエージェントが継続する」仕組みを構築する。</p>
         <ul>
-          <li><strong>強み評価:</strong> ビジョンの完全性と実行能力の両軸でリーダー象限に位置</li>
-          <li><strong>最新改善:</strong> エンタープライズ向けクレジット管理・設定管理の強化、プラグインのワークスペース共有機能</li>
+          <li><strong>競合との比較:</strong> Anthropic の Dreaming 機能に対抗するクラウド側エージェント永続化基盤の獲得</li>
+          <li><strong>統合予定:</strong> 2026年後半の Codex に組み込み予定</li>
+          <li><strong>引用:</strong> 「Ona は最高水準の信頼とスケールで運用する顧客向けに Codex を本番ワークフローへ展開しやすくする」— OpenAI Core Products Lead</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Google Antigravity CLI — 移行期限まで5日（6/18 締切）、Gemini 3.5 Flash 搭載でサブエージェント対応</div>
-      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: lushbinary.com / ofox.ai — 2026.06</span></div>
+      <div class="card-title">Google Antigravity CLI — 移行期限まで残り4日（6/18 締切）。Gemini 3.5 Flash 搭載・3階層サブエージェント対応</div>
+      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: lushbinary.com / Google — 2026.06</span></div>
       <div class="card-body">
-        <p>Google の Gemini CLI から「Antigravity CLI」へのリブランドの移行期限（6月18日）まで残り5日。Antigravity 2.0 は Gemini 3.5 Flash を搭載し、動的サブエージェント・バックグラウンドタスクスケジューリングが追加された（ネスト上限は3階層）。Google AI Pro/Ultra および Gemini Code Assist ユーザーは期限前に対応が必要。</p>
+        <p>Google の Gemini CLI から Antigravity CLI へのリブランドの移行期限（6月18日）まであと4日。Antigravity 2.0 は Gemini 3.5 Flash 搭載で動的サブエージェント・バックグラウンドタスクスケジューリングが追加された（ネスト上限3階層）。</p>
+        <ul>
+          <li><strong>対象ユーザー:</strong> Google AI Pro/Ultra、Gemini Code Assist ユーザーは期限前に設定の更新が必要</li>
+          <li><strong>移行先 URL:</strong> Google 公式移行ガイドに従いコンフィグファイルのエンドポイントを更新</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">AI コーディングエージェント勢力図（2026年6月）— Terminal-Bench: Codex 83.4% / Claude Code 78.9%、「3段階使い分け」が開発者の共通認識に</div>
-      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: MorphLLM / thenewstack.io — 2026.06</span></div>
+      <div class="card-title">AI コーディングエージェント比較（2026年6月中旬）— Terminal-Bench: Codex 83.4% / Claude Code 78.9%、「役割分担」が定着</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: MorphLLM / The New Stack — 2026.06</span></div>
       <div class="card-body">
-        <p>Terminal-Bench では Codex（GPT-5.5）が 83.4%、Claude Code（Opus 4.8）が 78.9%。フロントエンド・UI は Claude Code が優位、複雑な長期タスクは Codex が優位、IDE 内補完は Cursor/Copilot という3段階使い分けが定着している。Fable 5 組み込み時のスコア向上がコミュニティで報告されており、来月のベンチマーク更新が注目される。</p>
+        <p>最新 Terminal-Bench 2.1 では Codex（GPT-5.5）が 83.4%、Claude Code（Opus 4.8）が 78.9% を記録。6か月間の実使用レビューをまとめた The New Stack のレポートでは、ツール間で明確な棲み分けが定着しつつあると報告されている。</p>
+        <ul>
+          <li><strong>Claude Code の優位領域:</strong> フロントエンド・UI、大規模コードベースのリファクタリング、リアルタイムのインタラクティブ操作</li>
+          <li><strong>Codex の優位領域:</strong> 複雑な長期タスクの委任実行、エンタープライズのコンプライアンス要件</li>
+          <li><strong>IDE 補完:</strong> Cursor / GitHub Copilot が依然優位</li>
+          <li><strong>新参者:</strong> Grok Build が価格競争に参入し市場が一段と激化</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -205,47 +217,55 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI 週間1位「Claude Code is the best coding agent in the market and it's not close」（↑270）</div>
+      <div class="card-title">r/ClaudeAI 週間ホット「Claude Code Max プランの実コスト — 30日で API 換算$1,850 分を消費した話」</div>
       <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI（911K members）— 2026.06</span></div>
       <div class="card-body">
-        <p>フロントエンド・UI 作業と大規模コードベースのリファクタリングにおける評価が特に高い。「Dreaming 機能でセッションをまたいで改善が継続する点は他に類を見ない強み」「v2.1.172 以降、5階層サブエージェントが使えるようになって複雑なモノリス分解が現実的になった」といったコメントが多数。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/codex 週間1位「With the right skills, Codex is honestly better than Claude Code for me」（↑468）</div>
-      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/codex — 2026.06</span></div>
-      <div class="card-body">
-        <p>Codex の Goal モード正式化後の一貫性向上とチーム向けプラグイン共有機能が高く評価されている。「委任して結果をレビューするスタイルなら Codex、リアルタイムで操作するスタイルなら Claude Code」という使い分けの示唆が多くの共感を得た。Ona 買収発表後は「長時間エージェントが Codex に来れば差がさらに広がる」というコメントも増加している。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">r/LocalLLaMA 注目「Ollama が Anthropic Messages API 対応 — Claude Code をローカルで動かした結果」</div>
-      <div class="card-meta"><span class="badge">LocalLLM</span><span class="card-source">Source: habr.com / r/LocalLLaMA — 2026.06</span></div>
-      <div class="card-body">
-        <p>Ollama が Anthropic Messages API のサポートを追加し、Claude Code から任意の Ollama モデルに直接接続できるようになった。単純なファイル操作・検索・フォーマット変換では有効だが、複雑なマルチステップタスクでは失敗率が上昇するため「純粋なコスト削減にはなりにくい」との評価が定着。Qwen3-Coder-Next（80B）との組み合わせが最も実用的との声が多い。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">The New Stack レポート「Claude Code の Dynamic Workflows で5エージェントを同時実行してみた」— 並列処理の実力と落とし穴を検証</div>
-      <div class="card-meta"><span class="badge">Review</span><span class="card-source">Source: thenewstack.io — 2026.06</span></div>
-      <div class="card-body">
-        <p>5つのエージェントを同時実行した実験レポート。シングルエージェントと比較して大幅な時間短縮を確認した一方で、エージェント間の競合状態（レースコンディション）の発生も報告されており、オーケストレーション設計の重要性が示された。</p>
+        <p>Hacker News 発のスレッドが Reddit に転載され話題に。Claude Code は回答前に多くのファイルを読み込んでプランニングを行うため、「ストリーミング補完型」のツールよりトークン消費が大きい。$100 Max プランで API 換算$1,850 分の使用量を消費したユーザーの報告がアップボート多数。</p>
         <ul>
-          <li><strong>うまく機能したケース:</strong> 独立したモジュール単位のリファクタリング、テスト生成、ドキュメント生成</li>
-          <li><strong>課題:</strong> 共有状態を持つコードへの並列アクセス、エラーリカバリーの連鎖</li>
-          <li><strong>推奨:</strong> まずタスクを依存グラフで整理してから並列化を検討</li>
+          <li><strong>コスト削減策として有効な手法:</strong> 細かいタスク分割、大規模ファイルの事前整理、<code>--safe-mode</code> での初期診断でトークン無駄遣いを削減</li>
+          <li><strong>コミュニティの結論:</strong> Pro（$20）では本格利用には不十分。実質 Max（$100）以上が現実的</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">コミュニティ分析「Claude Code vs Codex — 1万件のコメントからわかる開発者の本音」</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: chatgptguide.ai / firecrawl.dev — 2026.06</span></div>
+      <div class="card-title">r/MachineLearning 注目「GUARD Act でチャットボット ID 認証が義務化へ — AI エージェント開発への影響を議論」</div>
+      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Reddit r/MachineLearning — 2026.06</span></div>
       <div class="card-body">
-        <p>複数の subreddit から1万件以上のコメントを収集・分析した結果、明確な勝者を断言したコメント202件のうち Codex 支持が57.4%、Claude Code 支持が15.8%、「両方使う」が27%。ただし Claude Code は使い込んでいるユーザーほど評価が高く、使用時間の格差（Codex 20時間 vs Claude Code 100時間）が評価の差として現れているとの指摘も。</p>
+        <p>GUARD Act（生成型 AI ユーザー認証・リスク削減法）が米国議会で前進し、チャットボット・AI エージェントの利用に ID 認証を義務付ける内容が含まれることが明らかになった。コミュニティは安全規制派と革新阻害懸念派に二分されており、1,000件超のコメントが集まっている。</p>
+        <ul>
+          <li><strong>賛成派の主張:</strong> 悪用・詐欺・誤情報拡散の抑止に必要</li>
+          <li><strong>反対派の主張:</strong> プライバシーの侵害、スタートアップの参入障壁が高まり独占が進む</li>
+          <li><strong>エージェント開発への影響:</strong> API プロバイダーが法令対応のため利用者認証レイヤーを追加する可能性</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「Ollama が Anthropic Messages API に対応 — Claude Code をローカルモデルで完全代替できるか検証」</div>
+      <div class="card-meta"><span class="badge">LocalLLM</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06</span></div>
+      <div class="card-body">
+        <p>Ollama が Anthropic Messages API のサポートを追加し、Claude Code のバックエンドを任意の Ollama モデルに切り替え可能になった。Qwen3-Coder-Next（80B）との組み合わせが「最も実用的」と評価されているが、複雑なマルチステップタスクでの失敗率は依然高く「コスト削減は限定的」との声が多い。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/AI_Agents「本番 AI エージェント展開の不安感 — 1,000件超のコメントが集まる議論」</div>
+      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/AI_Agents — 2026.06</span></div>
+      <div class="card-body">
+        <p>ガードレールなしで動く本番エージェントへの不安を吐露したスレッドが急上昇。「エージェントがどこまで何をするか予測できない」「コスト爆発・意図しないファイル削除・外部 API 誤呼び出しを実際に経験した」という実体験が続々と投稿され、エージェントの observability とリミット設定の重要性があらためて注目されている。</p>
+        <ul>
+          <li><strong>頻出の対策:</strong> サンドボックス環境での初期テスト、支出上限の設定、人間承認ステップの組み込み</li>
+          <li><strong>ツール別対応状況:</strong> Claude Code の <code>--safe-mode</code> と権限ダイアログが好評。Codex の Goal モードの予算上限機能も評価</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">r/codex「Ona 買収後の Codex 長時間エージェントへの期待と懸念 — コミュニティの反応」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/codex — 2026.06</span></div>
+      <div class="card-body">
+        <p>OpenAI の Ona 買収発表を受けて r/codex では「長時間エージェントが本当に使えるようになれば Codex が一気に差をつける」という期待と、「クラウド上のエージェントがどこまで何をしているか見えない」というセキュリティ懸念が混在。Anthropic の Dreaming との比較スレッドも多く立っている。</p>
       </div>
     </div>
   </section>
@@ -257,75 +277,128 @@
       <span class="section-count">7 記事</span>
     </div>
     <div class="alert">
-      <strong>本日の最大トピック:</strong> <strong>FIFA W杯2026</strong> で <strong>USA が Paraguay に 4-1 で大勝</strong>、カナダはボスニアと1-1。スイスがカタールを下した。<strong>米・イラン合意署名が「数日以内」</strong>でほぼ確定的な情勢。英国では <strong>Trooping the Colour</strong>（国王4度目の記念式典）が挙行された。
+      <strong>本日（6/14）の最大トピック:</strong> <strong>FIFA W杯2026</strong> 日本 vs オランダが <strong>2-2 の死闘</strong>でドロー（後半89分に鎌田が同点弾）。トランプ大統領が <strong>80歳の誕生日</strong>にホワイトハウスで「UFC Freedom 250」を開催（観客4,000人超）。米・イラン核合意は署名目前の情勢。NY ニックスが NBA ファイナルを制覇。
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA W杯2026 第2日 — USA 4-1 Paraguay、Pulisic が2アシスト。カナダ 1-1 ボスニア、スイスがカタールを下す</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: Olympics.com / SBS News / heavy.com — 2026.06.13</span></div>
+      <div class="card-title">FIFA W杯2026 — 日本 2-2 オランダ（6/14 グループF）。ファン・ダイク先制→中村慶太同点→サマービレ勝越→鎌田89分同点弾</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: ESPN / FIFA.com / FOX Sports — 2026.06.14</span></div>
       <div class="card-body">
-        <p>W杯第2日の6月13日（土）、米国がパラグアイを 4-1 で圧倒し開幕戦を白星で飾った。クリスチャン・プリシッチが電撃的なプレーで前半に2アシストを記録して前半45分で交代。また、スイスのブレール・エンボロがペナルティキックを決め、スイスがカタールを下した。</p>
+        <p>ダラス・スタジアムでグループF初戦が行われ、日本とオランダが2-2で引き分けた。前半は0-0。後半に入りウィルフリード・ファン・ダイクが先制、7分後に中村慶太が同点。64分にクリセンシオ・サマービレが勝ち越すも、89分に鎌田大地が起死回生の同点ゴールを決め勝ち点1を確保した。</p>
         <ul>
-          <li><strong>USA 4-1 PARグループA:</strong> 今大会のホスト国としての威信をかけた試合で圧勝</li>
-          <li><strong>CAN 1-1 BIHグループB:</strong> カナダの Cyle Larin が美しいゴールを決めるも勝利には至らず</li>
-          <li><strong>QAT vs SUIグループB:</strong> スイスがエンボロのPKで制す</li>
-          <li><strong>本日後半の試合:</strong> ブラジル対モロッコ、ハイチ対スコットランド、オーストラリア対トルコが予定</li>
-          <li><strong>日本初戦:</strong> 6月14日（日）に予定</li>
+          <li><strong>オランダ:</strong> 60%ポゼッション・枠内シュート6本。個人技では優位も決定力を欠く</li>
+          <li><strong>日本:</strong> 粘り強い守備と素早いカウンターが機能。土壇場の追いつきは日本W杯史に残る一戦に</li>
+          <li><strong>グループF 残日程:</strong> 日本は次戦でドイツと激突予定</li>
+          <li><strong>同日の注目試合:</strong> ドイツが初戦で快勝（詳細スコアは確認中）</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">米・イラン合意署名が「数日以内」に迫る — 両国が確認、トランプ大統領「明日署名する」とも言及</div>
-      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: NBC News / PBS News / Washington Times — 2026.06.13</span></div>
+      <div class="card-title">トランプ大統領80歳の誕生日 × 「UFC Freedom 250」ホワイトハウス南芝生で開催（6/14）</div>
+      <div class="card-meta"><span class="badge">US</span><span class="card-source">Source: Bloomberg / Yahoo News / NewsNation — 2026.06.14</span></div>
       <div class="card-body">
-        <p>パキスタンのシャリフ首相が「合意確定は24時間以内に予想される」と発言し、トランプ大統領も「明日（6/14）署名予定」と示唆。一方でイラン外務省は「日曜の署名はない」と述べており、最終的な日程は数日以内となる見込み。</p>
+        <p>6月14日はフラッグデー（星条旗記念日）かつトランプ大統領の80歳の誕生日。ホワイトハウス南芝生に高さ92フィートの仮設オクタゴンを建設し、UFC との共催イベント「UFC Freedom 250」が開催された。4,000人超の観客が招待され、現役軍人1,000人が特別入場した。</p>
         <ul>
-          <li><strong>主要合意内容（報道ベース）:</strong> イランが「核兵器を永久に調達・開発しない」ことにコミット、ホルムズ海峡の再開</li>
-          <li><strong>核プログラム詳細:</strong> イランの核プログラムの処理条件は署名後60日以内に協議</li>
-          <li><strong>市場反応:</strong> 原油価格は3%超下落、ウォール街は続伸</li>
-          <li><strong>残る懸念:</strong> イスラエルの反応、地域各国の核不拡散への影響</li>
+          <li><strong>カード:</strong> Ilia Topuria vs Justin Gaethje などメインカード7試合</li>
+          <li><strong>文脈:</strong> 米国建国250周年記念イベントの一環。8月にはワシントンDC市街地でインディカーレース開催予定</li>
+          <li><strong>外交:</strong> 大統領は誕生日当日もイランとの核合意最終調整に従事</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">英国・Trooping the Colour — チャールズ国王4度目の誕生日記念式典、バッキンガム宮殿からザ・マルへ</div>
-      <div class="card-meta"><span class="badge">Royal</span><span class="card-source">Source: GoLocalProv — 2026.06.13</span></div>
+      <div class="card-title">米・イラン核合意 — 署名「数日以内」が最有力、ホルムズ海峡は合意後即時再開予定</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: GoLocalProv / Yahoo News — 2026.06.14</span></div>
       <div class="card-body">
-        <p>英国王室がバッキンガム宮殿を出発し、年恒例の Trooping the Colour パレードが挙行された。チャールズ国王と王妃がアスコット・ランドーの馬車でザ・マルを行進。国王が即位して4度目の誕生日記念式典となった。</p>
+        <p>トランプ大統領は6月14日、イランとの核合意の枠組みに署名する意向を表明。イラン外務省は「本日（6/14）の署名はない」と否定しつつも合意の存在は認めており、最終署名は「数日以内」との観測が強まっている。</p>
+        <ul>
+          <li><strong>合意の骨子（報道ベース）:</strong> イランが核兵器を「永久に」調達・開発しないと言明。ホルムズ海峡を合意後即日で全船舶に開放</li>
+          <li><strong>核プログラム処理:</strong> 詳細条件は署名後60日以内に別途協議</li>
+          <li><strong>市場:</strong> 原油先物が3%超下落。ウォール街は週間で続伸</li>
+          <li><strong>懸念:</strong> イスラエルが合意に強く反発。地域の核不拡散体制への影響が注視されている</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">スペイン国王がグランデ・ハ機の技術トラブルで足止めされた外国訪問者に王室専用機を提供</div>
-      <div class="card-meta"><span class="badge">Europe</span><span class="card-source">Source: GoLocalProv — 2026.06.13</span></div>
+      <div class="card-title">NBA ファイナル — ニューヨーク・ニックスがサンアントニオ・スパーズを 94-90 で下し4勝1敗で優勝（6/14）</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: GoLocalProv — 2026.06.14</span></div>
       <div class="card-body">
-        <p>スペインを1週間訪問していた外国要人が帰国のためのイベリア航空チャーター機が技術上の問題で欠航となった際、フェリペ6世が私用ジェット機を提供した。欧州外交の舞台裏で注目を集めた出来事となった。</p>
+        <p>ニューヨーク・ニックスが第5戦でスパーズを 94-90 で破り、シリーズ4勝1敗でNBAチャンピオンシップを制覇した。ニックスにとって数十年ぶりの悲願達成となり、マディソン・スクエア・ガーデンは歓喜に包まれた。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">韓国・尹錫悦前大統領に禁固30年判決（6/12）— 反乱罪に続く第2の重刑、控訴手続き開始</div>
-      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Source: UPI / CNN / Fox News — 2026.06.12</span></div>
+      <div class="card-title">W杯2026 前日ハイライト（6/13）— USA 4-1 Paraguay、カナダ 1-1 ボスニア、スイスがカタールを下す</div>
+      <div class="card-meta"><span class="badge">World Cup</span><span class="card-source">Source: Olympics.com / SBS News — 2026.06.13</span></div>
       <div class="card-body">
-        <p>ソウル中央地裁は6月12日（金）、尹錫悦前大統領（65）に対して北朝鮮に無人機を飛行させ戒厳令宣布の口実を作ったとする罪状で禁固30年の判決を言い渡した。元国防相キム・ヨンヒョン被告も同じく禁固30年。弁護チームは同日控訴した。なお2024年12月の戒厳令宣布に関連する反乱罪では別途終身刑が確定済み。</p>
+        <p>ホスト国アメリカがパラグアイを4-1で圧倒し白星スタート。クリスチャン・プリシッチが前半2アシストの活躍を見せた。カナダはボスニアと1-1でドロー。スイスはエンボロのPKでカタールを下した。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ECB が政策金利を引き上げ — 中東戦争勃発以来、主要中央銀行初の利上げ</div>
-      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Source: Global Developments Substack — 2026.06.12</span></div>
+      <div class="card-title">韓国・尹錫悦前大統領に禁固30年判決（6/12）— 北朝鮮無人機作戦への関与認定、控訴を申立て</div>
+      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Source: UPI / CNN — 2026.06.12</span></div>
       <div class="card-body">
-        <p>欧州中央銀行が基準政策金利を引き上げた。ホルムズ海峡封鎖をめぐる供給不安からのエネルギー価格高騰への対応。米・イラン交渉の進展を受けた原油安で、今後の利上げ継続是非が注目される。</p>
+        <p>ソウル中央地裁は尹錫悦前大統領（65）に対し、北朝鮮に無人機を飛行させて戒厳令宣布の口実を作ったとする罪状で禁固30年を言い渡した。元国防相キム・ヨンヒョン被告も同じく禁固30年。弁護チームは即日控訴。2024年12月の戒厳令反乱罪では別途終身刑が確定済み。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">英国・ヒーリー国防相が辞任（6/12）— 「軍事予算は必要水準に遠く及ばない」、欧州の国防費論争が再燃</div>
-      <div class="card-meta"><span class="badge">UK</span><span class="card-source">Source: NPR / Global Developments Substack — 2026.06.12</span></div>
+      <div class="card-title">ECB 利上げ・英ヒーリー国防相辞任（6/12）— 欧州の安全保障・金融政策が揺れる</div>
+      <div class="card-meta"><span class="badge">Europe</span><span class="card-source">Source: Global Developments Substack / NPR — 2026.06.12</span></div>
       <div class="card-body">
-        <p>英国のジョン・ヒーリー国防相が辞任し、「労働党政権の軍事予算は英国が直面する国際的な課題に応えるためには大幅に不足している」との声明を発表した。欧州各国が国防費増強を進める中、英国の軍事支出水準をめぐる政治的議論が再燃している。</p>
+        <p>欧州中央銀行（ECB）がエネルギー価格高騰への対応として基準政策金利を引き上げた。同日、英国のジョン・ヒーリー国防相が「軍事予算が必要水準に遠く及ばない」として辞任し、欧州全体の国防費論争に火をつけた。</p>
+        <ul>
+          <li><strong>ECB:</strong> ホルムズ海峡封鎖由来のエネルギー高を抑制するための初の利上げ。米・イラン合意成立なら利上げ打ち止めも</li>
+          <li><strong>英国国防:</strong> ヒーリー氏辞任後、欧州各国の NATO 目標達成に向けた予算議論が再燃</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qiita / Zenn -->
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn — 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Qiita「2026年6月第1週 AI動向まとめ：エージェントが『実証実験』を抜け、PCとブラウザに溶け込んだ週」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Source: qiita.com/syunichisato51 — 2026.06</span></div>
+      <div class="card-body">
+        <p>6月第1週のAI動向を総括した記事が高い閲覧数を記録。業界特化型AIエージェントが「専用アプリ」ではなく「既存ツール＋MCPサーバ」という形で普及し始めたフェーズに入ったと分析している。</p>
+        <ul>
+          <li><strong>注目の動向:</strong> オートデスクが先陣を切り、Adobe・AutoCAD・SolidWorks 系各社も MCP サーバ対応を検討中</li>
+          <li><strong>エディター統合:</strong> PC上のブラウザ・デスクトップアプリに AI エージェントが「当たり前の機能」として溶け込み始めた週として記録される</li>
+          <li><strong>Claude Code 言及:</strong> 開発者コミュニティでの言及数が Cursor を抜いてトップになった週と報告</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Qiita「【2026年最新】AIエージェントとは？仕組み・できること・活用事例をわかりやすく解説」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Source: qiita.com/GS-AI — 2026.06</span></div>
+      <div class="card-body">
+        <p>AIエージェントの基礎から実装まで網羅した入門記事が月間トレンド入り。「目標を与えるだけで自律的に考え・判断し・実行まで行う AI」という定義のもと、ツール呼び出し・メモリ管理・マルチエージェント構成を図解で解説している。</p>
+        <ul>
+          <li><strong>対象読者:</strong> AI エージェントを初めて業務導入する非エンジニア層に広く読まれている</li>
+          <li><strong>注目の活用事例:</strong> 採用スクリーニング自動化、カスタマーサポート 1次応対、社内 FAQ 回答エージェント</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Zenn「AIエージェント時代、正直しんどい話」— 開発者の本音を綴ったエッセイが共感を呼ぶ</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Source: zenn.dev/ryo369 — 2026.06</span></div>
+      <div class="card-body">
+        <p>AIエージェントが日常化する中で、「キャッチアップし続けることへの疲弊感」「エージェントが何をしているか分からない不安」「AIに仕事を奪われるかもしれないという焦り」を率直につづったエッセイが話題に。技術的な記事が多い Zenn で感情面を扱った記事として異例の反響を得ている。</p>
+        <ul>
+          <li><strong>共感コメント:</strong> 「毎週ツールが変わってついていけない」「Claude Code を使いこなせていない自分に焦る」などの声が多数</li>
+          <li><strong>著者の結論:</strong> 「全部追わなくていい。自分の仕事に本当に効く1〜2個のツールに絞ることが精神衛生上大事」</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -333,8 +406,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月13日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: Claude Code Docs · Olympics.com · SBS News · heavy.com · NBC News · PBS News · Washington Times · GoLocalProv · UPI · CNN · Fox News · NPR · TechTimes · TechCrunch · OpenAI · Gartner · MorphLLM · lushbinary.com · chatgptguide.ai · thenewstack.io · habr.com</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月14日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Docs · Anthropic · InfoQ · TechCrunch · ESPN · FIFA.com · FOX Sports · Bloomberg · Yahoo News · NewsNation · GoLocalProv · UPI · CNN · NPR · Global Developments Substack · MorphLLM · The New Stack · PYMNTS · OpenAI · Gartner · NVIDIA · Qiita · Zenn</p>
 </footer>
 
 </body>
