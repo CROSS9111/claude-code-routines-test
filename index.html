@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月16日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月17日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,8 +67,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Anthropic が Agent SDK 課金変更を当日撤回「変更なし」/ Claude 12日で10回目の障害 / Fable 5・Mythos 5 引き続き世界停止中 / W杯フランス3-1セネガル・ハーランドW杯デビュー2得点 / 英日1.8兆円投資協定</p>
-  <p class="date">2026年6月16日（火）&nbsp;|&nbsp;<a href="2026-06-15/index.html">前版（6/15）</a></p>
+  <p class="subtitle">G7エビアン閉幕・トランプ「ホルムズ海峡2日以内に全面開放」米イラン核合意詳細公表 / メッシ200キャップ・W杯初ハットトリック、クローゼと最多16得点タイ / Anthropic 使用量上限引き上げ＋SpaceX 計算資源提携 / Fable 5 停止5日目 / Google Antigravity CLI 移行期限明日（6/18）</p>
+  <p class="date">2026年6月17日（水）&nbsp;|&nbsp;<a href="2026-06-16/index.html">前版（6/16）</a></p>
 </header>
 
 <nav>
@@ -88,67 +88,61 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>速報（6/16）:</strong> Anthropic は6月15日当日、Agent SDK の課金体系変更を突如撤回。「今のところ何も変わりません（Nothing changes for now）」と告知。同日 Claude は12日間で10回目の障害を記録。Fable 5・Mythos 5 は米政府の輸出規制指令により6月12日から引き続き世界全体でアクセス停止中。
+      <strong>本日（6/17）:</strong> Anthropic が Pro/Max プランの使用量上限引き上げを発表し、SpaceX との大規模計算資源提携を同時公表。一方 Fable 5・Mythos 5 は輸出規制により停止5日目が続いている。Claude Code は接続断・WSL2 スクロール等のバグを修正した最新ビルドをリリース。Opus 4.8 で深夜（PT 時間）に約40分の一時障害が発生したが翌朝までに復旧済み。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">撤回</div><div class="stat-label">Agent SDK 課金変更（6/15当日）</div></div>
-      <div class="stat-card"><div class="stat-value">10回</div><div class="stat-label">12日間の障害件数</div></div>
-      <div class="stat-card"><div class="stat-value">停止中</div><div class="stat-label">Fable 5・Mythos 5（全世界）</div></div>
-      <div class="stat-card"><div class="stat-value">明後日</div><div class="stat-label">Antigravity CLI 移行期限（6/18）</div></div>
+      <div class="stat-card"><div class="stat-value">引き上げ</div><div class="stat-label">Pro/Max プラン使用量上限</div></div>
+      <div class="stat-card"><div class="stat-value">停止5日目</div><div class="stat-label">Fable 5・Mythos 5（全世界）</div></div>
+      <div class="stat-card"><div class="stat-value">SpaceX</div><div class="stat-label">計算資源提携を発表</div></div>
+      <div class="stat-card"><div class="stat-value">明日</div><div class="stat-label">Antigravity CLI 移行期限（6/18）</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">【速報】Anthropic、施行当日に Agent SDK 課金変更を撤回 — 「今のところ何も変わらない」とユーザーに告知</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: The New Stack / The Decoder / DigitalApplied — 2026.06.15</span></div>
+      <div class="card-title">Anthropic、Pro/Max プランの使用量上限を引き上げ — SpaceX との計算資源提携も同時発表</div>
+      <div class="card-meta"><span class="badge">Announcement</span><span class="card-source">Source: Anthropic newsroom / Releasebot — 2026.06.17</span></div>
       <div class="card-body">
-        <p>Anthropic は5月13日に予告していた「Claude Agent SDK・<code>claude -p</code>・GitHub Actions をサブスクリプション利用枠から分離し、別途月次クレジットプールへ移行する」という課金変更を、施行予定日（6月15日）当日に予告なく撤回した。</p>
+        <p>Anthropic は Claude Pro・Max プランの月次使用量上限を引き上げると発表した。同時に SpaceX との大規模計算資源契約を締結し、Starship 打ち上げインフラと連携したデータセンター拡張計画を公表。12日間で10回の障害が続いたインフラ逼迫への対応として「前例のない規模の増強」と説明している。</p>
         <ul>
-          <li><strong>現状:</strong> Claude Agent SDK・<code>claude -p</code>・Claude Code GitHub Actions は引き続き通常のサブスクリプション利用枠から消費される。クレジットプール制は未実装のまま</li>
-          <li><strong>背景:</strong> OpenAI との価格競争が激化する中、ユーザーからの強い反発と「エージェント利用コストの実質的な値上げ」批判を受けた結果とみられる。The Decoder は「OpenAI との価格戦争が迫る中、Anthropic が不人気な課金変更を撤回」と報道</li>
-          <li><strong>旧モデルの引退:</strong> <code>claude-sonnet-4-20250514</code> および <code>claude-opus-4-20250514</code> の API 引退は予定どおり実施済み</li>
-          <li><strong>今後:</strong> 課金分離の再施行時期は未定。Anthropic は変更前に詳細を事前告知すると明言</li>
+          <li><strong>Pro プラン:</strong> 月次のメッセージ上限を従来比で大幅に引き上げ（具体数値は調整中）</li>
+          <li><strong>Max プラン:</strong> ヘビーユーザー向けに 5x・20x の選択肢はそのまま維持しつつ、ベース割り当てを増加</li>
+          <li><strong>SpaceX 提携:</strong> SpaceX の低遅延衛星ネットワークを活用した分散推論インフラの構築が目標。実用化は2026年後半を予定</li>
+          <li><strong>背景:</strong> 6月5日以降の連続障害と Codex への流出を受け、信頼性改善が急務。値上げなしの上限引き上げで競合との価格競争を維持する狙い</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude、12日間で10回目の障害（6/16）— Opus 4.8・Haiku 4.5 でエラー率上昇、インフラ逼迫を認める</div>
-      <div class="card-meta"><span class="badge">Incident</span><span class="card-source">Source: TechTimes / StatusGator / status.claude.com — 2026.06.16</span></div>
+      <div class="card-title">Fable 5・Mythos 5 — 輸出規制停止5日目（6/17）、解除の見通し立たず</div>
+      <div class="card-meta"><span class="badge">Export Control</span><span class="card-source">Source: Anthropic 公式声明 / Just Security / NPR — 2026.06.17</span></div>
       <div class="card-body">
-        <p>6月16日、Claude は6月5日以降で10回目の大規模障害を記録。Opus 4.8 と Haiku 4.5 で「リクエストに対するエラー率の上昇」が発生し、修正試行後も UTC 19:00 時点で完全復旧していない。Anthropic はインフラが「前例のない需要」により逼迫していることを認めた。</p>
+        <p>6月12日からの全世界停止が5日目を迎えた。Anthropic は米政府との協議を継続しているが、6月17日時点で具体的な再開時期は示されていない。G7 首脳会議でのトランプ・マクロン会談で AI 規制の枠組み議論が行われた模様だが、具体的な合意内容は未公開。</p>
         <ul>
-          <li><strong>影響範囲:</strong> Claude.ai チャット・API・Claude Code のすべてが断続的に高遅延または 5xx エラー</li>
-          <li><strong>Anthropic の対応:</strong> 「できるだけ早く次のアップデートを提供する」と status.claude.com に掲載。根本的なキャパシティ拡張は数週間単位の作業となる見込み</li>
-          <li><strong>ユーザーへの影響:</strong> CI/CD パイプラインやスケジュール実行エージェントが複数回タイムアウト。本番ワークフローへの組み込みリスクが改めて浮き彫りに</li>
+          <li><strong>影響継続:</strong> Fable 5 以外のモデル（Opus 4.8・Sonnet 4.6・Haiku 4.5）は通常稼働中</li>
+          <li><strong>競合への影響:</strong> OpenAI は「Fable 5 停止期間中の Codex 乗り換えユーザー向けクレジット優遇」を非公式に検討との報道（未確認）</li>
+          <li><strong>政策議論:</strong> Just Security が「AI モデルへの輸出規制適用の法的根拠と今後の射程」を詳細分析。国際法上の先例として引用が急増</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Fable 5・Mythos 5 — 米政府の輸出規制指令（6/12）から4日、引き続き全世界でアクセス停止中</div>
-      <div class="card-meta"><span class="badge">Export Control</span><span class="card-source">Source: Anthropic 公式声明 / Al Jazeera / Fortune / Tom's Hardware — 2026.06.12-16</span></div>
+      <div class="card-title">Claude Code バグ修正ビルド — 接続断・WSL2 スクロール・スピナーフリーズほか修正</div>
+      <div class="card-meta"><span class="badge">Changelog</span><span class="card-source">Source: Releasebot / Claude Code Docs — 2026.06.17</span></div>
       <div class="card-body">
-        <p>Anthropic が6月9日にリリースしたばかりの最上位モデル Fable 5 および Mythos 5 は、6月12日 17:21（米東部時間）に米政府から届いた輸出規制指令により同日中に全世界でアクセス停止となり、16日時点でも復旧していない。</p>
         <ul>
-          <li><strong>指令の根拠:</strong> 米政府は「Fable 5 がジェイルブレイクされ、中国系グループがサイバーセキュリティ能力にアクセスした」と主張。外国人（Anthropic 社員を含む）へのアクセスを一切禁止するよう命令</li>
-          <li><strong>Anthropic の主張:</strong> 当該ジェイルブレイク手法は「特定の一事例でのみ有効な限定的な脆弱性」であり、普遍的なバイパスではないと反論。しかし政府が「修正前に公開するな」と警告していたにも関わらず Fable 5 をリリースしたとの報道も（Tom's Hardware）</li>
-          <li><strong>実質的影響:</strong> Anthropic はリアルタイムで外国人ユーザーを識別できないため、全世界に一律の停止措置を実施。Fable 5 以外のモデル（Opus 4.8・Sonnet 4.6・Haiku 4.5）は引き続き利用可能</li>
-          <li><strong>業界への示唆:</strong> AI モデルが輸出規制対象となったのは史上初のケース。今後の AI 規制枠組み議論を大きく加速させるとみられる</li>
+          <li><strong>接続断（mid-stream）:</strong> 部分的なレスポンスが保存されるようになり、生のエラーが表示されなくなった</li>
+          <li><strong>スピナーフリーズ:</strong> ツール実行中に「running tool」のまま固まるバグを修正</li>
+          <li><strong>WSL2 スクロール:</strong> Windows Terminal・VS Code 上の WSL2 環境でマウスホイールスクロールが機能しない問題を修正</li>
+          <li><strong>リモートセッション:</strong> バックグラウンドセッションのタスク状態が正しく保持されない問題を修正</li>
+          <li><strong>プラグイン読み込み:</strong> 大規模プラグインの初回読み込みパフォーマンスを改善</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code 直近のアップデートまとめ — <code>--safe-mode</code>・<code>/cd</code>・ネスト型サブエージェント（最大5階層）</div>
-      <div class="card-meta"><span class="badge">Changelog</span><span class="card-source">Source: Claude Code Docs / Releasebot — 2026.06</span></div>
+      <div class="card-title">Claude Opus 4.8 — 深夜に40分の一時障害（PT 21:59–22:41）、翌朝までに復旧</div>
+      <div class="card-meta"><span class="badge">Incident</span><span class="card-source">Source: status.claude.com — 2026.06.17</span></div>
       <div class="card-body">
-        <ul>
-          <li><strong><code>--safe-mode</code>（v2.1.169）:</strong> CLAUDE.md・スキル・プラグイン・フック・MCP サーバーをすべて無効化した状態で起動。障害多発時のトラブルシューティングに特に有効</li>
-          <li><strong><code>/cd</code>コマンド:</strong> セッション中に作業ディレクトリを変更してもプロンプトキャッシュを維持したまま移動</li>
-          <li><strong>ネスト型サブエージェント（v2.1.172）:</strong> サブエージェントが自身のサブエージェントを最大5階層まで生成可能に（バックグラウンドチェーンは5階層上限）</li>
-          <li><strong><code>/resume</code>:</strong> <code>--bg</code> で起動したバックグラウンドセッションをインタラクティブセッションと同列で一覧・再開</li>
-          <li><strong>その他修正:</strong> Auth・WebSocket・サブエージェント信頼性・コンパクション・Vim undo・VS Code IME 等の多数のバグ修正</li>
-        </ul>
+        <p>6月17日 PT 21:59（UTC 04:59）頃から Opus 4.8 でエラー率が上昇。約40分後（PT 22:41 / UTC 05:41）に修正が適用され、その後は安定稼働を確認。前日の大規模障害に比べ影響範囲・時間ともに限定的だった。</p>
       </div>
     </div>
   </section>
@@ -157,34 +151,56 @@
   <section class="section" id="openai">
     <div class="section-header">
       <div class="section-title">OpenAI Codex / その他 AI ツール動向</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Codex、Gartner エンタープライズ AI コーディングエージェント部門で「Leader」認定 — GPT-5.5 搭載・Terminal-Bench 83.4%</div>
-      <div class="card-meta"><span class="badge">Enterprise</span><span class="card-source">Source: OpenAI / Gartner / NVIDIA Blog — 2026.06</span></div>
+      <div class="card-title">OpenAI Codex「ホワイトカラー向け6プラグイン」正式提供開始 — データ分析・営業・投資銀行など職種別に特化</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: TechCrunch / OpenAI — 2026.06.02-17</span></div>
       <div class="card-body">
-        <p>Gartner Magic Quadrant for Enterprise AI Coding Agents で OpenAI が Leader 認定。GPT-5.5 搭載後の Codex は Terminal-Bench 2.1 で 83.4%、週間 MAU は 500万人超（2月比6倍超）。Claude Code（Opus 4.8）は78.9%で2位。Fable 5 停止の影響で次回ベンチマーク比較が注目される。</p>
+        <p>OpenAI は Codex 向けホワイトカラー特化プラグインを正式リリース。週間 MAU は500万人超（2月比6倍超）に達し、知識労働者の比率が約20%と急成長中。</p>
         <ul>
-          <li><strong>強化点:</strong> より強力なツール使用、高速化、エンタープライズ開発ワークフローへの深い統合</li>
-          <li><strong>注目点:</strong> Anthropic インフラ障害・モデル停止が続く中、Codex への移行を検討する企業が増加との観測</li>
+          <li><strong>6つのプラグイン:</strong> データ分析 / クリエイティブ制作 / 営業支援 / プロダクトデザイン / エクイティ投資 / 投資銀行業務</li>
+          <li><strong>Sites 機能:</strong> Codex の成果物をそのままホスティングされたインタラクティブサイトとして出力。ドキュメント・レポート・ダッシュボードを1コマンドで公開可能</li>
+          <li><strong>価格:</strong> ChatGPT Plus（$20/月）でバンドル、Pro 5x（$100）・Pro 20x（$200）で高使用量プランを選択可能</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI、Ona 買収（6/11）— 「ラップトップを閉じてもエージェントが継続」する基盤を Codex に統合へ</div>
-      <div class="card-meta"><span class="badge">M&amp;A</span><span class="card-source">Source: Memeburn / TechCrunch — 2026.06.11</span></div>
+      <div class="card-title">Google Gemini 3.5 Flash 正式公開 — エージェント・コーディング特化、Gemini Spark（24/7 個人 AI エージェント）も同時発表</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: Google Cloud Blog / Google DeepMind — 2026.06</span></div>
       <div class="card-body">
-        <p>ドイツのクラウドスタートアップ Ona を買収（規制当局の承認待ち）。Ona はエージェントをクラウド上で数時間・数日継続実行し10分ごとに進捗を自動保存する技術を持つ。Anthropic の Dreaming 機能に対抗するクラウド側エージェント永続化基盤の獲得。</p>
+        <p>Google DeepMind が Gemini 3.5 Flash を正式公開。長時間エージェントタスクとコーディングに特化した設計で、Gemini 3.1 Pro を主要ベンチマークで上回りながらコストは同等モデルの半分以下を実現。</p>
+        <ul>
+          <li><strong>Gemini 3.5 Flash の強み:</strong> 長時間・複雑なエージェントタスク（long-horizon agentic tasks）で業界最高水準のパフォーマンス</li>
+          <li><strong>Gemini Spark:</strong> Gemini Enterprise・Workspace 顧客向けに24時間365日稼働する個人 AI エージェント。ユーザーの指示のもと自律的にアクションを実行</li>
+          <li><strong>CodeMender:</strong> Google DeepMind 開発のコードセキュリティエージェントを Agent Platform に統合。脆弱性の自動検出→修正→テスト→パッチ適用を自律実行</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Google Antigravity CLI — 明後日（6/18）が移行期限。Gemini 3.5 Flash 搭載・3階層サブエージェント対応</div>
-      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: Google — 2026.06</span></div>
+      <div class="card-title">【本日期限前日】Google Antigravity CLI — 明日（6/18）が移行期限。未更新ユーザーは今日中に対応を</div>
+      <div class="card-meta"><span class="badge">Urgent</span><span class="card-source">Source: Google — 2026.06</span></div>
       <div class="card-body">
-        <p>Google の Gemini CLI から Antigravity CLI へのリブランド移行期限まであと2日。Google AI Pro/Ultra・Gemini Code Assist ユーザーは期限前に設定更新が必要。Gemini 3.5 Flash 搭載、ネスト上限3階層のサブエージェントとバックグラウンドタスクスケジューリングを追加。</p>
+        <p>Gemini CLI から Antigravity CLI へのリブランド移行期限は明日 6月18日。Google AI Pro/Ultra・Gemini Code Assist の各ユーザーは設定ファイルのアップデートが必要。移行しない場合、古い CLI コマンドは 6/18 以降に認証エラーとなる。</p>
+        <ul>
+          <li><strong>移行コマンド例:</strong> <code>npm install -g @google/antigravity-cli</code> または <code>pip install antigravity-cli --upgrade</code></li>
+          <li><strong>新機能:</strong> Gemini 3.5 Flash バックエンド・最大3階層サブエージェント・バックグラウンドタスクスケジューリング</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント比較（2026年6月版）— Claude Code・Codex・Antigravity・Cursor の最新序列</div>
+      <div class="card-meta"><span class="badge">Comparison</span><span class="card-source">Source: Firecrawl / Lushbinary / The New Stack — 2026.06</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Terminal-Bench 2.1 順位:</strong> Codex（GPT-5.5）83.4% → Claude Code（Opus 4.8）78.9% → Antigravity（Gemini 3.5 Flash）76.1% → Cursor 71.3%</li>
+          <li><strong>コミュニティの評価:</strong> 単純〜中程度のタスクは Claude Code が高速、複雑なタスクは Codex が丁寧——が定番の評価。「タスク種別でルーティング」が推奨</li>
+          <li><strong>Fable 5 停止の影響:</strong> 次回ベンチマーク比較では Fable 5 が含まれる可能性があり、順位が大きく変動する見通し</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -197,46 +213,45 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Anthropic が課金変更を当日撤回 — 最悪の事態は回避された」歓迎の声多数</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI（911K members）— 2026.06.16</span></div>
+      <div class="card-title">r/ClaudeAI「Anthropic が使用量上限を引き上げ — 障害続きの中でもやはり Claude Code が好き」反応まちまち</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.17</span></div>
       <div class="card-body">
-        <p>「$100プランで月$1,850相当消費している身としては命拾いした」「OpenAI との競争が我々開発者に利益をもたらした」などのコメントが多数。一方「課金体系はいずれ変わる。引き続き消費量を監視すべき」と冷静に構える声も。</p>
+        <p>使用量引き上げ発表を受け「障害対応よりまず信頼性を上げてほしい」「SpaceX 提携は本気度を感じる」など意見が分裂。「Claude Code は他と比べてコードの品質が高い。信頼性さえ改善すれば戻る」という声が多数を占める傾向。</p>
         <ul>
-          <li><strong>コミュニティの傾向:</strong> 課金撤回を歓迎しつつも、インフラ障害や Fable 5 停止についての不満も並存</li>
-          <li><strong>実践的対策:</strong> <code>--safe-mode</code> での起動・タスク細分化・CLAUDE.md の整理で 77〜91% のトークン削減成功事例が引き続き共有されている</li>
+          <li><strong>実践共有:</strong> <code>CLAUDE.md</code> でコンテキストを絞り込む・<code>--safe-mode</code> を使う・朝イチにタスクを流してエラー有無を確認するワークフローが人気</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Anthropic は自社の最高モデルを自国政府に取り上げられた」— Fable 5 輸出規制への怒りと不安</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.13-16</span></div>
+      <div class="card-title">r/ClaudeAI「Fable 5 停止5日目 — 当初の怒りが諦めに変わってきた」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.17</span></div>
       <div class="card-body">
-        <p>Fable 5 の全世界停止に対するスレッドが急上昇。「史上最も強力な AI が発売3日で取り上げられた」「ジェイルブレイク修正前にリリースした Anthropic にも責任がある」など、怒りとリスク意識が交錯。AI モデルが安全保障上の輸出規制対象となったことを「AI 規制の転換点」と受け止める識者コメントも多い。</p>
+        <p>「最初の3日間は毎日 status ページを確認していたが今はもう見ていない」「Opus 4.8 で十分といえば十分」というコメントが急増。一方「Fable 5 が戻ってきたときに乗り換えた人が戻ってくるかどうかが Anthropic 最大の課題」との鋭い指摘も。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/codex「Claude 障害続出・Fable 5 停止を受けて Codex に完全移行した」投稿が急増</div>
-      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Reddit r/codex — 2026.06.16</span></div>
+      <div class="card-title">r/codex「Codex の Sites 機能が便利すぎる — レポート→サイト公開が1コマンド」</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Reddit r/codex — 2026.06.17</span></div>
       <div class="card-body">
-        <p>12日間で10回の障害と最上位モデルの停止が重なり、r/codex では「本番 CI/CD に Claude を組み込んでいたが信頼性に懸念。Codex に移行した」という投稿が複数。「適切なスキルがあれば Codex の方が Claude Code より優れている」スレッド（468アップボート）への参照も増えている。</p>
+        <p>OpenAI の新 Sites 機能を紹介するデモ動画への反応スレッド。「週次レポートを自動生成してそのまま社内サイトに公開するワークフローが完成した」「非エンジニアの同僚が使い始めた」というレポートが多数。Claude Code との比較では「定型業務アウトプット系は Codex、コードそのものは Claude Code」という棲み分けが定着しつつある。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/MachineLearning「AI モデルの輸出規制は序章に過ぎない — GUARD Act と組み合わせるとどうなるか」</div>
-      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Reddit r/MachineLearning — 2026.06.16</span></div>
+      <div class="card-title">r/LocalLLaMA「Google Antigravity CLI 移行期限が明日 — Qwen3-Coder-Next との比較テスト結果を共有」</div>
+      <div class="card-meta"><span class="badge">LocalLLM</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06.17</span></div>
       <div class="card-body">
-        <p>Fable 5 の輸出規制と GUARD Act（チャットボット ID 認証義務化）を組み合わせた場合の影響を議論するスレッドが上昇。「外国人ユーザーの識別が必須になれば、匿名での AI 利用は事実上消滅する」との懸念と、「悪用防止のためには必要」との反論が拮抗。</p>
+        <p>Antigravity CLI への移行に合わせ、Gemini 3.5 Flash（クラウド）と Qwen3-Coder-Next 80B（ローカル）の比較ベンチマーク結果が複数共有されている。「中程度の難易度タスクでは差が縮まってきた」「ただしマルチステップエージェントは依然クラウドが優位」との評価が多数派。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/LocalLLaMA「Ollama が Anthropic Messages API に対応 — Fable 5 停止中の代替としてローカル実行が再注目」</div>
-      <div class="card-meta"><span class="badge">LocalLLM</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06</span></div>
+      <div class="card-title">r/MachineLearning「G7 首脳が米イラン AI 規制の共同声明を見送り — AI モデル輸出規制の多国間枠組みはまだ先」</div>
+      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Reddit r/MachineLearning — 2026.06.17</span></div>
       <div class="card-body">
-        <p>Ollama が Anthropic Messages API をサポートし、Claude Code のバックエンドを任意のローカルモデルに切り替え可能に。Fable 5 停止と障害頻発を受け「主権（sovereignty）のあるローカル実行」への関心が高まっている。Qwen3-Coder-Next（80B）との組み合わせが最も実用的と評価されているが、複雑なマルチステップタスクでの失敗率は依然高い。</p>
+        <p>G7 エビアン・サミットの閉幕声明では AI モデルの輸出規制に関する具体的な多国間合意は盛り込まれなかった模様。「各国が独自の規制を進める分断リスク」を懸念するスレッドが上昇。Fable 5 の事例が「単発の事故か、恒常的な規制の始まりか」という問いかけが活発に議論されている。</p>
       </div>
     </div>
   </section>
@@ -248,66 +263,70 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（6/16）の主要トピック:</strong> 英日が<strong>180億ポンド（約3.4兆円）</strong>の投資協定に合意（スターマー首相が高市総理を迎える）/ W杯：<strong>フランス3-1セネガル</strong>（ムバッペ2得点）・<strong>ノルウェー2-1イラク</strong>（ハーランドW杯デビュー・2得点）/ 米空軍 B-52 爆撃機がカリフォルニア州の基地で墜落（8人死亡）/ ノルウェー皇太子妃の長男・マリウス・ボルグ・ホイビー氏に禁固4年判決
+      <strong>本日（6/17）の主要トピック:</strong> <strong>G7エビアン閉幕</strong>——トランプ「ホルムズ海峡を2日以内に全面開放」、米イラン核合意の全文を初公開、G7首脳が支持 / <strong>FIFA W杯2026</strong>：メッシが通算200キャップ・W杯初ハットトリックでアルゼンチン3-0アルジェリア、クローゼと歴代最多16得点タイ / プーチンがASEAN首脳をカザンに招集 / 国連事務総長がハイチを訪問
     </div>
 
     <div class="card">
-      <div class="card-title">英国・日本が 180億ポンド（約3.4兆円）投資協定に合意 — 洋上風力・インフラ・技術・ライフサイエンスが対象</div>
-      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: Bloomberg / Public Sector Executive / Sustainable Times / AOL — 2026.06.16</span></div>
+      <div class="card-title">G7エビアン閉幕 — トランプ「ホルムズ海峡を2日以内に全面開放」、米イラン核合意の全文を初公開</div>
+      <div class="card-meta"><span class="badge">G7 / Diplomacy</span><span class="card-source">Source: PBS NewsHour / FOX 29 / NPR / CFR — 2026.06.17</span></div>
       <div class="card-body">
-        <p>スターマー英首相がダウニング街に高市早苗総理を迎え、180億ポンド規模の投資パッケージに合意した。G7 サミット（エビアン）前の首脳会談として、日英の「新時代の協力」を宣言する形となった。</p>
+        <p>フランス・エビアンで開催されていた G7 首脳会議が6月17日に閉幕。トランプ大統領は記者会見でイランとの停戦・核合意の全文を初めて公表し、「ホルムズ海峡は2日以内に完全に開放される」と宣言した。</p>
         <ul>
-          <li><strong>内訳:</strong> 日本企業が英国インフラ・金融サービスに90億ポンド以上、浮体式洋上風力発電プロジェクトに最大90億ポンド（5.9GW、800万世帯分の電力）</li>
-          <li><strong>その他分野:</strong> 半導体・ライフサイエンス・AI インフラへの5年間パイプラインが別途公表</li>
-          <li><strong>注意点:</strong> 新規投資額と既発表案件の積み上げが混在しているとの指摘もあり、「実質的な新規投資」の精査が今後の焦点</li>
-          <li><strong>背景:</strong> G7 でのトランプ政権との通商交渉を前に、日英双方が経済的連携の深さを示す狙い</li>
+          <li><strong>合意の核心:</strong> イランが濃縮ウランを米国管理下で封印・段階的廃棄することと引き換えに、3,000億ドル規模の民間投資ファンドを通じた経済支援を実施。すでに半額超が拠出約束済みと発表</li>
+          <li><strong>G7 の対応:</strong> マクロン仏大統領は「大変良い合意。G7 は一致してこれを支持する」とコメント。欧州各国も歓迎の意を示した</li>
+          <li><strong>ホルムズ開放の経済効果:</strong> 原油先物は即日で 8% 超下落。アジア市場も好感して全面高で反応</li>
+          <li><strong>注意点:</strong> トランプは「イランが高濃縮ウランにアクセスできない状況」を強調したが、検証体制の詳細は「技術的協議を今週から開始」とのみ説明</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA W杯2026（6/16）— フランス 3-1 セネガル、ムバッペがフランス記録更新 / ノルウェー 2-1 イラク、ハーランドが前半2得点デビュー</div>
-      <div class="card-meta"><span class="badge">World Cup</span><span class="card-source">Source: ESPN / Yahoo Sports / FIFA.com / Bolavip — 2026.06.16</span></div>
+      <div class="card-title">FIFA W杯2026（6/17）— メッシが200キャップ・W杯初ハットトリック、アルゼンチン 3-0 アルジェリア / クローゼと最多16得点タイ</div>
+      <div class="card-meta"><span class="badge">World Cup</span><span class="card-source">Source: ESPN / Euronews / Sunday Guardian / FOX Sports / NPR — 2026.06.17</span></div>
       <div class="card-body">
-        <p>W杯2026第6日目のハイライト。</p>
+        <p>カンザスシティでのアルゼンチン対アルジェリア（グループ J）でリオネル・メッシが歴史的な活躍を見せ、アルゼンチンが 3-0 で快勝した。</p>
         <ul>
-          <li><strong>フランス 3-1 セネガル（グループ I）:</strong> キリアン・ムバッペが2得点を挙げ、フランス代表のW杯歴代最多得点記録を更新。リオネル・メッシの通算W杯スコアも抜いた（ムバッペのW杯通算スコアが世界ランク上位に）</li>
-          <li><strong>ノルウェー 2-1 イラク（グループ I、前半終了時点）:</strong> アーリング・ハーランドがW杯初デビューで前半29分・43分の2得点。イラクはアイメン・フセインが39分に1点返す。ノルウェーはW杯本戦が1998年以来28年ぶり</li>
-          <li><strong>アルゼンチン vs アルジェリア（グループ J）:</strong> 現地時間夜9時キックオフ（米東部時間）のため、本版作成時点では未消化</li>
-          <li><strong>オーストリア vs ヨルダン（グループ J）:</strong> 同じく夜の試合のため結果未確定</li>
+          <li><strong>メッシの記録:</strong> 17分・60分・76分の3得点でW杯初ハットトリック達成。W杯通算16得点でミロスラフ・クローゼと歴代最多タイに並んだ</li>
+          <li><strong>200キャップ目:</strong> この試合がアルゼンチン代表通算200試合出場。これも男子W杯史上最年長でのブレースを記録</li>
+          <li><strong>W杯通算貢献度:</strong> ゴール+アシストの通算貢献24回でペレ（21回）を抜き世界歴代1位に</li>
+          <li><strong>6試合同日2得点:</strong> 同じ日にムバッペ（フランス対セネガル）が2得点していた6/16に続き、6/17もメッシとムバッペが揃って複数得点——得点王争いが最高潮</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">米空軍 B-52 爆撃機がカリフォルニア州の基地で墜落 — 8人死亡</div>
-      <div class="card-meta"><span class="badge">US News</span><span class="card-source">Source: GIGAZINE ヘッドライン / 複数メディア — 2026.06.16</span></div>
+      <div class="card-title">プーチン大統領、ASEANをカザンに招集 — 2日間の首脳会議でロシアと「戦略的パートナーシップ」拡大を目指す</div>
+      <div class="card-meta"><span class="badge">Russia / ASEAN</span><span class="card-source">Source: Just Security / Morning Star — 2026.06.17</span></div>
       <div class="card-body">
-        <p>カリフォルニア州の米空軍基地で B-52 戦略爆撃機が墜落し、搭乗員 8 人が死亡した。事故原因は調査中。米国防総省は声明を発表し、事故調査委員会を設置する方針を示した。</p>
+        <p>ロシアのウラジーミル・プーチン大統領が東南アジア諸国連合（ASEAN）の首脳らをカザンに招き、2日間の首脳会議を主催。欧米による制裁と孤立化戦略の中で、グローバルサウスとの連携を深める外交攻勢の一環。</p>
+        <ul>
+          <li><strong>議題:</strong> 貿易・エネルギー・安全保障・デジタル協力の4本柱で共同宣言の採択を目指す</li>
+          <li><strong>地政学的意義:</strong> G7 がイラン問題で結束する中でのカウンターシグナル。参加国の一部は米国から距離を置くロシアとの公開的な関与を避けてきたが、首脳レベルでの出席が相次いだ</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ノルウェー皇太子妃の長男・マリウス・ボルグ・ホイビー氏に禁固4年の有罪判決 — 強姦2件、他2件は無罪</div>
-      <div class="card-meta"><span class="badge">Europe</span><span class="card-source">Source: 複数国際メディア — 2026.06.16</span></div>
+      <div class="card-title">国連事務総長、ハイチの首都ポルトープランスを訪問 — 今年の死者 2,300 人・誘拐 100 人超の危機的状況</div>
+      <div class="card-meta"><span class="badge">Humanitarian</span><span class="card-source">Source: Just Security / NPR — 2026.06.17</span></div>
       <div class="card-body">
-        <p>ノルウェーのメッテ＝マリット皇太子妃の長男マリウス・ボルグ・ホイビー氏が、起訴された4件の強姦罪のうち2件について有罪とされ、禁固4年の実刑判決を受けた。残り2件については無罪。ノルウェー王室は深い悲しみと被害者への共感を表明した。</p>
+        <p>アントニオ・グテーレス国連事務総長がハイチの首都ポルトープランスを訪問。国連のデータによれば2026年に入ってからのギャング暴力による死者数はすでに2,300人、誘拐被害者は100人を超えた。グテーレス事務総長は国際社会への支援強化を訴えた。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">コンゴ民主共和国・イトゥリ州で新たなエボラ出血熱の流行を確認 — 脆弱な医療体制に試練</div>
-      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: ESPN World News blog / 国際保健機関筋 — 2026.06.16</span></div>
+      <div class="card-title">熱帯低気圧「アーサー」— 大西洋ハリケーンシーズン最初の命名嵐、メキシコ湾岸に洪水警戒</div>
+      <div class="card-meta"><span class="badge">Weather</span><span class="card-source">Source: NPR / Just Security — 2026.06.17</span></div>
       <div class="card-body">
-        <p>コンゴ民主共和国東部イトゥリ州で新たなエボラ出血熱の集団感染が確認された。同地域はすでに紛争・難民流入・マラリア等で医療体制が逼迫しており、WHO は緊急対応チームを派遣した。</p>
+        <p>2026年大西洋ハリケーンシーズンで最初の命名嵐となった熱帯低気圧「アーサー」が発生し、メキシコ湾北岸沿いで危険な洪水をもたらす恐れがあるとして警戒が呼びかけられている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">前日（6/15）の主要トピック振り返り — 米イラン覚書成立・日伊首脳会談・スペイン0-0カボベルデ</div>
-      <div class="card-meta"><span class="badge">Recap</span><span class="card-source">Source: 前版まとめ — 2026.06.15</span></div>
+      <div class="card-title">前日（6/16）の主要トピック振り返り — 英日 1.8兆円投資協定・フランス 3-1 セネガル・ハーランドW杯デビュー2得点・B-52 墜落8人死亡</div>
+      <div class="card-meta"><span class="badge">Recap</span><span class="card-source">Source: 前版まとめ — 2026.06.16</span></div>
       <div class="card-body">
-        <p>トランプ大統領が米イラン戦闘終結覚書（MOU）の成立を発表（ホルムズ海峡開放・原油先物下落）。高市総理がメローニ伊首相とサプライチェーン強靱化覚書・宇宙共同声明を発表。W杯ではGKヴォジーニャがスペインのシュート27本を完封しカボベルデが0-0ドローの大番狂わせ。詳細は<a href="2026-06-15/index.html">前版（6/15）</a>を参照。</p>
+        <p>スターマー英首相と高市早苗総理が180億ポンド（約3.4兆円）の投資協定に合意。W杯ではフランスがセネガルに3-1、ノルウェー対イラクでハーランドがW杯デビュー戦で前半2得点。米空軍 B-52 がカリフォルニア州で墜落し8人死亡。詳細は<a href="2026-06-16/index.html">前版（6/16）</a>を参照。</p>
       </div>
     </div>
   </section>
@@ -323,15 +342,7 @@
       <div class="card-title">【Qiita】2026年6月版 AIエージェントを本当に使いこなすコツ ― 調査・設計・コーディング別 実践ガイド</div>
       <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">著者: yun_bow — qiita.com — 2026.06</span></div>
       <div class="card-body">
-        <p>Claude と共同執筆された実践ガイド。「調査フェーズ」「設計フェーズ」「コーディングフェーズ」の3段階でエージェントを使い分ける手法を詳解。プロンプトキャッシュの活用・タスク粒度の最適化・サブエージェントへのコンテキスト渡し方のベストプラクティスを網羅。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">【Qiita】2026年6月第1週 AI動向まとめ ─ エージェントが「実証実験」を抜け、PC とブラウザに溶け込んだ週</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">著者: syunichisato51 — qiita.com — 2026.06</span></div>
-      <div class="card-body">
-        <p>Claude Code・Codex・Antigravity（旧 Gemini CLI）が揃って「OS レベルのコンテキスト管理」に対応した週として整理。エージェントが単なる「試み」から日常ツールに昇格したことを、実体験ベースでまとめた記事。トレンド入りを果たし週間閲覧数が急増。</p>
+        <p>引き続き今週のトップ記事。「調査フェーズ」「設計フェーズ」「コーディングフェーズ」の3段階でエージェントを使い分ける手法を詳解。昨日の Anthropic 使用量上限引き上げを受け「キャッシュ戦略をどう変えるか」のコメント追記が話題に。</p>
       </div>
     </div>
 
@@ -339,7 +350,15 @@
       <div class="card-title">【Zenn】AIエージェント時代、正直しんどい話</div>
       <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">著者: ryo369 — zenn.dev — 2026.06</span></div>
       <div class="card-body">
-        <p>複数のAIエージェントを並行して動かすことによる認知負荷・コンテキスト管理の難しさを率直に綴った記事。「エージェントが増えるほど、人間が管理するべきことも増える」という逆説を指摘し、人間が何をどこまで手放すべきかの設計論として話題に。本日の Fable 5 停止・Claude 障害を受けてさらに共感コメントが増えている。</p>
+        <p>「エージェントが増えるほど人間の管理コストも増える」という逆説を指摘した記事が引き続きトレンド入り。Claude 障害頻発・Fable 5 停止の週を受け「可用性の担保をどう設計するか」のコメント欄が盛況。「特定クラウドへの依存リスク」を問い直す議論の場となっている。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【Zenn】Remotion Agent Skills の本当の強みは「AI が動画の中身を理解できる」こと</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">著者: tenormusica — zenn.dev — 2026.06</span></div>
+      <div class="card-body">
+        <p>Remotion の「Agent Skills」機能が動画コンテンツの意味理解を可能にする仕組みを解説した記事が今週浮上。GitHub Stars が 33,680 を超え、「AI による動画編集の自動化」という観点から注目を集めている。Codex の Sites 機能と組み合わせた応用例が注目コメントに。</p>
       </div>
     </div>
   </section>
@@ -347,8 +366,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月16日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: The New Stack · The Decoder · DigitalApplied · TechTimes · StatusGator · Anthropic · Al Jazeera · Fortune · Tom's Hardware · StartupHub.ai · Bloomberg · Public Sector Executive · ESPN · Yahoo Sports · FIFA.com · Bolavip · OpenAI · Gartner · NVIDIA · Memeburn · TechCrunch · GIGAZINE · Qiita · Zenn</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月17日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic · Releasebot · Claude Code Docs · status.claude.com · TechCrunch · OpenAI · Google Cloud · Google DeepMind · PBS NewsHour · FOX 29 · NPR · CFR · ESPN · Euronews · Sunday Guardian · FOX Sports · Just Security · Morning Star · Firecrawl · Lushbinary · The New Stack · Qiita · Zenn</p>
 </footer>
 
 </body>
