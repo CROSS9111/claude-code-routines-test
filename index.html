@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月20日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月21日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,8 +67,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code v2.1.185 リリース（ストール警告20秒に延長）/ v2.1.183 Auto mode が破壊的 git・Terraform コマンドをブロック / 低スキル攻撃者が Claude・Codex を悪用し14社侵害（Help Net Security）/ Fable 5 輸出規制9日目 / ロシアがウクライナへ報復攻撃 / FIFA W杯11日目 / Google Antigravity 移行最終期限</p>
-  <p class="date">2026年6月20日（土）&nbsp;|&nbsp;<a href="2026-06-19/index.html">前版（6/19）</a></p>
+  <p class="subtitle">Claude Code Artifacts ベータ公開（Team/Enterprise向けセッション共有ページ）/ Fable 5 輸出規制10日目 / OpenAI Codex 週間ユーザー500万人突破・Gartner MQリーダー認定 / 米イラン核交渉60日スプリント開始 / FIFA W杯スペイン4-0サウジアラビア</p>
+  <p class="date">2026年6月21日（日）&nbsp;|&nbsp;<a href="2026-06-20/index.html">前版（6/20）</a></p>
 </header>
 
 <nav>
@@ -88,80 +88,82 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（6/20）のハイライト:</strong> Claude Code v2.1.185 が本日リリースされ、API 応答待ちのストール通知が20秒後（従来10秒）に変更・メッセージが明確化された。また昨日の v2.1.183 では Auto mode がより安全になり、<code>git reset --hard</code> や <code>terraform destroy</code> などの破壊的コマンドをユーザーが明示的に要求していない限りブロックするようになった。Fable 5 輸出規制は9日目で、週末のため政府との協議ペースは鈍化しており来週まで継続する見通し。
+      <strong>本日（6/21）のハイライト:</strong> Claude Code が <strong>Artifacts Review Pages</strong>（ベータ）を本日公開。Team/Enterprise チームがコーディングセッションを PR ウォークスルー・システム解説ダッシュボード・リリースチェックリストなどのライブページに変換・共有できるようになった。Fable 5 輸出規制は10日目で日曜日のため政府協議は引き続き停滞中。来週月曜日（6/22）以降の動向が焦点。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">v2.1.185</div><div class="stat-label">Claude Code 本日リリース</div></div>
-      <div class="stat-card"><div class="stat-value">停止9日目</div><div class="stat-label">Fable 5・Mythos 5（全世界）</div></div>
-      <div class="stat-card"><div class="stat-value">14社</div><div class="stat-label">AIエージェント悪用による侵害</div></div>
-      <div class="stat-card"><div class="stat-value">code_exec</div><div class="stat-label">SDK v0.110.0 新ツール対応</div></div>
+      <div class="stat-card"><div class="stat-value">Artifacts β</div><div class="stat-label">Claude Code 本日公開</div></div>
+      <div class="stat-card"><div class="stat-value">停止10日目</div><div class="stat-label">Fable 5・Mythos 5</div></div>
+      <div class="stat-card"><div class="stat-value">$2.5B ARR</div><div class="stat-label">Claude Code（9ヶ月達成）</div></div>
+      <div class="stat-card"><div class="stat-value">$30B</div><div class="stat-label">Anthropic 収益ランレート Q1末</div></div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.185（本日 6/20）— ストール警告を20秒後に延長・メッセージを明確化</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: GitHub anthropics/claude-code — 2026.06.20</span></div>
+      <div class="card-title">Claude Code Artifacts Review Pages（ベータ）— Team/Enterprise 向けにコーディングセッションをライブ共有ページに変換</div>
+      <div class="card-meta"><span class="badge">New Feature</span><span class="card-source">Source: claude.com/blog · VentureBeat · testingcatalog.com — 2026.06.21</span></div>
       <div class="card-body">
-        <p>本日リリースされた v2.1.185 は小規模ながらユーザー体験に直結する改善が含まれている。</p>
+        <p>Anthropic が Claude Code の Artifacts Review Pages ベータを Team・Enterprise 向けに本日公開した。AI コーディングセッションを PR ウォークスルー・システム解説・インタラクティブダッシュボード・リリースチェックリストなどの<strong>ライブで更新されるウェブページ</strong>として共有できる機能。</p>
         <ul>
-          <li><strong>ストール警告の遅延を10秒→20秒に変更:</strong> 以前は API からの応答が10秒途切れると警告が出ていたが、20秒に延長。長い処理でも不必要に警告が出るケースが減少</li>
-          <li><strong>メッセージの明確化:</strong> 旧「No response from API · Retrying in…」→ 新「Waiting for API response · will retry in…」。「応答なし」ではなく「待機中」というニュアンスに変更され、ユーザーの不安を軽減</li>
-        </ul>
-        <p>小さな変更だが、長時間タスクや重い処理を実行するユーザーには日常的に目にする部分であり、体感に直接影響する。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Claude Code v2.1.183（昨日 6/19）— Auto mode が破壊的コマンドをブロック・モデル廃止警告・帰属設定追加</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: GitHub anthropics/claude-code — 2026.06.19</span></div>
-      <div class="card-body">
-        <p>昨日リリースの v2.1.183 は安全性・使い勝手の両面で重要な変更が多数含まれる。</p>
-        <ul>
-          <li><strong>Auto mode の安全強化（主要変更）:</strong> ユーザーが明示的に「ローカルの作業を破棄して」と依頼していない限り、以下のコマンドをブロック：<code>git reset --hard</code>・<code>git checkout -- .</code>・<code>git clean -fd</code>・<code>git stash drop</code>。また <code>git commit --amend</code> は現在セッション内でエージェントが作成したコミット以外に対してはブロック。さらにインフラ破壊コマンド（<code>terraform destroy</code>・<code>pulumi destroy</code>・<code>cdk destroy</code>）も明示的な依頼なしにはブロック</li>
-          <li><strong>モデル廃止警告:</strong> 廃止予定モデルや自動更新されたモデルを使用しようとすると stderr（<code>-p</code> モード）に警告を表示。エージェントのフロントマターで指定したモデルにも対応</li>
-          <li><strong>attribution.sessionUrl 設定:</strong> Web・Remote Control セッションのコミット・PR から claude.ai セッションリンクを省略する設定を追加</li>
-          <li><strong>/config の改善:</strong> <code>/config --help</code> でショートハンドキー一覧を表示。Enter と Space の両方でトグル設定を変更可能、Esc で保存して閉じるように変更</li>
-          <li><strong>ロゴ下の「setup issues」行を削除:</strong> <code>/doctor</code> または <code>--debug</code> を使うよう誘導</li>
-          <li><strong>主なバグ修正:</strong> サブエージェント生成時の 400 エラー（thinking.disabled.display）修正・サブエージェント内での WebSearch が空を返す問題修正・vim モードのカーソル位置ずれ修正・Windows Terminal での TUI 破損修正・スケジュールタスクがキーボード入力として扱われる問題修正</li>
+          <li><strong>主な仕組み:</strong> Claude Code がセッション中の作業進捗を Artifact としてキャプチャし、コーディングセッションのコンテキストを使ってページを自動更新。同じ URL で常に最新状態が参照できる</li>
+          <li><strong>セキュリティ設計:</strong> 組織の認証済みメンバーのみ閲覧可能（公開不可）。管理者コントロール・16 MiB のサイズキャップ・ブラウザ制限により内部レビュー専用に制限</li>
+          <li><strong>対応ユースケース:</strong> PR のウォークスルー・アーキテクチャ説明・ライブダッシュボード・デプロイチェックリスト。フロントエンド開発での活用も拡大予定</li>
+          <li><strong>アクセス方法:</strong> Claude Code CLI・デスクトップアプリから利用可能。生成されたページはブラウザで閲覧</li>
+          <li><strong>意義:</strong> 「AI エージェントが何をしたか」をチームで可視化・レビューできる新しいコラボレーション層の追加。PR レビューや設計レビューの流れを変える可能性がある</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">低スキル攻撃者が Claude・Codex を使い14社に侵害 — AI エージェントが攻撃手段として台頭</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: Help Net Security — 2026.06.17</span></div>
+      <div class="card-title">Claude Code 直近アップデート — 会話言語でのセッションタイトル・Bedrock キャッシュ改善・footer バッジ設定・ストリーミング復旧強化</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: GitHub anthropics/claude-code · Releasebot — 2026.06.21</span></div>
       <div class="card-body">
-        <p>Help Net Security が報じた研究で、最小限の技術知識しか持たない攻撃者が Claude と Codex を悪用して14の企業に侵害を成功させたことが明らかになった。AI エージェントの普及が攻撃者側の参入障壁を下げていることへの警鐘として業界内で広く共有されている。</p>
+        <p>Artifacts 発表に合わせて明らかになった直近のアップデートには複数のセッション体験改善が含まれる。</p>
         <ul>
-          <li><strong>主な手口:</strong> Claude・Codex のコーディング補助能力を使って脆弱性の特定・エクスプロイトコードの自動生成・環境横断の侵害を実施</li>
-          <li><strong>ガードレールの脆弱性:</strong> 研究者は両ツールのほとんどのガードレールを比較的容易に回避できると指摘。プロンプトエンジニアリングだけで安全対策を突破するケースが多数報告された</li>
-          <li><strong>対策の方向性:</strong> 組織側での Claude Code/Codex の権限スコープ設定（denyRead/allowRead・サンドボックス）の重要性が改めて強調されている。「ツールが賢くなるほど、使う側の設定が重要になる」というコンセンサスが形成されつつある</li>
-          <li><strong>Anthropic / OpenAI の反応:</strong> 両社とも「悪意のある利用の防止に継続的に取り組んでいる」と声明を発表したが、具体的な対策の詳細は開示されていない</li>
+          <li><strong>会話言語でのセッションタイトル生成:</strong> セッションタイトルがユーザーの会話言語（日本語・英語など）で自動生成されるようになった</li>
+          <li><strong>footerLinksRegexes 設定追加:</strong> 正規表現にマッチするリンクにフッターリンクバッジを付与する設定が追加された</li>
+          <li><strong>Bedrock 認証キャッシュ改善:</strong> AWS Bedrock 経由で Claude を使用する場合の認証情報キャッシュが改善され、繰り返しの API 呼び出しが高速化</li>
+          <li><strong>ストリーミング復旧の改善:</strong> ストリーミングが中断した際の復旧メカニズムが強化。長時間タスクでの中断を減らす</li>
+          <li><strong>Remote Control の改善:</strong> Web セッションからの Remote Control 操作がよりスムーズに</li>
+          <li><strong>/doctor ワークフロー改善:</strong> 設定診断の /doctor コマンドとプラグイン管理のワークフローが明確化</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Anthropic Python SDK v0.110.0 — <code>code_execution_20260120</code> ツール対応を追加</div>
-      <div class="card-meta"><span class="badge">SDK</span><span class="card-source">Source: GitHub anthropics/anthropic-sdk-python — 2026.06.18</span></div>
+      <div class="card-title">Dario Amodei CEO — Claude Code が $2.5B ARR 達成（9ヶ月）、Anthropic 全体で $30B 収益ランレート</div>
+      <div class="card-meta"><span class="badge">Business</span><span class="card-source">Source: llm-stats.com · Presenc AI June 2026 Roundup</span></div>
       <div class="card-body">
-        <p>Anthropic Python SDK v0.110.0（6/18）では、新しいコード実行ツール <code>code_execution_20260120</code> のサポートが追加された。2026年1月20日付のバージョン識別子を持つこのツールは、モデルが安全なサンドボックス環境でコードを直接実行できる機能の正式サポートを示している。同日リリースの v0.111.0 では拒否フォールバックミドルウェアのリクエストへのタグ付け機能も追加された。</p>
+        <p>Dario Amodei CEO が明らかにした数字が業界内で広く引用されている。</p>
         <ul>
-          <li><strong>v0.110.0 の他の変更:</strong> Bedrock ストリームイベントのタイプ保持修正・x-stainless-helper ヘッダーのマージ時上書き修正</li>
-          <li><strong>背景（v0.108.0、6/9）:</strong> claude-fable-5・claude-mythos-5 向けにサーバーサイドおよびクライアントサイドの拒否フォールバックミドルウェアを追加済み（輸出規制対応）</li>
+          <li><strong>Claude Code ARR:</strong> 2025年9月のリリースから約9ヶ月で <strong>年間経常収益 $2.5B（約3,750億円）</strong> を達成。AI コーディングツールとして史上最速水準の立ち上がりと見られる</li>
+          <li><strong>Anthropic 全体の収益ランレート:</strong> Q1 2026 末時点で <strong>$30B（約4.5兆円）</strong>。2025年初頭と比較して1四半期で80倍の年率成長</li>
+          <li><strong>市場への影響:</strong> 生成 AI 産業全体の収益化加速を示すシグナルとして業界全体で注目されている</li>
+          <li><strong>Claude Code の貢献:</strong> Enterprise での採用加速が主因とみられ、API・サブスクリプション収益が全体を牽引</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Fable 5・Mythos 5 輸出規制停止9日目 — 週末で政府協議は停滞、来週に解除の鍵</div>
-      <div class="card-meta"><span class="badge">Export Control</span><span class="card-source">Source: CNBC / Axios — 2026.06.20</span></div>
+      <div class="card-title">AI コーディングエージェント最新スコアカード — Codex+GPT-5.5 が 83.4%、Fable 5 復旧後は Claude Code が 83.1% に</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: MorphLLM best-ai-coding-agents-2026 — 2026.06</span></div>
       <div class="card-body">
-        <p>6月12日の米商務省エクスポートコントロール指令から9日目を迎えた。土曜日のため政府当局との協議は実質的に停滞しており、最短でも来週月曜日（6/22）以降の対応待ちとなっている。</p>
+        <p>6月最新の Terminal-Bench スコアと週間ユーザー数の比較。</p>
         <ul>
-          <li><strong>現在稼働中のモデル:</strong> Opus 4.8・Sonnet 4.6・Haiku 4.5（国内外で正常稼働）</li>
-          <li><strong>SDK 対応済み:</strong> Python SDK v0.108.0 でフォールバックミドルウェア対応済み。API 呼び出しが拒否されてもフォールバックが発動する仕組み</li>
-          <li><strong>コミュニティの状況:</strong> 「Sonnet 4.6 + v2.1.183 の安全機能で当面は問題ない」という落ち着いた評価が多数。長期化への懸念は続く</li>
-          <li><strong>過去の参考:</strong> Claude Code v2.1.176（6/12）では Fable 5 を使う組織で Auto mode が Opus 4.8 にフォールバックするよう修正済み</li>
+          <li><strong>Terminal-Bench（最新）:</strong> Codex+GPT-5.5 83.4% → Claude Code+Sonnet 4.6（Fable 5 停止中）80.1% → Antigravity+Gemini 3.5 Flash 79.8%。Fable 5 復旧後は Claude Code+Fable 5 83.1% が見込まれる</li>
+          <li><strong>週間アクティブユーザー（6月時点推計）:</strong> Codex 500万人超、Claude Code 約350万人、Antigravity 約200万人</li>
+          <li><strong>コスト比較:</strong> Claude Code Pro $20（制限あり）/ Claude Code Max $100 / Codex Enterprise 要問合せ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Fable 5・Mythos 5 輸出規制停止10日目 — 日曜日で協議停滞、月曜日（6/22）以降の動向に注目</div>
+      <div class="card-meta"><span class="badge">Export Control</span><span class="card-source">Source: CNBC · Axios — 2026.06.21</span></div>
+      <div class="card-body">
+        <p>6月12日の米商務省エクスポートコントロール指令から10日目。週末のため政府当局との協議は実質的に進展なし。最短でも月曜日（6/22）以降が次のマイルストーン。</p>
+        <ul>
+          <li><strong>現在稼働中のモデル:</strong> Opus 4.8・Sonnet 4.6・Haiku 4.5（国内外で正常稼働）。Claude Code v2.1.185 以降では自動フォールバック対応済み</li>
+          <li><strong>コミュニティの温度感:</strong> Artifacts 機能発表を受けて「Fable 5 なしでも前進している」という評価が多数。週末の新機能リリースで落ち着いた雰囲気</li>
+          <li><strong>産業界のロビー活動:</strong> 米国 AI 協会・主要テック企業 CEO が「意図せぬ競争力低下をもたらす」と継続して主張。来週の議会証言が予定されているとの報道あり</li>
         </ul>
       </div>
     </div>
@@ -175,49 +177,53 @@
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Python SDK v2.43.0 — 管理者向け支出アラート機能を追加</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: GitHub openai/openai-python — 2026.06.17</span></div>
+      <div class="card-title">OpenAI Codex 週間ユーザー500万人突破 — Gartner Enterprise AI Coding Agents MQ でリーダー認定</div>
+      <div class="card-meta"><span class="badge">Milestone</span><span class="card-source">Source: OpenAI · Gartner — 2026.06</span></div>
       <div class="card-body">
-        <p>OpenAI Python SDK v2.43.0（6/17）で管理者向け支出アラート（Admin spend alerts）機能が追加された。組織全体の API 使用量に予算アラートを設定可能になり、コスト管理が容易になる。v2.42.0（6/16）では CI 環境ハンドリングの改善も行われた。Claude Code 利用企業のコスト管理に並んで、Codex 利用企業でも支出の可視化ニーズが高まっていることを反映している。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Google Antigravity CLI 移行最終期限（6/20）— エンタープライズ向け48時間猶予が本日終了</div>
-      <div class="card-meta"><span class="badge">Deadline</span><span class="card-source">Source: Google / Reddit — 2026.06.20</span></div>
-      <div class="card-body">
-        <p>Google Antigravity CLI（旧 Gemini CLI）の移行期限が本日（6/20）で終了。企業向けには6/18の期限から48時間の猶予が設けられていたが、本日をもって完全に移行完了が求められる。</p>
+        <p>OpenAI が6月初旬に確認した Codex の週間アクティブユーザーが500万人を突破（4月21日時点400万人、年初60万人）。Gartner 2026 Enterprise AI Coding Agents Magic Quadrant でリーダーに認定された。</p>
         <ul>
-          <li><strong>移行済みユーザーの評価:</strong> 「新バックグラウンドタスクスケジューリング機能が便利」「レスポンスが速くなった」という好評価が多数</li>
-          <li><strong>未解決の問題:</strong> 一部の VS Code 拡張との競合問題についてはパッチが準備中。本日期限内に移行できなかった企業は手動設定でのロールオーバー対応が必要</li>
-          <li><strong>旧コマンドの動作:</strong> 旧 Gemini CLI コマンドで認証エラーが発生しているという報告が多数確認されており、早急な移行が推奨される</li>
+          <li><strong>ユーザー構成の変化:</strong> 利用者の約20%が開発者以外のナレッジワーカー（データアナリスト・PM・非エンジニア）に。AI コーディングエージェントの利用層が広がっている</li>
+          <li><strong>Gartner 評価ポイント:</strong> イノベーション・エンタープライズスケールでの展開力が高く評価。Antigravity（旧 Gemini CLI）は「Visionary」枠</li>
+          <li><strong>GPT-5.5 との統合効果:</strong> Terminal-Bench 83.4% でトップ。「Enterprise 向けのエージェント能力が前世代比で大幅向上」と評価されている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">AI コーディングエージェント Terminal-Bench 最新スコア — Codex+GPT-5.5 が 83.4%、Claude Code+Sonnet 4.6 は 80.1%</div>
-      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: MorphLLM / best-ai-coding-agents-2026 — 2026.06</span></div>
+      <div class="card-title">Codex + GPT-5.5 の新機能 — in-app ブラウザ・「仕事の続き」提案・EEA/UK/スイスへ Computer Use 展開</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: OpenAI · NVIDIA Blog — 2026.06</span></div>
       <div class="card-body">
-        <p>6月時点の Terminal-Bench スコア（6月時点）では Codex + GPT-5.5 が 83.4% でリード。Fable 5 停止以降、Claude Code + Sonnet 4.6 の組み合わせが 80.1% に低下しており、差が広がっている。Antigravity + Gemini 3.5 Flash は 79.8%。</p>
+        <p>GPT-5.5 の統合以降、Codex に複数の新機能が追加されている。</p>
         <ul>
-          <li><strong>注意点:</strong> ベンチマークはタスク種別によって結果が大きく異なる。複雑なアーキテクチャ検討や長文コンテキストが必要なシナリオでは実務報告も多く、単純な比較は難しい</li>
-          <li><strong>Fable 5 回復後の予測:</strong> Fable 5 が復旧した場合、Claude Code + Fable 5 の組み合わせは 83.1% に戻ると見られている</li>
-          <li><strong>週刊アクティブユーザー推定:</strong> Codex 500万人超、Claude Code 約350万人、Antigravity 約200万人（2026.06現在）</li>
+          <li><strong>in-app ブラウザ:</strong> Codex アプリに内蔵ブラウザが追加。ページ上に直接コメントして精密な指示が可能。フロントエンド・ゲーム開発（localhost）に対応</li>
+          <li><strong>「仕事の続き」提案機能:</strong> プロジェクト・プラグイン・メモリのコンテキストを使い、前回の作業の続きや今日の取り組み方を自動提案するモード</li>
+          <li><strong>Computer Use の EEA/UK/スイス展開:</strong> macOS・Windows でデスクトップアプリを視覚的に操作できる Computer Use 機能が欧州・英国・スイスのユーザーにも開放された</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code vs Codex vs OpenCode 2026年版比較 — 用途別の選択指針</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: Medium / Firecrawl / Developers Digest — 2026.06</span></div>
+      <div class="card-title">GitHub Copilot が使用量ベース課金に移行（6/1）— AI コーディングの料金モデルが過渡期に</div>
+      <div class="card-meta"><span class="badge">Billing</span><span class="card-source">Source: llm-stats.com · GitHub — 2026.06</span></div>
       <div class="card-body">
-        <p>複数の比較記事が2026年版の最新状況をまとめている。共通の結論は「単体最強より用途による使い分け」という方向性。</p>
+        <p>GitHub Copilot が6月1日から使用量ベースの従量課金に移行。複雑な AI コーディングセッションの推論コスト上昇が旧来の無制限サブスクリプションモデルの維持を困難にした背景がある。</p>
         <ul>
-          <li><strong>Claude Code:</strong> 大規模コードベース・複雑なアーキテクチャ検討・長文コンテキストの処理。ターミナル体験の応答性が最高水準でタイトなペアプログラミングに最適</li>
-          <li><strong>Codex:</strong> 複雑なタスクへの徹底した取り組み（よりゆっくりだが丁寧）・エンタープライズ分析（Admin spend alerts 等）</li>
-          <li><strong>OpenCode / その他:</strong> 軽量・定型処理・コスト最適化</li>
-          <li><strong>開発者の使い分け傾向:</strong> 「設計は Claude Code、定型業務は Codex・Antigravity」というルーティングが一般化</li>
+          <li><strong>業界全体のトレンド:</strong> Claude Code・Codex でも「プログラマティック使用は別プール」などの課金分離が進んでいる。AI コーディングの収益化モデルが過渡期にある</li>
+          <li><strong>ユーザーの反応:</strong> 「実際の使用量が分かるのでコスト管理しやすい」という肯定的意見と「予算が立てにくい」という懸念が混在</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">2026年6月 LLM リリースまとめ — GPT-5.5 Instant デフォルト化・Gemini 3.5 Flash・Chinese models 競争激化</div>
+      <div class="card-meta"><span class="badge">Overview</span><span class="card-source">Source: Presenc AI · llm-stats.com — 2026.06</span></div>
+      <div class="card-body">
+        <p>6月の LLM リリース状況の概観。</p>
+        <ul>
+          <li><strong>OpenAI:</strong> GPT-5.5 Instant が ChatGPT のデフォルトモデルに。エンタープライズ向けのエージェント能力が前世代比で大幅向上</li>
+          <li><strong>Google:</strong> Gemini 3.5 Flash が Google I/O で発表。大規模フラグシップモデルに匹敵する性能を4倍速で実現。Antigravity CLI の主力モデルに</li>
+          <li><strong>Chinese models（参考）:</strong> Qwen 3.7・DeepSeek V4.1・Hunyuan・ERNIE などが相次ぎリリース。オープンソース方面でも競争が激化</li>
+          <li><strong>全体傾向:</strong> 「どのモデルを選ぶか」よりも「どのエージェント体験を選ぶか」という時代に移行しつつある</li>
         </ul>
       </div>
     </div>
@@ -231,62 +237,66 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「v2.1.183 の破壊的コマンドブロック機能 — これは本当に助かった話」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.20</span></div>
+      <div class="card-title">r/ClaudeAI「Claude Code Artifacts がついに来た — チームでのコードレビューが変わるかも」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.21</span></div>
       <div class="card-body">
-        <p>v2.1.183 で追加された Auto mode の破壊的コマンドブロック機能について「実際に助かった」という体験談スレッドが急上昇中。「terraform destroy を止められた」「git reset --hard が実行されそうだったが止まった」という報告が多数。</p>
+        <p>本日発表の Artifacts Review Pages に関するスレッドが急上昇中。「PR ウォークスルーを AI が自動生成してくれるなら設計レビューの工数が激減する」という期待感が多数。</p>
         <ul>
-          <li><strong>上位コメントの反応:</strong> 「これを待っていた」「なぜ今まで無かったのか」という声が多数。一方で「明示的に許可した場合の UX が分かりにくい」という改善要望も</li>
-          <li><strong>設定方法:</strong> 明示的に破壊的コマンドを許可したい場合は、会話内で「〇〇を削除して問題ない」と明確に伝えるか、CLAUDE.md で事前に許可スコープを定義するのが推奨される</li>
+          <li><strong>肯定的な声:</strong> 「コーディングセッションの中身をチームに見せる方法がようやく生まれた」「セキュリティが org 内限定なのが安心」「Enterprise での説明コストが減りそう」</li>
+          <li><strong>懸念・質問:</strong> 「16MiB キャップは大きなプロジェクトには足りない？」「Free/Pro プランへの展開時期が不明」「デザインカスタマイズが現状できない」</li>
+          <li><strong>実用例の共有:</strong> 「デプロイ前のアーキテクチャ変更をマネジメントに説明する用途に使いたい」「テスト計画のライブ更新に活用できそう」</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Fable 5 停止9日目（土曜）— 今週末は何も動かないと諦めた」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.20</span></div>
+      <div class="card-title">r/ClaudeAI「Claude Code は『市場最高の AI コーディングエージェント』— 270 upvote のスレッドが週末に再浮上」</div>
+      <div class="card-meta"><span class="badge">Trending</span><span class="card-source">Reddit r/ClaudeAI · r/codex — 2026.06</span></div>
       <div class="card-body">
-        <p>9日目に入った土曜日、コミュニティの雰囲気は「今週末は動きなし」で落ち着いている。Sonnet 4.6 + 最新 Claude Code（v2.1.183/185）の組み合わせで実務がこなせているという報告が増加。</p>
+        <p>270 upvotes を集めた「Claude Code はコーディングエージェントとして群を抜いている」というスレッドが週末に再浮上。一方 r/codex では「スキルがあれば Codex の方が優れている」という逆張り意見（468 upvotes）が並存。</p>
         <ul>
-          <li><strong>上位コメント:</strong> 「v2.1.183 の安全機能追加を見ると Anthropic は輸出規制問題と関係なく前進してる」「Fable 5 なしでも現状の Sonnet 4.6 は1年前の最高性能より上」</li>
-          <li><strong>悲観的な声:</strong> 「研究用途では文脈長が足りない」「週明けに何かアナウンスがあることを願う」</li>
+          <li><strong>Claude Code 支持派:</strong> 大規模コードベースへの理解力・ターミナル体験の応答性・複雑なアーキテクチャ検討能力が他を圧倒</li>
+          <li><strong>Codex 支持派:</strong> 複雑タスクへの粘り強い取り組み・GPT-5.5 のエンタープライズ分析能力・in-app ブラウザの実用性</li>
+          <li><strong>結論傾向:</strong> 「設計は Claude Code、定型業務は Codex」という使い分けが定着しつつある</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/netsec「低スキル攻撃者が Claude・Codex で14社侵害 — AI ガードレールはどこまで信用できるか」</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/netsec / r/MachineLearning — 2026.06.20</span></div>
+      <div class="card-title">r/LocalLLaMA「Fable 5 停止10日目 — Sonnet 4.6 でどこまで戦えるか検証スレッド」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06.21</span></div>
       <div class="card-body">
-        <p>Help Net Security の報告（6/17）を受けたセキュリティコミュニティでの議論が白熱。「AI エージェントがスキルレベルに関係なく攻撃ツールになりうる」という懸念が広がっている。</p>
+        <p>Fable 5 の輸出規制開始から10日経過した今、Sonnet 4.6 での実務対応状況を共有する検証スレッドが活発。</p>
         <ul>
-          <li><strong>技術的な議論の焦点:</strong> ガードレールのバイパス手法・プロンプトインジェクション耐性・エージェントに与える権限の最小化</li>
-          <li><strong>防衛側の視点:</strong> 「攻撃者が AI を使えるなら防衛側も AI を使うべき」という論調が台頭。セキュリティ監査への Claude Code 活用事例も共有されている</li>
-          <li><strong>Claude Code 設定の観点:</strong> <code>denyRead</code>/<code>allowRead</code> によるファイルアクセス制御・サンドボックス環境での実行・権限最小化の CLAUDE.md 設定が推奨として広まっている</li>
+          <li><strong>Sonnet 4.6 で問題ない用途:</strong> 一般的なコーディングタスク・バグ修正・PR レビュー補助・ドキュメント生成。「日常的な Claude Code ユーザーのほとんどは気づかないレベル」との評価</li>
+          <li><strong>Fable 5 が必要な場面:</strong> 複雑な多段階推論・長大なコードベース全体の理解・研究用途での深い分析</li>
+          <li><strong>週明けへの期待:</strong> 「月曜（6/22）に何らかの動きがあるはず」という期待感。「10日を超えるほど長引かない」という楽観論も</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/LocalLLaMA「/config key=value 構文（v2.1.181）が思ったより便利だった」</div>
-      <div class="card-meta"><span class="badge">Tips</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06.20</span></div>
+      <div class="card-title">r/netsec「AI エージェントのセキュリティ設定ベストプラクティス — 先週の侵害報告を受けた総まとめ」</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/netsec — 2026.06.21</span></div>
       <div class="card-body">
-        <p>v2.1.181（6/17）で追加された <code>/config key=value</code> 構文について、「対話しながら設定を変えられるのが便利すぎる」というポジティブなスレッドが上位。<code>/config thinking=false</code>・<code>/config model=sonnet</code> などの活用例が多数共有されている。</p>
+        <p>先週の Help Net Security 記事（低スキル攻撃者による14社侵害）を受けて週末にかけて総まとめスレッドが完成。</p>
         <ul>
-          <li><strong>特に評価が高い点:</strong> Remote Control セッションからも使えること・<code>/config --help</code> でキー一覧が確認できること</li>
-          <li><strong>macOS ユーザー向け tips:</strong> <code>sandbox.allowAppleEvents=true</code> で osascript や Automator との連携が可能になったという報告も</li>
+          <li><strong>Claude Code 推奨設定:</strong> <code>denyRead</code> による機密ファイル読み取り禁止・本番環境へのアクセス権を与えない・CLAUDE.md で許可スコープを明示</li>
+          <li><strong>組織レベルの対策:</strong> サンドボックス実行・ネットワーク分離・監査ログ取得・異常ファイルアクセスの検知ルール設定</li>
+          <li><strong>Artifacts との関連:</strong> 「Artifacts が org 内限定かつ管理者コントロール付きなのは正しい設計」という評価も</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/programming「AI エージェントのセキュリティ問題、今週一番真剣に議論されているトピック」</div>
-      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Reddit r/programming — 2026.06.20</span></div>
+      <div class="card-title">r/programming「2026年のバイブコーディング考察 — AI エージェントに任せた技術的負債の現実」</div>
+      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Reddit r/programming — 2026.06.21</span></div>
       <div class="card-body">
-        <p>Help Net Security の記事をきっかけに「AI コーディングエージェントに与える権限の範囲」を見直す議論が r/programming で活発化。「バイブコーディング（AI 丸投げスタイル）の技術的負債問題」と並んで今週最も注目されているトピックとなっている。</p>
+        <p>AI への全面依存スタイル（バイブコーディング）の技術的負債問題を考察するスレッドが今週のトレンド。「早期スタートアップが AI エージェント生成コードで構築した MVP の後始末」という視点の記事が話題に。</p>
         <ul>
-          <li><strong>共通の提言:</strong> 本番環境へのアクセス権を AI エージェントに与えない・読み取り専用モードから始める・CLAUDE.md で明示的に許可範囲を制限する</li>
-          <li><strong>カウンター意見:</strong> 「適切に設定すれば便益の方がリスクより大きい」「問題はツールではなく使い方」</li>
+          <li><strong>問題事例:</strong> 「テストなしで AI が量産したコードが半年で誰も触れないレガシーに」「一貫性のないアーキテクチャ決定が蓄積」</li>
+          <li><strong>反論:</strong> 「正しく使えば AI は品質を上げる」「Artifacts のような説明ツールが負債管理を助ける」</li>
+          <li><strong>共通の結論:</strong> 「AI エージェントは強力だが、ソフトウェアエンジニアリングの基礎（テスト・レビュー・設計原則）を代替するものではない」</li>
         </ul>
       </div>
     </div>
@@ -299,62 +309,74 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（6/20）の主要トピック:</strong> <strong>ロシア</strong>：昨日の大規模ドローン攻撃への報復としてウクライナへの攻撃を実施 / <strong>FIFA W杯</strong>：グループステージ第11日・イングランド・スペイン・フランスなど欧州強豪が登場 / <strong>Google Antigravity</strong>：移行最終期限到来 / <strong>Juneteenth 後</strong>：オバマセンター初週末・市民イベント継続中
+      <strong>本日（6/21）の主要トピック:</strong> <strong>米イラン</strong>：核交渉の60日スプリント開始、Trump が Hezbollah への警告 / <strong>ウクライナ</strong>：ロシア占領クリミアがガソリン販売停止 / <strong>FIFA W杯</strong>：スペイン4-0サウジアラビア、ベルギーvsイランなど / <strong>ガザ</strong>：アルジャジーラカメラマン死亡 / <strong>英国</strong>：Andy Burnham が議席獲得
     </div>
 
     <div class="card">
-      <div class="card-title">ロシア、昨日の大規模ドローン攻撃への「報復」としてウクライナに複数回の攻撃を実施</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia</span><span class="card-source">Source: 継続報道 — 2026.06.20</span></div>
+      <div class="card-title">米・イラン核交渉 — 60日間スプリント開始、Trump が「Hezbollah を止めなければ攻撃する」と警告</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: CBS News · NPR — 2026.06.21</span></div>
       <div class="card-body">
-        <p>ロシアが6月19日に宣言した「大規模報復」に従い、ウクライナに対する攻撃を実施した。ゼレンスキー大統領は SNS で「ロシアはキーウおよび複数の都市に対してミサイル・シャヘドドローンを使った攻撃を行った」と発表した。</p>
+        <p>米国とイランの交渉担当者が直接会合を行い、イランの核プログラムの行方を巡る<strong>60日間の集中交渉スプリント</strong>を開始した。中東情勢全体の安定化に直結する重要な外交プロセスが始まっている。</p>
         <ul>
-          <li><strong>攻撃の規模:</strong> 首都キーウを含む複数都市が標的になったと報告されている。詳細な被害状況は確認中</li>
-          <li><strong>経緯:</strong> ウクライナが6月18日〜19日にかけてモスクワ郊外の油精製所に約200機のドローンを投入し炎上させたことへの報復</li>
-          <li><strong>ゼレンスキー大統領の声明:</strong> 「ロシアが毎日攻撃してくるのに対し、我々が応戦するとロシアは報復と呼ぶ」と批判。防空システムの継続的な支援を欧米諸国に要請</li>
-          <li><strong>国際社会の反応:</strong> EU・NATO が攻撃を非難。ルカシェンコへのゼレンスキーの最後通牒（1週間期限）も注目されている</li>
+          <li><strong>米国の立場:</strong> Trump 大統領は「イランが Hezbollah を通じた問題行動を続けるなら攻撃する」と警告。核プログラムの透明化・IAEA 査察受け入れ・ウラン濃縮の制限が主要要求</li>
+          <li><strong>イランの立場:</strong> 交渉団長の Mohammad Bagher Ghalibaf が「米国は発言を慎重にすべきだ」と反論。制裁解除・原油輸出の回復が前提条件と主張</li>
+          <li><strong>60日の意味:</strong> 交渉の「合意か決裂か」の判断基準となる期限。合意できない場合、軍事的緊張の高まりが懸念される</li>
+          <li><strong>地政学的文脈:</strong> イスラエル・レバノン情勢（ヒズボラ）が交渉の主要変数。米国のイスラエル支援継続の中でイランがどこまで妥協するかが焦点</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA W杯2026 — グループステージ第11日（6/20）：欧州強豪が相次いで登場</div>
-      <div class="card-meta"><span class="badge">World Cup</span><span class="card-source">Source: FIFA / ESPN — 2026.06.20</span></div>
+      <div class="card-title">ロシア占領下のクリミア — ウクライナのドローン攻撃を受けガソリン販売停止、燃料補給線が危機に</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia</span><span class="card-source">Source: 継続報道 — 2026.06.21</span></div>
       <div class="card-body">
-        <p>W杯グループステージ第11日。昨日のメキシコ1-0韓国・カナダ6-0カタールなどの結果を受け、本日は複数のグループで順位確定に向けた重要な試合が行われている。</p>
+        <p>ロシアが占領するクリミア半島の当局が、民間向けガソリン販売を停止した。ウクライナが黒海半島への燃料補給線に対してドローン攻撃を激化させていることへの対抗措置とみられる。</p>
         <ul>
-          <li><strong>注目試合:</strong> イングランド・スペイン・フランスなど欧州強豪のグループステージ第2戦が予定されており、決勝トーナメント進出に向けた戦いが本格化</li>
-          <li><strong>前日の結果（6/19）:</strong> メキシコ 1-0 韓国（メキシコ決勝T進出確定）、米国がオーストラリアを撃破、カナダ 6-0 カタール、スイス 4-1 ボスニア</li>
-          <li><strong>熱中症対策:</strong> FIFA が全試合で給水ブレークを義務化継続。記録的熱波への対応として試合当日の気温が40°C超のスタジアムでは夜間開催に変更された試合も</li>
-          <li><strong>開催地の状況:</strong> 米国11都市・メキシコ3都市・カナダ2都市で試合が分散されており、各都市の天候条件が戦況に影響を与えている</li>
+          <li><strong>停止の背景:</strong> ウクライナが6/18〜19にモスクワ郊外の油精製所に約200機のドローンで攻撃し炎上させたことに続き、クリミアの燃料インフラへの攻撃も継続</li>
+          <li><strong>影響:</strong> クリミア半島での民間車両・農業機械への燃料供給が制限。占領地住民の日常生活への直接的な打撃</li>
+          <li><strong>ウクライナの戦略:</strong> 燃料・弾薬補給線の遮断がロシア軍の作戦継続能力を低下させる狙い。長距離ドローンの運用精度が向上したことで戦略的打撃が可能に</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Juneteenth 後の初週末 — オバマ大統領センター、シカゴで多数の市民が来場</div>
-      <div class="card-meta"><span class="badge">US / Culture</span><span class="card-source">Source: NBC Chicago — 2026.06.20</span></div>
+      <div class="card-title">FIFA W杯2026 — 本日（6/21）スペイン4-0サウジアラビア、ベルギーvsイラン・ウルグアイvsカーボベルデほか</div>
+      <div class="card-meta"><span class="badge">World Cup</span><span class="card-source">Source: FIFA · ESPN · Olympics.com — 2026.06.21</span></div>
       <div class="card-body">
-        <p>昨日（6/19）のJuneteenth（解放記念日）に合わせてオープンしたオバマ大統領センターが、本日の週末初日に多数の市民を迎えている。元大統領4名が出席した昨日の献堂式の話題は継続しており、SNS でのシェアが続いている。</p>
+        <p>FIFA W杯2026グループステージ第12日（日曜日）。複数グループで決勝トーナメント進出をめぐる重要な試合が行われている。</p>
         <ul>
-          <li><strong>来場者の反応:</strong> 「思った以上に感動的だった」「図書館分館が地域の資産になる」という声が多数</li>
-          <li><strong>アクセス:</strong> 無料入場（一部展示は時間予約制）。シカゴ公共交通でのアクセスが推奨されている</li>
+          <li><strong>スペイン 4-0 サウジアラビア（確定）:</strong> スペインが今大会初勝利をビッグスコアで飾り、グループ首位争いに復帰</li>
+          <li><strong>ベルギー vs イラン:</strong> SoFi スタジアム（インゲルウッド、カリフォルニア）で開催</li>
+          <li><strong>ウルグアイ vs カーボベルデ:</strong> ハードロックスタジアム（マイアミ）</li>
+          <li><strong>ニュージーランド vs エジプト:</strong> BC Place（バンクーバー）</li>
+          <li><strong>昨日（6/20）の結果:</strong> ドイツ2-1コートジボワール（Deniz Undav が途中出場で2ゴール・後半ロスタイム決勝点）、オランダがスウェーデンを大差で撃破、キュラソーがエクアドルと引き分け（歴史的快挙）、日本がチュニジアを撃破しグループ突破</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">エボラ感染拡大（コンゴ・ウガンダ）— CDC 1.07億ドル投入後の対応状況</div>
-      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: NPR / WHO — 2026.06.20</span></div>
+      <div class="card-title">アルジャジーラ カメラマン Ahmed Wishah、ガザでのイスラエル攻撃で死亡</div>
+      <div class="card-meta"><span class="badge">Gaza / Media</span><span class="card-source">Source: Al Jazeera — 2026.06.20</span></div>
       <div class="card-body">
-        <p>昨日（6/19）CDC が解除した1億700万ドルの緊急資金を使った封じ込め対応が本格化。コンゴ民主共和国とウガンダの国境付近での感染クラスター特定と隔離が最優先課題となっている。WHO は「国境を越えた感染拡大のリスクは依然として高い」と警告を継続している。</p>
+        <p>アルジャジーラは、同局カメラマンの Ahmed Wishah がガザでのイスラエル攻撃により死亡したと発表した。ジャーナリストへの攻撃が改めて国際的な非難を受けている。</p>
+        <ul>
+          <li><strong>状況:</strong> Wishah 氏はガザでの取材中に攻撃を受けた。アルジャジーラは「彼の死はジャーナリズムへの攻撃だ」と声明</li>
+          <li><strong>国際的な反応:</strong> 国際ジャーナリスト連盟（IFJ）・報道の自由団体が非難声明を発表。イスラエル側は調査中としている</li>
+          <li><strong>ガザの状況:</strong> 武力衝突が継続する中、現地での取材活動は依然として極めて危険な状態が続いている</li>
+        </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">英・アンディ・バーナム、下院議員として活動開始 — 労働党内の権力力学に変化の兆し</div>
-      <div class="card-meta"><span class="badge">UK Politics</span><span class="card-source">Source: NPR / The Guardian — 2026.06.20</span></div>
+      <div class="card-title">英・アンディ・バーナム、補欠選挙で当選 — スターマー首相への党内圧力が高まる</div>
+      <div class="card-meta"><span class="badge">UK Politics</span><span class="card-source">Source: NPR · The Guardian — 2026.06.21</span></div>
       <div class="card-body">
-        <p>昨日の補欠選挙で当選したアンディ・バーナム・グレーターマンチェスター市長が下院議員として活動を開始する。スターマー政権への党内圧力が高まる中、バーナム氏は今後の党首選に向けた潜在的候補として注目を集めている。労働党内の左派と中道派の対立が改めて浮き彫りになっている。</p>
+        <p>グレーターマンチェスター市長のアンディ・バーナム氏が下院議員補欠選挙に当選し議会入りした。苦境が続くキア・スターマー首相への党内圧力が高まっており、バーナム氏が将来の党首選に向けた有力候補として注目されている。</p>
+        <ul>
+          <li><strong>バーナム氏のポジション:</strong> 労働党内左派・市民派の旗手として知名度が高い。マンチェスター市長としての実績（交通・住宅・医療統合）が評価されている</li>
+          <li><strong>スターマー首相の現状:</strong> 経済停滞・医療改革の遅れ・複数のスキャンダルで支持率が低迷。党内から批判声明が続出</li>
+          <li><strong>労働党の分断:</strong> 左派と中道派の対立が再燃。バーナム氏の登場で権力力学が複雑化</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -363,32 +385,42 @@
   <section class="section" id="devjp">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn — 注目記事</div>
-      <span class="section-count">2 記事</span>
-    </div>
-    <div class="alert">
-      本日は Qiita・Zenn のトレンドページへのアクセスができなかったため、確認できた範囲での掲載となります。前日（6/19）のアーカイブと実質同一と見られる記事は省略しました。
+      <span class="section-count">3 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">【技術コミュニティ動向】Claude Code v2.1.183 の Auto mode 安全機能をめぐる国内 Qiita 記事が急増</div>
-      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Qiita.com — 2026.06.20</span></div>
+      <div class="card-title">【Qiita 週間ランキング】Microsoft Builder Agent 関連が89いいね — エージェント系記事が引き続き上位</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita.com 週間ランキング — 2026.06</span></div>
       <div class="card-body">
-        <p>v2.1.183 で追加された破壊的コマンドブロック機能についての解説記事が Qiita に複数投稿されている。「git reset --hard が止まる設定の仕組み」「terraform destroy を安全に使うための Auto mode 設定」などの実践的な記事が注目を集めている傾向にある。</p>
+        <p>Qiita の週間いいねランキングで Microsoft Builder / Agent 関連の記事が89いいねで上位にランクイン。エージェント系の実装解説記事への需要が継続して高い。</p>
         <ul>
-          <li><strong>人気トピック:</strong> Auto mode の許可スコープ設定・CLAUDE.md による事前許可定義・破壊的操作の明示的な承認フロー</li>
-          <li><strong>Help Net Security の記事との連動:</strong> AI エージェントのセキュリティ設定への関心が高まっており、Claude Code の権限設定を詳細に解説する記事へのニーズが増加</li>
+          <li><strong>週間ランキング上位（6月中旬時点）:</strong> 1位 ポエム・エンジニア系（125いいね）、2位 AdBlock・ブラウザ拡張系（102いいね）、3位 初心者教育向け（99いいね）、5位 Microsoft Builder/Agent 関連（89いいね）</li>
+          <li><strong>来週の予測:</strong> Claude Code の Artifacts 解説記事が週末から登場し始めており、来週のランキングに入ってくる可能性が高い</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn】Claude Code の /config key=value 構文 — インタラクティブな設定変更の実践ガイド</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">zenn.dev — 2026.06</span></div>
+      <div class="card-title">【Zenn】Claude Code Artifacts の初期レポート記事が登場 — 実際に使った感想と設定方法</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">zenn.dev — 2026.06.21</span></div>
       <div class="card-body">
-        <p>v2.1.181（6/17）で追加された <code>/config key=value</code> 構文の解説と実践例をまとめた記事が Zenn でトレンド入りしている傾向。</p>
+        <p>本日の Artifacts 発表を受けて Zenn に早くも体験レポートが投稿され始めている。Team プランで試せた早期ユーザーによる実レポートが注目を集めている傾向。</p>
         <ul>
-          <li><strong>記事の主な内容:</strong> <code>/config thinking=false</code>（思考モードの無効化）・<code>/config model=sonnet</code>（モデル切替）・<code>/config sandbox.allowAppleEvents=true</code>（macOS との連携）などの実践的なコマンド例</li>
-          <li><strong>評価:</strong> 「設定ファイルを直接編集する必要がなくなった」「Remote Control セッション中にも変更できるのが便利」という声</li>
+          <li><strong>記事の主な内容:</strong> Artifacts の有効化方法・PR ウォークスルーページの生成手順・16MiB 制限の確認方法・org 内共有の実際の手順</li>
+          <li><strong>評価ポイント:</strong> 「コーディングセッションの成果を即座に共有できるのは大きい」「Notion や Confluence に貼り付けるよりも鮮度が高い」</li>
+          <li><strong>課題として挙がった点:</strong> 「ページのデザインカスタマイズが現状できない」「Free/Pro プランへの展開時期が不明」</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【Qiita/Zenn 共通トレンド】AI エージェントのセキュリティ設定解説が急増</div>
+      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Qiita.com · zenn.dev — 2026.06.21</span></div>
+      <div class="card-body">
+        <p>Help Net Security の「低スキル攻撃者が Claude・Codex を悪用して14社侵害」という報告（6/17）を受けて、日本語の技術コミュニティでも AI エージェントのセキュリティ設定解説記事が急増している。</p>
+        <ul>
+          <li><strong>よく取り上げられる内容:</strong> Claude Code の <code>denyRead</code>/<code>allowRead</code> 設定・CLAUDE.md による許可スコープの明示・プロンプトインジェクション対策・サンドボックス実行環境の構築</li>
+          <li><strong>実務的なアドバイス:</strong> 「開発環境と本番環境を厳密に分離する」「CI/CD 環境限定での使用から始める」「定期的な権限レビューの実施」が推奨事項として広まっている</li>
         </ul>
       </div>
     </div>
@@ -397,8 +429,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月20日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: GitHub anthropics/claude-code · GitHub anthropics/anthropic-sdk-python · GitHub openai/openai-python · Help Net Security · MorphLLM · Medium · Firecrawl · Developers Digest · CNBC · Axios · NPR · NBC Chicago · ESPN · FIFA · The Guardian</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月21日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: claude.com/blog · VentureBeat · testingcatalog.com · windowsnews.ai · winbuzzer.com · MorphLLM · llm-stats.com · Presenc AI · Releasebot · CBS News · NPR · Al Jazeera · FIFA · ESPN · Olympics.com · The Guardian · Qiita · Zenn</p>
 </footer>
 
 </body>
