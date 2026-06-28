@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月27日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年6月28日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,8 +67,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Mythos 5 が米重要インフラ100機関に部分解禁・Fable 5 は停止16日目 / 米・イランがホルムズ海峡で相互攻撃エスカレーション / ベネズエラ大地震 死者1,400人超 / イスラエル・レバノン停戦枠組み署名もドローン攻撃継続 / FIFA W杯グループ最終節</p>
-  <p class="date">2026年6月27日（土）&nbsp;|&nbsp;<a href="2026-06-26/index.html">前版（6/26）</a></p>
+  <p class="subtitle">Claude Code にダイナミックワークフロー＆/rewind 追加・CPU使用率37%削減 / GPT-5.3-Codex 発表・Codex Remote GA / GitHub Copilot アプリ正式リリース＆AI クレジット課金移行 / 米・イラン核交渉で60日ロードマップ合意 / カタール LNG 施設爆発13人死亡 / FIFA W杯ラウンド32開幕・カナダ勝利</p>
+  <p class="date">2026年6月28日（日）&nbsp;|&nbsp;<a href="2026-06-27/index.html">前版（6/27）</a></p>
 </header>
 
 <nav>
@@ -81,177 +81,211 @@
 
 <div class="container">
 
+  <!-- ===== Claude / Anthropic ===== -->
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic 最新ニュース</div>
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（6/27）のハイライト:</strong> 米政府が Mythos 5 を<strong>100以上の米国重要インフラ機関向けに部分的に解禁</strong>。商務長官ハワード・ルトニックが「Anthropic のガードレールに確信を持った」と書簡で通知。一方 <strong>Fable 5 は依然停止16日目</strong>で交渉継続中。Claude Code はモデル名正規化バグと Windows サンドボックス警告を修正。米・イランのホルムズ危機を受けて原油市場が急騰しており、AI インフラコスト上昇への懸念も浮上している。
+      <strong>本日（6/28）のハイライト:</strong> Claude Code v2.1.185〜v2.1.195 系列で<strong>ダイナミックワークフロー（ultracode）</strong>がリサーチプレビュー追加・<strong>/rewind</strong> コマンドで /clear 前の会話を再開可能に・ストリーミング中の CPU 使用率が約37%削減された。Anthropic は6月15日より Claude Agent SDK・ヘッドレス Claude Code・GitHub Actions をトークンベースのクレジット制に移行済み。GitHub Copilot アプリが同日 GA となり、AIコーディングエージェントの競合が一段と激化している。
     </div>
     <div class="stats-row">
-      <div class="stat-card"><div class="stat-value">停止16日目</div><div class="stat-label">Fable 5（交渉継続中）</div></div>
-      <div class="stat-card"><div class="stat-value">100+機関</div><div class="stat-label">Mythos 5 部分解禁先</div></div>
-      <div class="stat-card"><div class="stat-value">$965B</div><div class="stat-label">Anthropic IPO 評価額</div></div>
-      <div class="stat-card"><div class="stat-value">83.4%</div><div class="stat-label">Codex Terminal-Bench 2.1</div></div>
+      <div class="stat-card"><div class="stat-value">v2.1.195</div><div class="stat-label">Claude Code 最新版</div></div>
+      <div class="stat-card"><div class="stat-value">▼37%</div><div class="stat-label">ストリーミング CPU 削減</div></div>
+      <div class="stat-card"><div class="stat-value">6/15〜</div><div class="stat-label">Agent SDK クレジット制</div></div>
+      <div class="stat-card"><div class="stat-value">28%</div><div class="stat-label">Claude Code 市場シェア</div></div>
     </div>
     <div class="card">
-      <div class="card-title">Mythos 5 が100以上の米重要インフラ機関に部分解禁 — Fable 5 の交渉は継続</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: explainx.ai · 9to5Mac · releasebot.io — 2026.06.27</span></div>
+      <div class="card-title">Claude Code v2.1.195：ダイナミックワークフロー（ultracode）・/rewind・CPU 削減37%</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: releasebot.io/updates/anthropic/claude-code · Qiita/@saitoko — 2026.06.27週</span></div>
       <div class="card-body">
-        <p>米商務省が Anthropic に対して、Claude Mythos 5 を重要インフラを運用・防衛する100以上の米国機関へ再展開することを許可する書簡を送付した。商務長官ハワード・ルトニックが「政府は Anthropic のガードレールに確信を持っている」と明記。Fable 5 については書簡は沈黙を守っており、引き続き交渉継続中。SNS で「Fable 5 段階ロールアウト開始」との誤情報が拡散されたが Anthropic が否定している。</p>
+        <p>エンドツーエンドの並列タスク処理をサポートする「ダイナミックワークフロー」がリサーチプレビューとして追加された。<code>ultracode</code> 設定をオンにすると Claude がワークフロー利用を自動判断する。<code>/rewind</code> コマンドで <code>/clear</code> 前の会話コンテキストを再開できる機能も追加。v2.1.186 では MCP 認証のブラウザ不要化、v2.1.191 では <code>/rewind</code> 拡張とストリーミング中の CPU 使用率を約37%削減する改善が実施された。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code バグ修正 — Fable 5 モデル名正規化・Windows サンドボックス起動警告を解消</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: releasebot.io/updates/anthropic/claude-code — 2026.06.27</span></div>
+      <div class="card-title">Anthropic 課金体系変更（6月15日〜）— Claude Agent SDK・ヘッドレス CC・GitHub Actions がクレジット制に</div>
+      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Source: codersera.com/blog/anthropic-june-2026-billing-change-claude-code — 2026.06.15</span></div>
       <div class="card-body">
-        <p>Claude Code の小型パッチが配信。<code>claude-fable-5</code> のエイリアスを正しく解決できないバグを修正（解禁後の <code>fallbackModel</code> 設定が意図通り動作するよう先行修正）。Windows 起動時の不要なサンドボックス警告も削除された。</p>
+        <p>Anthropic は6月15日より、Claude Agent SDK・ヘッドレス Claude Code・Claude Code GitHub Actions・サードパーティエージェントをAPIレートで課金される月次クレジット制に移行した。インタラクティブな Claude.ai チャットとターミナルの Claude Code セッションは従来のプランを維持する。自動化パイプラインで大量呼び出しをしていたユーザーに影響が大きく、コスト計算の見直しを促す記事が相次いでいる。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ホルムズ海峡危機と AI インフラコスト — 原油高騰がデータセンター電力費に波及するリスク</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: CNBC · Al Jazeera · morphllm.com — 2026.06.27</span></div>
+      <div class="card-title">AI コーディングエージェント市場：Claude Code シェア28%・開発者95%が週次利用・レビュー時間がコード作成時間を超える</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: morphllm.com · cosmicjs.com · zenn.dev/@long910 — 2026.06</span></div>
       <div class="card-body">
-        <p>米・イランのホルムズ海峡でのエスカレーションを受けて原油価格が急騰。大規模 GPU クラスターの電力コストの25〜30%はエネルギー価格に連動するとされ、Anthropic・OpenAI・Google のクラウドコスト上昇圧力として懸念されている。Anthropic IPO（$965B 評価額）へのリスク要因としても注目されている。</p>
+        <p>6月調査で開発者の95%が週1回以上 AI コーディングツールを使用し、平均2.3種類を併用していることが判明。AI 生成コードのレビューに週11.4時間、自身でのコーディングに9.8時間を費やしており、AI レビュー時間がコード作成時間を初めて上回った。Claude Code が28%、Cursor が24%のシェアを占め、最多利用スタックは「Cursor（日常編集）＋ Claude Code（複雑タスク）」の組み合わせ。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI コーディングエージェント開発者採用率90%超 — 「エージェントファースト」が定着、ChatGPT シェア50%割れ</div>
-      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: developersdigest.tech · morphllm.com — 2026.06</span></div>
+      <div class="card-title">AIエージェントを使いこなすコツ — コンテキスト設計力と「AIの歪みを補正する問い」が差を生む</div>
+      <div class="card-meta"><span class="badge">Insight</span><span class="card-source">Source: developersdigest.tech · qiita.com/@yun_bow — 2026.06</span></div>
       <div class="card-body">
-        <p>AI コーディングエージェントの開発者採用率が90%を超えた。ChatGPT のマーケットシェアが初めて50%を下回り、Claude Code が主要コーディングツールの地位を確立したことが一因。6月リリース予定の GPT-5.6・Gemini 3.5 Pro・Grok 5 はいずれも7月にスリップ。</p>
+        <p>業界の知見として「プロンプトの巧拙よりコンテキストの設計力と AI の歪みを補正する問いの立て方が差を生む」という論点が広まっている。調査フェーズでは情報の鮮度と出典の確認、設計フェーズでは制約と優先度の明示、コーディングフェーズでは段階的な検証が重要とされる。週次 Claude Code アップデートを追う開発者コミュニティが定着しつつある。</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== OpenAI Codex / Other Tools ===== -->
   <section class="section" id="openai">
     <div class="section-header">
       <div class="section-title">OpenAI Codex / その他 AI ツール動向</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Codex + GPT-5.5：Terminal-Bench 2.1 首位（83.4%）維持 — NVIDIA GB200 基盤で10,000人超が利用</div>
-      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: blogs.nvidia.com · cryptobriefing.com · developers.openai.com — 2026.06</span></div>
+      <div class="card-title">GPT-5.3-Codex 発表・Codex Remote GA — 週間アクティブ開発者500万人突破、ChatGPT モバイルから接続可能に</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: openai.com · developers.openai.com · developersdigest.tech — 2026.06</span></div>
       <div class="card-body">
-        <p>Codex + GPT-5.5 が Terminal-Bench 2.1 で83.4%を維持。Fable 5 停止中の Claude Code（65.4%）との差が18ポイントに拡大。NVIDIA GB200 NVL72 ラックスケールシステム上での動作により、OpenAI 社内では1万人超が利用中。Fable 5 解除後の直接対決がベンチマーク業界で注目されている。</p>
+        <p>OpenAI が GPT-5.3-Codex を発表し、週間アクティブ開発者数が4月の300万人から500万人に増加したと報告。Codex Remote が一般提供（GA）となり、ChatGPT モバイルアプリから Mac または Windows ホストへ接続・作業・承認が可能になった。課金モデルは4月2日よりメッセージ単位からトークンベースのクレジット制に移行済みで、Anthropic の課金変更と同様の方向性となっている。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Devin Desktop（旧 Windsurf）Cascade EOL まで4日 — 移行済みユーザーの実感報告が集積</div>
-      <div class="card-meta"><span class="badge">Transition</span><span class="card-source">Source: aitooltier.com · codingwithai.com — 2026.06.27</span></div>
+      <div class="card-title">GitHub Copilot アプリ正式 GA・AI クレジット課金移行 — Microsoft 社内モデル「MAI-Code-1-Flash」も追加</div>
+      <div class="card-meta"><span class="badge">GA</span><span class="card-source">Source: github.blog/changelog · github.blog/news-insights — 2026.06.01-17</span></div>
       <div class="card-body">
-        <p>7/1 Cascade EOL まで残り4日。「OTA で自動移行、トークン効率25〜30%向上は本物」という肯定的評価が多数。一方「Agent Command Center の UI が Cascade より劣る」という声も根強い。Devin Desktop + Codex の組み合わせ利用パターンも出現している。</p>
+        <p>GitHub Copilot アプリ（macOS・Windows・Linux 対応）が6月17日に正式リリースされ、エージェント駆動開発のデスクトップ環境として提供開始。6月1日より全ユーザー向けに使用量ベース課金（GitHub AI クレジット制）が適用された。Microsoft の社内開発コーディングモデル「MAI-Code-1-Flash」も Copilot Business・Enterprise で GA。Copilot の開発者シェアはプロ Dev 間で67%から51%に低下している。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、エンタープライズ獲得へトークン価格引き下げ検討 — ChatGPT シェア50%割れが契機</div>
-      <div class="card-meta"><span class="badge">Business</span><span class="card-source">Source: llm-stats.com · morphllm.com — 2026.06</span></div>
+      <div class="card-title">Cursor「Glass」大型リデザイン — 並列エージェント実行・マルチリポジトリ対応を追加</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: morphllm.com · developersdigest.tech — 2026.04-06</span></div>
       <div class="card-body">
-        <p>ChatGPT シェアが50%割れを受け、OpenAI が大規模エンタープライズ向けトークン価格の大幅引き下げを検討。GPT-5.6 リリースと同時に実施の可能性があるが、GPT-5.6 自体が7月にスリップしており実施時期は不透明。</p>
+        <p>Cursor が4月2日にローンチ以来最大のリデザイン「Glass」を公開し、エージェントウィンドウ・並列エージェント実行・デザインモード・マルチリポジトリ対応を追加した。6月時点の料金は Standard: $32/月、Premium: $96/月に再編。「日常編集は Cursor、複雑タスクは Claude Code」という使い分けパターンが定番化しており、Cursor の競争力は IDE レベルの体験にあると評価されている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Antigravity 2.0・Gemini CLI 終了 / Amazon Kiro が参入 / Devin 2.0 が $20 に値下げ</div>
+      <div class="card-meta"><span class="badge">Landscape</span><span class="card-source">Source: marktechpost.com · thenewstack.io · lushbinary.com — 2026.05-06</span></div>
+      <div class="card-body">
+        <p>Google は Antigravity 2.0（Gemini 3.1 Pro、SWE-bench Verified 80.6%）を発表し、Gemini CLI 個人向け無料アクセスを6月18日に終了して Antigravity CLI へ移行。Amazon が新 AI コーディングツール「Kiro」をリリースし市場参入。Devin 2.0 はエントリー価格を $20 に引き下げ（Windsurf 買収で IDE も統合）、Cascade EOL（7/1）に伴い移行ユーザーの報告が集積している。</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== Reddit ===== -->
   <section class="section" id="reddit">
     <div class="section-header">
       <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
-      <span class="section-count">4 トピック</span>
+      <span class="section-count">5 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Mythos 5 が部分解禁 — 重要インフラ機関はどう手続きするのか？」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.06.27</span></div>
-      <div class="card-body"><p>「CISA 定義の重要インフラ16分野に該当する米国組織が対象」という解釈が広まる。「なぜ Mythos 5 は解禁で Fable 5 は駄目なのか」という疑問に「エンタープライズ向け閉じた展開か一般公開 API かの違い」という仮説が支持を集めている。</p></div>
+      <div class="card-title">r/ClaudeAI「Claude Code はまだ最高のコーディングエージェントか？ — SWE-bench 77.2%・20万トークン対応の評価」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 270+ upvotes — 2026.06</span></div>
+      <div class="card-body"><p>270以上のアップボートを獲得したスレッド。コミュニティは Claude Code を SWE-bench スコア77.2%（Sonnet 4.5 使用）で依然として最高のコーディングエージェントと評価している。特にターミナル操作や大規模コードベースの処理（最大20万トークン）における優位性が支持された。一方、週次使用上限（月額200ドルプランでも適用）への不満も根強い。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/geopolitics「ホルムズ危機が AI・テック株に与えるインパクト — エネルギー価格と GPU サプライチェーン」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/geopolitics — 2026.06.27</span></div>
-      <div class="card-body"><p>「原油20%上昇でGPUクラスター電力コストは5〜8%上昇」という試算が話題。「AI データセンターの多くは長期電力契約で運用されており短期の原油価格変動の直撃は受けにくい」という反論も多数。</p></div>
+      <div class="card-title">r/programming「Claude Code vs Cursor vs GitHub Copilot — 2026年版どれを選ぶか」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/programming — 2026.06</span></div>
+      <div class="card-body"><p>「リファクタリングとデバッグは Claude Code が優勢、ドキュメント生成とボイラープレートは GPT-5 がリード」というコンセンサスが形成されつつある。「3000行の C# ファイルを他のツールでは無理だったのに Claude Code が正常にリファクタリングできた」という体験報告が多数の共感を集めた。最多スタックは Cursor（日常）＋ Claude Code（複雑）。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA「Fable 5 を待ち続けるべきか、Codex に完全移行すべきか — 16日目の判断基準」</div>
-      <div class="card-meta"><span class="badge">Technical</span><span class="card-source">Reddit r/LocalLLaMA — 2026.06.27</span></div>
-      <div class="card-body"><p>「Mythos 5 部分解禁でFable 5 も近い→7/1〜7/10 まで待つ」派・「もう Codex に移った」派・「Sonnet 4.6 で実用的な差はない」派の三つが拮抗。「Terminal-Bench の差は曖昧で複雑な設計判断のある場面でこそ出る」という実用派の意見も根強い。</p></div>
+      <div class="card-title">r/vibecoding「Vibe Coding コミュニティが89,000人規模に — Claude Opus 4.6・Cursor・Codeium が人気」</div>
+      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/vibecoding — 89k members — 2026.06</span></div>
+      <div class="card-body"><p>Andrej Karpathy が提唱した「Vibe Coding」概念が広まり、r/vibecoding は1年足らずで89,000人のコミュニティに成長。Claude Opus 4.6、Cursor、Codeium が頻繁に議論されるツールとして挙げられ、「AI に意図を伝えてすべて書かせる」スタイルへの支持が増えている。プロ開発者から初学者まで幅広い層が参加している。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/programming「ベネズエラ地震の被災者支援に AI を活用するプロジェクトが立ち上がる」</div>
-      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/programming — 2026.06.27</span></div>
-      <div class="card-body"><p>50,000人超の行方不明者を対象に SNS 投稿を AI で名寄せ・位置情報マッピングするOSSプロジェクトへの参加募集が300以上のアップボートを獲得。Claude Sonnet 4.6 + Codex + OSM の組み合わせを採用。「こういう場面でこそ AI の価値が問われる」という共感コメントが多数。</p></div>
+      <div class="card-title">r/github「Copilot の AI クレジット課金移行への批判 — 複雑な料金体系にユーザーが困惑」</div>
+      <div class="card-meta"><span class="badge">Criticism</span><span class="card-source">Reddit r/github · r/programming — 2026.06</span></div>
+      <div class="card-body"><p>GitHub Copilot の使用量ベース課金（GitHub AI クレジット制）移行に対して、Reddit では料金体系の複雑化を批判する声が続出。「何をするといくらかかるか分からない」という不満が多い。一方で「実際に使った分だけ払えばいい」という肯定派も存在。Anthropic・OpenAI も同様にクレジット制に移行しており、業界全体のトレンドに対する議論が活発化している。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「Claude Code vs Antigravity 2.0 vs Amazon Kiro — 新興エージェント比較スレッド」</div>
+      <div class="card-meta"><span class="badge">Technical</span><span class="card-source">Reddit r/LocalLLaMA · r/ClaudeAI — 2026.06</span></div>
+      <div class="card-body"><p>Kiro（Amazon）や Antigravity 2.0（Google）が話題になる中、議論量では Claude Code が圧倒的で Codex の4倍のコメント数を記録。新ツールへの期待と懐疑論が混在するスレッドが複数立ち上がっている。「Claude Code の20万トークンコンテキストは他が追いつけていない」「受託開発のコストモデルが根底から変わっている」という指摘が注目を集めた。</p></div>
     </div>
   </section>
 
+  <!-- ===== World News ===== -->
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（6/27）の主要トピック:</strong> <strong>中東:</strong> 米国・イランがホルムズ海峡で相互攻撃エスカレーション（バーレーンも標的に）、イスラエル・レバノンが停戦枠組み署名も即日ドローン攻撃継続 / <strong>南米:</strong> ベネズエラ大地震（M7.5+7.2）の死者が1,400人超に / <strong>スポーツ:</strong> FIFA ワールドカップ2026グループステージ最終節（ノックアウトは明日より開始）
+      <strong>本日（6/28）の主要トピック:</strong> <strong>外交:</strong> 米・イランがパキスタン＆カタール仲介の下、スイスで18時間交渉し60日以内の最終合意ロードマップに署名。40年超ぶりにドル建て石油取引を解禁 / <strong>エネルギー:</strong> カタールのラス・ラファン LNG 施設で大規模爆発、13人死亡・エネルギー市場が動揺 / <strong>経済:</strong> 世界銀行が2026年世界成長率を2.5%に下方修正 / <strong>スポーツ:</strong> FIFA W杯ラウンド32開幕、カナダが南アフリカを1-0で撃破
     </div>
     <div class="card">
-      <div class="card-title">米・イランがホルムズ海峡で相互攻撃 — タンカー2隻撃破、バーレーンにもイランドローン攻撃</div>
-      <div class="card-meta"><span class="badge">Breaking / War</span><span class="card-source">Source: CNN · NBC News · CBS News · CNBC · Al Jazeera · Fox News — 2026.06.27</span></div>
+      <div class="card-title">米・イラン核交渉が大きな前進 — スイスで18時間交渉、60日以内の最終合意ロードマップに署名</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: Democracy Now · IFM Investors · Euronews · Havana Times — 2026.06.28</span></div>
       <div class="card-body">
-        <p>ホルムズ海峡をめぐる米・イランの軍事的エスカレーションが今週最高潮を迎えた。6/25（木）にイランが M/V Ever Lovely（シンガポール船籍）にドローン4機を発射（1機命中）→ 米軍がイラン施設を空爆（6/26）→ イランが M/T Kiku（パナマ船籍、原油200万バレル積載）を攻撃（6/27 午前4:30 ET）→ CENTCOM が再び報復空爆。バーレーン外務省も「夜明けにイランのドローン複数機が領土を攻撃した」と強く非難。先週署名した MOU（60日間商船無料通過合意）は実質機能していない状態。ブレント原油が急騰している。</p>
+        <p>パキスタンとカタールの仲介のもと、米国とイランはスイスで18時間に及ぶ交渉を行い、60日以内の最終合意に向けたロードマップに署名した。米財務省はイランに対し60日間の制裁免除を付与し、40年以上ぶりにドル建てでの石油・石油化学製品の販売が解禁された。ホルムズ海峡の商船通過の安全確保についても協議が進展しており、前日の軍事的エスカレーションから外交的解決へ局面が急転した。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ベネズエラ大地震 死者1,400人超 — M7.5+7.2 の連続地震、50,000人超が行方不明</div>
-      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: CNN · Al Jazeera · ABC News · Wikipedia — 2026.06.24-27</span></div>
+      <div class="card-title">カタール ラス・ラファン LNG 施設で大規模爆発 — 13人死亡・66人負傷、世界最大級の LNG 輸出基地に打撃</div>
+      <div class="card-meta"><span class="badge">Energy / Disaster</span><span class="card-source">Source: Havana Times · Democracy Now — 2026.06.25-28</span></div>
       <div class="card-body">
-        <p>6/24（木）にベネズエラ・ヤラクイ州サンフェリペを震源として M7.2・M7.5 の大地震が39秒差で連続発生。6/27 時点で死者1,400人以上・負傷者3,200人超。La Guaira だけで11,200人超が行方不明、行方不明者追跡サイトには50,000人超の報告が集まっている。USGS の PAGER システムは「死者数は10万人を超える可能性がある」と警告。米・EU・コロンビア・ブラジルが救助隊を派遣しているが、マドゥロ政権との外交関係が一部の支援受け入れを制約している。</p>
+        <p>カタールの主要エネルギー施設「ラス・ラファン」で大規模な爆発と火災が発生し、13人が死亡、66人が負傷した。カタールエナジーは操業再開に向け対応中。世界最大のLNG輸出基地の一つに影響が出たことで、ヨーロッパ・アジア向けLNG供給の逼迫懸念からエネルギー市場が大きく動揺した。ホルムズ海峡の緊張と重なり、エネルギー安全保障への不安が高まっている。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イスラエル・レバノン・米国が停戦枠組みに署名 — 翌日にイスラエルがドローン攻撃し脆弱性露わに</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: Fox News · CNN · Al Jazeera — 2026.06.27</span></div>
+      <div class="card-title">ベネズエラ大地震 死者増加・救助継続 — 国際支援が本格化、行方不明者50,000人超</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: NPR · Democracy Now · Al Jazeera · Wikipedia — 2026.06.24-28</span></div>
       <div class="card-body">
-        <p>三者が長期的な平和合意への道を開く枠組み協定に6/26署名（イスラエルの南レバノンからの段階的撤退・レバノン軍の南部展開・ヒズボラ武装解除工程表を規定）。しかし翌6/27にイスラエル軍が南レバノンのヒズボラ関連施設を攻撃し、停戦の脆弱性が早くも露呈。ネタニヤフ首相は米・イラン核合意への懸念を訴える代表団をワシントンへ派遣すると発表。</p>
+        <p>6/24に発生したベネズエラ M7.5＋M7.2 連続地震の救助活動が4日目に入っている。メキシコ・ブラジル・キューバ・米国など国際救助チームが昼夜を問わず瓦礫の中に生存者を捜索。死者は1,400人超で集計が続いており、USGS の PAGER は「最終的に10万人を超える可能性」と警告している。マドゥロ政権との外交関係が一部の支援受け入れを制約しているとの報告もある。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">FIFA ワールドカップ2026 グループステージ最終節 — 明日からノックアウト、カーボベルデ快進撃が注目</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: ESPN · Wikipedia/2026 FIFA World Cup — 2026.06.27</span></div>
+      <div class="card-title">ウクライナ・ロシア 激しい相互攻撃が継続 — ウクライナ、ロシア12地域＋クリミアに大規模夜間攻撃</div>
+      <div class="card-meta"><span class="badge">War</span><span class="card-source">Source: Democracy Now — 2026.06.28</span></div>
       <div class="card-body">
-        <p>6/27（土）はグループステージ最終節（アルゼンチン vs. ヨルダン・コロンビア vs. ポルトガルなど）。ノックアウトラウンド（ラウンド32）は6/28（日）から開始。グループステージを突破したカーボベルデの初出場が「大会最大のサプライズ」として注目されている。2026年大会は48チーム参加の拡大フォーマットで新興国にチャンスが拡大した。</p>
+        <p>ウクライナがロシアの12の地域・クリミア半島・周辺海域に大規模な夜間攻撃を実施し、ロシア側も反撃した。戦争は泥沼化した消耗戦の様相を呈しており停戦の見通しは立っていない。米・イラン核交渉の進展が注目を集める一方、ウクライナ情勢への国際的な関心が相対的に低下していることへの懸念も上がっている。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">その他の国際ニュース — 英新国防相人事が急務・ゴールデンテンポの三冠期待</div>
-      <div class="card-meta"><span class="badge">Brief</span><span class="card-source">Source: Wikipedia Portal:Current events — 2026.06.27</span></div>
+      <div class="card-title">世界銀行が2026年成長率を2.5%に下方修正 — 米関税・エネルギー混乱・食料高騰が三重の逆風</div>
+      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Source: World Bank GEP June 2026 · IFM Investors — 2026.06</span></div>
       <div class="card-body">
-        <p>英国では6/26に辞任したヒーリー国防相の後任人事がスターマー首相の最優先課題で週明けにも発表の見込み。競馬ではゴールデンテンポが6/26のベルモントS（第158回）を制覇し2冠達成。プリークネスS の成績次第では三冠の可能性が議論されている。</p>
+        <p>世界銀行は2026年の世界経済成長率予測を2.5%に下方修正した（2025年は2.9%）。米国の新関税による欧州輸出の打撃、エネルギー市場の混乱、食料価格上昇が主な要因。世界インフレ率は2026年に4.8%に達すると予測されており、新興国・途上国への影響が特に深刻とされる。AI インフラへの投資継続に対しても慎重論が出始めている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">FIFA ワールドカップ2026 ラウンド32開幕 — カナダが南アフリカを1-0で撃破、アフリカ勢9カ国が史上最多で決勝Tへ</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: ESPN · Al Jazeera · Yahoo Sports — 2026.06.28</span></div>
+      <div class="card-body">
+        <p>北米共催の FIFA ワールドカップ2026 でラウンド32（決勝トーナメント1回戦）が開幕。カナダがアルフォンソ・デービスのカムバックを背景に南アフリカを1-0で撃破した。アフリカ勢9カ国が本大会で決勝トーナメントに進出という歴史的快挙を達成。48チーム参加の拡大フォーマットが新興国に実際のチャンスをもたらした大会として注目されている。</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== Qiita / Zenn ===== -->
   <section class="section" id="devjp">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn — 注目記事</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">【Zenn】「Mythos 5 部分解禁を受けて — 重要インフラ事業者が Claude API を活用する際の申請フロー考察」</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn.dev — 2026.06.27</span></div>
-      <div class="card-body"><p>「米商務省の書簡は米国内組織向けのもの。日本の重要インフラ事業者が同様の優遇を受けるには日米政府間の協議が別途必要。当面は Sonnet 4.6 での運用が現実解」「今のうちに CLAUDE.md 設計・fallbackModel 設定・セキュリティレビュー枠組みを先行整備しておくことを推奨」という内容がトレンドに。</p></div>
+      <div class="card-title">【Zenn】「AIが書いたコードをレビューする時間が、自分で書く時間を超えた — 2026年の開発者事情を整理する」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn.dev · @long910 — 2026.06.21</span></div>
+      <div class="card-body"><p>2026年6月時点で開発者は AI 生成コードのレビューに週11.4時間、自身でのコーディングに9.8時間を費やしており、AI レビュー時間が執筆時間を初めて上回ったという調査結果を詳述。95%の開発者が週次で AI ツールを利用し、Claude Code（28%）と Cursor（24%）がトップシェアを占める。開発者の働き方が根本から変わりつつある現状を整理した注目記事として広く共有されている。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Qiita】「ホルムズ海峡危機がエンジニアの副業・フリーランス収入に与える意外な影響 — 為替と AI コスト」</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita.com — 2026.06.27</span></div>
-      <div class="card-body"><p>「地政学リスク上昇→リスクオフ→ドル高円安→Claude/Codex の円建てコスト上昇」というチェーンを数字で試算した記事が高アクセス。$100/月の Claude Code Max が円換算で継続上昇中。「Haiku 4.5 への切り替えで単純タスクのコストを1/10に抑える」という対応策の具体的なガイドラインが評価された。</p></div>
+      <div class="card-title">【Qiita】「Claude Code 週次アップデートまとめ（2026/06/27週）— v2.1.186〜v2.1.195 変更点を網羅」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita.com · @saitoko — 2026.06.27週</span></div>
+      <div class="card-body"><p>v2.1.186 での MCP 認証ブラウザ不要化、v2.1.191 での <code>/rewind</code> 拡張と CPU 使用率約37%削減など、実用上重要なアップデートを網羅した週次まとめ記事。Claude Code を日常的に使う開発者に参照されており、アップデートを見逃さないための定番リソースとして定着している。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Zenn】「ベネズエラ地震支援 OSS プロジェクトに参加した — AI が担った役割と学び」</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn.dev — 2026.06.27</span></div>
-      <div class="card-body"><p>Reddit の r/programming で立ち上がったベネズエラ地震被災者追跡プロジェクトに参加した日本人エンジニアによる実践記事。「Claude Sonnet 4.6 でスペイン語・英語・ポルトガル語混在の SNS 投稿から人名・地名を抽出・正規化。精度90%超を達成。few-shot で現地の例を与えることで固有表現認識を大幅改善した」という内容が注目を集めている。</p></div>
+      <div class="card-title">【Zenn】「2026年6月現在の Claude Code 開発フロー — Plan モード・Dev-flow-gate・Codex レビューの組み合わせ」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn.dev · @arm_techblog — 2026.06</span></div>
+      <div class="card-body"><p>2025年後半から Claude Code を使い込んできた筆者が2026年6月時点の実際の開発構成を公開。Plan モードや Dev-flow-gate による自動品質ゲート、Codex レビューとの組み合わせなど、本番運用を前提としたワークフローが詳しく解説されている。実践的な設定例が豊富で多くの開発者に参照されている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】「2026年6月版 AIエージェントを本当に使いこなすコツ — 調査・設計・コーディング別 実践ガイド」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita.com · @yun_bow — 2026.06</span></div>
+      <div class="card-body"><p>AIエージェントとの協働で差がつくのはプロンプトの巧拙ではなくコンテキストの設計力と「AI の歪みを補正する問い」の立て方であると論じた記事。調査・設計・コーディングの各フェーズ別に実践的なガイドを提供しており、プロンプトエンジニアリングの次のステップを探す開発者に向けた内容として評価されている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn】「AI以後の受託システム開発はどうなっていくのか（2026年6月版）— 工数モデル崩壊と付加価値のシフト」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn.dev · @terurou — 2026.06</span></div>
+      <div class="card-body"><p>AI エージェントの普及が受託開発ビジネスモデルに与える構造的な変化を論じた記事。工数ベースの受託モデルが AI による自動化で崩れていく中、エンジニアの付加価値がどこにシフトするかを考察している。2026年版として定期的に更新されており、業界全体の動向を俯瞰できる内容として注目を集めている。</p></div>
     </div>
   </section>
 
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年6月27日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: explainx.ai · 9to5Mac · releasebot.io · CNBC · Al Jazeera · CNN · NBC News · CBS News · Fox News · ABC News · Wikipedia Portal:Current events · cryptobriefing.com · blogs.nvidia.com · developers.openai.com · developersdigest.tech · morphllm.com · llm-stats.com · ESPN · Qiita.com · Zenn.dev</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年6月28日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: releasebot.io · codersera.com · openai.com · github.blog · marktechpost.com · thenewstack.io · morphllm.com · lushbinary.com · developersdigest.tech · Democracy Now · NPR · Havana Times · IFM Investors · World Bank · ESPN · Al Jazeera · Wikipedia Portal:Current events · Qiita.com · Zenn.dev · aitooldiscovery.com · cosmicjs.com · spectrumailab.com</p>
 </footer>
 
 </body>
