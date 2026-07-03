@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月2日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月3日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,13 +63,13 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Science AI ワークベンチ発表（科学者向け）/ Claude Code プロンプトインジェクション攻撃デモが波紋 / Dynamic Workflows がリサーチプレビューで公開 / FIFA W杯 スペイン3-0 オーストリア・USA 物議の一戦でボスニアに勝利 / 米・イラン交渉がハメネイ師葬儀で一時停止（7/4〜9）/ 米6月雇用わずか5.7万人・賃金成長も低迷</p>
-  <p class="date">2026年7月2日（木）&nbsp;|&nbsp;<a href="2026-07-01/index.html">前版（7/1）</a></p>
+  <p class="subtitle">Claude Sonnet 5 が Claude Code のデフォルトモデルに（1M コンテキスト・8/31まで特別価格）/ Claude Code v2.1.197 リリース / OpenAI GPT-5.6 シリーズ（Sol/Terra/Luna）が約20社限定プレビュー / ハメネイ師国葬（7/4〜9）でイラン交渉一時停止・仏英がホルムズ多国籍艦隊を表明 / W杯 7/3：エジプトが豪をPKで撃破、アルゼンチン・コロンビアが登場</p>
+  <p class="date">2026年7月3日（金）&nbsp;|&nbsp;<a href="2026-07-02/index.html">前版（7/2）</a></p>
 </header>
 
 <nav>
   <a href="#claude">Claude / Anthropic</a>
-  <a href="#openai">Codex / 他ツール</a>
+  <a href="#openai">Codex / OpenAI</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
   <a href="#devjp">Qiita / Zenn</a>
@@ -84,93 +84,93 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/2）のハイライト:</strong> Anthropic が科学者向け AI ワークベンチ <strong>Claude Science</strong> を発表（6/30 ローンチ、7/1 正式報道）。ゲノミクス・プロテオミクス・化学情報学など60以上のスキルを統合したエージェント環境で、研究の全工程を一元管理。一方、セキュリティ研究者が <strong>無害に見えるリポジトリ経由で Claude Code を踏み台にしたリモートシェル奪取</strong> のデモを公開、開発者コミュニティに衝撃が走った。
+      <strong>本日（7/3）のハイライト:</strong> <strong>Claude Sonnet 5</strong> が Claude Code のデフォルトモデルに正式切り替え（ネイティブ 1M トークンコンテキスト・8/31 まで $2/$10 per Mtok の特別価格）。同時に <strong>Claude Code v2.1.197</strong> がリリースされ、組織単位のデフォルトモデル設定・読みやすいセッション名・ファイル添付のクリック操作などが追加。また <strong>Claude apps gateway</strong>（Amazon Bedrock・Google Cloud 対応の自社ホスト型 Claude Code 制御プレーン）が発表され、エンタープライズ展開が大幅に強化された。
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Science — 科学者向け AI ワークベンチが登場、60以上の専門スキルで研究全工程を統合</div>
-      <div class="card-meta"><span class="badge">New Product</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-science-ai-workbench">anthropic.com</a> · <a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">TechCrunch</a> · <a href="https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/">MIT Tech Review</a> — 2026.06.30</span></div>
+      <div class="card-title">Claude Sonnet 5 が Claude Code のデフォルトに — 1M コンテキスト・Opus 並みのエージェント性能を Sonnet 価格で</div>
+      <div class="card-meta"><span class="badge">Default Model</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-sonnet-5">anthropic.com</a> · <a href="https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5">Claude Platform Docs</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.03</span></div>
       <div class="card-body">
-        <p>Anthropic は6月30日、科学研究者向けの専用 AI ワークベンチ <strong>Claude Science</strong> を発表した。新モデルではなく、既存の Claude モデル（Claude Opus 4.8 等）を土台に、研究者が日常的に使うツール・パッケージを統合した環境を提供するアプローチが特徴。</p>
+        <p>Anthropic は Claude Sonnet 5 を Claude Code のデフォルトモデルとして設定した（v2.1.197 にアップデートすることで適用）。数か月前までより大型・高価なモデルが必要だった自律的エージェント作業を、Sonnet 価格帯で実現するのが最大の特徴。</p>
         <ul>
-          <li><strong>専門スキル 60+:</strong> ゲノミクス・シングルセル解析・プロテオミクス・構造生物学・ケモインフォマティクスなど分野別スキルをプリセット</li>
-          <li><strong>リッチな科学アーティファクト:</strong> 3D タンパク質構造・ゲノムブラウザトラック・化学構造式などをネイティブレンダリング</li>
-          <li><strong>再現性:</strong> 図の生成コード・環境・作成手順・メッセージ履歴が自動で記録され、数カ月後でも検証・再現が可能</li>
-          <li><strong>可用性:</strong> Claude Pro・Max・Team・Enterprise ユーザー向けにベータ提供</li>
-          <li><strong>AI for Science グラント:</strong> 7月15日まで申請受付。最大50件のプロジェクトに対し最大 $30,000 分のクレジットを提供。プロジェクト実施期間は9月1日〜12月1日</li>
-        </ul>
-        <p>MIT Technology Review は「Claude Science は Anthropic の最新旗艦プロダクトである」と評し、TechCrunch は「新モデルではなくワークフロー設計で科学者を取り込む賭け」という切り口で分析した。東北大学の研究者たちは「創薬発見のスピードを大幅に上げる可能性がある」と述べている。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Claude Code セキュリティ脆弱性 — 無害なリポジトリ経由のプロンプトインジェクションでリバースシェルが起動</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://www.securityweek.com/new-attack-abuses-claude-code-and-harmless-looking-repositories-to-hijack-developer-machines/">SecurityWeek</a> · <a href="https://cybernews.com/security/claude-code-attack-prompt-injection-mozilla/">Cybernews</a> · <a href="https://www.theregister.com/security/2026/07/01/red-teamers-turned-claude-desktop-into-a-double-agent-to-do-their-evil-bidding/5264692">The Register</a> — 2026.07.01</span></div>
-      <div class="card-body">
-        <p>セキュリティ研究者・Pentera Labs のレッドチームが、一見無害なリポジトリを起点に Claude Code を悪用してリモートシェルを奪取するデモを公開し、開発者コミュニティに衝撃が走った。</p>
-        <ul>
-          <li><strong>攻撃手順:</strong> 攻撃者が README に通常の設定手順に見せかけた悪意のある指示を埋め込む → Claude Code がリポジトリを取り込んで実行 → Pythonパッケージが初回使用時に「失敗」し、ユーザーに初期化コマンドの実行を促す → リバースシェル起動</li>
-          <li><strong>拡散経路:</strong> 求人情報・チュートリアル・DM 等にリンクを仕込むことで拡散可能</li>
-          <li><strong>Claude Desktop:</strong> Pentera のデモでは Claude Desktop アプリの AI エージェントを介して開発者マシンの完全なリモートコード実行にも成功</li>
-          <li><strong>Mozilla の警告:</strong> Mozilla もコーディングエージェント全般における間接的プロンプトインジェクションのリスクを同日指摘</li>
-          <li><strong>対策:</strong> 信頼できないリポジトリを Claude Code に読み込ませない、/permissions で許可コマンドを最小限に絞る、サンドボックス環境での実行を推奨</li>
-        </ul>
-        <p>Check Point も「GitHub から悪意のあるリポジトリを開くだけで妥協につながる可能性がある」と別途報告しており、AI エージェントのツール使用権限範囲が安全上の重要課題として浮上している。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Dynamic Workflows がリサーチプレビューで公開 — CLI・デスクトップ・VS Code から Max/Team/Enterprise で利用可能</div>
-      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://www.startuphub.ai/ai-news/technology/2026/claude-code-s-latest-features">startuphub.ai</a> · <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio</a> — 2026.07</span></div>
-      <div class="card-body">
-        <p>Claude Code の Dynamic Workflows がリサーチプレビューとして Claude Code CLI・デスクトップアプリ・VS Code 拡張で公開された。Max・Team・Enterprise プランが対象で、Claude API・Amazon Bedrock・Vertex AI・Microsoft Foundry でも利用可能。</p>
-        <ul>
-          <li><strong>Dynamic Workflows:</strong> 制御フロー（ループ・条件分岐・ファンアウト）をモデル任せではなく決定論的スクリプトで記述し、複数サブエージェントをオーケストレーション</li>
-          <li><strong>Code with Claude:</strong> インフラ上のマネージドエージェント・プロアクティブワークフロー・Capability Curve（段階的な権限昇格）が統合された新開発体験として InfoQ が報道</li>
-          <li><strong>セッション機能改善:</strong> 読み取りやすいセッション名・ファイル添付のクリック操作・バックグラウンドセッションの安定性向上・ストリームウォッチドッグの改善</li>
+          <li><strong>コンテキスト:</strong> ネイティブ 1M トークンコンテキストウィンドウ（拡張思考は標準でオン、手動設定は 400 エラーになるよう変更）</li>
+          <li><strong>特別価格:</strong> 8月31日まで $2 per Mtok（入力）/ $10 per Mtok（出力）のプロモーション価格</li>
+          <li><strong>性能:</strong> 計画立案・ブラウザ操作・ターミナル実行・複数ステップタスクで Opus 4.8 に匹敵する自律性を発揮。推論・ツール使用・コーディング・知識作業のすべてで Sonnet 4.6 から改善</li>
+          <li><strong>注意点:</strong> 非デフォルトのサンプリングパラメータ設定時は 400 エラーになるよう API 仕様が変更された</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Fable 5 が claude.ai・Claude Code・Claude Cowork 全プラットフォームで正式復活（7/1 より）</div>
-      <div class="card-meta"><span class="badge">Availability</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html">The Hacker News</a> — 2026.07.01</span></div>
+      <div class="card-title">Claude Code v2.1.197 リリース — 組織デフォルトモデル・読みやすいセッション名・Agents ビュー改善</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes</a> — 2026.07.03</span></div>
       <div class="card-body">
-        <p>7月1日（水）より、Claude Fable 5 が claude.ai・Claude Platform（API）・Claude Code・Claude Cowork のすべてで利用可能になった。米国による輸出規制（ジェイルブレイク関連の懸念に基づく制限）が解除されたことを受けての全世界展開再開。The Hacker News はこの措置を「Anthropic、輸出規制解除を受け Claude Fable 5 を復旧」と報じた。</p>
+        <p>Claude Code がバージョン 2.1.197 にアップデートされ、複数の UX 改善が加わった。</p>
+        <ul>
+          <li><strong>Org default models:</strong> 管理者が組織単位でデフォルトモデルを設定できるようになった</li>
+          <li><strong>読みやすいセッション名:</strong> ランダム ID ではなく内容を表した名前が自動付与されるよう改善</li>
+          <li><strong>クリック操作でファイル添付:</strong> ドラッグ＆ドロップに加え、ファイルをクリックして添付できるように</li>
+          <li><strong>Agents ビュー:</strong> サブエージェントの状態表示がより滑らかに</li>
+          <li><strong>安定性:</strong> バックグラウンドセッションの信頼性向上・ストリームウォッチドッグ処理の改善・リモートリカバリの強化</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude apps gateway 発表 — Amazon Bedrock・Google Cloud 向け自社ホスト型制御プレーンで企業展開を強化</div>
+      <div class="card-meta"><span class="badge">Enterprise</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Anthropic Developer Platform Release Notes</a> — 2026.07.03</span></div>
+      <div class="card-body">
+        <p>Anthropic が Claude apps gateway を発表した。Amazon Bedrock および Google Cloud 上で Claude Code を企業が自社ホスト型で運用するための制御プレーンで、大規模展開時のガバナンス要件に対応する。</p>
+        <ul>
+          <li><strong>認証:</strong> 企業の既存 SSO（シングルサインオン）との統合</li>
+          <li><strong>ポリシー管理:</strong> 中央集権型ポリシーの強制適用・ロールベースアクセス制御</li>
+          <li><strong>コスト管理:</strong> ユーザー単位のコスト追跡・支出上限の設定</li>
+          <li><strong>提供時期:</strong> 現在から利用可能（一般提供済み）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Code セキュリティ続報 — Anthropic がプロンプトインジェクション対策の強化を表明</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://www.securityweek.com/new-attack-abuses-claude-code-and-harmless-looking-repositories-to-hijack-developer-machines/">SecurityWeek</a> · <a href="https://www.theregister.com/security/2026/07/01/red-teamers-turned-claude-desktop-into-a-double-agent-to-do-their-evil-bidding/5264692">The Register</a> — 2026.07.02–03</span></div>
+      <div class="card-body">
+        <p>7月2日に公開された Pentera Labs の Claude Code プロンプトインジェクション攻撃デモの続報。Anthropic はセキュリティ研究者コミュニティへの対応として「ツール権限スコープの縮小」と「リポジトリ読み込み時の警告強化」を次期バージョンで実施する方針を示した（公式ブログ記事は準備中）。</p>
+        <ul>
+          <li><strong>推奨対策（継続）:</strong> /permissions で許可コマンドを最小限に設定・未知リポジトリはサンドボックス環境で開く・CLAUDE.md の権限定義を最小化</li>
+          <li><strong>Check Point の補足報告:</strong> 悪意のある GitHub リポジトリを開くだけで妥協につながるリスクがあると指摘。AI エージェント全般のツール権限スコープがセキュリティ上の焦点に</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ========== OpenAI / Other Tools ========== -->
+  <!-- ========== OpenAI / Codex ========== -->
   <section class="section" id="openai">
     <div class="section-header">
-      <div class="section-title">OpenAI Codex / その他 AI ツール動向</div>
+      <div class="section-title">OpenAI Codex / GPT-5.6 最新動向</div>
       <span class="section-count">2 記事</span>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex Remote が全 ChatGPT プランで GA — スマートフォンから QR ペアリングでホスト PC の作業を確認・承認</div>
-      <div class="card-meta"><span class="badge">GA</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">openai.com/codex/changelog</a> · <a href="https://releasebot.io/updates/openai">releasebot.io</a> — 2026.07</span></div>
+      <div class="card-title">GPT-5.6 シリーズ（Sol / Terra / Luna）が政府承認の約20社に限定プレビュー公開 — Cerebras で最大750 tok/s</div>
+      <div class="card-meta"><span class="badge">Limited Preview</span><span class="card-source">Source: <a href="https://openai.com/index/previewing-gpt-5-6-sol/">openai.com</a> · <a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">VentureBeat</a> · <a href="https://www.marktechpost.com/2026/06/26/openai-previews-gpt-5-6-with-sol-terra-and-luna-tiered-models-new-reasoning-modes-limited-access/">MarkTechPost</a> — 2026.06.26–07.03</span></div>
       <div class="card-body">
-        <p>OpenAI の Codex Remote（スマートフォンから Mac/Windows ホストに接続してコーディング作業を監視・承認する機能）が全 ChatGPT プランで一般提供（GA）となった。</p>
+        <p>OpenAI が GPT-5.6 シリーズの限定プレビューを開始した。3サイズで構成されるティアモデルで、米国政府承認済みの約20社のパートナー・組織に API および Codex 経由で提供されている。一般向けの正式提供は「数週間以内」の予定。</p>
         <ul>
-          <li><strong>認証方式:</strong> iOS/Android デバイスとホスト間の認証済み 1対1 QR ペアリングを採用し、セキュリティを強化</li>
-          <li><strong>パフォーマンス改善:</strong> 不要な DNS 処理の遅延・モデルキャッシュのウォームアップ・プラグインスキルの並列読み込み最適化によりセッション起動レイテンシを大幅短縮</li>
-          <li><strong>新機能:</strong> 親エージェントがサブエージェントの端末エラーを受け取れるように改善。インデックス付きウェブ検索モード（直接ページアクセスはサーバー許可 URL のみに制限）も追加</li>
-          <li><strong>時刻取得:</strong> エージェントがスケジュール UTC リマインダーの受信・現在時刻の直接クエリに対応</li>
+          <li><strong>Sol（旗艦）:</strong> 高難度推論・サイバーセキュリティ特化。$5 / Mtok（入力）・$30 / Mtok（出力）。Cerebras 上で最大 750 tokens/秒で稼働</li>
+          <li><strong>Terra（バランス）:</strong> GPT-5.5 と同等性能で価格は2分の1以下。$2.50 / Mtok（入力）・$15 / Mtok（出力）</li>
+          <li><strong>Luna（高速・廉価）:</strong> 大量ルーティン処理向け。$1 / Mtok（入力）・$6 / Mtok（出力）</li>
+          <li><strong>Ultra モード:</strong> Sol でサブエージェントを活用して複雑作業を加速する新しい推論モード</li>
+          <li><strong>安全性:</strong> 強化された安全策を搭載しており、System Card を deployment safety hub で公開</li>
         </ul>
+        <p>VentureBeat は「政府が承認した企業のみにアクセスを限定した点は前例がない」と報じており、AI 安全保障上の新たなモデルリリース慣行として注目される。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.3-Codex 発表 — 「エージェントはどのように仕事を変えているか」を OpenAI が事例集で解説</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://openai.com/index/introducing-gpt-5-3-codex/">openai.com</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">openai.com/agents-work</a> — 2026.06</span></div>
+      <div class="card-title">Codex Remote が全 ChatGPT プランで GA — 続報：QR ペアリング認証でモバイルから PC 作業を承認</div>
+      <div class="card-meta"><span class="badge">GA</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">openai.com/codex/changelog</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>OpenAI が GPT-5.3-Codex の紹介記事と同時に「エージェントが仕事をどう変えているか」と題した事例集を公開。週間アクティブユーザーが2025年11月比で56倍に増加した Codex の普及状況と、非開発者による利用急増が強調されている。</p>
-        <ul>
-          <li><strong>非開発者利用:</strong> マーケター・アナリスト・研究者など非エンジニア職種による Codex 利用が急拡大しており、「コーディングエージェント」から「作業エージェント」へのシフトが顕著</li>
-          <li><strong>Codex for Everything:</strong> 「ほぼあらゆる作業に Codex を」という新コンセプト記事も公開。コードを超えたタスク自動化の事例を多数掲載</li>
-        </ul>
+        <p>7月2日に GA が発表された Codex Remote の追加詳細が明らかになった。iOS/Android の ChatGPT アプリから、QR コードで認証済みペアリングを行った Mac/Windows ホスト上の Codex セッションに接続し、進捗確認・アクション承認ができる。セッション起動レイテンシの短縮（DNS 遅延最適化・モデルキャッシュウォームアップ・プラグインスキルの並列読み込み）も合わせて実施された。</p>
       </div>
     </div>
   </section>
@@ -183,33 +183,33 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/netsec「無害なリポジトリが Claude Code でリバースシェルになる — デモ動画が恐ろしすぎる」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/netsec · r/programming — 2026.07.02</span></div>
-      <div class="card-body"><p>Pentera Labs のデモ動画が r/netsec で爆発的に拡散した。「AI エージェントに bash を許可した時点でサンドボックス外の全ファイルが人質になる」「CLAUDE.md に書いてあるツール許可ルールがそのまま攻撃面になる」というコメントが高評価。r/programming では「これは Claude Code に限った話ではなく Copilot Workspace も同じリスクを抱えている」「エージェントに対するセキュリティ境界をどう引くかがこれからの最重要課題」という議論が活発になった。「今すぐ /permissions で許可コマンドを最小限にセットしろ」という実践的なアドバイスが固定コメントに。</p></div>
+      <div class="card-title">r/ClaudeAI「Sonnet 5 が Claude Code のデフォルトに — 実際に使ってみてどう？ 体感の違いをレポート」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.03</span></div>
+      <div class="card-body"><p>Claude Sonnet 5 のデフォルト化を受け、r/ClaudeAI では早速「実使用レポート」スレッドが急上昇している。「Sonnet 4.6 で詰まっていた複雑なリファクタリングがほぼ一発で通った」「バックグラウンドでのマルチエージェント実行が格段に安定した」という好評価が並ぶ一方、「1M コンテキストは本当に使い切れるのか？ 長大プロジェクトで試した人いる？」「8/31 以降の価格が心配」という現実的な声も。CLAUDE.md パターンや hooks 設計の共有スレッドで Sonnet 5 特有の挙動の違いを文書化しようという動きも始まっている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude Science 発表 — バイオインフォマティクスの研究者だけど、これは本当に使えそう？」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/bioinformatics — 2026.07.02</span></div>
-      <div class="card-body"><p>Claude Science 発表を受けて、r/ClaudeAI と r/bioinformatics で「実用性はどれほどか」という議論が展開中。「ゲノムブラウザが AI と同じ画面に統合されるのは革命的」「プロテインフォールディングの可視化が Claude の画面でできるなら乗り換え一択」という肯定的意見が多数。一方「$30,000 のグラントは競争が激しすぎる」「Opus 4.8 が土台というのが少し不安、Sonnet 5 が正式対応するタイミングは？」という現実的な疑問も。MIT Tech Review の「旗艦プロダクト」評については「ワークフロー設計で勝負する姿勢は正直 Anthropic らしい」というコメントが上位。</p></div>
+      <div class="card-title">r/netsec「Claude Code セキュリティ問題の続報 — Anthropic が次バージョンでツール権限スコープを縮小へ」</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/netsec · r/programming — 2026.07.03</span></div>
+      <div class="card-body"><p>Pentera Labs のプロンプトインジェクション攻撃デモ（7/1〜2 に報道）の続報として、Anthropic が対策を表明したことが r/netsec でも話題に。「権限スコープの縮小というアプローチは正しいが、根本的にはエージェントがコードを実行する前にユーザー確認を挟む仕組みが必要」という意見が上位。「サンドボックスで開くのが一番確実」「Docker コンテナ内で Claude Code を動かすべき」という実践的なアドバイスも人気コメントに並んだ。r/programming では「Copilot Workspace・Cursor・Windsurf も同等のリスクを抱えているはず」という拡大議論へ発展。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/programming「Loop Engineering が日本の Qiita/Zenn を席巻 — 海外からも注目される日本の AI エンジニアリング文化」</div>
-      <div class="card-meta"><span class="badge">Meta</span><span class="card-source">Reddit r/programming · r/MachineLearning — 2026.07.02</span></div>
-      <div class="card-body"><p>「日本の技術ブログ文化が AI エージェント時代の最前線にいる」というスレッドが r/programming でトレンド入り。Qiita の「Claude Code Agent Teams — 16台の AI が書いた10万行コンパイラ」記事への英訳リクエストが殺到。「Loop Engineering というコンセプトが Boris Cherny と Addy Osmani によって命名・体系化されたが、実装事例は日本コミュニティが圧倒的に豊富」という観察が高評価を受けた。r/MachineLearning では「Maker-Checker サブエージェントパターンを実際のプロダクションで使っている事例が Zenn に多い」という指摘も。</p></div>
+      <div class="card-title">r/artificial「GPT-5.6 Sol/Terra/Luna — 政府承認の20社限定というリリース形態は前例があるか？」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/artificial · r/MachineLearning — 2026.07.03</span></div>
+      <div class="card-body"><p>GPT-5.6 シリーズが米国政府承認済みの約20社に限定されたプレビューとして公開されたことが r/artificial と r/MachineLearning で大きな議論を呼んでいる。「これは AI 安全保障上の新慣行か、それとも単なる PR 戦略か」「政府が AI モデルのリリースゲートキーパーになる時代が来た」という賛否両論が白熱。「Cerebras で 750 tok/s は本物のゲームチェンジャー」「Sol の価格は GPT-5.5 より高いが、速度と能力で正当化できるか？」というコスト議論も活発。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/soccer「スペイン3-0 オーストリア、USA 物議の一戦でボスニアに勝利 — W杯 R32 続々と決着」</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/soccer · r/worldcup — 2026.07.02</span></div>
-      <div class="card-body"><p>7月2日の W杯ラウンド32でスペインがオーストリアに3-0の完勝。USA はボスニア・ヘルツェゴビナ戦で「物議を醸したレッドカード」で数的優位を得て勝利し R16 進出を決めた。r/soccer は USA のレッドカードを巡る審判判定論争で大荒れ。「あのレッドは完全に誤審」「ホスト国補正では？」というコメントが溢れた。スペイン戦については「このチームは今大会で最も組織的なサッカーをしている」「中盤のボール支配率が異次元」という絶賛コメントが多数。</p></div>
+      <div class="card-title">r/worldcup「エジプトがオーストラリアを PK 戦で撃破 — W杯初のアフリカ勢快進撃にコミュニティ沸く」</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/worldcup · r/soccer — 2026.07.03</span></div>
+      <div class="card-body"><p>7月3日の W杯 R32 でエジプトがオーストラリアを PK 戦（4-2）で撃破し R16 進出を決めた試合が r/worldcup で大きく盛り上がった。「AFCON（アフリカネーションズカップ）で培った守備組織が世界レベルでも通用することを証明した」「ベスト16に4チーム以上のアフリカ勢が残りそう」という興奮が溢れている。アルゼンチン vs カーボベルデ、コロンビア vs ガーナのカードについても「ディフェンディングチャンピオンのアルゼンチンがここで苦戦するとは誰も思っていない」という声と「カーボベルデには番狂わせの雰囲気がある」という期待感が交錯。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「米雇用6月5.7万人 — 3カ月連続で賃金成長がインフレに負ける、景気後退の足音」</div>
-      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Reddit r/worldnews · r/economics — 2026.07.02</span></div>
-      <div class="card-body"><p>6月の米国雇用統計（非農業部門雇用者数 +5.7万人）が市場予想を大幅に下回り、r/worldnews と r/economics でショックが広がった。「これは数十年ぶりに弱い6月の雇用数字」「Fed が利下げを急ぐかもしれない」という声と、「AI 導入による雇用代替がついに統計に出てきた？」という議論が混在。賃金成長が3カ月連続でインフレを下回っていることへの懸念も拡大している。</p></div>
+      <div class="card-title">r/worldnews「ハメネイ師国葬始まる — 仏英がホルムズ海峡への多国籍艦隊派遣を表明、市場への影響は？」</div>
+      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.03</span></div>
+      <div class="card-body"><p>ハメネイ師の棺が一般公開され国葬準備が本格化した7月3日、r/worldnews では仏英両国がホルムズ海峡への多国籍軍艦隊派遣を表明したことへの反応が集中。「これは NATO レベルの関与に発展するのか」「原油価格が先物市場で反応し始めている」という経済・安全保障面の議論が活発。「米・イラン交渉が MOU の60日タイムラインで再開できるか、葬儀後の新指導部の出方次第」という外交分析コメントも高評価。</p></div>
     </div>
   </section>
 
@@ -220,68 +220,59 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/2）の主要トピック:</strong> <strong>外交:</strong> 米・イラン交渉がホメイニー師葬儀（7/4〜9）で一時停止、ドーハでの協議は「前向きな進展」あり / <strong>FIFA W杯:</strong> スペイン3-0 オーストリア・USA が物議のレッドカードでボスニアに勝利 / <strong>経済:</strong> 米6月雇用+5.7万人・賃金成長3カ月連続でインフレ未達 / <strong>中東:</strong> シリア・ダマスカスで爆発5名死亡 / <strong>政治:</strong> トランプ大統領が新エアフォースワンで初フライト
+      <strong>本日（7/3）の主要トピック:</strong> <strong>イラン:</strong> ハメネイ師の棺が一般公開・7/4〜9 の国葬準備が本格化、仏英がホルムズ海峡への多国籍艦隊派遣を表明 / <strong>FIFA W杯:</strong> エジプトが豪をPKで下し R16 進出・アルゼンチン vs カーボベルデ・コロンビア vs ガーナ / <strong>外交:</strong> シャバズ・シャリフ首相が7/3〜5 イラン訪問・葬儀出席予定 / <strong>人道:</strong> ベネズエラ地震・死者2,295名に / <strong>宗教:</strong> 聖座がピウス十世会（SSPX）の全聖職者を破門
     </div>
 
     <div class="card">
-      <div class="card-title">米・イラン和平交渉が一時停止 — ハメネイ師葬儀（7/4〜9）のため、ドーハ協議は「前向きな進展」あり再開へ</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/">CBS News</a> · <a href="https://www.aljazeera.com/news/liveblog/2026/7/2/iran-war-live-positive-progress-as-us-tehran-wrap-up-indirect-talks">Al Jazeera</a> · <a href="https://www.timesofisrael.com/liveblog_entry/us-iran-made-progress-at-doha-talks-agree-to-regroup-after-khamenei-funeral-qatar/">Times of Israel</a> — 2026.07.02</span></div>
+      <div class="card-title">ハメネイ師国葬（7/4〜9）が本格化 — 仏英が共同でホルムズ海峡への多国籍艦隊派遣を表明、米・イラン交渉は停止中</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/07/03/world/live-news/iran-funeral-war-trump">CNN</a> · <a href="https://www.foxnews.com/live-news/us-iran-peace-talks-pause-supreme-leader-ayatollah-khamenei-funeral-july-3-2026">Fox News</a> · <a href="https://www.aljazeera.com/news/2026/7/3/irans-khamenei-funeral-which-world-leaders-are-attending">Al Jazeera</a> · <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/">CBS News</a> — 2026.07.03</span></div>
       <div class="card-body">
-        <p>米国とイランの和平交渉が、最高指導者アリー・ハメネイ師の葬儀（7月4〜9日）を理由に少なくとも1週間停止することが発表された。仲介国のカタールとパキスタンは「最速のタイミングで再開する」と表明。</p>
+        <p>イランの最高指導者アリー・ハメネイ師（2月28日の Operation Epic Fury での空爆で死亡）の国葬が7月4〜9日にかけてイラン・イラク各地で実施される。7月3日には棺が一般公開され、当局推計で1500〜2000万人規模の会葬者が見込まれるイラン史上最大規模の国葬となる見通し。</p>
         <ul>
-          <li><strong>ドーハ協議の成果:</strong> トランプ大統領と仲介国が「前向きな進展があった」と述べており、ホルムズ海峡の航行安全に関する議論が中心だった</li>
-          <li><strong>核問題は対象外:</strong> 今回のドーハ技術協議ではイランの核開発計画は議題に上らなかった</li>
-          <li><strong>イランの警告:</strong> イランはホルムズ海峡のタンカーへの警告を維持しており、交渉停止中の緊張は継続</li>
-          <li><strong>葬儀の規模:</strong> 当局発表によると1500〜2000万人規模の会葬者が見込まれ、イラン史上最大の国葬になる見通し</li>
-          <li><strong>パキスタン首相:</strong> シャバズ・シャリフ首相が7月3〜5日にイランを訪問し葬儀に出席予定</li>
+          <li><strong>フランス・英国の声明:</strong> マクロン大統領とスターマー首相が共同声明で「ホルムズ海峡の航行自由支援のため多国籍軍事ミッションを展開する準備がある」と表明</li>
+          <li><strong>米・イラン交渉の停止:</strong> ドーハで「前向きな進展」があったと確認された後、葬儀を理由に少なくとも1週間の停止に入った。カタールとパキスタンが仲介継続を約束</li>
+          <li><strong>MOU の期限:</strong> 2週間前に署名された覚書では「最大60日（相互同意で延長可）以内に最終合意を達成する」と規定されており、タイムラインへの影響が注目される</li>
+          <li><strong>パキスタン首相:</strong> シャバズ・シャリフ首相が7月3〜5日のイラン訪問で葬儀に出席する予定</li>
+          <li><strong>参列予定の各国首脳:</strong> ロシア、中国、トルコ等の代表が参列予定（Al Jazeera が一覧を公開）</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA W杯 2026 R32（7/2）— スペイン3-0 オーストリアで圧勝、USA 物議のレッドカードでボスニアに勝利し R16 へ</div>
-      <div class="card-meta"><span class="badge">Sports / W杯</span><span class="card-source">Source: <a href="https://www.foxnews.com/sports/usa-advances-world-cup-controversial-red-card-vs-bosnia-herzegovina">Fox News</a> · <a href="https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket">ESPN</a> — 2026.07.02</span></div>
+      <div class="card-title">FIFA W杯 2026 R32（7/3）— エジプト 4-2（PK）オーストラリア、アルゼンチン vs カーボベルデ、コロンビア vs ガーナ</div>
+      <div class="card-meta"><span class="badge">Sports / W杯</span><span class="card-source">Source: <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-every-match-result-friday-3-july-live-scores">olympics.com</a> · <a href="https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket">ESPN</a> · <a href="https://www.sbs.com.au/news/article/fifa-world-cup-2026-results-july-03/0ewhnzp2y">SBS News</a> — 2026.07.03</span></div>
       <div class="card-body">
-        <p>7月2日のラウンド32では3試合が予定・実施された。</p>
+        <p>7月3日はラウンド32の最終3試合が実施された。</p>
         <ul>
-          <li><strong>スペイン 3-0 オーストリア:</strong> 圧倒的な中盤支配でスペインが完勝。ラウンド16（ベスト16）進出</li>
-          <li><strong>USA ─ ボスニア・ヘルツェゴビナ:</strong> 物議を醸したレッドカードによる数的優位を生かし USA が勝利・R16 進出。審判判定を巡る論争は試合後も続いている</li>
-          <li><strong>ポルトガル vs クロアチア / スイス vs アルジェリア:</strong> 夜間キックオフの2試合は現地時間夜に実施（詳細スコアは速報中）</li>
+          <li><strong>エジプト 2-2（PK 4-2）オーストラリア:</strong> 延長戦で決着がつかずPK戦へ。エジプトが 4-2 で制しベスト16進出。アフリカ勢の躍進が続く</li>
+          <li><strong>アルゼンチン vs カーボベルデ:</strong> ディフェンディングチャンピオンのアルゼンチンが史上初出場のカーボベルデと激突（詳細スコアは現地夜間キックオフ）</li>
+          <li><strong>コロンビア vs ガーナ:</strong> 無敗のコロンビアが世界舞台初対戦となるガーナと カンザスシティで激突</li>
         </ul>
-        <p>米東部の熱波が続く中、昼間の試合では屋外ファンゾーンの一部が閉鎖される事態も発生。</p>
+        <p>R32 全32試合が終了し、7月5日からラウンド16（ベスト16）が開幕する。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">米6月雇用統計 — 非農業部門+5.7万人、予想を大幅下回り賃金成長も3カ月連続でインフレ未達</div>
-      <div class="card-meta"><span class="badge">Economy / US</span><span class="card-source">Source: <a href="https://www.nbcnews.com/business/economy/june-jobs-report-stable-hiring-rcna352603">NBC News</a> — 2026.07.02</span></div>
+      <div class="card-title">ベネズエラ地震 — 死者2,295名に増加、代行大統領が7日間の国家喪に宣言</div>
+      <div class="card-meta"><span class="badge">Humanitarian</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07.01–03</span></div>
       <div class="card-body">
-        <p>米労働省が7月2日に発表した6月の雇用統計で、非農業部門雇用者数の増加は +5.7万人にとどまり、市場のコンセンサス予想を大幅に下回った。賃金成長率はインフレを3カ月連続で下回っており、労働市場の急速な冷え込みを示す内容。</p>
-        <ul>
-          <li><strong>市場反応:</strong> 発表後、国債が急上昇し利回りが低下。連邦準備制度理事会（Fed）による利下げ前倒し観測が強まった</li>
-          <li><strong>AI 代替論:</strong> 経済学者の間では「AI 導入・自動化の加速が雇用数に影響を与え始めている可能性」を指摘する声も浮上</li>
-          <li><strong>トランプ政権との整合性:</strong> 政権は「関税政策の不確実性が設備投資・採用を抑制している」という批判に対して「これから数カ月で改善する」と反論</li>
-        </ul>
+        <p>ベネズエラで発生した地震の死者数が2,295名に達した。代行大統領のデルシー・ロドリゲスは7日間の国家喪を宣言。国際社会からの支援受け入れが続いている。被災地では余震が続いており、WHO も人道支援の調整に入っている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">シリア・ダマスカス爆発 — 人気カフェで即席爆発物（IED）が爆発、5名死亡、治安部隊が犯人追跡</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/7/2/syria-explosion-live-blast-rocks-damascus-as-authorities-investigate-cause">Al Jazeera</a> — 2026.07.02</span></div>
+      <div class="card-title">フィリピンが上位中所得国に格上げ — 世界銀行が 2026 年度閾値超えを確認</div>
+      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>シリアの首都ダマスカスの人気カフェで即席爆発物（IED）が爆発し、少なくとも5名が死亡した。シリア治安部隊が攻撃者の捜索を行っている。</p>
-        <ul>
-          <li><strong>責任主張:</strong> 7月2日午後の時点で責任主張はなし</li>
-          <li><strong>状況:</strong> 2025〜26年の米・イラン戦争を受けて中東地域全体で不安定な情勢が続いており、シリアでも国内の緊張が続いている</li>
-        </ul>
+        <p>世界銀行がフィリピンを下位中所得国から上位中所得国に分類変更した。1人当たり国民総所得（GNI）が 2026 年度の閾値を超えたことが根拠。東南アジアにおける経済成長の継続を示す指標として注目される。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">トランプ大統領、カタール提供の新エアフォースワン Boeing 747 で初フライト — ルーズベルト大統領図書館のデビューに使用</div>
-      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: <a href="https://www.foxnews.com/politics/trump-takes-inaugural-flight-aboard-new-air-force-one-ahead-library-debut-honoring-famed-outdoorsman">Fox News</a> — 2026.07.02</span></div>
+      <div class="card-title">聖座がピウス十世会（SSPX）の全聖職者を破門 — 無許可の司教叙階が理由、信徒への参加も禁止</div>
+      <div class="card-meta"><span class="badge">Religion</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>トランプ米大統領が、カタールから寄贈を受けた新型エアフォースワン（Boeing 747）で初フライトを実施した。ノースダコタ州メドラにあるセオドア・ルーズベルト大統領図書館のオープンセレモニーへの移動に使用された。航空機の受け取りを巡っては外国からの贈り物に関する憲法上の懸念が一部で指摘されている。</p>
+        <p>バチカン（聖座）がピウス十世会（SSPX）の全聖職者を破門処分とした。教皇の許可なく司教を叙階したことが理由。さらに、カトリック信徒が SSPX のミサに参加した場合も破門になると警告しており、伝統派カトリック社会に波紋が広がっている。</p>
       </div>
     </div>
   </section>
@@ -294,35 +285,35 @@
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita 週間1位】「Claude Code Agent Teams：16台のAIが書いた10万行コンパイラが突きつける『組織設計』という新命題」</div>
-      <div class="card-meta"><span class="badge">Qiita Top</span><span class="card-source"><a href="https://x.com/qiitapoi/status/2026423965183521214">Qiita 人気の投稿 公式 X</a> — 2026.07.02</span></div>
-      <div class="card-body"><p>Qiita 公式 X アカウントが「今週の人気記事」として紹介した投稿。Claude Code の Agent Teams 機能を使い、16のサブエージェントが並列で計10万行超のコンパイラを実装した過程を詳細にレポート。注目点は技術的な成果よりも「サブエージェント同士のコンテキスト共有設計」「デバッグと検証担当のエージェントを分離する重要性」「エージェント間のコンフリクト解消プロセス」といった組織論的な考察にある。Dynamic Workflows の正式公開タイミングと重なり、「この記事が一番の教科書」という声が相次いだ。Sonnet 5 + Dynamic Workflows による再現実験を試みる読者も続出している。</p></div>
+      <div class="card-title">【Qiita】「AI Daily Digest: 2026年7月3日 — Claude Sonnet 5、Claude Science、AI インフラブーム」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/lhjjjk4/items/15143176cf7ea49a348f">Qiita — qiita.com/lhjjjk4</a> — 2026.07.03</span></div>
+      <div class="card-body"><p>Claude Sonnet 5 リリースを機に、Claude Science・AI インフラブームの3大トピックをまとめた記事が Qiita でトレンド入り。Sonnet 4.6 との比較として「推論・ツール使用・コーディング・知識作業のすべてで改善」という評価が示されており、Claude Code での実測レポートも掲載。初日の読者コメントでは「エージェント型タスクでの体感速度が別物」「1M コンテキストで大規模コードベースを一度に読み込ませる実験をした」という報告が集まっている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn】「Loop Engineering Deep Dive — 6月2026年の AI エージェント開発パラダイムを体系化する」</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://www.oflight.co.jp/en/columns/loop-engineering-ai-agent-paradigm-2026-06">oflight.co.jp コラム</a> — 2026.06</span></div>
-      <div class="card-body"><p>Loop Engineering（AI エージェントへの指示を「ループ」として設計する開発手法）の詳細解説記事が Zenn で人気継続中。Boris Cherny の「I don't prompt Claude anymore — I write loops」という言葉と Addy Osmani による命名・体系化を出発点に、Automations・Worktrees・Skills・Plugins・Maker-Checker Sub-agents・Durable State という6つの構成要素を Claude Code の既存機能にマッピング。「プロンプトエンジニアリング→コンテキストエンジニアリング→ハーネスエンジニアリング→ループエンジニアリング」という開発パラダイムの変遷を整理しており、入門〜実践まで幅広く活用されている。</p></div>
+      <div class="card-title">【Zenn】「Claude Sonnet 5 がリリース — エージェント性能が大幅強化、Opus 並みの実力を Sonnet 価格で」</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/shintaroamaike/articles/855ac37fa80096">Zenn — zenn.dev/shintaroamaike</a> — 2026.07</span></div>
+      <div class="card-body"><p>Zenn で最も早くClaude Sonnet 5 を詳細解説した記事の一つ。「2026年6月30日に Anthropic が正式リリース」「これまでで最もエージェント指向の Sonnet モデル」という位置付けを丁寧に解説。コーディング・自動化タスクでの具体的なベンチマーク比較と、Claude Code のデフォルトモデル化による実務への影響（CLAUDE.md 設計・権限管理の再考）を論じた後半が特に評価されている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita】「はじめての Agent Skills 12選 — GitHub Copilot でも使える AI の手順書」</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/aktsmm/items/08eef2cdeeb0a32b69a2">Qiita.com</a> — 2026.07</span></div>
-      <div class="card-body"><p>Claude Code の Skills 機能（エージェントが参照できるマークダウン形式の手順書ファイル）をゼロから作る方法と、実際に使える12のスキルテンプレートを一覧化した実践記事。GitHub Copilot Workspace との共通フォーマットにも触れており、「チームで使い回せるスキルライブラリを作ろう」というメッセージが好評。Dynamic Workflows のリサーチプレビュー公開を受けて「スキルとワークフローを組み合わせる構成例」の追記も予告されている。</p></div>
+      <div class="card-title">【Zenn】「Claude Sonnet 5 が登場」— ヘッドウォータース社による速報解説</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/headwaters/articles/7ece3ef002a900">Zenn — zenn.dev/headwaters</a> — 2026.07</span></div>
+      <div class="card-body"><p>ヘッドウォータース社エンジニアによる Sonnet 5 速報記事。「Opus 4.8 に近い性能をより低価格で提供するモデル」として、特にエージェント型コーディング・自動化タスクでの活用シーンを解説。Claude Code でのデフォルト化により「既存の CLAUDE.md・プロンプト設計を見直すタイミング」という実践的な示唆が盛り込まれており、現場エンジニアからの支持を集めている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn】「Claude Code によるセキュリティリスクを理解する — プロンプトインジェクション事例と対策まとめ」</div>
-      <div class="card-meta"><span class="badge">Zenn Security</span><span class="card-source">Zenn.dev — 2026.07.02</span></div>
-      <div class="card-body"><p>今日公開されたばかりのセキュリティ解説記事。Pentera Labs のデモや SecurityWeek 報道を受けて、日本語でいち早くプロンプトインジェクション攻撃の仕組みと対策を整理した内容。「Claude Code に bash を許可することの意味を改めて考えよ」「/permissions・.claude/settings.json の制限設定が実質的なセキュリティ境界になる」「未知のリポジトリは必ずサンドボックスか仮想環境で開け」という3点が対策の核心として挙げられ、コメント欄でも熱い議論が展開されている。</p></div>
+      <div class="card-title">【Zenn】「Claude Fable 5 が帰ってきたので情報を整理した」— 輸出規制解除の経緯と現在の利用状況まとめ</div>
+      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/acntechjp/articles/498c1dc866af19">Zenn — zenn.dev/acntechjp</a> — 2026.07</span></div>
+      <div class="card-body"><p>7月1日に全プラットフォームで再開した Claude Fable 5 について、輸出規制制限の経緯・制限期間中の利用不可状況・制限解除後のアクセス方法を日本語で整理した解説記事。Pro/Max/Team プランでの週次利用上限（7/7まで最大50%）や API・Claude Code での利用開始手順が丁寧にまとめられており、「やっと使える」という読者コメントが多数。Sonnet 5 との使い分けについての議論も盛り上がっている。</p></div>
     </div>
   </section>
 
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年7月2日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: anthropic.com · techcrunch.com · thenewstack.io · mit.edu · securityweek.com · cybernews.com · theregister.com · startuphub.ai · mindstudio.ai · openai.com · Al Jazeera · CBS News · Times of Israel · Fox News · ESPN · NBC News · Qiita.com · Zenn.dev · oflight.co.jp</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月3日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: anthropic.com · platform.claude.com · releasebot.io · openai.com · venturebeat.com · marktechpost.com · securityweek.com · theregister.com · CNN · Fox News · Al Jazeera · CBS News · olympics.com · ESPN · SBS News · Qiita.com · Zenn.dev</p>
 </footer>
 
 </body>
