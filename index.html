@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月4日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月5日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,8 +63,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Anthropic が Claude の「新しい憲法」を CC0 で全公開（哲学的アプローチへ転換）/ GPT-5.6 が Codex アプリに流出・7/7 前後の一般公開を示唆 / ハメネイ師国葬1日目：テヘランに数百万人・復讐コール・新最高指導者モジュタバーは姿見せず / 米国独立250周年（熱波で一部中止）/ W杯 R16：モロッコ 3-0 カナダ・フランス vs パラグアイ進行中</p>
-  <p class="date">2026年7月4日（土）&nbsp;|&nbsp;<a href="2026-07-03/index.html">前版（7/3）</a></p>
+  <p class="subtitle">Claude Code v2.1.200 でデフォルト権限モードが「Manual」に変更 / Claude Fable 5 が全世界で再公開（輸出規制解除・新分類器追加）/ ハメネイ師国葬2日目：3人の息子が登場も後継者モジュタバーは依然不在 / W杯 R16：フランス 1-0 パラグアイ（エムバペ）・ノルウェーがブラジルを撃破（ハーランド2発）/ メキシコ vs イングランド（アステカ・雷雨遅延）</p>
+  <p class="date">2026年7月5日（日）&nbsp;|&nbsp;<a href="2026-07-04/index.html">前版（7/4）</a></p>
 </header>
 
 <nav>
@@ -84,45 +84,47 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/4）のハイライト:</strong> Anthropic が <strong>Claude の「新しい憲法」</strong> を CC0（パブリックドメイン相当）で全公開。箇条書きのルール集から「なぜそうすべきか」を説明する哲学的ドキュメントへと大幅刷新された。Claude Code の最新安定版は引き続き <strong>v2.1.197 / Claude Sonnet 5 デフォルト</strong>。新たな大型リリースは本日なし。セキュリティ面では Anthropic の次期版での権限スコープ縮小方針が引き続き注目されている。
+      <strong>本日（7/5）のハイライト:</strong> Claude Code <strong>v2.1.200/201</strong> が7/3にリリース済み。デフォルト権限モードが CLI・VS Code・JetBrains 全てで <strong>「Manual」に変更</strong>（これまでの「default」から）。AskUserQuestion ダイアログが自動継続しなくなった。また Claude Code の GitHub リポジトリに <strong>5,000 件超のオープン Issue</strong> が蓄積していることがコミュニティで話題に。Claude Fable 5 は7/1から全世界で再公開済み（輸出規制解除後）。
     </div>
 
     <div class="card">
-      <div class="card-title">Anthropic が Claude の「新しい憲法」を CC0 で全公開 — ルール列挙から哲学的説明へ大転換</div>
-      <div class="card-meta"><span class="badge">AI Safety</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-new-constitution">anthropic.com/news/claude-new-constitution</a> · <a href="https://www.anthropic.com/constitution">anthropic.com/constitution</a> · <a href="https://time.com/7354738/claude-constitution-ai-alignment/">Time</a> · <a href="https://www.infoq.com/news/2026/01/anthropic-constitution/">InfoQ</a> — 2026.01（本日改めて広く参照）</span></div>
+      <div class="card-title">Claude Code v2.1.200 — デフォルト権限モードが「Manual」に変更、AskUserQuestion の自動継続廃止</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">code.claude.com/docs/en/changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.03</span></div>
       <div class="card-body">
-        <p>Anthropic が公開した Claude の新しい憲法（Model Spec）は、従来の「すべきこと・してはいけないことのリスト」から、「なぜそうすべきかの説明」へと哲学的アプローチを大きく転換したドキュメントだ。</p>
+        <p>7月3日にリリースされた v2.1.200 と v2.1.201 で、Claude Code の挙動に重要な変更が加わった。</p>
         <ul>
-          <li><strong>優先順位（高い順）:</strong> 安全性 → 倫理 → Anthropic ガイドラインへの準拠 → 役立つこと</li>
-          <li><strong>中核目標:</strong> Claude を「善良で、賢明で、徳を持ったエージェント」にすること。具体的ルールの暗記ではなく、道徳的不確実性や意見の相違を含む現実の意思決定で判断できる能力の育成を目指す</li>
-          <li><strong>ライセンス:</strong> CC0 1.0 Deed（著作権なし・誰でも自由に利用可能）で完全公開。他の AI 開発者も参照・再利用可能</li>
-          <li><strong>透明性の意義:</strong> Oxford 大学の専門家は「AI の価値観設計が外部から検証可能になった点で画期的」と評価</li>
+          <li><strong>v2.1.200 の主な変更:</strong> デフォルト権限モードが CLI・VS Code・JetBrains 全てで「Manual」に変更。これにより Claude Code はデフォルトでユーザーの明示的な許可なしにファイル操作やコマンド実行を行わなくなる</li>
+          <li><strong>AskUserQuestion の変更:</strong> ダイアログが自動継続しなくなった（以前は一定時間後に自動でデフォルト選択肢が選ばれていた）</li>
+          <li><strong>v2.1.201 の修正:</strong> Claude Sonnet 5 セッションで会話の途中にシステムロールのリマインダーが割り込む問題を解消</li>
+          <li><strong>Claude Sonnet 5:</strong> ネイティブ 1M トークンコンテキスト・8/31 まで $2/$10 per Mtok のプロモーション価格継続中</li>
         </ul>
-        <p>r/ClaudeAI ではこのドキュメントを読んで「Claude がなぜこういう振る舞いをするのか腑に落ちた」という声が相次いでいる。</p>
+        <p>コミュニティでは「Manual モードがデフォルトになったのは安全性向上として正しい判断」「初心者には少し煩雑だが、慣れれば当然の変更」という肯定的な意見が多数を占めている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.197（Sonnet 5 デフォルト）引き続き安定稼働 — 本日新リリースなし</div>
-      <div class="card-meta"><span class="badge">Status</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://github.com/anthropics/claude-code/releases">GitHub Releases</a> — 2026.07.04</span></div>
+      <div class="card-title">Claude Fable 5 が全世界で再公開 — 米国の輸出規制解除後、新サイバーセキュリティ分類器を追加して復活</div>
+      <div class="card-meta"><span class="badge">Model Update</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html">The Hacker News</a> · <a href="https://www.anthropic.com/news/redeploying-fable-5">anthropic.com/news/redeploying-fable-5</a> · <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/">BleepingComputer</a> · <a href="https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says">Al Jazeera</a> — 2026.07.01</span></div>
       <div class="card-body">
-        <p>7月4日現在、Claude Code の最新安定版は v2.1.197。昨日（7/3）にリリースされた組織デフォルトモデル・読みやすいセッション名・ファイル添付クリック操作などの機能が引き続き有効。本日の祝日（米国独立記念日）に合わせた追加リリースはなし。</p>
+        <p>6月12日に米国の輸出規制が適用されて一時停止されていた Claude Fable 5 が、6月30日の規制解除を受けて7月1日から全世界で再公開された。</p>
         <ul>
-          <li><strong>Claude Sonnet 5 デフォルト:</strong> ネイティブ 1M トークンコンテキスト・8/31 まで $2/$10 per Mtok プロモーション価格継続中</li>
-          <li><strong>次期版予告:</strong> ツール権限スコープ縮小・リポジトリ読み込み時の警告強化が予定されている（日程未定）</li>
+          <li><strong>再公開の背景:</strong> Amazon 研究者がジェイルブレークの脆弱性を報告したことが輸出規制のトリガーとなっていた。規制解除後、Anthropic は新たなサイバーセキュリティ分類器を追加してリスクを低減した上で再展開</li>
+          <li><strong>当面の制限:</strong> 新分類器の精度向上のため、一部のコーディング・デバッグタスクが Opus 4.8 へフォールバックする場合がある（誤検知の段階的な削減を進める方針）</li>
+          <li><strong>利用制限:</strong> Pro・Max・Team・一部 Enterprise プランでは7/7まで週間使用量の最大50%まで Fable 5 が含まれる。その後は使用クレジット方式に移行</li>
+          <li><strong>今後の見通し:</strong> Claude Code リード・エンジニアが「キャパシティが確保でき次第、Fable をサブスクリプションの標準に戻す予定」と X で表明</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code のトークン消費実態調査 — Max プラン $100/月で API 換算 $1,850 分を消費した事例も</div>
-      <div class="card-meta"><span class="badge">Usage</span><span class="card-source">Source: <a href="https://www.firecrawl.dev/blog/best-ai-coding-agents">Firecrawl Blog</a> · Hacker News — 2026.07</span></div>
+      <div class="card-title">Claude Code の GitHub に Issue が 5,000 件超 — 「コーディングは解決済み」発言への反論として注目</div>
+      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Source: <a href="https://digitalbiztalk.com/article/claude-code-s-5k-issues-why-coding-is-solved-is-a-myth">Digital Biz Talk</a> · <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">AI Tool Discovery</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>AI コーディングエージェント比較記事によると、Claude Code は競合と比べてファイル読み込みと計画立案に多くのトークンを費やす傾向があり、30日間で API 換算 $1,850 相当を消費したユーザーも報告されている（Max プラン加入で実際の支出は $100）。</p>
+        <p>Claude Code の GitHub リポジトリが抱えるオープン Issue の数（5,000 件超）が、Claude Code 開発者による「コーディングは解決済み（coding is solved）」という発言への反論としてプログラミングコミュニティで注目されている。</p>
         <ul>
-          <li><strong>コミュニティ評価:</strong> r/ClaudeAI では「市場で最高のコーディングエージェント、そしてそれは接戦ではない」というスレッドが 270 アップボートで上位に</li>
-          <li><strong>トークン節約:</strong> CLAUDE.md の最適化・不要なファイル読み込みの抑制などで 77〜91% のトークン削減が可能との報告も</li>
-          <li><strong>採用状況:</strong> Stripe などの企業が Claude Code を使って週 1,000 件以上の自動 PR を生成するまでに拡大</li>
+          <li><strong>コミュニティの反応:</strong> 「Issue が多いのはアクティブなプロジェクトの証拠であり必ずしも問題ではない」「それでも UX の粗さがまだ多い」という両論が展開</li>
+          <li><strong>r/ClaudeAI の評価:</strong> 「市場で最高のコーディングエージェント」スレッドが270アップボートで上位、実際の生産性効果を評価する声が圧倒的</li>
+          <li><strong>Claude Code の強み（開発者評価）:</strong> マルチファイルリファクタリング・200K トークンを超えるリポジトリ全体の把握・git 操作の自動化が特に高評価。競合他社との差別化要因として「正直さ（できないことを言う）」は Copilot Agent が上という指摘も</li>
         </ul>
       </div>
     </div>
@@ -135,32 +137,32 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/4）のハイライト:</strong> GPT-5.6 の Sol / Terra / Luna モデルが Codex アプリ内に流出しているとの報告が相次いでいる。Polymarket の予測市場では <strong>7月10〜17日の一般公開</strong> が最有力とされており、Anthropic の Claude Fable 5 が返ってきたタイミング（7/1）に合わせた競争的な展開が注目されている。
+      <strong>本日（7/5）のハイライト:</strong> OpenAI の Deployment Safety Hub に <strong>GPT-5.6 Preview System Card</strong> が公開された。TestingCatalog が「来週の一般公開準備が観察された」と報告しており、Polymarket が依然 <strong>7/10〜17 の一般公開</strong> を最有力視（約60%）。Sol / Terra / Luna のトリオは限定パートナー向けプレビュー継続中。
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.6 が Codex アプリに流出 — 7/7 前後の Anthropic イベント前の一般公開を狙う報道</div>
-      <div class="card-meta"><span class="badge">Leak / Preview</span><span class="card-source">Source: <a href="https://finance.biggo.com/news/72d2cb81-4820-44a1-ab20-cfb53c7bf3db">BigGo Finance</a> · <a href="https://9to5mac.com/2026/06/26/openai-upgrading-chatgpt-and-codex-with-new-gpt-5-6-models-in-limited-release/">9to5Mac</a> · <a href="https://polymarket.com/event/gpt-5pt6-released-by">Polymarket</a> — 2026.07.04</span></div>
+      <div class="card-title">GPT-5.6 Preview System Card 公開 — Terminal-Bench 2.1 で SoTA 達成・来週の一般公開を示唆</div>
+      <div class="card-meta"><span class="badge">Preview</span><span class="card-source">Source: <a href="https://deploymentsafety.openai.com/gpt-5-6-preview">OpenAI Deployment Safety Hub</a> · <a href="https://www.testingcatalog.com/openai-might-be-preparing-gpt-5-6-for-next-weeks-release/">TestingCatalog</a> · <a href="https://openai.com/index/previewing-gpt-5-6-sol/">openai.com — GPT-5.6 Sol Preview</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>限定プレビュー中の GPT-5.6（Sol / Terra / Luna）が Codex アプリのUIに一時的に表示されたとの報告が相次ぎ、一般公開のタイミングについて憶測が広がっている。</p>
+        <p>OpenAI が Deployment Safety Hub に GPT-5.6 Preview の System Card を公開。安全性評価の透明性を高めると同時に、TestingCatalog は「来週の一般公開に向けた準備が観察される」と報告している。</p>
         <ul>
-          <li><strong>Polymarket の予測:</strong> 7/10〜7/17 の週内での一般公開が最有力（約60%の確率）</li>
-          <li><strong>戦略的背景:</strong> BigGo Finance の分析によると「7/7 前後に予定されているとされる Anthropic の発表を前に流れを作る狙い」との見方が有力</li>
-          <li><strong>GPT-5.6 の主要機能（既発表分）:</strong> 新しい max 推論努力モード、Ultra モード（Sol + サブエージェント）、明示的キャッシュブレークポイントを含む予測可能なプロンプトキャッシング（最小キャッシュ寿命 30 分）</li>
-          <li><strong>価格（既発表）:</strong> Sol: $5/$30 · Terra: $2.50/$15 · Luna: $1/$6（per Mtok 入力/出力）</li>
+          <li><strong>ベンチマーク:</strong> GPT-5.6 Sol は Terminal-Bench 2.1（コマンドラインワークフロー・計画・ツール連携のテスト）で SoTA（State of the Art）を達成</li>
+          <li><strong>モデル構成:</strong> Sol（旗艦・$5/$30 per Mtok）・Terra（バランス型・$2.50/$15）・Luna（高速軽量・$1/$6）の3ティア</li>
+          <li><strong>新機能:</strong> max 推論努力モード・Ultra モード（Sol + サブエージェント）・予測可能なプロンプトキャッシング（最小寿命 30 分・明示的キャッシュブレークポイント）</li>
+          <li><strong>Polymarket 予測:</strong> 7/10〜17 の一般公開が約60%の確率で最有力視されている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex Remote GA 詳報 — 利用統計：Research 部門の採用が半年で56倍、Engineering が27倍に</div>
-      <div class="card-meta"><span class="badge">Adoption</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">openai.com — How agents are transforming work</a> · <a href="https://developers.openai.com/codex/changelog">Codex Changelog</a> — 2026.07</span></div>
+      <div class="card-title">Codex changelog: WebSocket トレースログ修正 & NVIDIA インフラ連携で GPT-5.5-Codex が高速化</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">developers.openai.com/codex/changelog</a> · <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/">NVIDIA Blog</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>OpenAI が公表した利用統計によると、2025年11月〜2026年6月の期間でエージェント活用が急拡大している。</p>
+        <p>Codex の最新 changelog では、WebSocket のトレースログが Responses API の全ペイロードを記録しないよう修正されプライバシーが改善された。</p>
         <ul>
-          <li><strong>Research 部門:</strong> 2026年6月時点の中央値使用量が 2025年11月比で <strong>56倍</strong></li>
-          <li><strong>Customer Support:</strong> <strong>32倍</strong>・Engineering: <strong>27倍</strong>・Legal: <strong>13倍</strong></li>
-          <li><strong>Codex Remote 詳細:</strong> iOS/Android の ChatGPT アプリから QR コードでペアリング認証した Mac/Windows ホスト上のセッションに接続。セッション起動レイテンシも短縮（DNS 遅延最適化・モデルキャッシュウォームアップ・プラグインスキル並列読み込み）</li>
+          <li><strong>WebSocket 修正:</strong> Responses WebSocket リクエストの全ペイロードがトレースログに書き込まれていた問題を解消</li>
+          <li><strong>NVIDIA 連携:</strong> GPT-5.5-Codex が NVIDIA インフラ上で動作し、一部ユーザー向けに 750 tok/s 級の高速出力を実現（Cerebras との協業による）</li>
+          <li><strong>Codex Remote GA 利用実態:</strong> 2025年11月比で Research 部門56倍・Engineering 27倍・Legal 13倍の利用拡大が継続中</li>
         </ul>
       </div>
     </div>
@@ -174,33 +176,33 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude の新憲法を読んだ — Claude がなぜこういう振る舞いをするか初めて腑に落ちた」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.04</span></div>
-      <div class="card-body"><p>Anthropic の Claude 新憲法（Model Spec）の CC0 公開を受け、r/ClaudeAI では「特定のシナリオでなぜ Claude がそういう答え方をするのかやっと理解できた」という感想スレッドが急上昇。「安全性 → 倫理 → Anthropic ガイドライン → 役立つこと の優先順位は理に適っている」「ルール集ではなく哲学書として書かれている点が新しい」という評価が多数。一方で「この憲法が実際のモデルにどう反映されているのかを独立して検証する手段が欲しい」という懐疑的なコメントも一定の支持を得ている。</p></div>
+      <div class="card-title">r/ClaudeAI「Claude Code の Manual モードがデフォルトに — 賛否両論、でも慣れれば正しい判断だと思う」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.05</span></div>
+      <div class="card-body"><p>v2.1.200 で導入されたデフォルト権限モードの「Manual」化を巡り、r/ClaudeAI では「毎回許可を求めてくるのは煩雑」「でも誤操作のリスクが減るのは正しい」という両論が展開されている。上位コメントでは「CLAUDE.md に allow_execute_commands: true を書けばほぼ以前の挙動に近づけられる」「初心者へのオンボーディングを考えると Manual がデフォルトの方が圧倒的に安全」という実践的な解決策も共有されている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/artificial「GPT-5.6 流出 — Anthropic のイベント前に OpenAI がリリースを急ぐ構図か？」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/artificial · r/OpenAI — 2026.07.04</span></div>
-      <div class="card-body"><p>Codex アプリへの GPT-5.6 の流出報告を巡り、「意図的なリークか偶発的なUIバグか」という議論が r/artificial で白熱。「Polymarket が 7/10〜17 の一般公開を60%の確率と見ていることを踏まえると、来週末には誰でも使える」「Sol の 750 tok/s は Cerebras との協業によるものだが、一般向けでその速度を維持できるか疑問」という技術的な分析も展開。</p></div>
+      <div class="card-title">r/ClaudeAI「Claude は LeetCode でも ChatGPT を圧倒する — マルチファイルのリファクタで差がより明確に」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeHomies — 2026.07.05</span></div>
+      <div class="card-body"><p>「Claude 3.5 Sonnet just destroyed GPT-5.2 on my LeetCode problems」というスレッドが r/ClaudeHomies で注目を集め、r/ClaudeAI にも波及している。「LeetCode の最適化問題でも Claude は解説が丁寧で、間違えた場合に正直に指摘してくれる」「マルチファイルのリファクタリングでは Claude Code が依存関係を正確に追跡してくれる点が競合との決定的な差」といった具体的な体験談が集まっている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/soccer「モロッコが R16 で 3-0 快勝 — アフリカ勢が2大会連続でベスト8へ」</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/soccer · r/worldcup — 2026.07.04</span></div>
-      <div class="card-body"><p>モロッコがカナダを 3-0 で圧倒し R16 突破を果たした試合が r/soccer のトレンド上位に。Azzedine Ounahi の 2 得点・Soufiane Rahimi のロスタイムゴールという鮮やかな展開に「モロッコは本当にダークホースではなく優勝候補だ」というコメントが集まっている。「2022年カタール大会のベスト4に続き、2大会連続でアフリカ勢初の偉業を達成するか」という期待感が高まっており、次戦（7/9 ボストン・フランスまたはパラグアイと対戦）への注目度も高い。</p></div>
+      <div class="card-title">r/soccer「ノルウェーが W杯 R16 でブラジルを撃破！ハーランド2発 — 史上稀に見る番狂わせ」</div>
+      <div class="card-meta"><span class="badge">Sports / Hot</span><span class="card-source">Reddit r/soccer · r/worldcup — 2026.07.05</span></div>
+      <div class="card-body"><p>W杯 R16 でノルウェーがブラジルに勝利する大番狂わせが起きたとの速報が r/soccer を席巻している。エルリング・ハーランドの2ゴールが決め手となり、「2026年最大のアップセット」「ブラジルの W杯はまた早期敗退」というコメントが殺到。「ハーランドは W杯がなかった世代のリベンジ」という感動的なストーリーラインも盛り上がっており、前日のフランス 1-0 パラグアイ（エムバペ弾）と合わせて R16 の2日目が非常に濃い内容となっている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「ハメネイ師国葬1日目 — 復讐コールと新最高指導者モジュタバーの不在が話題」</div>
-      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.04</span></div>
-      <div class="card-body"><p>テヘランのグランドモサッラに集まった数百万人の会葬者が「復讐！復讐！」と声を上げる映像が r/worldnews で拡散し、「米・イスラエルとの緊張が再び高まるか」という懸念コメントが上位に。「新最高指導者モジュタバー・ハメネイはまだ公の場に現れておらず、権力基盤が固まっていない可能性」という分析も注目を集めている。「米・イラン交渉の MOU は60日期限がある。葬儀中断で実質的に時計が止まっている」という外交観点の投稿も高評価。</p></div>
+      <div class="card-title">r/worldnews「ハメネイ師国葬2日目 — 3人の息子が登場、後継者モジュタバーは引き続き不在で世界が注目」</div>
+      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.05</span></div>
+      <div class="card-body"><p>ハメネイ師の国葬2日目、3人の息子（Mostafa・Meysam・Masoud）がイマーム・ホメイニー・モサッラの大礼拝堂で棺の前に座る映像がイラン国営テレビで放映されたが、後継者に指名されたモジュタバーは依然として公の場に現れていない。r/worldnews では「モジュタバーはまだ権力基盤を固めていないのではないか」「空白期間が長引くほどイラン国内の政治的不安定リスクが高まる」という分析が上位を占めている。「米・イラン交渉の MOU タイムラインへの影響が懸念される」という外交観点の投稿も多く見られる。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/news「米国独立250周年 — DC で熱波によりパレード中止、Sail250 はニューヨーク港で開幕」</div>
-      <div class="card-meta"><span class="badge">USA</span><span class="card-source">Reddit r/news · r/politics — 2026.07.04</span></div>
-      <div class="card-body"><p>アメリカ建国250周年の7月4日、ワシントン DC では熱波の影響でパレードが中止となり、グレート・アメリカン・ステート・フェア（ナショナルモール）も2時間遅れで開幕した。一方でニューヨーク港では30か国60隻が参加する史上最大規模の国際観艦式「Sail250」が予定通り開幕。r/news ではトランプ大統領の演説（Freedom 250 イベント）の内容について賛否両論が展開している。ロサンゼルスでは Queen Latifah 司会・Chris Stapleton 出演の「America's Block Party」コンサートが開かれ、ドローンショーと花火で締めくくられた。</p></div>
+      <div class="card-title">r/worldnews「ヨーロッパで山火事が多発 — ポルトガル・スペイン・ギリシャに数百人の消防士が出動」</div>
+      <div class="card-meta"><span class="badge">Climate</span><span class="card-source">Reddit r/worldnews · r/europe — 2026.07.05</span></div>
+      <div class="card-body"><p>ポルトガル・スペイン・ギリシャで同時多発的に山火事が発生し、各国から数百人規模の消防士が出動している。r/worldnews では「2025年に続き2年連続の大規模山火事シーズンとなっている」「気候変動がダイレクトに影響している」という声が上位コメントを占めている。中国北部では豪雨による死者5名の報告もあり、同日の自然災害関連スレッドが複数トレンドに入っている。</p></div>
     </div>
   </section>
 
@@ -211,71 +213,60 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/4）の主要トピック:</strong> <strong>イラン:</strong> ハメネイ師国葬1日目（7/4〜9）テヘランに数百万人・新最高指導者モジュタバーはまだ公の場に現れず / <strong>米国:</strong> 建国250周年・熱波でDCのパレード中止・ニューヨーク港でSail250開幕 / <strong>W杯:</strong> R16でモロッコ 3-0 カナダ・フランス vs パラグアイ進行中（R32完了：アルゼンチン 3-2 カーボベルデ延長・コロンビア 1-0 ガーナ）/ <strong>ロシア・ウクライナ:</strong> ロシアがキーウを報復攻撃
+      <strong>本日（7/5）の主要トピック:</strong> <strong>イラン:</strong> ハメネイ師国葬2日目・3人の息子が登場するも後継者モジュタバーは不在 / <strong>W杯 R16:</strong> フランス 1-0 パラグアイ（エムバペ弾）・ノルウェーがブラジルを撃破（ハーランド2発）・メキシコ vs イングランド（アステカ・雷雨遅延で8pm ET キックオフ）/ <strong>ロシア・ウクライナ:</strong> ウクライナがクリミアを攻撃、ロシア側発表で1人死亡 / <strong>欧州:</strong> ポルトガル・スペイン・ギリシャで山火事多発 / <strong>中国:</strong> 北部豪雨で死者5名
     </div>
 
     <div class="card">
-      <div class="card-title">ハメネイ師国葬1日目（7/4）— テヘランに数百万人、復讐コール響く・新最高指導者モジュタバーは不在</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/07/04/world/live-news/iran-khamenei-funeral-war-trump">CNN Live</a> · <a href="https://www.npr.org/2026/07/04/nx-s1-5882083/iran-funeral-ayatollah-ali-khamenei">NPR</a> · <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/">CBS News</a> · <a href="https://www.usnews.com/news/world/articles/2026-07-04/iranians-flock-to-week-long-funeral-rites-for-khamenei">US News</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-04/iran-holds-funeral-for-ali-khamenei-after-death-in-us-war">Bloomberg</a> — 2026.07.04</span></div>
+      <div class="card-title">ハメネイ師国葬2日目（7/5）— 3人の息子が登場も後継者モジュタバーは依然不在・7/6に最大規模の行列予定</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/07/05/world/live-news/iran-khamenei-funeral-war-trump">CNN Live</a> · <a href="https://www.aljazeera.com/news/2026/7/5/sons-of-irans-leader-ali-khamenei-attend-funeral-but-mojtaba-is-absent">Al Jazeera</a> · <a href="https://www.cnbc.com/2026/07/05/successor-to-irans-slain-leader-khamenei-does-not-appear-at-funeral.html">CNBC</a> · <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/">CBS News</a> — 2026.07.05</span></div>
       <div class="card-body">
-        <p>イランのアリー・ハメネイ師（2月28日の Operation Epic Fury での米・イスラエルによる空爆で死亡）の国葬が7月4日に本格的に始まった。テヘランのグランドモサッラ（イマーム・ホメイニー・モサッラ）が午前6時（現地時間）に開場し、24時間連続の告別式が始まった。</p>
+        <p>ハメネイ師の国葬2日目となる7月5日、イマーム・ホメイニー・モサッラの大礼拝堂で早朝から葬儀の礼拝が行われた。イラン国営テレビは3人の息子（Mostafa・Meysam・Masoud）が棺の前に座る映像を放映したが、後継者に指名されたモジュタバーは映らなかった。</p>
         <ul>
-          <li><strong>参集規模:</strong> 当局推計で数百万人がテヘランに集結。会葬者は棺の前で胸を打ちながら「復讐！復讐！」と声を上げた</li>
-          <li><strong>主な日程:</strong> 7月6日にテヘランで主要葬儀行列（イマーム・ホセイン広場〜アザーディ広場の10km行進）が予定</li>
-          <li><strong>新最高指導者モジュタバー:</strong> ハメネイ師の死から1週間後に後継者に指名されたモジュタバー・ハメネイはまだ公の場に姿を現しておらず、政権の安定性について憶測が続いている</li>
-          <li><strong>米・イラン交渉:</strong> ドーハで「前向きな進展」を確認した後、葬儀を理由に少なくとも1週間の停止に。カタール・パキスタンが仲介継続を約束。MOU の60日タイムラインへの影響が注目される</li>
-          <li><strong>仏英の軍事表明:</strong> マクロン大統領とスターマー首相の共同声明でホルムズ海峡への多国籍軍事ミッション派遣準備を表明（昨日からの継続）</li>
+          <li><strong>2日目の式次第:</strong> 棺に安置されたのはハメネイ師・娘・息子の嫁・孫娘（14か月）で、一家全員が2/28の空爆で死亡した。公開告別式は5日も24時間継続</li>
+          <li><strong>モジュタバーの不在:</strong> 後継者に指名されたモジュタバーが公の場に現れないことについて、CNBCは「権力基盤の確立が急務で慎重に行動している可能性」と分析</li>
+          <li><strong>7月6日のメインイベント:</strong> テヘランのイマーム・ホセイン広場からアザーディ広場まで約10kmの葬列が予定されており、最大規模の参列者が見込まれる</li>
+          <li><strong>米・イラン交渉:</strong> 少なくとも葬儀期間（7/9まで）は停止中。カタール・パキスタンが仲介継続を確約しており、MOU の60日タイムラインへの影響が引き続き注目される</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">アメリカ建国250周年（Independence Day 2026）— Sail250 開幕・DC は熱波でパレード中止</div>
-      <div class="card-meta"><span class="badge">USA</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/07/04/us/live-news/july-4-trump-speech-america-250">CNN Live</a> · <a href="https://www.cbsnews.com/live-updates/july-4th-america-250-birthday/">CBS News</a> · <a href="https://abc7ny.com/live-updates/nyc-nj-celebrate-america-250-fireworks-events-mta-service-suspensions-more-live-updates/19436021/">ABC7 NY</a> — 2026.07.04</span></div>
+      <div class="card-title">W杯 R16（7/5）— フランス 1-0 パラグアイ（エムバペ弾）・ノルウェーがブラジルを番狂わせで撃破</div>
+      <div class="card-meta"><span class="badge">Sports / W杯</span><span class="card-source">Source: <a href="https://www.outlookindia.com/sports/football/france-vs-paraguay-fifa-world-cup-2026-round-of-16-match-report-who-won">Outlook India</a> · <a href="https://sports.yahoo.com/soccer/live/world-cup-2026-bracket-schedule-scores-results-live-updates-round-of-16-130000983.html">Yahoo Sports</a> · <a href="https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/">CBS Sports</a> — 2026.07.05</span></div>
       <div class="card-body">
-        <p>アメリカ合衆国が建国250周年（セミクインセンテニアル）を迎えた7月4日、全50州で祝典が開催された。</p>
+        <p>W杯ラウンド16が佳境を迎え、7月5日は大きな試合結果が相次いだ。</p>
         <ul>
-          <li><strong>Sail250（ニューヨーク港）:</strong> 30か国60隻が参加するアメリカ史上最大規模の国際観艦式が開幕。米海軍が主催する第7回国際艦隊レビュー</li>
-          <li><strong>ワシントン DC:</strong> 酷暑の影響でパレードが中止、ナショナルモールの「グレート・アメリカン・ステート・フェア」が2時間遅れで開幕</li>
-          <li><strong>ロサンゼルス:</strong> 「America's Block Party」コンサート（Queen Latifah 司会、Chris Stapleton・Maren Morris・スマッシング・パンプキンズ出演）後にドローンショーと花火</li>
-          <li><strong>タイムカプセル:</strong> フィラデルフィアに全50州・5領土からの品々を収めたタイムカプセルが埋設。2276年の建国500周年まで封印される予定</li>
-          <li><strong>Freedom 250 GP:</strong> ナショナルモール周辺での F1 グランプリも計画（詳細は未確認）</li>
+          <li><strong>フランス 1-0 パラグアイ（フィラデルフィア）:</strong> キリアン・エムバペの得点でフランスがベスト8進出。次戦（7/9 ボストン）でモロッコと対戦</li>
+          <li><strong>ノルウェー vs ブラジル（番狂わせ）:</strong> エルリング・ハーランドが2ゴールを挙げ、ノルウェーがブラジルに勝利。大番狂わせとして 2026 W杯 R16 最大の話題となっている</li>
+          <li><strong>メキシコ vs イングランド（アステカ・7/5 夜）:</strong> 現地午後8時（ET）キックオフ予定。試合前に雷雨が接近してスタジアム内への避難命令が出たが、FIFA はキックオフの可否について公式発表を留保していた</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA W杯 R16（7/4）— モロッコ 3-0 カナダ（2大会連続8強）・フランス vs パラグアイ進行中</div>
-      <div class="card-meta"><span class="badge">Sports / W杯</span><span class="card-source">Source: <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-every-match-result-saturday-4-july-live-scores">olympics.com</a> · <a href="https://www.espn.com/soccer/story/_/id/49265799/world-cup-2026-today-blog-04-07-2026-live-updates-news-fixtures-schedule-results-argentina-lionel-messi">ESPN</a> · <a href="https://sports.yahoo.com/soccer/live/world-cup-2026-bracket-scores-results-schedule-live-updates-round-of-16-130000983.html">Yahoo Sports</a> — 2026.07.04</span></div>
+      <div class="card-title">ウクライナがロシア占領下のクリミアを攻撃 — ロシア側発表で1人死亡</div>
+      <div class="card-meta"><span class="badge">Europe / War</span><span class="card-source">Source: <a href="https://www.cbsnews.com/world/">CBS News</a> · <a href="https://www.npr.org/sections/world/">NPR</a> — 2026.07.05</span></div>
       <div class="card-body">
-        <p>ラウンド16（R16）が7月4日からスタートした。</p>
-        <ul>
-          <li><strong>モロッコ 3-0 カナダ:</strong> Azzedine Ounahi が2得点、Soufiane Rahimi がロスタイムゴール。2022年カタール大会のベスト4に続き、アフリカ勢として2大会連続でベスト8進出を果たした。次戦は7/9 ボストンでフランスまたはパラグアイと対戦</li>
-          <li><strong>フランス vs パラグアイ:</strong> フィラデルフィアで実施中（現地午後5時キックオフ。Mbappé のゴールデンブーツ争いにも注目）</li>
-        </ul>
-        <p>なお7月3日（R32最終日）の結果も確定している。</p>
-        <ul>
-          <li><strong>アルゼンチン 3-2（延長）カーボベルデ:</strong> メッシが W杯通算20得点目を記録するも延長戦まで持ち込まれる薄氷勝利。Sidny Lopes Cabral の豪快カーリングゴールで2-2に追いつかれた後、Cristian Romero のコーナーキックからのヘッドで決勝点</li>
-          <li><strong>コロンビア 1-0 ガーナ:</strong> Jhon Arias の14分ゴールのみで勝利。R16ではスイスとバンクーバーで対戦</li>
-        </ul>
+        <p>ウクライナ軍がロシアの占領下にあるクリミアを攻撃し、ロシア側が設置した行政機関の発表によると1人が死亡した。ウクライナ軍は正式なコメントを出しておらず、ロシア側は「ウクライナの挑発行為への断固たる対応を続ける」と声明を出した。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ロシアがキーウを報復攻撃 — 複数の死者・ウクライナが防空継続</div>
-      <div class="card-meta"><span class="badge">Europe / War</span><span class="card-source">Source: <a href="https://www.cbsnews.com/world/">CBS News</a> · <a href="https://www.npr.org/sections/world/">NPR</a> — 2026.07.04</span></div>
+      <div class="card-title">欧州で山火事多発 — ポルトガル・スペイン・ギリシャに数百人の消防士が出動</div>
+      <div class="card-meta"><span class="badge">Climate</span><span class="card-source">Source: <a href="https://www.cbsnews.com/world/">CBS News</a> · <a href="https://www.npr.org/sections/world/">NPR</a> — 2026.07.05</span></div>
       <div class="card-body">
-        <p>ロシアがウクライナの首都キーウに対して報復攻撃を実施し、複数の死者が出たと報じられている。ウクライナは防空システムで一部を迎撃したが、市内の複数地点で被害が発生した。ロシア側は「ウクライナ軍の攻撃への報復」と主張している。</p>
+        <p>ポルトガル・スペイン・ギリシャでほぼ同時期に大規模な山火事が発生し、数百人規模の消防士が対応にあたっている。猛暑と乾燥した気候が延焼を拡大させており、住民の避難が相次いでいる。EU の航空消火支援機構も協力要請に応えて支援を展開している。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ベネズエラ地震続報・世界銀行がフィリピンを上位中所得国に格上げ</div>
-      <div class="card-meta"><span class="badge">Global</span><span class="card-source">Source: Wikipedia Current Events — 2026.07</span></div>
+      <div class="card-title">中国北部で豪雨・死者5名 / 女子 T20 W杯がイングランドで閉幕</div>
+      <div class="card-meta"><span class="badge">Global</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> · <a href="https://www.cbsnews.com/world/">CBS News</a> — 2026.07.05</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ベネズエラ地震:</strong> 死者 2,295 名（昨日と変わらず）。代行大統領のデルシー・ロドリゲスが7日間の国家喪を宣言。WHO が人道支援調整を継続中</li>
-          <li><strong>フィリピン:</strong> 世界銀行が下位中所得国から上位中所得国に分類変更（1人当たり GNI が 2026 年度閾値を超過）。東南アジアの成長継続を示す指標として注目</li>
+          <li><strong>中国北部豪雨:</strong> 北部地方での集中豪雨により5人が死亡。一方で南部では台風性の強風が樹木を倒し車を水没させるなど被害が広がっている</li>
+          <li><strong>女子 T20 ワールドカップ:</strong> イングランドとウェールズを舞台にした大会が7月5日に閉幕。詳細な最終結果は各スポーツメディアを参照</li>
+          <li><strong>パレスチナ:</strong> ガザ地区の医師 Hussam Abu Safiya の弁護士が、同医師が「重篤な状態にある」と発表</li>
         </ul>
       </div>
     </div>
@@ -289,38 +280,43 @@
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita】「AI Daily Digest: 2026年7月4日 — Claude Science、arXiv 独立、AI 投資額が過去最高の5,100億ドル」</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/lhjjjk4/items/1b2b60d24cd2144ca881">Qiita — qiita.com/lhjjjk4</a> — 2026.07.04</span></div>
+      <div class="card-title">【Qiita】「Claude Codeですべての日常業務を爆速化しよう！」— 定型作業から PR レビューまで実践ガイド</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/minorun365/items/114f53def8cb0db60f47">Qiita — qiita.com/minorun365</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>7月4日版の AI Daily Digest がQiitaに投稿され、3つの大きなトピックを扱っている。</p>
+        <p>クラウド・AI 系で多くのフォロワーを持つ minorun365 氏による Claude Code 活用ガイド。「コーディングツールとしてではなく、日常業務全般を任せる相棒として捉え直す」という観点から実践的なユースケースを解説している。</p>
         <ul>
-          <li><strong>Claude Science:</strong> Anthropic が科学研究への Claude 活用を本格化させており、「Claude Fable 5 は主要コーディングベンチマークで全て1位」との評価が研究者コミュニティで広がっている</li>
-          <li><strong>arXiv 独立:</strong> プレプリントサーバー arXiv がコーネル大学から独立した非営利組織として再編されたという報道（詳細は別途確認が必要）</li>
-          <li><strong>AI 投資額が過去最高の 5,100 億ドル:</strong> 2026年第2四半期累計で AI 関連の VC・企業投資が史上最高額を記録。Anthropic・OpenAI・NVIDIA への投資が主導</li>
-        </ul>
-        <p>コメント欄では「Claude Fable 5 が戻ってきてから生産性が別次元になった」「Stripe が週1000 PR 自動生成というのは凄まじい」という声が集まっている。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">【Qiita】「6つのAIコーディングエージェントを比較して分かったこと まとめ編」</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/pekopugu/items/df8018eb3ec5cdcf000b">Qiita — qiita.com/pekopugu</a> — 2026.07（継続注目）</span></div>
-      <div class="card-body">
-        <p>Claude Code・Copilot Agent・Cursor・Windsurf・Codex・Gemini Code Assist の6製品を実際のプロジェクトで比較した大作記事のまとめ編。</p>
-        <ul>
-          <li><strong>「実装力」基準なら:</strong> Claude Code が1位。複雑なリファクタリングと複数ファイルにまたがる変更で頭一つ抜ける</li>
-          <li><strong>「誠実さ（できないことを正直に言う）」基準なら:</strong> Copilot Agent が1位</li>
-          <li><strong>コスト効率:</strong> Max プランの月額定額が効いており Claude Code は実質的に最もコスパが良いという結論</li>
-          <li><strong>注意点:</strong> Claude Code は「ファイルをたくさん読んでから書く」スタイルのためトークン消費が多い。CLAUDE.md でスコープを明示することが重要</li>
+          <li><strong>CLAUDE.md の整備:</strong> プロジェクトの文脈・コーディング規約・よく使うコマンドを CLAUDE.md に書くことで Claude Code の効率が劇的に向上する。「CLAUDE.md を育てることが最大の投資」と説く</li>
+          <li><strong>PR レビューの自動化:</strong> GitHub と連携して差分をレビューさせ、コメントドラフトを生成させる実践例を紹介</li>
+          <li><strong>ドキュメント・メール文書作成:</strong> 仕様書・設計書・社内提案資料の草案生成に Claude Code を活用するフロー</li>
+          <li><strong>トークン節約テクニック:</strong> バッチ処理の活用・不要なファイル読み込みの抑制・コンテキスト圧縮（/compact コマンド）の使い方を具体的に解説</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn】「AIエージェント時代、正直しんどい話」— 変化への対応に疲れを感じるエンジニアの本音</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source"><a href="https://zenn.dev/ryo369/articles/d02561ddaacc62">Zenn — zenn.dev/ryo369</a> — 2026.07（注目記事）</span></div>
+      <div class="card-title">【Qiita News】「正直に言う。お前のClaude Codeの使い方は間違っている」— 公式コラムで7つのアンチパターンを指摘</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/official-columns/news/2026-07-01/">Qiita Zine — 公式コラム 2026年7月1日号</a> — 2026.07.01</span></div>
       <div class="card-body">
-        <p>「AI ツールの進化が速すぎてキャッチアップが追いつかない」「Claude Code・Codex・Cursor とツールが増えすぎて、どれを深掘りすべきか分からない」というエンジニアのリアルな悩みを吐露した記事が Zenn でトレンド入り。技術の変化スピードに対する心理的疲弊を率直に語った内容が「自分だけじゃなかった」と共感を呼んでおり、「それでも試し続けることが大事」「生産性の恩恵は確かにある、慣れるまでが辛い」というコメントが集まっている。前向きな結論としては「全部追わなくてよい。自分のプロジェクトで一番効く1本に絞る」という実践的なアドバイスで締めている。</p>
+        <p>Qiita 公式ニュースコラムが刺激的なタイトルで Claude Code の誤った使い方を7つのアンチパターンとして整理した記事が継続して読まれている。</p>
+        <ul>
+          <li><strong>最大のアンチパターン:</strong> 「Claude Code をチャットボットとして使う」こと。自律エージェントとして「作業を任せる」のが正しい使い方</li>
+          <li><strong>CLAUDE.md なし問題:</strong> プロジェクトに CLAUDE.md がないまま使っているケースが多い。「毎回同じ説明を繰り返す無駄が生じる」</li>
+          <li><strong>権限の過剰付与と過剰制限:</strong> Manual モードをすべてのプロジェクトに一律適用するのも、逆に全部許可するのも非推奨。プロジェクトの性質に合わせたチューニングを推奨</li>
+          <li><strong>その他:</strong> コンテキストウィンドウの使いすぎ・サブタスク分割の欠如・フックの未活用・レビューなしの全自動コミットなど</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">【Qiita】「プログラミング雑記 2026年7月2日」— Claude Code の最新動向と個人的な使いこなし Tips</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/ishisaka/items/8ea7f67cbf4a29c10ad2">Qiita — qiita.com/ishisaka</a> — 2026.07.02</span></div>
+      <div class="card-body">
+        <p>ベテラン開発者 ishisaka 氏による週次のプログラミング雑記。Claude Code を実際のプロダクション開発に使った際の所感と実践的な Tips を淡々と記録するスタイルが人気。</p>
+        <ul>
+          <li><strong>Sonnet 5 デフォルト化の実感:</strong> 「Sonnet 5 になってから応答の質と速度のバランスが以前より明らかに良い。1M コンテキストのおかげで大きなリポジトリでも迷子にならない」</li>
+          <li><strong>Manual モードへの慣れ:</strong> 「最初は煩雑に感じたが、一週間使ってみると誤操作がなくなってむしろ快適。~/.claude/settings.json での per-project 設定が効いている」</li>
+          <li><strong>コスト感覚:</strong> Max プラン（月 $100）で API 換算換算数百ドル分を使えているという計算で、「費用対効果は圧倒的」と評価</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -328,8 +324,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年7月4日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: anthropic.com · time.com · infoq.com · releasebot.io · openai.com · 9to5mac.com · polymarket.com · CNN · NPR · CBS News · US News · Bloomberg · olympics.com · ESPN · Yahoo Sports · Al Jazeera · Qiita.com · Zenn.dev</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月5日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: code.claude.com · releasebot.io · anthropic.com · thehackernews.com · bleepingcomputer.com · aljazeera.com · digitalbiztalk.com · openai.com · deploymentsafety.openai.com · testingcatalog.com · developers.openai.com · nvidia.com · CNN · CBS News · CNBC · NPR · ESPN · Yahoo Sports · Outlook India · Wikipedia · Qiita.com · Zenn.dev</p>
 </footer>
 
 </body>
