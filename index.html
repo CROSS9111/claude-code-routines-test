@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月6日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月7日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,8 +63,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">アリババが Claude Code を禁止（中国ユーザー検出バックドア疑惑・7/10発効）/ ハメネイ師国葬最大規模の行列（テヘラン10km葬列）・トランプ「いずれにせよ米国が勝つ」/ ハマスがガザ統治機関を解散・UN主導パネルへ移管表明 / 中国が太平洋に潜水艦発射弾道ミサイル試験（2024年以来初）/ スーパー台風バビがグアムを直撃</p>
-  <p class="date">2026年7月6日（月）&nbsp;|&nbsp;<a href="2026-07-05/index.html">前版（7/5）</a></p>
+  <p class="subtitle">Claude Cowork がモバイル・Web に拡大（Max 向けβ公開）/ 米がホルムズ海峡タンカー攻撃を受け対イラン報復空爆を再開 / NATO サミット開幕（アンカラ）・トランプがトルコへの F-35 売却解禁示唆 / 中国・智谱 AI が ZCode を発表 — Claude Code / Codex に価格で挑む / ベネズエラ地震の死者2,295人に</p>
+  <p class="date">2026年7月7日（火）&nbsp;|&nbsp;<a href="2026-07-06/index.html">前版（7/6）</a></p>
 </header>
 
 <nav>
@@ -84,48 +84,46 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/6）の最重要ニュース:</strong> アリババが <strong>7月10日付けで Claude Code を全社禁止</strong>。セキュリティ研究者が「中国ユーザーを検出する隠しコード」をリバースエンジニアリングで発見したと主張し、Anthropic エンジニアが実験の存在を認めた。アリババ社員は自社製コーディング AI <strong>「Qoder」</strong> への移行を指示されている。
+      <strong>本日（7/7）の最重要ニュース:</strong> Anthropic が <strong>Claude Cowork のモバイル・Web 展開</strong>を発表。デスクトップ専用だったエージェント型アシスタントがスマートフォンからも利用可能に。利用データではユーザーの90%超がコーディング以外の業務（ビジネスオペレーション・コンテンツ制作が最多）に使っていることも明らかになった。Cowork の利用上限は8月5日まで2倍に延長。昨日のアリババ禁止騒動（バックドア疑惑）への対応は継続中。
     </div>
 
     <div class="card">
-      <div class="card-title">アリババが Claude Code を 7/10 から禁止 — 中国ユーザー検出バックドア疑惑、Anthropic は「アカウント不正防止の実験」と説明し削除済み</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/">TechCrunch</a> · <a href="https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns">South China Morning Post</a> · <a href="https://thenextweb.com/news/alibaba-bans-claude-code-anthropic-tracking-chinese-users">The Next Web</a> · <a href="https://gigazine.net/gsc_news/en/20260704-alibaba-bans-claude-code/">GIGAZINE</a> — 2026.07.04–06</span></div>
+      <div class="card-title">Claude Cowork がモバイル・Web に展開 — Max プランでβロールアウト開始、デバイスを問わず継続実行</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://claude.com/blog/cowork-web-mobile">claude.com/blog</a> · <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> · <a href="https://venturebeat.com/technology/anthropic-brings-claude-cowork-to-mobile-and-web-as-usage-data-shows-most-users-arent-coding">VentureBeat</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>アリババが全従業員に対し、7月10日をもって Anthropic の Claude Code の業務利用を禁止すると通知した。代替ツールとしてアリババ内製の AI コーディングプラットフォーム <strong>Qoder</strong> への移行が指示されている。</p>
+        <p>Anthropic が7月7日、Claude Cowork（1月にデスクトップアプリとして登場した知識労働向けエージェント）のモバイル・Web 版をβ公開した。Max プランから順次ロールアウトし、他プランにも順次展開予定。</p>
         <ul>
-          <li><strong>発端:</strong> 6月30日、r/ClaudeAI のユーザーが「無効化されたリモートコントロール機能を復元しようとリバースエンジニアリングした際、難読化された検出ロジックを発見した」と投稿。同ロジックは <strong>v2.1.91（4月2日リリース）</strong> から静かに含まれていたとされ、リリースノートへの記載はなかった</li>
-          <li><strong>検出内容:</strong> プロキシが検出された場合、システムタイムゾーンが Asia/Shanghai または Asia/Urumqi かを確認し、プロキシ URL をアリババ・百度・アント・ByteDance などを含む中国ドメインリストと照合。さらに <strong>ステガノグラフィー（電子透かし）</strong>を用いて結果を Anthropic サーバーへのシステムプロンプトに埋め込んでいたとされる</li>
-          <li><strong>Anthropic の説明:</strong> Claude Code チームエンジニアの Thariq Shihipar 氏が X で「無許可の再販業者によるアカウント悪用防止・モデル蒸留対策の実験だった」と認め、「以前から削除するつもりで、7月1日に PR をマージして削除済み」と説明</li>
-          <li><strong>背景（Anthropic 側の主張）:</strong> 6月10日に Anthropic はアリババ Qwen ラボ関連のオペレーターが <strong>2万5千件以上の偽造アカウント</strong>で4月22日〜6月5日の間に2,880万件のやり取りを生成し、モデルの能力を蒸留しようとしたと米上院銀行委員会に書簡を送っていた</li>
-          <li><strong>コミュニティの反応:</strong> 「削除済みとは言え、こういったコードがあったこと自体が信頼の問題」「Anthropic とアリババの対立が表面化した形」という批判的な見方が主流</li>
+          <li><strong>クロスデバイス継続実行:</strong> デスクトップで依頼したタスクが、ラップトップを閉じた後もクラウドでバックグラウンド実行を継続。スマートフォンから進捗確認・アクション承認が可能になった</li>
+          <li><strong>クラウドベース処理:</strong> 定期タスク・データ集計・レポート生成などをデバイスがオフラインでも自律実行できる</li>
+          <li><strong>利用データの驚き:</strong> Claude Cowork の利用の90%超はソフトウェア開発ではなく、ビジネスオペレーションとコンテンツ制作が最大カテゴリ。TechCrunch は「コーディングエージェントの戦いがオフィス全体に波及している」と表現</li>
+          <li><strong>利用上限2倍延長:</strong> 今回のロールアウトを記念し、Max 向けの Cowork 利用上限2倍施策を8月5日まで延長</li>
+          <li><strong>Radware の対応:</strong> 同日、Radware がアジェンティック AI 保護製品を Claude Code などの開発者向けエージェントに対応させたと発表。コンプライアンスレポートとエージェント活動の可視化を強化</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.200 — Sonnet 5 がデフォルトモデルに、Manual 権限モードが全環境のデフォルトへ（継続）</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://code.claude.com/docs/en/changelog">code.claude.com changelog</a> — 2026.07.03</span></div>
+      <div class="card-title">アリババ禁止騒動の後日談 — Anthropic、バックドア疑惑コードの削除完了を確認・企業向け透明性レポート検討へ</div>
+      <div class="card-meta"><span class="badge">Follow-up</span><span class="card-source">Source: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens">Tom's Hardware</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.06–07</span></div>
       <div class="card-body">
-        <p>7月3日リリースの v2.1.200 以降、Claude Code の主要な動作変更が継続適用中。今回のアリババ禁止騒動の中でも、製品自体のアップデートは着実に進んでいる。</p>
+        <p>前日（7/6）から続くアリババ Claude Code 禁止騒動の続報。7月10日の禁止発効を前に、コミュニティの懸念は「信頼の回復方法」に移っている。</p>
         <ul>
-          <li><strong>Sonnet 5 をデフォルトモデルに採用:</strong> ネイティブ 1M トークンコンテキストウィンドウ。プロモーション価格（$2/$10 per Mtok）は8月31日まで継続</li>
-          <li><strong>Manual モードがデフォルトに:</strong> CLI・VS Code・JetBrains 全てでデフォルト権限モードが「Manual」に変更。ファイル操作・コマンド実行には明示的な許可が必要になった</li>
-          <li><strong>AskUserQuestion の変更:</strong> ダイアログの自動継続が廃止。これも今回の信頼問題の文脈で「適切な方向性」と再評価されている</li>
-          <li><strong>v2.1.201 修正:</strong> Sonnet 5 セッションでシステムロールリマインダーが会話中に割り込む問題を解消</li>
+          <li><strong>削除状況:</strong> Anthropic は7月1日にマージ済みの PR で中国ユーザー検出ロジックの削除が完了したことを改めて確認。v2.1.200 以降のバイナリには含まれていないとしている</li>
+          <li><strong>次の課題:</strong> セキュリティコミュニティ（r/netsec・HackerNews）では「削除だけでは不十分で、第三者監査またはコードの部分的オープンソース化が必要」という声が高まっている</li>
+          <li><strong>代替ツールへの流れ:</strong> アリババが移行先に指定した <strong>Qoder</strong> のほか、ZCode（Zhipu AI）・Cursor・Kiro・GitHub Copilot への移行を検討する企業ユーザーの声が Zenn・Qiita でも広がっている</li>
+          <li><strong>Anthropic の対応方針:</strong> 複数のソースが「企業向け透明性レポートの検討を開始した」と伝えている。正式な発表はまだない</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code vs Codex 2026：500人以上の Reddit 開発者の評価まとめ — 用途別の使い分けが最適解</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb">DEV Community</a> · <a href="https://www.firecrawl.dev/blog/claude-code-vs-codex">Firecrawl</a> · <a href="https://www.morphllm.com/comparisons/codex-vs-claude-code">MorphLLM</a> — 2026.07</span></div>
+      <div class="card-title">Claude Code 最新アップデート（7/7時点）— ストリーミング回復・SSL エラー処理・バックグラウンドセッションの安定化</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>500人以上の Reddit 開発者の評価を分析した記事によると、Claude Code と Codex はそれぞれ異なる強みを持ち、両方を用途別に使い分けるアプローチが最も生産性が高いとまとめられている。</p>
         <ul>
-          <li><strong>Claude Code の強み:</strong> シンプル〜中程度のタスクで高速・SWE-bench Verified でわずかにリード（88.6%）・マルチファイルリファクタリングの精度・ブラインドテスト勝率 67%</li>
-          <li><strong>Codex の強み:</strong> 複雑なタスクで丁寧・Terminal-Bench で GPT-5.5 が 82.7% でリード・ChatGPT Plus（月$20）に含まれコスパが高い</li>
-          <li><strong>価格差の現実:</strong> Claude Code Max 5x は月$100 から、Codex は $20 の Plus プランに含まれる。「$20 で12プロンプトで使い切るなら日常ドライバーにはならない」という指摘も</li>
-          <li><strong>コミュニティの結論:</strong> シンプルなタスクは Claude Code・複雑なタスクは Codex というルーティングが最も生産的</li>
+          <li><strong>信頼性改善:</strong> ストリーミング回復・SSL エラーハンドリング・リトライ処理・バックグラウンドセッション動作の安定化</li>
+          <li><strong>UI 改善:</strong> エラーメッセージの明確化・エージェントとセッション詳細表示のクリーンアップ</li>
+          <li><strong>ガイダンス強化:</strong> 新規ユーザー向けのオンボーディングガイダンスを改善</li>
         </ul>
       </div>
     </div>
@@ -134,38 +132,47 @@
   <!-- ========== OpenAI / Codex ========== -->
   <section class="section" id="openai">
     <div class="section-header">
-      <div class="section-title">OpenAI Codex / GPT-5.6 最新動向</div>
-      <span class="section-count">2 記事</span>
+      <div class="section-title">OpenAI Codex &amp; 競合動向</div>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/6）のハイライト:</strong> GPT-5.6 一般公開が今週（7/10〜17）に迫る。Polymarket は約60%の確率で今週公開を予測。Sol / Terra / Luna の3ティア構成で、Sol は Terminal-Bench 2.1 で SoTA 達成済み。Codex Remote は GA（一般提供）が開始されており、2025年11月比で利用量が Research 部門で56倍に拡大している。
+      <strong>本日（7/7）のハイライト:</strong> <strong>GPT-5.6 Sol Ultra が Codex に統合</strong>（7/6付けで一部パートナー向け先行提供開始）。週間アクティブユーザーは500万人（ChatGPT の約900万人/週の比較対象として提示）。また中国の智谱 AI（Z.ai）が <strong>ZCode</strong> を発表し、Claude Code・Codex・Cursor に価格面で挑む。Gartner は OpenAI を Enterprise AI Coding Agents 部門のマジッククアドラント「リーダー」に認定。
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.6 今週にも一般公開か — Polymarket 60%・Sol が Terminal-Bench 2.1 でトップ、Ultra モードで Codex サブエージェント統合</div>
-      <div class="card-meta"><span class="badge">Upcoming</span><span class="card-source">Source: <a href="https://openai.com/index/previewing-gpt-5-6-sol/">openai.com — GPT-5.6 Sol Preview</a> · <a href="https://www.testingcatalog.com/openai-might-be-preparing-gpt-5-6-for-next-weeks-release/">TestingCatalog</a> · <a href="https://deploymentsafety.openai.com/gpt-5-6-preview">OpenAI Deployment Safety Hub</a> — 2026.07</span></div>
+      <div class="card-title">GPT-5.6 Sol Ultra が Codex に統合 — 一部パートナー向け先行提供、Terminal-Bench 2.1 で SoTA・Ultra モードで複数サブエージェントを束ねる</div>
+      <div class="card-meta"><span class="badge">Integration</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">developers.openai.com/codex/changelog</a> · <a href="https://vertu.com/guides/gpt-5-6-sol-ultra-codex-integration">Vertu Guides</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07.06–07</span></div>
       <div class="card-body">
-        <p>GPT-5.6 の一般公開が今週に迫っている。Polymarket の予測市場では7/10〜17の公開が約60%の確率で最有力視されており、Deployment Safety Hub への System Card 公開がその予兆として捉えられている。</p>
+        <p>OpenAI が GPT-5.6 Sol Ultra の Codex クライアントへの統合を7月6日付けで開始し、信頼できるパートナー・組織向けに先行提供している。一般公開は7/10〜17に迫っており、Polymarket 予測市場では約60%の確率で今週公開とされていた。</p>
         <ul>
-          <li><strong>モデル構成:</strong> Sol（旗艦・$5/$30 per Mtok）・Terra（バランス型・$2.50/$15）・Luna（高速軽量・$1/$6）の3ティア</li>
-          <li><strong>性能:</strong> GPT-5.6 Sol は Terminal-Bench 2.1（コマンドラインワークフロー・計画・ツール連携テスト）で SoTA を達成</li>
-          <li><strong>Ultra モード:</strong> Sol + サブエージェント群を束ねる「Ultra モード」が追加予定。Codex との深い統合が実現</li>
-          <li><strong>キャッシング改善:</strong> プロンプトキャッシングの最小有効期間が30分に保証され、明示的なキャッシュブレークポイントを設定可能に</li>
+          <li><strong>GPT-5.6 モデル構成:</strong> Sol（旗艦・$5/$30 per Mtok）・Terra（バランス型・$2.50/$15）・Luna（高速軽量・$1/$6）の3ティア</li>
+          <li><strong>性能:</strong> Sol は Terminal-Bench 2.1（コマンドラインワークフロー・計画・ツール連携テスト）で SoTA 達成</li>
+          <li><strong>Ultra モード:</strong> Sol + 複数の Codex サブエージェントを束ねる「Ultra モード」を追加。並列タスク処理と長時間実行の自律性が向上</li>
+          <li><strong>Codex の利用状況:</strong> 週間アクティブユーザー500万人。同日、Gartner が OpenAI を Enterprise AI Coding Agents 部門のマジッククアドラント「リーダー」に認定</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Codex Remote GA 後の利用実態 — Research 部門56倍・DigitalOcean 連携でリモートワークスペース構築が容易に</div>
-      <div class="card-meta"><span class="badge">GA / Update</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">openai.com — How agents are transforming work</a> · <a href="https://developers.openai.com/codex/changelog">developers.openai.com/codex/changelog</a> — 2026.07</span></div>
+      <div class="card-title">中国・智谱 AI が ZCode を発表 — GLM-5.2 搭載・無料から月16元で Claude Code / Codex に価格挑戦、WeChat / Feishu からリモート操作可能</div>
+      <div class="card-meta"><span class="badge">New Entrant</span><span class="card-source">Source: <a href="https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost/">The Decoder</a> · <a href="https://venturebeat.com/technology/z-ai-launches-zcode-to-challenge-cursor-claude-code-and-github-copilot-in-ai-coding">VentureBeat</a> · <a href="https://www.scmp.com/tech/tech-trends/article/3359170/zhipu-ai-releases-harness-glm-52-model-chinese-firm-takes-aim-anthropic">SCMP</a> — 2026.07.02–07</span></div>
       <div class="card-body">
-        <p>Codex Remote の一般提供（GA）開始後、業種・部門を問わず利用量が急拡大している。OpenAI の調査では2025年11月比の中央値として Research 部門56倍・Customer Support 32倍・Engineering 27倍・Legal 13倍という数字が示された。</p>
+        <p>中国の大規模 AI 研究機関・智谱 AI（海外名 Z.ai）が7月2日、自社の最新モデル GLM-5.2 をベースにした「エージェント型開発環境（Agentic Development Environment）」<strong>ZCode</strong> を発表した。</p>
         <ul>
-          <li><strong>Codex Remote の利便性:</strong> Mac/Windows ホストへの接続・ChatGPT モバイルアプリからの進捗確認・スマートフォンからのアクション承認が可能に</li>
-          <li><strong>DigitalOcean プラグイン:</strong> Codex が DigitalOcean Droplet をプロビジョニングし SSH アクセスを設定してリモートワークスペースを自動構築する機能が追加</li>
-          <li><strong>使用量の実態（5月時点）:</strong> サンプリングされた個人ユーザーの80.6%が「30分超の人間作業に相当する」リクエストを少なくとも1件送信。25.6%は「8時間超」のリクエストを経験</li>
-          <li><strong>changelog 修正（最新）:</strong> Responses WebSocket リクエストの全ペイロードがトレースログに書き込まれていたプライバシー問題を解消</li>
+          <li><strong>概要:</strong> macOS・Windows・Linux 対応の無料デスクトップアプリ。Claude Code や Codex と同様にファイル・ターミナル・ブラウザ・Git を統合したワークフローで動作</li>
+          <li><strong>独自機能:</strong> WeChat・Feishu・Telegram からリモートでタスクをトリガーできる。チャットアプリからデスクトップを開かずにコーディング作業を非同期で進められる</li>
+          <li><strong>価格:</strong> 無料（Lite）から始まり、有料プランは Lite ¥16.2/月・Pro ¥64.8/月・Max ¥144/月（人民元）。Claude Code Max（月$100〜）やCodex（Plus $20）と比較して大幅に安い設定</li>
+          <li><strong>懸念点:</strong> TechTimes が「中国のデータ法はすべての GLM-5.2 API コールに適用される」と指摘。Claude Code バックドア問題と合わせ、AIコーディングツールのデータ主権問題が改めて浮上している</li>
+          <li><strong>プロモーション:</strong> 既存サブスクライバーのデータ枠50%増加・新規ユーザーに500万トークンを無料付与</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">OpenAI Codex Micro — Work Louder とコラボのマクロパッド、7/15 発売・価格発表予定</div>
+      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://www.techtimes.com/articles/319389/20260630/openai-codex-micro-launches-july-15-macro-pad-built-work-louder.htm">TechTimes</a> — 2026.06.30</span></div>
+      <div class="card-body">
+        <p>OpenAI と boutique キーボードメーカー Work Louder のコラボレーションによるプログラマブルマクロパッド「Codex Micro」が7月15日に正式発売。Codex のコマンドショートカットを物理ボタンに割り当てられる。価格・仕様の詳細は発売日に公開予定。</p>
       </div>
     </div>
   </section>
@@ -178,33 +185,33 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ClaudeAI「アリババの Claude Code 禁止 ─ バックドア発見の詳細スレッド」6,800 アップボート超で急上昇中</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI · r/netsec · r/programming — 2026.07.06</span></div>
-      <div class="card-body"><p>アリババの Claude Code 禁止を受け、r/ClaudeAI では「中国ユーザー検出コード」の技術的な詳細を議論するスレッドが急上昇している。「ステガノグラフィーを使ってシステムプロンプトに埋め込んでいたのが事実なら、企業ユーザーとして使い続けるのは難しい」「Anthropic の説明（アカウント不正防止）は理解できるが、実装方法が問題」という批判的なコメントが上位を占める。一方で「Alibaba が2万5千件の偽造アカウントでモデルを蒸留しようとしていた背景を考えると Anthropic にも理由があった」という擁護も見られる。</p></div>
+      <div class="card-title">r/ClaudeAI「Claude Cowork がついにモバイルへ — 実際に使えるのはいつ？Max プランの料金は？」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.07</span></div>
+      <div class="card-body"><p>Anthropic の Claude Cowork モバイル・Web 公開発表を受け、r/ClaudeAI では使用感の報告と質問が殺到している。「Beta のロールアウトが遅い」「Max プランじゃないと当分使えないのか」という声の一方、「スマホから承認できるのは実務で地味に嬉しい」「90%がノンコーディング用途というデータが納得」というコメントも多い。Cowork の利用上限2倍延長（〜8/5）は歓迎されている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/netsec「Anthropic の Claude Code ─ 難読化された中国検出ロジックの技術分析」</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/netsec · r/ReverseEngineering — 2026.07.05–06</span></div>
-      <div class="card-body"><p>r/netsec では、r/ClaudeAI に投稿されたリバースエンジニアリングレポートの技術的な正確性を検証するスレッドが立っている。「タイムゾーンベースの検出は古典的な手法だが、ステガノグラフィーを使ってシステムプロンプトに結果を埋め込む実装は珍しい」「実際にこのコードが動いているプロダクションバイナリを確認した人はいるのか」という慎重な検証姿勢が特徴。「v2.1.91 のバイナリを持っている人は解析してほしい」という呼びかけも多い。</p></div>
+      <div class="card-title">r/MachineLearning「ZCode by Zhipu AI — GLM-5.2 で Claude Code に挑む中国製エージェントの実力は？」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/MachineLearning · r/programming — 2026.07.07</span></div>
+      <div class="card-body"><p>中国・智谱 AI の ZCode 発表を受け、r/MachineLearning と r/programming で性能・プライバシーに関する議論が活発化。「GLM-5.2 は 2025年末から急速に性能を伸ばしており、Claude Code 3とのベンチマーク比較が待ち遠しい」という期待の声と、「中国データ法の適用はアリババのバックドア問題と同じ文脈で見るべき」という懸念が交錯している。WeChat・Feishu からのリモートトリガー機能は「中国企業向けとしては便利だが、西側企業はデータフローに慎重になるだろう」という評価が多い。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「ハメネイ師の葬列が始まった ─ テヘランで10kmの大行列、「米国に死を」の声が響く」</div>
-      <div class="card-meta"><span class="badge">Geopolitics / Hot</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.06</span></div>
-      <div class="card-body"><p>7月6日、テヘランのイマーム・ホセイン広場からアザーディ広場までの約10kmにわたる葬列がスタートした。「Death to America, Death to Israel」という声と花びらが降り注ぐ中、棺が運ばれる映像が世界中に届いている。r/worldnews では「これほどの規模の国葬は近年珍しい」「交渉が葬儀期間中に停止しているが、その後の見通しが不透明」という分析が上位に来ている。モジュタバーが今日も公の場に現れなかったことも議論の的になっている。</p></div>
+      <div class="card-title">r/worldnews「米がホルムズ海峡タンカー攻撃への報復空爆を再開 — 3隻が被弾、石油市場が急反応」</div>
+      <div class="card-meta"><span class="badge">Breaking / Hot</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.07</span></div>
+      <div class="card-body"><p>米軍がホルムズ海峡付近で3隻のタンカーが攻撃されたことを受け対イラン報復空爆を再開したと発表。r/worldnews では「ハメネイ師の葬儀期間中に攻撃が起きた意味合い」「ホルムズ海峡再閉鎖リスクと原油価格」「NATO サミットとの連動」を巡って激論が展開。「交渉の60日タイムライン（〜7/29）が実質崩壊した可能性が高い」という悲観的な見方が上位に並んでいる。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「ハマスがガザ統治機関を解散 ─ 20年近い統治に終止符・国連主導パネルへ移管」</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Reddit r/worldnews · r/Israel — 2026.07.06</span></div>
-      <div class="card-body"><p>ハマスが2007年から約20年間統治してきたガザの統治機関（政府緊急委員会）の解散を発表。後継として国連が支援する民間技術者委員会「NCAG（National Committee for the Administration of Gaza）」への権力移管を表明した。r/worldnews では「象徴的な意味は大きいが、ハマスの武装解除という最大の問題には触れていない」「イスラエルが和平の前提条件としている武装解除を巡る交渉がいよいよ本格化するか」という議論が続いている。</p></div>
+      <div class="card-title">r/worldnews「NATO サミット開幕 — トランプがトルコへの F-35 売却解禁を示唆、NATO 支出目標の強化を迫る」</div>
+      <div class="card-meta"><span class="badge">NATO</span><span class="card-source">Reddit r/worldnews · r/europe — 2026.07.07</span></div>
+      <div class="card-body"><p>アンカラで NATO サミットが開幕。トランプが最も近い同盟国の対応に「非常に失望した」と発言し防衛支出増額を強く求めた。「F-35 売却解禁はトルコが S-400 を廃棄するのが前提のはずだが、その条件が明確にされていない」という指摘が上位コメント。NATO としてのウクライナ支援継続 vs 米のイラン問題への関与というリソース競合も注目されている。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「中国が太平洋に潜水艦発射弾道ミサイルを試験 ─ オーストラリア・NZ が批判、日本も懸念表明」</div>
-      <div class="card-meta"><span class="badge">Geopolitics</span><span class="card-source">Reddit r/worldnews · r/geopolitics · r/japan — 2026.07.06</span></div>
-      <div class="card-body"><p>中国が2024年以来初めて、核搭載可能な潜水艦発射弾道ミサイル（SLBM）を太平洋に向けて試験発射した。オーストラリアが「地域の不安定化につながる」と批判し、ニュージーランドは着弾地点が「ラロトンガ条約（南太平洋非核地帯）」の区域内だったと指摘した。r/worldnews では「ちょうどオーストラリアとフィジーが『海洋平和協定』に署名した日に合わせて行ったのは偶然ではないだろう」というコメントが多数の支持を集めている。</p></div>
+      <div class="card-title">r/programming「AI コーディングエージェントのデータプライバシー問題 — バックドア・データ法・監査の必要性」</div>
+      <div class="card-meta"><span class="badge">Meta</span><span class="card-source">Reddit r/programming · r/netsec — 2026.07.07</span></div>
+      <div class="card-body"><p>Claude Code バックドア問題と ZCode の中国データ法適用問題を受け、r/programming では「あらゆる AI コーディングエージェントに対するデータプライバシー・セキュリティ監査の必要性」を論じるメタスレッドが注目を集めている。「オープンソースで検証可能なツールを使うか、エアギャップ環境に限定するかの二択だ」という極端な意見から「現実的にはネットワーク監視と sandbox で対処するしかない」という実務的な声まで幅広い。</p></div>
     </div>
   </section>
 
@@ -215,79 +222,67 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/6）の主要トピック:</strong> <strong>イラン:</strong> ハメネイ師葬列（テヘラン10km・最大規模）・トランプ「米国はいずれにせよ勝つ」・米イラン交渉は葬儀期間中（〜7/9）停止 / <strong>ガザ:</strong> ハマスが統治機関を解散・NCAG への権力移管を表明 / <strong>中国:</strong> 太平洋へ SLBM 試験発射（2024年以来初）・地域各国が批判 / <strong>太平洋:</strong> スーパー台風バビがグアム・北マリアナ諸島を直撃 / <strong>外交:</strong> マクロンがシリア訪問・トルコで NATO サミット開幕へ
+      <strong>本日（7/7）の主要トピック:</strong> <strong>イラン:</strong> ホルムズ海峡でタンカー3隻が攻撃を受け、米軍が報復空爆を再開。ハメネイ師の遺体がナジャフ（イラク）へ移送。交渉の60日タイムライン（〜7/29）に暗雲 / <strong>NATO:</strong> アンカラでサミット開幕・トランプがトルコへの F-35 売却解禁示唆・防衛支出増額を強く求める / <strong>ガザ:</strong> ハマスの統治機関解散は正式に効力発生、ただし武装解除問題は依然未解決 / <strong>ベネズエラ:</strong> 地震の死者が2,295人に増加 / <strong>ウガンダ:</strong> マールブルグウイルス症例を確認
     </div>
 
     <div class="card">
-      <div class="card-title">ハメネイ師葬列（7/6）— テヘランで史上最大規模・「米国に死を」の声と花びら・後継者は今日も不在</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/07/06/world/live-news/iran-khamenei-funeral-war-trump">CNN Live</a> · <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/">CBS News Live</a> · <a href="https://www.justsecurity.org/145865/early-edition-july-6-2026/">Just Security</a> — 2026.07.06</span></div>
+      <div class="card-title">米がホルムズ海峡タンカー攻撃への報復空爆を再開 — 3隻が被弾、財務省が対イラン石油制裁を再発動</div>
+      <div class="card-meta"><span class="badge">Breaking / Middle East</span><span class="card-source">Source: <a href="https://www.cbsnews.com/live-updates/iran-us-war-strait-of-hormuz-trump-nato/">CBS News Live</a> · <a href="https://www.cnbc.com/2026/07/07/us-strikes-iran-hormuz-ships.html">CNBC</a> · <a href="https://www.timesofisrael.com/liveblog-july-7-2026/">Times of Israel</a> · <a href="https://www.cnn.com/2026/07/07/world/live-news/nato-summit-trump">CNN Live</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>7月6日（月）、ハメネイ師の葬列がテヘランのイマーム・ホセイン広場からアザーディ広場まで約10kmにわたって進行した。大群衆の中、花びらが降り注ぎ「アメリカに死を、イスラエルに死を」という声が響いた。棺には師・娘・息子の嫁・孫娘（14か月）の4人が安置されており、全員が2月28日の空爆で死亡した。</p>
+        <p>7月7日（火）早朝、ホルムズ海峡付近のオマーン沖でタンカー3隻が相次いで攻撃を受けた。米中央軍（CENTCOM）は「一連の強力な報復空爆を開始した」と発表。同日、米財務省はイランへの石油・石油化学製品の販売を認めるウェイバー（適用除外）を取り消した。</p>
         <ul>
-          <li><strong>トランプの発言:</strong> 「（米国は）いずれにせよ勝つ」と述べ、強硬姿勢を維持。葬儀の象徴的な「悪魔を石打ち」の儀式ではトランプの画像に石が投げつけられた</li>
-          <li><strong>後継者モジュタバー:</strong> 今日も公の場に現れず。「権力基盤の固め方が慎重」との見方と「健康上の問題」を示唆する情報が錯綜している</li>
-          <li><strong>米・イラン交渉:</strong> イラン側が喪中を理由に少なくとも7月9日まで停止。カタールとパキスタンが仲介継続を確約しており、MOU の60日タイムライン（〜7/29）への影響が注目される</li>
-          <li><strong>本葬と埋葬:</strong> 葬列後、ハメネイ師はイマーム・ホメイニー廟に埋葬の予定</li>
+          <li><strong>攻撃の詳細:</strong> Al Rekayyat（船舶）が発射体を受けて火災発生（死傷者なし）。ほか2隻も発射体・ドローンで攻撃された。米国はイランに帰責</li>
+          <li><strong>報復空爆:</strong> 米軍が「強力な空爆（powerful strikes）」を実施したと CENTCOM が声明。ターゲットの詳細は未公表</li>
+          <li><strong>制裁再発動:</strong> 財務省がイランの石油・石油化学輸出を認めるウェイバーを取り消し。カタール交渉を通じた MOU（6月10日署名）の成果が実質的に揺らいでいる</li>
+          <li><strong>ホルムズ再閉鎖リスク:</strong> 世界の原油輸送量の約20%が通過するホルムズ海峡の閉鎖リスクが再浮上。原油先物は急騰</li>
+          <li><strong>交渉への影響:</strong> イラン側は6月10日の MOU（60日以内の包括合意を目指す）を「まだ有効だ」としつつも「攻撃が停止しない限り交渉は進まない」と主張</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ハマスがガザ統治機関を解散 — 約20年の統治に終止符、国連支援の NCAG への権力移管を表明</div>
-      <div class="card-meta"><span class="badge">Middle East / Gaza</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/6/hamas-announces-dissolution-of-gaza-governing-body">Al Jazeera</a> · <a href="https://www.nbcnews.com/world/gaza/hamas-dissolves-gaza-governing-body-ahead-power-transfer-rcna353116">NBC News</a> · <a href="https://www.euronews.com/2026/07/06/hamas-announces-dissolution-gaza-governing-body-paves-way-for-technocratic-committee">Euronews</a> — 2026.07.06</span></div>
+      <div class="card-title">NATO サミット（アンカラ）開幕 — トランプがトルコへの F-35 売却解禁を示唆、防衛支出増額を強く迫る</div>
+      <div class="card-meta"><span class="badge">NATO / Diplomacy</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/7/nato-summit-begins-who-is-attending-and-what-is-at-stake">Al Jazeera</a> · <a href="https://www.timesofisrael.com/nato-summit-trumps-support-for-f-35s-sale-boost-turkeys-standing-as-slumping-israel-sees-clout-erode/">Times of Israel</a> · <a href="https://www.foxnews.com/live-news/us-iran-khamenei-funeral-july-7-2026">Fox News Live</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>ハマスが2007年以来約20年間ガザを統治してきた「政府緊急委員会」の解散を発表し、後継として国連が支援する民間技術者委員会「NCAG（National Committee for the Administration of Gaza）」への権力移管を望むと表明した。</p>
+        <p>トルコ・アンカラで NATO サミットが7日・8日の2日間にわたり開幕した。トランプ大統領はトルコへの制裁を解除し、長年凍結されていた F-35 ステルス戦闘機の売却を進める意向を示した。</p>
         <ul>
-          <li><strong>解散声明:</strong> 緊急委員会委員長の Mohammed al-Farra 氏が「正式に辞表を提出し、委員会の解散を宣言する」と声明</li>
-          <li><strong>代替機関（NCAG）:</strong> 米国が支援するガザ復興計画の下で設置された民間技術者委員会。昨年10月に発効した停戦合意以来、ハマスは「統治から退く用意がある」と繰り返し表明していた</li>
-          <li><strong>専門家の見方:</strong> 「象徴的な意義は大きいが、ハマスの軍事組織は解散しておらず、武装解除を求めるイスラエルの要求には一切触れていない」（Al Jazeera）</li>
-          <li><strong>和平への影響:</strong> 今後の最大の焦点は武装解除交渉。イスラエルはこれを恒久的な和平合意の前提条件としている</li>
+          <li><strong>トルコの立場強化:</strong> F-35 売却解禁の示唆とエルドアン大統領との個人的な関係強化により、トルコが NATO 内で存在感を高めている。一方でイスラエルはイラン攻撃の消耗と国際的批判で立場が弱まっていると Times of Israel は分析</li>
+          <li><strong>防衛支出目標:</strong> NATO 事務総長 Mark Rutte が「数百億ドル規模の新たな防衛契約を発表する」と予告。トランプは「最も近い同盟国の対応に非常に失望した」と述べ、GDP 比3%以上の支出を求める姿勢を改めて示した</li>
+          <li><strong>ウクライナ:</strong> ロシアが7日も大規模なミサイル・ドローン攻撃を実施し、少なくとも22人が死亡。防空の穴が露呈しており、NATO 諸国のウクライナ支援継続が確認された</li>
+          <li><strong>ホルムズ情勢との連動:</strong> 米のイラン攻撃再開が NATO サミットの議題にも影響。ヨーロッパ側は「二正面展開への懸念」を表明しているとされる</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">中国が太平洋に潜水艦発射弾道ミサイル試験 — 2024年以来初、オーストラリア・NZ・日本が批判・ラロトンガ条約区域に着弾</div>
-      <div class="card-meta"><span class="badge">Asia-Pacific / Military</span><span class="card-source">Source: <a href="https://www.nbcnews.com/world/asia/china-conducts-rare-long-range-missile-test-rattling-us-allies-rcna353102">NBC News</a> · <a href="https://www.cnn.com/2026/07/06/china/china-tests-submarine-launched-ballistic-missile-intl-hnk-ml">CNN</a> · <a href="https://www.washingtonpost.com/national-security/2026/07/06/china-test-fires-long-range-missile-into-pacific-rattling-us-allies/">Washington Post</a> · <a href="https://www.twz.com/sea/chinas-submarine-launched-ballistic-missile-test-in-the-pacific-is-a-big-deal">The War Zone</a> — 2026.07.06</span></div>
+      <div class="card-title">ハメネイ師の遺体、ナジャフ（イラク）へ移送 — 葬列後の埋葬地に変更か・後継者問題は依然不透明</div>
+      <div class="card-meta"><span class="badge">Iran</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/7/7/iran-war-live-khameneis-body-arrives-in-qom-hamas-cedes-gaza-governance">Al Jazeera Liveblog</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>中国人民解放軍海軍が7月6日正午過ぎ（現地時間）、核搭載可能な SLBM（潜水艦発射弾道ミサイル）をダミー弾頭で太平洋に発射した。中国国営新華社は事前通告済みの訓練と説明したが、地域各国が強く反発した。</p>
-        <ul>
-          <li><strong>試験の詳細:</strong> 核動力弾道ミサイル潜水艦から発射し、指定された国際海域の目標地点にダミー弾頭が到達した。中国は「水中からの第二撃能力・長距離戦略指揮統制の検証」と説明</li>
-          <li><strong>地域の反応:</strong> オーストラリアが「地域の不安定化につながる」と批判。ニュージーランドは着弾地点が1986年のラロトンガ条約（南太平洋非核兵器地帯）の定める区域内だったと指摘。日本も「日本の安全保障を脅かす可能性のある弾道ミサイル訓練に懸念を表明」</li>
-          <li><strong>タイミング:</strong> 発射当日、オーストラリアとフィジーが「海洋平和協定（Ocean of Peace defence agreement）」に署名し、相互防衛を誓約したことと時期が重なった</li>
-          <li><strong>専門家分析（The War Zone）:</strong> 「中国が公開の場でこの種の試験を行うのは極めて稀で、西太平洋における抑止力の存在を明示するシグナルとして読むべき」</li>
-        </ul>
+        <p>7月6日のテヘランでの大規模葬列の後、ハメネイ師の遺体は7日夜にイラクのナジャフへ移送された。ナジャフはシーア派の聖地で、埋葬地をイランからイラクに変更したとする情報もあるが、イラン当局は正式なコメントを出していない。後継者とみられる次男モジュタバー・ハメネイは依然として公の場に姿を見せておらず、憶測が続いている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">スーパー台風バビがグアム・北マリアナ諸島を直撃 — 激しい暴風と洪水被害が継続</div>
-      <div class="card-meta"><span class="badge">Pacific / Weather</span><span class="card-source">Source: <a href="https://www.npr.org/2026/07/05/g-s1-132052/guam-pacific-islands-brace-super-typhoon-bavi">NPR</a> — 2026.07.05–06</span></div>
+      <div class="card-title">ハマスのガザ統治機関解散が正式発効 — 武装解除は依然未解決、イスラエルは「歓迎しない」</div>
+      <div class="card-meta"><span class="badge">Gaza</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/7/7/iran-war-live-khameneis-body-arrives-in-qom-hamas-cedes-gaza-governance">Al Jazeera</a> · <a href="https://www.fdd.org/overnight-brief/july-7-2026/">FDD</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>スーパー台風バビ（Bavi）がグアムと北マリアナ諸島を直撃し、激しい暴風と大洪水をもたらしている。NPR によると住民は激しい風と深刻な浸水に対処しており、緊急対応が続いている。被害の全容確認はバビ通過後になる見通し。</p>
+        <p>6日に発表されたハマスのガザ統治機関（政府緊急委員会）解散が7日に正式発効。国連が支援する民間技術者委員会（NCAG）への権力移管プロセスが開始された。ただしイスラエルは「武装解除を伴わない統治機関の解散だけでは恒久的な和平合意の前提条件を満たさない」として消極的な姿勢を崩していない。米国の仲介継続が焦点。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">マクロンがシリア訪問・NATO サミット（アンカラ）開幕へ — トランプもエルドアンとの関係でトルコ行き決断</div>
-      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/6/macron-arrives-in-syria-for-talks-ahead-of-nato-summit-in-turkiye">Al Jazeera</a> · <a href="https://www.foxnews.com/politics/trump-bets-former-nato-troublemaker-turkeys-strategic-value-surges">Fox News</a> — 2026.07.06</span></div>
+      <div class="card-title">ベネズエラ地震の死者が2,295人に — ロドリゲス代行大統領が7日間の国民服喪を宣言</div>
+      <div class="card-meta"><span class="badge">Natural Disaster</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>フランスのマクロン大統領がトルコ・アンカラで開催される NATO サミットを前にシリアを訪問し、現地当局と会談した。同日、トランプ大統領も「エルドアンとの関係」を理由に NATO サミット参加を表明した。</p>
-        <ul>
-          <li><strong>マクロンのシリア訪問:</strong> NATO サミット前の地域外交の一環。シリアの安定化と人道支援の継続について協議したとされる</li>
-          <li><strong>トランプのトルコ訪問:</strong> Fox News によるとトランプはエルドアンとの個人的な関係とトルコの戦略的価値の高まりを踏まえてアンカラ行きを決断。米・トルコ防衛協力の深化を示唆</li>
-        </ul>
+        <p>ベネズエラで発生した大規模地震（先週末）の死者数が2,295人に達した。デルシー・ロドリゲス代行大統領は7日間の国民服喪を宣言し、国際社会に人道支援を要請した。被災地では余震が続いており、行方不明者の捜索活動が続いている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">中国人牧師が釈放 — トランプが習近平に直接申し入れ / テイラー・スウィフトとトラヴィス・ケルシーがMSGで結婚式</div>
-      <div class="card-meta"><span class="badge">Global</span><span class="card-source">Source: <a href="https://www.foxnews.com/media/pastor-freed-chinese-prison-trump-raised-case-xi-jinping">Fox News</a> · <a href="https://www.cbsnews.com/news/taylor-swift-travis-kelce-wedding-day-madison-square-garden-nyc/">CBS News</a> — 2026.07.06</span></div>
+      <div class="card-title">ウガンダでマールブルグウイルスの孤立症例を確認 — 進行中のエボラ流行との重複対応を強いられる</div>
+      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <ul>
-          <li><strong>中国人牧師釈放:</strong> トランプ大統領が習近平主席に直接働きかけた結果、中国の刑務所に収監されていた牧師が釈放されたと Fox News が報道。米中の人権をめぐる交渉の一端が明らかになった形</li>
-          <li><strong>テイラー・スウィフト結婚:</strong> テイラー・スウィフトとNFLスター・トラヴィス・ケルシーが7月6日、ニューヨーク・マディソン・スクエア・ガーデンで結婚式を挙げた。式はアダム・サンドラーが司式。SNS では「年最大のニュース」と世界的にトレンド入りしている</li>
-        </ul>
+        <p>アフリカ疾病予防管理センター（Africa CDC）がウガンダで孤立したマールブルグウイルスの症例を確認した。ウガンダは現在進行中のエボラウイルス流行にも対処しており、二種類の致死性ウイルスへの同時対応が求められている。マールブルグウイルスの致死率は最大90%にのぼり、現在承認されたワクチンはない。</p>
       </div>
     </div>
   </section>
@@ -300,43 +295,38 @@
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita / Zenn 速報】「Anthropic の Claude Code にバックドア？」— アリババ禁止報道を受けて国内開発者コミュニティが反応</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Qiita · Zenn · X（旧Twitter） — 2026.07.04–06</span></div>
+      <div class="card-title">【Zenn】「ループエンジニアリング入門 — Claude Code の /goal で自走するループを設計する」</div>
+      <div class="card-meta"><span class="badge">Zenn / Trending</span><span class="card-source">Source: <a href="https://zenn.dev/miyan/articles/claude-code-ai-secretary-design-2026">Zenn</a> · <a href="https://www.oflight.co.jp/en/columns/loop-engineering-ai-agent-paradigm-2026-06">Oflight</a> — 2026.06–07</span></div>
       <div class="card-body">
-        <p>アリババによる Claude Code 禁止の報道を受け、Qiita・Zenn・X（旧Twitter）の国内開発者コミュニティでも急速に議論が広がっている。</p>
+        <p>6月に Addy Osmani が命名・体系化した「ループエンジニアリング」（Automations・Worktrees・Skills・Plugins・Maker-Checker Sub-agents・Durable State の6要素）を Claude Code で実装する解説記事が Zenn で引き続き人気を集めている。</p>
         <ul>
-          <li><strong>主な反応:</strong> 「企業での利用を検討していたが、今回の件でセキュリティレビューを先にやることにした」「個人用途ではリスクは低いと思うが、社内コードを扱うなら慎重になるのは当然」という慎重派が多数</li>
-          <li><strong>Anthropic 側の説明への評価:</strong> 「アカウント不正対策という理由は理解できる」「でも実装の方法論（ステガノグラフィー使用）が信頼を損なう」という意見が拮抗</li>
-          <li><strong>代替ツールの議論:</strong> Codex・GitHub Copilot・Cursor・Kiro・アリババ Qoder などが話題に。「どのツールも完全に透明なわけではない」という冷静な見方も</li>
-          <li><strong>企業利用の判断:</strong> 「ゼロトラストの観点では Claude Code に限らずすべての外部 AI ツールを sandbox 環境で使うべき」という意見が参考として多く引用されている</li>
+          <li><strong>前日との差異:</strong> 本日（7/7）は Claude Cowork のモバイル展開発表を受け、「Cowork とループエンジニアリングの組み合わせ」を論じるコメントが急増。「スマホから Cowork を使って loop で仕込んだ自動化を監視するのが理想のワークフロー」という声が多い</li>
+          <li><strong>注目記事:</strong> Zenn の「自律 AI 秘書を Claude Code で組む — 5層と7つの境界」が前週比でいいね数が大幅増加</li>
+          <li><strong>AI Board of Directors 実装記事:</strong> 「Claude Code でサブエージェントを経営幹部・秘書・監査役に見立てて組む」記事（Zenn）も英語圏に翻訳されて話題に</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn】「AI コーディングエージェント比較 2026年7月版 ─ Claude Code / Codex / Cursor / Kiro を実務で3ヶ月使った結論」</div>
-      <div class="card-meta"><span class="badge">Zenn</span><span class="card-source">Zenn — 2026.07</span></div>
+      <div class="card-title">【Qiita】「Claude Code で全ての日常業務を爆速化しよう！」— いいね数急増・非エンジニアへの波及が話題に</div>
+      <div class="card-meta"><span class="badge">Qiita / Viral</span><span class="card-source">Source: <a href="https://qiita.com/minorun365/items/114f53def8cb0db60f47">Qiita</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>実務で主要 AI コーディングエージェントを3か月間並行使用した開発者による比較記事が Zenn で注目を集めている。定量的なベンチマークではなく「実際のプロダクション開発での体験」に基づいた評価が支持されている。</p>
+        <p>Qiita で「Claude Code で全ての日常業務を爆速化しよう！」（#AI タグ）がいいね数を急速に伸ばしている。Claude Cowork のモバイル展開発表と同日に急上昇しており、「AI エージェントによる業務自動化への関心が非エンジニアにも広がっている」という流れを示す記事として業界内で注目されている。</p>
         <ul>
-          <li><strong>Claude Code の評価:</strong> 「マルチファイルリファクタリングと大きなリポジトリの全体把握が他を圧倒。ただしトークン消費が多い」「Max プランの価格は高いが、API コストに換算するとむしろ安い」</li>
-          <li><strong>Codex の評価:</strong> 「ChatGPT Plus に含まれるコスパは魅力。複雑なタスクでの粘り強さは Claude Code を上回ることがある」「Remote GA で非同期で動かせるようになり実用性が上がった」</li>
-          <li><strong>Cursor の評価:</strong> 「IDE 統合が最もスムーズ。コンテキスト管理が直感的で onboarding コストが低い」</li>
-          <li><strong>Amazon Kiro の評価:</strong> 「仕様ドリブン（spec.md から実装）という哲学が新鮮。大規模プロジェクトのスコープ管理に向いている」</li>
+          <li><strong>主な内容:</strong> Claude Code をコーディング以外の業務（資料作成・データ整理・スケジュール管理・リサーチ）に活用する具体的なプロンプトとワークフローを紹介</li>
+          <li><strong>読者層:</strong> コメント欄には非エンジニアの読者からの「試してみた」報告が多数。Anthropic の利用データ（90%超が非コーディング用途）と符合する</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita】「Claude Code の CLAUDE.md ベストプラクティス 2026年版 ─ 現場で役立つ15の実践テンプレート」</div>
-      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita — 2026.07</span></div>
+      <div class="card-title">【Qiita】「はじめての Agent Skills 12選 — GitHub Copilot でも使える AI の手順書」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Source: <a href="https://qiita.com/aktsmm/items/08eef2cdeeb0a32b69a2">Qiita</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>CLAUDE.md の書き方に関する体系的なガイドが Qiita で高評価を得ている。v2.1.200 でデフォルトが Manual モードになったことで「CLAUDE.md への設定記述の重要性がさらに増した」という文脈で改めて注目されている。</p>
+        <p>Claude Code の Skills 機能（再利用可能な手順書）を GitHub Copilot でも使える形で整理した Qiita 記事が注目を集めている。前日との差異として、ZCode 発表を受け「ZCode も Skills 互換のワークフローを取り込むのか」という議論がコメント欄で始まっている。</p>
         <ul>
-          <li><strong>必須項目:</strong> プロジェクト概要・使用言語とバージョン・禁止操作リスト（削除禁止ファイル等）・テスト実行コマンド</li>
-          <li><strong>推奨項目:</strong> コーディング規約の要点・PR/commit メッセージのフォーマット・環境変数の命名規則・よく使うコマンドのエイリアス</li>
-          <li><strong>Manual モード時代の新セクション:</strong> 「allow_execute:」「deny_read:」などの権限ルールを CLAUDE.md に記述することで per-project の権限チューニングが可能に</li>
-          <li><strong>セキュリティ観点の追記（今回の騒動を受けて）:</strong> 「機密ファイルのパス・環境変数名・API キーのパターンを deny_read に明示することで誤送信リスクを低減できる」という追記が話題に</li>
+          <li><strong>12のスキル例:</strong> コードレビュー自動化・テスト生成・ドキュメント更新・PR 作成・リファクタリング計画・依存関係チェックなど</li>
+          <li><strong>GitHub Copilot との互換性:</strong> Agent モード（Copilot Workspace）で同様のスキルファイルが活用できることを解説。ツールを横断してスキルを管理する考え方が広がっている</li>
         </ul>
       </div>
     </div>
@@ -345,8 +335,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年7月6日（月）</p>
-  <p style="margin-top:0.5rem;">Sources: TechCrunch · South China Morning Post · The Next Web · GIGAZINE · Thenextweb · releasebot.io · code.claude.com · DEV Community · Firecrawl · MorphLLM · openai.com · deploymentsafety.openai.com · testingcatalog.com · developers.openai.com · CNN · CBS News · Al Jazeera · NBC News · Euronews · Washington Post · The War Zone · NPR · Fox News · Just Security · Qiita.com · Zenn.dev</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月7日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: claude.com · TechCrunch · VentureBeat · 9to5Mac · AndroidHeadlines · PYMNTS · AIWeekly · Tom's Hardware · Releasebot · The Decoder · SCMP · VentureBeat · TechTimes · ChatForest · openai.com · developers.openai.com · Vertu · CBS News · CNBC · Times of Israel · CNN · Al Jazeera · Fox News · FDD · Washington Post · NPR · Wikipedia Current Events · Zenn.dev · Qiita.com · Oflight</p>
 </footer>
 
 </body>
