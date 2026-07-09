@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月8日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">中国NVDB が Claude Code v2.1.91〜2.1.196 のバックドアを公式警告 / Anthropic は「不正転売防止の実験」と釈明・Alibaba 禁止（7/10）が迫る / Claude Cowork がモバイル・Web でスタート（Max β）/ GitHub Copilot エージェントセッションストリーミング public preview / 米イラン攻撃継続・NATO サミット閉幕</p>
+  <p class="date">2026年7月8日（水）&nbsp;|&nbsp;<a href="../2026-07-07/index.html">前版（7/7）</a></p>
+</header>
+
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#openai">Codex / OpenAI / 競合</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#devjp">Qiita / Zenn</a>
+</nav>
+
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/8）の最重要ニュース:</strong> 中国の国家脆弱性データベース（NVDB）が Claude Code バージョン 2.1.91〜2.1.196 に「セキュリティバックドア」を発見したと公式警告を発表。ユーザーの位置情報・身元関連の識別子をサーバーへ無断送信するリスクがあるとし、即時アンインストールまたは最新版へのアップグレードを勧告した。Anthropic は「不正転売業者によるアカウント悪用とモデル蒸留を防ぐための実験的な仕組みであり、v2.1.200 以降では削除済み」と釈明している。
+    </div>
+    <div class="card">
+      <div class="card-title">中国 NVDB が Claude Code v2.1.91〜2.1.196 に「セキュリティバックドア」公式警告 — ユーザーの位置・IDを無断送信するリスクと指摘</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://www.cbsnews.com/news/china-security-backdoor-anthropic-ai-coding-tool/">CBS News</a> · <a href="https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html">CNBC</a> · <a href="https://www.pcgamer.com/software/ai/chinas-national-vulnerability-database-warns-that-recent-claude-code-models-have-a-security-backdoor/">PC Gamer</a> — 2026.07.08</span></div>
+      <div class="card-body">
+        <p>中国の産業省が運営するサイバーセキュリティプラットフォーム（NVDB）は7月8日、Claude Code の特定バージョンに組み込まれた監視機構が「ユーザーの地理的位置・身元関連の識別子を同意なくリモートサーバーへ送信できる」と公式警告した。</p>
+        <ul>
+          <li><strong>対象バージョン:</strong> Claude Code v2.1.91〜v2.1.196</li>
+          <li><strong>勧告:</strong> 組織・個人は直ちに影響を受けるバージョンをアンインストールするか最新の安全なリリースにアップグレードすること</li>
+          <li><strong>Anthropic の釈明:</strong> 「バックドアと呼ばれているものは3月に開始した実験的な不正利用防止メカニズム。v2.1.200 以降では削除済み」とエンジニアの Thariq Shihipar が説明</li>
+          <li><strong>Alibaba の動向:</strong> アリババは社員に対し7月10日をもって Claude Code の使用を禁止すると通達</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Cowork がモバイル・Web で正式稼働 — スマートフォンを AI 業務のリモコンに（Max β）</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://www.helpnetsecurity.com/2026/07/08/claude-cowork-phone-mobile-web/">Help Net Security</a> · <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> — 2026.07.07–08</span></div>
+      <div class="card-body">
+        <p>Claude Cowork のモバイル・Web 展開が Max 向けにロールアウト中。Help Net Security は「スマートフォンが AI 業務のリモコンになった」と表現している。</p>
+        <ul>
+          <li><strong>動作モデル:</strong> ユーザーが目標を設定すると、Claude がプランを立て、文書・スプレッドシート・レポートを成果物として生成</li>
+          <li><strong>利用データ:</strong> Cowork ユーザーの90%超がコーディング以外に利用</li>
+          <li><strong>利用上限2倍延長:</strong> Max 向けの Cowork 利用上限2倍施策は8月5日まで延長</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code セキュリティ脆弱性 — プロンプトインジェクション（コメント経由）が複数の AI コーディングエージェントに共通の問題として浮上</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://www.securityweek.com/claude-code-gemini-cli-github-copilot-agents-vulnerable-to-prompt-injection-via-comments/">SecurityWeek</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>SecurityWeek の調査によると、Claude Code・Gemini CLI・GitHub Copilot の各エージェントが GitHub コメントを経由したプロンプトインジェクション攻撃に対して脆弱であることが確認された。PR やイシューのコメントに悪意ある指示を埋め込むことで、AI エージェントに意図しないコードの実行・シークレットへのアクセスを誘導できる。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Radware、Claude Code などの開発者向けエージェントにアジェンティック AI 保護を拡張</div>
+      <div class="card-meta"><span class="badge">Security Product</span><span class="card-source">Source: <a href="https://letsdatascience.com/news/radware-adds-agent-security-for-claude-code-3921d282">Let's Data Science</a> — 2026.07.07</span></div>
+      <div class="card-body">
+        <p>Radware が Agentic AI Protection 製品を Claude Code などの開発者ホスト型エージェントに対応させたと発表。コンプライアンスレポートとエージェント活動の可視化を強化する。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex &amp; 競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/8）のハイライト:</strong> GPT-5.6 Sol Ultra の Codex 統合が一般公開に向けて進行中。GitHub Copilot がエージェントセッションストリーミングの public preview を公開し、企業向けの可視性を強化。7月の AI コーディングエージェント市場は Claude Code・Codex・Google Antigravity・Cursor・Kiro・GitHub Copilot・Windsurf の7社が熾烈に競合中。
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot エージェントセッションストリーミング が public preview に — 全クライアントのエージェントデータをリアルタイムで取得可能</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/">GitHub Changelog</a> — 2026.07.02</span></div>
+      <div class="card-body">
+        <p>GitHub が Enterprise Cloud 顧客向けに Copilot エージェントセッションのストリーミングデータ取得を public preview として公開した。Copilot cloud agent・Claude Code CLI・VS Code などすべての Copilot クライアントが対象。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 Sol Ultra の Codex 統合 — Ultra モードで並列サブエージェント、今週の一般公開に向けてカウントダウン</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://vertu.com/guides/gpt-5-6-sol-ultra-codex-integration">Vertu</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07.06–08</span></div>
+      <div class="card-body">
+        <p>GPT-5.6 Sol Ultra の Codex クライアントへの統合は信頼パートナー向けに先行提供中。Sol（旗艦）・Terra（バランス型）・Luna（高速軽量）の3ティア構成で、Ultra モードは並列タスク処理と長時間自律実行が可能。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">2026年7月 AI コーディングエージェント比較 — 7社の競合状況と価格・機能の最前線</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>2026年7月時点では Claude Code・Google Antigravity 2.0・OpenAI Codex・Cursor・Kiro（Amazon）・GitHub Copilot・Windsurf の7社が本格的な競合体制に入っている。Claude Code（Sonnet 5 / 1M コンテキスト）vs Codex Ultra（並列サブエージェント）vs Copilot（IDE 統合の深さ）という三つ巴の構図が続く。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">5 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「中国 NVDB の Claude Code バックドア警告 — アップグレードすれば本当に安全？」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI · r/netsec — 2026.07.08</span></div>
+      <div class="card-body"><p>r/ClaudeAI では「v2.1.200 以降に上げれば十分か？」という質問が急増。「中国 NVDB がバックドアを公表する動機は政治的なものもある」という懐疑的な見方と、「意図はともかく無断のデータ収集は許容できない」という批判が上位を占めている。r/netsec ではコードレベルの分析スレッドが立ち上がり、削除済みロジックの詳細を検証する動きが出ている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Claude Cowork モバイル — ついに使えた。バックグラウンド実行が本当に便利」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.08</span></div>
+      <div class="card-body"><p>Max プランのユーザーから Cowork モバイルの初期使用感が続々と報告されている。「スマホから依頼してそのまま外出、帰宅したら完成していた」という声が多い。バックドア問題への懸念と「でも便利だから使い続ける」という心理的葛藤を正直に書いたコメントがいいねを集めている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「AI コーディングエージェントをセキュアに使うためのベストプラクティス 2026年版」</div>
+      <div class="card-meta"><span class="badge">Meta</span><span class="card-source">Reddit r/programming · r/cybersecurity — 2026.07.08</span></div>
+      <div class="card-body"><p>バックドア問題・プロンプトインジェクション脆弱性が相次いで報告されたことを受け、「AI コーディングエージェントを安全に使うための実践的なガイドライン」をまとめるスレッドが注目を集めている。上位のアドバイスは「ネットワークトラフィックを監視する」「最小権限の原則を守る」「シークレットをコードリポジトリに置かない」「公開 PR には AI エージェントのアクセスを制限する」の4点。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米がイランを再び空爆 — ホルムズ海峡の原油価格と世界経済への影響」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.08</span></div>
+      <div class="card-body"><p>米軍によるイラン攻撃が継続していることを受け、r/worldnews では「原油価格の今後のシナリオ」「ホルムズ海峡が封鎖された場合の世界経済への影響」を論じるスレッドが活発化。NATO サミットがアンカラで閉幕したことで「同盟国の結束はどこまで維持されるか」という問いかけも多い。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Anthropic vs 中国テック: バックドア問題の本質はモデル蒸留を巡る地政学的対立」</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/MachineLearning — 2026.07.08</span></div>
+      <div class="card-body"><p>r/MachineLearning では「Claude Code バックドア問題の本質はセキュリティではなく、Anthropic と中国テック企業のモデル蒸留を巡る知的財産紛争だ」という分析スレッドが注目を集めている。「今回の検出機能はその対抗手段だが、実装の透明性が欠けていた」という見方が有力。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/8）の主要トピック:</strong> <strong>イラン:</strong> 米軍の対イラン空爆が継続・ホルムズ海峡での緊張が続く / <strong>NATO:</strong> アンカラサミット閉幕・トランプ、ウクライナにPATRIOTミサイル製造ライセンス付与 / <strong>ウクライナ:</strong> ロシアのミサイル・ドローン攻撃が継続（キーウ州で22人死亡確認）/ <strong>USMCA:</strong> 米が更新しない方針を表明
+    </div>
+    <div class="card">
+      <div class="card-title">米イラン攻撃が継続 — ホルムズ海峡の緊張が続き原油市場が不安定化</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.cbsnews.com/">CBS News</a> · <a href="https://en.wikipedia.org/wiki/Portal:Current_events/July_2026">Wikipedia Current Events</a> — 2026.07.07–08</span></div>
+      <div class="card-body">
+        <p>7月7日に始まった米軍の対イラン報復空爆が8日も継続。ホルムズ海峡では引き続き警戒態勢が敷かれており、原油先物は高値圏で推移している。米財務省がイランの石油輸出を認めるウェイバーを取り消し、60日以内の包括合意を目指す MOU の進展が事実上停止した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">NATO アンカラ・サミット閉幕 — トランプ、ウクライナにパトリオットミサイル製造ライセンスを付与</div>
+      <div class="card-meta"><span class="badge">NATO</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/7/nato-summit-begins-who-is-attending-and-what-is-at-stake">Al Jazeera</a> · <a href="https://time.com/article/2026/07/08/trump-zelensky-ukraine-patriot-missile-interceptors-russia-nato/">TIME</a> — 2026.07.07–08</span></div>
+      <div class="card-body">
+        <p>トルコ・アンカラで開催された NATO サミットが閉幕。トランプ大統領がゼレンスキー大統領との二国間会合で「パトリオットミサイルの製造ライセンスをウクライナに与える」と表明した。「自分たちで作ってみせろ（Make them yourself）」という言葉でライセンス供与の意思を確認。防衛支出 GDP 比3%以上へのコミットメントも複数加盟国が表明した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシア、キーウ州にミサイル・ドローン大規模攻撃 — 少なくとも22人死亡</div>
+      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">Source: Wikipedia Current Events — 2026.07.07–08</span></div>
+      <div class="card-body"><p>ロシアが弾道ミサイルとドローンを組み合わせたキーウ州への大規模攻撃を実施し、少なくとも22人が死亡、56人が負傷した。NATO サミット期間中の攻撃であり、加盟国への防空支援要請が改めて高まっている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ガザ：ハマス統治機関解散後の移行プロセスが本格開始</div>
+      <div class="card-meta"><span class="badge">Gaza</span><span class="card-source">Source: <a href="https://www.aljazeera.com/">Al Jazeera</a> — 2026.07.08</span></div>
+      <div class="card-body"><p>7日に正式発効したハマスのガザ統治機関解散を受け、国連が支援する民間技術者委員会（NCAG）への権力移管プロセスが本格開始された。ただしハマスの武装解除問題は依然として未解決。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">米が USMCA の更新拒否を表明 — 北米自由貿易の再交渉が焦点に</div>
+      <div class="card-meta"><span class="badge">Trade</span><span class="card-source">Source: Wikipedia Current Events — 2026.07.07–08</span></div>
+      <div class="card-body"><p>米国通商代表部（USTR）のグリア代表が、米国・メキシコ・カナダ協定（USMCA）を更新しない方針を表明。北米のサプライチェーンに大きな影響を及ぼす可能性があり、カナダ・メキシコとの通商関係が再び緊張する見通し。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ベネズエラ地震：死者数が増加傾向・フィリピンは世銀が上位中所得国に認定</div>
+      <div class="card-meta"><span class="badge">International</span><span class="card-source">Source: Wikipedia Current Events — 2026.07.07–08</span></div>
+      <div class="card-body"><p>ベネズエラの地震死者数は2,295人から増加傾向が続いており、国際的な人道支援が続いている。世界銀行はフィリピンを「上位中所得国」に分類し、東南アジアにおける経済成長を示す指標として注目されている。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn — 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/8）のトレンド:</strong> 昨日（7/7）と同様にループエンジニアリング・Cowork 活用記事が上位だが、今日は<strong>Claude Code セキュリティ問題</strong>を受けた対策記事・ツール乗り換え記事が急浮上している点が新しい。
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita / Zenn 急上昇】「Claude Code のバックドア問題を受けて — 企業が取るべきセキュリティ対策と代替ツール検討」</div>
+      <div class="card-meta"><span class="badge">Trending / New</span><span class="card-source">Qiita · Zenn — 2026.07.08</span></div>
+      <div class="card-body">
+        <p>中国 NVDB の公式警告と Alibaba の利用禁止（7/10）を受け、「Claude Code のリスク評価と対応策」記事が Qiita・Zenn で急増。影響を受けるバージョンの確認方法・v2.1.200 以降への安全なアップグレード手順・ネットワーク通信の監視設定が主な内容。Cursor・Kiro・GitHub Copilot への移行コストを比較する記事も複数登場した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn 継続人気】「ループエンジニアリング × Claude Cowork — スマホから AI に仕事を任せる設計パターン」</div>
+      <div class="card-meta"><span class="badge">Zenn / Trending</span><span class="card-source">Zenn — 2026.07</span></div>
+      <div class="card-body"><p>Cowork のモバイル展開を受け、「スマホから承認→クラウドで継続実行→完成物を通知で受け取る」という新しいワークフローを具体的なコードと設定例で解説する記事への需要が高まっている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita 継続ランクイン】「GitHub Copilot Agent モードを JetBrains で使う — IntelliJ IDEA での設定と実践」</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita — 2026.07</span></div>
+      <div class="card-body"><p>GitHub Copilot と JetBrains AI Assistant の統合強化を受け、IntelliJ IDEA や PyCharm での Copilot Agent モードを活用する入門記事が継続的に上位にランクイン。Claude Code のセキュリティ問題で Copilot への関心が高まっていることも追い風になっている。前日との実質的な差異は小さく定番化している。</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月8日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: CBS News · CNBC · PC Gamer · Help Net Security · TechCrunch · SecurityWeek · Let's Data Science · GitHub Changelog · Releasebot · Lushbinary · Al Jazeera · TIME · Wikipedia Current Events · Zenn.dev · Qiita.com</p>
+</footer>
+
+</body>
+</html>
