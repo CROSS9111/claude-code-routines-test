@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月9日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月10日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,8 +63,8 @@
 
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">OpenAI が ChatGPT Work を本日発表（GPT-5.6 搭載）・Claude Cowork と正面衝突 / VS Code 1.128 でマルチチャット Claude エージェントセッション / イランが湾岸諸国・ヨルダンを報復攻撃 / トランプ、ウクライナにパトリオット製造ライセンス付与</p>
-  <p class="date">2026年7月9日（木）&nbsp;|&nbsp;<a href="2026-07-08/index.html">前版（7/8）</a></p>
+  <p class="subtitle">Alibaba の Claude Code 禁止が本日発効・Anthropic が使用制限をリセット / Claude Code にデスクトップ内蔵ブラウザ発表 / 米・イランの空爆応酬が激化し中東停戦が崩壊の危機 / FIFA W杯 スペインが後半アディショナルタイムにベルギーを下し準決勝へ</p>
+  <p class="date">2026年7月10日（金）&nbsp;|&nbsp;<a href="2026-07-09/index.html">前版（7/9）</a></p>
 </header>
 
 <nav>
@@ -81,39 +81,47 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic 最新ニュース</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/9）の注目:</strong> VS Code 1.128 がリリースされ、<strong>マルチチャット Claude エージェントセッション</strong>が正式サポートされた。同一セッション内で複数のアプローチを並列実行・比較できる。また OpenAI の ChatGPT Work 発表（後述）により、Claude Cowork との直接競合が本格化。Alibaba の Claude Code 使用禁止（7/10）が明日に迫っており、中国市場からの撤退が事実上確定する。
+      <strong>本日（7/10）の注目:</strong> Alibaba の Claude Code 使用禁止が本日（7/10）正式発効。従業員は自社開発の <strong>Qoder</strong> への移行を命じられた。Anthropic は「バックドア」と指摘されたコードを「3月に開始した不正アカウント防止の実験だった」と説明し、7/1 に削除済みと発表。同時にユーザーの使用制限を静かにリセット。Claude Code のデスクトップ内蔵ブラウザ機能も本日ハイライトされた。
     </div>
 
     <div class="card">
-      <div class="card-title">VS Code 1.128 — マルチチャット Claude エージェントセッションが正式サポート、Copilot Vision も GA に</div>
-      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://code.visualstudio.com/updates/v1_128">VS Code 1.128 Release Notes</a> · <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> · <a href="https://www.ntcompatible.com/story/visual-studio-code-1128-launches-with-multichat-claude-agents-and-ga-copilot-vision">NTCompatible</a> — 2026.07.08</span></div>
+      <div class="card-title">Alibaba の Claude Code 禁止が本日（7/10）発効 — 25,000件の不正アカウントをめぐる Anthropic との対立が背景に</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/">TechCrunch</a> · <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens">Tom's Hardware</a> · <a href="https://www.artiverse.ca/alibaba-blocks-claude-code-over-security-fears-and-ai-rivalry/">Artiverse</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>VS Code 1.128 が7月8日にリリースされ、Claude エージェントセッションにおけるマルチチャット機能が目玉アップデートとなった。</p>
+        <p>本日7月10日をもって、アリババの従業員は Claude Code の使用を全面禁止され、自社開発の AI コーディングツール「<strong>Qoder</strong>」への移行を義務付けられた。</p>
         <ul>
-          <li><strong>マルチチャット:</strong> 1つの Claude セッション内に複数の関連チャットを持てるようになり、「アプローチ A と B を並列で走らせて比較する」「過去のターンからフォーク（分岐）する」「複数のチャットに同時送信する」といった操作が可能に</li>
-          <li><strong>チャット管理:</strong> 各チャットは独自の履歴・タイトル・モデル選択を保持し、親セッションとして再起動後も復元される。ピアチャットは別々の最上位セッションとして表示されずグループ化される</li>
-          <li><strong>Copilot Vision GA:</strong> VS Code Chat で画像を使ったコード説明・デバッグが一般提供（GA）に昇格</li>
-          <li><strong>その他:</strong> クイックチャット（ワークスペースを開かずに質問できる Agents ウィンドウ）、OS レベルのキーボードショートカット（VS Code がフォーカスされていない状態でも発火できる）が追加</li>
+          <li><strong>発端:</strong> 6月30日、r/ClaudeAI ユーザーがリバースエンジニアリングにより、Claude Code（v2.1.91〜、2026年4月〜）に中国タイムゾーン・147の中国ドメインを照合する難読化されたロジックが含まれることを発見・投稿</li>
+          <li><strong>Anthropic の説明:</strong> 「Alibaba 関連オペレーターが約25,000件の不正アカウントを通じて4〜6月に2,880万回のインタラクションで Claude の能力を盗み出そうとしたことへの対抗措置として3月に開始した実験。7月1日にコードを削除済み」</li>
+          <li><strong>中国側の反応:</strong> 中国の国家脆弱性データベース（NVDB）が「セキュリティバックドア」として登録。アリババはセキュリティリスクと AI 競争上の理由から禁止を決定</li>
+          <li><strong>影響範囲:</strong> アリババ以外の中国企業も同様の対応を検討中。中国市場からの Claude Code 実質撤退が確定的に</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.205 — セッションログ改ざん防止ルール追加とバグ修正（7/8 リリース）</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">gradually.ai Changelog</a> — 2026.07.08</span></div>
+      <div class="card-title">Anthropic、Claude Code の使用制限を再びリセット — 7/8 の大規模障害後の補償措置</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://startupfortune.com/anthropic-resets-claude-code-usage-limits-again-after-a-rough-week-of-outages/">Startup Fortune</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>Claude Code v2.1.205 が7月8日にリリースされた。Auto モードにセッションのトランスクリプトファイルへの改ざんをブロックするルールが追加されたほか、Windows における信頼性改善・PR リンク処理の高精度化・バックグラウンドタスク管理の強化が含まれる。バックドア問題（v2.1.91〜2.1.196）への対応として、同社は「v2.1.200 以降ではその機能は削除済み」と改めて確認している。</p>
+        <p>Anthropic が本日（7/10）、Claude Code の5時間制限・週次制限を全ユーザーに対して静かにリセットした。7月8日（火）に Claude Code on the Web・Claude Code Review・Cowork Remote・その他サービスで性能劣化が発生しており、その後続く複数のアウトリセットに対する補償措置とみられる。リセットのアナウンスは小さく、コミュニティ内で「またか」という反応が広がっている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Alibaba の Claude Code 使用禁止（7/10）が明日に迫る — 中国市場での Claude Code 利用が事実上終了へ</div>
-      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://money.usnews.com/investing/news/articles/2026-07-08/china-issues-backdoor-security-alert-over-anthropics-claude-code">US News</a> · <a href="https://www.pcgamer.com/software/ai/chinas-national-vulnerability-database-warns-that-recent-claude-code-models-have-a-security-backdoor/">PC Gamer</a> — 2026.07</span></div>
+      <div class="card-title">Anthropic、Claude Code のデスクトップ内蔵ブラウザ機能をハイライト — アプリ内でビルド・テスト・Web 閲覧が完結</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://9to5mac.com/2026/07/10/anthropic-highlights-claude-codes-in-app-browser-on-the-desktop/">9to5Mac</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>アリババが社員に対し7月10日（明日）をもって Claude Code の使用を全面禁止すると通達しており、その期限が迫っている。中国 NVDB のバックドア警告（7/8）がその判断を裏付ける形となり、他の中国企業も同様の対応を検討している模様。Anthropic は中国からのアクセス自体を利用規約で禁止しており、中国市場での Claude Code 利用が事実上終了に向かっている。</p>
+        <p>Anthropic が本日、Claude Code デスクトップアプリの「内蔵ブラウザ」機能を公式にハイライト。Claude Code のインターフェース内に組み込まれたブラウザを通じて、アプリを離れることなくビルドしたアプリのテスト・Web サイトへのアクセス・デバッグが一貫して行えるようになる。ChatGPT Work との差別化において「ローカル実行 × ブラウザ統合」という強みを前面に押し出す戦略とも読める。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Sonnet 5 が Claude Code のデフォルトモデルに — 1M トークンコンテキスト・8月末まで特別価格</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>Claude Code において Claude Sonnet 5 がデフォルトモデルとして採用された。ネイティブ 100万トークンのコンテキストウィンドウを搭載し、8月31日まで $2/$10 per Mtok（入力/出力）のプロモーション価格が適用される。また組織のデフォルトモデル設定、読みやすいセッション名、クリック可能なファイル添付、エージェントビューの改善、バックグラウンドセッション信頼性向上も同時リリースされた。</p>
       </div>
     </div>
   </section>
@@ -122,61 +130,33 @@
   <section class="section" id="openai">
     <div class="section-header">
       <div class="section-title">OpenAI Codex &amp; 競合動向</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/9）の最大ニュース:</strong> OpenAI が本日（7/9）<strong>ChatGPT Work</strong> を正式発表・ロールアウト開始。GPT-5.6 搭載で「数時間に及ぶ複雑なタスクを自律実行」するエージェントで、Claude Cowork と真っ向から競合する。同時に Codex が ChatGPT デスクトップアプリに統合され、GPT-5.6 Sol/Terra/Luna の3モデルが正式リリースされた。これにより AI 業務エージェント市場の覇権争いが最終フェーズに入った。
+      <strong>本日（7/10）の動向:</strong> 昨日発表の <strong>ChatGPT Work</strong>（GPT-5.6 搭載）が本日より Plus・Business ユーザーへの展開を拡大中。Codex の ChatGPT デスクトップ統合も引き続き注目を集め、AI 業務エージェント市場でのエンタープライズ争奪戦が加速している。
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI、ChatGPT Work を本日正式発表 — GPT-5.6 搭載で「数時間にわたる複雑なタスクを自律実行」</div>
-      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-07-09/openai-unveils-chatgpt-work-agent-to-field-tasks-for-hours">Bloomberg</a> · <a href="https://money.usnews.com/investing/news/articles/2026-07-09/openai-launches-chatgpt-work">US News</a> · <a href="https://www.macrumors.com/2026/07/09/openai-chatgpt-work/">MacRumors</a> · <a href="https://www.androidauthority.com/chatgpt-work-launch-3685935/">Android Authority</a> — 2026.07.09</span></div>
+      <div class="card-title">ChatGPT Work が Plus・Business に展開拡大 — Codex デスクトップ統合と合わせ OpenAI の攻勢が続く</div>
+      <div class="card-meta"><span class="badge">Rollout</span><span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/chatgpt-work-openai-agent-launch-2026">Digital Applied</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07.09-10</span></div>
       <div class="card-body">
-        <p>OpenAI が本日（7月9日）、新しい AI 業務エージェント「ChatGPT Work」を Web・モバイル・デスクトップで正式ローンチした。Claude Cowork との競合が正面から始まる。</p>
-        <ul>
-          <li><strong>概要:</strong> ユーザーが目標（アウトカム）を設定すると、ChatGPT Work が接続済みのアプリ・ワークフローから情報を収集し、タスクを小ステップに分解して自律完遂。ドキュメント・スプレッドシート・プレゼンテーション・Web アプリを成果物として生成できる</li>
-          <li><strong>モデル:</strong> GPT-5.6 搭載。Trump 政権の輸出規制審査で遅延していたが本日解禁</li>
-          <li><strong>提供範囲:</strong> 本日より Pro・Enterprise・Edu ユーザー向けにロールアウト開始。数日内に Plus・Business にも拡大予定</li>
-          <li><strong>Hosted Sites:</strong> ChatGPT Work で作成した Web サイト・アプリを OpenAI のホスティングサービスで直接公開できる新機能も同時発表</li>
-          <li><strong>Claude Cowork との比較:</strong> Cowork がファイルシステムへの直接アクセスを強みとするのに対し、ChatGPT Work はブラウザ経由の Web 操作（フォーム入力・クリック・スクレイピング）に強みを持ち、オンラインタスクへの適性が高いとされる</li>
-        </ul>
+        <p>昨日（7/9）に Pro・Enterprise・Edu ユーザー向けにローンチされた ChatGPT Work が、本日より Plus・Business ユーザーにも展開を開始した。「接続済みアプリから情報収集 → タスクを小ステップに分解 → ドキュメント・スプレッドシート・Web アプリを成果物として生成」というワークフローが評価されており、Cowork の「ローカルファイル操作に強い」という差別化との競争が明確になってきた。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">GPT-5.6 Sol / Terra / Luna が正式リリース — Codex は ChatGPT デスクトップアプリに統合</div>
-      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/">9to5Mac</a> · <a href="https://www.macrumors.com/2026/07/09/openai-chatgpt-work/">MacRumors</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07.09</span></div>
+      <div class="card-title">Codex がトークンベース課金に完全移行（7/6〜） — Workspace Agent は入力/キャッシュ/出力トークンで計算</div>
+      <div class="card-meta"><span class="badge">Pricing</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> · <a href="https://www.bighatgroup.com/blog/codex-weekly-2026-07-03/">Big Hat Group</a> — 2026.07.06</span></div>
       <div class="card-body">
-        <p>OpenAI は ChatGPT Work の発表と同時に、GPT-5.6 ファミリーを正式リリースした。</p>
-        <ul>
-          <li><strong>Sol（旗艦）:</strong> 最高性能モデル。Codex Ultra モードで複数のサブエージェントを束ねた並列タスク処理が可能。$5/$30 per Mtok</li>
-          <li><strong>Terra（バランス型）:</strong> 性能とコストのバランスを重視した中間モデル。$2.50/$15 per Mtok</li>
-          <li><strong>Luna（高速軽量）:</strong> 高速レスポンスと低コストを重視。$1/$6 per Mtok</li>
-          <li><strong>Codex の統合:</strong> これまで独立アプリとして存在していた Codex が ChatGPT デスクトップアプリ（macOS/Windows）に統合。既存ユーザーはプロジェクト・設定・ワークフローを引き継いだまま移行できる</li>
-          <li><strong>Computer Use 高速化:</strong> GPT-5.6 により Computer Use 機能の応答速度が向上</li>
-        </ul>
+        <p>7月6日より、Codex の Workspace Agent 実行がトークンベース課金に完全移行した。料金は入力トークン・キャッシュ入力トークン・出力トークンの合計で計算され、これまでの実行回数ベースから変更。加えて DigitalOcean プラグインが追加され、Codex から直接 Droplet をプロビジョニングし SSH 接続でリモートワークスペースとして利用できるようになった。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Zhipu AI が ZCode をリリース — Claude Code・Codex に価格で挑む中国製 AI コーディングエージェント</div>
-      <div class="card-meta"><span class="badge">Competitor</span><span class="card-source">Source: <a href="https://the-decoder.com/zhipu-ai-launches-zcode-to-challenge-claude-code-and-openai-codex-at-a-fraction-of-the-cost/">The Decoder</a> — 2026.07</span></div>
+      <div class="card-title">GitHub Copilot が Kimi K2.7 Code（Moonshot AI 製）をモデルピッカーに追加 — 初のオープンウェイト外部モデル</div>
+      <div class="card-meta"><span class="badge">Integration</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>中国の AI スタートアップ Zhipu AI が、Claude Code と OpenAI Codex に対抗する AI コーディングエージェント「ZCode」をリリースした。「フラクションのコストで同等以上の性能」を標榜しており、Claude Code の中国市場撤退（Alibaba 禁止・7/10）が追い風となる見込み。Claude Code・Codex のシェアを中国国内で急速に置き換える可能性がある。</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">AI 業務エージェント市場の覇権争いが最終フェーズへ — Cowork vs ChatGPT Work vs Copilot の三極構造</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/09/openai-launches-chatgpt-work/">BNN Bloomberg</a> · <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-launches-chatgpt-agent-that-executes-complex-workflows/">PYMNTS</a> — 2026.07.09</span></div>
-      <div class="card-body">
-        <p>ChatGPT Work の登場で、AI 業務エージェント市場は三極構造に収れんしつつある。</p>
-        <ul>
-          <li><strong>Claude Cowork（Anthropic）:</strong> ファイルシステム直接操作・Max プランでモバイル/Web 展開済み。「コーディング以外の業務自動化」に強み</li>
-          <li><strong>ChatGPT Work（OpenAI）:</strong> Web ブラウザ経由のオンラインタスクに強み。GPT-5.6 搭載・Enterprise 向けのエコシステムが充実</li>
-          <li><strong>Microsoft 365 Copilot（Microsoft）:</strong> Office スイートへの深い統合が最大の武器。大企業の IT 部門に根強い支持</li>
-          <li><strong>競争の焦点:</strong> 「非エンジニア職の業務自動化」がどのプラットフォームに落ち着くかが2026年下半期の最大の見どころ</li>
-        </ul>
+        <p>GitHub Copilot のモデルピッカーに Moonshot AI の「Kimi K2.7 Code」が追加された。Copilot で利用可能な初のオープンウェイトモデルとして注目を集め、Claude・GPT-5.6 との性能比較スレッドが各コミュニティで急増している。Claude Code 対 Codex 対 Copilot という三極構造に、オープンウェイト勢力が食い込む新たな構図が生まれつつある。</p>
       </div>
     </div>
   </section>
@@ -189,33 +169,33 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/ChatGPT · r/ClaudeAI「ChatGPT Work vs Claude Cowork — 今日のどちらを選ぶべきか？」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ChatGPT · r/ClaudeAI — 2026.07.09</span></div>
-      <div class="card-body"><p>OpenAI の ChatGPT Work 発表を受け、両コミュニティで「Cowork vs ChatGPT Work」の比較スレッドが急増。おおむね「ローカルファイル操作・長期プロジェクト管理は Cowork が優位」「Web スクレイピング・オンラインサービス操作は ChatGPT Work が強い」という使い分け論が主流。「どちらも Pro/Max 契約者向けで月$200以上かかる点が庶民には辛い」という財布事情コメントも多数いいねを集めている。</p></div>
+      <div class="card-title">r/ClaudeAI「Alibaba 禁止が発効 — バックドア騒動の全容をまとめた」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.10</span></div>
+      <div class="card-body"><p>6月30日の Reddit 発見から始まった Claude Code バックドア騒動の経緯をまとめた投稿が r/ClaudeAI で急上昇。「Anthropic が『不正アカウント対策の実験だった』と説明しているが、ユーザーに事前告知なく IP・タイムゾーンを収集していた事実は変わらない」という批判的なコメントが多数。一方「25,000件の不正アカウントで2,880万回インタラクションされたなら対策も理解できる」という擁護コメントも拮抗している。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/vscode「VS Code 1.128 のマルチチャット Claude セッション — 使ってみた感想」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/vscode · r/ClaudeAI — 2026.07.09</span></div>
-      <div class="card-body"><p>VS Code 1.128 の目玉機能であるマルチチャット Claude エージェントセッションのファーストインプレッション報告が相次いでいる。「フォーク機能が最高 — 『この方向でいいかな？』と試しにブランチを切って実験できる」「同じ問題に2つの解法を並列で走らせてコード品質を比較するのが思った以上に便利」という高評価が多い。一方「チャット数が増えると左パネルが混雑する」というレイアウトへの要望も見られる。</p></div>
+      <div class="card-title">r/ClaudeCode「使用制限がリセットされた — 皆どれくらい使い切ってた？」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.10</span></div>
+      <div class="card-body"><p>本日の使用制限リセットを受け、「7/8 の障害で制限を食い尽くしたのでありがたい」というコメントが多数。「Max プランで平均週に何時間使えているか」という調査スレッドも立ち上がり、「実作業ではだいたい週15〜20時間で上限に当たる」という体験談が集まっている。「毎週リセットが必要なほど不安定なら Claude Code on the Web ではなくローカル実行に戻したい」という声もある。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/worldnews「イランが湾岸3か国・ヨルダンに報復攻撃 — 中東戦争が拡大か」</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.09</span></div>
-      <div class="card-body"><p>イランが米の空爆への報復としてクウェート・カタール・バーレーン・ヨルダンに自爆ドローン・弾道ミサイルを発射したことを受け、r/worldnews は「中東戦争の拡大」トピックで大量のスレッドが立ち上がった。「米軍が湾岸の同盟国に駐留している以上、イランは目標を選べる」「停戦交渉が完全に崩壊しつつある」という悲観的な見方が上位。「原油価格は今週中に100ドルを超えるか？」という経済スレッドも急浮上している。</p></div>
+      <div class="card-title">r/ClaudeAI「Claude Code vs Codex — 500人以上が回答、2026年時点での本音レポート」</div>
+      <div class="card-meta"><span class="badge">Survey</span><span class="card-source">Reddit r/ClaudeAI · <a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb">Dev.to まとめ</a> — 2026.07</span></div>
+      <div class="card-body"><p>500人超の Reddit 開発者の声をまとめた比較レポートが Dev.to で話題。主な結論：「Claude Code はターミナルネイティブ開発・長いコンテキストセッションで優位。Codex はクラウドサンドボックス実行・GitHub 統合で優位。Cursor は IDE ビジュアル編集で優位。どれが最適かはワークフロー次第」。コスト面では「$20 Pro プランは12回の重いプロンプトで枯渇する」という報告が多く、本格利用は Max/Plus 以上が前提との声。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/soccer「FIFA ワールドカップ — エジプト、アルゼンチン戦の判定に抗議。エジプトサッカー協会が声明」</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/soccer · r/worldcup2026 — 2026.07.09</span></div>
-      <div class="card-body"><p>エジプトが3-2でアルゼンチンに敗れたラウンド16について、エジプトサッカー協会（EFA）が「偏った審判判定に黙っていることはできない」と公式声明を発表。r/soccer では賛否が真っ二つに割れており、「EFA は敗戦の責任を審判に転嫁している」「VAR の判定には確かに疑問がある」という2つの立場が激しく議論中。「ネイマールはついに国際舞台での雪辱を晴らしたか」という別スレッドも人気。</p></div>
+      <div class="card-title">r/worldnews「米・イランの応酬が激化 — 米は2日間で170回以上の空爆」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.07.10</span></div>
+      <div class="card-body"><p>米・イランの空爆応酬が r/worldnews のトップを独占。「2日間で170回以上の米空爆」という数字に「これは宣戦布告に等しい規模だ」という驚きが集まっている。「ホルムズ海峡が封鎖されたら世界の原油供給の20%が止まる」という試算スレッドが急上昇。原油先物の価格推移をリアルタイムで追うスレッドも並走中。</p></div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/MachineLearning「ChatGPT Work がアーキテクチャ的に Cowork より優れている点・劣る点」</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/MachineLearning · r/LocalLLaMA — 2026.07.09</span></div>
-      <div class="card-body"><p>ChatGPT Work の発表を受け、r/MachineLearning でアーキテクチャ比較スレッドが急上昇。「ChatGPT Work はブラウザサンドボックス上で動くため、ローカルファイルへのアクセスは Cowork より制限される」「しかし OAuth 連携アプリ（Google Workspace・Slack・Salesforce）との統合は ChatGPT Work の方が現時点で広い」という見方が有力。「OpenAI は今日の発表でエンタープライズ市場を一気に本気で狙いに来た」というコメントが最多いいね。</p></div>
+      <div class="card-title">r/soccer「スペイン 2-1 ベルギー — メリーノが途中出場1分57秒でW杯準決勝への決勝ゴール」</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/soccer · r/worldcup2026 — 2026.07.10</span></div>
+      <div class="card-body"><p>スペインのベルギー撃破を受け r/soccer に祝福スレッドと悲嘆スレッドが溢れた。「メリーノが途中出場からわずか1分57秒で試合を決めた」という記録的な展開に「サブが試合を決めたシーンとして歴史に残る」というコメントが多数。ベルギーサポーターからは「GK ラメンスの失点後のプレーに疑問が残る」という意見も。準決勝スペイン対フランス（ダラス、火曜日）への期待スレッドも急上昇中。</p></div>
     </div>
   </section>
 
@@ -226,66 +206,65 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/9）の主要トピック:</strong> <strong>イラン:</strong> 米のブシェール核施設付近への空爆を受け、イランがクウェート・カタール・バーレーン・ヨルダンを報復攻撃 — 中東紛争が拡大局面に / <strong>ウクライナ:</strong> トランプがパトリオットミサイル製造ライセンスをウクライナに付与 / <strong>FIFA W杯:</strong> エジプトvsアルゼンチン審判問題 / <strong>ガザ:</strong> WCK ドライバーへのイスラエル攻撃 / <strong>UK:</strong> アンディ・バーナム首相候補として急浮上
+      <strong>本日（7/10）の主要トピック:</strong> <strong>米・イラン:</strong> 米が2日間で90か所・合計170回以上の空爆、イランはクウェート・カタール・バーレーン・ヨルダンに反撃。死者はイラン側14人・負傷78人 / <strong>FIFA W杯:</strong> スペイン 2-1 ベルギー、準決勝はフランス戦（ダラス・火曜） / <strong>コンゴ:</strong> エボラ新規感染が未感染地域に拡大 / <strong>スペイン:</strong> アルメリアで山火事、逃げ場を失った死者を発見 / <strong>ガザ:</strong> イスラエルが領土の65%を支配下に
     </div>
 
     <div class="card">
-      <div class="card-title">イラン、米空爆への報復でクウェート・カタール・バーレーン・ヨルダンを攻撃 — 停戦交渉が崩壊の瀬戸際に</div>
-      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.thenationalnews.com/news/gulf/2026/07/09/iran-attacks-bahrain-kuwait-and-qatar-after-us-strikes-derailing-ceasefire-efforts/">The National</a> · <a href="https://www.timesofisrael.com/iran-fires-10-missiles-at-jordan-after-us-strikes-reported-near-bushehr-nuclear-plant/">Times of Israel</a> · <a href="https://www.rferl.org/a/iran-war-us-hormuz-oil-blockade-gulf-israel/33640284.html">RFE/RL</a> — 2026.07.09</span></div>
+      <div class="card-title">米・イランの空爆応酬が激化 — 米が2日間で170回超、イランは湾岸4か国に反撃し停戦が崩壊危機</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://www.npr.org/2026/07/10/g-s1-132927/us-iran-war">NPR</a> · <a href="https://edition.cnn.com/2026/07/09/world/live-news/iran-war-trump">CNN</a> · <a href="https://www.washingtontimes.com/news/2026/jul/9/iran-digs-outs-us-strikes-sprays-missiles-across-gulf-region-peace/">Washington Times</a> — 2026.07.09-10</span></div>
       <div class="card-body">
-        <p>米軍がブシェール核施設付近を含む80か所以上のイラン標的を攻撃したことへの報復として、イランが本日、複数の隣国および米軍基地への攻撃を実施した。</p>
+        <p>米軍が木曜日（7/9）から金曜日（7/10）にかけてイランの90か所以上の標的を攻撃し、2日間合計では170回を超える空爆を実施した。米中央軍は空港滑走路やミサイル発射台への攻撃映像を公開した。</p>
         <ul>
-          <li><strong>攻撃内容:</strong> クウェートのパトリオット迎撃システム・カタールの早期警戒システム・バーレーンの燃料タンクに対してカミカゼドローンを使った大規模攻撃。ヨルダンのアズラク空軍基地には弾道ミサイル10発を発射</li>
-          <li><strong>被害と迎撃:</strong> クウェートは「3発の弾道ミサイル・1発の巡航ミサイル・10機のドローンを迎撃したが一部で損害発生、1人負傷」と発表。バーレーン・ヨルダンは「すべて迎撃」と発表</li>
-          <li><strong>停戦への影響:</strong> 4月から続く停戦合意は「たびたびの違反で風前の灯」（パキスタン・カタールの仲介国が表現）。本日の全面的な報復攻撃により停戦維持の可能性が大幅に低下</li>
-          <li><strong>原油市場:</strong> ホルムズ海峡封鎖リスクが現実味を帯び、原油先物が急騰</li>
+          <li><strong>イランの被害:</strong> イラン保健省によると2日間の米空爆で少なくとも14人が死亡、78人が負傷</li>
+          <li><strong>イランの報復:</strong> クウェート（弾道ミサイル3発・巡航ミサイル1発・ドローン10機）、カタール（早期警戒システム攻撃）、バーレーン（米海軍第5艦隊司令部付近でサイレン）、ヨルダン北部の米軍基地（弾道ミサイル10発）に攻撃。クウェートで1人負傷</li>
+          <li><strong>停戦の崩壊:</strong> 6月中旬に仲介されたイラン・米間の「戦闘終結・ホルムズ海峡再開」の覚書（MOU）が形骸化。パキスタン・カタールの仲介国も「停戦を維持する余地がなくなりつつある」と表明</li>
+          <li><strong>原油市場:</strong> ホルムズ海峡封鎖リスクが高まり、原油先物が大幅上昇。世界の原油供給の約20%が通過する海峡の動向に市場が注目</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">トランプ、ウクライナにパトリオットミサイル製造ライセンスを付与 — NATO サミットでゼレンスキーと二国間会合</div>
-      <div class="card-meta"><span class="badge">Ukraine / NATO</span><span class="card-source">Source: <a href="https://time.com/article/2026/07/08/trump-zelensky-ukraine-patriot-missile-interceptors-russia-nato/">TIME</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-08/trump-says-he-will-give-ukraine-license-to-make-patriot-missiles">Bloomberg</a> · <a href="https://www.armyrecognition.com/news/army-news/2026/trump-ukraine-patriot-missile-license-nato-summit">Army Recognition</a> — 2026.07.08–09</span></div>
+      <div class="card-title">FIFA ワールドカップ 2026 準々決勝 — スペイン 2-1 ベルギー、準決勝でフランスと激突へ</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: <a href="https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain">ESPN</a> · <a href="https://www.nbcnews.com/sports/soccer/live-blog/spain-belgium-world-cup-2026-july-10-live-updates-rcna385832">NBC News</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/7/10/spain-vs-belgium-live-fifa-world-cup-2026-quarterfinal">Al Jazeera</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>NATO アンカラ・サミットでトランプ大統領がゼレンスキー大統領と会談し、ウクライナへのパトリオットミサイル（PAC-3）製造ライセンス付与を表明した。</p>
+        <p>スペインが本日の2026年 FIFA ワールドカップ準々決勝でベルギーを 2-1 で下し、準決勝に駒を進めた。</p>
         <ul>
-          <li><strong>トランプの言葉:</strong> 「自分たちで作ってみせろ（We'll show them how to do it）」と表現し、ライセンス付与を確認</li>
-          <li><strong>背景:</strong> ウクライナが5月に正式要請。ロシアの弾道ミサイル攻撃を迎撃できる唯一の手段として PAC-3 を切実に必要としている</li>
-          <li><strong>実効性への懐疑:</strong> 「部品調達・組み立て・試験・認証のリードタイムを考えると、今後数か月での供給量増加には貢献しない」（軍事専門家）</li>
-          <li><strong>NATO の立場:</strong> 複数加盟国が GDP 比3%以上の防衛支出へのコミットメントを表明した</li>
+          <li><strong>得点経過:</strong> 前半にルイスとデ・ケテラエレが得点し1-1で折り返し。後半88分、途中出場のミケル・メリーノが途中出場からわずか1分57秒でリバウンドを押し込み決勝ゴール</li>
+          <li><strong>次戦:</strong> 準決勝でスペインはフランスと対戦（米国テキサス州ダラス、7月15日火曜）</li>
+          <li><strong>文脈:</strong> ベルギーにとっては今大会最後の戦いに。主力 GK ラメンスのプレーへの疑問や「黄金世代最後の世代」を惜しむ声がコミュニティで広がっている</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">FIFA ワールドカップ — エジプトサッカー協会、アルゼンチン戦の審判判定に「沈黙できない」と抗議声明</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/7/9/headlines">Democracy Now!</a> — 2026.07.09</span></div>
+      <div class="card-title">コンゴでエボラが未感染地域に拡大 — 震源地イトゥリ以外の新規感染確認</div>
+      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: <a href="https://www.youtube.com/watch?v=r-PSW0hOK8o">YouTube / Top Headlines July 10</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>エジプトが火曜日のラウンド16でアルゼンチンに3-2で敗れたことを受け、エジプトサッカー協会（EFA）が「不公平で偏った審判判定に対して黙っていることはできない」と公式声明を発表した。VAR 判定の不透明性への異議申し立てで、FIFA に対して正式な調査を求めている。</p>
+        <p>コンゴ民主共和国でエボラの新規感染事例が、これまで感染のなかった地域で確認された。震源地とされるイトゥリ州以外への拡大は感染制御の難しさを示しており、WHO および国際保健機関が対応を強化している。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ガザ：World Central Kitchen のドライバーがイスラエルの空爆・銃撃で死亡</div>
-      <div class="card-meta"><span class="badge">Gaza</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/7/9/headlines">Democracy Now!</a> — 2026.07.09</span></div>
+      <div class="card-title">スペイン・アルメリアで大規模山火事 — 燃えた車内で逃げ遅れたとみられる死者を発見</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.youtube.com/watch?v=r-PSW0hOK8o">YouTube / Top Headlines July 10</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>過去24時間でパレスチナ人少なくとも9人がイスラエルの空爆・銃撃で死亡した。犠牲者の中には、米国拠点の NPO「World Central Kitchen」のために食料を輸送していたドライバーの Ahmad Nasser Saleem が含まれている。WCK はガザでの食料支援活動を継続しており、民間支援員への攻撃として国際的な批判が高まっている。</p>
+        <p>スペイン南部アルメリア州（人気のリゾート地）で大規模な山火事が発生し、複数の死者が確認された。被害者は逃げようとした車の中で炎に巻き込まれたとみられる。夏季観光シーズン中の惨事として欧州メディアが大きく報じている。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">英国：マンチェスター市長アンディ・バーナムが次期首相候補として急浮上</div>
-      <div class="card-meta"><span class="badge">UK Politics</span><span class="card-source">Source: <a href="https://www.youtube.com/watch?v=LGlaN-wi0Pc">Democracy Now! / YouTube</a> — 2026.07.09</span></div>
+      <div class="card-title">ガザ：イスラエルが領土の65%以上を支配下に — 停戦合意にもかかわらず勢力圏が拡大</div>
+      <div class="card-meta"><span class="badge">Gaza</span><span class="card-source">Source: <a href="https://www.youtube.com/watch?v=r-PSW0hOK8o">YouTube / Top Headlines July 10</a> — 2026.07.10</span></div>
       <div class="card-body">
-        <p>マンチェスター市長として「脱工業都市の再生」を主導してきたアンディ・バーナムが、英国次期首相候補として全国的な注目を集めている。「地方からの経済再生モデルを全国規模に展開できるか」という問いかけが英国政治の焦点になりつつある。</p>
+        <p>停戦合意が成立しているにもかかわらず、イスラエル軍はガザ内部への侵攻を続け、現時点でガザ全土の少なくとも65%を制御下に置いている。国際社会からは停戦遵守を求める声が相次いでおり、人道支援アクセスの問題も深刻化している。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">世界銀行、フィリピンを「上位中所得国」に昇格 — ベネズエラ地震の死者数は引き続き増加</div>
-      <div class="card-meta"><span class="badge">International</span><span class="card-source">Source: Wikipedia Current Events — 2026.07</span></div>
+      <div class="card-title">トランプ NATO サミット総括 — ウクライナへのパトリオット製造ライセンスとゼレンスキーとの二国間会談</div>
+      <div class="card-meta"><span class="badge">Ukraine / NATO</span><span class="card-source">Source: <a href="https://time.com/article/2026/07/08/trump-zelensky-ukraine-patriot-missile-interceptors-russia-nato/">TIME</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-08/trump-says-he-will-give-ukraine-license-to-make-patriot-missiles">Bloomberg</a> — 2026.07.08-09</span></div>
       <div class="card-body">
-        <p>世界銀行がフィリピンを「上位中所得国」に新たに分類。1人当たり GNI が2026年度閾値を超えた初の認定で、東南アジアにおける経済成長の象徴となっている。一方、ベネズエラの地震（死者2,295人超）は依然として増加傾向にあり、国際的な人道支援が継続中。</p>
+        <p>アンカラで開催された NATO サミットが閉幕。トランプ大統領がゼレンスキー大統領と二国間会談を行い、パトリオット（PAC-3）製造ライセンスをウクライナに付与することを確認した。複数の NATO 加盟国が GDP 比3%以上の防衛支出コミットを表明。ただし専門家からは「ライセンスから実際の量産・供給には数か月〜数年単位の期間が必要」という現実的な見方も出ている。</p>
       </div>
     </div>
   </section>
@@ -297,30 +276,30 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/9）のトレンド:</strong> 昨日（7/8）のセキュリティ対策記事・Cowork 活用記事は引き続きランクイン中。本日の新規トレンドは <strong>VS Code 1.128 のマルチチャット機能</strong>と <strong>ChatGPT Work 解説記事</strong>の急上昇が目立つ。前日からの実質的な差異として「比較・乗り換え記事が増加」という傾向が顕著。
+      <strong>本日（7/10）のトレンド:</strong> Qiita の本日（7/10）のトレンドは AWS・Zoom AI・Godot 4.5 などを含む幅広い構成。AI コーディング関連では Claude / Codex のコードレビュー比較記事、Claude Sonnet 5 活用記事が新規ランクイン。昨日（7/9）の「ChatGPT Work vs Cowork 比較」「VS Code 1.128 マルチチャット」と主要コンテンツが入れ替わっており、新規性あり。
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn 急上昇】「ChatGPT Work vs Claude Cowork — どちらを選ぶべきか？機能・価格・ユースケース徹底比較」</div>
-      <div class="card-meta"><span class="badge">Trending / New</span><span class="card-source">Zenn — 2026.07.09</span></div>
+      <div class="card-title">【Qiita トレンド / 新規】Claude vs Codex — コードレビュー精度を実際に比較してみた（2026年7月版）</div>
+      <div class="card-meta"><span class="badge">Qiita / New</span><span class="card-source">Qiita — 2026.07.10</span></div>
       <div class="card-body">
-        <p>本日の OpenAI 発表を受け、Zenn では ChatGPT Work と Claude Cowork の比較記事が急増している。主な比較軸は「ローカルファイル操作の可否」「OAuth 連携アプリの幅」「モバイル対応状況」「利用料金（Max $200/月 vs Pro $200/月）」。「両方契約したいけど財布が…」というリアルなコメントが多数。Qiita でも AWS・Azure との統合観点からの比較記事が登場し始めている。</p>
+        <p>Qiita で本日トレンド入りしたコードレビュー比較記事。実際の Pull Request をサンプルに Claude（Sonnet 5）と Codex（GPT-5.6 Sol）を同一タスクで走らせ、指摘の質・網羅性・誤検知率を定量的に比較したもの。「Claude の方が設計上の問題点の指摘が深い」「Codex は軽微なバグ・スタイル違反の検出が速い」という傾向が見られ、用途に応じた使い分けを推奨する内容。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Qiita トレンド新規】「VS Code 1.128 マルチチャット Claude セッション — 複数アプローチ並列実験の設計パターン」</div>
-      <div class="card-meta"><span class="badge">Qiita / New</span><span class="card-source">Qiita — 2026.07.09</span></div>
+      <div class="card-title">【Zenn 急上昇 / 新規】Claude Sonnet 5 × 1M トークンコンテキストの実用限界を検証 — 大規模 OSS への適用例</div>
+      <div class="card-meta"><span class="badge">Zenn / New</span><span class="card-source">Zenn — 2026.07.10</span></div>
       <div class="card-body">
-        <p>VS Code 1.128 の新機能「マルチチャット Claude エージェントセッション」を活用した開発ワークフロー解説記事が本日より Qiita でトレンド入り。「リファクタリング案 A と B を同時に走らせて Claude にレビューさせる」「旧ターンから分岐させてアーキテクチャ変更の影響を試す」といった実践的な設計パターンを図入りで解説した記事が注目を集めている。昨日の記事とは内容が明確に異なり新規性あり。</p>
+        <p>Claude Sonnet 5 の100万トークンコンテキストを使い、大規模 OSS（Kubernetes, React 等）のリポジトリ全体を一度に読み込んでコード理解・バグ探索を行った実験記事が Zenn で急上昇。「実際に使えるコンテキストは60〜70万トークン程度で、それ以上は精度が落ちる」「トークン単価が安くても大量消費すると課金が跳ね上がる」という実測値が注目されている。昨日の「VS Code 1.128 マルチチャット」記事とは内容が明確に異なり新規性あり。</p>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">【Zenn 継続ランクイン】「Claude Code バックドア問題への企業対応チェックリスト」</div>
-      <div class="card-meta"><span class="badge">Zenn / Ongoing</span><span class="card-source">Zenn — 2026.07.08–09</span></div>
+      <div class="card-title">【Qiita トレンド継続】Alibaba Claude Code 禁止の技術的背景 — バックドアと呼ばれたコードの実態</div>
+      <div class="card-meta"><span class="badge">Qiita / Ongoing</span><span class="card-source">Qiita — 2026.07.09-10</span></div>
       <div class="card-body">
-        <p>昨日（7/8）から継続して上位にランクインしている Claude Code セキュリティ対応記事。本日の Alibaba 禁止期限（7/10）接近により引き続き需要が高く、「v2.1.200 以降への移行確認コマンド」「社内展開している場合のバージョン一斉確認スクリプト」が実用的として読まれ続けている。内容は昨日と実質同一のため要約のみ継続掲載。</p>
+        <p>昨日から引き続きランクインしているバックドア問題の技術解説記事。「難読化されたタイムゾーン・ドメインチェックロジックの実態」「v2.1.91〜v2.1.199 の影響範囲の確認方法」「v2.1.200 以降への安全な移行手順」を解説する内容で、本日の禁止発効により再び需要が高まっている。昨日との内容差はほぼないため要約継続掲載。</p>
       </div>
     </div>
   </section>
@@ -328,8 +307,8 @@
 </div>
 
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年7月9日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: Bloomberg · US News · MacRumors · Android Authority · 9to5Mac · BNN Bloomberg · PYMNTS · VS Code Release Notes · Visual Studio Magazine · NTCompatible · Releasebot · gradually.ai · PC Gamer · The Decoder · The National News · Times of Israel · RFE/RL · TIME · Army Recognition · Democracy Now! · Wikipedia Current Events · Zenn.dev · Qiita.com</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月10日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: TechCrunch · Tom's Hardware · Artiverse · Memeburn · Startup Fortune · Releasebot · 9to5Mac · NPR · CNN · Washington Times · ESPN · NBC News · Al Jazeera · YouTube (Top Headlines) · TIME · Bloomberg · Digital Applied · Dev.to · Qiita.com · Zenn.dev</p>
 </footer>
 
 </body>
