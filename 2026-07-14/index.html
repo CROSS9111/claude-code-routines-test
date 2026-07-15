@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月14日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Anthropic が米K-12教師に Claude 無償提供を開始 / Claude Code 隠しトラッカー問題を受け Alibaba が全社使用禁止 / 米がイランへ3夜連続空爆・海上封鎖を正式発動・ホルムズ海峡でタンカー2隻被弾 / 中国輸出 27% 増（AI需要が牽引）</p>
+  <p class="date">2026年7月14日（火）&nbsp;|&nbsp;<a href="../2026-07-12/index.html">前版（7/12）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#openai">Codex / OpenAI / 競合</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#devjp">Qiita / Zenn</a>
+</nav>
+<div class="container">
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert"><strong>本日（7/14）の注目:</strong> Anthropic が米国K-12教師向けに Claude の全プレミアム機能を無償提供する「<strong>Claude for Teachers</strong>」を本日発表・開始（FERPA準拠・AFTと共同設計）。Claude Code は画面読み上げ対応・vim インサートモードリマップ・バックグラウンドエージェント改善など複数のアクセシビリティ向上を含むアップデートを配信。一方、先月末に発覚した<strong>Claude Code 隠しトラッカー問題</strong>の余波が続いており、Alibaba が7月10日付で社員向けに Claude Code の全社使用禁止令を発令したことが本日明らかになった。</div>
+    <div class="card">
+      <div class="card-title">Anthropic、「Claude for Teachers」を発表 — 米K-12教師に1年間の全プレミアム機能を無償提供</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-for-teachers">Anthropic</a> · <a href="https://9to5mac.com/2026/07/14/anthropic-is-giving-teachers-free-access-to-premium-claude-features-details-here/">9to5Mac</a> · <a href="https://www.chalkbeat.org/2026/07/14/anthropic-launches-claude-for-teachers-as-ai-companies-battle-for-classrooms/">Chalkbeat</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>Anthropic は本日、米国の K-12 教師向け無償アクセスプログラム「Claude for Teachers」を正式ローンチした。確認済みの教師であれば 2027年6月30日までに申し込むことで、プレミアム機能に1年間無料でアクセスできる。</p><ul><li><strong>提供内容:</strong> Claude Cowork・Claude Code・専用スキルライブラリへのフルアクセス。「Learning Commons」コネクタで全50州の学習指導要領に準拠した授業計画を自動生成</li><li><strong>プライバシー保護:</strong> AFT と共同設計した FERPA 準拠の利用規約。Claude for Teachers で共有されたデータは AI モデルの訓練に使用しない</li><li><strong>AI教育競争:</strong> Google・Microsoft に続き Anthropic が教育市場に本格参入</li></ul></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code アップデート — 画面読み上げ対応・vim インサートモードリマップ・バックグラウンドエージェント強化</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>Claude Code の最新アップデートが配信。アクセシビリティ・使いやすさの向上が中心。</p><ul><li>スクリーンリーダーモード（NVDA・VoiceOver対応）を追加</li><li>vim インサートモードのキーリマップをサポート</li><li>企業プロセスラッパーに対応、セキュリティ監視ソフトウェアと共存可能に</li><li>バックグラウンドエージェントの安定性向上・フリーズ問題を修正</li></ul></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 隠しトラッカー問題の余波 — Alibaba が全社員に Claude Code 使用禁止令</div>
+      <div class="card-meta"><span class="badge">Controversy</span><span class="card-source">Source: <a href="https://www.malwarebytes.com/blog/news/2026/07/claude-codes-hidden-tracker-was-an-experiment-says-anthropic">Malwarebytes</a> · <a href="https://www.theregister.com/ai-and-ml/2026/07/01/anthropic-is-removing-its-covert-code-for-catching-chinese-competitors/5265366">The Register</a> — 2026.07</span></div>
+      <div class="card-body"><p>先月末に発覚した「Claude Code 隠しトラッカー」問題の余波が続いている。Alibaba は7月10日付で「バックドアリスクがある」として全社員向けに Claude Code の使用を禁止。中国の大手テック企業が西側 AI ツールを禁止するという前例のない動き。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic × SpaceX コンピュート協定 — 300MW・GPU 22万枚超で使用量上限が段階的に拡大</div>
+      <div class="card-meta"><span class="badge">Infrastructure</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic</a> — 2026.05</span></div>
+      <div class="card-body"><p>SpaceX の Colossus 1 データセンター（300MW・GPU 22万枚超）を活用した Anthropic のコンピュート拡張が継続中。Claude Code の5時間あたりレートリミットが Pro・Max・Team・Enterprise プランで倍増済み。</p></div>
+    </div>
+  </section>
+  <section class="section" id="openai">
+    <div class="section-header">
+      <div class="section-title">OpenAI Codex &amp; 競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert"><strong>本日（7/14）の動向:</strong> OpenAI の Codex に GPT-5.6 Sol Ultra が段階展開中。週間ユーザー数が 500万人を突破し、100万人超はソフトウェア開発以外の業務に活用。</div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 Sol Ultra が Codex に段階展開 — OpenAI 最強モデルがコーディングエージェントに統合</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a> — 2026.07</span></div>
+      <div class="card-body"><p>GPT-5.6（Sol・Terra・Luna）が一般公開され、Sol Ultra が Codex クライアントへの展開を開始。料金は Sol $5/$30 per 1M、Terra $2.50/$15、Luna $1/$6 tokens。週間 500 万人が利用し、100 万人超が非開発業務に活用。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Gemini 3.5 Pro、7月17日 GA 目前 — 2M トークンコンテキスト・Antigravity 2.0 統合</div>
+      <div class="card-meta"><span class="badge">Upcoming</span><span class="card-source">Source: <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026">Build Fast With AI</a> — 2026.07</span></div>
+      <div class="card-body"><p>Google DeepMind の Gemini 3.5 Pro が7月17日（木）に GA 予定。2M トークンのコンテキストウィンドウと Antigravity 2.0 統合が差別化点。Google Workspace との深い統合が企業ユーザーに訴求する。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">エンタープライズ AI エージェント市場、急拡大 — Gartner が 2026年末に企業アプリ 40% 組み込みを予測</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://www.hectorpincheira.com/en/news/technological-radar-july-2026-ai-agents-go-into-production-and-governance-doesnt-keep-up/">Hector Pincheira</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>Gartner 予測：2026年末までに企業アプリの 40% に AI エージェントが組み込まれる（2025年：5% 未満）。マルチエージェントランタイムの本番化・管理機能の整備・学術研究の成熟が3大トレンド。</p></div>
+    </div>
+  </section>
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">5 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Anthropic が教師に無料でフル機能を渡した — 本物の社会貢献か、それとも教育市場の囲い込みか」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.14</span></div>
+      <div class="card-body"><p>Claude for Teachers の発表が r/ClaudeAI を席巻。「FERPA 準拠で学習データを訓練に使わないのは本気度が高い」という評価と、「教室での AI 囲い込み競争だ」という批判が交錯。「隠しトラッカー問題で怒っていたが、この発表はポジティブ」という複雑な声も。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Alibaba が Claude Code を禁止 — 中国での信頼崩壊と今後の影響を議論」</div>
+      <div class="card-meta"><span class="badge">Controversy</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.14</span></div>
+      <div class="card-body"><p>「Anthropic がトラッカーを入れた理由は理解できるが、やり方が最悪だった」という論調が優勢。「Claude Code の今後の中国市場展開はほぼ不可能になった」という分析も。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「スクリーンリーダー対応が来た — アクセシビリティ向上に感謝する声が続々」</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.14</span></div>
+      <div class="card-body"><p>「視覚障害を持つ開発者にとって Claude Code がやっとファーストクラスな体験になった」という声が多数。vim キーバインドの改善についても好評。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米がイランの港を海上封鎖 — 原油 20% が通る海峡、全面衝突への分岐点か」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews — 2026.07.14</span></div>
+      <div class="card-body"><p>「ホルムズ海峡を通る石油の 20% が人質になっている」というコメントが数万 upvote。「3夜連続の空爆で停戦は完全に崩壊した」という分析が上位。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/Economics「中国輸出が 27% 増、AI需要が牽引 — 貿易戦争下でも止まらない中国の技術輸出」</div>
+      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Reddit r/Economics — 2026.07.14</span></div>
+      <div class="card-body"><p>「AI 関連機器の輸出急増が主因で、AI バブルが実体経済に波及している証拠」という分析が人気。「Alibaba が Claude Code を禁止しつつも AI インフラを輸出で稼いでいる」という皮肉なコメントも高評価。</p></div>
+    </div>
+  </section>
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert"><strong>本日（7/14）の主要トピック:</strong> 米軍が3夜連続でイランへ空爆・海上封鎖を正式発動。イランがタンカー2隻攻撃・米軍基地にミサイル。米が ICC 官僚4名に追加制裁。ウクライナ＋欧州が弾道ミサイル防衛網構築で合意。ソユーズが ISS に打ち上げ。中国輸出 27% 増。</div>
+    <div class="card">
+      <div class="card-title">米、イラン港湾への海上封鎖を正式発動 — 3夜連続空爆で停戦崩壊、タンカー2隻被弾・原油市場が動揺</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: <a href="https://www.npr.org/2026/07/14/nx-s1-5893257/us-iran-updates">NPR</a> · <a href="https://www.cnbc.com/2026/07/14/us-iran-hormuz-strikes-oil-toll.html">CNBC</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>米軍は現地時間午後4時にイラン港湾への海上封鎖を正式発動。前夜は5時間の第3波空爆を実施。IRGC がタンカー2隻を攻撃し、バーレーン・ヨルダンの米軍施設にもミサイルを発射。ホルムズ海峡（世界の石油供給約 20% が通過）の不安定化でブレント原油先物が急騰。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">米、ICC 官僚4名に追加制裁 — 資産凍結・渡航禁止でトランプ政権の国際法廷への圧力継続</div>
+      <div class="card-meta"><span class="badge">US Policy</span><span class="card-source">Source: <a href="https://wng.org/podcasts/tuesday-morning-news-july-14-2026-1783979658">World News Group</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>トランプ政権が ICC 官僚4名に資産凍結・渡航禁止の制裁を発動。ICC がイスラエル・米国関係者への捜査を継続していることへの対抗措置。欧州から「国際司法の独立性を侵害する」と批判。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ × 欧州、弾道ミサイル共同防衛網の構築で合意 — マクロン × ゼレンスキー会談</div>
+      <div class="card-meta"><span class="badge">Europe</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-july-14-2026">Morning Star</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>ウクライナと欧州パートナー諸国が大陸規模の弾道ミサイル防衛網構築で合意。パトリオット・SAMP/T・Arrow-3 などの防空システムを統合する計画。フランス革命記念日（7/14）の軍事パレードで欧州防衛強化をアピール。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ソユーズ、ISS に Expedition 75 クルーを打ち上げ — NASA 宇宙飛行士アニル・メノン搭乗</div>
+      <div class="card-meta"><span class="badge">Space</span><span class="card-source">Source: <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-tuesday-july-14-2026">GoLocal Prov</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>ソユーズがバイコヌールから打ち上げ、ISS に Expedition 75 クルーを送り届けた。NASA のアニル・メノン、ロスコスモスのピョートル・ドゥブロフ、アンナ・キキナが搭乗。米露の政治緊張下でも ISS 運用協力は継続。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">中国の6月輸出が前年比 27% 増 — AI需要が半導体周辺機器・電力インフラの輸出を押し上げ</div>
+      <div class="card-meta"><span class="badge">Economy</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-july-14-2026">Morning Star</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>中国の6月輸出が前年同月比 27% 増。AI 関連のサーバー周辺機器・冷却システム・電力インフラの輸出急増が主因。対米関税継続下でも「AI 需要が関税コストを凌駕している」という見方が強まっている。</p></div>
+    </div>
+  </section>
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn — 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert"><strong>本日（7/14）のトレンド:</strong> 「Copilot Studio 自律型エージェント作成まとめ」「AWS MCP Server の一般化」「アジャイルサムライ×AI時代の学び直し」が上位にランクイン。Claude Code・Codex のサンドボックス記事は前回と実質同一のため省略。</div>
+    <div class="card">
+      <div class="card-title">【Qiita】Copilot Studio の自律型エージェント作成方法を整理してみた</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source"><a href="https://qiita.com/ennagara128/items/ecbdea9a7fd2f9bf1b80">Qiita</a> — 2026.07.14</span></div>
+      <div class="card-body"><p>Microsoft Copilot Studio を使ってゼロから自律型エージェントを作成する手順を、画面キャプチャとともに解説。Power Platform の世界で非エンジニア向けのローコードエージェント開発を可能にする記事として注目。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】AWS MCP Server が普通に使えるようになった — セットアップからカスタムツール追加まで</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita — 2026.07.14</span></div>
+      <div class="card-body"><p>AWS が正式にサポートを始めた MCP Server の導入手順と、Lambda・DynamoDB・S3 をツールとして Claude や Codex から呼び出す実装例をまとめた技術記事。Claude Code で AWS インフラを直接操作するユースケースが注目。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】15年前の『アジャイルサムライ』、AI時代に古びたのは「作るコスト」の教えだけだった</div>
+      <div class="card-meta"><span class="badge">Qiita</span><span class="card-source">Qiita — 2026.07.14</span></div>
+      <div class="card-body"><p>「イテレーション・顧客との対話・失敗を早くする」という核心は AI 時代でも普遍的に通用するが、「コードを書くコストが高いから絞り込む」という前提だけは陳腐化した、という論考。「AI がコードを書くコストをゼロに近づけたことで、逆に"何を作るか"の意思決定力がより重要になった」という結論が共感を集めている。</p></div>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月14日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic · 9to5Mac · Chalkbeat · Releasebot · Claude Code Docs · Malwarebytes · The Register · OpenAI · Build Fast With AI · Hector Pincheira · NPR · CNBC · World News Group · GoLocal Prov · Morning Star · Qiita.com</p>
+</footer>
+</body>
+</html>
