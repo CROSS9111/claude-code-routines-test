@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月15日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月17日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,13 +51,14 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">OpenAI が本日 Codex Micro キーボード（$230）を発売・法的紛争の渦中でハードウェア市場へ参入 / Claude Code に内蔵ブラウザ追加・Cowork がモバイル展開 / 米軍がイランへ第4波空爆・海上封鎖を再発動 / コンゴのエボラ死者 700 人超 / W杯準決勝でスペインがフランスを 2-0 撃破</p>
-  <p class="date">2026年7月15日（水）&nbsp;|&nbsp;<a href="2026-07-14/index.html">前版（7/14）</a></p>
+  <p class="subtitle">Moonshot Kimi K3（2.8T MoE）が中国最大のオープンモデルとして登場・Claude Fable 5 対抗級 / Claude Code v2.1.207 が Bedrock/Vertex に auto モード標準化 / Gemini 3.5 Pro が本日 GA 目標（未確定）/ 米・イラン 6日目の交戦でバンダル・ハミルを爆撃・フーシ派が紅海封鎖準備 / W杯でアルゼンチンがイングランドを 2-1 撃破・「マルビナス」バナーで FIFA 制裁の可能性</p>
+  <p class="date">2026年7月17日（金）&nbsp;|&nbsp;<a href="2026-07-15/index.html">前版（7/15）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
-  <a href="#openai">Codex / OpenAI / 競合</a>
+  <a href="#rival">AI 競合動向</a>
   <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#devjp">Qiita / Zenn</a>
   <a href="#world">世界情勢</a>
 </nav>
 <div class="container">
@@ -66,215 +67,253 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic 最新ニュース</div>
-      <span class="section-count">4 記事</span>
-    </div>
-    <div class="alert">
-      <strong>本日（7/15）の注目:</strong> Claude Code に<strong>内蔵ブラウザ</strong>が追加され、ドキュメント・デザインツール・外部サイトをローカル dev サーバーと同じ感覚で閲覧・操作できるようになった。Claude Cowork が Web・モバイルに展開し Max プラン加入者が外出先からも利用可能に。Anthropic は <strong>Claude Sonnet 5</strong>（1M トークンコンテキスト・低コスト）を正式リリースし、Claude Code のデフォルトモデルに昇格させた。
-    </div>
-    <div class="card">
-      <div class="card-title">Claude Code に内蔵ブラウザが搭載 — ドキュメント・デザインカンプ・外部サイトをエージェントが直接操作</div>
-      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a> — 2026.07</span></div>
-      <div class="card-body">
-        <p>Claude Code のデスクトップアプリに内蔵ブラウザが追加された。Claude はドキュメント・Figma デザイン・任意の外部サイトを、ローカル dev サーバーと同様にリアルタイムで読み込み・クリック・操作できるようになった。</p>
-        <ul>
-          <li><strong>できるようになったこと:</strong> 「このデザインに合わせて実装して」と Figma URL を渡すだけで、Claude が画面を確認しながらコードを書く。API ドキュメントを読みながら実装・テストまで完結するワークフローが可能に</li>
-          <li><strong>従来との違い:</strong> これまでは dev サーバーのプレビューのみ参照可能だったが、認証不要な任意の外部 URL にアクセスできるようになった</li>
-          <li><strong>Codex との差別化:</strong> OpenAI Codex がクラウドサンドボックス内でのブラウザ操作を提供するのに対し、Claude Code はローカル環境の統合として提供。開発環境のコンテキストを保持したまま外部参照できる点が強み</li>
-          <li><strong>VS Code 強化:</strong> VS Code 1.128 のアップデートでも Claude AI 連携が強化されており、IDE とブラウザの境界がさらに薄くなっている</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Claude Cowork、モバイル・Web に展開 — Max プラン加入者がどこからでも利用可能に</div>
-      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> — 2026.07</span></div>
-      <div class="card-body">
-        <p>Anthropic の汎用知識業務エージェント「Claude Cowork」が Web とモバイル（iOS・Android）でも利用可能になった。1月のデスクトップローンチ後、Max プラン加入者向けに段階展開が進んでいる。</p>
-        <ul>
-          <li><strong>利用状況:</strong> Claude Cowork の利用の 90% 超がソフトウェア開発以外の業務。ビジネスオペレーション・コンテンツ作成が最大カテゴリ</li>
-          <li><strong>競合状況:</strong> OpenAI の ChatGPT Work（Codex 統合）と直接競合。「エンジニア以外のユーザー」を取り込む汎用エージェント争いが本格化</li>
-          <li>TechCrunch は「コーディングエージェント戦争がオフィス全般の知識業務へ波及した」と表現</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Claude Sonnet 5 が正式リリース — 1M トークンコンテキスト・低コストでエージェント用途に特化</div>
-      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a> · <a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes</a> — 2026.07</span></div>
-      <div class="card-body">
-        <p>Anthropic が Claude Sonnet 5 を正式リリース。1M トークンのコンテキストウィンドウを持つ低コスト・高コンテキストの Sonnet ティアで、エージェント向けツール使用とコーディングタスクに最適化されている。Claude Code のデフォルトモデルに昇格した。</p>
-        <ul>
-          <li><strong>コンテキストウィンドウ:</strong> 1M トークン — 大規模コードベースの一括参照や長いドキュメント処理に対応</li>
-          <li><strong>エージェント特化:</strong> ツール使用・関数呼び出し・マルチステップタスクの成功率が向上。Claude Code の自律実行タスクでの精度改善が確認されている</li>
-          <li><strong>競合との比較:</strong> Google Gemini 3.5 Pro（2M トークン・7/17 GA予定）には及ばないが、コスト面で対抗</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Radware、Claude Code 対応のエージェントセキュリティを追加 — コンプライアンスレポートと可視性を強化</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://letsdatascience.com/news/radware-adds-agent-security-for-claude-code-3921d282">Let's Data Science</a> — 2026.07.07</span></div>
-      <div class="card-body">
-        <p>セキュリティ企業 Radware が、Claude Code などの開発者ホスト型エージェントに対応した Agentic AI Protection 製品の機能拡張を発表。コンプライアンスレポートの自動生成とエージェント活動の詳細可視化が追加された。</p>
-        <ul>
-          <li>Claude Code による自動コーディング操作・ファイルアクセス・外部呼び出しを監査ログとして記録</li>
-          <li>SOC 2・ISO 27001 等のコンプライアンス要件向けのレポートを自動生成。エンタープライズでの Claude Code 採用を後押し</li>
-          <li>Claude Code 隠しトラッカー問題以降、AI ツールへの監視・透明性ニーズが高まっており、このタイミングでのリリースは市場機会に乗ったもの</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== OpenAI / Codex / 競合 ========== -->
-  <section class="section" id="openai">
-    <div class="section-header">
-      <div class="section-title">OpenAI Codex &amp; 競合動向</div>
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/15）の注目:</strong> OpenAI が本日、AIエージェント操作に特化した<strong>Codex Micro キーボード（$230）</strong>を正式発売。「エージェントキー」が搭載されたマクロパッドは発売直後から開発者コミュニティで賛否両論。同社は現在 Jony Ive らとのハードウェアプロジェクトをめぐる法的紛争の渦中にある。
+      <strong>本日（7/17）の注目:</strong> Claude Code v2.1.207 が Bedrock・Vertex AI・Foundry 上で <strong>auto モードを標準有効化</strong>。Bedrock/Vertex のデフォルトモデルが Opus 4.8 に昇格し、Claude Fable 5 も Claude Code から利用可能になった。Artifacts 機能が Pro/Max プランに解放され、<code>/review</code> コマンド体系が刷新されている。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、Codex Micro キーボード（$230）を本日発売 — エージェント操作専用ハードに開発者コミュニティが懐疑的</div>
-      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> · <a href="https://hardware.slashdot.org/story/26/07/15/1659217/openai-launches-a-keypad-for-ai-agents">Slashdot</a> · <a href="https://devops.com/openai-expands-into-developer-hardware-with-codex-micro-keyboard/">DevOps.com</a> — 2026.07.15</span></div>
+      <div class="card-title">Claude Code v2.1.207: Bedrock / Vertex AI / Foundry で auto モード標準化、Opus 4.8 がデフォルトに</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://qiita.com/saitoko/items/992631068d62dfef46b0">Qiita (saitoko)</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.11 週</span></div>
       <div class="card-body">
-        <p>OpenAI が本日（7月15日）、AIコーディングエージェント Codex の操作に特化したマクロパッド「Codex Micro」を $230 で正式発売した。キーボードメーカー Work Louder との共同設計。</p>
+        <p>Claude Code の最新リリース v2.1.207 で、Bedrock・Vertex AI・Foundry（AWS）上での <strong>auto モードがデフォルト有効</strong>になった。これまでは明示的に指定が必要だったが、設定なしで最適モデルの自動選択が機能するようになる。</p>
         <ul>
-          <li><strong>主な機能:</strong> エージェントの稼働状態を LED で示す「Agent Keys」・頻用 Codex 操作のショートカット「Command Keys」・ワークフロー起動用ジョイスティック・エージェントの推論量を調整するダイヤル</li>
-          <li><strong>法的背景:</strong> OpenAI は Jony Ive（元 Apple CDO）らが主導する大規模ハードウェアプロジェクトをめぐる法的紛争の渦中にある。TechCrunch は「法的紛争の最中に $230 のキーボードを出した」と皮肉混じりに報じている</li>
-          <li><strong>コミュニティの反応:</strong> Slashdot・Reddit で「既存のキーボードで事足りる」「$18 のキーボードで同じことができる」「ステータスシンボルとしてのメルチ」という批判が優勢</li>
-          <li><strong>市場評価:</strong> 「AI がまだここまでボタンを必要とするなら、インタラクションは進化していない」という批判も。収益よりも Codex ブランドの浸透を目的とした戦略的製品との見方が強い</li>
+          <li><strong>Bedrock/Vertex のデフォルトモデル変更:</strong> Claude Opus 4.8 が標準モデルに昇格。コーディングタスクでの精度向上が報告されている</li>
+          <li><strong>Claude Fable 5 の Claude Code 対応:</strong> 7月1日に提供再開された最上位モデル Fable 5 が Claude Code から直接呼び出せるようになった。長期・複雑タスク向けに選択可能</li>
+          <li><strong>設定ハンドリングの厳格化:</strong> settings.json の不正な値に対してより明確なエラーを返すよう改善。フリーズ・クラッシュ・資格情報エラー・ワークツリー関連バグも複数修正</li>
+          <li><strong>エージェントビューと Remote Control の改善:</strong> フリート管理 UI のパフォーマンスと安定性が向上</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">GPT-5.6 ファミリー（Sol・Terra・Luna）一般提供開始 — Sol Ultra が Codex に統合、週間 500 万人が利用</div>
-      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07</span></div>
+      <div class="card-title">Claude Code 週次ハイライト（7/11 週）: Artifacts が Pro/Max に解放、/review コマンド刷新、/doctor 改善</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://qiita.com/saitoko/items/992631068d62dfef46b0">Qiita 週次まとめ</a> · <a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a> — 2026.07.11 週</span></div>
       <div class="card-body">
-        <p>OpenAI の最新モデルファミリー GPT-5.6（Sol・Terra・Luna）が一般提供に移行し、最上位モデル Sol Ultra が Codex クライアントへの展開を進めている。</p>
+        <p>今週の Claude Code 3大アップデートが確定。エンタープライズ機能の一般ユーザーへの開放と、開発ワークフロー改善が中心。</p>
         <ul>
-          <li><strong>料金:</strong> Sol — $5 / 1M input・$30 / 1M output、Terra — $2.50 / $15、Luna — $1 / $6</li>
-          <li><strong>Codex の現状:</strong> 週間 500 万人以上が利用。うち 100 万人超がソフトウェア開発以外の業務に活用しており、汎用業務エージェントとしての展開が加速</li>
-          <li>Claude Sonnet 5 はコスト・エージェント最適化で対抗。Terra・Luna は中間・廉価帯として棲み分け</li>
+          <li><strong>Artifacts 機能が Pro / Max プランに解放:</strong> これまで Team/Enterprise プラン限定だった Artifacts（コード生成物の永続管理・共有）が Pro・Max 加入者も利用可能に</li>
+          <li><strong>/review コマンド体系の刷新:</strong> コードレビューコマンドが再設計され、インラインコメント付き PR レビュー・差分特化レビュー・修正適用の3モードに整理された</li>
+          <li><strong>/doctor の CLAUDE.md 簡素化提案:</strong> /doctor コマンドが CLAUDE.md の肥大化を検出し、不要なセクションの削除提案を出す機能が追加。設定ファイル管理の負担が軽減</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Google Gemini 3.5 Pro、7月17日 GA 目前 — 2M トークン・Antigravity 2.0 統合で3社鼎立へ</div>
-      <div class="card-meta"><span class="badge">Upcoming</span><span class="card-source">Source: <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026">Build Fast With AI</a> · <a href="https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments">ZoneTechify</a> — 2026.07</span></div>
+      <div class="card-title">Radware の Claude Code 向けエージェントセキュリティ — AI コーディングエージェント普及でコンプライアンス需要が急拡大</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://letsdatascience.com/news/radware-adds-agent-security-for-claude-code-3921d282">Let's Data Science</a> — 2026.07.07</span></div>
       <div class="card-body">
-        <p>Google DeepMind の Gemini 3.5 Pro が今週木曜（7月17日）に一般提供（GA）に移行する。業界最大級の 2M トークンコンテキストと Antigravity 2.0 統合が主な差別化点。</p>
+        <p>Radware が Claude Code 対応の Agentic AI Protection を発表して以来、エンタープライズ向けエージェントセキュリティ市場が急速に拡大している。AI コーディングエージェントのリポジトリ利用率が 1 年間で 2.0%→12.1% に跳ね上がり、監査・コンプライアンス対応が急務になった背景がある。</p>
         <ul>
-          <li>2M トークンのコンテキストウィンドウは Claude Sonnet 5（1M）を大幅に上回る業界最大級</li>
-          <li>Gmail・Docs・Sheets への直接書き込みなど Google Workspace との深い統合が企業ユーザーに訴求</li>
-          <li>GA 後は Anthropic・OpenAI・Google の3社鼎立体制が本格化。AI コーディングエージェント市場の競争がさらに激化する見通し</li>
+          <li>Claude Code のファイルアクセス・外部呼び出しを監査ログとして記録し、SOC 2・ISO 27001 向けレポートを自動生成</li>
+          <li>AI コーディング利用率 12.1% という数字は、1 年前（2025/7）の 2.0% からわずか 12 ヶ月で 6 倍になった成長を示す（Qiita 調査）</li>
+          <li>トランプ政権の AI サイバーセキュリティクリアリングハウス「Gold Eagle」の動きとも連動し、官民での AI ツール監視強化が加速している</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ========== Reddit ========== -->
+  <!-- ========== AI 競合動向 ========== -->
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/17）の注目:</strong> 中国の Moonshot AI が <strong>Kimi K3</strong>（2.8T MoE・1M コンテキスト）を昨日公開し、Claude Opus 4.8 対抗級と自社ベンチマークで主張。本日は Google の <strong>Gemini 3.5 Pro</strong> の GA 目標日でもあるが Google による公式アナウンスは未確認。DeepSeek V4 のデッドライン（7/24）も迫っており、競合が一気に激化している。
+    </div>
+    <div class="card">
+      <div class="card-title">Moonshot AI が Kimi K3 を公開 — 2.8T パラメータ MoE・1M コンテキスト、Claude Opus 4.8 対抗を自称</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://mlq.ai/news/moonshot-ai-releases-kimi-k3-a-28-trillion-parameter-open-weight-model-rivaling-top-us-systems/">MLQ.ai</a> · <a href="https://fortune.com/2026/07/16/moonshots-kimi-k3-pushes-chinese-ai-into-fable-level-territory/">Fortune</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals">Bloomberg</a> — 2026.07.16</span></div>
+      <div class="card-body">
+        <p>中国の Moonshot AI が7月16日に Kimi K3 を公開した。約 2.8 兆パラメータの Mixture-of-Experts（MoE）モデルで、2 つの新アーキテクチャ「Kimi Delta Attention（KDA）」と「Attention Residuals（AttnRes）」を採用。中国発オープンウェイトモデルとして過去最大規模。</p>
+        <ul>
+          <li><strong>スペック:</strong> 約 2.8T 総パラメータ（16 of 896 エキスパートをアクティブ化）・1M トークンコンテキストウィンドウ・K3 Max（汎用・エージェント）と K3 Swarm Max（大規模並列処理）の2バリアント</li>
+          <li><strong>ベンチマーク主張:</strong> Moonshot 自社評価で「Claude Opus 4.8 max・GPT-5.5 high を概ね上回る」と主張。Claude Fable 5・GPT-5.6 Sol には及ばないとも認めている</li>
+          <li><strong>オープンウェイト化:</strong> 7月27日までにフル重みを公開予定。開放後はコミュニティによる独立ベンチマークが可能になり、主張の妥当性が検証される</li>
+          <li><strong>エージェント用途:</strong> 長期コーディングと自律エージェントワークロードに最適化されており、Claude Code・Codex の対抗手として開発者コミュニティが注目している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Gemini 3.5 Pro、本日（7/17）GA 目標 — アーキテクチャ全面再設計後、公式確認はまだなし</div>
+      <div class="card-meta"><span class="badge">Upcoming</span><span class="card-source">Source: <a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">TechTimes</a> · <a href="https://startupfortune.com/google-delays-gemini-35-pro-launch-to-july-17-after-scrapping-its-base-model/">Startup Fortune</a> — 2026.07.13</span></div>
+      <div class="card-body">
+        <p>Google DeepMind の Gemini 3.5 Pro がアーキテクチャ全面再設計を経て本日（7月17日）の GA を目標としているが、本稿作成時点で Google 公式のモデルカード・API ドキュメント・価格発表は確認されていない。</p>
+        <ul>
+          <li><strong>再設計の経緯:</strong> リリース直前版で「複雑な多層 SVG の構造一貫性維持の失敗」と「再帰的ツール呼び出し環境での破綻」という2つのモード崩壊が検出され、Google はベースモデルをスクラップして全面再構築を選択した</li>
+          <li><strong>噂のスペック（未確認）:</strong> 2M トークンコンテキスト・Deep Think 推論レイヤー・自律ワークフロー機能。いずれも Google 未確認</li>
+          <li><strong>競合影響:</strong> 確認されれば Claude Sonnet 5（1M）を上回る最大コンテキストに。不確実性が続く中、DeepSeek V4（7/24 デッドライン）とともに今週が AI モデル市場の大きな分水嶺になる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 ファミリーと Codex の現況 — Sol Ultra が Codex に展開、週間 500 万ユーザー突破</div>
+      <div class="card-meta"><span class="badge">Status</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>OpenAI の GPT-5.6 ファミリー（Sol・Terra・Luna）は一般提供に移行済みで安定稼働中。Sol Ultra が Codex クライアントへの展開を進めており、Codex の週間利用者数が 500 万人を突破した。</p>
+        <ul>
+          <li><strong>Codex の内部改善:</strong> 危険なコマンド（強制 <code>rm</code> など）の検出精度向上と、コマンド拒否時の理由表示を改善。セーフガードが強化されている</li>
+          <li><strong>Codex Micro キーボード（$230）の市場反応:</strong> 7/15 発売後、開発者コミュニティでは「エージェントステータスシンボル」として賛否両論が続いている</li>
+          <li>Codex は ChatGPT デスクトップアプリ（macOS/Windows）内での直接 Markdown・コード編集、GitHub PR Chat も安定稼働</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">xAI Grok Build（Grok 4.5）と Gemini Deep Research Agent が参入 — AI コーディングエージェント市場が6社競合体制へ</div>
+      <div class="card-meta"><span class="badge">Landscape</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://llm-stats.com/ai-news">LLM Stats</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>7月8日に xAI が Grok 4.5 搭載の Grok Build を、同9日に GPT-5.6 Sol が一般公開され、さらに今月 Google の Gemini Deep Research Agent がプレビュー公開された。Codex・Claude Code・Cursor の3強体制から一気に競合が拡大している。</p>
+        <ul>
+          <li><strong>Grok Build（xAI）:</strong> Grok 4.5 ベースのコーディングエージェント。X（旧 Twitter）のエコシステムとの統合を強みとし、リアルタイム情報アクセスが差別化点</li>
+          <li><strong>Gemini Deep Research Agent（Google）:</strong> 長期調査タスクに特化したエージェント。Google Workspace との深い統合を活かし、ドキュメント・スプレッドシートへの直接書き込みが可能</li>
+          <li><strong>市場全体:</strong> AI コーディングエージェントのリポジトリ利用率は 12.1%（前年 2.0%）。Zhipu GLM 5.2 も最強オープンウェイトコーディングモデルとして台頭しており、中国勢との競争も本格化</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Reddit / コミュニティ ========== -->
   <section class="section" id="reddit">
     <div class="section-header">
-      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
-      <span class="section-count">5 トピック</span>
+      <div class="section-title">Reddit / コミュニティ ─ 今週の議論</div>
+      <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ProgrammerHumor「OpenAI が $230 のキーボードを出した — ダイヤルひとつで AI の"考える量"が変わる」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ProgrammerHumor · r/hardware — 2026.07.15</span></div>
-      <div class="card-body"><p>Codex Micro キーボードの発売が r/ProgrammerHumor で爆発的に拡散。「推論量を調節するダイヤルって、AI にどれだけ頑張らせるか決めるやつ？」という書き込みが数万 upvote。「$18 の格安キーボードで同じことが AutoHotKey でできる」という実用的な批判も人気。「これはツールを買っているんじゃなくてメルチを買っている」という辛辣なコメントが上位。「AI がここまでボタンを必要とするなら、インタラクションはまだ進化できていない」という哲学的批判も高評価を得た。</p></div>
+      <div class="card-title">r/MachineLearning「Kimi K3 が Claude Opus 4.8 対抗を主張 — オープンウェイト公開まで信じるな、でも期待大」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/MachineLearning · r/LocalLLaMA — 2026.07.16-17</span></div>
+      <div class="card-body"><p>Kimi K3 の発表が r/MachineLearning と r/LocalLLaMA で大きく盛り上がっている。「自社ベンチマークは信頼できない。7/27 のオープンウェイト公開後に独立評価を待つべき」という慎重論が上位。「2.8T MoE でアクティブパラメータが 16/896 なら、実際の推論コストは DeepSeek R2 より低いはず」という技術的考察も人気。「中国からここまでのモデルが出るとは…米国の輸出規制が抜け穴だらけと証明された」という政治的コメントも高評価を得た。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「Claude Code に内蔵ブラウザが来た — Figma URL を渡すだけで実装してくれる時代に」</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.15</span></div>
-      <div class="card-body"><p>「Figma のリンクを渡してそのままコード生成・プレビュー確認・修正までできた、これは本当にゲームチェンジャー」という実証レポートが高評価。「Codex がクラウドサンドボックスでブラウザを使うのと違って、ローカル dev 環境のコンテキストを保ったまま外部参照できるのが強い」という技術的差別化分析も人気。批判では「認証が必要なサイトには非対応なのが惜しい」という指摘が多い。</p></div>
+      <div class="card-title">r/ClaudeCode「auto モードでデフォルトが変わった — Opus 4.8 が来てから大規模リファクタが一発で通るようになった」</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Reddit r/ClaudeCode（4,200+ 週間投稿者）— 2026.07</span></div>
+      <div class="card-body"><p>v2.1.207 の auto モード標準化について r/ClaudeCode で多くの実使用レポートが投稿されている。「Bedrock 経由で使っているが、Opus 4.8 がデフォルトになってから 2 万行超のモノレポで一括リファクタをお願いしたら一発で通った」という体験談が多数の upvote。「ただし推論コストも増えた — Sonnet 5 との使い分けが重要」という経済的な指摘も人気。批判コメントでは「Pro プランのレートリミットが Opus 4.8 になって更にきつくなった」という不満もある。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude Sonnet 5 がデフォルトに — 1M トークンで大規模コードベースを一括参照できた」</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.15</span></div>
-      <div class="card-body"><p>「モノリシックなレポジトリを丸ごと渡してリファクタリング提案してもらえた、1M コンテキストは実用的に違う」という実使用報告が上位。「Gemini 3.5 Pro の 2M には及ばないが、コスト・エージェント精度のバランスが最も良い」というパワーユーザーの評価も人気。「Sonnet 5 に上がってからレスポンスが若干遅くなった」という体感報告と「計測したら誤差範囲内だった」という反論が活発に議論されている。</p></div>
+      <div class="card-title">r/ClaudeAI「Fable 5 が Claude Code から使えるようになった — 使ってみたら確かに段違いだが料金が怖い」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.07</span></div>
+      <div class="card-body"><p>「Fable 5 を Claude Code から呼んでみたら、複雑なアーキテクチャ設計のタスクが Opus 4.8 より格段に良い提案をしてきた」という実使用報告が上位。ただし「API コストを計算したら 1 タスクで $15 飛んだ」「Fable 5 は"最終手段"として使い、日常は Opus 4.8 か Sonnet 5 で十分」という現実的なコメントも共感を集めた。「Kimi K3 のオープンウェイトが出たらローカルで動かして Fable 5 と比較したい」という声も多い。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「エボラがコンゴで急拡大 — 死者700人超、感染経路の 80% が不明」</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews — 2026.07.15</span></div>
-      <div class="card-body"><p>「死者700人超、新規感染の 80% が感染経路不明というのは制御不能の状態を示している」という医療専門家のコメントが上位。「2014年の西アフリカ流行は感染経路の追跡がある程度機能していたが、今回は違う」という比較分析も高評価。「世界が Iran 問題に注目している間に無視されている人道危機」という懸念も広まっている。</p></div>
-    </div>
-    <div class="card">
-      <div class="card-title">r/soccer「スペインがフランスを 2-0 で下し決勝へ — W杯 2026 準決勝まとめ」</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Reddit r/soccer — 2026.07.15</span></div>
-      <div class="card-body"><p>エスタディオ・アステカでスペインがフランスを 2-0 で圧倒し、決勝進出。「スペインの試合支配率・ポゼッション・プレッシングの完成度が他チームと別次元」という戦術分析が高評価。アトランタではイングランド対アルゼンチンが開催中。「イングランドが勝ったらスペイン vs イングランドのロンドン W杯リベンジマッチが実現」という期待も高まっている。</p></div>
+      <div class="card-title">r/worldnews「アルゼンチンの"マルビナス"バナー — W杯で政治メッセージを掲げる権利があるか？」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/soccer — 2026.07.16-17</span></div>
+      <div class="card-body"><p>アルゼンチンが英国戦後に「Las Malvinas son Argentinas」バナーを掲げた件が r/worldnews と r/soccer を横断して議論中。「FIFA の競技場行動規範は政治的バナーを明確に禁止している — ルール違反は事実」という法的解釈と、「スポーツと政治を切り離すのは不可能。選手が文化的アイデンティティを表現するのは自然」という反論が拮抗。英国側からは「1982年の戦争で 255 人の英国兵が亡くなった。これは"文化表現"ではなく挑発だ」という強い批判。「FIFA がフランス・スペイン戦に適用しなかった基準をここだけ適用するのは選択的制裁」というダブルスタンダード批判も。</p></div>
     </div>
   </section>
 
-  <!-- ========== World News ========== -->
+  <!-- ========== Qiita / Zenn ========== -->
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 注目記事</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">「AI Codingの動向を1年間毎日監視し続けて何が見えたか ～データで見る2026年6月のまとめ～」</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source"><a href="https://qiita.com/kotauchisunsun/items/c2745d2d8aa59beb51f1">Qiita / kotauchisunsun</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>1年間にわたり AI コーディングの動向を追い続けたデータ分析記事。著者が独自に集計した AI エージェントのリポジトリ利用率が <strong>12.1%</strong>（前年同月比 2.0%）に達したことが確認され、業界の成長速度を数値で裏付けた。</p>
+        <ul>
+          <li>Claude Code と GitHub Copilot が利用シェアの大半を占め、Codex は急成長中</li>
+          <li>コーディング用途の AI 利用が「試験的導入」から「業務標準」に移行した節目として6月を位置づけ</li>
+          <li>利用が定着したチームと「AI 依存のリスク」を懸念し採用を絞るチームの二極化が進んでいると分析</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code 週次アップデートまとめ（2026/07/11週）」</div>
+      <div class="card-meta"><span class="badge">Weekly</span><span class="card-source"><a href="https://qiita.com/saitoko/items/992631068d62dfef46b0">Qiita / saitoko</a> — 2026.07.11 週</span></div>
+      <div class="card-body">
+        <p>毎週 Claude Code の変更を追い続けている著者による定点観測まとめ。今週のハイライトは auto モード標準化・Artifacts 解放・/review 刷新の3点。変更点をコマンド単位・設定単位で具体的に列挙しており、実務ユーザーのリファレンスとして高い閲覧数を記録している。</p>
+        <ul>
+          <li>/review コマンドの新モード体系（--comment / --fix フラグ）の使い方を具体例つきで解説</li>
+          <li>Artifacts 解放に伴うチーム内共有ワークフローの変化点も整理</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「正直に言う。お前の Claude Code の使い方は間違っている」</div>
+      <div class="card-meta"><span class="badge">Popular</span><span class="card-source"><a href="https://qiita.com/official-columns/news/2026-07-01/">Qiita News コラム</a> — 2026.07.01</span></div>
+      <div class="card-body">
+        <p>Qiita 公式コラムで展開された特集記事。「Claude Code を Copilot のような補完ツールとして使っている人が多いが、それは間違い」と主張し、<strong>指示→確認→反復</strong>という対話型ワークフローへの転換を推奨する内容。7月も継続して閲覧数が高い。</p>
+        <ul>
+          <li>「コード補完ではなくタスク委任として使う」考え方の解説が、普及期に差し掛かった Claude Code ユーザーの共感を集めた</li>
+          <li>「Claude Code を使いこなしている人は 1 割」という体感を数値的エビデンスなしに言い切った点には批判もあるが、入門層への訴求力は高い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code を崇拝する前に知っておきたい現実」</div>
+      <div class="card-meta"><span class="badge">Counter-view</span><span class="card-source"><a href="https://qiita.com/tomy0610/items/4696d6361a1508433aea">Qiita / tomy0610</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>上記「使い方は間違っている」記事へのカウンター的な視点から書かれた記事。レートリミット・コスト・依存リスク・生成コードの品質ばらつきという4点の現実的な課題を整理した。賛否を呼びつつも「バランス感覚のある議論」として注目を集めている。</p>
+        <ul>
+          <li>「Pro プランで 1 日 12 回程度の重いセッション後にリミット到達」という体感が多くの共感を集めた</li>
+          <li>「生成コードのテスト密度が人間が書いたコードより低い傾向」というデータの提示が技術的評価を高めた</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 世界情勢 ========== -->
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">6 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/15）の主要トピック:</strong> <strong>米・イラン:</strong> 米軍が第4波夜間空爆を実施（イラン軍兵舎被弾・7名死亡）、海上封鎖を再発動。米はホルムズ海峡 20% 通行料要求案を撤回（湾岸諸国が代替投資を提示） / <strong>保健:</strong> コンゴ東部のエボラ死者 700 人超、感染経路の 80% が不明 / <strong>スポーツ:</strong> W杯準決勝でスペインがフランスを 2-0 撃破 / <strong>米内政:</strong> 下院が夏時間廃止法案を可決、山火事による煙がミッドウェスト・北東部を直撃 / <strong>テクノロジー政策:</strong> トランプ政権が AI サイバーセキュリティクリアリングハウス「Gold Eagle」を立ち上げ
+      <strong>本日（7/17）の主要トピック:</strong> <strong>米・イラン:</strong> 6日目の戦闘でバンダル・ハミルの橋2本を爆撃（7名死亡）・バンダル・アッバース近くの鉄道も標的に。イランがフーシ派に「電力網攻撃があれば紅海を封鎖せよ」と指示 / <strong>W杯 2026:</strong> アルゼンチンがイングランドを 2-1 で逆転撃破・「マルビナス」バナーで英国首相が FIFA に調査要請 / <strong>米内政:</strong> トランプ大統領が選挙制度の脆弱性について演説・機密解除文書を公開 / <strong>環境:</strong> カナダ山火事の煙が北東部を直撃・大気汚染アラート / <strong>文化:</strong> クリストファー・ノーランの「オデッセイ」が本日公開
     </div>
     <div class="card">
-      <div class="card-title">米軍、イランへ第4波夜間空爆 — 兵舎被弾・7名死亡、海上封鎖を再発動・ホルムズ 20% 通行料要求は撤回</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-july-15th-100016551.html">Yahoo News</a> · <a href="https://www.justsecurity.org/147315/early-edition-july-15-2026/">Just Security</a> — 2026.07.15</span></div>
+      <div class="card-title">米軍、イランへの攻撃 6 日目 — バンダル・ハミルの橋 2 本を爆撃・7 名死亡、フーシ派が紅海封鎖準備</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Source: <a href="https://www.fdd.org/analysis/2026/07/17/iran-reportedly-tells-houthis-to-close-bab-al-mandeb-strait-if-us-strikes-power-grid/">FDD</a> · <a href="https://www.japantimes.co.jp/news/2026/07/17/world/iran-houthis-red-sea-close/">Japan Times</a> · <a href="https://www.timesofisrael.com/liveblog-july-17-2026/">Times of Israel</a> — 2026.07.17</span></div>
       <div class="card-body">
-        <p>米軍は現地時間14〜15日にかけてイランへの第4波夜間空爆を実施。イラン陸軍の兵舎が標的となり、少なくとも7名が死亡したとイラン側が発表した。</p>
+        <p>米軍は7月17日、イランに対する新たな攻撃を実施したと米中央軍が発表。イラン国営メディアによるとバンダル・ハミル（Bandar Khamir）の橋 2 本が被弾し少なくとも 7 名が死亡。バンダル・アッバース近郊の鉄道結節点も標的となった。6月の停戦崩壊後、直接的な軍事衝突が連続 6 日目に及んだ。</p>
         <ul>
-          <li><strong>海上封鎖の再発動:</strong> 米軍がイラン港湾に出入りする船舶への立入検査を再開。昨日の一時停止を経て封鎖を再発動</li>
-          <li><strong>ホルムズ通行料案の撤回:</strong> 「ホルムズ海峡通過船舶への 20% 課金」案をトランプ大統領が撤回。湾岸諸国（サウジアラビア・UAE 等）が米国への大規模投資を提示したことで、費用回収の目的が達成されたと判断した模様</li>
-          <li><strong>エスカレーションの懸念:</strong> 米・イラン間の直接攻撃はこれで4回目。6月の停戦合意はすでに崩壊しており、外交解決の可能性が急速に低下している</li>
-          <li><strong>原油市場への影響:</strong> ホルムズ海峡（世界の石油供給約 20% が通過）の不安定化でブレント原油先物が上昇継続</li>
+          <li><strong>フーシ派への指示:</strong> ロイターが報じた複数情報源によれば、イランは「米国が電力網を攻撃した場合、バブ・エル・マンデブ海峡（紅海の入口）を封鎖せよ」とフーシ派に指示。フーシ派はドローンとミサイルを海峡近くに展開済み</li>
+          <li><strong>フーシ派の行動:</strong> 7/17 は「警告と結集の金曜日」と題した示威行進をフーシ支配地域全域で実施。フーシ指導者は新たな海上攻撃を宣言しなかったが、既に準備体制に入っている</li>
+          <li><strong>イスラエル方面:</strong> 米国がイスラエルへの空中給油機（タンカー）を増強派遣しているとの報道。イランへの追加攻撃準備との見方もある</li>
+          <li><strong>経済影響:</strong> バブ・エル・マンデブ封鎖が実現した場合、スエズ運河経由の欧州・アジア間輸送に深刻な打撃。ブレント原油先物は高止まりが続いている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">コンゴ東部のエボラ出血熱が急拡大 — 死者 700 人超、新規感染の 80% が感染経路不明</div>
-      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: <a href="https://www.npr.org/2026/07/15/g-s1-133630/ebola-congo-deaths">NPR</a> — 2026.07.15</span></div>
+      <div class="card-title">W杯 2026 準決勝 — アルゼンチンがイングランドを 2-1 で逆転、「マルビナス」バナーで FIFA 調査へ</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: <a href="https://www.aljazeera.com/sports/2026/7/15/argentina-players-brandish-political-falklands-flag-after-england-match">Al Jazeera</a> · <a href="https://www.aljazeera.com/sports/2026/7/16/uk-urges-fifa-to-investigate-argentina-over-world-cup-falklands-banner">Al Jazeera</a> · <a href="https://www.yahoo.com/news/world/article/why-england-is-angry-about-argentina-celebrating-its-win-with-a-falkland-islands-banner--las-malvinas-son-argentinas-192956021.html">Yahoo News</a> — 2026.07.15-16</span></div>
       <div class="card-body">
-        <p>コンゴ民主共和国（DRC）東部でエボラ出血熱の感染拡大が追跡不能な速度に達しており、死者数が 700 人を超えた。WHO の調査では新規感染の 80% 以上が感染経路を特定できない「不明鎖」から発生しており、封じ込めが極めて困難な状況。</p>
+        <p>FIFA ワールドカップ 2026 準決勝でアルゼンチンがイングランドを 2-1 で逆転撃破し、決勝進出（7/19、メタライフ・スタジアム）を決めた。試合後、選手たちがピッチ上で「Las Malvinas son Argentinas（フォークランド諸島はアルゼンチンのものだ）」と記したバナーを掲げ、外交問題に発展した。</p>
         <ul>
-          <li><strong>感染拡大の構造的問題:</strong> コンゴ東部は武装勢力の支配地域と重なり、医療ワーカーの現地到達が困難。国際的な援助資金の削減もあり、対応能力が限界を超えている</li>
-          <li><strong>2014年流行との違い:</strong> 2014年の西アフリカ流行では感染経路の追跡がある程度機能していたが、今回は感染チェーンの大部分が把握できていない異例の状況</li>
-          <li>世界がイラン問題に注目する中、コンゴのエボラ拡大への国際的な関心が不足しているという懸念が人道支援団体から相次いでいる</li>
+          <li><strong>バナーの意味:</strong> スペイン語で「マルビナス（フォークランド）はアルゼンチンのもの」。1982年のフォークランド紛争（英国兵 255 名・アルゼンチン兵 649 名・島民 3 名が死亡）を巡る領土主権の主張</li>
+          <li><strong>FIFA のルール:</strong> 競技場行動規範は「政治的・攻撃的・差別的性質を持つバナー・旗・アパレル等」を明確に禁止。違反が確認された場合、アルゼンチンに制裁金・選手個人への出場停止処分が課される可能性</li>
+          <li><strong>英国政府の反応:</strong> キア・スターマー英首相が FIFA に対し公式調査を要請。英国外務省はアルゼンチン大使を呼んで抗議した</li>
+          <li><strong>決勝の組み合わせ:</strong> スペイン（7/15 にフランスを 2-0）対アルゼンチン。スペイン対アルゼンチンのファイナルは W杯史上初</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">FIFA W杯 2026 準決勝 — スペインがフランスを 2-0 で圧倒・決勝進出、イングランド vs アルゼンチンも開催</div>
-      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: <a href="https://iffhs.com/en/news/world-cup-daily-july-15-2026-100029">IFFHS</a> — 2026.07.15</span></div>
+      <div class="card-title">トランプ大統領、選挙脆弱性に関する演説と機密解除文書を公開 — 投票制度改革を再訴求</div>
+      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: <a href="https://www.usnews.com/news/national-news/articles/2026-07-17/todays-news-trump-voting-speech-wildfire-smoke-the-odyssey-movie">US News</a> · <a href="https://www.justsecurity.org/147767/early-edition-july-17-2026/">Just Security</a> — 2026.07.17</span></div>
       <div class="card-body">
-        <p>FIFA ワールドカップ 2026 の準決勝が本日開催。メキシコシティのエスタディオ・アステカでスペインがフランスを 2-0 で下し、決勝進出を決めた。アトランタではイングランド対アルゼンチンが開催中（本号作成時点で結果未確定）。</p>
+        <p>トランプ大統領がホワイトハウスからのプライムタイム演説で、アメリカの選挙システムに脆弱性が残っていると主張し、中間選挙前に連邦レベルの選挙法制改革を求めた。機密解除した文書を合わせて公開したが、過去の開票結果が外国の干渉や不正によって直接改変されたことを示す内容は含まれていなかった。</p>
         <ul>
-          <li>決勝は7月19日（日）、メタライフ・スタジアム（ニュージャージー/ニューヨーク）で開催予定</li>
-          <li>米国・カナダ・メキシコの3ヶ国共催、過去最多の 48 カ国が参加した史上最大規模のワールドカップ</li>
+          <li>公開された文書は既知の脆弱性を繰り返し示したもので、「電子集計システムを大規模に操作するのは極めて困難」という繰り返しの調査結論が記載されていた</li>
+          <li>野党・選挙専門家からは「脆弱性が存在することは認めるが、選挙結果が変えられた証拠はない」という反論。民主主義制度への信頼を損なう可能性に対する懸念が相次いだ</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米下院、夏時間廃止法案を可決 — トランプ大統領も支持を表明</div>
-      <div class="card-meta"><span class="badge">US Policy</span><span class="card-source">Source: <a href="https://www.foxnews.com/politics/house-passes-major-daylight-saving-time-reform-trump-signals-support-ending-clock-change">Fox News</a> — 2026.07.15</span></div>
-      <div class="card-body"><p>米下院が夏時間（デイライト・セービング・タイム）を廃止する改革法案を可決した。トランプ大統領が支持を表明しており、上院での審議と署名を経て廃止が実現する見通し。年2回の時計変更は米国で長年にわたって廃止議論が続いており、今回の下院可決は大きな節目。</p></div>
+      <div class="card-title">カナダ山火事の煙が北東部を直撃 — 数百万人が有害な大気にさらされる</div>
+      <div class="card-meta"><span class="badge">Environment</span><span class="card-source">Source: <a href="https://www.usnews.com/news/national-news/articles/2026-07-17/todays-news-trump-voting-speech-wildfire-smoke-the-odyssey-movie">US News</a> — 2026.07.17</span></div>
+      <div class="card-body"><p>カナダ各地で発生している大規模な山火事による煙がアメリカ北東部を覆い、数百万人が有害な大気にさらされる状況が続いている。PM2.5 濃度が健康被害基準値を超える地域が拡大しており、子ども・高齢者・呼吸器疾患を持つ人に対して屋外活動の自粛が呼びかけられている。先週から中西部で広がっていた煙が大西洋岸にまで達した。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">米西部・中西部の山火事、数百万人が有害な煙にさらされる — 北東部にも影響拡大</div>
-      <div class="card-meta"><span class="badge">Environment</span><span class="card-source">Source: <a href="https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/">CBS News</a> — 2026.07.15</span></div>
-      <div class="card-body"><p>米中西部と北東部で発生した山火事による有害な煙が広範囲に拡散し、数百万人が危険な空気質にさらされている。PM2.5 濃度が健康被害のしきい値を超えており、子ども・高齢者・呼吸器疾患を持つ人への注意が呼びかけられている。</p></div>
-    </div>
-    <div class="card">
-      <div class="card-title">トランプ政権、AI サイバーセキュリティクリアリングハウス「Gold Eagle」を立ち上げ</div>
-      <div class="card-meta"><span class="badge">Tech Policy</span><span class="card-source">Source: <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-july-15th-100016551.html">Yahoo News</a> — 2026.07.15</span></div>
-      <div class="card-body">
-        <p>トランプ政権が連邦政府機関と民間企業向けの新しい AI サイバーセキュリティクリアリングハウス「Gold Eagle」を立ち上げた。AI が生成した脆弱性情報の共有と、ソフトウェアの脆弱性特定・修正を促進するための情報プラットフォームとして機能する。</p>
-        <ul>
-          <li>連邦機関が AI ツールを使って発見した脆弱性を集約・共有するためのハブ</li>
-          <li>Claude Code・Codex 等の AI コーディングエージェントが普及する中、AI が書いたコードの安全性確保が政府レベルの課題として浮上している流れに沿った政策</li>
-        </ul>
-      </div>
+      <div class="card-title">クリストファー・ノーラン監督「オデッセイ」が本日公開 — ホメロス史詩の実写映画化</div>
+      <div class="card-meta"><span class="badge">Culture</span><span class="card-source">Source: <a href="https://www.usnews.com/news/national-news/articles/2026-07-17/todays-news-trump-voting-speech-wildfire-smoke-the-odyssey-movie">US News</a> — 2026.07.17</span></div>
+      <div class="card-body"><p>「ダンケルク」「TENET」「オッペンハイマー」のクリストファー・ノーランが監督を務めた大作映画「The Odyssey」が本日（7月17日）全米公開。古代ギリシャの叙事詩「オデュッセイア」を実写映画化したもので、ノーラン作品として最大規模の製作予算が投じられたとされる。夏の一大映画として注目を集めている。</p></div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI要約による情報まとめ — 2026年7月15日（水）</p>
-  <p style="margin-top:0.5rem;">Sources: Releasebot · Claude Code Docs · TechCrunch · Let's Data Science · OpenAI · Slashdot · DevOps.com · Build Fast With AI · ZoneTechify · NPR · Fox News · CBS News · Yahoo News · Just Security · IFFHS</p>
+  <p>自動収集・AI要約による情報まとめ — 2026年7月17日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Qiita · Releasebot · Claude Code Docs · MLQ.ai · Fortune · Bloomberg · TechTimes · Startup Fortune · OpenAI · MightyBot · LLM Stats · FDD · Japan Times · Times of Israel · Al Jazeera · Yahoo News · US News · Just Security · Let's Data Science</p>
 </footer>
 </body>
 </html>
