@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月21日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月22日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code 2.1.216 リリース（エージェント権限の引き継ぎ修正・/fork・/resume ピッカー）/ OpenAI Codex Micro キーボード発売 / 米・イラン 10 日目爆撃（フーシが サウジ封鎖を宣言・停戦提案）/ トランプ政権、カナダに追加 50% 関税（ワイン・ホッケースティック・セメント）/ バーナム英首相が正式始動</p>
-  <p class="date">2026年7月21日（火）&nbsp;|&nbsp;<a href="2026-07-20/index.html">前版（7/20）</a></p>
+  <p class="subtitle">Claude Code v2.1.217 リリース（サブエージェント同時実行上限・予算上限バグ修正・絵文字補完）/ Qiushi Engine が ResearchClawBench 首位で Claude Code を抜く / GitHub Copilot Enterprise に自律エージェントモード / 米・イラン 11 日目・イランが Jordan・Bahrain 基地を攻撃・米兵死者 18 名 / ゼレンスキーが司令官解任・Drapatyi を後任に / 熱帯性暴風雨 Bertha がガルフ岸を北上</p>
+  <p class="date">2026年7月22日（水）&nbsp;|&nbsp;<a href="2026-07-21/index.html">前版（7/21）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -70,48 +70,46 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/21）の最重要:</strong> Claude Code <strong>v2.1.216</strong> がリリース。バックグラウンドエージェントの権限引き継ぎバグを修正し、<strong>/fork コマンド</strong>（現セッションを背景コピーしつつメインを継続）と <strong>/resume ピッカー</strong>（削除済みを含む過去セッション一覧からの再開）が追加された。MCP ツール呼び出しが 2 分超で自動バックグラウンド移行する機能も同梱。
+      <strong>本日（7/22）の最重要:</strong> Claude Code <strong>v2.1.217</strong> がリリース（7/21 深夜）。サブエージェントの同時実行上限（デフォルト 20）追加・<strong>--max-budget-usd がバックグラウンドサブエージェントを正しく停止しないバグを修正</strong>・サブエージェントがネストしたサブエージェントをデフォルトで生成しなくなる変更・プロンプト入力での絵文字ショートコード補完・トランスクリプト書き込み失敗時の警告が投入された。コスト暴走リスクの大幅低減として評価が高い。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code v2.1.216 — エージェント権限の引き継ぎ修正・/fork・/resume ピッカー・MCP 自動バックグラウンド化が一挙投入</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://www.techi.com/claude-code-update-agent-permissions-worktree-isolation/">TECHi</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.21</span></div>
+      <div class="card-title">Claude Code v2.1.217 — サブエージェント同時実行上限・予算上限バグ修正・絵文字補完・トランスクリプト警告</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217">GitHub Releases</a> · <a href="https://x.com/ClaudeCodeLog/status/2079685071422771359">Claude Code Changelog on X</a> · <a href="https://dev.classmethod.jp/en/articles/20260722-cc-updates-v2-1-217/">DevelopersIO</a> — 2026.07.21–22</span></div>
       <div class="card-body">
-        <p>Claude Code の新バージョン 2.1.216 がリリースされ、バックグラウンドエージェントの信頼性向上とセッション管理の利便性が大幅に改善された。</p>
+        <p>Claude Code v2.1.217 がリリースされ、サブエージェントの暴走防止に特化した複数の変更が一挙投入された。特にコスト管理とネスト制御の強化が注目を集めている。</p>
         <ul>
-          <li><strong>権限引き継ぎ修正（主要バグフィックス）:</strong> 再開されたバックグラウンドエージェントが、引き継ぎ元のプロンプトとツール制限を正しく復元するよう修正。これまでは再開後にデフォルト権限に戻るバグがあり、CLAUDE.md で設定した制限が効かなくなる問題が報告されていた</li>
-          <li><strong>/fork コマンド:</strong> 現在の会話を新しいバックグラウンドセッション（<code>claude agents</code> の独立行）にコピーしつつ、自分はメインスレッドで作業を継続できる。「分岐実験を並走させながら本流を止めない」運用が可能に</li>
-          <li><strong>/resume ピッカー:</strong> エージェントビューで <code>/resume</code> を入力するとセッション一覧が表示され、一覧から削除したものも含めて過去セッションを選択再開できる。「うっかり閉じた長時間セッション」の復旧が劇的に楽になる</li>
-          <li><strong>MCP ツール自動バックグラウンド:</strong> MCP ツール呼び出しが 2 分を超えると自動的にバックグラウンドに移行し、セッション全体がフリーズしなくなった。外部 API の低速レスポンス待ちでターミナルが固まる問題を根本解消</li>
-          <li><strong>WebSearch 上限設定:</strong> セッション単位の WebSearch 呼び出し上限（デフォルト 200 回、<code>CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION</code> で調整）を追加。エージェントが検索ループに陥ってクレジットを使い尽くすパターンを防止</li>
-          <li><strong>フッター通知改善:</strong> バックグラウンドエージェントが完了した瞬間、入力待ち状態でなければフッターに「N done」と一時的にパルス表示される。別作業中でも完了を見逃しにくくなった</li>
+          <li><strong>サブエージェント同時実行上限（新機能）:</strong> 同時に実行できるサブエージェントの上限がデフォルト 20 に設定された。環境変数 <code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS</code> で変更可能。これにより、1 つのメッセージが無制限にバックグラウンドエージェントをファンアウトさせるパターンを防止</li>
+          <li><strong>--max-budget-usd バグ修正（重要）:</strong> <code>--max-budget-usd</code> フラグで設定した予算上限がバックグラウンドサブエージェントを正しく停止しないバグを修正。上限に達すると新規スポーンが拒否されるとともに、既に実行中のバックグラウンドエージェントも停止されるようになった。ヘビーユーザーがコスト暴走を経験していた問題の根本解消</li>
+          <li><strong>ネストしたサブエージェントのデフォルト無効化:</strong> サブエージェントがさらに子サブエージェントをスポーンする「ネスト」動作がデフォルトで無効になった。<code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code> 環境変数を設定することで、許可するネスト深さを明示的に制御可能</li>
+          <li><strong>絵文字ショートコード補完（新機能）:</strong> プロンプト入力欄で <code>:heart:</code> と入力すると ❤️ に変換、<code>:hea</code> と入力するとサジェスト表示。<code>emojiCompletionEnabled</code> 設定でオフにできる。CLI ツールとしては珍しい UX 改善</li>
+          <li><strong>トランスクリプト書き込み失敗警告（新機能）:</strong> ディスクフル等でトランスクリプト保存が失敗している場合、または継承された環境変数でセッション保存がオフになっている場合に警告を表示。従来はサイレントに失敗しトランスクリプトが失われていた</li>
+          <li><strong>その他の修正:</strong> ファイルシステム分離制御の強化・長時間セッションのパフォーマンス改善・セッション再開とバックグラウンドエージェント処理の強化・権限・ワークツリー・UI・シェルパース・テレメトリ・VS Code テキストレンダリングの多数のバグフィックス。Windows の安定性も改善</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">VS Code 1.128 — Claude が Agent モードでブラウザタブ制御・OS 級ショートカット・エンタープライズテレメトリを取得</div>
-      <div class="card-meta"><span class="badge">Integration</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07.08</span></div>
+      <div class="card-title">Claude Code の Mac アプリが iOS シミュレータ対応 — アプリを Simulator で実行しながら会話画面を並置</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Source: <a href="https://qiita.com/4q_sano/items/0b9682ef6589520974e0">Qiita</a> · Anthropic リリースノート — 2026.07</span></div>
       <div class="card-body">
-        <p>7 月 8 日リリースの VS Code 1.128 が Claude の Agent モードに大幅な権限拡張をもたらした。継続して利用者が増加しており、本日コミュニティで改めて注目を集めている。</p>
+        <p>Claude Code の Mac アプリ版に、iOS アプリを Xcode シミュレータで実行しながら Claude との会話画面を横に並べて表示できる機能が追加された。</p>
         <ul>
-          <li><strong>ブラウザタブ制御:</strong> Agent モードが VS Code に組み込まれた Simple Browser のタブを開閉・切り替え・スクリーンショット取得できるように。「ローカルサーバーを起動してブラウザで確認する」作業を Claude が一気通貫で実行可能</li>
-          <li><strong>OS 級グローバルショートカット:</strong> VS Code がフォーカスを持たない状態でもウェイクワード or キーバインドで Claude への入力パネルを呼び出せる。ターミナル・ブラウザ作業中でも Alt+Shift+C 等でシームレスに呼び出し</li>
-          <li><strong>エンタープライズテレメトリ管理:</strong> 管理者が組織単位で Claude のツール使用ログ・テレメトリ収集のオン/オフと送信先を設定可能。コンプライアンス上の懸念から Claude Code 導入を見合わせていた企業向けの対応</li>
-          <li><strong>チャット添付強化:</strong> ファイル・フォルダに加え、ターミナルの選択テキスト・最近の Git diff を直接チャットに添付できるようになった。コードレビュー依頼のコンテキスト渡しが格段にスムーズに</li>
-          <li><strong>Radware 連携:</strong> 7 月 7 日に Radware が Claude Code 向け Agentic AI Protection を発表（ISO 42001・EU AI Act・NIST AI RMF 準拠の監査証跡生成）。VS Code 1.128 のテレメトリ管理と組み合わせることで大企業向けの完全なガバナンス体制構築が現実的に</li>
+          <li><strong>動作概要:</strong> Claude Code の Mac アプリがシミュレータの起動を自動検出し、会話パネルの隣にシミュレータ画面を表示。「ボタンを押したときの挙動を確認して」と自然言語で依頼するだけで Claude がシミュレータを操作・確認できる</li>
+          <li><strong>ユースケース:</strong> iOS 開発者が「Claude にテストケースを実行させながら結果をリアルタイムで確認する」という用途で活用。従来は画面切り替えが必要だったワークフローが一画面に集約される</li>
+          <li><strong>要件:</strong> macOS 版 Claude Code アプリ（CLI 版では利用不可）と Xcode のインストールが必要。シミュレータの起動は手動で行う必要があるが、その後の操作は Claude が代替</li>
+          <li><strong>背景:</strong> Anthropic が「コーディングエージェントの完結性」を高める方向に継続的に投資している。Web アプリはブラウザ表示・iOS アプリはシミュレータと、対応プラットフォームが拡大している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code、Auto モードが Bedrock・Vertex AI・Foundry で一般提供 — オプトイン不要でエンタープライズ環境に標準展開</div>
-      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes via Releasebot</a> — 2026.07</span></div>
+      <div class="card-title">Anthropic、Claude Design を発表 — デザイン・プロトタイプ・スライドをチャット形式で作成</div>
+      <div class="card-meta"><span class="badge">Product</span><span class="card-source">Source: <a href="https://qiita.com/homhom44/items/7e7eb1c49ae1184a2942">Qiita</a> · Anthropic — 2026.07.22</span></div>
       <div class="card-body">
-        <p>Claude Code の Auto モードが Amazon Bedrock・Google Vertex AI・Microsoft Azure Foundry の 3 プラットフォームでオプトイン不要の標準提供になった。エンタープライズ規模での自動化運用に弾みがつく。</p>
+        <p>Anthropic が新サービス「Claude Design」を発表。デザイン・プロトタイプ・スライド・シングルページドキュメントをチャット形式で Claude と対話しながら作成できるツール。</p>
         <ul>
-          <li><strong>Auto モードとは:</strong> タスクの複雑度に応じてモデルを自動選択（簡単な問い合わせは Haiku 4.5・コード生成は Sonnet 4.6・設計・計画は Opus 4.8 など）し、コスト効率を最大化する運用モード</li>
-          <li><strong>Bedrock での変更点:</strong> これまではフィーチャーフラグで有効化が必要だったが、7 月更新でデフォルト ON に。既存の Bedrock ワークフローはモデル固定指定がない限り自動的に Auto モードに移行</li>
-          <li><strong>Vertex AI / Foundry:</strong> 同様にデフォルト化。マルチクラウドでエージェントを動かす企業にとって、プラットフォーム間で一貫した Auto モード体験が得られる</li>
-          <li><strong>コスト影響:</strong> タスク分類精度によっては「常に Opus を使っていた」ユーザーのコストが削減される一方、「常に Haiku で十分だった」ユーザーが意図せず Sonnet や Opus を呼ぶケースも報告されており、<code>defaultModel</code> 設定の見直しが推奨される</li>
-          <li><strong>ターミナルフリーズ修正:</strong> 同時期のアップデートで長時間セッションでの入力遅延・キーストローク取りこぼしが改善。バックグラウンドエージェント標準化後に増加していた「ターミナルが固まる」報告が大幅減少した模様</li>
+          <li><strong>概要:</strong> Figma や Canva のようなビジュアルデザインツールを Claude との自然言語対話で操作できるインターフェース。「青いボタンを左上に移動して」「ここにグラフを追加して」という指示だけでデザインを更新できる</li>
+          <li><strong>対応形式:</strong> Web プロトタイプ（HTML/CSS/JS）・スライドデッキ（PDF エクスポート対応）・シングルページドキュメント（レポート・仕様書）に対応。画像生成は Claude の Vision 能力と組み合わせて参照ベースのデザイン変更も可能</li>
+          <li><strong>ターゲット:</strong> 非デザイナーの開発者・PMが「デザイナーを巻き込まずに素早くプロトタイプを作る」用途を想定。Anthropic のエンタープライズ展開の一環として位置づけられている</li>
+          <li><strong>競合との比較:</strong> OpenAI の「Canvas」・Google の「Gemini for Workspace」と直接競合する領域。Claude の長文理解・一貫性維持の強みを「デザインの文脈保持」に活かせるかが評価の分かれ目</li>
         </ul>
       </div>
     </div>
@@ -124,46 +122,47 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> OpenAI が <strong>Codex Micro キーボード</strong>（Work Louder 製・$230）を正式発売し AI 専用ハードウェア市場へ参入。GPT-5.6 Sol Ultra（54% トークン効率改善）が Codex クライアントへの展開を加速。Google の Gemini 3.5 Flash は「速い・安い・安定」路線で定着。
+      <strong>競合ハイライト:</strong> 中国の <strong>Qiushi Engine</strong>（浙江大学発）が ResearchClawBench で Claude Code を抜いて首位に。GitHub Copilot Enterprise が <strong>自律エージェントモード</strong>（人間承認付き）を正式投入。OpenAI の Daybreak サイバーセキュリティプログラムが Anthropic の Project Glasswing と正面対決の構図に。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、Codex Micro キーボードを正式発売 — Work Louder 製・$230・AI コーダー「艦隊」を管理するハードウェア</div>
-      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://mezha.net/eng/bukvy/3d0e6ca2_openai_launches_codex/">Mezha.net</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia – Codex (AI agent)</a> — 2026.07</span></div>
+      <div class="card-title">中国 Qiushi Engine が ResearchClawBench で首位 — Claude Code を抜き「自律科学研究」の新基準を打ち立てる</div>
+      <div class="card-meta"><span class="badge">Research</span><span class="card-source">Source: <a href="https://www.scmp.com/news/china/science/article/3361370/chinese-ai-agent-outperforms-anthropics-claude-code-autonomous-research">South China Morning Post</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>OpenAI が専用キーボードメーカー Work Louder との共同開発製品「Codex Micro」を正式発売した。AI コーディングエージェントの「艦隊管理」に特化したハードウェアとして位置付けられ、OpenAI 初の自社ハードウェア製品参入として注目を集めている。</p>
+        <p>浙江大学主導チームが開発した AI エージェント「Qiushi Engine」が国際ベンチマーク ResearchClawBench の総合ランキング首位を獲得した。Claude Code は 3 位。</p>
         <ul>
-          <li><strong>製品概要:</strong> コンパクト Macro キーボード型デバイス（Work Louder の既存ライン Micro キーボードがベース）。専用ボタンで Codex エージェントへのタスク投入・進捗確認・並列エージェントの切り替えが物理操作で行える</li>
-          <li><strong>価格:</strong> $230。ChatGPT Plus（$20/月）・Pro（$200/月）サブスクライバー向けに先行予約が開始されており、一般向けは 8 月以降の見込み</li>
-          <li><strong>ソフトウェア連携:</strong> ChatGPT デスクトップアプリの Codex エージェントビューと直接連携。キーボードのノブ操作で並行している複数エージェントのステータスを確認し、優先度変更や中断を行える</li>
-          <li><strong>競合との比較:</strong> Claude Code は純粋なソフトウェア（CLI・IDE 拡張・Web）として提供されているため、ハードウェアでの差別化は OpenAI 独自の路線。「使いやすいハードが普及すれば Codex のロックインが進む」という見方と「ニッチ製品にとどまる」という見方が分かれている</li>
-          <li><strong>GPT-5.6 Sol Ultra:</strong> Codex クライアントに展開中の旗艦モデル。27.2 万トークンのコンテキストウィンドウ・コーディングタスクで 54% のトークン効率改善を謳っており、大規模リポジトリの一括解析に強みを持つ</li>
+          <li><strong>ResearchClawBench とは:</strong> AI エージェントが独立して研究を実施し、その結果を人間が書いた参照論文と比較するベンチマーク。同じ結論に達しているか・あるいは原著者を超える発見があるかを評価する</li>
+          <li><strong>Qiushi Engine の特長:</strong> 「エンド・ツー・エンドの自律的科学発見」を謳い、特定タスクに限定されない汎用的な研究遂行能力を持つ。実物理環境での研究実行が可能な点が差別化要因</li>
+          <li><strong>ランキング:</strong> 1 位 Qiushi Engine → 2 位 Open Science Desktop → 3 位 Claude Code。Open Science Desktop も中国系チームによる開発との情報あり</li>
+          <li><strong>業界への影響:</strong> 「科学研究における AI エージェントの性能」でも中国勢が競争力を持ち始めたことを示す。コーディングエージェントに続き、科学研究エージェントでの米中競合が本格化する兆候として注目されている</li>
+          <li><strong>Anthropic の立場:</strong> Claude Code がコーディングエージェントとして引き続き広く使われている一方、特化型ベンチマークでの首位交代は競合の激化を示している。7/17 には Moonshot AI の Kimi K3 が「Claude と ChatGPT に匹敵する」と報じられており、中国 AI の急速な追い上げが続いている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">GPT-5.6 ファミリー（Sol / Terra / Luna）GA — Sol Ultra が Codex に展開、Luna が ChatGPT 無料ユーザーにも開放</div>
-      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: <a href="https://chatgptaihub.com/the-big-ai-coding-agents-story-what-july-16-s-news-means-for-developers/">ChatGPT AI Hub</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI Blog</a> — 2026.07.09–</span></div>
+      <div class="card-title">GitHub Copilot Enterprise、自律エージェントモードを正式投入 — 人間承認付き・プランナー＋スペシャリスト構造</div>
+      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">Source: <a href="https://www.techtimes.com/articles/317596/20260602/github-copilot-replaces-gpt-4-project-polaris-ships-multi-agent-vs-code-build.htm">TechTimes</a> · <a href="https://www.nxcode.io/resources/news/github-copilot-complete-guide-2026-features-pricing-agents">NxCode</a> — 2026.07</span></div>
       <div class="card-body">
-        <p>OpenAI の GPT-5.6 ファミリーが 7 月 9 日（GA）以降、各ティアへの展開を続けている。Sol（上位）・Terra（中位）・Luna（下位）の 3 モデル構成で、役割分担が明確化された。</p>
+        <p>GitHub Copilot Enterprise が自律エージェントモード（Autonomous Agent Mode）を正式展開。開発者が不在の状態でも機能ブランチを丸ごと書き・テスト・コミットできるが、マージ前の人間承認が必須となる。</p>
         <ul>
-          <li><strong>Sol Ultra:</strong> GPT-5.6 最上位。複雑な推論・コーディング・長文知識作業に対応。Codex クライアントへの展開が進んでおり、コーディングエージェントの「頭脳」として機能。7/16 リリースの GPT-5.5-pro との住み分けが議論中</li>
-          <li><strong>Terra:</strong> 中位。会話・ドキュメント作成・日常的なコーディング補助を担う。ChatGPT Plus ユーザーのデフォルトモデルとして展開</li>
-          <li><strong>Luna:</strong> 下位。高速・低コストが特長。ChatGPT 無料ユーザーへの開放により「無料でも GPT-5.6 ファミリーを使える」状況が実現した（制限あり）</li>
-          <li><strong>採用指標:</strong> 2026 年 5 月時点で Codex ユーザーの 80.6% が「30 分超の人間作業に相当すると推定されるリクエストを少なくとも 1 件行った」という内部データが公開。Codex が「補助ツール」から「実作業担当者」への転換を示す数字として注目</li>
-          <li><strong>Claude Sonnet 4.6 との競合:</strong> 7/16 の同日リリースで直接比較が始まっており、「大規模設計は Claude が優位・単発実装速度は Sol が速い」という評価が固まりつつある</li>
+          <li><strong>自律エージェントモードの仕組み:</strong> Microsoft Build 2026 で発表された Multi-Agent VS Code 構成を採用。「プランナー」エージェントがタスクを分解し、「スペシャリスト」エージェントに委任。結果を統合インターフェースで提示する</li>
+          <li><strong>Fleet モード:</strong> Copilot CLI が狭く定義されたコードベースタスクを、ステップごとの確認なしに自律実行。「npm パッケージを一括アップデートして全テストを通す」のような定型作業に向く</li>
+          <li><strong>Autopilot モード:</strong> バックグラウンドで有界な Issue に対して Copilot が自律的に動作する。開発者が席を外している間にコードが生成され、完了通知でレビューに入る設計</li>
+          <li><strong>コスト管理:</strong> Enterprise では Credit Pool（部門別コストセンター）の割り当てが可能になった。AI 利用コストの部門別管理・上限設定が実現し、大企業での全社展開に向けたガバナンス強化</li>
+          <li><strong>Project Polaris:</strong> GPT-4 Turbo の後継として 8 月に展開予定の自社開発コーディングモデル「Project Polaris」と自律モードの組み合わせが予告されており、Copilot のコーディング性能が大幅に向上する見込み</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Google Antigravity CLI と Gemini 3.5 Flash — Workspace 統合でビジネスプロセス自動化路線を鮮明化</div>
-      <div class="card-meta"><span class="badge">Google</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://claude-world.com/articles/ai-coding-models-tools-july-2026/">ClaudeWorld</a> — 2026.07</span></div>
+      <div class="card-title">OpenAI Daybreak、Codex Security と GPT-5.5-Cyber で防衛側へのサイバーセキュリティ AI を拡充</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html">The Hacker News</a> · <a href="https://openai.com/daybreak/">OpenAI Daybreak</a> — 2026.06–07</span></div>
       <div class="card-body">
-        <p>Google は 6 月 18 日の Gemini CLI 終了・Antigravity CLI 統合後、「コーディング性能での正面競合」から「Workspace 統合による企業ワークフロー自動化」への軸足移動を明確にしている。</p>
+        <p>OpenAI の Daybreak サイバーセキュリティプログラムが、Codex Security プラグイン・GPT-5.5-Cyber・Patch the Planet イニシアチブを追加し、防衛側組織向けの AI セキュリティ能力を大幅に拡充した。</p>
         <ul>
-          <li><strong>Antigravity CLI:</strong> Gmail・Drive・Meet・Calendar へのネイティブアクセスを持つ企業向けエージェント CLI。「コードを書く AI」というより「業務プロセスを自動化する AI オーケストレーター」として設計されており、Claude Code・Codex とは土俵が異なる</li>
-          <li><strong>Gemini 3.5 Flash の位置づけ:</strong> 安定した高速推論と相対的低コストで「バッチ処理・定型タスク自動化」での採用が定着。gemini-3.1-pro-preview（7/16 リリース）でコード補完精度を強化したが、コーディングエージェント単独比較では Claude・Codex の後塵を拝する評価が多い</li>
-          <li><strong>Google の強み:</strong> Workspace ユーザー数（企業向け約 9 億ライセンス）を抱えるエコシステムの広さ。「コーディングエージェントとして Claude を使い、会議要約・メール管理は Gemini」という使い分けが定着しつつある</li>
-          <li><strong>個人開発者への影響:</strong> 無料の Gemini CLI 終了後、個人開発者の一部が Claude の学生・無料プランへ移行。Fable 5 有料化と重なりコスト議論が再燃している中、Gemini の無料枠縮小は「対抗馬の不在」という見方もある</li>
+          <li><strong>GPT-5.5-Cyber:</strong> 「脆弱性の発見とパッチ適用支援における OpenAI 最強のモデル」と位置づけ。大規模コードベース全体での深い解析を維持し、セキュリティ問題の特定・制御環境での検証・パッチ開発とテストまでを自動化。FreeBSD や Linux カーネルを含む重要インフラの脆弱性を発見・パッチ生成済みとされる</li>
+          <li><strong>Codex Security プラグイン（更新版）:</strong> コーディング中にリアルタイムで脆弱性を検出・警告する Anthropic の security-guidance プラグインと直接競合。Anthropic が全 Claude Code ユーザーへ無料提供しているのに対し、OpenAI は Daybreak Partner Program 参加組織向けの限定提供</li>
+          <li><strong>Patch the Planet:</strong> 世界の主要サイバー組織と連携し、AI を使った脆弱性の完全修復ループ（発見→検証→パッチ→展開）を加速するイニシアチブ。OpenAI のモデルがすでにメジャーブラウザ・ネットワークインフラ・OS のクリティカルな脆弱性を発見しパッチを生成した実績を公開</li>
+          <li><strong>Anthropic Project Glasswing との対比:</strong> Anthropic が並行して展開する Project Glasswing は、AIシステム自体のセキュリティ監査・Red Team 評価に特化。「攻撃者に使われるリスクの最小化」を目的とする Glasswing と「防衛側の能力強化」を目的とする Daybreak が対照的な戦略として注目されている</li>
+          <li><strong>アクセス制限:</strong> GPT-5.5-Cyber は現在も認証された防衛組織への制限提供。一般の開発者向けではなく、公的・企業セキュリティチーム向けの展開が続いている</li>
         </ul>
       </div>
     </div>
@@ -176,48 +175,48 @@
       <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「/fork が来た！ バックグラウンドに分岐させながらメインを続ける使い方を共有しよう」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode（週間アクティブ 4,200+） — 2026.07.21</span></div>
+      <div class="card-title">r/ClaudeCode「v2.1.217 でコスト暴走が治った！ --max-budget-usd が本当に機能するように」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode（週間アクティブ 4,200+） — 2026.07.22</span></div>
       <div class="card-body">
-        <p>v2.1.216 で追加された <code>/fork</code> コマンドについて、r/ClaudeCode で早速ユースケース共有スレッドが立った。「これがずっと欲しかった」という声が多数。</p>
+        <p>v2.1.217 のリリースノートを見た r/ClaudeCode ユーザーが「待望のバグ修正が来た」と盛り上がった。コスト管理と同時実行制限の強化について体験談が続々と投稿されている。</p>
         <ul>
-          <li><strong>人気ユースケース 1「AB テスト実装」:</strong> 「メインで設計を詰めながら fork 先で実装案 A を試す。fork 先が失敗してもメインは汚染されない」という使い方が最多票。従来は別ウィンドウで手動コピーする手間があった</li>
-          <li><strong>人気ユースケース 2「ドキュメント生成並走」:</strong> 「実装をメインで続けながら fork 先でドキュメント・テストを書かせておく。完了通知が来たらレビューするだけ」という高効率運用の報告</li>
-          <li><strong>注意点として共有された Tips:</strong> 「fork 先は独立したエージェントなので CLAUDE.md は引き継がれるが、メインで追加した指示は引き継がれない。明示的に /fork 前に要約コメントを書くとよい」という実践知が上位コメントに</li>
-          <li><strong>権限バグ修正への反応:</strong> 「これで resume 後にデフォルト権限に戻る問題が治った！ 長いセッションを再開できるようになった」という報告が複数。v2.1.216 の主要バグフィックスとして好評</li>
+          <li><strong>--max-budget-usd 修正への反応:</strong> 「これで安心して夜間バッチエージェントを回せる。以前は起きたら $50 消費していたことがあった」という声が多数。バックグラウンドサブエージェントの停止漏れが実際にコスト事故を起こしていたことが改めて明らかになった</li>
+          <li><strong>同時実行上限（デフォルト 20）への反応:</strong> 「20 は多いと思うが、上限があること自体が重要。デフォルト 5 にして必要なときだけ増やしたい」という声が上位コメントを獲得。<code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=5</code> の設定例が共有された</li>
+          <li><strong>ネスト無効化への反応:</strong> 「サブエージェントがさらにサブエージェントを無限生成するパターンで API クレジットを丸ごと使い果たした経験がある。デフォルト無効は正しい判断」という歓迎コメントが上位。深いネストが必要なユースケースを持つユーザーは少数だとの意見も</li>
+          <li><strong>絵文字補完への反応:</strong> 「誰が頼んだ？」という声と「実はこういう細かいUX が長時間作業の体験を変える」という声に二分。<code>emojiCompletionEnabled: false</code> の設定を即座に共有するコメントも複数。純粋に面白い議論として盛り上がっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Fable 5 有料化 2 日目の実態レポート — 1 日いくら使ったか報告スレッド」</div>
-      <div class="card-meta"><span class="badge">Trending</span><span class="card-source">Reddit r/ClaudeAI（1.0M メンバー） — 2026.07.21</span></div>
+      <div class="card-title">r/LocalLLaMA「エージェントはコストの壁にぶつかった — 月 $500–$2,000 が現実のエンジニアコストに」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/LocalLLaMA · AI News Volume 19 via Medium — 2026.07.22</span></div>
       <div class="card-body">
-        <p>有料化 2 日目となる本日、r/ClaudeAI では「実際にいくら使ったか報告しよう」スレッドが急上昇。昨日の「感想スレッド」より具体的な金額データが集まり始めた。</p>
+        <p>Medium の「AI News Volume 19: Agents Hit the Cost Wall」記事を引用した r/LocalLLaMA のスレッドが、エンジニアの実際の AI 利用コストについての議論の場になった。</p>
         <ul>
-          <li><strong>主な報告値:</strong> 「プログラマーで 1 日 8 時間使ったら約 $12 のクレジット消費」「ライターとして 5〜6 時間で約 $4」「週 1 程度の軽量ユーザーは月 $3 以下の試算」など用途差が大きい</li>
-          <li><strong>上位コメントの戦略:</strong> 「Fable 5 は朝の設計レビューと夜のコードレビューだけに使い、実装は Sonnet 4.6 に任せる。1 日のクレジット消費が $12 → $3 に下がった」という使い分け戦略が 1,200 以上のアップボートを獲得</li>
-          <li><strong>コスト計算ツールの需要:</strong> 「自分のユーザーパターンのクレジット月額を自動計算するツールを誰か作って」というリクエストに対して、Claude Code で自作した簡易計算スクリプトを公開したユーザーのコメントが急速に拡散中</li>
-          <li><strong>Anthropic への要望:</strong> 「サブスクに月次クレジット枠（例：$5 相当）を含めてほしい」「実際の消費量のリアルタイムダッシュボードがない」という声が多数。コミュニティからの直接フィードバックとして公式アカウントに送信されている</li>
+          <li><strong>実コストの実態:</strong> エージェントがタスク 1 件で 40 万〜200 万トークンの入力を消費するという試算が注目を集めた。Claude Code の場合、1 日のヘビーユースで $10–$30 のクレジット消費となり、月換算 $300–$900 になるケースも。大規模チームへの展開コストが「想定の 5–10 倍」という報告が複数ある</li>
+          <li><strong>コスト削減の実践知:</strong> 「<code>--max-budget-usd</code>（今回ようやく修正された）をプロジェクト別に設定する」「Haiku 4.5 で下書き → Sonnet 4.6 で実装 → Fable 5 でレビューの 3 段階」「プロンプトキャッシング（入力の 90% 節約）の積極利用」という 3 点が最も支持された節約戦略</li>
+          <li><strong>「壁」の本質:</strong> 上位コメントの分析では「コストの壁は性能ではなくガバナンスの問題。チームで AI を使うときのコスト責任者・上限設定・監査が確立していない企業が多い」という指摘が最多票を獲得。v2.1.217 のサブエージェント制御強化はこの文脈で歓迎されている</li>
+          <li><strong>ローカル LLM の再評価:</strong> 「コストの壁があるからこそ Ollama + Llama 3.3 でプロトタイプを作り、本番だけ Claude を呼ぶハイブリッドが合理的」という議論も。r/LocalLLaMA らしい視点として注目</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA「Claude Code が r/Codex の 3 倍のコミュニティ規模に — ツール人気の格差はなぜ生まれたか」</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/LocalLLaMA · r/ClaudeCode — 2026.07.21</span></div>
+      <div class="card-title">r/programming「Qiushi Engine が Claude Code を抜いた件 — ベンチマークの読み方を考える」</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/programming · r/MachineLearning — 2026.07.22</span></div>
       <div class="card-body">
-        <p>r/ClaudeCode の週間アクティブ 4,200 人超 vs r/Codex の 1,200 人という格差を分析するスレッドが r/LocalLLaMA で注目を集めた。「ツール性能だけでなくコミュニティ設計の差」という論点が議論の中心に。</p>
+        <p>Qiushi Engine の ResearchClawBench 首位獲得ニュースについて、r/programming と r/MachineLearning でベンチマークの有効性を巡る議論が展開された。</p>
         <ul>
-          <li><strong>コミュニティ成長の背景:</strong> Claude Code が CLI として早期にオープンに提供されたこと、CLAUDE.md / フック / スラッシュコマンドなど「カスタマイズのしろ」が多いため Tips 共有が生まれやすい構造が指摘された</li>
-          <li><strong>Codex の壁:</strong> 「Codex は ChatGPT デスクトップに統合されているが、独自 CLI がなく Tips が生まれにくい」「Claude Code は 1,900 ファイルのソースが流出して内部構造が研究されているが Codex は完全ブラックボックス」という意見が上位</li>
-          <li><strong>課題としての Fable 5 有料化:</strong> 「コミュニティは大きいが Fable 5 の有料化で重度ユーザーが離れるリスクがある」「Sonnet 4.6 だけでも十分という層が増えれば Fable 5 の収益が見込みを下回る可能性」という懸念も</li>
-          <li><strong>Claude Code Udemy コース需要:</strong> 「20 以上の Claude Code コースを試した結果」という記事が Substack でバイラル中。学習需要の高さがコミュニティ規模を後押しとの見方</li>
+          <li><strong>「ベンチマーク特化 vs 実用性」の議論:</strong> 「ResearchClawBench は科学論文の再現性という特定のタスクに特化しており、日常のコーディング用途での Claude Code の優位を否定するものではない」というコメントが上位。「ベンチマーク首位 ≠ 最も有用なツール」という冷静な見方が多数を占めた</li>
+          <li><strong>中国 AI への評価:</strong> 「Moonshot AI の Kimi K3 も先週注目されたばかり。中国勢の急追は本物」という声と「まだ少数の特化型ベンチマークでの実績であり、コミュニティ・エコシステム・ツール統合の差は大きい」という慎重論が拮抗</li>
+          <li><strong>オープンソース vs クローズドの構図:</strong> Qiushi Engine の詳細なアーキテクチャは非公開だが、「浙江大学発でオープンな研究寄りの開発」という背景が r/MachineLearning では好意的に受け取られた。「Claude Code はクローズドだが 1,900 ファイルのソースが流出して研究されている」というメタ的なコメントも</li>
+          <li><strong>Claude Code ユーザーの反応:</strong> r/ClaudeCode での反応は比較的落ち着いており「使い慣れたツールを乗り換える理由にはならない」という意見が主流。コミュニティの成熟とエコシステムへの信頼が伺える</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「米・イラン 10 日目 + カナダ 50% 関税 + バーナム英首相」— 火曜朝から地政学・経済スレッドが急上昇</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/geopolitics · r/economy — 2026.07.21</span></div>
-      <div class="card-body"><p>本日の r/worldnews では米・イラン衝突 10 日目の速報・トランプ政権のカナダへの追加 50% 関税（ワイン・ホッケースティック・セメントなど）・アンディ・バーナム英首相の正式始動という 3 大トピックが朝から同時急上昇。「7 月の地政学カレンダーが詰まりすぎている」「フーシがサウジ封鎖を宣言した上に USMCA が実質空文化しようとしている」というコメントが数千のアップボートを集めた。「停戦提案（10 日間）の詳細が出てきたが、米・イラン双方が要求を下げるとは思えない」という悲観論も多数。カナダ関税スレッドでは「最高裁の広範関税差し止め後も Section 338 で迂回した政権の戦略は他国へも送るメッセージだ」という CNN Business の分析が引用されて議論を呼んでいる。</p></div>
+      <div class="card-title">r/worldnews「米・イラン 11 日目 + ゼレンスキーが司令官を電撃解任 + 熱帯暴風雨 Bertha」— 水曜早朝から地政学スレッドが乱立</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/ukraine · r/weather — 2026.07.22</span></div>
+      <div class="card-body"><p>本日の r/worldnews は米・イラン衝突 11 日目（イランがヨルダン・バーレーンの米軍基地をドローン攻撃、米兵死者が 18 名に増加）・ゼレンスキーが司令官 Syrskyi を解任し Drapatyi を後任に指名（反発する抗議運動が背景）・熱帯暴風雨 Bertha がガルフ岸沿いに北上中という 3 大トピックが朝から急上昇。r/ukraine では「Syrskyi 解任はゼレンスキーの戦略的判断か政治的妥協か」について激論が展開され、24 時間で 5,000 以上のコメントが集まった。「トランプがホルムズ海峡での攻撃に対してブリッジ・発電所への爆撃を警告した投稿」も r/worldnews でトップトレンドとなり、戦争のエスカレーションを懸念する声が多数寄せられた。</p></div>
     </div>
   </section>
 
@@ -228,41 +227,41 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">「Claude Code v2.1.216 の /fork・/resume を早速試してみた」</div>
-      <div class="card-meta"><span class="badge">TryOut</span><span class="card-source">Zenn — 2026.07.21</span></div>
+      <div class="card-title">「Claude Code v2.1.217 の新機能を速攻で試した — サブエージェント上限・予算バグ修正・絵文字補完の実挙動」</div>
+      <div class="card-meta"><span class="badge">TryOut</span><span class="card-source">Zenn / DevelopersIO — 2026.07.22</span></div>
       <div class="card-body">
-        <p>本日リリースの Claude Code v2.1.216 を即日で検証した記事が Zenn でトレンド入り。/fork と /resume ピッカーの実挙動をスクリーンショット付きで解説。</p>
+        <p>v2.1.217 リリース直後に各機能を実際に試した検証記事が Zenn と DevelopersIO で複数公開された。</p>
         <ul>
-          <li><strong>/fork の実挙動:</strong> コマンド実行直後に「Creating background fork of current session...」と表示され、<code>claude agents</code> に新しい行が追加されることを確認。メインセッションのカーソルは止まらず作業継続できる</li>
-          <li><strong>/resume ピッカーの UI:</strong> ファジー検索対応のリスト表示で、過去セッションのタイトル（会話の最初のプロンプト冒頭）と日時が表示される。削除済みセッションは「(deleted)」ラベルが付く</li>
-          <li><strong>権限引き継ぎの検証:</strong> CLAUDE.md でファイル書き込み禁止を設定したセッションを一度終了→再開した場合に、旧バージョンでは禁止が解除されていたバグが v2.1.216 で修正されていることを確認</li>
-          <li><strong>WebSearch 上限の確認:</strong> <code>CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=5</code> に設定して 6 回目の検索を試みると「セッション内 WebSearch 上限（5 回）に達しました」というエラーメッセージが返ることを確認</li>
+          <li><strong>--max-budget-usd の修正確認:</strong> <code>--max-budget-usd 0.10</code>（10 セント上限）を設定し、意図的にサブエージェントを大量生成するスクリプトを実行。旧バージョンでは上限を超えてもサブエージェントが継続していたバグが、v2.1.217 では上限到達時点で全サブエージェントが即時停止することを確認</li>
+          <li><strong>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS の確認:</strong> デフォルト 20 のまま 25 並列を試みると 20 が実行され 5 がキューに入ることを確認。<code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=3</code> に設定すると制限が正しく機能</li>
+          <li><strong>絵文字補完の実挙動:</strong> 日本語入力との組み合わせでは一部ショートコードの補完が意図通りに動作しないケースを発見。英語入力時は正常動作。<code>emojiCompletionEnabled: false</code> で完全無効化が最も安定との結論</li>
+          <li><strong>ネスト無効化の確認:</strong> サブエージェントから子サブエージェントを生成しようとするプロンプトを試したところ「CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH が 0 のため生成できません」というエラーが返ることを確認。<code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=2</code> で 2 段ネストが機能</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">「Fable 5 有料化後 2 日間で分かったこと — 実測コストと最適化戦略まとめ」</div>
-      <div class="card-meta"><span class="badge">Cost</span><span class="card-source">Qiita — 2026.07.21</span></div>
+      <div class="card-title">「エージェントコストの現実 — 月 $500 超え体験談と、Qiita でバズった節約テクまとめ」</div>
+      <div class="card-meta"><span class="badge">Cost</span><span class="card-source">Qiita — 2026.07.22</span></div>
       <div class="card-body">
-        <p>Fable 5 有料化（7/20）から 2 日間の実測データをもとにコスト管理戦略をまとめた Qiita 記事が急速にブックマークを伸ばしている。</p>
+        <p>AI エージェントの「コストの壁」が話題になる中、Qiita で実コスト体験談と節約テクを集めた記事が急速にブックマークを伸ばしている。</p>
         <ul>
-          <li><strong>実測データ:</strong> 著者（個人開発エンジニア）の場合、Fable 5 を 1 日 4〜6 時間（設計・コードレビュー中心）利用して $6〜9/日のクレジット消費。月換算 $180〜270 となり「Pro $20/月 + クレジット」モデルのコストが読みにくいと指摘</li>
-          <li><strong>最適化戦略 1「入力トークン削減」:</strong> コンテキストに渡すコードをトリミングする前処理スクリプトを Claude Code 自身に書かせ、入力トークンを平均 42% 削減（実測）</li>
-          <li><strong>最適化戦略 2「3 段階モデル運用」:</strong> ① Haiku 4.5 でアウトライン作成 → ② Sonnet 4.6 で実装 → ③ Fable 5 で最終品質チェックのみ。1 セッションの Fable 5 消費が 1/5 以下に</li>
-          <li><strong>API vs サブスク:</strong> ヘビーユーザーは API 直接利用（入力 $10/M・出力 $50/M）と Pro サブスクの合計コストを比較すると API 単体が有利になるケースがある。著者は 7 月末に切り替える予定と追記</li>
+          <li><strong>体験談の傾向:</strong> スタートアップエンジニアで Claude Code をフル活用すると月 $200–$500 に達するケースが複数報告。「サブスク $20 + クレジット $400」という予想外の出費に戸惑う声が多い。v2.1.217 のサブエージェント制御強化で「今後は制御できる」という前向きな声も</li>
+          <li><strong>人気節約テク 1「プロンプトキャッシング徹底活用」:</strong> CLAUDE.md や長い文脈を Session 開始時に一度ロードし、以降の呼び出しでキャッシュヒットを最大化。入力コストを最大 90% 削減できる事例の紹介。具体的な実装コードも公開</li>
+          <li><strong>人気節約テク 2「モデル tier 使い分けスクリプト」:</strong> タスクのタイプ（「ファイル検索」「コード生成」「設計レビュー」）をキーワードで分類し、自動的に Haiku/Sonnet/Fable を選択するシェルスクリプト。OSS として公開されたところ 1 日で GitHub Stars 800 超えを達成</li>
+          <li><strong>Anthropic への要望:</strong> 「月次クレジット消費のダッシュボード」「タスク別のコスト可視化」「チームへのクレジット割り当て機能」が最多要望として列挙されており、Qiita コメント欄からも Anthropic 公式アカウントへの投稿が広がっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">「MCP で Claude に社内ツール群を接続する — 設計の落とし穴 7 選」</div>
-      <div class="card-meta"><span class="badge">Architecture</span><span class="card-source">Zenn — 2026.07</span></div>
+      <div class="card-title">「Qiushi Engine が Claude Code を抜いた日 — 日本の開発者はどう向き合うか」</div>
+      <div class="card-meta"><span class="badge">Opinion</span><span class="card-source">Zenn — 2026.07.22</span></div>
       <div class="card-body">
-        <p>社内システムと Claude Code の MCP 接続を実装した際のアーキテクチャ上の落とし穴を実体験から 7 つ列挙した記事。バックグラウンドエージェントの自動化が広がる中、実務での信頼性確保の観点から参照数が伸びている。</p>
+        <p>ResearchClawBench での Qiushi Engine 首位獲得ニュースを受け、Zenn で日本の開発者視点からの考察記事が公開された。</p>
         <ul>
-          <li><strong>落とし穴 1「ツール命名の曖昧さ」:</strong> MCP ツール名が汎用的（例：<code>create_record</code>）だと Claude がどの DB に書き込むか誤判断するケースが発生。ツール名にシステム名を必ず含める（例：<code>crm_create_record</code>）ことを推奨</li>
-          <li><strong>落とし穴 2「長時間ツール呼び出し」:</strong> 今回の v2.1.216 で「2 分超で自動バックグラウンド化」が入ったが、それ以前は 30 分超のバッチ処理ツールを呼ぶとセッションが完全にフリーズしていた。タイムアウト設計と進捗通知ツールの整備が必須</li>
-          <li><strong>落とし穴 3「権限スコープの肥大化」:</strong> 便利さを優先して全ツールを 1 つの MCP サーバーに詰め込むと、Claude が不要なツールをランダム呼び出しするリスクが増す。用途別・システム別に MCP サーバーを分割し CLAUDE.md で使用ツールを明示的に指定する構成を推奨</li>
-          <li><strong>その他:</strong> エラーレスポンスの標準化・認証トークンの更新設計・同時呼び出し数の制限・テスト環境の分離など実務知見を網羅</li>
+          <li><strong>著者の立場:</strong> 「自律科学研究エージェントは日常開発ツールとは別カテゴリ」という整理を前提に、「コーディング用途では Claude Code が依然として最も成熟したツール」という結論を提示</li>
+          <li><strong>日本語対応の比較:</strong> Qiushi Engine は現時点で英語・中国語の研究論文への対応に特化しており、日本語のコードベース・コメント・ドキュメントへの対応は未確認。Claude Code の日本語理解能力との差が日本の開発者には重要な評価軸と指摘</li>
+          <li><strong>「ベンチマークの次」への展望:</strong> 「科学研究エージェントが一般化した場合、研究論文のコードを自動的に実装・検証できるエージェントが開発ツールチェーンに統合されるシナリオ」を考察。「今は遠い話に見えるが 2 年前の Claude Code も同様だった」という視点が支持を集めた</li>
+          <li><strong>Qiita タグ動向:</strong> #AIエージェント #ClaudeCode #ChineseAI のタグが同日に急上昇。日本語技術コミュニティでも国際 AI 競合への関心が高まっている</li>
         </ul>
       </div>
     </div>
@@ -275,65 +274,75 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/21）の主要トピック:</strong> <strong>中東:</strong> 米・イラン 10 日目爆撃・フーシがサウジアラビア海上封鎖を宣言・ヨルダンにドローン攻撃・停戦提案（10 日間）が提示 / <strong>通商:</strong> トランプ政権がカナダへの追加 50% 関税を発動（ワイン・ホッケースティック・セメント等、30 日後発効） / <strong>英国:</strong> バーナム首相が正式に政権運営を開始 / <strong>インド:</strong> シッキム州の水力発電トンネル崩落（死者 10 名・行方不明 17 名） / <strong>国連:</strong> 世界道路安全に関するハイレベル会合（NY）開催
+      <strong>本日（7/22）の主要トピック:</strong> <strong>中東:</strong> 米・イラン 11 日目（イランがヨルダン・バーレーン米軍基地をドローン攻撃、米兵死者累計 18 名、戦費 $375 億） / <strong>外交:</strong> トランプ大統領がレバノン大統領 Aoun と会談（17 年ぶりの訪米）・イスラエルとの恒久和平へ / <strong>ウクライナ:</strong> ゼレンスキーが Syrskyi 司令官を解任・Drapatyi を新司令官に / <strong>米国内政:</strong> HHS がカリフォルニア・ミネソタへの Medicaid 資金 $10 億を保留 / <strong>気象:</strong> 熱帯性暴風雨 Bertha がガルフ岸を北上・被害は限定的の見込み
     </div>
     <div class="card">
-      <div class="card-title">米・イラン衝突 10 日目 — フーシがサウジ海上封鎖を宣言、停戦提案（10 日間）が提示されるも双方の溝は深い</div>
-      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/07/21/us-iran-war-trump-hormuz-houthis.html">CNBC</a> · <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">GlobalSecurity.org</a> · <a href="https://www.foxnews.com/live-news/iran-war-trump-israel-hormuz-oil-july-21-2026">Fox News</a> · <a href="https://www.justsecurity.org/148592/early-edition-july-21-2026/">Just Security</a> — 2026.07.21</span></div>
+      <div class="card-title">米・イラン衝突 11 日目 — イランがヨルダン・バーレーンの米軍基地をドローンで攻撃・死者累計 18 名・戦費 $375 億</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://kyma.com/news/military/2026/07/22/day-11-of-u-s-strikes-on-iran/">KYMA</a> · <a href="https://www.cbsnews.com/live-updates/iran-war-trump-us-troops-killed-wounded-jordan-base/">CBS News</a> · <a href="https://www.cnbc.com/2026/07/22/us-iran-war-trump-hormuz-.html">CNBC</a> · <a href="https://www.npr.org/2026/07/22/nx-s1-5902843/us-iran-updates">NPR</a> — 2026.07.22</span></div>
       <div class="card-body">
-        <p>米国は 7 月 21 日（火）で 10 日連続のイランへの軍事攻撃を継続中。中東全体に緊張が拡大し、イエメンのフーシ派がサウジアラビアへの海上封鎖を宣言する新展開が加わった。</p>
+        <p>米軍は 7 月 22 日（水）も 11 日目となるイランへの軍事攻撃を継続。最新の一斉攻撃は約 75 分間にわたって実施され、一方でイランは米軍拠点への逆攻撃を本格化させた。</p>
         <ul>
-          <li><strong>最新の爆撃状況:</strong> 米中央軍（CENTCOM）はイランの軍事指揮センター・海上能力・ミサイル・ドローン発射拠点・防空システムを標的に継続攻撃。イラン側はホルムズ海峡でオマーン沖のタンカーを攻撃した</li>
-          <li><strong>米軍被害:</strong> 過去 2 週間で米兵約 100 名が負傷（大半は軽度の脳震盪、96% が任務復帰済み）。ヨルダンへのイラン製ドローン・ミサイル攻撃（5 機・3 発、全撃墜）も報告されており、米軍施設への波及が懸念された</li>
-          <li><strong>フーシ派の動向:</strong> イエメンのフーシ派がサウジアラビアへの海上封鎖を宣言。紅海に続く新たな航路封鎖の脅威となっており、サウジ・UAE のエネルギー輸出に影響が及ぶ可能性が出てきた</li>
-          <li><strong>トランプ大統領の警告:</strong> 「イランが核能力の開発を検討しているあらゆる施設を攻撃する」と声明。核施設への拡大を示唆する発言として中東外交関係者が強い懸念を示している</li>
-          <li><strong>停戦提案:</strong> ヨルダン・オマーンを仲介とする「10 日間停戦」案がワシントン・テヘランの双方に提示された。国連安保理の緊急会合も要請されているが、米・露・中の対立から決議には至っておらず、停戦成立の見通しは不透明</li>
+          <li><strong>CENTCOM 発表の攻撃目標:</strong> イランの軍事作戦センター・海上能力・航空機格納庫・ドローン保管施設・軍事ロジスティクスインフラ。「ホルムズ海峡での商船 30 隻超への攻撃能力をさらに低下させる」ことが目的とされる</li>
+          <li><strong>イランの逆攻撃:</strong> イランの陸軍がヨルダンの Al Azraq 空軍基地（宿泊施設・設備倉庫に被弾）とバーレーンの Sheikh Isa 空軍基地（設備倉庫・航空機整備格納庫に被弾）をドローンで攻撃。初めてバーレーンへの攻撃が確認されたことで中東全域への地理的拡大が鮮明になった</li>
+          <li><strong>米軍の人的被害:</strong> 国防総省は 7/22 にイラン軍によるヨルダン基地攻撃で死亡した第 4 の米兵を特定したと発表。イラク での死者も加えた累計死者数は 18 名に増加。負傷者は 100 名超（大半は軽度の脳震盪、96% 任務復帰済み）</li>
+          <li><strong>トランプの追加警告:</strong> トランプ大統領が Truth Social に「今後イランがホルムズ海峡で船を攻撃するたびに米国はブリッジ 1 本または発電所 1 基を爆撃・破壊する」と投稿。民間インフラへの攻撃を示唆する内容として国際的な懸念が広がっている</li>
+          <li><strong>戦費と議会:</strong> ヘグセス国防長官が議会で「イランとの戦争の費用は約 $375 億」と証言。米軍のイラン攻撃を承認する特別軍事支出法案の審議が上院で開始されたが、与野党の溝は深い</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">トランプ政権、カナダへの追加 50% 関税を発動 — ワイン・ホッケースティック・セメントが対象、30 日後発効</div>
-      <div class="card-meta"><span class="badge">Trade</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/21/trump-imposes-50-us-tariffs-on-some-canadian-goods-citing-discrimination">Al Jazeera</a> · <a href="https://finance.yahoo.com/economy/policy/articles/trump-50-tariff-canada-warning-142813119.html">Yahoo Finance</a> · <a href="https://www.cnn.com/2026/07/21/economy/trump-tariffs-who-is-next">CNN Business</a> — 2026.07.21</span></div>
+      <div class="card-title">ゼレンスキー、ウクライナ軍司令官 Syrskyi を解任 — 43 歳の Drapatyi を後任に指名・全国で抗議運動が発火点に</div>
+      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">Source: <a href="https://www.hngn.com/articles/272248/20260722/zelensky-sacks-military-chief-syrskyi-after-days-protests-names-drapatyi-successor.htm">HNGN</a> · <a href="https://thehill.com/policy/international/5983647-zelensky-fires-general-syrskyi-military/">The Hill</a> · <a href="https://www.nbcnews.com/world/ukraine/ukraines-zelenskyy-fires-commander-chief-protests-major-rift-rcna588159">NBC News</a> — 2026.07.21–22</span></div>
       <div class="card-body">
-        <p>トランプ大統領は 7 月 21 日、1930 年関税法第 338 条に基づく大統領令 3 件に署名し、カナダからの特定輸入品に追加 50% 関税を課した。30 日後の発効となる見込み。</p>
+        <p>ゼレンスキー大統領は 7 月 21 日（火）、ウクライナ軍参謀総長のオレクサンドル・スィルスキー（Syrskyi）大将を解任し、ミハイロ・ドラパティー（Drapatyi）中将（43 歳）を後任に指名した。</p>
         <ul>
-          <li><strong>対象品目:</strong> ワイン・アルコール飲料・ホッケースティック・セメント・米国車・チーズが対象として報道。「カナダが米国の自動車・アルコール・チーズに対して差別的措置を取っている」ことを根拠として列挙した</li>
-          <li><strong>法的根拠:</strong> 最高裁が今年の大規模な「包括関税」を差し止めた後、政権が 1930 年法 §338（特定国の差別的貿易措置への対抗手段）を活用。最高裁の差し止め判決を迂回した形だとの分析が有力</li>
-          <li><strong>カナダの反応:</strong> カーニー首相は「USMCA の直接違反」と声明。カナダは「議論を深める準備はある」としつつ報復措置の検討を示唆。米国への輸出でカナダ経済に依存する産業界には強い懸念が広がっている</li>
-          <li><strong>世界へのシグナル:</strong> CNN Business は「最高裁差し止め後に第三の手段を見つけた政権のメッセージは他のすべての貿易相手国への警告だ」と分析。EU・日本・韓国でも § 338 を使った追加関税発動リスクを再評価する動きが出始めた</li>
-          <li><strong>経済影響:</strong> 米国内の建設業（セメント）・飲食業（ワイン）への物価上昇が懸念される。イランとのエネルギーコスト上昇（ガス $4/ガロン）との重なりで消費者物価への複合圧力となるリスクも</li>
+          <li><strong>解任の背景:</strong> ゼレンスキーが先立ってミハイロ・フェドロフ国防相（テクノロジー主導の軍事改革で知名度を持ち、Syrskyi ら上級司令官と対立）を解任したことが引き金となり、全国規模の抗議運動に発展。6 日間の反発の末、Syrskyi の解任という形で収束する展開になった</li>
+          <li><strong>Syrskyi の評価:</strong> バフムートでの粘り強い防衛と 2024 年のクルスク越境攻撃を主導した一方、部下への厳格な扱いと高い消耗率でも知られていた。「前線での不必要な損耗」を批判する現役将兵の声が SNS で拡散したことが抗議運動を加速させた</li>
+          <li><strong>Drapatyi の人物像:</strong> 43 歳と比較的若く、「現在の戦争で実戦経験を積んだ世代の軍指導者」として注目される。陸軍地上部隊司令官としての実績を持ち、現場との信頼関係が評価されている</li>
+          <li><strong>政治的文脈:</strong> フェドロフ国防相解任→抗議運動→Syrskyi 解任という連鎖は、ゼレンスキーの軍・政治双方に対するコントロールの難しさを示す。西側同盟国（特に米国・英国）は軍の指揮系統の安定化を求めており、迅速な引き継ぎ体制の確立が急務</li>
+          <li><strong>前線への影響:</strong> 東部戦線での消耗戦が続く中での司令官交代であり、Drapatyi の下での戦略転換の有無が焦点。新司令官は「防衛優先・攻勢は慎重に」という方針を示唆しており、クルスク越境以来の攻勢路線からのシフトとなる可能性がある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">アンディ・バーナム首相、正式政権運営スタート — 北部イングランド優先・AI 雇用政策の転換を打ち出す初週</div>
-      <div class="card-meta"><span class="badge">UK Politics</span><span class="card-source">Source: <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-july-21st-050033169.html">Yahoo News</a> · <a href="https://morningstaronline.co.uk/article/world-brief-july-21-2026">Morning Star</a> — 2026.07.21</span></div>
+      <div class="card-title">レバノン大統領 Aoun がトランプと会談 — 17 年ぶりの訪米・イスラエルとの「恒久的敵対関係終了」を宣言</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/politics/2026/07/21/trump-pledges-support-lebanon-peace-efforts-with-israel-clashes-continue/">Washington Post</a> · <a href="https://www.timesofisrael.com/meeting-trump-in-dc-aoun-says-lebanon-will-end-hostility-with-israel-forever/">Times of Israel</a> · <a href="https://www.axios.com/2026/07/21/lebanon-israel-trump-aoun-hezbollah">Axios</a> — 2026.07.21</span></div>
       <div class="card-body">
-        <p>英国のアンディ・バーナム新首相が 7 月 21 日（火）に正式な政権運営を開始した。月曜日（7/20）にダウニング街 10 番地の鍵を受け取り、火曜日から内閣会議・議会質疑が本格化している。</p>
+        <p>レバノンのジョセフ・アウン大統領が 7 月 21 日にワシントンでトランプ大統領と会談した。レバノン首脳の訪米は約 17 年ぶり。</p>
         <ul>
-          <li><strong>政権の優先課題:</strong> 北部イングランドへの経済投資・製造業復興・公共交通整備（グレーター・マンチェスター市長時代の無料トラム導入実績を全国展開する方針）を政権の核心に据えることを改めて表明</li>
-          <li><strong>AI 政策の転換軸:</strong> スターマー前政権の「AI 安全サミット（ブレッチリーパーク）路線」は基本継承するが、AI が製造業・物流・コールセンターの雇用に与える影響を最優先の政策課題として位置づける姿勢を示した。Anthropic・OpenAI の英国拠点との政策対話の形が変わる可能性がある</li>
-          <li><strong>Reform UK との対立構図:</strong> ナイジェル・ファラージュ率いる Reform UK（現野党第 2 党）は「北部への投資より移民・治安」を訴え対立。バーナム政権が有権者の「経済不安」を政策で解消できるかが政権の命運を握る</li>
-          <li><strong>経済・外交の船出:</strong> 政権開始早々に米・イラン衝突によるエネルギーコスト上昇とカナダ関税ショックが重なる難しい船出。英国は対米貿易交渉での立場を慎重に整理する必要があり、外務相が今週中に訪米予定と報じられている</li>
+          <li><strong>会談の焦点:</strong> 6 月 26 日に署名された米・レバノン・イスラエルの 3 者枠組み合意の実施促進。南レバノンでのイスラエル軍撤退・ヒズボラの武装解除・レバノン軍による南部展開という 3 要素が柱</li>
+          <li><strong>Aoun の歴史的発言:</strong> 「レバノンはイスラエルとの敵対関係を永遠に終わらせる」と明言。国内ではヒズボラの反発が確実であり、この発言がレバノン国内政治に与える影響が注目されている</li>
+          <li><strong>具体的進展:</strong> Aoun の訪米と同日、レバノン軍が 3 者合意で設定された「パイロットゾーン」の一つ、南部 Zawtar al-Gharbiyeh へイスラエル軍撤退後に入域。実地での進展が外交と連動する形になった</li>
+          <li><strong>トランプの支援策:</strong> 米国航空会社がレバノンへの直行便を再開できるよう指示する方針を表明。観光・ビジネス往来の正常化を支援するシグナルとして位置づけた。また「ヒズボラから聞きたいと言われたら話す」と述べ、対話の余地も示唆</li>
+          <li><strong>イラン衝突との関係:</strong> 米・イランの軍事衝突が激化する中での米・レバノン接近は、中東での「分断戦略」（親イラン勢力の孤立化）の一環として読める。ヒズボラはイランの支援を受けており、レバノン正規軍との分断が目的との見方が有力</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">インド・シッキム州の水力発電トンネルが崩落 — ガス爆発が原因、死者 10 名・行方不明 17 名</div>
-      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-july-21-2026">Morning Star</a> · <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-july-21st-050033169.html">Yahoo News</a> — 2026.07.21</span></div>
-      <div class="card-body"><p>インド北東部シッキム州サマルドン村の水力発電プロジェクト建設中のトンネル内で、7 月 20 日（月）にガス爆発が発生しトンネルが崩落した。少なくとも 10 名が死亡し、17 名が依然として行方不明のまま救助活動が続いている。爆発は建設作業中に突発的に発生したとみられ、当局が原因調査を進めている。シッキム州は 2023 年の洪水でも大規模な被害を受けており、インフラ建設の安全管理に改めて注目が集まっている。</p></div>
+      <div class="card-title">熱帯性暴風雨 Bertha、ガルフ岸を北上 — ビーチ閉鎖・最大 4 フィートの高潮も、ハリケーン格上げは見込まれず</div>
+      <div class="card-meta"><span class="badge">Weather</span><span class="card-source">Source: <a href="https://www.tpr.org/environment/2026-07-22/tropical-storm-bertha-moves-along-the-gulf-coast-but-damage-is-expected-to-be-limited">TPR</a> · <a href="https://www.ksat.com/news/national/2026/07/22/beaches-closed-as-tropical-storm-bertha-crawls-along-the-gulf-coast/">KSAT</a> · <a href="https://www.tampabay.com/hurricane/2026/07/22/wednesday-july-22-national-hurricane-centers-update-on-tropical-storm-bertha/">Tampa Bay Times</a> — 2026.07.22</span></div>
+      <div class="card-body">
+        <p>熱帯性暴風雨 Bertha がメキシコ湾岸を西から東に向かってゆっくりと移動中。フロリダパンハンドルからルイジアナにかけての広域で熱帯性暴風雨警報が発令されている。</p>
+        <ul>
+          <li><strong>現在の勢力:</strong> 持続風速 50 mph（約 80 km/h）。ハリケーン（74 mph 以上）には達しない見込みと国立ハリケーンセンター（NHC）が予測。スピードが遅いため沿岸への影響が長引く懸念がある</li>
+          <li><strong>主な脅威:</strong> 最大 4 フィート（約 1.2 m）の高潮がガルフ岸低地を脅かす。またセンターから離れた場所での突風（gusty winds）も注意が必要。フロリダ・アラバマ・ミシシッピ・ルイジアナのビーチ・桟橋・公園が閉鎖中、一部の低地道路も通行止め</li>
+          <li><strong>New Orleans への影響:</strong> メトロニューオーリンズとポンチャートレイン湖周辺に警報が継続。カトリーナ以来の投資で整備された防洪壁の実力が問われる形だが、今回の規模では越水リスクは低いとされる</li>
+          <li><strong>気象専門家の見立て:</strong> コロラド州立大学の Phil Klotzbach 上席研究員は「現在の予報モデルは Bertha がハリケーンに発達しないことを示している」とコメント。被害は「局所的で限定的」との見通し</li>
+          <li><strong>ハリケーンシーズンの文脈:</strong> 今年の大西洋ハリケーンシーズンについて、気象予報機関は例年より活発な活動を予測していた。Bertha の動向はシーズン全体の見通しを再評価する材料としても注目されている</li>
+        </ul>
+      </div>
     </div>
     <div class="card">
-      <div class="card-title">国連、世界道路安全に関するハイレベル会合をニューヨークで開催 — 2030 年までに交通事故死者数半減を目標に</div>
-      <div class="card-meta"><span class="badge">UN</span><span class="card-source">Source: <a href="https://www.who.int/news-room/events/detail/2026/07/20/default-calendar/un-high-level-meeting-on-improving-global-road-safety">WHO</a> — 2026.07.21</span></div>
-      <div class="card-body"><p>国連は 7 月 21 日（火）、ニューヨークの国連本部で「世界道路安全向上に関するハイレベル会合」を開催した。テーマは「2030 年までに交通事故による死者・負傷者を半減させるというコミットメントの実施加速と拡大」。世界では年間 135 万人以上が交通事故で死亡しており（WHO 推計）、この数字を 2030 年までに 67.5 万人以下に削減するための各国の取り組みと資金支援の状況を点検する場となる。AI を活用した交通安全システム（自動速度検知・危険運転パターン検出）の国際標準化についても議論が予定されており、tech 企業の関与が注目されている。</p></div>
+      <div class="card-title">米 HHS、カリフォルニア・ミネソタへの Medicaid 資金 $10 億を保留 — RFK Jr. 長官が発表</div>
+      <div class="card-meta"><span class="badge">US Policy</span><span class="card-source">Source: <a href="https://www.justsecurity.org/148692/early-edition-july-22-2026/">Just Security</a> — 2026.07.22</span></div>
+      <div class="card-body"><p>米国保健福祉省（HHS）がカリフォルニア州とミネソタ州への Medicaid 資金の合計 $10 億を保留すると発表した。ロバート・F・ケネディ・ジュニア長官が表明。連邦政府と民主党州知事との間の政策対立が医療費支出を巡って先鋭化した格好であり、州政府は法的対抗措置を検討しているとみられる。両州は以前の政権下で拡張された Medicaid プログラムへの参加者が多く、保留が長期化した場合は数十万人規模の低所得者医療保険に影響が及ぶ可能性がある。</p></div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年7月21日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: TECHi · Gradually · Releasebot · Visual Studio Magazine · MightyBot · ClaudeWorld · Mezha.net · ChatGPT AI Hub · OpenAI Blog · CNBC · GlobalSecurity.org · Fox News · Just Security · Al Jazeera · Yahoo Finance · CNN Business · Yahoo News · Morning Star · WHO · Zenn · Qiita</p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月22日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: GitHub Releases · Claude Code Changelog on X · DevelopersIO · South China Morning Post · TechTimes · NxCode · The Hacker News · OpenAI Daybreak · KYMA · CBS News · CNBC · NPR · HNGN · The Hill · NBC News · Washington Post · Times of Israel · Axios · TPR · KSAT · Tampa Bay Times · Just Security · Zenn · Qiita</p>
 </footer>
 </body>
 </html>

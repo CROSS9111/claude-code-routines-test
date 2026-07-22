@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code 2.1.216 リリース（エージェント権限の引き継ぎ修正・/fork・/resume ピッカー）/ OpenAI Codex Micro キーボード発売 / 米・イラン 10 日目爆撃（フーシが サウジ封鎖を宣言・停戦提案）/ トランプ政権、カナダに追加 50% 関税（ワイン・ホッケースティック・セメント）/ バーナム英首相が正式始動</p>
+  <p class="date">2026年7月21日（火）&nbsp;|&nbsp;<a href="../index.html">最新版</a>&nbsp;|&nbsp;<a href="../2026-07-20/index.html">前版（7/20）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#devjp">Qiita / Zenn</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/21）の最重要:</strong> Claude Code <strong>v2.1.216</strong> がリリース。バックグラウンドエージェントの権限引き継ぎバグを修正し、<strong>/fork コマンド</strong>（現セッションを背景コピーしつつメインを継続）と <strong>/resume ピッカー</strong>（削除済みを含む過去セッション一覧からの再開）が追加された。MCP ツール呼び出しが 2 分超で自動バックグラウンド移行する機能も同梱。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.216 — エージェント権限の引き継ぎ修正・/fork・/resume ピッカー・MCP 自動バックグラウンド化が一挙投入</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: TECHi · Gradually · Releasebot — 2026.07.21</span></div>
+      <div class="card-body">
+        <p>Claude Code の新バージョン 2.1.216 がリリースされ、バックグラウンドエージェントの信頼性向上とセッション管理の利便性が大幅に改善された。</p>
+        <ul>
+          <li><strong>権限引き継ぎ修正:</strong> 再開されたバックグラウンドエージェントが引き継ぎ元のプロンプトとツール制限を正しく復元するよう修正</li>
+          <li><strong>/fork コマンド:</strong> 現在の会話を新しいバックグラウンドセッションにコピーしつつ、メインスレッドで作業継続可能</li>
+          <li><strong>/resume ピッカー:</strong> 削除済みを含む過去セッションをファジー検索で再開できるUI</li>
+          <li><strong>MCP ツール自動バックグラウンド:</strong> MCP ツール呼び出しが 2 分を超えると自動的にバックグラウンド移行</li>
+          <li><strong>WebSearch 上限設定:</strong> セッション単位の WebSearch 呼び出し上限（デフォルト 200 回）を追加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">VS Code 1.128 — Claude が Agent モードでブラウザタブ制御・OS 級ショートカット・エンタープライズテレメトリを取得</div>
+      <div class="card-meta"><span class="badge">Integration</span><span class="card-source">Source: Visual Studio Magazine — 2026.07.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ブラウザタブ制御:</strong> Agent モードが VS Code 組み込み Simple Browser を開閉・スクリーンショット取得可能に</li>
+          <li><strong>OS 級グローバルショートカット:</strong> VS Code がフォーカスを持たない状態でも Claude への入力パネルを呼び出せる</li>
+          <li><strong>エンタープライズテレメトリ管理:</strong> 管理者が組織単位でツール使用ログの送信先を設定可能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code、Auto モードが Bedrock・Vertex AI・Foundry で一般提供 — デフォルト ON に</div>
+      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">Source: Anthropic Release Notes via Releasebot — 2026.07</span></div>
+      <div class="card-body">
+        <p>Claude Code の Auto モードが Amazon Bedrock・Google Vertex AI・Microsoft Azure Foundry でオプトイン不要の標準提供に。タスクの複雑度に応じてモデルを自動選択しコスト効率を最大化する。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI、Codex Micro キーボードを正式発売 — Work Louder 製・$230</div>
+      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: Mezha.net — 2026.07</span></div>
+      <div class="card-body"><p>OpenAI が専用キーボードメーカー Work Louder との共同開発製品「Codex Micro」を正式発売。AI コーディングエージェントの「艦隊管理」に特化したハードウェアで、$230。専用ボタンで Codex エージェントへのタスク投入・進捗確認・並列エージェントの切り替えが物理操作で行える。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 ファミリー（Sol / Terra / Luna）GA — Sol Ultra が Codex に展開</div>
+      <div class="card-meta"><span class="badge">Model</span><span class="card-source">Source: ChatGPT AI Hub · OpenAI Blog — 2026.07</span></div>
+      <div class="card-body"><p>GPT-5.6 ファミリーが各ティアへの展開を続けている。Sol（上位）・Terra（中位）・Luna（下位）の 3 モデル構成。Codex ユーザーの 80.6% が「30 分超の人間作業に相当するリクエストを少なくとも 1 件行った」という内部データも公開。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Antigravity CLI と Gemini 3.5 Flash — Workspace 統合でビジネスプロセス自動化路線を鮮明化</div>
+      <div class="card-meta"><span class="badge">Google</span><span class="card-source">Source: MightyBot · ClaudeWorld — 2026.07</span></div>
+      <div class="card-body"><p>Google は Gemini CLI 終了・Antigravity CLI 統合後、「コーディング性能での正面競合」から「Workspace 統合による企業ワークフロー自動化」への軸足移動を明確にしている。Gmail・Drive・Meet・Calendar へのネイティブアクセスを持つ企業向けエージェント CLI として設計。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「/fork が来た！ バックグラウンドに分岐させながらメインを続ける使い方を共有しよう」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.21</span></div>
+      <div class="card-body"><p>v2.1.216 で追加された /fork コマンドについて、早速ユースケース共有スレッドが立った。「AB テスト実装」「ドキュメント生成並走」が人気ユースケースとして浮上。「fork 先は CLAUDE.md を引き継ぐがメインで追加した指示は引き継がれない」という実践 Tip が上位コメントに。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Fable 5 有料化 2 日目の実態レポート — 1 日いくら使ったか報告スレッド」</div>
+      <div class="card-meta"><span class="badge">Trending</span><span class="card-source">Reddit r/ClaudeAI — 2026.07.21</span></div>
+      <div class="card-body"><p>「Fable 5 は朝の設計レビューと夜のコードレビューだけに使い、実装は Sonnet 4.6 に任せる」戦略が 1,200 以上のアップボートを獲得。ヘビーユーザーの 1 日コストは $6〜12 という報告が集まった。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「Claude Code が r/Codex の 3 倍のコミュニティ規模に — ツール人気の格差はなぜ生まれたか」</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/LocalLLaMA — 2026.07.21</span></div>
+      <div class="card-body"><p>r/ClaudeCode の週間アクティブ 4,200 人超 vs r/Codex の 1,200 人という格差の分析スレッド。Claude Code の CLI・CLAUDE.md・フック・スラッシュコマンドによる「カスタマイズのしろ」の多さが Tips 共有文化を生んでいるとの指摘が上位。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米・イラン 10 日目 + カナダ 50% 関税 + バーナム英首相」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews — 2026.07.21</span></div>
+      <div class="card-body"><p>米・イラン衝突 10 日目・カナダ追加 50% 関税・バーナム英首相正式始動の 3 大トピックが朝から同時急上昇。「フーシがサウジ封鎖を宣言した上に USMCA が実質空文化しようとしている」というコメントが数千のアップボートを集めた。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code v2.1.216 の /fork・/resume を早速試してみた」</div>
+      <div class="card-meta"><span class="badge">TryOut</span><span class="card-source">Zenn — 2026.07.21</span></div>
+      <div class="card-body"><p>本日リリースの Claude Code v2.1.216 を即日で検証。/fork コマンドの実挙動・/resume ピッカーの UI・権限引き継ぎ修正の確認・WebSearch 上限設定の動作確認をスクリーンショット付きで解説。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Fable 5 有料化後 2 日間で分かったこと — 実測コストと最適化戦略まとめ」</div>
+      <div class="card-meta"><span class="badge">Cost</span><span class="card-source">Qiita — 2026.07.21</span></div>
+      <div class="card-body"><p>Fable 5 有料化から 2 日間の実測データ。個人開発者で 1 日 4〜6 時間利用すると $6〜9/日。「① Haiku でアウトライン → ② Sonnet で実装 → ③ Fable 5 で最終チェックのみ」の 3 段階モデル運用で Fable 5 消費を 1/5 以下に抑える戦略が好評。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">「MCP で Claude に社内ツール群を接続する — 設計の落とし穴 7 選」</div>
+      <div class="card-meta"><span class="badge">Architecture</span><span class="card-source">Zenn — 2026.07</span></div>
+      <div class="card-body"><p>社内システムと Claude Code の MCP 接続を実装した際のアーキテクチャ上の落とし穴を 7 つ列挙。「ツール命名の曖昧さ」「長時間ツール呼び出し」「権限スコープの肥大化」などを実体験から解説。バックグラウンドエージェント自動化が広がる中で参照数が急増中。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン衝突 10 日目 — フーシがサウジ海上封鎖を宣言、停戦提案（10 日間）提示</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: CNBC · GlobalSecurity.org · Fox News — 2026.07.21</span></div>
+      <div class="card-body"><p>米国は 10 日連続のイランへの軍事攻撃を継続。フーシ派がサウジアラビアへの海上封鎖を宣言。ヨルダン・オマーンを仲介とする「10 日間停戦」案が双方に提示されたが、成立見通しは不透明。米兵約 100 名が負傷、大半は任務復帰済み。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">トランプ政権、カナダへの追加 50% 関税を発動 — ワイン・ホッケースティック・セメントが対象</div>
+      <div class="card-meta"><span class="badge">Trade</span><span class="card-source">Source: Al Jazeera · Yahoo Finance · CNN Business — 2026.07.21</span></div>
+      <div class="card-body"><p>1930 年関税法第 338 条に基づく大統領令 3 件に署名、30 日後発効。最高裁の包括関税差し止めを迂回した手法として注目。カーニー首相は「USMCA の直接違反」と声明し報復措置を示唆。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">アンディ・バーナム首相、正式政権運営スタート — 北部イングランド優先・AI 雇用政策の転換を打ち出す</div>
+      <div class="card-meta"><span class="badge">UK Politics</span><span class="card-source">Source: Yahoo News · Morning Star — 2026.07.21</span></div>
+      <div class="card-body"><p>英国のアンディ・バーナム新首相が 7/21 に正式な政権運営を開始。北部イングランドへの経済投資と製造業復興を核心に据え、AI が製造業・物流の雇用に与える影響を最優先課題とする姿勢を示した。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">インド・シッキム州の水力発電トンネルが崩落 — 死者 10 名・行方不明 17 名</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: Morning Star · Yahoo News — 2026.07.21</span></div>
+      <div class="card-body"><p>シッキム州サマルドン村の水力発電プロジェクト建設中のトンネル内でガス爆発が発生しトンネルが崩落。少なくとも 10 名が死亡し、17 名が行方不明のまま救助活動が続いている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">国連、世界道路安全に関するハイレベル会合をニューヨークで開催 — 2030 年までに交通事故死者数半減を目標に</div>
+      <div class="card-meta"><span class="badge">UN</span><span class="card-source">Source: WHO — 2026.07.21</span></div>
+      <div class="card-body"><p>7/21 に国連本部で「世界道路安全向上に関するハイレベル会合」を開催。年間 135 万人以上が交通事故で死亡する現状を 2030 年までに半減させるための各国取り組みを点検。AI を活用した交通安全システムの国際標準化についても議論。</p></div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月21日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: TECHi · Gradually · Releasebot · Visual Studio Magazine · MightyBot · ClaudeWorld · Mezha.net · ChatGPT AI Hub · OpenAI Blog · CNBC · GlobalSecurity.org · Fox News · Just Security · Al Jazeera · Yahoo Finance · CNN Business · Yahoo News · Morning Star · WHO · Zenn · Qiita</p>
+</footer>
+</body>
+</html>
