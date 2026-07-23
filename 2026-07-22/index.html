@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月22日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.217 リリース（サブエージェント同時実行上限・予算上限バグ修正・絵文字補完）/ Qiushi Engine が ResearchClawBench 首位で Claude Code を抜く / GitHub Copilot Enterprise に自律エージェントモード / 米・イラン 11 日目・イランが Jordan・Bahrain 基地を攻撃・米兵死者 18 名 / ゼレンスキーが司令官解任・Drapatyi を後任に / 熱帯性暴風雨 Bertha がガルフ岸を北上</p>
+  <p class="date">2026年7月22日（水）&nbsp;|&nbsp;<a href="../2026-07-21/index.html">前版（7/21）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#devjp">Qiita / Zenn</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/22）の最重要:</strong> Claude Code <strong>v2.1.217</strong> がリリース（7/21 深夜）。サブエージェントの同時実行上限（デフォルト 20）追加・<strong>--max-budget-usd がバックグラウンドサブエージェントを正しく停止しないバグを修正</strong>・サブエージェントがネストしたサブエージェントをデフォルトで生成しなくなる変更・プロンプト入力での絵文字ショートコード補完・トランスクリプト書き込み失敗時の警告が投入された。コスト暴走リスクの大幅低減として評価が高い。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.217 — サブエージェント同時実行上限・予算上限バグ修正・絵文字補完・トランスクリプト警告</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: GitHub Releases · Claude Code Changelog on X · DevelopersIO — 2026.07.21–22</span></div>
+      <div class="card-body">
+        <p>Claude Code v2.1.217 がリリースされ、サブエージェントの暴走防止に特化した複数の変更が一挙投入された。</p>
+        <ul>
+          <li><strong>サブエージェント同時実行上限:</strong> デフォルト 20。<code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS</code> で変更可能</li>
+          <li><strong>--max-budget-usd バグ修正:</strong> バックグラウンドサブエージェントが正しく停止しないバグを修正</li>
+          <li><strong>ネストしたサブエージェントのデフォルト無効化:</strong> <code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code> で制御可能</li>
+          <li><strong>絵文字ショートコード補完:</strong> <code>:heart:</code> → ❤️。<code>emojiCompletionEnabled</code> でオフ可能</li>
+          <li><strong>トランスクリプト書き込み失敗警告:</strong> ディスクフル等でサイレントに失敗していたケースを警告表示</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code の Mac アプリが iOS シミュレータ対応</div>
+      <div class="card-meta"><span class="badge">Feature</span><span class="card-source">Qiita · Anthropic — 2026.07</span></div>
+      <div class="card-body"><p>Claude Code の Mac アプリ版に、iOS アプリを Xcode シミュレータで実行しながら Claude との会話画面を横に並べて表示できる機能が追加された。macOS 版のみ対応。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、Claude Design を発表 — デザイン・プロトタイプ・スライドをチャット形式で作成</div>
+      <div class="card-meta"><span class="badge">Product</span><span class="card-source">Qiita · Anthropic — 2026.07.22</span></div>
+      <div class="card-body"><p>新サービス「Claude Design」を発表。デザイン・プロトタイプ・スライドをチャット形式で Claude と対話しながら作成できる。OpenAI Canvas・Google Gemini for Workspace と直接競合する領域。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> 中国の <strong>Qiushi Engine</strong> が ResearchClawBench 首位。GitHub Copilot Enterprise が自律エージェントモードを正式投入。OpenAI Daybreak が Codex Security と GPT-5.5-Cyber で防衛側 AI を拡充。
+    </div>
+    <div class="card">
+      <div class="card-title">中国 Qiushi Engine が ResearchClawBench で首位 — Claude Code を抜く</div>
+      <div class="card-meta"><span class="badge">Research</span><span class="card-source">South China Morning Post — 2026.07</span></div>
+      <div class="card-body"><p>浙江大学主導チームの「Qiushi Engine」が自律科学研究ベンチマーク ResearchClawBench で首位。1位 Qiushi Engine → 2位 Open Science Desktop → 3位 Claude Code。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot Enterprise、自律エージェントモードを正式投入</div>
+      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">TechTimes · NxCode — 2026.07</span></div>
+      <div class="card-body"><p>プランナー＋スペシャリスト構造の自律エージェントモード（人間承認必須）。Fleet モード・Autopilot モードを搭載。Project Polaris（GPT-4後継）と組み合わせ予定。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Daybreak — Codex Security と GPT-5.5-Cyber で防衛側 AI を拡充</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">The Hacker News · OpenAI — 2026.06–07</span></div>
+      <div class="card-body"><p>GPT-5.5-Cyber（脆弱性発見とパッチ支援）・Codex Security プラグイン・Patch the Planet イニシアチブを追加。Anthropic Project Glasswing と対照的な戦略。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「v2.1.217 でコスト暴走が治った！ --max-budget-usd が本当に機能するように」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.22</span></div>
+      <div class="card-body"><p>「起きたら $50 消費していたことがあった」という声が多数。CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=5 の設定例が共有された。絵文字補完への反応は「誰が頼んだ？」と「細かい UX が体験を変える」に二分。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「エージェントはコストの壁にぶつかった — 月 $500–$2,000 が現実に」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/LocalLLaMA — 2026.07.22</span></div>
+      <div class="card-body"><p>月換算 $300–$900 のクレジット消費が報告。人気節約戦略：プロンプトキャッシング・モデル tier 使い分け・Haiku→Sonnet→Fable の 3 段階。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「Qiushi Engine が Claude Code を抜いた件 — ベンチマークの読み方を考える」</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/programming · r/MachineLearning — 2026.07.22</span></div>
+      <div class="card-body"><p>「特化型ベンチマーク首位 ≠ 最も有用なツール」という冷静な見方が多数。Claude Code コミュニティは「使い慣れたツールを離れる理由にならない」と落ち着いた反応。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米・イラン 11 日目 + ゼレンスキーが司令官を解任 + 熱帯暴風雨 Bertha」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/ukraine · r/weather — 2026.07.22</span></div>
+      <div class="card-body"><p>イランがヨルダン・バーレーン基地をドローン攻撃、米兵累計 18 名死亡。ゼレンスキーが Syrskyi を解任し Drapatyi を後任に。熱帯暴風雨 Bertha がガルフ岸北上中。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code v2.1.217 の新機能を速攻で試した」</div>
+      <div class="card-meta"><span class="badge">TryOut</span><span class="card-source">Zenn / DevelopersIO — 2026.07.22</span></div>
+      <div class="card-body"><p>--max-budget-usd の修正確認・同時実行上限の動作確認・絵文字補完の日本語入力での挙動・ネスト無効化の確認を実測。日本語入力との絵文字補完は一部不具合あり。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">「エージェントコストの現実 — 月 $500 超え体験談と節約テクまとめ」</div>
+      <div class="card-meta"><span class="badge">Cost</span><span class="card-source">Qiita — 2026.07.22</span></div>
+      <div class="card-body"><p>プロンプトキャッシング徹底活用・モデル tier 使い分けスクリプト（GitHub Stars 800+）・Anthropic への要望（ダッシュボード・チームクレジット割当）を紹介。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Qiushi Engine が Claude Code を抜いた日 — 日本の開発者はどう向き合うか」</div>
+      <div class="card-meta"><span class="badge">Opinion</span><span class="card-source">Zenn — 2026.07.22</span></div>
+      <div class="card-body"><p>Qiushi Engine は英語・中国語論文特化で日本語対応未確認。「科学研究エージェントと日常コーディングツールは別カテゴリ」と整理。#AIエージェント #ClaudeCode タグが急上昇。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/22）の主要トピック:</strong> 米・イラン 11 日目（イランがヨルダン・バーレーン米軍基地をドローン攻撃、米兵累計 18 名死亡、戦費 $375 億） / レバノン大統領 Aoun がトランプと会談（17 年ぶり訪米） / ゼレンスキーが Syrskyi 解任・Drapatyi を新司令官に / 米 HHS がカリフォルニア・ミネソタの Medicaid $10 億保留 / 熱帯性暴風雨 Bertha がガルフ岸北上
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン衝突 11 日目 — イランがヨルダン・バーレーン基地を攻撃・死者累計 18 名・戦費 $375 億</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">KYMA · CBS News · CNBC · NPR — 2026.07.22</span></div>
+      <div class="card-body"><p>米軍が 11 日目のイラン攻撃を継続。イランはヨルダンの Al Azraq 空軍基地とバーレーンの Sheikh Isa 空軍基地をドローンで逆攻撃（初のバーレーン攻撃）。米兵累計死者 18 名。トランプが「ホルムズで船が攻撃されるたびにブリッジ・発電所を爆撃する」と警告。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ゼレンスキー、Syrskyi 司令官を解任 — 43 歳の Drapatyi を後任に</div>
+      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">HNGN · The Hill · NBC News — 2026.07.21–22</span></div>
+      <div class="card-body"><p>フェドロフ国防相解任→抗議運動→Syrskyi 解任という連鎖。Drapatyi は「防衛優先・攻勢は慎重に」方針を示唆。クルスク越境以来の攻勢路線からのシフトとなる可能性。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">レバノン大統領 Aoun がトランプと会談 — 17 年ぶり訪米・イスラエルとの恒久和平へ</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Washington Post · Times of Israel · Axios — 2026.07.21</span></div>
+      <div class="card-body"><p>「レバノンはイスラエルとの敵対関係を永遠に終わらせる」と Aoun が明言。南部 Zawtar al-Gharbiyeh にレバノン軍が入域。米航空会社のレバノン直行便再開を指示。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">熱帯性暴風雨 Bertha、ガルフ岸を北上 — 最大 4 フィートの高潮・ハリケーン格上げなし</div>
+      <div class="card-meta"><span class="badge">Weather</span><span class="card-source">TPR · KSAT · Tampa Bay Times — 2026.07.22</span></div>
+      <div class="card-body"><p>持続風速 50 mph。ハリケーンには達しない見込み（NHC）。フロリダ・アラバマ・ミシシッピ・ルイジアナのビーチが閉鎖中。被害は「局所的で限定的」との見通し。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">米 HHS、カリフォルニア・ミネソタへの Medicaid 資金 $10 億を保留</div>
+      <div class="card-meta"><span class="badge">US Policy</span><span class="card-source">Just Security — 2026.07.22</span></div>
+      <div class="card-body"><p>RFK Jr. 長官が発表。連邦政府と民主党州知事との医療費支出をめぐる対立。長期化すれば数十万人規模の低所得者医療保険に影響の可能性。</p></div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月22日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: GitHub Releases · Claude Code Changelog on X · DevelopersIO · South China Morning Post · TechTimes · NxCode · The Hacker News · OpenAI Daybreak · KYMA · CBS News · CNBC · NPR · HNGN · The Hill · NBC News · Washington Post · Times of Israel · Axios · TPR · KSAT · Tampa Bay Times · Just Security · Zenn · Qiita</p>
+</footer>
+</body>
+</html>
