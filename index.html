@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月23日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月24日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code に /code-review バックグラウンド実行・WebSearch 上限（200）・パーミッション永続化 / OpenAI Presence 企業向けエージェント基盤を正式公開・Codex が 7/24 大型発表を予告 / 欧州山火事で消防士 3 名死亡・1.2 万人避難 / 米・イラン 12 日目・ホーシー派がサウジ油槽船を攻撃・原油 $94</p>
-  <p class="date">2026年7月23日（木）&nbsp;|&nbsp;<a href="2026-07-22/index.html">前版（7/22）</a></p>
+  <p class="subtitle">Claude Opus 5 正式リリース（$5/$25・1M コンテキスト・GitHub Copilot 対応）/ OpenAI Codex に GPT-Live 音声制御が到来 / 米・イラン 13 日目・イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復 / インド・アッサム州洪水で死者 50 名・70 万人避難 / スペイン山火事で国家非常事態宣言</p>
+  <p class="date">2026年7月24日（金）&nbsp;|&nbsp;<a href="2026-07-23/index.html">前版（7/23）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -70,45 +70,48 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/23）の最重要:</strong> Claude Code に <strong>/code-review バックグラウンド実行</strong>・<strong>WebSearch/サブエージェントのセッション全体上限（デフォルト 200）</strong>・<strong>パーミッションルールのリポジトリルート保存</strong>が追加。また <strong>/deep-research は手動呼び出し専用</strong>に変更され、Claude が自律的に起動することがなくなった。コスト制御とワークフロー安定性を両立する連続アップデートが続く。
+      <strong>本日（7/24）の最重要:</strong> <strong>Claude Opus 5</strong>（claude-opus-5）が正式リリース。1M コンテキスト・$5/$25 per Mtok（Opus 4.8 と同価格）で Fable 5 レベルの性能を実現。GitHub Copilot でも即日利用可能。あわせて Claude Code <strong>v2.1.219</strong> が投入され、Opus 5 がデフォルト Opus モデルに昇格、バグ修正も複数含まれる。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code — /code-review バックグラウンド化・/deep-research 手動専用化・WebSearch 上限・パーミッション永続化</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://claudelog.com/claude-code-changelog/">ClaudeLog</a> · <a href="https://claudefa.st/blog/guide/changelog">ClaudeFast</a> — 2026.07.22–23</span></div>
+      <div class="card-title">Claude Opus 5 正式リリース — 1M コンテキスト・$5/$25・GitHub Copilot 即日対応・エージェント性能が大幅向上</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-opus-5">Anthropic</a> · <a href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/">GitHub Changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.24</span></div>
       <div class="card-body">
-        <p>Claude Code の最新アップデートが複数の実用的な改善を一括投入。コスト管理・UX・アクセシビリティ・Windows 互換性にわたる変更が含まれる。</p>
+        <p>Anthropic の最上位モデル第 5 世代が正式リリース。前日まで予測市場が「7/24 リリース確率 88%」と過熱していた通り、日本時間早朝に発表された。</p>
         <ul>
-          <li><strong>/code-review バックグラウンド実行:</strong> バックグラウンドのサブエージェントとして実行されるようになり、会話フローを占有しなくなった。PR が開くたびにエージェントチームがバグを探す設計だが、1 回約 $25 のコストが議論を呼んでいる</li>
-          <li><strong>/deep-research 手動専用化:</strong> 手動呼び出し時のみ起動するよう変更。意図しない長時間・高コストのセッションを防止</li>
-          <li><strong>WebSearch・サブエージェントのセッション全体上限:</strong> 1 セッションあたり各 200 が上限に（環境変数で変更可能）。v2.1.217 の同時実行上限（20）と組み合わせて縦・横の両方を制御できる</li>
-          <li><strong>パーミッションルールのリポジトリルート保存:</strong> 許可・拒否設定がセッションをまたいで引き継がれる。チームリポジトリでは承認済みルールを共有可能</li>
-          <li><strong>スクリーンリーダー改善:</strong> <code>--ax-screen-reader</code> モードで単語・行削除時の読み上げアナウンスを追加</li>
-          <li><strong>Windows パス修正:</strong> <code>C:\Users\unicorn</code> のような <code>\u</code> プレフィックスセグメントが CJK 文字に化けるバグを修正</li>
-          <li><strong>アーティファクトの MCP ライブデータ:</strong> 公開アーティファクトが閲覧時に MCP コネクターを呼び出せるようになりリアルタイムダッシュボードが構築可能に</li>
+          <li><strong>モデル ID:</strong> <code>claude-opus-5</code>（claude.ai・API・Amazon Bedrock・Google Cloud・Microsoft Foundry で即日利用可能）</li>
+          <li><strong>価格:</strong> $5/$25 per Mtok（入力/出力）。Opus 4.8 から据え置き。Fable 5 レベルの性能を半額で提供</li>
+          <li><strong>コンテキスト:</strong> 1M トークン（デフォルト上限・最大値ともに 1M）。最大出力 128k トークン</li>
+          <li><strong>性能:</strong> 複数ツール協調・コード変更の回帰検証・長期エージェントタスクで特に優秀。「不要な実行オーバーヘッドを減らす」最適化が施されている</li>
+          <li><strong>知識カットオフ:</strong> 2026 年 5 月</li>
+          <li><strong>GitHub Copilot:</strong> 複雑な長時間コーディングタスク向けに即日提供。Fable 5 GA（6/9）・Opus 4.8 GA（5/28）に続く Copilot 統合</li>
+          <li><strong>Claude Max / Claude Pro:</strong> Max の最強モデルとして昇格。Pro ではオプション選択可能</li>
+          <li><strong>安全性:</strong> 高被害サイバーコンテンツへの強化ガードレールを搭載</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code、Plan モード改善と auto モードの安全強化</div>
-      <div class="card-meta"><span class="badge">UX</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://claudefa.st/blog/guide/changelog">ClaudeFast</a> — 2026.07</span></div>
+      <div class="card-title">Claude Code v2.1.219 — Opus 5 をデフォルトに昇格・サブエージェント引き継ぎ修正・管理コンソール強化</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually</a> — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Plan モード:</strong> 計画フェーズと実行フェーズの境界が明確になり、ユーザーが確認・修正してから実行承認するフローがスムーズに</li>
-          <li><strong>trust ハンドリングの安全化:</strong> MCP サーバー経由の信頼境界を明確化し、意図しないスコープへの権限昇格を防止</li>
-          <li><strong>セッション再開の強化:</strong> 中断セッション再開時のコンテキスト復元不具合を修正</li>
-          <li><strong>コンパクション改善:</strong> 長いセッションでの文脈圧縮精度が向上し、重要な決定事項が保持されるよう改善</li>
+          <li><strong>Opus 5 デフォルト化:</strong> claude-opus-5 が Claude Code のデフォルト Opus モデルに。Opus 4.7 は fast モードから削除。/fast は Opus 5・Opus 4.8 に適用</li>
+          <li><strong>サブエージェント引き継ぎ修正:</strong> Claude エージェントに戻ったときにサブエージェントが無言で停止して最初からやり直す問題を修正。作業内容が引き継がれるように</li>
+          <li><strong>メモリ/CPU 回帰修正:</strong> コンテキスト使用量インジケーターがターンごとにトランスクリプト全体を再解析する問題を修正</li>
+          <li><strong>Windows バックグラウンドエージェントの PATH 修正:</strong> デーモンから古い PATH を継承する問題を解消</li>
+          <li><strong>新設定キー:</strong> sandbox.network.strictAllowlist（未許可ホストをプロンプトなしで拒否）・DirectoryAdded フック・workflowSizeGuideline</li>
+          <li><strong>管理コンソール強化:</strong> 価値・使用状況の 2 タブが追加。アクティブ開発者数・セッション数・上位コマンドを日次更新で表示</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code、46% の「最も愛されるツール」シェア — Codex・Cursor・Copilot を引き離す実態調査</div>
-      <div class="card-meta"><span class="badge">Survey</span><span class="card-source">Source: <a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb">DEV Community (Reddit 500+ コメント分析)</a> — 2026.07</span></div>
+      <div class="card-title">Claude Code が VS Code 1.128 でマルチチャット対応 — 並行セッションの比較・管理が可能に</div>
+      <div class="card-meta"><span class="badge">IDE</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>シェア:</strong> Claude Code 46%・Cursor 19%・GitHub Copilot 9%（市場投入 8 ヶ月でトップ）</li>
-          <li><strong>最大差別化要因:</strong> MCP 対応。Codex が MCP 非対応のため外部ツール連携ワークフローでは Claude Code が事実上の選択肢</li>
-          <li><strong>「品質は高いが使いにくい」の逆説:</strong> Reddit の総意として「Claude Code は品質高・コスト/上限で使いにくい、Codex はやや品質低・実際に使える」が定着</li>
-          <li><strong>/code-review $25 問題:</strong> 「最初から正しいコードを出さないのにレビューにさらに払う意味は？」という批判が上位コメントを獲得</li>
+          <li><strong>マルチチャット:</strong> 1 セッション内で複数のチャットを持てるようになり、異なるアプローチを並行比較したり作業を並列実行したりできる</li>
+          <li><strong>ブラウザタブ制御:</strong> エージェントワークフロー拡張でブラウザタブの操作・切り替えをエージェントが直接行えるように</li>
+          <li><strong>OS レベルショートカット:</strong> Claude Code セッションへの切り替えを OS 標準キーで行えるよう統合</li>
+          <li><strong>エンタープライズテレメトリ管理:</strong> 管理者がテレメトリ収集ポリシーを一元設定できるオプションを追加</li>
         </ul>
       </div>
     </div>
@@ -121,41 +124,43 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> OpenAI が <strong>Presence</strong>（エンタープライズ向けエージェント統合基盤）を正式公開（BBVA・SoftBank・IAG が先行採用）。<strong>Codex エンジニアが 7/24 の大型発表を予告</strong>しコミュニティが沸騰。Codex + ChatGPT の月間 MAU が <strong>800 万人突破</strong>。Project Camellia（ジョージア州 3.2GW データセンター・$300 億超）も正式発表。
+      <strong>競合ハイライト:</strong> Tibo Sottiaux が予告した 7/24 発表は<strong>ChatGPT Voice（GPT-Live）の Codex・Work デスクトップアプリ統合</strong>だった。完全二重音声で話しながら作業指示できるようになり、AI コーディングに「音声ファースト」の波。<strong>Codex Micro</strong>（$230 キーボード）も話題継続。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Presence 正式公開 — 企業向けエージェント統合基盤・FDE チームが展開支援</div>
-      <div class="card-meta"><span class="badge">Platform</span><span class="card-source">Source: <a href="https://openai.com/index/introducing-openai-presence/">OpenAI</a> · <a href="https://venturebeat.com/orchestration/openai-unveils-presence-a-new-platform-that-lets-enterprises-launch-and-manage-realtime-voice-agents-and-chatbots">VentureBeat</a> · <a href="https://siliconangle.com/2026/07/22/openai-introduces-presence-help-enterprises-build-ai-agents">SiliconANGLE</a> · <a href="https://www.theregister.com/ai-and-ml/2026/07/22/openai-tries-the-consulting-path-with-presence-charging-enterprises-boots-on-the-ground-prices-to-deploy-agents/5275867">The Register</a> — 2026.07.22</span></div>
+      <div class="card-title">OpenAI Codex が GPT-Live 音声制御を発表 — フルデュプレックス音声でエージェントを「しゃべりながら」操作</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/">TechCrunch</a> · <a href="https://venturebeat.com/orchestration/agentic-coding-goes-hands-free-as-openai-brings-gpt-lives-full-duplex-voice-control-to-codex-and-chatgpt-on-the-desktop">VentureBeat</a> · <a href="https://explainx.ai/blog/chatgpt-voice-desktop-gpt-live-codex-work-july-2026">ExplainX</a> · <a href="https://9to5mac.com/2026/07/23/openai-updating-chatgpt-desktop-app-with-gpt-voice-for-talking-through-work/">9to5Mac</a> — 2026.07.24</span></div>
       <div class="card-body">
-        <p>企業の知識ベース・SOP・承認アクション・ガードレール・エスカレーションルールを統合。OpenAI の企業戦略が「モデル API 提供」から「完全管理型エージェント展開」へシフト。</p>
+        <p>Tibo Sottiaux の「feeling codexy」投稿の正体は GPT-Live の Codex 統合だった。7/8 に公開されたフルデュプレックス音声モデル GPT-Live が ChatGPT デスクトップアプリ（macOS・Windows）に組み込まれ、Codex・ChatGPT Work と連携して動作する。</p>
         <ul>
-          <li><strong>展開モデル:</strong> セルフサービス API なし。OpenAI FDE チームと認定 SI が主導（OpenAI Deployment Company 子会社が担当）</li>
-          <li><strong>先行採用:</strong> BBVA メキシコ・SoftBank 日本語エージェント・IAG 傘下 Retail Insurance Australia</li>
-          <li><strong>The Register の視点:</strong> 「コンサルティングの道を選んだ。AI の民主化イメージと矛盾」と批評</li>
-          <li><strong>Anthropic との対比:</strong> Anthropic が個人・チーム向けに広く提供する方向性に対し、OpenAI は大企業向け高付加価値統合展開を事業の柱に据える戦略の違いが鮮明</li>
+          <li><strong>フルデュプレックス:</strong> GPT-Live は話しながら聞きながら作業できる。従来の「話す→止まる→答える」ターン型と異なり、連続会話中にエージェントが動き続ける</li>
+          <li><strong>マルチユーザー実演:</strong> OpenAI 発表動画では Jason Liu・Guinness Chen の 2 名が同じ ChatGPT デスクトップセッションに別々の音声指示を発し、エージェントが統合実行するデモを公開</li>
+          <li><strong>macOS Appshots 連携:</strong> 画面共有（alt テキスト含む）を通じてエージェントが画面内容を参照しながら作業</li>
+          <li><strong>対象プラン:</strong> Plus・Pro・Business・Edu・Enterprise（macOS・Windows で順次展開）</li>
+          <li><strong>コミュニティの反応:</strong> 開発者ブロガー @avihacker「生涯で AGI に最も近いと感じた瞬間」。AI ジャーナリスト @ChrisGPT「個人 AGI に一歩近づいた」</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex が 7/24 大型発表を予告 — 800 万ユーザー突破・GPT-5.6 Sol Ultra 搭載が濃厚</div>
-      <div class="card-meta"><span class="badge">Upcoming</span><span class="card-source">Source: <a href="https://explainx.ai/blog/openai-codex-july-24-reveal-tibo-sottiaux-teaser-2026">ExplainX</a> · <a href="https://thenewstack.io/gpt-5-6-codex-user-surge/">The New Stack</a> · <a href="https://linearb.io/dev-interrupted/podcast/openai-codex-thibault-sottiaux-agentic-autonomy">LinearB</a> — 2026.07.23</span></div>
+      <div class="card-title">OpenAI Codex Micro キーボード（$230）— 「エージェントキー」搭載の専用デバイスが話題</div>
+      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> · <a href="https://dataconomy.com/2026/07/16/codex-micro-keyboard-230-usd-ai-coding/">Dataconomy</a> · <a href="https://mezha.net/eng/bukvy/3d0e6ca2_openai_launches_codex/">Mezha</a> — 2026.07.16</span></div>
       <div class="card-body">
-        <p>Codex プロダクトリード Tibo Sottiaux が「Unbelievable excited for what's coming together. Tomorrow is feeling codexy」と X に投稿し、7/24（金）の大型発表を示唆。</p>
         <ul>
-          <li><strong>ユーザー規模:</strong> Codex + ChatGPT Work の合計 MAU が 800 万人突破。7/9 の GPT-5.6 Sol・Terra・Luna GA 以降需要急増</li>
-          <li><strong>有力説:</strong> GPT-5.6 Sol Ultra の Codex 搭載・Linux ネイティブアプリ・音声インターフェース統合・使用制限の完全撤廃など</li>
-          <li><strong>Claude Code コミュニティの反応:</strong> 「Codex が MCP 対応を発表したら Claude Code の最大優位性が消える」という警戒感が r/ClaudeCode で急上昇</li>
+          <li><strong>概要:</strong> Work Louder との共同設計。AI コーディングエージェントの管理に特化した専用キーボード</li>
+          <li><strong>エージェントキー:</strong> ライトアップ LED でエージェントのステータスをリアルタイム表示</li>
+          <li><strong>カスタマイズ機能:</strong> よく使うアクション用のコマンドキー・ワークフローのジョイスティック・エージェントの推論レベルを調整するダイヤル</li>
+          <li><strong>位置づけ:</strong> GPT-Live の音声統合とともに「手・目・耳でエージェントを操る」ハードウェアエコシステムへの布石との見方も</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Project Camellia — ジョージア州に 3.2GW データセンター・$300 億超投資・2028 年から稼働</div>
-      <div class="card-meta"><span class="badge">Infrastructure</span><span class="card-source">Source: <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-23-2026">Build Fast With AI</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a> — 2026.07.22</span></div>
+      <div class="card-title">AI コーディングエージェント 2026 年版ランキング — Claude Code が首位・Codex が音声で差別化・Cursor 健在</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://claude-world.com/articles/ai-coding-models-tools-july-2026/">ClaudeWorld</a> — 2026.07</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>規模:</strong> ジョージア州 1,400 エーカーに 3.2GW（米国内 AI データセンターとして過去最大規模）。2028〜2032 年に段階稼働</li>
-          <li><strong>地域貢献:</strong> コミュニティベネフィット $8,000 万 + ジョージア州学生向け Codex クレジット $7,100 万</li>
-          <li><strong>Stargate との関係:</strong> Microsoft・SoftBank・OpenAI 共同出資 Stargate の第 2 拠点。テキサス州第 1 フェーズに続く展開</li>
+          <li><strong>Claude Code（首位）:</strong> MCP エコシステム・マルチエージェント調整・アーティファクト統合で評価。Opus 5 投入で性能面の優位性をさらに拡大</li>
+          <li><strong>Codex（2 位）:</strong> GPT-Live 音声統合・800 万 MAU・ハードウェアエコシステムで「体験の差別化」。MCP 非対応が唯一の弱点</li>
+          <li><strong>Cursor（3 位）:</strong> IDE 統合体験と補完精度でニッチ維持。Claude Sonnet 5 バックエンドで性能底上げ</li>
+          <li><strong>GitHub Copilot（4 位）:</strong> Opus 5 対応により性能が大幅向上。Workspace インテグレーションとリポジトリ統合の深さが差別化</li>
         </ul>
       </div>
     </div>
@@ -168,43 +173,45 @@
       <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「/code-review が $25 かかる件 — 最初から正しく書けないならレビューに払う意味は？」</div>
-      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.23</span></div>
+      <div class="card-title">r/ClaudeCode「Opus 5 キタ！予測市場が当たった — 日本では早朝に発表・サブエージェントバグ修正が最高」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>批判派:</strong> 「Claude Code が生成したコードを Claude Code がレビューするためにさらにお金がかかるのは本末転倒」「$25 は初級エンジニア 1 時間分」</li>
-          <li><strong>支持派:</strong> 「シニアエンジニア 1 時間は $150 以上。それより安い」「品質保証の追加レイヤーは正当」</li>
-          <li><strong>バックグラウンド実行の評価:</strong> 「会話を埋めずに動くのは便利。PR 後に別タスクを始められる」と UX 面では概ね好評</li>
-          <li><strong>コスト管理との組み合わせ:</strong> --max-budget-usd でレビュー予算を月次制限内に抑える実践例が共有された</li>
+          <li><strong>価格維持への評価:</strong> 「$5/$25 で Fable 5 相当の性能はコスパ最高」という声が多数。予測市場 88% を「完璧に的中」と称賛</li>
+          <li><strong>サブエージェント修正が絶賛:</strong> 「バグ修正の中でコレが一番デカい。途中でブレインが消えるストレスが解消された」という声が上位</li>
+          <li><strong>GitHub Copilot 統合への反応:</strong> 「Copilot 経由で Opus 5 を使う方が API 直より料金が安い場合がある」という実例共有が話題に</li>
+          <li><strong>fast モードの変化:</strong> 「Opus 4.7 が fast から外れたのは残念。Opus 5 fast は課金ティアが必要」という議論も</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「Codex が明日（7/24）何か発表するらしい — MCP 対応なら Claude Code に影響大では」</div>
-      <div class="card-meta"><span class="badge">Trending</span><span class="card-source">Reddit r/ClaudeCode · r/codex — 2026.07.23</span></div>
+      <div class="card-title">r/ClaudeCode「Codex の 7/24 発表は音声だった — MCP 対応なしで Claude Code のアドバンテージは継続」</div>
+      <div class="card-meta"><span class="badge">Relief</span><span class="card-source">Reddit r/ClaudeCode · r/codex — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>MCP 対応への警戒感:</strong> 「MCP エコシステムに投資してきたユーザーは離れにくいが、新規獲得は Codex に流れるかも」という分析が注目</li>
-          <li><strong>Claude Code 支持派の反論:</strong> 「Anthropic は MCP の仕様策定者。実装品質では常に一歩リードできる」</li>
-          <li><strong>全体の空気感:</strong> 「一晩で終わるわけではない」という冷静な意見が最多票だが、翌日の発表を「待って様子を見る」という投稿が相次ぐ</li>
+          <li><strong>安堵の声:</strong> 「MCP 発表じゃなくてよかった。音声は面白いがワークフロー統合の深さでは Claude Code が上」</li>
+          <li><strong>音声派の反論:</strong> 「音声でエージェントを指示できるのは実際めちゃくちゃ便利。Claude Code にも音声が来てほしい」</li>
+          <li><strong>r/codex の雰囲気:</strong> 「GPT-Live の Codex 統合はいい感じ。テキストだけ vs 音声+テキストで体験が大きく変わる」</li>
+          <li><strong>次の焦点:</strong> 「次の Claude Code の大型発表は何か？Anthropic も音声か Cowork 強化か」というスレッドが勃興</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA「OpenAI Presence は AI のコンサル化 — 大企業には売れるがオープン性と逆行」</div>
-      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Reddit r/LocalLLaMA · r/MachineLearning — 2026.07.23</span></div>
+      <div class="card-title">r/MachineLearning「Codex に GPT-Live — 音声でコードエージェントに指示する時代が来た。AGI はこれか？」</div>
+      <div class="card-meta"><span class="badge">Debate</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「コンサル化」批判:</strong> 「SaaS ではなくコンサルビジネス。AI の民主化と逆行」が最多票</li>
-          <li><strong>ローカル LLM の再評価:</strong> 「同等性能のオープンモデルをオンプレ展開する方がコスト効率が高い日が来る」（Llama 4・Qwen 3 の進化を踏まえた評価）</li>
-          <li><strong>Anthropic との比較:</strong> 「Anthropic は個人から大企業まで幅広いレイヤーに直接アクセスできる強みがある」という市場分析が注目</li>
+          <li><strong>「AGI に近い」派:</strong> 「音声で複数エージェントに指示して並行作業させる体験は 5 年前には想像できなかった。これが AGI でなくても AGI 的だ」</li>
+          <li><strong>批判派:</strong> 「プロダクトデモは演出が巧い。実際の開発でボイス入力が有効なのはハンズフリー状況に限られる」</li>
+          <li><strong>Claude Code との比較:</strong> 「Codex は音声・ハードウェアエコシステムで体験の優位。Claude Code は MCP・マルチエージェント調整で機能の優位。棲み分けが進む」</li>
+          <li><strong>市場分析:</strong> 「2026 後半はコーディングエージェント戦争から体験エコシステム戦争に移行しつつある」という見立てが注目</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「欧州の山火事が拡大・米・イラン 12 日目」— 地政学スレッドと災害スレッドが同時トレンド入り</div>
-      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/europe · r/geopolitics — 2026.07.23</span></div>
-      <div class="card-body"><p>欧州南部の山火事（消防士 3 名死亡、1.2 万人避難、スペイン・グアダラハラ 3.2 万 ha 焼失）と米・イラン 12 日目（ホーシー派がサウジ油槽船攻撃・原油 $94・停戦提案）が同時にトレンド入り。r/europe では「気候変動なしにこの規模の山火事は起きない」という議論が 3,000 コメント超。r/geopolitics では「紅海封鎖にエネルギー価格が直結した初の事例」という分析が注目された。</p></div>
+      <div class="card-title">r/worldnews「米・イラン 13 日目・インド洪水 70 万人避難・スペイン国家非常事態」— 複数の大型ニュースが同時進行</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews · r/geopolitics · r/india — 2026.07.24</span></div>
+      <div class="card-body"><p>r/worldnews では米・イラン衝突 13 日目（イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復、トランプが「大規模攻撃」を示唆）、インド・アッサム州の大規模洪水（死者 50 名・70 万人避難・900 村水没）、スペイン山火事での国家非常事態宣言が同時にトレンド入り。r/india では「ブラマプトラ川氾濫は例年のことだが規模が年々拡大」という気候変動スレッドが 2,000 コメント超。</p></div>
     </div>
   </section>
 
@@ -215,35 +222,36 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">「Claude Agent SDK × Amazon Bedrock AgentCore Runtime 実装入門 — MCP・スキル・セッション管理を 1 記事で」</div>
-      <div class="card-meta"><span class="badge">Tutorial</span><span class="card-source">Qiita / Zenn — 2026.07.23</span></div>
+      <div class="card-title">「Claude Opus 5 速報レビュー — Fable 5 比較・価格維持の衝撃・エージェントタスクで何が変わったか」</div>
+      <div class="card-meta"><span class="badge">Review</span><span class="card-source">Qiita / Zenn — 2026.07.24（Opus 5 リリース直後の速報記事）</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>概要:</strong> AgentCore の MCP サポート・Agent Skills・セッション管理（長期記憶・コンテキスト永続化）を Claude Agent SDK から呼び出すコード例を網羅</li>
-          <li><strong>読者層:</strong> AWS 利用の中堅〜大企業エンジニア。エンタープライズ要件（ガードレール・ロギング・権限管理）を満たす設計パターンを解説</li>
-          <li><strong>今回のアップデートとの連携:</strong> パーミッション永続化と AgentCore 権限管理の連携方法についてコメント欄で議論が始まり、続報記事が予告されている</li>
+          <li><strong>価格・性能の評価:</strong> 「$5/$25 で Fable 5 相当は Claude Code ユーザーにとって神アップデート。長時間エージェントタスクのコスト試算が一変する」</li>
+          <li><strong>エージェント性能の変化:</strong> 複数ツール協調・回帰検証・長期マルチステップ実行での精度向上を検証。特に「不要な実行ステップを自動省略する最適化」が実用的</li>
+          <li><strong>1M コンテキストの活用:</strong> 大規模リポジトリ全体をコンテキストに入れての解析レポート生成・設計ドキュメントの一括レビューなどユースケースを紹介</li>
+          <li><strong>GitHub Copilot 経由の活用:</strong> Copilot Workspace + Opus 5 の組み合わせでエンタープライズユーザーがコスト管理しやすくなる点を解説</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">「AI エージェントのための Docker Sandboxes 実践入門 — Claude Code のサブエージェント上限と組み合わせる」</div>
-      <div class="card-meta"><span class="badge">DevOps</span><span class="card-source">Qiita — 2026.07.23</span></div>
+      <div class="card-title">「Claude Code v2.1.219 のサブエージェント引き継ぎ修正 — どんな問題だったか・何が直ったか」</div>
+      <div class="card-meta"><span class="badge">Bug Fix</span><span class="card-source">Zenn — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Docker Sandboxes:</strong> エージェントがコードを実行する際にホストシステムへの影響を遮断するコンテナ化実行環境</li>
-          <li><strong>Claude Code との組み合わせ:</strong> <code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=5〜10</code> の設定下で各サブエージェントがコンテナ内実行する構成を解説。「上限があるからこそサンドボックス設計の恩恵が計算できる」</li>
-          <li><strong>実測値:</strong> コンテナ起動オーバーヘッド 0.5〜2 秒。「同時実行数が増えるほど相対的に無視できる」と結論</li>
+          <li><strong>修正内容の解説:</strong> エージェントが途中でリセットしてサブエージェントの成果物が消える問題は、長時間タスクで頻発していた。今回の修正で成果物が引き継がれるようになった</li>
+          <li><strong>影響範囲:</strong> /loop で長時間動かすスクリプト・バックグラウンドの /code-review サブエージェント・worktree 分離での並行実行すべてが恩恵を受ける</li>
+          <li><strong>メモリ/CPU 修正の詳細:</strong> ターンごとにトランスクリプト全体を再スキャンしていた設計上の問題。長時間セッションで顕著だった。修正後は差分のみ解析する</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">「プロンプトキャッシングとパーミッション永続化で Claude Code の月コストを半分にした話」</div>
-      <div class="card-meta"><span class="badge">Cost</span><span class="card-source">Zenn — 2026.07.23</span></div>
+      <div class="card-title">「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」人気記事が Opus 5 対応で更新</div>
+      <div class="card-meta"><span class="badge">Guide</span><span class="card-source">Qiita (<a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">fuyunoki</a>) — 2026.07.24 更新</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>具体的な削減効果:</strong> 月 $280 → $145 に。キャッシュ戦略 40% 削減 + パーミッション永続化 5% + WebSearch 上限設定 10% の合算</li>
-          <li><strong>プロンプトキャッシング:</strong> CLAUDE.md を構造化しセッション先頭でキャッシュに乗せる戦略。入力コスト最大 90% 削減</li>
-          <li><strong>次のステップ:</strong> 「/code-review $25 の費用を月次予算内に収めるか、安いモデルで自前レビュースクリプトを作るか検討中」</li>
+          <li><strong>記事概要:</strong> Claude Code の導入から実践まで網羅する定番まとめ記事。Opus 5 リリースに合わせてモデル選択・課金ティア・fast モードの説明を更新</li>
+          <li><strong>注目ポイント:</strong> 「どのモデルをどのタスクに使うか」のフローチャートを更新。Opus 5（複雑な長期タスク）・Sonnet 5（バランス）・Haiku 4.5（軽量高速）の棲み分けを図解</li>
+          <li><strong>コメント欄:</strong> 「Opus 4.7 が fast から外れた意味」を問うコメントが殺到。作者が「Opus 5 fast は Max プランで対応予定」と回答</li>
         </ul>
       </div>
     </div>
@@ -253,64 +261,67 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/23）の主要トピック:</strong> <strong>中東:</strong> 米・イラン 12 日目（CENTCOM 12 夜連続攻撃、ホーシー派がサウジ油槽船 2 隻攻撃、Brent $94 超え、停戦提案浮上） / <strong>欧州:</strong> フランス・スペイン・イタリアで山火事拡大（消防士 3 名死亡、1.2 万人避難、スペイン・グアダラハラ 3.2 万 ha 焼失） / <strong>ウクライナ:</strong> ルビオ・ラブロフ会談で突破口なし、ロシアが黒海港湾攻撃継続 / <strong>ガザ:</strong> 食糧危機改善傾向も危機水準継続 / <strong>中国:</strong> 晋江靴工場火災 28 名死亡
+      <strong>本日（7/24）の主要トピック:</strong> <strong>中東:</strong> 米・イラン 13 日目（米軍がフーゼスターン州周辺を 13 夜連続爆撃、イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復、トランプが「大規模攻撃」を検討） / <strong>南アジア:</strong> インド・アッサム州大洪水（ブラマプトラ川氾濫、死者 50 名・70 万人避難・900 村水没） / <strong>欧州:</strong> スペインが山火事で国家非常事態を宣言、マドリード州・アビラ県で 1 万人以上が避難 / <strong>ウクライナ:</strong> ウクライナがクリミア・サンクトペテルブルク・トヴェリのロシア物流拠点をドローン攻撃
     </div>
     <div class="card">
-      <div class="card-title">米・イラン衝突 12 日目 — CENTCOM が 12 夜連続攻撃・ホーシー派がサウジ油槽船攻撃・Brent $94・停戦提案浮上</div>
-      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.legion.org/information-center/news/security/2026/july/us-conducts-strikes-against-iran-for-12th-consecutive-day">The American Legion</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war">Wikipedia</a> · <a href="https://www.britannica.com/event/2026-Iran-war">Britannica</a> · <a href="https://www.globalsecurity.org/military/ops/iran-war-update.htm">GlobalSecurity</a> — 2026.07.23</span></div>
+      <div class="card-title">米・イラン衝突 13 日目 — 米軍がフーゼスターン州周辺を爆撃・イランがバーレーン等 3 国の米軍拠点に報復・トランプ「大規模攻撃」を検討</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.aa.com.tr/en/world/morning-briefing-july-24-2026/4007673">Anadolu Agency</a> · <a href="https://www.euronews.com/video/2026/07/24/latest-news-bulletin-july-24th-2026-morning">Euronews</a> · <a href="https://www.justsecurity.org/149344/early-edition-july-24-2026/">Just Security</a> — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>CENTCOM 攻撃:</strong> 海上・ミサイル・ドローン貯蔵・沿岸監視・防空レーダーを標的に 12 夜連続攻撃を完了。イラク国境シャラムチェ検問所攻撃で 2 名死亡・11 名負傷</li>
-          <li><strong>ホーシー派のサウジ油槽船攻撃:</strong> 油槽船「Encelia」と「Layla」の 2 隻を攻撃。1 隻の火災をサウジ通信社が確認。紅海封鎖宣言後として初の大型タンカー攻撃成功事例</li>
-          <li><strong>原油急騰:</strong> Brent が $94/バレル超え（6/8 以来の高値）。ホルムズ海峡と紅海という 2 大海上輸送路のリスクが同時顕在化</li>
-          <li><strong>停戦提案:</strong> カタール・パキスタン・エジプトが「10 日間停戦・ホルムズ航路再開」を提案。両国から公式反応なし。トランプは「核活動停止が前提」の立場を維持</li>
-          <li><strong>Wikipedia の動向:</strong> 「Twelve-Day War ceasefire」記事が作成。国際社会の停戦圧力が高まりつつある兆候</li>
+          <li><strong>CENTCOM 13 夜連続攻撃:</strong> 米軍ミサイルがイランの石油産業が集中するフーゼスターン州周辺を含む複数拠点を爆撃。イラン国営メディアが確認</li>
+          <li><strong>イランの報復:</strong> バーレーン・クウェート・ヨルダンに駐留する米軍基地への報復攻撃を実施。米側は被害規模を「軽微」と発表</li>
+          <li><strong>トランプの姿勢:</strong> 記者団に「大規模攻撃に近い決断をしつつある」と発言。議会の一部から授権なき拡大への懸念が噴出</li>
+          <li><strong>停戦交渉の進展:</strong> カタール仲介の停戦提案（10 日間停戦・ホルムズ航路再開）に対し、テヘランが「核活動の一時停止を議題に含めるなら協議可能」と非公式に応答との報道</li>
+          <li><strong>原油市場:</strong> Brent は $94〜$96 レンジで高止まり。サウジ・UAE 増産余力が「緩衝材」として機能するかが焦点</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">欧州山火事が拡大 — フランス・スペイン・イタリアで消防士 3 名死亡、1.2 万人避難、スペインで 3.2 万 ha 焼失</div>
-      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.upi.com/Top_News/World-News/2026/07/23/France-Italy-Spain-wildfires/9241784804027/">UPI</a> · <a href="https://www.france24.com/en/europe/20260723-wildfires-ravage-spain-france-and-italy-killing-three-firefighters">France 24</a> · <a href="https://www.euronews.com/my-europe/2026/07/23/wildfires-rage-across-parts-of-france-spain-and-italy">Euronews</a> · <a href="https://www.itv.com/news/2026-07-23/thousands-evacuated-across-europe-as-wildfires-rage-in-france-italy-and-spain">ITV News</a> — 2026.07.23</span></div>
+      <div class="card-title">インド・アッサム州大洪水 — ブラマプトラ川氾濫で死者 50 名・70 万人避難・900 村水没</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/world/2026/07/24/india-floods-monsoon-assam-brahmaputra-river/c54766b2-8732-11f1-9cec-0fb26676f07e_story.html">Washington Post</a> · <a href="https://abcnews.com/International/wireStory/50-people-killed-700000-displaced-india-floods-after-135043973">ABC News</a> · <a href="https://www.hngn.com/articles/272314/20260724/india-floods-kill-least-50-displace-700000-assams-brahmaputra-overflows.htm">HNGN</a> — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>スペイン（最深刻）:</strong> グアダラハラ州で 3.2 万 ha 焼失。AEMET が「異常な危険」警報。最高 44°C（国内記録 47.6°C に迫る）。アンダルシア・ロス・ガジャルドスで 12 名死亡・8 名負傷・23 名行方不明</li>
-          <li><strong>フランス:</strong> ボルドー近郊 Le Porge で 1 万人超が避難。24 時間で 2,000 ha 超焼失。消防士 2 名殉職</li>
-          <li><strong>イタリア（シチリア）:</strong> 6,000 人以上が対応中。消防士 1 名が体調悪化で死亡</li>
-          <li><strong>気候との関連:</strong> 気象専門家「人為的気候変動なしにこの規模は発生しない」。EU の ERCC が航空消火能力を緊急調整</li>
-          <li><strong>空気質:</strong> スペイン・フランス国境付近で PM2.5 が「非常に危険」レベル</li>
+          <li><strong>被害規模:</strong> 死者 50 名以上・行方不明 40 名・被災者 72 万人超。ブラマプトラ川が危険水位を大幅に超過</li>
+          <li><strong>現地状況:</strong> 約 900 村が水没。グワーハーティー（人口約 200 万人の州都）でも道路が水没し通勤者が数時間立ち往生</li>
+          <li><strong>救助活動:</strong> ヘリコプターから食料・救援物資を空輸。約 30 万人が政府運営の避難センターに身を寄せている</li>
+          <li><strong>気候変動との関係:</strong> アッサム州の洪水は年中行事化しているが専門家は「モンスーン期の降水量が増加傾向にあり規模が年々拡大」と指摘</li>
+          <li><strong>電力インフラ被害:</strong> 7,000 超の世帯が停電。農地・道路・橋梁の損壊が広域に及ぶ</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ — ルビオ・ラブロフ会談で突破口なし、ロシアが黒海港湾攻撃を継続</div>
-      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/7/23/headlines">Democracy Now!</a> · <a href="https://www.justsecurity.org/149109/early-edition-july-23-2026/">Just Security</a> · <a href="https://anewz.tv/world/world-news/22263/world-news-top-stories-23-july-2026/news">AnewZ</a> — 2026.07.23</span></div>
+      <div class="card-title">スペイン山火事が国家非常事態に — マドリード州・アビラ県で 1 万人超避難・軍部隊が投入</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: Euronews · <a href="https://www.justsecurity.org/149344/early-edition-july-24-2026/">Just Security</a> — 2026.07.24</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ルビオ・ラブロフ会談:</strong> 「交渉の意義はある」と原則論のみで実質的前進なし。ウクライナは「ウクライナ抜きの和平交渉は受け入れられない」と再表明</li>
-          <li><strong>黒海港湾攻撃:</strong> ロシアがオデッサ・チョルノモルスク港をミサイル・ドローンで攻撃。穀物輸出インフラが標的で世界食料価格への影響が懸念される</li>
-          <li><strong>Drapatyi 新司令官:</strong> 7/22 発表の新司令官のもとで「防衛優先・攻勢は慎重に」方針が徐々に前線に反映される見込み。クルスク越境以来の攻勢路線からのシフトとなる可能性</li>
+          <li><strong>国家非常事態宣言:</strong> 内相フェルナンド・グランデ＝マルラスカが宣言。軍緊急事態部隊（UME）が消火・救助の指揮権を掌握</li>
+          <li><strong>3 大火災が未鎮圧:</strong> マドリード州とアビラ県で 3 件の大規模山火事が継続中。風向きが変わりやすく封じ込めに難航</li>
+          <li><strong>前日比の悪化:</strong> 7/23 に発生したスペイン・グアダラハラ州の火災（3.2 万 ha）に加えて新規火災が拡大。累計避難者は 1 万人超に</li>
+          <li><strong>フランス・イタリアも継続:</strong> EU の ERCC（緊急対応調整センター）が域内航空消火資産を再配分して対応中</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ガザ食糧危機 — 世界食料安全保障権威が「飢饉から改善も危機水準継続」と警告</div>
-      <div class="card-meta"><span class="badge">Humanitarian</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/7/23/headlines">Democracy Now!</a> · <a href="https://anewz.tv/world/world-news/22263/world-news-top-stories-23-july-2026/news">AnewZ</a> — 2026.07.23</span></div>
-      <div class="card-body"><p>IPC（統合食料安全保障段階分類）が「昨年の飢饉宣言から改善したが依然として危機レベル、壊滅的状態へ逆戻りするリスクがある」と警告。戦火が続くガザでは大多数の家族が最低限の食料を確保できておらず、人道支援アクセスの確保と恒久停戦の必要性を訴えた。</p></div>
-    </div>
-    <div class="card">
-      <div class="card-title">中国・晋江の靴工場で火災 — 28 名死亡</div>
-      <div class="card-meta"><span class="badge">Accident</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/7/23/headlines">Democracy Now!</a> · <a href="https://morningstaronline.co.uk/article/world-brief-july-23-2026">Morning Star</a> — 2026.07.23</span></div>
-      <div class="card-body"><p>中国福建省晋江市（中国最大の靴生産拠点の一つ）の靴工場で火災が発生し 28 名が死亡。防火設備の整備状況と避難経路について当局が調査を開始。中国では製造業の工場火災が繰り返し発生しており、防火規制の実効性を問う声が出ている。</p></div>
+      <div class="card-title">ウクライナ — ドローンがクリミア・サンクトペテルブルク・トヴェリのWildberries物流拠点を攻撃</div>
+      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">Source: <a href="https://www.justsecurity.org/149344/early-edition-july-24-2026/">Just Security</a> · Euronews — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>攻撃対象:</strong> ロシア占領下クリミアの Wildberries 物流ハブに加え、サンクトペテルブルク・トヴェリの同物流拠点もドローンで同時攻撃。複数の火災が確認された</li>
+          <li><strong>戦略的意図:</strong> ロシア後方の商業・物流インフラへの打撃を通じてロシア国内の経済的コストを高める「長距離抑止」作戦の一環と分析されている</li>
+          <li><strong>戦線状況:</strong> Drapatyi 新司令官のもとで前線は防衛主体。バフムート周辺でロシア軍の局地攻勢が継続しているが大きな領土変動はなし</li>
+          <li><strong>外交:</strong> ルビオ国務長官がゼレンスキー大統領と電話協議。「ウクライナを除いた停戦協議はない」を改めて確認</li>
+        </ul>
+      </div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年7月23日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: Releasebot · ClaudeLog · ClaudeFast · OpenAI · VentureBeat · SiliconANGLE · The Register · ExplainX · The New Stack · LinearB · Build Fast With AI · DEV Community · The American Legion · GlobalSecurity · Wikipedia · Britannica · UPI · France 24 · Euronews · ITV News · Democracy Now! · Just Security · AnewZ · Morning Star · Qiita · Zenn</p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月24日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic · GitHub Changelog · Releasebot · Gradually · Visual Studio Magazine · TechCrunch · VentureBeat · ExplainX · 9to5Mac · Dataconomy · Mezha · MightyBot · ClaudeWorld · Washington Post · ABC News · HNGN · Anadolu Agency · Euronews · Just Security · Qiita · Zenn</p>
 </footer>
 </body>
 </html>
