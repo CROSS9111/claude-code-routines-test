@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月24日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Opus 5 正式リリース（$5/$25・1M コンテキスト・GitHub Copilot 対応）/ OpenAI Codex に GPT-Live 音声制御が到来 / 米・イラン 13 日目・イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復 / インド・アッサム州洪水で死者 50 名・70 万人避難 / スペイン山火事で国家非常事態宣言</p>
+  <p class="date">2026年7月24日（金）&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#devjp">Qiita / Zenn</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/24）の最重要:</strong> <strong>Claude Opus 5</strong>（claude-opus-5）が正式リリース。1M コンテキスト・$5/$25 per Mtok（Opus 4.8 と同価格）で Fable 5 レベルの性能を実現。GitHub Copilot でも即日利用可能。あわせて Claude Code <strong>v2.1.219</strong> が投入され、Opus 5 がデフォルト Opus モデルに昇格、バグ修正も複数含まれる。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Opus 5 正式リリース — 1M コンテキスト・$5/$25・GitHub Copilot 即日対応・エージェント性能が大幅向上</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-opus-5">Anthropic</a> · <a href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/">GitHub Changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.24</span></div>
+      <div class="card-body">
+        <p>Anthropic の最上位モデル第 5 世代が正式リリース。前日まで予測市場が「7/24 リリース確率 88%」と過熱していた通り、日本時間早朝に発表された。</p>
+        <ul>
+          <li><strong>モデル ID:</strong> <code>claude-opus-5</code>（claude.ai・API・Amazon Bedrock・Google Cloud・Microsoft Foundry で即日利用可能）</li>
+          <li><strong>価格:</strong> $5/$25 per Mtok（入力/出力）。Opus 4.8 から据え置き。Fable 5 レベルの性能を半額で提供</li>
+          <li><strong>コンテキスト:</strong> 1M トークン（デフォルト上限・最大値ともに 1M）。最大出力 128k トークン</li>
+          <li><strong>性能:</strong> 複数ツール協調・コード変更の回帰検証・長期エージェントタスクで特に優秀</li>
+          <li><strong>GitHub Copilot:</strong> 複雑な長時間コーディングタスク向けに即日提供</li>
+          <li><strong>Claude Max / Claude Pro:</strong> Max の最強モデルとして昇格。Pro ではオプション選択可能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.219 — Opus 5 をデフォルトに昇格・サブエージェント引き継ぎ修正・管理コンソール強化</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually</a> — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Opus 5 デフォルト化:</strong> claude-opus-5 が Claude Code のデフォルト Opus モデルに</li>
+          <li><strong>サブエージェント引き継ぎ修正:</strong> Claude エージェントに戻ったときにサブエージェントが無言で停止して最初からやり直す問題を修正</li>
+          <li><strong>メモリ/CPU 回帰修正:</strong> コンテキスト使用量インジケーターがターンごとにトランスクリプト全体を再解析する問題を修正</li>
+          <li><strong>新設定キー:</strong> sandbox.network.strictAllowlist・DirectoryAdded フック・workflowSizeGuideline</li>
+          <li><strong>管理コンソール強化:</strong> アクティブ開発者数・セッション数・上位コマンドを日次更新で表示</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code が VS Code 1.128 でマルチチャット対応 — 並行セッションの比較・管理が可能に</div>
+      <div class="card-meta"><span class="badge">IDE</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>マルチチャット:</strong> 1 セッション内で複数のチャットを持てるようになり、異なるアプローチを並行比較できる</li>
+          <li><strong>ブラウザタブ制御:</strong> エージェントワークフロー拡張でブラウザタブの操作・切り替えをエージェントが直接行えるように</li>
+          <li><strong>OS レベルショートカット:</strong> Claude Code セッションへの切り替えを OS 標準キーで行えるよう統合</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> OpenAI が ChatGPT デスクトップアプリに <strong>GPT-Live（フルデュプレックス音声）</strong>を Codex 統合。しゃべりながらエージェントを操作できる「音声ファースト」コーディング時代が到来。<strong>Codex Micro</strong>（$230 キーボード）も話題継続。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex が GPT-Live 音声制御を発表 — フルデュプレックス音声でエージェントを「しゃべりながら」操作</div>
+      <div class="card-meta"><span class="badge">Launch</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/">TechCrunch</a> · <a href="https://venturebeat.com/orchestration/agentic-coding-goes-hands-free-as-openai-brings-gpt-lives-full-duplex-voice-control-to-codex-and-chatgpt-on-the-desktop">VentureBeat</a> — 2026.07.24</span></div>
+      <div class="card-body">
+        <p>GPT-Live の Codex 統合が ChatGPT デスクトップアプリ（macOS・Windows）に組み込まれ、Codex・ChatGPT Work と連携して動作する。</p>
+        <ul>
+          <li><strong>フルデュプレックス:</strong> 話しながら聞きながら作業できる。連続会話中にエージェントが動き続ける</li>
+          <li><strong>対象プラン:</strong> Plus・Pro・Business・Edu・Enterprise</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex Micro キーボード（$230）— 「エージェントキー」搭載の専用デバイスが話題</div>
+      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> — 2026.07.16</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Work Louder との共同設計。AI コーディングエージェントの管理に特化した専用キーボード</li>
+          <li>LED でエージェントのステータスをリアルタイム表示するエージェントキーを搭載</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント 2026 年版ランキング — Claude Code が首位・Codex が音声で差別化・Cursor 健在</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Claude Code（首位）:</strong> MCP エコシステム・マルチエージェント調整で評価。Opus 5 投入で優位性拡大</li>
+          <li><strong>Codex（2 位）:</strong> GPT-Live 音声統合・800 万 MAU で体験の差別化</li>
+          <li><strong>Cursor（3 位）:</strong> IDE 統合体験と補完精度でニッチ維持</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Opus 5 キタ！予測市場が当たった — サブエージェントバグ修正が最高」</div>
+      <div class="card-meta"><span class="badge">Hot</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「$5/$25 で Fable 5 相当の性能はコスパ最高」という声が多数</li>
+          <li>「サブエージェント修正の中でコレが一番デカい。途中でブレインが消えるストレスが解消」と上位評価</li>
+          <li>「Copilot 経由で Opus 5 を使う方が API 直より料金が安い場合がある」という実例共有が話題に</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Codex の発表は音声だった — MCP 対応なしで Claude Code のアドバンテージは継続」</div>
+      <div class="card-meta"><span class="badge">Relief</span><span class="card-source">Reddit r/ClaudeCode · r/codex — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「MCP 発表じゃなくてよかった。音声は面白いがワークフロー統合の深さでは Claude Code が上」</li>
+          <li>「音声でエージェントを指示できるのは実際便利。Claude Code にも音声が来てほしい」という声も</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Codex に GPT-Live — 音声でコードエージェントに指示する時代が来た」</div>
+      <div class="card-meta"><span class="badge">Debate</span><span class="card-source">Reddit r/MachineLearning — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「音声で複数エージェントに指示して並行作業させる体験は 5 年前には想像できなかった」</li>
+          <li>「2026 後半はコーディングエージェント戦争から体験エコシステム戦争に移行しつつある」</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米・イラン 13 日目・インド洪水 70 万人避難・スペイン国家非常事態」</div>
+      <div class="card-meta"><span class="badge">Breaking</span><span class="card-source">Reddit r/worldnews — 2026.07.24</span></div>
+      <div class="card-body"><p>米・イラン衝突 13 日目（イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復）、インド・アッサム州の大規模洪水（死者 50 名・70 万人避難・900 村水没）、スペイン山火事での国家非常事態宣言が同時にトレンド入り。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn 注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Opus 5 速報レビュー — Fable 5 比較・価格維持の衝撃・エージェントタスクで何が変わったか」</div>
+      <div class="card-meta"><span class="badge">Review</span><span class="card-source">Qiita / Zenn — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「$5/$25 で Fable 5 相当は Claude Code ユーザーにとって神アップデート。長時間エージェントタスクのコスト試算が一変する」</li>
+          <li>1M コンテキストで大規模リポジトリ全体をコンテキストに入れての解析・設計ドキュメントの一括レビューなどユースケースを紹介</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code v2.1.219 のサブエージェント引き継ぎ修正 — どんな問題だったか・何が直ったか」</div>
+      <div class="card-meta"><span class="badge">Bug Fix</span><span class="card-source">Zenn — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>エージェントが途中でリセットしてサブエージェントの成果物が消える問題は、長時間タスクで頻発していた。今回の修正で成果物が引き継がれるようになった</li>
+          <li>修正後は差分のみ解析する設計に変更。長時間セッションで顕著だったメモリ問題も解消</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」Opus 5 対応で更新</div>
+      <div class="card-meta"><span class="badge">Guide</span><span class="card-source">Qiita (<a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">fuyunoki</a>) — 2026.07.24 更新</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Opus 5 リリースに合わせてモデル選択・課金ティア・fast モードの説明を更新</li>
+          <li>「どのモデルをどのタスクに使うか」のフローチャートを更新。Opus 5（複雑な長期タスク）・Sonnet 5（バランス）・Haiku 4.5（軽量高速）の棲み分けを図解</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/24）の主要トピック:</strong> 米・イラン 13 日目（米軍がフーゼスターン州周辺を 13 夜連続爆撃、イランがバーレーン・クウェート・ヨルダンの米軍拠点に報復） / インド・アッサム州大洪水（死者 50 名・70 万人避難・900 村水没） / スペイン山火事で国家非常事態宣言 / ウクライナがクリミア等のロシア物流拠点をドローン攻撃
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン衝突 13 日目 — 米軍爆撃・イランが 3 国の米軍拠点に報復・トランプ「大規模攻撃」を検討</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.aa.com.tr/en/world/morning-briefing-july-24-2026/4007673">Anadolu Agency</a> · <a href="https://www.euronews.com/video/2026/07/24/latest-news-bulletin-july-24th-2026-morning">Euronews</a> — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>米軍がフーゼスターン州周辺を含む複数拠点を 13 夜連続爆撃</li>
+          <li>イランがバーレーン・クウェート・ヨルダンに駐留する米軍基地へ報復。米側は被害「軽微」と発表</li>
+          <li>カタール仲介の停戦提案（10 日間停戦・ホルムズ航路再開）にテヘランが非公式に応答との報道</li>
+          <li>Brent は $94〜$96 レンジで高止まり</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インド・アッサム州大洪水 — ブラマプトラ川氾濫で死者 50 名・70 万人避難</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/world/2026/07/24/india-floods-monsoon-assam-brahmaputra-river/c54766b2-8732-11f1-9cec-0fb26676f07e_story.html">Washington Post</a> · <a href="https://abcnews.com/International/wireStory/50-people-killed-700000-displaced-india-floods-after-135043973">ABC News</a> — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>死者 50 名以上・行方不明 40 名・被災者 72 万人超。ブラマプトラ川が危険水位を大幅に超過</li>
+          <li>約 900 村が水没。約 30 万人が政府運営の避難センターに身を寄せている</li>
+          <li>専門家「モンスーン期の降水量が増加傾向にあり規模が年々拡大」と指摘</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">スペイン山火事が国家非常事態に — マドリード州・アビラ県で 1 万人超避難・軍部隊が投入</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: Euronews — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>内相が国家非常事態宣言。軍緊急事態部隊（UME）が消火・救助の指揮権を掌握</li>
+          <li>マドリード州とアビラ県で 3 件の大規模山火事が継続中。累計避難者は 1 万人超</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ — ドローンがクリミア・サンクトペテルブルク・トヴェリの物流拠点を攻撃</div>
+      <div class="card-meta"><span class="badge">Ukraine</span><span class="card-source">Source: <a href="https://www.justsecurity.org/149344/early-edition-july-24-2026/">Just Security</a> · Euronews — 2026.07.24</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ロシア占領下クリミアの Wildberries 物流ハブに加え、サンクトペテルブルク・トヴェリの同物流拠点もドローンで同時攻撃</li>
+          <li>ロシア後方の商業・物流インフラへの打撃を通じてロシア国内の経済的コストを高める「長距離抑止」作戦の一環と分析</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月24日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic · GitHub Changelog · Releasebot · Gradually · Visual Studio Magazine · TechCrunch · VentureBeat · ExplainX · 9to5Mac · Dataconomy · Mezha · MightyBot · ClaudeWorld · Washington Post · ABC News · HNGN · Anadolu Agency · Euronews · Just Security · Qiita · Zenn</p>
+</footer>
+</body>
+</html>
