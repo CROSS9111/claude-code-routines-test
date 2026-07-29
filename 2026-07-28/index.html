@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">MCP 2026-07-28 spec 公開——ステートレスコア・MCP Tunnels・企業認証強化 / Pillar Security がコーディングエージェント 4 製品でサンドボックス脱出 7 件を公開 / ロシア弾道ミサイル 6 発をキーウ近郊に発射 / トランプ大統領がゼレンスキー・ネタニヤフと個別会談 / 米イラン外交「突破口の好機」</p>
+  <p class="date">2026年7月28日（火）&nbsp;|&nbsp;<a href="2026-07-27/index.html">前版（7/27）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/28）のハイライト:</strong> <strong>MCP 2026-07-28 spec</strong> が本日公開——プロトコル開始以来最大の仕様更新。ステートレスコア移行・MCP Tunnels（リサーチプレビュー）・強化 OAuth/OIDC 認証・バージョン管理された拡張フレームワークを導入。Claude Code も同仕様への対応を拡充し、絵文字ショートコード補完・トランスクリプト書き込み警告・サブエージェント制御強化などの細かな改善を同時リリース。
+    </div>
+    <div class="card">
+      <div class="card-title">MCP 2026-07-28 spec 公開 — ステートレスコア移行・MCP Tunnels リサーチプレビュー・強化 OAuth/OIDC</div>
+      <div class="card-meta"><span class="badge">Spec</span><span class="card-source">Source: <a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude">claude.com</a> · <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a> · <a href="https://stacktr.ee/blog/mcp-2026-spec-changes">Stacktree</a> — 2026.07.28</span></div>
+      <div class="card-body">
+        <p>Model Context Protocol の第 5 版となる MCP 2026-07-28 spec が本日公開された。プロトコル開始以来最大の更新とされる。</p>
+        <ul>
+          <li><strong>ステートレスコア:</strong> 双方向ステートフルモデルからリクエスト/レスポンスモデルへ移行。サーバーレス・エッジ環境へのデプロイが容易になり、MCP サーバーのスケールアウトが大幅に簡素化</li>
+          <li><strong>MCP Tunnels（リサーチプレビュー）:</strong> プライベートネットワーク内の MCP サーバーに、インバウンドファイアウォールルールやパブリックエンドポイントなしで Claude から接続可能。社内ツールを外部公開せずに Claude と連携できる</li>
+          <li><strong>強化 OAuth/OIDC 認証:</strong> 企業向けマネージド認証・可観測性・プライベートネットワークトンネル・埋め込み UI などのコネクター機能が新設</li>
+          <li><strong>バージョン管理拡張フレームワーク:</strong> MCP Apps と Tasks がバージョン付き拡張として正式化。インタラクティブ UI や長時間実行ワークロードを、コアプロトコルを変えずに追加する公式経路が確立</li>
+          <li><strong>既存サーバーへの影響:</strong> ステートフルな接続に依存していたサーバーは移行が必要。Stacktree が破壊的変更と移行手順をまとめた記事を公開中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code — 絵文字ショートコード補完・サブエージェント予算制御・MCP 再認証修正など細部改善</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>絵文字ショートコード補完:</strong> コミットメッセージや PR 本文の入力中に `:` を入力すると絵文字候補をサジェスト</li>
+          <li><strong>トランスクリプト書き込み警告:</strong> 大量のファイルをトランスクリプトに書き込もうとした際に明示的な警告を表示し、意図しないトークン消費を防止</li>
+          <li><strong>サブエージェント予算・バックグラウンドセッション制御:</strong> サブエージェントごとのトークン予算とバックグラウンドセッションのライフサイクルをより細かく制御可能に</li>
+          <li><strong>MCP 関連修正:</strong> MCP 再認証フロー・Windows パスハンドリング・MCP allowlist/denylist 管理の改善。MCP 2026-07-28 spec への対応を拡充</li>
+          <li><strong>セキュリティ・アクセシビリティ:</strong> テレメトリ設定・再開フロー・Windows 安定性に関する複数の修正も含む</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> <strong>Pillar Security</strong> が Cursor・Codex CLI・Gemini CLI・Antigravity の 4 製品で計 7 件のサンドボックス脱出脆弱性を公開。<strong>OpenAI Codex</strong> がマルチエージェント V2 をオプトイン安定版として提供開始。<strong>Ory</strong> が Claude Code・Codex・Gemini CLI 向け認証プラグイン「Agent DX」を無償公開。
+    </div>
+    <div class="card">
+      <div class="card-title">Pillar Security「Week of Sandbox Escapes」— Cursor・Codex・Gemini CLI・Antigravity で 7 件の脆弱性</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: BleepingComputer · The Next Web · Pillar Security</span></div>
+      <div class="card-body">
+        <p>Pillar Security の研究チームが「Week of Sandbox Escapes」シリーズとして、4 製品・3 ベンダーで計 7 件の脆弱性を公開した。</p>
+        <ul>
+          <li><strong>Cursor:</strong> CVE-2026-48124 として追跡、v3.0.0 で修正済み</li>
+          <li><strong>Codex CLI:</strong> v0.95.0 で修正、高深刻度バウンティを支払い済み</li>
+          <li><strong>Gemini CLI / Antigravity:</strong> 各ベンダーが対応中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex マルチエージェント V2 安定版提供開始</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: Releasebot / OpenAI — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex のオプトイン・マルチエージェント V2 エクスペリエンスを安定版として提供開始</li>
+          <li>サブエージェントごとのモデル選択・推論レベル・同時実行数・エージェントナビゲーション改善を含む</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ory が Agent DX を無償公開 — Claude Code・Codex・Gemini CLI 向け認証プラグイン</div>
+      <div class="card-meta"><span class="badge">Tool</span><span class="card-source">Source: AI Agent Store — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「Agent DX」をリリース。Claude Code・OpenAI Codex・Gemini CLI に対してフリープラグインで認証・認可ワークフローを組み込める</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">5 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「MCP 2026-07-28 が来た——プロトコル開始以来最大のアップデート」盛り上がる</div>
+      <div class="card-meta"><span class="badge">Top</span><span class="card-source">Reddit r/ClaudeAI · X @ClaudeDevs — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ステートレスコアへの移行の意義と既存サーバーの移行コストを議論</li>
+          <li>MCP Tunnels に対して「社内ツールを外部公開せずに使える」と好意的な反応が多数</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Pillar の sandbox escape 報告は怖い — Claude Code は大丈夫なのか？」</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/ClaudeCode · r/netsec — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Anthropic のコンテインメントアーキテクチャを根拠に比較的安全とする見方が多数</li>
+          <li>CLAUDE.md でエージェントの書き込み先を制限することが現状のベストプラクティスとされた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「使用上限スレッド」— 「20x 上限が 19 分で消えた」330+ コメント</div>
+      <div class="card-meta"><span class="badge">Pain Points</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>コミュニティ推奨の回避策: CLAUDE.md でファイル読み込み範囲を制限、タスク細分化、オフピーク 2x プロモーションの活用</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/netsec「Pillar の Week of Sandbox Escapes は AI セキュリティ研究の水準を上げた」</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/netsec — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>段階的な開示手法が「責任ある開示の新しいモデル」として評価されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「MCP ステートレス化でオープンソース MCP サーバーエコシステムはどう変わる？」</div>
+      <div class="card-meta"><span class="badge">Dev</span><span class="card-source">Reddit r/MachineLearning · r/LocalLLaMA — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「サーバーレスでスケールできるようになる恩恵の方が大きい」という意見が優勢</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/28）の主要トピック:</strong> ロシアが弾道ミサイル 6 発をキーウ近郊に発射 / トランプ大統領がゼレンスキー・ネタニヤフと個別会談 / 米イラン外交「突破口の好機」 / 仏西山火事 36 万人避難継続 / ウガンダ食料危機
+    </div>
+    <div class="card">
+      <div class="card-title">ロシア、弾道ミサイル 6 発をキーウ近郊に発射 — ウクライナはモスクワ州製鉄所をドローン攻撃</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: Kyiv Independent · US News — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ロシアが黒海から弾道ミサイル 6 発を発射。数週間ぶりの首都圏攻撃</li>
+          <li>ウクライナは国境から 800 マイル以上離れたモスクワ州の製鉄所を長距離ドローンで攻撃</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">トランプ大統領、ゼレンスキー・ネタニヤフと個別会談</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: ABC News · Washington Times — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>パトリオット迎撃ミサイルの生産ライセンスと外交努力が議題</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米イラン外交「突破口の好機」— 焦点はホルムズ海峡</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: Al Jazeera · Bloomberg — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>トランプ大統領はイランとの交渉が「非常に友好的」と発言</li>
+          <li>Brent 原油は海峡リスクが続く中で 100 ドル前後を維持</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">フランス・スペイン山火事 36 万人超が避難継続 — EU 今夏 4 度目の熱波</div>
+      <div class="card-meta"><span class="badge">Emergency</span><span class="card-source">Source: Havana Times · Just Security — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>36 万人超が自宅を離れている。米オレゴン州でも 100 万エーカー超を焼く大規模火災</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウガンダ食料危機 — 旱魃で 19 人死亡、150 万人が食料不足</div>
+      <div class="card-meta"><span class="badge">Crisis</span><span class="card-source">Source: Democracy Now — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>長期の旱魃で農作物が壊滅し、政府が緊急食料配給を開始</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">UNAIDS — 世界 HIV 資金が 2025 年に約 2 割減少、エピデミック再燃のリスク警告</div>
+      <div class="card-meta"><span class="badge">Health</span><span class="card-source">Source: Democracy Now — 2026.07.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>米国の援助削減が世界的な感染対策の空白を生んでいる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月28日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: claude.com · MCP Blog · Stacktree · Releasebot · BleepingComputer · The Next Web · Pillar Security · AI Agent Store · Kyiv Independent · US News · ABC News · Washington Times · Al Jazeera · Bloomberg · Havana Times · Just Security · Democracy Now</p>
+</footer>
+</body>
+</html>
