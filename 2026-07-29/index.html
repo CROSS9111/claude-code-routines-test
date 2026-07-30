@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月29日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Opus 5 がコーディングエージェントランキング首位に / OpenAI が $230 Codex Micro キーボードを発売 / イランがヨルダン米軍基地にミサイル攻撃・米サウジが報復空爆 / 日本M7.1地震・熊本イオンモール崩壊・死者18人 / 仏西山火事・32万人超避難継続</p>
+  <p class="date">2026年7月29日（水）&nbsp;|&nbsp;<a href="../2026-07-28/index.html">前版（7/28）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#devjp">Qiita・Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/29）のハイライト:</strong> <strong>Claude Opus 5</strong> が7月にリリースされ、主要 AI コーディングエージェントランキングで1位を獲得。ワーカーごとにモデルと推論バジェットを個別設定できる唯一の主要エージェントとして評価。Claude Code は7月アップデートで <strong>ブラウジング機能内蔵・/doctor・/fork・パブリックアーティファクト共有</strong>など多数の機能を追加。Radware は Claude Code を含むコーディングエージェント向けセキュリティカバレッジを拡大。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Opus 5 リリース — コーディングエージェントランキング首位・ワーカーごとのモデル/推論バジェット設定が可能な唯一の主要エージェント</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://claude-world.com/articles/ai-coding-models-tools-july-2026/">ClaudeWorld</a> · <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>Claude Opus 5 が7月にリリースされ、複数の AI コーディングエージェント比較で総合1位の評価を獲得した。</p>
+        <ul>
+          <li><strong>差別化機能:</strong> 単一セッション内の各ワーカーに対して、異なるモデルと推論バジェットを割り当て可能。マルチエージェント構成でリードエージェントは高精度モデル、補助タスクは軽量モデルを選択するといった運用が可能になる唯一の主要エージェント</li>
+          <li><strong>コーディング精度:</strong> 大規模コードベースの推論・複雑なロジックの説明・アーキテクチャ設計のサポートで他ツールを凌駕。SWE-bench など主要ベンチマークでも最高水準を記録</li>
+          <li><strong>プラットフォーム拡大:</strong> Amazon Bedrock・Google Cloud Agent Platform・Microsoft Foundry での提供が開始。エンタープライズ採用の加速が見込まれる</li>
+          <li><strong>市場影響:</strong> Claude Code が Claude 4.6 Agent Teams（2月リリース）で確立したチームリード+チームメイト型マルチエージェントモデルに、Opus 5 の精度向上が加わり、競合との差がさらに拡大したとの評価</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 7月アップデート — ブラウジング内蔵・/doctor・/fork・パブリックアーティファクト共有・エディタロール・オートモード拡大</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://www.developersdigest.tech/blog/codex-claude-code-july-agent-controls">Developers Digest</a> · <a href="https://blog.mean.ceo/claude-code-news-july-2026/">Mean CEO Blog</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ブラウジング機能内蔵:</strong> Claude Code セッション内からウェブブラウジングが直接可能に</li>
+          <li><strong>/doctor コマンド:</strong> 環境診断コマンドを追加。設定ミス・MCP 接続エラー・権限問題を自動診断</li>
+          <li><strong>/fork コマンド:</strong> 現在のセッション状態を分岐させ、複数の実装方針を並行探索できる新コマンド</li>
+          <li><strong>パブリックアーティファクト共有:</strong> 生成したアーティファクトをパブリック URL で共有可能に。閲覧者の MCP コネクターへのアクセスも付与可能</li>
+          <li><strong>エディタロール:</strong> エージェントにファイル編集専用の限定権限を付与するロール機能を追加</li>
+          <li><strong>エージェント制御:</strong> サブエージェント予算・バックグラウンドセッション・絵文字ショートコード補完・MCP 再認証フロー修正なども同月内にリリース</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Radware、Claude Code を含むコーディングエージェント向け「Agentic AI Protection」を発表 — ISO 42001・EU AI Act・NIST 対応</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://letsdatascience.com/news/radware-adds-agent-security-for-claude-code-3921d282">Let's Data Science</a> — 2026.07.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Radware が Claude Code を正式サポート対象として追加（7/7 発表）</li>
+          <li><strong>主な機能:</strong> コンプライアンスレポート・エージェントインタラクションマッピング・ツールガバナンス・監査証跡生成</li>
+          <li>ISO 42001・EU AI Act・NIST AI Risk Management Framework の要件に沿った証跡を自動作成</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> <strong>OpenAI</strong> が $230 の <strong>Codex Micro キーボード</strong>（7/15）を発売。<strong>GitHub Copilot</strong> が Agent Merge・エンタープライズ管理設定を追加。<strong>Cursor</strong> が Standard/Premium の二層プライシングへ移行。<strong>Google Antigravity CLI</strong>（旧 Gemini CLI）は個人向け無料プランを終了。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI、$230 の Codex Micro キーボードを発売 — AI エージェント管理専用ハードウェアに「エージェントキー」「推論ダイアル」を搭載</div>
+      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> · <a href="https://mezha.net/eng/bukvy/3d0e6ca2_openai_launches_codex/">Mezha</a> — 2026.07.15</span></div>
+      <div class="card-body">
+        <p>OpenAI が Work Louder と共同開発した $230 の AI エージェント管理専用キーボード「Codex Micro」を 7 月 15 日に発売。</p>
+        <ul>
+          <li><strong>エージェントキー:</strong> AI エージェントの現在の状態をリアルタイムで光で表示</li>
+          <li><strong>推論ダイアル:</strong> タスクに応じてエージェントの推論量をフィジカルに調整するダイアルを搭載</li>
+          <li><strong>背景:</strong> OpenAI は Jony Ive の io デバイスを巡るハードウェア訴訟の最中での発売</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot 7月アップデート — Agent Merge・プロジェクト連携セッション・エンタープライズ管理設定</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/github">Releasebot / GitHub</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Copilot App:</strong> プロジェクト連携エージェントセッション・複数スレッド・ブラウザキャンバスプレビュー・Agent Merge を搭載</li>
+          <li><strong>エンタープライズ管理設定:</strong> プラグイン・マーケットプレイス・デフォルトモデル選択をエンタープライズオーナーが統制可能に</li>
+          <li><strong>Copilot CLI 強化:</strong> /rubber-duck コマンド・ハーネス内でのタスクリスト表示を追加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cursor、新プライシングへ移行 — Standard $40/月・Premium $120/月の二層構造</div>
+      <div class="card-meta"><span class="badge">Pricing</span><span class="card-source">Source: <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Standard（$40/月）:</strong> 従来プランから変更なし。総使用量は増加</li>
+          <li><strong>Premium（$120/月）:</strong> Standard の 5 倍の使用量。パワーユーザー向け</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Antigravity CLI（旧 Gemini CLI）個人向け無料アクセス終了 — 7 製品乱立のコーディングエージェント市場が淘汰局面へ</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://www.firecrawl.dev/blog/best-ai-coding-agents">Firecrawl</a> — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Google が Gemini CLI を Antigravity CLI にリブランド。6 月 18 日に個人向け無料アクセスを終了</li>
+          <li>2026年7月時点: Claude Code・Google Antigravity・OpenAI Codex・Cursor・Kiro・GitHub Copilot・Windsurf の 7 製品が競合</li>
+          <li>GPT-5.6 Sol・Terra・Luna が 7 月 9 日に一般提供開始。ChatGPT Voice が Codex と Work で利用可能に</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「使用量上限スレッド」— オフピーク 2x プロモーション × Managed Agents cron 活用法が注目</div>
+      <div class="card-meta"><span class="badge">Pain Points</span><span class="card-source">Reddit r/ClaudeCode · r/ClaudeAI — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>使用量上限スレッドが合計 700+ コメントを記録。Anthropic のオフピーク 2x プロモーション（米東部時間 14:00〜翌 8:00）を Managed Agents の cron と組み合わせる運用が支持を集めている</li>
+          <li>「Managed Agents が安定したら上限の体感が変わった」という報告が複数</li>
+          <li>ベストプラクティス: CLAUDE.md でファイル読み込み範囲を限定・タスク細分化・長大なコンテキストは /fork で分岐探索</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Claude Code で AI コーディングコースが急増 — どれが本物か？」コミュニティが独自評価</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>20 以上のコースを比較した独自レビューが投稿。Managed Agents・MCP 統合・CLAUDE.md 設計パターンを扱うものが高評価</li>
+          <li>「エージェントを使いこなすより、エージェントに何を頼むかを設計する力が重要になった」という意見が上位に</li>
+          <li>2026年はコード品質と意図的なエージェント活用へ揺り戻しが起きているとの分析も</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Codex Micro キーボード — 開発者ツールのハードウェア化は必然か、それとも噴飯物か？」</div>
+      <div class="card-meta"><span class="badge">Dev</span><span class="card-source">Reddit r/MachineLearning · r/programming — 2026.07</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>懐疑派:</strong> 「専用キーボードが必要なほど UI が煩雑なら設計が間違っている」「Stream Deck で十分だし $230 は高すぎる」</li>
+          <li><strong>支持派:</strong> 「フリートを常時監視するプロのエージェントエンジニアには物理的なフィードバックが有用」「推論ダイアルは実際に試したら便利だった」</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（7/29）の主要トピック:</strong> <strong>中東:</strong> イランがヨルダンの米軍基地に弾道ミサイル5発を発射（迎撃成功）・米サウジがイラクのPMFを報復空爆 / <strong>日本:</strong> M7.1地震（熊本）・イオンモール崩壊・死者18人以上 / <strong>欧州:</strong> 仏西山火事32万人超避難継続・EU今夏4度目の熱波 / <strong>米国:</strong> NY州学区、教室AIロボット計画を一時停止
+    </div>
+    <div class="card">
+      <div class="card-title">イラン、ヨルダン米軍基地にミサイル攻撃 — 5発迎撃成功・米サウジがイラクPMFを報復空爆・トランプ「強力に反撃する」</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/29/iran-attacks-us-bases-in-middle-east-as-trump-meets-netanyahu">Al Jazeera</a> · <a href="https://www.axios.com/2026/07/18/iran-jordan-us-deaths-military-two-dead">Axios</a> · <a href="https://www.cnn.com/2026/07/29/world/live-news/iran-trump-news">CNN Live</a> — 2026.07.29</span></div>
+      <div class="card-body">
+        <p>イランの IRGC が7月29日、ヨルダン国内の米軍基地を狙った弾道ミサイル5発を発射。ヨルダンの防空システムが全弾を迎撃した。</p>
+        <ul>
+          <li><strong>背景:</strong> 7月中旬にはイランの攻撃で米兵4人が死亡。トランプ大統領は「We'll be hitting them hard」と発言</li>
+          <li><strong>米・サウジの報復空爆:</strong> 米・サウジ合同部隊がイラクの人民動員隊（PMF）を空爆。少なくとも20人が死亡、32人が負傷</li>
+          <li><strong>外交の現状:</strong> 攻撃で米イラン交渉は事実上中断。ホルムズ海峡問題の外交的解決の見通しが後退</li>
+          <li><strong>原油・市場:</strong> Brent 原油が再び100ドル超に上昇</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">日本・熊本でM7.1地震 — イオンモール2階崩壊・日本製紙工場で5人死亡・死者18人以上・数十万人避難</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/">CBS News</a> · <a href="https://www.nbcnews.com/world/japan/earthquake-rocks-japan-tsunami-warnings-rcna589574">NBC News</a> · <a href="https://www.npr.org/2026/07/29/nx-s1-5911613/japan-earthquake-updates">NPR</a> — 2026.07.28–29</span></div>
+      <div class="card-body">
+        <p>7月28日、九州の熊本県を中心としたM7.1の強地震が発生し、7月29日も救助活動が続いている。</p>
+        <ul>
+          <li><strong>被害状況:</strong> 死者18人以上・負傷者62人以上（うち6人が重傷）</li>
+          <li><strong>イオンモール崩壊:</strong> 鹿島町のイオンモールで2階フロアが崩落。ガス漏れによる爆発が発生</li>
+          <li><strong>日本製紙工場:</strong> 八代市の日本製紙工場で煙突が崩壊し5人が死亡、7人が救助された</li>
+          <li>高市早苗首相が「一刻一秒を争う」と述べ、自衛隊の大規模部隊を動員</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">フランス・スペイン山火事 32 万人超が避難継続 — EU 今夏 4 度目の熱波・北半球各地で異常気象が同時進行</div>
+      <div class="card-meta"><span class="badge">Emergency</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-29th-july-2026">10 Things Global</a> · <a href="https://www.justsecurity.org/150319/early-edition-july-29-2026/">Just Security</a> — 2026.07.29</span></div>
+      <div class="card-body">
+        <ul>
+          <li>フランス南部（約42,000 ha）とスペイン（約80,000 ha）の山火事が継続し、32万人超が避難中</li>
+          <li>EU 気候変動機関（Copernicus）は7月が観測史上最も高温の月になる可能性を示唆</li>
+          <li>米オレゴン州でも100万エーカー超を焼く大規模火災が発生</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米ニューヨーク州学区、教室 AI ヒューマノイドロボット計画を一時停止 — 州教育当局・教員・住民から懸念</div>
+      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-july-29-2026">Morning Star</a> — 2026.07.29</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ニューヨーク州北部の学区が、教室に AI 搭載ヒューマノイドロボットを配備する計画を一時停止</li>
+          <li>州教育当局が「教育上の効果と安全性の評価が不十分」として懸念を表明</li>
+          <li>教員組合と保護者からもプライバシーと子どもへの影響を懸念する声が多数</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita・Zenn 注目記事まとめ</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>今週のトレンド:</strong> Claude Code Managed Agents のスケジュール実行・CLI 安全統合の実践ガイドが注目。「AIスロップ」（AI が生成した低品質コード）への対処スキルが検索トレンド急上昇1位。Claude Code を使った大規模ドキュメント自動生成の実践報告も話題に。
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】Claude Code Managed Agents 入門 — スケジュール実行と CLI 統合の実装ガイド</div>
+      <div class="card-meta"><span class="badge">Tutorial</span><span class="card-source">Source: <a href="https://qiita.com/kai_kou/items/337eb235da9b9a081836">Qiita @kai_kou</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>Anthropic が 2026 年 6 月にパブリックベータとして公開した Claude Code Managed Agents の実装ガイド。cron・CLI ツール安全統合・Vault 管理の 3 つの主要機能を実践的に解説。</p>
+        <ul>
+          <li><strong>cron スケジュール:</strong> 定期タスク（依存パッケージ更新チェック・レポート生成）をコードレスで設定する手順を詳解</li>
+          <li><strong>CLI tools 安全統合:</strong> ホワイトリスト方式によるコマンド制限の実装パターンと安全設計の考え方を解説</li>
+          <li><strong>Vault 管理:</strong> API キー・シークレットをセキュアストアで管理し、エージェントにのみ必要最小限の権限で渡す構成例</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】今週の Claude Code スキル検索トレンド — 急上昇1位は「AIスロップ」掃除スキル（7/27 データ）</div>
+      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Source: <a href="https://qiita.com/Skillselion/items/c4040a5491107edcdc9f">Qiita @Skillselion</a> — 2026.07.27</span></div>
+      <div class="card-body">
+        <p>7 月 27 日時点の Claude Code スキル検索トレンドを集計。「AIスロップ（AI Slop）」掃除スキルが急上昇1位を記録した。</p>
+        <ul>
+          <li><strong>「AIスロップ」とは:</strong> AI が生成した、動くが読みにくい・冗長・設計原則を無視したコードを指す用語</li>
+          <li><strong>急上昇の背景:</strong> 生成物をそのままマージするフェーズから、品質評価・リファクタリングフェーズへの移行が起きている</li>
+          <li><strong>注目スキル:</strong> /simplify・AIスロップ検出 lint ルール・PR 時の AI 臭チェックリストなど</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】Claude Code で 3 日間・22 万文字の Zenn 本を書いた話 — ドキュメント自動生成の限界と工夫</div>
+      <div class="card-meta"><span class="badge">Report</span><span class="card-source">Source: <a href="https://qiita.com/fsitlab/items/b66c76dd5e07aa2fcdbe">Qiita @fsitlab</a> — 2026.07</span></div>
+      <div class="card-body">
+        <p>Claude Code を使い 3 日間で 22 万文字のZenn 技術書を生成・出版した実践報告記事。</p>
+        <ul>
+          <li><strong>手法:</strong> チャプター構成を CLAUDE.md に記述し、/fork で章ごとにセッションを分岐。各章の終わりに /doctor で整合性をチェック</li>
+          <li><strong>課題:</strong> 長大なコンテキストでの一貫性維持・専門用語の統一が最も難しかったと報告</li>
+          <li><strong>トークン管理:</strong> オフピーク時間帯に重い処理を集中。総トークン消費量と制作コストも公開</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月29日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: ClaudeWorld · Mean CEO Blog · Let's Data Science · MightyBot · Lushbinary · Developers Digest · TechCrunch · Mezha · Releasebot · Firecrawl · Al Jazeera · Axios · CNN · CBS News · NBC News · NPR · 10 Things Global · Just Security · Morning Star · Qiita @kai_kou · Qiita @Skillselion · Qiita @fsitlab</p>
+</footer>
+</body>
+</html>

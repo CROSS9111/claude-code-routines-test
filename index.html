@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月29日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年7月30日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Opus 5 がコーディングエージェントランキング首位に / OpenAI が $230 Codex Micro キーボードを発売 / イランがヨルダン米軍基地にミサイル攻撃・米サウジが報復空爆 / 日本M7.1地震・熊本イオンモール崩壊・死者18人 / 仏西山火事・32万人超避難継続</p>
-  <p class="date">2026年7月29日（水）&nbsp;|&nbsp;<a href="2026-07-28/index.html">前版（7/28）</a></p>
+  <p class="subtitle">Claude Mythos が量子耐性暗号HAWK-256を60時間で解読・NISIが標準候補から除外 / MCP 2026-07-28 最終仕様リリース・月間4億DL突破 / 米軍がイランへ「第二波」大規模空爆・クウェートにも延焼 / 英国アンディ・バーナム首相、就任10日目の課題 / 熊本M7.1地震救助継続</p>
+  <p class="date">2026年7月30日（木）&nbsp;|&nbsp;<a href="2026-07-29/index.html">前版（7/29）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,43 +69,44 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/29）のハイライト:</strong> <strong>Claude Opus 5</strong> が7月にリリースされ、主要 AI コーディングエージェントランキングで1位を獲得。ワーカーごとにモデルと推論バジェットを個別設定できる唯一の主要エージェントとして評価。Claude Code は7月アップデートで <strong>ブラウジング機能内蔵・/doctor・/fork・パブリックアーティファクト共有</strong>など多数の機能を追加。Radware は Claude Code を含むコーディングエージェント向けセキュリティカバレッジを拡大。
+      <strong>本日（7/30）のハイライト:</strong> Anthropic の制限公開モデル <strong>Claude Mythos Preview</strong> が量子耐性署名候補 HAWK-256 の鍵回復攻撃を60時間で発見。NIST がHAWK を標準候補リストから除外。同日、<strong>MCP 2026-07-28 最終仕様</strong>が正式リリース — ステートレスコア・OAuth 2.1/OIDC 強化・月間 SDK ダウンロードが4億件突破。Cognizant がAnthropicとのエンタープライズパートナーシップを拡大（7/27）。
     </div>
     <div class="card">
-      <div class="card-title">Claude Opus 5 リリース — コーディングエージェントランキング首位・ワーカーごとのモデル/推論バジェット設定が可能な唯一の主要エージェント</div>
-      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://claude-world.com/articles/ai-coding-models-tools-july-2026/">ClaudeWorld</a> · <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> — 2026.07</span></div>
+      <div class="card-title">Claude Mythos Preview が量子耐性暗号 HAWK-256 を60時間で解読 — NIST が標準候補リストから除外</div>
+      <div class="card-meta"><span class="badge">Research</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html">The Hacker News</a> · <a href="https://www.anthropic.com/research/discovering-cryptographic-weaknesses">Anthropic Research</a> · <a href="https://www.techtimes.com/articles/321876/20260728/ai-cracks-post-quantum-cipher-60-hours-after-two-years-human-review-failed.htm">TechTimes</a> — 2026.07.28</span></div>
       <div class="card-body">
-        <p>Claude Opus 5 が7月にリリースされ、複数の AI コーディングエージェント比較で総合1位の評価を獲得した。</p>
+        <p>Anthropic の制限公開モデル Claude Mythos Preview が、次世代デジタル署名の NIST 標準候補 HAWK-256 に対するエンドツーエンド鍵回復攻撃を自律的に発見した。専門家による2年間のレビューで見逃されていた構造的欠陥を60時間で特定したことで、セキュリティコミュニティに衝撃が走っている。</p>
         <ul>
-          <li><strong>差別化機能:</strong> 単一セッション内の各ワーカーに対して、異なるモデルと推論バジェットを割り当て可能。マルチエージェント構成でリードエージェントは高精度モデル、補助タスクは軽量モデルを選択するといった運用が可能になる唯一の主要エージェント</li>
-          <li><strong>コーディング精度:</strong> 大規模コードベースの推論・複雑なロジックの説明・アーキテクチャ設計のサポートで他ツールを凌駕。SWE-bench など主要ベンチマークでも最高水準を記録</li>
-          <li><strong>プラットフォーム拡大:</strong> Amazon Bedrock・Google Cloud Agent Platform・Microsoft Foundry での提供が開始。エンタープライズ採用の加速が見込まれる</li>
-          <li><strong>市場影響:</strong> Claude Code が Claude 4.6 Agent Teams（2月リリース）で確立したチームリード+チームメイト型マルチエージェントモデルに、Opus 5 の精度向上が加わり、競合との差がさらに拡大したとの評価</li>
+          <li><strong>HAWK-256 攻撃:</strong> 格子簡約に必要なブロックサイズをほぼ半減させる攻撃を発見。HAWK チームが攻撃を確認し、NIST の追加ポスト量子署名標準化プロセスから HAWK を撤退</li>
+          <li><strong>AES-128 加速:</strong> 7ラウンドAES-128 に対する攻撃を200〜800倍高速化する手法も発見。いずれも現行の本番システムへの即時影響はないが、研究的に重大な進歩</li>
+          <li><strong>意義:</strong> 専門的な暗号解析分野において高度AIモデルが貢献できることを初めて実証。Anthropic は研究論文を公開し、影響を受ける実装者への早期開示も実施</li>
+          <li><strong>市場反応:</strong> 暗号ライブラリベンダーが移行ガイドを即日公開。NIST は代替候補 SLH-DSA・FALCON の採用を推奨</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 7月アップデート — ブラウジング内蔵・/doctor・/fork・パブリックアーティファクト共有・エディタロール・オートモード拡大</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://www.developersdigest.tech/blog/codex-claude-code-july-agent-controls">Developers Digest</a> · <a href="https://blog.mean.ceo/claude-code-news-july-2026/">Mean CEO Blog</a> — 2026.07</span></div>
+      <div class="card-title">MCP 2026-07-28 最終仕様リリース — ステートレスコア・OAuth 2.1/OIDC 強化・月間SDKダウンロード4億件突破</div>
+      <div class="card-meta"><span class="badge">Protocol</span><span class="card-source">Source: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a> · <a href="https://workos.com/blog/mcp-2026-spec-agent-authentication">WorkOS</a> · <a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude">Anthropic</a> — 2026.07.28</span></div>
       <div class="card-body">
+        <p>Model Context Protocol の 2026-07-28 仕様が7月28日に正式リリース。業界標準として定着しつつある MCP の月間 SDK ダウンロードが4億件（前年比4倍）を突破した。</p>
         <ul>
-          <li><strong>ブラウジング機能内蔵:</strong> Claude Code セッション内からウェブブラウジングが直接可能に</li>
-          <li><strong>/doctor コマンド:</strong> 環境診断コマンドを追加。設定ミス・MCP 接続エラー・権限問題を自動診断</li>
-          <li><strong>/fork コマンド:</strong> 現在のセッション状態を分岐させ、複数の実装方針を並行探索できる新コマンド</li>
-          <li><strong>パブリックアーティファクト共有:</strong> 生成したアーティファクトをパブリック URL で共有可能に。閲覧者の MCP コネクターへのアクセスも付与可能</li>
-          <li><strong>エディタロール:</strong> エージェントにファイル編集専用の限定権限を付与するロール機能を追加</li>
-          <li><strong>エージェント制御:</strong> サブエージェント予算・バックグラウンドセッション・絵文字ショートコード補完・MCP 再認証フロー修正なども同月内にリリース</li>
+          <li><strong>ステートレスコア:</strong> セッション管理・初期化ハンドシェイクを廃止し、リクエスト/レスポンスモデルへ移行。サーバーレス・エッジインフラへの展開が容易に</li>
+          <li><strong>OAuth 2.1/OIDC 強化:</strong> MCP サーバーが正式な OAuth 2.1 リソースサーバーとして位置づけられ、Entra・Okta などエンタープライズ ID システムとの接続が標準化</li>
+          <li><strong>非推奨化:</strong> Roots・Sampling・Logging の3機能を非推奨化（12ヶ月以上継続稼働を保証）。エクステンションフレームワークを新設し、将来の拡張経路を整理</li>
+          <li><strong>Claude Code 対応:</strong> Claude が MCP 2026-07-28 仕様への対応を開始。ステートレス MCP サーバーとのシームレスな統合が可能に</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Radware、Claude Code を含むコーディングエージェント向け「Agentic AI Protection」を発表 — ISO 42001・EU AI Act・NIST 対応</div>
-      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: <a href="https://letsdatascience.com/news/radware-adds-agent-security-for-claude-code-3921d282">Let's Data Science</a> — 2026.07.07</span></div>
+      <div class="card-title">Claude Opus 5 Fast Mode — 2.5倍高速化・Bedrock / Vertex AI / Foundry で自動採用</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot / Anthropic</a> — 2026.07.24</span></div>
       <div class="card-body">
+        <p>Claude Opus 5 が7月24日にリリース。新設の Fast Mode は通常の2.5倍の速度で動作し、コストは基本料金の2倍に設定される。</p>
         <ul>
-          <li>Radware が Claude Code を正式サポート対象として追加（7/7 発表）</li>
-          <li><strong>主な機能:</strong> コンプライアンスレポート・エージェントインタラクションマッピング・ツールガバナンス・監査証跡生成</li>
-          <li>ISO 42001・EU AI Act・NIST AI Risk Management Framework の要件に沿った証跡を自動作成</li>
+          <li><strong>価格:</strong> Opus 5 は Opus 4.8 と同じ $5/$25（入力/出力 per M tokens）を維持。Fast Mode は 2× 基本料金</li>
+          <li><strong>プラットフォーム:</strong> Amazon Bedrock・Google Vertex AI・Microsoft Foundry では Claude Opus 4.8 をデフォルトから Opus 5 に自動切替え</li>
+          <li><strong>Claude Code 連動:</strong> Claude Code の auto モードが Bedrock・Vertex AI・Foundry 向けにも拡張。エージェントビュー・リモートコントロール・バックグラウンドセッションを改善</li>
+          <li><strong>Cognizant 連携:</strong> 7月27日、Cognizant と Anthropic がエンタープライズクライアントへの Claude 展開に向けてパートナーシップを拡大</li>
         </ul>
       </div>
     </div>
@@ -114,52 +115,44 @@
   <section class="section" id="rival">
     <div class="section-header">
       <div class="section-title">AI エージェント競合動向</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> <strong>OpenAI</strong> が $230 の <strong>Codex Micro キーボード</strong>（7/15）を発売。<strong>GitHub Copilot</strong> が Agent Merge・エンタープライズ管理設定を追加。<strong>Cursor</strong> が Standard/Premium の二層プライシングへ移行。<strong>Google Antigravity CLI</strong>（旧 Gemini CLI）は個人向け無料プランを終了。
+      <strong>競合ハイライト:</strong> <strong>OpenAI</strong> が7月9日に ChatGPT と Codex を単一アプリに統合。新モード「ChatGPT Work」を GPT-5.6 で提供開始。Codex は週間アクティブユーザー500万人を突破。<strong>OpenAI Presence</strong> はエンタープライズ向けエージェントプラットフォームとして正式展開。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、$230 の Codex Micro キーボードを発売 — AI エージェント管理専用ハードウェアに「エージェントキー」「推論ダイアル」を搭載</div>
-      <div class="card-meta"><span class="badge">Hardware</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> · <a href="https://mezha.net/eng/bukvy/3d0e6ca2_openai_launches_codex/">Mezha</a> — 2026.07.15</span></div>
+      <div class="card-title">OpenAI、ChatGPT と Codex を単一アプリに統合 — GPT-5.6 搭載「ChatGPT Work」モードを全プランで無償提供</div>
+      <div class="card-meta"><span class="badge">Product</span><span class="card-source">Source: <a href="https://quasa.io/media/openai-merges-chatgpt-and-codex-into-one-app-after-gpt-5-6-launch-introduces-new-work-mode">Quasa</a> · <a href="https://www.neowin.net/news/openai-launches-chatgpt-work-and-unveils-unified-desktop-app-with-codex-built-in/">Neowin</a> · <a href="https://www.techtimes.com/articles/320087/20260710/chatgpt-work-free-every-plan-what-openais-codex-merger-changes-you.htm">TechTimes</a> — 2026.07.09</span></div>
       <div class="card-body">
-        <p>OpenAI が Work Louder と共同開発した $230 の AI エージェント管理専用キーボード「Codex Micro」を 7 月 15 日に発売。</p>
+        <p>OpenAI が7月9日、ChatGPT と Codex の統合デスクトップアプリを Mac・Windows 向けに全プラン（無料含む）で提供開始。GPT-5.6 を搭載した新しい「Work」モードを同時リリースした。</p>
         <ul>
-          <li><strong>エージェントキー:</strong> AI エージェントの現在の状態をリアルタイムで光で表示</li>
-          <li><strong>推論ダイアル:</strong> タスクに応じてエージェントの推論量をフィジカルに調整するダイアルを搭載</li>
-          <li><strong>背景:</strong> OpenAI は Jony Ive の io デバイスを巡るハードウェア訴訟の最中での発売</li>
+          <li><strong>統合アプリ:</strong> Codex デスクトップアプリが ChatGPT デスクトップアプリと統合。Chat・Work・Codex の3タブ構成に</li>
+          <li><strong>ChatGPT Work:</strong> プレゼンテーション作成・データ分析・文書作成などの生産性タスクに特化。GPT-5.6 がマルチステップ推論でスプレッドシート・スライド・Webアプリなどのアーティファクトを生成</li>
+          <li><strong>Codex の変化:</strong> インラインDiff編集・プルリクエストレビューを Codex 内に統合。/import 機能が Cursor・Claude Code の設定・MCP サーバー・プラグインからの移行に対応</li>
+          <li><strong>規模:</strong> Codex は週間アクティブユーザーが500万人を突破</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">GitHub Copilot 7月アップデート — Agent Merge・プロジェクト連携セッション・エンタープライズ管理設定</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/github">Releasebot / GitHub</a> — 2026.07</span></div>
+      <div class="card-title">OpenAI Presence — 音声・チャット対応エンタープライズエージェントプラットフォームを正式展開</div>
+      <div class="card-meta"><span class="badge">Enterprise</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / OpenAI</a> — 2026.07</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Copilot App:</strong> プロジェクト連携エージェントセッション・複数スレッド・ブラウザキャンバスプレビュー・Agent Merge を搭載</li>
-          <li><strong>エンタープライズ管理設定:</strong> プラグイン・マーケットプレイス・デフォルトモデル選択をエンタープライズオーナーが統制可能に</li>
-          <li><strong>Copilot CLI 強化:</strong> /rubber-duck コマンド・ハーネス内でのタスクリスト表示を追加</li>
+          <li><strong>Presence とは:</strong> 音声・チャットを通じて顧客・社内ワークフローを自動化するエンタープライズ向け配備済みエージェント製品</li>
+          <li><strong>機能:</strong> ポリシー・ガードレール・シミュレーション・評価・承認済みアクションを設定可能。Codex が起動後のワークフロー改善を担当</li>
+          <li><strong>Codex 新機能:</strong> 音声入力・ストリーミングリアルタイム V3 会話・ページネート付きスレッド履歴・マルチエージェント V2 の安定化</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Cursor、新プライシングへ移行 — Standard $40/月・Premium $120/月の二層構造</div>
-      <div class="card-meta"><span class="badge">Pricing</span><span class="card-source">Source: <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> — 2026.07</span></div>
+      <div class="card-title">AI コーディングエージェント市場7月まとめ — Claude Code vs Codex vs Cursor vs Kiro、差別化軸が鮮明に</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> · <a href="https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026">Developers Digest</a> — 2026.07</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Standard（$40/月）:</strong> 従来プランから変更なし。総使用量は増加</li>
-          <li><strong>Premium（$120/月）:</strong> Standard の 5 倍の使用量。パワーユーザー向け</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Google Antigravity CLI（旧 Gemini CLI）個人向け無料アクセス終了 — 7 製品乱立のコーディングエージェント市場が淘汰局面へ</div>
-      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://www.firecrawl.dev/blog/best-ai-coding-agents">Firecrawl</a> — 2026.07</span></div>
-      <div class="card-body">
-        <ul>
-          <li>Google が Gemini CLI を Antigravity CLI にリブランド。6 月 18 日に個人向け無料アクセスを終了</li>
-          <li>2026年7月時点: Claude Code・Google Antigravity・OpenAI Codex・Cursor・Kiro・GitHub Copilot・Windsurf の 7 製品が競合</li>
-          <li>GPT-5.6 Sol・Terra・Luna が 7 月 9 日に一般提供開始。ChatGPT Voice が Codex と Work で利用可能に</li>
+          <li><strong>Claude Code:</strong> 大規模コードベース推論・マルチエージェント協調・ワーカーごとのモデル選択で優位。MCP エコシステムのデファクトリーダー</li>
+          <li><strong>OpenAI Codex:</strong> ChatGPT 統合で一般ユーザーへのリーチを拡大。Work モードで非エンジニア層も取り込む戦略</li>
+          <li><strong>Cursor:</strong> IDE 統合の使い勝手で根強い支持。Standard/Premium 二層化で課金構造を整理</li>
+          <li><strong>Kiro:</strong> 仕様駆動アプローチで新規参入も一定の評価。「タスクの形によってツールを使い分ける」時代に移行しつつある</li>
         </ul>
       </div>
     </div>
@@ -171,34 +164,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「使用量上限スレッド」— オフピーク 2x プロモーション × Managed Agents cron 活用法が注目</div>
-      <div class="card-meta"><span class="badge">Pain Points</span><span class="card-source">Reddit r/ClaudeCode · r/ClaudeAI — 2026.07</span></div>
+      <div class="card-title">r/netsec「AIが量子暗号を解読 — Claude Mythos の HAWK 攻撃をどう受け止めるか」活発な議論</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Reddit r/netsec · r/crypto · r/MachineLearning — 2026.07.28–30</span></div>
       <div class="card-body">
         <ul>
-          <li>使用量上限スレッドが合計 700+ コメントを記録。Anthropic のオフピーク 2x プロモーション（米東部時間 14:00〜翌 8:00）を Managed Agents の cron と組み合わせる運用が支持を集めている</li>
-          <li>「Managed Agents が安定したら上限の体感が変わった」という報告が複数</li>
-          <li>ベストプラクティス: CLAUDE.md でファイル読み込み範囲を限定・タスク細分化・長大なコンテキストは /fork で分岐探索</li>
+          <li><strong>懸念派:</strong> 「2年間の専門家レビューを60時間で超えたことが問題。AIが暗号研究を独占し始めたらどうなるか」「NIST プロセス全体の信頼性が問われる」</li>
+          <li><strong>楽観派:</strong> 「今回の発見はむしろ健全。人間より早く弱点を見つけてくれるなら、AIは防衛側の最強兵器になる」「量子コンピュータより AI の方が先に暗号を破る可能性が出てきた」</li>
+          <li><strong>研究者コメント:</strong> 「Claude Mythos の制限公開モデルを使えた Anthropic だからできた。一般公開されたら影響が変わる」という指摘も多数</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude Code で AI コーディングコースが急増 — どれが本物か？」コミュニティが独自評価</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI — 2026.07</span></div>
+      <div class="card-title">r/ClaudeAI「MCP 2026-07-28 何が壊れたか・移行手順まとめ」— コミュニティが実地報告を集約</div>
+      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Reddit r/ClaudeAI · r/mcp — 2026.07.28–30</span></div>
       <div class="card-body">
         <ul>
-          <li>20 以上のコースを比較した独自レビューが投稿。Managed Agents・MCP 統合・CLAUDE.md 設計パターンを扱うものが高評価</li>
-          <li>「エージェントを使いこなすより、エージェントに何を頼むかを設計する力が重要になった」という意見が上位に</li>
-          <li>2026年はコード品質と意図的なエージェント活用へ揺り戻しが起きているとの分析も</li>
+          <li><strong>破壊的変更で困っている点:</strong> 初期化ハンドシェイク廃止による既存クライアントの互換性問題・Mcp-Session-Id 依存コードの修正工数が想定外に多い</li>
+          <li><strong>移行のベストプラクティス（コミュニティまとめ）:</strong> (1) ステートレスサーバーから先に移行 (2) OAuth 2.1 対応を先に整備してから本番切替 (3) Roots/Sampling 廃止は12ヶ月猶予があるので後回し可</li>
+          <li><strong>好評点:</strong> 「サーバーレスにデプロイできるようになったのは革命的」「Entra 連携がついに素直に通る」</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「Codex Micro キーボード — 開発者ツールのハードウェア化は必然か、それとも噴飯物か？」</div>
-      <div class="card-meta"><span class="badge">Dev</span><span class="card-source">Reddit r/MachineLearning · r/programming — 2026.07</span></div>
+      <div class="card-title">r/ClaudeCode「Opus 5 Fast Mode を本番で使い始めた感想 — 速度 vs コストのトレードオフ報告」</div>
+      <div class="card-meta"><span class="badge">Dev</span><span class="card-source">Reddit r/ClaudeCode — 2026.07.25–30</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>懐疑派:</strong> 「専用キーボードが必要なほど UI が煩雑なら設計が間違っている」「Stream Deck で十分だし $230 は高すぎる」</li>
-          <li><strong>支持派:</strong> 「フリートを常時監視するプロのエージェントエンジニアには物理的なフィードバックが有用」「推論ダイアルは実際に試したら便利だった」</li>
+          <li>「体感 2〜2.5倍速。コスト2倍でもレビュー待ち時間が減るなら十分ペイする」という声が多数</li>
+          <li>「マルチエージェント構成のサブエージェントに Fast Mode、リードに通常 Opus 5 という使い分けが最もコスト効率が良い」</li>
+          <li>「Bedrock でのデフォルト切替が自動だったのに気づかずコストが跳ね上がった」という注意喚起も複数投稿</li>
         </ul>
       </div>
     </div>
@@ -210,53 +204,54 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（7/29）の主要トピック:</strong> <strong>中東:</strong> イランがヨルダンの米軍基地に弾道ミサイル5発を発射（迎撃成功）・米サウジがイラクのPMFを報復空爆 / <strong>日本:</strong> M7.1地震（熊本）・イオンモール崩壊・死者18人以上 / <strong>欧州:</strong> 仏西山火事32万人超避難継続・EU今夏4度目の熱波 / <strong>米国:</strong> NY州学区、教室AIロボット計画を一時停止
+      <strong>本日（7/30）の主要トピック:</strong> <strong>中東:</strong> 米軍がイランへ「第二波」大規模空爆を実施・クウェートのChina企業ビルに延焼・エジプトのダミエッタ港で輸送船炎上 / <strong>日本:</strong> 熊本M7.1地震、救助活動3日目継続 / <strong>英国:</strong> バーナム首相就任10日目・トランプが「貧困国」と批判 / <strong>米国:</strong> ファウチ元所長、上院委で黙秘権行使
     </div>
     <div class="card">
-      <div class="card-title">イラン、ヨルダン米軍基地にミサイル攻撃 — 5発迎撃成功・米サウジがイラクPMFを報復空爆・トランプ「強力に反撃する」</div>
-      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/7/29/iran-attacks-us-bases-in-middle-east-as-trump-meets-netanyahu">Al Jazeera</a> · <a href="https://www.axios.com/2026/07/18/iran-jordan-us-deaths-military-two-dead">Axios</a> · <a href="https://www.cnn.com/2026/07/29/world/live-news/iran-trump-news">CNN Live</a> — 2026.07.29</span></div>
+      <div class="card-title">米軍、イランに「第二波」大規模空爆 — 南部バンダルアッバスで爆発・クウェート・エジプトにも延焼・上院が戦争権限決議を否決</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-07-30/us-launches-fresh-strikes-against-iran-as-war-escalates-again">Bloomberg</a> · <a href="https://www.aljazeera.com/news/2026/7/30/us-launches-another-round-of-attacks-on-iran">Al Jazeera</a> · <a href="https://www.npr.org/2026/07/30/nx-s1-5913077/us-iran-updates">NPR</a> · <a href="https://www.justsecurity.org/150442/early-edition-july-30-2026-2/">Just Security</a> — 2026.07.30</span></div>
       <div class="card-body">
-        <p>イランの IRGC が7月29日、ヨルダン国内の米軍基地を狙った弾道ミサイル5発を発射。ヨルダンの防空システムが全弾を迎撃した。</p>
+        <p>米 CENTCOM が7月30日、イランへの第二波大規模攻撃を実施。7月29日のイランによるヨルダン米軍基地へのミサイル攻撃への報復で、南部バンダルアッバスやペルシャ湾の島カイシュで複数の爆発が確認されている。</p>
         <ul>
-          <li><strong>背景:</strong> 7月中旬にはイランの攻撃で米兵4人が死亡。トランプ大統領は「We'll be hitting them hard」と発言</li>
-          <li><strong>米・サウジの報復空爆:</strong> 米・サウジ合同部隊がイラクの人民動員隊（PMF）を空爆。少なくとも20人が死亡、32人が負傷</li>
-          <li><strong>外交の現状:</strong> 攻撃で米イラン交渉は事実上中断。ホルムズ海峡問題の外交的解決の見通しが後退</li>
-          <li><strong>原油・市場:</strong> Brent 原油が再び100ドル超に上昇</li>
+          <li><strong>攻撃目標:</strong> 軍事指揮センター・ミサイル/ドローン製造施設・沿岸監視サイト。「30発超のドローンが3日間で米軍とサウジ施設を攻撃した」と CENTCOM が声明</li>
+          <li><strong>周辺への波及:</strong> イランのドローン攻撃がクウェートの中国企業ビルに着弾し死者1名。エジプト・ダミエッタ港で米国所有ガス貯蔵タンカーを含む2隻が炎上（ドローンによる攻撃とみられる）</li>
+          <li><strong>国内政治:</strong> 米上院が民主党提出の「イラン戦争権限決議」を49対50で否決。同種の決議否決は今回で13回目</li>
+          <li><strong>市場:</strong> Brent 原油が102ドル超に上昇。ホルムズ海峡通過タンカーが迂回ルートを採用し始め、LNG スポット価格も急騰</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">日本・熊本でM7.1地震 — イオンモール2階崩壊・日本製紙工場で5人死亡・死者18人以上・数十万人避難</div>
-      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/">CBS News</a> · <a href="https://www.nbcnews.com/world/japan/earthquake-rocks-japan-tsunami-warnings-rcna589574">NBC News</a> · <a href="https://www.npr.org/2026/07/29/nx-s1-5911613/japan-earthquake-updates">NPR</a> — 2026.07.28–29</span></div>
+      <div class="card-title">熊本M7.1地震、救助活動3日目 — 生存者の確認続く・仮設住宅設置へ・インフラ復旧の見通し</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-thursday-july-30-2026">GoLocalProv</a> · <a href="https://wng.org/podcasts/thursday-morning-news-july-30-2026-1785341505">WORLD News</a> — 2026.07.30</span></div>
       <div class="card-body">
-        <p>7月28日、九州の熊本県を中心としたM7.1の強地震が発生し、7月29日も救助活動が続いている。</p>
         <ul>
-          <li><strong>被害状況:</strong> 死者18人以上・負傷者62人以上（うち6人が重傷）</li>
-          <li><strong>イオンモール崩壊:</strong> 鹿島町のイオンモールで2階フロアが崩落。ガス漏れによる爆発が発生</li>
-          <li><strong>日本製紙工場:</strong> 八代市の日本製紙工場で煙突が崩壊し5人が死亡、7人が救助された</li>
-          <li>高市早苗首相が「一刻一秒を争う」と述べ、自衛隊の大規模部隊を動員</li>
+          <li>7月28日の熊本M7.1地震から3日目も九州各地で救助活動が継続。7月30日朝時点で死者数・安否不明者数の更新が続いている</li>
+          <li><strong>インフラ:</strong> JR 九州の一部区間と高速道路が通行止め継続。電力・水道の復旧は被害の大きい地域で最大1週間かかる見通し</li>
+          <li><strong>支援体制:</strong> 政府が熊本・鹿児島・宮崎に災害対策本部を設置。仮設住宅の建設に向けた用地調整が開始</li>
+          <li><strong>余震:</strong> M5以上の余震が継続しており、気象庁は向こう1週間の強い余震に注意を呼びかけ</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">フランス・スペイン山火事 32 万人超が避難継続 — EU 今夏 4 度目の熱波・北半球各地で異常気象が同時進行</div>
-      <div class="card-meta"><span class="badge">Emergency</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-29th-july-2026">10 Things Global</a> · <a href="https://www.justsecurity.org/150319/early-edition-july-29-2026/">Just Security</a> — 2026.07.29</span></div>
+      <div class="card-title">英国アンディ・バーナム首相、就任10日目 — トランプが「貧困にあえぐ惨事」と批判・バーナムは「安定の回路遮断器」を強調</div>
+      <div class="card-meta"><span class="badge">Politics</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/07/20/uk-prime-minister-burnham-trump-poverty-stricken-disaster.html">CNBC</a> · <a href="https://abcnews.com/International/andy-burnham-become-uks-prime-minister-after-meeting/story?id=134907835">ABC News</a> · <a href="https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister">CFR</a> — 2026.07.20–30</span></div>
       <div class="card-body">
+        <p>アンディ・バーナム氏が7月20日に英国の第59代首相（過去10年で7人目）に就任。旧グレーター・マンチェスター市長として労働者階級寄りの政策で知名度を上げた。</p>
         <ul>
-          <li>フランス南部（約42,000 ha）とスペイン（約80,000 ha）の山火事が継続し、32万人超が避難中</li>
-          <li>EU 気候変動機関（Copernicus）は7月が観測史上最も高温の月になる可能性を示唆</li>
-          <li>米オレゴン州でも100万エーカー超を焼く大規模火災が発生</li>
+          <li><strong>就任の経緯:</strong> スターマー前首相が6月22日に辞任（エプスタイン・スキャンダルの余波）。バーナムが労働党議員の94%超から支持を得て7月17日に党首就任、3日後に首相就任</li>
+          <li><strong>トランプとの関係:</strong> トランプ大統領はソーシャルメディアで英国を「Poverty Stricken Disaster（貧困にあえぐ惨事）」と投稿。バーナムは直接の反論を避けつつ「英国の安定を取り戻す」と強調</li>
+          <li><strong>政策課題:</strong> NHS 再建・住宅不足解消・税制改革の3本柱を提示。EU との関係再構築も優先事項に</li>
+          <li><strong>外交:</strong> 就任後初の外遊先にパリを選択。EU首脳との関係改善を最初のシグナルとして打ち出した</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米ニューヨーク州学区、教室 AI ヒューマノイドロボット計画を一時停止 — 州教育当局・教員・住民から懸念</div>
-      <div class="card-meta"><span class="badge">Policy</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-july-29-2026">Morning Star</a> — 2026.07.29</span></div>
+      <div class="card-title">ファウチ元所長、上院委で黙秘権行使 — コロナ対応・政策決定に関する鋭い追及に応答拒否</div>
+      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-thursday-july-30-2026">GoLocalProv</a> · <a href="https://wng.org/podcasts/thursday-morning-news-july-30-2026-1785341505">WORLD News</a> — 2026.07.29–30</span></div>
       <div class="card-body">
         <ul>
-          <li>ニューヨーク州北部の学区が、教室に AI 搭載ヒューマノイドロボットを配備する計画を一時停止</li>
-          <li>州教育当局が「教育上の効果と安全性の評価が不十分」として懸念を表明</li>
-          <li>教員組合と保護者からもプライバシーと子どもへの影響を懸念する声が多数</li>
+          <li>アンソニー・ファウチ元国立アレルギー感染症研究所長が7月29日、上院委員会でコロナ対応に関する質問の多くに対し、憲法修正第5条（自己負罪拒否権）を行使</li>
+          <li>委員会では、最近公開されたファウチ氏の個人日誌を根拠に、PCR検査基準・ロックダウン政策・ワクチン義務化決定に関する激しい追及が行われた</li>
+          <li>共和党議員が「責任を取れ」と批判する一方、民主党議員は「政治的魔女狩り」と反論。公聴会は終日紛糾した</li>
         </ul>
       </div>
     </div>
@@ -268,41 +263,41 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>今週のトレンド:</strong> Claude Code Managed Agents のスケジュール実行・CLI 安全統合の実践ガイドが注目。「AIスロップ」（AI が生成した低品質コード）への対処スキルが検索トレンド急上昇1位。Claude Code を使った大規模ドキュメント自動生成の実践報告も話題に。
+      <strong>今週のトレンド:</strong> MCP 2026-07-28 仕様変更への対応記事が一斉に投稿。「正直に言う。お前の Claude Code の使い方は間違っている」（Qiita Zine）が7月累計PVランキング1位に。@homhom44 による Claude / Anthropic ニュース週次まとめも連日注目を集める。
     </div>
     <div class="card">
-      <div class="card-title">【Qiita】Claude Code Managed Agents 入門 — スケジュール実行と CLI 統合の実装ガイド</div>
-      <div class="card-meta"><span class="badge">Tutorial</span><span class="card-source">Source: <a href="https://qiita.com/kai_kou/items/337eb235da9b9a081836">Qiita @kai_kou</a> — 2026.07</span></div>
+      <div class="card-title">【Qiita】MCP 2026-07-28 移行ガイド — ステートレス化で「何が壊れたか」と「正しい移行手順」</div>
+      <div class="card-meta"><span class="badge">Tutorial</span><span class="card-source">Source: <a href="https://stacktr.ee/blog/mcp-2026-spec-changes">Stacktree</a> · <a href="https://www.developersdigest.tech/blog/mcp-2026-07-28-breaking-changes">Developers Digest</a> · Qiita各記事 — 2026.07.28–30</span></div>
       <div class="card-body">
-        <p>Anthropic が 2026 年 6 月にパブリックベータとして公開した Claude Code Managed Agents の実装ガイド。cron・CLI ツール安全統合・Vault 管理の 3 つの主要機能を実践的に解説。</p>
+        <p>MCP 2026-07-28 仕様の正式リリースを受け、Qiita に移行ガイド記事が多数投稿された。以下はコミュニティが整理した要点。</p>
         <ul>
-          <li><strong>cron スケジュール:</strong> 定期タスク（依存パッケージ更新チェック・レポート生成）をコードレスで設定する手順を詳解</li>
-          <li><strong>CLI tools 安全統合:</strong> ホワイトリスト方式によるコマンド制限の実装パターンと安全設計の考え方を解説</li>
-          <li><strong>Vault 管理:</strong> API キー・シークレットをセキュアストアで管理し、エージェントにのみ必要最小限の権限で渡す構成例</li>
+          <li><strong>主な破壊的変更:</strong> (1) 初期化ハンドシェイク廃止→クライアント側のセッション管理コードを削除 (2) Mcp-Session-Id ヘッダー廃止→ヘッダー依存のルーティングを修正 (3) bidirectional セッション→stateless request/response に移行</li>
+          <li><strong>移行の優先順位:</strong> ①OAuth 2.1 対応 → ②ステートレスサーバーへの移行 → ③Roots/Sampling 廃止対応（12ヶ月猶予）</li>
+          <li><strong>コミュニティ評価:</strong> 「サーバーレス展開がついに素直にできる」という肯定意見と「既存コードの書き直しコストが予想以上」という批判意見が拮抗</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">【Qiita】今週の Claude Code スキル検索トレンド — 急上昇1位は「AIスロップ」掃除スキル（7/27 データ）</div>
-      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Source: <a href="https://qiita.com/Skillselion/items/c4040a5491107edcdc9f">Qiita @Skillselion</a> — 2026.07.27</span></div>
+      <div class="card-title">【Qiita Zine】「正直に言う。お前の Claude Code の使い方は間違っている」— 7月累計PV1位の問題提起記事</div>
+      <div class="card-meta"><span class="badge">Opinion</span><span class="card-source">Source: <a href="https://qiita.com/official-columns/news/2026-07-01/">Qiita Zine</a> — 2026.07.01</span></div>
       <div class="card-body">
-        <p>7 月 27 日時点の Claude Code スキル検索トレンドを集計。「AIスロップ（AI Slop）」掃除スキルが急上昇1位を記録した。</p>
+        <p>7月1日に公開された Qiita 公式コラムが月間PVランキング1位を記録。「エージェントに任せっぱなし」の開発スタイルを批判し、正しい人間とエージェントの役割分担を解説した。</p>
         <ul>
-          <li><strong>「AIスロップ」とは:</strong> AI が生成した、動くが読みにくい・冗長・設計原則を無視したコードを指す用語</li>
-          <li><strong>急上昇の背景:</strong> 生成物をそのままマージするフェーズから、品質評価・リファクタリングフェーズへの移行が起きている</li>
-          <li><strong>注目スキル:</strong> /simplify・AIスロップ検出 lint ルール・PR 時の AI 臭チェックリストなど</li>
+          <li><strong>主な主張:</strong> 「コードを生成させたら終わり」は間違い。エンジニアの価値はレビュー・設計・テスト戦略の策定にある</li>
+          <li><strong>推奨プラクティス:</strong> CLAUDE.md で明示的に制約を設定・サブエージェントへのタスク委譲は範囲を絞る・生成物を目視でレビューする習慣を維持</li>
+          <li><strong>反響:</strong> 「耳が痛い」「まさに自分のことだった」というコメントが600件超。「AIスロップ」問題と絡めた議論も盛り上がる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">【Qiita】Claude Code で 3 日間・22 万文字の Zenn 本を書いた話 — ドキュメント自動生成の限界と工夫</div>
-      <div class="card-meta"><span class="badge">Report</span><span class="card-source">Source: <a href="https://qiita.com/fsitlab/items/b66c76dd5e07aa2fcdbe">Qiita @fsitlab</a> — 2026.07</span></div>
+      <div class="card-title">【Qiita】Claude / Anthropic 関連ニュースまとめ（2026-07-25） — Opus 5 詳細レポートと MCP 仕様予告</div>
+      <div class="card-meta"><span class="badge">Digest</span><span class="card-source">Source: <a href="https://qiita.com/homhom44/items/c966dc8418658dc5c295">Qiita @homhom44</a> — 2026.07.25</span></div>
       <div class="card-body">
-        <p>Claude Code を使い 3 日間で 22 万文字のZenn 技術書を生成・出版した実践報告記事。</p>
+        <p>@homhom44 による恒例の週次ニュースまとめ。7月25日版は Claude Opus 5 の Fast Mode 詳細と MCP 仕様リリース直前情報を中心に解説。</p>
         <ul>
-          <li><strong>手法:</strong> チャプター構成を CLAUDE.md に記述し、/fork で章ごとにセッションを分岐。各章の終わりに /doctor で整合性をチェック</li>
-          <li><strong>課題:</strong> 長大なコンテキストでの一貫性維持・専門用語の統一が最も難しかったと報告</li>
-          <li><strong>トークン管理:</strong> オフピーク時間帯に重い処理を集中。総トークン消費量と制作コストも公開</li>
+          <li>Opus 5 の Fast Mode コスト計算式と Bedrock での自動切替タイミングを図解</li>
+          <li>MCP 2026-07-28 RC（リリース候補）段階での変更内容を先取り解説し、最終版に先行して移行準備を促す内容が好評</li>
+          <li>Cognizant との提携拡大・Radware の Agentic AI Protection など周辺エコシステムの動向も網羅</li>
         </ul>
       </div>
     </div>
@@ -310,8 +305,8 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年7月29日（水）</p>
-  <p style="margin-top:0.5rem;">Sources: ClaudeWorld · Mean CEO Blog · Let's Data Science · MightyBot · Lushbinary · Developers Digest · TechCrunch · Mezha · Releasebot · Firecrawl · Al Jazeera · Axios · CNN · CBS News · NBC News · NPR · 10 Things Global · Just Security · Morning Star · Qiita @kai_kou · Qiita @Skillselion · Qiita @fsitlab</p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年7月30日（木）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic Research · The Hacker News · TechTimes · MCP Blog · WorkOS · Releasebot · Quasa · Neowin · MightyBot · Developers Digest · Bloomberg · Al Jazeera · NPR · GoLocalProv · WORLD News · CNBC · ABC News · CFR · Just Security · Qiita Zine · Qiita @homhom44 · Stacktree</p>
 </footer>
 </body>
 </html>
