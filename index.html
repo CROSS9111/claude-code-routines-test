@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月1日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月2日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Anthropic が Claude for Open Source（無料 Max 6ヶ月・1万名）を開始 / OpenAI Astra を正式発表 — 次世代マルチエージェントモデルが数学未解決問題10件を解決 / セウタ死者67名に増加・スペインが封じ込め柵を緊急設置 / ベネズエラ民主移行協議が本日開始 / 欧州で27年ぶりの皆既日食（8/12予定）</p>
-  <p class="date">2026年8月1日（土）&nbsp;|&nbsp;<a href="2026-07-31/index.html">前版（7/31）</a></p>
+  <p class="subtitle">Claude Code v2.1.219 リリース — Opus 5 がデフォルト化・ネスト型サブエージェント深さ3に拡張 / Legacy Workbench 廃止まで残り2週間（8/17） / ホルムズ海峡で LNG タンカー再び被弾・脅威レベル「深刻」に格上げ / 米国7州の水道システムがサイバー攻撃（イラン関与を FBI が調査） / ベネズエラ移行協議が前進・来週カラカスで対面開始</p>
+  <p class="date">2026年8月2日（日）&nbsp;|&nbsp;<a href="2026-08-01/index.html">前版（8/1）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -65,57 +65,48 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic 最新ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/1）のハイライト:</strong> Anthropic が <strong>Claude for Open Source</strong> プログラムを開始 — GitHub スター5,000件以上または npm 月間DL 100万件以上のリポジトリメンテナーに、Claude Max 20x（約$1,200相当）を6ヶ月間無料提供（先着1万名）。Claude Code サブスクライバーへの<strong>週間利用量 50% ブースト</strong>が8月19日まで延長。<strong>AI for Science グラント</strong>（最大$50,000相当のクレジット）の応募締め切りが明日（8月2日）に迫る。
+      <strong>本日（8/2）のハイライト:</strong> Claude Code <strong>v2.1.219</strong> が本日リリース — <strong>Claude Opus 5</strong>（`claude-opus-5`）がデフォルト Opus モデルに昇格（1M コンテキスト、ファストモード $10/$50/Mトークン）。ネスト型サブエージェントが深さ3まで対応（従来は深さ1）。<strong>Legacy Workbench と実験的プロンプトツール API が8月17日に廃止</strong> — データエクスポートの期限まで残り2週間。
     </div>
     <div class="card">
-      <div class="card-title">Anthropic、「Claude for Open Source」プログラムを開始 — Claude Max 20x を6ヶ月間無料・先着1万名</div>
-      <div class="card-meta"><span class="badge">Program</span><span class="card-source">Source: <a href="https://alphasignal.ai/news/anthropic-gives-10-000-open-source-maintainers-1-200-of-free-claude-max">AlphaSignal</a> · <a href="https://aitoolsclub.com/anthropic-launches-claude-for-open-source-program-free-claude-max-for-6-months/">AI Tools Club</a> — 2026.08</span></div>
+      <div class="card-title">Claude Code v2.1.219 リリース — Opus 5 がデフォルトに・サブエージェント深さ3・会話中のツール変更がベータへ</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://myysophia.github.io/cli-agent/">CLI Release Notes</a> — 2026.08.02</span></div>
       <div class="card-body">
-        <p>Anthropic がオープンソースコミュニティ支援を目的としたプログラムを開始。個人メンテナーおよびアクティブなコントリビューターを対象に、最高グレードの個人プランを無料で提供する。</p>
+        <p>本日（8月2日）リリースされた Claude Code v2.1.219 は、モデル面とエージェント面の両方に大きな変更が入った重要なアップデート。</p>
         <ul>
-          <li><strong>対象者 — 標準トラック:</strong> 公開リポジトリの GitHub スターが5,000件以上または npm 月間ダウンロードが100万件以上、かつ過去3ヶ月以内に貢献活動があること</li>
-          <li><strong>対象者 — エコシステム影響トラック:</strong> 上記基準を満たさなくても、重要度の高いパッケージのメンテナーは書面による説明で申請可能</li>
-          <li><strong>提供内容:</strong> Claude Max 20x（通常 $2,000/6ヶ月）を6ヶ月間無料。ただし個人利用限定で、API クレジットやチーム共有・終了後の自動継続はなし</li>
-          <li><strong>上限:</strong> 合計1万名で締め切り。申請はローリングレビューで随時審査される</li>
-          <li><strong>背景:</strong> Anthropic はオープンソースが AI ツールの基盤インフラを担うと位置付け、コミュニティ全体の底上げを図る狙い</li>
+          <li><strong>Opus 5 がデフォルト化:</strong> `claude-opus-5` が正式にデフォルト Opus モデルとして設定。コンテキストウィンドウ 1M トークン、ファストモード料金は $10 / $50 per 1M トークン（インプット/アウトプット）。Opus 4.8 からの移行パスも文書化</li>
+          <li><strong>Opus 4.7 はファストモードから削除:</strong> `/fast` コマンドは Opus 5 および Opus 4.8 のみに対応。Opus 4.7 利用者はアップグレードが必要</li>
+          <li><strong>ネスト型サブエージェント:</strong> サブエージェントがさらに子サブエージェントをデフォルトで深さ3まで生成可能に（従来は深さ1）。複雑なマルチエージェントワークフローの設計が大幅に柔軟になった</li>
+          <li><strong>会話中のツール変更（ベータ）:</strong> Claude Opus 5 で、会話の途中でツールの追加・削除が可能になるベータ機能を公開。プロンプトキャッシュを保持したまま動的にツールセットを変更できる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 利用量 50% ブーストが8月19日まで延長 — AI for Science グラントの応募は明日（8/2）締め切り</div>
-      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://claudelog.com/claude-news/">ClaudeLog</a> · <a href="https://explainx.ai/blog/claude-usage-limits-2026-timeline-explained">ExplainX</a> — 2026.08</span></div>
+      <div class="card-title">Legacy Workbench と実験的プロンプトツール API が8月17日に廃止 — データエクスポートは今すぐ</div>
+      <div class="card-meta"><span class="badge">Deprecation</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot / Anthropic Dev Platform</a> · <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a> — 2026.07–08</span></div>
       <div class="card-body">
+        <p>8月17日（2週間後）を期限として、Claude Developer Platform の旧来ツールが完全廃止される。</p>
         <ul>
-          <li><strong>利用量ブースト延長:</strong> Claude Code サブスクライバー向けの一時的な週間利用量 50% 増量が、当初予定を延長して8月19日まで継続。大規模プロジェクトを進める開発者はこの期間を活用したい</li>
-          <li><strong>AI for Science グラント（締め切り8/2）:</strong> 希少遺伝性疾患の研究に特化したグラントプログラム。採択された研究者は最大 $50,000 相当の Claude クレジットを6ヶ月間受け取れる。医学・生物学系研究者向け</li>
-          <li><strong>Sonnet 5 価格変更（8/31→9/1）:</strong> 引き続き注意が必要。8月31日まで $2/$10/Mトークン、9月1日から $3/$15/Mトークンへ。コスト試算の見直しを</li>
+          <li><strong>廃止対象:</strong>「Workbench (legacy)」UI、および実験的プロンプトツール API 3本（<code>/v1/experimental/generate_prompt</code>・<code>/v1/experimental/improve_prompt</code>・<code>/v1/experimental/templatize_prompt</code>）</li>
+          <li><strong>データエクスポート方法:</strong> Workbench (legacy) の Export 機能を使い、保存済みのプロンプト・変数・評価セットをダウンロード可能。8月17日以降はデータにアクセス不能</li>
+          <li><strong>移行先:</strong> 新 Workbench UI が旧来の非対応機能を置き換え。旧バージョンに依存した CI/CD パイプラインや内部ツールの更新を今週中に行うことを推奨</li>
+          <li><strong>既存の保存データ:</strong> 新 Workbench はレガシー形式の「unsupported legacy prompts, variables, evals」を直接引き継がないため、廃止前のエクスポートが事実上必須</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">【振り返り】Anthropic が Claude Code に3ヶ月間ステガノグラフィー追跡コードを密かに埋め込んでいたことが判明 — アリババが全社利用禁止に</div>
-      <div class="card-meta"><span class="badge">Controversy</span><span class="card-source">Source: <a href="https://www.malwarebytes.com/blog/news/2026/07/claude-codes-hidden-tracker-was-an-experiment-says-anthropic">Malwarebytes</a> · <a href="https://decrypt.co/372977/anthropic-removes-hidden-claude-code-tracker-privacy">Decrypt</a> · <a href="https://medium.com/@rahulwale/anthropic-hid-invisible-tracking-code-inside-claude-code-for-3-months-932839c0bafa">Medium</a> — 2026.06–07</span></div>
+      <div class="card-title">【振り返り】Code with Claude 2026 の5大発表 — Dreaming・Outcomes・マルチエージェント統合・Claude Finance・Add-ins</div>
+      <div class="card-meta"><span class="badge">Feature Recap</span><span class="card-source">Source: <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio</a> · <a href="https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes">VentureBeat</a> · <a href="https://every.to/chain-of-thought/inside-anthropic-s-2026-developer-conference">Every</a> — 2026.05</span></div>
       <div class="card-body">
-        <p>先週の重大問題として引き続き余波が続いているため整理する。</p>
+        <p>先週 Claude Code が Opus 5 デフォルト化によって実用性をさらに高めた背景には、5月の開発者カンファレンス「Code with Claude 2026」（SF・ロンドン・東京の3都市開催）で発表された5大機能がある。コミュニティでの活用事例が蓄積されてきたためここで整理する。</p>
         <ul>
-          <li><strong>経緯:</strong> Claude Code v2.1.91（4月2日リリース）に、中国タイムゾーン（Asia/Shanghai・Asia/Urumqi）または中国系 AI ラボ経由でアクセスするユーザーのシステムプロンプトをステガノグラフィーで変異させる追跡コードが3ヶ月間秘密裏に組み込まれていた</li>
-          <li><strong>発覚・修正:</strong> Reddit ユーザー LegitMichel777 と開発者 Thereallo が6月30日に独立して暴露。Anthropic エンジニア Thariq Shihipar が X 上で確認し、翌7月1日に修正版をリリース</li>
-          <li><strong>Anthropic の説明:</strong> 「無許可の API 転売業者とモデル蒸留攻撃パイプラインの検出を目的とした3月の実験だった」と釈明</li>
-          <li><strong>余波:</strong> アリババが「バックドアリスク」を理由に7月10日前後より全社員に Claude Code の使用を禁止。EU・日本の開発者コミュニティでも透明性に関する議論が続いている</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Claude Opus 5 が Artificial Analysis Agentic Index で首位（55.3）— エージェント性能で最高評価を維持</div>
-      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: <a href="https://felloai.com/best-ai-models/">FelloAI</a> · <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> — 2026.08</span></div>
-      <div class="card-body">
-        <ul>
-          <li>Claude Opus 5 が Artificial Analysis のエージェントベンチマーク（Agentic Index）でスコア 55.3 を記録し、長期エージェント推論タスクの最高評価を維持</li>
-          <li>マルチモーダル推論（図表・ドキュメント含む）では Gemini 3.1 Pro が依然として実用上の推奨モデルとされる場面も</li>
-          <li>「長時間エージェントチェーンには Opus 5、コスト重視の高速推論には Sonnet 5、大量バッチには Haiku 4.5」というモデル選択の定番構成がコミュニティに定着しつつある</li>
+          <li><strong>Dreaming（自己改善ループ）:</strong> Claude が過去のセッションを検査し、自分が見落としたことを特定して自己改善する仕組み。法律 AI の Harvey では、実装後にタスク完了率が約6倍に向上したと報告</li>
+          <li><strong>Outcomes（目標到達ループ）:</strong> 開発者がアウトカム（到達条件）を指定すると、エージェントがそれを満たすまでループし続ける機能。OpenAI Codex の `/goals` に相当。医療文書会社 Wisedocs は文書レビュー時間を50%短縮</li>
+          <li><strong>マルチエージェント統合:</strong> コーディネーターエージェントがサブエージェントを並列起動する機能がプラットフォームに組み込まれた。本日の v2.1.219 でネスト深さ3への拡張として結実</li>
+          <li><strong>Claude Finance:</strong> 金融分析用に設計された10種類のプリビルドエージェントパック。会計・リスク・コンプライアンス・レポーティングなどを対象</li>
+          <li><strong>Add-ins:</strong> サードパーティのツール・データソースを Claude のエージェントループに組み込む拡張インタフェース。MCP との連携が前提となる設計</li>
         </ul>
       </div>
     </div>
@@ -127,42 +118,42 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> OpenAI が次世代モデルファミリー <strong>Astra</strong> を正式発表 — 10件の未解決数学問題を解決し、上院議員に内覧を実施。数時間〜数日規模のマルチエージェントタスクが想定される。エージェント AI のアクティブユーザーは2026年前半だけで <strong>5倍増</strong>。
+      <strong>競合ハイライト:</strong> 7月末のリーダーボード更新で <strong>Claude Code が再び首位</strong>（morphllm スコアリング）— Codex が2位に後退。Codex Sol は Terminal-Bench 2.1 で 88.8%（Ultra モード 91.9%）を記録し、公開されたいかなる Claude スコアも上回る。OpenAI が <strong>GPT-5.6</strong>（Sol / Terra / Luna の3ティア）を7月9日に GA 化。エージェント AI は <strong>2026年前半だけで週間アクティブユーザーが5倍増</strong>。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、次世代モデルファミリー「Astra」を正式発表 — 10件の数学未解決問題を解決・議会に内覧・GPT-6 か GPT-5 系かは未定</div>
-      <div class="card-meta"><span class="badge">Announcement</span><span class="card-source">Source: <a href="https://en.softonic.com/articles/openai-unveils-astra-its-next-major-model-family-for-harder-problems">Softonic</a> · <a href="https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/">The Decoder</a> · <a href="https://yellow.com/news/openai-senators-astra-30-day-review-framework">Yellow</a> — 2026.07–08</span></div>
+      <div class="card-title">Claude Code が AI コーディングエージェント首位を奪還 — Codex Sol が Terminal-Bench で最高スコア 88.8% / 91.9%（Ultra）</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">morphllm / Best AI Coding Agents 2026</a> · <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> — 2026.07–08</span></div>
       <div class="card-body">
-        <p>OpenAI が「次の主要モデルファミリー」として Astra を正式に名指しした。数学・理論計算機科学の分野で10件の長年未解決の問題を解いたとする報告書を公開し、Astra の名称を初めて公式に使用した。</p>
+        <p>7月末に更新された morphllm の AI コーディングエージェントスコアリングで、Claude Code（Opus 5 搭載）が Claude Opus 5 のパフォーマンスとサブエージェント単位のモデル選択制御を武器に首位を奪還。Codex が2位に後退した。</p>
         <ul>
-          <li><strong>設計コンセプト:</strong> 単一の高速応答ではなく、複数のエージェントが数時間から数日にわたって複雑な問題に協調して取り組むマルチエージェント構成</li>
-          <li><strong>対象タスク:</strong> 深い研究・コーディング・科学的な多段階分析など、人間の専門家が長時間かけて行う作業の自動化を主な用途として想定</li>
-          <li><strong>政府との関係:</strong> サム・アルトマン CEO がワシントン DC の政策立案者・上院議員に内覧を実施。連邦政府の新たな「30日間プレリリースレビュー」を最初に通過するモデルになる可能性</li>
-          <li><strong>ポジショニング:</strong> GPT-6 として位置付けるか、GPT-5 系の拡張として扱うかは OpenAI 内部でもまだ検討中とされる</li>
-          <li><strong>競合への影響:</strong> Claude Opus 5 や Gemini Ultra との正面勝負が予想され、長時間エージェントベンチマークでの比較が注目される</li>
+          <li><strong>Claude Code #1:</strong> Opus 5 の CursorBench 3.2 スコアは Fable 5 比 0.5% 差以内でほぼ同等ながら、コストは半額。OSWorld 2.0 では Fable 5 を上回り、ARC-AGI 3 では次点モデルの3倍のスコアを記録。Zapier AutomationBench では次点比約1.5倍のパスレートを達成</li>
+          <li><strong>Codex（gpt-5.6-sol）#2:</strong> OpenAI が7月9日に GPT-5.6（Sol / Terra / Luna）を一般提供開始し、Codex はデフォルトで gpt-5.6-sol を推奨。Terminal-Bench 2.1 で 88.8%（Ultraモード 91.9%）を記録。これは公開済みの Claude スコアを上回るが、アーキテクチャ全体の評価では Claude Code が上位</li>
+          <li><strong>Cursor 2.0 #3:</strong> IDE 統合の利便性を武器に引き続き3位をキープ。「IDE 内の軽量タスクは Cursor、大規模コードベースは Claude Code ターミナル」という使い分けが定着</li>
+          <li><strong>Codex Sol Ultra with Cerebras:</strong> 信頼ユーザー向けに Cerebras チップで高速化した Sol Ultra がロールアウト中。協調型サブエージェントとの組み合わせで大規模タスクを短時間で処理できる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">エージェント AI のアクティブユーザーが2026年前半に5倍増 — OpenAI 社員の 97.9% が日常的にエージェントを利用</div>
-      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://www.theregister.com/ai-and-ml/2026/06/25/openai-says-979-percent-of-its-employees-are-now-using-agents/5262499">The Register</a> · <a href="https://www.axios.com/2026/06/25/codex-agents-growth-openai">Axios</a> — 2026.06–07</span></div>
+      <div class="card-title">エージェント AI の週間アクティブユーザーが2026年前半に5倍増 — OpenAI 社員の 97.9% が日常業務でエージェントを利用</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI / How Agents Are Transforming Work</a> · <a href="https://www.axios.com/2026/06/25/codex-agents-growth-openai">Axios</a> — 2026.06</span></div>
       <div class="card-body">
         <ul>
-          <li>エージェント AI の週間アクティブユーザーは2026年前半だけで5倍以上に急増。とりわけソフトウェア開発者以外のユーザー層への拡大ペースが加速している</li>
-          <li>Codex の週間アクティブユーザーは3月時点で200万人を突破。OpenAI 社員の 97.9% が日常業務でエージェントを活用していると発表</li>
-          <li>「エージェントは短いプロンプト応答から抜け出し、数分〜数時間のタスクを自律的に完遂する段階に入った」というのが業界の共通認識として定着しつつある</li>
-          <li>2026年最高峰の AI コーディングエージェントとして Claude Code（Opus 5 搭載）・Codex（GPT-5.6 Sol 搭載）・Cursor 2.0 の三つ巴構図が続く</li>
+          <li>エージェント AI の週間アクティブユーザーは2026年前半だけで5倍以上に急成長。非開発者ユーザーへの拡大が特に著しい</li>
+          <li>Codex の個人ユーザーは2025年8月比で137倍、企業ユーザーは189倍、OpenAI 社内では12倍に増加（2026年5月時点）</li>
+          <li>OpenAI 社員の 97.9% が日常業務でエージェントを活用。「単なる補助ツール」から「自律的な長時間タスク実行者」への転換が社内でも加速している</li>
+          <li>Codex ユーザーの 80.6% が1回あたり推定30分以上の人間作業に相当する要求を送信した経験あり。70.2% が1時間超、25.6% が8時間超のタスクを依頼している</li>
+          <li>「エージェントは短い Q&amp;A を超え、数時間〜数日規模のタスクを自律完遂する段階に入った」という認識が業界コンセンサスとして定着</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">VS Code 1.128 が Claude AI との統合を拡張 — エージェントワークフロー・チャット添付・OS ショートカットを強化</div>
-      <div class="card-meta"><span class="badge">Ecosystem</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07.08</span></div>
+      <div class="card-title">VS Code 1.128 の Claude AI 統合が業界標準化 — JetBrains・Neovim・Emacs の MCP 連携プラグインも相次ぎ登場</div>
+      <div class="card-meta"><span class="badge">Ecosystem</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07</span></div>
       <div class="card-body">
         <ul>
-          <li>Visual Studio Code 1.128 アップデートで Claude AI との統合が強化。エージェントワークフロー・チャット添付ファイル・ブラウザタブ制御・OS レベルのショートカット・企業向けテレメトリー管理が追加</li>
-          <li>Claude Code との使い分けとして「IDE 内の軽量タスクは VS Code + Claude、大規模リポジトリ作業は Claude Code ターミナル」という分業モデルが確立してきた</li>
-          <li>JetBrains・Neovim・Emacs 向けの MCP 連携プラグインも同時期に相次いでリリースされ、エディタエコシステム全体で Claude 統合が加速している</li>
+          <li>VS Code 1.128 での Claude AI 統合強化（エージェントワークフロー・チャット添付・ブラウザタブ制御・OS ショートカット・企業向けテレメトリー管理）が、IDE 統合の業界標準として浸透しつつある</li>
+          <li>同時期に JetBrains・Neovim・Emacs 向けの MCP 連携プラグインが相次いでリリースされ、エディタエコシステム全体で Claude 統合が加速</li>
+          <li>「IDE 内の軽量タスクは VS Code + Claude、大規模リポジトリ作業は Claude Code ターミナル」という分業モデルが確立。本日の Claude Code v2.1.219 での機能強化が両方向の開発フローを底上げする</li>
         </ul>
       </div>
     </div>
@@ -174,48 +165,49 @@
       <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Anthropic の隠しトラッカーで信頼が揺らいだ — ただし他のツールに移る理由にはならない」論争</div>
-      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/privacy (via <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a>) — 2026.07–08</span></div>
+      <div class="card-title">r/ClaudeCode「v2.1.219 でサブエージェント深さ3が解放された — マルチエージェントアーキテクチャの設計が根本的に変わる」</div>
+      <div class="card-meta"><span class="badge">Feature Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/programming — 2026.08.02</span></div>
       <div class="card-body">
         <ul>
-          <li>ステガノグラフィー追跡コード問題がコミュニティに引き続き波紋。「企業の不誠実さへの不信感」と「それでも Claude Code のパフォーマンスは他の追随を許さない」という二極に意見が分かれる</li>
-          <li><strong>批判派:</strong> 「アリババが禁止したのは分かる。ユーザーに無断で実験するのは倫理的に問題」「プライバシーポリシーに一切記載がなかった点が最悪」</li>
-          <li><strong>実用派:</strong> 「修正済みで使い続ける。GPT-5.6 Sol も同様のデータ収集をしているはず」「中国ユーザー向けの不正検出なら文脈は理解できる」</li>
-          <li>Anthropic が透明性レポートの頻度を上げ、今後の実験に関する事前告知義務を設けるよう求める声も高まっている</li>
+          <li>本日のリリースを受け、ネスト型サブエージェント（深さ3）への期待スレッドが急上昇。「コーディネーター → マネージャー → ワーカー」の3層構成が実用的に組めるようになったと評価</li>
+          <li>「Code with Claude で発表されたマルチエージェント統合がようやく本番で使えるレベルになった」「Harvey の6倍完了率を自分のプロジェクトで再現できるか試す」という投稿が上位に</li>
+          <li>懸念点としては「深さ3だとトークン消費が指数的に増える。コスト管理を誤ると請求が爆発する」という声も。Outcomes 機能との組み合わせで制御する方法の議論が派生</li>
+          <li>会話中のツール変更（ベータ）にも注目。「プロンプトキャッシュを壊さずにツールを差し替えられるのは長時間エージェントで非常に重要」というコメントが高評価</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「Claude for Open Source 採択された！— 応募のコツを全部シェアする」スレッドが盛況</div>
-      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/ClaudeCode · r/opensource — 2026.08.01</span></div>
+      <div class="card-title">r/ClaudeAI「2× 利用量イベント中に Anthropic は静かに通常制限を下げたのか？」— 疑念と検証報告が混在</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode (via <a href="https://www.aitooldiscovery.com/guides/claude-reddit">AI Tool Discovery</a>) — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>プログラム開始当日から採択報告が続々と上がり、スレッドが申請ガイドとして機能。「GitHub スター5,000件ちょうどで通った」「エコシステム影響トラックの説明文で通過した」などの具体例が蓄積</li>
-          <li>r/ClaudeCode の週間投稿者数は 4,200 名以上。r/Codex（約1,200名）の約3.5倍のコミュニティ規模に成長しており、プログラム情報も集積が速い</li>
-          <li>「1万名の上限を超えないうちに申請を」「Ecosystem Impact Track は文章の質が問われる」というアドバイスが上位コメントに</li>
+          <li>「2倍ブーストのプロモーション期間に入ってから、ピーク外の実効制限が以前より低く感じる」という報告が r/ClaudeAI で複数投稿され、スレッドに火がついた</li>
+          <li><strong>疑念派:</strong> 「8/19まで週間利用量 50% ブースト継続」の発表以来、通常時のレートリミットを測定したユーザーが以前との差異を指摘。「ブーストで実質元の水準に戻しただけ」という仮説</li>
+          <li><strong>反論派:</strong> 「計測方法が違う。プロモーション期間の利用集中でサーバー側の動的スロットリングが強まったにすぎない」「Anthropic がそんな操作をする動機はない」</li>
+          <li>Anthropic 公式からの回答は現時点でなく、コミュニティは引き続き実測データを収集中</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/artificial「OpenAI Astra はどんなモデルになるのか — GPT-6 か、それとも GPT-5.7 か」</div>
-      <div class="card-meta"><span class="badge">Speculation</span><span class="card-source">Reddit r/artificial · r/MachineLearning — 2026.07–08</span></div>
+      <div class="card-title">r/programming「8年分のプロダクトデザイン経験を Claude スキルに凝縮したら印象的な結果が出た」— スレッドが事例集に</div>
+      <div class="card-meta"><span class="badge">Workflow</span><span class="card-source">Reddit r/programming · r/ClaudeAI — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>数学未解決問題の解法公開で俄然注目を集めた OpenAI Astra について、ネーミング・位置付け・Codex との関係を巡る議論が活発</li>
-          <li><strong>GPT-6 説:</strong> 「数学的推論の質が前世代と非連続に跳ね上がった」「マルチエージェント設計はアーキテクチャ刷新のサインだ」</li>
-          <li><strong>GPT-5 拡張説:</strong> 「GPT-5.6 Sol のオーケストレーション層を Astra という名で包んだだけ。名前で煙に巻いている」</li>
-          <li>Claude Opus 5 の Agentic Index 55.3 との正面対決が予想され、長時間タスクでの差別化ポイントを探るスレッドも派生</li>
+          <li>プロダクトデザイナーが8年間の業務ノウハウ（ユーザーインタビュー手法・情報設計パターン・スプリント手順・アクセシビリティチェックリスト）を Claude スキルとして構造化。「プロジェクト開始から 90 分以内にユーザビリティ課題の初稿が出る」と投稿</li>
+          <li>コメント欄にデザイン・エンジニアリング・法務・医療各分野のスキル構築事例が集積。「CLAUDE.md + スキルの組み合わせが最大の生産性向上」という声が多い</li>
+          <li>「MCP + CLAUDE.md + Hooks + カスタムスキルの四点セットが Claude Code の真の最大化構成」というコンセンサスがこの週のトレンドとして定着しつつある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/programming「CLAUDE.md を使いこなすチームと使えていないチームで、生産性の差が5倍以上になっている」</div>
-      <div class="card-meta"><span class="badge">Workflow</span><span class="card-source">Reddit r/programming · r/ClaudeAI (via <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a>) — 2026.08</span></div>
+      <div class="card-title">r/MachineLearning「Dreaming の自己改善ループは強化学習と何が違うのか — 概念整理スレッド」</div>
+      <div class="card-meta"><span class="badge">Deep Dive</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>「Claude Code は CLAUDE.md の設定度合いで別物になる」という定量的な報告が複数上がり、スレッドが事例集として機能</li>
-          <li>ベストプラクティスとして「コードスタイル・テスト戦略・禁止操作・外部 API のリストを CLAUDE.md に書くだけで誤操作が激減した」という声が多数</li>
-          <li>「MCP + CLAUDE.md + Hooks の三点セットが Claude Code を最大限に引き出す構成」としてコンセンサスが形成されつつある</li>
+          <li>Anthropic の Dreaming 機能（過去セッションから自己検査・自己改善）について、ML 研究者コミュニティで「これは RLHF ・RLAIF とどう違うのか」という概念整理スレッドが話題に</li>
+          <li><strong>研究者の解説:</strong> 「Dreaming はモデルの重みを更新しない。推論時にコンテキストとして渡す in-context reflection に近い。RLHF との違いは重みが変わらない点」という説が高評価を獲得</li>
+          <li><strong>実用派の反論:</strong> 「定義論より Harvey の6倍という結果が全て。実装の詳細が公開されていない以上、ブラックボックスで使うしかない」</li>
+          <li>Anthropic のエンジニアからの公式コメントはなく、ホワイトペーパーの公開を求める声が高まっている</li>
         </ul>
       </div>
     </div>
@@ -227,68 +219,72 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/1）の主要トピック:</strong> <strong>移民:</strong> スペイン・セウタの死者が67名に急増（昨日18名から）— 約6万人が越境、スペインは封じ込め柵を緊急設置 / <strong>中東:</strong> 2026年イラン戦争が継続・ホルムズ海峡通航量が通常の70%未満 / <strong>中南米:</strong> ベネズエラ民主移行協議が本日（8/1）開始 / <strong>欧州:</strong> 8月12日に27年ぶりの皆既日食 / <strong>レバノン:</strong> 2026年レバノン戦争が継続
+      <strong>本日（8/2）の主要トピック:</strong> <strong>ホルムズ海峡:</strong> LNG タンカー Gaslog Shanghai が8/1夜に被弾・動力喪失 — 脅威レベルが「深刻」に格上げ、4隻が引き返す / <strong>サイバー:</strong> 米国7州の水道システムがサイバー攻撃 — FBI がイランの関与を調査（ミシガン・ミネソタ確認） / <strong>セウタ:</strong> 67〜86名の死者を出した大規模越境事件の後処理が続く / <strong>ベネズエラ:</strong> 移行協議が前進、来週カラカスで対面開始 / <strong>インドネシア:</strong> マドゥラ島沖でフェリー火災 — 少なくとも5名死亡・41名行方不明
     </div>
     <div class="card">
-      <div class="card-title">セウタ・モロッコ国境危機 — 死者67名に急増、約6万人が越境後モロッコへ帰還、スペインが海上封じ込め柵を緊急設置</div>
-      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/world/2026/08/01/migration-spain-ceuta-morocco/c24a1edc-8d81-11f1-8912-d71e69d679d7_story.html">Washington Post</a> · <a href="https://www.npr.org/2026/08/01/nx-s1-5916271/ceuta-spain-border-morocco">NPR</a> · <a href="https://www.wsls.com/news/world/2026/08/01/death-toll-in-spain-morocco-border-crisis-in-ceuta-reaches-67/">WSLS</a> — 2026.08.01</span></div>
+      <div class="card-title">ホルムズ海峡: LNG タンカー Gaslog Shanghai が被弾・動力喪失 — 脅威レベル「深刻」に引き上げ・トランプ「合意の輪郭ができた」と発言</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://maritime-executive.com/article/lng-carrier-hit-by-iranian-attack-in-strait-of-hormuz">Maritime Executive</a> · <a href="https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile">Al Jazeera</a> · <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">Wikipedia / 2026 Strait of Hormuz crisis</a> — 2026.08.01–02</span></div>
       <div class="card-body">
-        <p>スペインの飛び地セウタで起きた移民危機の死者が本日8月1日、スペイン政府によって67名と発表された。昨日31日の報告（18名）から大幅に増加しており、事態の深刻さが改めて浮き彫りになった。</p>
+        <p>8月1日深夜から2日未明にかけて、ホルムズ海峡で2隻の商船に対する新たな攻撃が発生。2026年のイラン軍事作戦を背景とした海峡危機が続いている。</p>
         <ul>
-          <li><strong>死者の内訳:</strong> 溺死と、防波堤の柵を突破しようとした際のスタンピード（群衆事故）による死亡が含まれる。スペイン内務省が発表</li>
-          <li><strong>越境規模:</strong> 木曜から金曜にかけて約6万人がセウタ国境を突破。8月1日（土）朝時点では大多数がすでにモロッコへ帰還しており、街に「不気味な静けさ」が戻ったとセウタ大統領が発言</li>
-          <li><strong>スペインの対応:</strong> 500メートルの海上封じ込め柵を防波堤沿いに緊急設置することを発表。移民が海側から回り込むルートを物理的に遮断する計画</li>
-          <li><strong>EU の反応:</strong> 欧州委員会が緊急声明を発表。EU の移民政策見直しと加盟国間の連帯を呼びかけ。「2021年の再現」を防ぐための対応を迫られている</li>
-          <li><strong>モロッコ側:</strong> モロッコ当局も自国領内での死者・負傷者の確認と国境管理の強化を発表</li>
+          <li><strong>Gaslog Shanghai 被弾:</strong> バミューダ船籍の LNG タンカー Gaslog Shanghai が Limah 北東 11 海里の地点で機関室付近に正体不明の飛翔体が命中し、全電力を喪失・漂流状態に。乗組員の死傷者報告なし</li>
+          <li><strong>さらに2隻が被弾、4隻が引き返し:</strong> 同夜から8月1日朝にかけて、海峡南ルートを通過しようとした2隻が攻撃を受けさらに被弾。警告を受けた4隻が通過を断念して引き返した</li>
+          <li><strong>脅威レベルが「深刻（Severe）」に格上げ:</strong> 海事当局がホルムズ海峡通過船舶の脅威評価を最高水準に引き上げ。LNG・原油タンカーの保険料が急上昇</li>
+          <li><strong>クウェートもイランのドローンを迎撃:</strong> クウェート国防省は、領空に侵入したイラン製ドローンを検知・迎撃したと発表。周辺国への波及が拡大</li>
+          <li><strong>外交動向:</strong> トランプ大統領は「イランや中東の他の国々から、攻撃を控えるよう要請があった。合意の輪郭ができている」と述べ、外交的解決への可能性を示唆。カタールが仲介に関与</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ベネズエラ民主移行協議が本日（8/1）開始 — 双子地震（死者5,200名超）の復興と民主化の二重課題</div>
-      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/07/advancing-venezuelas-institutional-democratic-transition">US State Dept.</a> · <a href="https://en.mercopress.com/2026/07/20/rubio-says-talks-on-venezuela-s-democratic-transition-will-begin-in-early-august">MercoPress</a> · <a href="https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes">Wikipedia / 2026 Venezuela earthquakes</a> — 2026.08.01</span></div>
+      <div class="card-title">米国7州の水道システムがサイバー攻撃 — FBI がイランの関与を調査、トランプはミネソタ犯人説を主張</div>
+      <div class="card-meta"><span class="badge">Cybersecurity</span><span class="card-source">Source: <a href="https://abc7news.com/post/water-system-hacking-fbi-investigates-cyberattacks-michigan-minnesota-amid-warning-possible-iran-hackers/19614740/">ABC7</a> · <a href="https://www.bloomberg.com/news/articles/2026-08-01/michigan-reports-cyberattacks-on-water-systems-after-fbi-warning">Bloomberg</a> · <a href="https://easternherald.com/2026/08/02/iran-cyberattack-water-systems-fbi-michigan-minnesota/">Eastern Herald</a> — 2026.08.01–02</span></div>
       <div class="card-body">
-        <p>ベネズエラの民主的移行に向けた協議が本日8月1日に正式に開始された。米国務省が歓迎声明を発表し、ルビオ国務長官も8月初旬の交渉開始を予告していた通りのスケジュールで実現。</p>
+        <p>ミシガン州が8月1日（土）、自州の9つの水道システムへのサイバー攻撃を発表。前日に30以上の水道システムへの攻撃が確認されたミネソタ州に続く報告で、FBI が少なくとも7州で同様の被害を確認している。</p>
         <ul>
-          <li><strong>協議の枠組み:</strong> 2015年国民議会（フィゲラ議長）とベネズエラ暫定政府が共同アジェンダを設定。米国が支援する形で民主移行・安定・国家復興のロードマップを策定</li>
-          <li><strong>背景 — 2026年ベネズエラ双子地震:</strong> 6月24日に Mw7.2 の前震と Mw7.5 の本震が30秒差でラ・グアイラ沖を震源として連続発生。カラカスを含む広域で死者5,200名超・数万人が負傷。多数の建物と公共施設が倒壊</li>
-          <li><strong>課題:</strong> 地震後の非常事態宣言がロドリゲス政権による大統領選挙の日程確定を先延ばしにする口実に使われているとの批判が根強い。ハードライナー派の閣僚も多く残留しており、実質的な民主化への疑念も</li>
-          <li><strong>米国の立場:</strong> 国務省は「ベネズエラ国民が決める民主的な未来を支持する」と強調。石油制裁の段階的緩和とのリンクを示唆する声もある</li>
+          <li><strong>攻撃の手法:</strong> インターネットに接続された産業制御システム（OT機器）が標的。水処理・水圧管理・配水制御などの運転技術を操作しようとした形跡が確認された</li>
+          <li><strong>実害は報告なし:</strong> ミシガン州当局は「すべてのシステムは安全に稼働している」と発表。ミネソタでも水質・供給への実害は確認されていない</li>
+          <li><strong>FBI の見方:</strong> イランのハッカーがこれらの産業制御システムに焦点を当てているという連邦サイバー警告を受け、FBI が捜査を開始。情報当局はイランを最有力容疑者とみているとされる</li>
+          <li><strong>トランプ大統領の発言:</strong> 情報機関の見解とは異なり、公式にはミネソタ州が関与しているとほのめかし、外交的な文脈を避けた発言。対イラン交渉の時期と重なることも背景にある</li>
+          <li><strong>対象7州:</strong> 連邦当局は被害が及んだ州名を公式に明らかにしていないが、ABC・CBS など複数メディアがミシガン・ミネソタを含む7州と報じている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">2026年イラン戦争 — ホルムズ海峡の通航量が通常の70%未満に低下、6月の停戦覚書も形骸化</div>
-      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">Wikipedia / 2026 Strait of Hormuz crisis</a> · <a href="https://www.britannica.com/event/2026-Iran-war">Britannica</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire">Wikipedia / 2026 Iran war ceasefire</a> — 2026.07–08</span></div>
+      <div class="card-title">ベネズエラ民主移行協議が前進 — 来週カラカスで対面開始、アブセント問題と地震復興が二大焦点</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: <a href="https://en.mercopress.com/2026/07/20/rubio-says-talks-on-venezuela-s-democratic-transition-will-begin-in-early-august">MercoPress</a> · <a href="https://www.manilatimes.net/2026/08/01/world/americas-emea/venezuela-prepares-for-transition-talks/2396048">Manila Times</a> · <a href="https://www.france24.com/en/live-news/20260801-venezuela-transition-talks-to-start-in-person-next-week-govt">France 24</a> — 2026.08.01–02</span></div>
       <div class="card-body">
-        <p>2月28日に始まった米国・イスラエルによるイランへの軍事作戦に端を発する2026年イラン戦争が継続中。7月末〜8月初の最新状況を整理する。</p>
+        <p>ベネズエラの民主移行に向けた米国支援の政治対話が本格始動。8月1日（土）に電話会議で技術ワーキンググループの設置を確認し、来週カラカスで対面協議を開始することで合意した。</p>
         <ul>
-          <li><strong>海峡の現状:</strong> ホルムズ海峡の商船通航量が通常の70%未満に低下。イランが外国船舶への通行料徴収を試み、IRGC が商船を拿捕・攻撃するケースが続く。LNG・原油価格が高止まり</li>
-          <li><strong>6月の停戦覚書（MoU）:</strong> 一旦合意されたが、イランが海峡での覇権的管理を図り続けているため実質的に形骸化。米国のトランプ大統領は「7月7日の停戦は終わった」と発言</li>
-          <li><strong>周辺影響:</strong> 中東からの航空便の迂回・運休が続く。インドは独自ルート（アラビア海西回り）を模索。G20財務相会議では供給途絶リスクへの対応が議題に</li>
-          <li><strong>外交動向:</strong> 米国はイランへの追加攻撃を今週は自制。外交チャネルを通じた圧力で事態の収束を模索中。カタールが仲介役として関与を強めている</li>
+          <li><strong>協議の枠組み:</strong> カラカスの暫定政府（デルシー・ロドリゲス暫定大統領）と2015年野党議会（フィゲラ議長）の代表が参加。米国が後方支援</li>
+          <li><strong>アジェンダ:</strong> 双子地震（6月24日、Mw7.5）被害者への対応、民主主義と政治的権利の保障、選挙ロードマップの3本柱</li>
+          <li><strong>マリア・コリーナ・マチャド問題:</strong> ノーベル平和賞受賞の野党指導者が米国承認の協議から排除されており、その支持者は「正統性のない交渉」と批判。チャビスタ強硬派も懐疑的</li>
+          <li><strong>米国の立場:</strong> ルビオ国務長官が7月20日に「8月初旬に開始」と予告していた通り実現。石油制裁の段階的緩和とのリンクを示唆する報道も続く</li>
+          <li><strong>先行き:</strong> 大統領選挙の具体的な日程設定が最大の焦点。ロドリゲス政権は地震後の非常事態を選挙先送りの口実に使い続けているとの批判がある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">2026年レバノン戦争が継続 — ナバティエ周辺でイスラエルとヒズボラの衝突が続く</div>
-      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2026_Lebanon_war">Wikipedia / 2026 Lebanon war</a> — 2026.03–08</span></div>
+      <div class="card-title">セウタ国境危機の後処理続く — 死者67〜86名・スペインが500mの海上封じ込め柵を設置・EU が移民政策見直しを迫られる</div>
+      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: <a href="https://www.usnews.com/news/world/articles/2026-08-01/death-toll-in-spain-morocco-border-crisis-in-ceuta-reaches-67">US News</a> · <a href="https://www.washingtonpost.com/world/2026/08/01/spain-pushes-migrants-back-morocco-fallout-deepens-over-mass-border-breach/">Washington Post</a> · <a href="https://en.wikipedia.org/wiki/2026_Morocco%E2%80%93Spain_border_incident">Wikipedia</a> — 2026.08.01–02</span></div>
       <div class="card-body">
+        <p>木曜〜金曜（7/30〜31）にかけて約5〜6万人がスペイン飛び地セウタの国境を突破した大規模越境事件の後処理が続いている。</p>
         <ul>
-          <li>2026年3月2日に始まったイスラエルとヒズボラの戦争が継続。ヒズボラがロケット攻撃を再開したことを受け、イスラエルが大規模な空爆と地上作戦をレバノン南部全域で展開</li>
-          <li>南部の古都ナバティエでは住民が続く戦闘に疲弊。「限界に近い」との声が現地報道で伝えられている</li>
-          <li>国連レバノン暫定軍（UNIFIL）の展開区域でも衝突が増加しており、人道状況の悪化が懸念される</li>
+          <li><strong>死者数:</strong> スペイン内務省は67名と発表（8/1）。Sky News はセウタ地元当局の情報として86名と報道。溺死と防波堤柵突破時のスタンピードによる死亡が含まれる</li>
+          <li><strong>越境者のほぼ全員がモロッコへ帰還:</strong> 8月1日朝時点で大多数はすでにモロッコ側に戻っており、スペイン国内への定着者は少数。「不気味な静けさが戻った」とセウタ大統領が発言</li>
+          <li><strong>スペインの対応:</strong> 防波堤の海側に 500m の水上封じ込め柵を緊急設置すると発表。モロッコ回りの海路を物理的にふさぐ計画</li>
+          <li><strong>EU の動向:</strong> スペインの首相が EU 対応を「利己的」と批判。欧州委員会が緊急声明を発表し、加盟国間の連帯と移民政策の見直しを呼びかけ。EU 首脳22名がスペインの大規模正規化（4月発表・120万人申請）を「プルファクター」と非難する書簡を送ったとの報道も</li>
+          <li><strong>背景:</strong> スペインが4月に不法滞在移民120万人の正規化手続きを開始したことが大規模越境の「pull factor」になったと欧州各国から批判を受けている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">欧州で27年ぶりの皆既日食 — 8月12日にグリーンランド・アイスランド・ポルトガル・スペインで観測可能</div>
-      <div class="card-meta"><span class="badge">Science</span><span class="card-source">Source: <a href="https://www.graphicnews.com/en/pages/48252/world-agenda-august-2026">Graphic News / World Agenda Aug 2026</a> · <a href="https://gulfnews.com/world/2026-events-watch-out-for-celestrial-events-fifa-world-cup-air-taxis-artemis-t20-cricket-world-cup-1.500379058">Gulf News</a> — 2026.08</span></div>
+      <div class="card-title">インドネシア・マドゥラ島沖でフェリー火災 — 少なくとも5名死亡・41名行方不明</div>
+      <div class="card-meta"><span class="badge">Disaster</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/02/latest-news-bulletin-august-2nd-2026-midday">Euronews</a> · <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_August_2">Wikipedia / Current Events 2026.08.02</a> — 2026.08.02</span></div>
       <div class="card-body">
         <ul>
-          <li>2026年8月12日（水）、欧州本土で1999年8月以来27年ぶりとなる皆既日食が観測される。グリーンランド・アイスランド・ポルトガルのアルガルヴェ地方・スペインが皆既帯に入る</li>
-          <li>欧州全土および北アフリカでも部分日食が見られる。観光客の集中が予想されており、ポルトガル・スペイン沿岸部のホテルはすでに満室状態</li>
-          <li>欧州山火事の煙の影響で観測条件が不安定になる可能性も指摘されており、気象機関が注視中</li>
-          <li>この他 8月: アイスランドが EU 加盟再交渉に関する国民投票を実施予定、G20 財務相会議がジャカルタで開催、ザンビア・カザフスタンで重要選挙</li>
+          <li>8月2日、インドネシアのマドゥラ島沖でフェリーが火災を起こし、少なくとも5名が死亡、41名が行方不明となっている</li>
+          <li>インドネシア当局が捜索救助活動を展開中。現地の海況と火災規模から行方不明者の生存確率について懸念が示されている</li>
+          <li>インドネシアでは過去にも離島間フェリーの火災・転覆事故が繰り返し発生しており、老朽化した船舶と安全規制の実効性が改めて問われている</li>
         </ul>
       </div>
     </div>
@@ -296,9 +292,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月1日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: Anthropic · AlphaSignal · AI Tools Club · ClaudeLog · ExplainX · Malwarebytes · Decrypt · Medium · FelloAI · MightyBot · Softonic · The Decoder · Yellow · Visual Studio Magazine · The Register · Axios · morphllm.com · Washington Post · NPR · WSLS · US State Dept. · MercoPress · Wikipedia · Britannica · Graphic News · Gulf News</p>
-  <p style="margin-top:0.3rem;"><a href="2026-07-31/index.html">前版（2026-07-31）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月2日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · CLI Release Notes · Releasebot · Claude Platform Docs · MindStudio · VentureBeat · Every · morphllm · MightyBot · OpenAI · Axios · Visual Studio Magazine · Maritime Executive · Al Jazeera · Wikipedia · ABC7 · Bloomberg · Eastern Herald · MercoPress · Manila Times · France 24 · US News · Washington Post · Euronews</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-01/index.html">前版（2026-08-01）</a></p>
 </footer>
 </body>
 </html>

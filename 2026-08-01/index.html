@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月1日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Anthropic が Claude for Open Source（無料 Max 6ヶ月・1万名）を開始 / OpenAI Astra を正式発表 — 次世代マルチエージェントモデルが数学未解決問題10件を解決 / セウタ死者67名に増加・スペインが封じ込め柵を緊急設置 / ベネズエラ民主移行協議が本日開始 / 欧州で27年ぶりの皆既日食（8/12予定）</p>
+  <p class="date">2026年8月1日（土）&nbsp;|&nbsp;<a href="2026-07-31/index.html">前版（7/31）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/1）のハイライト:</strong> Anthropic が <strong>Claude for Open Source</strong> プログラムを開始 — GitHub スター5,000件以上または npm 月間DL 100万件以上のリポジトリメンテナーに、Claude Max 20x（約$1,200相当）を6ヶ月間無料提供（先着1万名）。Claude Code サブスクライバーへの<strong>週間利用量 50% ブースト</strong>が8月19日まで延長。<strong>AI for Science グラント</strong>（最大$50,000相当のクレジット）の応募締め切りが明日（8月2日）に迫る。
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、「Claude for Open Source」プログラムを開始 — Claude Max 20x を6ヶ月間無料・先着1万名</div>
+      <div class="card-meta"><span class="badge">Program</span><span class="card-source">Source: <a href="https://alphasignal.ai/news/anthropic-gives-10-000-open-source-maintainers-1-200-of-free-claude-max">AlphaSignal</a> · <a href="https://aitoolsclub.com/anthropic-launches-claude-for-open-source-program-free-claude-max-for-6-months/">AI Tools Club</a> — 2026.08</span></div>
+      <div class="card-body">
+        <p>Anthropic がオープンソースコミュニティ支援を目的としたプログラムを開始。個人メンテナーおよびアクティブなコントリビューターを対象に、最高グレードの個人プランを無料で提供する。</p>
+        <ul>
+          <li><strong>対象者 — 標準トラック:</strong> 公開リポジトリの GitHub スターが5,000件以上または npm 月間ダウンロードが100万件以上、かつ過去3ヶ月以内に貢献活動があること</li>
+          <li><strong>対象者 — エコシステム影響トラック:</strong> 上記基準を満たさなくても、重要度の高いパッケージのメンテナーは書面による説明で申請可能</li>
+          <li><strong>提供内容:</strong> Claude Max 20x（通常 $2,000/6ヶ月）を6ヶ月間無料。ただし個人利用限定で、API クレジットやチーム共有・終了後の自動継続はなし</li>
+          <li><strong>上限:</strong> 合計1万名で締め切り。申請はローリングレビューで随時審査される</li>
+          <li><strong>背景:</strong> Anthropic はオープンソースが AI ツールの基盤インフラを担うと位置付け、コミュニティ全体の底上げを図る狙い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 利用量 50% ブーストが8月19日まで延長 — AI for Science グラントの応募は明日（8/2）締め切り</div>
+      <div class="card-meta"><span class="badge">Update</span><span class="card-source">Source: <a href="https://claudelog.com/claude-news/">ClaudeLog</a> · <a href="https://explainx.ai/blog/claude-usage-limits-2026-timeline-explained">ExplainX</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>利用量ブースト延長:</strong> Claude Code サブスクライバー向けの一時的な週間利用量 50% 増量が、当初予定を延長して8月19日まで継続。大規模プロジェクトを進める開発者はこの期間を活用したい</li>
+          <li><strong>AI for Science グラント（締め切り8/2）:</strong> 希少遺伝性疾患の研究に特化したグラントプログラム。採択された研究者は最大 $50,000 相当の Claude クレジットを6ヶ月間受け取れる。医学・生物学系研究者向け</li>
+          <li><strong>Sonnet 5 価格変更（8/31→9/1）:</strong> 引き続き注意が必要。8月31日まで $2/$10/Mトークン、9月1日から $3/$15/Mトークンへ。コスト試算の見直しを</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【振り返り】Anthropic が Claude Code に3ヶ月間ステガノグラフィー追跡コードを密かに埋め込んでいたことが判明 — アリババが全社利用禁止に</div>
+      <div class="card-meta"><span class="badge">Controversy</span><span class="card-source">Source: <a href="https://www.malwarebytes.com/blog/news/2026/07/claude-codes-hidden-tracker-was-an-experiment-says-anthropic">Malwarebytes</a> · <a href="https://decrypt.co/372977/anthropic-removes-hidden-claude-code-tracker-privacy">Decrypt</a> · <a href="https://medium.com/@rahulwale/anthropic-hid-invisible-tracking-code-inside-claude-code-for-3-months-932839c0bafa">Medium</a> — 2026.06–07</span></div>
+      <div class="card-body">
+        <p>先週の重大問題として引き続き余波が続いているため整理する。</p>
+        <ul>
+          <li><strong>経緯:</strong> Claude Code v2.1.91（4月2日リリース）に、中国タイムゾーン（Asia/Shanghai・Asia/Urumqi）または中国系 AI ラボ経由でアクセスするユーザーのシステムプロンプトをステガノグラフィーで変異させる追跡コードが3ヶ月間秘密裏に組み込まれていた</li>
+          <li><strong>発覚・修正:</strong> Reddit ユーザー LegitMichel777 と開発者 Thereallo が6月30日に独立して暴露。Anthropic エンジニア Thariq Shihipar が X 上で確認し、翌7月1日に修正版をリリース</li>
+          <li><strong>Anthropic の説明:</strong> 「無許可の API 転売業者とモデル蒸留攻撃パイプラインの検出を目的とした3月の実験だった」と釈明</li>
+          <li><strong>余波:</strong> アリババが「バックドアリスク」を理由に7月10日前後より全社員に Claude Code の使用を禁止。EU・日本の開発者コミュニティでも透明性に関する議論が続いている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Opus 5 が Artificial Analysis Agentic Index で首位（55.3）— エージェント性能で最高評価を維持</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: <a href="https://felloai.com/best-ai-models/">FelloAI</a> · <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Opus 5 が Artificial Analysis のエージェントベンチマーク（Agentic Index）でスコア 55.3 を記録し、長期エージェント推論タスクの最高評価を維持</li>
+          <li>マルチモーダル推論（図表・ドキュメント含む）では Gemini 3.1 Pro が依然として実用上の推奨モデルとされる場面も</li>
+          <li>「長時間エージェントチェーンには Opus 5、コスト重視の高速推論には Sonnet 5、大量バッチには Haiku 4.5」というモデル選択の定番構成がコミュニティに定着しつつある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> OpenAI が次世代モデルファミリー <strong>Astra</strong> を正式発表 — 10件の未解決数学問題を解決し、上院議員に内覧を実施。数時間〜数日規模のマルチエージェントタスクが想定される。エージェント AI のアクティブユーザーは2026年前半だけで <strong>5倍増</strong>。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI、次世代モデルファミリー「Astra」を正式発表 — 10件の数学未解決問題を解決・議会に内覧・GPT-6 か GPT-5 系かは未定</div>
+      <div class="card-meta"><span class="badge">Announcement</span><span class="card-source">Source: <a href="https://en.softonic.com/articles/openai-unveils-astra-its-next-major-model-family-for-harder-problems">Softonic</a> · <a href="https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/">The Decoder</a> · <a href="https://yellow.com/news/openai-senators-astra-30-day-review-framework">Yellow</a> — 2026.07–08</span></div>
+      <div class="card-body">
+        <p>OpenAI が「次の主要モデルファミリー」として Astra を正式に名指しした。数学・理論計算機科学の分野で10件の長年未解決の問題を解いたとする報告書を公開し、Astra の名称を初めて公式に使用した。</p>
+        <ul>
+          <li><strong>設計コンセプト:</strong> 単一の高速応答ではなく、複数のエージェントが数時間から数日にわたって複雑な問題に協調して取り組むマルチエージェント構成</li>
+          <li><strong>対象タスク:</strong> 深い研究・コーディング・科学的な多段階分析など、人間の専門家が長時間かけて行う作業の自動化を主な用途として想定</li>
+          <li><strong>政府との関係:</strong> サム・アルトマン CEO がワシントン DC の政策立案者・上院議員に内覧を実施。連邦政府の新たな「30日間プレリリースレビュー」を最初に通過するモデルになる可能性</li>
+          <li><strong>ポジショニング:</strong> GPT-6 として位置付けるか、GPT-5 系の拡張として扱うかは OpenAI 内部でもまだ検討中とされる</li>
+          <li><strong>競合への影響:</strong> Claude Opus 5 や Gemini Ultra との正面勝負が予想され、長時間エージェントベンチマークでの比較が注目される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">エージェント AI のアクティブユーザーが2026年前半に5倍増 — OpenAI 社員の 97.9% が日常的にエージェントを利用</div>
+      <div class="card-meta"><span class="badge">Market</span><span class="card-source">Source: <a href="https://www.theregister.com/ai-and-ml/2026/06/25/openai-says-979-percent-of-its-employees-are-now-using-agents/5262499">The Register</a> · <a href="https://www.axios.com/2026/06/25/codex-agents-growth-openai">Axios</a> — 2026.06–07</span></div>
+      <div class="card-body">
+        <ul>
+          <li>エージェント AI の週間アクティブユーザーは2026年前半だけで5倍以上に急増。とりわけソフトウェア開発者以外のユーザー層への拡大ペースが加速している</li>
+          <li>Codex の週間アクティブユーザーは3月時点で200万人を突破。OpenAI 社員の 97.9% が日常業務でエージェントを活用していると発表</li>
+          <li>「エージェントは短いプロンプト応答から抜け出し、数分〜数時間のタスクを自律的に完遂する段階に入った」というのが業界の共通認識として定着しつつある</li>
+          <li>2026年最高峰の AI コーディングエージェントとして Claude Code（Opus 5 搭載）・Codex（GPT-5.6 Sol 搭載）・Cursor 2.0 の三つ巴構図が続く</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">VS Code 1.128 が Claude AI との統合を拡張 — エージェントワークフロー・チャット添付・OS ショートカットを強化</div>
+      <div class="card-meta"><span class="badge">Ecosystem</span><span class="card-source">Source: <a href="https://visualstudiomagazine.com/articles/2026/07/08/claude-ai-gets-yet-another-boost-in-vs-code-1-128.aspx">Visual Studio Magazine</a> — 2026.07.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Visual Studio Code 1.128 アップデートで Claude AI との統合が強化。エージェントワークフロー・チャット添付ファイル・ブラウザタブ制御・OS レベルのショートカット・企業向けテレメトリー管理が追加</li>
+          <li>Claude Code との使い分けとして「IDE 内の軽量タスクは VS Code + Claude、大規模リポジトリ作業は Claude Code ターミナル」という分業モデルが確立してきた</li>
+          <li>JetBrains・Neovim・Emacs 向けの MCP 連携プラグインも同時期に相次いでリリースされ、エディタエコシステム全体で Claude 統合が加速している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">4 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Anthropic の隠しトラッカーで信頼が揺らいだ — ただし他のツールに移る理由にはならない」論争</div>
+      <div class="card-meta"><span class="badge">Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/privacy (via <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a>) — 2026.07–08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ステガノグラフィー追跡コード問題がコミュニティに引き続き波紋。「企業の不誠実さへの不信感」と「それでも Claude Code のパフォーマンスは他の追随を許さない」という二極に意見が分かれる</li>
+          <li><strong>批判派:</strong> 「アリババが禁止したのは分かる。ユーザーに無断で実験するのは倫理的に問題」「プライバシーポリシーに一切記載がなかった点が最悪」</li>
+          <li><strong>実用派:</strong> 「修正済みで使い続ける。GPT-5.6 Sol も同様のデータ収集をしているはず」「中国ユーザー向けの不正検出なら文脈は理解できる」</li>
+          <li>Anthropic が透明性レポートの頻度を上げ、今後の実験に関する事前告知義務を設けるよう求める声も高まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Claude for Open Source 採択された！— 応募のコツを全部シェアする」スレッドが盛況</div>
+      <div class="card-meta"><span class="badge">Community</span><span class="card-source">Reddit r/ClaudeCode · r/opensource — 2026.08.01</span></div>
+      <div class="card-body">
+        <ul>
+          <li>プログラム開始当日から採択報告が続々と上がり、スレッドが申請ガイドとして機能。「GitHub スター5,000件ちょうどで通った」「エコシステム影響トラックの説明文で通過した」などの具体例が蓄積</li>
+          <li>r/ClaudeCode の週間投稿者数は 4,200 名以上。r/Codex（約1,200名）の約3.5倍のコミュニティ規模に成長しており、プログラム情報も集積が速い</li>
+          <li>「1万名の上限を超えないうちに申請を」「Ecosystem Impact Track は文章の質が問われる」というアドバイスが上位コメントに</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial「OpenAI Astra はどんなモデルになるのか — GPT-6 か、それとも GPT-5.7 か」</div>
+      <div class="card-meta"><span class="badge">Speculation</span><span class="card-source">Reddit r/artificial · r/MachineLearning — 2026.07–08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>数学未解決問題の解法公開で俄然注目を集めた OpenAI Astra について、ネーミング・位置付け・Codex との関係を巡る議論が活発</li>
+          <li><strong>GPT-6 説:</strong> 「数学的推論の質が前世代と非連続に跳ね上がった」「マルチエージェント設計はアーキテクチャ刷新のサインだ」</li>
+          <li><strong>GPT-5 拡張説:</strong> 「GPT-5.6 Sol のオーケストレーション層を Astra という名で包んだだけ。名前で煙に巻いている」</li>
+          <li>Claude Opus 5 の Agentic Index 55.3 との正面対決が予想され、長時間タスクでの差別化ポイントを探るスレッドも派生</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「CLAUDE.md を使いこなすチームと使えていないチームで、生産性の差が5倍以上になっている」</div>
+      <div class="card-meta"><span class="badge">Workflow</span><span class="card-source">Reddit r/programming · r/ClaudeAI (via <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a>) — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「Claude Code は CLAUDE.md の設定度合いで別物になる」という定量的な報告が複数上がり、スレッドが事例集として機能</li>
+          <li>ベストプラクティスとして「コードスタイル・テスト戦略・禁止操作・外部 API のリストを CLAUDE.md に書くだけで誤操作が激減した」という声が多数</li>
+          <li>「MCP + CLAUDE.md + Hooks の三点セットが Claude Code を最大限に引き出す構成」としてコンセンサスが形成されつつある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/1）の主要トピック:</strong> <strong>移民:</strong> スペイン・セウタの死者が67名に急増（昨日18名から）— 約6万人が越境、スペインは封じ込め柵を緊急設置 / <strong>中東:</strong> 2026年イラン戦争が継続・ホルムズ海峡通航量が通常の70%未満 / <strong>中南米:</strong> ベネズエラ民主移行協議が本日（8/1）開始 / <strong>欧州:</strong> 8月12日に27年ぶりの皆既日食 / <strong>レバノン:</strong> 2026年レバノン戦争が継続
+    </div>
+    <div class="card">
+      <div class="card-title">セウタ・モロッコ国境危機 — 死者67名に急増、約6万人が越境後モロッコへ帰還、スペインが海上封じ込め柵を緊急設置</div>
+      <div class="card-meta"><span class="badge">Migration</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/world/2026/08/01/migration-spain-ceuta-morocco/c24a1edc-8d81-11f1-8912-d71e69d679d7_story.html">Washington Post</a> · <a href="https://www.npr.org/2026/08/01/nx-s1-5916271/ceuta-spain-border-morocco">NPR</a> · <a href="https://www.wsls.com/news/world/2026/08/01/death-toll-in-spain-morocco-border-crisis-in-ceuta-reaches-67/">WSLS</a> — 2026.08.01</span></div>
+      <div class="card-body">
+        <p>スペインの飛び地セウタで起きた移民危機の死者が本日8月1日、スペイン政府によって67名と発表された。昨日31日の報告（18名）から大幅に増加しており、事態の深刻さが改めて浮き彫りになった。</p>
+        <ul>
+          <li><strong>死者の内訳:</strong> 溺死と、防波堤の柵を突破しようとした際のスタンピード（群衆事故）による死亡が含まれる。スペイン内務省が発表</li>
+          <li><strong>越境規模:</strong> 木曜から金曜にかけて約6万人がセウタ国境を突破。8月1日（土）朝時点では大多数がすでにモロッコへ帰還しており、街に「不気味な静けさ」が戻ったとセウタ大統領が発言</li>
+          <li><strong>スペインの対応:</strong> 500メートルの海上封じ込め柵を防波堤沿いに緊急設置することを発表。移民が海側から回り込むルートを物理的に遮断する計画</li>
+          <li><strong>EU の反応:</strong> 欧州委員会が緊急声明を発表。EU の移民政策見直しと加盟国間の連帯を呼びかけ。「2021年の再現」を防ぐための対応を迫られている</li>
+          <li><strong>モロッコ側:</strong> モロッコ当局も自国領内での死者・負傷者の確認と国境管理の強化を発表</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ベネズエラ民主移行協議が本日（8/1）開始 — 双子地震（死者5,200名超）の復興と民主化の二重課題</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/07/advancing-venezuelas-institutional-democratic-transition">US State Dept.</a> · <a href="https://en.mercopress.com/2026/07/20/rubio-says-talks-on-venezuela-s-democratic-transition-will-begin-in-early-august">MercoPress</a> · <a href="https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes">Wikipedia / 2026 Venezuela earthquakes</a> — 2026.08.01</span></div>
+      <div class="card-body">
+        <p>ベネズエラの民主的移行に向けた協議が本日8月1日に正式に開始された。米国務省が歓迎声明を発表し、ルビオ国務長官も8月初旬の交渉開始を予告していた通りのスケジュールで実現。</p>
+        <ul>
+          <li><strong>協議の枠組み:</strong> 2015年国民議会（フィゲラ議長）とベネズエラ暫定政府が共同アジェンダを設定。米国が支援する形で民主移行・安定・国家復興のロードマップを策定</li>
+          <li><strong>背景 — 2026年ベネズエラ双子地震:</strong> 6月24日に Mw7.2 の前震と Mw7.5 の本震が30秒差でラ・グアイラ沖を震源として連続発生。カラカスを含む広域で死者5,200名超・数万人が負傷。多数の建物と公共施設が倒壊</li>
+          <li><strong>課題:</strong> 地震後の非常事態宣言がロドリゲス政権による大統領選挙の日程確定を先延ばしにする口実に使われているとの批判が根強い。ハードライナー派の閣僚も多く残留しており、実質的な民主化への疑念も</li>
+          <li><strong>米国の立場:</strong> 国務省は「ベネズエラ国民が決める民主的な未来を支持する」と強調。石油制裁の段階的緩和とのリンクを示唆する声もある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">2026年イラン戦争 — ホルムズ海峡の通航量が通常の70%未満に低下、6月の停戦覚書も形骸化</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">Wikipedia / 2026 Strait of Hormuz crisis</a> · <a href="https://www.britannica.com/event/2026-Iran-war">Britannica</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire">Wikipedia / 2026 Iran war ceasefire</a> — 2026.07–08</span></div>
+      <div class="card-body">
+        <p>2月28日に始まった米国・イスラエルによるイランへの軍事作戦に端を発する2026年イラン戦争が継続中。7月末〜8月初の最新状況を整理する。</p>
+        <ul>
+          <li><strong>海峡の現状:</strong> ホルムズ海峡の商船通航量が通常の70%未満に低下。イランが外国船舶への通行料徴収を試み、IRGC が商船を拿捕・攻撃するケースが続く。LNG・原油価格が高止まり</li>
+          <li><strong>6月の停戦覚書（MoU）:</strong> 一旦合意されたが、イランが海峡での覇権的管理を図り続けているため実質的に形骸化。米国のトランプ大統領は「7月7日の停戦は終わった」と発言</li>
+          <li><strong>周辺影響:</strong> 中東からの航空便の迂回・運休が続く。インドは独自ルート（アラビア海西回り）を模索。G20財務相会議では供給途絶リスクへの対応が議題に</li>
+          <li><strong>外交動向:</strong> 米国はイランへの追加攻撃を今週は自制。外交チャネルを通じた圧力で事態の収束を模索中。カタールが仲介役として関与を強めている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">2026年レバノン戦争が継続 — ナバティエ周辺でイスラエルとヒズボラの衝突が続く</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2026_Lebanon_war">Wikipedia / 2026 Lebanon war</a> — 2026.03–08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>2026年3月2日に始まったイスラエルとヒズボラの戦争が継続。ヒズボラがロケット攻撃を再開したことを受け、イスラエルが大規模な空爆と地上作戦をレバノン南部全域で展開</li>
+          <li>南部の古都ナバティエでは住民が続く戦闘に疲弊。「限界に近い」との声が現地報道で伝えられている</li>
+          <li>国連レバノン暫定軍（UNIFIL）の展開区域でも衝突が増加しており、人道状況の悪化が懸念される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">欧州で27年ぶりの皆既日食 — 8月12日にグリーンランド・アイスランド・ポルトガル・スペインで観測可能</div>
+      <div class="card-meta"><span class="badge">Science</span><span class="card-source">Source: <a href="https://www.graphicnews.com/en/pages/48252/world-agenda-august-2026">Graphic News / World Agenda Aug 2026</a> · <a href="https://gulfnews.com/world/2026-events-watch-out-for-celestrial-events-fifa-world-cup-air-taxis-artemis-t20-cricket-world-cup-1.500379058">Gulf News</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>2026年8月12日（水）、欧州本土で1999年8月以来27年ぶりとなる皆既日食が観測される。グリーンランド・アイスランド・ポルトガルのアルガルヴェ地方・スペインが皆既帯に入る</li>
+          <li>欧州全土および北アフリカでも部分日食が見られる。観光客の集中が予想されており、ポルトガル・スペイン沿岸部のホテルはすでに満室状態</li>
+          <li>欧州山火事の煙の影響で観測条件が不安定になる可能性も指摘されており、気象機関が注視中</li>
+          <li>この他 8月: アイスランドが EU 加盟再交渉に関する国民投票を実施予定、G20 財務相会議がジャカルタで開催、ザンビア・カザフスタンで重要選挙</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月1日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic · AlphaSignal · AI Tools Club · ClaudeLog · ExplainX · Malwarebytes · Decrypt · Medium · FelloAI · MightyBot · Softonic · The Decoder · Yellow · Visual Studio Magazine · The Register · Axios · morphllm.com · Washington Post · NPR · WSLS · US State Dept. · MercoPress · Wikipedia · Britannica · Graphic News · Gulf News</p>
+  <p style="margin-top:0.3rem;"><a href="2026-07-31/index.html">前版（2026-07-31）</a></p>
+</footer>
+</body>
+</html>
