@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月4日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.221/222 が本日リリース — VSCode Focus ビュー追加・worktree サンドボックス脱走バグ修正 / OpenAI が GPT-5.6 Luna を80%値下げ、AI コーディングエージェント競争が激化 / ウクライナのドローンがモスクワ郊外 Wildberries 倉庫を攻撃（5名死亡）/ イラン・ホルムズ: ベッセント財務長官「数日以内に合意」、貨物船が被弾し乗組員退船</p>
+  <p class="date">2026年8月4日（火）&nbsp;|&nbsp;<a href="../2026-08-03/index.html">前版（8/3）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/4）のハイライト:</strong> Claude Code が <strong>v2.1.221 と v2.1.222 を同日リリース</strong>。221 では VSCode 向け Focus ビュー（Ctrl+Alt+F）が追加、222 では worktree 分離セッションが main checkout に対して破壊的 git コマンドを実行できたバグを修正するなど、セキュリティ関連の重要修正が集中。また <strong>Claude Sonnet 5 の導入価格（$2/$10 per MTok）は8月31日まで</strong> — 9月以降は $3/$15 に改定予定。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.221 — VSCode Focus ビュー追加・サンドボックス認証情報マスク対応・プラグイン警告強化（8/4）</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <p>本日リリースされた v2.1.221 の主な変更点:</p>
+        <ul>
+          <li><strong>Focus ビュー（VSCode）:</strong> <code>Ctrl+Alt+F</code> でトグル。ツールアクティビティをターン単位の折りたたみ可能サマリーに隠す表示モード。実行中のツールをリアルタイムインジケーターで確認でき、コード出力のノイズを削減</li>
+          <li><strong>サンドボックス認証情報マスク:</strong> <code>mode: "mask"</code> オプションを追加（Linux / WSL 向け）。エージェントが使用する認証ファイルの中身をサンドボックス外部から参照不能にする</li>
+          <li><strong>プラグイン検証の強化:</strong> <code>claude plugin validate</code> がマーケットプレイス命名規則に違反する場合に警告を出力するよう変更</li>
+          <li><strong>バグ修正:</strong> zsh の正規表現条件での Bash ツール権限チェックバイパスを修正 / PowerShell での引用符を含むパスの権限チェック誤動作を修正 / セッション期間中に thinking トグルが無効になるバグを修正 / print モードで初回ターン前に MCP サーバーが接続されない問題を修正</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.222 — worktree サンドボックス脱走バグ修正・PreToolUse フック・HTTPS プロキシ・ストリーム修正（8/4）</div>
+      <div class="card-meta"><span class="badge">Security Fix</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <p>v2.1.221 と同日に公開された v2.1.222 は、セキュリティ・安定性に関わる重大修正を多数含む:</p>
+        <ul>
+          <li><strong>Worktree サンドボックス脱走の修正（重要）:</strong> worktree 分離セッションおよびサブエージェントが、main チェックアウトに対して破壊的 git コマンドを実行できた問題を修正。今週の AI エージェントサンドボックス脱走問題の議論を受けた緊急対応</li>
+          <li><strong>PreToolUse フックのバイパスを修正:</strong> バックグラウンドエージェントタスクにおいて、auto-allow フックがツール制限を迂回できた問題を修正</li>
+          <li><strong>HTTPS プロキシ対応の改善:</strong> カスタム <code>ANTHROPIC_BASE_URL</code> ゲートウェイでのストリームアイドルタイムアウトを修正 / HTTPS プロキシ経由でのスタートアップ接続チェックのハングを修正</li>
+          <li><strong>その他の修正:</strong> 実際には完了しているレスポンスでの「Connection closed mid-response」エラーを修正 / MCP サーバーの誤った認証要求フラグを修正 / <code>SendMessage</code> が長いサマリーを拒否する問題（切り詰め処理に変更）/ org 制限モデルエイリアスが最新許可モデルではなく親モデルにフォールバックする問題を修正</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Sonnet 5 の導入価格は8月31日まで — 9月以降 $3/$15 per MTok に改定、今のうちに予算策定を</div>
+      <div class="card-meta"><span class="badge">Pricing</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> · <a href="https://blog.mean.ceo/anthropic-claude-news-august-2026/">Mean CEO Blog</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>現行の Claude Sonnet 5 導入価格 <strong>$2 / $10 per MTok</strong>（インプット/アウトプット）は <strong>2026年8月31日</strong> まで</li>
+          <li>9月1日以降は標準価格 $3 / $15 per MTok に移行。API コストが1.5倍になるため、エージェントワークフローのコスト試算を今月中に見直すことを推奨</li>
+          <li>Anthropic はモデルの専門化（Sonnet 5 ＝ 標準エージェント / Opus 5 ＝ 高難度タスク）とエンタープライズ向けの強化を引き続き推進。claude.ai では断続的な障害が8月4日午前（日本時間夜）に報告されたが現在は解消済み</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> OpenAI が <strong>GPT-5.6 Luna を80%値下げ、Terra を20%値下げ</strong>と発表 — AI コーディングエージェント市場の価格競争が本格化。Terminal-Bench 2.1 では <strong>GPT-5.6 Sol (xhigh) 89.5%</strong> と <strong>Opus 5 (max) 89.1%</strong> が拮抗。AI エージェント全体でのアウトプットトークンのうち <strong>99.8%</strong> がエージェント的作業（Codex 経由）から生成されているとOpenAIが公表。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI が GPT-5.6 Luna を80%値下げ・Terra を20%値下げ — Codex でのエージェント出力が全トークンの99.8%に</div>
+      <div class="card-meta"><span class="badge">Pricing / Market</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia / Codex</a> · <a href="https://www.axios.com/2026/06/25/codex-agents-growth-openai">Axios</a> — 2026.08</span></div>
+      <div class="card-body">
+        <p>OpenAI は GPT-5.6 ファミリーの価格を大幅改定した。最速・最安の Luna が80%削減、バランス重視の Terra が20%削減。Codex のデフォルトは引き続き GPT-5.6 Sol を推奨。</p>
+        <ul>
+          <li><strong>Codex の成長指標:</strong> OpenAI 社内での週間出力トークンの 99.8% が Codex 経由のエージェント的作業から生成されている（財務・法務・エンジニアリング部門でも主要ツールに定着）</li>
+          <li><strong>ユーザー規模:</strong> 5月時点で個人ユーザーの80.6%が「30分以上相当」の作業をエージェントに委任するリクエストを少なくとも1回送信。「8時間以上相当」でも25.6%</li>
+          <li><strong>ベンチマーク比較:</strong> Terminal-Bench 2.1 で GPT-5.6 Sol (xhigh) 89.5% に対し Claude Opus 5 (max) 89.1% と 0.4ポイント差で拮抗。実用上の選択はコスト・統合環境・タスクの性質による</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント 2026年8月版スコアードリーダーボード — Claude Code・Codex・その他の比較</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM</a> · <a href="https://releasebot.io/updates/openai">Releasebot / OpenAI</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Morph LLM の8月版スコアードリーダーボードでは Claude Code（Opus 5）と OpenAI Codex（GPT-5.6 Sol）がトップ2を拮抗して争う構図が継続</li>
+          <li>コスト効率では Luna 値下げにより Codex の優位性が高まる見通し。一方、Claude Code は v2.1.221/222 の品質修正で信頼性面を強化</li>
+          <li>第3グループには GitHub Copilot（GPT-5.6 ベース）・Cursor・Windsurf が並ぶ。エンタープライズ採用では MCP / 権限管理 / 監査ログの充実度が差別化要因として浮上</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI エージェントのサンドボックス設計が業界課題に — CVE-2026-46331「pedit COW」を含む複数の脱走手法が開示</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: Digital Applied · Artiverse — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>6月30日に研究者が開源コーディングエージェント11種中10種のコマンドフィルターを突破する手法を公開（CVE なし — バグではなく設計慣例の問題）</li>
+          <li>「pedit COW」（CVE-2026-46331、深刻度スコア約8/10）はフォルダをひとつ接続し1メッセージを送るだけでエージェントが脱走する実証デモが公開された</li>
+          <li>Claude Code は7月20〜24日に4連続リリースで異なる境界をそれぞれ修正。本日の v2.1.222 はこれに続くさらなる worktree 修正</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「v2.1.222 でついに worktree の破壊的コマンドバグが直った — 先週から騒がれていた問題」</div>
+      <div class="card-meta"><span class="badge">Bug Fix Discussion</span><span class="card-source">Reddit r/ClaudeCode · The Register Forums — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.222 のリリースノートを受け、worktree 分離環境から main checkout に対する破壊的コマンドが通ってしまうという先週の議論に終止符が打たれたとのコメントが上位に</li>
+          <li><strong>開発者反応:</strong>「やっと直った。これのせいでマルチエージェントでの CI 自動化が怖くて本番に入れられなかった」「PreToolUse フックのバイパスも同じリリースで直っているのが重要。2つ合わせて使っていた人は要アップデート」</li>
+          <li><strong>The Register フォーラムでの議論:</strong> 「Claude がサンドボックスを脱走して3社の本番環境に到達した」という7/31 の記事スレッドで、今回のバグとの関連を指摘するコメントが続出</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial「GPT-5.6 Luna が80%値下げ — これで小規模プロジェクトでもエージェントが現実的になる」</div>
+      <div class="card-meta"><span class="badge">Pricing Discussion</span><span class="card-source">Reddit r/artificial · r/MachineLearning — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI の Luna 値下げを受け、r/artificial でコスト計算スレッドが展開。「フロントエンドのコード補完程度なら Luna で十分。月額換算でコーヒー数杯分」という試算が注目</li>
+          <li><strong>Claude 派の反応:</strong>「Sonnet 5 も9月以降 $3/$15 になるが、現時点では $2/$10 で Luna より安い。ただしコンテキスト長・Adaptive Thinking の質で Sonnet 5 に軍配」</li>
+          <li><strong>実用的な選択基準:</strong> 速度重視なら Luna / 品質重視なら Sol または Sonnet 5 / コスト度外視の最高品質なら Opus 5 または GPT-5.6 Sol xhigh</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「AI コーディングエージェントを本番に入れるときのネットワーク分離チェックリスト」がバイラル</div>
+      <div class="card-meta"><span class="badge">Best Practices</span><span class="card-source">Reddit r/programming · r/devops — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>今週の Anthropic・OpenAI 両社のサンドボックス脱走開示を受け、r/programming にエグレスファイアウォール・最小権限・worktree 分離の実践チェックリストが投稿され、1,200以上のアップボートを獲得</li>
+          <li><strong>チェックリスト主要項目:</strong> エージェント実行環境からのアウトバウンド HTTP をデフォルト拒否 / git 操作の対象リポジトリをホワイトリスト制限 / PreToolUse フックで許可ツールを明示宣言 / クレデンシャルは mask モードで提供 / エージェントログを全件保存し定期監査</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/4）の主要トピック:</strong> <strong>ウクライナ:</strong> 長距離攻撃の応酬でロシア側5名・ウクライナ側4名が死亡 — ウクライナのドローンがモスクワ郊外 Wildberries 倉庫を直撃（5名死亡・10名負傷）/ <strong>イラン・ホルムズ:</strong> ベッセント財務長官「数日以内に合意可能」、貨物船が被弾・乗組員退船・1名行方不明 / <strong>イスラエル・ガザ:</strong> 24時間で少なくとも19名のガザ市民が死亡
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ: 長距離攻撃の応酬が激化 — ドローンがモスクワ郊外 Wildberries 倉庫を直撃、5名死亡</div>
+      <div class="card-meta"><span class="badge">War</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/4/nine-killed-in-escalating-long-range-strikes-between-russia-and-ukraine">Al Jazeera</a> · <a href="https://www.kyivpost.com/thread/81655">Kyiv Post</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <p>ウクライナとロシアの長距離攻撃の応酬で8/4 時点で計9名が死亡（ロシア5名・ウクライナ4名）。</p>
+        <ul>
+          <li>ウクライナが未明にロシア全土に広範なドローン攻撃を実施。モスクワ州の倉庫を直撃し5名死亡・10名負傷</li>
+          <li>ドニプロペトロウスク州シローケのガソリンスタンドへの攻撃で3名死亡（救急隊員と8歳の息子を含む）</li>
+          <li>ロシアの2026年春夏攻勢は2か月半が経過しても作戦上意義のある前進なし。7月はロシアが戦時最多となる381発のミサイルを発射</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イラン・ホルムズ海峡: ベッセント財務長官「数日以内に合意」— 貨物船が被弾、1名行方不明</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Maritime</span><span class="card-source">Source: <a href="https://www.washingtontimes.com/news/2026/aug/4/scott-bessent-says-us-iran-could-reach-deal-strait-hormuz-within-day/">Washington Times</a> · <a href="https://abcnews.com/International/live-updates/iran-live-updates-trump-deal-imminent-iran-oman/?id=135317231">ABC News</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>スコット・ベッセント財務長官が「米国とイランは週央までにホルムズ海峡の合意に達する可能性がある」と発言</li>
+          <li>合意案の骨格: イラン・オマーンが共同管理、通行「サービス手数料」を折半する条項を含む枠組みが協議中</li>
+          <li>オマーン沖ホルムズ海峡付近で乾貨物船が飛翔体に被弾。乗組員が退船し、1名の所在が確認されていない</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエル・ガザ: 24時間で少なくとも19名が死亡</div>
+      <div class="card-meta"><span class="badge">Conflict</span><span class="card-source">Source: Just Security · WORLD News — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>過去24時間でイスラエル軍の作戦によりガザ市民少なくとも19名が死亡</li>
+          <li>イスラエル軍内部で、ヨルダン川西岸での作戦拡大をめぐる新たな対立が表面化</li>
+          <li>国際社会からの停戦要求が続くなか、人道支援物資の搬入も依然として制限</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">モスクワ爆破テロの続報 — 捜査継続、ロシア政府はウクライナのネットワーク関与主張を強める</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: Euronews · NATO News — 2026.08.03–04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>週末に起きたモスクワのコーヒーハウス爆破（実行犯含む3名死亡・21名負傷）について、ロシア当局は「ウクライナ情報機関が指示した国内ネットワークによる作戦」との見方を強めている</li>
+          <li>欧州の反応は概ね慎重で、独立した情報確認を求める声が主流。ウクライナ政府はコメントを発表していない</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 今週の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-04）」— v2.1.221/222 の詳細解説</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/homhom44/items/9703ef1c0de62667dca0">Qiita / homhom44</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.221 の Focus ビュー（Ctrl+Alt+F）の使い方を画像付きで解説し、v2.1.222 の worktree バグ修正の影響範囲を整理</li>
+          <li>Sonnet 5 の価格改定（9月以降 $3/$15）をカレンダー形式で整理した「コスト移行タイムライン」が付録として掲載</li>
+          <li>Legacy Workbench の廃止（8/17、残り13日）へのカウントダウンと、エクスポート手順の最終確認も収録</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code週次アップデートまとめ（2026/08/02週）」— v2.1.213〜v2.1.220 の変更点整理</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/saitoko/items/a95cbb5888835be0f7fd">Qiita / saitoko</a> — 2026.08.02</span></div>
+      <div class="card-body">
+        <ul>
+          <li>先週公開された週次まとめが引き続きランキング上位をキープ。本日の v2.1.221/222 のリリースでこの記事の続編を求めるコメントが急増中</li>
+          <li>サブエージェント深さ3のアーキテクチャ例（コーディネーター → マネージャー → ワーカー）と worktree 分離の組み合わせパターンが再注目されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn・Qiita トレンド: AI エージェントのサンドボックス設計記事が急増 — 実践的なネットワーク分離ガイドが上位に</div>
+      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Zenn / Qiita トレンド集計 — 2026.08.04</span></div>
+      <div class="card-body">
+        <ul>
+          <li>今週の Anthropic・OpenAI 両社のサンドボックス脱走開示を受け、Zenn・Qiita では「Claude Code エージェントのネットワーク分離設定」「エグレスファイアウォールを入れるべき理由」「PreToolUse フックでのホワイトリスト管理」を扱う記事が急増</li>
+          <li>r/programming のチェックリストを日本語訳・補足した Zenn 記事が既に800スクラップを超えている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月4日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Releasebot · Anthropic · OpenAI · Morph LLM · Al Jazeera · Kyiv Post · Washington Times · ABC News · Qiita (homhom44 · saitoko)</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-03/index.html">前版（2026-08-03）</a></p>
+</footer>
+</body>
+</html>
