@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月5日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">ロシアがキーウをミサイル24発・ドローン115発で爆撃、17名死亡・44名負傷 / トランプ「ホルムズ合意は本日にも」Iran-Oman 最終段階 / Microsoft が Google A2A spec を Azure AI Foundry・Copilot Studio に採用 / Perplexity Comet が Amazon 訴訟で第9巡回区逆転勝訴</p>
+  <p class="date">2026年8月5日（水）&nbsp;|&nbsp;<a href="../2026-08-04/index.html">前版（8/4）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/5）のハイライト:</strong> 昨日リリースされた <strong>Claude Code v2.1.221 / v2.1.222</strong> の影響が引き続き広がる。特に v2.1.222 の worktree サンドボックス脱走バグ修正はマルチエージェント CI 構築者に直撃。Anthropic は MCP の新仕様 <strong>2026-07-28 spec</strong>（ステートレスコア・強化 OAuth/OIDC・バージョン付き拡張）への対応を完了し、エンタープライズ向け統合が加速。<strong>Claude Sonnet 5 の導入価格は残り26日（$2/$10 per MTok）</strong>、9月以降は $3/$15 に改定。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.222 の worktree 修正 — マルチエージェント CI 自動化への影響と移行ガイド</div>
+      <div class="card-meta"><span class="badge">Security Fix</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.08.04</span></div>
+      <div class="card-body">
+        <p>昨日（8/4）リリースの v2.1.222 で修正された worktree サンドボックス脱走バグの実務への影響をまとめる。</p>
+        <ul>
+          <li><strong>修正の本質:</strong> worktree 分離セッションおよびサブエージェントが、main チェックアウトへの破壊的 git コマンドを実行できた設計上の不備を解消。<code>git reset --hard</code> / <code>git clean -fd</code> 等が worktree 外で通っていた</li>
+          <li><strong>影響範囲:</strong> 特に「コーディネーター → マネージャー → ワーカー」形式の深いサブエージェント構成を CI パイプラインに組み込んでいる環境。個人利用・シングルエージェントでの影響は軽微</li>
+          <li><strong>推奨アクション:</strong> <code>npm update -g @anthropic-ai/claude-code</code> で v2.1.222 以降に更新後、PreToolUse フックの設定を見直し。<code>mode: "mask"</code> によるクレデンシャルマスクも v2.1.221 の新機能として同時に有効化を推奨</li>
+          <li><strong>関連修正:</strong> PreToolUse フックのバイパス（バックグラウンドエージェントの auto-allow がツール制限を迂回）も同リリースで修正済み。2つを組み合わせて防御層を形成していた運用環境は要確認</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic が MCP 2026-07-28 spec 対応を完了 — ステートレスコア・強化 OAuth/OIDC・バージョン付き拡張で企業統合加速</div>
+      <div class="card-meta"><span class="badge">MCP / Protocol</span><span class="card-source">Source: <a href="https://www.anthropic.com/news">Anthropic News</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Claude Code Changelog</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新 spec の3つの柱:</strong> ① ステートレスコア（HTTP+JSON だけで動作、永続セッション不要） ② 強化 OAuth 2.1 / OIDC フロー（エンタープライズ IdP との統合が標準化） ③ バージョン付き拡張（Apps / Tasks の仕様を安定したバージョン管理で公開）</li>
+          <li><strong>Claude Code での対応:</strong> Vertex AI・Bedrock・Foundry の auto モードで、新 spec の stateless MCP サーバーが <code>CLAUDE_CODE_ENABLE_AUTO_MODE</code> opt-in 不要で動作。Vertex AI での tool search も Claude 4.5 世代以降で再有効化</li>
+          <li><strong>企業採用への影響:</strong> Microsoft が Google の A2A spec と同時期に MCP 2026-07-28 spec を Azure AI Foundry で採用方針を示しており、マルチエンドポイント統合の標準軌道が固まりつつある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic の Claude Sonnet 5 導入価格（$2/$10）は8月31日まで — 残り26日、エージェントコスト試算の最終確認を</div>
+      <div class="card-meta"><span class="badge">Pricing</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> · <a href="https://blog.mean.ceo/anthropic-claude-news-august-2026/">Mean CEO Blog</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Sonnet 5 の導入価格 <strong>$2 / $10 per MTok</strong> は 2026年8月31日終了。9月1日以降は <strong>$3 / $15 per MTok</strong>（1.5倍）に移行</li>
+          <li><strong>エージェントコストへの影響:</strong> 1日100万トークン消費するエージェントで月換算 +$1,500。マルチエージェント構成（サブエージェント10並列など）では数倍に膨らむ可能性があり、今月中の予算見直しが急務</li>
+          <li><strong>比較基準:</strong> OpenAI GPT-5.6 Luna（今週80%値下げ後）との比較では、9月以降も Sonnet 5 は品質（Adaptive Thinking・長コンテキスト精度）で優位を保つ見込みだが、大量処理のコスト面では Luna が競争力を持つ</li>
+          <li>Anthropic は Legacy Workbench の廃止（8月17日、残り<strong>12日</strong>）も迫っており、今月は移行タスクが集中している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> <strong>Microsoft が Google A2A spec を採用</strong> — Azure AI Foundry・Copilot Studio への統合を正式発表。Oracle が AI Agent Studio を刷新し Gemini 3.1/3.5 Flash を統合。Perplexity の Comet ショッピングエージェントが Amazon との訴訟で第9巡回区逆転勝訴。
+    </div>
+    <div class="card">
+      <div class="card-title">Microsoft が Google Agent2Agent（A2A）spec を採用 — Azure AI Foundry・Copilot Studio に統合、業界標準化が加速</div>
+      <div class="card-meta"><span class="badge">Industry Standard</span><span class="card-source">Source: <a href="https://thenewstack.io/microsoft-agent-framework-go/">The New Stack</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a> · <a href="https://aiweekly.co/ai-news-today">AI Weekly</a> — 2026.08.05</span></div>
+      <div class="card-body">
+        <p>Microsoft が Google の Agent2Agent（A2A）プロトコル仕様を Azure AI Foundry と Copilot Studio で正式にサポートすると発表した。</p>
+        <ul>
+          <li><strong>意義:</strong> マイクロソフト（Azure）とグーグル（Cloud）という2大クラウドが同一のエージェント間通信プロトコルを採用することで、ベンダーをまたいだマルチエージェントオーケストレーションの設計が現実的になる</li>
+          <li><strong>MCP との役割分担:</strong> A2A は「エージェント同士の通信」、MCP は「エージェントとツール・データソースの接続」という役割分担。両社とも MCP 2026-07-28 spec と A2A を補完的な標準として扱う立場を取る</li>
+          <li><strong>市場への影響:</strong> OpenAI は現時点で A2A への公式採用を表明していない。Anthropic の MCP が事実上の「ツール統合標準」になりつつある一方、「エージェント間通信標準」の座は A2A が有力候補として浮上</li>
+          <li><strong>開発者向け:</strong> Azure AI Foundry では A2A 対応エージェントのテンプレートが今週中に公開予定。Copilot Studio ではローコード向けのビルダーに A2A ノードが追加される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Oracle が AI Agent Studio を刷新 — Gemini 3.1 Flash-Lite・3.5 Flash を統合、Google Cloud パートナーシップ拡大</div>
+      <div class="card-meta"><span class="badge">Cloud / Platform</span><span class="card-source">Source: <a href="https://aiweekly.co/ai-news-today/google-ai-news">AI Weekly / Google AI</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a> — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Oracle が AI Agent Studio（OCI 上のローコード/プロコードエージェント構築基盤）を統一 AI ネイティブビルダーツールに刷新。Google Cloud とのパートナーシップ拡大により、<strong>Gemini 3.1 Flash-Lite</strong> と <strong>Gemini 3.5 Flash</strong> が Oracle AI Agent Studio で選択可能に</li>
+          <li><strong>競合製品との差別化:</strong> Oracle は「クラウド中立かつ既存 OCI ワークロードとのシームレス統合」を訴求。エンタープライズ DB（Autonomous DB・Exadata）との直接接続でデータグラウンディングのレイテンシを削減</li>
+          <li><strong>エンタープライズ市場の4極構造:</strong> AWS Bedrock（Anthropic 優先）/ Azure AI Foundry（OpenAI + A2A）/ Google Cloud Vertex（Gemini ネイティブ）/ Oracle OCI（マルチモデル）という棲み分けが固まりつつある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Perplexity の Comet ショッピングエージェントが Amazon 訴訟で逆転勝訴 — 第9巡回区「アクセスしたのはユーザー」と判断</div>
+      <div class="card-meta"><span class="badge">Legal</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a> · <a href="https://aiweekly.co/ai-news-today">AI Weekly</a> — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>米第9巡回控訴裁判所は、Perplexity の Comet ショッピングエージェントが Amazon.com にアクセスすることを禁じた下級審命令を覆した。「Amazon にアクセスしたのはユーザーであり Perplexity ではない」と判断し、連邦コンピューター不正アクセス法（CFAA）の適用を否定</li>
+          <li><strong>業界への影響:</strong> AI エージェントによる既存 Web サービスへのアクセスの合法性に関する先例として注目。「エージェントがユーザーの代理として行動する場合、不正アクセスの主体はユーザーか AI か」という法的問いへの一つの回答</li>
+          <li><strong>Claude Code への含意:</strong> Claude Code がブラウザ操作・購買・フォーム入力を行うタスクでも同様の法的問いが生じる。利用ポリシーの確認と ToS 違反リスクの評価が実務的に重要</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「v2.1.222 の worktree 修正は歓迎だが、サンドボックス設計の根本見直しが必要」</div>
+      <div class="card-meta"><span class="badge">Security Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/devops — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.222 の修正を歓迎しつつも、「バグ修正のパッチを重ねる対症療法ではなく、エージェント実行の最小権限原則を基礎から設計し直すべき」という意見がスレッドをリード</li>
+          <li><strong>上位コメントの論点:</strong> 「worktree 分離 + コンテナ分離 + ネットワーク分離の3層防御が必要。どれか1つに頼るのは甘い」「Claude Code は利便性と安全性の間でまだ揺れている段階。Anthropic にはロードマップを公開してほしい」</li>
+          <li><strong>r/devops のチェックリストスレッドが継続トレンド:</strong> 昨日バイラルした本番環境向けネットワーク分離チェックリストにコメントが続々。各企業が自社の設定事例を共有するサブスレッドに発展</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial「Microsoft が A2A を採用 — これで OpenAI も乗らざるを得なくなった、それとも独自路線を貫く？」</div>
+      <div class="card-meta"><span class="badge">Industry Discussion</span><span class="card-source">Reddit r/artificial · r/MachineLearning — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Microsoft の A2A 採用発表を受け、「OpenAI が独自規格にこだわると孤立するリスクがある」という議論が展開。トップコメントは「MCP (Anthropic) が Tool-Agent 接続の標準、A2A (Google/MS) が Agent-Agent の標準になりつつある — OpenAI は両方で後れを取っている」</li>
+          <li><strong>開発者の実感:</strong>「A2A と MCP の組み合わせで理論上は Claude Code エージェントと Copilot Studio エージェントが協調できる。実際に試してみたが動いた」という報告が注目を集める</li>
+          <li><strong>懐疑論:</strong>「仕様に準拠していても実装品質が各社バラバラだと相互運用は絵に描いた餅。A2A のコンプライアンステストが整備されるまでは様子見」という慎重論も上位</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「Perplexity Comet の Amazon 訴訟勝訴 — AI エージェントが Web サービスにアクセスする権利をどう考えるか」</div>
+      <div class="card-meta"><span class="badge">Legal Discussion</span><span class="card-source">Reddit r/programming · Hacker News — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>第9巡回区の Comet 判決を受け、r/programming と Hacker News で「AI エージェントによる Web スクレイピング・自動購買の法的地位」を論じるスレッドが急上昇</li>
+          <li><strong>主要論点:</strong> 「今回の判決は CFAA の解釈であって ToS 違反は別の話。利用規約違反での民事訴訟は依然リスクがある」「ユーザーの代理として動くなら robots.txt 準拠は道義的義務か技術的義務か」</li>
+          <li><strong>Claude Code 開発者の関心:</strong>「Claude Code がブラウザ操作を行うタスクでも同様の法的問いが生じる。Anthropic の利用ポリシーがどこまでカバーしているか確認が必要」という実務的な声も</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/5）の主要トピック:</strong> <strong>ウクライナ:</strong> ロシアがキーウを弾道ミサイル24発・ドローン115発で爆撃、17名死亡・44名負傷。ウクライナ「弾道ミサイル迎撃体が枯渇」と表明 / <strong>イラン・ホルムズ:</strong> トランプ「本日にも合意可能」、Iran-Oman 最終段階 — ただし「完全通航の自由」vs「共同管理・通行料」の溝が残る / <strong>インド洋:</strong> インド船籍貨物船がイエメン沖で被弾・転覆、14名全員救助
+    </div>
+    <div class="card">
+      <div class="card-title">ロシアがキーウを過去最大規模（弾道ミサイル24発・ドローン115発）で爆撃 — 17名死亡・44名負傷、ウクライナ「迎撃体が枯渇」</div>
+      <div class="card-meta"><span class="badge">War</span><span class="card-source">Source: RBC-Ukraine · United24 Media · Britannica 2026 — 2026.08.05</span></div>
+      <div class="card-body">
+        <p>ロシアが8月5日未明、弾道ミサイル24発とドローン115発を組み合わせてキーウと周辺地域を攻撃。民間人17名死亡・44名負傷が確認された。</p>
+        <ul>
+          <li><strong>被害:</strong> キーウ最大手の小売業者（Epicenter 系列の物流ハブを含む）が破壊。数日前にウクライナがドローン攻撃した Wildberries 倉庫（モスクワ郊外）への報復の性格も</li>
+          <li><strong>迎撃体枯渇の問題:</strong> ウクライナ当局者は「弾道ミサイル迎撃システムの在庫が尽きた。米国製システムが唯一の手段」と議会向けに報告。米国への追加支援要請を強める</li>
+          <li><strong>北部からの攻撃:</strong> スームィへの別の攻撃で高齢女性1名・子供2名が死亡</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ホルムズ海峡: トランプ「本日（水曜）にも合意可能」、Iran-Oman 最終段階 — 「完全通航の自由」vs「共同管理」で溝</div>
+      <div class="card-meta"><span class="badge">Diplomacy</span><span class="card-source">Source: Washington Post · CNBC · Al Jazeera — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>トランプ大統領:</strong> 「イランとの合意は水曜（本日）にも到達できる」と SNS に投稿。スコット・ベッセント財務長官も「ホルムズ合意はここ数日以内」と具体的な見通しを示した</li>
+          <li><strong>Iran-Oman 協議:</strong> イラン外務省「オマーンとの協議は最終段階にある」。ただしイランは「米国とではなくオマーンとのみ交渉している」と強調</li>
+          <li><strong>市場反応:</strong> トランプ発言で原油先物が大幅下落、株式市場は上昇</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">フィリピン: Alexandra Eala がワシントン DC オープンで優勝 — フィリピン初・東南アジア初の WTA ツアー優勝</div>
+      <div class="card-meta"><span class="badge">Sports</span><span class="card-source">Source: Britannica 2026 · WORLD News — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>フィリピンの Alexandra Eala が Jessica Pegula を 4–6, 6–4, 6–0 で下し、2026年ワシントン DC オープン女子シングルスを制覇。フィリピン人初・東南アジア出身者初の WTA ツアー優勝を達成</li>
+          <li>フィリピン国内で祝福ムードが広がり、マルコス大統領が祝辞を発表</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">クリミア: 銃乱射でロシア兵が4名を殺害 — セヴァストポリで「ならず者兵士」による銃撃事件</div>
+      <div class="card-meta"><span class="badge">Security</span><span class="card-source">Source: Britannica 2026 · WORLD News — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ロシア占領下のクリミア・セヴァストポリで、ロシア軍の「ならず者兵士」による銃乱射事件が発生。4名死亡・4名負傷。容疑者は拘束済み</li>
+          <li>ロシア軍の内部規律問題が再び浮上する形となり、長期戦争による精神的負荷・士気低下との関連を指摘する声が上がっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 今週の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-05）」— MCP 2026-07-28 spec 対応・worktree 修正・A2A との関係を解説</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/homhom44/items/a31f58e90f201b766ba7">Qiita / homhom44</a> — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日公開の恒例シリーズ。MCP 2026-07-28 spec の3つの柱（ステートレスコア・強化 OAuth/OIDC・バージョン付き拡張）を図解し、「エンタープライズ向けに MCP サーバーを追加することで『できることの質』が変わる」という実感を開発者視点で解説</li>
+          <li>Claude Code v2.1.222 の worktree 修正の影響範囲と、Microsoft の A2A 採用との関係（MCP=ツール接続、A2A=エージェント間通信という役割分担）について、日本語で最も詳しい記事の一つとして注目を集めている</li>
+          <li>Legacy Workbench 廃止（8/17）まで残り12日のカウントダウンと、Sonnet 5 価格改定まで残り26日のリマインダーも収録</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— 入門からエンタープライズ運用まで継続ランキング入り</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita / fuyunoki</a> — 2026 継続</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code の入門から CLAUDE.md・Hooks・スキル・MCP・サンドボックス設計までをカバーする「総合まとめ」記事が引き続き人気ランキング上位</li>
+          <li>今週のサンドボックス脱走バグ騒動を受け、「PreToolUse フック設定」「mode: mask の使い方」「エグレスファイアウォール設定例」の各セクションが SNS でシェアされている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn・Qiita トレンド: A2A × MCP の組み合わせ記事が急増 — 「エージェント間通信」と「ツール接続」の標準分離が日本語圏でも広がる</div>
+      <div class="card-meta"><span class="badge">Trend</span><span class="card-source">Zenn / Qiita トレンド集計 — 2026.08.05</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Microsoft の A2A 採用発表を受け、「A2A と MCP を組み合わせてクロスベンダーのマルチエージェントを構築する方法」を解説する Zenn 記事が8/5 に複数公開</li>
+          <li><strong>トレンドの変化:</strong> 1か月前まで Qiita/Zenn の AI エージェント記事の焦点は「単一エージェントの改善」だったが、現在は「異なるクラウド・異なるモデルで動く複数エージェントの協調設計」にシフト</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月5日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Gradually · Releasebot · Anthropic · The New Stack · AI Agent Store · AI Weekly · Washington Post · CNBC · Al Jazeera · CNN · RBC-Ukraine · United24 Media · Britannica 2026 · WORLD News · Qiita (homhom44 · fuyunoki)</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-04/index.html">前版（2026-08-04）</a> | <a href="../index.html">最新版</a></p>
+</footer>
+</body>
+</html>
