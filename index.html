@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月7日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月8日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code v2.1.224 — セルフホスト型ランナー・クロスセッションメッセージング・200サブエージェント上限廃止 / サウジ・トルコ・パキスタンが「メッカ共同防衛協定」署名 / イラン—オマーン ホルムズ合意「合意に達した」と発表、米大統領「近い」 / ウガンダがガザ平和維持軍への派兵を議会承認</p>
-  <p class="date">2026年8月7日（金）&nbsp;|&nbsp;<a href="2026-08-06/index.html">前版（8/6）</a></p>
+  <p class="subtitle">Claude Code v2.1.225–226 — ゲートウェイ使用量上限サポート・<code>claude agents</code>ワークスペース信頼プロンプト・SendMessage 名前指定起動 / 米上院がロシア制裁法案を86–11で可決（中国・インドの原油購入者も対象） / IRGC「ホルムズ再開は交渉と完全に独立」と表明 / レバノン・イスラエル 第7回ローマ会談で国境・捕虜問題に「ポジティブな進展」</p>
+  <p class="date">2026年8月8日（土）&nbsp;|&nbsp;<a href="2026-08-07/index.html">前版（8/7）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,43 +69,52 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/7）のハイライト:</strong> <strong>Claude Code v2.1.224</strong> がリリース（31件の変更：新機能5・セキュリティ5・バグ修正13）。最大の新機能は <strong>セルフホスト型ランナー</strong>（Team/Enterprise 向け）で、自社のマシン・コンテナ上で Claude Code のクラウドセッションを実行できるようになった。クロスセッションメッセージング（SendMessage / ListAgents）も追加。<strong>200サブエージェント/セッション上限が廃止</strong>。Sonnet 5 導入価格終了まで残り<strong>24日</strong>。
+      <strong>本日（8/8）のハイライト:</strong> <strong>Claude Code v2.1.225・v2.1.226</strong> の2バージョンが本日リリース。v2.1.225 の主要新機能は <strong>ゲートウェイ使用量上限サポート</strong>（上限名・リセット時刻・オペレーターメッセージを明示）、<code>claude agents</code> への<strong>ワークスペース信頼プロンプト</strong>追加、<strong>SendMessage の名前指定起動</strong>（他マシン上の Remote Control セッションを ListAgents で発見してメッセージ開始が可能に）。v2.1.226 は信頼性の細かなバグ修正。Sonnet 5 導入価格終了まで残り<strong>23日</strong>。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code v2.1.224 リリース — セルフホスト型ランナー・クロスセッションメッセージング・200サブエージェント上限廃止</div>
-      <div class="card-meta"><span class="badge">Major Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.224">GitHub Release</a> · <a href="https://www.unite.ai/claude-code-sessions-can-now-run-on-infrastructure-your-team-controls/">Unite.AI</a> · <a href="https://dev.classmethod.jp/en/articles/20260807-cc-updates-v2-1-224/">DevelopersIO</a> — 2026.08.07</span></div>
+      <div class="card-title">Claude Code v2.1.225 リリース — ゲートウェイ使用量上限サポート・<code>claude agents</code> ワークスペース信頼プロンプト・SendMessage 名前指定起動</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://www.havoptic.com/tools/claude-code">Havoptic</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> — 2026.08.08</span></div>
       <div class="card-body">
-        <p>本日リリースの v2.1.224 は 31 件の変更を含む大型リリース。5つの新機能・5つのセキュリティ強化・13のバグ修正を含む。</p>
+        <p>本日リリースの v2.1.225 は以下の新機能・改善と多数のバグ修正を含む。</p>
         <ul>
-          <li><strong>セルフホスト型ランナー（Team / Enterprise）:</strong> <code>claude self-hosted-runner</code> コマンドで、自社のマシン・コンテナを Claude Code のクラウドセッション実行環境として登録できるようになった。ランナーには<strong>固定モード</strong>（一定数のランナーを常駐させ、セッションを分散）と<strong>オンデマンドモード</strong>（オーケストレータがキューを監視し、セッション到着時にランナーを起動・終了）の2種類がある。データをオフクラウドで処理したい金融・ヘルスケア・政府系企業に特に有効。詳細は <a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">公式ブログ</a> 参照</li>
-          <li><strong>クロスセッションメッセージング:</strong> <code>SendMessage</code> と <code>ListAgents</code> により、異なるマシン上で動く Claude Code セッション同士がメッセージをやり取りできるようになった（macOS・Linux 対応）。マルチエージェントのオーケストレーション構成が格段に構築しやすくなる</li>
-          <li><strong>アーカイブプラグインソース:</strong> git や npm を使わず、HTTPS 経由の zip ファイルからプラグインをインストールできるようになった。オプションで SHA-256 による整合性検証のピン留めも可能。オフライン環境や厳格なネットワークポリシーの環境に有効</li>
-          <li><strong>sandbox 認証情報マスキング強化:</strong> <code>extract</code> への新オプション・JWT デコード（<code>decode: "jwt"</code>）・AWS SigV4 再署名機能を追加。クレデンシャルの漏洩リスクをさらに低減</li>
-          <li><strong>200サブエージェント上限を廃止:</strong> セッションあたりのサブエージェント生成数の上限（従来 200）を撤廃。長期間・大規模なマルチエージェントワークフローで恩恵を受ける</li>
-          <li><strong>主なバグ修正:</strong> 長いプロジェクトパス（200文字超）が誤ったセッションディレクトリに解決される問題・SendMessage が失敗にもかかわらず成功と報告する問題・Linux/macOS で末尾スラッシュ付きの sandbox ファイルシステム拒否エントリがバイパスされる問題・ターン中に接続した MCP ツールがモデルに通知されない問題 等を修正</li>
+          <li><strong>ゲートウェイ使用量上限サポート:</strong> <code>claude agents</code> およびゲートウェイ経由の使用において、上限に達した際に上限名・リセット時刻・オペレーターが設定したメッセージを明示する警告を表示するようになった（ゲートウェイ側も v2.1.225 以降が必要）。Enterprise 環境でのコスト管理が容易になる</li>
+          <li><strong><code>claude agents</code> ワークスペース信頼プロンプト:</strong> 信頼されていないディレクトリで <code>claude agents</code> を起動した場合、<code>claude</code> コマンドと同様のワークスペース信頼プロンプトが表示されるようになった。セキュリティポリシーの一貫性が向上</li>
+          <li><strong>Remote Control 写真ハンドリング改善:</strong> Claude アプリから添付された写真を、従来のように別ツール呼び出しでディスクから読み込む代わりに、Claude に直接表示するようになった。レイテンシーの低減とツール呼び出し数の削減が期待できる</li>
+          <li><strong>SendMessage の名前指定起動:</strong> <code>ListAgents</code> で他のマシン上の Remote Control セッションを検索し（<code>name [ref]</code> 形式で表示）、セッションから最初にメッセージが来るのを待たずに名前で会話を開始できるようになった。マルチマシン・マルチエージェント構成の構築がより直感的になる</li>
+          <li><strong>主なバグ修正:</strong>
+            <ul>
+              <li>長期利用の <code>CLAUDE_CODE_OAUTH_TOKEN</code> を保存済みログインの短期トークンで置き換えた際の一時的な 401 エラー（再起動まで headless セッションが壊れる問題）を修正</li>
+              <li>macOS で MCP OAuth サーバーがキーチェーン読み取りタイムアウト後に断続的に 401 エラーになる問題を修正</li>
+              <li>auto モードが自身のパーミッションチェックに対する安全フィルターの拒否を連続ブロック上限にカウントしていた問題を修正</li>
+              <li>headless セッションやスタートアップ中にクロスセッションメッセージが通知も有効期限もなく保留されたままになる問題を修正</li>
+              <li>大きな会話が圧縮された後の Remote Control セッション再開時に会話履歴が壊れる問題を修正</li>
+              <li>別プロジェクトのセッションにカーソルを当てると次のエージェントの開始ディレクトリが変わってしまう問題を修正</li>
+              <li><code>claude self-hosted-runner</code> で <code>--base-dir</code> が作成・書き込みできない場合に失敗する問題を修正</li>
+              <li>Claude Code Web セッションが「スタック」と誤報告され、再接続時に増大したイベントバックログを再送信する問題を修正</li>
+              <li>VSCode: Focus ビューが最新の To-do リストと保留中の質問コンテキストを折りたたんでしまう問題を修正</li>
+              <li>SendMessage の受信者が自身のリスト確認不可時に同名セッションへ誤ってスワップされる問題を修正</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic 公式ブログ「Run Claude Code sessions on your own compute」— セルフホスト型ランナーの設計思想を解説</div>
-      <div class="card-meta"><span class="badge">Official Blog</span><span class="card-source">Source: <a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">Anthropic Blog</a> — 2026.08.07</span></div>
+      <div class="card-title">Claude Code v2.1.226 リリース — 信頼性向上のバグ修正</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://www.havoptic.com/tools/claude-code">Havoptic</a> — 2026.08.08</span></div>
       <div class="card-body">
-        <ul>
-          <li>「あなたの組織のインフラ上で Claude Code セッションを実行する」というコンセプトを詳述。クラウドセッションのインフラ管理権をユーザー側に移す「責任分担モデル」の転換点とも評される</li>
-          <li><strong>ユースケース:</strong> 規制産業（金融・医療・政府）でのデータ主権確保、オンプレミス環境への統合、VPC 内での完結したエージェント実行など。既存の CI/CD パイプラインや Kubernetes クラスターへの組み込みも想定</li>
-          <li><strong>セキュリティ設計:</strong> ランナー自体は Anthropic のクラウドに通信（アウトバウンド接続のみ）するため、インバウンドポート開放は不要。組織のファイアウォールポリシーを変更せずに導入できる</li>
-        </ul>
+        <p>v2.1.225 と同日に追加リリースされた v2.1.226 は、信頼性向上を目的とした細かなバグ修正を含む。新機能は含まれず、v2.1.225 で報告された問題への迅速な対応として位置付けられる。</p>
+        <p>2件のリリースが同日に行われたことは、チームが本日リリース後に発生した問題を即座に修正する継続的デリバリー体制を維持していることを示す。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Sonnet 5 導入価格終了まで24日 — Legacy Workbench 廃止まで10日、週間使用量増量は8月19日まで</div>
+      <div class="card-title">Anthropic 利用量・価格情報 — Sonnet 5 導入価格終了まで23日、Legacy Workbench 廃止まで9日</div>
       <div class="card-meta"><span class="badge">Usage / Pricing</span><span class="card-source">Source: Anthropic — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Sonnet 5 導入価格終了:</strong> 8月31日（残り24日）。9月1日から $2/$10 → $3/$15 per MTok に改定。エージェントのコスト試算は今月中に完了させることを推奨</li>
-          <li><strong>Legacy Workbench 廃止:</strong> 8月17日（残り10日）。新しい Claude.ai のプレイグラウンドへの移行が必要</li>
-          <li><strong>週間使用量 50% 増量延長:</strong> Claude Code 加入者向けの措置は8月19日（水）まで継続</li>
-          <li><strong>AI for Science グラント:</strong> 科学研究者向けに最大 $50,000 相当の Claude クレジットを提供するグラントプログラムの申請受付中。希少遺伝疾患の研究に焦点</li>
+          <li><strong>Sonnet 5 導入価格終了:</strong> 8月31日（残り23日）。9月1日から $2/$10 → $3/$15 per MTok に改定。コスト試算は今月中に完了させることを推奨</li>
+          <li><strong>Legacy Workbench 廃止:</strong> 8月17日（残り9日）。Claude.ai の新プレイグラウンドへの移行が必要</li>
+          <li><strong>週間使用量 50% 増量延長:</strong> Claude Code 加入者向け措置は8月19日（水）まで継続（残り11日）</li>
+          <li><strong>Claude Code スタートアップ活用:</strong> <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Claude Code が日常のスタートアップインフラとして普及</a>。コードレビュー・バックグラウンドジョブ・パーミッション管理・セッション安定性の面での改善が高評価。「コーディングアシスタント」から「エンジニアリングインフラ」へのポジション転換が加速</li>
         </ul>
       </div>
     </div>
@@ -117,27 +126,28 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> OpenAI Codex が週間 200万人超のアクティブユーザー（2026年3月時点）を維持しつつ、教育機関向けプラグインを追加。OpenAI 社員の <strong>99.8%</strong> の出力トークンが Codex 経由で生成されたと発表（組織向けは 63%、個人は 16.5%）。NamoWork など新興プラットフォームが 500以上の専門エージェントを集約したマーケットプレイスとして台頭。
+      <strong>競合ハイライト:</strong> OpenAI Codex が最新アップデートでセッションコントロール・スレッドピン留め・フォーク・Remote Code Mode の WebSocket 接続・MCP 2026-07-28 対応を追加。Portable Agent Plugins の導入で生態系の相互運用性が向上。AI コーディングエージェントリーダーボード（morphllm）では GPT-5.6-Sol が首位を維持。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex に教育機関向けプラグイン追加 — 教師・学生向けのロール別ワークフローを K–12 / 大学に提供</div>
+      <div class="card-title">OpenAI Codex アップデート — セッションコントロール・スレッドフォーク・Remote WebSocket・MCP 2026-07-28 対応</div>
       <div class="card-meta"><span class="badge">Product Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI</a> — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>ChatGPT Work と Codex 向けに教育機関プラグインを追加。K–12 の教師向け授業計画ツール・大学教員向けコース設計・学生向け学習支援・管理された学校配置でのガイド付きワークフロー等</li>
-          <li><strong>利用統計（2026年3月時点）:</strong> Codex の週間アクティブユーザーは 200万人超。2025年8月以降、個人ユーザーの非開発者利用が 137倍、組織ユーザーで 189倍、OpenAI 社内で 12倍に増加</li>
-          <li>OpenAI は「エージェントが仕事をどう変えているか」レポートで、繰り返し業務・調査・文書作成以外に法務・財務・人事分野への適用が拡大していると報告</li>
+          <li><strong>新機能:</strong> 新しいセッションコントロール、スレッドのピン留めとフォーク、プラグイン公開・マーケットプレイスのサポート拡充、Remote Code Mode の WebSocket 接続、スタンドアロン Web 検索を追加</li>
+          <li><strong>Portable Agent Plugins:</strong> エージェントプラグインを他のプラットフォームでも利用できる Portable 形式を導入。MCP 2026-07-28 規格をサポートし、Claude Code などとの相互運用性が向上</li>
+          <li><strong>改善・修正:</strong> プロキシハンドリング、MCP 信頼性、ターミナルパフォーマンス、スキル発見を改善。永続的な会話セクション、新 CLI フラグによる自動承認（<code>--auto-approve</code>）も追加</li>
+          <li><strong>利用統計:</strong> 2026年3月時点で週間アクティブユーザー 200万人超を維持。OpenAI 社内では Engineering が先行し、4月頃から Legal・Finance・Recruiting でも主要 AI ツールとしての採用が完了</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">新興プラットフォーム: NamoWork が 500以上の専門 AI エージェントを集約、Memmy がクロスエージェント記憶を統一</div>
-      <div class="card-meta"><span class="badge">Ecosystem</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a> — 2026.08</span></div>
+      <div class="card-title">AI コーディングエージェント最新リーダーボード（2026年8月版） — GPT-5.6-Sol 首位、Claude Opus 5 が追走</div>
+      <div class="card-meta"><span class="badge">Benchmark</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">morphllm Best AI Coding Agents 2026</a> — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>NamoWork:</strong> 競合分析・コンテンツ作成など 500以上の専門 AI エージェントを集約したプラットフォーム。Claude Code を含む主要フレームワーク上でのマルチエージェント構成とクラウド実行をサポート</li>
-          <li><strong>Memmy（OSS）:</strong> Codex・Claude Code など複数エージェントの会話ログと記憶を統一する共有メモリーレイヤー。ツールごとにサイロ化された履歴を一元管理し、エージェント間でのコンテキスト継承を実現</li>
-          <li>Terminal-Bench 2.1 の最新スコア: GPT-5.6 Sol 89.5% ＞ Claude Opus 5 89.1%（最大エフォート）</li>
+          <li>morphllm が集計する AI コーディングエージェントリーダーボードの最新版が公開。総合スコアでは <strong>GPT-5.6-Sol</strong> が首位、<strong>Claude Opus 5（最大エフォート）</strong>が僅差で追走する構図が続く</li>
+          <li>Terminal-Bench 2.1 最新スコア: GPT-5.6-Sol 89.5% ＞ Claude Opus 5 89.1%（最大エフォート）。ProjDevBench では Codex on GPT-5 が 77.85% でリード（mean acceptance rate 27.38%）</li>
+          <li>コーディング以外のエージェント領域（法務・財務・HR）では Claude のコンテキスト理解と大規模コードベースの推論力が引き続き高評価。「最も難しいタスクには Claude」という r/ClaudeAI コミュニティのコンセンサスは維持</li>
         </ul>
       </div>
     </div>
@@ -149,36 +159,37 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「v2.1.224 のセルフホスト型ランナーが来た — オンプレ運用・VPC 内完結・200上限廃止の実務インパクト」</div>
-      <div class="card-meta"><span class="badge">Feature Discussion</span><span class="card-source">Reddit r/ClaudeCode · Hacker News — 2026.08.07</span></div>
+      <div class="card-title">r/ClaudeCode「v2.1.225 のゲートウェイ上限サポートと <code>claude agents</code> ワークスペース信頼プロンプト — Enterprise 環境での実務インパクト」</div>
+      <div class="card-meta"><span class="badge">Feature Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/ClaudeAI — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li>セルフホスト型ランナーの発表を受け、r/ClaudeCode でスレッドが急上昇。「インバウンドポート不要でアウトバウンドのみで動くのは企業ファイアウォールへの配慮が行き届いている」という評価が多い</li>
-          <li><strong>200サブエージェント上限廃止への反応:</strong> 「実は上限に引っかかっていたユーザーが思ったより多かった。長期エージェントタスクやバッチ処理でよく上限に当たっていた」という声が複数。「これで本当の意味での無制限マルチエージェント構成が可能になった」</li>
-          <li><strong>クロスセッションメッセージング:</strong> 「SendMessage/ListAgents の追加で、従来 MCP サーバー経由で無理やり実現していたセッション間通信が公式 API になった。マルチエージェントオーケストレーターの構築が格段に楽になる」という開発者コメントが注目を集める</li>
-          <li>Hacker News では「自社インフラで動かせるということは、Anthropic のクラウドをトラストする必要がなくなる方向への一歩」という観点からセキュリティ研究者も注目</li>
+          <li>ゲートウェイ使用量上限サポートの追加を受け、r/ClaudeCode でスレッドが上昇。「上限に達した際にオペレーターメッセージが表示されるのは、エンドユーザーへの説明コストが下がる。今まで無言で止まっていたのが謎だった」という声が多い</li>
+          <li><strong><code>claude agents</code> のワークスペース信頼プロンプト:</strong>「<code>claude</code> と <code>claude agents</code> でセキュリティ動作が違うのは設計上の一貫性の欠如だと思っていた。今回の修正で揃った」という評価。一方で「毎回プロンプトが出るとヘッドレスでの運用が面倒になる。信頼リストの一括管理方法が欲しい」という要望も</li>
+          <li><strong>SendMessage 名前指定起動:</strong>「他マシンのセッションに向こうからのメッセージを待たずに接続できるようになった。マルチマシン・マルチエージェントのオーケストレーションが一気に実用的になる」という開発者の声が注目を集める</li>
+          <li>r/ClaudeAI（74万人超）では「最も難しいタスクには Claude」というコンセンサスが引き続き維持されており、v2.1.225 の実用的な改善が評価されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/geopolitics「メッカ共同防衛協定 — サウジ・トルコ・パキスタンの三角同盟が中東安全保障アーキテクチャを書き換えるか」</div>
-      <div class="card-meta"><span class="badge">Geopolitics Discussion</span><span class="card-source">Reddit r/geopolitics · r/worldnews — 2026.08.07</span></div>
+      <div class="card-title">r/worldnews「IRGC が『ホルムズ再開は交渉と完全に独立』と表明 — 米国が条件を満たさない限り再開しない立場を明確化」</div>
+      <div class="card-meta"><span class="badge">Geopolitics Discussion</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li>メッカでの三国防衛協定署名を受け、r/geopolitics で大規模なスレッドが展開。「NATO に代わる中東・イスラム圏の集団防衛体制の萌芽」という評価と「三国の利害が実際に一致するシナリオは限られる」という懐疑論が拮抗</li>
-          <li><strong>パキスタンの核の傘:</strong> 「パキスタンを含む相互防衛協定は、事実上の核の傘の拡張を意味するかもしれない」という指摘がホットコメントに。ただし「パキスタンが Saudi Arabia のために実際に核兵器を使う義務があるかは極めて曖昧」という反論も</li>
-          <li><strong>イランとの戦争との連動:</strong> 「2026年2月のイランとの戦争開始から6か月後に三国がここまで踏み込んだ。イランの攻撃が触媒になった」という文脈分析が多数</li>
+          <li>イラン革命防衛隊（IRGC）報道官が「ホルムズ海峡の再開はオマーンとの交渉プロセスとは完全に独立した問題」と表明したことを受け、r/worldnews でスレッドが加熱。「つまりどちらの交渉が進んでも、ホルムズは別の条件次第ということ。完全に別々のレバーを持っている」という分析が上位</li>
+          <li>IRGC は「海峡再開の方法とタイミングは、米国がイランの条件をどれだけ受け入れるかに直接依存する」と明言。補償要求も続いており、即時合意の可能性は低いという見方が大勢</li>
+          <li>r/investing では「ホルムズが閉じたままなら原油高止まり。米国が飲める条件は限られている。市場はまだ合意への期待を織り込みすぎている」という慎重論が票を集める</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「ホルムズ海峡 — イランが米・イスラエル船の通行を禁止する条項を要求。合意は本当に近いのか」</div>
-      <div class="card-meta"><span class="badge">Geopolitics Discussion</span><span class="card-source">Reddit r/worldnews · r/investing — 2026.08.07</span></div>
+      <div class="card-title">r/worldnews「米上院がロシア制裁法案を86–11 で可決 — 中国・インドの原油購入者への関税条項が焦点」</div>
+      <div class="card-meta"><span class="badge">Geopolitics Discussion</span><span class="card-source">Reddit r/worldnews · r/Economics — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li>イランが米・イスラエル船の通行禁止を条項に求めているという Bloomberg 報道を受け、r/worldnews で議論が加熱。「これはアメリカが絶対に飲めない条件。合意は遠のいた」という見方が多数派</li>
-          <li><strong>トランプの楽観論:</strong> 「トランプは何度も『合意は近い』と言ってきたが、イラン国内の強硬派が最終決定権を持っている」という冷静な分析がホットコメント上位</li>
-          <li><strong>原油・エネルギー市場（r/investing）:</strong> 合意への期待と不透明感が交錯し、原油先物が日中に大きく振れる展開。「Hormuz が再開すれば原油は $15–20/bbl 下落するが、条件次第では長期化もありえる」という分析が票を集める</li>
+          <li>故グレアム上院議員（共和党、サウスカロライナ）が主導した対ロシア制裁法案が上院を 86–11 の超党派票で通過。r/worldnews でトップスレッドに。「86–11 は驚異的な票差。トランプ政権下でここまで超党派が成立するのは珍しい」というコメントが多数</li>
+          <li><strong>法案の主な内容:</strong> ロシアの石油・ガス・輸出品の世界上位5購入国（中国・インドを含む）への関税権限、プーチンや閣僚・ロシア金融機関・エネルギープロジェクトへの制裁、ロシアが制裁回避に使う「影の船団（シャドーフリート）」旧型タンカーへの制裁拡大を含む</li>
+          <li>r/Economics では「中国・インドが実際に制裁を受け入れる可能性はほぼゼロ。外交的報復の方が現実的」という見方が上位。法案は次に下院で審議</li>
+          <li>ゼレンスキーがグレアム氏の葬儀直後に上院を訪問し、採決の傍聴席から見守ったという場面も話題に</li>
         </ul>
       </div>
     </div>
@@ -190,63 +201,65 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/7）の主要トピック:</strong> <strong>メッカ共同防衛協定:</strong> サウジアラビア・トルコ・パキスタンが三国相互防衛条約に署名 / <strong>ホルムズ海峡:</strong> イラン—オマーン合意「合意に達した」との報告、ただしイランは米・イスラエル船の通行禁止を要求 / <strong>ガザ:</strong> ウガンダが平和維持軍への派兵を議会承認、モロッコ・コソボ・アルバニア・カザフスタンも意向を表明 / <strong>コンゴ:</strong> WHO がエボラ出血熱の感染拡大が「追跡不可能な速度」で進行していると警告 / <strong>ウクライナ:</strong> 黒海の哨戒艇も攻撃、防空危機が継続
+      <strong>本日（8/8）の主要トピック:</strong> <strong>米上院対ロシア制裁:</strong> 86–11 の超党派可決で下院へ（中国・インド原油購入者も対象） / <strong>ホルムズ海峡:</strong> IRGC が「再開は交渉と完全に独立」と表明、イランはオマーンとの枠組みに「合意」と発表しつつ米への補償要求も継続 / <strong>レバノン・イスラエル:</strong> 第7回ローマ会談で国境・捕虜問題に「ポジティブな進展」、ただし合意には至らず / <strong>ウクライナ:</strong> ロシアの春夏攻勢は目立った地の利なし、夜間攻撃続く / <strong>ガザ:</strong> トランプ「平和委員会」がガザ内部に軍事基地建設へ
     </div>
     <div class="card">
-      <div class="card-title">メッカ共同防衛協定 — サウジアラビア・トルコ・パキスタンが三国相互防衛条約に署名、中東安全保障を刷新</div>
-      <div class="card-meta"><span class="badge">Diplomacy / Security</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Mecca_Joint_Defence_Agreement">Wikipedia</a> · <a href="https://www.newarab.com/news/turkey-saudi-arabia-and-pakistan-sign-mecca-defence-pact">The New Arab</a> · <a href="https://www.middleeasteye.net/live-blog/live-blog-update/turkey-pakistan-saudi-arabia-sign-mecca-joint-defence-agreement">Middle East Eye</a> · <a href="https://newscord.org/article/saudi-arabia-turkey-and-pakistan-sign-mecca-joint-defence-agreement--Story_20260807_WaronIranSaudiArabiaf9d53780">NewsCord</a> — 2026.08.07</span></div>
+      <div class="card-title">米上院、ロシア制裁法案を86–11 の超党派票で可決 — 中国・インドの原油購入者への関税条項を含む包括的エネルギー制裁</div>
+      <div class="card-meta"><span class="badge">Sanctions / Russia</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-08-07/us-senate-passes-russia-sanctions-bill-championed-by-graham">Bloomberg</a> · <a href="https://spectrumlocalnews.com/nys/rochester/politics/2026/08/07/russia-sanctions-bill-passes">Spectrum News</a> · <a href="https://www.usnews.com/news/politics/articles/2026-08-07/sweeping-russia-energy-sanctions-head-toward-us-senate-passage">US News</a> — 2026.08.07–08</span></div>
       <div class="card-body">
-        <p>8月7日、サウジアラビア・トルコ・パキスタンの3か国がメッカで「メッカ共同防衛協定（Mecca Joint Defence Agreement）」に署名。いずれかの国への武力攻撃を3か国への攻撃と見なす集団防衛条項が中核。</p>
+        <p>故リンゼイ・グレアム上院議員（共和党）が主導してきた対ロシア包括的エネルギー制裁法案が、上院で 86–11 の超党派賛成多数で可決された。法案は下院に送られ、次の審議段階へ移る。</p>
         <ul>
-          <li><strong>背景:</strong> 2026年2月28日のイランとの戦争開始後、イラン・フーシー派・イラク民兵などがサウジアラビアおよびその他湾岸諸国を攻撃し続けてきた。2025年9月のサウジ・パキスタン二国間戦略的相互防衛協定を三国に拡張した形</li>
-          <li><strong>地政学的意義:</strong> パキスタンの核保有が背景にある三国協定として、中東・南アジアの安全保障地図を大きく書き換える可能性。トルコは NATO 加盟国でもあり、NATOとの関係性に注目が集まる</li>
-          <li><strong>反応:</strong> イランは「挑発的」と批判。米国は「同盟国の防衛権を支持する」と述べつつ三国協定の詳細を精査中</li>
+          <li><strong>関税条項:</strong> 大統領が、ロシアの石油・天然ガス・その他輸出品の世界最大5購入国に対して関税を課す権限を与える。中国・インドがその対象となることが想定されており、ロシアへの制裁回避ルートを遮断する狙い</li>
+          <li><strong>追加制裁対象:</strong> プーチン大統領、ロシアの上級政治・軍指導者、ロシアの金融機関、ロシアのエネルギープロジェクト、ロシアが制裁回避に使う「シャドーフリート」旧型・再登録タンカーを対象に制裁を拡大</li>
+          <li><strong>背景:</strong> グレアム議員はウクライナを訪問した直後に死去。ゼレンスキー大統領は葬儀直後に上院を訪問し、採決の傍聴席から見守った</li>
+          <li><strong>下院の見通し:</strong> 上院での超党派支持は強いものの、下院の共和党指導部内には対中関税条項への慎重論もあり、審議の行方が注目される</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ホルムズ海峡 — イランとオマーンが「合意に達した」、ただしイランは米・イスラエル船の通行禁止を要求</div>
-      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://iranwire.com/en/news/155988-iran-oman-reach-strait-of-hormuz-transit-deal/">IranWire</a> · <a href="https://www.bloomberg.com/news/articles/2026-08-07/trump-says-hormuz-talks-moving-along-even-as-iran-mulls-us-ban">Bloomberg</a> · <a href="https://www.aljazeera.com/news/liveblog/2026/8/7/trump-says-war-cant-go-much-longer-hormuz-deal-close">Al Jazeera</a> · <a href="https://fortune.com/2026/08/07/emerging-deal-reopen-strait-hormuz-iran-us-accept/">Fortune</a> — 2026.08.07</span></div>
+      <div class="card-title">ホルムズ海峡 — IRGC 「再開は交渉と完全に独立」と表明、イランはオマーンとの枠組みに「合意」しつつ米への補償要求を継続</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://abcnews.com/International/live-updates/iran-live-updates-trump-deal-imminent-iran-oman/?id=135317231">ABC News</a> · <a href="https://thehill.com/policy/international/6018567-iran-oman-strait-hormuz-deal-close/">The Hill</a> · <a href="https://www.aljazeera.com/news/liveblog/2026/8/5/iran-war-live-tehran-oman-talks-on-hormuz-positive-ship-hit-in-red-sea">Al Jazeera</a> — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>合意の内容:</strong> イランとオマーンがホルムズ海峡の通航ルートに関する合意に達したと IranWire が報告。北回廊（イラン沿岸）を入港船、南回廊（オマーン沿岸）を出港船に振り分ける方式で、通行料・サービス料は課さない</li>
-          <li><strong>イランの追加要求:</strong> イランは米・イスラエル船の通行禁止条項を盛り込むよう要求。Bloomberg は「イラン議会内での強硬派の主張」と報告。これが最大の障壁となっている</li>
-          <li><strong>トランプの反応:</strong> 「交渉は進んでいる（moving along）」と楽観的な見通しを維持。「戦争はそう長く続かない」とも発言</li>
-          <li><strong>Fortune の分析:</strong> 「米国はすでにイランの海峡管理権を黙示的に認めるという大きな譲歩をしている。残りは米・イスラエル船の扱いだけ」という見方を示す</li>
-          <li><strong>エネルギー市場:</strong> 世界の石油輸出の約20%が通過するホルムズ海峡の動向に原油市場は敏感に反応。合意報道で原油先物は一時下落</li>
+          <li><strong>IRGC の新たな表明（8/8）:</strong> 革命防衛隊報道官が「ホルムズ海峡の再開はイラン・オマーン交渉プロセスとは完全に独立した問題だ」と明言。「再開の方法とタイミングは米国がイランの設定した条件をどれだけ受け入れるかに直接かかっている」と補足し、米側への圧力を強めた</li>
+          <li><strong>イラン・オマーン枠組み:</strong> イランはオマーンとのルート調整（北回廊＝入港・南回廊＝出港）について「枠組みの合意に達した」と発表。ただし実際の海峡再開は別の交渉トラックに依存する構図が明確になった</li>
+          <li><strong>補償要求継続:</strong> イランは米国への補償（戦争被害賠償）を引き続き要求。これが米・イラン間の核となる障壁となっている</li>
+          <li><strong>エネルギー市場:</strong> 世界原油輸出の約20%が通過するホルムズ海峡の動向に敏感な原油先物は、合意不確実性の高まりを受け上昇。短期合意期待の後退が市場のリスクプレミアムを押し上げている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウガンダがガザ平和維持軍への派兵を議会承認 — モロッコ・コソボ・アルバニア・カザフスタンも参加意向</div>
-      <div class="card-meta"><span class="badge">Middle East / Peacekeeping</span><span class="card-source">Source: <a href="https://www.nbcnews.com/world/gaza/uganda-approves-sending-troops-international-force-gaza-rcna591177">NBC News</a> · <a href="https://www.pbs.org/newshour/amp/world/uganda-approves-sending-troops-to-gaza-for-international-force-proposed-by-trumps-board-of-peace">PBS NewsHour</a> — 2026.08.07</span></div>
+      <div class="card-title">レバノン・イスラエル 第7回ローマ会談 — 国境・捕虜問題に「ポジティブな進展」、パイロットゾーン合意には至らず</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Middle East</span><span class="card-source">Source: <a href="https://news.cgtn.com/news/2026-08-08/Lebanon-says-positive-progress-made-in-Rome-talks-with-Israel-1PqS9QGqnXa/p.html">CGTN</a> · <a href="https://www.aljazeera.com/news/2026/8/7/lebanon-points-to-positive-progress-on-borders-prisoners-in-israel-talks">Al Jazeera</a> · <a href="https://english.aawsat.com/arab-world/5304674-lebanon-israel-talks-cumulative-process-or-%E2%80%98open-ended-negotiations%E2%80%99">Asharq Al-Awsat</a> — 2026.08.07–08</span></div>
       <div class="card-body">
         <ul>
-          <li>ウガンダ議会が、トランプ大統領の「平和委員会（Board of Peace）」が提案したガザ国際平和維持軍への兵員派遣を承認</li>
-          <li><strong>他の参加表明国:</strong> モロッコ・コソボ・アルバニア・カザフスタンが参加意向を表明。部隊規模・指揮系統・資金調達等の詳細は交渉中</li>
-          <li><strong>文脈:</strong> イスラエル・ハマス戦争後のガザ統治の空白を埋める多国籍平和維持軍の組成を目指す国際努力の一環。主要アラブ諸国の本格参加はまだ実現しておらず、課題が残る</li>
+          <li>レバノン大統領ジョセフ・アウンが、ローマで行われた第7回レバノン・イスラエル交渉について「国境問題と捕虜・人質の返還でポジティブな進展があった」と表明し、「近く実際的な措置が生まれると期待している」と述べた</li>
+          <li><strong>米国の評価:</strong> 米国務省は今回の会談を「実りある（fruitful）」と評価し、「両国は検証メカニズムとパイロットゾーン拡大に関して以前よりずっと近づいている」とした</li>
+          <li><strong>協議の4主要課題:</strong> 停戦、家屋の破壊・整地、国境、捕虜・人質の返還。今回の第7回会談は3日間行われたが、新たなパイロットゾーン設定への合意には至らなかった</li>
+          <li><strong>累積プロセス:</strong> アラブ専門紙 Asharq Al-Awsat は「これは一回の会議で解決するものではなく、積み上げ型の外交プロセス。合意への近づきは本物だが、最終線引きは難航が続く」と分析</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">WHO: コンゴのエボラ出血熱「医療従事者が追跡できないスピードで拡大中」</div>
-      <div class="card-meta"><span class="badge">Health / Humanitarian</span><span class="card-source">Source: WHO · <a href="https://wng.org/podcasts/friday-morning-news-august-7-2026-1786036420">WORLD</a> · <a href="https://morningstaronline.co.uk/article/world-brief-august-7-2026">Morning Star</a> — 2026.08.07</span></div>
+      <div class="card-title">ウクライナ — ロシアの春夏攻勢は2か月半で目立った成果なし、夜間ドローン攻撃と防空ミサイル不足が続く</div>
+      <div class="card-meta"><span class="badge">War / Ukraine</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks">Al Jazeera</a> · <a href="https://en.wikipedia.org/wiki/Timeline_of_the_Russo-Ukrainian_war_(1_January_2026_%E2%80%93_present)">Wikipedia</a> · <a href="https://www.fdd.org/overnight-brief/august-5-2026/">FDD</a> — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li>世界保健機関（WHO）は、コンゴ民主共和国で進行中のエボラ出血熱の感染拡大が「医療従事者が追跡できないスピード」で進んでいると警告</li>
-          <li>感染経路の特定が困難なほど拡散が速まっており、WHO は緊急支援を国際社会に要請。コンゴ国内の医療インフラへの過大な負荷が続いている</li>
-          <li>国際的な感染拡大への懸念から、隣接国の保健当局も監視体制を強化</li>
+          <li><strong>攻勢の現状:</strong> ロシアが2026年春に開始した春夏攻勢は2か月半を経過したが、作戦上重要な地の利の獲得に至っていない。ロシアは7月に月間最多記録となる381発のミサイル（日平均12発超）を発射したが、陣地の大きな変化は起きていない</li>
+          <li><strong>夜間攻撃（8/7–8）:</strong> ロシアとウクライナが激しい攻撃を交換。両国の地元当局によると、ロシア側・ウクライナ側合わせて少なくとも27名が死亡</li>
+          <li><strong>防空ミサイル不足:</strong> パトリオットなどの防空迎撃ミサイルの在庫不足は依然深刻。中東でのイラン戦争が米国の在庫を吸収しているという構造的問題が継続しており、ゼレンスキーは NATO 加盟国との緊急融通協議を継続中</li>
+          <li><strong>深打撃作戦:</strong> ウクライナはロシア国内の製油所や補給線へのドローン攻撃を継続。バシコルトスタン・ヤロスラヴリ州の製油所攻撃など、長距離打撃能力を活かした圧力をかけ続けている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ: 黒海の哨戒艇をも攻撃 — 防空ミサイル不足は続くが、深打撃作戦で圧力を維持</div>
-      <div class="card-meta"><span class="badge">War</span><span class="card-source">Source: <a href="https://nato.news-pravda.com/world/2026/08/07/116430.html">NATO News Pravda</a> · <a href="https://www.fdd.org/overnight-brief/august-7-2026/">FDD</a> — 2026.08.07</span></div>
+      <div class="card-title">ガザ — トランプの「平和委員会」がガザ内部に軍事基地建設へ、ウガンダに続きモロッコ・コソボ等が派兵意向</div>
+      <div class="card-meta"><span class="badge">Middle East / Gaza</span><span class="card-source">Source: <a href="https://www.nbcnews.com/world/gaza/uganda-approves-sending-troops-international-force-gaza-rcna591177">NBC News</a> · <a href="https://www.pbs.org/newshour/amp/world/uganda-approves-sending-troops-to-gaza-for-international-force-proposed-by-trumps-board-of-peace">PBS NewsHour</a> — 2026.08.07–08</span></div>
       <div class="card-body">
         <ul>
-          <li>ゼレンスキー大統領は前夜の作戦を公表。バシコルトスタン・ヤロスラヴリ州の製油所攻撃（8/6報告）に加え、<strong>黒海のロシア軍哨戒艇</strong>も無人機で攻撃したと発表</li>
-          <li><strong>防空状況:</strong> 防空迎撃ミサイルの不足は依然として深刻。イランとの戦争が米国の Patriot 在庫を吸収している構造的問題が続いており、ゼレンスキーは NATO 事務総長・フィンランド大統領と引き続き緊急融通を交渉中</li>
-          <li><strong>フーシー派:</strong> フーシー派によるイエメン軍への攻撃で少なくとも30人が死亡。中東の戦線が拡散している状況が続く</li>
+          <li>トランプ大統領の「平和委員会（Board of Peace）」が提案した国際平和維持軍について、ガザ内部に軍事基地を建設する計画が明らかになった。当初の「軽装の人道支援部隊」から踏み込んだ構想で、反発も予想される</li>
+          <li>ウガンダが8/7に議会承認（既報）したことに続き、モロッコ・コソボ・アルバニア・カザフスタンも参加意向を表明。ただし主要アラブ諸国（エジプト、サウジアラビア、ヨルダン）の本格参加は依然実現していない</li>
+          <li>部隊規模・指揮系統・資金調達・法的地位などの詳細は交渉中。実際の展開には相当な時間がかかるとの見方が大勢</li>
         </ul>
       </div>
     </div>
@@ -258,33 +271,35 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-07）」— v2.1.224 のセルフホスト型ランナーを速報</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/homhom44/items/4b02fdb074b5575483d1">Qiita / homhom44</a> — 2026.08.07</span></div>
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-08）」— v2.1.225 の実務インパクトを速報</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/homhom44/items/50969c7f3381f83eaa36">Qiita / homhom44</a> — 2026.08.08</span></div>
       <div class="card-body">
         <ul>
-          <li>homhom44 氏の恒例シリーズ（8/7版）が本日公開。v2.1.224 のセルフホスト型ランナーを「Team/Enterprise の方向性を決定的に変えるリリース」と評し、固定モード vs オンデマンドモードの使い分けを整理</li>
-          <li>クロスセッションメッセージング（SendMessage/ListAgents）については「これまで MCP サーバーで無理やり実装していた人も多いはず。公式 API になったことで安定性・保守性が大幅に改善」とコメント。Legacy Workbench 廃止まで残り<strong>10日</strong>のリマインダーも</li>
+          <li>homhom44 氏の恒例シリーズ（8/8版）が本日公開。v2.1.225 のゲートウェイ使用量上限サポートについて「Enterprise でゲートウェイを運用しているチームにとっては待望の機能。今まで無言で止まるたびにサポートに問い合わせが来ていた」と評価</li>
+          <li><code>claude agents</code> のワークスペース信頼プロンプト統一については「<code>claude</code> コマンドと同じ動作になったのは当然のこと。ただしヘッドレス運用では信頼リストの事前登録が必要になる点に注意」と補足</li>
+          <li>Legacy Workbench 廃止まで<strong>9日</strong>のリマインダーも掲載。新プレイグラウンドへの移行を未完了のチームへの注意喚起が続く</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn「Zenn投稿をClaude Code Skillsで自動化してみた」— スキルとワークフローで記事生成・投稿を一括自動化</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://zenn.dev/katsuo_dev/articles/202608-claude-code-zenn-automation">Zenn / katsuo_dev</a> — 2026.08</span></div>
+      <div class="card-title">Qiita「最近のAI開発について（2026年8月）」— Claude Code が「計画からコミットまで」を単体でカバーする段階へ</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/cleyera_f/items/fba106f82207dbd7b283">Qiita / cleyera_f</a> — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>katsuo_dev 氏が Claude Code Skills と Workflow を組み合わせてZenn への記事投稿を自動化する仕組みを解説。「ネタ決め → 草稿生成 → Zenn 公開 → SNS 告知」までを一連のスキルでカバー</li>
-          <li>v2.1.224 の 200サブエージェント上限廃止により、長期エージェントタスクで上限に引っかかる懸念が解消された点も補足している</li>
-          <li><strong>前日との差異:</strong> 昨日（8/6）はセキュリティ修正の影響を確認するため既存パイプライン記事への逆流トレンドが見られたが、本日はセルフホスト型ランナーと自動化の新規実装記事が注目を集めている</li>
+          <li>cleyera_f 氏が2026年8月時点の AI 開発動向を総括。「Claude Code の品質と機能が急速に向上し、機能実装の計画策定からコードコミットまでのワークフロー全体を Claude Code 単体でこなせるようになってきた」と指摘</li>
+          <li>2025年末から2026年初頭にかけての品質改善が特に大きく、今は「AI コーディング補助ツール」から「エンジニアリング業務の中心インフラ」という位置づけに変化しつつあるという見解を示す</li>
+          <li>v2.1.225 の SendMessage 名前指定起動にも言及し、「マルチマシン環境での分散エージェント開発がいよいよ公式にサポートされてきた」とコメント</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「【毎日更新】Claude Code関連で今伸びているQiita記事TOP20」— セルフホスト型ランナー関連記事が急上昇</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/4q_sano/items/0b9682ef6589520974e0">Qiita / 4q_sano</a> — 2026.08.07</span></div>
+      <div class="card-title">Zenn「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— 2026年版の実践 Tips が人気上位に</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita / fuyunoki</a> — 2026.08</span></div>
       <div class="card-body">
         <ul>
-          <li>4q_sano 氏の自動集計ランキング（毎日更新）。v2.1.224 の発表を受け、セルフホスト型ランナーの構築ガイドや Kubernetes 統合事例を扱う記事が本日のトップ3を占める</li>
-          <li>クロスセッションメッセージングを使ったマルチエージェントオーケストレーターの実装記事も急増中。「SendMessage の公式化でアーキテクチャ設計が大きく変わる」という内容が多い</li>
+          <li>fuyunoki 氏による Claude Code 実践ガイド（2026年版）が週間人気ランキング上位に。auto-accept モード、モデル別の使い分け（Opus / Sonnet / Haiku）、ヘッドレスセッション設定などをカバー</li>
+          <li>v2.1.225 のワークスペース信頼プロンプトについてのアップデートも追記済み。「ヘッドレス環境では事前に <code>--trust</code> フラグか信頼リスト設定が必要」という実務メモが好評</li>
+          <li>前日（8/7）のセルフホスト型ランナー関連記事ラッシュとは異なり、本日は v2.1.225 の細かな変更点と Enterprise 環境での設定ガイドを補完する記事が注目を集めている傾向</li>
         </ul>
       </div>
     </div>
@@ -292,9 +307,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月7日（金）</p>
-  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · GitHub Releases · Anthropic Blog · Unite.AI · DevelopersIO · AI Agent Store · OpenAI · Wikipedia · The New Arab · Middle East Eye · NewsCord · IranWire · Bloomberg · Al Jazeera · Fortune · NBC News · PBS NewsHour · WHO · WORLD · Morning Star · FDD · NATO News Pravda · Qiita (homhom44 · 4q_sano) · Zenn (katsuo_dev)</p>
-  <p style="margin-top:0.3rem;"><a href="2026-08-06/index.html">前版（2026-08-06）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月8日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Havoptic · Releasebot · Anthropic Blog · morphllm · OpenAI · Bloomberg · Spectrum News · US News · ABC News · The Hill · Al Jazeera · CGTN · Asharq Al-Awsat · NBC News · PBS NewsHour · FDD · Wikipedia · Qiita (homhom44 · cleyera_f · fuyunoki)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-07/index.html">前版（2026-08-07）</a></p>
 </footer>
 </body>
 </html>
