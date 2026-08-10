@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月9日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.227 — 複数バグ修正（プラグイン未ロード・長期セッションのフィーチャーフラグ陳腐化・<code>/ultrareview</code> 改善ほか） / イラン、ホルムズ再開の前提条件として米国の「行動是正」を要求・直接対話を現時点で拒否（Bloomberg 8/9） / トルコ・パキスタン・サウジが「メッカ共同防衛協定」に署名（8/7）</p>
+  <p class="date">2026年8月9日（日）&nbsp;|&nbsp;<a href="2026-08-08/index.html">前版（8/8）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/9）のハイライト:</strong> <strong>Claude Code v2.1.227</strong> が本日リリース。主な内容は累積バグ修正で、<code>--settings</code> CLI フラグ経由プラグインが読み込まれない不具合（v2.1.181 以降の退行）、長期セッションでの OAuth ローテーション後のフィーチャーフラグ陳腐化、マージベースなしリポジトリでの <code>/ultrareview</code> 拒否問題などを修正。新機能はなく、前日の v2.1.225/226 の品質向上フォローアップリリース。Sonnet 5 導入価格終了まで残り<strong>22日</strong>（9月1日）。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.227 リリース — プラグイン未ロード退行・長期セッションフィーチャーフラグ・<code>/ultrareview</code>・メモリ保存・テレメトリ二重計上などを修正</div>
+      <div class="card-meta"><span class="badge">Release</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://claudelog.com/claude-code-changelog/">ClaudeLog</a> · <a href="https://claudefa.st/blog/guide/changelog">Claudefast</a> — 2026.08.09</span></div>
+      <div class="card-body">
+        <p>v2.1.227 はすべてバグ修正のリリース。新機能は含まれない。</p>
+        <ul>
+          <li><strong>プラグイン未ロード修正（退行）:</strong> <code>--settings</code> CLI フラグ経由で有効化されたプラグインが読み込まれない問題を修正。v2.1.181 以降に発生していた退行。<code>--settings</code> を利用しているすべてのユーザーは本バージョンへのアップデートを推奨</li>
+          <li><strong>フィーチャーフラグ陳腐化修正:</strong> OAuth トークンがローテーションされた後、長期実行セッションでフィーチャーフラグが古い状態に固定される問題を修正。長時間セッションでの動作一貫性が向上する</li>
+          <li><strong><code>/ultrareview</code> の修正:</strong> マージベースが存在しないリポジトリ（初回コミット・孤立ブランチ等）で <code>/ultrareview</code> が実行を拒否していた問題を修正。現在はすべてのトラッキング済みファイルのレビューを提案するよう改善</li>
+          <li><strong><code>claude update</code> / <code>claude doctor</code> のハング修正:</strong> シェル設定パスがファイルではなくディレクトリの場合にコマンドが無言でハングし、<code>/status</code> のシステム診断セクションが空白になる問題を修正</li>
+          <li><strong>メモリファイル保存時のフロントマター切り捨て修正:</strong> メモリファイル保存時、インライン <code>#</code> 以降のフロントマター値が無音で切り捨てられる問題を修正。コメントを含むメモリファイルを扱うすべてのユーザーに影響する可能性があった</li>
+          <li><strong>テレメトリ二重計上修正:</strong> 複数の累積 <code>message_delta</code> フレームを送出するストリームで、セッションコストとトークンテレメトリが二重計上される問題を修正。コスト計算の精度が向上する</li>
+          <li><strong>誤ったネットワーク警告の修正:</strong> アドバイザーが思考中に表示される「ネットワークを確認してください」という偽の警告を修正</li>
+          <li><strong>フック <code>exit code 2</code> のブロック動作修正:</strong> フックの stdout JSON がスキーマ検証に失敗した場合、<code>exit code 2</code> を持つフックがドキュメント通りにブロックしない問題を修正</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic 利用量・価格情報 — Sonnet 5 導入価格終了まで22日、Legacy Workbench 廃止まで8日</div>
+      <div class="card-meta"><span class="badge">Usage / Pricing</span><span class="card-source">Source: Anthropic — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Sonnet 5 導入価格終了:</strong> 8月31日（残り22日）。9月1日から $2/$10 → $3/$15 per MTok に改定予定。月内にコスト試算を完了させることを推奨</li>
+          <li><strong>Legacy Workbench 廃止:</strong> 8月17日（残り8日）。新プレイグラウンドへの移行が未完了のチームは至急対応が必要</li>
+          <li><strong>週間使用量 50% 増量延長:</strong> Claude Code 加入者向け措置は8月19日（水）まで継続（残り10日）</li>
+          <li><strong>MCP 2026-07-28 規格対応:</strong> ステートレスコア、強化された OAuth/OIDC 認可、バージョン管理された拡張機能、埋め込み UI・エンタープライズ管理認証などの新コネクタ機能を含む最新 MCP 規格への対応が完了。Claude Code および Codex 双方が同規格をサポートし、エコシステムの相互運用性が向上</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> OpenAI Codex が週間アクティブユーザー400万人超を達成し、Gartner 2026 Magic Quadrant「エンタープライズ AI コーディングエージェント」でリーダーに選定。GPT-5.6-Sol は Terminal-Bench 2.1 で 89.5% を維持し首位。Claude Code は盲目テストで 67% の勝率を維持し、「難しいタスクには Claude」というコミュニティコンセンサスが継続。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex — Gartner 2026 Magic Quadrant でリーダー選定・週間アクティブ400万人超・Portable Agent Plugins が MCP 2026-07-28 に対応</div>
+      <div class="card-meta"><span class="badge">Product Update</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI / Gartner</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/">TechCrunch</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Gartner Magic Quadrant 選定:</strong> OpenAI が2026年の Gartner Magic Quadrant「エンタープライズ AI コーディングエージェント」部門でリーダーとして選定された。Codex の週間アクティブユーザーは400万人超を記録</li>
+          <li><strong>Portable Agent Plugins:</strong> プラグインを他のプラットフォームでも利用できる Portable 形式を導入。MCP 2026-07-28 規格をサポートし、Claude Code などとの相互運用性が向上。Amazon Bedrock キャッシングも追加</li>
+          <li><strong>ハードウェア参入:</strong> TechCrunch が報じたように、OpenAI はハードウェア訴訟係争中にもかかわらず、Codex と連携する $230 発光キーボードを発売。AI エージェントの日常ワークフロー統合を加速させる意図が明確</li>
+          <li><strong>Codex Security:</strong> 2026年3月に発表されたアプリケーションセキュリティエージェント「Codex Security」がソフトウェア脆弱性の特定・修正に特化し、エンタープライズ向け展開が拡大。2026年内には Legal・Finance・HR 部門での本格採用も進んでいる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント比較（2026年8月版） — Claude Code が盲目テスト67%勝率・「難しいタスクには Claude」のコンセンサス継続</div>
+      <div class="card-meta"><span class="badge">Community Analysis</span><span class="card-source">Source: <a href="https://www.firecrawl.dev/blog/claude-code-vs-codex">Firecrawl</a> · <a href="https://dev.to/_46ea277e677b888e0cd13/claude-code-vs-codex-2026-what-500-reddit-developers-really-think-31pb">DEV Community</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">morphllm</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>盲目テスト結果:</strong> 500人以上の Reddit 開発者を対象にした調査では、コード品質の盲目評価で Claude Code が 67% の勝率。複雑なマルチファイルリファクタリング・大規模コードベース理解では Claude Code が優位</li>
+          <li><strong>タスク別ルーティング:</strong> コミュニティコンセンサスは「両方を使い、タスクに応じて振り分ける」。シンプル〜中程度のタスクは Claude Code が高速、複雑なタスクは Codex がより徹底的という評価が定着</li>
+          <li><strong>Terminal-Bench 2.1 最新スコア:</strong> GPT-5.6-Sol 89.5% ＞ Claude Opus 5（最大エフォート）89.1%。ベンチマーク上の差は縮小傾向で、実務では「目的別使い分け」が主流</li>
+          <li><strong>エディタ統合:</strong> 日常的なエディタ統合・使いやすさでは Cursor が依然高評価。Claude Code / Codex はターミナル・CI/CD 環境での強さが際立つ構図が続く</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「v2.1.227 のプラグイン読み込み退行修正 — <code>--settings</code> フラグ利用者は即アップデートを」</div>
+      <div class="card-meta"><span class="badge">Bug Fix Discussion</span><span class="card-source">Reddit r/ClaudeCode — 2026.08.09</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.227 でプラグインが <code>--settings</code> CLI フラグ経由で有効化した場合に読み込まれない退行（v2.1.181 以降）が修正されたことを受け、r/ClaudeCode でスレッドが上昇。「v2.1.225 にアップデートしたらプラグインが動かなくなって半日悩んだ。v2.1.227 で直って良かった」というコメントが多数</li>
+          <li>長期セッションでのフィーチャーフラグ陳腐化修正についても「CI 環境で8時間以上走らせるジョブに影響していた。これは地味に重要な修正」という評価</li>
+          <li>テレメトリ二重計上の修正には「コスト計算が実際より多く表示されていたのがようやく直った」という声。一部ユーザーは「過去の請求が見直しになるのか」と質問するも、Anthropic からのアナウンスは現時点でなし</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Claude Code vs Codex — 500人以上の開発者が答えた2026年の本音レポート」</div>
+      <div class="card-meta"><span class="badge">Comparison Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/webdev — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>DEV Community に投稿された「Claude Code vs Codex 2026: Reddit 開発者500人以上の本音」がバイラル化し、r/ClaudeAI と r/webdev でリンクシェアが急増。「これが最も実務に近い比較レポート」と好評</li>
+          <li>レポートの主要知見: Claude Code がソーシャルメディアの「熱量」で圧倒的リード（Codex・Cursor ほか競合合計の10倍以上の言及量）。一方、ベンチマーク数値ではほぼ互角</li>
+          <li>「Claude Code に時間を投資して使い方を習得した開発者は生産性の大幅向上を報告するが、オートコンプリートとして扱う開発者は失望する」という「投資対効果の非対称性」に関するコメントが上位</li>
+          <li>Fable 5 の復活（6月輸出規制措置解除後の7月1日より Claude.ai・Claude Platform・Claude Code・Cowork で再び利用可能）に関する反応も多く「Fable のコスト対性能比は他に類を見ない」という声が目立つ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「イランがホルムズ再開の前提として米国の『行動是正』を要求・直接対話を現時点で拒否（Bloomberg）」</div>
+      <div class="card-meta"><span class="badge">Geopolitics Discussion</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.08.09</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Bloomberg が8/9報じた「Iran Rejects US Talks for Now as Wait for Hormuz Deal Drags On」が r/worldnews の本日トップスレッドに。イランの外相アラグチが「米国が6月の暫定停戦合意に違反した」と批判し、現時点での米との直接対話を拒否したと報道</li>
+          <li>一方でイランはオマーンとのルート管理交渉を「非常に近い」段階と表現しつつも「海峡再開は他の条件に左右される」と繰り返す。NBC News は「イランが米国の行動是正を求める新たな要求を突きつけた」と報道</li>
+          <li>コメント上位: 「イランは交渉と海峡再開を分離することで、常に新たなレバレッジを追加できる構造を維持している」「エネルギー市場は短期合意を期待しすぎていた」という分析が票を集める</li>
+          <li>r/investing では原油先物が合意遅延への懸念から続騰している動きが共有されており、「リスクプレミアムの巻き戻しはホルムズ全面再開まで起きない」という見方が支配的</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/9）の主要トピック:</strong> <strong>ホルムズ海峡:</strong> イランが米国の「行動是正」を要求、直接対話を拒否（Bloomberg 8/9） / <strong>メッカ防衛協定:</strong> トルコ・パキスタン・サウジが「集団防衛」条項を含む三カ国協定に署名（8/7） / <strong>ウクライナ:</strong> 春夏攻勢は重要地の利なし、夜間攻撃と防空不足が継続 / <strong>米ロ制裁法案:</strong> 上院通過後、下院での審議が焦点に
+    </div>
+    <div class="card">
+      <div class="card-title">ホルムズ海峡 — イランが米国に「行動是正」要求、外相が直接対話を現時点で拒否（Bloomberg 8/9）</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-08-09/wait-for-hormuz-deal-stretches-on-as-iran-says-terms-must-be-met">Bloomberg</a> · <a href="https://www.nbcnews.com/world/iran/iran-says-deal-strait-hormuz-close-will-not-open-waterway-rcna591476">NBC News</a> · <a href="https://www.aljazeera.com/news/2026/8/8/iran-deliberates-hormuz-arrangement-amid-uncertain-prospects-with-us">Al Jazeera</a> — 2026.08.09</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Bloomberg 8/9 報道（本日最新）:</strong> イランの外相アラグチが、米国との直接対話を「現時点では」拒否。「米国が6月の暫定停戦合意に違反した」と批判し、交渉の前提条件として米国の行動是正を要求した</li>
+          <li><strong>NBC News 報道:</strong> イラン最高国家安全保障委員会が「ホルムズ海峡は米国が行動を正さない限り再開しない」と声明。新たな要求を積み上げることで、海峡再開を独立した交渉カードとして維持する戦略が鮮明になった</li>
+          <li><strong>イラン・オマーン交渉:</strong> 外相は「（オマーンとの）航路管理協議は非常に近い段階にある」と述べつつ、「海峡の全面再開は別の条件に依存する」と繰り返した。CNN によれば、補償要求（戦争被害賠償）が引き続き核となる障壁</li>
+          <li><strong>市場への影響:</strong> 世界原油輸出の約20%が通過するホルムズ海峡の閉鎖が長引く懸念から、原油先物は上昇基調を継続。短期合意期待の後退でリスクプレミアムが高止まりしている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">トルコ・パキスタン・サウジアラビア、「メッカ共同防衛協定」に署名 — 集団防衛条項で地域安全保障の新枠組み</div>
+      <div class="card-meta"><span class="badge">Defense / Alliance</span><span class="card-source">Source: <a href="https://www.atlanticcouncil.org/dispatches/why-saudi-arabia-pakistan-and-turkey-just-signed-a-defense-pact/">Atlantic Council</a> · <a href="https://breakingdefense.com/2026/08/saudi-arabia-turkey-pakistan-ink-joint-defense-agreement/">Breaking Defense</a> · <a href="https://foreignpolicy.com/2026/08/07/pakistan-saudi-arabia-turkey-mutual-defense-pact-iran-israel-military/">Foreign Policy</a> · <a href="https://www.aljazeera.com/news/2026/8/7/turkiye-saudi-arabi-pakistan-sign-joint-defence-agreement-whats-in-it">Al Jazeera</a> — 2026.08.07</span></div>
+      <div class="card-body">
+        <p>8月7日、トルコのエルドアン大統領、サウジアラビアのムハンマド・ビン・サルマン皇太子、パキスタンのシャバズ・シャリフ首相がメッカで「メッカ共同防衛協定（Mecca Joint Defense Agreement）」に署名した。約1年間の交渉を経て成立した三カ国軍事同盟。</p>
+        <ul>
+          <li><strong>集団防衛条項:</strong> いずれかの国への武力攻撃は三カ国全体への攻撃とみなすという NATO 第5条型の集団防衛条項を含む。中東・南アジアの多極化秩序を反映した歴史的な同盟形成と分析されている</li>
+          <li><strong>背景:</strong> サウジアラビアがイラン系勢力（イエメン・イラク）からの攻撃に繰り返しさらされていること、中東でのイラン・イスラエル戦争が地域安全保障環境を急変させたことが背景。協定署名の数時間前にもサウジ当局者がイランの代理組織による攻撃リスクを警告していた</li>
+          <li><strong>パキスタンの役割:</strong> パキスタンはサウジ軍への訓練・技術支援で数十年の実績を持ち、トルコとは軍艦・訓練機を相互提供してきた。三カ国は軍事・外交両面での補完関係を持つ</li>
+          <li><strong>地政学的意味:</strong> Atlantic Council は「多極化秩序における新たな安全保障構造の萌芽」と評価。ただし詳細（運用指揮・共同訓練・資金分担）はまだ交渉中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ — ロシアの春夏攻勢は2か月半で重要地の利なし、防空ミサイル不足と深打撃作戦が継続</div>
+      <div class="card-meta"><span class="badge">War / Ukraine</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks">Al Jazeera</a> · <a href="https://en.wikipedia.org/wiki/Timeline_of_the_Russo-Ukrainian_war_(1_January_2026_%E2%80%93_present)">Wikipedia</a> · <a href="https://www.fdd.org/overnight-brief/august-5-2026/">FDD</a> — 2026.08.09</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>攻勢の現状:</strong> 2026年春に開始されたロシアの春夏攻勢は2か月半が経過したが、作戦上重要な地の利の獲得に至っていない。7月の月間最多ミサイル発射記録（381発）にもかかわらず、前線の大きな変化は確認されていない</li>
+          <li><strong>防空ミサイル不足の構造的問題:</strong> パトリオット等の防空迎撃ミサイルの在庫不足が深刻化。中東での米・イスラエル・イラン戦争が米国の在庫を吸収しており、ゼレンスキーは NATO 加盟国との緊急融通協議を継続中</li>
+          <li><strong>深打撃作戦継続:</strong> ウクライナはバシコルトスタン・ヤロスラヴリ等のロシア国内製油所や補給線へのドローン攻撃を継続。長距離打撃能力を活かした消耗戦略を維持</li>
+          <li><strong>米上院ロシア制裁法案の次段階:</strong> 86–11 で可決した超党派法案は下院へ送付済み。対中・対インド関税条項への共和党内の慎重論があり、下院での審議行方が注目される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国の対外政策 — カナダへの関税（8/19期限）・スーダン情勢悪化・キューバが地政学的優先課題に</div>
+      <div class="card-meta"><span class="badge">US Policy / Global</span><span class="card-source">Source: <a href="https://www.dbresearch.com/PROD/IE-PROD/PROD0000000000635787/This_Month_in_Geopolitics:_August_2026.PDF">Deutsche Bank Research</a> · <a href="https://buttondown.com/geodaily/archive/geopolitical-daily-august-2-2026/">Geopolitical Daily</a> · <a href="https://www.conference-board.org/research/policy-backgrounders/A-Geopolitical-August">Conference Board</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>カナダ関税期限（8/19）:</strong> 協議が合意に達しない場合、米国は8月19日よりカナダへの新関税を発動する予定。対カナダ・対メキシコの貿易摩擦が再燃するリスクが高まっている</li>
+          <li><strong>スーダン情勢悪化:</strong> スーダン国内の武力衝突が激化しており、Deutsche Bank Research が8月の地政学リスクレポートで中東・ウクライナと並ぶ重要懸念として挙げている</li>
+          <li><strong>キューバの地政学的優先課題化:</strong> 米国政府がキューバを対外政策の優先アジェンダとして位置づける動きが目立ち始めている</li>
+          <li><strong>「構造的過剰生産能力」関税:</strong> 主要貿易相手国に対する「構造的過剰生産能力」を理由とした追加関税の発動が8月中に予定されており、貿易緊張が一段と高まる可能性がある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「この本の公開ボタンは、人間が押していない」— AI エージェントが無人で技術書を販売開始した設計事例</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/berrylove/items/73db91bf15384191bf4b">Qiita / berrylove</a> — 2026.08.08〜09</span></div>
+      <div class="card-body">
+        <ul>
+          <li>AI エージェントが定義された条件（品質スコア・校正完了・発売日時）を満たしたことを自律的に判断し、技術書の「公開ボタン」を自動で押して販売開始した実践事例を解説した記事が Qiita 週間トレンドの上位に</li>
+          <li>著者は「AI に公開判断を委ねても事故にならない枠組み」の設計ポイントを詳述。判断条件の明文化・ロールバック設計・人間によるポストチェックの組み合わせが核となる</li>
+          <li>コメント欄では「コードのコミット判断は AI に委ねている人も多いが、金銭を伴う公開行為はハードルが違う」という議論と、「適切な設計があれば自律実行は合理的」という意見が交わされており、AI エージェントの自律度合いに関する実務的な論点として注目を集めている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「バズりツイートから考察する2026年のAIエージェントプロダクト開発」— SNS トレンドから見えるプロダクト設計の潮流</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://zenn.dev/chiku_dev/articles/7602829910d94f">Zenn / chiku_dev</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>chiku_dev 氏が X（旧 Twitter）のバズり投稿を分析し、2026年における AI エージェントプロダクト開発の潮流を考察。「自律性の範囲設定（どこまで AI に任せるか）」「マルチエージェント協調のオーケストレーション設計」「人間が介入するポイントの明示化」の3テーマが繰り返し浮上すると指摘</li>
+          <li>Claude Code の SendMessage 名前指定起動（v2.1.225〜）が「マルチマシン・マルチエージェント構成の設計にとってゲームチェンジャー」として言及されており、本記事でも実装例の一つとして取り上げられている</li>
+          <li>「プロダクトとしての AI エージェント開発と、ツールとしての AI エージェント利用は設計思想が根本的に異なる」という視点が読者に好評。Zenn の週間トレンドでいいね数が急伸中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「AIの進化が速すぎても2026年中には陳腐化しない『3つの本質的スキル』」— 変化に左右されない能力設計の考え方</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://zenn.dev/zatsucat/articles/83f285796ecee2">Zenn / zatsucat</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>zatsucat 氏による「AI 進化のサイクルに振り回されずに価値を維持するスキル」論考が Zenn の AI トピック週間上位に。提唱する3スキルは「①問いを立てる力（AI への正確な指示設計）」「②システム全体を見る構造把握力」「③人間の判断が必要な文脈を識別する力」</li>
+          <li>Claude Code v2.1.225 での SendMessage 名前指定起動やゲートウェイ上限サポートなど「AIが扱えるタスクの範囲がさらに広がった」という最新の機能拡張を踏まえつつ、「それでも設計判断と要件定義は人間の領域だ」という論旨を展開</li>
+          <li>「スキルの陳腐化を恐れるより、AI との協働でより上位の判断ができるようになることを目指すべき」という結論がエンジニアに広く共感され、ソーシャルでの拡散が続いている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月9日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · ClaudeLog · Claudefast · morphllm · Firecrawl · DEV Community · OpenAI / Gartner · TechCrunch · Bloomberg · NBC News · Al Jazeera · CNN · Atlantic Council · Breaking Defense · Foreign Policy · Deutsche Bank Research · Geopolitical Daily · Conference Board · Qiita (berrylove) · Zenn (chiku_dev · zatsucat)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-08/index.html">前版（2026-08-08）</a></p>
+</footer>
+</body>
+</html>
