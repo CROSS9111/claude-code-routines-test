@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月10日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月11日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code Auto Mode、8月14日よりデフォルト化（Pro/Max/Team）— AI安全分類器が危険コマンドを89%捕捉、人間レビューの13.6%を大幅上回る / ウクライナのドローン攻撃がロシア・ニジネカムスクで13人死亡（タタルスタン共和国が服喪宣言） / イランが米国に「港湾封鎖解除・駐留軍撤退・制裁撤廃・戦争賠償」を要求、ホルムズ再開の前提条件として直接対話を拒否</p>
-  <p class="date">2026年8月10日（月）&nbsp;|&nbsp;<a href="2026-08-09/index.html">前版（8/9）</a></p>
+  <p class="subtitle">Compliance API が Claude Code・Cowork に拡大（Enterprise ベータ）、自己ホスト環境も public beta / Google Gemini が月間10億ユーザー突破 / Trump「米国だけがホルムズを制御する」—イランへの賠償要求で交渉は膠着 / ロシアがウクライナ・ザポリッジャを攻撃、6人死亡、最大石化コンプレックスも操業停止</p>
+  <p class="date">2026年8月11日（火）&nbsp;|&nbsp;<a href="2026-08-10/index.html">前版（8/10）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,35 +69,31 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/10）の最重要ハイライト:</strong> Anthropic が <strong>8月14日（木）より Claude Code の Auto Mode をデフォルト化</strong>すると発表。Pro・Max・Team プランの新規セッションに自動適用される。社内テストで、Auto Mode の危険コマンド捕捉率は <strong>89%</strong> に対し、人間レビューは <strong>13.6%</strong> に留まることが判明。「承認疲労」により人間はプロンプトの97%を反射的に承認していたとAnthropicは説明した。Sonnet 5 導入価格終了まで残り<strong>21日</strong>（9月1日）。
+      <strong>本日（8/11）の最重要ハイライト:</strong> Anthropic が <strong>Compliance API の対象を Claude Code（CLI・デスクトップ）と Cowork（デスクトップ・Web・モバイル）に拡大</strong>、Claude Enterprise 顧客はベータ版を本日より利用可能。あわせて <strong>Claude Code の自己ホスト環境（Self-Hosted Environments）が Public Beta</strong> に移行し、Team・Enterprise プラン向けに内部ネットワーク・カスタムツール上でのセッション実行が解放された。Auto Mode のデフォルト化（8/14）まで残り<strong>3日</strong>。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code Auto Mode、8月14日よりデフォルト化 — AI分類器が危険コマンドを89%捕捉・人間の13.6%を大幅上回る（Pro/Max/Team対象）</div>
-      <div class="card-meta"><span class="badge">Major Update</span><span class="card-source">Source: <a href="https://claude.com/blog/auto-mode-default-in-claude-code">claude.com/blog</a> · <a href="https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/">TechCrunch</a> · <a href="https://simonwillison.net/2026/Aug/8/auto-mode/">Simon Willison</a> · <a href="https://www.theregister.com/ai-and-ml/2026/08/10/claude-code-puts-auto-mode-in-the-drivers-seat/5285326">The Register</a> — 2026.08.09–10</span></div>
+      <div class="card-title">Compliance API が Claude Code・Cowork に拡大、推論フック（Inference Hooks）も Enterprise ベータへ — 統合監査・eDiscovery・リアルタイム DLP が一本化（8/11）</div>
+      <div class="card-meta"><span class="badge">Enterprise / Security</span><span class="card-source">Source: <a href="https://docs.anthropic.com/en/docs/claude-code/legal-and-compliance">Anthropic Docs</a> · <a href="https://support.claude.com/en/articles/13015708-access-the-compliance-api">Claude Help Center</a> · <a href="https://generalanalysis.com/guides/claude-compliance-api">General Analysis</a> — 2026.08.11</span></div>
       <div class="card-body">
-        <p>Anthropic は8月7日（PST）に、Claude Code の Auto Mode を8月14日（木）より Pro・Max・Team プランのデフォルト許可モードに変更すると発表した。Enterprise・API・Anthropic Platform・Amazon Bedrock・Google Cloud Agent Platform・Microsoft Foundry では引き続き任意設定で、数週間以内に同様にデフォルト化する予定。</p>
         <ul>
-          <li><strong>Auto Mode の動作:</strong> 各ツール呼び出しを AI 分類器がリアルタイム審査し、「不可逆的・破壊的・環境外への行動」と判断した場合のみブロック。安全な操作は自動実行され、繰り返しブロックが続いた場合のみ手動承認に切り替わる</li>
-          <li><strong>安全性の優位性:</strong> 1,053人の有料ユーザーを対象にした社内テストで、人間レビューが仕掛けられた危険コマンドを捕捉した割合はわずか13.6%。Auto Mode は89%を捕捉した。Anthropic はこの差を「承認疲労（approval fatigue）」によるものと説明 — 人間はプロンプトの97%を反射的に承認しており、注意が集中しない</li>
-          <li><strong>切り替え方法:</strong> 既存のデフォルト許可モードを持つユーザーにはアプリ内で一度だけ通知が届く。Shift+Tab で手動モードに戻すことが可能</li>
-          <li><strong>背景:</strong> 2026年6月時点で Claude Code ユーザーの約43%が「あらゆるシェルコマンドを許可する」に等しいインタープリターのルールを設定しており、この割合は5週ごとに約5ポイント増加していた。Anthropic は「多くのユーザーはすでに承認プロンプトを回避していた」と指摘</li>
-          <li><strong>メディア反応:</strong> The Register は「Claude Code puts auto mode in the driver's seat」と報道。The New Stack は「人間は信頼できないから AI に任せる、という逆転発想」と評した</li>
+          <li><strong>拡張範囲（本日より）:</strong> Compliance API が Claude Code（CLI・デスクトップアプリ）と Cowork（デスクトップ・Web・モバイル）を正式にカバー。既存の Compliance Access Key をそのまま利用でき、新たな連携実装は不要</li>
+          <li><strong>できること:</strong> セキュリティ・コンプライアンスチームは、Claude チャット・Claude Code セッション・Cowork セッションの内容とメタデータを同一 API から一括取得可能になった。監査ログ・eDiscovery・規制対応（HIPAA、SOC2、GDPR 等）への活用が想定されている</li>
+          <li><strong>Inference Hooks（推論フック）Enterprise ベータ:</strong> プロンプトやツール呼び出しがモデルに到達する前にリアルタイムで検査・ブロックする DLP（データ損失防止）機能。チャット・Claude Code・Cowork にまたがる横断的なポリシー適用が可能</li>
+          <li><strong>Self-Hosted Environments（自己ホスト環境）Public Beta:</strong> Claude Code のセッションを企業自社インフラ上で実行する機能が Public Beta に昇格。内部ネットワークアクセス・カスタムツール統合・企業独自のコンプライアンス制御を備えた固定型・オンデマンド型ランナーをサポート。Team・Enterprise プランが対象</li>
+          <li><strong>背景:</strong> 昨日の Auto Mode デフォルト化発表（8/14 より Pro/Max/Team）が「セキュリティチームの承認を得ずに展開されるのでは」という懸念を企業内で生んでいた。Anthropic はこれに応える形で Compliance API 拡張と Inference Hooks を同タイミングで提供し、「自律実行の拡大と監査可能性の確保はセットで進める」姿勢を示した</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Code with Claude 開発者イベント（SF・ロンドン・東京）— Dreaming・Outcomes・マルチエージェント・Claude Finance・Add-ins の5機能を発表 / MCP が月間400M ダウンロード突破</div>
-      <div class="card-meta"><span class="badge">Feature Release</span><span class="card-source">Source: <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · Anthropic — 2026.08</span></div>
+      <div class="card-title">Auto Mode デフォルト化まで3日 — Anthropic が「承認疲労」データを改めて公開、切り替え方法を FAQ で整備（8/14 開始予定）</div>
+      <div class="card-meta"><span class="badge">Reminder / Update</span><span class="card-source">Source: <a href="https://buttondown.com/dailyaidigest/archive/dad-claude-code-will-start-acting-on-its-own-by/">Daily AI Digest / Buttondown</a> · <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO Blog</a> — 2026.08.10–11</span></div>
       <div class="card-body">
+        <p>8月14日（木）より Claude Code の Auto Mode が Pro・Max・Team プランのデフォルト許可モードに移行する（昨日発表）。Anthropic は本日、FAQ とドキュメントを更新し切り替え手順を整備した。</p>
         <ul>
-          <li><strong>Code with Claude イベント:</strong> Anthropic がサンフランシスコ・ロンドン・東京で同時開催した開発者イベントで、5つの新機能を発表。今週のリリースと今後の予定を含む</li>
-          <li><strong>Dreaming（ドリーミング）:</strong> Claude がバックグラウンドで長時間にわたり複雑な問題を「熟考」するモード。非同期タスクに最適化されており、コードベースの大規模リファクタリング・設計判断の多い長尺タスクで活用される</li>
-          <li><strong>Outcomes（アウトカムズ）:</strong> タスクの「望む結果（outcome）」を記述するだけで Claude が自律的に計画・実行する新インターフェース。従来のプロンプトからの脱却を目指す</li>
-          <li><strong>マルチエージェントオーケストレーション:</strong> 複数の Claude エージェントを協調動作させる公式フレームワーク。主エージェントがサブエージェントへタスクを委譲し、並列処理・検証を行う構成をサポート</li>
-          <li><strong>Claude Finance:</strong> 財務・会計・投資分析向けに特化した10個のプリビルドエージェントを含むバンドル。エンタープライズ向けに展開</li>
-          <li><strong>Add-ins:</strong> サードパーティが開発した機能を Claude Code セッション内に直接組み込める拡張機能システム</li>
-          <li><strong>MCP 400M ダウンロード:</strong> Model Context Protocol（MCP）の月間 SDK ダウンロード数が4億を突破（前年比4倍増）。業界標準として確立しつつある</li>
-          <li><strong>Claude Code 最新アップデート:</strong> ゲートウェイの使用量上限サポート・<code>claude agents</code> のワークスペーストラストプロンプト・Remote Control のメッセージを名前で開始する機能・写真取り扱い改善のほか、OAuth・セッション・履歴・UI・ヘッドレスセッションのバグ修正</li>
+          <li><strong>切り替え方法の再確認:</strong> デスクトップ版は Shift+Tab で手動モードへ即座に戻せる。CLI では <code>--no-auto-mode</code> フラグまたは設定ファイルの <code>autoMode: false</code> で無効化可能。企業管理者は組織ポリシーで一括制御できる</li>
+          <li><strong>「承認疲労」データの再公開:</strong> 1,053人参加の社内テストで人間の承認率は97%に達していた一方、危険コマンドの捕捉率は13.6%。Auto Mode の捕捉率は89%。Anthropic はこの数値を改めて引用し「デフォルト変更の根拠」として強調している</li>
+          <li><strong>エンタープライズ対応:</strong> Enterprise・API ユーザーは8/14以降も手動モードがデフォルト。数週間以内に同様の変更が予定されており、管理者は事前に組織ポリシーを設定しておくことが推奨されている</li>
+          <li><strong>コスト変更:</strong> Auto Mode の AI 分類器にかかっていた追加トークン費用は撤廃。Pro・Max・Team・Enterprise すべてで追加費用なしに利用可能になる</li>
         </ul>
       </div>
     </div>
@@ -106,21 +102,34 @@
   <section class="section" id="rival">
     <div class="section-header">
       <div class="section-title">AI エージェント競合動向</div>
-      <span class="section-count">1 記事</span>
+      <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> OpenAI が <strong>Atlas を8月9日に廃止</strong>し、ブラウザ操作能力を ChatGPT および Codex に統合。Codex の週間アクティブユーザーは引き続き400万人以上。教育向け新プラグイン（K-12教員・大学・学生向け）を展開中。
+      <strong>競合ハイライト:</strong> <strong>Google Gemini が月間10億アクティブユーザーを突破</strong>（8/11 CEO Pichai 発表）、Google 史上14番目・最速到達の製品に。ChatGPT が週間10億ユーザーを達成した6月に続き、AI アシスタント市場が真の「10億人」時代へ。OpenAI Codex は paginated スレッド履歴・Bedrock 拡張・音声入力など新機能を追加。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI — Atlas 廃止（8/9）・Codex に教育プラグイン追加・新セッション管理機能とスレッドピニング</div>
-      <div class="card-meta"><span class="badge">Product Update</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia / OpenAI Codex</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://releasebot.io/updates/openai">OpenAI Release Notes</a> — 2026.08.09</span></div>
+      <div class="card-title">Google Gemini、月間10億アクティブユーザー突破 — CEO Sundar Pichai が発表、Gmail の14年を1年未満で追い越す（8/11）</div>
+      <div class="card-meta"><span class="badge">Milestone</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/">TechCrunch</a> · <a href="https://9to5google.com/2026/08/11/gemini-app-1-billion/">9to5Google</a> · <a href="https://www.androidheadlines.com/2026/08/google-gemini-reaches-one-billion-monthly-active-users.html">Android Headlines</a> · <a href="https://foxsanantonio.com/news/nation-world/google-gemini-passes-1-billion-monthly-users-as-chatgpt-reaches-1-billion-weekly-users">Fox SA</a> — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Atlas 廃止（8月9日）:</strong> OpenAI はブラウザ操作エージェント「Atlas」を8月9日付で廃止。ブラウザ系エージェント能力は ChatGPT および Codex に直接統合された。既存の Atlas ユーザーは移行が完了している</li>
-          <li><strong>教育プラグイン:</strong> ChatGPT Work および Codex 向けに、K-12教員（授業計画）・大学教員（コース設計）・大学生（学習支援・ガイドワークフロー）の3ロール別ツールセットを追加。学校の管理者が展開するマネージドデプロイメントとして提供</li>
-          <li><strong>Codex 新機能:</strong> 新セッション管理コントロール・スレッドのピニングとフォーク・プラグインマーケットプレイスのサポート拡大・WebSocket による Remote Code Mode 接続・カスタムモデルへのスタンドアロン Web 検索・スキル発見機能の改善を追加</li>
-          <li><strong>バグ修正:</strong> プロキシ・MCP・ターミナル・Windows ナビゲーション・割り込み処理に関する安定性修正</li>
-          <li><strong>週間アクティブユーザー:</strong> Codex の週間アクティブユーザーは400万人以上を維持（2026年6月発表以来、継続的な成長）</li>
+          <li><strong>本日の発表:</strong> Google CEO Sundar Pichai が8月11日、Gemini アプリの月間アクティブユーザー（MAU）が<strong>10億人</strong>を突破したと発表。これは Google 史上14番目の10億ユーザー製品であり、最速で到達した製品となった</li>
+          <li><strong>急成長の軌跡:</strong> 2026年初頭に約 7.5 億人、7月に 9.5 億人、8月に 10 億人を達成。Gmail が10億ユーザーに14年を要したのに対し、Gemini は1年未満で同規模に到達した</li>
+          <li><strong>主な利用状況:</strong> ユーザーの63%が音声でGemini を利用。iOS ユーザーが1億人超、1日あたり1.5億枚以上の画像を生成</li>
+          <li><strong>競合比較:</strong> ChatGPT は2026年6月に<strong>週間</strong>10億ユーザーを発表（月間ではさらに多い）。Gemini の10億は月間ベースであり単純比較はできないが、両社の AI アシスタントが「インターネット規模」のユーザー基盤に達したことは確か</li>
+          <li><strong>次の一手:</strong> Google は Gemini 3.1 の展開を拡大しており、Gemini アプリを Google Workspace 全製品へ統合する計画を進めている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex — paginated スレッド履歴・Bedrock 拡張・音声入力 V3・安定したマルチエージェント体験を追加、Gartner 「エンタープライズ AIコーディングエージェント」リーダーに選定</div>
+      <div class="card-meta"><span class="badge">Product Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI / Gartner</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia / Codex</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新機能（8月中旬）:</strong> スレッド履歴のページネーション対応、Amazon Bedrock と独自インポートのサポート拡大、Realtime V3 会話での音声入力対応、マルチエージェント体験の安定性向上</li>
+          <li><strong>推奨モデル更新:</strong> Codex が GPT-5.6-sol（GPT-5.6 の最軽量ティア）をデフォルト推奨モデルに変更。Sol/Terra/Luna の3ティアは7月9日に GA となっており、用途に応じたスケーリングが可能</li>
+          <li><strong>Gartner 選定:</strong> OpenAI が2026年 Gartner Magic Quadrant「エンタープライズ AIコーディングエージェント」部門でリーダーに選出。イノベーション評価と大規模エンタープライズ展開実績が評価されている</li>
+          <li><strong>週間アクティブユーザー:</strong> Codex の週間アクティブユーザーは400万人以上を維持（6月発表以来）</li>
+          <li><strong>端末・安定性の改善:</strong> ターミナル応答性・Windows 安定性・安全処理の各分野でバグフィックスを実施</li>
         </ul>
       </div>
     </div>
@@ -132,37 +141,38 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「Auto Mode がデフォルトになる — 人間レビューの限界を89% vs 13.6%が証明した」</div>
-      <div class="card-meta"><span class="badge">Hot Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/programming — 2026.08.09–10</span></div>
+      <div class="card-title">r/ClaudeCode「Compliance API 拡張 + Inference Hooks — エンタープライズの懸念に Anthropic が答えた」</div>
+      <div class="card-meta"><span class="badge">Enterprise Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/sysadmin — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic の Auto Mode デフォルト化発表を受け、r/ClaudeCode でスレッドが急上昇。「人間は97%のプロンプトを反射的に承認していた、というデータは正直言って思い当たる節がある」というコメントが最多の票を獲得</li>
-          <li>「Shift+Tab で戻せるなら問題ない。むしろ今まで手動がデフォルトだったことに驚く」という好意的な反応が多数。一方で「CI/CD 環境で意図しない副作用が出るか不安」「エンタープライズユーザーが管理者設定なしで制御を失うケースはないか」という懸念も浮上</li>
-          <li>The New Stack の「humans can't be trusted」という見出しについては「クリックベイトだが、データは本物」という評価が共有。「承認疲労（approval fatigue）」という概念がコミュニティで広く共有され始めている</li>
-          <li>r/programming では「43% のユーザーがすでに YOLO モード相当の設定をしていた、という事実の方が驚きだった」というコメントがトップに</li>
+          <li>本日の Compliance API 拡張を受け、r/ClaudeCode で「昨日の Auto Mode 発表で社内がざわついていたが、これで説明できる」という投稿が急上昇。「CISO に提案するための材料がそろった」「eDiscovery 対応が既存 API でそのまま動くのは大きい」などの声が集まっている</li>
+          <li>r/sysadmin では「Self-Hosted Environments が Public Beta になったことで、クラウドに出ないパイプラインが組めるようになった。オンプレ要件の壁がひとつ外れた」という具体的な評価が上位に。「インフラ設計次第だが、金融・医療では決定打になり得る」という回答が続く</li>
+          <li>一方で「Inference Hooks の設定ミスでプロダクションタスクが全部ブロックされるリスクがある」「ポリシー設計の学習コストは無視できない」という懸念も票を集め、Anthropic のドキュメント整備を求めるコメントが増えている</li>
+          <li>「Auto Mode デフォルト（8/14）と Compliance API 拡張（今日）を同週に並べた Anthropic の戦略は意図的で上手い」という分析が r/MachineLearning でも共有されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Code with Claude イベントの5機能 — Dreaming と Outcomes がゲームチェンジャーになるか議論中」</div>
-      <div class="card-meta"><span class="badge">Feature Discussion</span><span class="card-source">Reddit r/ClaudeAI · r/AIAssistants — 2026.08.10</span></div>
+      <div class="card-title">r/ClaudeAI「Auto Mode まであと3日 — 実際に試した人が『承認疲労』を数値で体感した話」</div>
+      <div class="card-meta"><span class="badge">Experience Report</span><span class="card-source">Reddit r/ClaudeAI · r/programming — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>Code with Claude イベントで発表された5機能について r/ClaudeAI で活発な議論が展開。「Dreaming は本当に『放置して翌朝確認』が実現するなら、AI エージェント活用の前提が変わる」という期待感が高い</li>
-          <li>Outcomes インターフェースについては「プロンプトエンジニアリングの終わり？」という声と、「目標記述の粒度設計が新たなスキルになる」という見方が交わされている</li>
-          <li>Claude Finance の10プリビルドエージェントは「金融機関のパイロット次第」という慎重論が多め。「財務データを Claude に渡すハードルはまだ高い企業が多い」という意見が票を集めた</li>
-          <li>Add-ins については「これが MCP の次のキラーユースケース」という評価があり、サードパーティ開発者の参入を呼びかける投稿も出始めている</li>
+          <li>8/14 のデフォルト化を前に、すでに Auto Mode を手動で有効にしていたユーザーの体験報告が r/ClaudeAI のトップに。「1日に200回以上の承認プロンプトが出ていたが、Auto Mode 以降は15回程度に」という報告が多くの共感を集めた</li>
+          <li>「97%を反射的に承認していた、という Anthropic のデータは最初懐疑的だったが、自分のログを確認したら確かに約95%を2秒以内に承認していた」という実測報告も。「注意を払えていたのは残りの5%だけだった」という率直なコメントが upvote を集めている</li>
+          <li>r/programming では「Auto Mode の分類器が89%を捕捉する、というのは言い方を変えると11%は見逃す」という批判的視点のコメントも上昇。「どんなコマンドで誤検知・漏れが起きるかの事例集が欲しい」という需要が高まっている</li>
+          <li>Shift+Tab で即座に手動に戻せる点について「とりあえず使ってみて合わなければ切ればいい、というハードルの低さが好印象」という意見と「デフォルトを変えること自体への信頼感の問題」という意見が対立している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「マルチエージェント Opus + Sonnet パターンが再評価 — Anthropic の公式フレームワーク化で設計が標準化へ」</div>
-      <div class="card-meta"><span class="badge">Technical Discussion</span><span class="card-source">Reddit r/MachineLearning · r/LocalLLaMA — 2026.08.10</span></div>
+      <div class="card-title">r/artificial「Google Gemini 10億ユーザー vs ChatGPT 10億週間ユーザー — AI アシスタント覇権争いの構図を整理する」</div>
+      <div class="card-meta"><span class="badge">Industry Analysis</span><span class="card-source">Reddit r/artificial · r/technology — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>morphllm のコミュニティ調査（<a href="https://www.morphllm.com/claude-code-reddit">Claude Code Reddit分析</a>）を引用したスレッドが r/MachineLearning で上昇。「主セッションは Opus で複雑な推論、サブエージェントは Sonnet で集中タスク」というパターンが最も upvote されている実践的アドバイスと紹介された</li>
-          <li>Anthropic の公式マルチエージェントオーケストレーションフレームワーク発表を受け、「今まで各自が独自実装していた構成が標準化される」という安堵感と「公式が特定のアーキテクチャを推奨することで柔軟性が下がらないか」という懸念が共存</li>
-          <li>コミュニティの実践知として「短い・集中したセッションが長時間マラソンに勝る」「自律作業開始前に必ずチェックポイントコミット」「間違えたら修正より rollback」という3原則が再度共有され、新規ユーザーへのピンされたガイドとして定着しつつある</li>
+          <li>本日発表の Gemini 10億 MAU を受け、「月間10億（Gemini）vs 週間10億（ChatGPT）の数字は比較できない」という整理が r/artificial のトップに。「ChatGPT はおそらく月間では20億前後」という推計が共有されている</li>
+          <li>「Gmail の14年を1年未満で追い抜いた、という成長速度は驚異的。ただし ChatGPT も1年で同じことをやった」という文脈が追加され、「AI アシスタント市場全体が空前の速さで成長している」という評価で収束</li>
+          <li>「Google は Gemini のモバイル統合（Android デフォルト）と検索統合がドライバー。ユーザー数がそのまま『深い利用』を意味するかは別問題」という指摘も多くの票を集めた</li>
+          <li>r/technology では「Gemini・ChatGPT・Claude の3強が並立している点がスマートフォン初期とは違う。単一の勝者が生まれにくい市場構造」という分析が注目されている</li>
         </ul>
       </div>
     </div>
@@ -174,54 +184,48 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/10）の主要トピック:</strong> <strong>中東:</strong> イランが米国に4条件（港湾封鎖解除・駐留軍撤退・制裁撤廃・戦争賠償）を突きつけ直接対話拒否 / フーシが Saudi Aramco ジャザン製油所を攻撃 / ネタニヤフがトランプの15項目ガザ和平案を拒否 / <strong>ウクライナ:</strong> ドローン攻撃でロシア・ニジネカムスク13人死亡（タタルスタンが服喪宣言） / <strong>南米:</strong> コロンビアで右派のエスプリエジャが大統領に就任（8/7）
+      <strong>本日（8/11）の主要トピック:</strong> <strong>中東:</strong> Trump「米国だけがホルムズを制御する」と宣言しイランに賠償要求 — 交渉は双方の条件がぶつかり膠着 / <strong>ウクライナ:</strong> ロシアがザポリッジャを攻撃・6人死亡、Dnipropetrovsk でも3人死亡、ロシア最大石化コンプレックスがドローン攻撃で操業無期限停止 / <strong>外交:</strong> ベネズエラ・イスラエルが17年ぶりに領事関係回復 / <strong>人道:</strong> UNESCO — アフガン少女240万人が中等教育から依然排除
     </div>
     <div class="card">
-      <div class="card-title">ホルムズ海峡 — イランが米国に4条件を要求・直接対話を拒否、フーシが Saudi Aramco ジャザン製油所を攻撃（8/9–10）</div>
-      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/08/09/world/live-news/iran-war-trump">CNN</a> · <a href="https://www.washingtonpost.com/business/2026/08/09/yemen-houthis-iran-hormuz-mideast-roundup-aug-9-2026/">Washington Post</a> · <a href="https://www.washingtontimes.com/news/2026/aug/9/iranian-backed-houthis-claim-attacks-saudi-oil-facility-yemeni-port/">Washington Times</a> · <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">Wikipedia / Hormuz crisis</a> — 2026.08.09–10</span></div>
+      <div class="card-title">ホルムズ海峡 — Trump「米国だけがホルムズを制御する」・イランに賠償要求、双方の条件がぶつかり交渉は膠着（8/11）</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-08-11/strait-of-hormuz-what-have-iran-us-said-as-efforts-to-restore-traffic-stall">Bloomberg</a> · <a href="https://thehill.com/policy/defense/6021575-iran-oman-hormuz-strait-deal/">The Hill</a> · <a href="https://www.cbsnews.com/live-updates/iran-war-us-negotiation-strait-of-hormuz/">CBS News</a> · <a href="https://en.wikipedia.org/wiki/2026_United_States_naval_blockade_of_Iran">Wikipedia / US Naval Blockade of Iran</a> — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>イランの新たな条件（8/9）:</strong> イランの国家安全保障委員会が、ホルムズ海峡再開の前提として「①米国のイラン港湾封鎖を解除」「②中東からの米軍駐留部隊撤退」「③制裁の全面撤廃」「④イラン・イスラエル戦争での戦争賠償の支払い」を要求。この条件が満たされるまで米国との直接対話を拒否すると表明した</li>
-          <li><strong>オマーンとの交渉:</strong> イラン外相はオマーンとの航路管理協議が「非常に近い段階」にあることを認めつつも、「海峡の全面再開は上記4条件の充足に依存する」と強調。条件と交渉を分離する戦略を維持している</li>
-          <li><strong>フーシの攻撃（8/9–10）:</strong> イエメンのイラン支援フーシ勢力がサウジアラビアの紅海岸に位置する Saudi Aramco のジャザン製油所を攻撃。また、フーシが支配するイエメン港湾へのドローン攻撃も報告されており、地域の海上輸送脅威が拡大</li>
-          <li><strong>市場への影響:</strong> ホルムズ海峡は世界石油輸出の約20%が通過する。サウジアラビアはホルムズ閉鎖に対応するためジャザン港経由の輸出を代替手段として拡大していたが、今回の攻撃によりそのルートも脅威にさらされた</li>
+          <li><strong>Trump の発言（8/11）:</strong> 記者団に対し「米国だけがホルムズ海峡を制御している」と宣言し、米海軍封鎖を「鉄の壁（steel wall）」と表現。「地雷原はすでに掃海された。封鎖は完璧だ」と述べた</li>
+          <li><strong>イランへの賠償要求:</strong> Trump はイランの4条件（港湾封鎖解除・米軍撤退・制裁撤廃・戦争賠償の支払い）に対して自らの条件を提示。「損害があるなら、それはイランが払うべきだ」と述べ、USS Cole 事件（2000年・米水兵17人死亡）の賠償もイランに求める発言を行った</li>
+          <li><strong>交渉の現状（Bloomberg 報道）:</strong> 6月中旬の暫定停戦崩壊後、イラン軍は海峡内での船舶攻撃を再開し米国はイラン港湾の封鎖を復活させた。イランは8/8に4条件を提示し、Trump は8/11に反撃条件を提示。双方の立場は大幅に乖離しており、オマーンが仲介を試みているが突破口が見えていない</li>
+          <li><strong>エネルギー市場への影響:</strong> ホルムズ海峡は世界石油輸出の約20%が通過する。海峡の完全再開が見通せない状態が続いており、代替ルート（サウジのジャザン港、パイプライン迂回）への需要が高まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ — ドローン攻撃でロシア・ニジネカムスク（タタルスタン共和国）13人死亡、服喪宣言（8/10）</div>
-      <div class="card-meta"><span class="badge">War / Ukraine</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/10/at-least-13-killed-in-ukrainian-drone-attack-on-russias-nizhnekamsk">Al Jazeera</a> · <a href="https://www.democracynow.org/2026/8/10/headlines">Democracy Now!</a> — 2026.08.10</span></div>
+      <div class="card-title">ウクライナ — ロシアがザポリッジャを攻撃・6人死亡、Dnipropetrovsk でも3人死亡 / ロシア最大石化コンプレックスがドローン攻撃で操業無期限停止（8/11）</div>
+      <div class="card-meta"><span class="badge">War / Ukraine</span><span class="card-source">Source: <a href="https://news.az/time/2026/8/11">News.az</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica</a> — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>攻撃の概要:</strong> ウクライナ軍が8月10日、ロシアのタタルスタン共和国に位置する石油化学都市ニジネカムスク（モスクワから約800km東）に対してドローン攻撃を実施。ロシア当局は少なくとも13人が死亡、39人以上が負傷したと発表</li>
-          <li><strong>犠牲者の内訳:</strong> カザンのウズベキスタン総領事館は、死亡した13人のうち少なくとも7人がウズベキスタン国籍だと発表。出稼ぎ労働者の存在が被害を拡大させた</li>
-          <li><strong>ウクライナの説明:</strong> ウクライナ軍は「同地域の石油施設を標的にした」と発表。モスクワから遠い内陸の工業都市への攻撃は、ロシアの補給線・燃料生産を狙う長距離消耗戦略の一環とみられる</li>
-          <li><strong>タタルスタン服喪宣言:</strong> タタルスタン共和国は今回を戦争中最大規模のドローン被害の一つとして服喪を宣言。地域住民の間でウクライナ戦争への関心が高まっている</li>
-          <li><strong>戦況全体:</strong> ロシアの春夏攻勢は約2か月半が経過したが、作戦上の重要地点の占領には至っていない。防空ミサイルの在庫不足はウクライナにとって引き続き構造的課題となっている</li>
+          <li><strong>ザポリッジャへの攻撃（8/11）:</strong> ロシアがウクライナ南東部ザポリッジャ市を攻撃し、少なくとも6人が死亡、20人以上が負傷。隣接する Dnipropetrovsk 州でもロシアのドローン・砲撃により民間人3人が死亡した</li>
+          <li><strong>ロシア最大石化コンプレックスが停止:</strong> ウクライナのドローン攻撃を受けたロシア最大の石油化学コンプレックスが無期限操業停止を発表。LPG（液化石油ガス）供給と関連石化製品の生産に影響が出る見通し。前日（8/10）のニジネカムスク攻撃（13人死亡）に続き、内陸工業地帯への継続的な打撃が明らかになっている</li>
+          <li><strong>黒海での対ドローン作戦:</strong> ルーマニア陸軍の潜水士が、Neptun Deep 洋上ガスプロジェクト近くのルーマニア黒海 EEZ 内で Gerbera 型ドローン2機を発見・無力化した。同プロジェクトはルーマニア・黒海のエネルギー開発の要であり、ドローン漂流が近海で相次いでいることへの懸念が高まっている</li>
+          <li><strong>戦況全体:</strong> ロシアの春夏攻勢は継続しているが、ウクライナの長距離ドローン戦略によりロシア内陸部・エネルギーインフラへの打撃が積み重なっている。ウクライナの防空ミサイル在庫不足は引き続き構造的課題</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ガザ — ネタニヤフ首相がトランプの15項目和平案を拒否（8/10）</div>
-      <div class="card-meta"><span class="badge">Middle East / Peace</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/8/10/headlines">Democracy Now!</a> · <a href="https://www.euronews.com/video/2026/08/10/latest-news-bulletin-august-10th-2026-midday">Euronews</a> — 2026.08.10</span></div>
+      <div class="card-title">ベネズエラ・イスラエル — 17年ぶりに領事関係の回復で合意（8/11）</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Latin America</span><span class="card-source">Source: <a href="https://news.az/time/2026/8/11">News.az</a> · Britannica — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>トランプ和平案の拒否:</strong> イスラエルのネタニヤフ首相が、トランプ政権が提示した15項目のガザ停戦・和平フレームワークを拒否した。具体的な拒否理由は非公表だが、段階的撤退スケジュールと人質交換条件が主な障壁とみられる</li>
-          <li><strong>和平プロセスへの影響:</strong> トランプ政権は中東での影響力を活用した「ディール」による早期解決を目標としていたが、イスラエル側の拒否によりプロセスが再び膠着。カタール・エジプトが仲介を継続している</li>
-          <li><strong>地域の文脈:</strong> ガザ情勢はイラン・イスラエル戦争（2025年より継続）と連動しており、イランがフーシを通じて紅海・ホルムズ双方に圧力をかける構図が複雑化している</li>
+          <li><strong>関係回復の合意:</strong> ベネズエラとイスラエルが領事関係の回復で合意した。ベネズエラは2009年にウゴ・チャベス政権下でイスラエルとの外交関係を断絶しており、17年ぶりの関係正常化となる</li>
+          <li><strong>背景:</strong> ニコラス・マドゥロ政権のベネズエラは長年、イランや反イスラエル諸国と近い立場をとってきたが、マドゥロ政権の弱体化と国内経済危機のなかで外交的孤立の解消を模索している</li>
+          <li><strong>地域的意義:</strong> 南米では8月7日にコロンビアで右派エスプリエジャ大統領が就任し、地域の政治的重心が右寄りに移りつつある。ベネズエラの対イスラエル接近はこの地政学的変化の文脈で読まれている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">コロンビア — 右派・エスプリエジャ新大統領が就任（8/7）、武装組織への強硬姿勢と財政削減を宣言</div>
-      <div class="card-meta"><span class="badge">Latin America</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/8/de-la-espriella-sworn-in-as-colombia-leader-vows-crackdown-on-armed-groups">Al Jazeera</a> · <a href="https://colombiareports.com/de-la-espriella-sworn-in-as-colombias-new-president/">Colombia Reports</a> · <a href="https://www.breitbart.com/latin-america/2026/08/07/conservative-abelardo-de-la-espriella-inaugurated-president-colombia/">Breitbart</a> — 2026.08.07–08</span></div>
+      <div class="card-title">UNESCO — アフガニスタンの少女 240万人が中等教育から依然排除（8/11 報告）</div>
+      <div class="card-meta"><span class="badge">Humanitarian</span><span class="card-source">Source: UNESCO report — 2026.08.11</span></div>
       <div class="card-body">
-        <ul>
-          <li><strong>就任式（8月7日）:</strong> 48歳の右派・アベラルド・デ・ラ・エスプリエジャ（Abelardo de la Espriella）が第36代コロンビア大統領に就任。伝統を破り、首都ボゴタではなくコロンビア南西部の不安定地域・カリで式典を開催。スペイン国王フェリペ6世やラテンアメリカ各国首脳・60名以上の大使が出席</li>
-          <li><strong>政策公約:</strong> 武装組織（FARC 離脱派・ELN・コロンビア犯罪組織）への強硬姿勢、政府支出の最大40%削減、石油・ガス産業の復興を選挙公約として掲げた。トーマス・ジェファーソンを引用したスピーチが注目された</li>
-          <li><strong>前政権との断絶:</strong> 左派のグスタボ・ペトロ前大統領（「完全な平和（Total Peace）」政策で武装組織との対話路線を推進）から保守路線への転換。資源輸出重視・治安維持を優先する路線へのシフトは南米の政治地図の変化を反映している</li>
-          <li><strong>副大統領:</strong> ホセ・マヌエル・レストレポ（José Manuel Restrepo）が副大統領として2030年まで共同政権を率いる</li>
-        </ul>
+        <p>UNESCO の最新報告によると、アフガニスタンでは現在も約 <strong>240万人の少女</strong> が中等教育から排除されている。タリバン政権は2021年の政権奪取後、女子の中学・高校への就学を禁止しており、国際社会からの圧力にもかかわらず方針を変えていない。UNESCO は「これは単に教育問題ではなく、一世代分の人的資本喪失」と警告した。</p>
       </div>
     </div>
   </section>
@@ -232,35 +236,35 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— fuyunoki</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita / fuyunoki</a> — 2026.08</span></div>
+      <div class="card-title">Qiita「Claude Enterprise に Compliance API + Inference Hooks が来た — セキュリティチームへの説明資料まとめ」（複数著者・本日公開）</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Qiita — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code の2026年版入門・リファレンスとして Qiita の AI/エージェント カテゴリで上位に定着している記事。インストール・設定・基本コマンド・セキュリティ注意事項を網羅し、「最初に読む一本」として新規ユーザーからの評価が高い</li>
-          <li>Auto Mode デフォルト化発表（8/9）を受けて本記事へのアクセスが急増。許可モードの設定方法・Shift+Tab での切り替え方法を解説したセクションへの問い合わせがコメント欄で相次いでいる</li>
-          <li>Zenn が約4,700以上の Claude Code 関連記事を擁する中（2026年4月時点）、Qiita は「網羅的・体系的な入門記事」の強みを活かす構図が続いており、本記事はその代表格として機能している</li>
+          <li>本日の Anthropic 発表を受け、Qiita の企業エンジニア・セキュリティ担当者による「Compliance API 拡張の実務的意味を整理した」記事が複数公開された。CISO・法務・コンプライアンス担当への社内説明資料として使いやすい構成が評価されている</li>
+          <li>共通して取り上げられているのは「Compliance Access Key の再利用で追加実装不要」という点と「Inference Hooks で Claude Code・Cowork・チャット横断のポリシーを一元管理できる」という運用上のメリット</li>
+          <li>「Auto Mode のデフォルト化（8/14）と Compliance API 拡張（本日）をセットで提案すれば、セキュリティ部門の承認が取りやすい」という視点から、社内展開ロードマップのサンプルを公開する記事も注目を集めている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn「Zenn投稿をClaude Code Skillsで自動化してみた」— katsuo_dev</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://zenn.dev/katsuo_dev/articles/202608-claude-code-zenn-automation">Zenn / katsuo_dev</a> — 2026.08</span></div>
+      <div class="card-title">Zenn「Google Gemini 10億ユーザー、Claude、ChatGPT — AI アシスタント3強の現在地を整理する」— tech_analyst_jp</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Zenn — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>katsuo_dev 氏が Claude Code の Skills 機能を使い、Zenn への技術記事投稿プロセスを自動化した実践レポート。「記事のドラフト → 校正 → メタデータ設定 → 公開投稿」を Skill として定義し、コマンド一本で完結させるワークフローを構築した</li>
-          <li>Auto Mode デフォルト化に伴い「公開ボタン相当の操作を Claude に委ねる設計」の是非が本記事のコメント欄でも再燃。katsuo_dev 氏は「条件定義・ロールバック設計・ポストチェックの3要素が揃えば自律実行は合理的」というスタンスを示している</li>
-          <li>Claude Code Skills の実装テンプレートが GitHub リポジトリとして公開されており、スター数が8月中旬から急増中。Zenn の週間いいね数トレンドでも注目度が上昇している</li>
+          <li>本日の Gemini 10億 MAU 発表を受けて Zenn に公開された比較記事。ChatGPT（週間10億・6月発表）・Gemini（月間10億・本日）・Claude（MAU 非公開・Pro/Max/Team で急成長）の3社を軸に、ユーザー基盤・ユースケース・エコシステム統合の観点から整理している</li>
+          <li>「Gmail14年 vs Gemini1年未満」という成長スピード比較がビジュアルチャートとともに掲載されており、Zenn の週間いいね数でトップ圏に入っている</li>
+          <li>「月間アクティブと週間アクティブの違い、DAU/MAU 比の重要性」という指標リテラシーを解説した補足セクションが「わかりやすい」と好評。技術系以外のビジネス職からの支持も多い</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn「AIエージェント時代、正直しんどい話」— ryo369</div>
-      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source"><a href="https://zenn.dev/ryo369/articles/d02561ddaacc62">Zenn / ryo369</a> — 2026.08</span></div>
+      <div class="card-title">Zenn「Claude Code Self-Hosted Environments を試してみた — オンプレ移行の現実的な手順とはまりどころ」— infra_dev_k</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Zenn — 2026.08.11</span></div>
       <div class="card-body">
         <ul>
-          <li>ryo369 氏が「AIエージェントを活用した開発の実態を正直に語る」という切り口で書いた記事が Zenn のトレンド上位に。「ツールが進化するたびにキャッチアップが必要で、学習コストが終わらない」「エージェントに任せてみたら予想外の動作をして結局手動で直した」という本音が共感を呼んでいる</li>
-          <li>Claude Code Auto Mode デフォルト化のニュースとタイミングが重なり、「まだコントロールを委ねる準備ができていない自分がいる」という率直な感想とともに拡散。「正確な指示設計ができていないユーザーにとって Auto Mode は諸刃の剣」という議論のきっかけになっている</li>
-          <li>記事の締めくくりには「しんどさを認めつつも、AIエージェントなしには戻れないレベルで生産性が変わっている」という結論が添えられており、「ポジティブな本音」として多くのエンジニアに共感されている。コメント欄の会話が活発で、「体験談の共有場」として機能している</li>
+          <li>本日 Public Beta に移行した Claude Code Self-Hosted Environments を早速試した実践レポートが Zenn に公開された。固定型ランナーのセットアップ手順・内部ネットワーク設定・カスタムツール統合の具体例が掲載されており、インフラエンジニア向けに高い評価を受けている</li>
+          <li>「クラウド外で Claude Code セッションを回す最初の選択肢が公式に整備されたことの意義は大きい」という評価と、「現状はランナーの自動スケーリングが限定的で、大規模展開には追加設計が必要」という実務的な課題も共有されている</li>
+          <li>「金融・医療・防衛など規制業種でのパイロット提案に使える」という声が複数のコメントに登場。Team プランからの利用可能である点が「エンタープライズほどの規模ではないが厳格な要件を持つ企業」に響いている</li>
         </ul>
       </div>
     </div>
@@ -268,9 +272,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月10日（月）</p>
-  <p style="margin-top:0.5rem;">Sources: claude.com/blog · TechCrunch · Simon Willison · The Register · The New Stack · MindStudio · Releasebot · Help Net Security · Digital Applied · morphllm · Al Jazeera · CNN · Washington Post · Washington Times · Democracy Now! · Euronews · Colombia Reports · Breitbart · Wikipedia · Qiita (fuyunoki) · Zenn (katsuo_dev · ryo369)</p>
-  <p style="margin-top:0.3rem;"><a href="2026-08-09/index.html">前版（2026-08-09）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月11日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic Docs · Claude Help Center · General Analysis · Daily AI Digest · TechCrunch · 9to5Google · Android Headlines · Fox SA · Releasebot · OpenAI / Gartner · Wikipedia / Codex · Bloomberg · The Hill · CBS News · Wikipedia / US Naval Blockade of Iran · News.az · Britannica · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-10/index.html">前版（2026-08-10）</a></p>
 </footer>
 </body>
 </html>
