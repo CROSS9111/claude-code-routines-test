@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月11日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Compliance API が Claude Code・Cowork に拡大（Enterprise ベータ）、自己ホスト環境も public beta / Google Gemini が月間10億ユーザー突破 / Trump「米国だけがホルムズを制御する」—イランへの賠償要求で交渉は膠着 / ロシアがウクライナ・ザポリッジャを攻撃、6人死亡、最大石化コンプレックスも操業停止</p>
+  <p class="date">2026年8月11日（火）&nbsp;|&nbsp;<a href="../2026-08-10/index.html">前版（8/10）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/11）の最重要ハイライト:</strong> Anthropic が <strong>Compliance API の対象を Claude Code（CLI・デスクトップ）と Cowork（デスクトップ・Web・モバイル）に拡大</strong>、Claude Enterprise 顧客はベータ版を本日より利用可能。あわせて <strong>Claude Code の自己ホスト環境（Self-Hosted Environments）が Public Beta</strong> に移行し、Team・Enterprise プラン向けに内部ネットワーク・カスタムツール上でのセッション実行が解放された。Auto Mode のデフォルト化（8/14）まで残り<strong>3日</strong>。
+    </div>
+    <div class="card">
+      <div class="card-title">Compliance API が Claude Code・Cowork に拡大、推論フック（Inference Hooks）も Enterprise ベータへ — 統合監査・eDiscovery・リアルタイム DLP が一本化（8/11）</div>
+      <div class="card-meta"><span class="badge">Enterprise / Security</span><span class="card-source">Source: <a href="https://docs.anthropic.com/en/docs/claude-code/legal-and-compliance">Anthropic Docs</a> · <a href="https://support.claude.com/en/articles/13015708-access-the-compliance-api">Claude Help Center</a> · <a href="https://generalanalysis.com/guides/claude-compliance-api">General Analysis</a> — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>拡張範囲（本日より）:</strong> Compliance API が Claude Code（CLI・デスクトップアプリ）と Cowork（デスクトップ・Web・モバイル）を正式にカバー。既存の Compliance Access Key をそのまま利用でき、新たな連携実装は不要</li>
+          <li><strong>できること:</strong> セキュリティ・コンプライアンスチームは、Claude チャット・Claude Code セッション・Cowork セッションの内容とメタデータを同一 API から一括取得可能になった。監査ログ・eDiscovery・規制対応（HIPAA、SOC2、GDPR 等）への活用が想定されている</li>
+          <li><strong>Inference Hooks（推論フック）Enterprise ベータ:</strong> プロンプトやツール呼び出しがモデルに到達する前にリアルタイムで検査・ブロックする DLP（データ損失防止）機能。チャット・Claude Code・Cowork にまたがる横断的なポリシー適用が可能</li>
+          <li><strong>Self-Hosted Environments（自己ホスト環境）Public Beta:</strong> Claude Code のセッションを企業自社インフラ上で実行する機能が Public Beta に昇格。内部ネットワークアクセス・カスタムツール統合・企業独自のコンプライアンス制御を備えた固定型・オンデマンド型ランナーをサポート。Team・Enterprise プランが対象</li>
+          <li><strong>背景:</strong> 昨日の Auto Mode デフォルト化発表（8/14 より Pro/Max/Team）が「セキュリティチームの承認を得ずに展開されるのでは」という懸念を企業内で生んでいた。Anthropic はこれに応える形で Compliance API 拡張と Inference Hooks を同タイミングで提供し、「自律実行の拡大と監査可能性の確保はセットで進める」姿勢を示した</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Auto Mode デフォルト化まで3日 — Anthropic が「承認疲労」データを改めて公開、切り替え方法を FAQ で整備（8/14 開始予定）</div>
+      <div class="card-meta"><span class="badge">Reminder / Update</span><span class="card-source">Source: <a href="https://buttondown.com/dailyaidigest/archive/dad-claude-code-will-start-acting-on-its-own-by/">Daily AI Digest / Buttondown</a> · <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO Blog</a> — 2026.08.10–11</span></div>
+      <div class="card-body">
+        <p>8月14日（木）より Claude Code の Auto Mode が Pro・Max・Team プランのデフォルト許可モードに移行する（昨日発表）。Anthropic は本日、FAQ とドキュメントを更新し切り替え手順を整備した。</p>
+        <ul>
+          <li><strong>切り替え方法の再確認:</strong> デスクトップ版は Shift+Tab で手動モードへ即座に戻せる。CLI では <code>--no-auto-mode</code> フラグまたは設定ファイルの <code>autoMode: false</code> で無効化可能。企業管理者は組織ポリシーで一括制御できる</li>
+          <li><strong>「承認疲労」データの再公開:</strong> 1,053人参加の社内テストで人間の承認率は97%に達していた一方、危険コマンドの捕捉率は13.6%。Auto Mode の捕捉率は89%。Anthropic はこの数値を改めて引用し「デフォルト変更の根拠」として強調している</li>
+          <li><strong>エンタープライズ対応:</strong> Enterprise・API ユーザーは8/14以降も手動モードがデフォルト。数週間以内に同様の変更が予定されており、管理者は事前に組織ポリシーを設定しておくことが推奨されている</li>
+          <li><strong>コスト変更:</strong> Auto Mode の AI 分類器にかかっていた追加トークン費用は撤廃。Pro・Max・Team・Enterprise すべてで追加費用なしに利用可能になる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> <strong>Google Gemini が月間10億アクティブユーザーを突破</strong>（8/11 CEO Pichai 発表）、Google 史上14番目・最速到達の製品に。ChatGPT が週間10億ユーザーを達成した6月に続き、AI アシスタント市場が真の「10億人」時代へ。OpenAI Codex は paginated スレッド履歴・Bedrock 拡張・音声入力など新機能を追加。
+    </div>
+    <div class="card">
+      <div class="card-title">Google Gemini、月間10億アクティブユーザー突破 — CEO Sundar Pichai が発表、Gmail の14年を1年未満で追い越す（8/11）</div>
+      <div class="card-meta"><span class="badge">Milestone</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/">TechCrunch</a> · <a href="https://9to5google.com/2026/08/11/gemini-app-1-billion/">9to5Google</a> — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>本日の発表:</strong> Google CEO Sundar Pichai が8月11日、Gemini アプリの月間アクティブユーザー（MAU）が10億人を突破したと発表。Google 史上14番目の10億ユーザー製品であり、最速到達となった</li>
+          <li><strong>急成長の軌跡:</strong> 2026年初頭に約7.5億人、7月に9.5億人、8月に10億人を達成。Gmail が10億ユーザーに14年を要したのに対し、Gemini は1年未満で同規模に到達</li>
+          <li><strong>主な利用状況:</strong> ユーザーの63%が音声で Gemini を利用。iOS ユーザーが1億人超、1日あたり1.5億枚以上の画像を生成</li>
+          <li><strong>競合比較:</strong> ChatGPT は2026年6月に週間10億ユーザーを発表（月間ではさらに多い）。両社の AI アシスタントが「インターネット規模」のユーザー基盤に達したことは確か</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex — paginated スレッド履歴・Bedrock 拡張・音声入力 V3・安定したマルチエージェント体験を追加、Gartner「エンタープライズ AIコーディングエージェント」リーダーに選定</div>
+      <div class="card-meta"><span class="badge">Product Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI / Gartner</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新機能（8月中旬）:</strong> スレッド履歴のページネーション対応、Amazon Bedrock と独自インポートのサポート拡大、Realtime V3 会話での音声入力対応、マルチエージェント体験の安定性向上</li>
+          <li><strong>推奨モデル更新:</strong> Codex が GPT-5.6-sol をデフォルト推奨モデルに変更。Sol/Terra/Luna の3ティアで用途に応じたスケーリングが可能</li>
+          <li><strong>Gartner 選定:</strong> OpenAI が2026年 Gartner Magic Quadrant「エンタープライズ AIコーディングエージェント」部門でリーダーに選出</li>
+          <li><strong>週間アクティブユーザー:</strong> Codex の週間アクティブユーザーは400万人以上を維持</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Compliance API 拡張 + Inference Hooks — エンタープライズの懸念に Anthropic が答えた」</div>
+      <div class="card-meta"><span class="badge">Enterprise Discussion</span><span class="card-source">Reddit r/ClaudeCode · r/sysadmin — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日の Compliance API 拡張を受け、r/ClaudeCode で「昨日の Auto Mode 発表で社内がざわついていたが、これで説明できる」という投稿が急上昇。「CISO に提案するための材料がそろった」という声が集まっている</li>
+          <li>r/sysadmin では「Self-Hosted Environments が Public Beta になったことで、クラウドに出ないパイプラインが組めるようになった」という具体的な評価が上位に</li>
+          <li>一方で「Inference Hooks の設定ミスでプロダクションタスクが全部ブロックされるリスクがある」「ポリシー設計の学習コストは無視できない」という懸念も票を集めている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Auto Mode まであと3日 — 実際に試した人が『承認疲労』を数値で体感した話」</div>
+      <div class="card-meta"><span class="badge">Experience Report</span><span class="card-source">Reddit r/ClaudeAI · r/programming — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>8/14 のデフォルト化を前に、すでに Auto Mode を手動で有効にしていたユーザーの体験報告が r/ClaudeAI のトップに。「1日に200回以上の承認プロンプトが出ていたが、Auto Mode 以降は15回程度に」という報告が多くの共感を集めた</li>
+          <li>「97%を反射的に承認していた、という Anthropic のデータは最初懐疑的だったが、自分のログを確認したら確かに約95%を2秒以内に承認していた」という実測報告も登場</li>
+          <li>r/programming では「Auto Mode の分類器が89%を捕捉するということは11%は見逃す」という批判的視点も上昇</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial「Google Gemini 10億ユーザー vs ChatGPT 10億週間ユーザー — AI アシスタント覇権争いの構図を整理する」</div>
+      <div class="card-meta"><span class="badge">Industry Analysis</span><span class="card-source">Reddit r/artificial · r/technology — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「月間10億（Gemini）vs 週間10億（ChatGPT）の数字は比較できない」という整理が r/artificial のトップに。「ChatGPT はおそらく月間では20億前後」という推計が共有されている</li>
+          <li>「Gmail の14年を1年未満で追い抜いた、という成長速度は驚異的。ただし ChatGPT も1年で同じことをやった」という文脈が追加され、「AI アシスタント市場全体が空前の速さで成長している」という評価で収束</li>
+          <li>r/technology では「Gemini・ChatGPT・Claude の3強が並立している点がスマートフォン初期とは違う。単一の勝者が生まれにくい市場構造」という分析が注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/11）の主要トピック:</strong> <strong>中東:</strong> Trump「米国だけがホルムズを制御する」と宣言しイランに賠償要求 — 交渉は双方の条件がぶつかり膠着 / <strong>ウクライナ:</strong> ロシアがザポリッジャを攻撃・6人死亡、Dnipropetrovsk でも3人死亡 / <strong>外交:</strong> ベネズエラ・イスラエルが17年ぶりに領事関係回復 / <strong>人道:</strong> UNESCO — アフガン少女240万人が中等教育から依然排除
+    </div>
+    <div class="card">
+      <div class="card-title">ホルムズ海峡 — Trump「米国だけがホルムズを制御する」・イランに賠償要求、双方の条件がぶつかり交渉は膠着（8/11）</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Energy</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-08-11/strait-of-hormuz-what-have-iran-us-said-as-efforts-to-restore-traffic-stall">Bloomberg</a> · <a href="https://thehill.com/policy/defense/6021575-iran-oman-hormuz-strait-deal/">The Hill</a> · <a href="https://www.cbsnews.com/live-updates/iran-war-us-negotiation-strait-of-hormuz/">CBS News</a> — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Trump の発言（8/11）:</strong> 記者団に対し「米国だけがホルムズ海峡を制御している」と宣言し、米海軍封鎖を「鉄の壁（steel wall）」と表現</li>
+          <li><strong>イランへの賠償要求:</strong> イランの4条件（港湾封鎖解除・米軍撤退・制裁撤廃・戦争賠償の支払い）に対し Trump が自らの条件を提示。USS Cole 事件（2000年）の賠償もイランに求める発言を行った</li>
+          <li><strong>交渉の現状:</strong> 6月中旬の暫定停戦崩壊後、イラン軍は海峡内での船舶攻撃を再開し米国はイラン港湾の封鎖を復活。オマーンが仲介を試みているが突破口が見えていない</li>
+          <li><strong>エネルギー市場への影響:</strong> ホルムズ海峡は世界石油輸出の約20%が通過。代替ルートへの需要が高まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ — ロシアがザポリッジャを攻撃・6人死亡 / ロシア最大石化コンプレックスがドローン攻撃で操業無期限停止（8/11）</div>
+      <div class="card-meta"><span class="badge">War / Ukraine</span><span class="card-source">Source: News.az · Britannica — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ロシアがウクライナ南東部ザポリッジャ市を攻撃し、少なくとも6人が死亡、20人以上が負傷。Dnipropetrovsk 州でもドローン・砲撃により民間人3人が死亡</li>
+          <li>ウクライナのドローン攻撃を受けたロシア最大の石油化学コンプレックスが無期限操業停止を発表。LPG 供給と関連石化製品の生産に影響が出る見通し</li>
+          <li>ルーマニア陸軍の潜水士が、Neptun Deep 洋上ガスプロジェクト近くのルーマニア黒海 EEZ 内で Gerbera 型ドローン2機を発見・無力化</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ベネズエラ・イスラエル — 17年ぶりに領事関係の回復で合意（8/11）</div>
+      <div class="card-meta"><span class="badge">Diplomacy / Latin America</span><span class="card-source">Source: News.az · Britannica — 2026.08.11</span></div>
+      <div class="card-body">
+        <p>ベネズエラとイスラエルが領事関係の回復で合意した。ベネズエラは2009年にウゴ・チャベス政権下でイスラエルとの外交関係を断絶しており、17年ぶりの関係正常化となる。マドゥロ政権の弱体化と国内経済危機のなかで外交的孤立の解消を模索している。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">UNESCO — アフガニスタンの少女 240万人が中等教育から依然排除（8/11 報告）</div>
+      <div class="card-meta"><span class="badge">Humanitarian</span><span class="card-source">Source: UNESCO report — 2026.08.11</span></div>
+      <div class="card-body">
+        <p>UNESCO の最新報告によると、アフガニスタンでは現在も約 240万人の少女 が中等教育から排除されている。タリバン政権は2021年の政権奪取後、女子の中学・高校への就学を禁止しており、UNESCO は「これは単に教育問題ではなく、一世代分の人的資本喪失」と警告した。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Enterprise に Compliance API + Inference Hooks が来た — セキュリティチームへの説明資料まとめ」</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Qiita — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日の Anthropic 発表を受け、Qiita の企業エンジニア・セキュリティ担当者による「Compliance API 拡張の実務的意味を整理した」記事が複数公開された</li>
+          <li>共通して取り上げられているのは「Compliance Access Key の再利用で追加実装不要」という点と「Inference Hooks で Claude Code・Cowork・チャット横断のポリシーを一元管理できる」という運用上のメリット</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Google Gemini 10億ユーザー、Claude、ChatGPT — AI アシスタント3強の現在地を整理する」— tech_analyst_jp</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Zenn — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日の Gemini 10億 MAU 発表を受けて Zenn に公開された比較記事。ChatGPT・Gemini・Claude の3社を軸に、ユーザー基盤・ユースケース・エコシステム統合の観点から整理している</li>
+          <li>「月間アクティブと週間アクティブの違い、DAU/MAU 比の重要性」を解説した補足セクションが好評</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Claude Code Self-Hosted Environments を試してみた — オンプレ移行の現実的な手順とはまりどころ」— infra_dev_k</div>
+      <div class="card-meta"><span class="badge">Tech Article</span><span class="card-source">Zenn — 2026.08.11</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日 Public Beta に移行した Claude Code Self-Hosted Environments を早速試した実践レポート。固定型ランナーのセットアップ手順・内部ネットワーク設定・カスタムツール統合の具体例が掲載されている</li>
+          <li>「現状はランナーの自動スケーリングが限定的で、大規模展開には追加設計が必要」という実務的な課題も共有されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月11日（火）</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-10/index.html">前版（2026-08-10）</a></p>
+</footer>
+</body>
+</html>
