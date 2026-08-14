@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月13日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月14日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Auto Mode 明日8/14 全面展開・Claude Opus 5 が Claude Code デフォルト Opus に / Cowork がモバイル・Web へ本格展開 / ホワイトハウス報道官 Karoline Leavitt 月末辞職 / コロンビア地震・死者265人超（ReliefWeb 8/13 状況概況）/ ウィスコンシン民主党知事予備選でクロウリー勝利</p>
-  <p class="date">2026年8月13日（木）&nbsp;|&nbsp;<a href="2026-08-12/index.html">前版（8/12）</a></p>
+  <p class="subtitle">Auto Mode が本日（8/14）より Pro・Max・Team でデフォルト適用・Self-Hosted 環境パブリックベータ / GPT-5.6 GA・Codex が Sol をデフォルト推奨に / USS George Washington が中東へ出航・USS Abraham Lincoln の長期展開問題が浮上 / コロンビア地震・救助「最終フェーズ」へ / スウェーデン刑事責任年齢を15歳から14歳に引き下げ</p>
+  <p class="date">2026年8月14日（金）&nbsp;|&nbsp;<a href="2026-08-13/index.html">前版（8/13）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,31 +69,32 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/13）の最重要ハイライト:</strong> <strong>Auto Mode が明日8/14 から Pro・Max・Team のデフォルトに</strong>。旧手動承認ワークフローでは14%しか捕捉できなかった危険コマンドが、Auto Mode のクラシファイアでは89%捕捉される。また <strong>Claude Opus 5 が Claude Code の opus エイリアスデフォルトに</strong>（Max / Team Premium / Enterprise / API 対象）なり、Cowork がモバイル・Web に本格展開した。
+      <strong>本日（8/14）の最重要ハイライト:</strong> <strong>Auto Mode が本日より Pro・Max・Team の新規セッションでデフォルト適用開始</strong>。1,053人対象の制御実験で人間による危険コマンド捕捉率が13.6%だったのに対し Auto Mode のクラシファイアは89%を捕捉。Anthropic は安全クラシファイアの追加コンピュート費を無償化すると発表した。さらに <strong>Self-Hosted 環境</strong>（Team・Enterprise 向けパブリックベータ）、<strong>サブエージェントスポーンキャップ廃止</strong>、<strong>/fork ワークツリー分離</strong>など大規模なインフラ強化も同時適用。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code Auto Mode、明日（8/14）より Pro・Max・Team へ全面適用 — 危険コマンド捕捉率89% vs 旧14%</div>
-      <div class="card-meta"><span class="badge">Release / Default Change</span><span class="card-source">Source: <a href="https://claude.com/blog/auto-mode-default-in-claude-code">Anthropic Claude Blog</a> · <a href="https://www.digitalapplied.com/blog/claude-code-auto-mode-default-permission-model-shift">Digital Applied</a> · <a href="https://theaicareerlab.com/blog/claude-code-auto-mode-default-2026">The AI Career Lab</a> — 2026.08.13</span></div>
+      <div class="card-title">Auto Mode、本日（8/14）より Pro・Max・Team の新規セッションでデフォルト化 — クラシファイアコスト無償化、Enterprise はオプトインのまま</div>
+      <div class="card-meta"><span class="badge">Default Change / Live</span><span class="card-source">Source: <a href="https://www.digitalapplied.com/blog/claude-code-auto-mode-default-permission-model-shift">Digital Applied</a> · <a href="https://omidsaffari.com/blog/claude-code-auto-mode-default-august-2026">Omid Saffari Blog</a> · <a href="https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/">TechCrunch</a> · <a href="https://dev.to/rulestack/auto-mode-is-now-claude-codes-default-what-the-classifier-approves-and-how-to-switch-back-4j2j">DEV Community</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>対象プラン:</strong> Pro・Max・Team の新規 Claude Code セッションは明日8/14 より Auto Mode がデフォルト。Enterprise・Claude API・クラウドパートナー環境は引き続きオプトイン扱い</li>
-          <li><strong>Auto Mode の動作:</strong> ツール呼び出しを安全クラシファイアにルーティングし、デストラクティブ・不可逆・スコープ外のアクションをブロック。開発フローの各ステップで人間の確認プロンプトを出さなくなる</li>
-          <li><strong>安全性指標:</strong> 危険コマンドの捕捉率が旧手動承認ワークフローの14%から89%へ大幅改善（Anthropic 公式発表）。ただし11%のすり抜けが残るため、本番環境への接続時は追加の境界設定が推奨されている</li>
-          <li><strong>ユーザー制御:</strong> 既に異なるデフォルトを設定済みのユーザーには切り替えを確認する1回限りのプロンプトが表示される。管理者はマネージドセッティングから別のデフォルトに固定、または Auto Mode を無効化可能</li>
-          <li><strong>なぜ89%なのか:</strong> <a href="https://www.techi.com/claude-code-auto-mode-default-11-percent-miss-rate/">TECHi の分析</a>によると、クラシファイアが文脈依存のコマンド（シェルエスケープを含むコマンドなど）の一部を誤って安全と判定するケースが残る。Anthropic は継続改善を予定</li>
+          <li><strong>本日から適用:</strong> Pro・Max・Team の新規 Claude Code セッションが Auto Mode でスタート。既存セッションは非対象で、既に独自デフォルトを設定済みのユーザーには一度だけ確認プロンプトが表示される。組織管理のデフォルトは変動しない</li>
+          <li><strong>動作の仕組み:</strong> ツール呼び出しごとに安全クラシファイアが実行され、「不可逆・デストラクティブ・スコープ外」と判断されたアクションのみをブロック。97%の許可プロンプトはユーザーが承認していたという観測が移行の根拠となった</li>
+          <li><strong>クラシファイアコスト無償化:</strong> Anthropic はクラシファイア実行に伴う追加コンピュート費を今後請求しないと発表。これにより Auto Mode の経済的障壁がなくなる</li>
+          <li><strong>Enterprise・API は引き続きオプトイン:</strong> Claude Enterprise・Claude API・クラウドパートナーは現時点でオプトイン扱いを維持。Anthropic は今後1か月以内にこれらのプランへも展開予定と述べた</li>
+          <li><strong>切り替え方法:</strong> <code>/mode manual</code> で手動モードへ戻すことができる。<code>.claude/settings.json</code> に <code>"autoAcceptEdits": false</code> を設定することで永続化も可能</li>
+          <li><strong>残存リスクへの注意:</strong> 89%の捕捉率は改善だが11%は通過する。The Register・The New Stack は「本番 DB や CI/CD パイプラインに接続した Claude に対しては追加の境界設定を」と警告している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Opus 5 が Claude Code のデフォルト Opus モデルに — Cowork がモバイル・Web に本格展開、Claude Code 8月アップデートも</div>
-      <div class="card-meta"><span class="badge">Model / Platform</span><span class="card-source">Source: <a href="https://www.grandlinux.com/en/blogs/claude-opus-5-launch.html">Saeree ERP / Grandlinux</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot / Claude Code</a> · <a href="https://wmedia.es/en/tips/claude-code-opus-5-default-model">wmedia.es</a> · <a href="https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5">Claude Platform Docs</a> — 2026.08.13</span></div>
+      <div class="card-title">Claude Code 8月14日版アップデート — Self-Hosted 環境パブリックベータ・サブエージェントスポーンキャップ廃止・/fork ワークツリー分離・デフォルトフォーキング有効化</div>
+      <div class="card-meta"><span class="badge">Infrastructure / Scalability</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/changelogs/claude-code/">gradually.ai Changelog</a> · <a href="https://raxxo.shop/blogs/lab/claude-code-just-removed-the-subagent-spawn-cap">RAXXO Studios</a> · <a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">Anthropic Blog — Self-Hosted</a> · <a href="https://code.claude.com/docs/en/whats-new/2026-w32">Claude Code Docs W32</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Opus 5 デフォルト化:</strong> 7/24 にリリースされた Claude Opus 5 が、Max / Team Premium / Enterprise pay-as-you-go / Claude API 向けの opus エイリアスおよびデフォルトモデルに。Pro / Team Standard のデフォルトは引き続き Sonnet 5</li>
-          <li><strong>モデル変更の影響:</strong> 明示的にモデル指定していなかった Max・Team Premium ユーザーの Claude Code セッションが自動的に Opus 5 で動作するようになった。Anthropic は Claude Opus 4.1 を退役させ、Opus 5 へのアップグレードを推奨</li>
-          <li><strong>Cowork モバイル・Web 展開:</strong> セッションがデバイスをまたいで追従するようになり、バックグラウンド処理・スケジュールタスク・共有チャットとプロジェクト・モバイル承認を実現。Max ユーザーから順次数週間かけてロールアウト中</li>
-          <li><strong>Claude Code 8月アップデート:</strong> ゲートウェイ spend-limit 対応（使用量警告）、<code>claude agents</code> のワークスペース信頼プロンプト、Remote Control のメッセージ開始 by name、写真処理の改善を追加。OAuth・セッション・UI・ヘッドレスセッションのバグ修正も含む</li>
-          <li><strong>Inference Hooks（ベータ）:</strong> claude.ai・Cowork・Claude Code を横断したガバナンス付きプロンプトルーティングが可能に。AI セキュリティサーバーによる allow/deny チェックをインファレンス前に挟める</li>
+          <li><strong>Self-Hosted 環境（パブリックベータ）:</strong> Team・Enterprise プランで Claude Code クラウドセッションを自組織のインフラ上で実行できる機能がパブリックベータに移行。ネットワーク内での実行・内部サービスへの直接接続が可能になり、Cowork 上のリモートエージェントをプライベートクラウドや VPC 内に収容できる</li>
+          <li><strong>サブエージェントスポーンキャップ廃止:</strong> 従来セッションあたり200件だったサブエージェント起動上限が撤廃。長時間・大規模なマルチエージェントタスクでセッションが途中で拒否されるケースがなくなる（同時実行数・深さの制限は引き続き適用）</li>
+          <li><strong>デフォルトサブエージェントフォーキング:</strong> <code>subagent_type: "fork"</code> のサブエージェントが会話履歴とプロンプトキャッシュをそのまま継承するようになった。インタラクティブセッション内のチームメイト以外のエージェント起動はデフォルトでバックグラウンド実行に</li>
+          <li><strong>/fork のワークツリー分離:</strong> <code>/fork</code> で複製したセッションは、元のセッションのチェックアウトではなく専用ワークツリーでコード変更を行うようになった。並列開発・実験的変更の分離管理が容易になる</li>
+          <li><strong>その他の改善:</strong> クロスセッションメンション・SendMessage のアップグレード（セッション間の明示的なメッセージ送信が強化）、GitLab・マーケットプレイスサポート強化、ポリシー・ゲートウェイのバリデーション改善、Remote Control・権限・ネットワーク・セッション安定性に関する多数のバグ修正</li>
         </ul>
       </div>
     </div>
@@ -105,18 +106,17 @@
       <span class="section-count">1 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト:</strong> <strong>OpenAI Codex が8月に複数のアップデート</strong> — Portable Agent Plugins・MCP 2026-07-28 対応・教育プラグイン・Amazon Bedrock キャッシュ対応が相次ぎ展開。Codex は OpenAI 社内全部門の主要 AI ツールとして 2026年4月時点で定着済みであることも明らかになった。
+      <strong>競合ハイライト:</strong> <strong>OpenAI が GPT-5.6 を正式 GA</strong>（Sol / Terra / Luna の3ティア）。Codex はデフォルト推奨モデルを gpt-5.6-sol に切り替え、ProjDevBench で77.85%のスコアをマーク。Claude Code との本格的な精度競争が続く。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex 8月アップデート — Portable Agent Plugins・教育プラグイン・MCP 2026-07-28 対応が相次いで展開</div>
-      <div class="card-meta"><span class="badge">Platform / Education</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://releasebot.io/updates/openai">Releasebot / OpenAI</a> · <a href="https://www.scriptbyai.com/codex-timeline/">ScriptByAI — Codex Timeline</a> — 2026.08.13</span></div>
+      <div class="card-title">OpenAI GPT-5.6 が正式 GA、3ティア展開 — Codex が Sol をデフォルト推奨・ProjDevBench 首位77.85%</div>
+      <div class="card-meta"><span class="badge">Model GA / Benchmark</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM Best AI Coding Agents 2026</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia — OpenAI Codex (AI agent)</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Portable Agent Plugins:</strong> Codex のエージェントを他の環境に持ち込めるポータビリティ機能を追加。会話の整理機能の強化とスマートな承認ワークフローも同時リリース</li>
-          <li><strong>教育プラグイン:</strong> ChatGPT Work と Codex に教育プラグインを導入。K–12 教師・大学教員・学生向けに授業計画・コース設計・学習支援・ガイドワークフローを提供する役割特化ツール群</li>
-          <li><strong>MCP 2026-07-28 対応:</strong> 最新の MCP 仕様（ステートレスコア・強化 OAuth/OIDC 認証・バージョン付き拡張）をサポート。Amazon Bedrock キャッシュ対応もこの更新に含まれる</li>
-          <li><strong>Codex の社内普及状況:</strong> OpenAI の発表によると、Codex は現在 OpenAI 全部門の主要 AI ツールとして定着。Engineering が先行し、Legal・Finance・Recruiting も 2026年4月までに Codex を主要ツールとして採用済み</li>
-          <li><strong>セキュリティ強化:</strong> ターミナルとテキストレンダリングの改善を含むセキュリティ強化を実施。Claude Code との直接比較では、コーディング精度・ハーネス統合の点で競合が続いている</li>
+          <li><strong>GPT-5.6 GA（7/9 リリース）:</strong> OpenAI は GPT-5.6 を Sol（軽量・高速）・Terra（バランス）・Luna（最高性能）の3ティアで正式 GA 化。Codex はデフォルト推奨モデルを gpt-5.6-sol に切り替えた</li>
+          <li><strong>ProjDevBench 首位:</strong> 最新のコーディングエージェントベンチマーク ProjDevBench で Codex on GPT-5 が77.85%の総合スコアをマーク（平均承認率27.38%）。Claude Code との差は縮小しつつあり、タスク種別による使い分けを推奨する声が開発者コミュニティから上がっている</li>
+          <li><strong>Claude Code vs Codex の住み分け:</strong> 現在のコミュニティの共通見解は「フロントエンド・UI 作業は Claude Code、ハードなバックエンド・システム処理は Codex が若干有利、両者を使い分けるのが最適」（<a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide 比較</a>）。カーネルレベルのサンドボックスと低コストを重視するなら Codex、深いプログラマブルなハーネスとターミナルループ速度なら Claude Code というポジショニングが固まってきた</li>
+          <li><strong>教育プラグインの展開継続:</strong> ChatGPT Work・Codex 向けの教育プラグイン（K–12 教師・大学教員・学生向け）が各国の教育機関向けに段階的ロールアウト中。Anthropic 側はこれに対応するプラグインをまだ発表していない</li>
         </ul>
       </div>
     </div>
@@ -128,38 +128,36 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode「Claude Code を起動したら Opus 5 になっていた — Max ユーザー向けデフォルト変更の戸惑いと歓迎」</div>
-      <div class="card-meta"><span class="badge">Model Change</span><span class="card-source">Reddit r/ClaudeCode — 2026.08.13</span></div>
+      <div class="card-title">r/ClaudeCode「Auto Mode デフォルト化が実際に来た — 朝セッションを開いたら確認プロンプトが一切なくなっていた」</div>
+      <div class="card-meta"><span class="badge">Live Reaction</span><span class="card-source">Reddit r/ClaudeCode · r/ClaudeAI — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Opus 5 が Max / Team Premium の opus エイリアスデフォルトになったことで、「なぜか急に Opus で動いている」と気づいたユーザーの投稿が急上昇。モデルを明示指定していなかったユーザーに影響が出ている</li>
-          <li>「Sonnet 5 から Opus 5 への切り替えでトークンコストが増えたが、コーディング品質と長いタスクの安定性が目に見えて向上した」という肯定的な報告が多数。一方「知らないうちにモデルが切り替わるのは透明性に欠ける」という不満もある</li>
-          <li>実務対策として「明示的に <code>--model claude-sonnet-5</code> を指定する」「プロジェクト設定で model を固定する」という回避策が多くの upvote を獲得しているが、「Max プランの価値はデフォルトで最良のモデルが使えることにある」と反論するコメントも上位に</li>
-          <li><a href="https://wmedia.es/en/tips/claude-code-opus-5-default-model">wmedia.es のヒント記事</a>「Opus 5 in Claude Code: the model changed on its own, your settings didn't」が参照リンクとして多く共有されている</li>
+          <li>本日から Auto Mode がデフォルトになり、朝のセッションで初めて実体験したユーザーの報告投稿が急上昇。「いつもの承認プロンプトが全く来ない」という第一印象を共有するコメントが多数</li>
+          <li>好意的な反応: 「大規模なリファクタリングタスクを投げたら一切止まらずに完走した。これまでとは全く違う体験」「コードの品質は保ちつつ確認疲れが消えた」という声が上位に</li>
+          <li>懸念の声: 「本番 DB に繋いだまま Claude を走らせている人は要注意。捕捉できない11%が今日から即座にリスクになる」「誰も監視していないと思うとちょっと怖い」という投稿も高 upvote</li>
+          <li>実務対応: <code>/mode manual</code> コマンドや <code>settings.json</code> で手動モードに戻す方法を解説したコメントがまとめピン化されている。「Enterprise ユーザーは今日は何も変わらない」という補足も広まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「明日が Auto Mode デフォルト化の日 — 設定確認チェックリストを共有する」</div>
-      <div class="card-meta"><span class="badge">Community / Safety</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode — 2026.08.13</span></div>
+      <div class="card-title">r/ClaudeCode「Self-Hosted 環境のパブリックベータが来た — 社内データをクラウドに出さずに Cowork が使える時代へ」</div>
+      <div class="card-meta"><span class="badge">Infrastructure / Privacy</span><span class="card-source">Reddit r/ClaudeCode · r/MachineLearning — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li>8/14 の Auto Mode デフォルト化を前日に控え、「自分のワークフローに Auto Mode が適合するか確認するチェックリスト」を共有したユーザーの投稿がバイラル。「ありがとう、保存した」というコメントが相次いでいる</li>
-          <li>チェックリストの主な確認ポイント: ①Claude がアクセスできるクリティカルなファイル・DB の範囲、②CI/CD パイプラインへの Claude の接続、③組織アカウントでの管理者権限設定、④ローカルとリモート（Cowork）どちらで実行されるかの把握</li>
-          <li>「89%の捕捉率は高いが、11%のすり抜けが残る以上、本番環境に接続した Claude には Human-in-the-Loop を意識的に残すべき」という議論が上位を占めている。「なぜ Anthropic は100%の捕捉率を達成するまで待たなかったのか」という問いも投げかけられている</li>
-          <li>エンタープライズ・API ユーザーはオプトインのまま据え置きという点を受け、「そもそも大企業が本番環境で使う場合は手動承認を残すべき、という Anthropic の判断が透けて見える」というコメントが支持されている</li>
+          <li>Self-Hosted 環境のパブリックベータ発表を受け、「社内コードをクラウドエージェントに渡すことへの懸念がこれで解消される」という投稿が r/ClaudeCode のホットに浮上。特に金融・医療・防衛セクターのエンジニアから支持が集まっている</li>
+          <li>「VPC 内で Cowork が動く、という意味だよね？Anthropic のサーバーを経由しなくなる？」という質問には、「モデル推論は引き続き Anthropic インフラを通る。Self-Hosted は Claude Code セッション（ツール実行・エージェント処理）のみを自組織インフラで走らせるもの」と詳細な解説がついた</li>
+          <li>「これで on-prem 要件のある企業案件でも Claude Code が採用できる」という声と「結局モデル推論でデータが通るなら意味が薄い」という反論が拮抗しており、Anthropic がデータ処理ポリシーをどこまで明示するかに注目が集まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「Cowork がモバイルに来た — セッションがクラウドで動くことの意味を考える」</div>
-      <div class="card-meta"><span class="badge">Privacy / Infrastructure</span><span class="card-source">Reddit r/MachineLearning · r/privacy — 2026.08.13</span></div>
+      <div class="card-title">r/MachineLearning「Codex GPT-5.6 vs Claude Code — ベンチマーク77.85% の意味を読む」</div>
+      <div class="card-meta"><span class="badge">Benchmark / Comparison</span><span class="card-source">Reddit r/MachineLearning · r/programming — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Cowork がモバイル・Web に展開されたことで、「セッションが Anthropic のクラウドで実行されるようになった。これまでローカルマシンで動いていたものが変わった」という懸念スレッドがトップに上昇</li>
-          <li>「会社の機密コードや内部ドキュメントを Anthropic のクラウドエージェントに渡してよいか」という実務的な問いが多くのアップボートを集めている。「Enterprise のデータ処理契約がどこまでカバーするか確認すべき」という回答が上位</li>
-          <li>r/privacy では「ローカルモデルで同等のことをやるオープンソーススタックの需要が高まっている」という投稿が注目を集め、DeepSeek V4 の MIT ライセンス公開と組み合わせた自己ホスト構成の議論が派生</li>
-          <li>「Cowork のモバイル対応はプロダクティビティツールとしての Claude の完成形に近い」という肯定的意見と「セキュリティポリシー上クラウドエージェントを使えない企業のための Self-Hosted 対応が急務」という要望が拮抗</li>
+          <li>Codex on GPT-5 が ProjDevBench で77.85%を記録したことへの議論スレッド。「ベンチマークと実用は別物」「合成タスクで高スコアを出してもリアルな大規模コードベースでどうかは別」という懐疑論が一定の支持を集めている</li>
+          <li>「Claude Code の強みはツールハーネスの深さ・MCP 統合・フック機能にある。ベンチマーク得点で測れるものではない」という意見と「最終的にはコードを書ける量で勝負が決まる」という反論が噛み合わないまま続いている</li>
+          <li>Andrej Karpathy の「80%エージェントコーディング移行」投稿を引用しつつ、「どちらを使うかではなく、どのタスクをどちらに振るかの設計をする段階に来た」という実用論が多くの共感を得て上位にまとまっている</li>
         </ul>
       </div>
     </div>
@@ -168,54 +166,66 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/13）の主要トピック:</strong> <strong>米国:</strong> ホワイトハウス報道官 Karoline Leavitt が月末辞職、史上最年少報道官の任期終了 / <strong>南米:</strong> コロンビア M7.4 地震・死者265人超（ReliefWeb 8/13 状況概況）、行方不明2,700人超で捜索継続 / <strong>政治:</strong> ウィスコンシン州民主党知事予備選でクロウリー勝利、中間選挙に向け民主党候補確定 / <strong>中東:</strong> フーシ派が Mokha 港を攻撃・11人死亡
+      <strong>本日（8/14）の主要トピック:</strong> <strong>中東:</strong> USS George Washington が中東へ出航、USS Abraham Lincoln の長期展開260日超・乗員疲弊が表面化 / <strong>南米:</strong> コロンビア M7.4 地震・救助「最終フェーズ」、死者265人超・行方不明500人超（民間集計4,100人超） / <strong>欧州:</strong> スウェーデン議会が刑事責任年齢を15歳→14歳に引き下げ（9/10施行）・スイスがガザ生存者ドキュメンタリーをアカデミー賞外国語映画部門候補に選出 / <strong>中東/外交:</strong> イスラエルがヨルダン川西岸のパレスチナ家族包囲を解除できず
     </div>
     <div class="card">
-      <div class="card-title">ホワイトハウス報道官 Karoline Leavitt が月末辞職へ — 史上最年少28歳、「家族との時間」を理由に</div>
-      <div class="card-meta"><span class="badge">US Politics</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/08/12/trump-white-house-karoline-leavitt-resigning-.html">CNBC</a> · <a href="https://www.washingtonpost.com/politics/2026/08/12/white-house-press-secretary-karoline-leavitt-leave-administration/">Washington Post</a> · <a href="https://www.nbcnews.com/politics/white-house/press-secretary-karoline-leavitt-step-down-end-of-august-rcna592223">NBC News</a> — 2026.08.12–13</span></div>
+      <div class="card-title">USS George Washington が中東へ — USS Abraham Lincoln の260日超展開・乗員疲弊問題が浮上（8/14）</div>
+      <div class="card-meta"><span class="badge">US Military / Middle East</span><span class="card-source">Source: <a href="https://www.npr.org/2026/08/14/nx-s1-5931183/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln">NPR</a> · <a href="https://sundayguardianlive.com/world/us-israel-iran-war-live-updates-uss-george-washington-heads-to-middle-east-as-abraham-lincoln-faces-crew-strain-norway-says-iran-war-failed-to-achieve-its-goals-260914/">Sunday Guardian Live</a> · <a href="https://www.armyrecognition.com/news/navy-news/2026/u-s-sends-new-aircraft-carrier-to-middle-east-to-sustain-operations-against-iran">Army Recognition</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>辞職の経緯:</strong> Trump 大統領が8/12 に Leavitt（28歳）の月末辞職を発表。Leavitt は「美しい子供たちや家族との時間を過ごすため」と説明。Trump は「完全に理解し、尊重する」と述べた</li>
-          <li><strong>最年少記録:</strong> Leavitt は2025年1月の就任時27歳で、米史上最年少の大統領報道官を記録。第2子（娘）を2026年5月1日に出産後、育児休暇から復帰してわずか数週間後の辞職発表</li>
-          <li><strong>今後の役割:</strong> Trump は Leavitt を「最高の外部顧問の一人として、また共和党が2026年11月の中間選挙で勝利するよう支援するために」引き続き協力してもらうと述べた</li>
-          <li><strong>後任:</strong> 後任報道官についての発表はまだない。副報道官の Harrison Fields が当面の対応に当たる見通し</li>
+          <li><strong>USS George Washington 出航:</strong> 太平洋を拠点とする空母 USS George Washington が8/14 にマラッカ海峡を通過し中東方面へ向かっていることが確認された。目的地は作戦上の機密として公表されていない</li>
+          <li><strong>USS Abraham Lincoln の長期展開問題:</strong> Lincoln は2026年2月28日の対イラン攻撃開始以来260日超を洋上で過ごし、200日以上寄港できていない。食料・物資・郵便物の不足と乗員の士気低下が報道されていた</li>
+          <li><strong>国防長官の否定:</strong> Pete Hegseth 国防長官は Lincoln の状況が深刻だとする報道を「完全に誇張されている」と否定したが、議会から公式説明を求める声が上がっている</li>
+          <li><strong>対イラン戦争の現況:</strong> 2026年2月28日に米・イスラエルが開始した対イラン戦争は6か月目に入った。ノルウェーは「戦争は当初の目標を達成できていない」と表明し、国際社会から外交解決を求める声が高まっている</li>
+          <li><strong>イスラエルの動向:</strong> 南レバノンへの攻撃が継続中。IDF はヨルダン川西岸でパレスチナ人家族を包囲する入植者を恒久的に排除することに8/14 も失敗した</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">コロンビア M7.4 地震 続報（8/13） — 死者265人超・行方不明2,700人超、ReliefWeb が状況概況を公表</div>
-      <div class="card-meta"><span class="badge">Natural Disaster</span><span class="card-source">Source: <a href="https://reliefweb.int/report/colombia/colombia-earthquake-rapid-situation-overview-13-august-2026">ReliefWeb — Colombia Earthquake: Rapid Situation Overview (13 Aug 2026)</a> · <a href="https://www.nbcnews.com/news/us-news/primaries-democratic-party-colombia-earthquake-morning-rundown-rcna591869">NBC News Morning Rundown</a> · <a href="https://en.wikipedia.org/wiki/2026_Colombia_earthquake">Wikipedia</a> — 2026.08.13</span></div>
+      <div class="card-title">コロンビア M7.4 地震 続報（8/14） — 救助が「最終フェーズ」へ、死者265人超・行方不明500人超（民間集計4,100人超）</div>
+      <div class="card-meta"><span class="badge">Natural Disaster</span><span class="card-source">Source: <a href="https://www.france24.com/en/americas/20260813-colombia-earthquake-rescue-efforts-enter-final-phase-as-death-toll-rises">France 24</a> · <a href="https://www.directrelief.org/2026/08/colombia-earthquake-7-4-magnitude-direct-relief-response/">Direct Relief</a> · <a href="https://www.npr.org/2026/08/12/g-s1-138315/colombia-earthquake-updates">NPR</a> — 2026.08.13–14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>8/13 時点の最新集計:</strong> ReliefWeb の「Rapid Situation Overview (13 August 2026)」によると、確認死者数は265人超、行方不明者は2,700人超。8/10 発生（111人）→ 8/11（200人超）→ 8/12（250人超）と増加が続いており、今後さらに増加する可能性が高い</li>
-          <li><strong>地質的背景:</strong> 地質学者によると、今回の地震はコロンビアで1970年以来最強の地震。震源は Chocó 州 San José del Palmar 付近（深さ約20km）で、西コロンビアの山岳地帯に深刻な被害をもたらした</li>
-          <li><strong>捜索の継続:</strong> 山岳地帯の道路が寸断されており、震源周辺へのアクセスは依然ヘリコプターのみ。悪天候がヘリ運航を阻む時間帯もある。病院・学校を含む1,100棟超の建物が倒壊または損傷している</li>
-          <li><strong>国際支援:</strong> PAHO（汎米保健機構）の医療チームが現地展開中。コロンビア政府は国家非常事態を宣言しており、EU・米国・近隣諸国が支援物資と救助要員を派遣している</li>
+          <li><strong>最新集計（8/14 時点）:</strong> 死者265人超、負傷者3,500人超、行方不明者は当局公式で500人超・民間データベース集計では4,100人超に上る。地震は今世紀最強のコロンビア地震（M7.4、震源深さ約20km）</li>
+          <li><strong>救助フェーズの転換:</strong> 発生から約72時間が経過し、当局は8/13 に「最終フェーズ」への移行を宣言。生存者発見の可能性は低下しているが、がれき下での捜索は継続中</li>
+          <li><strong>インフラ被害:</strong> 建物1,100棟超が倒壊・損傷。Chocó 州 San José del Palmar 周辺の山岳道路は依然寸断されており、ヘリコプターのみのアクセスが続く</li>
+          <li><strong>国際支援:</strong> コロンビア政府が国家非常事態を宣言。EU・米国・近隣諸国の支援物資と救助要員が展開中。Direct Relief が医療物資を緊急輸送している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウィスコンシン州民主党知事予備選 — デイビッド・クロウリー勝利、中間選挙に向け民主党候補確定（8/12）</div>
-      <div class="card-meta"><span class="badge">US Politics / Election</span><span class="card-source">Source: <a href="https://www.nbcnews.com/politics/trump-administration/live-blog/trump-wisconsin-goverrnor-minnesota-primary-2026-live-updates-rcna592028">NBC News Live Blog</a> · <a href="https://wng.org/podcasts/thursday-morning-news-august-13-2026-1786554829">WORLD News — Aug 13 Morning</a> — 2026.08.12–13</span></div>
+      <div class="card-title">スウェーデン議会、刑事責任年齢を15歳から14歳に引き下げ — 9月10日施行、5年間の時限立法</div>
+      <div class="card-meta"><span class="badge">Europe / Legislation</span><span class="card-source">Source: <a href="https://www.euronews.com/my-europe/2026/08/13/swedish-lawmakers-cut-age-of-criminal-responsibility-to-14-ahead-of-general-election">Euronews</a> · <a href="https://www.azernews.az/region/262397.html">AzerNews</a> · <a href="https://www.gmanetwork.com/news/topstories/world/998508/swedish-parliament-cuts-age-of-criminal-responsibility-to-14/story/">GMA Network</a> — 2026.08.13–14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>予備選の結果:</strong> ウィスコンシン州民主党知事予備選で、デイビッド・クロウリー（クロウリー郡行政官）が自称民主社会主義者のフランチェスカ・ホン下院議員を下して勝利。11月の知事選に向けた民主党候補が確定した</li>
-          <li><strong>予備選の意味:</strong> ウィスコンシン州は2026年11月中間選挙の重要なスイングステート。今回の予備選は「穏健派 vs 進歩派」という民主党内の路線対立を反映しており、クロウリー勝利は「党の連帯」路線の選択とみられている</li>
-          <li><strong>ホン陣営の活動:</strong> 進歩派のフランチェスカ・ホン候補は善戦し、若年層・都市部での高い支持を獲得。選挙結果は惜敗ながら、民主党内の進歩派の勢いを示す結果となった</li>
+          <li><strong>採決結果:</strong> スウェーデン議会で281票賛成・66票反対で可決。右翼政権のみならず野党の社会民主党も賛成に回り、大多数の支持を得た</li>
+          <li><strong>経緯:</strong> 右翼政府は当初13歳への引き下げを提案していたが、6月に過半数を確保できず撤回。14歳という妥協案で再提出し可決に至った</li>
+          <li><strong>背景:</strong> 組織犯罪グループが14〜15歳の未成年を使い捨て実行犯として利用するケースが増加しており、抑止力の強化が立法の主な動機とされている。9月10日から5年間の時限立法として施行される</li>
+          <li><strong>批判の声:</strong> 人権団体は「未成年の更生より刑罰化を優先する逆効果な政策」として批判。欧州評議会は懸念を表明している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イエメン — フーシ派が Mokha 港を攻撃・11人死亡、サウジ精油所へのドローン攻撃も（8/12–13）</div>
-      <div class="card-meta"><span class="badge">Middle East / Conflict</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/13/latest-news-bulletin-august-13th-2026-morning">Euronews — Aug 13 Morning Bulletin</a> · <a href="https://www.euronews.com/video/2026/08/13/latest-news-bulletin-august-13th-2026-midday">Euronews — Aug 13 Midday</a> — 2026.08.13</span></div>
+      <div class="card-title">スイス、ガザ生存者ドキュメンタリー「Who Is Still Alive」を2027年アカデミー賞外国語映画部門代表に選出</div>
+      <div class="card-meta"><span class="badge">Europe / Culture</span><span class="card-source">Source: <a href="https://newswav.com/article/gaza-survivor-documentary-picked-as-switzerland-s-oscar-entry-A2608_pLn0ds">Newswav</a> · <a href="https://www.middleeastmonitor.com/20260813-switzerland-selects-gaza-survivors-documentary-for-oscars/">Middle East Monitor</a> · <a href="https://furtherandbetter.substack.com/p/global-tv-film-and-media-industry-035">Further &amp; Better</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>攻撃の詳細:</strong> イラン支援のフーシ派（アンサール・アッラー）がイエメン港湾都市 Mokha にドローンおよびミサイルを発射し、少なくとも11人が死亡した。別の攻撃でサウジアラビアの石油精製施設がドローン攻撃を受けた</li>
-          <li><strong>背景:</strong> 2022年に成立した停戦合意が先月以降実質的に崩壊しており、フーシ派の攻撃が再び頻発。紅海の商船攻撃も散発的に続いており、国際的な懸念が高まっている</li>
-          <li><strong>ホルムズ海峡との連動:</strong> 8/12 のイランによる「ホルムズ海峡封鎖は条件次第」という発言との連動が懸念されており、エネルギー市場への影響を警戒する声も出ている</li>
+          <li>スイスが Nicolas Wadimoff 監督のドキュメンタリー「Who Is Still Alive」を2027年アカデミー賞国際長編映画部門のスイス代表作品に選出した</li>
+          <li>9人のパレスチナ難民（ガザから脱出した生存者）が、ラース・フォン・トリアーの「ドッグヴィル」を想起させる白いステージで自らの脱出体験を再演する実験的ドキュメンタリー</li>
+          <li>スイスが紛争中の一方当事者に関するドキュメンタリーをオスカー代表に選んだことは外交的にも注目されており、イスラエル・パレスチナ問題をめぐる欧州各国の文化政策の差異が改めて浮き彫りになった</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イタリアがスペインとのシェンゲン協定停止を維持、スイス氷河が記録的規模で消失へ</div>
+      <div class="card-meta"><span class="badge">Europe / Climate</span><span class="card-source">Source: Wikipedia — Portal:Current events/2026 August 14 · Britannica — Major Events of 2026 — 2026.08.14</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>イタリア・スペイン間のシェンゲン停止:</strong> イタリアのマッテオ・ピアンテドージ内相は、「潜在的なセキュリティリスクがすべて排除されるまで」スペインとのシェンゲン協定停止を継続すると表明。移民・犯罪情報の共有をめぐる両国間の溝が依然埋まっていない</li>
+          <li><strong>スイス氷河の記録的消失:</strong> スイスの科学機関は、2026年が過去2番目に深刻な氷河融解を記録する年になる見通しと発表。数十の小規模氷河が今夏中に完全消失する見込みで、水資源への影響が懸念されている</li>
         </ul>
       </div>
     </div>
@@ -227,24 +237,24 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「プログラミング雑記 2026年8月13日」— ishisaka</div>
-      <div class="card-meta"><span class="badge">Tech Memo</span><span class="card-source"><a href="https://qiita.com/ishisaka/items/42b381b9b239e6ef215d">Qiita</a> — 2026.08.13</span></div>
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-14）」— homhom44</div>
+      <div class="card-meta"><span class="badge">News Summary</span><span class="card-source"><a href="https://qiita.com/homhom44/items/3edbe42a107e43829788">Qiita</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li>本日（8/13）公開。VS Code 1.133（8/12 リリース）と Claude の統合改善、PyCharm の新しい Jupyter スキル（Claude エージェントが稼働中のカーネル上でノートブックを直接操作できるようになり、セル間の状態が保持される）についての実践メモ</li>
-          <li>Claude Opus 5 への切り替えで Claude Code の推論コストが Max プランで約12%低下したという個人観測を記録。「Opus 5 は単に賢いだけでなく、トークン効率も向上している印象」というコメント</li>
-          <li>Auto Mode デフォルト化（8/14）を前にした設定整備として、<code>.claude/settings.json</code> でのアクセス権限の明示指定をすすめる実践的なアドバイスが含まれており、「明日の準備をした」というコメントが多く付いている</li>
+          <li>Auto Mode デフォルト化当日の朝に公開。Anthropic の公式発表とリリースノートを横断的にまとめており、Claude Code ユーザーが今日知るべき変更点を1ページで把握できる構成。Qiita の AI タグ当日ランキングで上位にランクイン</li>
+          <li>「デフォルト変更の対象プランとオプトイン組の整理」「クラシファイアコスト無償化の意味」「Self-Hosted 環境ベータ参加方法」の3点を特に詳しく解説。公式ドキュメントへの参照リンクが丁寧に付けられており初心者にも参照しやすい内容</li>
+          <li>コメント欄では「スポーンキャップ廃止で複雑なマルチエージェントタスクの設計が変わる」「/fork のワークツリー分離が一番地味に嬉しい」という実務観点のフィードバックが活発に寄せられている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「最近のAI開発について（2026年8月）」— cleyera_f</div>
-      <div class="card-meta"><span class="badge">Tech Overview</span><span class="card-source"><a href="https://qiita.com/cleyera_f/items/fba106f82207dbd7b283">Qiita</a> — 2026.08.13</span></div>
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を『エージェント組織の統治』として読む」— berrylove</div>
+      <div class="card-meta"><span class="badge">Deep Dive</span><span class="card-source"><a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita</a> — 2026.08.14</span></div>
       <div class="card-body">
         <ul>
-          <li>2026年8月前半の AI 開発動向を横断的にまとめた記事。Claude Code と Gemini 3.6 Flash の使い分けワークフローについて実践的な考察を展開</li>
-          <li>「Claude Code を計画・設計・アーキテクチャ判断に使い、Gemini 3.6 Flash をコスト重視の反復実行・ドラフト生成に使い分けるのが現時点の最適解」という主張が Qiita の AI タグで週間上位に</li>
-          <li>DeepSeek V4 の MIT ライセンス公開を受けた「自社サーバーで動かす場合の構成例」も添付されており、コスト意識の高いエンジニアの間で広く参照されている。「Claude Code の高品質を維持しながらコストを下げる戦略が詰まっている」というコメントが高評価</li>
+          <li>Auto Mode デフォルト化・Self-Hosted 環境・Inference Hooks の3点を「AIエージェントをどのように組織として統治するか」という観点から分析した記事。技術的な解説を超えて、組織・ガバナンス・セキュリティ設計の視点から考察している</li>
+          <li>「Auto Mode は個人のスピードの問題だが、Self-Hosted と Inference Hooks は組織としての AI ガバナンスを設計する問題。この2つが同時に来たことで企業の Claude Code 採用が加速する」という論点が Zenn にも転載され話題に</li>
+          <li>「Inference Hooks で allow/deny ルールを書く担当者は誰か、誰がレビューするのか、という問いは AI セキュリティチームの仕事定義に直結する」というコメントが多くのブックマークを集めている</li>
         </ul>
       </div>
     </div>
@@ -252,9 +262,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月13日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: Anthropic Claude Blog · Digital Applied · The AI Career Lab · TECHi · Releasebot (Claude Code / Codex / Anthropic / OpenAI) · Saeree ERP · wmedia.es · Claude Platform Docs · ScriptByAI · CNBC · Washington Post · NBC News · ReliefWeb · Wikipedia / 2026 Colombia earthquake · Euronews · WORLD News · Qiita</p>
-  <p style="margin-top:0.3rem;"><a href="2026-08-12/index.html">前版（2026-08-12）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月14日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Digital Applied · Omid Saffari · TechCrunch · DEV Community · gradually.ai Changelog · RAXXO Studios · Anthropic Blog · Claude Code Docs · Releasebot (Codex / OpenAI) · MorphLLM · Tom's Guide · Wikipedia · NPR · Sunday Guardian Live · Army Recognition · France 24 · Direct Relief · Euronews · AzerNews · GMA Network · Newswav · Middle East Monitor · Further &amp; Better · Qiita (homhom44 · berrylove)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-13/index.html">前版（2026-08-13）</a></p>
 </footer>
 </body>
 </html>
