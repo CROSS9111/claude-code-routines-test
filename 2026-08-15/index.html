@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月15日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude テキストへの不可視ウォーターマーク埋め込み詳細を Anthropic が公開・反発拡大 / Compliance API が Cowork・Claude Code に拡張・利用量50%ブースト 8/19 まで延長 / 광복절（光復節）81周年 — 韓国・李大統領が日韓協力深化と南北終戦協議を提唱 / コロンビア地震 1万棟超が損壊、避難支援が本格化 / ロシア・北朝鮮が解放記念日に結束を確認</p>
+  <p class="date">2026年8月15日（土）&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/15）の最重要ハイライト:</strong> Anthropic が <strong>Claude のテキストウォーターマーキング</strong>の技術詳細を公式ブログで公開。EU AI 法第50条（8/2 発効）に準拠するための不可視マーク埋め込みで、ユーザーの一部が「職場・学校での使用が露見する」として反発・解約を表明。また Compliance API の <strong>Cowork・Claude Code 対応拡張</strong>（Enterprise ベータ）と、Claude Code 利用量 <strong>50%ブーストの 8/19 延長</strong>も本日発表された。
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、Claude ウォーターマークの技術詳細を公式ブログで公開 — EU AI 法対応・不可視埋め込み・C2PA メタデータ、一部ユーザーが反発</div>
+      <div class="card-meta"><span class="badge">Transparency / EU AI Act</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch 8/15</a> · <a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch 8/11</a> · <a href="https://www.euronews.com/next/2026/08/11/eu-compliance-delivered-globally-anthropic-to-watermark-claudes-output-worldwide">Euronews</a> · <a href="https://interestingengineering.com/ai-robotics/anthropic-claude-text-invisible-watermarks">Interesting Engineering</a> · <a href="https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/">TechCrunch 8/12</a> · <a href="https://explainx.ai/blog/anthropic-claude-invisible-watermarks-c2pa-august-2026">ExplainX</a> — 2026.08.11–15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>経緯:</strong> EU AI 法第50条の透明性義務が8月2日に発効。Anthropic は同日以降にリリースした新モデルに対して、生成テキスト全文への不可視ウォーターマーク埋め込みと、ファイルへの C2PA 署名付きプロヴェナンス情報の付加を開始した。本日（8/15）の公式ブログ投稿は、その技術実装の詳細を初めて公開したもの</li>
+          <li><strong>技術実装:</strong> テキストウォーターマークは人間の目では読めない形で埋め込まれ、コピー&amp;ペーストでも維持される。ファイル（画像・PDF 等）には C2PA 規格の署名付きメタデータを付加</li>
+          <li><strong>適用範囲:</strong> EU 内ユーザーだけでなく、<strong>全世界のユーザーを対象</strong>に適用（Euronews）。非準拠の場合、最大 1500 万ユーロまたは全世界売上の3%の罰金が課される</li>
+          <li><strong>限界と免責:</strong> Anthropic は「ウォーターマークの検出は Claude が生成したことの確定的証拠ではなく、マークがないことも AI の不関与を保証しない」と明記</li>
+          <li><strong>ユーザーの反発:</strong> 「職場や授業で AI を使っていることが雇用主・教師に発覚しかねない」として X 上で数十人が解約を表明。Reddit では反論と擁護が拮抗</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Compliance API が Cowork・Claude Code（デスクトップ・Web・モバイル・CLI）に拡張 — Enterprise ベータで統合監査ログ・eDiscovery 対応</div>
+      <div class="card-meta"><span class="badge">Enterprise / Compliance</span><span class="card-source">Source: Releasebot / Claude Code · Releasebot / Anthropic — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Compliance API 拡張:</strong> Claude の Compliance API が Cowork および Claude Code を対象にカバーを拡大。Claude Enterprise の顧客はベータアクセスで、同一 API からセッションコンテンツとメタデータを統合的に取得できるようになった</li>
+          <li><strong>主な用途:</strong> セキュリティチームによるエージェントセッションの監査、法務チームの eDiscovery 対応、コンプライアンス要件へのレポーティング</li>
+          <li><strong>Claude Code 8/15 版の更新:</strong> GitLab マージリクエスト URL サポート、セルフホストランナーの起動高速化、ゲートウェイとプラグインのバリデーション強化、多数のバグ修正</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 利用量 50%ブーストを 8月19日まで延長 — オフピーク時は 2× ボーナスも継続</div>
+      <div class="card-meta"><span class="badge">Promotion / Usage</span><span class="card-source">Source: Releasebot / Claude Code · SlickDeals — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code サブスクライバー向け <strong>週次利用量 50%増量キャンペーン</strong>が <strong>8月19日（水）まで延長</strong>された</li>
+          <li>オフピーク時間帯（米国東部時間 8:00〜14:00 以外）の利用量ボーナス2×プログラムも継続中。実質 3× の利用が可能なウィンドウが存在する</li>
+          <li>Auto Mode デフォルト化による利用急増の負荷分散、およびウォーターマーク実装に伴うユーザー離脱の抑止が背景にあるとみられている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト:</strong> <strong>Windsurf が Devin Desktop に改名</strong>（6月、Cognition 買収後）し Agent Command Center・Spaces 搭載の 2.0 へ進化。<strong>Cursor</strong> は評価額 $90 億に到達。Google の <strong>Antigravity 2.0（旧 Gemini CLI）</strong>は統合ハーネスと独立 CLI の二本立てに再設計。コーディングエージェント市場は「全製品のエージェント化・並列オーケストレーション競争」フェーズが本格化している。
+    </div>
+    <div class="card">
+      <div class="card-title">Windsurf → Devin Desktop へ改名・Agent Command Center 搭載 2.0 に — Cursor は $90 億評価額・Antigravity 2.0 も再設計</div>
+      <div class="card-meta"><span class="badge">Market / IDE Agents</span><span class="card-source">Source: <a href="https://www.marktechpost.com/2026/06/10/ai-coding-agents-development-platforms-2026/">MarkTechPost</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM Leaderboard</a> · <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary 比較</a> — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Windsurf → Devin Desktop（6/2 改名）:</strong> Cognition による買収後、Agent Command Center・Spaces・Devin Cloud 統合を追加し6月に改名。ターミナル内蔵・並列タスク管理を前面に打ち出し Claude Code との正面対決姿勢を強めている</li>
+          <li><strong>Cursor:</strong> 評価額が $90 億に達し、ARR は $5 億超を記録（4月時点）。VS Code ベースのエディタ統合型のポジションを維持</li>
+          <li><strong>Antigravity 2.0（Google）:</strong> Google I/O（5/19）で発表。Gemini 3.1 Pro での Terminal-Bench 2.1 スコアは 70.7%。毎分 60 リクエスト・1日 1,000 リクエストの無料枠が特徴</li>
+          <li><strong>Claude Code vs 競合の現在地:</strong> MorphLLM の 8月最新ランキングでは Claude Code（Claude Opus 5 搭載）が総合首位を維持</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 Sol でのコーディングエージェント利用が拡大 — OpenAI が Gartner MQ「企業向け AI コーディングエージェント」リーダー象限入り</div>
+      <div class="card-meta"><span class="badge">OpenAI / Enterprise</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI Blog</a> · Releasebot / Codex — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI は Gartner 2026 マジック・クアドラント「Enterprise AI Coding Agents」でリーダー象限入りを発表。週間アクティブユーザーは 400 万人超</li>
+          <li>Codex の直近アップデート: ポータブルな Agent Plugins・プラグインカタログ横断検索・MCP サポート拡張・Amazon Bedrock キャッシュ統合改善</li>
+          <li>OpenAI が AWS で Daybreak（Blue / Red）を Amazon Bedrock に提供開始。Anthropic の Bedrock 展開との競合が激化している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「ウォーターマーク実装で解約を考えている — 職場・学校でバレるリスクが許容できない」</div>
+      <div class="card-meta"><span class="badge">Community Reaction</span><span class="card-source">Reddit r/ClaudeAI · r/artificial — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ウォーターマーク詳細ブログの公開後、r/ClaudeAI に「これは解約の理由になる」というスレッドが急上昇。X でも数十人が解約を表明</li>
+          <li>懸念: 「コピペしたメールが AI 生成と上司に検知される」「学術レポートへの使用が露見する」「採用活動でのカバーレター作成に支障」など</li>
+          <li>擁護派: 「AI 使用を隠すこと自体が問題」「コンテンツを受け取った側が検出ツールを使う必要があり、ハードルは低くない」</li>
+          <li>技術的な抜け道: 「テキストを書き換えても現在の実装はある程度ロバスト」とする解説コメントが注目を集めている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Compliance API の Cowork 対応でエンタープライズ採用が前進する」</div>
+      <div class="card-meta"><span class="badge">Enterprise / Adoption</span><span class="card-source">Reddit r/ClaudeCode · r/devops — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「SOC 2 監査のためにエージェントのアクションログを保存できるようになる」という投稿がホットに浮上</li>
+          <li>「セキュリティチームが OK を出せない理由の一つが監査ログの欠如だった。大企業での全社展開にもう一段近づいた」という評価が広まっている</li>
+          <li>「Compliance API はベータで Enterprise プランのみ。中小企業への恩恵はまだ先」という指摘も</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Claude Code の利用量ブーストはウォーターマーク反発への対応策では？」</div>
+      <div class="card-meta"><span class="badge">Speculation / Usage</span><span class="card-source">Reddit r/MachineLearning · r/ClaudeAI — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>50%利用量ブーストの 8/19 延長とウォーターマーク反発が重なったことから「Anthropic が解約抑止のために延長した可能性がある」という推測スレッドが話題に</li>
+          <li>「どうせ使うなら今週めいっぱい使う」というコメントが多く upvote を集めており、ブースト延長の実務的価値は確実にあるという評価でコミュニティがまとまっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/15）の主要トピック:</strong> <strong>광복절（光復節）81周年</strong> — 韓国・李大統領が日韓シャトル外交の成果を強調し南北終戦協議を提唱。北朝鮮は光復節に合わせロシアとの結束を確認 / <strong>コロンビア地震</strong>（M7.4、8/10）被害拡大 — 住宅1万棟超が損壊・行方不明4,100人超 / <strong>中東:</strong> イスラエルへの入植者包囲解除要求が継続 / <strong>皆既日食（8/12）</strong> 100年ぶりにスペインで観測、後続の話題継続
+    </div>
+    <div class="card">
+      <div class="card-title">광복절（光復節）81周年（8/15） — 韓国・李大統領が日韓協力深化を強調、南北終戦協議も提唱</div>
+      <div class="card-meta"><span class="badge">Korea / Japan / Diplomacy</span><span class="card-source">Source: <a href="https://www.japantimes.co.jp/news/2026/08/15/asia-pacific/politics/south-korea-liberation-day-speech/">Japan Times</a> · <a href="https://www.koreatimes.co.kr/southkorea/politics/20260815/lee-proposes-talks-with-nk-to-formally-end-korean-war-halt-pyongyangs-nuclear-program">Korea Times</a> · <a href="https://www.koreajoongangdaily.com/korea/lee-urges-korean-peninsula-peace-talks-involving-united-states-china-in-liberation-day-address/12826382">JoongAng Daily</a> — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>光復節 81周年:</strong> 韓国・李在明大統領は式典演説で「この一年、韓日両国は積極的なシャトル外交を展開し信頼の基盤を築いた。日本政府と共にサプライチェーン・エネルギー・先端技術分野の協力をさらに深めたい」と述べた</li>
+          <li><strong>南北終戦協議を提唱:</strong> 米国・中国・南北朝鮮が参加する朝鮮半島終戦・核プログラム停止協議の開催を提案</li>
+          <li><strong>北朝鮮・ロシアの動向:</strong> プーチン大統領が光復節に合わせ金正恩総書記に祝電を送り結束を確認</li>
+          <li><strong>歴史的背景:</strong> 韓日関係は2018年の徴用工訴訟後に最低水準に落ち込んだが、李政権下で継続的に改善中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">コロンビア M7.4 地震（8/10発生） 続報 — 住宅1万棟超が損壊、行方不明4,100人超への支援本格化</div>
+      <div class="card-meta"><span class="badge">Natural Disaster</span><span class="card-source">Source: <a href="https://www.france24.com/en/americas/20260813-colombia-earthquake-rescue-efforts-enter-final-phase-as-death-toll-rises">France 24</a> · <a href="https://www.directrelief.org/2026/08/colombia-earthquake-7-4-magnitude-direct-relief-response/">Direct Relief</a> · <a href="https://www.npr.org/2026/08/12/g-s1-138315/colombia-earthquake-updates">NPR</a> — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>被害の拡大:</strong> 発生から5日が経過し、住宅・建物 <strong>1万棟超が破壊または損傷</strong>。家を失った被災者への仮設住宅提供と生活支援が喫緊の課題</li>
+          <li><strong>死者・行方不明者:</strong> 公式死者数265人超、負傷者3,500人超。行方不明者（民間集計）4,100人超</li>
+          <li><strong>インフラ復旧:</strong> Chocó 州の山岳部では道路寸断が続き、ヘリコプター輸送が唯一の手段</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">皆既日食（8/12）100年ぶりのスペイン本土通過 — 各地で数百万人が観測、科学ミッションも展開</div>
+      <div class="card-meta"><span class="badge">Science / Europe</span><span class="card-source">Source: <a href="https://science.nasa.gov/eclipses/future-eclipses/total-solar-eclipse-on-august-12-2026/">NASA Science</a> · <a href="https://www.nbcnews.com/science/space/live-blog/total-solar-eclipse-2026-time-photos-live-update-rcna592114">NBC News</a> — 2026.08.12</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>皆既日食（8/12発生）:</strong> 皆既帯がグリーンランド東部・アイスランド西部・スペイン北半分・ポルトガル北西端を通過。スペイン本土での皆既日食は 1999 年以来</li>
+          <li><strong>規模と観測:</strong> 皆既継続時間は最大 2分18秒。各都市で数百万人が観測し、バスク地方やサンティアゴ・デ・コンポステーラでは大規模な観測イベントが開催された</li>
+          <li><strong>科学ミッション:</strong> NASA・ESA・スペイン宇宙機関がコロナ観測・太陽風研究を実施</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">中東情勢（8/15） — イスラエルへの入植者包囲解除要求、ノルウェーが対イラン戦争「目標未達」と表明</div>
+      <div class="card-meta"><span class="badge">Middle East</span><span class="card-source">Source: <a href="https://sundayguardianlive.com/world/us-israel-iran-war-live-updates-uss-george-washington-heads-to-middle-east-as-abraham-lincoln-faces-crew-strain-norway-says-iran-war-failed-to-achieve-its-goals-260914/">Sunday Guardian Live</a> · <a href="https://www.armyrecognition.com/news/navy-news/2026/u-s-sends-new-aircraft-carrier-to-middle-east-to-sustain-operations-against-iran">Army Recognition</a> — 2026.08.14–15</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>入植者問題:</strong> 米国がネタニヤフ政権に対し入植者によるヨルダン川西岸パレスチナ人家族の包囲解除を要求。イスラエル側は解除に失敗した状態が継続</li>
+          <li><strong>対イラン戦争（6か月目）:</strong> 2月28日開始の米・イスラエルによる対イラン軍事作戦が6か月目に突入。ノルウェーは「当初の目標を達成できていない」と表明</li>
+          <li><strong>空母展開:</strong> USS George Washington がマラッカ海峡を通過し中東方面へ向かい、長期展開中の USS Abraham Lincoln の交代・補完に当たる見通し</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ情勢 — 北朝鮮・ロシア軍事協力拡大でウクライナが日本に警鐘</div>
+      <div class="card-meta"><span class="badge">Europe / Security</span><span class="card-source">Source: <a href="https://japan.news-pravda.com/ukraine/2026/08/15/69597.html">Pravda 日本</a> — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ウクライナ高官が日本に対し「北朝鮮のロシアへの軍事協力が質・量ともに拡大している」と警告</li>
+          <li>ロシアはプーチン・金正恩間の祝電で「両国の戦略的パートナーシップ」を再確認。対ロ制裁の範囲を北朝鮮支援分野に拡大する議論が欧州議会で進んでいる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude ウォーターマークは何を変えるか — EU AI 法対応と開発者への実務的影響」</div>
+      <div class="card-meta"><span class="badge">Deep Dive / EU AI Act</span><span class="card-source">Qiita — 2026.08.15</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ウォーターマーク詳細ブログ発表直後に公開された解説記事。EU AI 法第50条の条文を引用しながら「これは欧州だけの問題ではなくグローバル適用」という点を強調</li>
+          <li>「不可視ウォーターマークはトークン選択確率バイアスによる埋め込みの可能性が高い」という技術分析が Qiita トレンド入り</li>
+          <li>「Claude Code が生成したコードへの適用範囲が未確認」「OSS コントリビューションへの影響」「ライセンスとの整合性」という問いを提起し議論が活発化</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「全員 Claude Code 体制を3ヶ月やってわかったこと」— チーム開発実践報告</div>
+      <div class="card-meta"><span class="badge">Team Practice</span><span class="card-source"><a href="https://genai-ai.co.jp/ai-kanri/blog/cc-ai-agents/">genai-ai.co.jp / Zenn</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>5人チームが Claude Code を全員必須で3か月運用した実践報告。「生産性は体感で2〜3×向上したが、レビュー品質担保の仕組みを別途整備しないとコードの均質化が起きる」という結論</li>
+          <li>「Auto Mode を全員が使うと1PR あたりの変更行数が膨張する。意図的に小さな PR に分割させるプロンプト設計が有効」という知見を共有</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を『エージェント組織の統治』として読む」— berrylove</div>
+      <div class="card-meta"><span class="badge">Analysis</span><span class="card-source"><a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita — berrylove</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Compliance API 拡張・Self-Hosted 環境・HIPAA 自己設定の3点を「AI エージェントを組織として統治するための三層構造」として読み解く考察記事</li>
+          <li>「Compliance＝ログ層、Self-Hosted＝実行層、HIPAA＝コンプライアンス層として整理すると企業の AI ガバナンスフレームワークとして体系化できる」という独自視点が話題に</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月15日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: TechCrunch · Euronews · Interesting Engineering · ExplainX · Releasebot · SlickDeals · MarkTechPost · MorphLLM · Lushbinary · OpenAI Blog · Japan Times · Korea Times · JoongAng Daily · NASA Science · NBC News · NationalEclipse.com · Sunday Guardian Live · Army Recognition · NPR · France 24 · Direct Relief · Pravda 日本 · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="../index.html">最新版へ</a>&nbsp;|&nbsp;<a href="../2026-08-14/index.html">前版（2026-08-14）</a></p>
+</footer>
+</body>
+</html>
