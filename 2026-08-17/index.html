@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月17日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code に EU AI 法対応の電子透かし実装・GitLab MR / Self-hosted runner 改善 / OpenAI Codex が1,000万ユーザー突破 / 米イラン停戦期限切れ・ホルムズ封鎖継続 / インディアナ州洪水で100人救助</p>
+  <p class="date">2026年8月17日（月）&nbsp;|&nbsp;<a href="../2026-08-16/index.html">前版（8/16）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/17）の最重要ハイライト:</strong> Anthropic が <strong>Claude のテキスト出力に電子透かしを追加する</strong>と発表（EU AI 法準拠・検出 API も近日提供）。昨日発生した Claude.ai 大規模障害（8/16 21:58 UTC〜）は <strong>本日早朝に復旧を確認</strong>。Claude Code では <strong>GitLab MR URL サポートと Self-hosted runner の高速起動</strong>が正式リリースとなった。
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、Claude のテキスト出力に電子透かし実装を発表 — EU AI 法準拠・検出 API も近日提供</div>
+      <div class="card-meta"><span class="badge">Policy / Watermark</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude">Releasebot — Anthropic Claude Updates August 2026</a> · <a href="https://aiweekly.co/ai-news-today/anthropic-news">AI Weekly — Anthropic</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>発表内容:</strong> Anthropic は将来の Claude モデルが生成するテキスト出力に電子透かし（watermark）を埋め込む計画を正式に発表した。透かしは人間には不可視だが、API または専用の検出ツールで識別できる形式となる</li>
+          <li><strong>目的:</strong> EU AI 法（EU AI Act）の「AI 生成コンテンツの表示義務」条項への対応が主な動機。Anthropic は「コンテンツの出所を透明化することで、フェイク情報の流通抑制に貢献したい」とコメント</li>
+          <li><strong>提供時期:</strong> 透かし検出 API は「近日提供」とされており、エンタープライズ向け Compliance API と連携する形での提供が検討されている</li>
+          <li><strong>開発者への影響:</strong> コード生成や単純な API 応答への透かし埋め込みは当面対象外の見込みで、主に長文テキスト・記事・要約などのコンテンツ生成が対象になると予想されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">昨日（8/16）発生の Claude.ai 大規模障害が復旧 — 週次利用制限の「撤廃説」は誤情報と Anthropic が明確化</div>
+      <div class="card-meta"><span class="badge">Outage / Status</span><span class="card-source">Source: <a href="https://www.explainx.ai/blog/claude-usage-limits-2026-timeline-explained">ExplainX — Claude Usage Limits 2026</a> · <a href="https://status.claude.com/">status.claude.com</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>障害復旧:</strong> 8月16日 21:58 UTC に発生した Claude.ai・Claude Code・Claude Cowork の大規模障害は、8月17日の早朝（日本時間）に復旧を確認。障害の根本原因はまだ公式に開示されていない</li>
+          <li><strong>誤情報の拡散:</strong> 障害中にメーター表示が消えたことを受け「Anthropic が週次利用制限を撤廃した」という誤情報が SNS で拡散した。ExplainX が詳細なタイムラインを公開し、これは障害によるサーバーエラーの一種であることを確認</li>
+          <li><strong>Anthropic の声明:</strong> 週次制限の撤廃は行っておらず、使用量メーターが消えていたのはサービス側の認証・セッション障害の副作用であったと明確化</li>
+          <li><strong>Claude Console・API:</strong> 障害中も Claude Console と Claude API は正常稼働を継続しており、API 経由での利用は影響を受けなかった</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 最新アップデート — GitLab MR URL の --worktree 対応・Self-hosted runner 高速起動・Compliance API 拡充</div>
+      <div class="card-meta"><span class="badge">Claude Code / Update</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean.CEO Blog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code August 2026</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GitLab 対応:</strong> claude agents view および --worktree フラグが GitLab の MR（マージリクエスト）URL を直接受け付けられるようになった。GitHub・GitLab の双方でシームレスなエージェント操作が可能に</li>
+          <li><strong>Self-hosted runner 高速起動:</strong> パブリックベータ中の Self-hosted 環境において、ランナーの起動時間が短縮されるアップデートが適用。CI/CD パイプライン組み込み時のレイテンシが改善した</li>
+          <li><strong>Compliance API 拡充:</strong> CLI・デスクトップアプリでの Claude Code セッションを対象に、セッション内容・メタデータを一括取得できる Compliance API のベータが Enterprise 顧客向けに提供中。eDiscovery・セキュリティ監査に対応</li>
+          <li><strong>Linux Bash cgroup:</strong> Linux 環境での Bash ツールコマンドに memory cgroup をオプトイン適用できる機能が追加。メモリ超過プロセスを自動停止しシステム安定性を高める</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/17）:</strong> Bloomberg が <strong>OpenAI の Codex + ChatGPT Work の利用者が1,000万人に達した</strong>と報道（非開発者が最速成長層）。OpenAI Codex が <strong>MCP 2026-07-28・Amazon Bedrock キャッシュウェブ検索・コンテキスト272,000トークン修正</strong>などをリリース。<strong>DeepSeek V4</strong> の MIT ライセンス公開後の量子化版ベンチマークが r/LocalLLaMA で続々報告されている。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex + ChatGPT Work が利用者1,000万人突破 — 非開発者が最速成長セグメント（Bloomberg 報道）</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex</span><span class="card-source">Source: <a href="https://www.axios.com/2026/06/25/codex-agents-growth-openai">Axios — Codex Agents Growth</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually.ai — Codex Statistics 2026</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia — OpenAI Codex (AI agent)</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>1,000万ユーザー:</strong> Bloomberg が報道した内部データによると、Codex（コーディングエージェント）と ChatGPT Work（デスクトップ・ファイル操作エージェント）の合算月間アクティブユーザーが1,000万人に到達</li>
+          <li><strong>非開発者が牽引:</strong> 2026年初頭に開始したデスクトップ操作・カレンダー管理・ブラウザ制御・スクリプト実行などの機能が一般ユーザーに広まり、非開発者セグメントが最も高い成長率を示している</li>
+          <li><strong>ChatGPT との連携:</strong> ChatGPT の月間アクティブユーザーは10億人を超えており、Codex / Work は ChatGPT プラットフォームの「上位変換」として機能する戦略が奏功している形</li>
+          <li><strong>日本への影響:</strong> 日本語対応の強化（2026年7月）により国内企業でのパイロット導入も増加しており、中小企業の業務自動化事例が増加中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex アップデート — MCP 2026-07-28 サポート・Amazon Bedrock キャッシュウェブ検索・コンテキスト272,000トークン修正</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex Update</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex August 2026</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — AI Coding Agents 2026</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>MCP 2026-07-28 対応:</strong> 最新の Model Context Protocol（MCP）仕様（2026-07-28付け）に対応。MCP サーバーとの互換性が向上し、外部ツール統合がよりシームレスに</li>
+          <li><strong>Amazon Bedrock キャッシュウェブ検索:</strong> Amazon Bedrock 経由での Codex 利用時に、キャッシュされたウェブ検索結果を活用できる機能が追加。コスト削減とレスポンス高速化が期待される</li>
+          <li><strong>コンテキスト修正:</strong> GPT-5.6 Sol・Terra・Luna の各モデルで誤記されていたコンテキストウィンドウが 272,000 トークンに正式修正。大規模なコードベース解析での信頼性が向上</li>
+          <li><strong>その他:</strong> approve-for-me CLI フラグ追加・プラグインサポート拡充・セキュリティおよび Windows 向け修正も含まれる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">DeepSeek V4 量子化版ベンチマーク続報 — Q4_K_M で Claude Sonnet 5 に「コーディングで匹敵」も日本語品質に課題</div>
+      <div class="card-meta"><span class="badge">Open Source / DeepSeek</span><span class="card-source">Source: <a href="https://kraviona.com/blog/latest-ai-news-august-2026">Kraviona Tech</a> · r/LocalLLaMA · Hugging Face — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>量子化版の現況:</strong> MIT ライセンスで公開された DeepSeek V4/0731（2840億パラメータ MoE）の Q4_K_M 量子化版が Hugging Face に公開され、コミュニティによるベンチマーク結果が蓄積されつつある</li>
+          <li><strong>コーディング性能:</strong> HumanEval・SWE-Bench Pro 系のコーディングベンチマークでは Claude Sonnet 5 と同等か僅差のスコアを記録。24GB VRAM GPU（RTX 4090・A6000 など）で部分オフロードしての実行が可能</li>
+          <li><strong>日本語の課題:</strong> 日本語の自然な文体・助詞の正確な使用・敬語の一貫性などで Claude Sonnet 5 に対して明確な差があるとする評価が多数。技術的な Q&amp;A では許容範囲内との声も</li>
+          <li><strong>実用的位置づけ:</strong> 「機密コードのローカル処理・コスト削減には有効。日本語ドキュメント生成は引き続き商用 API を使う」という二段構えが現実的という見方が広まっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「障害は復旧したが週次制限の誤解が拡散 — API キー設定の重要性が再認識される」</div>
+      <div class="card-meta"><span class="badge">Community / Outage</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「Claude.ai が復旧した」という報告と同時に、昨夜「週次制限が撤廃されたのでは？」とメーター消失を誤解したスレッドへの訂正コメントが上位に</li>
+          <li>「API キーを直接設定しておいた自分は全く影響を受けなかった。Web UI に依存しすぎるリスク」という経験談が多くの upvote を集めた</li>
+          <li>Claude Code の透かし実装発表に対して「コード生成の透かしは含まれない見込み」という情報が共有され、開発用途での懸念はひとまず和らいだという反応が多数</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「DeepSeek V4 Q4_K_M vs Claude Sonnet 5 ─ 24GB GPU で動かした正直レビュー」</div>
+      <div class="card-meta"><span class="badge">Open Source / Benchmark</span><span class="card-source">Reddit r/LocalLLaMA — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li>RTX 4090 24GB 1枚で Q4_K_M を動かした詳細レビューが急上昇スレッドに。HumanEval では 91.2%（Claude Sonnet 5: 93.1%）と僅差であることが確認された</li>
+          <li>「コスト換算だと Claude API の 1/5 以下でほぼ同等のコーディング支援が得られる。ただしプロンプトの調整が必要」という実用的な知見が支持を集めた</li>
+          <li>「Anthropic が Claude.ai 障害を起こした翌日に DeepSeek がリリースのタイミング感は意図的ではないか」という冗談交じりのコメントにも相当数のリアクション</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Claude Code の電子透かし実装 — AI 生成コンテンツ追跡は業界標準になるか？」</div>
+      <div class="card-meta"><span class="badge">Policy / Discussion</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Anthropic の透かし実装発表を受け、「EU AI 法が実質的に業界標準を作り始めた」という意見が上位に。OpenAI・Google も同様の実装を迫られるという見方が多数</li>
+          <li>「長文テキスト以外（コード・構造化データ）は当面対象外なら実用上の影響は限定的」という安堵のコメントと「いずれすべてのアウトプットに広がる」という懸念が混在</li>
+          <li>「透かし入りコンテンツが大量に訓練データとして使われると次世代モデルの品質にどう影響するか」という技術的な疑問が新たに注目を集めている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/17）の主要トピック:</strong> <strong>米・イラン停戦協定が本日期限切れ</strong> — イランはホルムズ海峡の商業交通妨害を継続、米海軍はイラン港を封鎖中 / <strong>インディアナ州洪水</strong> — 約1週間の豪雨後に小康状態、インディアナポリスで100人近く・多数のペットを救助 / インドネシア地震で死者数さらに増加 / 元メジャーリーガー Tommy John 氏（81歳）が逝去
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン停戦が本日期限切れ — イランはホルムズ海峡封鎖を継続、要求リスト提出なければ交渉しないと表明</div>
+      <div class="card-meta"><span class="badge">US / Iran / Middle East</span><span class="card-source">Source: <a href="https://wng.org/podcasts/monday-morning-news-august-17-2026-1786841193">WORLD — Monday Morning News Aug 17 2026</a> · <a href="https://www.euronews.com/video/2026/08/17/latest-news-bulletin-august-17th-2026-morning">Euronews 8/17 Morning</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>停戦失効:</strong> 米国とイランの間で締結されていた停戦協定が2026年8月17日（月）に期限を迎えた。イラン政府は「ホワイトハウスが要求リストを受け入れない限り協定を更新しない」と声明を発出</li>
+          <li><strong>ホルムズ海峡:</strong> イランは停戦中も商業船の通行を一部妨害しており、停戦失効後も同様の行動を継続する姿勢を明確にしている。原油輸送の約20%が通過するホルムズ海峡の緊張が再び高まる恐れがある</li>
+          <li><strong>米海軍:</strong> 米海軍はイランの主要港への封鎖を継続中。停戦失効を受けて米国防総省は「抑止態勢を維持する」とコメントした</li>
+          <li><strong>エネルギー市場:</strong> 原油先物市場では停戦失効を前に WTI が一時 $95 超に上昇。エネルギー安全保障リスクが改めて注目されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インディアナ州洪水 — 約1週間の豪雨後に小康状態、インディアナポリスで100人近くとペット多数を救助</div>
+      <div class="card-meta"><span class="badge">US / Natural Disaster</span><span class="card-source">Source: <a href="https://wng.org/podcasts/monday-morning-news-august-17-2026-1786841193">WORLD — Monday Morning News Aug 17 2026</a> · <a href="https://www.euronews.com/video/2026/08/17/latest-news-bulletin-august-17th-2026-morning">Euronews 8/17</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>豪雨の小康:</strong> インディアナ州では約1週間にわたって続いた豪雨が8月17日に小康状態となったが、主要河川は依然として危険水位を大幅に超えている</li>
+          <li><strong>救助活動:</strong> インディアナポリスの消防・救助隊が浸水した住宅から100人近くの住民と数十匹の犬・猫などのペットを救助した。救助活動は引き続き継続中</li>
+          <li><strong>被害状況:</strong> 州内複数のカウンティで道路・橋・農地の被害が報告されており、当局は被害額の算定に着手している。農業被害が広範囲にわたる見通し</li>
+          <li><strong>今後の見通し:</strong> 気象当局は向こう48時間は比較的落ち着いた天候が続くと予報。ただし川の増水は週内いっぱい継続する可能性があると警告している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インドネシア地震 — 死者数がさらに増加、救助・捜索活動が続く</div>
+      <div class="card-meta"><span class="badge">Natural Disaster / Asia</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/17/latest-news-bulletin-august-17th-2026-morning">Euronews 8/17 Morning</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>死者数増加:</strong> インドネシアで発生した地震による死者数が8月17日時点でさらに増加。詳細な震源・規模は当局が調査中</li>
+          <li><strong>救助活動:</strong> 現地の救助隊に加えて国際緊急援助チームが現場に到着し、瓦礫の撤去・生存者の捜索を続けている</li>
+          <li><strong>復旧支援:</strong> インドネシア政府は非常事態宣言を継続し、国連および複数の援助機関が食料・医療物資の輸送を急いでいる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Trump 大統領のワクチン分割接種令に共和党議員が批判 — 子ども向け推奨スケジュールの変更に懸念</div>
+      <div class="card-meta"><span class="badge">US Politics / Health</span><span class="card-source">Source: <a href="https://wng.org/podcasts/monday-morning-news-august-17-2026-1786841193">WORLD — Monday Morning News Aug 17 2026</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>大統領令の内容:</strong> Trump 大統領は先週、子ども向け予防接種を「一度に複数接種せず、別々の受診に分けて1種類ずつ接種するよう医師に促す」大統領令に署名した</li>
+          <li><strong>共和党内からの批判:</strong> 共和党の上院議員1名が「科学的根拠のない政策変更で、接種率低下・感染症再流行のリスクが高まる」と公開批判。超党派の公衆衛生専門家からも反対意見が続出している</li>
+          <li><strong>医療界の反応:</strong> 米国小児科学会（AAP）は「推奨スケジュールは安全性・有効性の長年の研究に基づいており、政治的な干渉は子どもの健康を損なう」という緊急声明を発表</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-17）」— homhom44</div>
+      <div class="card-meta"><span class="badge">News Index / AI</span><span class="card-source"><a href="https://qiita.com/homhom44/items/979c1af3152fafbaa293">Qiita — homhom44</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日付けで公開された Claude / Claude Code 関連ニュースのインデックス記事。Anthropic の公式リリースノート・各種テック系メディアの記事を日本語サマリーとリンク付きで整理</li>
+          <li>電子透かし実装発表・Claude.ai 障害復旧・GitLab MR URL サポートの3点を「最重要」として冒頭に掲載。開発者が見落としがちなリリースノートの細かい変更点も拾っており、定期更新のリファレンスとして活用できる構成</li>
+          <li>前版（2026-08-08）と比べてエンタープライズ向け情報の比重が増しており、Compliance API の活用事例へのリンクが新たに追加されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「8月17日、Claude Codeスキル検索1位は計画インタビューのGrill Meだった」— Skillselion</div>
+      <div class="card-meta"><span class="badge">Trend / Skills</span><span class="card-source"><a href="https://qiita.com/Skillselion/items/d61adafc9d4457d10d90">Qiita — Skillselion</a> — 2026.08.17</span></div>
+      <div class="card-body">
+        <ul>
+          <li>8月17日の Claude Code スキル検索ランキング（Skillselion 調査）で「Grill Me」（計画・面接練習特化スキル）が第1位を獲得。インストール数は 876,468件、直近の検索急増率は +3,250%</li>
+          <li>「採用や企画プレゼンを Claude Code エージェントと繰り返し練習するユースケースが急拡大している」という著者の分析。AI エージェントが「対話型トレーニング相手」として定着しつつある潮流を示す</li>
+          <li>2位以下には「コードレビュー補助」「DB設計ドラフト生成」「要件定義インタビュー」系スキルが並んでおり、Claude Code のユースケースが純粋なコーディング以外に広がっていることがうかがえる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月17日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: ExplainX · Releasebot · AI Weekly · Mean.CEO Blog · Gradually.ai · Axios · MorphLLM · Kraviona Tech · WORLD Podcast · Euronews · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-16/index.html">前版（2026-08-16）</a></p>
+</footer>
+</body>
+</html>
