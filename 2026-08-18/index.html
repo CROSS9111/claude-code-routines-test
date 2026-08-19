@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月18日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code 大型アップデートと同日障害が同時発生 / OpenAI Codex が Linux デスクトップ対応 / 米・イラン停戦失効後にトランプ大統領が降伏要求 / スペイン軍がルーマニア領空でロシアドローンを撃墜 / ウクライナが 822 機のドローンをロシアに発射</p>
+  <p class="date">2026年8月18日（火）&nbsp;|&nbsp;<a href="../2026-08-17/index.html">前版（8/17）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/18）の最重要ハイライト:</strong> Claude Code が<strong>大型アップデートをリリース</strong>（高速・安全セッション / Remote Control 同期拡充 / GitLab MR バッジ / 使用量上限での自動継続 / セキュリティ強化）。しかし<strong>同日 16:20 UTC に複数モデルで大規模障害が発生</strong>（Mythos 5・Fable 5・Opus 5・Sonnet 5・Haiku 4.5）、Downdetector には4,000件超の報告が寄せられた。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 大型アップデート — 高速セッション・GitLab MR バッジ・使用量上限での自動継続・セキュリティ強化</div>
+      <div class="card-meta"><span class="badge">Claude Code / Update</span><span class="card-source">Source: <a href="https://sqmagazine.co.uk/claude-down-anthropic-investigates-multi-model-errors/">SQ Magazine</a> · <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio — New Agent Features 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Aug 2026</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>高速・安全セッション:</strong> セッションの起動・継続が高速化されるとともに、権限設定とセキュリティコントロールが強化。悪意あるツール呼び出しの検出精度が向上した</li>
+          <li><strong>Remote Control 同期拡充:</strong> Remote Control 機能のイベント同期範囲が拡大。クラウド上で実行中のセッションとローカル端末の状態同期がよりリアルタイムに近くなった</li>
+          <li><strong>GitLab MR バッジ:</strong> 昨日対応したGitLab MR URL サポートに続き、今回は MR の状態・レビュー結果を示すバッジが TUI 内に表示されるようになり、作業コンテキストの確認が容易に</li>
+          <li><strong>使用量上限での自動継続:</strong> セッションが使用量上限に達した際に、許可設定の下で自動的に継続できる仕組みが追加。長時間タスク中断の問題が大幅に改善される見込み</li>
+          <li><strong>TUI 改善・エラーハンドリング:</strong> トランスクリプトの表示が改善され、長いエラーメッセージがコンテキストに合わせて折りたたまれる。また音声通知・キーバインド設定の拡充も含まれる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude 全モデルで大規模障害 — Mythos 5 / Fable 5 / Opus 5 / Sonnet 5 / Haiku 4.5 が同日 16:20 UTC に劣化</div>
+      <div class="card-meta"><span class="badge">Outage / Status</span><span class="card-source">Source: <a href="https://sqmagazine.co.uk/claude-down-anthropic-investigates-multi-model-errors/">SQ Magazine — Claude Down: Anthropic Investigates Multi-Model Errors</a> · <a href="https://aiweekly.co/ai-news-today/anthropic-news">AI Weekly — Anthropic</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>障害の規模:</strong> UTC 16:20（日本時間 深夜1:20）より Mythos 5・Fable 5・Opus 5・Sonnet 5・Haiku 4.5 の全モデルで性能劣化と接続エラーが確認された。Downdetector は午前10:08 PT 時点で4,000件超の報告を記録</li>
+          <li><strong>影響範囲:</strong> claude.ai・Claude Code・Claude API いずれも影響を受けた。前日（8/16）の障害から3日連続の大規模インシデントとなり、企業ユーザーを中心に強い懸念が広がっている</li>
+          <li><strong>大型アップデートとの重なり:</strong> 同日にリリースされた大型アップデートのデプロイ作業が障害を誘発した可能性が指摘されているが、Anthropic からの公式根本原因は未発表</li>
+          <li><strong>API の状況:</strong> API 経由でも断続的なエラーが報告されており、前回障害時（8/16）の「API は正常稼働」という状況とは異なる。代替手段として一部ユーザーはローカル LLM に一時退避した</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic のモデルロードマップ — Claude Mythos 5 の一般公開と次期 Haiku 系モデルの動向</div>
+      <div class="card-meta"><span class="badge">Anthropic / Roadmap</span><span class="card-source">Source: <a href="https://www.anthropic.com/news">Anthropic Newsroom</a> · <a href="https://aiweekly.co/ai-news-today/anthropic-news">AI Weekly — Anthropic</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Mythos 5 の位置づけ:</strong> Claude Mythos 5 は今回の障害対象モデルに含まれており、Anthropic の最上位フロンティアモデルとして Claude Code・API 両方で利用可能になっていることが確認された</li>
+          <li><strong>コスト・性能バランス:</strong> Sonnet 5・Haiku 4.5 は価格帯とレスポンス速度を重視したモデルとして引き続き大多数のユーザーに推奨されている。エンタープライズ向けには Opus 5・Fable 5 の使い分けが推奨</li>
+          <li><strong>今後の展開:</strong> Claude Code の自動継続機能と組み合わせることで、長時間の自律エージェントタスクをより効率的に実行できる環境が整いつつある。次期 Haiku 系モデルについては情報が乏しく続報待ち</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/18）:</strong> OpenAI Codex が <strong>Linux デスクトップ版（Ubuntu・Debian・Fedora）のプレビューを開始</strong>。GPT-5.6 Sol は Terminal-Bench 2.1 で <strong>88.8%</strong> を達成（Claude Sonnet 5 比較参考値: ~91%台）。Google・Meta はマルチエージェントフレームワークの発表を週内に控えているとの情報。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex — Linux デスクトップアプリ（Ubuntu / Debian / Fedora）プレビュー開始・プラグイン拡充・会話セクション持続化</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Aug 2026</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia — OpenAI Codex (AI agent)</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually.ai — Codex Statistics 2026</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Linux デスクトップ:</strong> Ubuntu・Debian・Fedora 向けのネイティブデスクトップアプリのプレビュー版が公開された。これまで macOS と Web のみだった Codex がクロスプラットフォーム展開に本格移行する節目となる</li>
+          <li><strong>プラグインサポート拡充:</strong> サードパーティ製プラグインの審査・掲載が加速。データベース接続・クラウドインフラ操作・API テストなど実務向けプラグインが追加された</li>
+          <li><strong>会話セクション持続化:</strong> セッションをまたいで特定の会話セクション（コンテキストブロック）を保持できる機能が追加。プロジェクトの継続作業で毎回コンテキストを渡し直す手間が省ける</li>
+          <li><strong>approve-for-me CLI フラグ:</strong> 繰り返し操作の承認を自動化する CLI フラグが正式追加。CI/CD との組み合わせで完全自動化フローの構築が容易になった</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 Sol のベンチマーク詳細 — Terminal-Bench 88.8% / SWE-Bench Pro 64.6% / Coding Agent Index 80</div>
+      <div class="card-meta"><span class="badge">OpenAI / Benchmark</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/codex-statistics/">Gradually.ai — Codex Statistics 2026</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — AI Coding Agents 2026</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Terminal-Bench 2.1:</strong> 88.8% のスコアを記録。ターミナル操作・シェルスクリプト・ファイルシステム操作などのエージェント的タスクにおける実力を示す指標で、Claude Sonnet 5 の公表値（~91%台）とは約3ポイント差</li>
+          <li><strong>SWE-Bench Pro 64.6%:</strong> 実際のGitHub issue を解決するリアルワールドコーディングベンチマーク。Claude Opus 5・Fable 5 と競合する水準ながら、コスト効率で優位性を主張</li>
+          <li><strong>Coding Agent Index 80:</strong> Artificial Analysis が集計する総合コーディングエージェント指数で80点を記録。コスト・速度・精度のバランスが評価されている</li>
+          <li><strong>市場へのインパクト:</strong> 2026年7月9日に一般公開された GPT-5.6 Sol は OpenAI Codex のデフォルトモデルとなっており、高性能を低コストで提供する路線が Codex の採用拡大を後押ししている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">エージェント市場全体動向 — 2026年はエージェント元年として10億人超のユーザーに普及しつつある</div>
+      <div class="card-meta"><span class="badge">Market / Trend</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How Agents Are Transforming Work</a> · <a href="https://www.youtube.com/watch?v=z1ISq9Ty4Cg">YouTube — Inside OpenAI: 2026 is the Year of Agents</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>OpenAI の見立て:</strong> OpenAI は「2026年はエージェント元年」として、コーディング・文書作成・業務プロセス自動化の分野でエージェントが労働者1人分の出力を代替し始めたと主張している</li>
+          <li><strong>非開発者の取り込み:</strong> Codex + ChatGPT Work の合算1,000万ユーザーのうち、非開発者の成長率は前年同期比 137倍（個人）・189倍（組織）という急成長を記録している（Bloomberg 報道）</li>
+          <li><strong>課題:</strong> 「コンピューティングがボトルネックではない」とするOpenAIに対して、Anthropic・Google 陣営からは「モデルの信頼性と監査可能性こそが普及の鍵」という反論が強まっている。本日の Claude 障害はその議論を再燃させている</li>
+          <li><strong>週内の予定:</strong> Google・Meta がマルチエージェントフレームワーク関連の発表を週内に控えているとの情報があり、AI エージェント競争がさらに激化する見通し</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「大型アップデートのリリース直後に全モデル障害 — デプロイ工程の問題か？」</div>
+      <div class="card-meta"><span class="badge">Community / Outage</span><span class="card-source">Reddit r/ClaudeCode · r/ClaudeAI — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「新機能リリースと同日に全モデル障害というのは偶然とは思えない。デプロイパイプラインのロールバックテストが不十分では？」という投稿が急上昇し、上位コメントでも同様の見方が多数</li>
+          <li>「自動継続機能が追加されたのに、その機能を使えない状態になるという皮肉」という冗談交じりのコメントが1,000を超えるアップボートを集めた</li>
+          <li>「3日連続で障害。SLA を求める声が高まっている」というエンタープライズユーザーのコメントが注目を集め、「Anthropic は99.9%稼働率の公約を出すべき時では？」という議論に発展</li>
+          <li>一方「Claude Code の新機能（特にセッション自動継続）は試せた人々に好評で、障害さえなければ絶賛コメントで埋まっていたはず」という声も多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA「Anthropic が障害中、ローカル勢が輝く — DeepSeek V4 が"保険"として見直される」</div>
+      <div class="card-meta"><span class="badge">Open Source / Local LLM</span><span class="card-source">Reddit r/LocalLLaMA — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude 障害を受けて「ローカルモデルを持っていて本当に良かった」というスレッドが急浮上。DeepSeek V4 Q4_K_M を「非常時の保険」として活用した開発者の報告が多数集まった</li>
+          <li>「コーディング作業なら DeepSeek V4 で十分こなせた。API への依存リスクを改めて認識した」という声と「やはり Claude のプロンプト理解力には及ばない」という声が拮抗している</li>
+          <li>「クラウド API + ローカル LLM のハイブリッド戦略が正解。今日はその有効性が証明された日」というコメントが多くのリアクションを集め、具体的なセットアップ例の共有スレッドへ発展</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「2日連続障害・スペイン F/A-18 ドローン撃墜・AIエージェント依存社会のリスク」</div>
+      <div class="card-meta"><span class="badge">Philosophy / Risk</span><span class="card-source">Reddit r/MachineLearning · r/geopolitics — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「AI インフラが止まり、同じ日にスペインが NATO 史上初の対ロシアドローン撃墜を行った。AIと地政学リスクが交差する日だった」という哲学的なスレッドが話題に</li>
+          <li>「企業の業務がクラウド AI に依存するほど、障害・規制・地政学リスクによるダウンタイムが致命的になる。冗長化・マルチプロバイダー戦略が急務」という投稿が多数のアップボートを集めた</li>
+          <li>「ロールバック設計の話（CI/CDと障害）とドローン迎撃の話（AIと兵器自律性）をミックスして議論するスレッドが r/ML に出現するのは 2026 年らしい」という自嘲気味のコメントも上位に</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/18）の主要トピック:</strong> <strong>米・イラン停戦失効</strong>後にトランプ大統領がイランへの「降伏要求」 / <strong>スペイン軍の F/A-18 がルーマニア領空内でロシアのドローンを撃墜</strong>（NATO 史上初）/ ウクライナが 822 機のドローンをロシア全土に発射・モスクワへ 600 機超、7名死亡 / イスラエルがレバノンへの攻撃を激化 / ルーマニアが干ばつによるドナウ川水位低下で原発2号機を緊急停止
+    </div>
+    <div class="card">
+      <div class="card-title">トランプ大統領、停戦失効後にイランへ降伏要求 — フーシ派はサウジアラビア船を紅海で攻撃、ロシアタンカーがオマーン沿岸に座礁・原油流出</div>
+      <div class="card-meta"><span class="badge">US / Iran / Middle East</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/18/latest-news-bulletin-august-18th-2026-morning">Euronews 8/18 Morning</a> · <a href="https://www.justsecurity.org/154447/early-edition-august-18-2026/">Just Security — Early Edition Aug 18</a> · <a href="https://www.democracynow.org/2026/8/18/headlines">Democracy Now! — Aug 18 Headlines</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>トランプの降伏要求:</strong> 米・イラン停戦協定が8月17日に失効した翌日、トランプ大統領は「イランは無条件降伏か、さらなる制裁と軍事圧力を選択するかだ」と発言。一時停戦の延長を明確に否定した</li>
+          <li><strong>フーシ派の攻撃:</strong> イエメンのフーシ派が紅海でサウジアラビア籍の商船を再び攻撃したと主張。停戦失効を受け「封鎖強化」を宣言しており、エネルギー関連の海上輸送路への影響が懸念される</li>
+          <li><strong>ロシアタンカー座礁・原油流出:</strong> ロシア籍のタンカーがオマーン沖で座礁し、大量の原油が流出してオマーン沿岸の浜辺を汚染。国際的な環境問題に発展しつつある</li>
+          <li><strong>原油市場:</strong> 停戦失効とロシアタンカー事故が重なり WTI 原油先物は$96 台に上昇。エネルギー安全保障リスクのプレミアムが積まれている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">スペインの F/A-18 がルーマニア領空でロシアドローンを撃墜 — NATO 史上初の対ロシア直接迎撃、ウクライナが 822 機のドローンを発射</div>
+      <div class="card-meta"><span class="badge">Russia / Ukraine / NATO</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/18/latest-news-bulletin-august-18th-2026-morning">Euronews 8/18 Morning</a> · <a href="https://www.democracynow.org/2026/8/18/headlines">Democracy Now! — Aug 18 Headlines</a> · <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>NATO 史上初の撃墜:</strong> ルーマニアの Galați 付近の上空に侵入したロシアのドローンを、NATO の空中警戒任務中のスペイン空軍 F/A-18 ホーネットが撃墜した。NATO 加盟国の航空機がロシアのドローンを直接撃墜した初の事例とされる</li>
+          <li><strong>ドローンの経路:</strong> ロシアのドローンはウクライナ上空を経由してモルドバから侵入し、ルーマニアの領空に達したと当局は説明。NATO は「自衛の権利の行使」と位置付けた</li>
+          <li><strong>ウクライナの攻撃:</strong> 同日、ウクライナ軍はロシア全土に向けて822機のドローンを発射。うち600機超がモスクワ方面に向かい、少なくとも7名が死亡・39名が負傷した。ウクライナ史上最大規模のドローン攻撃とされる</li>
+          <li><strong>ロシアの反応:</strong> ロシア外務省は「NATO の直接挑発行為」と強く非難し、スペイン大使を召喚。NATO サイドは「合法的な自衛行動」と主張しており、外交的緊張が急上昇している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエルがレバノン攻撃を激化 — クシュナーとネタニヤフが米国主導の15項目ガザ計画を協議</div>
+      <div class="card-meta"><span class="badge">Israel / Lebanon / Gaza</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/18/latest-news-bulletin-august-18th-2026-morning">Euronews 8/18</a> · <a href="https://www.justsecurity.org/154447/early-edition-august-18-2026/">Just Security — Early Edition Aug 18</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>レバノンへの攻撃激化:</strong> 国連がレバノン南部における暴力の「警戒すべき急増」を警告。イスラエル軍は週明けにかけてレバノン国境地帯への攻撃を強化しており、民間人への影響が拡大している</li>
+          <li><strong>ガザ交渉:</strong> ジャレッド・クシュナーがイスラエルのネタニヤフ首相と会談し、米国が提示した15項目のガザ計画について協議した。計画の詳細は非公開だが、人質交渉と停戦条件の枠組みが含まれているとされる</li>
+          <li><strong>人道状況:</strong> ガザ北部では食料・医療物資の搬入が依然として制限されており、国際援助機関は「危機的な人道状況が続いている」と訴えている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ルーマニアが原発2号機を緊急停止 — 干ばつでドナウ川が冷却必要水位を下回る</div>
+      <div class="card-meta"><span class="badge">Europe / Energy / Climate</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/18/latest-news-bulletin-august-18th-2026-morning">Euronews 8/18 Morning</a> · <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>緊急停止:</strong> ルーマニアは Cernavodă 原子力発電所の第2号炉の運転を停止した。干ばつの影響でドナウ川の水位が原子炉冷却に必要な水位を下回ったことが理由</li>
+          <li><strong>エネルギー供給への影響:</strong> ルーマニアは電力供給の一部を近隣国からの輸入で補う予定。欧州全体として干ばつによるエネルギー安定供給リスクが改めて浮き彫りになった</li>
+          <li><strong>気候変動との関連:</strong> 欧州中南部では今夏の記録的な干ばつが続いており、ギリシャでは西ナイル熱感染者が110人・死者9人に達した。気候変動がインフラ・公衆衛生に与える直接的なリスクとして注目されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Kate Douglass が女子50m自由形の世界新記録（23.49秒）— 環太平洋選手権の予選で樹立</div>
+      <div class="card-meta"><span class="badge">Sports / Swimming</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li>米国の水泳選手 Kate Douglass が環太平洋選手権（Pan Pacific Championships）の予選ヒートで女子50メートル自由形の世界新記録 <strong>23.49秒</strong> を樹立した</li>
+          <li>従来の世界記録を0.1秒以上更新する快挙。決勝での記録更新の可能性もあり、世界水泳界で大きな話題となっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を"エージェント組織の統治"として読む」— berrylove</div>
+      <div class="card-meta"><span class="badge">Analysis / AI Governance</span><span class="card-source"><a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita — berrylove</a> — 2026.08.18</span></div>
+      <div class="card-body">
+        <ul>
+          <li>本日公開された注目記事。GitLab MR URL サポート・Compliance API 拡充・Linux cgroup 対応の3点を「個別の機能追加ではなく、エージェントが組織内で動く際の統治（ガバナンス）フレームワークの整備」として体系的に解説した論考</li>
+          <li>「コードを書く AI から、組織の中で責任を持って動く AI へ」という視点が共感を呼び、エンジニアリングマネージャーや CTO から多くのブックマークを集めている</li>
+          <li>本日発生した Claude Code の大規模障害のニュースも追記予定とのこと。ガバナンス設計と可用性は表裏一体であるという問題提起が読者の議論を促している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「"Claude Code か Codex か"の争点は賢さじゃなかった — 開発者記事3,250件と生の声で見た【2026/08】」— tasklog</div>
+      <div class="card-meta"><span class="badge">Comparison / Research</span><span class="card-source"><a href="https://qiita.com/tasklog/items/f91edb0337ad49d20a5c">Qiita — tasklog</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Qiita・Zenn の Claude Code / Codex 関連記事 3,250件を分析した大型リサーチ記事。「モデルの賢さ」より「ツール統合のしやすさ」「既存ワークフローへの組み込みコスト」が選択の決め手になっていると結論付けた</li>
+          <li>Claude Code は「CLAUDE.md 設定の柔軟性」「MCP サーバー連携の豊富さ」が支持を集める一方、Codex は「ChatGPT との統合」「Linux デスクトップ対応（本日開始）」が評価されているという具体的な裏付けを提示</li>
+          <li>記事内の「2ツールを使い分けるハイブリッド派が最も生産性が高い」という知見が特に反響を呼んでおり、実践的なセットアップ例として Zenn スクラップへの展開が期待されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月18日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: SQ Magazine · MindStudio · AI Weekly · Releasebot · Gradually.ai · Euronews · Just Security · Democracy Now! · Wikipedia Current Events · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-17/index.html">前版（2026-08-17）</a></p>
+</footer>
+</body>
+</html>
