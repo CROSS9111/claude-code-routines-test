@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月20日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code に「Concise」出力スタイルが追加・ANTHROPIC_DEFAULT_MODEL 環境変数対応 / 米・カナダ暫定合意（鉄鋼25%・自動車15%）でトランプが停止延長 / イスラエル・トルコ緊張が継続、米が三者協議仲介へ / ハワイに熱帯暴風雨ラーラが接近、グアテマラでフエゴ火山噴火</p>
+  <p class="date">2026年8月20日（木）&nbsp;|&nbsp;<a href="../2026-08-19/index.html">前版（8/19）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/20）の最重要ハイライト:</strong> Claude Code に<strong>「Concise」出力スタイルが追加</strong>（/config の Output style から選択可）。前置き・ナレーションをスキップして結果から先に返す新モード。あわせて<strong>ANTHROPIC_DEFAULT_MODEL 環境変数</strong>でセッション起動時のデフォルトモデルを固定できるようになった。昨日から通常使用量枠に戻っているため、Max プランやAPIへの移行を検討するユーザーが増加中。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code に「Concise」出力スタイルを追加 — 前置きをスキップして結果を先頭に返す新モード</div>
+      <div class="card-meta"><span class="badge">Claude Code / UX</span><span class="card-source">Source: Claude Code changelog · Releasebot — Claude Code Aug 2026 — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新しい出力スタイル:</strong> /config の「Output style」から「Concise」を選択すると、Claude は前置き・途中の進捗ナレーション・締めのまとめをスキップし、結果から先頭に返す。作業は同等の精度で行われ、出力の冗長さだけが削減される</li>
+          <li><strong>背景:</strong> 「指輪物語の長さのステータス更新」というユーザーの長年の苦情に正面から対応した機能。「作業中です…」「確認しています…」といった不要なナレーションを省けるため、CIパイプラインや自動化スクリプトへの組み込みが格段に楽になる</li>
+          <li><strong>設定方法:</strong> セッション中に /config を開き、Output style → Concise を選択するだけ。既存の設定はそのまま維持され、いつでも切り替えが可能。CLAUDE.md に設定を書いておくことでチーム全体へ適用できる</li>
+          <li><strong>実用例:</strong> ルーティン・GitHub Actions ワークフロー・プレビルドスクリプトなど、ログ量を抑えたい用途で特に有効。エンタープライズ利用者からの要望が高かった機能のひとつ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ANTHROPIC_DEFAULT_MODEL 環境変数が追加 — セッション起動時のデフォルトモデルを固定できるように</div>
+      <div class="card-meta"><span class="badge">Claude Code / Config</span><span class="card-source">Source: Claude Code changelog · Releasebot — Claude Code Aug 2026 — 2026.08.19</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>概要:</strong> ANTHROPIC_DEFAULT_MODEL 環境変数を設定すると、新しいセッションが起動する際にそのモデルがデフォルトとして使用される。/model コマンドでの手動切り替えは引き続き可能で、その設定は再起動をまたいで保持される</li>
+          <li><strong>優先順位:</strong> 環境変数 → /model の手動選択（上書き・永続）という優先順位。チームの CI/CD 環境や自動化スクリプトで「常に Sonnet 5 を使う」「本番は Opus 5 のみ」などの制約を環境変数として外出しにできる</li>
+          <li><strong>セット方法の例:</strong> .env ファイルや Docker コンテナの環境変数として ANTHROPIC_DEFAULT_MODEL=claude-sonnet-5 のように設定するだけ</li>
+          <li><strong>合わせて追加:</strong> クロスセッションのアイドル通知機能も追加され、複数セッションが並走している際に非アクティブなセッションの状態を把握しやすくなった</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Auto モードが Pro・Max・Team のデフォルトに（8/14 完全展開）— Auto モードの安全性データも公開</div>
+      <div class="card-meta"><span class="badge">Claude Code / Auto Mode</span><span class="card-source">Source: Releasebot — Claude Code Aug 2026 · ExplainX — Claude Usage Limits 2026 — 2026.08.07 発表 / 08.14 展開完了</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>デフォルト化の経緯:</strong> 8月7日発表・8月14日に Pro・Max・Team プランへの展開が完了。Enterprise と API は引き続きオプトイン</li>
+          <li><strong>安全性データ:</strong> 1,053 名を対象とした調査では、手動レビューで危険なコマンドを検出できた割合が 13.6% だったのに対し、Auto モードの分類器は 89% を検出。有害アクション率も手動承認セッションの 6.3% から Auto モード導入後は 2.4% に低下</li>
+          <li><strong>セッション継続機能:</strong> Claude Code が claude.ai の使用量制限リセット時にセッションを自動で継続する機能も追加</li>
+          <li><strong>セキュリティ強化:</strong> Windows NT-namespace パスを拒否するようになり、NTLM 認証情報漏洩攻撃ベクタに対してファイルアクセスが強化された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/20）:</strong> Codex が<strong>エージェントプラットフォームとして本格整備</strong>（Slack 統合・SDK・管理者コントロール）。Claude Mythos 5 が BenchLM コーディングリーダーボードで 80.1 の首位を維持。Terminal-Bench 2.1 では GPT-5.6 Sol が 89.5% でリード、Claude Opus 5 が 89.1% で追う。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex がエンジニアリングエージェントプラットフォームへ脱皮 — Slack 統合・SDK・管理者コントロールを整備</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex</span><span class="card-source">Source: MorphLLM — Best AI Coding Agents 2026 · NeuralCoreTech — AI Coding Agents Aug 2026 — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>プラットフォーム化:</strong> Codex はエディタ・ターミナル・クラウドをまたぐエンジニアリングエージェントプラットフォームとして再定義。Slack ワークスペースから直接呼び出し・SDK による組み込み・管理者コントロールでの承認フロー設定が整備された</li>
+          <li><strong>GPT-5.6 Sol をデフォルトに:</strong> 7月9日に GA となった GPT-5.6 Sol が Codex のデフォルトモデルとして採用</li>
+          <li><strong>MCP 2026-07-28 対応:</strong> 最新 MCP プロトコルに対応し、Claude Code ユーザーが構築した MCP 環境が Codex でもそのまま動作する</li>
+          <li><strong>Claude Code との差別化:</strong> 承認自動化フラグによる完全自律パイプラインの構築しやすさと、ChatGPT Work との統合が Codex の強みとして評価されつつある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">BenchLM・Terminal-Bench 最新リーダーボード — Claude Mythos 5 が首位、GPT-5.6 Sol が Terminal 系で逆転</div>
+      <div class="card-meta"><span class="badge">Benchmark / Models</span><span class="card-source">Source: NeuralCoreTech · MorphLLM — Aug 2026 — 2026.08.02 更新</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>BenchLM コーディング:</strong> Claude Mythos 5（80.1）→ Claude Fable 5（79.8）→ GPT-5.6 Sol（78.4）。総合的なコーディングタスクでは Claude ファミリーが上位を占めている</li>
+          <li><strong>Terminal-Bench 2.1:</strong> GPT-5.6 Sol（89.5%）→ Claude Opus 5（89.1%）。ターミナル操作・シェルスクリプト生成の特化ベンチマークでは GPT-5.6 Sol がわずかにリード</li>
+          <li><strong>業界の評価軸の変化:</strong> 「モデル単体の性能よりも、エコシステム・ツール連携・エンタープライズ対応が採用の決め手になっている」という見方が強まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント市場 2026 — 「ハイブリッド戦略」が最有力、単一ツール依存は少数派に</div>
+      <div class="card-meta"><span class="badge">Market / Strategy</span><span class="card-source">Source: Firecrawl — Best AI Coding Agents 2026 · CodePick — AI Coding Agents Roadmap 2026 — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>市場の変化:</strong> AI コーディングエージェントは「面白いデモ」から「チームダイナミクスを実際に変えるもの」へと移行</li>
+          <li><strong>ハイブリッド戦略の定着:</strong> 「2ツール以上を使い分けるハイブリッド戦略が最も生産性が高い」という知見が広まり、「複数エージェントを並走させる」実践が標準になりつつある</li>
+          <li><strong>学習曲線の課題:</strong> Claude Code は CLAUDE.md・サブエージェント・フック・スラッシュコマンドを習得したユーザーが生産性の大幅向上を報告する一方、オートコンプリートのように使うユーザーは frustrated で離脱しやすい傾向が続いている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「使用量ブースト終了翌日 — 通常枠に戻った実感を報告するスレッド」</div>
+      <div class="card-meta"><span class="badge">Community / Usage</span><span class="card-source">Reddit r/ClaudeCode — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li>昨日（8/19）でブーストが終了したことを受け、「通常枠になって最初にぶつかった制限」を報告するスレッドが急浮上。「朝イチで制限に当たった」「Max 20x に移行した」「API に完全移行する決意ができた」などの声が集まっている</li>
+          <li>新機能「Concise モード」の話題も活発。「やっと前置きのないレスポンスが来た」「CI ログが格段に読みやすくなった」という好意的な声が多数</li>
+          <li>ANTHROPIC_DEFAULT_MODEL 環境変数の話題もトレンド入り。「.env で固定したら誤ってモデルを変えるミスがなくなった」「Dockerfile に組み込んで本番環境を統一できた」という実践報告が続々と寄せられている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Auto モードの安全性データが公開 — 手動承認 13.6% vs 分類器 89% の検出率」</div>
+      <div class="card-meta"><span class="badge">Community / Safety</span><span class="card-source">Reddit r/MachineLearning · r/AIAlignment — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Anthropic が Auto モードの安全性調査データを公開したことが r/MachineLearning で大きな議論を呼んでいる</li>
+          <li>「有害アクション率が 6.3% → 2.4% に低下した」という結果について、懐疑的な声と「それでも 2.4% は現実的なリスクとして大きい」という指摘の両方が上がっている</li>
+          <li>「Auto モードが本当に安全ならば、Enterprise でもデフォルトにすべき」という意見と「Enterprise こそ段階的導入が必要」という反論が対立している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「Codex のマルチエージェント API とフレームワーク連携 — LangGraph・AutoGen との比較スレッド」</div>
+      <div class="card-meta"><span class="badge">Community / Tools</span><span class="card-source">Reddit r/programming · r/LocalLLaMA — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI Codex のネイティブマルチエージェント API が GA になったことで、「LangGraph や AutoGen で組んでいたオーケストレーション層を Codex ネイティブに移行すべきか」という議論がトレンド入り</li>
+          <li>コンセンサスは「シンプルなタスク分解なら Codex ネイティブで十分、複雑なグラフ構造が必要な場合は依然として LangGraph が有利」という棲み分けに収束しつつある</li>
+          <li>Claude Code の tmux マルチエージェントパターンとの比較も盛んで、「API 側から構築する vs エージェントに自律的に分割させる、というアーキテクチャの思想の違い」が注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/20）の主要トピック:</strong> <strong>イスラエル・トルコ・シリア三角関係の緊張が継続</strong>、米国が三者協議仲介へ / <strong>米・カナダ関税交渉が進展</strong>、鉄鋼25%・自動車15% で暫定合意の形成 / <strong>ハワイに熱帯暴風雨ラーラ</strong>が接近 / <strong>グアテマラでフエゴ火山が噴火</strong> / カナダ BC 州オカナガン火災で 2 万人避難
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエル・トルコ・シリア三角緊張が継続 — 米国が三者協議を仲介</div>
+      <div class="card-meta"><span class="badge">Israel / Turkey / Syria</span><span class="card-source">Source: The National · FDD · Axios — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>状況:</strong> 8月17-18日夜のイスラエルによるシリア Abu al Duhur 空軍基地への空爆以降、イスラエル・トルコ双方が非難を継続</li>
+          <li><strong>米国の仲介:</strong> 米国特使（トーマス・バラック）は攻撃を「不必要なエスカレーション」と非難しつつ、米・イスラエル・シリアの三者協議の仲介に乗り出している</li>
+          <li><strong>地政学的背景:</strong> 2024年12月のアサド政権崩壊後、トルコは新政権（HTS 主導）と急接近。イスラエルは南部バッファーゾーンと北部の空域を維持しようとしており、両者の利害が直接衝突している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米・カナダ関税交渉が進展 — 鉄鋼アルミ25%・自動車15%で暫定的な枠組み</div>
+      <div class="card-meta"><span class="badge">US / Canada / Trade</span><span class="card-source">Source: NPR · Bloomberg · CBC — 2026.08.19〜20</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>合意の概要:</strong> 鉄鋼・アルミ関税を 50% → 25% に半減、自動車輸出関税を 15% に引き下げる暫定的な枠組みが固まりつつある</li>
+          <li><strong>今後の焦点:</strong> 3日間の停止は今週金曜日で期限切れ。最終合意に至らない場合は自動的に 50% 関税が再発動される</li>
+          <li><strong>市場への影響:</strong> カナダドルが続伸。トロント証券取引所のエネルギー・素材セクターが上昇</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ハワイに熱帯暴風雨ラーラが接近 / グアテマラでフエゴ火山が噴火</div>
+      <div class="card-meta"><span class="badge">Natural Disaster</span><span class="card-source">Source: Britannica — Major Events of 2026 — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ハワイ:</strong> 知事がトロピカルストーム「ラーラ」の上陸を前に非常事態を宣言。強風・豪雨・高潮に加え、海岸浸食と洪水が懸念されている</li>
+          <li><strong>グアテマラ:</strong> CONRED はフエゴ火山の大規模噴火を受け、全国オレンジ警戒を発令。周辺村落から住民の避難が始まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カナダ BC 州オカナガンで大規模火災 / インドの Gen Z「ゴキブリ運動」が台頭</div>
+      <div class="card-meta"><span class="badge">Global</span><span class="card-source">Source: Britannica — Major Events of 2026 — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>BC 州オカナガン火災:</strong> 約2万人が強制避難。州政府は非常事態宣言を発令し、連邦政府に追加支援を要請した</li>
+          <li><strong>インド Gen Z「ゴキブリ運動」:</strong> 教育政策・高い若者失業率への不満を背景に、Gen Z を中心とした政治運動が台頭</li>
+          <li><strong>ブラジルアマゾン:</strong> 2025年8月〜2026年7月の森林破壊面積が 2,874 km²（前年比 37% 減）となり、衛星監視開始以来の最低値を記録</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code 開発者が押さえておきたい Anthropic ニュース（2026-08-20）」— homhom44</div>
+      <div class="card-meta"><span class="badge">News Summary / Claude Code</span><span class="card-source"><a href="https://qiita.com/homhom44/items/7ef9024b07a2c5a57a74">Qiita — homhom44</a> — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code 関連ニュースを毎週まとめる homhom44 氏のシリーズ記事の最新号（8/20 付け）。本日追加された「Concise 出力スタイル」と「ANTHROPIC_DEFAULT_MODEL 環境変数」を中心に整理</li>
+          <li>「Concise モードで CI ログが激減した」という実践報告と、「ANTHROPIC_DEFAULT_MODEL を Dockerfile に書くサンプル」が特に参考になると評判</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を『エージェント組織の統治』として読む」— berrylove</div>
+      <div class="card-meta"><span class="badge">Analysis / Claude Code</span><span class="card-source"><a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita — berrylove</a> — 2026.08</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Auto モードのデフォルト化・セルフホスト環境のパブリックベータ・Compliance API の拡充という8月の3大アップデートを「AIエージェントの組織内統治」という視点で読み解く論考記事</li>
+          <li>「Anthropic は個人ユーザーの体験を最適化するフェーズから、組織として AI エージェントをガバナンスするインフラを整えるフェーズに移行した」という主張が多くの共感を呼んでいる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— fuyunoki（継続人気）</div>
+      <div class="card-meta"><span class="badge">Guide / Claude Code</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita — fuyunoki</a> — 2026.08（継続人気）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ネイティブインストーラーへの移行手順・CLAUDE.md テンプレート・セルフホスト環境の設定手順が充実している定番ガイド記事</li>
+          <li>本日の「Concise モード」追加を受け、筆者がすでに記事を更新中とのコメントあり</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月20日（木）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code changelog · Releasebot · ExplainX · MorphLLM · NeuralCoreTech · Firecrawl · The National · FDD · Axios · NPR · Bloomberg · CBC · Britannica</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-19/index.html">前版（2026-08-19）</a></p>
+</footer>
+</body>
+</html>
