@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">米が対イラン「経済的Dデー」を予告、イランは「壊滅的な反撃」を警告 / キーウにロシア軍大規模攻撃（17名死亡、ルーマニア・モルドバへ波及）/ ソマリア海賊がイラン影のフリートタンカーを拉致 / Codex が Claude Code・Cursor からの設定インポート機能（/import）を追加</p>
+  <p class="date">2026年8月21日（金）&nbsp;|&nbsp;<a href="../2026-08-20/index.html">前版（8/20）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/21）のハイライト:</strong> 今週追加された<strong>Concise モード</strong>と<strong>ANTHROPIC_DEFAULT_MODEL 環境変数</strong>の実運用レポートがコミュニティで続々。Claude Code に<strong>GitLab MR バッジ</strong>がフッター・ステータスラインに追加され、GitLab 利用者の可視性が向上。週末を前に月次リリースノートのまとめ記事も複数公開されている。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code に GitLab MR バッジを追加 — フッター・ステータスラインで MR 状態をリアルタイム表示</div>
+      <div class="card-meta"><span class="badge">Claude Code / GitLab</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Aug 21, 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Aug 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>概要:</strong> Claude Code のフッターとステータスラインに GitLab のマージリクエスト（MR）バッジが追加された。これまで GitHub PR バッジのみが表示されていたが、GitLab 利用者も MR の状態（Open / Draft / Approved / Merged）をセッション内でリアルタイムに確認できるようになった</li>
+          <li><strong>対応環境:</strong> GitLab.com および GitLab Self-Managed（最新バージョン）に対応。ブランチが MR に紐づいていると自動検出され、バッジが表示される。既存の GitHub バッジと同じデザインで一貫した UI を維持している</li>
+          <li><strong>GitLab 利用者からの反応:</strong> GitHub 中心だった Claude Code のエコシステムで、GitLab の Enterprise ユーザーからの要望が多かった機能。「ようやく GitLab でも同等の体験が得られる」という歓迎の声が多数</li>
+          <li><strong>Concise モード・ANTHROPIC_DEFAULT_MODEL との組み合わせ:</strong> 今週追加された3つの機能（Concise モード、ANTHROPIC_DEFAULT_MODEL 環境変数、GitLab MR バッジ）が揃ったことで、「エンタープライズ向けのユースケースが一気に広がった」という評価が広まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「Concise モード」導入から丸1日 — 実運用レポートまとめと注意点</div>
+      <div class="card-meta"><span class="badge">Claude Code / UX</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Claude Code News Aug 2026 — STARTUP EDITION</a> · <a href="https://claudelog.com/claude-news/">ClaudeLog — Aug 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>好評のユースケース:</strong> CI ログの削減（「1/3 以下になった」という報告が複数）、GitHub Actions ワークフローへの組み込み、長時間バックグラウンド処理のステータス確認。特に「進捗ナレーションなしで結果だけ返す」ことへの需要が大きかったことが実証された</li>
+          <li><strong>Verbose モードへの回帰例:</strong> 一方で、デバッグ作業・新しい問題の探索・コードレビューなど「思考プロセスを追いたい場面」では Verbose の方が適していると感じるユーザーも多く、「タスクによって使い分けるのがベスト」という知見が共有されている</li>
+          <li><strong>チーム導入の実践:</strong> CLAUDE.md に <code>output_style: concise</code> を記述してチーム全体に適用する方法が複数記事で紹介されており、特に Startup・スモールチームからの採用報告が目立つ</li>
+          <li><strong>1つの注意点:</strong> Concise モードでは途中経過が省かれるため、長時間タスクで「本当に動いているのか」が確認しにくいという声もある。定期的なサブエージェント報告と組み合わせるか、/status コマンドで進捗確認するワークフローを構築することが推奨されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Opus 5 リリース（7/24）から約1ヶ月 — 開発者の実評価と使い分けの知見が蓄積</div>
+      <div class="card-meta"><span class="badge">Model / Opus 5</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents 2026</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Aug 21, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>性能:</strong> Frontier-Bench v0.1 で Opus 4.8 の2倍のパフォーマンスを達成。OSWorld 2.0 では Fable 5 を超えつつ、Fable 5 の1/3 のコストで利用可能。Terminal-Bench 2.1 では 89.1% で GPT-5.6 Sol（89.5%）をわずかに下回る</li>
+          <li><strong>使い分けの定着:</strong> 約1ヶ月の実運用を経て「アーキテクチャ設計・複雑なリファクタリング・セキュリティ分析は Opus 5、日常的なコーディング・PR レビュー・ドキュメント生成は Sonnet 5」という使い分けが多くのチームで定着しつつある</li>
+          <li><strong>ANTHROPIC_DEFAULT_MODEL との組み合わせ:</strong> 今週追加された ANTHROPIC_DEFAULT_MODEL 環境変数を使って「本番作業はデフォルト Opus 5、開発検証はデフォルト Sonnet 5」をリポジトリごとに設定するパターンが紹介されており、コスト管理の実践例として注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/21）:</strong> <strong>Codex が Claude Code・Cursor からの設定インポート機能（/import）を追加</strong>、既存ユーザーの移行コストを大幅に削減。インタラクティブエージェントダッシュボード・作業ディレクトリコマンド・Vim 強化など複数の改善も同時リリース。「ツール間の相互運用性」が AI コーディングエージェント競争の新たな主戦場に。
+    </div>
+    <div class="card">
+      <div class="card-title">Codex が /import コマンドを追加 — Claude Code・Cursor から設定・最近のチャット履歴を取り込み可能に</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Aug 2026</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>機能概要:</strong> Codex CLI に /import コマンドが追加された。Claude Code および Cursor でサポートされているセットアップ（設定ファイル・プロジェクト構成・エージェント設定）と最近のチャット履歴を Codex にインポートできる</li>
+          <li><strong>移行コストの削減:</strong> これまで「Claude Code から Codex に移行したいが、設定を一から構築し直すのが大変」という声が多かった。/import により既存の CLAUDE.md 形式の設定ファイルや会話コンテキストの一部を引き継げるようになり、ハイブリッド利用のハードルが下がった</li>
+          <li><strong>業界的な意味:</strong> Claude Code・Cursor というライバルの設定フォーマットを公式にサポートする形でのインポート機能追加は、「ツール間の相互運用性」を競争優位として明示的に打ち出す戦略と見られている</li>
+          <li><strong>同時リリースの改善:</strong> インタラクティブエージェントダッシュボード・新しい作業ディレクトリコマンド・既存セッションへのキューイングメッセージ・強化された Vim 編集・拡張された codex doctor 診断・セッションリカバリとリアルタイム再接続の改善も同時リリース</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.6 Sol の採用状況 — Codex ユーザーの 80.6% が「30分超の作業」を週1回以上依頼</div>
+      <div class="card-meta"><span class="badge">OpenAI / GPT-5.6 Sol</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>利用統計:</strong> Codex 個人ユーザーの 80.6% が週1回以上「30分超の人間作業に相当するタスク」を依頼。70.2% が「1時間超」、25.6% が「8時間超」に相当する依頼を行っている</li>
+          <li><strong>GPT-5.6 Sol の性能:</strong> Terminal-Bench 2.1 で 88.8%、SWE-Bench Pro で 64.6% を記録。7月9日の GA 以来、3つのティア（Sol・Terra・Luna）で提供されている</li>
+          <li><strong>企業利用:</strong> Codex のアウトプットトークンが法人顧客全体のトークン消費の 64% を占めるまでに成長。OpenAI 社内でも全部門がメイン AI ツールとして採用している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェントの「相互運用性戦争」— インポート・エクスポート機能が競争軸に</div>
+      <div class="card-meta"><span class="badge">Market / Strategy</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新たな競争軸:</strong> Codex の /import 機能追加により、AI コーディングエージェント間の競争が「どれだけ乗り換えやすいか（または乗り換えさせないか）」という相互運用性の次元に突入した</li>
+          <li><strong>Claude Code 側のアドバンテージ:</strong> CLAUDE.md という設定ファイルフォーマットが他ツールのインポート対象になったことは、Claude Code の設定フォーマットが業界標準として機能し始めた証拠ともいえる</li>
+          <li><strong>MCP 標準の役割:</strong> 2026-07-28 の MCP 最新仕様に双方が対応しており、ツール間でコンテキストを共有するインフラとして MCP が機能し始めている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「Codex が /import を出してきた — Claude Code ユーザーはどう見る？」</div>
+      <div class="card-meta"><span class="badge">Community / Interop</span><span class="card-source">Reddit r/ClaudeCode · r/programming — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex の /import コマンド（Claude Code からの設定インポート対応）がリリースされたことで、r/ClaudeCode に「これって実質 Claude Code のエコシステムが業界標準になった証拠じゃないか？」というスレッドが立ち、上位コメントを席巻している</li>
+          <li>「どちらのエコシステムが引き寄せているか（attracting）ではなく、どちらが吸い込まれているか（absorbing）の問題だ」というコメントが支持を集めている</li>
+          <li>一方「Codex は /import を入口にして独自機能でロックインするつもり」という懐疑的なコメントも上位に入っており、相互運用性の「罠」を指摘する声も根強い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「Codex 統計 — 週 500 万ユーザー・80.6% が週1回以上 30 分超タスクを依頼」</div>
+      <div class="card-meta"><span class="badge">Community / Data</span><span class="card-source">Reddit r/programming · r/MachineLearning — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI が公開した Codex 統計が r/programming のトップに浮上。「AI エージェントが単なるオートコンプリートから本格的な非同期タスク実行ツールへと転換したことを示すデータ」として議論を呼んでいる</li>
+          <li>「25.6% が8時間超相当のタスクを依頼している」という数字に対し、「これは AI に丸投げしているということか、それとも監視下での協働か」という定義論が活発</li>
+          <li>Claude Code 利用者からは「バックグラウンドで走らせている間の体験が Claude Code の方が良い（特にサブエージェントのログ可読性）」という比較コメントが多数投稿されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial「AI ツールと地政学 — 米イラン経済戦争で AI エージェントの供給リスクを懸念する声も」</div>
+      <div class="card-meta"><span class="badge">Community / Geopolitics</span><span class="card-source">Reddit r/artificial · r/geopolitics — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>今日の「米イラン経済Dデー」報道を受け、r/artificial に「地政学的不安定が AI クラウドサービスのサプライチェーンに与えるリスク」を議論するスレッドが登場している</li>
+          <li>「GPU 製造に必要なレアメタルの調達ルートが中東の混乱で不安定化する」「ホルムズ海峡封鎖シナリオでデータセンターの電力コストが上昇する」といった具体的なリスクシナリオが議論されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">米が対イラン「経済的Dデー」を予告 — ベセント財務長官「史上最大の経済的孤立」、イランは「壊滅的な反撃」を警告</div>
+      <div class="card-meta"><span class="badge">Iran / US / War</span><span class="card-source">Source: NBC News · OPB · Fox News — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ベセント財務長官の発言:</strong> 「これは世界史上最大規模の協調的な経済的孤立になる」と CNBC に語り、詳細を週明けに発表すると予告。二次制裁の大幅強化が含まれる見通し</li>
+          <li><strong>バンス副大統領の発言:</strong> 「戦争は経済圧力という新段階に入った」と表明。軍事行動から経済戦争への重心移動が明確に</li>
+          <li><strong>イランの反応:</strong> 「どんな新たな脅威にも壊滅的な形で対応する」と外務省が声明。ホルムズ海峡の封鎖オプションを「排除しない」と改めて示唆</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">キーウにロシア軍の大規模攻撃 — 17名死亡・複数の空襲警報、ルーマニア・モルドバへの波及も</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia</span><span class="card-source">Source: CNN · OCHA — 2026.08.20〜21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>8月20日夜から21日にかけてキーウに大規模な攻撃。弾道ミサイル複数発が着弾し、少なくとも17名が死亡・約50名が負傷</li>
+          <li>一部のミサイル・ドローンがルーマニアおよびモルドバの領空を通過。NATO 加盟国への侵犯として外交的問題に</li>
+          <li>ゼレンスキー大統領が追加武器と制裁を国際社会に要請</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ソマリア海賊がイラン影のフリートタンカー「SIBU 1」を拉致 — 4日で2件目、今年15件目</div>
+      <div class="card-meta"><span class="badge">Piracy / Maritime</span><span class="card-source">Source: Al Jazeera · CNBC · Maritime Executive — 2026.08.20</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ソマリア海賊がイランの「影のフリート」に属するタンカー「SIBU 1」をイエメン東部沖で拿捕。武装した海賊6名が乗船し船体を掌握した</li>
+          <li>米・イラン戦争に伴う海軍資源の集中投入により、海賊対処に割けるリソースが減少したことが背景</li>
+          <li>ソマリア沖の海上保険料率が再び上昇傾向に</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米・カナダ関税交渉 — 本日が停止期限、最終合意なければ 50% 関税が自動復活</div>
+      <div class="card-meta"><span class="badge">US / Canada / Trade</span><span class="card-source">Source: CBC · Bloomberg — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>8月19日の土壇場停止（3日間）が本日期限切れ。最終合意が成立しない場合、鉄鋼・アルミへの 50% 関税が自動的に復活する</li>
+          <li>鉄鋼アルミを 25%・自動車輸出を 15% に引き下げる方向で交渉中</li>
+          <li>カーニー首相が「週末中の最終合意を目指す」と表明</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ブラジルアマゾン森林破壊が過去最低 / ハワイ熱帯暴風雨ラーラ上陸 / グアテマラ・フエゴ火山噴火継続</div>
+      <div class="card-meta"><span class="badge">Environment / Natural Disaster</span><span class="card-source">Source: Britannica · WNGB — 2026.08.21</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ブラジルアマゾンの森林破壊面積が 2,874 km²（前年比 37% 減）と衛星監視開始以来の最低値を記録</li>
+          <li>熱帯暴風雨ラーラがハワイ島に接近・上陸。島内で停電や浸水が発生</li>
+          <li>グアテマラ・フエゴ火山の噴火が継続。周辺2,000人超が避難済み</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「【毎日更新】Claude Code 関連で今伸びているQiita記事 TOP20 急上昇ランキング」— 4q_sano</div>
+      <div class="card-meta"><span class="badge">Ranking / Claude Code</span><span class="card-source"><a href="https://qiita.com/4q_sano/items/0b9682ef6589520974e0">Qiita — 4q_sano</a> — 2026.08.21 更新版</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「ClaudeCode」タグ付き記事の急上昇ランキングを毎日自動集計して更新する記事。本日版では Concise モード、ANTHROPIC_DEFAULT_MODEL、GitLab MR バッジに関する記事が上位を独占</li>
+          <li>4q_sano 氏は自動集計スクリプトを GitHub Actions で構築しており、スクリプト自体も Claude Code で作成・保守しているという</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を『エージェント組織の統治』として読む」— berrylove</div>
+      <div class="card-meta"><span class="badge">Analysis / Claude Code</span><span class="card-source"><a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita — berrylove</a> — 2026.08（継続人気）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>継続人気の論考記事。筆者がコメント欄に「GitLab MR バッジも同じ文脈で読める」という補足を追記済み</li>
+          <li>Codex の /import 機能についての考察コメントも追加されており、「Anthropic の CLAUDE.md フォーマットが他社にインポートされる形で業界標準化が進んでいる」という議論が活発</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Codex の /import で Claude Code 設定を移行してみた — 実際どこまで引き継げるか」</div>
+      <div class="card-meta"><span class="badge">Practice / Codex × Claude Code</span><span class="card-source">Zenn — 2026.08.21 新着</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex の /import 機能をリリース当日に試した実践記事。CLAUDE.md の主要設定はインポートされるが、サブエージェント設定・フック・MCP 固有設定は手動で再設定が必要なケースが多い</li>
+          <li>「両方を常時使うハイブリッド戦略を試す最初の一歩として /import は有効」という結論で注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月21日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: AI Agent Store · Claude Code changelog · Releasebot · MorphLLM · Gradually · Axios · NBC News · OPB · Fox News · CNN · OCHA · Al Jazeera · CNBC · Maritime Executive · CBC · Bloomberg · Britannica</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-20/index.html">前版（2026-08-20）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</footer>
+</body>
+</html>
