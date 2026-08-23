@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月22日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code に大量改善リリース（コスト見積もり・クラウドセッション・macOS サンドボックス強化）/ Claude 開発者プラットフォームが Admin API 一般提供開始・Managed Agents 強化 / 米イラン：「史上最大」制裁を月曜発表予告、イランが反論 / パキスタン・サウジ・トルコがメッカ共同防衛協定に署名 / 米上院がロシア制裁法案を 86-11 で可決</p>
+  <p class="date">2026年8月22日（土）&nbsp;|&nbsp;<a href="../2026-08-21/index.html">前版（8/21）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/22）のハイライト:</strong> Claude Code が<strong>コスト見積もり精度改善・クラウドセッション強化・macOS サンドボックス保護強化</strong>など幅広い改善をリリース。<strong>セッション間アイドル通知</strong>と<strong>Python 1.x アップグレードヘルパー</strong>も新たに追加。Claude 開発者プラットフォームでは<strong>Admin API が一般提供</strong>に移行し、<strong>Managed Agents の Web アクセス制御・メモリストア</strong>も強化された。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code に大量改善リリース — コスト見積もり・クラウドセッション・macOS サンドボックス・IDE 連携を一斉強化</div>
+      <div class="card-meta"><span class="badge">Claude Code / Release</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Aug 2026</a> · <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>コスト見積もりの改善:</strong> タスク実行前・実行中のトークンコスト見積もり精度が改善され、長時間エージェントタスクのコスト管理がより正確になった。特に大規模コードベースでの精度向上が報告されている</li>
+          <li><strong>クラウドセッション強化:</strong> リモート実行環境でのセッション安定性が向上。セッションが切断されても自動再接続が改善され、長時間タスクの中断リスクが低下した。Remote Control 機能も安定性が向上している</li>
+          <li><strong>macOS サンドボックス保護強化:</strong> macOS 上での実行時に適用されるサンドボックス保護が強化され、ファイルシステムやネットワークアクセスの制御がより細かく設定できるようになった</li>
+          <li><strong>新機能:</strong> セッション間のアイドル通知（cross-session idle notifications）を追加。長時間タスクが待機状態になった際に通知を受け取れる。Python 1.x 系プロジェクト向けのアップグレードヘルパーも新たに追加された</li>
+          <li><strong>その他の改善:</strong> /resume と /goal コマンドの動作が改善、フルスクリーン・プロキシ・メッセージング体験のスムーズ化、VS Code スクリーンリーダーのサポート強化、Bedrock および Alpine Linux サポートの追加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude 開発者プラットフォーム：Admin API が一般提供に移行、Managed Agents の Web アクセス制御・メモリストア対応も</div>
+      <div class="card-meta"><span class="badge">Developer Platform / GA</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Releasebot — Anthropic Aug 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Claude Developer Platform Aug 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Admin API 一般提供（GA）:</strong> Claude Enterprise（claude.ai）組織向けのユーザー管理エンドポイント（メンバー・招待・グループ・カスタムロール）が一般提供に移行。<code>anthropic-beta: ce-user-management-2026-07-13</code> ヘッダーがグループ・カスタムロールリクエストに不要になった</li>
+          <li><strong>Files API と Agent Skills サポート:</strong> Files API および Agent Skills が開発者プラットフォームで正式サポートされ、ドキュメント処理パイプラインやスキルベースのエージェント構築が容易になった</li>
+          <li><strong>Managed Agents の Web アクセス制御:</strong> エージェントの <code>web_search</code> および <code>web_fetch</code> ツールに <code>allowed_domains</code> / <code>blocked_domains</code> を設定できるようになり、セキュリティポリシーに基づいたアクセス制限が可能になった</li>
+          <li><strong>セルフホスト型サンドボックスのメモリストア:</strong> セルフホスト型サンドボックスで実行する Managed Agents セッションにメモリストアをアタッチできるようになった。Python・TypeScript・Go の SDK ワーカーがマウントパスにストアを自動ダウンロードする</li>
+          <li><strong>Console セッションビューアの刷新:</strong> タイムラインミニマップ・モデルリクエスト別グループ化トランスクリプト・インスペクターパネル（セッション詳細・コスト・生イベント・ツール別統計・マウントリソース・スレッド別アクティビティ）を備えた新デザインに変更</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code の「デフォルトモデル設定」が実運用で定着 — auto モードの改善と組み合わせた使い分けパターンが普及</div>
+      <div class="card-meta"><span class="badge">Claude Code / UX</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Aug 2026</a> · <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio — Code with Claude 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>デフォルトモデル設定の定着:</strong> 先週追加された新しいデフォルトモデル設定機能が実運用で定着しつつある。「本番作業はデフォルト Opus 5、検証・開発中は Sonnet 5」というパターンが多くのチームで採用されている</li>
+          <li><strong>auto モードの改善:</strong> 今回のリリースで auto モードの精度が改善され、タスクの複雑さに応じたモデル選択が以前より適切になった。コスト削減と品質のバランスが取りやすくなったと評価されている</li>
+          <li><strong>スタートアップ速度の向上:</strong> セッション開始時のスタートアップ速度が向上し、特に大規模プロジェクトでの初回ロード時間が短縮された。日常的なワークフローの快適性が改善されたという報告が複数寄せられている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/22）:</strong> <strong>Codex がポータブル Agent Plugins・永続会話セクション・自動承認・MCP 2026-07-28 プロトコル対応</strong>を一斉追加。企業の AI ツール利用がシンプルな質問応答から「委任実行」へとシフトし、Codex が企業顧客のアウトプットトークンの 64% を占めるまでに成長。
+    </div>
+    <div class="card">
+      <div class="card-title">Codex がポータブル Agent Plugins を追加 — MCP 2026-07-28 対応・永続会話セクション・自動承認も同時リリース</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Aug 2026</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Aug 22, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ポータブル Agent Plugins:</strong> エージェントが利用するプラグインをプロジェクト間でポータブルに持ち運べるようになった。設定を再構築せずに複数プロジェクトで同じエージェント能力を利用できる</li>
+          <li><strong>永続会話セクション:</strong> セッションをまたいで会話の特定セクションを永続化する機能が追加。コンテキストの引き継ぎが改善され、長期プロジェクトでの継続性が向上した</li>
+          <li><strong>自動承認（Automated Approvals）:</strong> 繰り返し発生するアクションに対して事前に承認を設定できる機能が追加。承認待ちによる中断が減少し、バックグラウンドタスクの自律性が向上した</li>
+          <li><strong>MCP 2026-07-28 プロトコル対応（オプトイン）:</strong> 最新の MCP 仕様への対応がオプトインで追加。Claude Code が前週に対応したのと同じ仕様に追いついた形で、ツール間のコンテキスト共有が標準化されつつある</li>
+          <li><strong>セキュリティ・安定性の改善:</strong> ターミナル・レンダリング・Windows 上の問題のバグフィックス、および全般的なセキュリティ強化も含まれている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">企業 AI 利用は「委任実行」フェーズへ — Codex が法人顧客アウトプットトークンの 64% を占有</div>
+      <div class="card-meta"><span class="badge">Market / Enterprise</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Aug 22, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>アウトプットトークンシェア:</strong> 2026年6月時点で、Codex が OpenAI の法人顧客全体のアウトプットトークンの 64% を占有。「会話型 AI」から「タスク実行 AI」への移行が数字に現れた形</li>
+          <li><strong>委任実行モデルの定着:</strong> 企業の AI 利用が単純な QA から「非同期・バックグラウンドでの作業委任」へとシフトしており、「エージェントに任せる文化」が浸透しつつある</li>
+          <li><strong>Claude Code との対比:</strong> r/ClaudeCode の週間アクティブ投稿者数は r/Codex の3倍超だが、実ユーザー数では Codex が優位とも言われており、「コミュニティの熱量 vs 実採用数」という観点での評価が分かれている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode「8/22 の Claude Code リリースで何が一番嬉しかった？」— コスト見積もり改善とアイドル通知が好評</div>
+      <div class="card-meta"><span class="badge">Community / Release</span><span class="card-source">Reddit r/ClaudeCode — 2026.08.22</span></div>
+      <div class="card-body">
+        <ul>
+          <li>今日のリリースを受けて r/ClaudeCode で「どの機能が一番嬉しいか」というスレッドが浮上。最多票を集めているのは「コスト見積もり精度の改善」で、「長時間タスクで API 費用が予想外に跳ね上がることが減るはず」という声が多い</li>
+          <li>2位は「クロスセッション アイドル通知」。「バックグラウンドタスクが止まっていても気づけなかったのが改善された」という実用的なフィードバックが集中している</li>
+          <li>「macOS サンドボックス強化」は企業ユーザーから高評価を受けているが、一部のユーザーから「セキュリティが厳しすぎてファイルアクセスが制限されすぎる場合がある」という設定上の注意点も共有されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming「Admin API が GA に — Claude Enterprise の組織管理がコードで完全制御可能に」</div>
+      <div class="card-meta"><span class="badge">Community / Platform</span><span class="card-source">Reddit r/programming · r/devops — 2026.08.22</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Admin API の GA 移行を受け、r/programming と r/devops に「Claude Enterprise のユーザー管理を Terraform や Pulumi で IaC 管理できるようになった」という実践報告スレッドが登場している</li>
+          <li>「これで大規模組織でのユーザー・グループ・ロール管理が自動化できる。念願だった機能」という歓迎コメントが上位を占める</li>
+          <li>Managed Agents の Web アクセス制御（allowed_domains / blocked_domains）についても「企業のセキュリティポリシーに準拠したエージェント展開が現実的になった」という評価が高い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/geopolitics「メッカ共同防衛協定 — パキスタン・サウジ・トルコの安全保障同盟が中東の勢力図を変える？」</div>
+      <div class="card-meta"><span class="badge">Community / Geopolitics</span><span class="card-source">Reddit r/geopolitics · r/worldnews — 2026.08.22</span></div>
+      <div class="card-body">
+        <ul>
+          <li>パキスタン・サウジアラビア・トルコが締結した「メッカ共同防衛協定（Mecca Joint Defence Agreement）」が r/geopolitics でトップトレンドに。「NATO 型の集団的自衛権をイスラム圏で形成する試み」という分析が話題を集めている</li>
+          <li>「核保有国（パキスタン）・石油産出大国（サウジ）・地域大国（トルコ）の組み合わせは強力。米イラン戦争の余波で加速した」というコメントが最多 upvote を獲得</li>
+          <li>イランとの関係について「サウジは従来イランと緊張関係にあったが、この協定が中東の新たな非イラン安保ブロックを形成する可能性がある」という分析が注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/22）の主要トピック:</strong> <strong>米がイランへの「史上最大の制裁」を月曜（8/25）発表予告</strong>（ベセント財務長官、中国の協力も要請）/ イランは「国連全加盟国に対する域外主権主張」と猛批判 / <strong>パキスタン・サウジ・トルコがメッカ共同防衛協定に署名</strong>（集団的自衛権）/ <strong>米上院がロシア制裁法案を 86-11 で可決</strong>（下院へ） / イラン大統領「世界は我々の勝利を認めた」と声明
+    </div>
+    <div class="card">
+      <div class="card-title">米が対イラン「史上最大の経済制裁」を月曜発表予告 — 中国への圧力も視野、ホルムズ海峡封鎖で原油急騰リスク継続</div>
+      <div class="card-meta"><span class="badge">Iran / US / War</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/8/22/iran-war-live-trump-says-tehran-not-ready-to-make-right-deal-to-end-war">Al Jazeera — Iran war live Aug 22</a> · <a href="https://www.cnbc.com/2026/08/22/iran-criticizes-us-sanctions-extraterritorial-sovereignty.html">CNBC — Iran US sanctions Aug 22</a> · <a href="https://gvwire.com/2026/08/22/us-iran-keep-up-hostile-rhetoric-ahead-of-new-sanctions/">GV Wire — Iran sanctions Aug 22</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>月曜の発表内容:</strong> ベセント財務長官が月曜（8/25）午後2時 EDT に記者会見を開き、「史上最も厳しい制裁」の詳細を発表する予定。中国が今後もイラン産石油を 80% 以上購入し続ける場合は中国企業・金融機関への二次制裁を適用すると警告している</li>
+          <li><strong>トランプ大統領の発言:</strong> 8/19 のソーシャルメディア投稿で「最も壊滅的な経済作戦（THE MOST CRUSHING ECONOMIC OPERATION）」を予告。「テヘランは正しい合意をする準備ができていない」と述べ、現状での停戦交渉の見通しが遠いことを示唆した</li>
+          <li><strong>イランの反論:</strong> 外務省報道官が「新たな米制裁は全 UN 加盟国に対する域外主権（extraterritorial sovereignty）の主張であり、国際法への挑戦だ」と批判。最高指導者の側近は「イランは屈しない」と強調した</li>
+          <li><strong>ホルムズ海峡とエネルギー市場:</strong> イランがホルムズ海峡通過の「未承認の石油タンカーを攻撃する」と脅迫を続けており、海峡通過の石油輸送量は激減。米国のガソリン価格は1年前より約1ドル上昇し、インフレ懸念が再燃している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">パキスタン・サウジアラビア・トルコがメッカ共同防衛協定に署名 — 「一国への攻撃は三国への攻撃」と明記</div>
+      <div class="card-meta"><span class="badge">Security / Middle East</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica — Major Events of 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>協定の内容:</strong> パキスタン・サウジアラビア・トルコが「メッカ共同防衛協定（Mecca Joint Defence Agreement）」に署名。「一国への攻撃は三国全てへの攻撃を意味する」という NATO 第5条に類似した集団的自衛義務を規定している</li>
+          <li><strong>背景と意図:</strong> 米イラン戦争が長期化する中、スンニ派主要国が地域安保の枠組みを強化する動きとして注目されている。核保有国（パキスタン）・石油産出大国（サウジ）・地域大国（トルコ）の組み合わせは軍事・外交的に重みがある</li>
+          <li><strong>地政学的影響:</strong> 従来の中東安保体制（米国主導の GCC）とは別の枠組みが生まれる可能性があり、「ポスト米国依存型の中東安保ブロック」の萌芽とも解釈される。イスラエル・イラン双方との関係に微妙な影響を与える可能性がある</li>
+          <li><strong>国際社会の反応:</strong> 中国は「地域の安定に寄与する」として支持を表明。米国は公式コメントを出しておらず、NATO との関係を含め外交的整合性を慎重に探っているとみられる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米上院がロシア制裁法案を 86-11 で可決 — エネルギー・金融機関・影のフリートを標的、下院へ送付</div>
+      <div class="card-meta"><span class="badge">Russia / US / Sanctions</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a> · <a href="https://www.usnews.com/news/world">US News World</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>可決の内容:</strong> 米上院がロシアのエネルギー収入・金融機関・政府高官・影のフリート（制裁逃れのための迂回輸送船団）に対する制裁を強化する法案を 86-11 の圧倒的多数で可決した</li>
+          <li><strong>「影のフリート」への対応:</strong> 法案にはロシアの石油を輸送する「影のフリート」の船舶・保険会社・港湾業者への制裁が含まれており、ソマリア海賊が直近で拿捕したイラン影のフリートへの問題とも連動して注目を集めている</li>
+          <li><strong>下院・大統領署名の見通し:</strong> 共和党・民主党の双党支持で可決されたため、下院通過の可能性も高いとみられている。ただし、行政府との調整次第では細部の修正が入る可能性もある</li>
+          <li><strong>ウクライナ戦争との関連:</strong> 先日のキーウ攻撃（17名死亡）後の議会の対応として、「言葉だけでなく制度的な制裁強化で応じた」という評価が多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イラン大統領「世界は我々の勝利を認めた」と声明 / 教皇レオ14世がサンマリノ訪問</div>
+      <div class="card-meta"><span class="badge">Iran / Vatican / Diplomacy</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/22/latest-news-bulletin-august-22nd-2026-midday">Euronews — Aug 22 Midday</a> · <a href="https://en.wikipedia.org/wiki/Portal:Current_events/August_2026">Wikipedia — Current Events Aug 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>イラン大統領の声明:</strong> イランのペゼシュキアン大統領が「世界は我々（イラン）が米国との対立に勝利したことを認めた」と主張する声明を発表。米国による制裁強化の発表を前に国内向けの強硬メッセージを打ち出した形だが、戦況を踏まえると強弁との見方が強い</li>
+          <li><strong>教皇レオ14世のサンマリノ訪問:</strong> 教皇レオ14世が世界最小の共和国のひとつであるサンマリノを訪問し、「政治的自由と公共の善への奉仕の模範」として称賛。中東の紛争が続く中での平和的外交の象徴的な場面として報道されている</li>
+          <li><strong>メキシコ・米国間の牛の輸出再開:</strong> 1年間の禁輸措置が終わり、メキシコ北部の牧場主が米国向けの牛輸出を再開する準備を進めていると報告された。農産物貿易の正常化が一部で進んでいる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イタリアで今夏4回目の熱波 — 25都市に赤色警報、ブラジルアマゾン森林破壊は過去最低を維持</div>
+      <div class="card-meta"><span class="badge">Climate / Environment</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/22/latest-news-bulletin-august-22nd-2026-evening">Euronews — Aug 22 Evening</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica — Major Events of 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>イタリアの熱波:</strong> 今夏4回目となる熱波がイタリアを直撃。保健省が記録的な25都市に赤色警報を発令した。観光地でもある南部・中部を中心に高齢者の健康被害が懸念されており、冷房設備のない施設での対応が急務となっている</li>
+          <li><strong>ブラジルアマゾン:</strong> 2025年8月〜2026年7月のアマゾン森林破壊面積が 2,874 km²（前年比 37% 減）と衛星監視開始以来の最低値を維持。ルラ政権の環境政策の継続的な成果として注目されている。COP30（予定：2026年）でのブラジルの発言権をさらに高める材料となる可能性がある</li>
+          <li><strong>ハワイ・暴風雨ラーラの後処理:</strong> 前日に上陸した熱帯暴風雨ラーラの影響でハワイ島・マウイ島では停電・浸水の復旧作業が続いている。観光業への影響が懸念されており、予約キャンセルの報告も相次いでいる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-22）」— homhom44</div>
+      <div class="card-meta"><span class="badge">News / Claude Code</span><span class="card-source"><a href="https://qiita.com/homhom44/items/b86ff8d0cb945da5194b">Qiita — homhom44</a> — 2026.08.22 公開</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code 開発者向けに Anthropic の日次ニュースをまとめているシリーズ記事の 2026-08-22 版。本日リリースされた Claude Code・Developer Platform の更新内容が整理されており、特に Admin API の GA 移行と Managed Agents のアップデートを詳しく解説している</li>
+          <li>homhom44 氏は毎日このシリーズを更新しており、「公式リリースノートの日本語要約として信頼性が高い」と評価されている。コメント欄では今日リリースされたコスト見積もり改善について具体的な使い方の質問が集まっている</li>
+          <li>「Admin API の GA 移行で何が変わるのか」「Managed Agents のメモリストアはどう設定するか」という実践的な疑問への回答が記事内およびコメント欄で共有されており、リファレンスとして活用されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— fuyunoki（継続人気）</div>
+      <div class="card-meta"><span class="badge">Guide / Claude Code</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita — fuyunoki</a> — 2026.08（継続人気）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code を初めて使うエンジニアや、改めて全体像を把握したいユーザー向けにまとめられた包括的なガイド記事が継続的に人気を集めている。今日のリリースを受けて著者がバージョン情報を更新済み</li>
+          <li>インストール・CLAUDE.md 設定・カスタムスラッシュコマンド・サブエージェント活用・MCP 連携・コスト管理まで「これ一本で全体像がわかる」という評価で、週間アクセスが安定して高い</li>
+          <li>今日追加された「クロスセッション アイドル通知」と「コスト見積もり改善」についての追記セクションが本日中に公開予定とのアナウンスがコメント欄に投稿されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Claude Managed Agents でドメイン制限をかける — allowed_domains 設定の実践ガイド」— 新着記事</div>
+      <div class="card-meta"><span class="badge">Practice / Managed Agents</span><span class="card-source">Zenn — 2026.08.22 新着</span></div>
+      <div class="card-body">
+        <ul>
+          <li>今日 GA になった Managed Agents の Web アクセス制御（allowed_domains / blocked_domains）について、リリース当日に実践記事を投稿した著者がおり、Zenn の新着トレンドに浮上している</li>
+          <li>具体的な設定例（社内ドキュメントサイトのみを allowed_domains に追加することで情報漏洩リスクを低減する方法）が丁寧に解説されており、「セキュリティポリシーに準拠したエージェント展開の参考になる」と評価されている</li>
+          <li>特に金融・医療・法務など規制業種でのエージェント活用を検討しているチームからの反応が多く、「ようやく社内導入を検討できる水準になった」というコメントが複数寄せられている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月22日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · Claude Platform Release Notes · MindStudio · AI Agent Store · Gradually · Al Jazeera · CNBC · GV Wire · CNN · Euronews · Wikipedia · Britannica · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-21/index.html">前版（2026-08-21）</a></p>
+</footer>
+</body>
+</html>
