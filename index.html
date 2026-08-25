@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月24日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月25日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">ベセントが「Operation Economic Outcast」発動 — イランへの二次制裁を含む史上最大の制裁パッケージ発表 / イランがホルムズ海峡での船舶拿捕を警告 / 米加50%関税が本日発効（ワイン・家具等） / SpaceX 完全子会社 Cursor が「Grok Bot」ベータ公開 / ウクライナ独立記念日（32年）— 前線196か所で交戦 / 千葉県で記録的豪雨、8人死亡</p>
-  <p class="date">2026年8月24日（月）&nbsp;|&nbsp;<a href="2026-08-23/index.html">前版（8/23）</a></p>
+  <p class="subtitle">Claude Code v2.1.245 が Linux glibc 2.44 クラッシュを修正 / OpenAI Codex がアクティブユーザー 2000 万人突破 / 米国が対イラン「Operation Economic Outcast」制裁パッケージ継続 / コンゴでエボラ出血熱が史上最速ペースで拡大、1週間で300人超死亡 / 世界の海面温度が史上最高の 21.1℃ を記録</p>
+  <p class="date">2026年8月25日（火）&nbsp;|&nbsp;<a href="2026-08-24/index.html">前版（8/24）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,41 +69,40 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/24）のハイライト:</strong> Claude Code の<strong>セルフホスト型実行環境</strong>（公開ベータ、8/6 発表）の採用が広がり、規制業種を中心に本番導入事例が増加中。Qiita で「<strong>Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-24）</strong>」が公開（homhom44 氏）。昨日 GA になった Skills API と Files API の実装事例が各コミュニティで急増している。
+      <strong>本日（8/25）のハイライト:</strong> <strong>Claude Code v2.1.245</strong> が本日リリース — Linux glibc 2.44 系ディストリビューション（Arch Linux・CachyOS・Fedora Rawhide）での起動時クラッシュを修正。また v2.1.243 で追加された <code>/usage</code> の<strong>ループ別実行情報ブレークダウン</strong>が開発者に好評。Claude Code の npm ダウンロード数は 7/24〜8/22 の累計で <strong>6,910 万</strong>（Codex の 6,630 万をわずかにリード）。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code セルフホスト型実行環境が Team・Enterprise に浸透 — 「コードが Anthropic のクラウドを離れない」コンプライアンス要件に対応</div>
-      <div class="card-meta"><span class="badge">Claude Code / Self-Hosted</span><span class="card-source">Source: <a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">Anthropic Blog — Self-hosted runner</a> · <a href="https://www.unite.ai/claude-code-sessions-can-now-run-on-infrastructure-your-team-controls/">Unite.AI</a> · <a href="https://enterprisedna.co/resources/news/anthropic-claude-code-self-hosted-runner-enterprise-2026/">Enterprise DNA</a></span></div>
+      <div class="card-title">Claude Code v2.1.245 リリース — Arch Linux・CachyOS・Fedora Rawhide での起動時クラッシュを修正</div>
+      <div class="card-meta"><span class="badge">Release / Bug Fix</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://www.havoptic.com/tools/claude-code">Havoptic — Claude Code v2.1.245</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>概要:</strong> 8月6日に公開ベータが開始した Claude Code セルフホスト型実行環境は、Claude Code の Web・モバイル・デスクトップ・ターミナル・スケジュールルーティンのセッションを、Anthropic のクラウドではなく組織自身のネットワーク上で実行できる機能。<code>claude self-hosted-runner</code> コマンド一つで自社サーバーまたはコンテナを実行レイヤーとして構成できる</li>
-          <li><strong>対象プラン:</strong> Team と Enterprise プランの組織が対象。ゼロデータリテンション（ZDR）契約の組織は利用不可</li>
-          <li><strong>データの流れ:</strong> リポジトリのチェックアウト・ビルド成果物・シークレット・セッション中に作成・変更されたファイルはすべて組織がプロビジョニングしたマシン上にとどまる</li>
-          <li><strong>採用の加速:</strong> 金融・医療・法務など規制業種を中心に本番導入事例が増加。「社内ツールやセキュリティ制御の隣でエージェントが動く」というアーキテクチャが、従来 AI エージェント採用の障壁だったデータガバナンス要件をクリアしている</li>
-          <li><strong>実装事例:</strong> AWS EC2 インスタンスをセルフホストランナーとして使う構成の詳細解説が DevelopersIO に公開されており、インフラチームでの採用を後押ししている</li>
+          <li><strong>修正内容:</strong> glibc 2.44 以降を搭載した Linux ディストリビューション（Arch Linux、CachyOS、Fedora Rawhide）で起動時にクラッシュしていた問題を修正。glibc 2.44 は 2026 年 7〜8 月にかけて最新ディストリビューションへの展開が進んでおり、一部のローリングリリースユーザーで再現していた</li>
+          <li><strong>v2.1.243 の変更点（前版）:</strong> <code>/usage</code> コマンドにループ別の実行情報ブレークダウンを追加。スケジュールルーティンや繰り返し処理の実行コストを可視化しやすくなった。定期タスクを多用するユーザーから「モデル使用量の把握が格段にしやすくなった」という評価が出ている</li>
+          <li><strong>直近リリースの傾向:</strong> 8 月の Claude Code リリースは、コスト見積もり改善・クラウドセッション安定化・IDE/ターミナルワークフロー改善・広範なバグ修正が中心。プラットフォーム互換性（Bedrock・Alpine・Python 1.x 移行補助）や <code>/resume</code>・<code>/goal</code> の挙動改善も継続して行われている</li>
+          <li><strong>採用状況:</strong> 7/24〜8/22 の npm ダウンロード数は Claude Code が 6,910 万、OpenAI Codex が 6,630 万。Claude Code がわずかにリードを維持している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Skills API・Files API GA 後の実装事例が急増 — 「スキル粒度論争」と「PDF 処理パイプライン」が週明け最大のトピックに</div>
-      <div class="card-meta"><span class="badge">Developer Platform / Skills API</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Releasebot — Anthropic</a> · <a href="https://qiita.com/homhom44/items/1658be5de096b88e8b27">Qiita — homhom44（2026-08-24）</a></span></div>
+      <div class="card-title">Claude Code のセルフホスト型実行環境、企業向け採用が本格化 — 規制業種のデータガバナンス要件をクリアする唯一の選択肢として浸透</div>
+      <div class="card-meta"><span class="badge">Claude Code / Enterprise</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code Aug 2026</a> · <a href="https://www.infoq.com/news/2026/05/code-with-claude/">InfoQ — Code with Claude</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>昨日（8/23）GA になった Skills API と Files API</strong> の実装事例が週明け月曜のコミュニティで急増している。特に「スキルをどの粒度で定義するか」という設計論が注目を集めている</li>
-          <li><strong>スキル粒度論争:</strong> 「1スキル1責任の原則で小さく分割する派」 vs 「コンテキストが分散するのでできるだけ大きなスキルにまとめる派」の議論が r/MachineLearning で継続中。現在の有力な結論は「エージェントのコンテキストウィンドウを圧迫しない範囲で責任を分割する」という折衷案</li>
-          <li><strong>Files API × スキルのユースケース:</strong> PDF を Files API で管理し、「要約」「抽出」「比較」をそれぞれ別スキルとして定義することで、ドキュメント処理パイプラインを最小限のコードで組める実例が普及。特に法務・コンプライアンス部門での活用が報告されている</li>
-          <li><strong>Microsoft Foundry 環境でのテスト報告:</strong> Azure 上で両 API を活用した企業ユーザーからの初期フィードバックが上がり始めており、「Foundry との連携でエンタープライズ向け RAG パイプラインが格段に構築しやすくなった」という評価が出ている</li>
+          <li><strong>概要:</strong> 8 月 6 日に公開ベータが開始した Claude Code セルフホスト型実行環境（<code>claude self-hosted-runner</code>）は、Web・モバイル・デスクトップ・ターミナル・スケジュールルーティンのセッションを組織自身のネットワーク内で実行できる機能</li>
+          <li><strong>対象と制約:</strong> Team・Enterprise プランが対象。ゼロデータリテンション（ZDR）契約の組織は利用不可。リポジトリのチェックアウト・ビルド成果物・シークレット・セッション中に変更されたファイルはすべて組織側のマシン内にとどまる</li>
+          <li><strong>採用加速の背景:</strong> 金融・医療・法務など規制業種を中心に、「コードが Anthropic のクラウドを離れない」アーキテクチャが AI エージェント採用の最大の障壁だったデータガバナンス要件をクリアしたことで、本番導入事例が急増。AWS EC2 をランナーとして利用する詳細構成ガイドが DevelopersIO から公開されており、インフラチームでの導入を後押ししている</li>
+          <li><strong>コンプライアンス上の位置づけ:</strong> Managed Agents との組み合わせにより、エージェントの実行からアウトプットのレビューまでを完全にプライベートクラウド上で完結させる構成が可能になった点が特に評価されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「Claude Code 開発者が押さえておきたい Anthropic ニュース（2026-08-24）」— homhom44 氏が毎日更新するニュースまとめシリーズ</div>
-      <div class="card-meta"><span class="badge">Qiita / Claude Code</span><span class="card-source">Source: <a href="https://qiita.com/homhom44/items/1658be5de096b88e8b27">Qiita — homhom44（2026-08-24）</a></span></div>
+      <div class="card-title">Anthropic の Fable 5、7 月 1 日に全プラットフォームで復活 — Claude.ai・Claude Platform・Claude Code・Cowork で利用可能に</div>
+      <div class="card-meta"><span class="badge">Anthropic / Model</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Qiita ユーザー homhom44 氏が毎日公開している「Claude Code 開発者向け Anthropic ニュースまとめ」の 8/24 版が公開。Skills API GA 対応・セルフホスト型実行環境の採用状況・v2.1.241 のバグ修正内容を日本語でコンパクトにまとめた内容が好評</li>
-          <li>直近の Claude Code 変更点として「auto mode が 8/14 以降 Pro・Max・Team プランでデフォルト有効」「週次使用量 50% ブースト（8/19 まで延長されていた期間限定施策）は終了済み」という実務上重要な情報も整理されている</li>
-          <li>シリーズ記事は 8/6（自己ホスト型環境の発表週）から毎日更新が続いており、Claude Code の変更を追うための「定点観測」として国内開発者に定着しつつある</li>
+          <li>Anthropic が 7 月 1 日に Fable 5 を Claude.ai、Claude Platform、Claude Code、Cowork の全プラットフォームで復活させた。一時停止していた期間を経て、ナラティブ・クリエイティブ用途に特化したモデルとして再投入された</li>
+          <li><strong>Terminal-Bench 2.1 最新結果（8 月版）:</strong> GPT-5.6 Sol（xhigh effort）が 89.5% でトップ、Claude Opus 5（max effort）が 89.1% で 2 位。コーディングエージェントの実用性を評価する指標では Claude Code が引き続き上位を維持している</li>
+          <li><strong>非開発者ユーザーの急増:</strong> OpenAI の報告によると、2025 年 8 月〜2026 年 8 月の 1 年間で非開発者ユーザーが個人で 137 倍、組織で 189 倍に増加。AI エージェントの利用が技術職以外にも急速に広がっていることが示された</li>
         </ul>
       </div>
     </div>
@@ -115,29 +114,29 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（8/24）:</strong> SpaceX が Cursor を完全子会社化（8/14 完了）してから最初の週明け——「Grok Bot」ベータが開始し、SpaceX の Colossus スーパーコンピュータを背景にした推論インフラの圧倒的スケールが AI コーディング市場に与える影響が分析されはじめた。CellCog の 8 月ランキングでは Claude Code が「深さ・フック・サブエージェント」部門でトップを維持している。
+      <strong>競合ハイライト（8/25）:</strong> <strong>OpenAI Codex がアクティブユーザー 2000 万人を突破</strong>（8/21 時点）。GPT-5.6 Sol の API 価格が 20% 超引き下げ。SpaceXAI（旧 Cursor）の「Grok Bot」は公開ベータ初週の評価が出はじめており、推論速度と UI の改善が評価されている一方、Claude Code のエコシステムの深さとの比較論議が活発。
     </div>
     <div class="card">
-      <div class="card-title">SpaceX が $600 億で Cursor を完全買収完了 — Colossus スーパーコンピュータ接続・「Grok Bot」ベータで Claude Code との競合が激化</div>
-      <div class="card-meta"><span class="badge">SpaceX / Cursor / Competitive</span><span class="card-source">Source: <a href="https://finance.yahoo.com/technology/ai/articles/spacex-closes-60bn-acquisition-ai-085713131.html">Yahoo Finance</a> · <a href="https://www.techmonitor.ai/news/spacex-closes-60bn-acquisition-of-ai-coding-agent-cursor">Tech Monitor</a> · <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a> · <a href="https://cursor.com/blog/joining-spacex">Cursor Blog</a></span></div>
+      <div class="card-title">OpenAI Codex がアクティブユーザー 2000 万人突破 — GPT-5.6 Sol の API 価格 20% 超引き下げ、インタラクティブダッシュボードも追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Market</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — OpenAI Codex Aug 2026</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>取引の完了:</strong> SpaceX（Elon Musk）が Cursor を 600 億ドル（約 8.7 兆円）で完全買収。8 月 14 日に規制当局への申告が受理され、Cursor は「SpaceXAI」部門の完全子会社となった。約 3 億 9100 万株の SpaceX Class A 株式が発行されており、これは史上最大規模のスタートアップ買収とされる</li>
-          <li><strong>Grok Bot ベータ開始:</strong> 買収完了後、Cursor チームは SpaceX の Colossus スーパーコンピュータへのアクセスを得て「Grok Bot」ベータをリリース。Colossus は 10 万枚超の H100 GPU を擁する世界最大規模の AI 学習クラスタであり、推論インフラの規模で Claude Code および OpenAI Codex に圧倒的な差をつける可能性がある</li>
-          <li><strong>市場へのインパクト:</strong> Cursor のユーザーベース（主に VS Code 統合に慣れた開発者層）を SpaceXAI が取り込むことで、Claude Code・Codex・Cursor の三者競争から Claude Code・Codex・SpaceXAI（旧 Cursor）の三者競争へと構図が変わった。開発者コミュニティの関心はすでに「Grok Bot の実力」に移っている</li>
-          <li><strong>Claude Code の差別化:</strong> CellCog の 8 月ランキングでは Claude Code が「深さ・フック・サブエージェント・動的ワークフロー」部門で引き続きトップ。長時間の自律コーディングセッションのデフォルト選択として評価されており、SpaceXAI との役割分担（計画・アーキテクチャ vs 高速コード出力）が議論されはじめている</li>
+          <li><strong>ユーザー数:</strong> OpenAI は 8 月 21 日時点でアクティブな Codex ユーザーが 2,000 万人に達したと発表。2025 年 8 月比で非開発者ユーザーが個人で 137 倍、組織で 189 倍に増加している</li>
+          <li><strong>価格引き下げ:</strong> GPT-5.6 Sol の API およびクレジット価格を 20% 超引き下げ。3 ヶ月間の期間限定で、API および ChatGPT Work・Codex の対象プランに適用される</li>
+          <li><strong>新機能:</strong> インタラクティブな Codex エージェントダッシュボードが追加。タスクの検索・開始・オープン・リネーム・停止と、カスタマイズ可能なショートカット設定が可能になった。TUI セッションでは <code>/cd</code>、<code>/pwd</code>、<code>/cwd</code> コマンドが追加されワーキングディレクトリの管理がしやすくなった</li>
+          <li><strong>Terminal-Bench 2.1:</strong> GPT-5.6 Sol（xhigh effort）が 88.8% を達成し AI エージェント性能の水準を引き上げている。Claude Opus 5 max effort の 89.1% とはわずかな差で競り合っている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI コーディングエージェント 8 月ランキング — Terminal-Bench 2.1 は GPT-5.6 Sol が首位、Claude Opus 5 が僅差で追う</div>
-      <div class="card-meta"><span class="badge">Benchmark / Market</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents Aug 2026</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></span></div>
+      <div class="card-title">SpaceXAI（旧 Cursor）「Grok Bot」ベータ初週評価 — 推論速度は圧倒的、Claude Code のエコシステムの深さとの比較論議が活発</div>
+      <div class="card-meta"><span class="badge">SpaceXAI / Grok Bot / Competitive</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents Aug 2026</a> · <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Terminal-Bench 2.1 結果（8 月版）:</strong> GPT-5.6 Sol（xhigh effort）が 89.5% でトップ、Claude Opus 5（max effort）が 89.1% で僅差の 2 位。実践的なターミナル操作・ファイル操作・マルチステップ推論を評価するベンチマークで両者が拮抗</li>
-          <li><strong>CellCog 実用ランキング:</strong> ベンチマークとは別の「実際の長時間エージェントセッションでの使いやすさ」評価では Claude Code が首位を維持。フック・サブエージェント・動的ワークフローの深さが評価されており、「30 分以上の自律セッションでは Claude Code を選ぶ」というコンセンサスが形成されつつある</li>
-          <li><strong>SpaceXAI（旧 Cursor）のポジション:</strong> 買収直後のため Grok Bot は本格的なベンチマーク評価の対象外だが、Colossus インフラを活かした推論速度での差別化が期待されている</li>
-          <li><strong>コスト効率の観点:</strong> 原油高・電力コスト上昇を背景に、「最高スコア」よりも「コストあたりのアウトプット」で AI エージェントを評価する企業が増加。この観点では Claude Sonnet 5 の費用対効果が高く評価されている</li>
+          <li><strong>ベータ初週の評価:</strong> SpaceX の Colossus スーパーコンピュータ（10 万枚超の H100 GPU）を背景にした Grok Bot の推論速度が、Claude Code および Codex と比較して顕著に高速という評価が出始めている。UI は Cursor のシンプルさを継承しており、移行コストが低い点が評価されている</li>
+          <li><strong>クラウドの棲み分け:</strong> 開発者コミュニティでは「Grok Bot は速度と単純タスクの量産、Claude Code は長時間の自律エージェントセッションと複雑なコードベースの把握」という役割分担論が有力になっている</li>
+          <li><strong>エコシステムの差:</strong> Claude Code のフック・スキル・MCP 統合・セルフホスト型実行環境という複合的なエコシステムは 1〜2 年分の蓄積があり、「Grok Bot が短期間で追いつくのは容易ではない」という見方が支配的。CellCog の 8 月ランキングでは Claude Code が長時間自律セッション部門でトップを維持している</li>
+          <li><strong>今後の焦点:</strong> Grok Bot が本格的なベンチマーク評価に投入されるタイミングが焦点。Colossus インフラの推論コスト優位が価格競争を引き起こすかどうかも注目されている</li>
         </ul>
       </div>
     </div>
@@ -149,35 +148,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「SpaceX/Cursor の Grok Bot が本格始動 — Claude Code はどう差別化すべきか？」</div>
-      <div class="card-meta"><span class="badge">Community / Competition</span><span class="card-source">Reddit r/MachineLearning · r/ClaudeCode — 2026.08.24</span></div>
+      <div class="card-title">r/ClaudeAI「Claude Code v2.1.245 でついに Arch Linux のクラッシュが直った — 週初めに試した人はアップデートを」</div>
+      <div class="card-meta"><span class="badge">Community / Bug Fix</span><span class="card-source">Reddit r/ClaudeAI · r/archlinux — 2026.08.25</span></div>
       <div class="card-body">
         <ul>
-          <li>Cursor の SpaceXAI 完全子会社化後、初の週明けとなる本日、r/MachineLearning に「Grok Bot vs Claude Code — どちらを本命にするか？」という議論スレッドが浮上。現時点では「Grok Bot は推論速度、Claude Code は長時間自律セッションの安定性」という棲み分け論が有力</li>
-          <li>「Colossus の GPU 規模は圧倒的だが、Claude Code のフック・スキル・MCP 統合の深さは1〜2年分の蓄積がある」という意見が上位。「短期的にはインフラ競争、中期的にはエコシステム競争になる」という見立てが支持されている</li>
-          <li>r/ClaudeCode では「セルフホスト型実行環境とスキル API の組み合わせが Grok Bot には当面できない差別化ポイント」というコメントが注目を集めており、エンタープライズ向けの Claude Code の強みを再評価する動きがある</li>
+          <li>glibc 2.44 系のクラッシュ問題は r/ClaudeAI や r/archlinux で 8 月上旬から複数の報告が上がっており、今回の v2.1.245 での修正を受けて「やっと直った」という安堵のコメントが多数投稿された</li>
+          <li>「Arch は常にローリングアップデートで最新の glibc を追いかけているので、Claude Code 側もそれに合わせたテストプロセスが必要」という意見が上位コメントに</li>
+          <li><code>/usage</code> のループ別ブレークダウン（v2.1.243 追加）についても「スケジュールルーティンのコスト管理がしやすくなった」「どのループがモデル使用量を食っているか一目でわかる」というポジティブな評価が続いている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「ベセントが『Operation Economic Outcast』を正式発動 — 60 社・個人・船舶を制裁リストに追加、全国に猶予期限を設定」</div>
-      <div class="card-meta"><span class="badge">Community / Geopolitics</span><span class="card-source">Reddit r/worldnews · r/geopolitics — 2026.08.24</span></div>
+      <div class="card-title">r/MachineLearning「Codex が 2000 万ユーザー達成 — Claude Code は何人？ AI コーディングエージェントの採用実態を考える」</div>
+      <div class="card-meta"><span class="badge">Community / Market</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08.25</span></div>
       <div class="card-body">
         <ul>
-          <li>ベセント財務長官が本日（8/24）正式に発表した対イラン制裁パッケージ「Operation Economic Outcast」が r/worldnews のトップトレンドに。「史上最大の協調的経済孤立作戦」という表現に対して「実際に中国が従うのか」という懐疑論が上位コメントを占める</li>
-          <li>「猶予期限（cure period）が設定されているということは、実はイランに対する圧力というより各国への最終通牒では？」という分析が注目を集めている。「中国がこれを拒否した場合のエスカレーションシナリオ」についての長文投稿が複数登場</li>
-          <li>エネルギー市場への影響については「ブレント 92 ドルでもまだ相場は落ち着いている。ホルムズ海峡での実際の拿捕事案が発生した場合、原油は 110 ドルを超える」という相場分析が共有されている</li>
+          <li>Codex の 2000 万ユーザー達成発表を受けて、「Claude Code の実際のユーザー数は？ Anthropic は公式数字を出していない」という議論が r/MachineLearning に浮上。npm ダウンロード数での比較（Claude Code 6,910 万 vs Codex 6,630 万）は「インストール数であり実アクティブユーザーとは異なる」という指摘も</li>
+          <li>「非開発者ユーザーが爆発的に増えているということは、AI エージェントはもはや開発ツールでなく業務ツールになっている」という議論が展開。法務・財務・マーケティング担当者が日常業務で Claude Code を使う事例が続々報告されている</li>
+          <li>Claude Code と Codex の使い分けに関しては「Claude Code はアーキテクチャ設計と長期タスク、Codex は短い実装タスクの量産」というコンセンサスが形成されつつある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/programming「Claude Code セルフホスト型実行環境の EC2 構成ガイドが話題 — ゼロトラスト環境でのエージェント実行が現実的に」</div>
-      <div class="card-meta"><span class="badge">Community / DevOps</span><span class="card-source">Reddit r/programming · r/devops — 2026.08.24</span></div>
+      <div class="card-title">r/worldnews「コンゴのエボラ出血熱、1週間で300人超死亡 — 史上最速ペースの拡大に国際社会が緊急対応」</div>
+      <div class="card-meta"><span class="badge">Community / Health Crisis</span><span class="card-source">Reddit r/worldnews · r/GlobalHealthNews — 2026.08.25</span></div>
       <div class="card-body">
         <ul>
-          <li>DevelopersIO が公開した「Claude Code セルフホスト型実行環境を EC2 で試した」という詳細な構成ガイドが r/programming でシェアされ、多くのアップボートを獲得。「具体的なインフラ構成が載っている珍しいガイド」として評価されている</li>
-          <li>「コードが Anthropic のクラウドに出ていかない」という点への関心が特に金融・医療分野のエンジニアから強く、「これで社内の AI エージェント導入稟議が通りやすくなる」というコメントが複数</li>
-          <li>注意点として「ゼロデータリテンション（ZDR）契約の組織は使えない」という制限について、「ZDR と Self-hosted runner は共存不可能というのは設計上の制約か、将来的に変わる可能性があるか？」という質問が Anthropic 公式アカウントに向けて投稿されている</li>
+          <li>コンゴ東部でのエボラ出血熱流行が「1週間で300人超死亡」という統計が報じられ、r/worldnews でトップトレンドに。「過去最速の拡大ペース」という表現が衝撃を与えており、「なぜ国際的な報道が少ないのか」というコメントが多数上位に</li>
+          <li>「イランの制裁問題や気候変動の話題に埋もれているが、これは今最も深刻な人道的危機の一つ」という指摘が多くのアップボートを獲得。WHO の緊急支援要請に対する各国の対応の遅さへの批判も</li>
+          <li>ワクチンの在庫不足と、紛争地帯での接種活動の困難さが拡大の主因と分析されており、「コンゴ東部の不安定な治安状況が封じ込め活動を著しく制限している」という専門家コメントが引用されている</li>
         </ul>
       </div>
     </div>
@@ -189,65 +188,62 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/24）の主要トピック:</strong> <strong>ベセントが「Operation Economic Outcast」を正式発動</strong>（60 社・個人・船舶を制裁、全国に猶予期限） / <strong>イランがホルムズ海峡での船舶拿捕を警告</strong> / <strong>米加 50% 関税が本日発効</strong>（ワイン・家具・ホッケースティック等、200 億ドル超の輸出が対象） / <strong>ウクライナ独立記念日（32 周年）</strong> — 前線 196 か所で交戦、ロシア兵 1,490 人損失 / <strong>千葉県で記録的豪雨、8 人死亡</strong>
+      <strong>本日（8/25）の主要トピック:</strong> 米国「Operation Economic Outcast」制裁パッケージの影響が国際金融・エネルギー市場に波及 / <strong>ガザでイスラエルの攻撃により少なくとも4人死亡（うち子供2人）</strong> / <strong>米国、イランとの戦争による兵力制約を理由に韓国との上陸演習を中止</strong> / <strong>インドネシアで大規模森林火災、広域でスモッグ</strong> / <strong>世界の海面温度が史上最高 21.1℃ を記録（8/22）</strong> / <strong>コンゴのエボラ出血熱、史上最速ペースで拡大</strong>
     </div>
     <div class="card">
-      <div class="card-title">ベセント財務長官が「Operation Economic Outcast」を正式発動 — 60 社・個人・船舶を制裁、全国に「猶予期限」付き最終通牒</div>
-      <div class="card-meta"><span class="badge">US / Iran / Sanctions</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/business/2026/08/24/bessent-unveil-economic-d-day-sanctions-against-iran/">Washington Post</a> · <a href="https://www.nbcnews.com/business/economy/bessent-iran-sanctions-d-day-rcna594103">NBC News</a> · <a href="https://www.cnn.com/2026/08/24/world/live-news/iran-war-trump">CNN</a> · <a href="https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran">NPR</a></span></div>
+      <div class="card-title">ガザでイスラエルの攻撃により少なくとも4人死亡（うち子供2人）— イスラエル軍の砲撃と戦車砲火が中部ガザを直撃</div>
+      <div class="card-meta"><span class="badge">Middle East / Gaza / Israel</span><span class="card-source">Source: <a href="https://www.justsecurity.org/155154/early-edition-august-25-2026/">Just Security — Early Edition Aug 25</a> · <a href="https://wng.org/podcasts/tuesday-morning-news-august-25-2026-1787602718">WORLD — Tuesday Morning News Aug 25</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「Operation Economic Outcast」の内容:</strong> ベセント財務長官が本日正式発表した対イラン制裁パッケージ「経済的追放作戦」は、イランの残存する国際経済的結びつきを断ち切ることを目的とする。海運・石油・暗号通貨・金・航空分野でのイラン取引を仲介する約 60 の企業・個人・船舶が制裁対象に指定された</li>
-          <li><strong>全国への「猶予期限」付き最終通牒:</strong> すべての国に対して「イラン関連のビジネス活動を停止するための定められた期限（cure period）」が設定された。期限内に停止しない場合、米国は二次制裁を発動する。トランプ大統領は各国首脳に「テヘランとの取引を停止するよう」電話で直接要請中</li>
-          <li><strong>大手金融機関への制裁示唆:</strong> ベセント長官は「今週末までに、イランとの取引を継続している大手金融機関を制裁する」と発言。対象機関は特定されていないが、市場では中国系大手銀行への言及とみる見方が有力</li>
-          <li><strong>「誰も米国の制裁の射程圏外ではない」:</strong> ベセント長官の発言は「no one is above the reach of U.S. sanctions」。中国・インド・トルコなどイラン産石油の主要輸入国がこの最終通牒をどう受け止めるかが今後の焦点</li>
+          <li><strong>本日（8/25）の攻撃:</strong> イスラエル軍の砲撃と戦車砲火がガザ中部を直撃し、病院当局の発表によると少なくとも4人が死亡、うち2人は子供だった</li>
+          <li><strong>継続する人道危機:</strong> ガザの医療・インフラ状況は引き続き深刻で、国際援助団体は医薬品・食料・燃料の継続的な不足を報告している。停戦交渉は現時点で具体的な進展がみられない</li>
+          <li><strong>地域の緊張とイラン制裁の連動:</strong> 米国によるイランへの「Operation Economic Outcast」制裁は、ガザ問題とイランの関与をめぐる外交圧力の一環としても機能しており、中東全体の緊張が高まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イランがホルムズ海峡での船舶拿捕を警告 — 制裁発動を前に CNBC・Reuters が安保評議会の強硬発言を報道</div>
-      <div class="card-meta"><span class="badge">Iran / Hormuz / Energy</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">CNBC — Iran Hormuz Aug 24</a> · <a href="https://www.thenationalnews.com/news/us/2026/08/24/iran-sanctions-d-day-bessent/">The National</a></span></div>
+      <div class="card-title">米国、イランとの戦争による兵力制約を理由に韓国との9月の大規模上陸演習を中止</div>
+      <div class="card-meta"><span class="badge">US / Korea / Iran / Military</span><span class="card-source">Source: <a href="https://www.justsecurity.org/155154/early-edition-august-25-2026/">Just Security — Early Edition Aug 25</a> · <a href="https://www.10things.news/p/10-things-global-news-25th-august-a11">10 Things Global News — Aug 25</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ホルムズ海峡での船舶拿捕警告:</strong> イラン安全保障評議会の関係者が、ベセントによる制裁発表に先立つ形で「ホルムズ海峡を通過する船舶を拿捕する権限と意思がある」と警告。CNBC が独自取材で報道し、エネルギー市場がさらに反応した</li>
-          <li><strong>原油価格への影響:</strong> ブレント原油は一時 94 ドルを突破した後、92〜93 ドルのレンジで推移。ホルムズ海峡の通過量が引き続き制限されており、アジア向けの石油輸送コストが高止まりしている</li>
-          <li><strong>UAE・サウジアラビアの動向:</strong> UAE は昨日（8/23）に対イラン商業取引の全面停止を発表済み。サウジアラビアも「制裁への協力姿勢を示す準備がある」と外交筋が語っており、湾岸諸国の結束がイランへの圧力を強めている</li>
-          <li><strong>ホルムズ海峡の戦略的重要性:</strong> 世界の石油輸送量の約 20%、LNG 輸送量の約 30% がホルムズ海峡を通過する。実際の拿捕事案が発生した場合のエネルギー市場への衝撃は甚大であり、国際海事機関（IMO）が警戒を強めている</li>
+          <li><strong>演習の中止:</strong> 米国は 9 月に予定していた韓国との大規模合同上陸演習（水陸両用作戦演習）を中止すると発表。イランとの戦争による米軍兵力の制約を理由として挙げた</li>
+          <li><strong>インド太平洋への影響:</strong> 同盟国への関与を示す重要な軍事演習の中止は、北朝鮮の動向を注視する韓国・日本にとって懸念材料。韓国国防部は「米韓同盟の基本的な抑止力は維持されている」としながらも、継続的な協議を求めている</li>
+          <li><strong>米軍の「多正面展開」の限界:</strong> イランでの作戦継続に伴い、米軍がインド太平洋・ヨーロッパ（NATO 関連）・中東への同時的な前方展開に生じる制約が表面化している。防衛アナリストは「戦略的優先順位の明確化が急務」と指摘している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米国が対カナダ 50% 関税を本日（8/24）発効 — ワイン・家具・ホッケースティック等 200 億ドル超の輸出が対象、カナダは 9/8 に報復関税</div>
-      <div class="card-meta"><span class="badge">US / Canada / Trade War</span><span class="card-source">Source: <a href="https://www.cp24.com/news/canada/2026/08/22/a-list-of-some-of-the-items-the-us-is-slapping-with-a-50-per-cent-tariff/">CP24</a> · <a href="https://www.shankennewsdaily.com/2026/08/24/40725/no-deal-with-canada-as-50-u-s-tariffs-on-wine-and-spirits-take-effect/">Shanken News Daily</a> · <a href="https://shopappy.com/trade/tariffs-customs/us-50-tariffs-on-canadian-goods-take-effect-august-19-what-retailers-face">Shopappy</a></span></div>
+      <div class="card-title">インドネシアで大規模森林火災 — 泥炭地帯を含む広域が焼失、スモッグが複数の都市を覆う</div>
+      <div class="card-meta"><span class="badge">Indonesia / Environment / Disaster</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-25th-august-a11">10 Things Global News — Aug 25</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica — Major Events of 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>発効した関税の内容:</strong> トランプ大統領が 7 月に発令した対カナダ 50% 関税（Section 338）が本日（8/24）発効。ワイン・スピリッツ・家具・ホッケースティック・木材・合板・ドア・セメント・乳製品・玩具・スポーツ用品・農産物など多岐にわたる品目が対象。カナダの輸出額ベースで 200 億ドル超が影響を受ける</li>
-          <li><strong>交渉決裂:</strong> トランプ政権が設定した交渉期限（本日）までに合意は成立せず。州による輸入アルコール制限・米国製自動車への一部関税・乳製品の無関税クォータをめぐる交渉が最後まで折り合わなかった</li>
-          <li><strong>カナダの報復措置:</strong> カナダは 9 月 8 日に対等な報復関税を発動する計画を発表済み。カナダ独立中小企業連盟（CFIB）は「米国に依存した輸出ビジネスの抜本的な多角化が急務」と警告している</li>
-          <li><strong>消費者への影響:</strong> 米国内でのカナダ産ワインの店頭価格は数週間以内に 30〜50% 上昇する見込み。家具・建材価格への波及は住宅建設コストに影響し、インフレへの二次的な押し上げが懸念されている</li>
+          <li><strong>火災の規模:</strong> インドネシア中部・西部で大規模な森林火災が発生し、広大な森林と泥炭地帯が焼失。スモッグが複数の都市を覆い、視界・大気質が著しく悪化している</li>
+          <li><strong>健康被害の懸念:</strong> 泥炭火災は表面だけでなく地下でも燃焼が続くため消火が難しく、大量の微粒子状物質（PM2.5）を長期間にわたって放出する。呼吸器疾患を持つ住民や高齢者・子供への健康被害が懸念されている</li>
+          <li><strong>エル・ニーニョとの連動:</strong> 今年の強まるエル・ニーニョが乾燥条件を促進しており、インドネシアの乾季が通常より長く・厳しくなっている。周辺国のシンガポール・マレーシア・タイにもスモッグの越境汚染が及ぶ可能性がある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ独立記念日（32 周年）— 前線 196 か所で交戦継続、ロシア兵の累計損失が 147 万人超に</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / War</span><span class="card-source">Source: <a href="https://www.ukrinform.net/rubric-ato">Ukrinform — ATO</a> · <a href="https://en.wikipedia.org/wiki/2026_Russo-Ukrainian_truce">Wikipedia — 2026 Russo-Ukrainian truce</a></span></div>
+      <div class="card-title">世界の海面温度が史上最高 21.1℃ を記録（8/22）— 強まるエル・ニーニョと数十年の温暖化が合わさり前例のない高温に</div>
+      <div class="card-meta"><span class="badge">Climate / Ocean / Environment</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-25th-august-a11">10 Things Global News — Aug 25</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica — Major Events of 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>独立記念日の状況:</strong> 本日 8 月 24 日はウクライナ独立宣言（1991 年）から 32 周年にあたる独立記念日。ウクライナ軍は前線 196 か所での交戦を報告しており、コスチャンティニウカ方面で 22 件のロシア軍攻撃を撃退した</li>
-          <li><strong>ロシア軍の損失:</strong> 2022 年 2 月 24 日の全面侵攻開始以来、本日（8/24）までのロシア軍の累計損失は約 147 万 8 千名（過去 24 時間で 1,490 名）。ザポリージャ方面ではウクライナ防衛軍がロシア軍のドローン 76 機を撃墜した</li>
-          <li><strong>ウクライナの越境攻撃継続:</strong> ウクライナ軍はロシア領内への越境攻撃を今週も拡大しており、「戦争をロシア国内に持ち込む」という方針を維持。ロシアは昨日（8/23）もクリヴィー・リーフのショッピングセンターへの昼間砲撃など民間インフラへの攻撃を継続した</li>
-          <li><strong>4月の停戦と現状:</strong> 2026 年 4 月 11 日に 32 時間の正教会復活祭停戦が実施されたが、その後は交戦が再開。国際調停の動きは現時点で進展が見られない</li>
+          <li><strong>記録更新:</strong> 8 月 22 日、世界の海洋の平均表面温度が 21.1℃ という観測史上最高値を記録。数十年にわたる人為的温暖化と強まるエル・ニーニョの複合効果によるものと気候科学者は分析している</li>
+          <li><strong>熱帯低気圧への影響:</strong> 海面温度の記録的な高さは台風・ハリケーン・サイクロンの強度と頻度の増加に直結する。今後の台風シーズン（特に西太平洋・大西洋）での極端気象が懸念されている</li>
+          <li><strong>サンゴ礁と生態系:</strong> 高水温による大規模なサンゴ白化が太平洋・インド洋・大西洋の複数の地点で進行中。国際珊瑚礁イニシアチブ（ICRI）は「世界規模でのサンゴ大量死が進行している」と警告している</li>
+          <li><strong>インドネシアの火災との相乗効果:</strong> エル・ニーニョによる乾燥とインドネシア等の大規模火災が炭素放出をさらに増加させており、温暖化との負のフィードバックループが強まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">千葉県で記録的豪雨、少なくとも 8 人死亡 — 激しい雷雨による洪水で広域浸水、他にミネソタ州保育所での銃刺殺事件（4 人死亡）</div>
-      <div class="card-meta"><span class="badge">Japan / Natural Disaster / US</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/8/24/headlines">Democracy Now! — Headlines Aug 24</a> · <a href="https://wng.org/podcasts/monday-morning-news-august-24-2026-1787519872">WORLD — Monday Morning News Aug 24</a></span></div>
+      <div class="card-title">コンゴ東部のエボラ出血熱、1週間で300人超死亡 — 史上最速の拡大ペース、ワクチン不足と紛争地帯での封じ込めに課題</div>
+      <div class="card-meta"><span class="badge">DRC / Ebola / Health Crisis</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-25th-august-a11">10 Things Global News — Aug 25</a> · <a href="https://www.justsecurity.org/155154/early-edition-august-25-2026/">Just Security — Early Edition Aug 25</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>千葉県の記録的豪雨:</strong> 激しい雷雨による前例のない豪雨が千葉県を直撃し、広域で洪水が発生。少なくとも 8 人が死亡した。気象庁は「数十年に一度の記録的な降水量」と発表しており、住宅・道路・農地への被害が広範囲に及んでいる</li>
-          <li><strong>ミネソタ州保育所での銃刺殺事件:</strong> 米国ミネソタ州ホプキンス市の保育所と住宅で銃撃・刺傷事件が発生し、加害者を含む 4 人が死亡した。子どもを含む複数名が被害を受けており、当局が動機を調査している</li>
-          <li><strong>ルーマニア原子炉の停止:</strong> ルーマニアがドナウ川の渇水により冷却水の取水が不可能になったとして、チェルナヴォダ原子力発電所の第2号炉を停止。政府は代替電源と電力輸入で需要をカバーできるとしているが、欧州の電力市場への影響が注視されている</li>
-          <li><strong>モスクワのコーヒーショップ爆発:</strong> モスクワ市内のコーヒーショップで女性が爆発物の起爆を試みる事件が発生。入口でとめられた後に爆発し、加害者を含む 3 人が死亡、21 人が負傷した</li>
+          <li><strong>被害の規模:</strong> コンゴ民主共和国（DRC）東部で進行中のエボラ出血熱流行において、直近1週間で300人超が死亡した。これは今回のアウトブレイク開始以来で最も多い週間死亡者数であり、記録上最速の拡大ペースを示している</li>
+          <li><strong>封じ込めの困難:</strong> コンゴ東部は長年にわたる武装勢力との紛争地帯であり、医療従事者の安全確保や患者追跡・接触者調査が著しく困難な状況が続いている。ワクチン在庫の不足も深刻で、WHO と国際機関が緊急支援を要請している</li>
+          <li><strong>国際的な注目度の低さ:</strong> 中東情勢・気候変動・米中貿易戦争など他の国際ニュースに埋もれており、主要メディアの報道が少ないことへの批判が国際 NGO やグローバルヘルス専門家から出ている</li>
+          <li><strong>過去のアウトブレイクとの比較:</strong> 今回のアウトブレイクは 2018〜2020 年の DRC 東部でのエボラ流行（2,000 人超死亡）を規模・速度の双方で上回るペースで進行しており、封じ込めに失敗した場合は中央アフリカ全域への拡大リスクがある</li>
         </ul>
       </div>
     </div>
@@ -259,35 +255,34 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「最近の AI 開発について（2026年8月）」— cleyera_f 氏が「コードを書く」から「開発プロセスを設計する」への転換を語る</div>
-      <div class="card-meta"><span class="badge">Practice / AI Development</span><span class="card-source"><a href="https://qiita.com/cleyera_f/items/fba106f82207dbd7b283">Qiita — cleyera_f（2026.08 公開）</a></span></div>
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-25）」— homhom44 氏の日次ニュースまとめ</div>
+      <div class="card-meta"><span class="badge">News Digest / Claude Code</span><span class="card-source">Qiita — homhom44 シリーズ（毎日更新）</span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code を中心とした 2026 年 8 月時点の AI 駆動開発の「現在地」を整理した記事が本日のトレンドに浮上。「機能設計からコードコミットまでの全フローを Claude Code が自律実行できるようになった今、エンジニアの仕事は『コードを書く』から『開発プロセスを設計する』に移行した」という著者の視点が共感を呼んでいる</li>
-          <li>具体的な実例として「CLAUDE.md で開発プロセスのルールと品質基準を定義し、後は Claude Code に委ねる」という手法が紹介されている。「1 つの指示から複数ファイルを読み込み・レポート作成・メール下書きまでをこなす」という一気通貫の委任実行が日常業務に浸透している様子が描かれている</li>
-          <li>「AI が出力したコードを一切見ずに複数エージェントを同時に走らせる」という2025年末から始まった潮流がさらに深化し、「エージェントへの委任を設計する能力」が 2026 年のエンジニアの核心スキルになったという分析は多くのコメントで支持されている</li>
+          <li>毎日更新の Anthropic ニュースまとめシリーズ。本日（8/25）版は v2.1.245 の glibc 2.44 クラッシュ修正・v2.1.243 の <code>/usage</code> ループ別ブレークダウン追加・OpenAI Codex 2000 万ユーザー達成と GPT-5.6 Sol 価格引き下げによる競合環境の変化などを日本語でコンパクトにまとめている見通し</li>
+          <li>8/6 の自己ホスト型環境発表週から継続して毎日更新が続いており、「Claude Code の変更を追う定点観測」として国内開発者コミュニティに定着している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版）」— fuyunoki 氏が入門から実践まで体系化</div>
-      <div class="card-meta"><span class="badge">Guide / Claude Code</span><span class="card-source"><a href="https://qiita.com/fuyunoki/items/5818688d20225aa8088a">Qiita — fuyunoki（2026年版）</a></span></div>
+      <div class="card-title">Zenn「AI エージェント時代のアーキテクチャ設計 — Claude Code と MCP の組み合わせで何が変わったか」</div>
+      <div class="card-meta"><span class="badge">Architecture / Claude Code / MCP</span><span class="card-source">Zenn — 2026年8月 注目記事</span></div>
       <div class="card-body">
         <ul>
-          <li>「Claude Code を使い始めるなら最初にこれを読め」という位置づけの 2026 年版まとめ記事が週明けに再びトレンド入り。公式ドキュメントと実践的な実装知見を組み合わせた構成が「新しく Claude Code を試す人の最初の一歩」として評価されている</li>
-          <li>特に注目を集めているのは、自動モード（auto mode）の解説と CLAUDE.md の設計パターンの節。8 月 14 日以降 Pro・Max・Team プランでデフォルト有効になった auto mode の挙動の違いと、それに合わせた CLAUDE.md の更新方法がわかりやすく解説されている</li>
-          <li>コメント欄では「セルフホスト型実行環境に関する記述が欲しい」というリクエストが多数寄せられており、著者が週内に追記する予定とコメントしている</li>
+          <li>Model Context Protocol（MCP）と Claude Code の組み合わせが、従来のソフトウェアアーキテクチャ設計に与える影響を体系的に論じた技術記事が注目を集めている。「MCP サーバーをマイクロサービスとして設計する」という考え方が具体例とともに解説されている</li>
+          <li>特に「データベース・外部 API・内部ツールをそれぞれ MCP サーバーとして抽象化し、Claude Code エージェントがオーケストレーターとして各サービスを呼び出す」というアーキテクチャパターンが実例付きで紹介されており、「設計指針として即使える内容」という評価を集めている</li>
+          <li>Skills API の GA を受けて、「スキルとエージェントツールの使い分け」に関する考察も含まれており、8 月の技術記事の中でも特に実践的な内容として位置づけられている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-24）」— homhom44 氏の日次ニュースまとめ</div>
-      <div class="card-meta"><span class="badge">News Digest / Claude Code</span><span class="card-source"><a href="https://qiita.com/homhom44/items/1658be5de096b88e8b27">Qiita — homhom44（2026-08-24）</a></span></div>
+      <div class="card-title">Qiita「AIコーディングエージェント比較 2026年8月版 — Claude Code・Codex・Grok Bot を実際に使って比べてみた」</div>
+      <div class="card-meta"><span class="badge">Comparison / Benchmark</span><span class="card-source">Qiita — 2026年8月 注目記事</span></div>
       <div class="card-body">
         <ul>
-          <li>毎日更新の「Anthropic ニュースまとめ」シリーズの 8/24 版が公開。本日のハイライトとして Skills API / Files API の GA 後の初週動向・セルフホスト型実行環境の採用加速・SpaceX/Cursor 統合後の「Grok Bot」ベータ開始による競合環境の変化を日本語でコンパクトにまとめている</li>
-          <li>「auto mode が 8/14 以降デフォルト有効になった」「週次 50% 使用量ブーストは 8/19 で終了」という実務上重要な情報も改めて整理されており、「Claude Code の変更を追うための定点観測として欠かせない」という評価が定着している</li>
-          <li>8/6 の自己ホスト型環境発表週から毎日更新が続いており、ページビュー・LGTM 数ともに Qiita の Claude Code タグ内で上位を維持し続けている</li>
+          <li>Claude Code・OpenAI Codex・SpaceXAI の Grok Bot（ベータ）を実際のコーディングタスクで比較した記事が週次注目記事に浮上。「30分以上の自律セッションでは Claude Code、短時間の量産タスクでは Codex、純粋な応答速度では Grok Bot」という評価軸が提示されている</li>
+          <li>Grok Bot のベータ参加者による「推論速度は圧倒的に速いが、長い文脈でのコードベース把握はまだ Claude Code に劣る」という具体的なレビューが引用されており、各ツールの長所短所が実感値として整理されている</li>
+          <li>コスト面では「GPT-5.6 Sol の価格引き下げで Codex の費用対効果が改善した」という指摘もあり、用途別の最適な使い分けを考える上での参考記事として広くシェアされている</li>
         </ul>
       </div>
     </div>
@@ -295,9 +290,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月24日（月）</p>
-  <p style="margin-top:0.5rem;">Sources: Releasebot · Anthropic Blog · Unite.AI · Enterprise DNA · DevelopersIO · Yahoo Finance · TechCrunch · Tech Monitor · Cursor Blog · MorphLLM · AI Agent Store · Washington Post · NBC News · CNN · NPR · CNBC · The National · CP24 · Shanken News Daily · Shopappy · Ukrinform · Democracy Now! · WORLD · Qiita · Zenn</p>
-  <p style="margin-top:0.3rem;"><a href="2026-08-23/index.html">前版（2026-08-23）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月25日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Havoptic · Releasebot (Anthropic, OpenAI) · MorphLLM · InfoQ · TechCrunch · Gradually · OpenAI · Just Security · WORLD · 10 Things Global News · Britannica · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-24/index.html">前版（2026-08-24）</a></p>
 </footer>
 </body>
 </html>
