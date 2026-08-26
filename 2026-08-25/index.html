@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.245 が Linux glibc 2.44 クラッシュを修正 / OpenAI Codex がアクティブユーザー 2000 万人突破 / 米国が対イラン「Operation Economic Outcast」制裁パッケージ継続 / コンゴでエボラ出血熱が史上最速ペースで拡大、1週間で300人超死亡 / 世界の海面温度が史上最高の 21.1℃ を記録</p>
+  <p class="date">2026年8月25日（火）&nbsp;|&nbsp;<a href="../2026-08-24/index.html">前版（8/24）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/25）のハイライト:</strong> <strong>Claude Code v2.1.245</strong> が本日リリース — Linux glibc 2.44 系ディストリビューション（Arch Linux・CachyOS・Fedora Rawhide）での起動時クラッシュを修正。また v2.1.243 で追加された <code>/usage</code> の<strong>ループ別実行情報ブレークダウン</strong>が開発者に好評。Claude Code の npm ダウンロード数は 7/24〜8/22 の累計で <strong>6,910 万</strong>（Codex の 6,630 万をわずかにリード）。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.245 リリース — Arch Linux・CachyOS・Fedora Rawhide での起動時クラッシュを修正</div>
+      <div class="card-meta"><span class="badge">Release / Bug Fix</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://www.havoptic.com/tools/claude-code">Havoptic — Claude Code v2.1.245</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>修正内容:</strong> glibc 2.44 以降を搭載した Linux ディストリビューション（Arch Linux、CachyOS、Fedora Rawhide）で起動時にクラッシュしていた問題を修正。glibc 2.44 は 2026 年 7〜8 月にかけて最新ディストリビューションへの展開が進んでおり、一部のローリングリリースユーザーで再現していた</li>
+          <li><strong>v2.1.243 の変更点（前版）:</strong> <code>/usage</code> コマンドにループ別の実行情報ブレークダウンを追加。スケジュールルーティンや繰り返し処理の実行コストを可視化しやすくなった。定期タスクを多用するユーザーから「モデル使用量の把握が格段にしやすくなった」という評価が出ている</li>
+          <li><strong>直近リリースの傾向:</strong> 8 月の Claude Code リリースは、コスト見積もり改善・クラウドセッション安定化・IDE/ターミナルワークフロー改善・広範なバグ修正が中心。プラットフォーム互換性（Bedrock・Alpine・Python 1.x 移行補助）や <code>/resume</code>・<code>/goal</code> の挙動改善も継続して行われている</li>
+          <li><strong>採用状況:</strong> 7/24〜8/22 の npm ダウンロード数は Claude Code が 6,910 万、OpenAI Codex が 6,630 万。Claude Code がわずかにリードを維持している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code のセルフホスト型実行環境、企業向け採用が本格化 — 規制業種のデータガバナンス要件をクリアする唯一の選択肢として浸透</div>
+      <div class="card-meta"><span class="badge">Claude Code / Enterprise</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code Aug 2026</a> · <a href="https://www.infoq.com/news/2026/05/code-with-claude/">InfoQ — Code with Claude</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>概要:</strong> 8 月 6 日に公開ベータが開始した Claude Code セルフホスト型実行環境（<code>claude self-hosted-runner</code>）は、Web・モバイル・デスクトップ・ターミナル・スケジュールルーティンのセッションを組織自身のネットワーク内で実行できる機能</li>
+          <li><strong>対象と制約:</strong> Team・Enterprise プランが対象。ゼロデータリテンション（ZDR）契約の組織は利用不可。リポジトリのチェックアウト・ビルド成果物・シークレット・セッション中に変更されたファイルはすべて組織側のマシン内にとどまる</li>
+          <li><strong>採用加速の背景:</strong> 金融・医療・法務など規制業種を中心に、「コードが Anthropic のクラウドを離れない」アーキテクチャが AI エージェント採用の最大の障壁だったデータガバナンス要件をクリアしたことで、本番導入事例が急増。AWS EC2 をランナーとして利用する詳細構成ガイドが DevelopersIO から公開されており、インフラチームでの導入を後押ししている</li>
+          <li><strong>コンプライアンス上の位置づけ:</strong> Managed Agents との組み合わせにより、エージェントの実行からアウトプットのレビューまでを完全にプライベートクラウド上で完結させる構成が可能になった点が特に評価されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic の Fable 5、7 月 1 日に全プラットフォームで復活 — Claude.ai・Claude Platform・Claude Code・Cowork で利用可能に</div>
+      <div class="card-meta"><span class="badge">Anthropic / Model</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Anthropic が 7 月 1 日に Fable 5 を Claude.ai、Claude Platform、Claude Code、Cowork の全プラットフォームで復活させた。一時停止していた期間を経て、ナラティブ・クリエイティブ用途に特化したモデルとして再投入された</li>
+          <li><strong>Terminal-Bench 2.1 最新結果（8 月版）:</strong> GPT-5.6 Sol（xhigh effort）が 89.5% でトップ、Claude Opus 5（max effort）が 89.1% で 2 位。コーディングエージェントの実用性を評価する指標では Claude Code が引き続き上位を維持している</li>
+          <li><strong>非開発者ユーザーの急増:</strong> OpenAI の報告によると、2025 年 8 月〜2026 年 8 月の 1 年間で非開発者ユーザーが個人で 137 倍、組織で 189 倍に増加。AI エージェントの利用が技術職以外にも急速に広がっていることが示された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/25）:</strong> <strong>OpenAI Codex がアクティブユーザー 2000 万人を突破</strong>（8/21 時点）。GPT-5.6 Sol の API 価格が 20% 超引き下げ。SpaceXAI（旧 Cursor）の「Grok Bot」は公開ベータ初週の評価が出はじめており、推論速度と UI の改善が評価されている一方、Claude Code のエコシステムの深さとの比較論議が活発。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex がアクティブユーザー 2000 万人突破 — GPT-5.6 Sol の API 価格 20% 超引き下げ、インタラクティブダッシュボードも追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Market</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — OpenAI Codex Aug 2026</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ユーザー数:</strong> OpenAI は 8 月 21 日時点でアクティブな Codex ユーザーが 2,000 万人に達したと発表。2025 年 8 月比で非開発者ユーザーが個人で 137 倍、組織で 189 倍に増加している</li>
+          <li><strong>価格引き下げ:</strong> GPT-5.6 Sol の API およびクレジット価格を 20% 超引き下げ。3 ヶ月間の期間限定で、API および ChatGPT Work・Codex の対象プランに適用される</li>
+          <li><strong>新機能:</strong> インタラクティブな Codex エージェントダッシュボードが追加。タスクの検索・開始・オープン・リネーム・停止と、カスタマイズ可能なショートカット設定が可能になった。TUI セッションでは <code>/cd</code>、<code>/pwd</code>、<code>/cwd</code> コマンドが追加されワーキングディレクトリの管理がしやすくなった</li>
+          <li><strong>Terminal-Bench 2.1:</strong> GPT-5.6 Sol（xhigh effort）が 88.8% を達成し AI エージェント性能の水準を引き上げている。Claude Opus 5 max effort の 89.1% とはわずかな差で競り合っている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">SpaceXAI（旧 Cursor）「Grok Bot」ベータ初週評価 — 推論速度は圧倒的、Claude Code のエコシステムの深さとの比較論議が活発</div>
+      <div class="card-meta"><span class="badge">SpaceXAI / Grok Bot / Competitive</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents Aug 2026</a> · <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ベータ初週の評価:</strong> SpaceX の Colossus スーパーコンピュータ（10 万枚超の H100 GPU）を背景にした Grok Bot の推論速度が、Claude Code および Codex と比較して顕著に高速という評価が出始めている。UI は Cursor のシンプルさを継承しており、移行コストが低い点が評価されている</li>
+          <li><strong>クラウドの棲み分け:</strong> 開発者コミュニティでは「Grok Bot は速度と単純タスクの量産、Claude Code は長時間の自律エージェントセッションと複雑なコードベースの把握」という役割分担論が有力になっている</li>
+          <li><strong>エコシステムの差:</strong> Claude Code のフック・スキル・MCP 統合・セルフホスト型実行環境という複合的なエコシステムは 1〜2 年分の蓄積があり、「Grok Bot が短期間で追いつくのは容易ではない」という見方が支配的。CellCog の 8 月ランキングでは Claude Code が長時間自律セッション部門でトップを維持している</li>
+          <li><strong>今後の焦点:</strong> Grok Bot が本格的なベンチマーク評価に投入されるタイミングが焦点。Colossus インフラの推論コスト優位が価格競争を引き起こすかどうかも注目されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Claude Code v2.1.245 でついに Arch Linux のクラッシュが直った — 週初めに試した人はアップデートを」</div>
+      <div class="card-meta"><span class="badge">Community / Bug Fix</span><span class="card-source">Reddit r/ClaudeAI · r/archlinux — 2026.08.25</span></div>
+      <div class="card-body">
+        <ul>
+          <li>glibc 2.44 系のクラッシュ問題は r/ClaudeAI や r/archlinux で 8 月上旬から複数の報告が上がっており、今回の v2.1.245 での修正を受けて「やっと直った」という安堵のコメントが多数投稿された</li>
+          <li>「Arch は常にローリングアップデートで最新の glibc を追いかけているので、Claude Code 側もそれに合わせたテストプロセスが必要」という意見が上位コメントに</li>
+          <li><code>/usage</code> のループ別ブレークダウン（v2.1.243 追加）についても「スケジュールルーティンのコスト管理がしやすくなった」「どのループがモデル使用量を食っているか一目でわかる」というポジティブな評価が続いている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Codex が 2000 万ユーザー達成 — Claude Code は何人？ AI コーディングエージェントの採用実態を考える」</div>
+      <div class="card-meta"><span class="badge">Community / Market</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08.25</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex の 2000 万ユーザー達成発表を受けて、「Claude Code の実際のユーザー数は？ Anthropic は公式数字を出していない」という議論が r/MachineLearning に浮上。npm ダウンロード数での比較（Claude Code 6,910 万 vs Codex 6,630 万）は「インストール数であり実アクティブユーザーとは異なる」という指摘も</li>
+          <li>「非開発者ユーザーが爆発的に増えているということは、AI エージェントはもはや開発ツールでなく業務ツールになっている」という議論が展開。法務・財務・マーケティング担当者が日常業務で Claude Code を使う事例が続々報告されている</li>
+          <li>Claude Code と Codex の使い分けに関しては「Claude Code はアーキテクチャ設計と長期タスク、Codex は短い実装タスクの量産」というコンセンサスが形成されつつある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「コンゴのエボラ出血熱、1週間で300人超死亡 — 史上最速ペースの拡大に国際社会が緊急対応」</div>
+      <div class="card-meta"><span class="badge">Community / Health Crisis</span><span class="card-source">Reddit r/worldnews · r/GlobalHealthNews — 2026.08.25</span></div>
+      <div class="card-body">
+        <ul>
+          <li>コンゴ東部でのエボラ出血熱流行が「1週間で300人超死亡」という統計が報じられ、r/worldnews でトップトレンドに。「過去最速の拡大ペース」という表現が衝撃を与えており、「なぜ国際的な報道が少ないのか」というコメントが多数上位に</li>
+          <li>「イランの制裁問題や気候変動の話題に埋もれているが、これは今最も深刻な人道的危機の一つ」という指摘が多くのアップボートを獲得。WHO の緊急支援要請に対する各国の対応の遅さへの批判も</li>
+          <li>ワクチンの在庫不足と、紛争地帯での接種活動の困難さが拡大の主因と分析されており、「コンゴ東部の不安定な治安状況が封じ込め活動を著しく制限している」という専門家コメントが引用されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/25）の主要トピック:</strong> 米国「Operation Economic Outcast」制裁パッケージの影響が国際金融・エネルギー市場に波及 / <strong>ガザでイスラエルの攻撃により少なくとも4人死亡（うち子供2人）</strong> / <strong>米国、イランとの戦争による兵力制約を理由に韓国との上陸演習を中止</strong> / <strong>インドネシアで大規模森林火災、広域でスモッグ</strong> / <strong>世界の海面温度が史上最高 21.1℃ を記録（8/22）</strong> / <strong>コンゴのエボラ出血熱、史上最速ペースで拡大</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">ガザでイスラエルの攻撃により少なくとも4人死亡（うち子供2人）— イスラエル軍の砲撃と戦車砲火が中部ガザを直撃</div>
+      <div class="card-meta"><span class="badge">Middle East / Gaza / Israel</span><span class="card-source">Source: Just Security — Early Edition Aug 25 · WORLD — Tuesday Morning News Aug 25</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>本日（8/25）の攻撃:</strong> イスラエル軍の砲撃と戦車砲火がガザ中部を直撃し、病院当局の発表によると少なくとも4人が死亡、うち2人は子供だった</li>
+          <li><strong>継続する人道危機:</strong> ガザの医療・インフラ状況は引き続き深刻で、国際援助団体は医薬品・食料・燃料の継続的な不足を報告している。停戦交渉は現時点で具体的な進展がみられない</li>
+          <li><strong>地域の緊張とイラン制裁の連動:</strong> 米国によるイランへの「Operation Economic Outcast」制裁は、ガザ問題とイランの関与をめぐる外交圧力の一環としても機能しており、中東全体の緊張が高まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国、イランとの戦争による兵力制約を理由に韓国との9月の大規模上陸演習を中止</div>
+      <div class="card-meta"><span class="badge">US / Korea / Iran / Military</span><span class="card-source">Source: Just Security — Early Edition Aug 25 · 10 Things Global News — Aug 25</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>演習の中止:</strong> 米国は 9 月に予定していた韓国との大規模合同上陸演習（水陸両用作戦演習）を中止すると発表。イランとの戦争による米軍兵力の制約を理由として挙げた</li>
+          <li><strong>インド太平洋への影響:</strong> 同盟国への関与を示す重要な軍事演習の中止は、北朝鮮の動向を注視する韓国・日本にとって懸念材料。韓国国防部は「米韓同盟の基本的な抑止力は維持されている」としながらも、継続的な協議を求めている</li>
+          <li><strong>米軍の「多正面展開」の限界:</strong> イランでの作戦継続に伴い、米軍がインド太平洋・ヨーロッパ（NATO 関連）・中東への同時的な前方展開に生じる制約が表面化している。防衛アナリストは「戦略的優先順位の明確化が急務」と指摘している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インドネシアで大規模森林火災 — 泥炭地帯を含む広域が焼失、スモッグが複数の都市を覆う</div>
+      <div class="card-meta"><span class="badge">Indonesia / Environment / Disaster</span><span class="card-source">Source: 10 Things Global News — Aug 25 · Britannica — Major Events of 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>火災の規模:</strong> インドネシア中部・西部で大規模な森林火災が発生し、広大な森林と泥炭地帯が焼失。スモッグが複数の都市を覆い、視界・大気質が著しく悪化している</li>
+          <li><strong>健康被害の懸念:</strong> 泥炭火災は表面だけでなく地下でも燃焼が続くため消火が難しく、大量の微粒子状物質（PM2.5）を長期間にわたって放出する。呼吸器疾患を持つ住民や高齢者・子供への健康被害が懸念されている</li>
+          <li><strong>エル・ニーニョとの連動:</strong> 今年の強まるエル・ニーニョが乾燥条件を促進しており、インドネシアの乾季が通常より長く・厳しくなっている。周辺国のシンガポール・マレーシア・タイにもスモッグの越境汚染が及ぶ可能性がある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">世界の海面温度が史上最高 21.1℃ を記録（8/22）— 強まるエル・ニーニョと数十年の温暖化が合わさり前例のない高温に</div>
+      <div class="card-meta"><span class="badge">Climate / Ocean / Environment</span><span class="card-source">Source: 10 Things Global News — Aug 25 · Britannica — Major Events of 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記録更新:</strong> 8 月 22 日、世界の海洋の平均表面温度が 21.1℃ という観測史上最高値を記録。数十年にわたる人為的温暖化と強まるエル・ニーニョの複合効果によるものと気候科学者は分析している</li>
+          <li><strong>熱帯低気圧への影響:</strong> 海面温度の記録的な高さは台風・ハリケーン・サイクロンの強度と頻度の増加に直結する。今後の台風シーズン（特に西太平洋・大西洋）での極端気象が懸念されている</li>
+          <li><strong>サンゴ礁と生態系:</strong> 高水温による大規模なサンゴ白化が太平洋・インド洋・大西洋の複数の地点で進行中。国際珊瑚礁イニシアチブ（ICRI）は「世界規模でのサンゴ大量死が進行している」と警告している</li>
+          <li><strong>インドネシアの火災との相乗効果:</strong> エル・ニーニョによる乾燥とインドネシア等の大規模火災が炭素放出をさらに増加させており、温暖化との負のフィードバックループが強まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">コンゴ東部のエボラ出血熱、1週間で300人超死亡 — 史上最速の拡大ペース、ワクチン不足と紛争地帯での封じ込めに課題</div>
+      <div class="card-meta"><span class="badge">DRC / Ebola / Health Crisis</span><span class="card-source">Source: 10 Things Global News — Aug 25 · Just Security — Early Edition Aug 25</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>被害の規模:</strong> コンゴ民主共和国（DRC）東部で進行中のエボラ出血熱流行において、直近1週間で300人超が死亡した。これは今回のアウトブレイク開始以来で最も多い週間死亡者数であり、記録上最速の拡大ペースを示している</li>
+          <li><strong>封じ込めの困難:</strong> コンゴ東部は長年にわたる武装勢力との紛争地帯であり、医療従事者の安全確保や患者追跡・接触者調査が著しく困難な状況が続いている。ワクチン在庫の不足も深刻で、WHO と国際機関が緊急支援を要請している</li>
+          <li><strong>国際的な注目度の低さ:</strong> 中東情勢・気候変動・米中貿易戦争など他の国際ニュースに埋もれており、主要メディアの報道が少ないことへの批判が国際 NGO やグローバルヘルス専門家から出ている</li>
+          <li><strong>過去のアウトブレイクとの比較:</strong> 今回のアウトブレイクは 2018〜2020 年の DRC 東部でのエボラ流行（2,000 人超死亡）を規模・速度の双方で上回るペースで進行しており、封じ込めに失敗した場合は中央アフリカ全域への拡大リスクがある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「Claude Code開発者が押さえておきたいAnthropicニュース（2026-08-25）」— homhom44 氏の日次ニュースまとめ</div>
+      <div class="card-meta"><span class="badge">News Digest / Claude Code</span><span class="card-source">Qiita — homhom44 シリーズ（毎日更新）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>毎日更新の Anthropic ニュースまとめシリーズ。本日（8/25）版は v2.1.245 の glibc 2.44 クラッシュ修正・v2.1.243 の <code>/usage</code> ループ別ブレークダウン追加・OpenAI Codex 2000 万ユーザー達成と GPT-5.6 Sol 価格引き下げによる競合環境の変化などを日本語でコンパクトにまとめている見通し</li>
+          <li>8/6 の自己ホスト型環境発表週から継続して毎日更新が続いており、「Claude Code の変更を追う定点観測」として国内開発者コミュニティに定着している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「AI エージェント時代のアーキテクチャ設計 — Claude Code と MCP の組み合わせで何が変わったか」</div>
+      <div class="card-meta"><span class="badge">Architecture / Claude Code / MCP</span><span class="card-source">Zenn — 2026年8月 注目記事</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Model Context Protocol（MCP）と Claude Code の組み合わせが、従来のソフトウェアアーキテクチャ設計に与える影響を体系的に論じた技術記事が注目を集めている。「MCP サーバーをマイクロサービスとして設計する」という考え方が具体例とともに解説されている</li>
+          <li>特に「データベース・外部 API・内部ツールをそれぞれ MCP サーバーとして抽象化し、Claude Code エージェントがオーケストレーターとして各サービスを呼び出す」というアーキテクチャパターンが実例付きで紹介されており、「設計指針として即使える内容」という評価を集めている</li>
+          <li>Skills API の GA を受けて、「スキルとエージェントツールの使い分け」に関する考察も含まれており、8 月の技術記事の中でも特に実践的な内容として位置づけられている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「AIコーディングエージェント比較 2026年8月版 — Claude Code・Codex・Grok Bot を実際に使って比べてみた」</div>
+      <div class="card-meta"><span class="badge">Comparison / Benchmark</span><span class="card-source">Qiita — 2026年8月 注目記事</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code・OpenAI Codex・SpaceXAI の Grok Bot（ベータ）を実際のコーディングタスクで比較した記事が週次注目記事に浮上。「30分以上の自律セッションでは Claude Code、短時間の量産タスクでは Codex、純粋な応答速度では Grok Bot」という評価軸が提示されている</li>
+          <li>Grok Bot のベータ参加者による「推論速度は圧倒的に速いが、長い文脈でのコードベース把握はまだ Claude Code に劣る」という具体的なレビューが引用されており、各ツールの長所短所が実感値として整理されている</li>
+          <li>コスト面では「GPT-5.6 Sol の価格引き下げで Codex の費用対効果が改善した」という指摘もあり、用途別の最適な使い分けを考える上での参考記事として広くシェアされている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月25日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Havoptic · Releasebot (Anthropic, OpenAI) · MorphLLM · InfoQ · TechCrunch · Gradually · OpenAI · Just Security · WORLD · 10 Things Global News · Britannica · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-24/index.html">前版（2026-08-24）</a></p>
+</footer>
+</body>
+</html>
