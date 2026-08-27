@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月26日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月27日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code が安定性・権限管理・バックグラウンドセッションを大幅改善 / Codex が共有スレッドスナップショット等の新機能追加 / ドリー・パートン死去（享年80歳）/ パキスタンの病院火災で新生児14人死亡 / カナダが米国に報復関税（15〜50%）を発動へ</p>
-  <p class="date">2026年8月26日（水）&nbsp;|&nbsp;<a href="2026-08-25/index.html">前版（8/25）</a></p>
+  <p class="subtitle">Claude Code v2.1.248 が <code>--restricted</code> フラグ・クロスセッションメッセージング拡充・機密ファイル誤アップロード修正を追加 / OpenAI Codex が常時接続「Persistent モード」を開発中 / ネパール・チベット氷河崩落で360人超死亡・1500人行方不明 / 北フランス・カーンで車突入 2死9傷 / カタール首相がイラン訪問し停戦仲介へ</p>
+  <p class="date">2026年8月27日（木）&nbsp;|&nbsp;<a href="2026-08-26/index.html">前版（8/26）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / Anthropic</a>
@@ -69,31 +69,33 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/26）のハイライト:</strong> Claude Code が<strong>大規模な安定性・ユーザビリティ改善アップデート</strong>を実施 — Bash allow-rule の警告追加、<code>/permissions</code> の Auto モードタブ、トランスクリプト・フルスクリーンのパフォーマンス向上、バックグラウンドセッションの信頼性改善など。また Claude Code は「スタートアップインフラ」として位置づけが進み、コーディング補助ツールから<strong>ターミナル内の包括的ワークスペース</strong>へと進化していることが各所で指摘されている。
+      <strong>本日（8/27）のハイライト:</strong> Claude Code <strong>v2.1.248</strong> がリリース — 新しい <code>--restricted</code> フラグでサンドボックス実行環境を簡単構築、Bedrock・Vertex・Foundry 間でのクロスセッションメッセージング対応、機密ファイル（<code>.env</code>・<code>*.tfvars</code>）の誤アップロード修正など多数の改善が含まれる。前日リリースの v2.1.247 では <code>SendFeedback</code> ツールと <code>/claude-api cost-optimize</code> コマンドも追加されている。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code、安定性・権限・バックグラウンドセッションを包括的に改善 — 設計ツール・短回答モード・自然言語パーミッションルールも追加</div>
-      <div class="card-meta"><span class="badge">Release / Stability</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually — Claude Code Changelog Aug 2026</a> · <a href="https://origami.sa/en/blog/claude-code-august-2026/">Origami — What's New in Claude Code Aug 2026</a> · <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO — Claude Code News Aug 2026</a></span></div>
+      <div class="card-title">Claude Code v2.1.248 — <code>--restricted</code> フラグ・クロスセッション拡充・プロンプトキャッシュ修正・機密ファイル誤送信防止</div>
+      <div class="card-meta"><span class="badge">Release / Security</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code Updates</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>権限管理の改善:</strong> <code>/permissions</code> に Auto モードタブが追加され、Bash コマンドの allow-rule に警告表示が追加された。パーミッションルールを自然言語の文章として記述できる新機能により、設定のわかりやすさが大幅に向上した</li>
-          <li><strong>バックグラウンドセッション修正:</strong> 開始ディレクトリが削除されていた場合・マシンがスリープから復帰した場合・プロセス起動が遅いホストでの「45秒タイムアウト後に開かない」問題を修正。また別の Claude Code プロセスが npm パッケージを再インストール中に "EACCES" エラーでバックグラウンドセッションが開けない問題も解消</li>
-          <li><strong>パフォーマンス改善:</strong> トランスクリプト表示とフルスクリーンモードのレンダリングパフォーマンスが改善。長時間セッションでの UI 応答性が向上した</li>
-          <li><strong>MCP・マークダウン修正:</strong> ヘッドレス/リモートセッションで受信メッセージによって中断された MCP ツール呼び出しが「出力なしで完了」ではなく明示的なエラーとして報告されるよう修正。最初の500文字にマークダウンが含まれない場合にメッセージ全体のマークダウン描画が無効化されていたバグも修正</li>
-          <li><strong>ターミナル内デザインツールと短回答モード:</strong> 8月の大きなテーマは「設計・インターフェース・応答スタイルの制御」。ターミナル内デザインキャンバス機能や、より短い回答を優先する応答スタイル設定が追加され、Claude Code は開発だけでなく設計・文書作成まで担うワークスペースとして進化している</li>
-          <li><strong>スタートアップインフラとしての位置づけ:</strong> 2026年8月時点で Claude Code は「コーディング補助ツール」から「日常的なターミナル業務のインフラ」として評価されるようになっており、コードレビュー・バックグラウンドジョブ・権限管理・セッション安定性の全面的な改善がその変化を支えている</li>
+          <li><strong><code>--restricted</code> フラグ（新機能）:</strong> 組み込みのコマンド実行ツール・<code>WebFetch</code> を削除し、ファイル操作を作業ディレクトリ内のみに制限、<code>bypassPermissions</code> を拒否し、ユーザー・プロジェクト・ローカル設定を無視する。CI/CD パイプラインや自動化スクリプトへ Claude Code を組み込む際のサンドボックスモードとして設計されており、権限管理の最小化を簡単に実現できる</li>
+          <li><strong><code>experimental.cacheTtl</code>（新機能）:</strong> エージェントフロントマターでエージェントごとのプロンプトキャッシュ TTL を設定できる（例：<code>"5m"</code>・<code>"1h"</code>）。サブエージェントの TTL が設定されていない場合に適用される</li>
+          <li><strong>プロンプトキャッシュミスの修正:</strong> OAuth トークン更新後にツール定義が再描画されることで約1時間ごとに発生していたプロンプトキャッシュミスを修正。長時間セッションの応答速度と一貫性が向上する</li>
+          <li><strong>クロスセッションメッセージング拡充:</strong> <code>SendMessage</code>/<code>ListAgents</code> が Bedrock・Vertex・Foundry 間でのセッション横断通信に対応（従来は CLI のみ）。デフォルトディレクトリが使用できない場合はプライベート <code>/tmp</code> ディレクトリへの自動フォールバックも追加</li>
+          <li><strong>機密ファイルの誤アップロード修正:</strong> <code>.env</code>・<code>*.tfvars</code>・認証情報バックアップなどの機密ファイルへの未コミット編集がアップロードされなくなった。セキュリティ上の重要な修正で、CI 環境やクラウドセッションでの秘密漏洩リスクを低減する</li>
+          <li><strong>セルフホスト型ランナーの改善:</strong> <code>--client-label</code> オプションが追加され、ランナーが登録する際のラベルをホスト名以外の任意の文字列にオーバーライドできるようになった。複数ランナーの管理・識別が容易になる</li>
+          <li><strong>クラウドセッション消失バグの修正:</strong> トランスクリプトクリーンアップがデスクトップで書き込まれたセッションを削除していた問題（30日後に消失）を修正。デスクトップとクラウドセッションを併用するユーザーの会話履歴が正しく保持されるようになった</li>
+          <li><strong>サーバー管理診断（新機能）:</strong> 設定の読み込み失敗時にスタートアップ警告を表示し、各種プロバイダー向けの <code>/doctor</code>・<code>/status</code> コマンドの説明が追加された</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic のセルフホスト型ランナーと Claude Code エコシステム、規制業種での本番採用が加速 — 8月の全体的な採用動向まとめ</div>
-      <div class="card-meta"><span class="badge">Claude Code / Enterprise</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO — Claude Code Startup Infrastructure Aug 2026</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually — Changelog</a></span></div>
+      <div class="card-title">Claude Code v2.1.247（8/26）— <code>SendFeedback</code> ツール・<code>/claude-api cost-optimize</code>・Admin API カバレッジ拡充</div>
+      <div class="card-meta"><span class="badge">Release / Productivity</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://qiita.com/homhom44/items/94f4f17767e20b2f98a4">Qiita — Anthropic ニュース 2026-08-26</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>採用拡大:</strong> 8月の npm ダウンロード数（7/24〜8/22）は Claude Code が 6,910 万、Codex が 6,630 万でほぼ拮抗。ダウンロード数以上に「長時間の自律エージェントセッション」での実績が Claude Code の差別化軸として定着しつつある</li>
-          <li><strong>セルフホスト型実行環境（8/6 公開ベータ）:</strong> 金融・医療・法務分野での本番導入が加速。コードが Anthropic のクラウドを離れない設計がデータガバナンス要件をクリアする唯一の選択肢として評価されている</li>
-          <li><strong>Cowork との統合深化:</strong> Claude Code のスケジュールルーティン機能と Cowork の共同作業機能を組み合わせた活用事例が増加。「チームの定期業務をエージェントに委任する」パターンが定着し始めている</li>
-          <li><strong>競合優位の持続:</strong> Claude Code のフック・スキル・MCP 統合・セルフホスト型実行環境という複合的なエコシステムは Grok Bot（SpaceXAI）が短期間で追いつくことが難しいとの見方が引き続き支配的</li>
+          <li><strong><code>SendFeedback</code> ツール:</strong> Claude がユーザーの代わりにフィードバックレポートの下書きを作成し、<code>/feedback</code> コマンドで確認・送信できるようになった。フィードバック記録の手間が大幅に削減される</li>
+          <li><strong><code>/claude-api cost-optimize</code>:</strong> 既存プロジェクトの Claude API 使用コストをプロファイリングし、最適化提案を自動生成する新コマンド。実際の API 呼び出しパターンを分析して、キャッシュ活用・モデル選定・バッチ処理などの改善案を提示する</li>
+          <li><strong>Admin API カバレッジの拡充:</strong> <code>/claude-api</code> スキルに組織メンバー管理・API キー管理・課金管理の各エンドポイントが追加された。管理者向けの自動化スクリプト作成に役立つ</li>
+          <li><strong>継続的な採用拡大:</strong> Releasebot によると8月の Claude Code アップデートは日次ペースで継続しており、エンタープライズ向け・セルフホスト向けの機能強化が加速している。「スタートアップのインフラ」としての位置づけがより明確になってきた</li>
         </ul>
       </div>
     </div>
@@ -105,30 +107,28 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（8/26）:</strong> <strong>OpenAI Codex</strong> が共有スレッドスナップショット・ポータブル Agent Plugins・MCP 2026-07-28 プロトコル対応など新機能を追加。OpenAI は法人利用の 64% がエージェント型 Codex によるものと報告。<strong>Prime Intellect がオープンソースコーディングエージェント「Prime Agent」を 8/6 に公開</strong>、Meta の Muse Code も台頭し、AIコーディングエージェント市場の競争が一段と激化している。
+      <strong>競合ハイライト（8/27）:</strong> <strong>OpenAI Codex が「Persistent（常時接続）モード」を開発中</strong> — CLI 版の GitHub リポジトリにコードが初登場し、デスクトップ版への展開が予想される。また Codex に Admin プラグインが追加され、ワークスペース分析・アクセス管理・使用量制御の一元管理が可能に。アクティブユーザー数は2000万人に達したと報告されている。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex が共有スレッドスナップショット・ポータブル Agent Plugins・MCP 2026-07-28 対応を追加 — 企業向けトークン出力の 64% がエージェント</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Feature</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia — Codex (AI agent)</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a></span></div>
+      <div class="card-title">OpenAI Codex、「Persistent モード（常時接続）」を開発中 — CLI の GitHub に初登場、デスクトップ展開が視野に</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Feature</span><span class="card-source">Source: <a href="https://gizmodo.com/nevertheless-openai-persists-with-new-always-on-agent-2000804088">Gizmodo — OpenAI always-on agent</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia — Codex (AI agent)</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — Codex Statistics 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>新機能（最新リリース）:</strong> 共有スレッドスナップショット、統合されたピン止めスレッド管理、ポータブル Agent Plugins、永続的な会話セクション、自動承認（Automated Approvals）、MCP 2026-07-28 プロトコルのオプトイン対応。ChatGPT デスクトップアプリでは Apple Messages サポート、サイト共同編集、編集可能な Site URL が追加された</li>
-          <li><strong>Bedrock ワークフロー改善:</strong> AWS Bedrock との統合ワークフローが改善され、エンタープライズ展開での信頼性が向上。セキュリティ強化も図られた</li>
-          <li><strong>エージェント利用率の急上昇:</strong> OpenAI の企業向けレポートによると、法人顧客の総出力トークンのうち <strong>64%</strong> が Codex エージェントによるもの（2026年6月時点）。AIの企業利用が単純なQ&Aから「委任実行」へと移行しているシグナルとして注目されている</li>
-          <li><strong>npm 統計（8/23 時点）:</strong> Codex の GitHub リポジトリが 114,493 スター、npm パッケージの過去30日ダウンロード数は 6,630 万。Claude Code の 6,910 万をわずかに下回る水準で激しく競り合っている</li>
-          <li><strong>非開発者ユーザーの急増:</strong> 週間アクティブ非開発者ユーザーの増加率が開発者ユーザーの増加率を上回っており、一般業務ツールとしての普及が加速している</li>
+          <li><strong>Persistent モード:</strong> 「常時接続」型の新しい動作モードのコードが OpenAI の Codex CLI 版 GitHub リポジトリに初登場。CLI ツールに追加された機能はデスクトップ版に展開される傾向があり、近い将来 ChatGPT デスクトップアプリ版 Codex にも搭載されると見られている</li>
+          <li><strong>常時接続の意味:</strong> 現行の Codex はユーザーがリクエストを送った際にセッションが開始される「オンデマンド型」だが、Persistent モードでは常にバックグラウンドで実行状態を維持し、継続的なコンテキスト保持や自発的な作業提案が可能になると推測されている。Claude Code がすでに提供しているスケジュールルーティン・バックグラウンドセッションと同等の機能を目指しているとの見方がある</li>
+          <li><strong>Admin プラグイン追加:</strong> ChatGPT Work および Codex 向けに Admin プラグインが提供開始。ワークスペース分析、アクセス管理、使用量制御、サポート対象の管理者アクションを一つの会話画面から実行できる。大規模組織での Codex 管理コストを削減することが狙い</li>
+          <li><strong>2000万ユーザー達成:</strong> OpenAI の Tibo Sottiaux 氏によると、Codex のアクティブユーザー数が2000万人に到達。npm パッケージの過去30日間ダウンロード数は 6,630 万（8/23 時点）で、Claude Code の 6,910 万をわずかに下回る水準を維持している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Prime Intellect「Prime Agent」オープンソース公開・Meta「Muse Code」台頭 — コーディングエージェント市場の多極化が進む</div>
-      <div class="card-meta"><span class="badge">Open Source / Meta / Market</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/2026-august">AI Agent Store — Daily AI Agent News Aug 2026</a> · <a href="https://buildez.ai/blog/ai-trending-august-2026-agents-price-cuts-new-rules">Buildez — AI Trending August 2026</a></span></div>
+      <div class="card-title">Apple Xcode 26.3 がエージェント型コーディングに対応 — Claude Agent・Codex を Xcode から直接呼び出し可能に</div>
+      <div class="card-meta"><span class="badge">Apple / Xcode / Integration</span><span class="card-source">Source: <a href="https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/">Apple Newsroom — Xcode 26.3</a> · <a href="https://www.claudedirectory.org/for/ai-agent-development">Claude Directory — Best Claude Code setups Aug 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Prime Agent（8/6 公開）:</strong> Prime Intellect がオープンソースのコーディングエージェント「Prime Agent」を公開。オープンソースコミュニティでの採用が始まっており、プロプライエタリなエージェントに対するオープンな代替として注目されている</li>
-          <li><strong>Meta Muse Code:</strong> Meta が Muse Code（専用コーディングエージェント）と Muse Spark 1.2 を投入。Meta のオープンウェイト戦略と合わせて、エンタープライズ向けの自社ホスト型 AI エージェントの選択肢が広がっている</li>
-          <li><strong>マルチエージェントシステムの台頭:</strong> 8月の大きなトレンドとして、単一エージェントではなく「複数の専門エージェントにタスクを分散し、オーケストレーターが統合する」マルチエージェントアーキテクチャの普及がある。Claude Code の Workflow 機能や MCP による外部ツール連携はこの潮流に直接対応している</li>
-          <li><strong>価格競争の激化:</strong> GPT-5.6 Sol の 20% 超価格引き下げ（3ヶ月期間限定）がトリガーとなり、主要プレイヤー間での価格圧力が高まっている。エージェント利用のコスト障壁低下は採用加速に直結している</li>
+          <li><strong>Xcode 26.3 の新機能:</strong> Apple が Xcode 26.3 でエージェント型コーディング（Agentic Coding）のネイティブサポートを追加。Anthropic の Claude Agent と OpenAI の Codex をはじめとする外部 AI エージェントを Xcode の IDE 内から直接呼び出せるようになった</li>
+          <li><strong>開発者へのインパクト:</strong> iOS・macOS アプリ開発者が Xcode を離れずに Claude Code の機能を活用できるようになり、ツール切り替えのオーバーヘッドが排除される。Apple のファーストパーティツールとの緊密な統合により、Swift・SwiftUI プロジェクトでの AI エージェント活用が一般化すると見られている</li>
+          <li><strong>エコシステムへの影響:</strong> Xcode 26.3 への対応は Claude Code が「macOS ネイティブ開発のインフラ」として位置づけられる重要なマイルストーン。Microsoft Visual Studio Code・JetBrains に続き、Apple の主力 IDE への統合が完成したことで、主要開発環境を網羅する形になった</li>
         </ul>
       </div>
     </div>
@@ -140,35 +140,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「/permissions の Auto モードと自然言語ルール、実際どう使う？ — 設定例を共有するスレッドが盛況」</div>
-      <div class="card-meta"><span class="badge">Community / Feature</span><span class="card-source">Reddit r/ClaudeAI — 2026.08.26</span></div>
+      <div class="card-title">r/ClaudeAI「<code>--restricted</code> フラグ、CI/CD への組み込み事例を共有するスレッドが盛況 — 『これで本番環境に安心して使える』」</div>
+      <div class="card-meta"><span class="badge">Community / Security</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode — 2026.08.27</span></div>
       <div class="card-body">
         <ul>
-          <li>最新の Claude Code アップデートで追加された <code>/permissions</code> の Auto モードタブと「自然言語でパーミッションルールを書く」機能について、r/ClaudeAI でユーザー同士の設定例共有スレッドが活発化。「英語で "allow npm install but ask for git push" と書くだけで設定できる」という体験が好評を集めている</li>
-          <li>「Bash allow-rule の警告表示が追加されたことで、意図しないコマンド実行のリスクが可視化された」という評価が上位コメントに。セキュリティ意識の高いユーザーからは特に歓迎されている</li>
-          <li>バックグラウンドセッションの修正についても「スリープ復帰後の 45 秒問題がついに直った」「ディレクトリが存在しない環境でもセッションが開けるようになった」というポジティブな反応が多数</li>
+          <li>v2.1.248 で追加された <code>--restricted</code> フラグについて、r/ClaudeAI・r/ClaudeCode で実用例の共有スレッドが活発化。「コマンド実行とファイル操作の範囲を制限した状態で Claude Code を CI パイプラインに組み込める。<code>bypassPermissions</code> を拒否するので意図せず広い権限を使われる心配がなくなった」という評価が上位にランクイン</li>
+          <li>「.env ファイルへの未コミット変更が自動的にアップロードされなくなったのは本当に助かる」というコメントも多数。機密情報の漏洩リスクが実際に懸念されていた事がうかがえる。セキュリティ意識の高い DevOps エンジニア層から特に支持されている</li>
+          <li>「Claude Code の r/ClaudeCode サブレディットは週間アクティブ投稿者数が 4,200 人以上で、r/Codex の約3倍」という統計が引用され、開発者コミュニティでの圧倒的な存在感を示す話題になっている。「量より質、でも量も Codex より多い」という声が印象的</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「企業の AI 利用トークンの 64% がエージェント — OpenAI のレポートが示す「チャット→委任実行」のシフト」</div>
-      <div class="card-meta"><span class="badge">Community / Market</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08.26</span></div>
+      <div class="card-title">r/worldnews「ネパール・チベット氷河崩落で1500人行方不明 — 外国人観光客600人含む、気候変動との関連に注目が集まる」</div>
+      <div class="card-meta"><span class="badge">Community / World News</span><span class="card-source">Reddit r/worldnews · r/environment — 2026.08.27</span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI が公開した「How agents are transforming work」レポートが r/MachineLearning のトップトレンドに。企業向けトークン出力の 64% が Codex エージェントによるという数字が注目を集め、「AI はもはや質問に答えるツールではなく、仕事を実行するインフラになった」という分析コメントが多くのアップボートを獲得</li>
-          <li>「Claude Code vs Codex のシェア争いは API 利用量で見ると互角だが、長時間自律セッションの質はまだ Claude Code が優位」「Codex は量産、Claude Code はアーキテクチャ設計と複雑なタスク」という使い分け論が再び浮上している</li>
-          <li>Prime Agent（Prime Intellect のオープンソース）と Meta Muse Code の登場を受けて「プロプライエタリエージェントに依存するリスクとオープンソース代替のコスト」を比較する議論も展開されており、大企業が自社ホスト型エージェントを選好する傾向が強まっているという声が複数見られる</li>
+          <li>ネパール・チベット国境でのヒマラヤ氷河崩落による洪水被害が r/worldnews のトップトレンドに。「標高5200mの氷河の大部分が崩落し、Lhende川に直撃して一時的なダムを形成、その決壊で Trishuli 川の水位が30分で9m上昇した」という被害規模の大きさに驚きの声が多数</li>
+          <li>「外国人観光客600人近くが行方不明、うち33人はアメリカ人」という情報が拡散し、被害の国際的な広がりが話題に。科学者が「気候変動が今回の崩落を引き起こした可能性が高い」と指摘した点について、r/environment では気候変動の具体的インパクトとして集中的に議論されている</li>
+          <li>「ネパール政府が即時の捜索・救助活動を開始したが、山岳地帯への到達が困難で救援が遅れている」という状況を伝える記事に、国際社会に対する迅速な支援を求めるコメントが多く寄せられた</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「パキスタン病院で新生児14人死亡、ドリー・パートン死去 — 8/26 の国際ニュースを振り返るスレッド」</div>
-      <div class="card-meta"><span class="badge">Community / World News</span><span class="card-source">Reddit r/worldnews · r/news — 2026.08.26</span></div>
+      <div class="card-title">r/MachineLearning「Codex Persistent モード登場でエージェントの"常駐化"が次のトレンドに — Claude Code との差が縮まるか議論」</div>
+      <div class="card-meta"><span class="badge">Community / AI Agent</span><span class="card-source">Reddit r/MachineLearning · r/LocalLLaMA — 2026.08.27</span></div>
       <div class="card-body">
         <ul>
-          <li>イスラマバードの PIMS 病院新生児室火災でエアコンのコンプレッサー爆発により新生児 14 人が死亡したニュースが r/worldnews で大きな反響。「15 人中 14 人が亡くなった」「病院側が乳幼児室の出口を施錠していたため逃げられなかった」という報道に、怒りと悲しみのコメントが溢れた。パキスタン政府は即時調査を命じた</li>
-          <li>ドリー・パートン死去（8/25、享年80歳）のスレッドには「Imagination Library で 3 億冊以上の本を世界中の子供たちに届けた」「最後まで慈善活動を続けた真のレジェンド」という追悼コメントが溢れた。死因はがんとのことで、ナッシュビルの病院で家族に囲まれて旅立ったと報じられた</li>
-          <li>カナダの米国への報復関税（15〜50%）発動のニュースも上位にランクイン。「トランプの関税に対する最も具体的な反撃」として評価する声と、「貿易戦争が消費者物価を直撃する」という懸念の双方がみられた</li>
+          <li>OpenAI Codex の「Persistent モード」コードが CLI の GitHub リポジトリに登場したことが r/MachineLearning でトピックに。「Claude Code のスケジュールルーティンとバックグラウンドセッションに相当する機能を Codex も目指しているのは明らか。追いついてきた」という見方と、「常時接続だけでは足りない。フック・スキル・MCP の深さはまだ差がある」という反論が拮抗している</li>
+          <li>「2026年の AI エージェントの大きなテーマは Agent Harnesses（エージェントハーネス）— 単にエージェントを持つだけでなく、エージェントをいかに管理・制御・安全に使うかに移行している。Claude Code の <code>--restricted</code> フラグはその象徴」という分析コメントが注目を集めている</li>
+          <li>r/LocalLLaMA では「Persistent モード = 常に API コストがかかる、という点でオープンソースやローカル実行の優位性が改めて議論されている。Prime Agent の採用が加速するきっかけになるかも」という意見も浮上している</li>
         </ul>
       </div>
     </div>
@@ -177,66 +177,52 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（8/26）の主要トピック:</strong> <strong>ドリー・パートン死去（享年80歳）</strong>8/25 にがんで / <strong>パキスタン・イスラマバードの PIMS 病院新生児室火災で新生児14人死亡</strong> / <strong>カナダが米国に報復関税15〜50%を発表（9/8 発効）</strong> / <strong>イランが米国の「Operation Economic Outcast」制裁継続・ホルムズ海峡でタンカー攻撃</strong> / <strong>イラン国営メディアがバロン・トランプへの脅迫動画（賞金1000万ドル）を放映、シークレットサービスが対応中</strong>
+      <strong>本日（8/27）の主要トピック:</strong> <strong>ネパール・チベット氷河崩落 — 360人超死亡・1,500人行方不明（外国人観光客600人含む）</strong> / <strong>北フランス・カーンで車が歩行者に突入、2死9傷（テロ認定せず）</strong> / <strong>カタール首相がテヘランを訪問し、イラン戦争（6ヶ月目）の停戦仲介へ</strong> / <strong>日本・石川・富山でも豪雨による洪水・土砂崩れが発生</strong>
     </div>
     <div class="card">
-      <div class="card-title">ドリー・パートン、がんで死去 — 享年80歳、カントリー音楽と慈善活動で世界に足跡を残した国民的アイコン</div>
-      <div class="card-meta"><span class="badge">US / Culture / Obituary</span><span class="card-source">Source: <a href="https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary">NPR — Dolly Parton Obituary</a> · <a href="https://www.cnn.com/2026/08/25/entertainment/dolly-parton-death">CNN — Dolly Parton death</a> · <a href="https://variety.com/2026/music/news/dolly-parton-dead-dies-country-music-1236842727/">Variety</a></span></div>
+      <div class="card-title">ネパール・チベット ヒマラヤ氷河崩落による大洪水 — 360人超死亡・1,500人行方不明、外国人600人含む史上最大級の氷河災害</div>
+      <div class="card-meta"><span class="badge">Nepal / Tibet / Disaster</span><span class="card-source">Source: <a href="https://www.npr.org/2026/08/26/g-s1-140211/nepal-china-floods">NPR — Nepal-China floods</a> · <a href="https://www.aljazeera.com/news/2026/8/27/nepal-tibet-floods-what-happened-what-caused-them-and-who-is-missing">Al Jazeera — Nepal-Tibet floods</a> · <a href="https://www.cbsnews.com/news/nepal-flash-flood-tourists-missing-including-americans/">CBS News</a> · <a href="https://www.nbcnews.com/world/asia/himalayan-glacier-collapse-nepal-tibet-disaster-rcna594658">NBC News</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>訃報:</strong> 2026年8月25日、カントリー音楽の伝説ドリー・パートンが享年80歳でナッシュビルにて死去。死因は短期間のがん闘病。家族に囲まれてバンダービルト・イングラム癌センターで旅立った。夫カール・ディーン氏（享年82歳）は2025年3月に先立ってすでに死去している</li>
-          <li><strong>七十年の音楽キャリア:</strong> 1960年代から第一線で活躍し続け、「I Will Always Love You」「Jolene」「9 to 5」など数多くの名曲を残した。グラミー賞通算9回受賞、累計アルバム販売枚数は1億枚以上。カントリー音楽とポップを橋渡しした先駆者として評価されている</li>
-          <li><strong>Imagination Library:</strong> パートンが1995年に創設した読書支援プログラム「Imagination Library」は、世界中の子供たちに3億冊以上の本を無償で届けてきた。本人の故郷テネシー州スモーキー山脈地域での活動がモデルとなり、現在は米国・英国・カナダ・オーストラリア・アイルランドで展開されている</li>
-          <li><strong>追悼の声:</strong> 音楽業界、政界、慈善活動の各方面から追悼の声が続出。「技術と技と懐の深さを兼ね備えた、この時代最大のアーティスト」という評が数多く寄せられている</li>
+          <li><strong>崩落の規模:</strong> チベット・中国側で標高約5,200mに位置するヒマラヤ氷河の大部分が崩落。約1,200m下のネパール・中国国境の北東約20kmに位置する Lhende 川に巨大な氷・岩塊が流れ込み、天然ダムを形成した後に決壊。Trishuli川の水位が30分間で9m（約27フィート）上昇する壊滅的な鉄砲水が発生した</li>
+          <li><strong>死者・行方不明者:</strong> ネパール側で少なくとも162人死亡、826人行方不明。チベット側（中国・ギロン県）では3人死亡、558人行方不明。合計で360人超が死亡、1,500人近くが行方不明となっており、行方不明者のうち外国人観光客は約600人、うち33人が米国人。ネパール史上最悪の氷河関連災害の一つとなった</li>
+          <li><strong>気候変動との関連:</strong> 科学者は「気候変動が今回の氷河崩落の引き金を引いた可能性が高い」と指摘。ヒマラヤの氷河は温暖化によって融解が加速しており、崩落リスクが高まっていることが以前から警告されていた。今回の規模はその最大級の実例となった</li>
+          <li><strong>救助活動:</strong> ネパール政府とチベット当局が即時に捜索・救助活動を開始したが、山岳地帯への到達困難、二次被害リスク、インフラ破壊により救援が遅延している。国際社会からの支援要請が続いている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">パキスタン・イスラマバードの PIMS 病院新生児室火災 — エアコン爆発で15人中14人の新生児が死亡、施錠された出口が悲劇を拡大</div>
-      <div class="card-meta"><span class="badge">Pakistan / Disaster / Health</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/26/at-least-15-newborns-killed-in-pakistan-hospital-fire">Al Jazeera</a> · <a href="https://www.cnn.com/2026/08/26/asia/pakistan-newborns-hospital-fire-intl-hnk">CNN — Pakistan hospital fire</a> · <a href="https://www.npr.org/2026/08/26/nx-s1-5944808/hospital-nursery-fire-kills-14-newborns-pakistan">NPR</a></span></div>
+      <div class="card-title">北フランス・カーンで車が歩行者集団に突入 — 2人死亡・9人負傷、ロシア生まれの男を逮捕。テロ認定なし</div>
+      <div class="card-meta"><span class="badge">France / Incident / Crime</span><span class="card-source">Source: <a href="https://abcnews.com/International/wireStory/car-rams-pedestrians-northern-france-killing-1-injuring-135996755">ABC News</a> · <a href="https://wtop.com/world/2026/08/car-rams-pedestrians-in-northern-france-killing-1-and-injuring-10-before-driver-is-arrested/">WTOP News</a> · <a href="https://armenpress.am/en/article/1259003">Armenpress</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>事故の概要:</strong> 8月26日早朝6時45分頃、パキスタン・イスラマバードの Pakistan Institute of Medical Sciences（PIMS）病院内にある Mother and Child Centre 3階の新生児室でエアコンのコンプレッサーが爆発し、火災が発生。当時15人の新生児が収容されており、うち14人が死亡。生存者は1人のみ</li>
-          <li><strong>施錠された出口:</strong> 報道によると、新生児室の出口が施錠されていたことが逃げ遅れの一因と指摘されている。Al Jazeera の報道見出し「Locked inside: Grief and anger」（施錠されて閉じ込め：悲しみと怒り）が状況を象徴している</li>
-          <li><strong>政府の対応:</strong> シャハバズ・シャリフ首相が「遺族への深い哀悼」を表明し、即時調査を指示。パキスタン政府が管轄する病院の老朽化インフラと防火設備の不備が繰り返し問題となっており、今回の火災は「パキスタン史上最悪の病院火災の一つ」と報道されている</li>
-          <li><strong>構造的な背景:</strong> 政府系病院は慢性的な資金不足・人手不足で、緊急時の安全体制が整備されていないケースが多い。今回の火災は医療インフラへの投資不足という根本的な課題を改めて浮き彫りにした</li>
+          <li><strong>事件の概要:</strong> 8月26日深夜、北フランスのカーン（ノルマンディー地方）の鉄道駅前で、運転手が意図的に歩行者集団に向けて車を突入させた。2人が死亡し、9人が負傷（うち数人が重傷）。被害者は17〜40歳の男性とみられる</li>
+          <li><strong>容疑者の逮捕:</strong> 容疑者はロシア生まれの男性で事件後に逮捕された。カーン市長のアリスティード・オリヴィエ氏は地元ラジオで「テロ攻撃ではなく、口論が暴力に発展した結果と思われる」と述べた。地域当局者のダヴィッド・クラヴィエール氏はロイターに「車が駅前の道路で歩行者の集団に意図的に突入した」と確認している</li>
+          <li><strong>捜査の方針:</strong> 当局はテロとして立件しない方向で捜査を進めており、動機の特定を最優先とする。フランスでは過去に類似の車両攻撃事件が複数発生しており、公共空間の安全管理が再び議論になることが予想される</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">カナダ、米国に報復関税15〜50%を発表 — 9月8日発効、対象は鉄鋼・農業機械・乳製品など約200億ドル規模</div>
-      <div class="card-meta"><span class="badge">Canada / US / Trade War</span><span class="card-source">Source: <a href="https://alaskapublic.org/news/national/2026-08-26/canada-hits-back-at-the-u-s-with-tariffs-as-the-countries-trade-fight-escalates">Alaska Public</a> · <a href="https://www.manilatimes.net/2026/08/26/business/foreign-business/canada-unveils-counter-tariffs-of-15-50-on-us-goods/2412226">Manila Times</a> · <a href="https://www.washingtonpost.com/politics/2026/08/26/trump-canada-elections-social-security/2399ba54-a14a-11f1-8606-1d40ad00172e_story.html">Washington Post</a></span></div>
+      <div class="card-title">カタール首相がテヘラン訪問 — イラン戦争（6ヶ月目）の停戦仲介を目指す、外交的突破口は不透明</div>
+      <div class="card-meta"><span class="badge">Iran / Middle East / Diplomacy</span><span class="card-source">Source: <a href="https://wng.org/podcasts/thursday-morning-news-august-27-2026-1787764364">WORLD — Thursday morning news Aug 27</a> · <a href="https://morningstaronline.co.uk/article/world-in-brief-august-27-2026">Morning Star — World in brief Aug 27</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>報復関税の内容:</strong> カナダのフランソワ＝フィリップ・シャンパーニュ財務相が発表。米国の関税に対して「ドル対ドル、税率対税率」で対応する関税を課す方針で、税率は 15%・25%・50% の3段階。9月8日に発効し、鉄鋼・乳製品・家電・農業機械・パルプ・紙・電子機器などが対象。年間輸入額にして約 200 億ドル規模</li>
-          <li><strong>経済支援パッケージ:</strong> 関税による影響を受ける企業・労働者を対象に 54 億ドル（カナダドル換算 75 億ドル）の支援パッケージも同時に発表された</li>
-          <li><strong>背景:</strong> トランプ政権が先週土曜日（8/23）に発動した 50% 関税に対する対抗措置。カナダのマーク・カーニー首相はかねてから「ドル対ドルで対応する」と宣言しており、今回の発表はその公約を履行するもの。Washington Post は「全面的な貿易戦争から引き下がれるかどうか不明確」と報じている</li>
-          <li><strong>市場への影響:</strong> 鉄鋼・農業など国境を越えたサプライチェーンに依存する産業へのコスト上昇が見込まれており、消費者物価への波及も懸念されている</li>
+          <li><strong>カタールの仲介活動:</strong> カタールのムハンマド首相兼外相が8月27日にテヘランを訪問し、イランの指導部と会談。今年2月に始まった米・イスラエルとイランの戦争が6ヶ月目を迎える中、戦闘はほぼ停止しているものの外交的な突破口は開かれていない。カタールはハマスとの交渉でも仲介役を担ってきた実績を持つ</li>
+          <li><strong>現状:</strong> 前日（8/26）にホルムズ海峡でタンカーのエンジン室が攻撃される事案があり（犯行声明なし）、海峡の緊張は依然として高い。米国の「Operation Economic Outcast」制裁は継続中で、制裁圧力とカタールの仲介努力が並行している状況</li>
+          <li><strong>中東情勢全体:</strong> ガザでは依然として不安定な状況が続いており、イラン核合意の再交渉、ホルムズ海峡の航行安全、レバノン情勢が相互に絡み合いながら中東地政学リスクを高水準に維持している。カタールの訪問が具体的な成果につながるかは不透明とされている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イランの「Operation Economic Outcast」制裁継続 — ホルムズ海峡でタンカーエンジン室が攻撃、バロン・トランプへの1000万ドル賞金動画</div>
-      <div class="card-meta"><span class="badge">Iran / Middle East / Sanctions</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">CNBC</a> · <a href="https://www.npr.org/2026/08/26/nx-s1-5944398/secret-service-aware-of-iranian-state-media-video-threatening-barron-trump">NPR — Barron Trump threat</a> · <a href="https://time.com/article/2026/08/26/iran-state-media-threat-barron-trump/">Time</a></span></div>
+      <div class="card-title">日本・石川・富山で豪雨 — 洪水・土砂崩れが発生、道路寸断・孤立地区が続出</div>
+      <div class="card-meta"><span class="badge">Japan / Weather / Disaster</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/08/27/latest-news-bulletin-august-27th-2026-morning">Euronews — Morning Bulletin Aug 27</a> · <a href="https://10things.news/p/10-things-global-news-27th-august-fa9">10 Things Global News — Aug 27</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ホルムズ海峡のタンカー攻撃:</strong> 8月26日、ホルムズ海峡でタンカーのエンジン室が何らかの飛翔体に攻撃され機能停止。乗員に死傷者はなく、犯行声明は出ていない。イランは一部のイラク産原油タンカーの航行を容認しているものの、海峡の交通量は依然として大幅に低下しており、原油市場は「様子見」の状態が続いている</li>
-          <li><strong>「Operation Economic Outcast」制裁:</strong> 米財務省はイランの航空・海運・技術・金・暗号資産に関連する約 60 の個人・企業・船舶を対象に追加制裁を発動。スコット・ベッセント財務長官は「イランへの経済 D デイが来る」と警告しており、イランと取引のある第三国企業にも圧力を加える方針を明確にした</li>
-          <li><strong>バロン・トランプへの脅迫動画:</strong> イラン革命防衛隊系メディアが、バロン・トランプ（大統領の末息子）の命に 1000 万ドルの賞金を懸けたとする動画を放映。米国シークレットサービスは「認識している。保護対象者への脅威とみなされるものはすべて調査する」と声明を発表した。今年2月の米・イスラエルとイランの戦争開始以来、強硬派イランメディアはトランプ大統領家族への脅威コンテンツを繰り返し発信しており、今回は初めて息子のバロン氏が標的にされた</li>
-          <li><strong>中東全体の緊張:</strong> ガザでは依然としてイスラエル軍の砲撃が続いており（8/25 に子供2人を含む4人死亡）、停戦交渉は具体的な進展がみられない。イランをめぐる制裁・戦争・ホルムズ問題が連動し、中東地域全体の地政学リスクが高い水準を維持している</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">世界の海面温度・コンゴのエボラ出血熱 — 長期的な人道・環境危機が継続</div>
-      <div class="card-meta"><span class="badge">Climate / Health / Environment</span><span class="card-source">Source: Al Jazeera · WHO · ICRI — 2026.08.26</span></div>
-      <div class="card-body">
-        <ul>
-          <li><strong>海面温度（継続情報）:</strong> 8月22日に記録した史上最高の海面温度（21.1℃）を受けて、西太平洋の台風シーズン強化が懸念されている。インドネシアの大規模森林火災（泥炭地帯含む）が引き続き継続中で、複数の都市でスモッグが続いている</li>
-          <li><strong>コンゴのエボラ出血熱（継続情報）:</strong> 8/25 に報じられた「1週間で300人超死亡・史上最速の拡大ペース」という状況は8/26 時点でも改善の報告がなく、WHO は追加の緊急支援を要請している。ワクチン不足と紛争地帯での封じ込め困難が主因で、専門家は「中央アフリカ全域への拡大を防ぐためのウィンドウが急速に閉じている」と警告している</li>
+          <li><strong>被害状況:</strong> 北中部の石川県・富山県を中心とした豪雨により複数地点で洪水・土砂崩れが発生。道路が各所で閉鎖され、洪水が起きた家屋や車両内での孤立者も報告されている。石川県は2024年元日の能登半島地震からの復興途上にあり、再びの大規模被害に対応が求められている</li>
+          <li><strong>対応:</strong> 自衛隊・消防・警察が捜索・救助活動を展開。気象庁は石川・富山など複数の県に大雨・土砂災害警戒情報を発令しており、さらなる雨量増加への警戒を呼びかけている。今後数日間も雨が続く見通しで、二次災害のリスクが高い状態が続く</li>
         </ul>
       </div>
     </div>
@@ -245,27 +231,38 @@
   <section class="section" id="qiita">
     <div class="section-header">
       <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
-      <span class="section-count">2 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Zenn / Qiita「Agent Skills × GitHub Actions で Qiita・Zenn の執筆環境を作った — 記事書くの面倒を完全自動化」</div>
-      <div class="card-meta"><span class="badge">Agent Skills / Workflow / Automation</span><span class="card-source">Source: <a href="https://zenn.dev/yymm/articles/20260821-qiita-zenn-writing-setup">Zenn — yymm 氏 (2026-08-21)</a> · <a href="https://qiita.com/kouki_y/items/3c75e3e81afeee57ea05">Qiita — kouki_y 氏</a></span></div>
+      <div class="card-title">Qiita「Claude Code の8月アップデート3点を『エージェント組織の統治』として読む」— セキュリティ・コスト・フィードバックを組織ガバナンス視点で解釈</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / Governance</span><span class="card-source">Source: <a href="https://qiita.com/berrylove/items/e5df42c20e0b23b07f71">Qiita — berrylove 氏</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Zenn と Qiita の両プラットフォームへの技術記事執筆を Agent Skills と GitHub Actions で自動化する構成を解説した記事が注目を集めている。「記事を書くのが面倒」というエンジニアの典型的な課題をエージェントに委任するというコンセプトが共感を呼んでいる</li>
-          <li><strong>仕組み:</strong> GitHub リポジトリ上に Markdown で記事を書くと、Agent Skills が内容を要約・構造化し、GitHub Actions が Qiita API および Zenn の GitHub 連携を通じて両プラットフォームに自動投稿する。Claude Code のスケジュールルーティンとも組み合わせることで「定期的なニュースまとめ記事の自動生成・投稿」も実現できるという応用例が紹介されている</li>
-          <li><strong>読者の反応:</strong> 「自分もこういう環境を作りたかった」「スケジュールルーティンとの組み合わせが特に応用範囲が広い」という評価が多く、AI エージェントを「知識生産のインフラ」として活用する考え方が国内開発者コミュニティに浸透し始めていることを示している</li>
+          <li>Claude Code の8月の主要アップデート（<code>--restricted</code> フラグ / <code>/claude-api cost-optimize</code> / <code>SendFeedback</code>）を「エージェント組織をいかに統治するか」という視点から読み解く Qiita 記事が注目を集めている</li>
+          <li><strong>記事の主な主張:</strong> ①<code>--restricted</code> フラグ＝「エージェントへの最小権限の原則の実装」、②<code>/claude-api cost-optimize</code>＝「エージェントの運用コストを可視化・最適化するマネジメント機能」、③<code>SendFeedback</code>＝「エージェントから人間への説明責任の仕組み」として読むと、Anthropic が「エージェントを安全に組織運営に組み込む」ための設計思想を着実に実装していることが見えてくる、というもの</li>
+          <li><strong>反響:</strong> 「個々の機能アップデートをこうして体系的に読む視点は参考になる」「エージェント組織の統治という概念フレームが今後の開発の議論に使えそう」というコメントが多く、技術的な機能説明を超えた概念的な考察として評価されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita「AI エージェントのおかげで学びの初速が爆速になった 2025〜2026 年を振り返る」— 開発者の日常が変わったという実感の記録</div>
-      <div class="card-meta"><span class="badge">Learning / Experience / AI Agent</span><span class="card-source">Source: <a href="https://qiita.com/yumechi/items/759ff6eb5dc57986729f">Qiita — yumechi 氏</a></span></div>
+      <div class="card-title">Qiita「Claude Code 開発者が押さえておきたい Anthropic ニュース（2026-08-26）」— v2.1.247 の <code>SendFeedback</code>・コスト最適化・Admin API を網羅</div>
+      <div class="card-meta"><span class="badge">Qiita / Anthropic / Summary</span><span class="card-source">Source: <a href="https://qiita.com/homhom44/items/94f4f17767e20b2f98a4">Qiita — homhom44 氏</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code をはじめとする AI エージェントが「エンジニアの学習速度をどのように変えたか」を個人の体験として記録した振り返り記事が継続的に注目を集めている。「知らないことを調べ、試し、理解するまでのループが数倍速になった」という実感が多くの共感を集めている</li>
-          <li><strong>具体的な変化:</strong> 新しい技術スタックの習得・コードレビューの質向上・ドキュメント作成の効率化など、開発サイクル全体にわたる改善が具体的なエピソードとともに語られている。「Claude Code がいる前とあとで、技術の習得コストが体感で1/3 になった」という表現が印象的と評価されている</li>
-          <li><strong>課題の指摘:</strong> 「エージェント頼りで自分の理解が浅くなるリスク」「プロンプトの質がアウトプットの質を左右するため、思考力そのものが重要になった」という課題意識も率直に書かれており、単純な礼賛に終わらないバランスの良さが評価されている</li>
+          <li>homhom44 氏による「Anthropic 週次ニュース」シリーズの最新回（2026-08-26）。Claude Code v2.1.247 の変更点を開発者目線で網羅的にまとめた記事で、<code>SendFeedback</code> ツールの使い方・<code>/claude-api cost-optimize</code> の実際の出力例・Admin API の追加エンドポイント一覧が具体的に解説されている</li>
+          <li><strong>特に評価されているポイント:</strong> <code>/claude-api cost-optimize</code> の実際の出力例の紹介が特に好評。「どの API 呼び出しがコスト高なのか、どのモデルへの切り替えで何%削減できるかの推算が自動で出てくる。コスト管理の手間がなくなった」という反応が多い</li>
+          <li>シリーズは連日更新されており、Anthropic の公式 Changelog を追いきれない忙しい開発者にとって「日本語でまとめてくれる貴重な情報源」として定着している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita トレンド（8/26）「候補者のコードが AI 製か見抜けなくなった、『AI 禁止』コーディングテストをやめたい」— 採用の現場での議論が波及</div>
+      <div class="card-meta"><span class="badge">Qiita / Hiring / AI Ethics</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/4f1fd8aba7093656861f">Qiita — 8/26 トレンドまとめ</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>エンジニア採用の現場で「提出されたコードが AI によって書かれたかどうか判別できなくなった。そもそも AI 禁止という前提を続けることが現実的でなくなってきた」という問題提起が Qiita でトレンドに。試験の評価軸を「コードが書けるか」から「AI を使ってどのような問題を解決できるか」に転換すべきという主張が展開されている</li>
+          <li><strong>反応の多様性:</strong> 「コーディングテストの本質は思考力の評価なのでプロセスを見ればよい」「ペアプロ形式の実技面接に移行すべき」という建設的な提案がある一方、「AI を使えることをスキルとして評価するのは時代の要請」という意見と「基礎的な理解があってこそ AI を適切に使えるはず。最低限の素地は確認したい」という意見の対立が議論を活発にしている</li>
+          <li><strong>関連記事との連動:</strong> 同じ Qiita トレンドには「国産 LLM『LLM-jp-4-33B』と『Qwen3-8B-27B』の推論性能比較」も入っており、AI 能力評価の技術的・社会的な両面での議論が同日に活発化している点が注目される</li>
         </ul>
       </div>
     </div>
@@ -273,9 +270,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年8月26日（水）</p>
-  <p style="margin-top:0.5rem;">Sources: Gradually (Claude Code Changelog) · Origami · Mean CEO · AI Agent Store · Buildez · Wikipedia (Codex) · OpenAI · NPR · CNN · Al Jazeera · Washington Post · Alaska Public · CNBC · Time · Variety · Zenn · Qiita</p>
-  <p style="margin-top:0.3rem;"><a href="2026-08-25/index.html">前版（2026-08-25）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月27日（木）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Releasebot · Gizmodo · Wikipedia (Codex) · Gradually · Apple Newsroom · NPR · Al Jazeera · CBS News · NBC News · ABC News · WTOP · Armenpress · Euronews · WORLD · Morning Star · Qiita · 10 Things Global News</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-26/index.html">前版（2026-08-26）</a></p>
 </footer>
 </body>
 </html>

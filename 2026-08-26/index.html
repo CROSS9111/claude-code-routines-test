@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月26日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code が安定性・権限管理・バックグラウンドセッションを大幅改善 / Codex が共有スレッドスナップショット等の新機能追加 / ドリー・パートン死去（享年80歳）/ パキスタンの病院火災で新生児14人死亡 / カナダが米国に報復関税（15〜50%）を発動へ</p>
+  <p class="date">2026年8月26日（水）&nbsp;|&nbsp;<a href="../2026-08-25/index.html">前版（8/25）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/26）のハイライト:</strong> Claude Code が<strong>大規模な安定性・ユーザビリティ改善アップデート</strong>を実施 — Bash allow-rule の警告追加、<code>/permissions</code> の Auto モードタブ、トランスクリプト・フルスクリーンのパフォーマンス向上、バックグラウンドセッションの信頼性改善など。また Claude Code は「スタートアップインフラ」として位置づけが進み、コーディング補助ツールから<strong>ターミナル内の包括的ワークスペース</strong>へと進化していることが各所で指摘されている。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code、安定性・権限・バックグラウンドセッションを包括的に改善 — 設計ツール・短回答モード・自然言語パーミッションルールも追加</div>
+      <div class="card-meta"><span class="badge">Release / Stability</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually — Claude Code Changelog Aug 2026</a> · <a href="https://origami.sa/en/blog/claude-code-august-2026/">Origami — What's New in Claude Code Aug 2026</a> · <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO — Claude Code News Aug 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>権限管理の改善:</strong> <code>/permissions</code> に Auto モードタブが追加され、Bash コマンドの allow-rule に警告表示が追加された。パーミッションルールを自然言語の文章として記述できる新機能により、設定のわかりやすさが大幅に向上した</li>
+          <li><strong>バックグラウンドセッション修正:</strong> 開始ディレクトリが削除されていた場合・マシンがスリープから復帰した場合・プロセス起動が遅いホストでの「45秒タイムアウト後に開かない」問題を修正。また別の Claude Code プロセスが npm パッケージを再インストール中に "EACCES" エラーでバックグラウンドセッションが開けない問題も解消</li>
+          <li><strong>パフォーマンス改善:</strong> トランスクリプト表示とフルスクリーンモードのレンダリングパフォーマンスが改善。長時間セッションでの UI 応答性が向上した</li>
+          <li><strong>MCP・マークダウン修正:</strong> ヘッドレス/リモートセッションで受信メッセージによって中断された MCP ツール呼び出しが「出力なしで完了」ではなく明示的なエラーとして報告されるよう修正。最初の500文字にマークダウンが含まれない場合にメッセージ全体のマークダウン描画が無効化されていたバグも修正</li>
+          <li><strong>ターミナル内デザインツールと短回答モード:</strong> 8月の大きなテーマは「設計・インターフェース・応答スタイルの制御」。ターミナル内デザインキャンバス機能や、より短い回答を優先する応答スタイル設定が追加され、Claude Code は開発だけでなく設計・文書作成まで担うワークスペースとして進化している</li>
+          <li><strong>スタートアップインフラとしての位置づけ:</strong> 2026年8月時点で Claude Code は「コーディング補助ツール」から「日常的なターミナル業務のインフラ」として評価されるようになっており、コードレビュー・バックグラウンドジョブ・権限管理・セッション安定性の全面的な改善がその変化を支えている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic のセルフホスト型ランナーと Claude Code エコシステム、規制業種での本番採用が加速 — 8月の全体的な採用動向まとめ</div>
+      <div class="card-meta"><span class="badge">Claude Code / Enterprise</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-august-2026/">Mean CEO — Claude Code Startup Infrastructure Aug 2026</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually — Changelog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>採用拡大:</strong> 8月の npm ダウンロード数（7/24〜8/22）は Claude Code が 6,910 万、Codex が 6,630 万でほぼ拮抗。ダウンロード数以上に「長時間の自律エージェントセッション」での実績が Claude Code の差別化軸として定着しつつある</li>
+          <li><strong>セルフホスト型実行環境（8/6 公開ベータ）:</strong> 金融・医療・法務分野での本番導入が加速。コードが Anthropic のクラウドを離れない設計がデータガバナンス要件をクリアする唯一の選択肢として評価されている</li>
+          <li><strong>Cowork との統合深化:</strong> Claude Code のスケジュールルーティン機能と Cowork の共同作業機能を組み合わせた活用事例が増加。「チームの定期業務をエージェントに委任する」パターンが定着し始めている</li>
+          <li><strong>競合優位の持続:</strong> Claude Code のフック・スキル・MCP 統合・セルフホスト型実行環境という複合的なエコシステムは Grok Bot（SpaceXAI）が短期間で追いつくことが難しいとの見方が引き続き支配的</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/26）:</strong> <strong>OpenAI Codex</strong> が共有スレッドスナップショット・ポータブル Agent Plugins・MCP 2026-07-28 プロトコル対応など新機能を追加。OpenAI は法人利用の 64% がエージェント型 Codex によるものと報告。<strong>Prime Intellect がオープンソースコーディングエージェント「Prime Agent」を 8/6 に公開</strong>、Meta の Muse Code も台頭し、AIコーディングエージェント市場の競争が一段と激化している。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex が共有スレッドスナップショット・ポータブル Agent Plugins・MCP 2026-07-28 対応を追加 — 企業向けトークン出力の 64% がエージェント</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Feature</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — OpenAI Codex Statistics 2026</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia — Codex (AI agent)</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新機能（最新リリース）:</strong> 共有スレッドスナップショット、統合されたピン止めスレッド管理、ポータブル Agent Plugins、永続的な会話セクション、自動承認（Automated Approvals）、MCP 2026-07-28 プロトコルのオプトイン対応。ChatGPT デスクトップアプリでは Apple Messages サポート、サイト共同編集、編集可能な Site URL が追加された</li>
+          <li><strong>Bedrock ワークフロー改善:</strong> AWS Bedrock との統合ワークフローが改善され、エンタープライズ展開での信頼性が向上。セキュリティ強化も図られた</li>
+          <li><strong>エージェント利用率の急上昇:</strong> OpenAI の企業向けレポートによると、法人顧客の総出力トークンのうち <strong>64%</strong> が Codex エージェントによるもの（2026年6月時点）。AIの企業利用が単純なQ&amp;Aから「委任実行」へと移行しているシグナルとして注目されている</li>
+          <li><strong>npm 統計（8/23 時点）:</strong> Codex の GitHub リポジトリが 114,493 スター、npm パッケージの過去30日ダウンロード数は 6,630 万。Claude Code の 6,910 万をわずかに下回る水準で激しく競り合っている</li>
+          <li><strong>非開発者ユーザーの急増:</strong> 週間アクティブ非開発者ユーザーの増加率が開発者ユーザーの増加率を上回っており、一般業務ツールとしての普及が加速している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Prime Intellect「Prime Agent」オープンソース公開・Meta「Muse Code」台頭 — コーディングエージェント市場の多極化が進む</div>
+      <div class="card-meta"><span class="badge">Open Source / Meta / Market</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/2026-august">AI Agent Store — Daily AI Agent News Aug 2026</a> · <a href="https://buildez.ai/blog/ai-trending-august-2026-agents-price-cuts-new-rules">Buildez — AI Trending August 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Prime Agent（8/6 公開）:</strong> Prime Intellect がオープンソースのコーディングエージェント「Prime Agent」を公開。オープンソースコミュニティでの採用が始まっており、プロプライエタリなエージェントに対するオープンな代替として注目されている</li>
+          <li><strong>Meta Muse Code:</strong> Meta が Muse Code（専用コーディングエージェント）と Muse Spark 1.2 を投入。Meta のオープンウェイト戦略と合わせて、エンタープライズ向けの自社ホスト型 AI エージェントの選択肢が広がっている</li>
+          <li><strong>マルチエージェントシステムの台頭:</strong> 8月の大きなトレンドとして、単一エージェントではなく「複数の専門エージェントにタスクを分散し、オーケストレーターが統合する」マルチエージェントアーキテクチャの普及がある。Claude Code の Workflow 機能や MCP による外部ツール連携はこの潮流に直接対応している</li>
+          <li><strong>価格競争の激化:</strong> GPT-5.6 Sol の 20% 超価格引き下げ（3ヶ月期間限定）がトリガーとなり、主要プレイヤー間での価格圧力が高まっている。エージェント利用のコスト障壁低下は採用加速に直結している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「/permissions の Auto モードと自然言語ルール、実際どう使う？ — 設定例を共有するスレッドが盛況」</div>
+      <div class="card-meta"><span class="badge">Community / Feature</span><span class="card-source">Reddit r/ClaudeAI — 2026.08.26</span></div>
+      <div class="card-body">
+        <ul>
+          <li>最新の Claude Code アップデートで追加された <code>/permissions</code> の Auto モードタブと「自然言語でパーミッションルールを書く」機能について、r/ClaudeAI でユーザー同士の設定例共有スレッドが活発化。「英語で "allow npm install but ask for git push" と書くだけで設定できる」という体験が好評を集めている</li>
+          <li>「Bash allow-rule の警告表示が追加されたことで、意図しないコマンド実行のリスクが可視化された」という評価が上位コメントに。セキュリティ意識の高いユーザーからは特に歓迎されている</li>
+          <li>バックグラウンドセッションの修正についても「スリープ復帰後の 45 秒問題がついに直った」「ディレクトリが存在しない環境でもセッションが開けるようになった」というポジティブな反応が多数</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「企業の AI 利用トークンの 64% がエージェント — OpenAI のレポートが示す「チャット→委任実行」のシフト」</div>
+      <div class="card-meta"><span class="badge">Community / Market</span><span class="card-source">Reddit r/MachineLearning · r/artificial — 2026.08.26</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI が公開した「How agents are transforming work」レポートが r/MachineLearning のトップトレンドに。企業向けトークン出力の 64% が Codex エージェントによるという数字が注目を集め、「AI はもはや質問に答えるツールではなく、仕事を実行するインフラになった」という分析コメントが多くのアップボートを獲得</li>
+          <li>「Claude Code vs Codex のシェア争いは API 利用量で見ると互角だが、長時間自律セッションの質はまだ Claude Code が優位」「Codex は量産、Claude Code はアーキテクチャ設計と複雑なタスク」という使い分け論が再び浮上している</li>
+          <li>Prime Agent（Prime Intellect のオープンソース）と Meta Muse Code の登場を受けて「プロプライエタリエージェントに依存するリスクとオープンソース代替のコスト」を比較する議論も展開されており、大企業が自社ホスト型エージェントを選好する傾向が強まっているという声が複数見られる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「パキスタン病院で新生児14人死亡、ドリー・パートン死去 — 8/26 の国際ニュースを振り返るスレッド」</div>
+      <div class="card-meta"><span class="badge">Community / World News</span><span class="card-source">Reddit r/worldnews · r/news — 2026.08.26</span></div>
+      <div class="card-body">
+        <ul>
+          <li>イスラマバードの PIMS 病院新生児室火災でエアコンのコンプレッサー爆発により新生児 14 人が死亡したニュースが r/worldnews で大きな反響。「15 人中 14 人が亡くなった」「病院側が乳幼児室の出口を施錠していたため逃げられなかった」という報道に、怒りと悲しみのコメントが溢れた。パキスタン政府は即時調査を命じた</li>
+          <li>ドリー・パートン死去（8/25、享年80歳）のスレッドには「Imagination Library で 3 億冊以上の本を世界中の子供たちに届けた」「最後まで慈善活動を続けた真のレジェンド」という追悼コメントが溢れた。死因はがんとのことで、ナッシュビルの病院で家族に囲まれて旅立ったと報じられた</li>
+          <li>カナダの米国への報復関税（15〜50%）発動のニュースも上位にランクイン。「トランプの関税に対する最も具体的な反撃」として評価する声と、「貿易戦争が消費者物価を直撃する」という懸念の双方がみられた</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/26）の主要トピック:</strong> <strong>ドリー・パートン死去（享年80歳）</strong>8/25 にがんで / <strong>パキスタン・イスラマバードの PIMS 病院新生児室火災で新生児14人死亡</strong> / <strong>カナダが米国に報復関税15〜50%を発表（9/8 発効）</strong> / <strong>イランが米国の「Operation Economic Outcast」制裁継続・ホルムズ海峡でタンカー攻撃</strong> / <strong>イラン国営メディアがバロン・トランプへの脅迫動画（賞金1000万ドル）を放映、シークレットサービスが対応中</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">ドリー・パートン、がんで死去 — 享年80歳、カントリー音楽と慈善活動で世界に足跡を残した国民的アイコン</div>
+      <div class="card-meta"><span class="badge">US / Culture / Obituary</span><span class="card-source">Source: <a href="https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary">NPR — Dolly Parton Obituary</a> · <a href="https://www.cnn.com/2026/08/25/entertainment/dolly-parton-death">CNN — Dolly Parton death</a> · <a href="https://variety.com/2026/music/news/dolly-parton-dead-dies-country-music-1236842727/">Variety</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>訃報:</strong> 2026年8月25日、カントリー音楽の伝説ドリー・パートンが享年80歳でナッシュビルにて死去。死因は短期間のがん闘病。家族に囲まれてバンダービルト・イングラム癌センターで旅立った。夫カール・ディーン氏（享年82歳）は2025年3月に先立ってすでに死去している</li>
+          <li><strong>七十年の音楽キャリア:</strong> 1960年代から第一線で活躍し続け、「I Will Always Love You」「Jolene」「9 to 5」など数多くの名曲を残した。グラミー賞通算9回受賞、累計アルバム販売枚数は1億枚以上。カントリー音楽とポップを橋渡しした先駆者として評価されている</li>
+          <li><strong>Imagination Library:</strong> パートンが1995年に創設した読書支援プログラム「Imagination Library」は、世界中の子供たちに3億冊以上の本を無償で届けてきた。本人の故郷テネシー州スモーキー山脈地域での活動がモデルとなり、現在は米国・英国・カナダ・オーストラリア・アイルランドで展開されている</li>
+          <li><strong>追悼の声:</strong> 音楽業界、政界、慈善活動の各方面から追悼の声が続出。「技術と技と懐の深さを兼ね備えた、この時代最大のアーティスト」という評が数多く寄せられている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">パキスタン・イスラマバードの PIMS 病院新生児室火災 — エアコン爆発で15人中14人の新生児が死亡、施錠された出口が悲劇を拡大</div>
+      <div class="card-meta"><span class="badge">Pakistan / Disaster / Health</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/8/26/at-least-15-newborns-killed-in-pakistan-hospital-fire">Al Jazeera</a> · <a href="https://www.cnn.com/2026/08/26/asia/pakistan-newborns-hospital-fire-intl-hnk">CNN — Pakistan hospital fire</a> · <a href="https://www.npr.org/2026/08/26/nx-s1-5944808/hospital-nursery-fire-kills-14-newborns-pakistan">NPR</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事故の概要:</strong> 8月26日早朝6時45分頃、パキスタン・イスラマバードの Pakistan Institute of Medical Sciences（PIMS）病院内にある Mother and Child Centre 3階の新生児室でエアコンのコンプレッサーが爆発し、火災が発生。当時15人の新生児が収容されており、うち14人が死亡。生存者は1人のみ</li>
+          <li><strong>施錠された出口:</strong> 報道によると、新生児室の出口が施錠されていたことが逃げ遅れの一因と指摘されている。Al Jazeera の報道見出し「Locked inside: Grief and anger」（施錠されて閉じ込め：悲しみと怒り）が状況を象徴している</li>
+          <li><strong>政府の対応:</strong> シャハバズ・シャリフ首相が「遺族への深い哀悼」を表明し、即時調査を指示。パキスタン政府が管轄する病院の老朽化インフラと防火設備の不備が繰り返し問題となっており、今回の火災は「パキスタン史上最悪の病院火災の一つ」と報道されている</li>
+          <li><strong>構造的な背景:</strong> 政府系病院は慢性的な資金不足・人手不足で、緊急時の安全体制が整備されていないケースが多い。今回の火災は医療インフラへの投資不足という根本的な課題を改めて浮き彫りにした</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カナダ、米国に報復関税15〜50%を発表 — 9月8日発効、対象は鉄鋼・農業機械・乳製品など約200億ドル規模</div>
+      <div class="card-meta"><span class="badge">Canada / US / Trade War</span><span class="card-source">Source: <a href="https://alaskapublic.org/news/national/2026-08-26/canada-hits-back-at-the-u-s-with-tariffs-as-the-countries-trade-fight-escalates">Alaska Public</a> · <a href="https://www.manilatimes.net/2026/08/26/business/foreign-business/canada-unveils-counter-tariffs-of-15-50-on-us-goods/2412226">Manila Times</a> · <a href="https://www.washingtonpost.com/politics/2026/08/26/trump-canada-elections-social-security/2399ba54-a14a-11f1-8606-1d40ad00172e_story.html">Washington Post</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>報復関税の内容:</strong> カナダのフランソワ＝フィリップ・シャンパーニュ財務相が発表。米国の関税に対して「ドル対ドル、税率対税率」で対応する関税を課す方針で、税率は 15%・25%・50% の3段階。9月8日に発効し、鉄鋼・乳製品・家電・農業機械・パルプ・紙・電子機器などが対象。年間輸入額にして約 200 億ドル規模</li>
+          <li><strong>経済支援パッケージ:</strong> 関税による影響を受ける企業・労働者を対象に 54 億ドル（カナダドル換算 75 億ドル）の支援パッケージも同時に発表された</li>
+          <li><strong>背景:</strong> トランプ政権が先週土曜日（8/23）に発動した 50% 関税に対する対抗措置。カナダのマーク・カーニー首相はかねてから「ドル対ドルで対応する」と宣言しており、今回の発表はその公約を履行するもの。Washington Post は「全面的な貿易戦争から引き下がれるかどうか不明確」と報じている</li>
+          <li><strong>市場への影響:</strong> 鉄鋼・農業など国境を越えたサプライチェーンに依存する産業へのコスト上昇が見込まれており、消費者物価への波及も懸念されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イランの「Operation Economic Outcast」制裁継続 — ホルムズ海峡でタンカーエンジン室が攻撃、バロン・トランプへの1000万ドル賞金動画</div>
+      <div class="card-meta"><span class="badge">Iran / Middle East / Sanctions</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">CNBC</a> · <a href="https://www.npr.org/2026/08/26/nx-s1-5944398/secret-service-aware-of-iranian-state-media-video-threatening-barron-trump">NPR — Barron Trump threat</a> · <a href="https://time.com/article/2026/08/26/iran-state-media-threat-barron-trump/">Time</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ホルムズ海峡のタンカー攻撃:</strong> 8月26日、ホルムズ海峡でタンカーのエンジン室が何らかの飛翔体に攻撃され機能停止。乗員に死傷者はなく、犯行声明は出ていない。イランは一部のイラク産原油タンカーの航行を容認しているものの、海峡の交通量は依然として大幅に低下しており、原油市場は「様子見」の状態が続いている</li>
+          <li><strong>「Operation Economic Outcast」制裁:</strong> 米財務省はイランの航空・海運・技術・金・暗号資産に関連する約 60 の個人・企業・船舶を対象に追加制裁を発動。スコット・ベッセント財務長官は「イランへの経済 D デイが来る」と警告しており、イランと取引のある第三国企業にも圧力を加える方針を明確にした</li>
+          <li><strong>バロン・トランプへの脅迫動画:</strong> イラン革命防衛隊系メディアが、バロン・トランプ（大統領の末息子）の命に 1000 万ドルの賞金を懸けたとする動画を放映。米国シークレットサービスは「認識している。保護対象者への脅威とみなされるものはすべて調査する」と声明を発表した</li>
+          <li><strong>中東全体の緊張:</strong> ガザでは依然としてイスラエル軍の砲撃が続いており（8/25 に子供2人を含む4人死亡）、停戦交渉は具体的な進展がみられない。イランをめぐる制裁・戦争・ホルムズ問題が連動し、中東地域全体の地政学リスクが高い水準を維持している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">世界の海面温度・コンゴのエボラ出血熱 — 長期的な人道・環境危機が継続</div>
+      <div class="card-meta"><span class="badge">Climate / Health / Environment</span><span class="card-source">Source: Al Jazeera · WHO · ICRI — 2026.08.26</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>海面温度（継続情報）:</strong> 8月22日に記録した史上最高の海面温度（21.1℃）を受けて、西太平洋の台風シーズン強化が懸念されている。インドネシアの大規模森林火災（泥炭地帯含む）が引き続き継続中で、複数の都市でスモッグが続いている</li>
+          <li><strong>コンゴのエボラ出血熱（継続情報）:</strong> 8/25 に報じられた「1週間で300人超死亡・史上最速の拡大ペース」という状況は8/26 時点でも改善の報告がなく、WHO は追加の緊急支援を要請している。ワクチン不足と紛争地帯での封じ込め困難が主因で、専門家は「中央アフリカ全域への拡大を防ぐためのウィンドウが急速に閉じている」と警告している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn / Qiita「Agent Skills × GitHub Actions で Qiita・Zenn の執筆環境を作った — 記事書くの面倒を完全自動化」</div>
+      <div class="card-meta"><span class="badge">Agent Skills / Workflow / Automation</span><span class="card-source">Source: <a href="https://zenn.dev/yymm/articles/20260821-qiita-zenn-writing-setup">Zenn — yymm 氏 (2026-08-21)</a> · <a href="https://qiita.com/kouki_y/items/3c75e3e81afeee57ea05">Qiita — kouki_y 氏</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Zenn と Qiita の両プラットフォームへの技術記事執筆を Agent Skills と GitHub Actions で自動化する構成を解説した記事が注目を集めている。「記事を書くのが面倒」というエンジニアの典型的な課題をエージェントに委任するというコンセプトが共感を呼んでいる</li>
+          <li><strong>仕組み:</strong> GitHub リポジトリ上に Markdown で記事を書くと、Agent Skills が内容を要約・構造化し、GitHub Actions が Qiita API および Zenn の GitHub 連携を通じて両プラットフォームに自動投稿する。Claude Code のスケジュールルーティンとも組み合わせることで「定期的なニュースまとめ記事の自動生成・投稿」も実現できるという応用例が紹介されている</li>
+          <li><strong>読者の反応:</strong> 「自分もこういう環境を作りたかった」「スケジュールルーティンとの組み合わせが特に応用範囲が広い」という評価が多く、AI エージェントを「知識生産のインフラ」として活用する考え方が国内開発者コミュニティに浸透し始めていることを示している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「AI エージェントのおかげで学びの初速が爆速になった 2025〜2026 年を振り返る」— 開発者の日常が変わったという実感の記録</div>
+      <div class="card-meta"><span class="badge">Learning / Experience / AI Agent</span><span class="card-source">Source: <a href="https://qiita.com/yumechi/items/759ff6eb5dc57986729f">Qiita — yumechi 氏</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code をはじめとする AI エージェントが「エンジニアの学習速度をどのように変えたか」を個人の体験として記録した振り返り記事が継続的に注目を集めている。「知らないことを調べ、試し、理解するまでのループが数倍速になった」という実感が多くの共感を集めている</li>
+          <li><strong>具体的な変化:</strong> 新しい技術スタックの習得・コードレビューの質向上・ドキュメント作成の効率化など、開発サイクル全体にわたる改善が具体的なエピソードとともに語られている。「Claude Code がいる前とあとで、技術の習得コストが体感で1/3 になった」という表現が印象的と評価されている</li>
+          <li><strong>課題の指摘:</strong> 「エージェント頼りで自分の理解が浅くなるリスク」「プロンプトの質がアウトプットの質を左右するため、思考力そのものが重要になった」という課題意識も率直に書かれており、単純な礼賛に終わらないバランスの良さが評価されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月26日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: Gradually (Claude Code Changelog) · Origami · Mean CEO · AI Agent Store · Buildez · Wikipedia (Codex) · OpenAI · NPR · CNN · Al Jazeera · Washington Post · Alaska Public · CNBC · Time · Variety · Zenn · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-08-25/index.html">前版（2026-08-25）</a></p>
+</footer>
+</body>
+</html>
