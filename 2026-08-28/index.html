@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年8月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code に <code>/design</code> スキル追加・MCP v2 接続ループ修正 / Codex が Agent Plugins・MCP 2026-07-28 プロトコルを追加 / ネパール・チベット洪水の死者579人超・行方不明1,900人・堰止め湖の決壊警告 / イランがホルムズ海峡に輸送回廊案を提示・米は拒否 / FBI が中国のルーター大規模マルウェア感染を公表 / ハイチで史上最大規模の集団誘拐事件</p>
+  <p class="date">2026年8月28日（金）&nbsp;|&nbsp;<a href="2026-08-27/index.html">前版（8/27）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / Anthropic</a>
+  <a href="#rival">AI 競合動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic 最新ニュース</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/28）のハイライト:</strong> Claude Code に <strong><code>/design</code> スキル</strong>が追加 — CLI から Claude Design のアートボードワークフローを直接呼び出せるようになり、UI モックアップや画面フローを IDE を離れずに作成可能に。また MCP v2 接続が固定タイムアウトで切断するサーバーに対して <code>subscriptions/listen</code> ストリームを無限に再オープンしていたバグが修正され、長時間セッションの安定性が向上した。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code — <code>/design</code> スキル追加・MCP v2 無限再接続ループ修正・Remote Control ログイン改善</div>
+      <div class="card-meta"><span class="badge">Release / Stability</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code Updates</a> · <a href="https://claudelog.com/claude-code-changelog/">ClaudeLog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong><code>/design</code> スキル（新機能）:</strong> Claude Design のアートボードワークフローを CLI に統合する新スキル。UI モックアップ・画面フロー・ランディングページ・ポスター等のビジュアルデザインを、エディターを離れずに作成・公開できるようになった。保存が有効なアカウントでは視覚的に各要素を編集し、Save で Artifact として公開・共有が可能</li>
+          <li><strong>MCP v2 接続ループ修正（重要なバグ修正）:</strong> 長時間接続を固定タイムアウトで切断するサーバーに対して <code>subscriptions/listen</code> ストリームを無限に再オープンし続けていた問題を修正。長時間の自動化セッションやスケジュールルーティンでの MCP 接続安定性が大幅に改善される</li>
+          <li><strong>Remote Control の改善:</strong> 会話の再開と Cloud ゲートウェイのログイン問題が修正された。リモートセッションからのセッション復帰が正常に機能するようになり、クラウド利用者の操作性が向上した</li>
+          <li><strong>バグ修正の継続:</strong> 8月を通じて Claude Code は日次ペースでアップデートが続いており、今週だけで v2.1.247（8/26）・v2.1.248（8/27）と連日リリースが行われた。エンタープライズ向け・セルフホスト向け機能の強化が引き続き加速している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、「How agents are transforming work」を公開 — エージェントが業務をどう変えるかの包括的ガイド</div>
+      <div class="card-meta"><span class="badge">Research / Enterprise</span><span class="card-source">Source: <a href="https://www.anthropic.com/webinars/claude-code-live">Anthropic Webinars — Claude Code Live</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>エージェント導入の現状:</strong> AI エージェント（Claude Code を含む）が企業の業務プロセスをどう変革しているかについて、Anthropic・OpenAI 双方から包括的なガイドや事例集が公開されている。コード生成にとどまらず、調査・文書作成・データ分析・顧客対応など複数の業務領域での活用が急拡大</li>
+          <li><strong>生産性インパクト:</strong> Claude Code を活用する開発チームは、単純なコーディング補助を超えて「エージェント組織」としてのワークフロー設計を始めており、<code>--restricted</code> フラグや <code>/design</code> スキルなどのガバナンス機能の整備がその動きを加速している</li>
+          <li><strong>今後の方向性:</strong> Anthropic は Claude Code を「AI エージェントを安全に組織運営に組み込むためのリファレンス実装」として位置づけており、セキュリティ・コスト管理・フィードバックループの三点に重点を置いた機能開発を継続する方針</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rival">
+    <div class="section-header">
+      <div class="section-title">AI エージェント競合動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（8/28）:</strong> <strong>OpenAI Codex がポータブル Agent Plugins・MCP 2026-07-28 プロトコルへのオプトイン対応・自動承認機能を追加</strong>。Persistent モード（常時接続）の開発は継続中で、CLI の GitHub リポジトリにコードが引き続き追加されている。ユーザー数は2000万人で、npm ダウンロード数で Claude Code（6,910万）に次ぐ6,630万を維持。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex — ポータブル Agent Plugins・MCP 2026-07-28 対応・自動承認・Bedrock 改善を追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Feature</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Updates August 2026</a> · <a href="https://www.gradually.ai/en/codex-statistics/">Gradually — Codex Statistics 2026</a> · <a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Wikipedia — Codex (AI agent)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ポータブル Agent Plugins（新機能）:</strong> Codex のプラグインが他の対応エージェント環境にポータブルに持ち込めるようになった。Admin プラグイン（ワークスペース分析・アクセス管理・使用量制御）も引き続き提供中</li>
+          <li><strong>MCP 2026-07-28 プロトコルへのオプトイン対応:</strong> 最新の MCP プロトコル仕様へのオプトイン対応が追加。Claude Code の MCP v2 対応と同じ最新規格に揃いつつある</li>
+          <li><strong>自動承認（Automated Approvals）:</strong> 定型的な操作に対する自動承認機能が追加され、繰り返し作業でのユーザー確認待ちが減少。CI/CD パイプラインへの組み込みがより容易になった</li>
+          <li><strong>Bedrock ワークフローの改善・セキュリティ強化:</strong> AWS Bedrock 経由での Codex 利用フローが改善され、ターミナル・レンダリング・Windows 関連のバグ修正も行われた</li>
+          <li><strong>競合比較（8/22 時点）:</strong> npm ダウンロード数は Claude Code が 6,910万でリード、Codex が 6,630万で追走。アクティブユーザー数は Codex が2000万人と報告</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">「エージェントハーネスの時代」— AI エージェントの管理・制御・安全運用が主戦場に</div>
+      <div class="card-meta"><span class="badge">Industry / Analysis</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a> · <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM — Claude Code Reddit Analysis 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>2026年のテーマ「Agent Harnesses」:</strong> 開発者コミュニティでは「単にエージェントを持つだけでなく、エージェントをいかに管理・制御・安全に使うかが競争の核心に移行した」という認識が広がっている。Claude Code の <code>--restricted</code> フラグや <code>experimental.cacheTtl</code>、Codex の自動承認・Admin プラグインはいずれもこの流れを体現した機能</li>
+          <li><strong>Claude Code の優位点:</strong> r/ClaudeCode のアクティブ投稿者数は週4,200人超で r/Codex（約1,400人）の3倍。「エージェントをどう組織に組み込むか」の実践知が集積するコミュニティとして、競合を大きく上回る規模を維持している</li>
+          <li><strong>収束しつつある機能セット:</strong> Codex がポータブルプラグイン・MCP 最新規格・常時接続モードを追加し、Claude Code との機能ギャップは縮まりつつある。今後の差別化はコミュニティの厚さ・セキュリティ設計の深さ・エコシステム統合の広さに移ると分析されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「ネパール・チベット洪水、死者579人超・1,900人行方不明 — 堰止め湖が数日以内に決壊する恐れ」</div>
+      <div class="card-meta"><span class="badge">Community / Disaster</span><span class="card-source">Reddit r/worldnews · r/environment — 2026.08.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>昨日（8/27）から続くネパール・チベット洪水の死者数が579人超に増加し、行方不明者もネパール側だけで1,924人に達したことが r/worldnews の最上位に。「昨日の『360人死亡・1,500人行方不明』から一日でここまで増えた。現地の捜索がようやく規模拡大できている証拠でもあるが、それだけ被害が広範囲だということ」というコメントが上位に</li>
+          <li>「当局が堰止め湖（barrier lake）の決壊リスクを警告している。数日以内に追加の洪水が発生する可能性があり、すでに浸水した地域が再び被害を受ける恐れがある」というニュースに対して、「まだ行方不明者がいる状態での二次災害警告は最悪のシナリオ」と深刻な反応が相次いだ</li>
+          <li>r/environment では「科学者が気候変動と氷河崩落の関連を指摘しているが、今回の事例は規模・速度・死者数のどれを取っても過去最大級。これを機に氷河リスクのモニタリング体制を国際的に強化すべき」という長文コメントが多数のアップボートを集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/netsec「FBI が中国のホームルーター大規模マルウェア感染を公表 — 家庭の IoT デバイスがサイバー攻撃の踏み台に」</div>
+      <div class="card-meta"><span class="badge">Community / Cybersecurity</span><span class="card-source">Reddit r/netsec · r/technology · r/privacy — 2026.08.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>FBI が「中国が数千台のホームルーターとスマートデバイスにマルウェアをインストールし、それらを踏み台として NASA・連邦準備制度・エネルギー省などの米政府機関へのサイバー攻撃を実行した」と公表したことが r/netsec で大きな話題に。「ボットネットを経由して攻撃元を隠蔽するという手口自体は既知だが、政府機関を標的にここまでの規模でやっていたのは驚き」というコメントが目立つ</li>
+          <li>「同時に司法省が、ソフトウェア脆弱性を悪用してサイバー攻撃を仲介していたハッキングプラットフォームのウェブサイトを接収した」という報道も加わり、r/technology では「政府のインフラ防衛と民間ルーターのセキュリティが完全につながっている問題」として議論が広がった</li>
+          <li>r/privacy では「自分のルーターが感染しているかどうか確認する方法は？ファームウェアの更新だけで十分か？」という実践的な質問が殺到し、セキュリティ専門家による具体的なチェック方法の解説コメントが注目を集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「<code>/design</code> スキル追加で「コードも UI も同じ会話で完結できるようになった」 — IDE 離脱ゼロのワークフローが現実に」</div>
+      <div class="card-meta"><span class="badge">Community / Claude Code</span><span class="card-source">Reddit r/ClaudeAI · r/ClaudeCode — 2026.08.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code への <code>/design</code> スキル追加を受け、r/ClaudeAI・r/ClaudeCode でその実用例の共有が始まっている。「コーディングと UI デザインの往復がいつも一番テンポを壊していた。同じ会話内で <code>/design</code> を呼び出してアートボードを作れるなら、フロントエンド開発のフローが根本的に変わる」という投稿が多くのアップボートを獲得</li>
+          <li>「保存機能が有効なアカウントでは視覚的に要素を編集して Artifact として公開できる点が特に優れている。デザイン成果物を即座にチームに共有できる」「まだ試せていないが、Figma 的な使い方が Claude Code 内でできるなら革命的」という反応も続いた</li>
+          <li>一方で「MCP v2 の無限再接続ループ修正もかなり重要。長時間の自動化セッションで MCP サーバーとの接続が不安定になる問題は実際に遭遇していた」というエンジニア目線のコメントも上位にランクインしており、安定性改善への評価も高い</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（8/28）の主要トピック:</strong> <strong>ネパール・チベット洪水 死者579人超・行方不明1,924人、堰止め湖の決壊危機が迫る</strong> / <strong>FBI：中国がホームルーターに大規模マルウェア・政府機関攻撃の踏み台に</strong> / <strong>イランがホルムズ海峡にオマーンとの輸送回廊案を提示・トランプ政権は拒否</strong> / <strong>ハイチで史上最大規模の集団誘拐事件が発生</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">ネパール・チベット洪水 — 死者579人超・行方不明1,924人に増加、堰止め湖の決壊が数日以内に迫る</div>
+      <div class="card-meta"><span class="badge">Nepal / Tibet / Disaster</span><span class="card-source">Source: <a href="https://www.abc.net.au/news/2026-08-28/new-flood-warnings-issued-in-nepal-tibet-as-death-toll-rises/107087570">ABC News Australia — New flood warnings</a> · <a href="https://www.aljazeera.com/news/2026/8/28/death-toll-from-nepal-tibet-flood-passes-470-as-barrier-lake-threatens">Al Jazeera — Barrier lake threatens</a> · <a href="https://www.npr.org/2026/08/27/nx-s1-5946309/nepal-tibet-deadly-floods">NPR — Nepal-Tibet floods</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>最新被害状況（8/28 時点）:</strong> 死者はネパール側579人・チベット側5人の計584人超に増加（前日比 +220人超）。行方不明者はネパールだけで1,924人に上り、外国人負傷者・救助済みは129人以上。4,451人以上が負傷・救助され、少なくとも1万7,000人の子どもが被害を受けた。8,380人の警察・軍人が現地に展開中</li>
+          <li><strong>堰止め湖の決壊リスク:</strong> 氷河崩落で形成された堰止め湖（barrier lake）が「数日以内に決壊する恐れがある」と当局が警告。決壊すれば下流域で再度の大洪水が発生し、まだ行方不明の人々への捜索活動が中断・危険にさらされる。当局は新たな避難指示の準備を進めている</li>
+          <li><strong>国際支援の動き:</strong> 米国（行方不明者90人以上）・ヨーロッパ各国が救助チームの派遣を申し出ており、国際的な捜索・救助活動が拡大しつつある。ネパール・チベット両側の地形的障壁（山岳地帯・土砂崩れによる道路閉鎖）が依然として活動の制約となっている</li>
+          <li><strong>気候変動の文脈:</strong> 科学者は「急速に温暖化するヒマラヤ地域では今後も同規模・またはそれ以上の氷河崩落が起こりうる」と指摘。国際的な氷河監視体制の強化と現地コミュニティの早期警戒システム整備が急務とされている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">FBI 公表：中国が数千台のホームルーター・IoT デバイスにマルウェア — NASA・FRB・エネルギー省を標的にサイバー攻撃</div>
+      <div class="card-meta"><span class="badge">US / Cybersecurity / China</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/8/28/headlines">Democracy Now — August 28 Headlines</a> · <a href="https://www.justsecurity.org/155508/early-edition-august-28-2026/">Just Security — Early Edition Aug 28</a> · <a href="https://wng.org/podcasts/friday-morning-news-august-28-2026-1787850683">WORLD — Friday morning news Aug 28</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>FBI の発表内容:</strong> FBI が「中国政府系ハッカーが世界規模で数千台のホームルーターとスマートデバイスにマルウェアをインストールし、それらを踏み台（プロキシ）として利用することで攻撃元を隠蔽しながら、NASA・連邦準備制度（FRB）・エネルギー省などの米政府機関へのサイバー攻撃を実行した」と公表した</li>
+          <li><strong>司法省によるインフラ接収:</strong> 同時に、ソフトウェア脆弱性を悪用して政府機関へのサイバー攻撃を仲介していたハッキングプラットフォームのウェブサイトを司法省が接収・制御下に置いた。「Operation Economic Outcast」と関連した一連の対中サイバー反撃措置の一環とみられる</li>
+          <li><strong>一般市民へのインパクト:</strong> 「自分のルーターが知らないうちに攻撃の踏み台になっている可能性がある」という事実が注目を集めており、米国サイバーセキュリティ・インフラセキュリティ庁（CISA）はファームウェアの即時更新とデフォルトパスワードの変更を呼びかけている</li>
+          <li><strong>外交的影響:</strong> 中国政府はすべての関与を否定。この発表は米中間のサイバー空間における緊張をさらに高め、外交交渉の障壁となる可能性がある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イランがホルムズ海峡に「オマーンとの輸送回廊」案を提示 — 米が条件を満たせば再開、トランプ政権は拒否</div>
+      <div class="card-meta"><span class="badge">Iran / Middle East / Energy</span><span class="card-source">Source: <a href="https://wng.org/podcasts/friday-morning-news-august-28-2026-1787850683">WORLD — Friday morning news Aug 28</a> · <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign">Wikipedia — 2026 Strait of Hormuz campaign</a> · <a href="https://www.justsecurity.org/155508/early-edition-august-28-2026/">Just Security — Early Edition Aug 28</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>イランの提案:</strong> イラン最高国家安全保障委員会（SNSC）書記が「イランは米国が条件を満たす場合に限り、オマーンとの共同でホルムズ海峡に一時的な輸送回廊（shipping corridor）を設ける意向がある」と表明。カタールの仲介活動（8/27のテヘラン訪問）がこの動きを引き出した可能性がある</li>
+          <li><strong>米国の反応:</strong> トランプ大統領は「米国はイランと交渉しておらず、経済的制裁による圧力に集中している」と発言し、提案を事実上拒否。「Operation Economic Outcast」制裁は引き続き継続中で、イランの石油輸出収入は制裁前比で大幅に低下している</li>
+          <li><strong>エネルギー市場への影響:</strong> ホルムズ海峡は世界の石油・LNG 輸送の約20%が通過する要衝。海峡通行の正常化に向けた外交的シグナルとして原油市場は一時的に反応したが、米イ間の根本的な立場の乖離が解消されるまでは不安定な状態が続くとアナリストは見ている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ハイチで史上最大規模の集団誘拐事件 — 武装集団が多数を拘束、治安の極度の悪化を示す</div>
+      <div class="card-meta"><span class="badge">Haiti / Crime / Security</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/8/28/headlines">Democracy Now — August 28 Headlines</a> · <a href="https://www.euronews.com/video/2026/08/28/latest-news-bulletin-august-28th-2026-midday">Euronews — Midday Bulletin Aug 28</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事件の概要:</strong> ハイチで「近年最大規模とみられる」集団誘拐事件が発生。武装集団が多数の人々を拘束した。詳細（犯行場所・被害者数・要求内容）は現地当局と武装集団の間で確認が進行中で、現時点では全容が把握できていない状況</li>
+          <li><strong>ハイチの治安状況:</strong> ハイチでは2025年から続く武装集団（ギャング）による首都・地方制圧が深刻化しており、政府の統治能力が著しく低下している。今回の事件はその状況下での最大規模の誘拐事件として国際社会の懸念を高めた</li>
+          <li><strong>国際的な対応:</strong> 国連安保理はハイチの治安回復に向けたケニア主導の多国籍安全保障支援ミッション（MSS）を継続しているが、資金不足・派遣規模の問題から十分な効果が出ていないと批判されている。今回の事件はその問題を改めて浮き彫りにした</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Claude Code の <code>/design</code> スキルを早速試してみた — コード開発と UI デザインが同一セッションで完結する衝撃」</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Design</span><span class="card-source">Source: Zenn — 2026.08.28 人気記事</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code に本日追加された <code>/design</code> スキルをいち早く試したレポート記事が Zenn のトレンドに急浮上。「<code>/design</code> と入力すると Claude Design のアートボードモードが起動し、UI コンポーネントのレイアウトをビジュアルに調整できる。従来は Figma → コード変換という行き来が必要だったが、同一会話でコードと UI の両方を扱えるのは想像以上に快適」という第一印象レポートが高評価を獲得</li>
+          <li><strong>実用性の評価:</strong> 「Artifact として公開して即チームに共有できる点が業務フローとの相性が良い。デザインレビューを Slack にリンクを貼るだけで完結できるようになった」という活用例も披露されており、フロントエンド・フルスタック開発者から特に注目されている</li>
+          <li><strong>課題点:</strong> 「複雑なデザインシステムへの対応や、既存の Figma ファイルのインポートはまだできない。あくまでスクラッチから素早くモックアップを作る用途向け」という冷静な評価も併記されており、用途の見極めが重要という意見が多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita「【2026年版】Docker 環境構築の完全ガイド — 開発・本番・AI エージェント統合まで網羅」</div>
+      <div class="card-meta"><span class="badge">Qiita / Docker / Infrastructure</span><span class="card-source">Source: Qiita — 2026.08.28 トレンド</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Qiita のトレンドに「【2026年版】Docker 環境構築の完全ガイド」が上位にランクイン。2026年版として新たに追加された項目が「AI エージェント（Claude Code・Codex）を Docker コンテナ内で安全に実行する方法」で、「<code>--restricted</code> フラグと Docker のリソース制限を組み合わせることで、エージェントのファイルアクセス・ネットワークアクセスを完全にサンドボックス化できる」という実用的な解説が人気</li>
+          <li><strong>記事の特徴:</strong> 開発環境・本番環境・CI/CD パイプラインの3つのシナリオ別に Docker Compose・Dockerfile の書き方を丁寧に解説。特に「AI エージェント統合」セクションが2026年版の目玉として読者から高く評価されており、スター数が急増している</li>
+          <li><strong>コメント傾向:</strong> 「Claude Code の <code>--restricted</code> フラグと Docker を組み合わせるのは盲点だった。二重の制約で本番環境でも安心して使えそう」という実践報告コメントが多く寄せられており、DevOps・プラットフォームエンジニア層での反響が大きい</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn「Zenn と Qiita の GitHub 同時管理を完全自動化した — プライベートリポジトリ対応・CI/CD 経由での自動投稿」</div>
+      <div class="card-meta"><span class="badge">Zenn / Qiita / Automation</span><span class="card-source">Source: <a href="https://zenn.dev/iineineno03k/articles/20260326-zenn-qiita-auto-publish">Zenn — iineineno03k 氏</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>GitHub のプライベートリポジトリから Zenn と Qiita への同時自動投稿を GitHub Actions で実現した手法の解説記事が Zenn のトレンドで継続的な人気を維持。「記事を markdown で書いて git push するだけで、Zenn の記事と Qiita の記事が同時に公開・更新される仕組みを完全自動化した」という実装レポート</li>
+          <li><strong>技術的ハイライト:</strong> Zenn の CLI ツールと Qiita API を GitHub Actions から呼び出し、プライベートリポジトリ内の markdown ファイルの変更を検知して自動投稿する仕組みを構築。「ドラフト管理もリポジトリ内で完結できるため、バージョン管理も自動的に実現される」点が評価されている</li>
+          <li><strong>AI エージェントとの組み合わせ:</strong> コメントでは「Claude Code に記事の下書きを書かせて、この CI/CD パイプラインで自動投稿する流れを組んでいる。コンテンツ生産サイクルが10倍速になった」という実践報告も寄せられており、技術ブログ運営の AI 活用として注目を集めた</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年8月28日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog · Releasebot · ClaudeLog · Gradually · Wikipedia (Codex) · ABC News Australia · Al Jazeera · NPR · Democracy Now · Just Security · WORLD · Euronews · Zenn · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="2026-08-27/index.html">前版（2026-08-27）</a></p>
+</footer>
+</body>
+</html>
