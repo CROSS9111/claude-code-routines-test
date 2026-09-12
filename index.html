@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月11日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月12日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,12 +51,12 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Anthropic が脅威インテリジェンスレポートを公開——イラン・ロシア・中国・イエメンによる Claude 悪用（カミカゼドローン・誘導ミサイル・バイオ兵器研究）を8ヶ月にわたり阻止 / ヨルダン川西岸ほか7領域での悪用干渉を初めて横断的に開示 / Claude Enterprise に「スマートレポート」ベータ版——チーム利用状況・コスト・摩擦・スキル候補を AI が分析 / ホーシー派がイエメン紅海全域（バブ・エル・マンデブ海峡含む）を制圧——原油$110・米国ディーゼル$6超の過去最高値 / 9/11 テロ25周年、全米で追悼式典</p>
-  <p class="date">2026年9月11日（金）&nbsp;|&nbsp;<a href="2026-09-10/index.html">前版（9/10）</a></p>
+  <p class="subtitle">悪意ある .git 設定で Claude Code・Codex・Cursor などに外部コード実行——4件は9/1時点で未修正 / Anthropic が Claude for Teachers を学区向け無料 Enterprise として本格展開——全米50州の学習基準に対応 / Google が ADK for Kotlin 1.0 をリリース——Android オンデバイスエージェントが GA に / 第18回 BRICS サミット（ニューデリー）が開幕——「New Delhi Declaration」全会一致採択 / トランプ大統領がアイルランド訪問し「北アイルランド統一は素晴らしい」と発言、外交波紋</p>
+  <p class="date">2026年9月12日（土）&nbsp;|&nbsp;<a href="2026-09-11/index.html">前版（9/11）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
-  <a href="#rival">AI セキュリティ・動向</a>
+  <a href="#security">AI セキュリティ・競合</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
   <a href="#qiita">Qiita / Zenn</a>
@@ -69,77 +69,80 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/11）のハイライト:</strong> <strong>Anthropic が2025年12月〜2026年8月の8ヶ月間にわたる AI 悪用干渉事例を集約した「脅威インテリジェンスレポート」を初めて公開</strong>——イラン・ロシア・中国・イエメンによるカミカゼドローン・誘導ミサイル・バイオ兵器・サイバー作戦への Claude 悪用を阻止したことを開示した。同日、<strong>Claude Enterprise に「スマートレポート（beta）」が追加</strong>され、チームの利用状況・コスト・摩擦・スキル化候補を AI が自動分析する機能が提供開始された。
+      <strong>本日（9/12）のハイライト:</strong> <strong>Anthropic が Claude for Teachers を学区・学校向けの無料 Enterprise プランとして本格展開</strong>——全米50州の学習基準に接続したスキルライブラリと Claude Code・Cowork へのアクセスを教師に提供。一方、<strong>Claude Code の Fast mode（speed: "fast"）が Opus 4.7 で廃止</strong>され、リクエスト時にエラーが返るようになった。また <strong>Claude Code がポリシー・スキル診断の強化、インラインアウトプットの上限拡大、ファイルベースのサブエージェントプロンプト</strong>を追加した。
     </div>
     <div class="card">
-      <div class="card-title">Anthropic 脅威インテリジェンスレポート（2026年9月版）——イラン・ロシア・中国・イエメンが Claude でカミカゼドローン・誘導ミサイル・バイオ兵器研究・サイバースパイを試みる。Anthropic は7領域にわたる悪用干渉を8ヶ月で実施、最上位モデル（Fable/Mythos）は対象外</div>
-      <div class="card-meta"><span class="badge">Anthropic / Threat Intelligence / Iran / Russia / China / Yemen / Bioweapon / Drone / Missile / Cybersecurity / Safety</span><span class="card-source">Source: <a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic — Countering misuse of AI: September 2026</a> · <a href="https://www.bloomberg.com/news/articles/2026-09-11/anthropic-says-us-adversaries-aimed-claude-at-weapons-research">Bloomberg — Anthropic Says Iran, Russia Used Claude for Weapons Research</a> · <a href="https://www.aljazeera.com/news/2026/9/11/anthropic-claims-claude-ai-used-for-missile-projects-global-espionage">Al Jazeera — Claude AI used for missile projects, espionage</a> · <a href="https://www.techtimes.com/articles/327308/20260911/anthropic-threat-report-ai-models-near-bioweapons-threshold-drone-kill-software-emerges.htm">TechTimes — AI models near bioweapons threshold</a> · <a href="https://parameter.io/claude-ai-misuse-report-anthropic-stops-bioweapon-research-and-cyber-threats/">Parameter — Claude AI Misuse Report</a> · <a href="https://www.explainx.ai/blog/anthropic-threat-intelligence-report-september-2026">ExplainX.ai — Summary</a></span></div>
+      <div class="card-title">Claude for Teachers、学区・学校向け無料 Enterprise として本格展開——全米50州学習基準接続・CZI 提携スキルライブラリ・Claude Code &amp; Cowork アクセスを K-12 教師に提供。7月ローンチから拡充</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude for Teachers / Education / K-12 / Enterprise / CZI / Learning Science / Claude Code</span><span class="card-source">Source: <a href="https://www.edweek.org/technology/anthropic-launches-claude-for-teachers-why-some-critics-are-concerned/2026/07">EdWeek — Anthropic Launches Claude for Teachers. Why Some Critics Are Concerned</a> · <a href="https://www.chalkbeat.org/2026/07/14/anthropic-launches-claude-for-teachers-as-ai-companies-battle-for-classrooms/">Chalkbeat — Anthropic launches Claude for Teachers in AI race to influence America's classrooms</a> · <a href="https://www.edtechinnovationhub.com/news/anthropic-opens-claude-for-teachers-free-to-us-k-12-educators">EdTech Innovation Hub — Anthropic opens Claude for Teachers to U.S. educators</a> · <a href="https://www.govtech.com/education/k-12/anthropic-releases-teacher-focused-version-of-claude">GovTech — Anthropic Releases Teacher-Focused Version of Claude</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>レポートの概要:</strong> Anthropic は 9/11 に「AI 悪用への対処：2026年9月版」として初の包括的脅威インテリジェンスレポートを公開した。2025年12月から2026年8月までの8ヶ月間に同社の脅威インテリジェンスチームが干渉した事例を横断的に分析。国家主体のサイバースパイ、データ窃取・恐喝グループ、バイオ兵器研究、通常兵器開発、監視ツール、影響工作、詐欺・スキャムの<strong>7領域</strong>で悪用試みが確認された。なお今回の開示事例は、Claude Fable や Mythos といった最上位モデルではなく中間以下のモデルが悪用対象だった</li>
-          <li><strong>兵器開発への悪用（イエメン）:</strong> イエメン北部を拠点とする脅威アクターが、誘導ロケットと長距離弾道ミサイルの誘導ソフトウェア開発に Claude を使用しようとした事例が報告された。また別のアクターが<strong>カミカゼドローン群（自爆型 UAV スウォーム）</strong>の設計に Claude を利用しようとした事案も確認・阻止された</li>
-          <li><strong>兵器開発への悪用（中国・PLA 向け）:</strong> 中国を拠点とする脅威アクターが、中国人民解放軍海軍（PLAN）向けの<strong>魚雷防衛システム（対魚雷兵器）</strong>の開発に Claude を活用しようとした事案が特定された</li>
-          <li><strong>サイバースパイ・情報収集（イラン）:</strong> イラン系の脅威アクターが、<strong>ペルシャ湾の米海軍艦船を標的とした攻撃推奨事項</strong>を生成するため、公開情報の収集・分析に Claude を使用しようとした事例が確認された</li>
-          <li><strong>バイオ兵器研究の閾値接近:</strong> レポートでは「AI モデルがバイオ兵器開発の閾値に近づいている」という評価が含まれており、Anthropic が特定のバイオ兵器研究支援要求を阻止したことが明らかになった</li>
-          <li><strong>Anthropic の対応体制:</strong> リアルタイムの使用パターン監視・自動フラグシステム・セーフガード強化・法執行機関との情報共有連携を実施。「悪用を完全に防ぐことはできないが、悪用のコストと摩擦を高め続ける」という方針が示された</li>
-          <li><strong>業界的な意義:</strong> 国名・兵器種別まで含めてこれだけ具体的に開示したのは Anthropic が初めてとみられる。「透明性は安全性の一部である」というメッセージと、規制当局・同業他社と課題を共有するための先手を打った戦略的側面が同時に指摘されている</li>
+          <li><strong>9月の更新内容:</strong> Claude for Teachers が学区・学校向けの<strong>無料 Enterprise プラン</strong>として正式に拡充された。集中管理アクセス・SSO（シングルサインオン）・ロールベースのアクセス制御・学習科学に基づいた教授スキルが含まれる</li>
+          <li><strong>学習基準との接続:</strong> Chan Zuckerberg Initiative（CZI）の Learning Commons との提携により、<strong>全米50州の学習基準</strong>に直接接続した教材・授業案の生成が可能になった。教師はレッスンプランの作成・生徒ごとの教材カスタマイズ・データに基づく指導改善に活用できる</li>
+          <li><strong>Claude Code と Cowork へのアクセス:</strong> 教師は Claude Code および Claude Cowork にもアクセスできる。AI ツールを教育現場でどう活かすかを教師自身が体験・研修できる環境として機能する</li>
+          <li><strong>批判と懸念:</strong> EdWeek は「AI が授業に過剰に介入することで、教師の専門性や生徒の批判的思考が損なわれる可能性」を指摘する批評家の声を伝えた。「AI 企業が教育を商業的に取り込む」という懸念も一部で根強い</li>
+          <li><strong>競合状況:</strong> Google・OpenAI・Khan Academy も教育向け AI を展開しており、教育市場は AI 各社の激戦区となっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Enterprise「スマートレポート」ベータ版リリース——チームの利用状況・コスト・摩擦・スキル化候補を Claude 自身が分析して報告。最大28日間のトランスクリプト横断分析、カスタム質問にも対応</div>
-      <div class="card-meta"><span class="badge">Anthropic / Claude Enterprise / Smart Reports / Analytics / Team / Skills / Beta</span><span class="card-source">Source: <a href="https://support.claude.com/en/articles/16893491-get-started-with-smart-reports">Claude Help Center — Get started with smart reports</a> · <a href="https://releasebot.io/updates/anthropic/claude">Claude Updates by Anthropic — September 2026 — Releasebot</a></span></div>
+      <div class="card-title">Claude Code 最新アップデート——ポリシー・スキル診断を強化、インラインアウトプット上限拡大、ファイルベースのサブエージェントプロンプト追加。Opus 4.7 の Fast mode 廃止、Admin API ユーザー管理が正式 GA に</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Fast Mode / Subagent / Policy Diagnostics / Admin API / Bedrock / Vertex AI / Chrome</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Updates — Releasebot September 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Claude Developer Platform Updates — Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>機能の概要:</strong> Claude Enterprise の管理者向けに「スマートレポート（Smart Reports）」がベータ版として提供開始された。チームの Claude 利用トランスクリプトを Claude 自身が読み込んで分析し、①どんな作業に使われているか②コスト分布③セッションの摩擦パターン④スキル化できる候補——を自動的にまとめたレポートを生成する</li>
-          <li><strong>設定と対象範囲:</strong> 管理者が対象チームを指定し、最大28日間の期間、分析対象プロダクト（Chat・Claude Code・Claude Cowork）、フォーカス領域、カスタム質問を設定できる</li>
-          <li><strong>利用制限:</strong> CMEK・HIPAA・Access Transparency・ZDR の組織では利用不可。「採用・個人評価のために使用しないこと」が明示されている</li>
-          <li><strong>意義:</strong> 「AI ツールを入れたが何に使われているのかわからない」「コストが増えているが効果が見えない」という課題への Anthropic 自身の解答。Enterprise 管理者ツールとしての付加価値を高める動きだ</li>
+          <li><strong>ポリシー・スキル診断の強化:</strong> CLAUDE.md やスキル設定の問題をその場で検出・提案する診断機能が追加。設定ミスが原因のエラーを早期に発見できるようになった</li>
+          <li><strong>インラインアウトプットの上限拡大:</strong> ターミナル内で直接表示されるアウトプットの文字数上限が引き上げられた。長いコード生成や詳細なエラーレポートを途中で切られなくなる</li>
+          <li><strong>ファイルベースのサブエージェントプロンプト:</strong> サブエージェントに渡すプロンプトを外部ファイルとして定義できるようになった。大規模な指示セットの管理・バージョン管理がしやすくなる</li>
+          <li><strong>Fast mode 廃止（Opus 4.7）:</strong> <code>claude-opus-4-7</code> に <code>speed: "fast"</code> を指定したリクエストはエラーが返るようになった。Fast mode は Opus 5 系では引き続き利用可能</li>
+          <li><strong>その他の改善:</strong> Remote Control・Amazon Bedrock・Google Vertex AI・Chrome 連携ワークフローの改善、セッション安定性とスタートアップの信頼性向上、複数の入力バグ修正</li>
+          <li><strong>Admin API GA:</strong> Claude Enterprise 組織向けのユーザー管理 Admin API エンドポイントがベータを卒業し、正式に GA（一般提供）となった</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Fable 5.1 リリース2週間後の市場評価——エージェントワークフローで最大45%コスト削減を実証。コーディング性能歴代最高・誤拒否率改善。コマースエージェント Blueprint も引き続き普及中</div>
-      <div class="card-meta"><span class="badge">Anthropic / Fable 5.1 / Agent / Cost / Coding / Commerce Blueprint / Claude Code</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-september-2026/">Claude Code News September 2026 — STARTUP EDITION</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Updates — Releasebot September 2026</a> · <a href="https://llm-stats.com/models/claude-fable-5-1">LLM Stats — Fable 5.1 specs</a></span></div>
+      <div class="card-title">Google ADK for Kotlin 1.0 GA リリース——Python/Java ADK と完全な機能パリティを達成。Android オンデバイス AI エージェント（LiteRT-LM・ML Kit ベータ）・Firebase AI Logic・Room/AppSearch での状態永続化が揃う</div>
+      <div class="card-meta"><span class="badge">Google / ADK / Kotlin / Android / On-Device AI / Firebase / LiteRT-LM / ML Kit / Agent</span><span class="card-source">Source: <a href="https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/">Google Developers Blog — Announcing ADK for Kotlin 1.0</a> · <a href="https://daily.dev/posts/announcing-adk-for-kotlin-1-0-building-production-ready-ai-agents-in-kotlin-android-and-beyond-z5fqm9v4j">daily.dev — ADK for Kotlin 1.0</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>コスト削減の実証:</strong> エージェントワークフローで最大約45%のコスト削減を達成。リリース2週間が経過し「同じ仕事を昨月より確実に安く回せる」という評価が定着している</li>
-          <li><strong>コーディング性能:</strong> マルチファイル変更の整合性・長いコードベースでの推論精度が歴代最高水準。長時間の自律タスクに特に向いているプロファイルが確認されている</li>
-          <li><strong>誤拒否率の改善:</strong> 「以前は弾かれていたタスクが通るようになった」という報告が複数あり、実務上のストレス軽減につながっている</li>
-          <li><strong>コマースエージェント Blueprint の普及:</strong> EC・小売向けエージェントの PoC 事例が増加。スタートアップ・中規模 EC チームが実用的なベースラインとして活用している</li>
+          <li><strong>リリースの概要:</strong> Google が <strong>ADK（Agent Development Kit）for Kotlin 1.0</strong> の一般提供を開始した（9月9日発表、9月12日展開）。Google I/O 2026 で発表した 0.1.0 に続く GA 版。Python/Java ADK と完全な機能パリティを達成した</li>
+          <li><strong>オンデバイス AI エージェント:</strong> <strong>LiteRT-LM</strong> と <strong>ML Kit（ベータ）</strong> を使い、ローカルオンデバイスで高速・プライベートな AI エージェントを動作させることができる。クラウド API を呼ばずに端末内で完結するシナリオに対応</li>
+          <li><strong>ハイブリッドワークフロー:</strong> <strong>Firebase AI Logic</strong> を介してクラウドモデルとのハイブリッドワークフローを組め、オンデバイスとクラウドを用途に応じて使い分けられる</li>
+          <li><strong>状態永続化:</strong> <strong>Room</strong>（SQLite ORM）と <strong>AppSearch</strong> でエージェントの状態をプロセス再起動を超えて保持できる。ユーザーとのマルチターン会話をアプリが終了しても継続できる</li>
+          <li><strong>業界的な意義:</strong> Claude Code・Codex がコーディングエージェント市場を席巻する中、Google は Android/Kotlin ネイティブのエージェント開発ツールという差別化軸で開発者コミュニティへの浸透を図る</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="section" id="rival">
+  <section class="section" id="security">
     <div class="section-header">
       <div class="section-title">AI セキュリティ・競合動向</div>
       <span class="section-count">2 記事</span>
     </div>
     <div class="alert">
-      <strong>セキュリティ・競合ハイライト（9/11）:</strong> Anthropic の脅威インテリジェンスレポート公開を受け、<strong>AI ガバナンスの「自発的開示」文化をどう規範化するか</strong>という議論が AI 研究者・政策立案者・競合他社の間で急速に広がっている。また <strong>AI コーディングエージェントを標的とするインフォスティーラーマルウェア（昨日報告）への対応として、具体的な防御手順を示すブログや社内ガイドラインが各所で公開され始めた</strong>。
+      <strong>セキュリティ・競合ハイライト（9/12）:</strong> <strong>悪意ある .git 設定ファイルを使って Claude Code・Codex・Cursor・Qwen Code・Grok Build などの AI コーディングエージェントを外部コード実行に誘導できる脆弱性</strong>が The Hacker News で大きく報じられた。攻撃は承認プロンプト表示前に発火するケースもあり、深刻度が高い。4件は9/1時点で未修正。一方 Cursor は CVE-2026-48124 として 3.0.0 で修正済み。
     </div>
     <div class="card">
-      <div class="card-title">Anthropic 脅威レポートが示す「AI ガバナンスの新基準」——自発的開示・独立調査・技術的封じ込めの3点セットが業界規範になるか。OpenAI・Google・Meta の対応方針との対比が注目される</div>
-      <div class="card-meta"><span class="badge">AI Governance / Anthropic / OpenAI / Threat Intelligence / Transparency / Regulation / Policy</span><span class="card-source">Source: <a href="https://panews.io/articles/01a08e17-936c-74ff-ad95-43c29866103f">PANews English — Anthropic Releases Threat Intelligence Report</a> · <a href="https://streamlinefeed.co.ke/news/anthropic-disrupts-state-backed-ai-misuse-in-weapons-and-cyber-campaigns">Streamlinefeed — Anthropic disrupts state-backed AI misuse</a> · <a href="https://townhall.com/news/dmitri-bolt/2026/09/11/anthropic-report-iran-ai-use-n2682828">Townhall — Anthropic Just Dropped a Bombshell Report</a></span></div>
+      <div class="card-title">悪意ある .git 設定（core.fsmonitor）で Claude Code・Codex・Cursor など複数 AI エージェントが外部コード実行——サンドボックス外でユーザー権限コマンドを発火、承認プロンプト前に実行するケースも。4件は9/1時点で未修正</div>
+      <div class="card-meta"><span class="badge">Security / Claude Code / Codex / Cursor / Qwen Code / Grok Build / git / sandbox escape / CVE-2026-48124</span><span class="card-source">Source: <a href="https://hacklido.com/news/malicious-git-configs-can-make-claude-codex-cursor-and-other-ai-agents-run-attacker-code">HackNews via HackLido — Malicious .git Configs Can Make Claude, Codex, Cursor, and Other AI Agents Run Attacker Code</a> · <a href="https://www.infosectoday.io/malicious-git-configs-can-make-claude-codex-cursor-and-other-ai-agents-run-attacker-code">InfoSecToday — Malicious .git Configs</a> · <a href="https://www.techzine.eu/news/security/143038/researchers-bypass-sandbox-security-in-cursor-codex-and-gemini-cli/">Techzine — Researchers bypass sandbox security in Cursor, Codex, and Gemini CLI</a> · <a href="https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/">BleepingComputer — Cursor, Codex, Gemini CLI, Antigravity hit by sandbox escapes</a> · <a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-sandbox-escapes-20260722-c/">CSA — AI Coding Agent Sandbox Escapes: The Trust Handoff Flaw</a> · <a href="https://medium.com/@m.mastrodonato/when-ai-coding-agents-break-the-boundary-lessons-from-cursor-claude-and-codex-f74f1adb78f9">Medium — When AI Coding Agents Break the Boundary</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>レポートが提示した新たな基準:</strong> 悪用検知フレームワーク（7領域分類）・阻止した具体的な要求内容（兵器種別・国家主体の特定まで）・技術的な対抗措置・外部機関との情報共有 というフルパッケージを一括で公開した</li>
-          <li><strong>規制への先手:</strong> EU AI Act のインシデント報告義務が具体化しつつある中、Anthropic は規制義務が確定する前に自発的開示の先例を作った。「規制が来る前に透明性の標準を自ら設定した企業」という評価がある</li>
-          <li><strong>競合他社との対比:</strong> OpenAI は同期間に発生した事案について同様の横断的開示を行っていない。「開示の有無がそのまま安全性の差とは言えない」という冷静な指摘もある</li>
-          <li><strong>政策への影響:</strong> AI 技術の「二重使用（dual-use）規制」の議論が加速する可能性が指摘されている</li>
+          <li><strong>脆弱性の仕組み:</strong> Git の設定項目 <code>core.fsmonitor</code> は「変更ファイルを特定するためのコマンド」として任意のシェルコマンドを実行できる。攻撃者は悪意あるリポジトリの <code>.git/config</code> に悪意あるコマンドを仕込んでおき、AI エージェントがそのリポジトリをクローン・開くと、エージェントのサンドボックス外でユーザー権限のコマンドが実行される</li>
+          <li><strong>影響を受けるツール:</strong> <strong>Claude Code・Hermes Agent</strong>（ワークスペース信頼プロンプト受諾前に発火）、<strong>Qwen Code</strong>（認証前に発火）、<strong>Grok Build</strong>（最初のキーストロークで発火）、<strong>Codex・Gemini CLI・Antigravity</strong> も影響を受けることが確認された</li>
+          <li><strong>根本的な問題——「Trust Handoff Flaw」:</strong> サンドボックス自体を破るのではなく、「サンドボックスが制限している範囲」と「サンドボックス外の信頼されたコンポーネントが読み込む・実行するもの」の間の<strong>ギャップ</strong>を突く攻撃。CSA（クラウドセキュリティアライアンス）が7月に研究ノートを公開していた</li>
+          <li><strong>修正状況（9/1時点）:</strong> <strong>Cursor は CVE-2026-48124 として v3.0.0 で修正済み</strong>。それ以外の4件は未修正のまま研究者が再テストした段階でも残存していた</li>
+          <li><strong>推奨対策:</strong> ①不審なリポジトリをクローンしない②<code>git config core.fsmonitor</code> が設定されていないか確認する③Claude Code を使う端末で感染した可能性があるリポジトリを開かない④各ツールを最新バージョンに更新する</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI コーディングエージェント（Claude Code・Cursor・Codex）をインフォスティーラーから守る具体的手順——コミュニティ発の防御ガイドが急速に広まる。「攻撃面はツールではなくエンドポイント」という理解が定着</div>
-      <div class="card-meta"><span class="badge">Security / Claude Code / Cursor / Codex / Infostealer / Endpoint / Defense / API Key / MCP</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/ai-agents-2/">Cybersecurity News — Hackers Target Claude, Cursor and Codex AI Agents</a></span></div>
+      <div class="card-title">AI コーディングエージェントのセキュリティリスクがサンドボックス外に拡大——「エンドポイント・サプライチェーン・信頼の境界」という3軸で再整理する必要性が浮上。Claude Code を標的とするインフォスティーラーとの二重の脅威</div>
+      <div class="card-meta"><span class="badge">Security / AI Agent / Sandbox / Supply Chain / Endpoint / Infostealer / Trust Boundary / DevSecOps</span><span class="card-source">Source: <a href="https://devops.com/security-risks-from-ai-coding-agents-expand-beyond-the-sandbox-pillar/">DevOps.com — Security Risks from AI Coding Agents Expand Beyond the Sandbox</a> · <a href="https://medium.com/@m.mastrodonato/when-ai-coding-agents-break-the-boundary-lessons-from-cursor-claude-and-codex-f74f1adb78f9">Medium — Lessons from Cursor, Claude and Codex</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>コミュニティ対応:</strong> 9/11 時点では「どう守るか」という防御手順共有のフェーズに入った。開発者ブログ・Notion 社内ドキュメント・Slack ガイドラインが各組織で急ピッチで作成されている</li>
-          <li><strong>推奨される防御策:</strong> ①API キーを設定ファイルに直書きしない（1Password・Vault 経由）②MCP 設定ファイルに認証情報を残さない③プロンプト履歴・セッションログを定期クリア④EDR を最新化⑤Claude Code を扱う端末に不審なソフトウェアをインストールしない</li>
-          <li><strong>「攻撃面はツールではなくエンドポイント」という理解の定着:</strong> 「これは Claude Code の脆弱性の問題ではなく、感染したエンドポイントのセキュリティの問題だ」という的確な指摘が 9/11 の記事でも繰り返し引用されている</li>
+          <li><strong>脅威の二重構造:</strong> 昨日（9/11）報告されたインフォスティーラー（感染端末から API キー・セッション情報を窃取）と、今日（9/12）報告された git config サンドボックス脱出の2つが同時に注目を集めた。前者は「エンドポイントセキュリティ」の問題、後者は「信頼の境界設計」の問題と区別して理解することが重要</li>
+          <li><strong>3軸でのリスク再整理:</strong> セキュリティ専門家は①エンドポイント（感染端末）②サプライチェーン（悪意ある依存関係・リポジトリ）③信頼の境界（サンドボックスと外部コンポーネントの間のギャップ）の3軸でリスクを整理するフレームワークが必要だと指摘する</li>
+          <li><strong>DevSecOps への含意:</strong> CI/CD パイプラインで Claude Code・Codex などを使う場合、リポジトリの git 設定を信頼して実行することは潜在的に危険なコードを実行することに等しい。CI 環境での <code>core.fsmonitor</code> の検証ステップの追加が推奨されている</li>
+          <li><strong>ベンダーの対応課題:</strong> 「承認プロンプトの前に実行される」という特性はユーザーが介入できないことを意味する。エージェントフレームワークレベルでの git config のサニタイズや、ホワイトリスト方式の設定読み込みが必要という声が高まっている</li>
         </ul>
       </div>
     </div>
@@ -151,35 +154,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI・r/MachineLearning「Anthropic が国名・兵器種別まで明示した脅威レポートを公開——OpenAI との透明性の差は広がるか。AI 企業は悪用事例を何処まで開示すべきか」</div>
-      <div class="card-meta"><span class="badge">Community / Anthropic / Threat Intelligence / Transparency / OpenAI / AI Governance / Reddit</span><span class="card-source">Reddit r/ClaudeAI · r/MachineLearning · r/artificial — 2026.09.11</span></div>
+      <div class="card-title">r/ClaudeAI・r/netsec「.git 設定で AI エージェントが乗っ取られる——承認プロンプト前に発火する点が特に怖い。『AI エージェントを信頼するな、リポジトリを信頼しろ』という旧来の原則が崩れた」</div>
+      <div class="card-meta"><span class="badge">Community / Claude Code / Security / git / Sandbox Escape / Trust / Reddit</span><span class="card-source">Reddit r/ClaudeAI · r/netsec · r/programming — 2026.09.12</span></div>
       <div class="card-body">
         <ul>
-          <li>「これだけ具体的に開示した AI 企業は初めてでは」というコメントが最多アップボートを獲得した</li>
-          <li>「脅威レポートの開示は AI 企業にとって法的リスクを伴うため今まで誰もやらなかった。Anthropic がやったことで他社も追随せざるを得なくなる可能性がある」という分析コメントが注目を集めた</li>
-          <li>「カミカゼドローンや誘導ミサイルの開発支援を『試みた』というだけで成功したのか不明。Anthropic 自身が阻止した側なので自己申告の評価になる」という懐疑的なコメントも一定の支持を集めた</li>
+          <li>「承認プロンプトを出す前に攻撃が発火するというのは、ユーザーが何も防ぐ手段を持てないということだ——これは単なるバグではなくアーキテクチャの欠陥だ」というコメントが最多アップボートを獲得した</li>
+          <li>「Claude Code を使って OSS の PR をレビューしていたが、悪意ある .git 設定を仕込まれたら一発で終わり。今後は新しいリポジトリをクローンするたびに git 設定を手動で確認する習慣をつける」という実践的な反応が続いた</li>
+          <li>「Anthropic が昨日スレットレポートを公開して『我々は AI 悪用を防いでいる』と言ったその翌日に、Claude Code 自体の脆弱性が大きく報じられる——皮肉なタイミングだ」という指摘も一定の共感を集めた</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude Enterprise のスマートレポートを早速試した。『チームの摩擦が多いパターン』が視覚化されて驚いた。CMEK 組織は使えないのが惜しい」</div>
-      <div class="card-meta"><span class="badge">Community / Claude Enterprise / Smart Reports / Analytics / Beta / Reddit</span><span class="card-source">Reddit r/ClaudeAI · r/Entrepreneur — 2026.09.11</span></div>
+      <div class="card-title">r/Teachers・r/ClaudeAI「Claude for Teachers の Enterprise 拡充——学校の IT 管理者は導入しやすくなった。でも『AI に授業を任せたくない』という現場の先生の声も根強い。教育 AI の本当の課題は技術ではなく文化だ」</div>
+      <div class="card-meta"><span class="badge">Community / Claude for Teachers / Education / K-12 / Enterprise / AI in Classroom / Reddit</span><span class="card-source">Reddit r/Teachers · r/ClaudeAI · r/edtech — 2026.09.12</span></div>
       <div class="card-body">
         <ul>
-          <li>「チームが同じ作業を何度も別のセッションで試みていた」「特定のフローでセッションが詰まっていた」という摩擦パターンが視覚化されて気づきが多かったという実体験レポートが注目を集めた</li>
-          <li>「スキル化候補の提案機能が特に便利だった。人間が気づかなかった繰り返しパターンを Claude が検出してくれた」という声が高評価を得た</li>
-          <li>「CMEK を使っているので使えない」という声も複数。「セキュリティ要件の高い企業ほど欲しい機能なのに使えないという逆転現象」という指摘が共感を集めた</li>
+          <li>「SSO と集中管理が付いているので IT 部門が学校全体に展開しやすくなった。以前は先生が個人アカウントで使っていてデータ管理が課題だった」という IT 管理者からのコメントが高評価を得た</li>
+          <li>「全米50州の学習基準に接続するというのは本当なら強力だが、実際にどの程度の精度で使えるかが問題。試した先生のレポートが読みたい」という声が多数ついた</li>
+          <li>r/Teachers では「AI に授業を作られることへの根本的な抵抗感」と「現実問題として準備時間が足りない教師が AI を使わざるを得ない状況」の間の葛藤を語るコメントが白熱した議論になっていた</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/artificial・r/worldnews「9/11 から25年——AI はテロ対策・安全保障をどう変えたか。そして今日の脅威レポートが示すように、AI 自体が安全保障の脅威になりつつある」</div>
-      <div class="card-meta"><span class="badge">Community / 9/11 / 25th Anniversary / AI Security / Terrorism / National Security / Reddit</span><span class="card-source">Reddit r/artificial · r/worldnews · r/Futurology — 2026.09.11</span></div>
+      <div class="card-title">r/androiddev「Google ADK Kotlin 1.0 が GA——Android オンデバイス AI エージェントがついて本番対応に。LiteRT-LM でオフライン動作、Firebase でクラウドに切り替え。Claude や ChatGPT に対抗できるかは Gemini の性能次第」</div>
+      <div class="card-meta"><span class="badge">Community / Google / ADK / Kotlin / Android / On-Device AI / LiteRT-LM / Gemini / Reddit</span><span class="card-source">Reddit r/androiddev · r/MachineLearning · r/artificial — 2026.09.12</span></div>
       <div class="card-body">
         <ul>
-          <li>「2001年当時は AI で敵のコミュニケーションを傍受することが話題だったが、2026年は AI 自体が兵器開発に使われる脅威が現実になった」という変化を指摘するコメントが最も多くの共感を集めた</li>
-          <li>「今日（9/11）に Anthropic が脅威レポートを公開したのは日付の偶然ではないかもしれない」という指摘が議論を呼んだ</li>
-          <li>r/Futurology では「25年後の2051年に AI 安全保障省のようなものが設立されているとしたら、2026年の今日が起点になるかもしれない」という長期的な視点のコメントが多くのアップボートを集めた</li>
+          <li>「Kotlin ネイティブで書けて Room で状態が保持できるなら、本格的な Android エージェントアプリが作れる。今まで Python の ADK をラップして使っていたのが馬鹿らしくなる」という Kotlin 開発者からの歓迎コメントがトップ</li>
+          <li>「オンデバイスで動くなら API キーを端末外に送らなくていいのでプライバシー的に良い。ただし Gemini Nano の能力限界がどこにあるかが実際使ってみないとわからない」という現実的な評価も多かった</li>
+          <li>「Claude Code や Codex との差別化は Android デバイス上で動作するという点。でも Claude Code を Android 端末から使えるリモートツールとして位置づければ競合よりも補完関係かもしれない」という分析が注目を集めた</li>
         </ul>
       </div>
     </div>
@@ -191,41 +194,43 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/11）の主要トピック:</strong> <strong>9/11 テロ25周年——全米で大規模追悼式典、トランプ大統領がペンタゴンで登壇・存命の前大統領全員がニューヨーク式典に出席</strong> / <strong>イラン戦争 Day 196：ホーシー派がイエメン紅海全域（バブ・エル・マンデブ海峡・ペリム島含む）を制圧——原油$110・米国ディーゼル$6超の過去最高値を記録</strong> / <strong>ロシアがウクライナのショッピングモール・ガソリンスタンドを爆撃——キエフの深部攻撃に対する報復</strong>
+      <strong>本日（9/12）の主要トピック:</strong> <strong>第18回 BRICS サミット（ニューデリー）が開幕、「New Delhi Declaration」全会一致採択——モディ首相がグローバルガバナンス改革案10項目を提唱</strong> / <strong>イラン戦争 Day 197：ホーシー派がバブ・エル・マンデブ海峡閉鎖を警告、トランプ「ホーシー派から『介入しないで』と電話が来た」</strong> / <strong>トランプ大統領がアイルランド訪問、ファームリーハウスでマーティン首相と会談し「北アイルランド統一は素晴らしいこと」と発言し波紋</strong>
     </div>
     <div class="card">
-      <div class="card-title">9/11 テロ25周年——全米で大規模追悼式典。トランプ大統領がペンタゴンで演説、存命の前大統領全員がグラウンドゼロの式典に出席。新たな「第7の黙祷」設置、有毒物質曝露で死亡した数千人の犠牲者を追加追悼</div>
-      <div class="card-meta"><span class="badge">USA / 9/11 / 25th Anniversary / Trump / Pentagon / Ground Zero / Memorial / New York</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/09/11/us/live-news/9-11-anniversary">CNN — America marks the 25th anniversary of 9/11</a> · <a href="https://www.usnews.com/news/us/articles/2026-09-11/the-latest-trump-will-commemorate-25-years-since-9-11-attacks-at-the-pentagon">US News — Trump commemorates 25 years since 9/11 at Pentagon</a> · <a href="https://www.911memorial.org/marking-25th-anniversary">National September 11 Memorial &amp; Museum</a> · <a href="https://www.npr.org/2026/09/11/nx-s1-5961366/9-11-memorial-events">NPR — As Americans gather to remember 9/11</a> · <a href="https://www.cbsnews.com/live-updates/september-11-terrorist-attacks-25-years-memorial-2026-09-11/">CBS News — 25 years after Sept. 11 attacks</a></span></div>
+      <div class="card-title">第18回 BRICS サミット開幕（ニューデリー）——「New Delhi Declaration」全会一致採択。モディ首相がグローバルガバナンス改革10項目を提唱、BRICS 改革ロードマップ策定へ。イラン・UAE 間の対立を乗り越えた合意が焦点</div>
+      <div class="card-meta"><span class="badge">BRICS / India / Modi / New Delhi Summit / Declaration / Global Governance / Iran / UAE / Reform</span><span class="card-source">Source: <a href="https://www.pmindia.gov.in/en/news_updates/brics-new-delhi-declaration-building-for-resilience-innovation-cooperation-and-sustainability-september-12-2026/?comment=disable">Prime Minister of India — BRICS New Delhi Declaration</a> · <a href="https://www.businesstoday.in/india/story/brics-summit-2026-consensus-reached-as-leaders-prepare-to-pass-new-delhi-joint-declaration-555109-2026-09-12">BusinessToday — BRICS Summit 2026: Consensus reached</a> · <a href="https://www.memesita.com/brics-summit-2026-new-delhi-declaration-adopted-unanimously/">Memesita — BRICS Summit 2026: New Delhi Declaration Adopted Unanimously</a> · <a href="https://en.wikipedia.org/wiki/18th_BRICS_summit">Wikipedia — 18th BRICS summit</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>全国追悼式典の概要:</strong> ニューヨーク・ペンタゴン・ペンシルバニア州シャンクスビルの3カ所で公式追悼式典が開催された。トランプ大統領は<strong>ペンタゴンで演説</strong>。ニューヨークの式典には<strong>存命の前大統領全員</strong>が出席し、犠牲者2,983人の名前が読み上げられた</li>
-          <li><strong>新たな「第7の黙祷」の設置:</strong> 世界貿易センター跡地での救助活動後、有毒物質への曝露が原因で死亡した数千人を追悼するための<strong>第7の黙祷</strong>が今年から設けられた</li>
-          <li><strong>全国規模の追悼活動:</strong> ニューハンプシャー州マウント・ワシントン山頂からのビームオブライト投影、ミシシッピ州立大学での階段昇降追悼、ホノルルでの式典など全国各地に及んだ。数百万人がボランティア活動に参加した</li>
-          <li><strong>追悼の分断という側面:</strong> イラン戦争が進行する中での9/11追悼は「なぜ米国は今また戦争をしているのか」という問いと重なり、追悼の場での意見対立が例年より鮮明になった</li>
+          <li><strong>サミット開幕:</strong> インド・ニューデリーで <strong>第18回 BRICS サミット（9/12〜13）</strong>が開幕。テーマは「Building for Resilience, Innovation, Cooperation and Sustainability（BRICS）」。インドの議長国として、モディ首相が主催</li>
+          <li><strong>New Delhi Declaration の採択:</strong> 11ヶ国（拡大 BRICS）が「ニューデリー宣言」を全会一致で採択した。宣言文は「いかなる国による一方的な戦争も非難する」という文言を含む。中東緊張に深い懸念を示し、最大限の自制と多国間アプローチを呼びかけた</li>
+          <li><strong>最大の難関——イランと UAE の対立調整:</strong> 拡大 BRICS にはイランと UAE の両国が含まれており、現在進行中の紛争（イラン戦争）を抱えながら共同宣言をまとめることが最大の外交的課題だった</li>
+          <li><strong>モディ首相の改革提唱:</strong> BRICS 各国が共同でグローバルガバナンス改革案10項目を準備し、次回サミットまでに「BRICS 改革ロードマップ」を策定することを提唱した。<strong>代表性・応答性・ルール策定</strong>の3本柱を軸にした国際秩序の刷新が骨子</li>
+          <li><strong>AI・デジタル分野の議題:</strong> 昨日の2国間会談（モディ・プーチン）でも議論された AI 技術協力・デジタル決済・ドル覇権への対抗がサミット議題にも含まれる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イラン戦争 Day 196——ホーシー派がイエメン紅海全域（バブ・エル・マンデブ海峡・ペリム島）を18時間で制圧。サウジアラビアのパイプラインを攻撃、原油$110・米国ディーゼル$6超の過去最高値。トランプ「この戦争が自分の任期を超えることはない」</div>
-      <div class="card-meta"><span class="badge">Iran War / Yemen / Houthis / Ansarallah / Red Sea / Bab al-Mandeb / Oil / Diesel / Trump / Saudi Arabia / IRGC</span><span class="card-source">Source: <a href="https://www.cbsnews.com/live-updates/iran-war-diesel-price-record-houthis-red-sea/">CBS News — Diesel hits record $6 a gallon as Houthis take Red Sea</a> · <a href="https://www.dropsitenews.com/p/ansarallah-yemen-red-sea-saudi-pipeline-oil-diesel">Dropsite News — Ansarallah completes takeover of Red Sea coast</a> · <a href="https://www.thenationalnews.com/business/energy/2026/09/11/oil-prices-set-to-end-the-week-above-100-as-houthis-seize-key-port-city/">The National — Oil prices set to end the week above $100</a> · <a href="https://truthout.org/articles/oil-prices-soar-to-new-heights-as-houthis-seize-yemens-red-sea-coastline/">Truthout — Oil Prices Soar as Houthis Seize Red Sea Coastline</a> · <a href="https://abcnews.com/International/live-updates/iran-live-updates-tehran-plans-new-restricted-zone/?id=136249116">ABC News — Iran live updates</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war">Wikipedia — 2026 Iran war</a></span></div>
+      <div class="card-title">イラン戦争 Day 197——ホーシー派がバブ・エル・マンデブ海峡の完全閉鎖を警告。サウジアラビアが主要石油パイプラインをシャットダウン、原油・ディーゼル高止まり。トランプ「ホーシー派から介入しないよう電話が来た」</div>
+      <div class="card-meta"><span class="badge">Iran War / Yemen / Houthis / Ansarallah / Bab al-Mandeb / Saudi Arabia / Pipeline / Oil / Trump / Hormuz / Oman</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down">Al Jazeera — Iran war live: Houthis warn against intervention</a> · <a href="https://www.timesofisrael.com/liveblog-september-12-2026/">Times of Israel — Liveblog September 12, 2026</a> · <a href="https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us">Al Jazeera — Will Houthi advances give Iran leverage?</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ホーシー派による紅海全域制圧:</strong> IRGC の直接指導のもと、ホーシー派が<strong>18時間の電撃的な攻勢でイエメン紅海沿岸全域を掌握</strong>。モカ南部からバブ・エル・マンデブ海峡に及び、戦略的要衝<strong>ペリム島</strong>に到達。世界のエネルギー輸送の10%を占めるルートへの脅威が急激に高まった</li>
-          <li><strong>サウジアラビアのパイプライン攻撃とエネルギー市場:</strong> ホーシー派のサウジ石油パイプライン攻撃が<strong>ブレント原油$110/バレル</strong>・<strong>米国ディーゼル$6超/ガロン</strong>（過去最高値更新）につながった。IEA は「イラン戦争の影響で今年の石炭消費が記録的水準になる」と指摘</li>
-          <li><strong>トランプ大統領の発言:</strong> 「この戦争が自分の任期を超えることはない（no chance）」と改めて発言。新たな米財務省制裁（ヒズボラ・イラン系代理組織を支援するイラク・UAE・レバノン・トルコの企業・個人）が発令された</li>
-          <li><strong>「新たな前線」としてのイエメン:</strong> イランがホーシー派を通じて紅海という新たな前線を開こうとしているという分析が支配的。ホルムズに集中している米軍の間にバブ・エル・マンデブを制圧するという「挟み撃ち」戦略とも読める</li>
+          <li><strong>バブ・エル・マンデブ完全閉鎖の警告:</strong> 昨日（9/11）紅海沿岸全域を掌握したホーシー派（アンサール・アッラー）が本日、<strong>バブ・エル・マンデブ海峡を完全封鎖する可能性</strong>を警告した。同海峡は世界の海上貿易の約10%が通過する要衝</li>
+          <li><strong>サウジアラビアのパイプライン閉鎖:</strong> ホーシー派の攻撃を受けたサウジアラビアが主要石油パイプラインをシャットダウン。昨日に続いて原油・ディーゼル価格は高止まりしている</li>
+          <li><strong>トランプ「ホーシー派から電話が来た」:</strong> トランプ大統領は「ホーシー派が我々に電話してきて『介入しないでほしい』と言った」と公言。これについてトランプは「彼らは我々と戦いたくない」と解釈した一方、アナリストからは「ホーシー派が時間稼ぎをしている可能性」という指摘もある</li>
+          <li><strong>ホルムズ・バブ・エル・マンデブの「挟み撃ち」:</strong> イランがホルムズ海峡（東）とバブ・エル・マンデブ海峡（西）の両方を同時に制圧することで、中東産石油の輸出経路を完全に掌握できる。この「挟み撃ち」戦略の進展が石油市場と国際安全保障の最大の懸念点となっている</li>
+          <li><strong>イラン・オマーン間の取り決め:</strong> イランとオマーンの間でホルムズ海峡の取り扱いに関する枠組みが確認されつつあるが、即座の再開通ではなく「開通できる条件の整備」にとどまっているとされる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ロシアがウクライナのショッピングモール・ガソリンスタンドを爆撃——キーウの深部攻撃への報復。インドのモディ首相・ロシアのプーチン大統領がニューデリーで会談——第18回 BRICS サミット（9/12-13）前日の2国間協議</div>
-      <div class="card-meta"><span class="badge">Russia / Ukraine / Bombing / Modi / Putin / India / BRICS / New Delhi</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/9/11/headlines">Democracy Now! — Headlines for September 11, 2026</a> · <a href="https://morningstaronline.co.uk/article/world-brief-september-11-2026">Morning Star — World in brief September 11</a> · <a href="https://everythingbriefing.substack.com/p/september-11-2026">Everything Briefing — Global Developments September 11</a></span></div>
+      <div class="card-title">トランプ大統領がアイルランド訪問——ファームリーハウスでマーティン首相と会談、「北アイルランドの統一は素晴らしいことだ」と発言し外交波紋。アイリッシュオープン観戦のためドーニベグのゴルフクラブへ</div>
+      <div class="card-meta"><span class="badge">Trump / Ireland / Farmleigh / Micheál Martin / Northern Ireland / Reunification / Doonbeg / Irish Open / UK</span><span class="card-source">Source: <a href="https://www.npr.org/2026/09/12/g-s1-143076/trump-meets-irelands-leaders">NPR — Trump meets Ireland's leaders before heading to his golf club in Doonbeg</a> · <a href="https://www.pbs.org/newshour/politics/trump-touches-a-nerve-while-in-ireland-by-saying-reunification-would-be-fantastic">PBS NewsHour — Trump touches a nerve while in Ireland by saying reunification would be 'fantastic'</a> · <a href="https://www.irishstar.com/news/ireland-news/donald-trumps-ireland-visit-september-37552409">Irish Star — Trump's Ireland visit September 2026: Full schedule</a> · <a href="https://www.oann.com/newsroom/trump-on-trip-to-ireland-id-love-to-see-ireland-unified/">OANN — Trump on trip to Ireland: I'd 'love to see' Ireland unified</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ロシアのウクライナ爆撃:</strong> ウクライナのロシア深部攻撃への報復として、ロシアがウクライナの<strong>ショッピングモールとガソリンスタンドを標的とする爆撃</strong>を実施した。「報復の連鎖」は戦線全体のエスカレーションを示している</li>
-          <li><strong>モディ・プーチン会談:</strong> インドのモディ首相とロシアのプーチン大統領が9/11にニューデリーで2国間会談。翌日（9/12）からの第18回 BRICS サミットを前にエネルギー・防衛・貿易・デジタル決済を協議した</li>
-          <li><strong>BRICS サミット（9/12-13）:</strong> 主要議題はドル覇権への対抗・ウクライナ/イラン戦争での BRICS 各国の立場整理・AI・デジタル技術での協力枠組み。西側中心の国際秩序に対するオルタナティブとしての BRICS の存在感を示す場となる</li>
-          <li><strong>その他:</strong> 中国・青島港でカーゴ船火災——少なくとも20人死亡・5人行方不明。ネパールが氷河崩壊による洪水被害で気候変動補償2,000万ドルを要求</li>
+          <li><strong>アイルランド訪問の概要:</strong> トランプ大統領がダブリンのファームリーハウスでアイルランドのミシール・マーティン首相および大統領キャサリン・コノリーと会談。訪問の主目的はドーニベグのゴルフクラブでのアイリッシュオープン観戦</li>
+          <li><strong>「統一は素晴らしい」発言と波紋:</strong> 会談中に北アイルランドの統一について問われたトランプは「問題を起こしたくないが、統一されたら素晴らしいと思う（I think it would be a fantastic thing）」と発言。アイルランドと英国（北アイルランド）の関係は歴史的に複雑であり、米大統領による踏み込んだ発言として注目された</li>
+          <li><strong>英国の反応:</strong> 英国政府は「北アイルランドの地位は住民の意思によって決まるものだ」という立場を繰り返した。ウニオニスト（英国統治支持）側からは懸念の声が上がっている</li>
+          <li><strong>ダブリン商工会議所での演説:</strong> トランプは米国大使公邸でアメリカとアイルランドの財界リーダーに向けて演説した後、ドーニベグに移動した</li>
         </ul>
       </div>
     </div>
@@ -237,22 +242,23 @@
       <span class="section-count">2 記事</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita 9/11 トレンド（#初心者 タグが上位）——「AIエージェントにファイルを消される・課金が止まらない・秘密鍵が漏れる——2026年の AI エージェントセキュリティ3大事故」・「AIコーディングエージェントのスキル定義・コンテキスト最適化・ルーティングのインフラ整備が急加速」が上位に</div>
-      <div class="card-meta"><span class="badge">Qiita / AI Agent / Security / Claude Code / Context / Routing / Skills / Infrastructure</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/552b61295bfa9bc2c20a">Qiita — 2026年9月11日 今日のQiitaトレンド記事をポッドキャストで聴こう！ #初心者</a> · <a href="https://qiita.com/mt_caddi/items/0aa540a9016e8d686fc6">Qiita — 2026年9月最新版 AIトレンド総まとめ</a></span></div>
+      <div class="card-title">Qiita 9/12 トレンド（#AWS タグが上位）——「AI 時代にコードの理解を習慣化する1日5問学習アプリを作った話」・「Hacker News で今日バズっていた話題（9/12）——git config 悪用・ADK Kotlin GA・BRICS AI 宣言」が注目記事に</div>
+      <div class="card-meta"><span class="badge">Qiita / AWS / Claude Code / AI Agent / git / ADK / Hacker News / Security / Learning</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/8d752bb158846f60fe2a">Qiita — 2026年9月12日 今日のQiitaトレンド記事をポッドキャストで聴こう！ #AWS</a> · <a href="https://qiita.com/homhom44/items/61ebd705c1db71499ec3">Qiita — 海外の Hacker News で今日バズっていた話題（2026-09-12） #AI</a> · <a href="https://qiita.com/aakan/items/2e1c5f4cfe40dbb74fb3">Qiita — 〖AI News まとめ〗生成AI ニュースレポート — 2026-09-12 #GenAI</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「AIエージェントにファイルを消される・課金が止まらない・秘密鍵が漏れる」:</strong> ファイルの意図しない削除・API 課金が青天井になった事例・`.env` ファイルを誤ってプロンプトに含めてしまった事例など、具体的な失敗談と対策が実体験ベースでまとめられた記事がトレンド入り。特に AI エージェント入門者（#初心者 タグが本日のトレンド1位タグ）に刺さる内容だった</li>
-          <li><strong>「AIコーディングエージェントのインフラ整備が急加速」:</strong> スキル定義（CLAUDE.md・Codex のプロンプト設計）・コンテキスト最適化・ルーティング（タスクの複雑さに応じてモデルを自動選択）という3領域でオープンソースツールが続々登場。「エージェントの利用そのもの」から「エージェントを管理・最適化するメタ層」へと開発者の関心が移行しつつあるという洞察が注目された</li>
+          <li><strong>「AI 時代にコードの理解を習慣化する1日5問学習アプリを作った話」:</strong> Claude Code と AWS Lambda を組み合わせて毎日5問のコード理解テストを自動生成・配信するアプリを個人開発した体験記。「AI がコードを書いてくれるほど、逆に人間側の基礎理解を確かめる習慣が大事だと気づいた」という気づきが共感を呼んだ。#AWS タグ本日トップ</li>
+          <li><strong>Hacker News 9/12 バズトピック:</strong> ①git core.fsmonitor を悪用した AI エージェントへの攻撃（Show HN として最多アップボート）②Google ADK Kotlin 1.0 GA（「ようやく Android ネイティブでエージェントが書ける」）③BRICS サミットでの AI 技術協力宣言（「西側とは別の AI 標準が生まれるか」）の3本柱</li>
+          <li><strong>生成 AI ニュースまとめ 9/12（#GenAI）:</strong> Claude for Teachers の Enterprise 拡充と Google ADK Kotlin 1.0 の2本が「今週の実用上のインパクト大」として取り上げられた</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn 9/11 注目——「Anthropic の脅威インテリジェンスレポートを読む——AI は兵器開発に本当に役立つのか、冷静に評価する」・「Claude Enterprise スマートレポートの仕組みを技術的に推察する」</div>
-      <div class="card-meta"><span class="badge">Zenn / Anthropic / Threat Intelligence / Bioweapon / Drone / Claude Enterprise / Smart Reports / Analytics</span><span class="card-source">Source: <a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic — Countering misuse of AI: September 2026</a> · <a href="https://support.claude.com/en/articles/16893491-get-started-with-smart-reports">Claude Help Center — Smart Reports</a></span></div>
+      <div class="card-title">Zenn 9/12 注目——「悪意ある .git 設定で AI エージェントを乗っ取る攻撃の仕組みを技術的に読み解く」・「Claude for Teachers の導入を技術的に検討する——SSO・集中管理・ZDR 制約とデータポリシー」</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / git / Sandbox Escape / Claude for Teachers / SSO / CMEK / ZDR / Education AI</span><span class="card-source">Source: <a href="https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/">BleepingComputer — Sandbox escapes</a> · <a href="https://www.edtechinnovationhub.com/news/anthropic-opens-claude-for-teachers-free-to-us-k-12-educators">EdTech Innovation Hub — Claude for Teachers</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「Anthropic の脅威インテリジェンスレポートを読む」:</strong> 「Anthropic が阻止した＝成功する前に止めた、ということであり、AI 悪用の成功事例が確認されたわけではない」という冷静な指摘が共感を集めた。「AI の能力を過大評価する方向でも過小評価する方向でも偏ったナラティブは危険」という締めくくりが注目された</li>
-          <li><strong>「Claude Enterprise スマートレポートの仕組みを技術的に推察する」:</strong> 「Claude 自身がチームのトランスクリプトを読んで分析しているのであれば、そのトランスクリプトは Anthropic のサーバーに保存されている必要がある——だからこそ ZDR・CMEK 組織が除外されている」という推察が的確だと評価された。AI で AI の使い方を分析するメタ的なアーキテクチャへの技術的好奇心と、プライバシー上の懸念を並べて論じた内容が読者に響いた</li>
+          <li><strong>「悪意ある .git 設定で AI エージェントを乗っ取る攻撃の仕組みを技術的に読み解く」:</strong> <code>core.fsmonitor</code> が「ファイル変更監視のための外部コマンド」として Git に組み込まれた設計上の正当な機能であることを解説。「攻撃者は Git の機能を使っているだけで、そのリポジトリ自体に悪意あるコードは存在しない——従来のウイルス検知では発見できない可能性がある」という指摘が多くのいいねを集めた</li>
+          <li><strong>「Claude for Teachers の導入を技術的に検討する——SSO・集中管理・ZDR 制約とデータポリシー」:</strong> SSO 対応と集中管理で IT 管理者が学区全体に展開しやすくなった点を評価しつつ、「ZDR（Zero Data Retention）・CMEK 環境では利用不可という制約は昨日のスマートレポートと同じ構造だ」という分析が的確だと高評価された。日本の公立学校での採用可能性については「個人情報保護法・文部科学省ガイドラインの観点からのデータポリシー確認が必要」という実務的なコメントが付いた</li>
         </ul>
       </div>
     </div>
@@ -260,9 +266,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年9月11日（金）</p>
-  <p style="margin-top:0.5rem;">Sources: Anthropic — Countering misuse of AI · Bloomberg · Al Jazeera · TechTimes · Parameter.io · ExplainX.ai · PANews English · Streamlinefeed · Townhall · Claude Help Center · Releasebot · LLM Stats · STARTUP EDITION · CNN · US News · NPR · CBS News · 911memorial.org · CBS News (Red Sea) · Dropsite News · The National · Truthout · ABC News · Democracy Now! · Morning Star · Everything Briefing · Qiita · Zenn</p>
-  <p style="margin-top:0.3rem;"><a href="2026-09-10/index.html">前版（2026-09-10）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月12日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: EdWeek · Chalkbeat · EdTech Innovation Hub · GovTech · Releasebot (Claude Code / Claude Developer Platform) · Google Developers Blog · daily.dev · BleepingComputer · Techzine · HackLido · InfoSecToday · CSA Labs · DevOps.com · Medium · Al Jazeera · Times of Israel · NPR · PBS NewsHour · Irish Star · OANN · Prime Minister of India · BusinessToday · Wikipedia (BRICS) · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="2026-09-11/index.html">前版（2026-09-11）</a></p>
 </footer>
 </body>
 </html>
