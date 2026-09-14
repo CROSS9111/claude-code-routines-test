@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月13日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code が <code>claude plugin eval</code> コマンドと新たな browser use ツールを追加、computer use が HIPAA 対応に / OpenAI の Agents API がパブリックベータに——agent/environment/session/events の4概念で構成 / Codex が max・ultra reasoning-effort 値を追加 / BRICS サミット（ニューデリー）最終日——140項目の宣言採択、AI 協力・インド永安保理議席支持が焦点 / インドネシア・ジャワ海でフェリー転覆——乗員乗客243人中6人死亡・130人行方不明</p>
+  <p class="date">2026年9月13日（日）&nbsp;|&nbsp;<a href="../2026-09-12/index.html">前版（9/12）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Qiita / Zenn</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/13）のハイライト:</strong> <strong>Claude Code が <code>claude plugin eval</code> コマンドをリリース</strong>——プラグインの貢献をプラグインあり/なしの差分で定量的に証明できる。<strong>Computer use が multi-action ターンに対応し、HIPAA 対象ワークロードでも BAA 下で利用可能</strong>に。さらに<strong>新たな browser use ツール</strong>が追加され、ピクセルではなくページ構造で Web 要素をより信頼性高くターゲティングできるようになった。また <strong>Claude Code の +50% 週間利用上限プロモーションが本日（9/13）23:59 PT に終了</strong>する。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code が <code>claude plugin eval</code> コマンドをリリース——プラグインのあり/なしを比較してスコア化・再現可能な評価結果を JSON/HTML で出力。プラグインの貢献を定量的に証明できる</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Plugin Eval / CLI / Testing / JSON / HTML / Reproducibility</span><span class="card-source">Source: <a href="https://www.bighatgroup.com/blog/claude-weekly-2026-09-13/">Claude Weekly — Big Hat Group (9/13)</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Updates — Releasebot</a> · <a href="https://aicatchup.com/news/claude-code-weekly-limits-50-percent-promo">AI Catchup — Claude Code Promo</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>コマンド概要:</strong> 新しい <code>claude plugin eval</code> CLI コマンドが追加された。指定したプラグインの eval スイートを Claude Code に対して実行し、スコア付きで再現可能な結果を出力する</li>
+          <li><strong>あり/なし比較:</strong> 各テストケースは「プラグインあり」と「プラグインなし」の両方で実行される。この差分によって、そのプラグインが本当に寄与しているかを定量的に証明できるようになった</li>
+          <li><strong>出力形式:</strong> JSON と HTML の2種類のレポートが生成される。JSON は CI パイプラインへの統合、HTML は人間が確認するブラウザ表示に対応している</li>
+          <li><strong>用途:</strong> スキル作者がスキルの品質を客観的に検証したり、チームが複数のプラグインを比較評価したりする際に活用できる。「印象」ではなくデータでプラグインを選別できる環境が整った</li>
+          <li><strong>+50% プロモーション終了:</strong> Claude Code の週間利用上限を +50% 引き上げていたプロモーションが<strong>本日9/13 23:59 PT に終了</strong>する。9/14 以降は通常の制限に戻る</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Computer use が multi-action ターン対応・HIPAA 対象ワークロードへの BAA 適用を解禁——新設の browser use ツールはページ構造ベースで Web 要素をより確実にターゲティング</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude / Computer Use / Browser Use / HIPAA / BAA / Multi-Action / Web Automation / Healthcare</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude">Claude Updates — Releasebot</a> · <a href="https://www.strac.io/blog/is-claude-hipaa-compliant">Strac — Is Claude HIPAA Compliant 2026</a> · <a href="https://www.mindstudio.ai/blog/what-is-claude-code-computer-use">MindStudio — Claude Code Computer Use</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Multi-action ターン対応:</strong> 改訂された computer use ツールでは、以前は1ターンにつき1アクションしか実行できなかったが、<strong>1ターンで複数のアクションを実行できるようになった</strong>。タスクが少ない API 呼び出しで完了し、時間とコストが削減される</li>
+          <li><strong>HIPAA 適用解禁:</strong> Computer use が Anthropic の BAA（ビジネスアソシエイト契約）の対象として<strong>HIPAA 規制対象ワークロード</strong>に利用可能になった。電子健康記録の操作や医療フォームの自動化など、医療分野での活用が前進した</li>
+          <li><strong>新 browser use ツールの追加:</strong> ピクセルベースで画面全体を見て操作する従来のアプローチとは異なり、<strong>ページの DOM 構造を直接読み取って Web 要素をターゲティング</strong>する新しい browser use ツールが追加された。ボタン・フォームフィールド・リンクをより確実に特定できる</li>
+          <li><strong>対象範囲:</strong> HIPAA の BAA は Claude API・Claude Enterprise・Claude Code CLI（ZDR のみ）が対象。Pro・Team・Cowork は BAA の対象外</li>
+          <li><strong>実用上のインパクト:</strong> browser use ツールと multi-action ターンの組み合わせにより、Web 上の反復作業を人間が確認しながら自動化するシナリオが現実的になってきた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code がサンドボックスガイダンスを改善・--resume の初回レンダリング時間短縮・プロンプト入力の応答性向上——output-style 切り替えや Slack/Web/VS Code の信頼性改善も</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Sandbox / Resume / Performance / VS Code / Slack / Web / Prompt Input</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Updates — Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>サンドボックスガイダンスの改善:</strong> サンドボックス内でのアクションに関するガイダンスが更新された。エージェントがサンドボックス外へ出るべきかどうかの判断基準がより明確になった</li>
+          <li><strong>--resume の初回レンダリング改善:</strong> <code>--resume</code> フラグを使ってセッションを再開したときの初回レンダリングが高速化された。長いセッション履歴を持つプロジェクトでの再開時の待ち時間が短縮される</li>
+          <li><strong>プロンプト入力の応答性向上:</strong> プロンプト入力欄での文字入力・編集の反応が改善され、特に長いプロンプトを編集する際の体験が向上した</li>
+          <li><strong>output-style 切り替え:</strong> ターミナル出力のスタイルを切り替えられる機能が追加された。コード、詳細レポート、簡易サマリーなど、用途に応じた出力形式を選べる</li>
+          <li><strong>Slack・Web・VS Code の改善:</strong> 各インターフェースでのセッション安定性・スタートアップの信頼性が向上し、入力バグも複数修正された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（9/13）:</strong> <strong>OpenAI の Agents API がパブリックベータに入り</strong>——agent・environment・session・events の4概念でエージェント実行基盤を公開。<strong>Codex が max・ultra reasoning-effort 値を追加</strong>し、推論深度を段階的に制御できるようになった。<strong>AWS が Bedrock に MiniMax モデルを追加</strong>——4M トークンコンテキストと MoE アーキテクチャを統一 API で提供。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI の Agents API がパブリックベータ入り——agent・environment・session・events の4概念でエージェント実行基盤を公開。セッション管理・コンテキスト圧縮・サブエージェント調整・クラッシュ回復を提供、モデルトークン以外は追加料金なし</div>
+      <div class="card-meta"><span class="badge">OpenAI / Agents API / Public Beta / Session Orchestration / Context Compaction / Sub-Agent / Crash Recovery / Pricing</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Sep 13 2026</a> · <a href="https://aiweekly.co/ai-news-today/openai-news">AI Weekly — OpenAI News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>パブリックベータ開始:</strong> OpenAI の Agents API がパブリックベータに移行した。これまで Codex などのエージェントを内部で動かしていたマネージドハーネスが外部開発者向けに公開されたもの</li>
+          <li><strong>4つの基本概念:</strong> ①<strong>agent</strong>（ツール・指示・メモリを持つ実行単位）②<strong>environment</strong>（エージェントが操作するコンピュータ・ファイルシステム）③<strong>session</strong>（マルチターン実行の文脈）④<strong>events</strong>（アクション・ツール呼び出しのストリーム）</li>
+          <li><strong>セッション管理と長文タスク:</strong> サービス側がセッションオーケストレーション・長タスクをまたいだコンテキスト圧縮・サブエージェント調整・遅延ツールロード・クラッシュ回復を担う。開発者はこれらの実装を自前で持つ必要がない</li>
+          <li><strong>料金モデル:</strong> モデルトークン・ツール利用・ホスト型サンドボックスコンピュートのコスト以外の追加料金はなし。使えば使った分だけ払う課金体系</li>
+          <li><strong>GPT-Live-1 の同時リリース:</strong> 全二重音声モデル <strong>GPT-Live-1</strong> も API に追加された。同時に聴きながら話す、割り込みへの対応、電話回線での動作が可能な音声エージェント開発が加速する</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex が max・ultra reasoning-effort 値を追加——推論の深さを段階的に制御可能に。ExternalMessage サポート・sync/async 呼び出し・ターン選択・Bedrock 互換性修正も</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Reasoning / max / ultra / ExternalMessage / Bedrock / API / Async</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Codex Updates — Releasebot</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_%28AI_agent%29">Wikipedia — OpenAI Codex (AI agent)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>max・ultra reasoning-effort 値の追加:</strong> 既存の low/medium/high に加えて <strong>max</strong> と <strong>ultra</strong> の2段階が追加された。コストと時間はかかるが、複雑な推論タスクや多段階のコード設計で深い検討が必要な場合に使い分けできる</li>
+          <li><strong>ExternalMessage サポート:</strong> sync（同期）と async（非同期）両方の run および turn 呼び出しで ExternalMessage をサポート。外部システムからのメッセージをエージェントの実行フローに組み込みやすくなった</li>
+          <li><strong>ターン選択・履歴オプション:</strong> turn 呼び出しでサービスティア・ソースメタデータ・ターン選択方法を指定できる新オプションが追加された</li>
+          <li><strong>Bedrock 互換性修正:</strong> Amazon Bedrock 経由での Codex 利用時の互換性バグが修正された。AWS 環境での運用がより安定する</li>
+          <li><strong>ターミナルワークフローの改善:</strong> @ でのタスクメンション・/copy と /rename コマンドの改善・クリック可能な Markdown リンク・Vim repeat サポート・新しい interrupt hook が追加された</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AWS が Bedrock に MiniMax モデルを追加——4M トークンコンテキストと MoE アーキテクチャでエージェント的ワークフローに対応。統一 API・自動スケーリングで大規模利用を簡素化</div>
+      <div class="card-meta"><span class="badge">AWS / Bedrock / MiniMax / MoE / 4M Context / Agentic Workflow / Unified API / Auto Scaling</span><span class="card-source">Source: <a href="https://artificialintelligenceherald.com/ai-news-today">AI Herald — AI News Today Sep 13</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week Sep 13</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>4M トークンコンテキスト:</strong> MiniMax モデルは <strong>400万トークン</strong>のコンテキストウィンドウを持つ。大規模コードベース・長大なドキュメント・マルチターンの複雑なエージェントタスクを1リクエストで処理できる</li>
+          <li><strong>MoE（Mixture of Experts）アーキテクチャ:</strong> MoE により、推論ごとにサブモデル（エキスパート）を動的に選択して効率的に処理する。全パラメータを常時利用するモデルと比べてコスト効率が高い</li>
+          <li><strong>統一 API・自動スケーリング:</strong> Bedrock の統一 API と自動スケーリングにより、大規模なエージェントワークフローでも手動のインフラ管理が不要</li>
+          <li><strong>競合状況との対比:</strong> Claude 3.7 や GPT-4.1 が主流だった Bedrock 上のエージェントシナリオに対し、MiniMax の4M コンテキストは「超長文の一括処理」という差別化軸を提供する</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「マルチエージェントオーケストレーションの実装ノート——オーケストレーター1台・サブエージェント複数・タスクタイプ別モデルルーティング・コストとコンテキスト管理の具体策」がバズる</div>
+      <div class="card-meta"><span class="badge">Community / Claude Code / Multi-Agent / Orchestration / Model Routing / Cost / Context Window / Reddit</span><span class="card-source">Reddit r/ClaudeAI · r/AI_Agents — 2026.09.13</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「オーケストレーター1台・サブエージェント複数」という構成を実際に運用している開発者が、モデルのルーティング（タスクの複雑度に応じて Opus・Sonnet・Haiku を使い分ける）やコストとコンテキストウィンドウの明示的な管理方法を詳細に公開した投稿が r/ClaudeAI のトップに</li>
+          <li>「プロダクト論よりも実際に動かしたオペレーターのノートとして読めるのが良い」というコメントが多く、「launch ではなく運用ログ」として共感を集めた</li>
+          <li>Claude Code の <code>claude plugin eval</code> リリースと絡めて「これで各サブエージェントのプラグインの効果を定量評価できる。マルチエージェント設計がより科学的になる」という期待コメントも続いた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/AI_Agents「エージェントはモデルの話を卒業し、コントロールプレーンの話になった——MCP・A2A・オブザーバビリティ・ガバナンス・監査証跡が本番の本当の課題」</div>
+      <div class="card-meta"><span class="badge">Community / AI Agent / MCP / A2A / Observability / Governance / Audit Trail / Production / Reddit</span><span class="card-source">Reddit r/AI_Agents · r/MachineLearning · r/artificial — 2026.09.13</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「MCP・A2A・オブザーバビリティ・ガバナンス・監査証跡こそが本番エージェントの本当の課題だ」というスレッドが r/AI_Agents でトップに。「モデルの賢さ競争はもう終わった。問題はどう制御するかだ」という意見が多数のアップボートを獲得した</li>
+          <li>「OpenAI の Agents API パブリックベータはこの方向に正しく答えている——セッション管理・コンテキスト圧縮・クラッシュ回復をサービス側が持つことで、開発者がガバナンスに集中できる」という評価が続いた</li>
+          <li>「でも Anthropic の Claude Code は CLAUDE.md によるポリシー設定・スキル診断という独自の軸で同じ問題に答えている——比較が面白い」という議論が展開された</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/geopolitics・r/worldnews「BRICS サミット、イラン戦争の最中でも140項目の宣言採択——中国がインドの安保理常任理事国入りを支持する動きに驚き。AI 技術協力が意外と核心議題だった」</div>
+      <div class="card-meta"><span class="badge">Community / BRICS / India / China / UN Security Council / Iran War / AI Cooperation / Geopolitics / Reddit</span><span class="card-source">Reddit r/geopolitics · r/worldnews · r/india — 2026.09.13</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「イラン・UAE という現在進行形の交戦国が同じテーブルに座って140項目の宣言に合意したのは外交的に驚異的。インドの仲介役としての能力を見直す必要がある」というコメントがトップアップボートを獲得した</li>
+          <li>「中国がインドの UNSC 常任理事国入りを支持したのは相当な譲歩。習近平のモディへのサインだろう——ガルワン以来の関係改善を確認する場としても機能した」という地政学的分析が続いた</li>
+          <li>「BRICS の AI 技術協力宣言は『西側とは別の AI 標準・ガバナンス空間』を作ろうという動きとして読める——Claude・Codex・Gemini の外にある AI エコシステムが形成されつつある」という指摘が r/MachineLearning でも引用された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/13）の主要トピック:</strong> <strong>BRICS サミット最終日——140項目の「New Delhi Declaration」採択完了、AI 協力・インド UNSC 常任理事国支持・ルーブル/人民元建て貿易拡大が柱</strong> / <strong>イラン戦争 Day 198——米国「大規模作戦の予定なし」も「選択肢は開いている」。ホルムズ海峡が最大の焦点</strong> / <strong>インドネシア・ジャワ海でフェリー「Virgo Transport 8」転覆——243人乗船、6人死亡・129人以上行方不明</strong> / <strong>米 US オープンテニス最終日（9/13）</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">BRICS サミット（ニューデリー）最終日——140項目の New Delhi Declaration 採択完了。AI 協力・インドの UNSC 常任理事国支持・ローカル通貨貿易拡大・ウクライナ和平への仲介意思が柱。モディ・習近平会談でインド・中国関係改善を確認</div>
+      <div class="card-meta"><span class="badge">BRICS / India / Modi / Xi Jinping / New Delhi Declaration / AI Cooperation / UNSC / Ukraine / Local Currency / Trade</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/9/13/brics-summit-2026-what-are-the-key-takeaways">Al Jazeera — BRICS 2026 Key Takeaways</a> · <a href="https://responsiblestatecraft.org/2026-brics-summit/">Responsible Statecraft — BRICS overcomes divisions</a> · <a href="https://www.thenationalnews.com/news/asia/2026/09/13/brics-summit-ends-with-push-for-global-peace-and-greater-co-operation/">The National — BRICS summit ends</a> · <a href="https://dmc-education.com/2026/09/13/brics-summit-2026-live-updates-new-delhi-declaration-modi-xi-meeting-indias-big-wins/">DMC Education — BRICS Live Updates</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>140項目の宣言採択:</strong> 拡大 BRICS 11ヶ国が「New Delhi Declaration」（140項目）を採択して閉幕。前日に続きイラン・UAE の両国が同席するなか全会一致での採択に成功した</li>
+          <li><strong>AI 技術協力が核心議題:</strong> 宣言には AI 技術・デジタル決済・ドル覇権への対抗が盛り込まれた。「西側と異なる AI ガバナンス空間」の形成に向けた動きとして分析されている</li>
+          <li><strong>インドの UNSC 常任理事国支持:</strong> 中国がインドの国連安全保障理事会常任理事国入りへの支持を表明した。習近平とモディの会談ではガルワン以来の関係改善も確認された</li>
+          <li><strong>ウクライナ和平への仲介意思:</strong> 習近平とモディがウクライナ和平交渉の促進に向けた意思をともに表明し、プーチンがそれを歓迎した</li>
+          <li><strong>ローカル通貨建て貿易の拡大:</strong> 加盟国間の貿易でルーブル・人民元・ルピーなどローカル通貨の利用を拡大する合意が含まれた。ドル依存の低減が中期的な目標として再確認された</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イラン戦争 Day 198（9/13）——米国「大規模作戦の予定なし」も「全ての選択肢は開いている」。トランプ「戦争は中間選挙後に終わる」と示唆。ホルムズ海峡が依然として最大の懸念点</div>
+      <div class="card-meta"><span class="badge">Iran War / US / Trump / Hormuz / Strait / CENTCOM / Midterms / Oil / Nuclear / Pickaxe Mountain</span><span class="card-source">Source: <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">GlobalSecurity — Iran War Day 198 OPREP</a> · <a href="https://abcnews.com/International/live-updates/iran-live-updates-tehran-plans-new-restricted-zone/?id=136249116">ABC News — Iran Live Updates</a> · <a href="https://www.britannica.com/event/2026-Iran-war">Britannica — 2026 Iran war</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>米国「大規模作戦の予定なし」:</strong> 米国は大規模な軍事作戦は計画していないと述べた一方、「全ての選択肢は引き続き開いている」と強調した</li>
+          <li><strong>トランプ「中間選挙後に終わる」:</strong> トランプ大統領が「イランとの戦争は中間選挙の後に終わるだろう」と示唆した。早期終結の可能性も否定しなかった</li>
+          <li><strong>ホルムズ海峡の継続的な緊張:</strong> ホルムズ海峡が依然として紛争の最大の焦点。9/8に原油タンカー5隻がオマーン湾・ホルムズ付近で攻撃されたことが最新の動態として確認されている</li>
+          <li><strong>Pickaxe Mountain（核施設）:</strong> 米国はイランの核兵器開発を防ぐため、Pickaxe Mountain の地下トンネルへの攻撃を繰り返し警告している</li>
+          <li><strong>原油市場への影響:</strong> ホーシー派によるバブ・エル・マンデブ封鎖警告とサウジのパイプライン閉鎖が重なり、原油・ディーゼル価格の高止まりが続いている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インドネシア・ジャワ海でフェリー「Virgo Transport 8」転覆——乗員乗客243人中6人死亡・129人以上行方不明・108人救助。スラバヤからバンジャルマシン向け航行中に荒天で傾斜、沈没</div>
+      <div class="card-meta"><span class="badge">Indonesia / Java Sea / Ferry / Virgo Transport 8 / Surabaya / Banjarmasin / Shipwreck / Search and Rescue</span><span class="card-source">Source: <a href="https://www.npr.org/2026/09/13/g-s1-143114/about-130-missing-after-indonesian-passenger-ship-overturns">NPR — Indonesian ship overturns</a> · <a href="https://abcnews.com/International/6-dead-130-missing-after-indonesian-ferry-capsizes/story?id=136400801">ABC News — 6 dead 130 missing</a> · <a href="https://www.aljazeera.com/news/2026/9/13/one-dead-102-rescued-after-indonesian-ferry-goes-missing-in-java-sea">Al Jazeera — Indonesia ferry</a> · <a href="https://globalnews.ca/news/12057181/indonesia-ferry-sinking-java-sea/">Global News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事故の概要:</strong> 乗員乗客243人を乗せたインドネシアのフェリー「Virgo Transport 8」がジャワ海で転覆した。6人の死亡が確認され、129人以上が行方不明。108人が救助された</li>
+          <li><strong>航路と事故状況:</strong> フェリーはジャワ島スラバヤからボルネオ島バンジャルマシンに向けて航行中だった。船長は最高3メートルの荒波を報告し、船が傾斜しているとして救難信号を発信した</li>
+          <li><strong>最終確認位置:</strong> フェリーの最後の位置はバンジャルマシンから約81海里（約150km）のジャワ海上だった</li>
+          <li><strong>原因調査:</strong> 当局は「自然要因（荒天）・技術的要因・人的要因のいずれかまたは複数が原因」として調査を進めている。インドネシアの海難事故は過積載や整備不良が絡むケースが多く、詳細な調査が待たれる</li>
+          <li><strong>捜索・救助活動:</strong> インドネシア当局・海軍・沿岸警備隊が行方不明者の捜索を継続している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">北朝鮮が元山から SRBM を連続発射——米韓日「フリーダムエッジ」三ヵ国合同演習への対抗措置。日本が$900億規模の米国債売却・量子コンピュータ開発プロジェクトを NEC が中止</div>
+      <div class="card-meta"><span class="badge">North Korea / SRBM / Wonsan / Freedom Edge / Japan / US Treasuries / NEC / Quantum Computer</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/September_2026">Wikipedia — Current Events Sep 2026</a> · <a href="https://multipluralworld.com/world-news-headlines-and-analysis-for-september-2026/">The Multiplural World — Sep 2026 World News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>北朝鮮が SRBM を連続発射:</strong> 北朝鮮が元山から短距離弾道ミサイル（SRBM）を連続発射した。米国・韓国・日本が実施した三ヵ国合同軍事演習「フリーダムエッジ」への対抗措置と見られている</li>
+          <li><strong>日本が米国債を$900億規模売却:</strong> 日本が円買い介入の資金調達のため、約900億ドル相当の米国債を売却した。日米関係・米国債市場への影響が注目されている</li>
+          <li><strong>NEC が量子コンピュータ開発プロジェクトを中止:</strong> NEC が数十年にわたって研究開発を続けてきた量子コンピュータプロジェクトを中止した。投資対効果と実用化の見通しの難しさが理由とみられる。日本の量子技術開発戦略への影響が議論されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 本日の注目記事</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita 9/13 トレンド——「AWS インフラ導入で AI を使っている箇所と手でやっている箇所」が上位。生成 AI ニュースまとめ（#GenAI）では Claude Code plugin eval と OpenAI Agents API ベータが「今週最大のアップデート」に</div>
+      <div class="card-meta"><span class="badge">Qiita / AWS / Claude Code / Plugin Eval / OpenAI Agents API / GenAI / Infrastructure</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/65f9a6ecd8a6945ca4d1">Qiita — 2026年9月13日トレンドポッドキャスト #AWS</a> · <a href="https://qiita.com/aakan/items/5dce83cdac213c1fc2c7">Qiita — 生成AI ニュースレポート 2026-09-13 #GenAI</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「AWS インフラ導入で AI を使っている箇所と手でやっている箇所」:</strong> インフラ構築や管理において Claude Code で自動化している部分と、人間がまだ手動で確認・判断する必要がある部分を整理した実践記事が #AWS タグ本日トップに。「AI に任せる判断基準の言語化が一番難しかった」というコメントが多数</li>
+          <li><strong>生成 AI ニュースレポート 9/13（#GenAI）:</strong> Claude Code <code>plugin eval</code> コマンドと OpenAI Agents API パブリックベータが「今週最大のアップデート」として紹介された。「エージェントを単に使う段階から、エージェントを評価・管理する段階への移行を象徴するリリースだ」という分析がいいねを集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn 9/13 注目——「Claude Code Desktop の使いやすさ改善まとめ（--resume 高速化・プロンプト応答改善）」・「OpenAI Agents API ベータを触ってみた——4概念で理解するエージェント実行基盤」</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Desktop / Resume / OpenAI Agents API / Agent / Session / Environment</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/131">Zenn AI 関連人気記事 2026-09-09 (GitHub tracker)</a> · Zenn trending — 2026.09.13</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「Claude Code Desktop の使いやすさ改善まとめ」:</strong> <code>--resume</code> の初回レンダリング高速化・プロンプト入力の応答性向上・output-style 切り替えをまとめた記事が人気に。「日々使うツールの小さな改善が積み重なって体験が大きく変わる」という感想が多く集まった</li>
+          <li><strong>「OpenAI Agents API ベータを触ってみた——4概念で理解するエージェント実行基盤」:</strong> agent・environment・session・events の4概念を図解し、Codex との関係や Claude Code との比較を解説する技術記事が注目を集めた。「OpenAI が Claude Code に対してどう差別化しようとしているかが整理されている」という評価が付いた</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月13日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Big Hat Group · Releasebot (Claude Code / Claude Developer Platform / OpenAI) · Strac · MindStudio · AI Catchup · AI Agent Store · AI Weekly · Al Jazeera · Responsible Statecraft · The National · DMC Education · GlobalSecurity · ABC News · Britannica · NPR · Global News · Wikipedia (Current Events) · Multiplural World · Qiita · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-09-12/index.html">前版（2026-09-12）</a></p>
+</footer>
+</body>
+</html>
