@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月19日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">GitSpawn：.git/config の悪意ある設定で Claude Code・Codex・Cursor・Grok がコード実行——Claude Code v2.1.196 でパッチ済み / Claude Code v2.1.277 が AGENTS.md をサポート / 国連総会開幕——Trump・Pezeshkian が同席、イラン停戦 Day 10 / Trump がロシア・イラン制裁法に署名（9/19）</p>
+  <p class="date">2026年9月19日（土）&nbsp;|&nbsp;<a href="2026-09-18/index.html">前版（9/18）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/19）のハイライト:</strong> <strong>GitSpawn——Manifold Security が全 AI コーディングエージェントに影響する .git/config 悪用の RCE 脆弱性群を開示</strong>（Claude Code v2.1.193 が影響、v2.1.196 でパッチ）。<strong>Claude Code v2.1.277 が AGENTS.md を正式サポート</strong>——CLAUDE.md が不在の場合に読み込む。<strong>Anthropic が Claude Docs・Slides・Design の組織公開機能（スキル・プラグイン共有）を正式リリース</strong>——組織全体への Claude 技能展開が可能に。
+    </div>
+    <div class="card">
+      <div class="card-title">GitSpawn：悪意ある .git/config の core.fsmonitor で Claude Code・Codex・Cursor・Grok が認証前にコード実行——8 件の CVE、4 件は公開時点で未パッチ。Claude Code v2.1.196 でパッチ済み</div>
+      <div class="card-meta"><span class="badge">Security / CVE / Claude Code / Codex / Cursor / Grok / GitSpawn / RCE / Manifold Security / core.fsmonitor</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html">The Hacker News</a> · <a href="https://www.cryptika.com/gitspawn-flaws-let-malicious-repositories-execute-code-in-claude-code-codex-cursor-and-grok/">Cryptika Cybersecurity</a> · <a href="https://hacklido.com/news/malicious-git-configs-can-make-claude-codex-cursor-and-other-ai-agents-run-attacker-code">Hacklido</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>脆弱性の概要（GitSpawn）:</strong> セキュリティ企業 Manifold Security が 7 つの AI コーディングエージェントに存在する計 8 件のゼロデイ脆弱性を「GitSpawn」として開示。Git パフォーマンス設定 <code>core.fsmonitor</code> は値として任意シェルコマンドを取り、<code>git status</code> や <code>git diff</code> などインデックス更新を伴う操作で自動的に実行される——AI エージェントがコンテキスト収集のために行う標準的な操作がそのままトリガーになる</li>
+          <li><strong>影響を受けるツール:</strong> <strong>goose・Claude Code・Codex・Hermes Agent・Qwen Code・Grok Build</strong>（公開時点で 4 件は未パッチ）。OpenAI は Codex 向けに 3 件の CVE を発行</li>
+          <li><strong>攻撃の特徴:</strong> Claude Code・Hermes Agent ではワークスペース信頼プロンプト受諾前に、Qwen Code では認証完了前に、Grok Build では最初のキー入力時にペイロードが実行される——いずれもユーザーへの承認要求なし</li>
+          <li><strong>Claude Code のパッチ状況:</strong> 影響バージョンは <strong>v2.1.193</strong> 以前、<strong>v2.1.196</strong> で修正済み。アップデートが未完了のユーザーは速やかに更新が必要</li>
+          <li><strong>推奨対策:</strong> zip・tar 等でファイルとして受け取ったリポジトリは、AI エージェントで開く前に <code>.git/config</code> を確認すること。エージェント側はバックグラウンドのコンテキスト収集時に <code>core.fsmonitor</code> を明示的に無効化するよう推奨される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.277——AGENTS.md を正式サポート。CLAUDE.md が不在の場合に読み込み、/config でプロジェクト指示を制御。Bedrock・Vertex・Foundry は対象外。他エージェントとのルール共有ワークフローが容易に</div>
+      <div class="card-meta"><span class="badge">Claude Code / AGENTS.md / v2.1.277 / Interoperability / /config / Project Instructions / Update</span><span class="card-source">Source: <a href="https://highlearningrate.substack.com/p/claude-code-reads-agentsmd-2026-09">High Learning Rate — Claude Code Reads AGENTS.md (2026-09-19)</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Updates</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>AGENTS.md サポート:</strong> Claude Code <strong>v2.1.277</strong> が <code>AGENTS.md</code> の読み込みに対応。プロジェクトルートに <code>CLAUDE.md</code> が存在しない場合に <code>AGENTS.md</code> をプロジェクト指示として参照する。Cursor・Codex など他エージェント向けに既に <code>AGENTS.md</code> を整備しているチームがそのまま Claude Code でも活用できる</li>
+          <li><strong>/config による制御:</strong> <code>/config</code> コマンドでプロジェクト指示の読み込み元（CLAUDE.md / AGENTS.md / 両方 / なし）を切り替え可能。チーム内で複数エージェントを並用する際の管理コストを削減</li>
+          <li><strong>対象外プラットフォーム:</strong> Amazon Bedrock・Google Vertex AI・Azure Foundry 経由の Claude Code では <code>AGENTS.md</code> 読み込みは未サポート。これらプラットフォーム向けは引き続き <code>CLAUDE.md</code> を使用</li>
+          <li><strong>音声モデル移行の推奨:</strong> 同アップデートノートでは音声モデルの移行（デフォルト変更前のテスト推奨）についても言及。長時間セッションでのフック進捗・サブエージェント活動の再処理を行わない改善も含まれる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic が Claude スキル・プラグインの組織全体公開機能をリリース——組織内の全メンバーへ直接配布可能に。Claude Docs が正式ローンチ、Slides・Design と統合した「Artifact Suite」として提供</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Docs / Slides / Design / Skills / Plugins / Org Share / Artifact Suite / September 2026</span><span class="card-source">Source: <a href="https://zenn.dev/fukudaryu/articles/claude-skills-org-share">Zenn — 【2026/9最新】Claudeのスキル・プラグインが組織に直接公開できるように（ふくだ ryu）</a> · <a href="https://zenn.dev/fukudaryu/articles/claude-docs-slides-design">Zenn — Claude Docs が登場！Slides・Design と合わせて触ってみた（ふくだ ryu）</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>スキル・プラグインの組織公開:</strong> Anthropic が Claude.ai の管理者向けに、作成したスキルやプラグインを組織全体のメンバーへ直接配布・有効化できる機能をリリース。これまでは個人単位での有効化が必要だったが、組織単位での一括展開が可能になった</li>
+          <li><strong>Claude Docs の正式ローンチ:</strong> ドキュメント生成・編集に特化した「Claude Docs」が Claude Slides・Claude Design と同列の Artifact Suite として正式公開。共同編集・バージョン管理・エクスポート機能を備える</li>
+          <li><strong>コミュニティの反応:</strong> Zenn の技術者コミュニティでは「組織全体に Claude スキルを展開できるようになり、ベストプラクティスの共有が格段に楽になった」という声が多い。特にコード品質チェックや PR レビュースキルの組織共有ユースケースへの期待が高まっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（9/19）:</strong> <strong>OpenAI が GPT-6 Astra を API に正式公開</strong>——Pro・Enterprise・Business Premium ユーザー向けに ChatGPT Work・Codex でも展開。<strong>Codex に音声会話・ライブ推論サマリ・タスク管理・Touch ID 認証が追加。</strong><strong>GPT-Live-1（全二重音声モデル）が API に到達</strong>——音声エージェント開発が解禁。<strong>OpenAI が Data Agent を ChatGPT Work に展開</strong>——企業データへの自然言語クエリとダッシュボード生成が可能に。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI が GPT-6 Astra を API に正式公開——Codex・ChatGPT Work でも展開開始。Codex に音声会話・ライブ推論サマリ・タスク管理・Touch ID・Bedrock 認証サポートを追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / GPT-6 Astra / API / Codex / Voice / Task Management / Touch ID / Amazon Bedrock / ChatGPT Work</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — OpenAI Codex Updates September 2026</a> · <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia — OpenAI Codex</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GPT-6 Astra API 公開:</strong> OpenAI が GPT-6 Astra を API（モデル ID: <code>gpt-6-astra</code>）で一般公開。まず Pro・Enterprise・Business Premium ユーザー向けに ChatGPT Work と Codex で展開し、順次 API でも利用可能に。Terminal-Bench 4.0 で 58.2% を記録した現在の最高性能モデル</li>
+          <li><strong>Codex の新機能（9/18〜19）:</strong>
+            <ul>
+              <li>実験的音声会話——コーディングセッション中に音声でコンテキスト共有・質問が可能</li>
+              <li>ライブ推論サマリ——長いタスク実行中にリアルタイムで何をしているか要約表示</li>
+              <li>タスク管理——エージェントに複数タスクをキューイング、優先度管理が可能</li>
+              <li>Touch ID 認証——対応 Mac での確認操作を生体認証で代替</li>
+              <li>Amazon Bedrock 認証サポート——Bedrock 経由の Codex 利用が可能に</li>
+            </ul>
+          </li>
+          <li><strong>GPT-5.5 退役（10/14）:</strong> GPT-5.5 が 2026 年 10 月 14 日に ChatGPT・ChatGPT Work・Codex から退役。後継は <code>gpt-5.6-sol</code>（GPT-5.6 Sol）へ移行推奨</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI が ChatGPT Work に Data Agent を展開——企業データへ自然言語クエリ、インタラクティブダッシュボードをコードなしで生成。GPT-Live-1 が API 公開——全二重音声エージェント開発が解禁</div>
+      <div class="card-meta"><span class="badge">OpenAI / Data Agent / ChatGPT Work / Dashboard / GPT-Live-1 / Voice API / Full-Duplex / Enterprise</span><span class="card-source">Source: <a href="https://openai.com/index/how-agents-are-transforming-work/">OpenAI — How agents are transforming work</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Sept 13–19</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Data Agent:</strong> 承認済みの企業データソースに接続し、自然言語で質問するだけでクエリを自動生成、集計結果をインタラクティブなダッシュボードに変換する。SQL・Python の知識不要で、営業・マーケ・経営企画など非エンジニア部門での活用が想定される</li>
+          <li><strong>GPT-Live-1:</strong> 人間の会話と同様に相手の発言を遮りながら応答できる全二重（Full-Duplex）音声モデル。電話回線上での動作を想定しており、カスタマーサポート・音声アシスタント・対話型ツールへの組み込みが可能になる</li>
+          <li><strong>AI エージェント普及の加速:</strong> OpenAI の「How agents are transforming work」レポートでは、エージェントが実際の業務において週平均 4〜7 時間の作業削減をもたらしているという企業事例が公開された</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Trending（9/19）——「agents-radar」「OpenCodeReview」「ECC」がトップ。AI エージェントの観測・レビュー自動化・コスト制御の 3 テーマが OSS 開発の中心に</div>
+      <div class="card-meta"><span class="badge">GitHub Trending / agents-radar / OpenCodeReview / ECC / OSS / AI Agent / Cost Control / Code Review</span><span class="card-source">Source: <a href="https://github.com/onysakura/news-daily/issues/7719">GitHub Daily Trending — 2026-09-19</a> · <a href="https://github.com/845421145-lang/agents-radar/issues/76">agents-radar — AI OSS Trends 2026-09-19</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>agents-radar:</strong> AI エージェントの動作をリアルタイム観測・可視化する OSS フレームワーク。Claude Code・Codex・Cursor のセッションログを統一スキーマで収集し、コスト・速度・エラー率をダッシュボード化する</li>
+          <li><strong>OpenCodeReview:</strong> PR に対して複数の AI エージェントが独立してレビューし、コンセンサスを取る OSS。「GitHub Copilot・Claude Code・Codex の 3 者投票でレビューの質が上がる」という事例が注目された</li>
+          <li><strong>ECC（Enterprise Claude Code）:</strong> 大企業向けに Claude Code を自社インフラで運用するための設定管理・権限制御・監査ログ OSS。前週比 2.1 倍のスター増加でトレンド入り</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/netsec・r/ClaudeAI「GitSpawn：.git/config を渡せばどの AI コーディングツールも乗っ取れる——サプライチェーン攻撃の新しい標的」がトレンド。AI エージェントのサンドボックスへの根本的な不信感が浮き彫りに</div>
+      <div class="card-meta"><span class="badge">Community / GitSpawn / Security / r/netsec / r/ClaudeAI / Sandbox / Supply Chain / AI Agent</span><span class="card-source">Reddit r/netsec · r/ClaudeAI · r/programming — 2026.09.19</span></div>
+      <div class="card-body">
+        <ul>
+          <li>r/netsec で GitSpawn の Manifold Security レポートが公開直後にトップスレッドへ浮上。「悪意ある OSS リポジトリを clone させるだけで開発者の環境が完全に乗っ取られる——npm install の次の攻撃ベクターがついて来た」という反応が多数</li>
+          <li>上位コメント：「Claude Code が v2.1.196 で最速パッチを出したのは評価できる。Grok Build と Hermes Agent が今も未パッチなのは怖い」「AI エージェントは git 操作を当然のように行うが、git 自体が信頼境界を持つツールだという前提が欠けていた設計ミス」</li>
+          <li>r/ClaudeAI：「CLAUDE.md で <code>core.fsmonitor</code> チェックを事前に無効化するワークアラウンドを共有」「v2.1.196 へのアップデートコマンドと確認方法を pinned コメントに掲載」。コミュニティ主導の対応速度を称える声も</li>
+          <li>r/programming：「PR レビュー前に .git/config を必ず確認するチェックリストを CI に組み込んだ」という実践事例が多くシェアされ、AI エージェント時代のセキュリティプラクティスの再整備が議題に</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI「Claude Code が AGENTS.md を読むようになった——Cursor と Codex のルールをそのまま共有できてマルチエージェント管理が激減」。実践者からの設定例・落とし穴が集積</div>
+      <div class="card-meta"><span class="badge">Community / AGENTS.md / Claude Code / Cursor / Codex / Multi-Agent / /config / r/ClaudeAI</span><span class="card-source">Reddit r/ClaudeAI · r/programming — 2026.09.19</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.277 リリース直後に r/ClaudeAI で「ついに AGENTS.md を読むようになった。Cursor・Codex と同じルールファイルを使い回せる」という投稿が急拡散。早期導入者からの設定例が連投される流れに</li>
+          <li>実践者のフィードバック：「AGENTS.md の最初の 500 行が読み込まれる上限らしい——大きなファイルは先頭に最重要ルールを置くべき」「CLAUDE.md が存在する場合は AGENTS.md は無視される。移行期は両方置くと混乱するので注意」</li>
+          <li>Bedrock・Vertex 利用者からは「うちの環境では AGENTS.md が読まれない——プラットフォーム制限があるとは知らなかった」という声。Releasebot の公式注記への誘導コメントが付いた</li>
+          <li>開発者の評価：「CLAUDE.md と AGENTS.md を使い分けることで、Claude Code 専用の追加指示と他エージェント共通ルールを分離できるのが実は一番のメリット」という設計パターンが支持を集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Jev（TypeSafe AI）は LLM の何を変えるのか——CPU vs GPU のアナロジーは正しいか」。mizchi の Zenn 記事がきっかけで英語圏でも議論が波及</div>
+      <div class="card-meta"><span class="badge">Community / Jev / TypeSafe AI / LLM / Architecture / r/MachineLearning / mizchi / Zenn</span><span class="card-source">Reddit r/MachineLearning · r/artificial · Twitter(X) — 2026.09.19</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Zenn で ♥226 を集めた mizchi 著「既存の LLM が CPU なら、Jev はその GPU 版みたいなやつ」の英訳がツイートされ、r/MachineLearning で「What is Jev? Is it really that different from LLMs?」スレッドが立った</li>
+          <li>技術的な評価：「Jev が文字列を捨てて structured token 空間で動くという主張が本当ならアーキテクチャレベルの革新。ただし従来 LLM との互換性・ファインチューン方法・コスト比較が不透明」という意見が多数</li>
+          <li>日本コミュニティの優位：「日本語 Zenn/Qiita コミュニティが Jev を先行して深く評価しており、英語圏より 2 週間先行している」という観察が r/MachineLearning で共有され、Zenn へのアクセスが急増</li>
+          <li>r/ClaudeAI：「Claude Code が Jev を解析できるか試した——アーキテクチャの理解は深いが、Jev 専用の補完支援はまだない」という実験結果が注目された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/19）の主要トピック:</strong> <strong>国連総会ハイレベルウィーク開幕（9/21〜23 NY）——Trump・Pezeshkian が同席、イラン停戦 Day 10 を外交で確定できるか</strong> / <strong>Trump がロシア・イラン制裁法（Lindsey O. Graham Act）に署名</strong>、ウクライナへ $2.68 B の防空売却も承認 / <strong>ホーシー派が最大規模の領土拡大——イエメン内戦が再燃、燃料高騰</strong> / <strong>アジア大会が名古屋で開幕</strong>——45 ヶ国・地域参加
+    </div>
+    <div class="card">
+      <div class="card-title">国連総会前夜——イラン停戦 Day 10 を確定させられるか。Trump・Pezeshkian・ゼレンスキー・フォンデアライエンが NY に集結。Iran と Ukraine の「二正面外交」が最大焦点</div>
+      <div class="card-meta"><span class="badge">UN General Assembly / Iran Ceasefire Day 10 / Trump / Pezeshkian / Zelensky / Von der Leyen / NY / Diplomacy</span><span class="card-source">Source: <a href="https://www.ncr-iran.org/en/news/iran-news-in-brief-september-19-2026/">NCRI — Iran News in Brief September 19</a> · <a href="https://militaryspend.org/iran-ceasefire-status">MilitarySpend.org — Iran Ceasefire Live Tracker</a> · <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10637/">UK Parliament — US-Iran Ceasefire 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>停戦 Day 10:</strong> 9 月 19 日時点で、イランによる弾道ミサイル・ドローン攻撃は 10 日連続でゼロ。国連・アムネスティの戦争犯罪認定公表、秋分、総会開幕週という「停戦を壊しやすいタイミング」を全て通過し、持続性への評価が高まっている</li>
+          <li><strong>Pezeshkian の国連訪問:</strong> 国務省がイラン大統領 Pezeshkian とアラグチ外相への国連訪問ビザを発給。テヘランは停戦条件として「核合意復帰・制裁全面解除・米軍の地域プレゼンス縮小」を要求しており、Trump の「直接交渉した」発言を否定している。数万人のイラン系米国人が国連本部前で集会を予定</li>
+          <li><strong>Trump × ゼレンスキー:</strong> 両首脳が 9/21〜23 に直接会談を予定。ゼレンスキーは米国の武器支援継続約束の更新と、EU の €3.3 B 拠出（昨日）の政治確認が議題</li>
+          <li><strong>エネルギー市場:</strong> Brent 原油は $105 超を維持。ホルムズ海峡の迂回コスト・保険料高騰が続いており、停戦の外交的確定がエネルギー秩序回復の鍵とみられる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Trump が「Lindsey O. Graham ロシア・イラン制裁法」に署名——ロシア高官・寡頭層・銀行への一次・二次制裁を授権。ウクライナへの $2.68 B 防空システム売却も承認。デンマーク・グリーンランドとの「Infinite Life」安保協定は来週締結へ</div>
+      <div class="card-meta"><span class="badge">Trump / Russia Sanctions / Iran Sanctions / Ukraine / Air Defense / $2.68B / Graham Act / Greenland / Denmark / US Policy</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-sept-19-2026/4061697">Anadolu Agency — Morning Briefing Sept 19 2026</a> · <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008761107">SBS World News — September 19 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Graham 制裁法:</strong> ロシアを支援する高官・寡頭層・銀行・企業への一次制裁と、ロシア産エネルギーを購入する第三国への二次制裁を授権。議会が数ヶ月間審議してきた法案が 9 月 19 日に署名、即日発効</li>
+          <li><strong>ウクライナ防空支援:</strong> 総額 <strong>$2.68 B</strong> の防空システム売却（Patriot 迎撃ミサイル追加および NASAMS 関連機器）を承認。EU の €3.3 B 拠出（昨日）と合わせ、ウクライナへの 1 週間の安全保障支援が €6 B 規模に達した</li>
+          <li><strong>デンマーク・グリーンランド協定:</strong> 来週（9/22 または 23）に「Infinite Life」安全保障協定に署名する予定。米国・デンマーク・グリーンランドの三者枠組みで、北極圏での防衛協力・インフラ投資・資源開発を定める歴史的協定</li>
+          <li><strong>CNN・Politico 等の排除:</strong> White House プレスコーナーから CNN・MS NOW・Politico の記者証を取り消す方針を発表。報道の自由団体が法的対抗措置を検討中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ホーシー派が過去最大規模の領土拡大——イエメン内戦が 12 年ぶりに激化。ホルムズ海峡に近接する海上要衝を掌握し、Saudi アラムコの輸出ルートに圧力。Brent 原油のリスクプレミアムが拡大</div>
+      <div class="card-meta"><span class="badge">Yemen / Houthis / Civil War / Hormuz / Saudi Aramco / Oil / Brent / Maritime / September 19 2026</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/09/19/latest-news-bulletin-september-19th-2026-morning">Euronews — Morning Bulletin Sept 19</a> · <a href="https://www.yahoo.com/news/world/articles/latest-news-bulletin-september-19th-160029897.html">Yahoo News — Evening Bulletin Sept 19</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ホーシー派の領土拡大:</strong> ホーシー派（アンサール・アッラー）がイエメン南部の戦略的要衝を掌握し、12 年間にわたる内戦で最大規模の領土拡大を達成。Saudi Arabia 主導の連合軍が撤退を余儀なくされた地域が複数含まれる</li>
+          <li><strong>海上要衝への影響:</strong> 掌握地域の一部がアデン湾に近接しており、ホルムズ海峡〜紅海の航路への圧力が増す構図。イラン停戦中にもかかわらず地域の海上リスクが継続している</li>
+          <li><strong>エネルギー市場:</strong> Saudi アラムコの輸出ルートへの潜在的脅威が嫌気され、Brent 原油の地政学リスクプレミアムが 9 月初旬比で約 $3 上乗せされているとのアナリスト推計。イラン停戦の恩恵がイエメン情勢悪化で一部相殺されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">第 20 回アジア競技大会が名古屋で開幕（9/19）——45 ヶ国・地域参加、e スポーツが正式競技に。韓国・米国外相が Washington で会談——ホルムズ派遣・対米投資で調整</div>
+      <div class="card-meta"><span class="badge">Asian Games / Nagoya / Japan / Esports / South Korea / US / FM Meeting / Hormuz / Trade / September 19 2026</span><span class="card-source">Source: <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008761107">SBS News — September 19 2026</a> · <a href="https://aa.com.tr/en/world/morning-briefing-sept-19-2026/4061697">Anadolu Agency</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>アジア大会開幕:</strong> 名古屋を主会場とする第 20 回アジア競技大会が 9 月 19 日に開幕。45 ヶ国・地域から約 1 万人の選手が参加。初の正式競技として e スポーツ（League of Legends・VALORANT 等 5 種目）を採用し、国内外で注目を集めている</li>
+          <li><strong>日本のホスト外交:</strong> 開会式に合わせて IOC・OCA 幹部と日本政府高官が会談。東京五輪後の日本スポーツ外交の集大成として位置づけられており、2030 年大阪万博へのつなぎも意識した演出</li>
+          <li><strong>韓国・米国外相会談（Washington）:</strong> 韓国外相がワシントン DC で Rubio 国務長官と会談。ホルムズ海峡への韓国軍艦艇派遣の是非と、米国への投資約束の履行状況（半導体工場・電池工場）を協議。日本・米国・韓国の三角安保協力の確認も行われた</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn 9/19 トップ——「既存の LLM が CPU なら、Jev はその GPU 版みたいなやつ」（mizchi, ♥226）が引き続き最多獲得。新着「【予言】Jevの登場で1年後のLLMコーディング界隈はどうなっているのか？」が急上昇。Jev ブームが Zenn を席巻</div>
+      <div class="card-meta"><span class="badge">Zenn / Jev / TypeSafe AI / LLM / mizchi / Trending / September 19 2026</span><span class="card-source">Zenn トレンド（<a href="https://github.com/shoji-miyoshi/test/issues/151">GitHub Issue #151 — Zenn AI関連人気記事 2026-09-19</a>）</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「既存の LLM が CPU なら、Jev はその GPU 版みたいなやつ」（mizchi 著, ♥226）:</strong> Jev（TypeSafe AI が開発する新世代 AI）を LLM との対比で解説した記事。文字列を捨てた構造化トークン空間で動作する Jev が、従来 LLM では難しかった並列推論や決定論的出力を実現する仕組みを GPU アナロジーで平易に説明。英語圏でも翻訳が拡散中</li>
+          <li><strong>「Jev 所感 ダラダラと書く」（meijin 著, ♥20）・「今話題のJevを試したら最高だった」（坂本 著, ♥13）:</strong> 実際に Jev を触った開発者の生感想。「LLM とは別の道具として使う感覚」「Claude Code との組み合わせが相性よかった」という声が目立つ</li>
+          <li><strong>「全社に OpenCode + LiteLLM を導入してコストを抑えつつ AI 活用を進めている話」（Takashi Nakagawa 著, ♥17）:</strong> 全社員向けに Claude Code / Codex の代替として OpenCode と LiteLLM を展開した事例。トークンコストを 60% 削減しつつ AI 活用率を向上させた具体的な設定・ガバナンス方法を公開</li>
+          <li><strong>「【予言】Jevの登場で1年後のLLMコーディング界隈はどうなっているのか？」（pdfractal 著, 2026-09-19 新着）:</strong> Claude Code・Cursor・Codex が占める現在のポジションが Jev の台頭でどう変わるかを予測する記事。「LLM コーディングエージェントは『翻訳層』に徹するようになる」という論点が議論を呼んでいる</li>
+          <li><strong>昨日（9/18）との比較:</strong> 9/18 にトレンド入りしていた「Cursor vs Codex のブランチ保護事故」「1 年半の AI 開発フロー」は ♥ 数が増加しているが Jev 関連に押されてランク外へ。Zenn の議題が Jev へ急速に収束している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita 9/19 注目——「GitSpawnを読んで——AI エージェント時代の .git/config セキュリティチェックリスト」・「AGENTS.md 対応で Claude Code × Cursor の二刀流が現実的になった件」がトレンド入り</div>
+      <div class="card-meta"><span class="badge">Qiita / GitSpawn / Security / AGENTS.md / Claude Code / Cursor / Multi-Agent / Trending</span><span class="card-source">Qiita トレンド — 2026-09-19 · <a href="https://qiita.com/tags/claudecode">Qiita — Claude Code タグ</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「GitSpawnを読んで——AI エージェント時代の .git/config セキュリティチェックリスト」:</strong> Manifold Security の GitSpawn レポートを受け、CI/CD パイプラインおよびローカル開発環境での <code>.git/config</code> 検査手順を整備したチェックリスト記事。「<code>core.fsmonitor</code> の無効化スクリプトを pre-clone フックとして組み込む方法」が実践的として高評価</li>
+          <li><strong>「AGENTS.md 対応で Claude Code × Cursor の二刀流が現実的になった件」:</strong> v2.1.277 リリースを受けて AGENTS.md 1 ファイルで Claude Code・Cursor の両方のルールを管理する設定例を公開。「タスクの性質によってエージェントを切り替えながら共通ルールを維持できる運用フロー」が支持を集めた</li>
+          <li><strong>その他の注目記事:</strong> 「Claude Code v2.1.277 アップデートまとめ——AGENTS.md / 音声モデル / セッション改善」・「OpenCode + LiteLLM を試した——Claude Code の代替になるか？」・「GPT-6 Astra が API 公開——最速ベンチ結果まとめ」が続く</li>
+          <li><strong>昨日（9/18）との比較:</strong> 昨日 Qiita でトレンドだった「Hacktron AI + Claude で OpenAI ハック」「Terminal-Bench 4.0 の使い分け」は引き続きアクセスが多いが、本日は GitSpawn と AGENTS.md が新たに 2 トップを形成している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月19日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: The Hacker News · Cryptika Cybersecurity · Hacklido · Manifold Security · High Learning Rate · Releasebot · AI Agent Store · OpenAI · Euronews · Yahoo News · Anadolu Agency · SBS News · NCRI · MilitarySpend.org · UK Parliament Library · GitHub Daily Trending · Zenn · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="2026-09-18/index.html">前版（2026-09-18）</a></p>
+</footer>
+</body>
+</html>
