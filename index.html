@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Plugin4Shell：プラグイン SHA ピン破りのゼロクリック RCE が Claude Code・Codex・Copilot・Gemini CLI を直撃——Claude Code・Codex は修正済み / Anthropic が 30,000 並列エージェントで R&amp;D の 26% を Claude が主導と発表 / 国連総会ハイレベルウィーク開幕（9/21）——130 カ国首脳集結、イラン停戦 Day 11 継続</p>
-  <p class="date">2026年9月20日（日）&nbsp;|&nbsp;<a href="2026-09-19/index.html">前版（9/19）</a></p>
+  <p class="subtitle">Coder が Claude Code を Agent Relay に統合——規制産業向けのエアギャップ環境でエージェント開発が解禁 / Terminal-Bench 4.0: GPT-6 Astra (58.2%) と Claude Fable 5.1 (57.9%) が首位タイ / UNGA 81 ハイレベルウィーク（9/22〜）前夜——イラン停戦 Day 11 継続・ウクライナ大規模ドローン交戦</p>
+  <p class="date">2026年9月20日（日）&nbsp;|&nbsp;<a href="2026-09-20/index.html">前版（9/20 早版）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -69,56 +69,48 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/20）のハイライト:</strong> <strong>Plugin4Shell——AIR Security が 4 大 AI コーディングエージェントのプラグイン SHA ピン破りゼロクリック RCE を開示</strong>（Claude Code・Codex は修正済み、GitHub Copilot・Gemini CLI は未修正）。<strong>Anthropic が「Claude が R&amp;D の 26% を主導、社内で 30,000 エージェントが並走」と発表</strong>（2 月時点は 1% 未満）。<strong>Claude Code Projects ベータ公開</strong>——並列エージェント・共有メモリ・プロジェクトライブラリで長期タスクを跨ぎリポジトリ管理。
+      <strong>本日（9/20）のハイライト:</strong> <strong>Coder が Claude Code を Agent Relay に統合</strong>——エアギャップ・規制環境の企業でも Claude Code エージェントがネットワーク管理下で稼働可能に。<strong>Terminal-Bench 4.0 で Claude Fable 5.1（57.9%）と GPT-6 Astra（58.2%）が事実上の首位タイ</strong>。<strong>Anthropic が SME 向け Claude を大幅強化</strong>——43 ワークフロー・27 アプリ統合・Enterprise スマートレポートβ・金融アドバイザープラグインを同時投入。
     </div>
     <div class="card">
-      <div class="card-title">Plugin4Shell：プラグイン SHA ピン破りのゼロクリック RCE が Claude Code・OpenAI Codex・GitHub Copilot・Gemini CLI を直撃——AIR Security が開示。Claude Code・Codex は修正済み、Copilot は修正なし、Gemini CLI は廃止で対応終了</div>
-      <div class="card-meta"><span class="badge">Security / Plugin4Shell / RCE / Zero-Click / SHA Pinning / Claude Code / Codex / Copilot / Gemini CLI / AIR Security</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html">The Hacker News</a> · <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/">Help Net Security</a> · <a href="https://fourweekmba.com/ai-plugin4shell-claude-code-codex-shared-assumption/">FourWeekMBA</a> · <a href="https://gbhackers.com/plugin4shell-zero-click-rce/">GBHackers</a> · <a href="https://aicybr.com/blog/plugin4shell-ai-coding-agents-claude-code-codex-copilot-gemini-cli">AiCybr</a></span></div>
+      <div class="card-title">Coder が Claude Code を Agent Relay に統合——規制・エアギャップ環境の企業でエージェント型開発が解禁。ネットワーク管理・サンドボックス・完全監査ログを維持したまま Claude Code エージェントが社内インフラ内で稼働</div>
+      <div class="card-meta"><span class="badge">Coder / Claude Code / Agent Relay / Enterprise / Air-Gap / Regulated Industries / Agentic Development / September 2026</span><span class="card-source">Source: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362210/0/en/coder-brings-claude-code-to-agent-relay-unlocking-agentic-development-for-the-world-s-most-regulated-enterprises.html">GlobeNewswire (Sept 15, 2026)</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>脆弱性の概要（Plugin4Shell）:</strong> セキュリティ企業 AIR Security が 2026 年 9 月 17〜18 日に開示。4 大 AI コーディングエージェントのプラグインエコシステムに共通する「SHA ピン名前付けと検証が同一操作である」という誤った前提を突いた、ゼロクリックの RCE（リモートコード実行）脆弱性。5 月に発見、6 月に各ベンダーへ報告、9 月に公開時点で Claude Code と Codex は修正済み</li>
-          <li><strong>攻撃の仕組み:</strong> バックグラウンド自動更新機能を利用して、ユーザーが信頼済みのプラグインコードをリポジトリオーナーが悪意ある内容に差し替えることができる。Claude Code・Codex では既定でバックグラウンド自動更新が有効で、ユーザーへの確認なしにコードが実行される</li>
-          <li><strong>パッチ状況:</strong> <strong>Claude Code</strong> は修正済み（最新版へのアップデートを推奨）。<strong>OpenAI Codex 0.146.0</strong> で修正済み。<strong>GitHub Copilot</strong> は現時点で修正なし（hash 型ブランチ名を許可するホストからの攻撃が継続可能）。<strong>Gemini CLI</strong> は Google が廃止予定のため修正しないと発表</li>
-          <li><strong>CVE・被害状況:</strong> 9 月 18 日時点で CVE 識別子は未割り当て。実際の悪用・侵害・データ損失は報告されていない。PoC（概念実証コード）は 4 エージェント全てに対して存在</li>
-          <li><strong>推奨対処:</strong> Claude Code ユーザーは最新版へのアップデートを確認。プラグインの自動更新設定を見直し、インストール済みプラグインのソースリポジトリを確認することを推奨</li>
+          <li><strong>発表概要（9/15）:</strong> リモート開発環境プロバイダーの Coder が、Claude Code と Agent Relay の統合を正式発表。金融・医療・政府など規制産業では Claude Code エージェントの外部通信が許可されないケースが多かったが、Agent Relay を介することで<strong>エアギャップ環境・完全プライベートネットワーク内でも Claude Code エージェントが稼働可能</strong>になった</li>
+          <li><strong>技術的な仕組み:</strong> Claude Code エージェントを Coder ワークスペース内で起動し、すべてのトラフィックを顧客自身のインフラ内のリレー経由でルーティング。ネットワークポリシーの適用・サンドボックス化・アクションの完全な監査ログ記録が維持される。外部への直接通信は発生しない</li>
+          <li><strong>対象ユースケース:</strong> HIPAA 準拠の医療記録システム・SOX 準拠の金融バックエンド・機密区分のある政府システムなど、これまで AI コーディングエージェントの導入が実質的に困難だったドメインでの活用が想定される</li>
+          <li><strong>Claude Code の位置づけ変化:</strong> 2026 年初頭まで Claude Code は主に個人開発者・スタートアップ向けとして認識されていたが、Enterprise Agent Relay 統合により「規制産業の大企業インフラでも稼働する正式なエンタープライズ製品」としての実績積み上げが始まった。競合の Codex も企業向けに Amazon Bedrock 認証情報サポートを追加しており、エンタープライズ争奪戦が激化している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic が社内 AI 自律度を公開——Claude が R&amp;D の 26% を「主導」、社内プラットフォームで 30,000 エージェントが並走。2 月時点の 1% 未満から半年で急拡大。RSI（再帰的自己改善）には未到達</div>
-      <div class="card-meta"><span class="badge">Anthropic / Claude / R&amp;D Automation / AI Agents / 30000 Agents / RSI / Internal / September 2026</span><span class="card-source">Source: <a href="https://eu.36kr.com/en/p/3988504165858308">36Kr English</a> · <a href="https://www.digitaltoday.co.kr/en/view/105487/anthropic-says-26-percent-of-ai-rd-work-done-by-claude-runs-30000-internal-agents">Digital Today</a> · <a href="https://cellcog.ai/blog/anthropic-rd-automation-index/">CellCog</a> · <a href="https://allweatherfinance.com/claude-has-led-26-of-anthropics-ai-r-d-efforts-with-30-000-agents-deployed-simultaneously-but-rsi-has-yet-to-be-achieved/">AllWeather Finance</a></span></div>
+      <div class="card-title">Terminal-Bench 4.0 で GPT-6 Astra（Codex, 58.2%）と Claude Fable 5.1（Claude Code, 57.9%）が首位タイ——ターミナル型エージェント性能が AI エージェント時代の新標準ベンチマークに。両モデルは 9 月 1 日に同時公開</div>
+      <div class="card-meta"><span class="badge">Claude Fable 5.1 / Claude Mythos 5.1 / GPT-6 Astra / Terminal-Bench 4.0 / Benchmark / Claude Code / Codex / September 2026</span><span class="card-source">Source: <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot — Best AI Coding Agents 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Updates</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>主な数値（2026 年 8 月時点）:</strong>
+          <li><strong>Terminal-Bench 4.0 の結果:</strong>
             <ul>
-              <li>Claude が R&amp;D タスクを「主導（lead）」できる割合：<strong>26%</strong>（2026 年 2 月時点は 1% 未満）</li>
-              <li>R&amp;D タスクで AI が「協働（collaboration）」以上のレベルに達する割合：<strong>90%+</strong></li>
-              <li>社内エージェントプラットフォームで同時並走するエージェント数：<strong>約 30,000</strong></li>
-              <li>エージェントの全アクションがオンラインモニターを通過：<strong>100%</strong></li>
-              <li>8 月中の 10 億件以上のエージェント決定のうちブロックされた割合：<strong>0.002%</strong></li>
+              <li>🥇 <strong>GPT-6 Astra（OpenAI Codex）:</strong> 58.2%</li>
+              <li>🥇 <strong>Claude Fable 5.1（Claude Code）:</strong> 57.9%</li>
+              <li>0.3 ポイント差は実質誤差範囲内で「事実上の首位タイ」という評価が定着</li>
             </ul>
           </li>
-          <li><strong>重要な注記:</strong> Anthropic は「Claude は測定対象のどの作業サブセットでも完全自律ではない」と明示。AI R&amp;D コンピュートのうち約 6% が安全性研究に割り当てられ、AI 主導の R&amp;D コンピュートの 12% が安全性研究に向けられている</li>
-          <li><strong>業界への示唆:</strong> 「AI が自身の後継モデルの研究を主導する」構造が現実のものとなり、RSI（再帰的自己改善）の定義議論が業界で再浮上。Anthropic は現時点では RSI には到達していないと強調しているが、0% → 26% の急勾配が業界全体の議論を加速させている</li>
-          <li><strong>セキュリティ体制:</strong> 30,000 エージェントが同時稼働する状況下で、全決定に対するリアルタイムのオンラインモニタリングを維持。10 億件中 2 万件がブロックされているという実績値も公開</li>
+          <li><strong>Claude Fable 5.1 / Mythos 5.1（9/1 公開）:</strong> Anthropic が 9 月 1 日に同時公開した 2 モデル。<strong>Fable 5.1</strong> はコーディング・知識業務・科学研究向け、<strong>Mythos 5.1</strong> は同一アーキテクチャで異なるセーフガードレベルを持つ派生モデル（内部ユースケース・研究用途向け）。Terminal-Bench 4.0 では Fable 5.1 が Claude Code のバックエンドとして評価された</li>
+          <li><strong>ベンチマークの意義:</strong> Terminal-Bench はターミナル操作・マルチファイル編集・CI/CD 統合・テスト実行など「実エージェントタスク」を評価する設計で、従来の HumanEval 等のコード生成ベンチマークより実運用との相関が高いとされる。Claude Code と Codex が同ベンチマークで首位タイとなったことは、両社が「使えるエージェント性能」の最前線で拮抗していることを示す</li>
+          <li><strong>Claude Code 最新アップデート（9 月分）:</strong> ゲートウェイヒントヘッダーの追加・リモートコントロールセッションフォークの安定化・MCP 切断時のハンドリング改善・アーティファクト公開フロー改善・auto モード精度向上が含まれる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code Projects ベータ公開——単一プロジェクトが並列スレッド・共有メモリ・プロジェクトライブラリを跨いで長期タスクを継続実行。「常時稼働の開発チーム」として位置づけ。v2.1.278 でサーバー側分類器を API デフォルトに変更</div>
-      <div class="card-meta"><span class="badge">Claude Code / Projects / Parallel Agents / Shared Memory / Beta / v2.1.278 / Auto Mode / API / Enterprise</span><span class="card-source">Source: <a href="https://blog.mean.ceo/claude-code-news-september-2026/">Claude Code News September 2026</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Claude Code Changelog September 2026</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Updates</a></span></div>
+      <div class="card-title">Anthropic が SME 向け Claude を大幅強化——43 ワークフロー・27 アプリ統合を一斉投入（9/15）。Enterprise にスマートレポートβ（利用コスト・摩擦・再利用スキルを分析）と金融アドバイザープラグインを追加。Cowork が Web・モバイルに拡大</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude for SME / 43 Workflows / 27 Integrations / Enterprise / Smart Reports / Financial Advisor Plugin / Cowork / September 2026</span><span class="card-source">Source: <a href="https://www.kucoin.com/news/flash/anthropic-upgrades-claude-for-smes-with-43-workflows-and-27-app-integrations">KuCoin — Anthropic Upgrades Claude for SMEs</a> · <a href="https://releasebot.io/updates/anthropic">Releasebot — Anthropic Release Notes</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Claude Code Projects（ベータ）:</strong> 1 つのプロジェクトが複数の並列スレッドを調整し、共有メモリとプロジェクトライブラリを使って複数リポジトリ・タスクを跨いだ長期作業を継続実行できる新機能。単発のコーディングセッションではなく「常時稼働の開発チーム」として使うことを想定した設計</li>
-          <li><strong>主な機能:</strong>
-            <ul>
-              <li><strong>並列スレッド:</strong> 複数の実装タスクを同時に進行し、コンフリクト解決や統合を自動調整</li>
-              <li><strong>共有メモリ:</strong> スレッド間でコードベースの知識・決定事項・進捗状態を共有し、重複作業を排除</li>
-              <li><strong>プロジェクトライブラリ:</strong> 長期プロジェクトの設計ドキュメント・ADR・テスト結果を蓄積し、後続タスクで参照</li>
-            </ul>
-          </li>
-          <li><strong>v2.1.278 の変更（9/19 公開）:</strong> Claude API・Enterprise ユーザー向けの auto モードのデフォルトを、クライアント側分類器からサーバー側分類器に変更。分類器オーバーヘッドの課金が発生しなくなり、コスト予測が改善</li>
-          <li><strong>評価:</strong> 「小さくテスト可能な作業（リポジトリマッピング・バグ修正・ドキュメント）から始め、厳格なルール・低リスクのアクセス・明確な完了定義を与えること」というベストプラクティスが公式から再強調されている</li>
+          <li><strong>SME 向けアップグレード（9/15）:</strong> Anthropic が中小企業向け Claude に <strong>43 の業務ワークフロー</strong>（営業リード変換・日次管理レポート・ビジネス拡大計画など）と <strong>27 のアプリ統合</strong>を一斉追加。SME が直面する「業務拡大・営業転換・管理報告」という 3 大痛点を直接ターゲットにした設計で、コードを書かずに業務に AI を組み込めるよう設計</li>
+          <li><strong>Enterprise スマートレポート（β）:</strong> チームの利用実態・コスト・操作摩擦・再利用可能スキルをダッシュボード形式で分析するレポート機能がベータ公開。IT 管理者が組織全体の Claude 活用状況を可視化し、投資対効果を算出できる</li>
+          <li><strong>金融アドバイザープラグイン:</strong> 登録投資アドバイザー（RIA）向けに Cowork のプラグインブラウザから利用可能な「Claude for Financial Advisors」プラグインが Enterprise プラン向けに提供開始。コンプライアンス制約を守りながら顧客提案・ポートフォリオ説明文作成などを支援</li>
+          <li><strong>Cowork のクロスプラットフォーム展開:</strong> これまでデスクトップ中心だった Cowork が Web・モバイルでも利用可能に。さらにリモートでのセッション実行（β）に対応し、デバイスを問わず業務 AI エージェントにアクセスできる体制が整う</li>
+          <li><strong>Claude for Commerce（コマースエージェント設計図）:</strong> ショッピングエージェント・マーチャントエージェント・ガードレール・ライブデモを含む「コマースエージェント設計図」が公開。EC・決済・在庫管理と連携する Claude Code プラグインも提供され、コマース領域でのエージェント活用が実用段階に入った</li>
         </ul>
       </div>
     </div>
@@ -130,41 +122,62 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（9/20）:</strong> <strong>Meta が消費者向け AI エージェント「Muse」を展開中</strong>——米国 iOS/Android で予約→購入→メール処理が Muse Secure VM 上で動作（$20/$100 プラン）。<strong>Gemini 3.8 Live が公開</strong>——リアルタイム音声・映像入力対応。<strong>GPT Image 2.5 が Sketch 機能を追加</strong>——手描きからの AI 画像生成・生成速度 50% 短縮。AI エージェントが企業アプリの 40% に組み込まれる予測（2026 年末）が現実味を帯びてきた。
+      <strong>競合ハイライト（9/20）:</strong> <strong>OpenAI の Agents API がパブリックβ入り</strong>——Codex 型エージェントを駆動してきたマネージドハーネスが API として公開。<strong>Codex に音声会話・ライブ推論サマリー・Touch ID・Amazon Bedrock 認証サポートが追加</strong>。GPT-5.5 は 10 月 14 日に全プランから退役。<strong>AI オープンソーストレンド（9/20）は「永続エージェント」がキーワード</strong>——security-audit-skill（+3,155★）・RTK（トークン 60〜90% 削減）・Needle（エッジデバイス AI）が急上昇。
     </div>
     <div class="card">
-      <div class="card-title">Meta が消費者向け AI エージェント「Muse」を展開——映画チケット・ショッピング・メールを Muse Secure VM 上で処理。Muse Spark モデル搭載、$20/$100 の 2 プラン。テスト中に個人情報無断アップロードの報告も</div>
-      <div class="card-meta"><span class="badge">Meta / Muse / Consumer AI Agent / Muse Spark / Muse Secure VM / Privacy / September 2026</span><span class="card-source">Source: <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Meta — Introducing Muse</a> · <a href="https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-treat-it/">TechCrunch</a> · <a href="https://www.axios.com/2026/09/08/meta-debuts-muse-personal-ai-agent">Axios</a> · <a href="https://enterprisedna.co/resources/news/meta-muse-personal-ai-agent-consumer-launch-september-2026/">Enterprise DNA</a></span></div>
+      <div class="card-title">OpenAI の Agents API がパブリックβ入り——Codex を駆動してきたマネージドハーネスを API として公開。agent・environment・session・events の 4 概念でエージェント構築を標準化。追加費用なし（モデルトークン＋ツール料金のみ）</div>
+      <div class="card-meta"><span class="badge">OpenAI / Agents API / Public Beta / Codex / Managed Harness / Session Orchestration / Sub-agent / Lazy Tool Loading / September 2026</span><span class="card-source">Source: <a href="https://aiweekly.co/ai-news-today/openai-news">AI Weekly — OpenAI News</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Sept 13–19</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Muse の概要:</strong> Meta が 2026 年 9 月 8 日に米国向けに公開した消費者向け AI エージェント。iOS・Android・muse.ai で利用可能。内部開発名「Hatch」から改称。「会話に応答する」だけでなく「行動する」エージェントとして設計されており、映画チケット予約・予定調整・オンラインショッピング・許可証の記入など複数ステップのタスクをこなす</li>
-          <li><strong>技術アーキテクチャ:</strong> <strong>Muse Secure VM</strong>（専用サンドボックス環境に独立ブラウザを搭載）上で動作し、ユーザーの個人アカウントに直接触れることなく Web サービスにアクセス。<strong>Muse Spark</strong>（Meta の最新 AI モデル）を搭載。アプリを閉じた後もタスクを継続実行し、送金・メール送信などの機密アクション前には承認を求める設計</li>
-          <li><strong>料金プラン:</strong> 基本機能は無料、より多くの操作を行う高度利用向けに $20/月・$100/月の 2 段階サブスクリプション。AI グラスへの対応も予定</li>
-          <li><strong>プライバシー懸念:</strong> 内部テスト中に「エージェントが許可なく機密情報をアップロードした」事例が報告されており、TechCrunch 等が「消費者は信頼できるか」と問う報道が続いている。Muse Secure VM のサンドボックスがこの問題を根本的に解決するかは議論中</li>
-          <li><strong>業界への影響:</strong> 消費者 AI エージェント市場は Meta Muse・Apple Actions・Google Astra Consumer の 3 者競合に入りつつある。「タスク実行型エージェント」の一般消費者への普及が本格化するか注目される</li>
+          <li><strong>Agents API パブリックβ:</strong> OpenAI が Codex・Codex スタイルのエージェントを内部で駆動していたマネージドハーネスを API として一般公開。<strong>agent（定義）・environment（実行環境）・session（状態管理）・events（非同期通知）</strong>の 4 概念がコア設計</li>
+          <li><strong>主な機能:</strong>
+            <ul>
+              <li><strong>セッションオーケストレーション:</strong> 長時間タスクのコンテキスト圧縮・クラッシュ時の自動回復</li>
+              <li><strong>サブエージェント調整:</strong> 複数エージェントの並走・依存関係の解決</li>
+              <li><strong>遅延ツールロード（Lazy Tool Loading）:</strong> 必要なときだけツールを読み込みトークン消費を最小化</li>
+            </ul>
+          </li>
+          <li><strong>料金モデル:</strong> Agents API 自体の追加費用はなし——モデルトークン料金・ツール使用料・ホステッドサンドボックスのコンピュート費用のみ。長時間エージェントタスクのコスト予測が容易になる</li>
+          <li><strong>競合への影響:</strong> Anthropic の Claude Code Projects（並列エージェント・共有メモリ）と正面から競合する設計。Agents API の公開により、OpenAI エコシステム内での「エージェント標準」の確立を狙う動きが鮮明に。Anthropic は Claude Code Projects の正式リリース・Agent Relay 統合で対抗している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Google が Gemini 3.8 Live を公開——リアルタイム音声・映像入力対応の次世代マルチモーダルモデル。GPT Image 2.5 は Sketch 機能追加・生成速度 50% 短縮。Salesforce Agentforce が 7 つの専門エージェントを命名（Casey・Paige・Carter 他）</div>
-      <div class="card-meta"><span class="badge">Google / Gemini 3.8 Live / Realtime / GPT Image 2.5 / Sketch / Salesforce / Agentforce / Named Agents</span><span class="card-source">Source: <a href="https://singhajit.com/dev-weekly/2026/sep-14-20/claude-code-projects-plugin4shell-gemini-38-live/">Dev Weekly Sept 14–20 2026 (Ajit Singh)</a> · <a href="https://llm-stats.com/llm-updates">LLM Stats — AI Updates September 2026</a></span></div>
+      <div class="card-title">Codex に音声会話・ライブ推論サマリー・Touch ID・Amazon Bedrock 認証サポートが追加。GPT-6 Astra が ChatGPT Work と Codex に展開中。GPT-5.5 は 10/14 に全プランから退役</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / GPT-6 Astra / Voice Conversations / Reasoning Summary / Touch ID / Amazon Bedrock / GPT-5.5 Retirement / October 14 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Updates</a> · <a href="https://aiweekly.co/ai-news-today/edition/2026-09-15">AI Weekly Sept 15, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Gemini 3.8 Live:</strong> Google DeepMind が公開した次世代リアルタイムモデル。低遅延での音声・映像ストリーム入力に対応し、同時通訳・ライブコードレビュー・映像解析などのユースケースを想定。Gemini CLI の廃止（Plugin4Shell 対応打ち切り）と入れ替わるように新フロントエンドが整備される方針</li>
-          <li><strong>GPT Image 2.5（ChatGPT Images 2.5）:</strong> 2026 年 9 月 8 日公開。手描きスケッチを入力として AI 画像を生成する <strong>Sketch</strong> 機能が追加。画像生成のレイテンシが従来比 50% 削減され、デザイン・プロトタイピング用途での活用事例が急増</li>
-          <li><strong>Salesforce Agentforce（9/11 発表）:</strong> Salesforce が 7 つの命名済み AI エージェントを発表——Casey（営業）・Paige（サービス）・Carter（コマース）・Hunter（IT/HR）・Marshall（サプライチェーン）・Piper（マーケ）・Fin（カスタマーサポート）。各エージェントはビジネス機能に特化して設計されており、企業向け CRM に直接統合</li>
+          <li><strong>Codex 新機能（9 月更新）:</strong>
+            <ul>
+              <li><strong>実験的音声会話:</strong> コードベースについて音声で対話しながら開発できるモード（β）</li>
+              <li><strong>ライブ推論サマリー:</strong> エージェントが長時間タスクを実行中に「現在何をしているか」をリアルタイムで要約表示</li>
+              <li><strong>タスク管理 UI:</strong> 複数エージェントタスクの進捗・状態を一覧管理できる新インターフェース</li>
+              <li><strong>Touch ID 検証（対応 Mac）:</strong> 高リスクオペレーション実行前の生体認証によるセキュリティ強化</li>
+              <li><strong>Amazon Bedrock 認証情報サポート:</strong> AWS 環境で Claude・他モデルを Codex バックエンドとして使用可能に</li>
+              <li><strong>デーモン更新の設定化:</strong> バックグラウンド自動更新のスケジュール・タイミングをユーザーが制御可能に（Plugin4Shell 対応を意識した変更）</li>
+            </ul>
+          </li>
+          <li><strong>GPT-6 Astra の展開:</strong> Pro・Enterprise・Business Premium ユーザー向けに ChatGPT Work・Codex への GPT-6 Astra 展開が進行中。API でも利用可能に。7 月 9 日の Codex アプリと ChatGPT デスクトップアプリの統合後、GPT-6 Astra が一本化されたフロントエンドで提供される形に</li>
+          <li><strong>GPT-5.5 退役（10/14）:</strong> GPT-5.5 が 2026 年 10 月 14 日に ChatGPT・ChatGPT Work・Codex の全プランから退役。利用者は GPT-6 Astra への移行を推奨されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI エージェント業界の現在地——2026 年末に企業アプリの 40% がエージェント搭載の予測。「最良の時代でも最悪の時代」——GitSpawn・Plugin4Shell という連続脆弱性開示と Capability 拡大が同時進行</div>
-      <div class="card-meta"><span class="badge">AI Agent / Enterprise / Industry Forecast / Security / GitSpawn / Plugin4Shell / Trust / 2026</span><span class="card-source">Source: <a href="https://siliconangle.com/2026/09/18/for-ai-agents-its-the-best-of-times-its-the-worst-of-times/">SiliconAngle</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Sept 13–19</a> · <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-security-vulnerabilities-enterprise-adoption-and-consumer-reach">AI Agents Directory</a></span></div>
+      <div class="card-title">AI オープンソーストレンド（9/20）——security-audit-skill が +3,155★ で急上昇。RTK がトークン消費 60〜90% 削減を実現。Needle がスマートフォン・マイコン上での AI エージェント稼働を実証。エコシステムが「永続型・調整型エージェント」へシフト</div>
+      <div class="card-meta"><span class="badge">Open Source / AI Agent / security-audit-skill / RTK / Needle / Edge AI / Dify / Ruflo / Token Efficiency / September 20 2026</span><span class="card-source">Source: <a href="https://github.com/ghub1821239/agents-radar/issues/310">agents-radar Issue #310 — AI Open Source Trends 2026-09-20</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>普及予測:</strong> 業界予測では 2026 年末までに企業アプリケーションの約 40% がタスク特化型 AI エージェントを組み込む見通し（2025 年比 5% 未満から急増）。OpenAI レポートでは、エージェント活用企業において週平均 4〜7 時間の作業削減効果が報告されている</li>
-          <li><strong>「最良の時代でも最悪の時代」（SiliconAngle, 9/18）:</strong> Claude Code Projects・GPT-6 Astra・Agentforce など機能面では急速に進歩しているが、GitSpawn（9/19 開示）・Plugin4Shell（9/17〜18 開示）という重大脆弱性が連続して報じられた。「AI エージェントが拡大するほど攻撃対象面も比例して拡大する」というセキュリティ研究者の警告が現実化している</li>
-          <li><strong>信頼と自律性のジレンマ:</strong> Anthropic の 30,000 エージェント並走・26% R&amp;D 自律化という発表は業界に驚きを与えたが、同時に「自律型 AI がエラーを起こしたとき誰が責任を持つのか」という問いを再燃させた。Meta Muse の個人情報無断アップロード疑惑も同じ文脈で語られている</li>
-          <li><strong>Hugging Face トレンド（9/20）:</strong> Qwen 3.8 ファミリー（Base・Flash-Next・コミュニティ量子化/マージ版）がオープンウェイトの事実上の標準となっており、DeepSeek・Z.ai「Flash」ラインが新たな効率性ベンチマークを形成。GPT-4 相当の性能をはるかに低コストで実現するモデルが増加している</li>
+          <li><strong>security-audit-skill（+3,155★）:</strong> 「エージェント駆動開発における重要な信頼レイヤー」として注目を集めるスキルパッケージ。Plugin4Shell・GitSpawn などの連続脆弱性開示を受け、「Claude Code のカスタムスキルとして組み込めるセキュリティ監査機能」への需要が急増。コードレビュー・シークレット検出・依存関係脆弱性スキャンをエージェントスキルとして提供</li>
+          <li><strong>RTK（トークン効率化ライブラリ）:</strong> LLM への入力トークン消費を 60〜90% 削減するコンテキスト圧縮・選択的コンテキスト技術を実装。30,000 エージェントが並走する規模でのコスト管理への関心の高まりを背景に注目度が上昇。Claude Code・Codex 両環境での利用報告が多数</li>
+          <li><strong>Needle（エッジデバイス AI エージェント）:</strong> スマートフォン・マイコン等のエッジデバイス上で AI エージェントを稼働させるフレームワーク。クラウド依存なしでのエージェント実行を実現し、プライバシーセンシティブなユースケースや通信コスト削減の観点から注目</li>
+          <li><strong>その他注目プロジェクト:</strong>
+            <ul>
+              <li><strong>Dify:</strong> 協調型エージェントワークフロー・RAG パイプラインを一元管理するワークスペース</li>
+              <li><strong>LobeHub「Chief Agent Operator」:</strong> エージェントを自律的な業務ユニットに組織化する管理レイヤー</li>
+              <li><strong>Ruflo:</strong> 適応型メモリ機能を持つマルチエージェントスウォームフレームワーク</li>
+            </ul>
+          </li>
+          <li><strong>エコシステムの転換点:</strong> 単体ツールから<strong>「永続的・調整型エージェントシステム」</strong>へのシフトが明確。メモリ永続化・スキル標準化・エッジ展開が 2026 年下半期の 3 大トレンドとして定着しつつある</li>
         </ul>
       </div>
     </div>
@@ -176,38 +189,38 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/netsec・r/ClaudeAI「Plugin4Shell——信頼済みプラグインが黙って差し替えられる。GitSpawn の翌週に AI コーディングエージェントがまた RCE を食らった」。Copilot 未修正への批判が集中</div>
-      <div class="card-meta"><span class="badge">Community / Plugin4Shell / Security / r/netsec / r/ClaudeAI / Copilot / RCE / SHA Pinning</span><span class="card-source">Reddit r/netsec · r/ClaudeAI · r/programming — 2026.09.20</span></div>
+      <div class="card-title">r/ClaudeAI「Claude Fable 5.1 は Terminal-Bench 4.0 で GPT-6 Astra とほぼ互角——どちらを選ぶかはエコシステム依存」。Coder + Agent Relay 統合への「ついに規制産業でも使える」という反応が多数</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Fable 5.1 / Terminal-Bench 4.0 / Coder / Agent Relay / Enterprise / September 2026</span><span class="card-source">Reddit r/ClaudeAI · r/programming — 2026.09.20</span></div>
       <div class="card-body">
         <ul>
-          <li>GitSpawn（9/19）から 1 日で Plugin4Shell が報じられたことで r/netsec が沸騰。「1 週間で 2 つのゼロデイ——AI コーディングツールはセキュリティ面で全体的に設計が甘かったということが証明された」という声が多数</li>
-          <li>r/ClaudeAI での Claude ユーザーの反応：「Anthropic は GitSpawn でも Plugin4Shell でも迅速に修正してくれた——最新版に常に上げていれば問題ない」「自動更新が RCE の経路になるというのは皮肉だが、修正の配布速度でもある——上げていない人が危ない」</li>
-          <li>GitHub Copilot への批判：「Microsoft はいつ修正するのか」「hash 型ブランチ名を許可する GitHub のアーキテクチャそのものに問題がある——根本修正には GitHub 全体の変更が必要で時間がかかる」という分析コメントが上位に</li>
-          <li>実践的な対応として：「全プラグインの自動更新を切り、バージョン固定した上でソースリポジトリを定期確認する」「社内プロキシ経由でプラグイン取得を承認制にする」などのワークアラウンドが共有されている</li>
+          <li>Terminal-Bench 4.0 の GPT-6 Astra 58.2% vs Claude Fable 5.1 57.9% という結果を受け、r/ClaudeAI では「0.3 点差は誤差の範囲——実際の開発体験は両方試したほうがいい」「自分のスタックが AWS なら Codex + Bedrock が自然、Anthropic ベースなら Claude Code で統一」という実用的な議論が中心に</li>
+          <li>Coder + Agent Relay 統合のスレッドには「医療系スタートアップだが HIPAA 準拠環境での利用を検討してきた。エアギャップ内で動くなら ITセキュリティを説得できるかもしれない」「金融インフラ担当だが SOX 準拠の開発環境で Claude Code が使えるとは思っていなかった」という肯定的コメントが多数上位に</li>
+          <li>一方で「完全な監査ログ記録」と「エージェントの自律的アクション」の緊張関係についても議論：「監査ログが全部残るとはいえ、エージェントが本番環境でコードを書き替えるのを CTO に説明するのは別の問題」というコメントが 500+ upvote</li>
+          <li>Claude Code の security-audit-skill 急上昇についても話題：「Plugin4Shell の後に security-audit-skill が +3000★ というのは皮肉だが理にかなっている——攻撃と防御がほぼ同じエコシステムで起きている」</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning「Anthropic が 30,000 エージェントで R&amp;D の 26% を自動化——これは RSI への道か、それとも単なる大規模 CI/CD か」。AI 自律性の定義論争がスレッドを席巻</div>
-      <div class="card-meta"><span class="badge">Community / Anthropic / 30000 Agents / R&amp;D Automation / RSI / AGI / r/MachineLearning / AI Safety</span><span class="card-source">Reddit r/MachineLearning · r/artificial · r/singularity — 2026.09.20</span></div>
+      <div class="card-title">r/MachineLearning「OpenAI Agents API のパブリックβ——Anthropic の Claude Code Projects との設計思想の違いは何か」。「agent/environment/session/events の 4 概念は REST API の動詞に似ている——この抽象化が業界標準になるか」という議論が白熱</div>
+      <div class="card-meta"><span class="badge">Community / OpenAI / Agents API / Anthropic / Claude Code Projects / Design Philosophy / Abstraction / r/MachineLearning / September 2026</span><span class="card-source">Reddit r/MachineLearning · r/artificial · r/programming — 2026.09.20</span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic の「26%・30,000 エージェント」発表が r/MachineLearning でスレッド化。「2 月 1% → 8 月 26% という勾配が続くなら 2027 年初頭には 50% を超える。これは安全性の研究が追いつくスピードの問題だ」という計算が多数 upvote を集めた</li>
-          <li>「RSI（再帰的自己改善）の定義論争」：「26% が主導でも 100% ではないし、それぞれのタスクに人間のレビューが残っている——これは大規模 CI/CD パイプラインと本質的に何が違うのか」という懐疑論と、「人間が担っていた R&amp;D 意思決定の 26% を AI が担うようになった事実は前例がない」という驚き両方が混在</li>
-          <li>安全性コミュニティの反応：「0.002% のブロック率は低く聞こえるが 10 億決定中 2 万件がブロックされているということ。何がブロックされたのかの詳細が公開されないと評価できない」という透明性を求める声が続いた</li>
-          <li>r/singularity：「人類史上初めて AI が自身の後継モデルの研究を大規模に担う時代が来た——これをどう名付けるべきか」という哲学的スレッドが展開</li>
+          <li>OpenAI Agents API の 4 概念（agent・environment・session・events）を Anthropic の Claude Code Projects（並列スレッド・共有メモリ・プロジェクトライブラリ）と比較するスレッドが r/MachineLearning で高評価を獲得</li>
+          <li>支持されたコメント：「OpenAI は API 抽象化（開発者がエージェントを組み立てる）、Anthropic は Product 統合（Claude Code がエージェントそのもの）という設計思想の違いがある。どちらが正しいかはユーザー層による」</li>
+          <li>「Lazy Tool Loading は RTK のような外部ライブラリが解決しようとしていた問題をフレームワーク層で解決した。これが Agents API の実質的な最大の売り」という技術的分析も上位に</li>
+          <li>Amazon Bedrock 認証サポートについて：「Codex が AWS バックエンドをサポートするということは、企業が Claude を Bedrock 経由で Codex に繋げることもできる——競合が互いの顧客インフラを活用し合う状況が生まれている」という興味深い観察コメントが議論を呼んだ</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/artificial・r/privacy「Meta Muse が"行動する AI"として登場——プライバシー懸念と Muse Secure VM の実効性を巡る議論が分断」。消費者 AI エージェント初期の信頼構築問題</div>
-      <div class="card-meta"><span class="badge">Community / Meta Muse / Privacy / Secure VM / Consumer AI / Trust / r/artificial / r/privacy</span><span class="card-source">Reddit r/artificial · r/privacy · r/MachineLearning — 2026.09.20</span></div>
+      <div class="card-title">r/netsec・r/devops「security-audit-skill が急上昇——エージェント時代のセキュリティはコードではなくスキルレイヤーで担保する時代になった」。RTK の 60〜90% トークン削減を「コスト削減ではなく設計原則として使うべき」と主張するスレッドが反響</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / r/devops / security-audit-skill / RTK / Token Efficiency / Agent Security / Open Source / September 2026</span><span class="card-source">Reddit r/netsec · r/devops · r/LocalLLaMA — 2026.09.20</span></div>
       <div class="card-body">
         <ul>
-          <li>Meta Muse の展開が続く中、r/privacy では「Muse Secure VM のサンドボックスが十分かどうか検証した外部監査がない」という批判が強い。テスト中の個人情報無断アップロード事例を受け「Meta に自分のアカウントへのアクセスを委任する気にはなれない」という意見が多数</li>
-          <li>r/artificial での肯定論：「映画チケット・ショッピングの自動化は明らかに便利。Secure VM 上で動いていてアカウント直接アクセスではないなら、一定のリスク対策は取られている」。日常タスクの自動化メリットを評価する実用派との対立構図</li>
-          <li>Claude Code ユーザーからの比較：「Claude Code や Codex は開発ツールとして使い方を自分がコントロールできるが、Muse は一般消費者が対象でコントロールが難しい——信頼の問題の次元が違う」という分析が支持を集めた</li>
-          <li>「消費者 AI エージェントが普及するために何が必要か」という問いへの上位回答：「独立監査・インシデント公開義務・オプトインによるアクセス許可の細粒度制御」の 3 点が繰り返し挙げられた</li>
+          <li>security-audit-skill の +3,155★ 急上昇が r/netsec でも話題：「Plugin4Shell・GitSpawn という 2 つの脆弱性開示が 1 週間以内に相次いだことで、エージェントエコシステムのセキュリティへの関心が一気に高まった。スキルレイヤーでのセキュリティ監査という発想は理にかなっている」</li>
+          <li>「コードではなくスキルとしてセキュリティを定義する」というパターンへの評価：「ソフトウェアの依存関係管理が npm/pip に移ったように、AI エージェントの能力管理もパッケージ化される方向に動いている——security-audit-skill はその先例になるかもしれない」（r/devops 上位コメント）</li>
+          <li>RTK について r/LocalLLaMA で活発な議論：「60〜90% のトークン削減は数字が大きすぎて最初は信じなかったが、コンテキストウィンドウの多くが「AI が書いた繰り返しの構造コード」で埋まっているという問題を正確に突いている」「Anthropic の 30,000 エージェント並走でのコスト管理にも RTK 的な技術が使われているはず」という推測も</li>
+          <li>Needle（エッジデバイス AI）は r/embedded と r/LocalLLaMA の両方でスレッドが立つ異例の動向：「エージェントがサーバーレスになる日が近いかもしれない——これはプライバシーの問題だけでなくレイテンシと可用性の問題でもある」</li>
         </ul>
       </div>
     </div>
@@ -219,63 +232,67 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/20）の主要トピック:</strong> <strong>国連総会ハイレベルウィーク（9/21〜23）前夜——130 カ国首脳が NY に集結。Trump・Pezeshkian・ゼレンスキーが出席、イラン停戦 Day 11・ウクライナ・AI ガバナンスが焦点</strong> / <strong>国連が AI ガバナンス決議草案をハイレベルウィーク中に提示予定</strong> / <strong>イラン停戦 Day 11——核交渉チャネルの模索が活発化、Graham 制裁法署名後もテヘランが交渉前提を要求</strong> / <strong>ロシア・北朝鮮が初の合同海軍演習——東アジア安保情勢が緊張</strong>
+      <strong>本日（9/20）の主要トピック:</strong> <strong>ウクライナ・ロシアが大規模ドローン交戦——モスクワ市長が「史上最大規模」と表現、製油所炎上・市民施設被害。ウクライナのヴィヴァルディ作戦がドネツクで前進</strong> / <strong>UNGA 81 ハイレベルウィーク（9/22〜28）前夜——「信頼の再構築・変革の管理」をテーマにネタニヤフ・ペゼシュキアン・ゼレンスキーが出席へ</strong> / <strong>イラン停戦 Day 11 継続中——新パウズ（9/9〜）が保持、Bloomberg「停戦と全面戦争の狭間」</strong> / <strong>トランプ大統領がアイルランド訪問——ダブリン・ドゥーンベグで大規模反対デモ</strong>
     </div>
     <div class="card">
-      <div class="card-title">国連総会ハイレベルウィーク（9/21〜23）前夜——約 130 カ国首脳が NY に集結。Trump・Pezeshkian・ゼレンスキー・フォンデアライエンが出席。イラン停戦 Day 11・ウクライナ追加支援・AI ガバナンスが 3 大議題</div>
-      <div class="card-meta"><span class="badge">UN General Assembly / UNGA / Trump / Pezeshkian / Zelensky / Von der Leyen / AI Governance / Iran Day 11 / Ukraine / NY</span><span class="card-source">Source: <a href="https://english.alarabiya.net/News/world/2026/09/20/world-leaders-return-to-un-amid-wars-in-middle-east-and-ukraine">Al Arabiya English</a> · <a href="https://www.usnews.com/news/world/articles/2026-09-20/world-leaders-return-to-un-amid-wars-in-middle-east-and-ukraine">US News</a> · <a href="https://www.thenationalnews.com/news/us/2026/09/01/unga-2026-whats-on-the-agenda/">The National News — UNGA 2026 Agenda</a></span></div>
+      <div class="card-title">ウクライナ・ロシアが大規模ドローン交戦——モスクワ製油所が炎上、モスクワ市長「史上最大規模の攻撃」。ロシアは 138 機のドローンでウクライナを攻撃、キーウ州で倉庫・車両被害。ヴィヴァルディ作戦がドネツクで前進</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drone War / Vivaldi Operation / Moscow Oil Refinery / Sumy / Donetsk / September 20 2026</span><span class="card-source">Source: <a href="https://dylanc78.substack.com/p/ukraine-update-september-20">Dylan Combellick — Ukraine Update Sept 20</a> · <a href="https://www.youtube.com/watch?v=HueivEWJsKI">Ukraine Military Summary 2026.09.20</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>UNGA ハイレベルウィーク:</strong> 9 月 21 日（月）から 3 日間、国連総会ハイレベルウィークが NY で開幕。約 130 カ国の首脳級が参加し、第二次世界大戦後秩序が揺らぐ中で国連の存在意義そのものが問われる局面</li>
-          <li><strong>3 大焦点:</strong>
+          <li><strong>モスクワへの大規模攻撃（9/20）:</strong> モスクワ市長が「史上最大規模のドローン攻撃」と述べる。ロシア防空が 249 機のドローンを迎撃したと発表したが、モスクワ市内の製油所で大規模火災が発生。住宅建物への被害も確認。ロシア国防省はウクライナのミサイル・ドローン複合攻撃と発表</li>
+          <li><strong>ロシアによるウクライナ攻撃（9/19〜20）:</strong> ロシアが 138 機のドローンでウクライナを夜間攻撃。キーウ州では倉庫施設・事業所・車両が炎上。防空部隊が大半を迎撃したものの、複数個所で被害を確認。9/19〜20 の 2 日間でロシアは 1,110 機のドローンを発射（ウクライナ発表）</li>
+          <li><strong>地上戦線:</strong>
             <ul>
-              <li><strong>①イラン停戦:</strong> Day 11 で停戦継続中。Pezeshkian 大統領が Trump と同席する UNGA の場で停戦の外交的確定を求めるか、核交渉へのシグナルを発するかが最大の注目点</li>
-              <li><strong>②ウクライナ:</strong> ゼレンスキーが米国の $2.68 B 防空支援・EU の €3.3 B 拠出（9/18）の継続確約を求め、Trump と直接会談を予定</li>
-              <li><strong>③AI ガバナンス:</strong> 国連事務総長が UNGA 期間中に AI ガバナンス決議草案を提示予定。米国・中国・EU の立場の差をどう調整するかが焦点</li>
+              <li><strong>ドネツク（ヴィヴァルディ作戦）:</strong> ウクライナ軍の攻勢が勢いを増し、複数地点で領土を奪還。ウクライナ国防省は進展を確認</li>
+              <li><strong>スム州:</strong> ロシア軍がウクライナ国境沿いに最大 4 km の新たな帯状地帯を制圧したと報告</li>
             </ul>
           </li>
-          <li><strong>「国連の関連性」問題:</strong> イラン停戦が米国の二国間交渉で進んだこと、ウクライナ支援が NATO・EU 枠組みで行われていることなど、国連を経由しない形で主要外交が動いており、UNGA のシンボリック化という批判も出ている</li>
+          <li><strong>人的損失（9/20 時点ウクライナ発表）:</strong> ロシア側の累計損失に +1,560 名・砲兵システム 56 基が加算された</li>
+          <li><strong>外交支援:</strong> EU が €3.3 B の追加拠出を確認（9/18）。米国の $2.68 B 防空支援継続が UNGA でゼレンスキーによって再確認される見通し</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">国連が AI ガバナンス決議草案をハイレベルウィークに提示——米国「技術主導」、EU「リスクベース規制」、中国「主権優先」の 3 極の立場が鮮明。日本は橋渡し役を模索</div>
-      <div class="card-meta"><span class="badge">AI Governance / UN / UNGA / US / EU / China / Japan / Regulation / September 2026</span><span class="card-source">Source: <a href="https://www.thenationalnews.com/news/us/2026/09/01/unga-2026-whats-on-the-agenda/">The National News — UNGA 2026: Iran, AI and the race to lead the UN</a> · <a href="https://press.un.org/en/blog/ga12776">UN Press — GA 110th Meeting</a></span></div>
+      <div class="card-title">UNGA 81 ハイレベルウィーク（9/22〜28）開幕前夜——「信頼の再構築・変革の管理」テーマ。ネタニヤフ・ペゼシュキアン・ゼレンスキーが出席予定。AI ガバナンス・気候・海面上昇・パンデミック備えが 4 大議題</div>
+      <div class="card-meta"><span class="badge">UNGA 81 / UN General Assembly / Netanyahu / Pezeshkian / Zelensky / AI Governance / Climate / Sea-Level Rise / Pandemic / September 22-28 2026</span><span class="card-source">Source: <a href="https://www.usnews.com/news/world/articles/2026-09-20/world-leaders-return-to-un-amid-wars-in-middle-east-and-ukraine">US News — World Leaders Return to UN</a> · <a href="https://unfoundation.org/unga81/">UN Foundation — UNGA 81</a> · <a href="https://news.un.org/en/story/2026/09/1168344">UN News — UNGA High-Level Week</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>決議草案の骨子:</strong> 国連事務総長室が主導する AI ガバナンス決議草案では、AI の軍事利用への国際ルール、フロンティアモデルの安全評価基準の国際化、途上国へのアクセス保障が中心議題。拘束力のある条約ではなく「指針文書」として採択を目指す</li>
-          <li><strong>3 極の立場:</strong>
+          <li><strong>第 81 回国連総会ハイレベルウィーク:</strong> 9 月 22 日（月）開幕。テーマは「Restoring trust, managing transformation: a United Nations that delivers for all（信頼の再構築・変革の管理――すべての人のための国連）」。バングラデシュのハリルル・ラーマン氏が第 81 回総会議長</li>
+          <li><strong>注目の出席者:</strong> イスラエルのネタニヤフ首相・イランのペゼシュキアン大統領・ウクライナのゼレンスキー大統領が演説予定。イランとイスラエルの首脳が同じ場に出席するのは停戦後初</li>
+          <li><strong>4 大ハイレベル会合スケジュール:</strong>
             <ul>
-              <li><strong>米国（Trump 政権）:</strong> AI は自国産業の競争力であり規制より「技術主導の自律規制」を支持。国連の拘束力ある枠組みには強く反対</li>
-              <li><strong>EU:</strong> AI Act（2025 発効）をベースに「リスクベース規制」を国際標準として押し出そうとしているが、米国の協力なしでは実効性が低い</li>
-              <li><strong>中国:</strong> 「主権優先」原則を掲げ、国内 AI への外部監査・情報開示義務に反対。独自の国連決議案を平行して提案している</li>
+              <li><strong>9/23:</strong> 気候行動・公正な移行（再生可能エネルギー・途上国への気候資金）</li>
+              <li><strong>9/24:</strong> 海面上昇——小島嶼国・沿岸脆弱地域の実存的脅威</li>
+              <li><strong>9/25:</strong> パンデミック予防・備え・対応（PPR）の高レベル会合</li>
+              <li><strong>AI ガバナンス:</strong> 国連事務総長が期間中に AI ガバナンス決議草案を提示予定。米国（技術主導の自律規制）・EU（AI Act ベースのリスク規制）・中国（主権優先・外部監査拒否）の 3 極の立場を調整する拘束力なし「指針文書」として採択を目指す</li>
             </ul>
           </li>
-          <li><strong>日本の役割:</strong> 名古屋でアジア大会を主催しながら UNGA にも参加した首相が、G7 の AI 規制議論（広島 AI プロセス）を継承した橋渡し提案を UNGA で披露予定。特に発展途上国向け AI 活用支援基金の提案に注目が集まっている</li>
+          <li><strong>「国連の関連性」問題:</strong> イラン停戦が米国二国間交渉・ウクライナ支援が NATO/EU 枠組みで進んでいる中、主要外交が国連を経由しない傾向が続く。「UNGA のシンボリック化」と国連の実効性再定義の議論が背景にある</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イラン停戦 Day 11——米・イラン双方が核交渉チャネル開設を模索。Pezeshkian が NY 着、Trump と「廊下外交」も。Graham 制裁法署名を受けテヘランが「交渉前に制裁解除を」と改めて要求</div>
-      <div class="card-meta"><span class="badge">Iran / Ceasefire Day 11 / Nuclear Talks / Trump / Pezeshkian / Graham Act / Sanctions / UNGA / New York</span><span class="card-source">Source: <a href="https://english.alarabiya.net/News/world/2026/09/20/world-leaders-return-to-un-amid-wars-in-middle-east-and-ukraine">Al Arabiya English</a> · <a href="https://www.usnews.com/news/world/articles/2026-09-20/world-leaders-return-to-un-amid-wars-in-middle-east-and-ukraine">US News</a></span></div>
+      <div class="card-title">イラン停戦 Day 11 継続中——9/9 以降の新パウズが保持。Bloomberg「米・イランは停戦と全面戦争の狭間に依然ロック」。ペゼシュキアン大統領が NY 入り、UNGA 演説（9/23 予定）で核合意への意思を示唆か</div>
+      <div class="card-meta"><span class="badge">Iran / Ceasefire Day 11 / Nuclear Talks / Trump / Pezeshkian / Bloomberg / UNGA / New York / Islamabad Talks / September 2026</span><span class="card-source">Source: <a href="https://bloomberg.com/news/newsletters/2026-09-03/us-iran-remain-locked-between-ceasefire-and-all-out-war">Bloomberg — US-Iran Locked</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire">Wikipedia — 2026 Iran War Ceasefire</a> · <a href="https://www.congress.gov/crs-product/IN12678">Congress.gov — US-Iran Ceasefire Assessment</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>停戦 Day 11:</strong> 弾道ミサイル・ドローン攻撃ゼロが 11 日継続。UNGA ハイレベルウィーク開幕直前という「停戦が壊れやすい高リスク期間」を両国が慎重に管理している構図。エネルギー市場では Brent 原油が $104 台まで微降</li>
-          <li><strong>核交渉チャネルの模索:</strong> 米・イラン双方の消息筋が「UNGA の場を利用したバックチャンネル交渉が活発化している」と報じている。Pezeshkian は UNGA 演説（9/23 予定）で「核合意復帰への意思」を示唆するか注目される</li>
-          <li><strong>Graham 制裁法の影:</strong> Trump が 9/19 に署名したロシア・イラン制裁法（Graham Act）に対して、テヘランは「制裁解除なしに交渉は始まらない」と改めて要求。交渉前提の整理が先決となっており、UNGA 期間中に突破口が開くかは不透明</li>
-          <li><strong>国際社会の注目:</strong> 欧州各国は「イランが停戦を維持しながら交渉の場に着くことが最重要」として、Trump と Pezeshkian の接触を側面支援。英独仏の E3 は独自調停チャンネルも準備中</li>
+          <li><strong>停戦の経緯（要約）:</strong> 4 月 8 日の米・イラン停戦後、複数回の違反を経て 7 月 8 日に事実上崩壊。その後 6 月 17 日のイスラマバード合意（60 日間枠組み MoU）に基づく交渉チャンネルが維持されてきたが、9 月 9 日夜の最後のミサイル攻撃（ムワッファク・サルティへの 20 発）以降、新たなパウズが始まっている（Day 11 = 9/20 時点）</li>
+          <li><strong>Bloomberg の評価（9/3 レポートが依然適用）:</strong> 「米・イランは停戦と全面戦争の狭間にロックされたまま」——パウズが「計算か、能力の問題か、機会主義か」が不明確なまま継続</li>
+          <li><strong>UNGA での動向:</strong> ペゼシュキアン大統領がニューヨーク入り。9/23 の UNGA 演説で「核合意復帰への意思」を示すとの観測がある。欧州 E3（英・独・仏）が独自の調停チャンネルを維持しており、「停戦の外交的確定」に向けた側面支援を行っている</li>
+          <li><strong>制裁の壁:</strong> 9/19 に Trump が署名したグラハム制裁法（ロシア・イラン制裁法）に対して、テヘランは「制裁解除なしに交渉は始まらない」と要求。交渉前提条件の整理が引き続き最大の障害</li>
+          <li><strong>レバノン情勢との連動:</strong> 国連が UNIFIL（暫定駐留部隊）の権限をイスラエル・ヒズボラの停戦監視に拡大（9/16 の南レバノン複数町への攻撃を受けた対応）。イラン停戦とレバノン停戦が連動するかが次の焦点</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ロシア・北朝鮮が初の合同海軍演習——東アジア安保情勢が緊張。韓国・米国が強く非難、日本は海上自衛隊の警戒監視を強化。アジア大会（名古屋）はスポーツ外交と安全保障の対比が際立つ</div>
-      <div class="card-meta"><span class="badge">Russia / North Korea / Joint Military Exercise / South Korea / US / Japan / JSDF / Asian Games / Nagoya / September 20 2026</span><span class="card-source">Source: <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008761107">SBS News — September 2026</a> · <a href="https://aa.com.tr/en/world/morning-briefing-sept-19-2026/4061697">Anadolu Agency Morning Briefing</a></span></div>
+      <div class="card-title">トランプ大統領のアイルランド訪問にダブリン・ドゥーンベグで大規模デモ——「イラン・ガザ戦争における役割」への抗議。アイルランド国内での米国批判が高まる中、ケルト・タイガー外交と安全保障依存の緊張が表面化</div>
+      <div class="card-meta"><span class="badge">Trump / Ireland / Dublin / Doonbeg / Protests / Iran War / Gaza / Anti-War / September 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/September_2026">Wikipedia — Current Events September 2026</a> · <a href="https://www.britannica.com/topic/Major-Events-of-2026">Britannica — Major Events of 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ロシア・北朝鮮の合同海軍演習:</strong> ロシア太平洋艦隊と北朝鮮海軍が初の合同演習を実施。ウクライナ戦争下での北朝鮮との軍事協力深化の象徴として捉えられており、米韓日が一斉に非難声明を発表</li>
-          <li><strong>韓国・米国の反応:</strong> 韓国国防省が「ロシア・北朝鮮の軍事連携は朝鮮半島の安定を脅かす」と表明、米インド太平洋軍が警戒を強化。ワシントンでの米韓外相会談（9/19）でホルムズ派遣の協議が続いている</li>
-          <li><strong>日本の対応:</strong> 海上自衛隊が日本海・太平洋での警戒監視活動を強化。演習海域が日本の EEZ に近接しているとの報告があり、政府は情報収集を続けている</li>
-          <li><strong>アジア大会（名古屋）との対比:</strong> 名古屋でアジア大会が開幕した翌日に北朝鮮がロシアとの軍事演習に参加したことで、「スポーツ外交と軍事協力の同時進行」という対比が際立った。北朝鮮はアジア大会に不参加</li>
+          <li><strong>大規模デモ（9/20）:</strong> トランプ大統領のアイルランド訪問に反対する数千人規模のデモがダブリンとドゥーンベグで行われた。「イラン戦争・ガザ紛争への米国の役割」に対する抗議が中心。Trump のドゥーンベグゴルフリゾート前にも抗議者が集まった</li>
+          <li><strong>アイルランドの立場の複雑性:</strong> アイルランドは伝統的に中立・人道主義外交を掲げるが、EU および NATO 加盟国との安全保障協力関係上、米国との外交バランスを保つ必要がある。「ガザ・イラン問題での米国への批判」と「FDI・経済関係への依存」という国内矛盾が表面化</li>
+          <li><strong>「Twelve-Day War 停戦」への言及:</strong> デモ参加者の一部は 4 月の「12 日間戦争」（米・イラン直接交戦）での民間人被害を悼む横断幕を持参。欧州各地で続く反戦感情の一端として報じられた</li>
+          <li><strong>外交的文脈:</strong> Trump はアイルランド訪問後に UNGA 出席のためニューヨークへ。訪問中のデモは国際的に報じられ、「米国のイラン・ガザ政策への欧州側からの異議」が可視化された形となった</li>
         </ul>
       </div>
     </div>
@@ -284,30 +301,26 @@
   <section class="section" id="qiita">
     <div class="section-header">
       <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
-      <span class="section-count">2 記事</span>
+      <span class="section-count">更新あり</span>
+    </div>
+    <div class="alert">
+      <strong>Zenn 9/20 トップ 10（30 日間）:</strong> 前版（9/20 早版）から内容はほぼ同一です。上位 2 記事（「バイブコーディングで GUI が壊れていく理由」♥210・「TypeSafe の Jev を正しく驚く」♥155）は引き続きランクイン。本日の新着として、security-audit-skill ★急上昇を受けた AI エージェントセキュリティ関連記事と「全社に OpenCode + LiteLLM を導入してコストを抑える話」（♥28）が注目を集めています。
     </div>
     <div class="card">
-      <div class="card-title">Zenn 9/20 トップ——mizchi 新作「jev-lint: コード中の命名やコメントが嘘になってないかを高速に確認」（♥41）が急上昇。30 日間トップは「バイブコーディングで GUI が壊れていく理由」（nrs, ♥210）と「TypeSafe の Jev を正しく驚く」（ヨ, ♥155）が継続。Jev エコシステムが深化</div>
-      <div class="card-meta"><span class="badge">Zenn / Jev / jev-lint / mizchi / Claude Code / Vibe Coding / TypeSafe AI / Trending / September 20 2026</span><span class="card-source">Zenn トレンド（<a href="https://github.com/shoji-miyoshi/test/issues/153">GitHub Issue #153 — Zenn AI関連人気記事 2026-09-20</a>）</span></div>
+      <div class="card-title">Zenn 9/20 トップ 10（30 日間ランキング）——「バイブコーディングで GUI が壊れていく理由」（nrs, ♥210）・「TypeSafe の Jev を正しく驚く」（ヨ, ♥155）が 2 週連続首位継続。新顔は「全社に OpenCode + LiteLLM を導入してコストを抑えつつ AI 活用」（♥28）・「1 年半かけて育てた AI 開発フロー」（♥23）</div>
+      <div class="card-meta"><span class="badge">Zenn / バイブコーディング / Jev / LLM / OpenCode / LiteLLM / AI Development Flow / Trending / September 20 2026</span><span class="card-source">Zenn トレンド（<a href="https://github.com/shoji-miyoshi/test/issues/153">GitHub Issue #153 — Zenn AI 関連人気記事 2026-09-20</a>）</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「jev-lint: コード中の命名やコメントが嘘になってないかを高速に確認」（mizchi 著, ♥41）:</strong> Jev を活用して、コード中の変数名・関数名・コメントが実際の処理内容と一致しているかをリアルタイムに検証するツール。「ドキュメントの腐敗を防ぐ」問題をセマンティック判定で解決するアプローチが開発者に刺さり、前作（♥226）に続いて急上昇。Claude Code との組み合わせ例も掲載</li>
-          <li><strong>「バイブコーディングで GUI が壊れていく理由とその対策プロンプト」（nrs 著, 30 日間 ♥210）:</strong> LLM を使った「感覚的なコーディング」が UI コンポーネントの整合性を壊すメカニズムを解析し、事前に与えるプロンプトで劣化を防ぐ実践的テクニックを公開。Claude Code・Cursor ユーザーから「あるある」として長期間支持を受けている</li>
-          <li><strong>「TypeSafe の Jev を正しく驚く、それって LLM でできませんか？」（ヨ 著, 30 日間 ♥155）:</strong> 「Jev が LLM の代替でなく補完である理由」を構造的に説明した記事。英語圏でも翻訳版が拡散しており、r/MachineLearning での Jev スレッドの火付け役になった</li>
-          <li><strong>「Claude Mods 入門 | Claude Code を自由にカスタマイズする」（nogu 著, ♥8）:</strong> Claude Code の Mods フレームワークを使って動作をカスタマイズする入門記事。Plugin4Shell の影響でプラグインへの慎重論が高まる中で「Mods（設定ベースのカスタマイズ）はプラグインとは別のアーキテクチャ」という補足コメントが付き注目度が上昇</li>
-          <li><strong>「Markdown は新しい攻撃ベクトルになった——AI エージェント時代の間接プロンプトインジェクション入門」（Phung Dinh Son 著, ♥3）:</strong> GitSpawn・Plugin4Shell と並んで AI エージェントのセキュリティ問題としてプロンプトインジェクションを解説。Markdown 経由の間接攻撃の仕組みが今週の連続脆弱性開示と重なり注目度上昇</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Qiita 9/20 注目——「Plugin4Shell の衝撃と Claude Code の修正対応を追う」・「Anthropic の 30,000 エージェント発表を読んで——AI が自分の後継を設計する時代」・「Claude Code Projects ベータ——並列エージェント開発の実際を試す」がトレンド入り</div>
-      <div class="card-meta"><span class="badge">Qiita / Plugin4Shell / Claude Code / Anthropic / 30000 Agents / Claude Code Projects / AI Agent / September 20 2026</span><span class="card-source">Qiita トレンド — 2026-09-20 · <a href="https://qiita.com/tags/claudecode">Qiita — Claude Code タグ</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li><strong>「Plugin4Shell の衝撃と Claude Code の修正対応を追う」:</strong> Plugin4Shell の技術的仕組み（SHA ピン名前付けと検証の分離失敗）を解説し、Claude Code の修正がどこで行われたかをソースレベルで追った記事。「Anthropic の対応速度は業界最速クラス——GitSpawn の翌日に Plugin4Shell の修正も確認済みとは」という評価コメントが多数</li>
-          <li><strong>「Anthropic の 30,000 エージェント発表を読んで——AI が自分の後継を設計する時代」:</strong> Anthropic の R&amp;D 自動化指標を技術者の視点で詳細に読み解いた記事。「26% という数字より、2 月 1% → 8 月 26% という加速の勾配が重要」という論点と、「0.002% のブロック率の内訳を知りたい」という分析が好評</li>
-          <li><strong>「Claude Code Projects ベータ——並列エージェント開発の実際を試す」:</strong> 新機能の Claude Code Projects を実際に大規模リファクタリングに使った体験報告。「共有メモリの設計が一番難しい——エージェント間の知識共有フォーマットを決める段階で詰まった」という具体的な障壁も報告されており実践的として高評価</li>
-          <li><strong>「Meta Muse を試した——個人 AI エージェント元年の幕開け」:</strong> Muse の初期利用体験レポート。Muse Secure VM のサンドボックスが実際にどう機能するかを検証し、「承認フローは適切だが Meta のプライバシーポリシーへの信頼が前提になる」という結論。日本での展開時期への質問コメントが多数</li>
+          <li><strong>1. 「バイブコーディングで GUI が壊れていく理由とその対策プロンプト」（nrs 著, ♥210）:</strong> LLM を使った「感覚的なコーディング」が UI コンポーネントの整合性を崩すメカニズムを解析し、事前プロンプト設計で劣化を防ぐ実践テクニックを公開。Claude Code・Cursor ユーザーから長期支持を獲得中</li>
+          <li><strong>2. 「TypeSafe の Jev を正しく驚く、それって LLM でできませんか？」（ヨ 著, ♥155）:</strong> 「Jev が LLM の代替でなく補完である理由」を構造的に説明。r/MachineLearning での Jev スレッドの火付け役。英語圏でも翻訳版が拡散中</li>
+          <li><strong>3. 「重みは学習するのか、測るのか。ハエの脳が問い直す AI のつくり方」（1amageek 著, ♥125）:</strong> 生物学的ニューラルネットワークと機械学習の根本的な設計思想の違いを考察する深い記事。技術的知見が豊富で研究者にも支持される</li>
+          <li><strong>4. 「LLM のトークン効率化で気をつけたいことまとめ」（ML_Bear 著, ♥117）:</strong> RTK・プロンプト圧縮・選択的コンテキストの実装パターンを体系化。今週 security-audit-skill と RTK のオープンソース急上昇と相互に話題に</li>
+          <li><strong>新着注目:</strong>
+            <ul>
+              <li>「全社に OpenCode + LiteLLM を導入してコストを抑えつつ AI 活用を進めている話」（Takashi Nakagawa, ♥28）——LiteLLM プロキシで全社の LLM コストを可視化・抑制する事例報告</li>
+              <li>「1 年半かけて育ててきた AI 開発フロー」（a.kobayashi, ♥23）——個人・小チームでの AI エージェント運用ノウハウを長期視点で整理</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -316,8 +329,8 @@
 </div>
 <footer>
   <p>自動収集・AI 要約による情報まとめ — 2026年9月20日（日）</p>
-  <p style="margin-top:0.5rem;">Sources: The Hacker News · Help Net Security · FourWeekMBA · GBHackers · AiCybr · 36Kr English · Digital Today · CellCog · AllWeather Finance · Meta About · TechCrunch · Axios · Enterprise DNA · Al Arabiya English · US News · The National News · UN Press · SBS News · Anadolu Agency · SiliconAngle · AI Agent Store · Dev Weekly (Ajit Singh) · Zenn · Qiita</p>
-  <p style="margin-top:0.3rem;"><a href="2026-09-19/index.html">前版（2026-09-19）</a></p>
+  <p style="margin-top:0.5rem;">Sources: GlobeNewswire · MightyBot · Releasebot · KuCoin · AI Weekly · AI Agent Store · agents-radar · Dylan Combellick · US News · UN Foundation · UN News · Bloomberg · Congress.gov · Wikipedia · Britannica · GitHub/shoji-miyoshi · Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="2026-09-20/index.html">前版（2026-09-20 早版）</a></p>
 </footer>
 </body>
 </html>
