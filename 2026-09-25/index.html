@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.282 リリース——新 maxProseWidth 設定でワイド端末でも読みやすいレイアウトに / OpenAI Codex rust-v0.157.0 安定版・v0.158.0-alpha.12 先行公開 / ChatGPT モバイルに音声エージェント機能（Work タブ）追加——Plus・Pro 向け / UNGA 週後半：米・イラン協議「重大な突破口なし」——ゼレンスキーが三者協議に意欲 / Trump がグリーンランド安全保障協定に署名</p>
+  <p class="date">2026年9月25日（金）&nbsp;|&nbsp;<a href="../2026-09-24/index.html">前版（9/24）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/25）のハイライト:</strong> <strong>Claude Code v2.1.282 リリース</strong>——新設定 <code>maxProseWidth</code> によりワイド端末でも散文が読みやすい幅に制限（テーブル・コードブロックはフル幅を維持）。<strong>AI Update Newsletter Watch が 9/25 00:37 UTC・05:19 UTC に計 13 件のアップデートを検出</strong>。<strong>Anthropic がコマースエージェントのブループリントを公開</strong>——ショッピング・マーチャントの参照実装、ガードレール、ライブデモ、Claude Code プラグインをセットで提供。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.282 リリース（9/25）——新設定 maxProseWidth でワイド端末の可読性向上。テーブル・コードブロックはフル幅を維持。Artifact リンクの処理改善も同時展開——claude.ai リンクを WebFetch ではなく Artifact ツールで読み込む</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.282 / maxProseWidth / Artifact / Terminal / Changelog / September 25 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Updates — Releasebot</a> · <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2274">AI Update Newsletter Watch Issue #2274</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>maxProseWidth 設定の追加:</strong> Claude Code v2.1.282 で新しい設定項目 <code>maxProseWidth</code> が追加された。ワイド端末（幅 200 カラム以上など）を使用している場合、散文テキストを指定した幅に制限して折り返し表示する。テーブルやコードブロックは従来通りフル幅で表示される</li>
+          <li><strong>Artifact リンク処理の改善:</strong> Claude が claude.ai の Artifact リンクを参照する際、Artifact ツールが利用可能な環境では Artifact ツールを優先して使うよう改善。マルチターン作業での参照精度が向上する</li>
+          <li><strong>9/25 に検出されたアップデート数:</strong> AI Update Newsletter Watch によると 9/25 00:37 UTC に 5 件、05:19 UTC に 8 件の計 13 件のアップデートが検出された</li>
+          <li><strong>モデル選択メニューの Fable 表示改善:</strong> Claude Code のモデル選択メニューにおける Fable の表示方法も改善されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic がコマースエージェントのブループリント公開（9/25 前後）——ショッピングエージェント・マーチャントエージェントの参照実装、ガードレール、ライブデモ、Claude Code プラグインをセット提供。Amazon Seller Assistant に続くコマース統合の第二弾</div>
+      <div class="card-meta"><span class="badge">Anthropic / Commerce Agent / Blueprint / Shopping Agent / Guardrails / Claude Code Plugin / September 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude">Claude Updates — Releasebot September 2026</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of September 25, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>コマースエージェントブループリントの概要:</strong> Anthropic は「ショッピングエージェント」と「マーチャントエージェント」の 2 種類の参照実装をブループリントとして公開した。ショッピングエージェントは消費者向けに商品検索・比較・購入フローを自律実行し、マーチャントエージェントは販売者向けに在庫管理・価格最適化・顧客対応を補助する</li>
+          <li><strong>ガードレールと安全設計:</strong> ブループリントにはコマース特有のガードレール設計も含まれており、「不正な購入の防止」「個人情報の過剰収集の抑制」「ユーザー確認が必要な操作（高額購入など）の自動フラグ」などが標準実装として提供されている</li>
+          <li><strong>Amazon Seller Assistant との連携:</strong> 9/23 に発表された Amazon Seller Assistant（Bedrock 上の Nova + Claude）と今回のブループリントで、Claude が eコマース領域でのエンドツーエンドの AI エージェントスタックを構築している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude が Anthropic 自身の研究開発の 26% を主導——NBC News 報道の詳報。「実験設計・コードレビュー・ハイパーパラメータ探索・訓練データキュレーション補助を自律実行」。9/24 の ART 酵素発見（949 エージェント）と合わせ「AI の自己改善ループ」に国際的注目</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude / Self-Improvement / 26% / Model Development / ART Enzyme / Research Loop / NBC News / September 2026</span><span class="card-source">Source: <a href="https://www.washingtontimes.com/news/2026/sep/17/anthropic-says-claude-helping-build-next-version/">Washington Times — Anthropic says Claude helping build next version</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Claude が研究開発の 26% を主導する意味:</strong> NBC News・Washington Times の報道によると Anthropic は「Claude が現在同社の研究・開発タスクの 26% を自律的に主導している」と公式に認めた。実験設計、コードレビュー、ハイパーパラメータ探索、訓練データのキュレーション補助が含まれる</li>
+          <li><strong>ART 酵素発見（9/24）との接続:</strong> 「自社の研究開発（AI 改善）」と「外部の科学研究（ライフサイエンス）」の両方で Claude エージェントの自律実行を本格展開していることになる</li>
+          <li><strong>自己改善ループへの懸念:</strong> AI ガバナンス研究者からは「Claude がトレーニングデータ・評価基準設計に関与するなら、客観性の担保をどう証明するか」という問いが引き続き提起されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（9/25）:</strong> <strong>OpenAI Codex rust-v0.157.0 安定版リリース + rust-v0.158.0-alpha.12 先行公開</strong>。<strong>OpenAI が ChatGPT モバイル（Plus・Pro）向けに音声ベースのエージェント機能「Work タブ」を追加</strong>——文書作成・メール下書き・Slack サマリーをスマートフォンから音声起動。<strong>Google が Antigravity CLI に antigravity-preview-09-2026 ハーネスをデプロイ</strong>——新 Files API・Credentials API でサンドボックス外のデータ授受が可能に。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex rust-v0.157.0 安定版リリース + rust-v0.158.0-alpha.12 先行公開（9/25）。ChatGPT モバイルに音声エージェント「Work タブ」追加——ドキュメント作成・Slack 要約を音声で起動</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.157.0 / ChatGPT Mobile / Work Tab / Voice Agent / Plus / Pro / September 25 2026</span><span class="card-source">Source: <a href="https://github.com/yaojiejia/agents-radar/issues/196">AI Ecosystem Digest 2026-09-25</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2274">AI Update Newsletter Watch #2274</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>rust-v0.157.0 安定版:</strong> 9/25 に OpenAI Codex の rust-v0.157.0 が安定版としてリリースされた</li>
+          <li><strong>ChatGPT モバイル「Work タブ」の音声エージェント機能:</strong> OpenAI は Plus・Pro プランのユーザー向けに ChatGPT モバイルアプリに「Work タブ」を追加した</li>
+          <li><strong>Claude Code との比較:</strong> Claude Code はデスクトップ・CLI ファーストの設計に対し、OpenAI は ChatGPT モバイルへの音声エージェント統合を先行させている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Antigravity CLI に antigravity-preview-09-2026 ハーネスをデプロイ（9/25）——新 Files API・Credentials API でエージェントサンドボックス外のデータ授受が可能に</div>
+      <div class="card-meta"><span class="badge">Google / Antigravity CLI / antigravity-preview-09-2026 / Files API / Credentials API / Gemini 3.8 Flash / September 25 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2274">AI Update Newsletter Watch #2274</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>antigravity-preview-09-2026 ハーネスの内容:</strong> Google が AI Studio と Interactions API に新しいハーネスをデプロイした</li>
+          <li><strong>新 Files API・Credentials API の追加:</strong> Files API はエージェントサンドボックスへのデータ入出力を管理し、Credentials API はエージェントが外部サービスに安全に認証するための仕組みを提供する</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント最新ベンチマーク（Morphllm 9/25 更新）——Claude Code・Codex・Antigravity CLI の三者比較</div>
+      <div class="card-meta"><span class="badge">AI Coding Agents / Benchmark / Claude Code / Codex / Antigravity CLI / Morphllm / September 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morphllm — Best AI Coding Agents 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>三者の差別化軸:</strong> Claude Code はエコシステム統合、OpenAI Codex はモバイル音声 UX、Google Antigravity CLI は Google インフラとの深い統合で差別化している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">TechRadar が 48k ファイル削除インシデントを詳報（9/25）——「103 秒で 48,218 ファイルが消えた」。r/ClaudeAI では「Claude Code はあなたのメールアドレスを毎回モデルに渡している」発見が話題</div>
+      <div class="card-meta"><span class="badge">Community / TechRadar / r/ClaudeAI / File Deletion / 48218 Files / Email Privacy / September 25 2026</span><span class="card-source"><a href="https://www.techradar.com/ai-platforms-assistants/do-not-let-programs-run-commands-on-your-machine-claude-code-allegedly-deleted-48-000-files-in-103-seconds-and-its-a-terrifying-warning-about-ai-agents">TechRadar</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>103 秒で 48,218 ファイルが削除された事案の TechRadar 詳報が公開された</li>
+          <li>Claude Code がユーザーのメールアドレスをシステムプロンプトに含めてモデルに送信していることが発覚しプライバシー懸念が広がっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「ChatGPT Work タブの音声エージェントを試してみた——スマホから Slack 要約・文書作成をワンタップで」</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / ChatGPT / Work Tab / Voice Agent / September 25 2026</span><span class="card-source">Reddit r/MachineLearning — 2026.09.25</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ChatGPT Work タブの音声エージェント機能を実際に試したレビューが多数投稿され好評</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「米・イラン協議は『重大な突破口なし』——ルビオが明言」「ゼレンスキーが Trump との会談を『前向き・生産的』と評価」「Trump のグリーンランド安全保障協定署名」</div>
+      <div class="card-meta"><span class="badge">Community / r/worldnews / Iran / Rubio / Zelenskyy / Trump / Greenland / September 25 2026</span><span class="card-source">Reddit r/worldnews — 2026.09.25</span></div>
+      <div class="card-body">
+        <ul>
+          <li>UNGA 週最終日の主要地政学トピックが r/worldnews で活発に議論された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/25）の主要トピック:</strong> 米・イラン協議「重大な突破口なし」——ルビオ国務長官が明言 / ゼレンスキーが Trump との会談を「前向き・生産的」と評価——エネルギー停戦・三者協議を提案 / Trump が UNGA 演説で「米国は行動した」と強調 / グリーンランド安全保障協定署名
+    </div>
+    <div class="card">
+      <div class="card-title">米・イラン協議「重大な突破口なし」——ルビオ国務長官が明言（9/25）。ホルムズ・核・制裁の 3 議題は継続中</div>
+      <div class="card-meta"><span class="badge">US-Iran / Rubio / Trump / UNGA / September 25 2026</span><span class="card-source">Source: PBS News · White House</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ルビオ国務長官が米・イラン協議で「重大な突破口はなかった」と明言</li>
+          <li>カタールが引き続き仲介役として機能しており、次回会合が数週間以内に実現する可能性が残っている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ゼレンスキーが Trump との UNGA 会談を「前向き・生産的」と評価——エネルギー停戦・三者協議（露・米・ウ）を提案</div>
+      <div class="card-meta"><span class="badge">Zelenskyy / Trump / Ukraine / Energy Ceasefire / Trilateral / UNGA / September 25 2026</span><span class="card-source">Source: PBS News</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ゼレンスキーは Trump との会談を「前向きで生産的」と評価し、三者会議への準備を表明</li>
+          <li>エネルギーインフラへの相互攻撃停止（エネルギー停戦）も議題として提起された</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Trump がグリーンランド安全保障協定に署名（9/24〜25）——デンマーク・グリーンランド両首脳と UNGA 傍らで合意。AI 規制の「グローバリスト的コントロール」を全面拒否</div>
+      <div class="card-meta"><span class="badge">Trump / Greenland / Security Agreement / AI Regulation / September 2026</span><span class="card-source">Source: White House · PBS News</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Trump はデンマーク首相・グリーンランド首相と安全保障協定に署名した</li>
+          <li>UNGA 演説で「AI をグローバリスト的にコントロールしようとする試みを全面拒否する」と宣言</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">UNGA 週（9/22〜25）総括——AI ガバナンス指針採択→ART 発見→AI 規制拒否宣言の 3 日間が重なった歴史的な一週間</div>
+      <div class="card-meta"><span class="badge">UNGA Week / AI Governance / ART / September 22-25 2026</span><span class="card-source">Source: Pushed Too Far — Weekly News Wrap September 25, 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>9/23 の UNGA AI ガバナンス指針採択→9/24 の ART 発見→9/25 の Trump AI 規制拒否宣言が 3 日間で連鎖した</li>
+          <li>来週の注目点: 米・イランの次回協議、三者協議提案へのロシアの反応、Claude Code ファイル削除問題への公式対応</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">更新あり</span>
+    </div>
+    <div class="alert">
+      <strong>Zenn 9/25 トレンド:</strong> 「API Management の AI ゲートウェイで飲み放題の居酒屋を作ってみた」（♥12）がトップ。「IT業界未経験の現場作業員が AI を参謀に年商○億企業の基幹システムを作り切った話」（♥6）が注目。「Claude Code はあなたのメールアドレスを毎回モデルに渡している」（♥3）がプライバシー観点で話題。
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn 9/25 新着トレンド——「AI ゲートウェイで飲み放題の居酒屋」♥12・「現場作業員が AI を参謀に基幹システムを作り切った」♥6・「実装前に AI と合意せよ！Quint」♥5・「Claude Code のメールアドレス問題」♥3</div>
+      <div class="card-meta"><span class="badge">Zenn / AI Gateway / Claude Code Privacy / September 25 2026</span><span class="card-source"><a href="https://github.com/shoji-miyoshi/test/issues/163">Zenn AI関連人気記事 2026-09-25</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>「API Management の AI ゲートウェイで飲み放題の居酒屋を作ってみた」♥12 がトップ</li>
+          <li>「IT業界未経験の現場作業員が、AI を参謀に年商○億企業の基幹システムを作り切った話」♥6 が注目</li>
+          <li>「Claude Code はあなたのメールアドレスを毎回モデルに渡している」♥3 がプライバシー観点で話題</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qiita 9/25 トレンド——「Jev で RAG 検索の爆速化＆コスト削減検証」「50代プログラミング未経験者が 7 年かけて AtCoder で入緑した話」</div>
+      <div class="card-meta"><span class="badge">Qiita / Jev / RAG / AtCoder / September 25 2026</span><span class="card-source"><a href="https://qiita.com/ennagara128/items/feaaef77c75102f0496b">Qiita — 2026年9月25日 今日のトレンド記事</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>「Jev で RAG 検索の爆速化＆コスト削減は実現できるのか検証してみた」が人気</li>
+          <li>「50代プログラミング未経験者が 7 年かけて AtCoder で入緑した話」が話題</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月25日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · AI Update Newsletter Watch · AI Agent Store · AI Ecosystem Digest (agents-radar) · Morphllm · TechRadar · PBS News · White House · Pushed Too Far Substack · Zenn/shoji-miyoshi · Qiita/ennagara128</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-09-24/index.html">前版（2026-09-24）</a></p>
+</footer>
+</body>
+</html>
