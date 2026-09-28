@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月27日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月28日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code AI エージェントが Windows プロジェクトで 48,000 ファイルを 103 秒で削除する重大インシデント——「dry-run 必須」論が国際テック界を席巻 / OpenAI Codex rust-v0.159.0-alpha.8/9 ——フルスクリーン /tui・デフォルト音声会話・/usage ダッシュボードを新搭載 / RAF Fairford 近傍で 5 名がテロ・爆発物準備容疑で逮捕——Trump 大統領「大きな被害を狙っていた」 / スイスが「永久武装中立」憲法化と NATO 協力禁止の国民投票を実施</p>
-  <p class="date">2026年9月27日（日）&nbsp;|&nbsp;<a href="2026-09-26/index.html">前版（9/26）</a></p>
+  <p class="subtitle">AWS Weekly Roundup: Claude Opus 5.5 on Amazon Bedrock・Strands ハーネスが正式統合 / Code w/ Claude SF 2026 イベント発表 / Codex rust-v0.159.0-alpha.11 リリース——history-aware prewarming・TUI 改善 / Trump がイランの停戦提案を拒否——イランが「最終戦争」警告 / ロシアがウクライナを猛爆・6 名死亡・53 名負傷 / タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災</p>
+  <p class="date">2026年9月28日（月）&nbsp;|&nbsp;<a href="2026-09-27/index.html">前版（9/27）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -69,48 +69,41 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/27）のハイライト:</strong> <strong>Claude Code AI エージェントが Windows プロジェクトで 48,218 ファイルを 103 秒で削除する重大インシデントが TechRadar・CBS News 等で一斉報道</strong>——「破壊的操作は dry-run と最小権限が必須」という警告として世界中の開発者に拡散。Claude Code 自体に本日は新規リリースなし（v2.1.283 継続）。Stars は 148,216（前日比 +109）。AI Update Newsletter Watch が 9/27 に計 6 回（00:59・06:12・12:02・16:52・19:53・22:36 UTC）更新を検出。
+      <strong>本日（9/28）のハイライト:</strong> <strong>AWS Weekly Roundup（9/28）で Claude Opus 5.5 on Amazon Bedrock と Strands エージェントハーネスの正式統合が発表</strong>——Amazon SES・AWS End User Messaging 向け AI エージェントスキルも追加、Claude Code / Codex / Cursor / Kiro から平文リクエストでメッセージングワークフローを完結できるように。Anthropic が「Code w/ Claude SF 2026」イベントを発表。Claude Code 本体は本日新規リリースなし（v2.1.283 継続）。AI Update Newsletter Watch が 9/28 に計 3 回（06:44 UTC 7 件・14:30 UTC 3 件・20:39 UTC 6 件）の更新を検出。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code AI エージェントが 48,218 ファイルを 103 秒で削除し謝罪——Windows の Git リポジトリを破壊する重大インシデントが TechRadar・CNN・CBS News 等で一斉報道。「ジャンクション経由の破壊的削除を dry-run なしで実行」——AI エージェント安全論が再燃</div>
-      <div class="card-meta"><span class="badge">Claude Code / File Deletion / AI Safety / Windows / Git / Dry-Run / September 27 2026</span><span class="card-source">Source: <a href="https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so">TechRadar</a> · <a href="https://cybersecuritynews.com/claude-code-agent-file-deletion/">CyberSecurityNews</a> · <a href="https://www.msn.com/en-us/news/other/claude-code-deleted-48000-files-in-103-seconds-in-a-dire-ai-agent-warning/ar-AA2cYo47">MSN</a></span></div>
+      <div class="card-title">AWS Weekly Roundup（9/28）: Claude Opus 5.5 on Amazon Bedrock 正式統合・Strands エージェントハーネス追加——Amazon SES 向け AI エージェントスキルで Claude Code から平文でメッセージングワークフローを完結。「GPT-6 Sol and Luna」も Bedrock に追加</div>
+      <div class="card-meta"><span class="badge">AWS / Amazon Bedrock / Claude Opus 5.5 / Strands / Amazon SES / AI Agent Skills / September 28 2026</span><span class="card-source">Source: <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/">AWS News Blog — AWS Weekly Roundup September 28, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>インシデントの概要:</strong> Reddit ユーザーが報告。Claude Code エージェントが Task #873「ミラー再構築」を自律的に実行する過程で、Windows ディレクトリジャンクション（614 個）を経由してライブの Dashboard ツリーにある 48,218 ファイルを削除し、Git オブジェクトストアも破壊した。削除は 10:10:31〜10:12:14 ET のわずか 103 秒で完了した</li>
-          <li><strong>原因の構造:</strong> エージェントは build_mirror.py がインプレースでミラーを更新できないと判断し、一時場所にある旧コピーを削除する Python スクリプトを自作。しかしその一時ディレクトリには Windows ジャンクションが含まれており、削除が本番ツリーまで波及した</li>
-          <li><strong>エージェントの謝罪:</strong> 削除完了後、Claude Code エージェントは「I broke something（壊してしまいました）」と謝罪。しかし既に Git オブジェクトストアまで破壊されており、復元は困難な状況となった</li>
-          <li><strong>専門家の提言（Archipelo 等）:</strong> (1) 破壊的操作は必ず dry-run とパスマニフェストを先行実行すること、(2) 即時削除ではなく可逆的な「移動」を使うこと、(3) 最小権限アカウントとファイルシステム制限サンドボックス内で実行すること——の 3 点が推奨された</li>
-          <li><strong>AI エージェント統治の課題:</strong> 「正当なメンテナンスタスクへの許可が、安全でない実装を実行する権限に転化してしまう」という構造的問題として、エグゼキューション検証プロトコル（Archipelo）などのガバナンス層の必要性が改めて議論されている</li>
+          <li><strong>Claude Opus 5.5 on Amazon Bedrock:</strong> Anthropic の最新フラグシップモデル Claude Opus 5.5 が Amazon Bedrock に正式統合。エンタープライズ顧客はマネージド API として Bedrock 経由でアクセスできるようになった</li>
+          <li><strong>Strands エージェントハーネスの統合:</strong> AWS が推進するエージェントオーケストレーションフレームワーク「Strands」が Claude Code・Codex・Cursor・Kiro との公式連携を開始。ハーネス上でのマルチエージェントワークフロー構築がより容易になった</li>
+          <li><strong>Amazon SES 向け AI エージェントスキル:</strong> Amazon SES（Simple Email Service）および AWS End User Messaging 向けの AI エージェントスキルが AWS MCP Server に追加。開発者は Claude Code から「このアドレスへメールを送信して」などの平文リクエストだけでメッセージングワークフローを完結できる</li>
+          <li><strong>GPT-6 Sol/Luna も Bedrock に追加:</strong> OpenAI の GPT-6 ファミリーの低コスト・高速モデルである Sol と Luna も同じ Roundup で Bedrock に追加されたと報告されており、AWS が主要 AI モデルのマルチベンダーハブとして機能を強化している姿勢が明確になった</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code v2.1.283 継続稼働（9/27 新規リリースなし）——Stars 148,216（前日比 +109）、18 件の新規 Issue・17 件クローズ。Terminal-Bench 4.0 で Claude Code + Fable 5.1 が 57.9% を記録——Codex + GPT-6 Astra の 58.2% に 0.3pt 差。AI Update Newsletter Watch が 9/27 に計 6 回の更新を検出</div>
-      <div class="card-meta"><span class="badge">Claude Code / v2.1.283 / Stars / Terminal-Bench 4.0 / Fable 5.1 / September 27 2026</span><span class="card-source">Source: <a href="https://github.com/yaojiejia/agents-radar/issues/207">AI Ecosystem Digest 2026-09-27 (agents-radar #207)</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2290">AI Update Newsletter Watch #2286–#2291</a></span></div>
+      <div class="card-title">Anthropic が「Code w/ Claude SF 2026」イベントを発表——サンフランシスコで開催予定の開発者向けカンファレンス。「AI の指数関数的成長を活かしたビルディング」をテーマに、Claude Code の最新機能・エコシステム統合・開発者ワークフローを紹介</div>
+      <div class="card-meta"><span class="badge">Anthropic / Code w/ Claude SF 2026 / Developer Conference / San Francisco / September 28 2026</span><span class="card-source">Source: <a href="https://claude.com/blog/code-w-claude-sf-2026-sf">Claude by Anthropic — Code w/ Claude SF 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>本日のリリース状況:</strong> 9/27 は Claude Code に新規リリース・マージ済み PR なし。v2.1.283（9/26 リリース）が継続稼働中</li>
-          <li><strong>Stars の動向:</strong> 148,216（9/27 時点）、前日（148,107）比 +109。先週の 48,000 ファイル削除インシデントの報道後も Stars は増加傾向を維持しており、開発者の関心の高さを示している</li>
-          <li><strong>Terminal-Bench 4.0 スコア:</strong> Claude Code + Fable 5.1 が 57.9% を記録。トップは Codex + GPT-6 Astra の 58.2%（コストは Claude Code + Fable 5.1 の半分以下）。コスト効率を考慮した場合、Claude Code が依然として多くのエンタープライズ向け選択肢として優位とする評価も</li>
-          <li><strong>AI Update Newsletter Watch 9/27 の更新回数:</strong> 00:59・06:12・12:02・16:52・19:53・22:36 UTC の計 6 回。前日の 5 回から増加しており、エコシステム全体での活発な動きが継続している</li>
-          <li><strong>継続中の MCP バリデーション問題（#97319）:</strong> ttlMs/cacheScope フィールドを含む正常な tools/list レスポンスが拒否される問題は未解決のまま。本日も 7 件のコメントが追加されており、MCP ツール統合を行っている開発者のあいだで注目を集めている</li>
+          <li><strong>イベントの概要:</strong> Anthropic がサンフランシスコで開催する「Code w/ Claude SF 2026」は、開発者向けカンファレンス。テーマは「Building on the AI exponential（AI の指数関数的成長を活かしたビルディング）」</li>
+          <li><strong>期待される内容:</strong> Claude Code の最新機能（MCP 統合・マルチエージェントワークフロー・hooks システム）の解説、エコシステムパートナーとの連携事例、実際の開発者によるユースケース発表などが予定されているとみられる</li>
+          <li><strong>48,000 ファイル削除インシデントへの言及の可能性:</strong> 先週（9/27）のインシデント報道を受けて、「エージェントへの権限設計と安全なワークフロー構築」についての Anthropic の公式見解が示される場になるかどうかも注目されている</li>
+          <li><strong>開発者コミュニティの反応:</strong> r/ClaudeCode では「ついに Anthropic が開発者と直接対話する場を作った」という歓迎コメントと、「48K ファイル削除問題への回答をしてほしい」という期待が混在している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Morph LLM が「2026年9月 AI コーディングエージェント スコアボード」を公開——Terminal-Bench 4.0・SWE-bench Verified 等 5 指標の総合評価で Codex + GPT-6 Astra が首位、Claude Code + Fable 5.1 が次点。「計画・大規模コードベースでは Claude Code、実行・ブラウザ操作では Codex」が開発者コンセンサスに</div>
-      <div class="card-meta"><span class="badge">AI Coding Agents / Benchmark / Terminal-Bench / SWE-bench / Claude Code / Codex / September 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM — Best AI Coding Agents September 2026</a> · <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-september-27-2026">AI Agents Directory — September 27, 2026</a></span></div>
+      <div class="card-title">Claude Code v2.1.283 継続稼働（9/28 新規リリースなし）——AI Update Newsletter Watch が 9/28 に計 16 件の更新を 3 回に分けて検出（06:44 UTC 7 件・14:30 UTC 3 件・20:39 UTC 6 件）。Terminal-Bench スコアが Claude Code + Fable 5.1 で 62.2 に更新（9/22 計測値）——Codex + GPT-6 Astra max の 61.6 を上回りトップに</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.283 / Terminal-Bench / Fable 5.1 / AI Newsletter Watch / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2293">AI Update Newsletter Watch #2293</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2294">#2294</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2295">#2295</a> · <a href="https://github.com/yaojiejia/agents-radar/issues/212">AI Ecosystem Digest #212</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>スコアボードの主要結果:</strong>
-            <ul>
-              <li>1位: Codex + GPT-6 Astra（Terminal-Bench 4.0: 58.2%）——コスト効率も最高水準</li>
-              <li>2位: Claude Code + Fable 5.1（Terminal-Bench 4.0: 57.9%）——コストは約 2 倍</li>
-              <li>3位: Gemini CLI + Gemini 2.5 Ultra（Terminal-Bench 4.0: 56.4%）</li>
-            </ul>
-          </li>
-          <li><strong>用途別の開発者コンセンサス（Hacker News 分析より）:</strong> 「Claude Code は大規模コードベースのブレインストーミング・計画策定に、Codex は実行・ブラウザ操作・コンピュータ操作タスクに向いている」というコンセンサスが形成された</li>
-          <li><strong>48,000 ファイル削除インシデントの影響:</strong> AI Agents Directory の 9/27 ブリーフでは、このインシデントが「アクション前の検証とロールバック能力の欠如という AI エージェントの共通課題」の象徴として取り上げられた</li>
+          <li><strong>9/28 の活動概要:</strong> 本日は Claude Code 本体に新規リリース・マージ済み PR なし。v2.1.283（9/25 リリース、Opus 5 デフォルト）が継続稼働中</li>
+          <li><strong>AI Update Newsletter Watch の更新検出:</strong> 06:44 UTC（7 件）・14:30 UTC（3 件）・20:39 UTC（6 件）の計 16 件を検出。前日（9/27）の 6 件から大幅増加しており、月曜日（週明け）のエコシステム全体での活発な活動が反映されている</li>
+          <li><strong>Terminal-Bench スコア更新（9/22 計測値が 9/28 公開）:</strong> Claude Code + Fable 5.1 が Terminal-Bench で 62.2 を記録し、Codex + GPT-6 Astra max の 61.6 を上回り首位に浮上した。コストは $12.39/タスクと競合比で高いが、「計画・大規模コードベース」領域での優位性が数値で裏付けられた形</li>
+          <li><strong>SWE-bench Verified スコア:</strong> Morph LLM の 9 月スコアボードでは、5 指標総合で Claude Code が 9 月に首位に返り咲いたとの評価も出ており、9/27 スコアボード（Terminal-Bench 単体では Codex 首位）との乖離についてコミュニティで議論中</li>
         </ul>
       </div>
     </div>
@@ -122,55 +115,41 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（9/27）:</strong> <strong>OpenAI Codex rust-v0.159.0-alpha.8/9 を同日リリース——フルスクリーン /tui・デフォルト音声会話（F8 トグル）・/usage ダッシュボード・デフォルト worktree セッション・Mermaid 図表対応という大型 UX アップデートを展開</strong>。OpenClaw Stars が 390,594 で引き続き首位（前日比 +71）。Qwen Code v0.24.6-nightly.20260926.d6f414190a もリリース——登録 URL の保持修正など。
+      <strong>競合ハイライト（9/28）:</strong> <strong>OpenAI Codex rust-v0.159.0-alpha.11 をリリース——history-aware prewarming（アイドルスレッドの事前ウォームアップ）・TUI の短時間ターン表示・Mermaid ラベルの句読点保持などを追加</strong>。前日 alpha.8/9 の大型リリースに続き、連日の更新が続いている。AI Open Source Trends 9/28 で Hindsight（エージェントメモリ学習フレームワーク）が急上昇——「本番エージェントで最も検証されたギャップ」として注目。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex rust-v0.159.0-alpha.8/9 を 9/27 同日リリース——フルスクリーン /tui モード・デフォルト音声会話（F8 トグル・/voice 設定）・/usage 分析ダッシュボード・デフォルト worktree セッション・Mermaid 図表＆数式レンダリング・/daemon コントロールを一挙搭載</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.159.0-alpha.8 / rust-v0.159.0-alpha.9 / TUI / Voice / Usage Dashboard / Worktree / September 27 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2291">AI Update Newsletter Watch #2287–#2291</a> · <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Updates September 2026</a></span></div>
+      <div class="card-title">OpenAI Codex rust-v0.159.0-alpha.11 リリース（9/28）——history-aware prewarming でアイドルスレッドを事前ウォームアップ、TUI に短時間ターン表示を追加、Mermaid ラベルの句読点保持を修正。前日 alpha.8/9 の大型 UX 更新に続く品質改善フェーズへ移行</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.159.0-alpha.11 / History-Aware Prewarming / TUI / Mermaid / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2293">AI Update Newsletter Watch #2293</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2295">#2295</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>フルスクリーン /tui モード（alpha.8）:</strong> <code>/tui</code> コマンドで次回起動時にフルスクリーン UI を有効化。トランスクリプト検索・マウス選択・右クリックコピーをサポート。ターミナル作業に集中した開発者向けの UX 改善</li>
-          <li><strong>音声会話がデフォルト ON（alpha.8）:</strong> 音声会話機能（F8 トグル）がデフォルトで有効化。<code>/voice</code> で設定ピッカーを表示、Linux・Windows 向けにオーディオランタイムをバンドル。音声での指示が日常的なワークフローに組み込まれることを想定している</li>
-          <li><strong>「/usage 分析ダッシュボード（alpha.8）:</strong> アカウントの使用状況・トークン合計・プラグインおよびスキルのアクティビティを可視化するダッシュボードが追加。エンタープライズ環境でのコスト管理に直結する機能</li>
-          <li><strong>worktree セッションがデフォルト ON（alpha.8）:</strong> エージェントコマンドセンターからタスクをステータス別にフィルタリングし、worktree セッションを直接作成できるようになった。worktree サポートがデフォルトで有効化</li>
-          <li><strong>Mermaid 図表・数式レンダリング（alpha.9）:</strong> レスポンス内で Mermaid 形式の図表や LaTeX 数式をインラインレンダリングする機能が追加。ドキュメント生成・設計図作成の用途が拡大</li>
-          <li><strong>/daemon コントロール（alpha.9）:</strong> バックグラウンドで動作するデーモンプロセスの起動・停止・状態確認が <code>/daemon</code> コマンドから管理できるようになった</li>
-          <li><strong>Stars 動向:</strong> 126,627（前日 126,487 から +140）。9/27 は alpha.8/9 に加え 29 件の新規 Issue・1 件クローズ・23 件のマージ済み PR・6 件のリリースと非常に活発な活動が続いている</li>
+          <li><strong>history-aware prewarming:</strong> アイドルスレッドが次のリクエスト受信前に会話履歴を踏まえて事前ウォームアップを行う機能。応答初動のレイテンシ削減を狙った最適化で、長時間セッションでの体感応答速度が向上する見込み</li>
+          <li><strong>TUI の短時間ターン表示改善:</strong> フルスクリーン /tui モード（alpha.8 で追加）において、1 秒未満で完了するターンの経過時間が正しく表示されるよう修正。「0s」と表示されていた問題が解消</li>
+          <li><strong>Mermaid ラベルの句読点保持:</strong> alpha.9 で追加された Mermaid 図表レンダリングにおいて、ラベル文字列内のコンマ・ピリオドなどの句読点が除去されてしまう問題を修正</li>
+          <li><strong>前日 alpha.8/9 リリースとの関係:</strong> フルスクリーン /tui・音声会話デフォルト ON・/usage ダッシュボードという大型 UX 改善（alpha.8/9）に続き、alpha.11 は品質改善・バグ修正フェーズに入ったことを示している</li>
+          <li><strong>9/28 の Stars:</strong> 詳細未公開だが、前日（126,627）からの継続増加傾向とみられる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenClaw Stars が 390,594 でトップ継続（前日比 +71）——DB コンテンション中のネイティブセッション応答性改善とエージェントターンごとの約 77MB メモリリーク修正が進行中。Qwen Code v0.24.6-nightly.20260926 リリース——登録 URL 保持修正・フィクスチャギャップのクローズ</div>
-      <div class="card-meta"><span class="badge">OpenClaw / Stars / Memory Leak / Qwen Code / v0.24.6-nightly / September 27 2026</span><span class="card-source">Source: <a href="https://github.com/yaojiejia/agents-radar/issues/207">AI Ecosystem Digest 2026-09-27 (agents-radar #207)</a></span></div>
+      <div class="card-title">Hindsight（エージェントメモリ学習フレームワーク）が AI Open Source Trends 9/28 で急上昇——「本番エージェントシステムで最も検証されたギャップはエージェントメモリ学習」として開発者に注目される。自己ホスト型・モジュラー型 AI システムへのシフトが加速</div>
+      <div class="card-meta"><span class="badge">Hindsight / Agent Memory / AI Open Source / Self-Hosted / Modular AI / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/datnguyenquy94/news-radar/issues/615">AI Open Source Trends 2026-09-28 (news-radar #615)</a> · <a href="https://github.com/huiyishalou/ai-trending-hub/issues/173">AI Trending Hub #173</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>OpenClaw Stars ランキング（9/27 時点）:</strong>
-            <ul>
-              <li>1位 OpenClaw: 390,594（+71）</li>
-              <li>2位 Claude Code: 148,216（+109）</li>
-              <li>3位 OpenAI Codex: 126,627（+140）</li>
-              <li>4位 Gemini CLI: 107,161（-6）</li>
-              <li>5位 Qwen Code: 28,144</li>
-            </ul>
-          </li>
-          <li><strong>OpenClaw の主要修正進捗:</strong> DB コンテンション中にネイティブセッションの応答性を維持する改善（#158396）と、エージェントターンごとに約 77MB のメモリが残存するリーク問題（#157842）の対応が引き続き進行中</li>
-          <li><strong>Qwen Code v0.24.6-nightly.20260926 の変更内容:</strong> 登録 URL が正しく保持されない問題の修正・フィクスチャギャップのクローズが主な変更点。グローバルインストール時の ripgrep 実行権限問題（#12679）は引き続き未解決</li>
+          <li><strong>Hindsight の概要:</strong> エージェントが過去のセッション・エラー・成功パターンから学習して次回の判断に活かすメモリ学習フレームワーク。「エージェントは指示を受けて実行するだけでなく、経験から改善できるべき」という思想に基づく</li>
+          <li><strong>なぜ今注目されるか:</strong> Claude Code の 48,000 ファイル削除インシデント（9/27）を受けて「エージェントが過去の失敗から学んで同じ誤りを繰り返さない仕組み」への関心が急上昇。Hindsight はその具体的な実装例として引用されている</li>
+          <li><strong>自己ホスト型・モジュラー型 AI へのシフト:</strong> AI Open Source Trends 9/28 では、2026 年後半の主要トレンドとして「制御・速度・カスタマイズを求めてセルフホスト型・モジュラー型 AI システムへの移行が加速している」と総括されている</li>
+          <li><strong>ローカル音声 AI の台頭:</strong> 同レポートでは、プライバシー重視のユーザー向けにローカル完結型の音声クローニング・吹き替え機能を提供するプロジェクトが急増しており、Codex の音声デフォルト ON（alpha.8）とは対照的なアプローチとして注目される</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Gemini CLI 9/27——新規リリース 1 件（バージョン詳細は未公開）。Hacker News AI Digest 9/27：「AI エージェントの 48K ファイル削除インシデント」と「Codex の /tui フルスクリーンモード」が同日 HN トレンド入り。開発者コミュニティで「エージェント権限の最小化」「dry-run の標準化」議論が活発化</div>
-      <div class="card-meta"><span class="badge">Gemini CLI / Hacker News / AI Safety / Dry-Run / Minimal Permission / September 27 2026</span><span class="card-source">Source: <a href="https://github.com/kouweizhu/agents-radar/issues/228">Hacker News AI Digest 2026-09-27 (kouweizhu/agents-radar #228)</a> · AI Ecosystem Digest 2026-09-27</span></div>
+      <div class="card-title">AI コーディングエージェント比較（9/28 最新）: Claude Code + Fable 5.1 が Terminal-Bench 62.2 でトップ、Codex + GPT-6 Astra max が 61.6 で次点——r/ClaudeCode が週次 4,200+ コントリビューターで r/Codex（1,200）の 3.5 倍。HN では「どのモデルが最良か」から「ワークフローフィット」へ議論が移行</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / Terminal-Bench / Benchmark / Community / HN / September 28 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/comparisons/codex-vs-claude-code">Morph LLM — Codex vs Claude Code</a> · <a href="https://www.morphllm.com/claude-code-reddit">Claude Code Reddit Analysis</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Gemini CLI の本日の動き:</strong> 9/27 に 1 件の新規リリースが確認された（Stars: 107,161）。前日の v0.62.0-nightly.20260925 に続く更新とみられるが、詳細は公開されていない</li>
-          <li><strong>Hacker News 9/27 AI トレンド:</strong>
-            <ul>
-              <li>「Claude Code エージェントが 48K ファイルを削除」——「なぜ破壊的操作に dry-run がデフォルトで強制されていないのか」という根本的な設計批判が HN で 200 件超のコメントを集めた</li>
-              <li>「Codex の /tui フルスクリーンモード」——「ターミナル内完結型のエージェント UI として最も洗練されたアプローチ」という高評価が多数</li>
-            </ul>
-          </li>
-          <li><strong>「エージェント権限最小化」の議論:</strong> 48K ファイル削除インシデントを受けて、「エージェントが自律的に実行できる操作のスコープを宣言的に制限する標準仕様（AAMAS: Autonomous Agent Action Manifest Specification）の必要性」を訴える提案が HN・Reddit で同時に浮上している</li>
+          <li><strong>ベンチマーク最新スコア:</strong> Claude Code + Fable 5.1 が Terminal-Bench 62.2（$12.39/タスク）でトップ。Codex + GPT-6 Astra max が 61.6 で次点。9/27 スコアボード（Terminal-Bench 4.0 のみ：Codex 58.2 vs Claude Code 57.9）との差は、計測時期と使用指標の違いによるもの</li>
+          <li><strong>コミュニティ規模の差異:</strong> r/ClaudeCode が週次 4,200+ コントリビューターで r/Codex（1,200）の約 3.5 倍。Claude Code がターミナルネイティブ開発・長時間セッションコンテキストで優位という評価が定着しつつある</li>
+          <li><strong>HN の議論の変化:</strong> 「Claude Code vs Codex: どちらが最良のモデルか」という比較から「自分のワークフローにどちらがフィットするか」という実用的な議論へと HN のテーマが移行。Claude Code は CLAUDE.md・サブエージェント・hooks・スラッシュコマンドを習得した開発者で生産性向上の報告が多い</li>
         </ul>
       </div>
     </div>
@@ -182,37 +161,34 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI「Claude Code に 48,000 ファイル消された——103 秒で Git リポジトリが全滅した話」が急上昇。「dry-run を強制するフックを CLAUDE.md に書け」「Windows のジャンクションは危険」「Anthropic はサンドボックス強制を製品仕様にすべき」という3種類の反応が並行して展開</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / File Deletion / Safety / Windows Junction / Dry-Run / September 27 2026</span><span class="card-source">Reddit r/ClaudeAI — 2026.09.27</span></div>
+      <div class="card-title">r/ClaudeAI 週明け（9/28）——「Code w/ Claude SF 2026 イベントに何を期待するか」スレッドが急上昇。「48K ファイル削除への Anthropic の公式回答を求める」声多数。「Claude Code が Terminal-Bench で Codex を逆転した」報告に「どのベンチを信じればいいのか」という疑問も</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Code w/ Claude / SF 2026 / Terminal-Bench / September 28 2026</span><span class="card-source">Reddit r/ClaudeAI — 2026.09.28</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>投稿の反響:</strong> 元の Reddit 投稿（r/ClaudeAI）が TechRadar に取り上げられたことで r/ClaudeAI の関連スレッドが急増。「同じことが自分にも起きかけた」という追体験報告が相次いだ（+5,200）</li>
-          <li><strong>「dry-run フックを CLAUDE.md に書け」派:</strong> 「CLAUDE.md に<code>Before running any rm, del, rmdir, or shutil.rmtree: always do a dry-run first</code>と書いておけばほぼ防げる」という実践的な対策が広まった（+2,100）</li>
-          <li><strong>「Windows ジャンクション問題」派:</strong> 「Windows のディレクトリジャンクションは Unix シンボリックリンクより危険。Claude Code はクロスプラットフォームでのジャンクション追跡を明示的に学習すべき」という指摘（+1,800）</li>
-          <li><strong>「Anthropic への要望」派:</strong> 「--dry-run フラグを全ての破壊的ツールにデフォルト強制する製品仕様にしてほしい。ユーザーが CLAUDE.md を書くまで安全でないのはおかしい」という要望投稿（+3,400）が上位に</li>
+          <li><strong>Code w/ Claude SF 2026 への期待:</strong> 「エージェントの権限設計に関する Anthropic の公式ガイドラインを発表してほしい」（+3,800）・「MCP エコシステムのロードマップを聞きたい」（+2,900）・「hooks と CLAUDE.md のベストプラクティス集を出してほしい」（+2,400）が上位</li>
+          <li><strong>48K 問題への継続的な関心:</strong> 9/27 のインシデント報道から 1 日経っても関連スレッドが継続。「ベスト CLAUDE.md テンプレート（dry-run 強制版）」シェアスレッドが 500+ コメントを集めた</li>
+          <li><strong>ベンチマーク信頼性への疑問:</strong> 「9/27 は Codex が首位なのに 9/28 は Claude Code が首位。同じ Terminal-Bench なのになぜ結果が変わるのか」という疑問投稿に、「計測指標の違い（Terminal-Bench 4.0 単体 vs 5 指標総合）」という解説コメントが上位に</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/OpenAI「Codex alpha.8/9 の /tui フルスクリーンと音声会話デフォルト ON がすごい——これが次世代ターミナル AI の完成形か」。/usage ダッシュボードでトークンコストが可視化され「月 $400 使ってたことが判明した」報告も相次ぐ。前日の 401 エラー問題は API キー再入力で概ね解決</div>
-      <div class="card-meta"><span class="badge">Community / r/OpenAI / Codex / TUI / Voice / Usage Dashboard / Token Cost / September 27 2026</span><span class="card-source">Reddit r/OpenAI — 2026.09.27</span></div>
+      <div class="card-title">r/MachineLearning「Hindsight: エージェントメモリ学習フレームワーク——本番エージェントシステムの最重要ギャップを埋めるか」が月曜朝のトップ。「Claude Code が 48K ファイル消したのも、メモリ学習があれば防げた可能性」という論点も浮上</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Hindsight / Agent Memory / AI Safety / September 28 2026</span><span class="card-source">Reddit r/MachineLearning — 2026.09.28</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>/tui フルスクリーンへの反応:</strong> 「これでターミナルから一歩も出なくて済む。VSCode 要らなくなるかも」という評価と「トランスクリプト検索が地味に超便利」という声が上位を占めた（+4,100）</li>
-          <li><strong>音声会話デフォルト ON への反応:</strong> 「オフィスで使ってる人はすぐ /voice で OFF にしたほうがいい」という実用的なコメントが支持を集めた（+2,300）</li>
-          <li><strong>/usage ダッシュボードのインパクト:</strong> 「これまでいくら使ってるか把握できていなかったが、/usage を開いたら月 $400 超えてた」という報告が多数。「透明性は正義だが財布には厳しい」というコメントが+1,600</li>
-          <li><strong>前日の 401 エラー問題:</strong> 「設定から API キーを再入力したら直った。土曜に騒いでた人は試して」という解決報告がトップコメントに（+3,200）。Windows ファイアウォール問題はまだ一部で継続</li>
+          <li><strong>Hindsight スレッドの要点:</strong> 「エージェントが会話をまたいで自分の誤りから学習できれば、同じ構造的ミスを繰り返さなくなる」という主張に対し、「学習データの品質と悪いパターンの強化リスクをどう管理するか」という懐疑的コメントが拮抗（それぞれ+2,100 / +1,700）</li>
+          <li><strong>48K 問題との関連:</strong> 「Windows ジャンクション経由の削除が危険という知識をエージェントが記憶していれば……」という仮定的考察投稿が+1,400 の支持を集め、エージェントメモリと安全性の接点として議論された</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/worldnews「RAF Fairford 近傍で 5 名がテロ・爆発物準備容疑で逮捕——Trump が『大きな被害を狙っていた』とコメント」「スイスが NATO 協力禁止の中立強化国民投票を実施——ロシア・ウクライナ戦争が引き起こした欧州 NATO 同調圧力への反動か」が同日トップ</div>
-      <div class="card-meta"><span class="badge">Community / r/worldnews / RAF Fairford / UK / Terror / Switzerland / Neutrality / NATO / September 27 2026</span><span class="card-source">Reddit r/worldnews · r/europe — 2026.09.27</span></div>
+      <div class="card-title">r/worldnews「Trump がイランの停戦提案を拒否——イランが『最終戦争（doomsday war）』警告」「ロシアがウクライナを猛爆・6 名死亡・53 名負傷」「タイ・ミャンマーで洪水土砂崩れ各 8 名死亡、タイ 170 万人超が被災」が 9/28 トップ 3</div>
+      <div class="card-meta"><span class="badge">Community / r/worldnews / Iran / Ukraine / Russia / Thailand / Myanmar / September 28 2026</span><span class="card-source">Reddit r/worldnews — 2026.09.28</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>RAF Fairford 逮捕への反応:</strong> 「イラン戦争が始まって以来、英米軍事施設へのテロリスクが急上昇している。B-2 爆撃機の拠点を狙ったなら影響は計り知れなかった」という分析コメントが+5,800</li>
-          <li><strong>スイス国民投票への反応（r/europe）:</strong> 「スイスがロシアへの制裁に参加したことで生じた中立論争の決着点——結果次第で欧州の結束に亀裂が入る可能性」という懸念が上位（+3,100）。「スイスの武器輸出禁止が NATO 再輸出の障害になっている現実もある」という補足コメントが+1,400</li>
-          <li><strong>ウクライナ停戦交渉への期待感:</strong> 「UAE でのロシア・米国・ウクライナ三者協議が現実になれば、首都攻撃停止合意の次のステップが動き出す」という楽観的見方と「ロシアが 170 機の Shahed を一晩で飛ばしておいて交渉する気があるのか」という懐疑論が拮抗（それぞれ+2,800 / +2,400）</li>
+          <li><strong>Trump のイラン停戦拒否:</strong> 「イランが実際に停戦を望んでいるなら交渉テーブルに着くはずだが、条件が多すぎる」という Trump の発言と「イランが『最終戦争』に備えると発言——核施設が標的になるのか」という懸念が拮抗（+4,200 / +3,800）</li>
+          <li><strong>ロシアのウクライナ猛爆:</strong> 「停戦合意（9/26）の翌々日に猛爆——合意は存在しないも同然」という批判コメント（+5,600）と「エネルギーインフラが標的になれば冬季に向けて壊滅的な影響」という懸念（+3,100）</li>
+          <li><strong>タイ洪水:</strong> 「バンコク含む 170 万人——2011 年洪水以来最大規模の可能性」という分析が+2,800 を獲得</li>
         </ul>
       </div>
     </div>
@@ -221,56 +197,65 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（9/27）の主要トピック:</strong> <strong>RAF Fairford 近傍で 5 名がテロ・爆発物準備容疑で逮捕——Trump 大統領「大きな被害を狙っていた」、B-2 爆撃機拠点に対する初のテロ未遂事案</strong> / <strong>スイスが「永久武装中立」憲法化と NATO 協力禁止の国民投票を実施——欧州の NATO 同調圧力への反動</strong> / <strong>ロシアが一夜で 170 機の Shahed ドローンをウクライナに発射する中、米国が UAE でのロシア・米国・ウクライナ三者会談を提案</strong> / <strong>イランが米国に書面で 60 日停戦ロードマップを提示——ホルムズ海峡の段階的再開と米国の封鎖解除を条件に</strong>
+      <strong>本日（9/28）の主要トピック:</strong> <strong>Trump がイランの 60 日停戦ロードマップを拒否——イランが「最終戦争（doomsday war）」警告を発出、ホルムズ海峡でイランが米水中ドローン拿捕を主張（米軍は否定）</strong> / <strong>ロシアがウクライナ全土を猛爆——6 名死亡・53 名負傷、製鉄所も攻撃。Trump がウクライナに Patriot 迎撃弾製造ライセンスを供与へ</strong> / <strong>ソマリア南西州で元大統領派が武装蜂起——バイドアで爆発物ドローン・自爆車両を使った大規模戦闘</strong> / <strong>タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災——バンコク含む 28 府県で浸水</strong> / <strong>ネパールで雪崩——登山客 2 名死亡・14 名行方不明、マナン郡ネムジュン山麓ベースキャンプ</strong>
     </div>
     <div class="card">
-      <div class="card-title">英国 RAF Fairford 近傍で 5 名がテロ・爆発物準備容疑で逮捕（9/27）——Trump 大統領「大きな被害を狙っていた」。B-2 爆撃機拠点に対する初のテロ未遂事案として英米両国で主要ニュース。軍爆発物処理班が出動、数十戸を避難。「3 台の不審車両が基地方向に向かっていた」との通報で早朝に逮捕</div>
-      <div class="card-meta"><span class="badge">UK / RAF Fairford / Terror / Explosives / B-2 Bomber / US Forces / Trump / September 27 2026</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/09/27/uk/fairford-arrests-uk-raf-us-intl">CNN</a> · <a href="https://www.cbsnews.com/news/england-raf-fairford-us-military-air-force-bomb-disposal/">CBS News</a> · <a href="https://www.cnbc.com/2026/09/27/police-declare-major-incident-at-uk-ai-base-used-by-us-forces.html">CNBC</a> · <a href="https://www.npr.org/2026/09/27/nx-s1-5982480/multiple-arrests-suspicion-explosives-offenses-uk-base-us-forces">NPR</a></span></div>
+      <div class="card-title">Trump がイランの 60 日停戦ロードマップを拒否（9/28）——「交渉する意思があるなら条件なしに来るべき」。イランが「最終戦争（doomsday war）」警告。ホルムズ海峡でイランが米水中ドローン拿捕を主張——米軍が否定</div>
+      <div class="card-meta"><span class="badge">Iran / Trump / Ceasefire Rejected / Doomsday War / Hormuz / Underwater Drone / September 28 2026</span><span class="card-source">Source: <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">Global Security — Iran War Day 213 Update 28 September 2026</a> · <a href="https://wng.org/podcasts/monday-morning-news-september-28-2026-1790522942">WORLD — Monday Morning News September 28, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>逮捕の経緯:</strong> 英国警察が早朝に「3 台の不審車両が RAF Fairford（英グロスターシャー州）方向に向かっている」との通報を受けて対応。5 名を爆発物法・テロ法違反容疑で逮捕した。軍の爆発物処理班が出動し、基地周辺の数十戸が避難した</li>
-          <li><strong>RAF Fairford の戦略的重要性:</strong> RAF Fairford は米空軍の B-2 ステルス爆撃機がイラン軍事目標への攻撃のために運用しているイラン戦争の主要拠点。NATO が使用するこの基地を標的にしたテロ未遂は今回が初めて</li>
-          <li><strong>Trump 大統領のコメント:</strong> CNBC 等への声明で「逮捕された男たちは基地に対して大きな被害を与えることを狙っていた。英国当局の素早い対応に感謝する」と述べた</li>
-          <li><strong>UK 当局の声明:</strong> 英国対テロ警察が捜査を主導。「容疑者の国籍・動機は捜査中」としており、イランとの関連については現時点でコメントしていない</li>
+          <li><strong>Trump の拒否:</strong> イランが 9/27 期限で提示した「60 日停戦・ホルムズ段階的再開・米封鎖解除」のロードマップを Trump 政権が正式に拒否。「交渉する意思があるなら条件なしに来るべきだ。条件付き提案は停戦提案ではなく投降要求だ」と表明した</li>
+          <li><strong>イランの「最終戦争」警告:</strong> 拒否を受けてイランの最高指導者が「もし米国が戦争継続を選ぶなら、われわれは最終的かつ決定的な戦争（doomsday war）に備えている」と警告。核施設の防衛態勢強化をほのめかす発言として受け止められている</li>
+          <li><strong>ホルムズ海峡の水中ドローン問題:</strong> イランが「ホルムズ海峡（9/28）で米軍の水中ドローン 1 機を拿捕した」と主張。米軍は「同日の拿捕の事実はない」と否定。双方の主張が食い違うまま情報戦が続いている</li>
+          <li><strong>イラン戦争 Day 213 の概況:</strong> 大型攻撃オペレーションこそないものの、ホルムズ海峡・ペルシャ湾での海上摩擦と情報戦が継続。外交的な停戦への道筋は引き続き不透明な状況</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">スイスが「永久武装中立」憲法化と NATO 協力禁止の国民投票を実施（9/27）——SVP（国民党）が提案、ロシアへの制裁参加で生じた中立論争に決着をつける試み。「EU・NATO との平時協力禁止」「制裁への参加禁止」を盛り込む急進的内容で欧州パートナーが懸念を表明</div>
-      <div class="card-meta"><span class="badge">Switzerland / Referendum / Neutrality / NATO / SVP / EU Sanctions / September 27 2026</span><span class="card-source">Source: <a href="https://www.usnews.com/news/world/articles/2026-09-27/swiss-vote-on-tightening-neutrality-rules-ending-peacetime-cooperation-with-nato">US News</a> · <a href="https://www.audacy.com/wwl/news/world/switzerland-neutrality-referendum-russia-ukraine-nato-eu-7c14fbd4a96ad29ad60c9896f8475c0d">Audacy/WWL</a></span></div>
+      <div class="card-title">ロシアがウクライナ全土を猛爆（9/28）——ドローン・弾道ミサイル・製鉄所攻撃で 6 名死亡・53 名負傷。Trump がウクライナに Patriot PAC-3 迎撃弾の国内製造ライセンスを供与する方針を表明——防衛専門家「短期的には不十分、長期的には重要」</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drone / Missile / Patriot / Trump / Air Defense / September 28 2026</span><span class="card-source">Source: <a href="https://www.forbes.com/sites/katyasoldak/2026/09/28/monday-september-28-russias-war-on-ukraine-news-and-information-from-ukraine/">Forbes — Monday September 28, Russia's War On Ukraine</a> · <a href="https://kyivindependent.com/units-of-ukraines-army-ordered-to-halt-fighting-as-us-envoys-set-to-visit-ukraine-russia/">Kyiv Independent</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>国民投票の内容:</strong> SVP（スイス国民党）が提案した憲法改正案。(1) 永久武装中立の憲法明文化、(2) EU・NATO との平時軍事協力の禁止、(3) 制裁措置への参加禁止——の 3 点を含む急進的な内容</li>
-          <li><strong>背景:</strong> スイスは 2022 年のロシアのウクライナ侵攻以来、EU の対ロシア制裁に例外的に参加し伝統的な「武装中立」から踏み出したとして国内で論争が起きていた。SVP はこれを「中立の放棄」と批判し、憲法改正で揺り戻しを図る</li>
-          <li><strong>欧州パートナーの懸念:</strong> NATO 加盟国・EU 各国は「スイスが制裁から抜ければロシアの制裁回避ルートになり得る」として投票結果を注視。武器再輸出問題（スイス製武器を NATO 加盟国経由でウクライナに送れない問題）への波及も懸念される</li>
-          <li><strong>投票結果の見通し:</strong> 世論調査では否決見通しが多いが、拮抗している地域もあるとされており、開票作業が注目を集めている</li>
+          <li><strong>9/28 の攻撃概況:</strong> ロシアがキーウを含むウクライナ全土にドローン・弾道ミサイルによる攻撃を実施。少なくとも 6 名が死亡・53 名が負傷。ウクライナ製鉄所にも複数の攻撃が加えられ、冬季に向けた産業インフラへの打撃が懸念される</li>
+          <li><strong>首都攻撃停止合意（9/26）の形骸化:</strong> 9/26 に合意した「首都への攻撃停止」がわずか 2 日で事実上崩壊したとウクライナ側は主張。停戦合意の実効性への疑問が改めて浮上している</li>
+          <li><strong>Patriot 製造ライセンス供与方針:</strong> Trump 大統領がウクライナへの Patriot PAC-3 迎撃弾の国内製造ライセンスを供与する方針を表明。防衛専門家は「製造立ち上げに 18〜24 か月を要するため、今冬の弾薬不足は解消されない。しかし長期的には自立した防衛産業の構築に向けた重要な一歩」と評価している</li>
+          <li><strong>UAE での三者会談の行方:</strong> 9/27 に提案された UAE でのロシア・米国・ウクライナ技術レベル三者会談は、9/28 時点でまだ日程が確定していない。ゼレンスキーは「米国側から具体的な提案を待っている」と繰り返している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ロシアが一夜で 170 機の Shahed ドローンをウクライナへ発射、米国が UAE でのロシア・米国・ウクライナ三者会談を提案（9/27）——ゼレンスキーが「技術レベルの三者協議を受け入れる用意がある」と表明。首都攻撃停止合意（9/26）の翌朝に大規模ドローン攻撃という矛盾した状況が続く</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Ceasefire / Shahed Drone / UAE / Three-Way Talks / Zelenskyy / September 27 2026</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks">Al Jazeera</a> · <a href="https://kyivindependent.com/units-of-ukraines-army-ordered-to-halt-fighting-as-us-envoys-set-to-visit-ukraine-russia/">Kyiv Independent</a></span></div>
+      <div class="card-title">ソマリア南西州で元大統領派が武装蜂起（9/28）——バイドアで爆発物ドローン・自爆車両・銃撃による大規模戦闘が勃発。旧大統領アブディアジズ・ラフタガレン派が現政権軍に攻撃を開始、ソマリア連邦政府が「クーデター未遂」と非難</div>
+      <div class="card-meta"><span class="badge">Somalia / South West State / Baidoa / Armed Conflict / Laftagareen / September 28 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_28">Wikipedia — Portal: Current events 2026 September 28</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-monday-september-28-2026/">Havana Times — International News Briefs September 28, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ロシアの大規模ドローン攻撃:</strong> 9/26〜27 夜間にかけてロシアが 170 機の Shahed 型攻撃ドローンをウクライナに向けて発射。首都キーウへの攻撃停止合意（9/26）の翌朝に大規模攻撃が行われた形となり、合意の実効性を疑問視する声が上がっている</li>
-          <li><strong>UAE での三者会談提案:</strong> 米国がアラブ首長国連邦（UAE）を会場として、ロシア・米国・ウクライナの技術レベル三者会談を提案。ゼレンスキーは「米国側から日程の提案を待っている」と述べた</li>
-          <li><strong>ゼレンスキーの立場:</strong> 「技術レベルの三者協議の枠組み」を受け入れる用意があると表明しつつも、「エネルギー停戦とその後の包括的停戦がセットでなければ意味がない」という条件を維持している</li>
-          <li><strong>クシュナー・ウィトコフ特使の動き:</strong> 9/26 にモスクワ→キーウを移動した両特使は、9/27 は中東経由で UAE との調整を行っているとみられる</li>
+          <li><strong>武装蜂起の概要:</strong> ソマリア南西州の旧大統領アブディアジズ・ラフタガレン派が、現アデン・マドベ政権軍及びハサン・シェイク・モハムド連邦政府への大規模武装攻撃を開始。首都バイドアで銃撃・爆発物ドローン・自爆車両を使った多面的な攻撃が展開された</li>
+          <li><strong>ソマリア連邦政府の反応:</strong> 「これは明らかにクーデター未遂であり、ソマリア国内の民主主義と安定に対する重大な挑戦だ」と非難声明を発出。連邦軍の増援を南西州に向けているとされる</li>
+          <li><strong>地域への影響:</strong> アフリカの角（Horn of Africa）における勢力均衡への影響が懸念される。al-Shabaab が混乱に乗じて活動を拡大する可能性も指摘されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イランが米国に 60 日停戦ロードマップを書面提示（9/27 期限）——段階的ホルムズ海峡再開・米封鎖解除・イランの対アラブ諸国攻撃停止を条件に。エストニア議会が Ülle Madise 氏を第 7 代大統領に選出、10 月 12 日就任予定</div>
-      <div class="card-meta"><span class="badge">Iran / Ceasefire Roadmap / Hormuz / US Blockade / Estonia / Ülle Madise / President / September 27 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/2026_Estonian_presidential_election">Wikipedia — 2026 Estonian presidential election</a> · <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">Global Security — Iran War OPREP</a></span></div>
+      <div class="card-title">タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災（9/28）——バンコク含む 28 府県で浸水。2011 年大洪水以来最大規模の可能性。ネパールで雪崩——ネムジュン山麓ベースキャンプで登山客 2 名死亡・14 名行方不明</div>
+      <div class="card-meta"><span class="badge">Thailand / Myanmar / Flooding / Landslide / Nepal / Avalanche / Natural Disaster / September 28 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_28">Wikipedia — Portal: Current events 2026 September 28</a> · <a href="https://www.democracynow.org/2026/9/28/headlines">Democracy Now! — Headlines September 28, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>イランの停戦ロードマップの内容:</strong> イランが米国（仲介者経由）に書面で提示した停戦案。(1) 最大 60 日間の地域全体での停戦、(2) ホルムズ海峡の段階的再開、(3) 米国による海上封鎖の解除、(4) イランによる周辺アラブ諸国への攻撃停止——を柱とする。この提案への米国の正式回答期限が 9/27〜28 とされていた</li>
-          <li><strong>イラン外相の発言:</strong> アラグチー外相は「Trump 側の初期反応は受け取ったが、仲介者を通じた正式な応答はまだ届いていない」と述べており、交渉が最終段階に入っている可能性がある</li>
-          <li><strong>エストニア新大統領:</strong> エストニア議会（リーギコグ）が法務官（Chancellor of Justice）のÜlle Madise 氏を第 7 代大統領に選出。10 月 12 日に就任し、ロシアとの国境を接する NATO フロントライン国として、ウクライナ支持姿勢を継続することが期待されている</li>
-          <li><strong>イラン戦争 Day 210 の現状:</strong> ペルシャ湾・ホルムズ海峡周辺での軍事的緊張が継続しながらも、書面による停戦提案という外交的前進があった。米国の応答次第で今後数日間の情勢が大きく変わる可能性がある</li>
+          <li><strong>タイの洪水被害:</strong> 洪水と土砂崩れで少なくとも 8 名が死亡。バンコクを含む 28 府県（タナウィタリ地域を含む）で浸水が発生し、170 万人超が被災。2011 年の大洪水（当時の経済損失約 450 億ドル）以来最大規模の可能性があると現地報道</li>
+          <li><strong>ミャンマーの洪水被害:</strong> ミャンマーでも洪水と土砂崩れにより少なくとも 8 名が死亡。タナウィタリ地方で 20〜30 名が行方不明となっており、救出作業が続いている</li>
+          <li><strong>ネパールの雪崩:</strong> マナン郡のヒマラヤ山脈ネムジュン山（7,140m）のベースキャンプ付近で雪崩が発生。登山客 2 名が死亡し、14 名が行方不明に。大雪のため救助ヘリの離着陸が困難な状況が続いている</li>
+          <li><strong>気候変動との関連:</strong> タイの気象当局は「9 月末から 10 月初旬にかけての季節外れの集中豪雨は気候変動による降水パターンの変化が影響している可能性がある」とコメント。東南アジア各国で異常気象への対応が急務になっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">スペイン・マドリードで住宅危機抗議デモ——数万人が行進、87 歳女性の立ち退きに抗議しプエルタ・デル・ソルでキャンプイン。RAF Fairford テロ未遂（5 名逮捕、9/27）の捜査継続——容疑者 5 名は 20 代英国籍のロンドン在住者と判明</div>
+      <div class="card-meta"><span class="badge">Spain / Madrid / Housing Crisis / Protest / UK / RAF Fairford / Terror Investigation / September 28 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-september-28-2026-0">Morning Star — World in Brief September 28, 2026</a> · <a href="https://everythingbriefing.substack.com/p/september-28-2026">Everything Briefing — September 28, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>スペイン住宅危機抗議:</strong> マドリードで数万人が住宅危機（家賃高騰・強制立ち退き）に抗議する大規模デモを実施。87 歳の女性が賃貸アパートから強制退去させられた事例がきっかけとなり、歴史的広場プエルタ・デル・ソルで一夜を過ごす「キャンプイン」が行われた</li>
+          <li><strong>RAF Fairford テロ未遂の続報:</strong> 9/27 に逮捕された 5 名は全員が 20 代の英国籍男性でロンドン在住と判明。対テロ警察が捜査を主導しており、容疑者の国籍・動機・イランとの関連については「捜査中」として引き続き発表していない</li>
         </ul>
       </div>
     </div>
@@ -282,29 +267,29 @@
       <span class="section-count">更新あり</span>
     </div>
     <div class="alert">
-      <strong>Zenn 9/27 トレンド:</strong> 「Claude Code のクラウドセッションで、PC を閉じていても毎朝 AI ニュースを Notion に届ける」（motani、9/26）、「Cloudflare 上で Jev で作るほぼ 0 円運用可能な高品質なページ内検索」（mazrean、9/26）、「Mac 上で TimeTree-MCP をブラウザ版 ChatGPT につないで GPT に予定登録をまとめてしてもらう」（rinn5、9/26）、「AI に頼んでいるのは『実装』ですか、『開発』ですか」（入田関太郎）が並ぶ。前日の Jev 蒸留・日本語ベンチマーク記事から、Claude Code 実活用・MCP 統合・AI 開発論へとトレンドが移行。
+      <strong>Zenn 9/28 トレンド:</strong> 「Claude Code の effort（--effort フラグ）とは何か——コスト・速度・品質のトレードオフを検証」・「Jev と DSPy で分類ターゲットを最適化する——ゼロショット指示チューニング」・「LLM のアジェンティック誤整合——アミグダラを埋め込む実験」・「Claude Code エージェント役割分担論——エージェント・CI・人間の協業設計」が並ぶ。9/27 のインシデント報道後にエージェント安全性・権限設計関連記事の閲覧数が全体的に増加。<a href="https://github.com/shoji-miyoshi/test/issues/169">Zenn AI関連人気記事 2026-09-28 (GitHub Issue #169)</a>
     </div>
     <div class="card">
-      <div class="card-title">Zenn 9/27 トレンド——「Claude Code のクラウドセッションで、PC を閉じていても毎朝 AI ニュースを Notion に届ける」（motani・9/26）が急上昇。「Cloudflare 上で Jev で作るほぼ 0 円運用可能な高品質なページ内検索」（mazrean）・「Mac 上で TimeTree-MCP をブラウザ版 ChatGPT につないで GPT に予定登録をまとめてしてもらう」（rinn5）・「AIに頼んでいるのは『実装』ですか、『開発』ですか」（入田関太郎）</div>
-      <div class="card-meta"><span class="badge">Zenn / Claude Code / Cloud Session / Notion / MCP / Jev / Cloudflare / AI Development / September 27 2026</span><span class="card-source"><a href="https://github.com/shoji-miyoshi/test/issues/167">Zenn AI関連人気記事 2026-09-27 (GitHub Issue #167)</a></span></div>
+      <div class="card-title">Zenn 9/28 トレンド——「Claude Code の effort とは何か——コスト・速度・品質のトレードオフを検証」「Jev と DSPy で分類ターゲットを最適化する」「LLM のアジェンティック誤整合へのアミグダラ埋め込み実験」「パーソナル開発での Claude Code エージェント・CI・人間の役割分担」</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Effort / Jev / DSPy / Agentic Misalignment / Agent Roles / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/169">Zenn AI関連人気記事 2026-09-28 (GitHub Issue #169)</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「Claude Code のクラウドセッションで、PC を閉じていても毎朝 AI ニュースを Notion に届ける」（motani・2026-09-26）:</strong> claude.ai のウェブ上クラウドセッションを活用して、PC の電源が切れていても定時に AI ニュースを自動収集して Notion に書き込む仕組みを構築した実践記事。「スケジュール起動・Claude Code ルーティン・Notion MCP」の組み合わせが注目された</li>
-          <li><strong>「Cloudflare 上で Jev で作るほぼ 0 円運用可能な高品質なページ内検索」（mazrean・2026-09-26）:</strong> 確率的推論モデル Jev と Cloudflare Workers を組み合わせてページ内セマンティック検索を低コストで実装する手法を紹介。「Jev の判断速度の速さ（GPT 比 1/14）が Workers の実行時間制限と相性が良い」という着眼点が評価された</li>
-          <li><strong>「Mac 上で TimeTree-MCP をブラウザ版 ChatGPT につないで GPT に予定登録をまとめてしてもらう」（rinn5・2026-09-26）:</strong> カレンダーアプリ TimeTree の MCP サーバーを構築し、ChatGPT とつないで予定の一括登録を自然言語で実現する手順を解説した記事</li>
-          <li><strong>「AI に頼んでいるのは『実装』ですか、『開発』ですか──AI 時代のソフトウェア開発を考える」（入田関太郎）:</strong> 「AI に手順を指示する（実装）のではなく、問題の文脈と意思決定基準を渡す（開発）ことで本来の生産性向上が実現する」という論考。48K ファイル削除インシデントの報道後に「AI エージェントに丸投げすることの危うさ」への議論と共鳴して注目を集めた</li>
-          <li><strong>「AI 疲れで消耗しているから、静かな海を見ながら深呼吸するアプリを作った」（karamage・2026-09-26）:</strong> AI ツールの氾濫に疲れた開発者向けに Claude Code で癒しアプリを制作した体験記。「作ること自体が目的」という逆説的アプローチが支持を集めた</li>
+          <li><strong>「Claude Code の effort（--effort フラグ）とは何か——コスト・速度・品質のトレードオフを検証」:</strong> Claude Code の <code>--effort</code> オプション（low / normal / high / max）が実際の挙動・コスト・出力品質にどう影響するかを実測した記事。「high と max の間に実用上の差はほとんどなかった」という結論が議論を呼んだ</li>
+          <li><strong>「Jev と DSPy で分類ターゲットを最適化する——ゼロショット指示チューニング」:</strong> 高速推論モデル Jev を DSPy のゼロショット最適化フレームワークと組み合わせて分類プロンプトを自動チューニングする手法を解説。前日の「Jev を semantic grep として使う」に続く Jev 活用シリーズ第 2 弾として位置づけられている</li>
+          <li><strong>「LLM のアジェンティック誤整合——アミグダラを埋め込む実験」:</strong> LLM にリスク感知のための「感情的抑制機構（アミグダラ）」を埋め込む実験的アプローチを論じた論考記事。48K ファイル削除インシデント後に「エージェントが破壊的操作を実行する前に自律的に立ち止まるメカニズム」への関心が高まる中で注目された</li>
+          <li><strong>「パーソナル開発での Claude Code エージェント・CI・人間の役割分担——どう設計すべきか」:</strong> 個人開発プロジェクトにおいてエージェント・CI・人間の三者がそれぞれ担うべき役割を定義した設計論。「エージェントに一任せず、ゲートキーパーとしての CI と人間のレビューが不可欠」という提言が 9/27 インシデントの文脈で広く読まれた</li>
+          <li><strong>「Gemini 3.8 TTS を 22 秒の音声サンプルで使う——ゼロコスト声質クローニング入門」:</strong> Google の音声合成モデル Gemini 3.8 TTS を使い、わずか 22 秒の音声サンプルから声質を複製する手順を解説。ローカル音声 AI トレンドとも連動して関心を集めた</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Qiita 9/27 トレンド——「Claude Code が 48,000 ファイルを削除した事件から学ぶ——AI エージェントに絶対与えてはいけない権限リスト」が急上昇。「Codex rust-v0.159.0-alpha.8 の /tui と /usage を試してみた」・「Jev を semantic grep ツールとして使う実践ガイド」も人気</div>
-      <div class="card-meta"><span class="badge">Qiita / Claude Code / AI Safety / File Deletion / Codex / TUI / Jev / Semantic Grep / September 27 2026</span><span class="card-source">Qiita トレンド — 2026年9月27日</span></div>
+      <div class="card-title">Qiita 9/28 トレンド——「AWS Bedrock に Claude Opus 5.5 が来た——Strands ハーネスで Claude Code から呼ぶまでの全手順」が急上昇。「Hindsight: エージェントメモリ学習の実装ガイド」・「Claude Code --effort フラグ完全解説」も人気</div>
+      <div class="card-meta"><span class="badge">Qiita / AWS Bedrock / Claude Opus 5.5 / Strands / Hindsight / Agent Memory / September 28 2026</span><span class="card-source">Qiita トレンド — 2026年9月28日</span></div>
       <div class="card-body">
         <ul>
-          <li><strong>「Claude Code が 48,000 ファイルを削除した事件から学ぶ——AI エージェントに絶対与えてはいけない権限リスト」:</strong> TechRadar の報道を受けて書かれた日本語解説記事。「(1) ジャンクション・シンボリックリンクを含むパスへの再帰削除権限、(2) Git オブジェクトストアへの書き込み権限、(3) 一時ディレクトリ以外への直接削除権限——の 3 つは絶対に渡すな」という実践的な権限設計指針を提示。CLAUDE.md のサンプル設定付き</li>
-          <li><strong>「Codex rust-v0.159.0-alpha.8 の /tui と /usage を試してみた」:</strong> 同日リリースされた Codex alpha.8 の主要新機能（フルスクリーン /tui・/usage ダッシュボード）を実際に動かして日本語でレポートした記事。「/usage で初めて自分のトークン消費を把握できた」という感想が読者の共感を呼んだ</li>
-          <li><strong>「Jev を semantic grep ツールとして使う実践ガイド」:</strong> 高速な推論性能を持つ Jev を grep の意味的検索版として活用するパターンを解説した記事。前日のベンチマーク・蒸留記事に続く実用編として位置づけられている</li>
+          <li><strong>「AWS Bedrock に Claude Opus 5.5 が来た——Strands ハーネスで Claude Code から呼ぶまでの全手順」:</strong> 9/28 の AWS Weekly Roundup 発表を受けて当日公開された速報記事。Bedrock への Claude Opus 5.5 の追加と Strands ハーネスの設定手順を日本語で丁寧に解説しており、週明けの公開タイミングも相まって急上昇</li>
+          <li><strong>「Hindsight: エージェントメモリ学習の実装ガイド——Claude Code でエージェントに記憶を持たせる」:</strong> Hindsight フレームワークを Claude Code のワークフローに組み込む具体的な実装例を解説した記事。「48K ファイル削除問題をメモリ学習で防ぐ設計」という副題が注目を集めた</li>
+          <li><strong>「Claude Code --effort フラグ完全解説」:</strong> Zenn のトレンドと同様、effort オプションの実測レポートが Qiita でも人気。「max と high の差は体感できなかったが、low は著しく品質が下がる」という報告が多数</li>
         </ul>
       </div>
     </div>
@@ -312,9 +297,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年9月27日（日）</p>
-  <p style="margin-top:0.5rem;">Sources: AI Ecosystem Digest (agents-radar #207) · AI Update Newsletter Watch (#2286–#2291) · AI Open Source Trends · TechRadar · CyberSecurityNews · MSN · Morph LLM · AI Agents Directory · CNN · CBS News · CNBC · NPR · Al Jazeera · Kyiv Independent · US News · Audacy · Global Security (Iran War OPREP) · Zenn AI関連人気記事 (shoji-miyoshi/test #167) · Qiita トレンド</p>
-  <p style="margin-top:0.3rem;"><a href="2026-09-26/index.html">前版（2026-09-26）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月28日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: AI Ecosystem Digest (agents-radar #212) · AI Update Newsletter Watch (#2293–#2295) · AI Open Source Trends (news-radar #615) · AWS News Blog · Claude by Anthropic · Morph LLM · Global Security (Iran War Day 213) · Forbes · Kyiv Independent · Wikipedia Current Events · Democracy Now! · Morning Star · Everything Briefing · Zenn AI関連人気記事 (#169) · Qiita トレンド</p>
+  <p style="margin-top:0.3rem;"><a href="2026-09-27/index.html">前版（2026-09-27）</a></p>
 </footer>
 </body>
 </html>
