@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">AWS Weekly Roundup: Claude Opus 5.5 on Amazon Bedrock・Strands ハーネスが正式統合 / Code w/ Claude SF 2026 イベント発表 / Codex rust-v0.159.0-alpha.11 リリース——history-aware prewarming・TUI 改善 / Trump がイランの停戦提案を拒否——イランが「最終戦争」警告 / ロシアがウクライナを猛爆・6 名死亡・53 名負傷 / タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災</p>
+  <p class="date">2026年9月28日（月）&nbsp;|&nbsp;<a href="2026-09-27/index.html">前版（9/27）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/28）のハイライト:</strong> <strong>AWS Weekly Roundup（9/28）で Claude Opus 5.5 on Amazon Bedrock と Strands エージェントハーネスの正式統合が発表</strong>——Amazon SES・AWS End User Messaging 向け AI エージェントスキルも追加、Claude Code / Codex / Cursor / Kiro から平文リクエストでメッセージングワークフローを完結できるように。Anthropic が「Code w/ Claude SF 2026」イベントを発表。Claude Code 本体は本日新規リリースなし（v2.1.283 継続）。AI Update Newsletter Watch が 9/28 に計 3 回（06:44 UTC 7 件・14:30 UTC 3 件・20:39 UTC 6 件）の更新を検出。
+    </div>
+    <div class="card">
+      <div class="card-title">AWS Weekly Roundup（9/28）: Claude Opus 5.5 on Amazon Bedrock 正式統合・Strands エージェントハーネス追加——Amazon SES 向け AI エージェントスキルで Claude Code から平文でメッセージングワークフローを完結。「GPT-6 Sol and Luna」も Bedrock に追加</div>
+      <div class="card-meta"><span class="badge">AWS / Amazon Bedrock / Claude Opus 5.5 / Strands / Amazon SES / AI Agent Skills / September 28 2026</span><span class="card-source">Source: <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/">AWS News Blog — AWS Weekly Roundup September 28, 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Claude Opus 5.5 on Amazon Bedrock:</strong> Anthropic の最新フラグシップモデル Claude Opus 5.5 が Amazon Bedrock に正式統合。エンタープライズ顧客はマネージド API として Bedrock 経由でアクセスできるようになった</li>
+          <li><strong>Strands エージェントハーネスの統合:</strong> AWS が推進するエージェントオーケストレーションフレームワーク「Strands」が Claude Code・Codex・Cursor・Kiro との公式連携を開始。ハーネス上でのマルチエージェントワークフロー構築がより容易になった</li>
+          <li><strong>Amazon SES 向け AI エージェントスキル:</strong> Amazon SES（Simple Email Service）および AWS End User Messaging 向けの AI エージェントスキルが AWS MCP Server に追加。開発者は Claude Code から「このアドレスへメールを送信して」などの平文リクエストだけでメッセージングワークフローを完結できる</li>
+          <li><strong>GPT-6 Sol/Luna も Bedrock に追加:</strong> OpenAI の GPT-6 ファミリーの低コスト・高速モデルである Sol と Luna も同じ Roundup で Bedrock に追加されたと報告されており、AWS が主要 AI モデルのマルチベンダーハブとして機能を強化している姿勢が明確になった</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic が「Code w/ Claude SF 2026」イベントを発表——サンフランシスコで開催予定の開発者向けカンファレンス。「AI の指数関数的成長を活かしたビルディング」をテーマに、Claude Code の最新機能・エコシステム統合・開発者ワークフローを紹介</div>
+      <div class="card-meta"><span class="badge">Anthropic / Code w/ Claude SF 2026 / Developer Conference / San Francisco / September 28 2026</span><span class="card-source">Source: <a href="https://claude.com/blog/code-w-claude-sf-2026-sf">Claude by Anthropic — Code w/ Claude SF 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>イベントの概要:</strong> Anthropic がサンフランシスコで開催する「Code w/ Claude SF 2026」は、開発者向けカンファレンス。テーマは「Building on the AI exponential（AI の指数関数的成長を活かしたビルディング）」</li>
+          <li><strong>期待される内容:</strong> Claude Code の最新機能（MCP 統合・マルチエージェントワークフロー・hooks システム）の解説、エコシステムパートナーとの連携事例、実際の開発者によるユースケース発表などが予定されているとみられる</li>
+          <li><strong>48,000 ファイル削除インシデントへの言及の可能性:</strong> 先週（9/27）のインシデント報道を受けて、「エージェントへの権限設計と安全なワークフロー構築」についての Anthropic の公式見解が示される場になるかどうかも注目されている</li>
+          <li><strong>開発者コミュニティの反応:</strong> r/ClaudeCode では「ついに Anthropic が開発者と直接対話する場を作った」という歓迎コメントと、「48K ファイル削除問題への回答をしてほしい」という期待が混在している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.283 継続稼働（9/28 新規リリースなし）——AI Update Newsletter Watch が 9/28 に計 16 件の更新を 3 回に分けて検出（06:44 UTC 7 件・14:30 UTC 3 件・20:39 UTC 6 件）。Terminal-Bench スコアが Claude Code + Fable 5.1 で 62.2 に更新（9/22 計測値）——Codex + GPT-6 Astra max の 61.6 を上回りトップに</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.283 / Terminal-Bench / Fable 5.1 / AI Newsletter Watch / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2293">AI Update Newsletter Watch #2293</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2294">#2294</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2295">#2295</a> · <a href="https://github.com/yaojiejia/agents-radar/issues/212">AI Ecosystem Digest #212</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>9/28 の活動概要:</strong> 本日は Claude Code 本体に新規リリース・マージ済み PR なし。v2.1.283（9/25 リリース、Opus 5 デフォルト）が継続稼働中</li>
+          <li><strong>AI Update Newsletter Watch の更新検出:</strong> 06:44 UTC（7 件）・14:30 UTC（3 件）・20:39 UTC（6 件）の計 16 件を検出。前日（9/27）の 6 件から大幅増加しており、月曜日（週明け）のエコシステム全体での活発な活動が反映されている</li>
+          <li><strong>Terminal-Bench スコア更新（9/22 計測値が 9/28 公開）:</strong> Claude Code + Fable 5.1 が Terminal-Bench で 62.2 を記録し、Codex + GPT-6 Astra max の 61.6 を上回り首位に浮上した。コストは $12.39/タスクと競合比で高いが、「計画・大規模コードベース」領域での優位性が数値で裏付けられた形</li>
+          <li><strong>SWE-bench Verified スコア:</strong> Morph LLM の 9 月スコアボードでは、5 指標総合で Claude Code が 9 月に首位に返り咲いたとの評価も出ており、9/27 スコアボード（Terminal-Bench 単体では Codex 首位）との乖離についてコミュニティで議論中</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（9/28）:</strong> <strong>OpenAI Codex rust-v0.159.0-alpha.11 をリリース——history-aware prewarming（アイドルスレッドの事前ウォームアップ）・TUI の短時間ターン表示・Mermaid ラベルの句読点保持などを追加</strong>。前日 alpha.8/9 の大型リリースに続き、連日の更新が続いている。AI Open Source Trends 9/28 で Hindsight（エージェントメモリ学習フレームワーク）が急上昇——「本番エージェントで最も検証されたギャップ」として注目。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex rust-v0.159.0-alpha.11 リリース（9/28）——history-aware prewarming でアイドルスレッドを事前ウォームアップ、TUI に短時間ターン表示を追加、Mermaid ラベルの句読点保持を修正。前日 alpha.8/9 の大型 UX 更新に続く品質改善フェーズへ移行</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.159.0-alpha.11 / History-Aware Prewarming / TUI / Mermaid / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2293">AI Update Newsletter Watch #2293</a> · <a href="https://github.com/Riku4230/ai-update-newsletter-watch/issues/2295">#2295</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>history-aware prewarming:</strong> アイドルスレッドが次のリクエスト受信前に会話履歴を踏まえて事前ウォームアップを行う機能。応答初動のレイテンシ削減を狙った最適化で、長時間セッションでの体感応答速度が向上する見込み</li>
+          <li><strong>TUI の短時間ターン表示改善:</strong> フルスクリーン /tui モード（alpha.8 で追加）において、1 秒未満で完了するターンの経過時間が正しく表示されるよう修正。「0s」と表示されていた問題が解消</li>
+          <li><strong>Mermaid ラベルの句読点保持:</strong> alpha.9 で追加された Mermaid 図表レンダリングにおいて、ラベル文字列内のコンマ・ピリオドなどの句読点が除去されてしまう問題を修正</li>
+          <li><strong>前日 alpha.8/9 リリースとの関係:</strong> フルスクリーン /tui・音声会話デフォルト ON・/usage ダッシュボードという大型 UX 改善（alpha.8/9）に続き、alpha.11 は品質改善・バグ修正フェーズに入ったことを示している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Hindsight（エージェントメモリ学習フレームワーク）が AI Open Source Trends 9/28 で急上昇——「本番エージェントシステムで最も検証されたギャップはエージェントメモリ学習」として開発者に注目される。自己ホスト型・モジュラー型 AI システムへのシフトが加速</div>
+      <div class="card-meta"><span class="badge">Hindsight / Agent Memory / AI Open Source / Self-Hosted / Modular AI / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/datnguyenquy94/news-radar/issues/615">AI Open Source Trends 2026-09-28 (news-radar #615)</a> · <a href="https://github.com/huiyishalou/ai-trending-hub/issues/173">AI Trending Hub #173</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Hindsight の概要:</strong> エージェントが過去のセッション・エラー・成功パターンから学習して次回の判断に活かすメモリ学習フレームワーク</li>
+          <li><strong>なぜ今注目されるか:</strong> Claude Code の 48,000 ファイル削除インシデント（9/27）を受けて「エージェントが過去の失敗から学んで同じ誤りを繰り返さない仕組み」への関心が急上昇</li>
+          <li><strong>自己ホスト型・モジュラー型 AI へのシフト:</strong> AI Open Source Trends 9/28 では、2026 年後半の主要トレンドとして「制御・速度・カスタマイズを求めてセルフホスト型・モジュラー型 AI システムへの移行が加速している」と総括されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェント比較（9/28）: Claude Code + Fable 5.1 が Terminal-Bench 62.2 でトップ、Codex + GPT-6 Astra max が 61.6 で次点——r/ClaudeCode が週次 4,200+ コントリビューターで r/Codex（1,200）の 3.5 倍</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / Terminal-Bench / Benchmark / Community / September 28 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/comparisons/codex-vs-claude-code">Morph LLM — Codex vs Claude Code</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ベンチマーク最新スコア:</strong> Claude Code + Fable 5.1 が Terminal-Bench 62.2（$12.39/タスク）でトップ。Codex + GPT-6 Astra max が 61.6 で次点</li>
+          <li><strong>コミュニティ規模の差異:</strong> r/ClaudeCode が週次 4,200+ コントリビューターで r/Codex（1,200）の約 3.5 倍</li>
+          <li><strong>HN の議論の変化:</strong> 「どちらが最良のモデルか」という比較から「自分のワークフローにどちらがフィットするか」という実用的な議論へと HN のテーマが移行</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI 週明け（9/28）——「Code w/ Claude SF 2026 イベントに何を期待するか」スレッドが急上昇。「48K ファイル削除への Anthropic の公式回答を求める」声多数</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Code w/ Claude / SF 2026 / September 28 2026</span><span class="card-source">Reddit r/ClaudeAI — 2026.09.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Code w/ Claude SF 2026 への期待:</strong> 「エージェントの権限設計に関する Anthropic の公式ガイドラインを発表してほしい」（+3,800）・「MCP エコシステムのロードマップを聞きたい」（+2,900）が上位</li>
+          <li><strong>48K 問題への継続的な関心:</strong> 「ベスト CLAUDE.md テンプレート（dry-run 強制版）」シェアスレッドが 500+ コメントを集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning「Hindsight: エージェントメモリ学習フレームワーク」が月曜朝のトップ。「Claude Code が 48K ファイル消したのも、メモリ学習があれば防げた可能性」という論点も浮上</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Hindsight / Agent Memory / September 28 2026</span><span class="card-source">Reddit r/MachineLearning — 2026.09.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Hindsight スレッドの要点:</strong> 「エージェントが経験から改善できるべき」という主張に対し、「学習データの品質と悪いパターンの強化リスク」という懐疑的コメントが拮抗（+2,100 / +1,700）</li>
+          <li><strong>48K 問題との関連:</strong> 「Windows ジャンクション経由の削除が危険という知識をエージェントが記憶していれば……」という考察投稿が+1,400 の支持を集めた</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/worldnews「Trump がイランの停戦提案を拒否」「ロシアがウクライナを猛爆・6 名死亡・53 名負傷」「タイ・ミャンマーで洪水土砂崩れ各 8 名死亡」が 9/28 トップ 3</div>
+      <div class="card-meta"><span class="badge">Community / r/worldnews / Iran / Ukraine / Thailand / September 28 2026</span><span class="card-source">Reddit r/worldnews — 2026.09.28</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Trump のイラン停戦拒否:</strong> 「停戦を望むなら条件なしに来るべき」という Trump の発言と「イランが『最終戦争』に備えると発言」という懸念が拮抗（+4,200 / +3,800）</li>
+          <li><strong>ロシアのウクライナ猛爆:</strong> 「停戦合意（9/26）の翌々日に猛爆——合意は存在しないも同然」という批判（+5,600）</li>
+          <li><strong>タイ洪水:</strong> 「バンコク含む 170 万人——2011 年洪水以来最大規模の可能性」（+2,800）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/28）の主要トピック:</strong> <strong>Trump がイランの 60 日停戦ロードマップを拒否——イランが「最終戦争（doomsday war）」警告・ホルムズ海峡でイランが米水中ドローン拿捕を主張（米軍は否定）</strong> / <strong>ロシアがウクライナ全土を猛爆——6 名死亡・53 名負傷</strong> / <strong>ソマリア南西州で元大統領派が武装蜂起</strong> / <strong>タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災</strong> / <strong>ネパールで雪崩——登山客 2 名死亡・14 名行方不明</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">Trump がイランの 60 日停戦ロードマップを拒否（9/28）——イランが「最終戦争（doomsday war）」警告。ホルムズ海峡でイランが米水中ドローン拿捕を主張——米軍が否定</div>
+      <div class="card-meta"><span class="badge">Iran / Trump / Ceasefire / Doomsday War / Hormuz / September 28 2026</span><span class="card-source">Source: <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">Global Security — Iran War Day 213</a> · <a href="https://wng.org/podcasts/monday-morning-news-september-28-2026-1790522942">WORLD</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Trump の拒否:</strong> イランが 9/27 期限で提示した「60 日停戦・ホルムズ段階的再開・米封鎖解除」のロードマップを Trump 政権が正式に拒否</li>
+          <li><strong>イランの「最終戦争」警告:</strong> 最高指導者が「最終的かつ決定的な戦争（doomsday war）に備えている」と警告。核施設の防衛態勢強化をほのめかす発言として受け止められている</li>
+          <li><strong>ホルムズ海峡の水中ドローン問題:</strong> イランが米軍の水中ドローン拿捕を主張、米軍は否定。双方の主張が食い違うまま情報戦が続いている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシアがウクライナ全土を猛爆（9/28）——6 名死亡・53 名負傷。Trump がウクライナに Patriot PAC-3 迎撃弾の国内製造ライセンスを供与する方針を表明</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Patriot / Trump / September 28 2026</span><span class="card-source">Source: <a href="https://www.forbes.com/sites/katyasoldak/2026/09/28/monday-september-28-russias-war-on-ukraine-news-and-information-from-ukraine/">Forbes</a> · <a href="https://kyivindependent.com/">Kyiv Independent</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>9/28 の攻撃概況:</strong> ドローン・弾道ミサイルで 6 名死亡・53 名負傷。製鉄所も攻撃され冬季インフラへの打撃が懸念</li>
+          <li><strong>Patriot 製造ライセンス供与方針:</strong> 製造立ち上げに 18〜24 か月要するため今冬の弾薬不足は解消されないが、長期的には自立した防衛産業構築へ向けた重要な一歩と評価</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ソマリア南西州で元大統領派が武装蜂起（9/28）——バイドアで爆発物ドローン・自爆車両・銃撃による大規模戦闘が勃発</div>
+      <div class="card-meta"><span class="badge">Somalia / South West State / Baidoa / September 28 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_28">Wikipedia Current Events</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>旧大統領アブディアジズ・ラフタガレン派が現アデン・マドベ政権軍に大規模武装攻撃を開始。銃撃・爆発物ドローン・自爆車両による多面攻撃</li>
+          <li>ソマリア連邦政府が「クーデター未遂」と非難、連邦軍の増援を南西州に向けている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">タイ・ミャンマーで洪水・土砂崩れ各 8 名死亡、タイ 170 万人超が被災（9/28）——バンコク含む 28 府県で浸水。ネパールで雪崩——ネムジュン山麓ベースキャンプで登山客 2 名死亡・14 名行方不明</div>
+      <div class="card-meta"><span class="badge">Thailand / Myanmar / Flooding / Nepal / Avalanche / September 28 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2026_September_28">Wikipedia Current Events</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>タイ:</strong> 洪水と土砂崩れで 8 名死亡・170 万人超が被災。2011 年大洪水以来最大規模の可能性</li>
+          <li><strong>ミャンマー:</strong> タナウィタリ地方で洪水・土砂崩れにより 8 名死亡・20〜30 名が行方不明</li>
+          <li><strong>ネパール:</strong> マナン郡ネムジュン山（7,140m）ベースキャンプ付近の雪崩で 2 名死亡・14 名行方不明</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">スペイン・マドリードで住宅危機抗議デモ——数万人が行進、プエルタ・デル・ソルでキャンプイン。RAF Fairford テロ未遂（5 名逮捕・20 代英国籍ロンドン在住者）の捜査継続</div>
+      <div class="card-meta"><span class="badge">Spain / Madrid / Housing / UK / RAF Fairford / September 28 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-september-28-2026-0">Morning Star</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>スペイン住宅危機抗議:</strong> 87 歳女性の強制退去がきっかけとなり、マドリードで数万人がデモ。プエルタ・デル・ソルで一夜キャンプイン</li>
+          <li><strong>RAF Fairford テロ未遂続報:</strong> 逮捕された 5 名は 20 代の英国籍男性でロンドン在住と判明。対テロ警察が捜査主導</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">更新あり</span>
+    </div>
+    <div class="alert">
+      <strong>Zenn 9/28 トレンド:</strong> 「Claude Code の effort（--effort フラグ）とは何か」・「Jev と DSPy で分類ターゲットを最適化する」・「LLM のアジェンティック誤整合——アミグダラを埋め込む実験」・「Claude Code エージェント役割分担論」が並ぶ。<a href="https://github.com/shoji-miyoshi/test/issues/169">Zenn AI関連人気記事 2026-09-28 (GitHub Issue #169)</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Zenn 9/28 トレンド——「Claude Code の effort とは何か」「Jev と DSPy で分類ターゲットを最適化する」「LLM のアジェンティック誤整合へのアミグダラ埋め込み実験」「Claude Code エージェント・CI・人間の役割分担」</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Effort / Jev / DSPy / Agentic / September 28 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/169">Zenn AI関連人気記事 2026-09-28 (GitHub Issue #169)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「Claude Code の effort」:</strong> --effort オプション（low/normal/high/max）が実際の挙動・コスト・品質にどう影響するかを実測。「high と max の差はほとんどなかった」という結論が議論を呼んだ</li>
+          <li><strong>「Jev と DSPy」:</strong> 高速推論モデル Jev を DSPy のゼロショット最適化と組み合わせる手法を解説</li>
+          <li><strong>「アミグダラ埋め込み実験」:</strong> LLM にリスク感知のための感情的抑制機構を埋め込む実験。48K ファイル削除インシデント後に注目度急上昇</li>
+          <li><strong>「エージェント役割分担論」:</strong> エージェント・CI・人間の三者がそれぞれ担うべき役割を定義した設計論。「エージェントに一任せず、ゲートキーパーとしての CI と人間のレビューが不可欠」という提言</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月28日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: AI Ecosystem Digest (#212) · AI Update Newsletter Watch (#2293–#2295) · AI Open Source Trends (news-radar #615) · AWS News Blog · Claude by Anthropic · Morph LLM · Global Security · Forbes · Kyiv Independent · Wikipedia Current Events · Democracy Now! · Morning Star · Zenn AI関連人気記事 (#169)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-09-27/index.html">前版（2026-09-27）</a></p>
+</footer>
+</body>
+</html>
