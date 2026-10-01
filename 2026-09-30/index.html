@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年9月30日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Opus 5.5 が Claude Code デフォルトモデルに / Coder が Agent Relay で Claude Code をエンタープライズ向けに提供 / 米国がイラク撤退完了——2003 年侵攻から 23 年 / イラン・米国の間接交渉継続——ホルムズ再開交渉 / 米国が中国・香港・パキスタンにイラン支援で新制裁</p>
+  <p class="date">2026年9月30日（水）&nbsp;|&nbsp;<a href="../2026-09-29/index.html">前版（9/29）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/30）のハイライト:</strong> <strong>Claude Opus 5.5 が Claude Code のデフォルト Opus モデルに昇格</strong>——1M トークンコンテキスト・$4/$20 per million トークン・$0.20 キャッシュリード。Artificial Analysis のコーディングエージェントインデックスでスコア 66 を記録し、GPT-6 Astra 搭載の Codex（62）を上回る。また <strong>Coder が Agent Relay で Claude Code をエンタープライズ対応</strong>——顧客自身のインフラ上で監査可能なかたちで Claude Code エージェントを稼働させることが可能に。Claude Code は 9 月を通じて v2.1.260 以降でセッションメッセージング・アイドル通知・バックグラウンドジョブの時間制限撤廃などを追加。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Opus 5.5 リリース・Claude Code デフォルトモデルに昇格——1M トークンコンテキスト・$4/$20 per million トークン。Artificial Analysis コーディングエージェントインデックスでスコア 66——GPT-6 Astra 搭載 Codex（62）を上回る</div>
+      <div class="card-meta"><span class="badge">Claude Opus 5.5 / Claude Code / Default Model / Coding Agent Index / September 2026</span><span class="card-source">Source: StationX / releasebot.io (Claude Updates)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>モデル仕様:</strong> Claude Opus 5.5 は 1M トークンコンテキストウィンドウを搭載。価格は入力 $4・出力 $20 per million トークン、キャッシュリード $0.20。Claude Code においてデフォルト Opus モデルとして即日設定</li>
+          <li><strong>ベンチマーク性能:</strong> Artificial Analysis の独立コーディングエージェントインデックスで Claude Code + Opus 5.5 がスコア 66 を記録。GPT-6 Astra 搭載の Codex がスコア 62 であり、Claude Code が首位を維持</li>
+          <li><strong>開発者コミュニティの反応:</strong> r/ClaudeCode では「Opus 5.5 になってから長文コードレビューの精度が上がった」「コンテキスト 1M でモノレポ全体を一気に解析できる」という報告が相次いでいる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Coder が Claude Code を Agent Relay に統合——規制業界向けに顧客自社インフラ上で Claude Code エージェントを稼働。ネットワーク管理・サンドボックス・完全監査対応——クラウドのみの実行が許可されない金融・医療・官公庁向けに提供</div>
+      <div class="card-meta"><span class="badge">Claude Code / Coder / Agent Relay / Enterprise / Regulated Industries / September 15 2026</span><span class="card-source">Source: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362210/0/en/coder-brings-claude-code-to-agent-relay-unlocking-agentic-development-for-the-world-s-most-regulated-enterprises.html">GlobeNewswire</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Agent Relay の概要:</strong> Coder の新機能「Agent Relay」により、Claude Code エージェントを Coder ワークスペース内で顧客自身のインフラ上で稼働させることが可能に。すべての処理が顧客のネットワーク内で完結し、外部クラウドへのデータ送信が不要</li>
+          <li><strong>ターゲット業界:</strong> クラウドのみの AI エージェント実行が規制上許可されない、金融・医療・政府・防衛などの高度規制業界向け</li>
+          <li><strong>監査対応:</strong> ネットワーク管理・サンドボックス化・完全な監査ログ機能を提供。コンプライアンスチームが AI エージェントの行動を追跡可能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 9 月アップデート総まとめ（v2.1.260 以降）——セッションメッセージング・アイドル通知・バックグラウンドジョブの 1 時間制限撤廃・キャッシュミス「likely cause」インジケーター追加</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.260 / Session Messaging / Idle Notices / Background Jobs / Cache / September 2026</span><span class="card-source">Source: releasebot.io (Anthropic Release Notes)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>セッションメッセージングとアイドル通知:</strong> 9 月の一連のアップデートでセッションメッセージング機能・アイドル通知・長時間バックグラウンドジョブのサポートが追加された。サブエージェントからのバックグラウンドコマンドの 1 時間制限が撤廃</li>
+          <li><strong>キャッシュミス「likely cause」インジケーター（v2.1.260）:</strong> プロンプトキャッシュのミスが発生した際に、その原因（ツール定義の変更・システムプロンプトの変更・アイドルによる有効期限切れなど）を示す「likely cause」インジケーターが追加</li>
+          <li><strong>引き続き首位を維持:</strong> Terminal-Bench での Claude Code + Fable 5.1 のスコア 62.2 は変わらず。OpenAI DevDay での競合発表を受けても、専門的コーディングベンチマークでの優位を維持</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（9/30）:</strong> <strong>OpenAI Codex が v0.159.1 で GPT‑6.1 Sol をデフォルトモデルに。GitHub Copilot も GPT‑6.1 Sol を GA で追加。Cursor が「Cursor Projects」でクラウドコーディネーターエージェントを発表</strong>——DevDay の熱気が冷める中、各社とも 9 月中旬から先月末にかけての発表内容が技術コミュニティで改めて精査されている。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex が v0.159.1 で GPT‑6.1 Sol をデフォルトモデルに採用——Amazon Bedrock Mantle・Runtime カタログ全体に適用。v0.156.0 ではフルスクリーン TUI・音声会話デフォルト化・/usage ダッシュボード・Mermaid ダイアグラムレンダリングを追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / v0.159.1 / GPT-6.1 Sol / Default Model / Mermaid / September 2026</span><span class="card-source">Source: releasebot.io (OpenAI Release Notes)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>v0.159.1 の主な変更:</strong> GPT-6.1 Sol がバンドルカタログ・Amazon Bedrock Mantle・Runtime カタログ全体でデフォルトモデルに昇格。Astra 品質に迫りながら価格は 1/5 を実現</li>
+          <li><strong>v0.156.0 の新機能:</strong> フルスクリーン TUI 起動モード（オプション）・音声会話がデフォルトでオン・/usage 分析ダッシュボード・Mermaid ダイアグラムのレンダリング・数式レスポンスに対応</li>
+          <li><strong>開発者の評価:</strong> 「フルスクリーン TUI は Claude Code の感覚に近くなった」「Mermaid レンダリングが追加されてドキュメント生成が格段に便利に」という声がコミュニティに</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot が GPT‑6.1 Sol を GA モデルとして追加——主要 IDE とアプリでのエージェント型コーディング・ターミナルワークフローに対応。Copilot CLI も拡張モデルルーティング・MCP・OAuth 修正・GitHub/PR ワークフロー改善を提供</div>
+      <div class="card-meta"><span class="badge">GitHub Copilot / GPT-6.1 Sol / GA / MCP / OAuth / September 2026</span><span class="card-source">Source: releasebot.io (GitHub Release Notes)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GPT‑6.1 Sol の GA 追加:</strong> GitHub が GPT-6.1 Sol を Copilot の正式提供モデルとして追加。アプリ・主要 IDE（VS Code, JetBrains など）でのエージェント型コーディングおよびターミナルワークフローに対応</li>
+          <li><strong>Copilot CLI の拡張:</strong> モデルルーティングの拡大・セッション・シェルハンドリングの改善・MCP および OAuth 関連の修正・GitHub/PR/プラグインワークフローの改善が追加</li>
+          <li><strong>競争上のポジション:</strong> Claude Code と Codex の両方に対抗する形で、エージェント型コーディング領域での GitHub Copilot の存在感が高まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cursor が「Cursor Projects」をリリース——クラウドベースのコーディネーターエージェントが複数のサブエージェントにタスクを委任できるマルチエージェントオーケストレーションプラットフォームへ進化。AI コーディング IDE の枠を超えた設計転換</div>
+      <div class="card-meta"><span class="badge">Cursor / Cursor Projects / Multi-Agent / Coordinator Agent / Cloud / September 10 2026</span><span class="card-source">Source: morphllm.com / AI CLI Tools Digest</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Cursor Projects の概要:</strong> コーディネーターエージェントがクラウド上で動作し、複数のサブエージェントにタスクを委任できる機能を追加。単一エージェント IDE アシスタントから、マルチエージェントオーケストレーションプラットフォームへの大きな設計転換</li>
+          <li><strong>コミュニティの熱量:</strong> r/cursor では「Claude Code や Codex と競合するというよりも、独自のポジションを作り始めた」という評価が上位に。エージェント委任ワークフローへの早期の熱量が高い</li>
+          <li><strong>AI コーディングツール価格の均衡:</strong> Claude Pro ($20)・ChatGPT Plus ($20)・Cursor Pro ($20)・GitHub Copilot Pro ($10) という価格競争が続く中、機能差別化が重要に</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode が週間 4,200+ 貢献者に到達——r/Codex の 1,200 を 3.5 倍超。「Claude Code vs Codex の議論が『どちらが書くコードが良いか』から『どちらがコスト効率が高いか』へ移行」——2026 年の議論の変化を分析</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / r/Codex / Pricing / Cost Per Task / Community Growth / 2026</span><span class="card-source">morphllm.com (Reddit データ集計) — 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>コミュニティ規模の差:</strong> r/ClaudeCode は週間 4,200+ 貢献者に到達し、r/Codex の 1,200 の約 3.5 倍に。年初と比べて「Claude Code vs Codex」の比較スレッドが急増</li>
+          <li><strong>議論の変化:</strong> 2026 年初期は「どちらのコードが優れているか」という品質比較が中心だったが、現在は「タスクあたりのコスト」「レート制限の実態」「月額 $20 で何件こなせるか」という実用コスト議論が主流に</li>
+          <li><strong>メタ批評:</strong> 「r/ClaudeCode と r/Codex は互いに相手側のアストロターフィングを批判している」という皮肉なメタスレッドも定期的に上位に</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">コミュニティ総意：「Claude Code は複雑なマルチファイルタスクが得意、Copilot はインライン補完が便利——熟練開発者は複数ツールを組み合わせて使う」——r/LocalLLaMA・r/ClaudeAI・r/ChatGPTCoding のクロス分析</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / r/ClaudeAI / Tool Stacking / Multi-Tool / September 2026</span><span class="card-source">beginnersinai.org / diyai.io (Reddit 集計) — 2026年9月</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Claude Code の強みとして認識されている領域:</strong> 複雑・大規模・マルチステップのタスクでコードベース全体の理解を要する作業。上位 upvote スレッドでは「深いリファクタリング・全体設計の変更・バグのルートコース分析」に Claude Code を推す声が多い</li>
+          <li><strong>ツールスタックの実態:</strong> 高 upvote スレッドのほぼ全てが「1 つのツールに固執するのではなく、Claude Code でリファクタリング・Copilot でインライン補完・Cursor でエージェント委任」というスタック戦略を推奨</li>
+          <li><strong>Cursor Projects の早期評価:</strong> クラウドコーディネーターエージェントのデリゲーションワークフローへの熱量が高く、「Claude Code と組み合わせた使い方」についてのスレッドが増加中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Reddit 感情分析: Claude Code は 226 スレッドで「複雑タスク向け」として圧倒的好評——Codex スレッドでは「速度・API 柔軟性・自動化パイプライン」への言及が多い。レート制限の苦情は両コミュニティで上位</div>
+      <div class="card-meta"><span class="badge">Community / Claude Code / Codex / Sentiment Analysis / Rate Limits / Automation / September 2026</span><span class="card-source">duply.ai (Reddit 分析) — 2026年9月</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Claude Code の 226 スレッド分析:</strong> Claude Code が登場する Reddit スレッドでは、圧倒的に肯定的な感情が「複雑タスク・マルチファイル・コードベース理解」に結びついている</li>
+          <li><strong>Codex スレッドの特徴:</strong> Codex のスレッドでは「速度・API の柔軟性・自動化パイプライン」への言及が多く、ワークフロー自動化ユースケースでの強みが際立つ</li>
+          <li><strong>レート制限の共通課題:</strong> Claude Code・Codex 両コミュニティともレート制限に関する苦情が上位に。「$20 の上限に達するのが早すぎる」という声は両社のユーザーに共通</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（9/30）の主要トピック:</strong> <strong>米国がイラクからの完全撤退完了——2003 年イラク侵攻から 23 年</strong> / イラン・米国間接交渉継続——ホルムズ海峡再開提案に対する米国の回答待ち / ロシアのウクライナ攻撃継続——キーウ科学アカデミー攻撃で計 9 名死亡・80 名超負傷 / 西岸：ユダヤ人入植者がジャルード村で 100 人超の暴力暴動——最高裁命令を無視 / 米国が中国・香港・パキスタンにイラン支援で新制裁 / 米国経済は堅調も共和党の中間選挙に有利とは限らず
+    </div>
+    <div class="card">
+      <div class="card-title">米国がイラクからの完全軍事撤退を完了（9/29）——2003 年イラク侵攻から 23 年。北部イラクの空軍基地から最後の部隊が出国。イランと同盟が「勝利」と宣言。McMaster 元中将は「ISIS 復活とイラン影響力拡大のリスク」を警告</div>
+      <div class="card-meta"><span class="badge">USA / Iraq / Military Withdrawal / 2003 Invasion / Iran / ISIS / September 29 2026</span><span class="card-source">Source: Democracy Now · PBS NewsHour · FDD Overnight Brief</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>撤退完了の概要:</strong> 国防総省が 9/29、イラクからの米軍部隊の完全撤退完了を発表。最後の部隊はイラク北部の空軍基地から出国。2003 年のイラク侵攻から約 23 年後の撤退完了</li>
+          <li><strong>イランと同盟勢力の反応:</strong> イランおよびその同盟勢力は撤退を「自分たちの勝利」と宣言。イラク国内でのイラン影響力の拡大を懸念する声も</li>
+          <li><strong>McMaster 元中将の警告:</strong> 退役中将 H.R. McMaster は「撤退によりイラクが ISIS の復活に対してより脆弱になる」「イランが地域覇権を強化する」と警告</li>
+          <li><strong>歴史的意義:</strong> 2003 年の侵攻以来、米国は推定 4,500 名の戦死者と 1 兆ドル超の戦費を費やした</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イラン・米国間接交渉継続（9/30）——ホルムズ海峡 7 日間段階的再開提案に対する米国の回答を待つ状況。イランリアルは記録的安値（2.5 百万リアル超/ドル）。米国・イスラエルの軍事的圧力が継続</div>
+      <div class="card-meta"><span class="badge">Iran / USA / Qatar / Hormuz / Rial / Sanctions / September 30 2026</span><span class="card-source">Source: Democracy Now · FDD Overnight Brief · Just Security</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>間接交渉の現状:</strong> イランの外相がカタールの仲介者を通じて提出した「7 日間でのホルムズ段階的再開・全面停戦・海上封鎖解除・凍結資産解除」の提案に対し、米国の公式回答は 9/30 時点でもなし</li>
+          <li><strong>イラン経済の悪化:</strong> 継続的な制裁と米国・イスラエルの軍事的圧力により、イランリアルが 2.5 百万超/ドルという記録的な安値を更新</li>
+          <li><strong>先週の経緯:</strong> Trump が先週イランの 60 日間ロードマップ提案を拒否したことを受け、より短期・具体的な 7 日間提案がカタール経由で出されたが、米国側の反応は依然不透明</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシアのウクライナ攻撃継続（9/29–30）——ドローン・ミサイルで合計 9 名死亡・80 名超負傷。キーウ科学アカデミー（1918 年設立）を含む複数拠点を攻撃。Zelenskyy 大統領がエネルギーインフラへの別の波の攻撃で子ども 1 名を含む 5 名の死者を確認</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Kyiv / Missile / Drone / Energy Infrastructure / September 29-30 2026</span><span class="card-source">Source: Democracy Now · Just Security</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>攻撃の規模:</strong> ドローンとミサイルによる一連の攻撃で、ウクライナ全土で少なくとも 9 名が死亡・80 名超が負傷</li>
+          <li><strong>キーウ科学アカデミーへの攻撃:</strong> 1918 年設立のウクライナ国立科学アカデミーがドローン攻撃を受け 2 名死亡。非軍事的・文化的目標への攻撃として国際社会から非難</li>
+          <li><strong>エネルギーインフラへの攻撃:</strong> Zelenskyy 大統領は、別の攻撃の波でエネルギーインフラが標的となり、子ども 1 名を含む 5 名が死亡したと確認</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">西岸ジャルード村でユダヤ人入植者 100 人超が暴力暴動（9/29–30）——イスラエル最高裁の帰還命令を無視し、パレスチナ家族の家屋に放火・道路封鎖。イスラエル治安部隊も入植者に石を投げられる</div>
+      <div class="card-meta"><span class="badge">Israel / West Bank / Settlers / Jalud / Supreme Court Order / Violence / September 29-30 2026</span><span class="card-source">Source: Times of Israel · Democracy Now</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事件の概要:</strong> イスラエル占領下のヨルダン川西岸ジャルード村で、入植者 100 人超が夜間に暴動。治安部隊が最高裁の命令に従い追い出されたパレスチナ家族を自宅に戻す護衛をした 10 分後、入植者が家屋に放火・道路を封鎖</li>
+          <li><strong>最高裁命令の無視:</strong> イスラエル最高裁がパレスチナ家族の帰還を治安部隊に保障するよう命じていたにもかかわらず、入植者がその命令を実力行使で覆す形に</li>
+          <li><strong>治安部隊も被害:</strong> 入植者はイスラエルの治安部隊にも石を投げつける事態に発展</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国が中国・香港・パキスタンの 10 個人・企業にイランへの武器調達支援で新制裁（9/30）——Trump 政権の対イラン圧力キャンペーンの一環。米国経済は堅調も共和党の 11 月中間選挙への影響は不透明</div>
+      <div class="card-meta"><span class="badge">USA / Sanctions / China / Hong Kong / Pakistan / Iran / Midterms / September 30 2026</span><span class="card-source">Source: FDD Overnight Brief · Bloomberg</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>新制裁の詳細:</strong> Trump 政権がイランへの武器調達支援に関与したとして、中国・香港・パキスタンの 10 個人および企業に対して新たな制裁を発表。対イラン軍事サプライチェーンを支援するサードカントリー企業への経済的圧力を強化</li>
+          <li><strong>米国経済の現状:</strong> 最新の経済データは好調を維持。Trump 大統領はアラスカ天然ガスパイプラインへの 540 億ドルの韓国投資を発表</li>
+          <li><strong>中間選挙への影響:</strong> Bloomberg の分析によると、強い経済指標があっても、イランとの紛争・国内政策の緊張・その他の要因が共和党に不利に働く可能性があり、11 月の中間選挙の行方は予断を許さない状況</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国が GRECO（欧州評議会腐敗防止機関）からの離脱を正式通知（9/29–30）——国務省「米国の国家安全保障に実質的な利益をもたらさない」と説明。米国の国際監視・説明責任機関からの離脱パターンが継続</div>
+      <div class="card-meta"><span class="badge">USA / GRECO / Council of Europe / Withdrawal / International Accountability / September 30 2026</span><span class="card-source">Source: Just Security · Democracy Now</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GRECO 離脱の概要:</strong> 米国が欧州評議会の腐敗対策グループ（GRECO）からの離脱を欧州評議会に正式通知。国務省は「参加が米国の国家安全保障に実質的な利益をもたらさない」と説明</li>
+          <li><strong>より広いパターンの一部:</strong> 今回の離脱は、国際監視機関・説明責任機関から米国が相次いで離脱するより広いパターンの一部とみなされている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">前日と内容が近いため省略</span>
+    </div>
+    <div class="alert">
+      本日（9/30）は前日（9/29）の Zenn・Qiita トレンド記事と内容が実質的に重複するため、新規記事化を省略します。前版のトレンドは <a href="../2026-09-29/index.html#qiita">2026-09-29 アーカイブ</a> をご参照ください。
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年9月30日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: StationX · releasebot.io (Anthropic/OpenAI/GitHub Release Notes) · GlobeNewswire · morphllm.com · beginnersinai.org · duply.ai · Democracy Now! · FDD Overnight Brief · Just Security · PBS NewsHour · Times of Israel · Bloomberg · Al Jazeera · Kyiv Independent</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-09-29/index.html">前版（2026-09-29）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</footer>
+</body>
+</html>
