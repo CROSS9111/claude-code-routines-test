@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月1日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Barclays が Claude Code を開発者の 50% に展開へ（10/1 発表） / Google が Project Suncatcher 衛星打ち上げ——宇宙 AI データセンターへの第一歩 / イラン・米交渉決裂——Rubio が国連総会のイラン代表団に即時退去命令 / Terminal-Bench 最新版：Codex + GPT-6 Astra が首位に / Morocco が初の女性首相を任命</p>
+  <p class="date">2026年10月1日（木）&nbsp;|&nbsp;<a href="../2026-09-30/index.html">前版（9/30）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/1）のハイライト:</strong> <strong>Barclays が Claude Code を年内に全開発者の 50% に展開するという拡大戦略を発表</strong>——日 12 万件のメール処理・英国 1.6 万人の社員が利用する Colleague Knowledge Assistant もすでに Claude で稼働。<strong>Google が AI チップ搭載衛星「Project Suncatcher」を打ち上げ</strong>——宇宙太陽光で AI データセンターを動かす構想の第一歩。Claude Cowork の<strong>10/6 からのクラウド実行への移行</strong>も告知。
+    </div>
+    <div class="card">
+      <div class="card-title">Barclays が Claude Code をエンタープライズ全面展開へ——2026 年末までに開発者の 50% に導入、2027 年は過半数に拡大。日 12 万件のメール処理・社員 1.6 万人の社内 AI アシスタントもすでに稼働。総コスト削減目標 £20 億の一環</div>
+      <div class="card-meta"><span class="badge">Barclays / Anthropic / Claude Code / Enterprise / Banking / October 1 2026</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-10-01/barclays-expands-use-of-anthropic-s-claude-in-efficiency-push">Bloomberg</a> · <a href="https://www.pymnts.com/news/artificial-intelligence/2026/barclays-accelerates-ai-rollout-with-anthropic-claude-code/">PYMNTS</a> · <a href="https://www.anthropic.com/news/barclays-scales-claude">Anthropic</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>展開目標:</strong> Barclays は 2026 年末までに全ソフトウェア開発者の 50% に Claude Code を導入し、2027 年には過半数まで引き上げる計画を発表。エンタープライズ向け AI コーディングエージェント採用としては欧州金融機関最大規模</li>
+          <li><strong>既存 Claude 活用の実績:</strong> Barclays のマーケット部門はすでに Anthropic モデルを使って顧客問い合わせメールを処理——1 日あたり約 12 万件。英国 1.6 万人の従業員が利用する「Colleague Knowledge Assistant」は 2025 年以来 100 万件以上の検索を処理</li>
+          <li><strong>コスト削減効果:</strong> Barclays は効率化プログラムで総額約 £20 億の削減を目標としており、Claude を含む AI 活用がその一翼を担う。遺産システムの近代化と業務効率化が主なユースケース</li>
+          <li><strong>市場へのインパクト:</strong> 「Barclays は Claude Code を半数の開発者に与えた。真のテストはそれが誰かに気づかれるかどうか」——業界アナリストは実際の生産性向上をどう測定するかが今後の焦点と指摘</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Cowork が 10/6 よりクラウド実行に移行——Pro・Max プランで「自分のコンピューター上のみ」オプションを廃止。Cowork タスクが完全クラウド稼働に。セキュリティ・分離・スケーラビリティが向上</div>
+      <div class="card-meta"><span class="badge">Claude Cowork / Cloud / Pro / Max / October 6 2026</span><span class="card-source">Source: support.claude.com (Anthropic サポート)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>変更内容:</strong> 2026 年 10 月 6 日より、新しい Cowork タスクはクラウド上で実行されるようになる。Settings &gt; General 内の「Only on your computer（自分のコンピューター上のみ）」オプションが Pro・Max プランから削除される</li>
+          <li><strong>移行の背景:</strong> クラウド実行への完全移行により、Cowork タスクのセキュリティ・環境分離・スケーラビリティが向上する見込み。Barclays のような大規模エンタープライズ展開にも適合する変更</li>
+          <li><strong>ユーザーへの影響:</strong> ローカル実行に依存していたワークフロー（ローカルファイルへのアクセスを要するタスクなど）は対応の必要が生じる可能性。詳細は Anthropic サポートページで確認可能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google が Project Suncatcher を打ち上げ（10/1）——冷蔵庫サイズの衛星に TPU を搭載し宇宙空間で AI ワークロードを実行。太陽光発電で常時稼働・地上 AI データセンターの代替構想。SpaceX・Starcloud も宇宙 AI 計算で競争</div>
+      <div class="card-meta"><span class="badge">Google / Project Suncatcher / TPU / Space AI / Data Center / October 1 2026</span><span class="card-source">Source: <a href="https://www.kpbs.org/news/science-technology/2026/10/01/google-launches-project-suncatcher-a-step-towards-ai-data-centers-in-space">NPR / KPBS</a> · <a href="https://www.scientificamerican.com/article/google-tests-plan-for-ai-data-centers-in-space-project-suncatcher/">Scientific American</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>衛星の概要:</strong> Google が Planet 社と共同開発した冷蔵庫サイズの実験衛星を打ち上げ。機械学習向けに設計された TPU（Tensor Processing Unit）を 4 基搭載し、熱管理上の制約から 1 回 15 分ずつ Gemma AI モデルを宇宙空間で実行</li>
+          <li><strong>電源と軌道:</strong> 衛星は太陽同期軌道に投入され、太陽光パネルがほぼ常時太陽を向く設計。バッテリーや予備電源が不要で、将来は数十基の TPU を搭載した衛星がレーザーで通信しながら軌道上でクラスターを形成する構想</li>
+          <li><strong>競合の動向:</strong> Starcloud は昨年 Nvidia H100 を搭載した宇宙船から Google の Gemini デモを実施。SpaceX も「軌道上 AI 計算衛星」の展開を 2028 年以降に計画しており、宇宙 AI データセンター競争が本格化</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/1）:</strong> <strong>Terminal-Bench 2.1 最新ランキングで Codex + GPT-6 Astra が 87.4% で首位に浮上</strong>——Claude Code + Fable 5 は 83.8% で 2 位。GitHub Copilot は 10/19 に旧モデル 6 種を廃止予定。OpenAI の DevDay 2026 余波として各社の発表が技術コミュニティで引き続き精査されている。
+    </div>
+    <div class="card">
+      <div class="card-title">Terminal-Bench 2.1 最新スコア（10/1）——Codex + GPT-6 Astra が 87.4% で首位、Claude Code + Fable 5 が 83.8% で 2 位、Cursor CLI + Grok 4.5 が 79.3% で 3 位。Codex がダウンロード数で Claude Code を逆転——市場シェアの変化</div>
+      <div class="card-meta"><span class="badge">Terminal-Bench 2.1 / Codex / Claude Code / Cursor / Benchmarks / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">morphllm.com</a> · Harbor Hub Terminal-Bench 2.1</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Terminal-Bench 2.1 ランキング:</strong> Harbor Hub の最新 Terminal-Bench 2.1 スコアで Codex + GPT-6 Astra が 87.4% で首位。Claude Code + Fable 5 が 83.8% で 2 位、Cursor CLI + Grok 4.5 が 79.3% で 3 位</li>
+          <li><strong>ダウンロード数の逆転:</strong> OpenAI Codex が Claude Code をダウンロード数で逆転。GPT-5.5 リリース後の勢いと Claude Code のレート制限への不満が要因との見方が支配的。ただしコミュニティでは「ダウンロード数 ≠ 実際の使用満足度」という議論が継続</li>
+          <li><strong>専門性の棲み分け:</strong> Claude Code は複雑なマルチファイルタスク・コードベース全体の理解で高い評価を維持。Codex は速度・API 柔軟性・自動化パイプラインで優位。熟練開発者はツールスタックで使い分ける傾向が定着</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot が 10/19 に旧モデル 6 種を廃止——GPT-5.5・GPT-5.4・GPT-5.4 mini・GPT-5 mini・Gemini 3.7 Flash・Grok 4.5 を削除。GPT-6 Astra が中核モデルとして統合を主導。「エージェント型 Copilot」に向け GitHub プラットフォームとの統合をさらに深化</div>
+      <div class="card-meta"><span class="badge">GitHub Copilot / Model Deprecation / GPT-6 Astra / October 19 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai">releasebot.io (OpenAI/GitHub Release Notes)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>廃止モデル一覧（10/19）:</strong> GPT-5.5、GPT-5.4、GPT-5.4 mini、GPT-5 mini、Gemini 3.7 Flash、Grok 4.5 の 6 モデルを廃止。これらを利用しているワークフローは GPT-6 Astra または GPT-6.1 Sol への移行が必要</li>
+          <li><strong>エージェント型 Copilot の進化:</strong> 2026 年の Copilot は単なる補完ツールから「PR を開き、レビューに応答し、テストを実行する」エージェントへと進化。GitHub プラットフォームに深く統合されていることが、GitHub 環境にすでにいるチームにとって最大の差別化要因</li>
+          <li><strong>市場ポジション:</strong> Claude Code・Codex とは異なり、GitHub の CI/CD・PR・Actions との緊密な連携がエージェント型ワークフローの核心。IDEフローでは引き続きデファクトの選択肢</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI DevDay 2026 余波——20 以上の主要発表が技術コミュニティで精査継続。ChatGPT・Codex・新モデルにまたがる「継続的な作業向けエージェント」と「新しい人間 AI 協調形態」が焦点。Codex への評価は速度と自動化に集中</div>
+      <div class="card-meta"><span class="badge">OpenAI / DevDay 2026 / Codex / Agents / Human-AI Collaboration / October 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai">releasebot.io (OpenAI Release Notes)</a> · pricepertoken.com</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>DevDay 2026 の主要発表:</strong> OpenAI DevDay 2026 では ChatGPT・Codex・モデルにまたがる 20 以上の主要発表が行われた。「継続的な作業向けエージェント」と「新しい人間 AI 協調形態」が中心テーマで、Codex の自動化パイプライン機能が特に注目を集めた</li>
+          <li><strong>コミュニティの評価:</strong> Reddit・HN・技術メディアでの発表精査が続いており、「Codex は速度と API の柔軟性では優れているが、複雑なコードベース理解では Claude Code に及ばない」という評価が定着しつつある</li>
+          <li><strong>オプションのアカウントセキュリティ通知:</strong> Codex 最新版では、ChatGPT でサインインしたローカルセッション向けにオプションのアカウントセキュリティ設定リマインダーが追加された</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex のダウンロード数が Claude Code を初めて逆転——r/ClaudeCode では「ダウンロード数と実際の使用満足度は別物」「Pro $20 で 12 プロンプトに達するレート制限が主因」という分析スレッドが上位に</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Download Numbers / Rate Limits / Market Share / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a> · <a href="https://www.firecrawl.dev/blog/claude-code-vs-codex">firecrawl.dev</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ダウンロード逆転の背景分析:</strong> r/ClaudeCode の上位スレッドでは「Codex がダウンロード数でリードしたのは GPT-5.5 リリース後の勢いと Claude Code のレート制限への不満が主因」という見方が多い。「1 つのツールに固執せず、Claude Code とCodex を使い分けるべき」という実用論が再び上位に</li>
+          <li><strong>レート制限の苦情:</strong> Pro $20 プランで「重いプロンプト約 12 件でリセット」に達するという報告が r/ClaudeCode・r/Codex 両コミュニティで共通の上位トピックとなっている。「Anthropic はエンタープライズ（Barclays など）に注力し、個人向け上限を改善しないのでは」という懸念も</li>
+          <li><strong>Barclays 発表への反応:</strong> Barclays の 50% 開発者展開ニュースに対して「エンタープライズ Claude Code の成功は個人プランのレート制限改善につながるか」という期待スレッドが立ち上がっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA・r/ClaudeAI のクロス分析：「Claude Code は 10+ ファイルにわたるリファクタリングで依然最強——GPT・Copilot はコンテキストを失う」。Pro $20 の 12 プロンプト制限突破のためのワークフロー Tips が人気</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / r/ClaudeAI / Multi-File / Refactoring / Workflow Tips / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">morphllm.com</a> · dev.to AI agent mood</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>マルチファイルリファクタリングの優位性:</strong> 複数の r/ClaudeAI スレッドで、Claude Code が 10+ ファイルにわたるリファクタリング時にインポート・型定義・テストを 1 パスで正確に更新した事例が多数記録。ChatGPT・Copilot はコンテキストを失うとの比較が続く</li>
+          <li><strong>レート制限突破の実用 Tips:</strong> 「セッションを複数に分割してコンテキストを引き継ぐ」「定型的なリファクタリングは Codex 自動化パイプラインで処理し、複雑な設計変更だけ Claude Code に投げる」という Tips スレッドが高 upvote</li>
+          <li><strong>ツールスタック戦略の定着:</strong> 2026 年を通じて「1 ツールに固執せず Claude Code + Copilot + Cursor を使い分ける」戦略が熟練開発者の標準的アプローチとして定着しつつある</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI エージェントのムードまとめ（10/1週）——「Barclays の Claude Code 大規模採用はエンタープライズ AI の転換点」「Google 宇宙 AI は SF から現実へ」「Terminal-Bench で Codex が首位になったが実用評価は別」という 3 トレンドが議論の中心に</div>
+      <div class="card-meta"><span class="badge">Community / AI Agent Mood / Weekly Trends / Barclays / Google / Terminal-Bench / October 2026</span><span class="card-source">Source: <a href="https://dev.to/loraine_mccarthy_fb6fb9da/the-ai-agent-mood-on-reddit-this-week-10-threads-builders-couldnt-ignore-e5o">DEV Community</a> · aicodingdaily.substack.com</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Barclays ニュースへの反応:</strong> 「金融機関最大規模の Claude Code 展開は、AI コーディングエージェントが実験フェーズから本番フェーズに移行した象徴」という評価が多い。「次は医療・法律・政府系での大規模採用が続く」という予測スレッドも上位</li>
+          <li><strong>Google 宇宙 AI への反応:</strong> r/MachineLearning・r/space ではクロスポストで「宇宙 AI データセンターは地上のエネルギー問題の解決策になり得るか」という議論が活発。「15 分の実行時間制限は今後どう解決するか」という技術的考察も</li>
+          <li><strong>Terminal-Bench 首位交代への反応:</strong> 「ベンチマーク首位は Codex でも、複雑な実務タスクでの満足度評価は依然 Claude Code が高い」という論調が多い。「ベンチマークと実際の開発体験のギャップ」が 10/1 週の主要メタ議題</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/1）の主要トピック:</strong> <strong>イラン・米交渉が決裂——Rubio がイラン国連代表団に即時退去命令</strong> / ロシアによるウクライナへのドローン・ミサイル攻撃継続 / Morocco が初の女性首相 Fatima Zahra Mansouri を任命 / ISS に新クルー4名が打ち上げ成功 / ドバイ発テルアビブ便でのナイフ事件でサウジアラビアに緊急着陸
+    </div>
+    <div class="card">
+      <div class="card-title">イラン・米停戦交渉が決裂（10/1）——Rubio 国務長官がイラン国連総会代表団に即時退去命令。イランは「事前通告済みの日程通り帰国」と反論。停戦提案の「順序」で合意できず——双方が必要なステップには同意も順番が不一致</div>
+      <div class="card-meta"><span class="badge">Iran / USA / Rubio / UN General Assembly / Ceasefire / Hormuz / October 1 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/159415/early-edition-october-1-2026/">Just Security</a> · <a href="https://thehill.com/homenews/administration/6122998-rubio-orders-iranian-delegation-out/">The Hill</a> · <a href="https://www.ibtimes.com/us-iran-negotiations-are-stalled-now-rubio-reportedly-ordered-tehrans-un-delegation-leave-3808103">IBTimes</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>決裂の経緯:</strong> 週末のイラン・カタール仲介者との会合で進展がほとんどなかったことを受け、Rubio 国務長官は 10/1 月曜にアラグチ外相率いるイラン代表団に即時退去を通告。代表団は同日夜に出国</li>
+          <li><strong>双方の主張:</strong> イランの国連ミッションは「追放ではなく、9/17 に国務省へ届け出た日程通りの帰国」と否定。米側は代表団が「歓迎を超えて滞在した」と判断したと説明</li>
+          <li><strong>交渉の本質的障壁:</strong> 双方が停戦達成に必要なステップ自体にはおおむね同意しているが、どの順番で実施するかで合意できていない状況。ホルムズ海峡の段階的再開・凍結資産解除・全面停戦の順序が焦点</li>
+          <li><strong>軍事的緊張の継続:</strong> Fox News によると、米国は中東に数千人規模の追加部隊・海兵隊を展開中。交渉決裂後の軍事的エスカレーションリスクが高まっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシアがウクライナへの攻撃継続（9/30–10/1）——ドローン・ミサイルによるエネルギーインフラ・居住地への攻撃が続く。Zelenskyy 大統領が欧州・米国に防空システムの追加支援を要請</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drone / Missile / Energy Infrastructure / October 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/159415/early-edition-october-1-2026/">Just Security</a> · Democracy Now</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>攻撃の継続:</strong> ロシアによるウクライナへのドローンおよびミサイル攻撃が 9/30 夜から 10/1 早朝にかけて継続。キーウ近郊・オデーサ周辺のエネルギーインフラが主な標的</li>
+          <li><strong>Zelenskyy の訴え:</strong> ウクライナのゼレンスキー大統領は欧州・米国パートナーに対し、防空システムおよびミサイル迎撃体制の強化に向けた追加支援を要請</li>
+          <li><strong>冬を前にしたインフラ攻撃:</strong> 冬季到来を前にエネルギーインフラへの攻撃が激化する懸念が高まっており、国際人道組織が民間人への影響を警告している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Morocco が初の女性首相を任命（10/1）——モハンマド 6 世国王が Fatima Zahra Mansouri を首相に指名。アラブ世界でも歴史的な出来事。市長・女性権利活動家としての実績を持つ</div>
+      <div class="card-meta"><span class="badge">Morocco / Prime Minister / Fatima Zahra Mansouri / First Female / October 1 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-1-2026">Everything Briefing</a> · AA (Anadolu Agency)</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>歴史的任命:</strong> モロッコのモハンマド 6 世国王が Fatima Zahra Mansouri を首相に任命。モロッコ史上初の女性首相であり、アラブ世界でも歴史的な出来事として注目される</li>
+          <li><strong>Mansouri の経歴:</strong> 法律家・市長・女性権利活動家としての実績を持ち、マラケシュ市長を務めた経験も。モロッコの政治における女性リーダーシップの象徴的な任命</li>
+          <li><strong>地域的インパクト:</strong> 中東・北アフリカ地域での女性の政治参加促進に向けた象徴的な一歩として国際社会から評価される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ISS に新クルー4名が打ち上げ成功（10/1）——NASA 宇宙飛行士 2 名・カナダ 1 名・ロシア人宇宙飛行士 1 名がフロリダ州ケープカナベラルから出発。宇宙空間での国際協力が継続</div>
+      <div class="card-meta"><span class="badge">ISS / NASA / Space / International Crew / October 1 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-1-2026">Everything Briefing</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>クルー構成:</strong> NASA 宇宙飛行士 2 名、カナダ宇宙機関 1 名、ロシア人宇宙飛行士 1 名の計 4 名が国際宇宙ステーション（ISS）に向けて出発。ケープカナベラルからの打ち上げは成功</li>
+          <li><strong>国際協力の象徴:</strong> 米露関係が緊張する中でも、ISS での科学的協力が継続していることを示す。Google の Project Suncatcher 打ち上げと同日に行われた宇宙関連の重要イベント</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ドバイ発テルアビブ便でナイフ刺傷事件——サウジアラビアに緊急着陸。UAE・イスラエル間の航空路線（アブラハム合意の象徴）での初の深刻なセキュリティ事案として注目される</div>
+      <div class="card-meta"><span class="badge">UAE / Israel / Dubai / Tel Aviv / Flight / Stabbing / Saudi Arabia / October 1 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-1-2026">Everything Briefing</a> · AA</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事件の概要:</strong> ドバイからテルアビブに向かっていた便内でナイフによる刺傷事件が発生し、航空機はサウジアラビアに緊急着陸した。乗客・乗員の安全が確保された後、当局が容疑者を拘束</li>
+          <li><strong>外交的背景:</strong> 2020 年のアブラハム合意によって実現した UAE・イスラエル間の直行航空路線で発生した初の重大セキュリティ事案として、地域の安全保障当局が詳細を調査中</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>10/1 のトレンド:</strong> AI コーディングエージェント比較・モデル性能評価・JavaScript セキュリティ・AI 時代のエンジニアスキル論が上位に。前日アーカイブ（9/30 は省略済み）と内容が異なる記事を収録。
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・61 likes】AI-Slopな日本語を構造レベルで読みやすくするSkill「yomiyasu（よみやす）」を作りました——Claude Code などの AI 出力の冗長・機械的な日本語をリライトするスキル</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Skill / Japanese NLP / AI Output Quality / October 1 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/175">Zenn AI関連人気記事 2026-10-01</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> Claude Code や各種 LLM が出力する「AI-Slop（AI 的な冗長・機械的な日本語）」を構造レベルで読みやすくリライトする Claude Code スキル「yomiyasu」を公開。61 likes を獲得し Zenn 当日トップに</li>
+          <li><strong>主なアプローチ:</strong> 箇条書きの過多・接続詞の反復・体言止めの乱用といった AI 文体パターンを検出し、自然な日本語文体に変換するプロンプトエンジニアリング技術を解説</li>
+          <li><strong>読者の反応:</strong> 「Claude Code を使って日本語ドキュメントを量産する現場での実用度が高い」「AI 出力の品質管理ツールとして応用できる」というコメントが多数</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita・人気】Claude Code で選べる 12 モデルに同じ仕事をさせた——1 年で速度は 2.7 倍、値段は 1% しか変わらなかった。Fable 5.1 から Haiku 4.5 まで実用比較</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / Model Comparison / Fable 5.1 / Haiku 4.5 / Benchmark / October 1 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/9fac94d03910ee383a42">Qiita 2026-10-01 トレンド</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> Claude Code で選択可能な全 12 モデル（Fable 5.1・Opus 5.5・Sonnet 5.5・Haiku 4.5 など）に対して同一タスクを実行し、速度・コスト・品質を 1 年間の変化とともに比較した実験記事</li>
+          <li><strong>主な発見:</strong> 1 年間でモデルの処理速度は平均 2.7 倍に向上した一方、実際のコストは 1% 程度しか変化していないという興味深い結果。ユースケース別の最適モデル選択指針も提供</li>
+          <li><strong>実用的価値:</strong> コスト最適化を考える Claude Code ユーザーにとって実践的なベンチマーク情報として注目されており、「Haiku 4.5 を定型タスクに使い Fable 5.1 を複雑タスクに限定する」戦略の裏付けに</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・人気】主要コーディングエージェント CLI 6 種の仕様比較——フック・権限・サブエージェント・MCP 設定。Claude Code / Codex / Cursor / Copilot CLI などを横断評価</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Codex / Cursor / Copilot / CLI Comparison / MCP / Hooks / October 1 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/175">Zenn AI関連人気記事 2026-10-01</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> Claude Code・Codex・Cursor CLI・GitHub Copilot CLI など主要 6 ツールのフック機構・権限モデル・サブエージェント対応・MCP（Model Context Protocol）設定を比較した技術記事</li>
+          <li><strong>主な比較軸:</strong> ① フック実行タイミングと設定の柔軟性 ② 権限プロンプトとセキュリティモデル ③ サブエージェント委任の有無 ④ MCP サーバー設定方法の違い</li>
+          <li><strong>読者の評価:</strong> 「ツール選定・移行の意思決定に必要な情報が一覧できる」「特に MCP 設定の差異が各ツールの拡張性の違いを端的に示している」という声が多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita・人気】AI 時代のエンジニアが鍛えるべき「具体と抽象」という思考力——LLM に任せられない唯一の能力とは何か</div>
+      <div class="card-meta"><span class="badge">Qiita / AI Engineering / Abstract Thinking / LLM / Engineer Skills / October 1 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/9fac94d03910ee383a42">Qiita 2026-10-01 トレンド</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の主張:</strong> Claude Code などの AI コーディングエージェントが台頭する中でも、「具体と抽象を行き来する思考力」は LLM には代替できないエンジニアの中核スキルであると論じる</li>
+          <li><strong>論点:</strong> LLM は具体的な実装タスクでは優秀だが、「このシステムの本質的な問題は何か」「どのレベルの抽象化が適切か」という問いに対する洞察はエンジニアが担うべきという主張</li>
+          <li><strong>読者の反応:</strong> 「AI ツールを使いこなすほどこの思考力の重要性を実感する」「Barclays のような企業が Claude Code を大規模展開しても、設計判断はエンジニアに残る」という共感コメントが多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita・人気】【JavaScript】Promise.resolve はPromiseでないオブジェクトも resolve するしそのせいで脆弱性がたくさんある——thenable オブジェクトのセキュリティリスクを解説</div>
+      <div class="card-meta"><span class="badge">Qiita / JavaScript / Promise / Security / Vulnerability / thenable / October 1 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/9fac94d03910ee383a42">Qiita 2026-10-01 トレンド</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> JavaScript の `Promise.resolve()` が Promise 以外の「thenable オブジェクト」（then メソッドを持つオブジェクト）を解決してしまう仕様に起因するセキュリティ脆弱性を詳細に解説</li>
+          <li><strong>脆弱性の実例:</strong> 外部から受け取ったオブジェクトを `Promise.resolve()` に渡すことで任意のコードが実行されうるパターンを具体的なコード例とともに示す</li>
+          <li><strong>AI コーディングとの関連:</strong> Claude Code・Codex などの AI が生成するコードでも同様のパターンが現れることがあるとし、AI 生成コードのセキュリティレビューの重要性を指摘する内容として技術者に反響</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月1日（木）</p>
+  <p style="margin-top:0.5rem;">Sources: Bloomberg · PYMNTS · Anthropic · NPR/KPBS · Scientific American · morphllm.com · firecrawl.dev · releasebot.io · Just Security · The Hill · IBTimes · Fox News · Everything Briefing · Democracy Now! · Anadolu Agency · DEV Community · Zenn · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-09-30/index.html">前版（2026-09-30）</a></p>
+</footer>
+</body>
+</html>
