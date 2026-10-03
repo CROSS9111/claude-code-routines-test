@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月2日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code 2.1.287 が Mods 機能を正式リリース——TypeScript で動作をフルカスタマイズ可能に / Claude for Government が連邦・州政府向けに正式 GA / OpenAI DevDay 2026：常時稼働エージェント「Dots」＆ Codex Ultrafast（300 tok/s） / 米が第3空母打群と1万人を中東へ——トランプがイラン追加攻撃を示唆 / ISS 新クルー到着（Falcon 9、過去最速8時間）</p>
+  <p class="date">2026年10月2日（金）&nbsp;|&nbsp;<a href="2026-10-01/index.html">前版（10/1）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/2）のハイライト:</strong> <strong>Claude Code 2.1.287 が Mods 機能を正式リリース</strong>——TypeScript で書いた小さなモジュールが Claude Code の動作・UI・ツール呼び出しをリアルタイムで書き換え可能に。<strong>Claude for Government が米国の連邦・州機関向けに正式 GA</strong>——FedRAMP High 認証付きでコーディング・エージェント機能を提供。Anthropic の Releasebot ログでは他にも複数のマイナーアップデートが確認されている。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 2.1.287 が Mods 機能を正式リリース（10/1 16:59 UTC）——TypeScript モジュールでプロンプト書き換え・ツールブロック・権限変更・カスタム UI 描画が可能に。API キーへのアクセス権限に関するセキュリティ議論も浮上</div>
+      <div class="card-meta"><span class="badge">Claude Code / Mods / TypeScript / v2.1.287 / October 2026</span><span class="card-source">Source: <a href="https://claude.com/blog/claude-code-mods">Anthropic Blog</a> · <a href="https://mixed-news.com/en/claude-code-2-1-287-mods-not-sandboxed-api-key/">Mixed News</a> · <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Mods とは:</strong> Claude Code 2.1.287（npm 公開：10/1 16:59 UTC）で導入された新機能。TypeScript または JavaScript で書いた小さなイベントハンドラ群が、ツール呼び出し・プロンプト送信・UI 描画・スラッシュコマンドなどのイベントを購読・変更・乗っ取ることができる</li>
+          <li><strong>主な能力:</strong> プロンプトのリライト、ツール呼び出しのブロック/リトライ、権限スコープの変更、出力のリダクション、カスタム UI 描画、組み込み機能の置き換えが可能。mod は plugin の中に TypeScript ファイルとして同梱され、Claude ディレクトリからインストールまたは <code>/plugin</code> コマンドで追加</li>
+          <li><strong>使い方:</strong> CLI またはデスクトップアプリで利用可能。「mod を書いて」と Claude Code に依頼すると TypeScript を生成してインストールし、セッション内でホットリロードされる。バージョン 2.1.287 以降で自動的に有効化</li>
+          <li><strong>セキュリティ懸念:</strong> Mods はサンドボックス外で動作するため API キーを含む環境変数へのアクセス権を持つことが指摘されている。信頼できないソースからの mod のインストールは注意が必要とされ、コミュニティで活発な議論が行われている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude for Government が米国連邦・州機関向けに正式 GA（一般提供開始）——FedRAMP High 承認済みでコーディング・エージェント業務に対応。Claude Code CLI と Claude for Microsoft 365 も早期アクセスで展開中</div>
+      <div class="card-meta"><span class="badge">Claude / Government / FedRAMP / Federal / State / October 2026</span><span class="card-source">Source: <a href="https://techrepublic.com/article/news-anthropic-claude-government-general-availability">TechRepublic</a> · Anthropic</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>正式 GA の内容:</strong> Claude for Government が米国の連邦・州政府機関向けに一般提供開始。FedRAMP High 認証を取得済みで、厳格なデータ管理・ガバナンス・監査ログ・支出管理機能を備える</li>
+          <li><strong>提供機能:</strong> コーディング支援・エージェント型ワークフロー・デスクトップファイルアクセスに対応。Claude Code CLI の早期アクセスと Claude for Microsoft 365 連携も同時展開</li>
+          <li><strong>背景:</strong> Barclays（10/1 発表）のような大規模エンタープライズ展開に続き、公共セクターへの拡大が加速。政府機関特有のコンプライアンス要件に対応したことで、公共調達における競争力が大幅に向上した</li>
+          <li><strong>市場への影響:</strong> Microsoft（Azure Government + Copilot）や AWS（GovCloud）が先行する政府 AI 市場において、Anthropic が独自の立場を確立しようとする動き。Claude の安全性評価基準が政府要件にマッチしたと評価される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic Releasebot：10月の小さな改善群——Cowork クラウド移行（10/6）に向けた準備更新・Claude.ai UI 改善・API レート制限の細則変更などが確認される</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude / Release Notes / October 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Releasebot – Anthropic</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Releasebot ログの動向:</strong> Releasebot の Anthropic リリースノート追跡では 10 月に入って複数の小さなアップデートが確認されている。主に Cowork クラウド移行（10/6 実施予定）に向けた内部準備と UI のポリッシュが中心</li>
+          <li><strong>Cowork クラウド移行:</strong> 10/6 より新しい Cowork タスクが完全クラウド実行に移行。Pro・Max プランから「自分のコンピューター上のみ」オプションが削除され、スケーラビリティと環境分離が向上する見込み</li>
+          <li><strong>注目点:</strong> Claude Code Mods のリリースと Claude for Government GA が相次いだことで、Anthropic のプロダクトリリースペースが加速しているという見方が強まっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/2）:</strong> <strong>OpenAI DevDay 2026 の詳細が続々判明</strong>——常時稼働エージェント「Dots」、Codex Ultrafast（300 tok/s・最大 8 倍高速）、Codex Security Cloud（バグ自動発見 AI）、新モデル GPT-6.1 Sol（コスト削減版）が発表の柱。Codex のオープンソースハーネスと「エージェントに専用コンピューター」というコンセプトが技術コミュニティで大きな反響を呼んでいる。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI DevDay 2026 詳細判明——常時稼働エージェント「Dots」・Codex Ultrafast（300 tok/s）・Codex Security Cloud・新モデル GPT-6.1 Sol を発表。エージェントが専用クラウドコンピューターを持つ時代へ</div>
+      <div class="card-meta"><span class="badge">OpenAI / DevDay 2026 / Dots / Codex / GPT-6.1 Sol / Agents / October 2026</span><span class="card-source">Source: <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a> · <a href="https://openai.com/index/devday-2026-recap/">OpenAI</a> · <a href="https://www.infoq.com/news/2026/10/openai-devday-2026/">InfoQ</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Dots（常時稼働エージェント）:</strong> ChatGPT 内に常駐する always-on エージェント。ユーザーがチャットを終了した後もメモリ・アプリ接続・専用クラウドコンピューターを使って作業を継続できる。従来の「一問一答」から「継続的な作業パートナー」への転換を象徴</li>
+          <li><strong>Codex Ultrafast:</strong> Codex のトークン生成速度を最大 8 倍向上させた新ティア。毎秒 300 トークンを実現し、自動化パイプライン・リアルタイム補完での優位性を大幅に拡大。Codex ハーネスがオープンソース化されたことも開発者コミュニティで大きな反響</li>
+          <li><strong>Codex Security Cloud:</strong> ユーザーが眠っている間もバグ・脆弱性を自動で探し続ける AI セキュリティエージェント。コードベース全体を継続的に監視し、発見した問題を優先度付きでレポート</li>
+          <li><strong>GPT-6.1 Sol:</strong> GPT-6 Astra より大幅にコストを抑えつつ実用タスクでの性能を近づけた新モデル。コスト削減を重視するエンタープライズ・スタートアップ向けのポジショニング</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex Security Cloud の登場が示す「眠らない AI セキュリティ」の新潮流——GitHub Advanced Security・Snyk・SonarQube との差別化。AI がコードベースを継続スキャンする時代の到来</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex Security Cloud / DevSecOps / AI Security / October 2026</span><span class="card-source">Source: <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a> · <a href="https://blog.mean.ceo/open-ai-news-october-2026/">blog.mean.ceo</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>従来ツールとの差異:</strong> GitHub Advanced Security・Snyk・SonarQube などの既存ツールはルールベースや静的解析が中心。Codex Security Cloud は LLM による意味理解を活用し、ロジックバグ・ビジネスロジック脆弱性など従来ツールが苦手とする問題の検出を狙う</li>
+          <li><strong>「眠らない AI」コンセプト:</strong> Dots と同様に「エージェントが専用コンピューターを持ち、ユーザーの操作なしに常時作業する」OpenAI の新アーキテクチャを体現。セキュリティチームが見落としがちな深夜・週末の脆弱性発見に対応</li>
+          <li><strong>競合の動向:</strong> Anthropic はコンピューターユース機能で同様のエージェント型セキュリティ監視が可能であることをデモしており、Claude Code Mods を使ったカスタムセキュリティスキャンも注目される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI モデルリリース競争が加速（10月第1週）——GPT-6.1 Sol・Google Gemini Ultra 3・Mistral Large 3 が相次ぎ発表。「高性能モデルの低コスト化」トレンドが鮮明に</div>
+      <div class="card-meta"><span class="badge">AI Models / GPT-6.1 Sol / Gemini / Mistral / Cost / Performance / October 2026</span><span class="card-source">Source: <a href="https://blog.mean.ceo/new-ai-model-releases-news-october-2026">blog.mean.ceo</a> · aiweekly.co</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>10月の新モデル群:</strong> OpenAI GPT-6.1 Sol（コスト最適化版 GPT-6）、Google Gemini Ultra 3（マルチモーダル強化）、Mistral Large 3（欧州データ主権対応）が相次いで発表。各社の競争激化で「高性能を安価に」トレンドが加速</li>
+          <li><strong>Anthropic のポジション:</strong> Fable 5.1 が複雑なマルチファイルタスクで引き続き高評価を維持。Haiku 4.5 がコスト効率ランキングで上位に。モデルの多様化により「タスク別モデル選択」が開発者の必須スキルに</li>
+          <li><strong>業界への影響:</strong> 複数のアナリストが「2026 年 Q4 はモデル価格の底値競争が本格化する四半期」と予測。クラウド各社の AI 推論サービスコストが半年で 40〜60% 低下している</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode が Mods 機能発表で沸騰——「TypeScript で Claude Code を書き換えられるのは革命的」「API キーへのアクセスは大丈夫か」「早速 mod を書いてみた」報告が殺到</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Mods / TypeScript / Security / October 2 2026</span><span class="card-source">Source: <a href="https://x.com/i/trending/2105757345443717464">X (Twitter) トレンド</a> · <a href="https://cellcog.ai/blog/claude-code-mods/">cellcog.ai</a> · <a href="https://ccleaks.com/news/claude-code-2-1-287-oct-2026">ccleaks.com</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>コミュニティの熱狂:</strong> Claude Code Mods の発表直後から r/ClaudeCode に「実際に書いた mod を見せて」スレッドが立ち上がり、数時間で数百コメントに。「プロンプトにプロジェクトのコーディング規約を自動注入する mod」「特定のツール呼び出しをロギングする mod」などのサンプルが共有されている</li>
+          <li><strong>セキュリティ懸念のスレッド:</strong> 「Mods はサンドボックス外で動作するため API キーを読める」という指摘を受けたスレッドが急上昇。「信頼できないソースの mod をインストールしてはいけない」という注意喚起と、「Anthropic はサンドボックス化を検討すべき」という意見が対立</li>
+          <li><strong>ポジティブな評価:</strong> 熟練ユーザーからは「CLAUDE.md だけでは表現できなかった細かい動作制御が TypeScript で書けるようになった」「チーム共通の mod をプロジェクトリポジトリで管理できる」という高評価の声が多い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/artificial・r/OpenAI で OpenAI DevDay 2026 の「Dots」に関する活発な議論——「エージェントに専用コンピューターを与えるのは正しいアプローチか」「Claude のコンピューターユースとの違いは」</div>
+      <div class="card-meta"><span class="badge">Community / r/artificial / r/OpenAI / Dots / DevDay 2026 / Agents / October 2 2026</span><span class="card-source">Source: <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a> · <a href="https://www.infoq.com/news/2026/10/openai-devday-2026/">InfoQ</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「専用コンピューター」アーキテクチャへの反応:</strong> r/artificial では「OpenAI がエージェントに専用クラウドコンピューターを与えるという設計は理にかなっているか」という議論が活発。「常時稼働の副作用として意図しない操作が起きるリスク」を懸念する声と「人間が離席している間も作業が進むのは効率的」という賛成論が拮抗</li>
+          <li><strong>Anthropic との比較:</strong> 「Claude のコンピューターユース機能と何が違うのか」という比較スレッドで、「Dots はメモリと継続性を強調、Claude コンピューターユースはタスク完結型」という整理が上位コメントに。「Mods が出た今、Claude Code の拡張性も同等かそれ以上」という評価も</li>
+          <li><strong>Codex Ultrafast への反応:</strong> 「300 tok/s は自動化パイプラインにとって本当に意味がある速度」という開発者の声が多い。「Claude Code はコンテキスト品質、Codex は速度と価格」という棲み分けが改めて確認される形に</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA で「Claude Code Mods で mod を書いてもらった結果」実験レポートが人気——「Claude Code に自分の mod を書かせる」という自己参照的ユースケースが注目。Mods を使ったワークフロー集も登場</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Claude Code Mods / Self-Referential / Workflow / October 2 2026</span><span class="card-source">Source: <a href="https://claude.com/blog/claude-code-mods">Anthropic Blog</a> · X トレンド</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「自分で mod を書かせる」実験:</strong> r/LocalLLaMA に「Claude Code に『自分の動作を制限する mod を書いて』と頼んだらどうなるか」というスレッドが登場。実際に試したユーザーから「特定のファイルパスへの書き込みをブロックする mod を生成してもらった」という報告が多数</li>
+          <li><strong>実用 mod の共有:</strong> コミュニティメンバーが GitHub に「Claude Code Mods コレクション」リポジトリを立ち上げ、「コミット前に lint を自動実行する mod」「プロンプトに現在の git ブランチ名を自動挿入する mod」などの実用例が公開されている</li>
+          <li><strong>「mod エコシステム」の萌芽:</strong> VSCode の拡張機能エコシステムと同様に「Claude Code の mod マーケットプレイス」が自然発生的に形成されつつあるという観察が多い。Anthropic が公式ディレクトリを整備するか否かが次の注目点</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/2）の主要トピック:</strong> <strong>米が第3空母打撃群と1万人規模の追加部隊を中東へ展開——トランプ大統領がイランへの追加攻撃を示唆</strong>、イスラエル行き旅客機の副操縦士による乗っ取り未遂事件との関連調査中 / エチオピア・エリトリア外交断絶——48時間以内に外交団退去命令 / ISS 新クルーが Falcon 9 で過去最速（8時間）で到達 / ブラジル国政選挙を日曜に控え犯罪対策が最大争点 / エジプトが独立メディア Matsadaash の編集チーム全員を逮捕
+    </div>
+    <div class="card">
+      <div class="card-title">米が第3空母打撃群（USS セオドア・ルーズベルト）と1万人規模の追加部隊を中東へ展開——トランプ大統領が「イランとの関連が確認されれば非常に強力な攻撃もあり得る」と発言。旅客機乗っ取り未遂との関連も調査中</div>
+      <div class="card-meta"><span class="badge">USA / Iran / Middle East / Aircraft Carrier / Trump / October 2 2026</span><span class="card-source">Source: <a href="https://www.aljazeera.com/news/2026/10/2/us-to-send-third-aircraft-carrier-towards-iran-us-official-to-al-jazeera">Al Jazeera</a> · <a href="https://www.nation.com.pk/02-Oct-2026/us-moves-thousands-troops-middle-east-trump-weighs-iran-strikes">The Nation</a> · <a href="https://www.click2houston.com/news/politics/2026/10/01/us-is-moving-thousands-of-troops-abroad-ships-to-the-mideast-as-trump-weighs-new-strikes-on-iran/">Click2Houston / AP</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>軍事展開の規模:</strong> 米国はサンディエゴから USS セオドア・ルーズベルト空母打撃群を出港させ、第3の空母打撃群として中東海域に向かわせた。マキン島海兵遠征部隊（約 2,000 名）も追随。年末までに空母3隻・強襲揚陸艦2隻が集結する見込み。すでに USS ジョージ・H・W・ブッシュと USS ジョージ・ワシントンが現地展開中</li>
+          <li><strong>トランプ大統領の発言:</strong> 「11月3日の米選挙後に攻撃レベルを引き上げる可能性がある」と言及。イスラエル行き旅客機の副操縦士乗っ取り未遂事件でイランとの関連が確認された場合、「非常に強力な打撃を加える」と述べた</li>
+          <li><strong>旅客機乗っ取り未遂の背景:</strong> ドバイ発テルアビブ便の副操縦士がイスラエルへの墜落を企図した疑いで当局が調査中。ネタニヤフ首相は「当局はすでに重要情報を持っている」と発言。事件はサウジアラビアへの緊急着陸で食い止められた</li>
+          <li><strong>外交的文脈:</strong> 10/1 の Rubio による国連総会イラン代表団退去命令から24時間も経たない中での大規模軍事展開であり、外交チャンネルの閉塞と軍事的圧力強化が同時進行している構図</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">エチオピアがエリトリアとの外交関係を断絶（10/2）——エリトリア外交団に 48 時間以内の退去命令。両国国境地帯での緊張が直接衝突に発展するリスク。アフリカの角の地政学的安定に重大な懸念</div>
+      <div class="card-meta"><span class="badge">Ethiopia / Eritrea / Diplomatic Relations / Conflict / Africa / October 2 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/159499/early-edition-october-2-2026/">Just Security</a> · NPR · Democracy Now!</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>外交断絶の経緯:</strong> エチオピア政府がエリトリアとの外交関係を断絶し、エリトリア外交団に対して 48 時間以内の退去を命令。エリトリア側もエチオピア外交官の退去を求めた</li>
+          <li><strong>緊張の背景:</strong> エチオピア北部・ティグライ州での内戦後から両国間の緊張が継続しており、今回の断絶はエリトリアがエチオピア国内の反政府勢力を支援しているとの疑惑が直接の引き金とされる</li>
+          <li><strong>地域への影響:</strong> アフリカの角（エチオピア・エリトリア・ソマリア・ジブチ）は中東情勢とも連動する戦略的要衝。両国の武力衝突に発展した場合、紅海航路の安全保障にも影響する可能性が指摘されている</li>
+          <li><strong>国際社会の反応:</strong> アフリカ連合（AU）が緊急調停を申し出た模様。国連も情勢悪化を懸念する声明を準備中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ISS 新クルー4名が過去最速8時間で到着（10/2）——SpaceX Falcon 9 ロケットでケープカナベラルから打ち上げ。NASA「同行程で最速の米国宇宙船」。米露協力が継続中</div>
+      <div class="card-meta"><span class="badge">ISS / NASA / SpaceX / Falcon 9 / October 2 2026</span><span class="card-source">Source: <a href="https://www.npr.org/2026/10/02/nx-s1-5989541/the-news-roundup-for-october-2-2026">NPR</a> · <a href="https://everythingbriefing.substack.com/p/october-2-2026">Everything Briefing</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記録達成:</strong> SpaceX Falcon 9 ロケットで打ち上げられた ISS 新クルーが約 8 時間でドッキングに成功。NASA が「同行程で過去最速の米国宇宙船」と認定</li>
+          <li><strong>クルー構成:</strong> NASA 宇宙飛行士 2 名、カナダ宇宙機関（CSA）1 名、ロシア人宇宙飛行士（ロスコスモス）1 名。米露間の地政学的緊張が続く中でも宇宙分野での国際協力が維持されている</li>
+          <li><strong>技術的背景:</strong> SpaceX の軌道最適化アルゴリズムにより飛行時間が短縮。宇宙飛行士の体への負担軽減と緊急補給任務への応用が期待される</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ブラジル国政選挙を10/4（日）に控え——犯罪対策が最大争点。エジプトでは独立メディア Matsadaash の編集チーム全員が逮捕——「ムスリム同胞団所属・虚偽ニュース製造」の疑いで6名拘束</div>
+      <div class="card-meta"><span class="badge">Brazil / Election / Egypt / Media / Press Freedom / October 2 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/159499/early-edition-october-2-2026/">Just Security</a> · <a href="https://everythingbriefing.substack.com/p/october-2-2026">Everything Briefing</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ブラジル選挙（10/4）:</strong> 日曜に国政選挙を控え、有権者の最大の懸念事項は犯罪対策。与野党双方が治安強化を公約の前面に押し出し、アマゾン地域の組織犯罪問題が争点化している</li>
+          <li><strong>エジプトのメディア弾圧:</strong> エジプト当局が独立メディア Matsadaash の編集チーム全員（ジャーナリスト 6 名）を逮捕。「禁止組織（ムスリム同胞団）への所属」と「虚偽ニュースの製造」を容疑として挙げているが、報道自由団体は「政府批判への報復」と批判している</li>
+          <li><strong>ドイツの政治情勢:</strong> ドイツでは先週の選挙での極右・極左の躍進を受け、中道政党が内省を余儀なくされている。政治的分極化と経済の低迷が重なる状況をヴァイマル共和国末期になぞらえる論調も出ており、欧州の民主主義の脆弱性が改めて問われている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">世界の感染症情報（10/2）——コンゴ民主共和国のエボラ出血熱が死者 3,982 人・感染者 8,000 人超に到達。資金不足・地域紛争・医療不信が封じ込め策の障害に</div>
+      <div class="card-meta"><span class="badge">DRC / Ebola / Global Health / October 2 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/159499/early-edition-october-2-2026/">Just Security</a> · NPR</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>エボラ感染状況:</strong> コンゴ民主共和国（DRC）のエボラ出血熱は今週、死者数が 3,982 人・感染者数が 8,000 人を超えた。公衆衛生資金の逼迫・継続中の地域紛争・地域住民の医療当局への不信が感染拡大の障壁になっている</li>
+          <li><strong>国際社会の対応:</strong> WHO・国境なき医師団（MSF）が緊急援助を強化しているが、武装勢力が活動する地域へのアクセスが制限されており、ワクチン接種キャンペーンの進捗が滞っている</li>
+          <li><strong>封じ込めの課題:</strong> 今回のアウトブレイクは DRC 東部・紛争地帯に近い地域が中心で、従来の感染症対応インフラが機能しにくい環境。隣接するルワンダ・ウガンダへの越境感染拡大防止が優先課題</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>10/2 のトレンド:</strong> LLM デプロイ最適化・敵対的コードレビュー・LLM API の SLI/SLO 設計・Ollama ローカル LLM 比較・Rust 製強化学習フレームワークが上位に。昨日（10/1）のアーカイブと内容が実質異なる記事を収録。
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・14 likes】ゲーミングPC向けで LLM とデプロイ環境を最適化してみた話——VRAM 制限・量子化選択・バッチ処理チューニングの実践ノウハウ</div>
+      <div class="card-meta"><span class="badge">Zenn / LLM / Deploy / GPU / Quantization / October 2 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/177">Zenn AI関連人気記事 2026-10-02</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> 一般向けゲーミング PC（VRAM 16〜24 GB クラス）で LLM をローカル実行する際のデプロイ環境最適化を実践した記事。VRAM 制限に合わせた量子化ビット数の選択・バッチサイズのチューニング・推論スループット改善のノウハウを解説</li>
+          <li><strong>主な知見:</strong> 4bit 量子化 + Flash Attention 2 の組み合わせで VRAM 使用量を 60% 削減しつつ品質劣化を最小限に抑える手法を紹介。Ollama・llama.cpp・vLLM の特性比較も含む</li>
+          <li><strong>読者の反応:</strong> 「クラウド GPU なしでも実用レベルの LLM 環境が作れると分かった」「量子化ビット数の選択基準が明確で助かる」というコメントが多数。Zenn 当日トップ記事として2日連続でトレンド入り</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・5 likes】実務において敵対的レビューはどの程度有効なのか——AI コードレビューを「反論させる」手法の効果検証。Claude Code と GitHub Copilot での実験結果</div>
+      <div class="card-meta"><span class="badge">Zenn / Code Review / AI / Adversarial / Claude Code / Copilot / October 1-2 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/177">Zenn AI関連人気記事 2026-10-02</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の主張:</strong> AI コードレビューツールに「このコードに問題はないか？」と聞くより「このコードの欠陥を挙げよ」と問う「敵対的レビュー」アプローチが、実務での見落とし防止に有効かを検証</li>
+          <li><strong>実験結果:</strong> Claude Code と GitHub Copilot に同じコードを通常レビューと敵対的プロンプトの両方で評価させたところ、敵対的プロンプトでは見落とし率が平均 30% 低下。特にエッジケース・セキュリティ関連の指摘が増加した</li>
+          <li><strong>限界と課題:</strong> 敵対的プロンプトは false positive（問題のない箇所への指摘）も増加する傾向があり、ノイズとのトレードオフが生じる。熟練エンジニアがフィルタリングする前提での活用が推奨されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・3 likes】LLM を呼ぶ API の SLI/SLO をどう測るか——レイテンシ・トークン/秒・コンテキスト長・品質指標の定義と Prometheus での可視化</div>
+      <div class="card-meta"><span class="badge">Zenn / LLM / SLI / SLO / Prometheus / API / Observability / October 1-2 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/177">Zenn AI関連人気記事 2026-10-02</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> LLM API（Anthropic・OpenAI 等）を本番環境で運用する際の SLI（サービスレベル指標）と SLO（サービスレベル目標）の設計方法を解説。従来の Web API と異なる LLM 特有のメトリクス定義が焦点</li>
+          <li><strong>主要メトリクス:</strong> ① Time to First Token（TTFT）② トークン生成速度（tok/s）③ コンテキスト長あたりのレイテンシ変化 ④ 品質指標（BLEU/ROUGE/LLM-as-Judge）を Prometheus と Grafana で可視化する実装例を公開</li>
+          <li><strong>実用的価値:</strong> Codex Ultrafast（300 tok/s）など高速モデルが登場する中で「速さ」の定量的な測定基準が重要性を増しており、本記事の SLO 設計手法が実務での参考になると評価されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita・6 likes】Ollama の「意思決定モデル」を Docker で動かして、3モデルで判定を比べてみた——Llama 3.3・Gemma 3・Phi-4 の推論品質比較</div>
+      <div class="card-meta"><span class="badge">Qiita / Ollama / Docker / Local LLM / Llama / Gemma / Phi / October 1-2 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/177">Zenn AI関連人気記事 2026-10-02</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> Ollama を Docker コンテナで起動し、Llama 3.3・Gemma 3・Phi-4 の 3 モデルに同一の意思決定シナリオ（ビジネス判断・コード生成・ロールプレイ）を実行させて推論品質を比較した実験記事</li>
+          <li><strong>主な比較結果:</strong> Llama 3.3 は日本語の文脈理解で優位、Gemma 3 はコード生成精度で高評価、Phi-4 は軽量ながらロジック推論で健闘。ローカルで動く「意思決定モデル」として用途別に使い分ける指針を提示</li>
+          <li><strong>実用的視点:</strong> Claude Code や Codex が使えないオフライン環境・機密データ処理でのローカル LLM 活用の参考として注目。Docker による環境再現性の高さも評価されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・3 likes】【深層強化学習】Rust 製 ReinforceX を Python から使う——FFI・並列学習・RND の実装。高速な Rust バックエンドと Python の柔軟性を組み合わせる</div>
+      <div class="card-meta"><span class="badge">Zenn / Rust / Python / Reinforcement Learning / FFI / RND / October 1-2 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/177">Zenn AI関連人気記事 2026-10-02</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>記事の概要:</strong> Rust 製深層強化学習ライブラリ「ReinforceX」を Python から FFI（外部関数インタフェース）経由で呼び出し、並列環境学習と RND（Random Network Distillation）探索を組み合わせた実装例を解説</li>
+          <li><strong>技術的ポイント:</strong> Rust のゼロコスト抽象化と安全なメモリ管理により、PyTorch 単体比で学習速度が平均 3.2 倍向上。Python 側の柔軟なハイパーパラメータ調整と Rust 側の高速環境シミュレーションの役割分担が核心</li>
+          <li><strong>読者の反応:</strong> 「LLM 関連の記事が多い中、強化学習の実装記事は貴重」「Rust + Python の FFI パターンは他のユースケースにも応用できる」という声が上位コメントに</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月2日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic Blog · TechRepublic · Releasebot · Decrypt · OpenAI · InfoQ · Mixed News · cellcog.ai · ccleaks.com · Al Jazeera · The Nation · NPR · Just Security · Everything Briefing · Zenn · Qiita · GitHub (shoji-miyoshi/test)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-01/index.html">前版（2026-10-01）</a></p>
+</footer>
+</body>
+</html>
