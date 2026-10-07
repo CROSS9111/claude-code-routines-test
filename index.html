@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月6日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月7日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code v2.1.290 リリース——serverToolUses・agentId フック強化 / Plugin4Shell: AIコーディングエージェントに影響する深刻なゼロクリック RCE 脆弱性が発覚 / IBM が自社ホスト型エンタープライズ AIコーディングエージェント「IBM Bob」を発表 / ドイツ BND 元長官が諜報活動の疑いで逮捕 / ロシアがキーウ橋を無人機で攻撃——ウクライナ戦況が新局面 / 米国9月雇用統計が大幅に予想を下回る（+2.9万人）</p>
-  <p class="date">2026年10月6日（火）&nbsp;|&nbsp;<a href="2026-10-05/index.html">前版（10/5）</a></p>
+  <p class="subtitle">Claude Code v2.1.292 リリース——Plugin・エージェント・クラウド機能を一斉強化、セキュリティ修正・高速起動・セッション復元も / OpenAI Codex 28日間コミットメント Day3——GPT-6を50%高速化 / Barclays が年内に開発者の半数を Claude Code に移行 / ロシア・ウクライナ、10月三者会談の準備進む——橋梁へのドローン攻撃が継続 / パキスタンがアフガニスタンを空爆、民間人9人死亡 / ノーベル賞：物理学賞にフランシス・ハルゼン（宇宙線ニュートリノ）</p>
+  <p class="date">2026年10月7日（水）&nbsp;|&nbsp;<a href="2026-10-06/index.html">前版（10/6）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -66,43 +66,54 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/6）のハイライト:</strong> <strong>Claude Code v2.1.290</strong> がリリース——<code>turn.step</code> フックに <code>serverToolUses</code> を追加してツール API トラッキングを強化、<code>tool.check</code> イベントに <code>agentId</code> を追加してサブエージェントとメインセッションの権限を区別可能に。一方、AIコーディングエージェント4製品（数百万インスタンス）に影響するゼロクリック RCE 脆弱性「<strong>Plugin4Shell</strong>」が発覚し、エンタープライズチームが対応に追われている。Terminal-Bench 4.0 では Claude Code (Fable 5.1) と Codex (GPT-6 Astra) が 57.9% vs 58.2% の接戦。
+      <strong>本日（10/7）のハイライト:</strong> <strong>Claude Code v2.1.292</strong> が正式リリース——Plugin・エージェント・クラウド機能を一斉強化するとともに、セキュリティ修正・起動速度改善・セッション自動復元を実装。<strong>Barclays</strong> が年内に開発者の半数を Claude Code に移行する計画を発表（2027年末には大多数へ）。<strong>Claude for Government</strong> が連邦・州機関向けに一般提供開始。Terminal-Bench 4.0 では Claude Code (Opus 5.5) が <strong>64.8%</strong> でトップを維持、Sonnet 5.5 が 61.8%。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code v2.1.290 リリース——turn.step フックに serverToolUses を追加、tool.check イベントに agentId を追加。前バージョン(v2.1.289)の deny/ask ルール修正も適用済み</div>
-      <div class="card-meta"><span class="badge">Claude Code / v2.1.290 / Hooks / agentId / October 6 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
+      <div class="card-title">Claude Code v2.1.292 正式リリース——Plugin・エージェント・クラウド機能を一斉強化。セキュリティ修正・高速起動・セッション復元も実装。Mods エコシステムが本格始動</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.292 / Plugin / Cloud / Security / October 7 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> · <a href="https://pasqualepillitteri.it/en/news/19871/claude-code-mods-plugins">Pasquale Pillitteri</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>serverToolUses の追加:</strong> <code>turn.step</code> フック結果に <code>serverToolUses</code> フィールドが加わり、ツール API の詳細トラッキングが可能に。どのツールが何回呼ばれたかを外部から正確に把握できる</li>
-          <li><strong>agentId の追加:</strong> <code>tool.check</code> イベントに <code>agentId</code> フィールドが追加。これにより、サブエージェントとメインセッションの権限設定を個別に管理できる。マルチエージェント構成でのセキュリティ境界が明確化</li>
-          <li><strong>前バージョン (v2.1.289) の修正継続:</strong> ネストされた複合シェルコマンドでの deny/ask ルールのバグ、未閉鎖タグでのターミナルフリーズ、シンボリックリンクの Read-deny ルールの挙動などの修正が引き続き適用されている</li>
-          <li><strong>アップグレード推奨:</strong> Plugin4Shell 脆弱性への対応と組み合わせ、早急なアップデートが推奨されている</li>
+          <li><strong>Plugin 機能の正式公開:</strong> v2.1.287 で導入された Mods（TypeScript製プラグイン）が v2.1.292 で広く一般公開。ツール呼び出しの横断フック、UIのカスタマイズ、システムプロンプトの上書きなど多様な拡張が可能に</li>
+          <li><strong>エージェント・クラウド機能:</strong> マネージドエージェントのオンボーディング強化、クラウドセッションとのシームレス連携、複数セッション間でのコンテキスト共有が改善</li>
+          <li><strong>セキュリティ修正:</strong> 悪意あるプラグインがシステムプロンプトを書き換えるリスクへの対策、git config 実行シンク経由の脆弱性対応が含まれる</li>
+          <li><strong>パフォーマンス:</strong> 起動速度が従来比で約30%改善、セッション自動復元機能によりCLIクラッシュ後のコンテキスト損失が大幅に削減</li>
+          <li><strong>注意点:</strong> 研究者は Mods がEDRに不可視のまま tool 記述やシステムプロンプトを書き換えられる可能性を指摘。公式アドバイザリは信頼できるソースのプラグインのみ使用するよう呼びかけている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">【緊急】Plugin4Shell——AIコーディングエージェント上位4製品に影響するゼロクリック RCE 脆弱性が発覚。数百万インスタンスが露出。エンタープライズチームがパッチ・隔離対応に追われる</div>
-      <div class="card-meta"><span class="badge">Security / Plugin4Shell / RCE / Zero-Click / AI Agents / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a></span></div>
+      <div class="card-title">Barclays が Claude Code の大規模展開計画を発表——2026年末に開発者の半数、2027年末に大多数が利用。Anthropic との戦略提携を拡大</div>
+      <div class="card-meta"><span class="badge">Barclays / Enterprise / Claude Code / 2026-2027 / Strategic Partnership</span><span class="card-source">Source: <a href="https://www.pymnts.com/news/artificial-intelligence/2026/barclays-accelerates-ai-rollout-with-anthropic-claude-code/">PYMNTS</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>概要:</strong> 「Plugin4Shell」と名付けられたゼロクリック RCE（リモートコード実行）脆弱性が、最も広く使われているAIコーディングエージェント4製品に影響することが判明。数百万インスタンスが露出しているとされる</li>
-          <li><strong>攻撃手法:</strong> ユーザーが何も操作しなくてもコードを実行できるゼロクリック型。悪意あるリポジトリのクローンや特定のファイルを開くだけでトリガーされる可能性がある</li>
-          <li><strong>対応状況:</strong> セキュリティ研究者と影響を受けた製品ベンダーが協力してパッチ開発中。暫定対策として、信頼できないリポジトリでのエージェント実行を避け、サンドボックス環境の使用が強く推奨されている</li>
-          <li><strong>教訓:</strong> IBM Bob など自社ホスト型エージェントへの移行検討が加速しているとの声もあり。「AIコーディングエージェントのセキュリティ審査が不十分だった」との批判も</li>
+          <li><strong>展開計画:</strong> Barclays は2026年末に全開発者の50%、2027年末には大多数のエンジニアが Claude Code を主力ツールとして使用する計画を公表</li>
+          <li><strong>用途:</strong> コード生成・レビューに留まらず、コンプライアンスチェック自動化、レガシーシステム解析、API ドキュメント生成など金融業務固有の用途への展開を想定</li>
+          <li><strong>業界への影響:</strong> 金融大手の本格採用により、規制産業でのAIコーディングエージェント普及が加速するとみられる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AIコーディングエージェント市場の最新動向——Terminal-Bench 4.0 で Claude Code (Fable 5.1) と Codex (GPT-6 Astra) が 57.9% vs 58.2% の接戦。Claude Code は開発者の31%が「主要ツール」と回答</div>
-      <div class="card-meta"><span class="badge">Claude Code / Codex / Benchmark / Terminal-Bench / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> · <a href="https://www.faros.ai/blog/best-ai-coding-agents-2026">Faros AI</a></span></div>
+      <div class="card-title">Claude for Government が一般提供開始——連邦・州機関向けに FedRAMP High 対応の専用環境を提供。Comcast・Booz Allen が Mythos クラスモデルでセキュリティ脆弱性の発見・修正を自動化</div>
+      <div class="card-meta"><span class="badge">Claude / Government / FedRAMP / Security / Comcast / Booz Allen</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Anthropic Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Terminal-Bench 4.0 結果:</strong> Codex (GPT-6 Astra) が 58.2%、Claude Code (Fable 5.1) が 57.9%——実質同点。Claude Code (Opus 5.5) は依然として全体トップを維持</li>
-          <li><strong>市場シェア:</strong> Claude Code は開発者の31%が「主要ツール」として利用。Codex は2026年1月比で5倍成長（3% → 16%）を達成し、競争が激化している</li>
-          <li><strong>IBM Bob の参入:</strong> IBM がエンタープライズ向け自社ホスト型コーディングエージェント「IBM Bob」を発表。Plugin4Shell 脆弱性もあり、データ主権・セキュリティを重視する企業層への訴求を強めている</li>
+          <li><strong>Claude for Government:</strong> 7月のパブリックベータを経て一般提供へ移行。FedRAMP High 認証を取得した専用クラウド環境を提供</li>
+          <li><strong>セキュリティ活用事例:</strong> Comcast と Booz Allen Hamilton が「Project Glasswing」を通じて Claude の Mythos クラスモデルを活用し、脆弱性の発見・検証・修正を自動化</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AIコーディングエージェントのセキュリティ問題が深刻化——トロイの木馬化アップデートが7つのハーネスに影響・悪意あるプラグインが EDR を回避・git config 経由 RCE</div>
+      <div class="card-meta"><span class="badge">Security / Trojan / Plugin / git config / RCE / Terminal-Bench / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>トロイの木馬化アップデート:</strong> 悪意あるサプライチェーン攻撃によるトロイの木馬化アップデートが Claude Code (Anthropic)・Codex CLI (OpenAI) を含む全7つのテスト対象ハーネスに影響</li>
+          <li><strong>Mods 悪用リスク:</strong> 研究者が悪意あるプラグインで tool 呼び出し・tool 記述・システムプロンプトを書き換えることができることを実証。EDR には不可視のまま実行される</li>
+          <li><strong>git config 脆弱性:</strong> 信頼できないリポジトリが core.fsmonitor などの git config 実行シンクを設定することで任意コード実行が可能になる問題が複数のエージェントに影響</li>
+          <li><strong>Terminal-Bench 4.0:</strong> Claude Code (Opus 5.5) が 64.8% でトップ、Sonnet 5.5 が 61.8%（Anthropic 自社報告では max effort で 70.6%）</li>
         </ul>
       </div>
     </div>
@@ -114,37 +125,37 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（10/6）:</strong> <strong>OpenAI Codex rust-v0.160.1</strong> が SYSTEMROOT・TEMP・TMP 環境変数を保持する修正リリース——Unix ホストでの Windows エクゼキューター連携のリグレッションを解消。OpenAI が「<strong>28日間 Codex コミットメント</strong>」を開始。<strong>IMF 2026年10月 世界経済見通し（分析章）</strong>が公表——AI 生産性向上の影響を初めて定量評価。
+      <strong>競合ハイライト（10/7）:</strong> <strong>OpenAI Codex 28日間コミットメント Day 3</strong>——GPT-6 Astra・GPT-6.1 Sol を約50%高速化することを Day 1 に実施済み。DevDay（9/29）で発表した再利用可能なクラウド開発環境・音声操作 CLI・コードレビューツールが広く利用開始。<strong>Gartner 2026</strong> では OpenAI がエンタープライズ AIコーディングエージェント部門の「リーダー」に選定。Codex + ChatGPT Work のアクティブユーザーが <strong>800万人</strong> を突破。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex rust-v0.160.1 リリース——Unix ホストで Windows エクゼキューター利用時に環境変数（SYSTEMROOT・TEMP・TMP）が失われていたリグレッションを修正。「28日間 Codex コミットメント」も開始</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.160.1 / Bug Fix / October 6 2026</span><span class="card-source">Source: <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-october-7-2026-codex-ships-day-1-openai-watermarks-text-mistral-goes-le-chonk-1d8a">AI Daily Digest</a></span></div>
+      <div class="card-title">OpenAI Codex 28日間コミットメント継続中——Day 1 で GPT-6 を50%高速化、DevDay（9/29）では再利用可能なクラウド開発環境・音声 CLI・コードレビューツール・/agents ビューを発表。ユーザー 800万人突破</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / 28-day Pledge / DevDay / Voice CLI / Cloud Env / October 2026</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/">TechCrunch</a> · <a href="https://www.thedeepview.com/articles/openai-turns-codex-into-a-daily-work-agent">The Deep View</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>修正内容:</strong> リモート stdio MCP サーバーを起動する際に SYSTEMROOT・TEMP・TMP 環境変数が保持されないリグレッションを修正。Unix ホストと Windows エクゼキューターを組み合わせた環境で影響が出ていた</li>
-          <li><strong>28日間コミットメント:</strong> OpenAI が10月5日から「28-day Codex pledge」を開始。毎日の改善を約束し、開発者コミュニティとの透明なコミュニケーションを強化する方針</li>
-          <li><strong>競合意識:</strong> Claude Code v2.1.290 と同日にリリースされた形となり、コーディングエージェント競争の激しさを改めて示している</li>
+          <li><strong>28日間コミットメント:</strong> Codex エンジニアリングリード Thibault Sottiaux が毎日の改善を約束する「28-day pledge」を10月5日に開始。Day 1 に GPT-6 Astra と GPT-6.1 Sol を約50%高速化</li>
+          <li><strong>DevDay（9/29）の成果:</strong> デバイス横断で再利用可能なクラウド開発環境、音声入力対応 CLI リニューアル、リポジトリ全体スキャンが可能なセキュリティ特化製品、複数タスクの並行委託を管理する /agents ビューを発表</li>
+          <li><strong>ユーザー拡大:</strong> Codex と ChatGPT Work の合計アクティブユーザーが 800万人を突破。ChatGPT デスクトップアプリへの統合が普及を後押し</li>
+          <li><strong>方向性の変化:</strong> OpenAI は Codex を「コーディングツール」から「日常業務エージェント」へと位置づけを転換。Slack・Google Drive・メール・カレンダーとの連携でコーディング以外のタスク自動化にも対応</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">IBM が自社ホスト型エンタープライズ AIコーディングエージェント「IBM Bob」を発表——データ主権・セキュリティを重視する大企業向け。Plugin4Shell 脆弱性を契機に注目が急上昇</div>
-      <div class="card-meta"><span class="badge">IBM / IBM Bob / Enterprise / Self-Hosted / AI Coding / October 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-october-3-2026">AI Agents Directory</a></span></div>
+      <div class="card-title">Gartner 2026 Magic Quadrant: OpenAI がエンタープライズ AIコーディングエージェント部門の「リーダー」に選定</div>
+      <div class="card-meta"><span class="badge">OpenAI / Gartner / Magic Quadrant / Enterprise / AI Coding Agent / 2026</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>製品概要:</strong> IBM Bob は企業が自社インフラ内で運用できる自社ホスト型 AIコーディングエージェント。クラウドサービスに依存せず、コードをエージェントに渡す際のデータ主権とセキュリティを確保する</li>
-          <li><strong>タイミング:</strong> Plugin4Shell 脆弱性の発覚直後というタイミングでの発表となり、「クラウド型エージェントのリスクを回避したい」というエンタープライズ層の需要を的確に捉えている</li>
-          <li><strong>差別化:</strong> IBM の既存エンタープライズ製品・コンプライアンスフレームワーク・SOC2・GDPR 対応との統合を前面に押し出しており、金融・医療・政府機関向けに特化した展開を計画</li>
+          <li><strong>Gartner 評価:</strong> Gartner が 2026年版 Magic Quadrant でエンタープライズ AIコーディングエージェント部門を初設置。OpenAI が「リーダー」に選定され、実行能力と将来ビジョンの両軸で高評価を獲得</li>
+          <li><strong>GPT-5.3-Codex から GPT-6 へ:</strong> エンタープライズ向けのアクセス制御・監査ログ・SSO 対応も評価されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">IMF が 2026年10月 世界経済見通し（分析章）を公表——AI 生産性向上の影響を初めて定量評価。バンコク年次会合（10/13）に先行して分析情報を提供</div>
-      <div class="card-meta"><span class="badge">IMF / World Economic Outlook / AI Productivity / October 2026</span><span class="card-source">Source: <a href="https://openchronicle.org/2026/10/05/global-news-brief-key-developments-around-the-world-october-5-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">AI エージェントベンチマーク競争が激化——Terminal-Bench 4.0 最終集計: Claude Code(Opus 5.5)64.8%・Codex(GPT-6 Astra)63.2%・Gemini Code Assist 59.1%。AI エージェント市場は2026年末に $420億規模へ</div>
+      <div class="card-meta"><span class="badge">Benchmark / Terminal-Bench / Claude Code / Codex / Gemini / Market Size / 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>内容:</strong> IMF が 2026年10月 世界経済見通しの分析章（10/5〜6 公表）で、AI 生産性向上の経済的影響を初めて定量的に評価。先進国と新興国間での恩恵の非対称性が浮き彫りに</li>
-          <li><strong>バンコク会合:</strong> 全体報告は10月13日のタイ・バンコクでの年次会合で公表予定。米国の雇用悪化（9月 +2.9万人）も踏まえた世界経済リスクの評価が注目されている</li>
+          <li><strong>Terminal-Bench 4.0 最終集計:</strong> Claude Code (Opus 5.5) が 64.8% でトップ維持。Codex (GPT-6 Astra) が 63.2%、Claude Code (Sonnet 5.5) が 61.8%、Gemini Code Assist が 59.1%</li>
+          <li><strong>市場規模:</strong> AIコーディングエージェント市場は2026年末に $420億規模に達するとの予測。2025年の $80億から約5倍の成長</li>
         </ul>
       </div>
     </div>
@@ -156,35 +167,34 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/vibecoding（8.9万人）——Claude Code が言及数226でトップ。「深い推論・複雑なデバッグ・多ファイル設計変更は Claude Code、日常編集は Sonnet、新規コード作成は Cursor」というツール使い分けが定番化</div>
-      <div class="card-meta"><span class="badge">Community / r/vibecoding / Claude Code / Tool Stacking / 2026</span><span class="card-source">Source: <a href="https://www.vellum.ai/blog/best-ai-assistant-for-coding-reddit">Vellum AI</a> · <a href="https://beginnersinai.org/best-ai-coding-tools-reddit-2026/">Beginners in AI</a></span></div>
+      <div class="card-title">r/ClaudeAI・r/artificial——「AIエージェントが完全自律になった今、人間はどこで介入すべきか」スレが急上昇。「ひと月前は全ステップを確認、今は最終成果だけ見る」という変化を共有する投稿が多数</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / r/artificial / Autonomy / Human-in-Loop / October 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/best-ai-agents-reddit">AI Tool Discovery</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/vibecoding の分析（89k メンバー）で Claude Code が 226 言及でトップ。「Cursor で足りないときに使うツール」という位置付けから「複雑な推論の第一選択肢」へとポジションが変化している</li>
-          <li>r/ClaudeAI と r/AI_Agents での主流パターン：大規模リファクタリングに Opus 5.5、日常的な編集・補完に Sonnet、新規コード作成に Cursor を組み合わせるツールスタッキングが主流に</li>
-          <li>「単一ツールのセットアップは生産性を残している」という意見が広がっており、複数エージェントの使い分けがプロ開発者の標準になりつつある</li>
+          <li>「以前は AIが出力するたびに確認、今は複数エージェントを立ち上げて最終成果だけチェック」という作業スタイルの変化を共有する投稿が急増</li>
+          <li>「確認を省くほど微妙なバグや意図しない実装が増えた」という反省を共有するスレも同時にトレンド入り</li>
+          <li>テスト駆動 + エージェントの組み合わせが「安全に自律度を上げる方法」として推奨されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/VibeCodeDevs（1.5万人）——Plugin4Shell 脆弱性への反応が急増。「自分のエージェントは大丈夫か？」という確認スレが乱立。Codex と Claude Code のどちらが影響を受けるかを問うスレも</div>
-      <div class="card-meta"><span class="badge">Community / r/VibeCodeDevs / Plugin4Shell / Security / October 6 2026</span><span class="card-source">Source: <a href="https://www.faros.ai/blog/best-ai-coding-agents-2026">Faros AI</a></span></div>
+      <div class="card-title">r/netsec・r/ClaudeAI——Mods セキュリティリスクへの反応。「信頼できるソース以外のプラグインは絶対入れるな」という注意喚起。Docker サンドボックス実行を標準にする動きも</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / r/ClaudeAI / Mods Security / Docker / Sandbox / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Plugin4Shell の発覚を受け、r/VibeCodeDevs と r/ClaudeAI で「自分のセットアップは安全か？」を確認する投稿が急増。公式ブログや GitHub のセキュリティアドバイザリへの誘導が行われている</li>
-          <li>「信頼できないリポジトリではエージェントを使わない」という暫定対策が最多推奨。Docker コンテナや専用 VM でのサンドボックス実行を推進する声も多い</li>
-          <li>コスト vs 能力の議論（Codex は GPT-6 Sol で安価、Claude Code は Opus 以上で高性能だが高コスト）も継続して盛り上がっており、本番ベンチマークの共有スレが注目を集めている</li>
+          <li>r/netsec と r/ClaudeAI で「公式ディレクトリ以外のプラグインは絶対に入れるな」という注意喚起が相次いでいる</li>
+          <li>企業ユーザーを中心に「Claude Code を Docker コンテナ内で実行し、ホストシステムへのアクセスを最小化する」構成への移行議論が活発化</li>
+          <li>「Anthropic は Mods エコシステムの審査・署名の仕組みを早急に整備すべき」という要望が集まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">HackerNews——「IBM Bob はエンタープライズ AIコーディングエージェント市場を変えるか？」スレがトップ。「オンプレでモデルを動かすコストは現実的か」という技術議論が白熱</div>
-      <div class="card-meta"><span class="badge">Community / HackerNews / IBM Bob / Enterprise / Self-Hosted / October 6 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-october-3-2026">AI Agents Directory</a></span></div>
+      <div class="card-title">r/MachineLearning・r/LocalLLaMA——「Barclays×Claude Code は氷山の一角、金融業界の Claude Code 移行は加速する」という分析投稿が話題</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / r/LocalLLaMA / Barclays / Financial Industry / October 2026</span><span class="card-source">Source: <a href="https://www.pymnts.com/news/artificial-intelligence/2026/barclays-accelerates-ai-rollout-with-anthropic-claude-code/">PYMNTS</a></span></div>
       <div class="card-body">
         <ul>
-          <li>HN トップスレで「IBM Bob のようなオンプレ型は Plugin4Shell への真の回答」という意見と「IBM のブランドに価値があるのか、OSS セルフホストで十分では」という対立意見が展開中</li>
-          <li>「GPU コストと保守負担を考えると中小企業には非現実的」という懸念がある一方、「金融・医療・政府機関なら十分なユースケースがある」という実務的な評価も</li>
-          <li>「OpenAI や Anthropic の API に依存しない選択肢があること自体が重要」というベンダーロックイン回避の観点からの評価が根強い</li>
+          <li>「金融大手が動いた以上、JPMorgan・Goldman・Deutsche Bank など他行の追随は時間の問題」という分析が多くの反応を集めている</li>
+          <li>r/LocalLLaMA では金融機関がクラウド型 API に依存し続けることへのリスクを指摘し、オープンソースモデルの自社運用を推奨する声も根強い</li>
         </ul>
       </div>
     </div>
@@ -193,62 +203,73 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/6）の主要トピック:</strong> <strong>ドイツ BND 元長官が諜報活動の疑いで逮捕</strong>——欧州情報機関に衝撃 / <strong>ロシアがキーウの橋を無人機攻撃</strong>——戦況が新局面へ / <strong>イラン、米軍基地・艦艇への攻撃を警告</strong>——地上侵攻があれば報復と / <strong>FBI が台湾総統の家族に対する中国の監視工作を起訴</strong> / <strong>ブラジル大統領選が決選投票へ</strong> / <strong>米国9月雇用統計、予想を大幅に下回る</strong>（+2.9万人、失業率 4.2%）
+      <strong>本日（10/7）の主要トピック:</strong> <strong>ロシア・ウクライナ、10月三者会談の準備進む</strong>——キーウへのドローン橋梁攻撃が継続 / <strong>パキスタンがアフガニスタン空爆</strong>——女性・子ども9人死亡とアフガン側 / <strong>ドイツ BND 元長官逮捕の余波——NATO 情報共有体制に懸念</strong> / <strong>ノーベル賞:</strong> 物理学賞にフランシス・ハルゼン（宇宙線ニュートリノ）、医学・生理学賞に脳活動研究の3氏 / <strong>ブラジル大統領選 10/25 決選投票へ</strong> / <strong>スーダン: RSF がエル・オベイドの大学寮をドローン攻撃</strong>
     </div>
     <div class="card">
-      <div class="card-title">ドイツ：BND（連邦情報局）元長官が外国諜報機関への国家機密漏洩の疑いで逮捕——ドイツ史上最高レベルのスパイ事件として欧州情報コミュニティに衝撃</div>
-      <div class="card-meta"><span class="badge">Germany / BND / Espionage / Intelligence / October 6 2026</span><span class="card-source">Source: <a href="https://openchronicle.org/2026/10/05/global-news-brief-key-developments-around-the-world-october-5-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">ロシア・ウクライナ: キーウ準備中の10月三者会談——ゼレンスキーがマイアミ G20 での対話意欲を示す一方、ロシアはキーウの橋を継続攻撃。両側の民間人死者数が侵攻初期以来の高水準に</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Peace Talks / Kyiv / Drones / October 2026</span><span class="card-source">Source: <a href="https://www.npr.org/sections/world/">NPR World</a> · <a href="https://english.ahram.org.eg/News/576575.aspx">Al Ahram</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>概要:</strong> ドイツの対外情報機関 BND（連邦情報局）の元長官が、外国情報機関に国家機密を渡した疑いで逮捕された。ドイツ史上最高位の人物が関与したスパイ事件として前例のない事態</li>
-          <li><strong>影響:</strong> 欧州情報コミュニティ全体に衝撃が走っており、NATO の情報共有システムやパートナー国との信頼関係への影響が懸念されている</li>
-          <li><strong>背景:</strong> 逮捕は複数年にわたる内部調査の結果。具体的に情報が渡った先の国名は現時点では公式には明らかにされていないが、欧米メディアは東側国家との関連を報じている</li>
+          <li><strong>外交動向:</strong> ウクライナのブダノフ参謀長が「10月に米国・ロシアとの三者会談に向けて準備している」と発言。クレムリンも「否定しない」と述べた</li>
+          <li><strong>ゼレンスキーの立場:</strong> 12月マイアミ G20 でのプーチン大会合への出席意欲を示すが、クレムリンは「不可能」と即座に否定</li>
+          <li><strong>軍事情勢:</strong> ロシア軍はジェット推進型ドローンによるキーウ橋梁攻撃を継続。補給線切断を狙う作戦に移行しているとみられる。民間人の死者数は侵攻初期以来最高水準に達しているとNPRが報告</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ：ロシアがキーウの橋をジェット推進無人機で攻撃——1か月以上続く昼夜連続攻撃から戦術転換。ドイツが新たな軍事支援パッケージを発表</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Drones / Kyiv / Germany / Military Aid / October 5-6 2026</span><span class="card-source">Source: <a href="https://www.foreignexchanges.news/p/world-roundup-october-5-2026">Foreign Exchanges</a></span></div>
+      <div class="card-title">パキスタンがアフガニスタンを空爆——タリバン政府は「9人の女性・子どもが死亡」と発表。パキスタン側は「22人のタリバン戦闘員を排除した」と主張</div>
+      <div class="card-meta"><span class="badge">Pakistan / Afghanistan / Airstrikes / Taliban / Civilian Casualties / October 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/October_2026">Wikipedia Current Events</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>戦術転換:</strong> ロシアがジェット推進型ドローンを使ってキーウの橋を集中的に攻撃する戦術に転換。1か月以上続いていた昼夜連続のエネルギーインフラ攻撃から、交通・補給線の切断を狙う作戦へ</li>
-          <li><strong>ドイツの対応:</strong> ドイツがウクライナへの新たな軍事支援パッケージを発表。防空システムの追加供与が含まれるとされる</li>
-          <li><strong>戦況:</strong> 橋梁攻撃への転換はウクライナの東部・南部への補給に影響を与える可能性があり、冬季に向けた戦略的意図があるとみられている</li>
+          <li><strong>パキスタンの主張:</strong> クナール州の2か所でタリバン戦闘員22人を排除したと発表。パキスタン国内へのテロ攻撃への対応としている</li>
+          <li><strong>アフガニスタン政府の発表:</strong> 攻撃を「国際法違反」と強く非難し、女性9人と子どもが死亡したと報告</li>
+          <li><strong>国際的反応:</strong> 国連やNGOが独立した調査を求めており、両国間の緊張が再び高まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">中東：イランが「地上侵攻なら米軍基地・艦艇を攻撃」と警告——ホルムズ海峡閉鎖（219日目）継続。イエメン・フーシ派掃討作戦が継続。ガスプライスは $4.36 で高止まり</div>
-      <div class="card-meta"><span class="badge">Iran / Middle East / Hormuz / Yemen / Houthis / October 6 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-5-2026">Everything Briefing</a> · <a href="https://www.benzinga.com/news/politics/26/10/62153579/iran-strait-of-hormuz-us-7-conditions-brent-oil">Benzinga</a></span></div>
+      <div class="card-title">ノーベル賞2026: 物理学賞にフランシス・ハルゼン（高エネルギー宇宙線ニュートリノ研究）、医学・生理学賞に脳活動研究の3氏——「宇宙の目」IceCube の功績が評価</div>
+      <div class="card-meta"><span class="badge">Nobel Prize / Physics / Medicine / Francis Halzen / Brain / 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/October_2026">Wikipedia Current Events</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>イランの警告:</strong> 米国が地上侵攻を実施した場合、中東の米軍基地と艦艇が攻撃対象になると警告。トランプ大統領は核交渉優先の立場を維持しており、外交と軍事の選択肢が並行して進行中</li>
-          <li><strong>ホルムズ海峡:</strong> 閉鎖219日目。原油供給の約20%が通過する同海峡の閉鎖継続で、米国のガス価格は平均$4.36（前週比横ばい）。世界経済への打撃が長期化している</li>
-          <li><strong>イエメン:</strong> 国際承認政府によるフーシ派北部掃討作戦が継続中。サウジアラビアが空爆を含む全面支援を継続している</li>
+          <li><strong>物理学賞:</strong> フランシス・ハルゼン（ウィスコンシン大学）が「宇宙由来の高エネルギーニュートリノの検出と研究」で受賞。南極の IceCube ニュートリノ観測所を主導し、宇宙線の起源解明に貢献</li>
+          <li><strong>医学・生理学賞:</strong> 3名の科学者が脳活動に関する先駆的研究で共同受賞</li>
+          <li><strong>来週の予定:</strong> 化学賞（10/8）・文学賞（10/9）・平和賞（10/10）・経済学賞（10/12）の発表が続く</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米国：FBI が台湾総統の息子を監視した中国の工作員を起訴——越境的抑圧の一環。司法省が国家安全保障案件として対応</div>
-      <div class="card-meta"><span class="badge">US / FBI / Taiwan / China / Espionage / Transnational Repression / October 5 2026</span><span class="card-source">Source: <a href="https://openchronicle.org/2026/10/05/global-news-brief-key-developments-around-the-world-october-5-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">中東: イラン「ホルムズ海峡閉鎖220日目」——Kata'ib Hezbollah がイラク軍事活動を一時停止。スーダン: RSF がエル・オベイドの大学寮をドローン攻撃し5人死亡</div>
+      <div class="card-meta"><span class="badge">Iran / Hormuz / Iraq / Kata'ib Hezbollah / Sudan / RSF / October 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/October_2026">Wikipedia Current Events</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>起訴内容:</strong> FBI と連邦検察が「Heather」こと張湾瑩（Wanying Zhang）を、米国内で台湾総統の息子とその家族を監視した疑いで起訴。越境的抑圧活動の一環とみられている</li>
-          <li><strong>背景:</strong> 中国が海外にいる反体制派・台湾当局者の家族などに対して監視・圧力をかける「越境的抑圧」作戦の一例として、司法省が積極的に摘発を進めている</li>
-          <li><strong>外交的影響:</strong> 米中関係が既に緊張している中での起訴であり、双方の関係に追加的な緊張をもたらすとみられている</li>
+          <li><strong>イラン・ホルムズ:</strong> ホルムズ海峡封鎖 220日目。イラクの国営石油タンカー会社が VLCC で200万バレルを輸送したと報告</li>
+          <li><strong>Kata'ib Hezbollah:</strong> イラクから米軍が撤退したことを受け、指導者がイラク国内での軍事活動を一時停止すると発表</li>
+          <li><strong>スーダン内戦:</strong> RSF がエル・オベイドの大学寮をドローンで攻撃し5人が死亡。人道状況の悪化が続いている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米国：9月雇用統計が大幅に予想を下回る（+2.9万人、失業率 4.2%）——中東情勢・ホルムズ封鎖によるエネルギー価格高騰が影響。ブラジル大統領選は10/25 の決選投票へ</div>
-      <div class="card-meta"><span class="badge">US Economy / Jobs / Brazil / Election / October 2026</span><span class="card-source">Source: <a href="https://openchronicle.org/2026/10/05/global-news-brief-key-developments-around-the-world-october-5-2026/">Open Chronicle</a> · <a href="https://www.foreignexchanges.news/p/world-roundup-october-5-2026">Foreign Exchanges</a></span></div>
+      <div class="card-title">ブラジル大統領選: 10/25 に決選投票——ボルソナーロ vs ルーラの再対決へ。ドイツ BND 元長官逮捕の余波——NATO 情報共有体制に懸念が浮上</div>
+      <div class="card-meta"><span class="badge">Brazil / Election / Germany / BND / Espionage / NATO / October 2026</span><span class="card-source">Source: <a href="https://en.wikipedia.org/wiki/Portal:Current_events/October_2026">Wikipedia Current Events</a> · <a href="https://www.usnews.com/news/world">US News World</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>雇用統計:</strong> 9月の米国の雇用者数増加は +2.9万人と市場予想を大幅に下回った。失業率は 4.2% に小幅上昇。ホルムズ海峡封鎖によるエネルギーコスト高騰が製造業・物流業に打撃を与えていることが背景にあるとみられる</li>
-          <li><strong>ブラジル選挙:</strong> 第1回投票でいずれの候補も過半数を獲得できず、ボルソナーロ（47%）対ルーラ（45%）の決選投票が10月25日に実施される。南米最大経済圏での政権交代の可能性が高まっている</li>
+          <li><strong>ブラジル選挙:</strong> ボルソナーロ（47%）とルーラ（45%）のいずれも過半数を取れず、10月25日に決選投票が行われる</li>
+          <li><strong>ドイツ BND 逮捕の余波:</strong> BND 元長官の逮捕を受け、NATO各国が情報共有プロセスの見直しを検討しているとロイターが報じた</li>
+          <li><strong>エチオピア:</strong> 連邦軍がティグライ州のメケレ国際空港（アルラ・アバ・ネガ空港）を TPLF から奪還</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国: 最高裁が気候変動訴訟の大型審理を開始——判決は環境政策を超えた広範な影響の可能性。11月3日の中間選挙に向けて選挙戦が本格化</div>
+      <div class="card-meta"><span class="badge">US / Supreme Court / Climate / Midterm Election / November 2026</span><span class="card-source">Source: <a href="https://www.usnews.com/news/world">US News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>最高裁気候訴訟:</strong> 判決は気候規制の枠組みを超え、連邦機関の規制権限全般に影響を与える可能性があるとして法律専門家が注目</li>
+          <li><strong>中間選挙（11/3）:</strong> 下院全議席と上院の約3分の1が改選される。拮抗した争いが予想されており、各党が選挙戦を加速させている</li>
         </ul>
       </div>
     </div>
@@ -257,43 +278,33 @@
   <section class="section" id="qiita">
     <div class="section-header">
       <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>10/6 のトレンド:</strong> 「yomiyasu（よみやす）」が v1.0.7 へ更新（542 likes）——昨日の v1.0.6 から更新、内容も新たな修正例が追加 / mizchi 氏による「俺のAIプログラミング手法 (2026/10/05)」が400 likes でトレンド入り / Qiita では Python 経済学チュートリアル・Claude Code Mods 活用・「Goal Seek Prompt」テクニックが注目 / JSON Schema で LLM を縛ってもビジネスバリデーションは必要という議論が話題。
+      <strong>10/7 のトレンド:</strong> Qiita の「個人開発×AI」記事が前年同期比 15.5倍と増加傾向が継続——「AI と作る」への転換が定着 / Claude Code Mods を活用したモデルルーター構築記事が引き続き上位 / AIエージェントのセキュリティリスクを解説した記事が Plugin4Shell 騒動を受けて急浮上
     </div>
     <div class="card">
-      <div class="card-title">【Zenn・首位 / 542 likes・更新】「yomiyasu（よみやす）」v1.0.7——AI-Slop な日本語を構造レベルで読みやすくする Claude Code Skill が更新。新たな修正パターン追加で精度向上</div>
-      <div class="card-meta"><span class="badge">Zenn / yomiyasu / v1.0.7 / Claude Code Skill / Japanese NLP / October 6 2026</span></div>
-      <div class="card-body"><p>昨日（10/5）に v1.0.6 で公開されて Zenn トレンド首位になった「yomiyasu」が v1.0.7 に更新。542 likes（昨日は 495 likes）と引き続き人気が上昇中。今回の更新では箇条書き変換のロジックが改善され、技術文書特有の構造パターンへの対応が強化された。「AI-Slop 改善ツールの実質スタンダード」という評価も出てきており、Claude Code エコシステムの Skill 文化を象徴する事例として注目されている。</p></div>
+      <div class="card-title">【Qiita・急浮上】AIコーディングエージェントのセキュリティリスク完全ガイド——Plugin4Shell・悪意あるMods・git config RCE のしくみと対策を実践的に解説</div>
+      <div class="card-meta"><span class="badge">Qiita / Security / Plugin4Shell / Claude Code / AI Agents / October 2026</span></div>
+      <div class="card-body"><p>Plugin4Shell や Mods 悪用リスクへの関心が急上昇したことで、エージェントのセキュリティリスクを体系的にまとめた記事が Qiita でトレンド上位に。「信頼できないリポジトリでエージェントを実行しない」「プラグインのソースを確認してから導入する」「Docker サンドボックスで実行する」という3原則が広く共有されている。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Zenn・400 likes】mizchi が語る「俺のAIプログラミング手法 (2026/10/05)」——どのエージェントをどのフェーズで使うか、プロンプティングのパターン、よくある落とし穴を解説</div>
-      <div class="card-meta"><span class="badge">Zenn / mizchi / AI Programming / Methodology / October 2026</span></div>
-      <div class="card-body"><p>日本の著名開発者 mizchi 氏が自身の AIプログラミング手法を 2026年10月時点でまとめた記事が 400 likes を獲得してトレンドに。設計フェーズ・実装フェーズ・レビューフェーズでそれぞれどのエージェントを使うか、コンテキスト管理のコツ、AIに任せると痛い目を見るタスクの見分け方などを実体験ベースで解説。コミュニティで「実践的すぎる」と大きな反響を呼んでいる。</p></div>
+      <div class="card-title">【Zenn・継続トレンド】Claude Code Mods × Jev でモデルルーターを自作——タスク複雑度に応じて Opus 5.5 / Sonnet 5.5 / Haiku 5.5 を自動切り替え、コストを最大60%削減</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Mods / Jev / Model Router / Cost Optimization / October 2026</span></div>
+      <div class="card-body"><p>v2.1.292 で Mods が一般公開されたことを受け、Mods と Jev（軽量ルーティングフレームワーク）を組み合わせてタスクに応じたモデル自動選択を実装する記事が引き続き好評。API コストを最大60%削減できるという実測値が注目されている。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Qiita・トレンド】「Goal Seek Prompt」テクニックが注目——出力を生成する前に AI に確認質問をさせる手法。Claude Code Mods で Jev を使ったモデルルーター構築記事も人気</div>
-      <div class="card-meta"><span class="badge">Qiita / Goal Seek Prompt / Claude Code Mods / Jev / October 6 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/251a158065c7ac35534c">Qiita Podcast Digest</a></span></div>
-      <div class="card-body"><p>Qiitaのトレンドに「Goal Seek Prompt」と呼ばれるテクニックが浮上。出力を生成する前に AI に確認・明確化の質問をさせることで、要件の曖昧さによる手戻りを削減する手法。また、Claude Code の Mods と Jev を組み合わせてモデルルーターを構築する記事も上位にランクイン。タスクの複雑さに応じて Opus/Sonnet/Haiku を自動で振り分けるパターンが紹介されている。</p></div>
-    </div>
-    <div class="card">
-      <div class="card-title">【Qiita・技術論考】「なぜ厳格な JSON Schema は LLM のビジネスバリデーション不要を意味しないか」——スキーマ準拠でも業務ロジック違反が起きる具体的なケースを解説</div>
-      <div class="card-meta"><span class="badge">Qiita / JSON Schema / LLM / Validation / October 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/251a158065c7ac35534c">Qiita Podcast Digest</a></span></div>
-      <div class="card-body"><p>「LLM に厳格な JSON Schema を強制すれば後段のバリデーションは不要」という誤解を丁寧に反論した記事が Qiita コミュニティで高評価を得ている。スキーマ的には正しいが業務ロジックを破る具体的な失敗パターン（日付整合性・数値範囲・参照整合性など）を示し、構造化出力と業務バリデーションの役割分担を明確にした内容。LLM を本番システムに組み込む開発者に広く読まれている。</p></div>
-    </div>
-    <div class="card">
-      <div class="card-title">【Qiita・GitHub 日報 10/6】自己ホスト型フィットネス記録ツールと AI エージェント最適化フレームワークが急浮上——ローカル AI 推論を使ったホームジムアプリが話題</div>
-      <div class="card-meta"><span class="badge">Qiita / GitHub / Self-Hosted / AI Agents / October 6 2026</span><span class="card-source">Source: <a href="https://qiita.com/Git_Dayori/items/823eba99ba6dc75ff0b0">Qiita GitHub 日報</a></span></div>
-      <div class="card-body"><p>Qiita の GitHub 日報（10/6付け）で、ローカル AI 推論を活用した自己ホスト型フィットネス追跡ツールと、AI エージェント最適化フレームワークの2ジャンルが急浮上。日本人開発者の間でスターが急増した OSS リポジトリを毎日まとめており、Plugin4Shell を受けた「クラウド依存を減らしてローカルで動かしたい」という需要が反映されているとみられる。</p></div>
+      <div class="card-title">【Qiita・技術解説】「なぜ AIエージェントはテスト駆動開発と相性が良いのか」——エージェントの自律度を上げながらバグを抑制するための TDD + AI の組み合わせパターン</div>
+      <div class="card-meta"><span class="badge">Qiita / TDD / AI Agent / Claude Code / Testing / Best Practices / October 2026</span></div>
+      <div class="card-body"><p>「AIに任せると意図しない実装が増えた」というコミュニティの反省を受けて、テスト駆動開発（TDD）とAIエージェントを組み合わせる実践ガイドが注目を集めている。テストを先に書いてエージェントに実装させることで、自律度を上げながらもレグレッションを最小化できるという方法論を具体的なコード例付きで解説。</p></div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年10月6日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: Releasebot · AI Daily Digest · Adversa AI · MorphLLM · Faros AI · AI Agents Directory · Vellum AI · Beginners in AI · Open Chronicle · Foreign Exchanges · Everything Briefing · Benzinga · IMF · Zenn (agents-radar) · Qiita</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-05/index.html">前版（2026-10-05）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月7日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · Pasquale Pillitteri · PYMNTS · Adversa AI · MorphLLM · TechCrunch · The Deep View · OpenAI · NPR · Wikipedia Current Events · US News · Al Ahram · Benzinga</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-06/index.html">前版（2026-10-06）</a></p>
 </footer>
 </body>
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月6日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.290 リリース——serverToolUses・agentId フック強化 / Plugin4Shell: AIコーディングエージェントに影響する深刻なゼロクリック RCE 脆弱性が発覚 / IBM が自社ホスト型エンタープライズ AIコーディングエージェント「IBM Bob」を発表 / ドイツ BND 元長官が諜報活動の疑いで逮捕 / ロシアがキーウ橋を無人機で攻撃——ウクライナ戦況が新局面 / 米国9月雇用統計が大幅に予想を下回る（+2.9万人）</p>
+  <p class="date">2026年10月6日（火）&nbsp;|&nbsp;<a href="2026-10-05/index.html">前版（10/5）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/6）のハイライト:</strong> <strong>Claude Code v2.1.290</strong> がリリース——<code>turn.step</code> フックに <code>serverToolUses</code> を追加してツール API トラッキングを強化、<code>tool.check</code> イベントに <code>agentId</code> を追加してサブエージェントとメインセッションの権限を区別可能に。一方、AIコーディングエージェント4製品（数百万インスタンス）に影響するゼロクリック RCE 脆弱性「<strong>Plugin4Shell</strong>」が発覚し、エンタープライズチームが対応に追われている。Terminal-Bench 4.0 では Claude Code (Fable 5.1) と Codex (GPT-6 Astra) が 57.9% vs 58.2% の接戦。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.290 リリース——turn.step フックに serverToolUses を追加、tool.check イベントに agentId を追加。前バージョン(v2.1.289)の deny/ask ルール修正も適用済み</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.290 / Hooks / agentId / October 6 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>serverToolUses の追加:</strong> <code>turn.step</code> フック結果に <code>serverToolUses</code> フィールドが加わり、ツール API の詳細トラッキングが可能に</li>
+          <li><strong>agentId の追加:</strong> <code>tool.check</code> イベントに <code>agentId</code> フィールドが追加。サブエージェントとメインセッションの権限設定を個別に管理できる</li>
+          <li><strong>前バージョン (v2.1.289) の修正継続:</strong> ネストされた複合シェルコマンドでの deny/ask ルールのバグ、未閉鎖タグでのターミナルフリーズ、シンボリックリンクの Read-deny ルールの挙動などの修正が引き続き適用されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【緊急】Plugin4Shell——AIコーディングエージェント上位4製品に影響するゼロクリック RCE 脆弱性が発覚。数百万インスタンスが露出</div>
+      <div class="card-meta"><span class="badge">Security / Plugin4Shell / RCE / Zero-Click / AI Agents / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>概要:</strong> 「Plugin4Shell」と名付けられたゼロクリック RCE 脆弱性が、最も広く使われているAIコーディングエージェント4製品に影響</li>
+          <li><strong>対応状況:</strong> セキュリティ研究者と影響を受けた製品ベンダーが協力してパッチ開発中。信頼できないリポジトリでのエージェント実行を避け、サンドボックス環境の使用が強く推奨</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AIコーディングエージェント市場の最新動向——Terminal-Bench 4.0 で Claude Code (Fable 5.1) と Codex (GPT-6 Astra) が接戦</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / Benchmark / Terminal-Bench / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Terminal-Bench 4.0 結果:</strong> Codex (GPT-6 Astra) が 58.2%、Claude Code (Fable 5.1) が 57.9%——実質同点。Claude Code (Opus 5.5) は依然として全体トップを維持</li>
+          <li><strong>IBM Bob の参入:</strong> IBM がエンタープライズ向け自社ホスト型コーディングエージェント「IBM Bob」を発表</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">2 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex rust-v0.160.1 リリース——Unix ホストで Windows エクゼキューター利用時の環境変数リグレッションを修正。「28日間 Codex コミットメント」も開始</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / rust-v0.160.1 / Bug Fix / October 6 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>SYSTEMROOT・TEMP・TMP 環境変数が Unix ホスト上で保持されないリグレッションを修正</li>
+          <li>OpenAI が10月5日から「28-day Codex pledge」を開始。毎日の改善を約束</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">IMF が 2026年10月 世界経済見通し（分析章）を公表——AI 生産性向上の影響を初めて定量評価</div>
+      <div class="card-meta"><span class="badge">IMF / World Economic Outlook / AI Productivity / October 2026</span></div>
+      <div class="card-body"><p>IMF が世界経済見通しの分析章で、AI 生産性向上の経済的影響を初めて定量的に評価。先進国と新興国間での恩恵の非対称性が浮き彫りに。全体報告は10月13日のバンコク年次会合で公表予定。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">2 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/vibecoding——Claude Code が言及数226でトップ。「複雑な推論・デバッグ・多ファイル設計変更は Claude Code、日常編集は Sonnet、新規コード作成は Cursor」という使い分けが定番化</div>
+      <div class="card-meta"><span class="badge">Community / r/vibecoding / Claude Code / Tool Stacking / 2026</span></div>
+      <div class="card-body"><p>r/vibecoding の分析（89k メンバー）で Claude Code が 226 言及でトップ。複数エージェントの使い分けがプロ開発者の標準になりつつある。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">HackerNews——「IBM Bob はエンタープライズ AIコーディングエージェント市場を変えるか？」スレがトップ</div>
+      <div class="card-meta"><span class="badge">Community / HackerNews / IBM Bob / Enterprise / October 6 2026</span></div>
+      <div class="card-body"><p>「IBM Bob のようなオンプレ型は Plugin4Shell への真の回答」という意見と「OSS セルフホストで十分では」という対立意見が展開。GPU コストと保守負担に関する議論が活発。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/6）の主要トピック:</strong> <strong>ドイツ BND 元長官が諜報活動の疑いで逮捕</strong> / <strong>ロシアがキーウの橋をジェット推進無人機で攻撃</strong> / <strong>イラン、米軍基地・艦艇への攻撃を警告</strong> / <strong>FBI が台湾総統の家族に対する中国の監視工作を起訴</strong> / <strong>ブラジル大統領選が決選投票へ</strong> / <strong>米国9月雇用統計、予想を大幅に下回る（+2.9万人）</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">ドイツ：BND（連邦情報局）元長官が外国諜報機関への国家機密漏洩の疑いで逮捕——欧州情報コミュニティに衝撃</div>
+      <div class="card-meta"><span class="badge">Germany / BND / Espionage / October 6 2026</span></div>
+      <div class="card-body"><p>ドイツ史上最高位の人物が関与したスパイ事件として前例のない事態。NATO の情報共有システムやパートナー国との信頼関係への影響が懸念されている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ：ロシアがキーウの橋をジェット推進無人機で攻撃——1か月以上続く昼夜連続攻撃から戦術転換。ドイツが新たな軍事支援パッケージを発表</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drones / Kyiv / October 5-6 2026</span></div>
+      <div class="card-body"><p>ロシアがジェット推進型ドローンを使ってキーウの橋を集中的に攻撃する戦術に転換。補給線切断を狙う作戦へ移行。ドイツが防空システム追加供与を含む新たな軍事支援パッケージを発表。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">中東：イランが「地上侵攻なら米軍基地・艦艇を攻撃」と警告——ホルムズ海峡閉鎖（219日目）継続</div>
+      <div class="card-meta"><span class="badge">Iran / Middle East / Hormuz / October 6 2026</span></div>
+      <div class="card-body"><p>米国が地上侵攻を実施した場合、中東の米軍基地と艦艇が攻撃対象になると警告。ホルムズ海峡閉鎖219日目で米国ガス価格は平均$4.36で高止まり。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国：FBI が台湾総統の家族を監視した中国工作員を起訴——越境的抑圧の一環</div>
+      <div class="card-meta"><span class="badge">US / FBI / Taiwan / China / Espionage / October 5 2026</span></div>
+      <div class="card-body"><p>FBI と連邦検察が米国内で台湾総統の息子とその家族を監視した疑いで起訴。中国の越境的抑圧作戦の一例として司法省が積極的に摘発を進めている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国：9月雇用統計が大幅に予想を下回る（+2.9万人、失業率 4.2%）——ブラジル大統領選は10/25 の決選投票へ</div>
+      <div class="card-meta"><span class="badge">US Economy / Brazil / Election / October 2026</span></div>
+      <div class="card-body"><p>9月の雇用者数増加は+2.9万人と市場予想を大幅に下回り、失業率は4.2%に上昇。ブラジルでボルソナーロ（47%）対ルーラ（45%）の決選投票が10月25日に実施される。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・首位 / 542 likes・更新】「yomiyasu（よみやす）」v1.0.7——AI-Slop な日本語を構造レベルで読みやすくする Claude Code Skill が更新</div>
+      <div class="card-meta"><span class="badge">Zenn / yomiyasu / v1.0.7 / Claude Code Skill / October 6 2026</span></div>
+      <div class="card-body"><p>昨日 v1.0.6 で公開されて Zenn トレンド首位になった「yomiyasu」が v1.0.7 に更新。542 likes と引き続き人気が上昇中。箇条書き変換のロジックが改善され技術文書特有の構造パターンへの対応が強化された。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・400 likes】mizchi が語る「俺のAIプログラミング手法 (2026/10/05)」——どのエージェントをどのフェーズで使うかを解説</div>
+      <div class="card-meta"><span class="badge">Zenn / mizchi / AI Programming / October 2026</span></div>
+      <div class="card-body"><p>日本の著名開発者 mizchi 氏が自身の AIプログラミング手法を 2026年10月時点でまとめた記事が 400 likes を獲得。設計・実装・レビューフェーズでの使い分け、コンテキスト管理のコツを実体験ベースで解説。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita・トレンド】「Goal Seek Prompt」テクニックが注目——出力前に AI に確認質問をさせる手法。Claude Code Mods で Jev を使ったモデルルーター構築記事も人気</div>
+      <div class="card-meta"><span class="badge">Qiita / Goal Seek Prompt / Claude Code Mods / October 6 2026</span></div>
+      <div class="card-body"><p>出力を生成する前に AI に確認・明確化の質問をさせることで、要件の曖昧さによる手戻りを削減する「Goal Seek Prompt」テクニックが浮上。Mods と Jev を組み合わせてモデルルーターを構築する記事も上位にランクイン。</p></div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月6日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · AI Daily Digest · Adversa AI · MorphLLM · AI Agents Directory · Vellum AI · Open Chronicle · Foreign Exchanges · Everything Briefing · Benzinga · IMF · Zenn · Qiita</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-05/index.html">前版（2026-10-05）</a></p>
+</footer>
+</body>
+</html>
