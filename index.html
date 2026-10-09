@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月8日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月9日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">CrowdStrike: 中国系ハッカーが ARTEX + Claude Code で韓国銀行9行を攻撃——6.8万人の個人情報流出 / Claude Code が AGENTS.md 対応・Claude.md なき場合に自動読み込み / OpenAI Codex v0.160.0 リリース——エージェントコマンドセンター履歴閲覧・プロジェクトレスセッション追加 / 米国防総省が CENTCOM に対イラン大規模作戦の準備指示——中間選挙前の実施も視野 / フーシ派がリヤドなどサウジ空港を再攻撃——死者3人・爆発音が首都に響く / ノーベル化学賞: カガン氏とソアイ氏が不斉合成・キラル化学で受賞</p>
-  <p class="date">2026年10月8日（木）&nbsp;|&nbsp;<a href="2026-10-07/index.html">前版（10/7）</a></p>
+  <p class="subtitle">Claude Code v2.1.295 リリース——onFailure「block」フック・OSC 7501 端末プロトコル対応 / GitHub が Claude &amp; Codex を Pro+/Enterprise に直接統合——イシュー・PR へのエージェント割り当てが可能に / Anthropic 利用規約を11月12日改定予告 / ノーベル平和賞: 南ア人権弁護士ナビ・ピレイ / フーシ派がリヤド空港を再攻撃——3人死亡・124便欠航 / ウクライナ: 2日間で民間人78人死亡——クラマトルスクでバス2台が直撃</p>
+  <p class="date">2026年10月9日（金）&nbsp;|&nbsp;<a href="2026-10-08/index.html">前版（10/8）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -69,39 +69,38 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/8）のハイライト:</strong> <strong>CrowdStrike</strong> が中国系ハッカーによる韓国銀行攻撃に <strong>ARTEX（オープンソース AI ペネトレーションテストツール）と Claude Code</strong> が使われていたと発表。9行が標的となり 6.8万人の個人情報が流出。AIエージェントが攻撃ツールとして悪用される最初の大規模事例として世界的に注目を集めている。また Claude Code は新バージョンで <strong>AGENTS.md</strong> を CLAUDE.md の代替として自動読み込みするようになった。
+      <strong>本日（10/9）のハイライト:</strong> Claude Code が <strong>v2.1.295</strong> に到達。コマンド・HTTP フックに <code>onFailure: &quot;block&quot;</code> オプションが追加され、フック失敗時にエージェントの処理を即座に停止できるようになった。また <strong>OSC 7501</strong> 端末ステータスプロトコルがサポートされ、ターミナル統合が強化。Anthropic は <strong>利用規約を11月12日付で改定</strong>するとアナウンス。同時に FedRAMP High 認定環境での Claude Code 提供も進んでいる。
     </div>
     <div class="card">
-      <div class="card-title">CrowdStrike: 中国系ハッカーが ARTEX AI エージェント + Claude Code で韓国9銀行を攻撃——6.8万人の個人情報流出。攻撃者のCV・設定ファイルが公開ディレクトリに残置</div>
-      <div class="card-meta"><span class="badge">Security / CrowdStrike / ARTEX / Claude Code / South Korea / Cyberattack / October 8 2026</span><span class="card-source">Source: <a href="https://www.theregister.com/cyber-crime/2026/10/08/crowdstrike-finds-possible-bank-hackers-cv-among-exposed-ai-logs/5301908">The Register</a> · <a href="https://www.insurancejournal.com/news/international/2026/10/08/888416.htm">Insurance Journal</a> · <a href="https://cybermagazine.com/news/crowdstrike-on-south-korea-bank-ai-cyber-attack">Cyber Magazine</a></span></div>
+      <div class="card-title">Claude Code v2.1.294〜v2.1.295 リリース——コマンド・HTTP フックに onFailure: &quot;block&quot; を追加、OSC 7501 端末ステータス対応、Bash 権限チェック修正</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.295 / Hooks / onFailure / OSC 7501 / October 9 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot (Claude Code)</a> · <a href="https://claudelog.com/claude-code-changelog/">ClaudeLog</a> · <a href="https://ccleaks.com/news/claude-code-2-1-292-oct-2026">CCLeaks</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>概要:</strong> 9月下旬から10月上旬にかけて、少なくとも韓国9行が標的とされ、新韓銀行（25,000人）・KB国民銀行（119人）を含む計 6.8万人の個人情報が流出したとソウル当局が発表</li>
-          <li><strong>攻撃手法:</strong> 中国で開発されたオープンソースの AI ペネトレーションテストツール「ARTEX」と Anthropic の Claude Code を組み合わせて使用。ある銀行では従業員向けモバイル業務システムが侵害された</li>
-          <li><strong>攻撃者の特定経緯:</strong> CrowdStrike は Anthropic のシステムへの侵入を経由して発見したのではなく、脅威アクターが管理するオープンディレクトリに Claude Code のセッション履歴・ARTEX 設定ファイル・Claude メモリファイルが残置されていたことで特定。露出したプロンプトには容疑者の氏名・中国の大学名・広東省の所在地が記されていた</li>
-          <li><strong>帰属の現状:</strong> CrowdStrike Intelligence は「中程度の確信度」で、中国語話者が金銭目的で実行したと評価。既知の APT グループへの帰属はまだ示していない</li>
-          <li><strong>業界への示唆:</strong> AI コーディングエージェントが高度なサイバー攻撃の実行ツールとして実際に悪用された最初の大規模事例として、セキュリティ業界が強い警戒感を示している</li>
+          <li><strong>v2.1.295 の主な変更（10/9）:</strong> コマンドフック・HTTP フックに <code>onFailure: &quot;block&quot;</code> オプションを追加——フックがエラーを返した場合、エージェントの後続処理を即座にブロックできる安全機構。端末ステータスプロトコル <strong>OSC 7501</strong> をサポートし、ターミナルエミュレータとの統合精度が向上。Chrome ポート80 上の deny ルールのバグ修正・glob パターンを含む for ループの Bash 権限チェック修正も含む</li>
+          <li><strong>v2.1.292（10/6）の変更（再掲）:</strong> Agent ツールに <code>effort</code> パラメータを追加——サブエージェントをlow/medium/high 等の努力レベルで呼び出せるようになりトークンコスト制御が容易に。HTTP 529（過負荷）エラー発生時のリトライ待機時間を環境変数で設定可能に</li>
+          <li><strong>バージョン状況の注意:</strong> npm の latest タグとリリースノート間でバージョン番号に若干の乖離が報告されている。公式 changelog（code.claude.com）で最終確認を推奨</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code が AGENTS.md を自動読み込み——CLAUDE.md が存在しない場合の代替ファイルとして v2.1.277 から対応。複数 AI エージェント間での共通設定ファイル運用が可能に</div>
-      <div class="card-meta"><span class="badge">Claude Code / AGENTS.md / v2.1.277 / Multi-Agent / Interoperability</span><span class="card-source">Source: <a href="https://www.infoworld.com/article/4224410/claude-code-now-also-accepts-instructions-in-openais-agents-md-format.html">InfoWorld</a> · <a href="https://news.ycombinator.com/item?id=49760187">Hacker News</a></span></div>
+      <div class="card-title">Anthropic、利用規約を11月12日施行で改定予告——Usage Policy 更新で AI エージェントの自律的な行動範囲を明確化。FedRAMP High 認定環境での Claude Code 展開も進行中</div>
+      <div class="card-meta"><span class="badge">Anthropic / Usage Policy / FedRAMP / Enterprise / October 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Releasebot (Anthropic)</a> · <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>変更内容:</strong> v2.1.277 以降、プロジェクトルートに CLAUDE.md がない場合、Claude Code は自動的に AGENTS.md を読み込む。これにより OpenAI Codex など他の AI エージェントと設定ファイルを共有できる</li>
-          <li><strong>開発者へのメリット:</strong> 複数の AI コーディングエージェントを使い分けているチームが、エージェントごとに個別のルールファイルを管理する手間を削減できる</li>
-          <li><strong>HN コミュニティの反応:</strong> Hacker News では「実用的な互換性改善」として好意的に受け取られる一方、「CLAUDE.md と AGENTS.md の仕様が完全には一致しない」という注意点も指摘されている</li>
+          <li><strong>利用規約改定:</strong> Anthropic が10月8日に Usage Policy の更新を発表。新ルールは11月12日に施行。AI エージェントが自律的に実行できる行動の範囲と、プロバイダーが設定できる制限の枠組みを再整理する内容と見られる</li>
+          <li><strong>FedRAMP High 展開:</strong> Claude Code CLI と Claude for Microsoft 365 が FedRAMP High 認定環境での早期アクセス提供を開始。米政府機関・国防関連企業でのエンタープライズ導入が本格化する</li>
+          <li><strong>セキュリティ研究の文脈:</strong> 10月上旬に相次いだ AI エージェントセキュリティ報告（CrowdStrike の韓国銀行攻撃事例など）を受け、Anthropic が利用規約とセキュリティガイダンスの整備を急いでいるとみられる</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Coder が Agent Relay で Claude Code を提供開始——規制産業向けセルフホスト型実行環境として選定パートナーに早期アクセスを提供</div>
-      <div class="card-meta"><span class="badge">Coder / Agent Relay / Claude Code / Enterprise / Self-hosted / Regulated Industries</span><span class="card-source">Source: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362210/0/en/coder-brings-claude-code-to-agent-relay-unlocking-agentic-development-for-the-world-s-most-regulated-enterprises.html">GlobeNewswire</a></span></div>
+      <div class="card-title">Claude Code のベンチマーク最新動向——Terminal-Bench 4.0 で Opus 5.5 が 64.8%・Sonnet 5.5 が 61.8%。Anthropic 自社測定では 70.6%。FedRAMP・Coder Agent Relay での企業展開が加速</div>
+      <div class="card-meta"><span class="badge">Claude Code / Benchmark / Terminal-Bench / Opus 5.5 / Sonnet 5.5 / Enterprise / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM Leaderboard</a> · <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually Changelog</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>内容:</strong> Coder が Agent Relay（セルフホスト型エージェント実行環境）に Claude Code サポートを追加。金融・医療・政府などのデータ主権要件が厳しい規制産業をターゲットにする</li>
-          <li><strong>意義:</strong> 今回の CrowdStrike レポートが示すセキュリティリスクへの対応策として、自社インフラ内で AI エージェントを隔離実行するニーズが一層高まると見られる</li>
+          <li><strong>Terminal-Bench 4.0 スコア:</strong> Claude Code + Opus 5.5 が 64.8%（エージェント部門トップ）、Claude Code + Sonnet 5.5 が 61.8%。Anthropic の自社ハーネス測定では 70.6% を報告しており、評価環境によってスコアが異なる点に注意</li>
+          <li><strong>SWE-bench Verified 比較:</strong> GPT-5.1-Codex-Max が 77.9%、Anthropic Opus 4.6 が 78.3% とほぼ拮抗。フロントエンド作業では Claude、複雑な問題解決では Codex を好むという開発者の使い分けが一般化しつつある</li>
+          <li><strong>エンタープライズ展開:</strong> Coder の Agent Relay が Claude Code サポートを追加し、金融・医療・政府向けセルフホスト実行環境として提供中。FedRAMP 認定との組み合わせで規制産業での採用障壁が低下している</li>
         </ul>
       </div>
     </div>
@@ -110,31 +109,42 @@
   <section class="section" id="rivals">
     <div class="section-header">
       <div class="section-title">競合・AI エージェント動向</div>
-      <span class="section-count">2 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（10/8）:</strong> <strong>OpenAI Codex v0.160.0</strong> リリース——エージェントコマンドセンターの履歴閲覧、プロジェクトなしセッション、Guardian レビュー改善、接続断時の再接続修正を実装。v0.159.0 では新規入力で実行中の処理を即時中断できるオプトイン機能が追加済み。週間アクティブユーザーは <strong>400万人超</strong>。
+      <strong>競合ハイライト（10/9）:</strong> <strong>GitHub が Claude と Codex を Pro+/Enterprise に直接統合</strong>——イシュー・PR へのエージェント割り当てが可能になり、各セッションはプレミアムリクエスト1回を消費。<strong>Microsoft のエージェント封じ込め機能</strong>が GitHub Copilot と OpenAI Codex に対応、Claude Code は今後サポート予定。<strong>OpenAI DevDay 2026</strong>（先週）の発表内容への関心が継続中。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex v0.160.0 リリース——エージェントコマンドセンター履歴閲覧・プロジェクトレスセッション追加。v0.159.0 のオプトイン即時割り込み機能も安定運用へ</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / v0.160.0 / v0.159.0 / Agent Command Center / October 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot (Codex Updates)</a> · <a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a></span></div>
+      <div class="card-title">GitHub、Claude と Codex を Pro+/Enterprise に直接統合——イシュー・PR へのエージェント割り当てが可能に。各セッションがプレミアムリクエスト1回を消費するパブリックプレビュー</div>
+      <div class="card-meta"><span class="badge">GitHub / Claude / Codex / Enterprise / Pro+ / AI Agents / Integration / October 2026</span><span class="card-source">Source: <a href="https://techradar.com/pro/github-integrates-claude-and-codex-ai-coding-agents-directly-into-github">TechRadar</a> · <a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>v0.160.0 の主な変更:</strong> エージェントコマンドセンターに履歴ブラウズ機能を追加、プロジェクト設定なしで開始できるプロジェクトレスセッションをサポート、Guardian レビュー機能の改善、Windows サンドボックスと再接続の問題を修正</li>
-          <li><strong>v0.159.0（先行リリース）の注目機能:</strong> モデル応答中や長時間コード実行中でも新たな入力で処理を即座に中断できるオプトイン式の「インスタント割り込み」を追加。長時間タスクの軌道修正が容易になる</li>
-          <li><strong>利用規模:</strong> Codex の週間アクティブユーザーが 400万人超に到達（Gartner Magic Quadrant 申告値）。9月の DevDay で発表された再利用可能クラウド環境・音声 CLI・/agents ビューの展開が利用拡大を牽引</li>
-          <li><strong>注意事項:</strong> 8月31日をもって GPT-5.4 / GPT-5.4 mini が ChatGPT 認証セッションの Codex から利用不可に。API キーセッションでは引き続き利用可能</li>
+          <li><strong>統合の概要:</strong> GitHub が Pro+ および Enterprise プランユーザーを対象に、Claude と OpenAI Codex のエージェントをイシューおよびプルリクエストに直接割り当てられる機能をパブリックプレビューとして提供開始</li>
+          <li><strong>課金モデル:</strong> エージェントセッション1回ごとにプレミアムリクエスト1回を消費する従量制。パブリックプレビュー期間中は条件付きで無料利用枠あり</li>
+          <li><strong>実際の使い方:</strong> イシューのコメントや PR レビューのコンテキストでエージェントを呼び出し、コード修正・テスト追加・ドキュメント更新などを自動化できる。GitHub Actions との連携でより複雑なワークフローも構成可能</li>
+          <li><strong>意義:</strong> AI コーディングエージェントが開発者の手元のツールから、チーム全体のワークフローに組み込まれるプラットフォーム統合フェーズへ移行しつつあることを示す象徴的な動き</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI エージェントの悪用がセキュリティ業界の最大課題に——CrowdStrike 報告を受け、ARTEX など「攻撃用 AI エージェント」の台頭を警戒する声が高まる</div>
-      <div class="card-meta"><span class="badge">AI Security / ARTEX / Offensive AI / Agent Misuse / Enterprise Risk / October 2026</span><span class="card-source">Source: <a href="https://cybermagazine.com/news/crowdstrike-on-south-korea-bank-ai-cyber-attack">Cyber Magazine</a> · <a href="https://tech-insider.org/south-korea-bank-hacks-ai-agent-crowdstrike-2026/">Tech Insider</a></span></div>
+      <div class="card-title">Microsoft のエージェント封じ込め機能が GitHub Copilot・OpenAI Codex に対応——Claude Code は今後サポート予定。AI エージェントが意図しない操作を行わないよう実行環境をサンドボックス化</div>
+      <div class="card-meta"><span class="badge">Microsoft / Agent Containment / GitHub Copilot / Codex / Claude Code / Security / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa AI</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ARTEX とは:</strong> 中国で開発されたオープンソースの AI エージェント型ペネトレーションテストツール。自律的に偵察・脆弱性スキャン・エクスプロイトを実行できる設計で、GitHub 上で公開されている</li>
-          <li><strong>セキュリティ業界の反応:</strong> 「攻撃者が AI エージェントを活用した初の大規模金融機関攻撃」として広く認識されており、AIコーディングツールのセキュリティポリシー再検討を求める声が各社で高まっている</li>
-          <li><strong>企業が取るべき対策:</strong> AIエージェントのセッション履歴・設定ファイルを公開ディレクトリに置かない、エージェントをネットワーク分離された環境で実行する、AIツールのアクセス権限を最小化するの3点が緊急の推奨事項として挙げられている</li>
+          <li><strong>機能の内容:</strong> Microsoft が発表したエージェント封じ込め機能は、AI コーディングエージェントが意図した範囲を超えた操作（ファイルシステムへの無制限書き込み・外部 API への予期しない呼び出しなど）を行わないよう実行環境をサンドボックス化する仕組み</li>
+          <li><strong>現在の対応状況:</strong> GitHub Copilot と OpenAI Codex CLI がサポート済み。Claude Code は「planned」として今後対応予定と明記されている</li>
+          <li><strong>背景:</strong> CrowdStrike が報告した韓国銀行攻撃事例など、AI エージェントがセキュリティ上の問題を引き起こす事例が増加していることへの業界横断的な対応策として位置づけられる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI DevDay 2026 の反響継続——再利用可能クラウド環境・音声 CLI・/agents ビューが Codex の週間アクティブユーザー 400万人超を牽引。OpenAI Decisions API への注目も高まる</div>
+      <div class="card-meta"><span class="badge">OpenAI / DevDay 2026 / Codex / Decisions API / Voice CLI / Agent View / October 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot (Codex)</a> · <a href="https://substack.com/@natolambert/note/c-212155451">natolambert Substack</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>DevDay の主要発表:</strong> 先週の OpenAI DevDay 2026 では、再利用可能なクラウド実行環境（セッション間で状態を保持）・音声入力 CLI・エージェント一覧管理の /agents ビューが発表された。これらが Codex の週間アクティブユーザー 400万人超到達を後押しした</li>
+          <li><strong>Decisions API:</strong> OpenAI が提供を開始した Decisions API は、モデルが「何を実行するか」を判断するプロセスを外部から制御・監査できる新 API。Zenn・Qiita でも複数の比較検証記事が急増している（後述）</li>
+          <li><strong>Codex プラグイン:</strong> Claude Code のセッション内から OpenAI Codex を第2エージェントとして呼び出せる公式プラグインが安定動作しており、2つのエージェントを組み合わせる開発スタイルが普及しつつある</li>
         </ul>
       </div>
     </div>
@@ -146,35 +156,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/netsec・r/ClaudeAI——「CrowdStrike のレポートは氷山の一角、AI エージェントを使った攻撃は今後急増する」という警告が大量の upvote を集める</div>
-      <div class="card-meta"><span class="badge">Community / r/netsec / r/ClaudeAI / CrowdStrike / AI Attack / Security / October 2026</span><span class="card-source">Source: <a href="https://www.theregister.com/cyber-crime/2026/10/08/crowdstrike-finds-possible-bank-hackers-cv-among-exposed-ai-logs/5301908">The Register</a></span></div>
+      <div class="card-title">r/ClaudeCode・r/codex——「Claude Code は速いが Codex は深い」という評価が定着。SWE-bench スコアが拮抗する中、用途別の使い分けが一般化</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / r/codex / Claude Code vs Codex / Benchmark / October 2026</span><span class="card-source">Source: <a href="https://www.firecrawl.dev/blog/claude-code-vs-codex">Firecrawl Blog</a> · <a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/netsec では「ARTEX のような攻撃用 AI エージェントの公開リポジトリへのアクセスを企業ネットワークから遮断すべき」という議論が活発化</li>
-          <li>r/ClaudeAI では「Claude Code 自体はツールにすぎないが、Anthropic はセッション履歴の取り扱いについてより明確なガイドラインを出すべき」という意見が多数</li>
-          <li>「攻撃者のCV がセッション履歴に残っていたという皮肉な結末」への反応も多く、AIエージェントの OPSEC（作戦上のセキュリティ）に関する議論スレが急浮上している</li>
+          <li>「Claude Code は反応が素早くフロントエンド・長時間自律実行で強い、Codex は難問解決で時間をかけて考える」という使い分けが Reddit での共通認識として定着してきた</li>
+          <li>SWE-bench Verified で Claude Opus 4.6 (78.3%) と GPT-5.1-Codex-Max (77.9%) が拮抗しており、「スコアよりも使い心地の差が大きい」という声が多数</li>
+          <li>OpenAI Codex プラグインで Claude Code セッション内から Codex を第2レビュアーとして呼び出せる機能が「両方の長所を活かせる」として好評を博している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/vibecoding・r/VibeCodeDevs——「AGENTS.md 対応で Claude Code と Codex の設定ファイルが統一できるようになった」という体験報告が集中投稿</div>
-      <div class="card-meta"><span class="badge">Community / r/vibecoding / r/VibeCodeDevs / AGENTS.md / Claude Code / Codex / October 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/best-ai-agents-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-title">r/codex——「Codex CLI の週次利用上限が事前告知なしに4倍削減された」という不満が急増。r/ClaudeCode では「Claude Code は長時間自律実行の安定性が高い」という支持コメントが増加</div>
+      <div class="card-meta"><span class="badge">Community / r/codex / r/ClaudeCode / Quota / Usage Limits / Reliability / October 2026</span><span class="card-source">Source: <a href="https://www.educative.io/blog/claude-code-vs-openai-codex-cli">Educative</a> · <a href="https://creativeworkflowlab.substack.com/p/claude-code-vs-codex-whats-the-difference-vibe-coding-ai">Creative Workflow Lab</a></span></div>
       <div class="card-body">
         <ul>
-          <li>「Claude Code と OpenAI Codex を両方使っているが、AGENTS.md を一本化したら設定管理が劇的に楽になった」という実践報告が次々と投稿されている</li>
-          <li>CLAUDE.md と AGENTS.md で仕様の細かい差異があることを指摘するスレも同時にトレンド入り。「どちらを正として管理するか」という議論が続いている</li>
-          <li>r/VibeCodeDevs では Claude Code が現状「最も現場で使われている AI コーディングエージェント」であるという認識が定着しているとのコミュニティ調査結果が引用されている</li>
+          <li>r/codex では Codex CLI の週次クォータが告知なしに大幅削減されたという報告が相次いでおり、ヘビーユーザーから強い不満の声が上がっている</li>
+          <li>「突然制限がかかってプロジェクトが止まった」という実害報告が多数。OpenAI のサポートへの問い合わせが殺到しているとのコメントも</li>
+          <li>この動きを受けて r/ClaudeCode では「Claude Code は長時間の自律実行タスクでも安定して動作し続ける」という評価コメントが増加。Codex からの移行を検討しているという投稿も散見される</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning——「AI エージェントが攻撃者に使われた今、防衛側の AI エージェントが必要になった」という議論が注目を集める。セキュリティ会社による AI エージェント導入加速を予測する投稿も</div>
-      <div class="card-meta"><span class="badge">Community / r/MachineLearning / AI Security / Defensive AI / Agent vs Agent / October 2026</span><span class="card-source">Source: <a href="https://cybermagazine.com/news/crowdstrike-on-south-korea-bank-ai-cyber-attack">Cyber Magazine</a></span></div>
+      <div class="card-title">r/vibecoding——「GitHub への Claude/Codex 統合で AI エージェントが『個人ツール』から『チームインフラ』へ進化した」という議論が注目を集める</div>
+      <div class="card-meta"><span class="badge">Community / r/vibecoding / GitHub Integration / Team Workflow / AI Agent Evolution / October 2026</span><span class="card-source">Source: <a href="https://techradar.com/pro/github-integrates-claude-and-codex-ai-coding-agents-directly-into-github">TechRadar</a> · <a href="https://substack.com/@joozio/note/c-215229588">Substack</a></span></div>
       <div class="card-body">
         <ul>
-          <li>「攻撃者が AI エージェントを使うなら、防御側も AI エージェントで自動対応する時代が来た」というポストが数千の upvote を獲得</li>
-          <li>CrowdStrike・Palo Alto Networks・SentinelOne が今後の AI 防衛エージェント競争を主導すると予測する分析が好評を博している</li>
-          <li>一方「AI vs AI のサイバー戦争が加速すれば人間が追いつけなくなる」という懸念も多数のコメントで共有されている</li>
+          <li>GitHub が Claude と Codex をプラットフォームに直接統合したことで「AI エージェントが個人の開発環境から、組織全体のワークフローに組み込まれるインフラへ変わった」という分析投稿が大量の upvote を獲得</li>
+          <li>「PR を開いたらエージェントが自動でレビューしてコードを修正してくれる世界が来た」という驚きと、「エージェントが勝手にコードを変えるリスクをどう管理するか」という懸念が同時にトレンド入り</li>
+          <li>Microsoft のエージェント封じ込め機能への期待が高まる一方、「Claude Code の対応がまだ planned 止まり」という点に対して早期実装を求める声も多い</li>
         </ul>
       </div>
     </div>
@@ -186,76 +196,72 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/8）の主要トピック:</strong> <strong>米国防総省が CENTCOM に対イラン大規模作戦の準備を指示</strong>——中間選挙前の実施も視野に入る / <strong>フーシ派がリヤドなど2空港を再攻撃</strong>——死者3人・十月8日にも首都で爆発音 / <strong>ウクライナ: ロシア軍の攻撃で30人死亡</strong>——バスも直撃 / <strong>ノーベル化学賞: カガン氏・ソアイ氏が不斉合成で受賞</strong> / <strong>ドイツ BND 長官逮捕の余波継続</strong> / <strong>フランス: 高校生が全国でデモ</strong>
+      <strong>本日（10/9）の主要トピック:</strong> <strong>ノーベル平和賞: 南ア人権弁護士ナビ・ピレイが受賞</strong> / <strong>フーシ派がリヤド国際空港を再攻撃——3人死亡・124便欠航</strong> / <strong>ウクライナ: 2日間でロシア軍に78人の民間人が死亡——クラマトルスクでバス2台が爆撃を直撃</strong> / <strong>トランプ大統領「中間選挙前はイランを攻撃しない」——米イラン協議は継続</strong> / <strong>ケニアで初のエボラ感染確認</strong> / <strong>エチオピア：エリトリアの「全面侵攻」に対し自衛を宣言</strong>
     </div>
     <div class="card">
-      <div class="card-title">米国防総省、CENTCOM に対イラン大規模作戦の準備を指示——核施設・エネルギーインフラを標的に。米中間選挙（11/3）前の実施を視野との報道。トランプ大統領は最終決断せず</div>
-      <div class="card-meta"><span class="badge">US / Iran / Pentagon / CENTCOM / Military / Midterm Election / October 2026</span><span class="card-source">Source: <a href="https://today.lorientlejour.com/article/1550099/pentagon-asks-centcom-to-prepare-for-renewed-strikes-on-iran-according-to-axios.html">L'Orient Today (Axios)</a> · <a href="https://www.theweek.in/news/middle-east/2026/10/08/us-iran-war-to-restart-pentagon-orders-preparations-marks-targets.html">The Week</a> · <a href="https://www.globalsecurity.org/military/ops/iran-war-oprep.htm">GlobalSecurity</a></span></div>
+      <div class="card-title">ノーベル平和賞2026: 南アフリカの人権弁護士ナビ・ピレイが受賞——国際法・人権分野への半世紀の貢献が評価。国際刑事裁判所元所長・国連人権高等弁務官として功績</div>
+      <div class="card-meta"><span class="badge">Nobel Peace Prize / Navi Pillay / South Africa / Human Rights / International Law / 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-9-2026">Everything Briefing</a> · <a href="https://www.democracynow.org/2026/10/9/headlines">Democracy Now</a> · <a href="https://aa.com.tr/en/world/morning-briefing-oct-9-2026/4082888">Anadolu Agency</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>指令の内容:</strong> 米国防総省が CENTCOM（中央軍）に対し、対イラン大規模戦闘作戦再開の準備完了を求める指令を発出。イランの核施設・エネルギー基盤・戦略インフラを打撃目標に含むとされる（Axios 報道）</li>
-          <li><strong>タイミング:</strong> 米国とイスラエルの複数の情報筋が「11月3日の米中間選挙前、さらにはイスラエルの選挙前の実施も想定している」と伝える。具体的な日程は未設定</li>
-          <li><strong>現在の戦況:</strong> 今年5月の初回米軍打撃（USイラン戦争 Day1）から約5か月が経過。GlobalSecurity のトラッカーによれば米軍の死者19人・負傷者800人超。ホルムズ海峡の封鎖は220日以上継続中</li>
-          <li><strong>米軍の動向:</strong> 空母アブラハム・リンカーンが265日連続展開という記録的な長期派遣を終え、10月9日にサンディエゴへ帰還予定</li>
-          <li><strong>注記:</strong> 報道は匿名の米政府高官によるもので、ペンタゴンの公式声明ではない。状況は流動的</li>
+          <li><strong>受賞者:</strong> ナビ・ピレイ（Navi Pillay、南アフリカ）。1995〜1999年に国際刑事裁判所判事、2008〜2014年に国連人権高等弁務官を務め、南アフリカのアパルトヘイト体制下で人権弁護士として活動を続けた半世紀の功績が評価された</li>
+          <li><strong>選考委員会のコメント:</strong> 「法の支配と人権保護のために一貫してたたかってきた模範」として選出。アパルトヘイト廃絶後の移行期司法、ルワンダ大量虐殺裁判への関与も高く評価された</li>
+          <li><strong>授賞式:</strong> 12月10日にオスロで開催予定。平和賞に続き、10月12日に経済学賞の発表が控えている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">フーシ派がサウジ空港を連続攻撃——リヤド国際空港・アブハ空港で死者3人・負傷36人。10月8日にも首都で爆発音。サウジ主導連合が「82の軍事目標」を報復爆撃</div>
-      <div class="card-meta"><span class="badge">Yemen / Houthi / Saudi Arabia / Riyadh / Airport Attack / October 8 2026</span><span class="card-source">Source: <a href="https://www.japantimes.co.jp/news/2026/10/08/world/houthi-saudi-airport-attack/">Japan Times</a> · <a href="https://www.france24.com/en/middle-east/20261008-saudi-arabia-strikes-deadly-houthi-attacks-airports">France 24</a> · <a href="https://time.com/article/2026/10/08/saudi-arabia-yemen-houthi-rebels-airport-attacks-war/">TIME</a></span></div>
+      <div class="card-title">フーシ派がリヤド国際空港を再攻撃——3人死亡・124便欠航・「サウジ領空飛行の全航空会社に最後の警告」。サウジ連合軍が82の軍事目標を報復爆撃</div>
+      <div class="card-meta"><span class="badge">Yemen / Houthi / Saudi Arabia / Riyadh Airport / Airstrike / October 2026</span><span class="card-source">Source: <a href="https://www.wrtv.com/news/international/3-saudis-killed-in-houthi-attack-on-riyadh-airport-saudia-plane-hit/">WRTV</a> · <a href="https://aa.com.tr/en/world/morning-briefing-oct-9-2026/4082888">Anadolu Agency</a> · <a href="https://www.timesofisrael.com/liveblog-oct-9-2026/">Times of Israel</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>攻撃概要:</strong> フーシ派は10月6〜7日にリヤドのキング・ハーリド国際空港とアブハ空港を攻撃。スーダン人男性1人がリヤドで死亡、モロッコ人とアルジェリア人の女性計2人がアブハで死亡、36人以上が負傷</li>
-          <li><strong>10月8日の動向:</strong> フーシ派はキング・ハーリド国際空港への再攻撃を主張。AFP 記者がリヤド市内で爆発音を確認したが、サウジ当局は未確認。死者1人・負傷8人との報道もある</li>
-          <li><strong>航空への影響:</strong> フーシ派報道官が「サウジ領空を飛行する全航空会社に最後の警告」を発令。イエメン国際政府側のアデン国際空港への弾道ミサイル攻撃でイエメニア航空機がジェッダに緊急転航</li>
-          <li><strong>サウジの反撃:</strong> サウジ主導連合が「弾道ミサイル発射台を破壊」と発表、「82の正規軍事目標」への報復打撃を実施したと述べた。パキスタンがフーシ派との戦いへの部隊派遣を確認</li>
+          <li><strong>最新の攻撃（10/9）:</strong> フーシ派がリヤドのキング・ハーリド国際空港に対して再度の攻撃を主張。AFP 記者が市内で爆発音を複数確認。サウジ当局が被害状況を精査中。サウジア（Saudia）機が翼に被弾したとの報道もある</li>
+          <li><strong>直近2日間の累計被害:</strong> 6〜7日のアブハ・リヤド両空港への攻撃で計3人が死亡（スーダン人男性1人・モロッコ人女性1人・アルジェリア人女性1人）、36人以上が負傷。少なくとも124便が欠航・転航を余儀なくされた</li>
+          <li><strong>フーシ派の警告:</strong> 「サウジアラビア領空を飛行するすべての航空会社への最後の警告」を発令。航空業界に対する圧力を一段と強化している</li>
+          <li><strong>サウジの反応:</strong> サウジ主導連合が82の「正規軍事目標」への報復打撃を発表。パキスタン軍もサウジ支援部隊の派遣を公式確認</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ: ロシア軍の攻撃でバスも直撃——東部で30人死亡・18人負傷。キーウで停電悪化。3周年を迎えたハマス攻撃後のガザ情勢は停戦なく継続</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Eastern Ukraine / Bus Attack / Civilian / Gaza / Hamas / October 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/8/headlines">Democracy Now</a> · <a href="https://www.justsecurity.org/160040/early-edition-october-8-2026/">Just Security</a></span></div>
+      <div class="card-title">ウクライナ: 2日間でロシア軍攻撃により民間人78人死亡——クラマトルスクでバス2台が爆撃を直撃。キーウへの攻撃で停電悪化。10月7日はハマス攻撃から3周年</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Kramatorsk / Civilian / Bus Attack / Kyiv / Gaza / Hamas / October 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/9/headlines">Democracy Now</a> · <a href="https://aa.com.tr/en/world/morning-briefing-oct-9-2026/4082888">Anadolu Agency</a> · <a href="https://everythingbriefing.substack.com/p/october-9-2026">Everything Briefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ウクライナ東部:</strong> ロシア軍による攻撃で民間人を含む30人が死亡、少なくとも18人が負傷。路線バスが直撃を受けたことが特に国際的な注目を集めている。キーウへの攻撃は電力インフラを狙い、停電が悪化している</li>
-          <li><strong>外交の動向:</strong> 前日（10/7）に報じられた10月三者会談（米・ウクライナ・ロシア）の準備は継続中とされるが、今回の攻撃激化がその見通しを不透明にしている</li>
-          <li><strong>ガザ情勢:</strong> 10月7日はハマスによるイスラエル攻撃から3周年。停戦合意には至らず戦闘が継続しており、人道危機は深刻な状況が続いている</li>
+          <li><strong>クラマトルスク:</strong> ウクライナ東部クラマトルスクで爆撃がバス2台を直撃。2日間の累計で少なくとも78人の民間人が死亡した。移動中の市民を狙ったとみられる攻撃として国際社会の強い非難を招いている</li>
+          <li><strong>キーウ:</strong> 首都への攻撃が電力インフラを直撃し、市内で広範な停電が悪化。冬季に向けたエネルギー基盤への攻撃が激化している</li>
+          <li><strong>外交の見通し:</strong> 米・ウクライナ・ロシアの三者協議準備が報告されていたが、今週の攻撃激化がその実現を不透明にしている状況</li>
+          <li><strong>ガザ3周年:</strong> 10月7日はハマスによるイスラエル奇襲攻撃から丸3年。停戦交渉は進展なく、人道危機が継続している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ノーベル化学賞2026: アンリ・カガン（仏）・曽我直弘（日）が不斉有機合成における非線形効果と自己触媒反応の発見で受賞——キラル化学の基礎を確立</div>
-      <div class="card-meta"><span class="badge">Nobel Prize / Chemistry / Kagan / Soai / Chiral Chemistry / Asymmetric Synthesis / 2026</span><span class="card-source">Source: <a href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/">NobelPrize.org</a> · <a href="https://cen.acs.org/people/nobel-prize/chemistry-nobel-chirality-kagan-soai/104/web/2026/10">C&EN</a> · <a href="https://www.chemistryworld.com/news/the-nobel-prize-in-chemistry-2026-as-it-happens-live/4024303.article">Chemistry World</a></span></div>
+      <div class="card-title">トランプ大統領「中間選挙前はイランを攻撃しない」——米イラン間で「生産的な協議」が進行中と言及。空母アブラハム・リンカーンが265日連続展開を終えてサンディエゴへ帰還</div>
+      <div class="card-meta"><span class="badge">US / Iran / Trump / Midterm Elections / CENTCOM / Aircraft Carrier / October 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-oct-9-2026/4082888">Anadolu Agency</a> · <a href="https://everythingbriefing.substack.com/p/october-9-2026">Everything Briefing</a> · <a href="https://www.democracynow.org/2026/10/9/headlines">Democracy Now</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>受賞者:</strong> アンリ・B・カガン（パリ南大学、フランス）と曽我直弘（東京理科大学、日本）。賞金1,200万スウェーデン・クローナを均等分配</li>
-          <li><strong>受賞理由:</strong> 「不斉有機合成における非線形効果と自己触媒反応の発見」。化学反応が分子の2つの鏡像体のうち一方を選択的に生成するしくみを解明し、生命体のキラリティ（ホモキラリティ）の起源に光を当てた</li>
-          <li><strong>実用への貢献:</strong> 医薬品合成における立体特異的反応の設計に決定的な影響を与えており、製薬業界から高く評価されている</li>
-          <li><strong>今後の発表:</strong> 文学賞（10/9）・平和賞（10/10）・経済学賞（10/12）の発表が続く</li>
+          <li><strong>トランプ発言:</strong> 「現在、生産的な協議が進行中であるため、中間選挙（11月3日）前に米国がイランを攻撃することはない」と述べた。前日に伝えられた CENTCOM への作戦準備指令（Axios 報道）と一見矛盾するが、ホワイトハウスは追加コメントを控えている</li>
+          <li><strong>戦況:</strong> 今年5月に始まった米軍の対イラン打撃作戦から約5か月が経過。現時点の死傷者数は米軍側で死者19人・負傷者800人超（GlobalSecurity 集計）。ホルムズ海峡の封鎖が220日以上継続している</li>
+          <li><strong>空母帰還:</strong> 空母アブラハム・リンカーンが記録的な265日連続展開を終えてサンディエゴに帰還予定。後続の空母展開について国防総省は公式発表を行っていない</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ドイツ BND 長官逮捕の余波——NATO 情報共有体制の見直しが本格化。スペイン: 強制退去の高齢女性が抗議運動中に死去。フランス: 全国で高校生が抗議デモ</div>
-      <div class="card-meta"><span class="badge">Germany / BND / NATO / Spain / France / Student Protest / October 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/8/headlines">Democracy Now</a> · <a href="https://morningstaronline.co.uk/article/world-in-brief-october-8-2026">Morning Star</a></span></div>
+      <div class="card-title">ケニア、初のエボラ感染を確認——197カ国が署名した新感染症条約では「流行の予兆となる死亡事例の即時報告」が義務化。エチオピアがエリトリアの「全面侵攻」に対して自衛を宣言</div>
+      <div class="card-meta"><span class="badge">Kenya / Ebola / Global Health Treaty / Ethiopia / Eritrea / Africa / October 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/9/headlines">Democracy Now</a> · <a href="https://everythingbriefing.substack.com/p/october-9-2026">Everything Briefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>ドイツ:</strong> BND（連邦情報局）の元長官がスパイ活動での反逆罪により逮捕された余波が続いており、NATO 各国が情報共有プロセスを見直す動きが本格化している</li>
-          <li><strong>スペイン:</strong> マドリードの自宅から立ち退きを強制されたことで全国規模の抗議運動を巻き起こした87歳のマリカルメン氏が死去。今もその住居問題は未解決のまま</li>
-          <li><strong>フランス:</strong> 人員不足と老朽化した学校施設への不満から、数十万人の高校生と支持者が全国でデモ行進。政府は緊急対応策の検討を開始したと報じられている</li>
+          <li><strong>ケニア・エボラ:</strong> ケニアで初のエボラ感染者が確認された。WHO と周辺国の保健当局が感染経路の追跡と封じ込め措置を開始。感染症の拡大が懸念される中でのニュース</li>
+          <li><strong>新感染症条約:</strong> 197カ国が署名した新たな国際感染症対策条約が発効し、「パンデミックの予兆となりうる死亡事例を即時報告する」義務が各国政府に課されることになった。ロシアも署名国に含まれる</li>
+          <li><strong>エチオピア・エリトリア:</strong> エチオピア政府がエリトリアによる「全面侵攻」に対抗するために自衛権を行使すると宣言。アフリカの角（Horn of Africa）での新たな武力衝突として国際社会が注視している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">米国: 最高裁が気候変動訴訟審理を開始・トランプ政権がベネズエラ元大統領マドゥロ氏に拷問容疑を追加。ナイジェリアで拉致された20人が解放</div>
-      <div class="card-meta"><span class="badge">US / Supreme Court / Climate / Venezuela / Maduro / Nigeria / October 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/160040/early-edition-october-8-2026/">Just Security</a> · <a href="https://morningstaronline.co.uk/article/world-in-brief-october-8-2026">Morning Star</a></span></div>
+      <div class="card-title">ハリケーン「シモン」がメキシコ太平洋岸に向けて勢力を強化中。英国が東エルサレム領事館を「ミッション」に改称——パレスチナ国家承認への姿勢を反映</div>
+      <div class="card-meta"><span class="badge">Hurricane Simon / Mexico / UK / East Jerusalem / Palestine / October 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/october-9-2026">Everything Briefing</a> · <a href="https://aa.com.tr/en/world/morning-briefing-oct-9-2026/4082888">Anadolu Agency</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>最高裁:</strong> 気候変動をめぐる大型訴訟の審理を開始。判決は気候規制の枠組みにとどまらず、連邦機関の規制権限全般に影響を与える可能性があるとして法律専門家が注目</li>
-          <li><strong>ベネズエラ:</strong> トランプ政権がニコラス・マドゥロ前大統領に対して拷問容疑を起訴状に追加。国際的な法的圧力が強まっている</li>
-          <li><strong>ナイジェリア:</strong> 先週ナイジェリア南東部で拉致された20人の若者が警察によって救出された</li>
-          <li><strong>韓国:</strong> サムスン電子が2026年第3四半期の営業利益として107.4兆ウォン（約11兆円）を報告。半導体市況の回復を示す数字として注目された</li>
+          <li><strong>ハリケーン シモン:</strong> 太平洋上で発生したハリケーン「シモン」がメキシコ太平洋岸に向けて移動中。米国立ハリケーンセンターはカテゴリー強化を予測しており、メキシコ西部の州が警戒態勢に入った</li>
+          <li><strong>英国・東エルサレム:</strong> 英国政府が東エルサレムの英国領事館を「ミッション（英国パレスチナ代表部）」に改称すると発表。昨年のパレスチナ国家承認方針を受けた外交的な位置づけの変更であり、イスラエルは反発</li>
         </ul>
       </div>
     </div>
@@ -264,33 +270,38 @@
   <section class="section" id="qiita">
     <div class="section-header">
       <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>10/8 のトレンド:</strong> Zenn では GPU 大規模学習の S3 ストリーミング最適化記事が累計いいね数上位を更新中 / Claude Code のセッション記録をノートに自動保存するツールが話題 / Snowflake Agent Identity の解説記事が IT エンジニアの間で注目 / CrowdStrike レポートを受け AI エージェントのセキュリティ OPSEC を解説する記事が急上昇
+      <strong>10/9 のトレンド:</strong> Zenn 人気記事（30日いいね順）トップは「技術ブログはゆるやかに衰退している」（♥247）が定着 / OpenAI DevDay 2026 発表まとめ（♥108）が引き続き高位 / Claude Code Mods でセッションごとのメモ帳を作った実践記事（♥29）が注目 / 「必要なツールだけをエージェントに渡すことで 46.9% のトークン消費を削減する方法」（♥17）が実用記事として人気
     </div>
     <div class="card">
-      <div class="card-title">【Zenn・急浮上】CrowdStrike レポートから学ぶ AI エージェントの OPSEC——セッション履歴・設定ファイル・メモリファイルの安全な管理方法と攻撃者が残した痕跡から見えるミス</div>
-      <div class="card-meta"><span class="badge">Zenn / AI OPSEC / Claude Code / CrowdStrike / Security / October 2026</span></div>
-      <div class="card-body"><p>CrowdStrike が発表した韓国銀行攻撃レポートに触発された OPSEC（作戦セキュリティ）解説記事が Zenn で急上昇中。攻撃者がセッション履歴・ARTEX 設定ファイル・Claude メモリファイルを公開ディレクトリに残置して身元が割れた事例から、AI エージェントを使う際に絶対にやってはいけない設定ミスと安全な運用方法を実践的にまとめている。エンジニアだけでなく、セキュリティ担当者からも高い評価を受けている。</p></div>
+      <div class="card-title">【Zenn・人気1位】「技術ブログはゆるやかに衰退している」——AI が技術情報を即時生成する時代における技術ライティングの価値と変容を考察。♥247</div>
+      <div class="card-meta"><span class="badge">Zenn / Tech Blog / AI Era / Writing / Media / October 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/191">Zenn 人気記事集計 (shoji-miyoshi)</a></span></div>
+      <div class="card-body"><p>「AI が技術記事を瞬時に生成できる今、人間が技術ブログを書く意義とは何か」という問いを軸に、検索流入の低下・閲覧時間の短縮・執筆モチベーションの変化を実データとともに考察した記事が Zenn 30日間人気ランキングの首位を維持。「再現性のある手順書よりも、試行錯誤の過程・失敗の記録・個人の視点こそが AI に代替できない価値」という結論が多くの開発者に共感を呼んでいる。コメント欄でも「技術ブログを書く動機が変わった」という体験談が集まっている。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Zenn・継続上位】Claude Code セッション自動ノート化ツール——会話を Markdown にダウンロード・整形して Obsidian / Notion に自動保存。知識管理との連携で「AIとの対話を資産に」</div>
-      <div class="card-meta"><span class="badge">Zenn / Claude Code / Session Notes / Obsidian / Notion / Knowledge Management / October 2026</span></div>
-      <div class="card-body"><p>Claude Code のセッション履歴を自動的に構造化 Markdown に変換し、Obsidian や Notion に自動保存するツールの紹介記事が先週から引き続き上位をキープ。「AIとの作業ログを個人の知識ベースに蓄積できる」という発想が多くの開発者に刺さり、GitHub リポジトリへのスターも急増中。Claude Code の compaction（コンテキスト圧縮）をロスレスに近い形で保持するテクニックも紹介されている。</p></div>
+      <div class="card-title">【Zenn・人気2位】OpenAI DevDay 2026 発表まとめ——再利用可能クラウド環境・音声 CLI・Decisions API・/agents ビューを網羅。♥108</div>
+      <div class="card-meta"><span class="badge">Zenn / OpenAI / DevDay 2026 / Decisions API / Voice CLI / Agent View / October 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/191">Zenn 人気記事集計 (shoji-miyoshi)</a></span></div>
+      <div class="card-body"><p>先週開催された OpenAI DevDay 2026 の全発表を日本語でコンパクトにまとめた記事が引き続き高い閲覧数を維持。再利用可能なクラウド実行環境（セッション間で状態を保持）、音声入力 CLI、エージェント一覧を管理する /agents ビュー、そして注目の Decisions API の概要を図解付きで解説。Decisions API に関しては別途複数の比較検証記事が Zenn に投稿されており（Jev との比較など）、日本の開発者の間で急速に注目度が上がっている。</p></div>
     </div>
     <div class="card">
-      <div class="card-title">【Zenn・テクニカル】GPU 大規模学習で S3 データを直接ストリーミングする手法——ローカルコピー不要・I/O ボトルネック解消・コスト削減を実現。30日間いいね数が更新中</div>
-      <div class="card-meta"><span class="badge">Zenn / GPU Training / S3 Streaming / Machine Learning / Performance / October 2026</span></div>
-      <div class="card-body"><p>大規模 GPU 学習で S3 バケットのデータをローカルコピーなしに直接ストリーミング読み込みする技術手法の解説記事が、10月8日時点で過去30日の AI 関連記事中いいね数1位を更新中（19いいね以上）。ストレージコストの削減とI/Oボトルネックの解消を同時に実現するアーキテクチャを図解付きで解説しており、MLエンジニアに好評。</p></div>
+      <div class="card-title">【Zenn・実践】Mods で Claude Code のセッションごとに管理できるメモ帳を作った——会話ごとに独立したメモを保持・参照できる TypeScript Mod の実装例。♥29</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Mods / TypeScript / Session Notes / Knowledge Management / October 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/191">Zenn 人気記事集計 (shoji-miyoshi)</a></span></div>
+      <div class="card-body"><p>Claude Code v2.1.287 で導入された Mods（TypeScript 拡張）を活用して、セッションごとに独立したメモ帳を実装した実践記事。ユーザーが「# メモ」と入力するとセッション固有のメモファイルに書き込み・読み込みが行われる仕組みを、実際のコード付きで解説している。「毎回同じ前置きを説明する手間が省けた」という実用的なメリットが受け、いいね数とコメント数ともに急増中。Claude Code のプラグインエコシステムが日本語コミュニティでも盛り上がり始めていることを示している。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn・テクニカル】必要なツールだけをエージェントに渡すことで 46.9% のトークン消費を削減する方法——ツール定義の動的フィルタリングで大幅コスト削減。♥17</div>
+      <div class="card-meta"><span class="badge">Zenn / AI Agent / Token Efficiency / Tool Filtering / Cost Optimization / October 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/191">Zenn 人気記事集計 (shoji-miyoshi)</a></span></div>
+      <div class="card-body"><p>エージェントに渡すツール定義を、実行するタスクに応じて動的にフィルタリングすることでトークン消費を平均 46.9% 削減できるという検証記事。100以上のツールを登録している大規模エージェントシステムほど効果が高く、ツール定義の文字数がコンテキスト長を圧迫している現状への実践的な対策として注目されている。Claude Code・Codex どちらでも応用可能な手法として、エージェントシステムの構築・最適化に取り組む開発者に好評。</p></div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年10月8日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: The Register · Insurance Journal · Cyber Magazine · InfoWorld · Hacker News · GlobeNewswire · Releasebot · Japan Times · France 24 · TIME · L'Orient Today · The Week · GlobalSecurity · NobelPrize.org · C&amp;EN · Chemistry World · Democracy Now · Just Security · Morning Star · AI Tool Discovery</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-07/index.html">前版（2026-10-07）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月9日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · ClaudeLog · CCLeaks · Adversa AI · Morph LLM · Gradually · TechRadar · Tom's Guide · Educative · Firecrawl · Democracy Now · Anadolu Agency · Everything Briefing · Times of Israel · WRTV · Substack (natolambert · joozio) · Zenn 人気記事集計 (shoji-miyoshi/test)</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-08/index.html">前版（2026-10-08）</a></p>
 </footer>
 </body>
 </html>
