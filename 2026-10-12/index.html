@@ -49,6 +49,239 @@
   </style>
 </head>
 <body>
-[ARCHIVE: See 2026-10-12 edition]
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">IMF・世界銀行年次総会バンコク開幕——中東戦争の経済ショックと記録的債務が焦点 / Claude Haiku 5.5 リリース・Stack Overflow 調査でユーザーシェア 65.5%——Claude Code が圧倒的首位 / AI コーディングエージェントへの攻撃研究が加速——Adversa.ai が GitSpawn ほか複合攻撃シナリオを公表 / ウクライナ：エネルギー施設停戦合意もロシアのハルキウ攻撃は継続——民間人6人死亡 / ハリケーン・イザイアス（カテゴリ3）がフロリダ・アラバマ州境に上陸——少なくとも4人死亡</p>
+  <p class="date">2026年10月12日（月）&nbsp;|&nbsp;<a href="2026-10-11/index.html">前版（10/11）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/12）のハイライト:</strong> Stack Overflow 開発者調査で Claude Code のユーザーシェアが <strong>65.5%</strong>（Codex 29.5%）に達し、AI コーディングエージェント市場で圧倒的な首位を維持していることが明らかになった。Claude Haiku 5.5（1M コンテキスト）は10月8日にリリースされ、Claude Code のデフォルトモデルに昇格済み。また Terminal-Bench 4.0 では Claude Code（Opus 5.5）が <strong>64.8%</strong> でトップを記録している。
+    </div>
+    <div class="card">
+      <div class="card-title">Stack Overflow 開発者調査——Claude Code のユーザーシェアが 65.5%（Codex 29.5%）。Terminal-Bench 4.0 でも Opus 5.5 搭載 Claude Code が 64.8% で首位</div>
+      <div class="card-meta"><span class="badge">Claude Code / Stack Overflow / Benchmark / Terminal-Bench / Market Share / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM — Best AI Coding Agents 2026</a> · <a href="https://tech-insider.org/codex-cli-0-162-vs-claude-code-2-1-296-2026/">Tech-Insider: Codex CLI vs Claude Code 2.1.296</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Stack Overflow 調査結果:</strong> AI コーディングエージェントを利用していると回答した開発者のうち、Claude Code を使用しているとした割合は 65.5%。OpenAI Codex は 29.5% にとどまり、差は約2倍以上に広がった。Claude Code の Mods エコシステムやエンタープライズ採用が普及率を押し上げた要因として挙げられている</li>
+          <li><strong>Terminal-Bench 4.0:</strong> コーディングエージェントの総合ベンチマーク Terminal-Bench 4.0 では、Claude Code（Opus 5.5 搭載）が 64.8% でトップ。ただし Anthropic 公式発表値とは異なるケースもあり、測定条件に依存する部分がある点に注意が必要</li>
+          <li><strong>Codex CLI 0.162 との比較:</strong> Tech-Insider の比較記事によれば、Codex CLI 0.162 は難問解決と自然言語指示への応答速度に強みがある一方、長時間自律タスクの安定性と出力品質では Claude Code 2.1.296 が優位とされる。利用制限（クォータ）の安定性でも Claude Code が有利との評価が多い</li>
+          <li><strong>市場構造の変化:</strong> Claude Code が10月だけで8本のリリースを積み重ねる高速開発と、Mods によるエコシステム形成を背景に、シェアがさらに拡大傾向にある。Google Gemini CLI も API 連携強化で追随を試みているが、差は縮まっていない</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Haiku 5.5（1M コンテキスト）が10月8日にリリース——Claude Code のデフォルト軽量モデルに昇格。低コスト高速推論タスクで応答精度が向上</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Haiku 5.5 / 1M Context / Claude Code / October 8 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot (Claude Code)</a> · <a href="https://jackiechen.blog/2026/10/12/the-ai-intelligence-report-october-2-9-2026-when-the-money-got-nervous-and-the-models-kept-coming">AI Intelligence Report (Oct 2–9)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Haiku 5.5 リリース（10/8）:</strong> Anthropic が Claude Haiku 5.5 を正式リリース。1M トークンのコンテキストウィンドウを持ち、従来の Haiku 系モデルと比べて応答精度・速度を大幅に改善した軽量モデル。Claude Code v2.1.293 ですでにデフォルト Haiku モデルに昇格している</li>
+          <li><strong>Claude Code への影響:</strong> バックグラウンドのサブエージェント処理やファイルアクセス判定など、軽量タスクを担う場面で Haiku 5.5 が自動的に採用される。コスト効率と応答速度の両立が改善されたと開発者コミュニティで評価されている</li>
+          <li><strong>モデルラインナップ:</strong> 現在の Claude Code は Opus 5.5（複雑な設計・長時間自律タスク）/ Sonnet 5.5（標準品質）/ Haiku 5.5（軽量・高速）の3モデル構成で動作。CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL 環境変数（v2.1.296 追加）を使えばサブエージェントのモデルを固定指定できる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Adversa.ai が「AI コーディングエージェント攻撃シナリオ トップ10」を公開——GitSpawn（悪意あるリポジトリ経由の Claude Code 誘導）などを含む複合攻撃を詳報</div>
+      <div class="card-meta"><span class="badge">Security / Claude Code / GitSpawn / Adversa.ai / Prompt Injection / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa.ai — AI Coding Agent Security October 2026</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GitSpawn 攻撃:</strong> 悪意あるリポジトリが Claude Code に「セキュリティレビューをサブエージェントに任せる」よう指示し、そのサブエージェントをマルウェア実行に誘導するシナリオ。Adversa.ai は7つの主要 AI コーディングエージェントハーネス全てが影響を受けると報告</li>
+          <li><strong>サプライチェーン経由の trojanized 更新:</strong> 別の攻撃シナリオでは、Claude Code（Anthropic）と Codex CLI（OpenAI）を含む全テスト対象エージェントが trojanized 更新パッケージによって侵害されたと報告。依存関係への注意喚起が強まっている</li>
+          <li><strong>Anthropic の対応:</strong> Claude Code v2.1.296 では共有トランスクリプトを通じたシークレット漏洩が修正された。また Mods アーキテクチャでの権限分離がセキュリティ境界の強化に寄与しているとされる。プロンプトインジェクション耐性のデフォルト組み込みを求める声は業界全体で高まっている</li>
+          <li><strong>開発者への推奨事項:</strong> 外部リポジトリからのタスク受け入れ設定の最小化、シークレット管理ツールとの分離、allow_large 使用時の入力検証強化などが推奨されている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/12）:</strong> AI エージェントのセキュリティが今週の最大テーマ。Pwn2Own Ireland 2026 での侵害を受けて複数社がセキュリティパッチを検討中。OpenAI は DevDay 発表内容の定着フェーズを継続。AI が数学的発見を自律生成するというOpenAI の発表は学術界で検証中。
+    </div>
+    <div class="card">
+      <div class="card-title">AI エージェントセキュリティ研究が転換点——Pwn2Own で OpenAI Codex・LiteLLM が侵害された翌週、研究者が「AIエージェントはもはや攻撃インフラの一部」と宣言</div>
+      <div class="card-meta"><span class="badge">Security / Pwn2Own / OpenAI Codex / LiteLLM / Zero-day / Post-Event / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa.ai</a> · <a href="https://aiweekly.co/ai-news-today">AI Weekly</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Pwn2Own の余波（10/12）:</strong> 先週の Pwn2Own Ireland 2026 で OpenAI Codex と LiteLLM を含む AI システムに32個のゼロデイが実証されて以降、セキュリティ研究者コミュニティが後続の検証と開示を活発化させている。OpenAI は侵害された脆弱性の詳細を段階的に開示する予定</li>
+          <li><strong>プロンプトインジェクション耐性の欠如:</strong> 研究者の分析によれば、今回の侵害の大部分はプロンプトインジェクション・コンテキスト汚染・依存関係への悪意ある挿入の組み合わせによるもの。既存の防御策はほぼ全て「オプトイン設定」であり、デフォルト構成での耐性が不足していることが問題視されている</li>
+          <li><strong>業界全体への影響:</strong> AI コーディングエージェントを CI/CD パイプラインやクラウドインフラに組み込む企業が増えるにつれ、エージェント自体が重要なアタックサーフェスになるという認識が急速に広まっている。セキュリティ評価基準の策定を求める声も出ている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI の非公開モデルが1プロンプトで372個の新数学的結果を生成——独立検証が進行中。AGI 議論を再燃させる発表だが、学術コミュニティは慎重</div>
+      <div class="card-meta"><span class="badge">OpenAI / Mathematics / AGI / Unreleased Model / Verification / October 2026</span><span class="card-source">Source: <a href="https://jackiechen.blog/2026/10/12/the-ai-intelligence-report-october-2-9-2026-when-the-money-got-nervous-and-the-models-kept-coming">AI Intelligence Report (Oct 2–9)</a> · <a href="https://releasebot.io/updates/openai">Releasebot (OpenAI)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>発表内容:</strong> OpenAI が非公開モデルを用いた数学研究で372個の新しい数学的結果を生成したと発表。スポークスパーソンによれば「ほぼすべての結果が単一エージェントへの1回のプロンプトから生まれた」とのこと。AI が自律的に数学的発見を行う能力として注目を集めた</li>
+          <li><strong>学術界の反応:</strong> 独立検証はまだ進行中。「新しい結果」の定義・既知定理との関係・証明の厳密性についてはコミュニティで議論が続いている。OpenAI は詳細を段階的に公開予定</li>
+          <li><strong>AGI 議論との関係:</strong> 今回の発表を「数学的思考における AGI 的能力の萌芽」と位置づける声がある一方、「プロンプト設計・事前知識の有無による結果の再現性が不明」という慎重論も根強い</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI が EU 限定でテキスト電子透かしを全プランに展開——C2PA 標準準拠。Codex 生成コードへの透かし適用で業界標準化の布石</div>
+      <div class="card-meta"><span class="badge">OpenAI / Watermark / EU AI Act / C2PA / Codex / ChatGPT / October 2026</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">Codex Changelog</a> · <a href="https://releasebot.io/updates/openai">Releasebot (OpenAI)</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>EU 限定展開:</strong> ChatGPT および Codex の EU 向け全プランに C2PA 準拠のテキスト電子透かし機能を導入。EU AI Act の AI 生成コンテンツ識別義務化に先手を打つ措置で、Codex が生成したコードにも透かしが付与される</li>
+          <li><strong>業界標準化への影響:</strong> 画像・動画に続いてテキスト・コードへの透かし普及は業界全体に波及する可能性がある。Anthropic や Google の対応が注目されており、EU 以外への展開スケジュールも未発表のまま</li>
+          <li><strong>開発者への影響:</strong> EU 域内で Codex が生成したコードには透かしメタデータが埋め込まれる。実際の開発フローへの影響は軽微とされているが、OSS ライセンスとの組み合わせについての議論が始まっている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode——「Haiku 5.5 に切り替わってから応答が明らかに速くなった」「allow_large で巨大なログ解析がシームレスに」。今週も高アクティビティが継続</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Haiku 5.5 / allow_large / User Experience / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code のデフォルトが Haiku 5.5 に切り替わって以来、「軽量タスクの応答速度が上がった」「バックグラウンド処理でコンテキストを多く確保できる」という体感報告が複数投稿されている</li>
+          <li>v2.1.296 で追加された <code>allow_large</code> については「10MB 超のログファイルを一発で渡せるようになった」「デプロイログ全体を渡して問題箇所を特定させるワークフローが激変した」という実用例が共有されている</li>
+          <li>r/ClaudeCode の週次アクティブ投稿者数が r/codex の3倍超という調査（morphllm.com）は今週も維持。Mods エコシステムへの独自プラグイン投稿も増加傾向が続いており、コミュニティ主導のエコシステムが着実に成長している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/netsec &amp; r/MachineLearning——「AI コーディングエージェントへの攻撃ベクターはもう理論ではない」。Pwn2Own 翌週、Adversa.ai の GitSpawn 報告書が連続スレッドを生む</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / r/MachineLearning / AI Security / GitSpawn / Pwn2Own / October 2026</span><span class="card-source">Source: <a href="https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/">Adversa.ai</a> · <a href="https://aiweekly.co/ai-news-today">AI Weekly</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Pwn2Own での AI エージェント侵害に続き、Adversa.ai の GitSpawn 詳細報告書が r/netsec でトップスレッドに。「悪意あるリポジトリが普通のコードレビュー依頼に見えて、サブエージェントをマルウェア実行に誘導できる」という具体的なシナリオに開発者の関心が集まっている</li>
+          <li>r/MachineLearning では「LLM のプロンプトインジェクション耐性は根本的に解決できるか」という設計論の議論が再燃。「エージェントに与える権限を最小化する設計が唯一の現実的防御」という意見が支持を集めている</li>
+          <li>Claude Code ユーザーからは「v2.1.296 のシークレット漏洩修正は良い一歩だが、Mods で外部プラグインを使う場合の権限設計がまだ開発者任せ」という指摘も出ており、今後のバージョンでのデフォルト制限強化を求める声が上がっている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/vibecoding——「Claude Code に Codex を外部サブエージェントとして呼び出すハイブリッド構成」記事が拡散。「単一エージェントに縛られる時代は終わった」という評価が定着</div>
+      <div class="card-meta"><span class="badge">Community / r/vibecoding / Claude Code / Codex / Hybrid / Multi-Agent / October 2026</span><span class="card-source">Source: <a href="https://www.mindstudio.ai/blog/openai-codex-plugin-claude-code-cross-provider-review-3">MindStudio</a> · <a href="https://gaugr.app/en/blog/claude-code-vs-codex-ai-coding-agents-compared">Gaugr</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code をオーケストレーターとして Codex CLI や Gemini CLI を呼び出す「クロスプロバイダー構成」を紹介した MindStudio の記事が r/vibecoding で話題。「Claude が全体設計を担い、難問は Codex に投げる」というワークフローの実践例が共有されている</li>
+          <li>一方で「Claude Code のサブエージェントに Codex を使う場合、コスト計算が複雑になる」「プロンプトのレイテンシーが増大する」という実用上の課題も報告されており、万能ではないとの評価も</li>
+          <li>Codex CLI のクォータ削減への不満は引き続き継続。「安定性を重視するなら Claude Code 一本」「高負荷タスクだけ外部エージェントに任せる」という使い分けが定番になりつつある</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/12）の主要トピック:</strong> <strong>IMF・世界銀行年次総会が本日バンコクで開幕</strong>——中東戦争経済ショックと新興国債務が議題の中心 / <strong>ウクライナ：エネルギー施設停戦合意もロシアの攻撃は継続</strong>——ハルキウのスーパーマーケット爆撃で民間人6人死亡 / <strong>ハリケーン・イザイアスがフロリダ・アラバマに上陸</strong>——カテゴリ3、少なくとも4人死亡 / <strong>台湾国慶節：頼清徳総統演説に北京が強硬反応</strong>——中国軍が台湾海峡周辺で実弾演習 / <strong>フランス：ルペン＆メランション決選投票へ</strong>——世論調査（ロイター）/ <strong>ジブチ沖：移民船転覆</strong>——国連が109人死亡と発表
+    </div>
+    <div class="card">
+      <div class="card-title">IMF・世界銀行年次総会がバンコクで開幕（10/12〜18）——中東戦争の経済ショックと新興国の記録的債務水準が主要議題。35年ぶりのタイ開催</div>
+      <div class="card-meta"><span class="badge">IMF / World Bank / Bangkok / Middle East / Debt / Global Economy / October 12 2026</span><span class="card-source">Source: <a href="https://www.usnews.com/news/world/articles/2026-10-11/middle-east-war-high-debt-levels-to-dominate-imf-world-bank-meetings-in-bangkok">US News</a> · <a href="https://www.imf.org/en/meetings/2026/annual">IMF.org</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>開幕（10/12）:</strong> IMF・世界銀行グループの2026年年次総会がタイ・バンコクで本日開幕（〜10/18）。タイ開催は1991年以来35年ぶり。中東戦争を背景とした地政学リスクプレミアムと原油価格が最初の焦点になる見込み</li>
+          <li><strong>主要議題:</strong> 世界銀行は中東戦争を COVID パンデミック・ウクライナ侵攻に次ぐ第3の世界経済ショックと位置づけ。新興国・途上国の2026年成長率を基本シナリオ 3.65%、悲観シナリオ 2.6% と試算。IMF は緊急支援需要を 200〜500 億ドルと推計</li>
+          <li><strong>中東情勢との連動:</strong> サウジへの継続的なフーシ派攻撃が原油供給懸念を高めており、エネルギー輸入依存度の高い新興国経済への波及効果が今会議での中核議論になるとみられる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ：トランプが「エネルギー施設への攻撃停止合意」と発表も、ロシアはハルキウのスーパーマーケットを爆撃——民間人6人死亡。トランプはゼレンスキー交代も要求</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Trump / Ceasefire / Kharkiv / Energy / October 12 2026</span><span class="card-source">Source: <a href="https://wng.org/podcasts/monday-morning-news-october-12-2026-1791745268">WNG Monday Morning News</a> · <a href="https://www.justsecurity.org/160381/early-edition-october-12-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>「エネルギー停戦」合意の発表:</strong> トランプ大統領がウクライナとロシアの両側がエネルギーインフラへの攻撃を停止することに合意したと発表。しかしその直後にロシア軍によるハルキウへの攻撃が確認された</li>
+          <li><strong>ハルキウ爆撃（10/11〜12）:</strong> ロシア軍がハルキウのスーパーマーケットを爆撃し、民間人少なくとも6人が死亡。発表されたエネルギー停戦合意と矛盾する攻撃として国際社会から批判が集まっている</li>
+          <li><strong>ゼレンスキー交代要求:</strong> トランプ大統領はゼレンスキー大統領の交代も求めており、ウクライナ政府は反発している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ハリケーン・イザイアスがカテゴリ3でフロリダ・アラバマ州境に上陸——少なくとも4人死亡、高潮 9フィート超。湾岸沿いに大規模被害</div>
+      <div class="card-meta"><span class="badge">Hurricane Isaias / Florida / Alabama / Category 3 / Storm Surge / October 2026</span><span class="card-source">Source: <a href="https://www.mysuncoast.com/2026/10/09/11-am-isaias-update/">MySuncoast</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-monday-october-12-2026/">Havana Times</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>上陸の概要:</strong> ハリケーン・イザイアスがカテゴリ3（最大瞬間風速185km/h前後）でフロリダ州パンハンドルとアラバマ州の州境付近に上陸。少なくとも4人の死亡が確認されている</li>
+          <li><strong>高潮被害:</strong> モービル湾を中心に高潮が最大9フィート（約2.7m）超に達し、沿岸低地での浸水が広範囲に発生。避難命令が数十万人規模で発令された</li>
+          <li><strong>復旧の見通し:</strong> FEMA が現地入りし復旧支援を開始。10月12日時点で捜索救助活動が継続中</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">台湾国慶節：頼清徳総統の演説に北京が「真実を歪曲している」と強硬批判——中国軍が台湾海峡周辺で実弾演習を開始</div>
+      <div class="card-meta"><span class="badge">Taiwan / China / Lai Ching-te / National Day / PLA / Military Drills / October 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-monday-october-12-2026/">Havana Times</a> · <a href="https://www.justsecurity.org/160381/early-edition-october-12-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>演説と中国の反応:</strong> 台湾の頼清徳総統が10日に行った国慶節（双十節）演説に対し、北京は「真実を歪曲している」と強硬に批判。中国台湾事務弁公室が声明を発表した</li>
+          <li><strong>中国軍の演習:</strong> 中国人民解放軍が台湾海峡周辺で実弾演習を開始。2024年の Joint Sword-2024B の前例があり、今回の演習規模が注目されている</li>
+          <li><strong>地域への影響:</strong> 米国は「通常の年次式典を演習の口実にする正当な理由はない」と牽制している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">フランス世論調査：ルペン（国民連合）とメランション（左翼連合）が決選投票へ——ロイター調査。既成政党の消滅を示す象徴的な選挙構造に</div>
+      <div class="card-meta"><span class="badge">France / Marine Le Pen / Mélenchon / Election / Runoff / Reuters / October 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-monday-october-12-2026/">Havana Times</a> · <a href="https://www.justsecurity.org/160381/early-edition-october-12-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>ロイター調査の結果:</strong> フランスで行われた世論調査（ロイター）によれば、マリーヌ・ルペン（国民連合）とジャン＝リュック・メランション（左翼連合）が決選投票に向かう構図。中道・保守・社民などの既成政党は軒並み苦戦</li>
+          <li><strong>政治的意味:</strong> 左右両極が決選投票に進むというシナリオは、フランス政治の構造的変化を象徴するものとして欧州各国から注目されている</li>
+          <li><strong>EU・NATO への影響:</strong> どちらが当選した場合も対 EU・NATO 政策に大きな変化が生じる可能性があり、欧州安全保障の枠組みへの影響が懸念されている</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ジブチ沖で移民船が転覆——国連が109人死亡と発表。アデン湾を渡るアフリカからアラビア半島へのルートで最悪クラスの事故</div>
+      <div class="card-meta"><span class="badge">Djibouti / Migrants / Boat Capsizing / UN / October 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-monday-october-12-2026/">Havana Times</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>事故の概要:</strong> ジブチ沖でアフリカから中東・アラビア半島を目指す移民を乗せた船が転覆し、国連機関は少なくとも109人が死亡したと発表</li>
+          <li><strong>背景:</strong> アデン湾を渡るルートはエチオピア・ソマリア・エリトリアなどからの移民が多く利用する主要経路の一つ。中東の不安定化・経済危機が移住圧力を高めており、過積載の船による危険な渡航が後を絶たない状況が続いている</li>
+          <li><strong>国際社会の対応:</strong> 国連難民高等弁務官事務所（UNHCR）は現地当局との連携で救助・支援活動を続けており、移住ルートの安全確保と根本原因への対処を改めて訴えている</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">省略</span>
+    </div>
+    <div class="alert">
+      <strong>10/12 注記（前日比較）:</strong> 本日のリアルタイムランキングデータは取得できなかった。前日（10/11）アーカイブと比較して記事構成に実質的な差異は確認されなかったため、本日は Zenn / Qiita セクションを省略する。継続して注目されているのは、Claude Code Mods 活用記事・AI エージェントセキュリティ（Pwn2Own 関連）・情報漏洩手口分類記事の3本。いずれも前日と同内容であるため重複掲載は行わない。
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月12日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: MorphLLM · Tech-Insider · Releasebot · Adversa.ai · AI Weekly · AI Intelligence Report · MindStudio · Gaugr · US News · IMF.org · Ada Derana · WNG · Just Security · Havana Times · MySuncoast · News4Jax · OpenAI · Zenn / Qiita（前日比較）</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-11/index.html">前版（2026-10-11）</a></p>
+</footer>
 </body>
 </html>
