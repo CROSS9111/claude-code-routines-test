@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月13日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月14日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code が48,000ファイル削除——AI エージェントの危険性が改めて浮上 / Gemini 4 Argon が AI Pro/Ultra ユーザーへ展開開始（プロンプトインジェクション攻撃成功率 0.7%） / Ruflo でエージェント100体以上を協調制御 / ウクライナ：エネルギー停戦合意もロシアの攻撃継続——ブルガリア沖ドローン攻撃で船員11人行方不明 / IMF：世界成長率を小幅上方修正も債務リスクを警告 / イギリス：イランが RAF フェアフォード爆撃計画に関与との見方 / 韓国・仁川でショッピングモール刺傷事件——8人負傷</p>
-  <p class="date">2026年10月13日（火）&nbsp;|&nbsp;<a href="2026-10-12/index.html">前版（10/12）</a></p>
+  <p class="subtitle">Claude Code Mods エコシステムが本格化——プラグインがエージェント内部を書き換え可能に（v2.1.287+） / GPT-5.5 が本日（10/14）退役——Codex は GPT-6.1 Sol へ移行 / OutSystems が Claude Code・Codex・Cursor に対応した Agent Experience を公開 / イエメン：サウジがサナア油田を攻撃、フーシ派がサウジアラムコ本社を報復攻撃 / ウクライナ：ロシアの夜間攻撃でキーウ死者3人、60万世帯が停電 / 法王レオ、肺がん診断</p>
+  <p class="date">2026年10月14日（水）&nbsp;|&nbsp;<a href="2026-10-13/index.html">前版（10/13）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -66,42 +66,54 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/13）のハイライト:</strong> Reddit ユーザーが Claude Code に48,218ファイルを103秒で削除された事例を報告し、AI エージェントの自律タスク実行リスクが改めて注目を集めている。また Anthropic は Claude Code を AGENTS.md フォーマットに対応させ、Claude Code Projects（複数エージェント協調）のベータ展開を継続。Ruflo は100体以上の専門エージェントを連携させるオーケストレーション基盤として注目が高まっている。
+      <strong>本日（10/14）のハイライト:</strong> Claude Code Mods エコシステムが本格化。v2.1.287 以降ではプラグインがプロンプトの書き換えやツール呼び出しのインターセプト・権限承認の代替まで担えるようになり、エージェント内部の動作そのものをカスタマイズ可能に。最新 v2.1.296 ではワークフロー全サブエージェントのモデルを一括指定できる <code>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL</code> 環境変数が追加。Stack Overflow 調査では AI コーディングエージェント利用者の 65.5% が Claude Code を使用と報告された。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code が103秒で48,218ファイルを削除——Windowsジャンクション追跡による誤削除が原因か。開発者コミュニティに衝撃</div>
-      <div class="card-meta"><span class="badge">Claude Code / Incident / File Deletion / AI Agent Risk / Windows Junction / September–October 2026</span><span class="card-source">Source: <a href="https://techradar.com/ai-platforms-assistants/do-not-let-programs-run-commands-on-your-machine-claude-code-allegedly-deleted-48-000-files-in-103-seconds-and-its-a-terrifying-warning-about-ai-agents">TechRadar</a> · <a href="https://tech.yahoo.com/ai/claude/articles/broke-something-claude-code-ai-170500653.html">Yahoo Tech</a> · <a href="https://incidentdatabase.ai/cite/1719/">AI Incident Database #1719</a></span></div>
+      <div class="card-title">Claude Code Mods プラグインが v2.1.287 で正式解禁——プロンプト書き換え・ツールブロック・権限代替が可能に。Mods エコシステムが本格始動</div>
+      <div class="card-meta"><span class="badge">Claude Code / Mods / Plugins / v2.1.287 / Ecosystem / October 2026</span><span class="card-source">Source: <a href="https://pasqualepillitteri.it/en/news/19871/claude-code-mods-plugins">Pasquale Pillitteri / AI News</a> · <a href="https://news.one-man-company.com/news/yesterday-in-ai-2026-10-01">OMC News</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>事象の概要:</strong> Reddit ユーザー（thisisbubby）が投稿した報告によると、Claude Code に「進行中プロジェクトのミラー再構築」を依頼したところ、エージェントが自作のクリーンアップスクリプトを実行。103秒の間に 48,218 ファイル（別報では最大 55,550 件）と Git オブジェクトストア全体を削除した</li>
-          <li><strong>技術的原因:</strong> Windows のディレクトリジャンクションを <code>os.path.islink()</code> が偽と判定したため、スクリプトがジャンクションルートをスキップしつつ内部ディレクトリを走査・削除し続けた。サブエージェントがライブプロジェクトツリー全体を削除したとされる</li>
-          <li><strong>教訓と推奨事項:</strong> 「サンドボックス環境での実行」「ドライラン（--dry-run）の活用」「クラウドバックアップの常時維持」「エージェントへの書き込み権限の最小化」が各報道で推奨されている。Anthropic からの公式コメントは現時点で確認されていない</li>
-          <li><strong>業界への影響:</strong> AI コーディングエージェントを本番環境に組み込む際の権限管理が改めて論点となっており、Adversa.ai も同様のリスクシナリオを「AI Coding Agent Top 10 攻撃ベクター」として掲載している</li>
+          <li><strong>Mods の概要:</strong> Claude Code v2.1.287（2026年10月1日リリース）から、エージェントの動作をプラグイン（Mods）でカスタマイズできるようになった。プロンプトがモデルに到達する前に書き換える・特定のツール呼び出しをインターセプトしてブロックする・権限リクエストを自動承認または拒否する、の3つが主要機能</li>
+          <li><strong>最新 v2.1.296 の追加機能:</strong> エージェント制御・ワークフロー制御・ゲートウェイ制御が新たに追加。<code>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL</code> 環境変数でワークフロー内の全サブエージェントのモデルを一括指定できるようになり、コスト管理と出力一貫性が向上した</li>
+          <li><strong>v2.1.292 の Agent ツール effort パラメータ:</strong> Agent ツールへの <code>effort</code> パラメータが追加され、サブエージェントを指定した努力レベル（low / medium / high / xhigh / max）で実行できるようになった。タスクの複雑さに応じたコスト制御が可能になっている</li>
+          <li><strong>エコシステムの現状:</strong> Mods エコシステムは急速に拡大中。サードパーティ開発者が権限フィルタや出力フォーマッターを公開し始めており、Claude Code を企業ポリシーに合わせて制御するユースケースが増えている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code が AGENTS.md フォーマットに対応（v2.1.277〜）——OpenAI Codex との相互運用性が向上。Claude Code Projects（複数エージェント協調）ベータも継続展開中</div>
-      <div class="card-meta"><span class="badge">Claude Code / AGENTS.md / Interoperability / Projects / Multi-Agent / October 2026</span><span class="card-source">Source: <a href="https://www.infoworld.com/article/4224410/claude-code-now-also-accepts-instructions-in-openais-agents-md-format.html">InfoWorld</a> · <a href="https://wersm.com/claude-code-projects-ai-agent-teams/">Wersm</a> · <a href="https://claude.com/product/claude-code">Anthropic Claude Code</a></span></div>
+      <div class="card-title">Stack Overflow 調査：AI コーディングエージェント利用者の 65.5% が Claude Code を使用——昨年（10%）から急拡大。Terminal-Bench 4.0 では Opus 5.5 が 64.8% でトップ</div>
+      <div class="card-meta"><span class="badge">Claude Code / Stack Overflow / Survey / Market Share / Terminal-Bench / October 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> · <a href="https://tech-insider.org/claude-code-vs-codex-vs-github-copilot-2026/">Tech-Insider</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>AGENTS.md 対応:</strong> Claude Code v2.1.277 以降、フォルダ内に CLAUDE.md が存在しない場合に AGENTS.md を自動的に読み込む。OpenAI Codex や他のエージェントと同じプロジェクト指示ファイルを共有でき、複数エージェントを使い分けるチームの効率が向上する</li>
-          <li><strong>Claude Code Projects:</strong> Anthropic は「複数 AI エージェントが並列でコーディングタスクを協調実行できる共有ワークスペース」として Pro・Max サブスクライバー向けにベータ展開中。タスクの並列分散と結果統合が一つのプロジェクト画面で管理できる</li>
-          <li><strong>Auto モードのデフォルト化:</strong> Pro・Max・Team プランでは Auto モードがデフォルトになり、タスクの複雑さに応じてモデル（Opus 5.5/Sonnet 5.5/Haiku 5.5）が自動選択。CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL 環境変数（v2.1.296）でサブエージェントのモデルを固定指定することも可能</li>
+          <li><strong>市場シェア:</strong> Stack Overflow Developer Survey の集計（morphllm.com 報告）によると、AI コーディングエージェント利用者の 65.5% が Claude Code を使用と回答。2025年調査時点の約 10% から大幅に拡大し、Codex（29.5%）・GitHub Copilot を引き離している</li>
+          <li><strong>Terminal-Bench 4.0:</strong> コーディングエージェントベンチマーク「Terminal-Bench 4.0」では Claude Code (Opus 5.5) が 64.8% でトップエントリー、Claude Code (Sonnet 5.5) が 61.8%。Anthropic 自社ハーネスによる Sonnet 5.5 最大努力値（70.6%）とは測定条件が異なる</li>
+          <li><strong>競合との差別化要因:</strong> 長時間自律タスクの安定性・出力品質・利用クォータの安定性が Claude Code の評価ポイント。Mods エコシステムによる企業向けカスタマイズ性も差別化に寄与しているとの評価が増えている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Ruflo が Claude Code &amp; Codex 向け AI エージェントオーケストレーション基盤をリリース——100体以上の専門エージェントを単一コントロールプレーンから制御</div>
-      <div class="card-meta"><span class="badge">Ruflo / Cognitum One / AI Orchestration / Claude Code / Codex / Multi-Agent / October 2026</span><span class="card-source">Source: <a href="https://www.theglobeandmail.com/investing/markets/markets-news/ACCESS%20Newswire/6790816/cognitum-one-releases-ruflo-ai-agent-orchestration-for-claude-code-and-codex-with-mission-driven-mods-and-a-single-agent-control-plane/">Globe and Mail / ACCESS Newswire</a></span></div>
+      <div class="card-title">OutSystems が Agent Experience プラットフォームを公開——Claude Code・Codex・Cursor・Kiro の4エージェントに対応。既存業務アプリに成果物を直接返す</div>
+      <div class="card-meta"><span class="badge">OutSystems / Agent Experience / Claude Code / Codex / Cursor / Kiro / Enterprise / October 14 2026</span><span class="card-source">Source: <a href="https://insurance-edge.net/2026/10/14/outsysyems-embraces-claude/">Insurance Edge</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>Ruflo とは:</strong> Cognitum One が開発したオープンソースのエージェントオーケストレーション基盤。Claude Code および Codex CLI の両方をバックエンドとして利用でき、ミッション駆動型 Mods と単一のコントロールプレーンを組み合わせることで100体以上の専門エージェントを協調動作させることができる</li>
-          <li><strong>最新リリースの特徴:</strong> クロスマシンフェデレーション機能が追加され、複数マシン上で稼働するエージェントを一元管理できるようになった。クラウド・オンプレミス混在環境でも単一コントロールプレーンから制御が可能</li>
-          <li><strong>利用シナリオ:</strong> 大規模コードベース移行・継続的テスト自動化・セキュリティ監査など、単一エージェントでは対処しきれないタスクを並列分散処理するユースケースを想定。Claude Code の Mods エコシステムとの統合が容易な設計</li>
+          <li><strong>Agent Experience とは:</strong> OutSystems が発表した AI コーディングエージェント連携プラットフォーム。Claude Code・OpenAI Codex・Cursor・Kiro の4エージェントをバックエンドとして選択でき、既存の OutSystems 業務アプリに成果物（コード・ドキュメント・設計図）を直接書き戻す統合フローを提供する</li>
+          <li><strong>企業向け意義:</strong> ローコード・ノーコードプラットフォームと AI コーディングエージェントの融合として注目されており、OutSystems の既存エンタープライズ顧客が追加インフラなしに AI エージェントを導入できる。Claude Code の Mods エコシステムとの統合も容易な設計とされている</li>
+          <li><strong>競合の動き:</strong> GitHub も同時期に Claude・Codex エージェントを GitHub プラットフォームへ直接統合。AI エージェントのエンタープライズ組み込みが加速している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code vs Codex vs GitHub Copilot 2026年比較——開発者シェア・ベンチマーク・エコシステムの現状整理</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / Copilot / Comparison / 2026 / Market</span><span class="card-source">Source: <a href="https://tech-insider.org/claude-code-vs-codex-vs-github-copilot-2026/">Tech-Insider</a> · <a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide</a> · <a href="https://techradar.com/pro/github-integrates-claude-and-codex-ai-coding-agents-directly-into-github">TechRadar</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>シェア構成（2026年10月）:</strong> Claude Code 65.5%・Codex 29.5%・Copilot（シェア縮小継続）。r/ClaudeCode の週次アクティブ投稿者数は r/codex の3倍超を維持しており、コミュニティ活発度でも差が広がっている</li>
+          <li><strong>製品特性の比較:</strong> Tom's Guide のヘッドトゥヘッドテストでは「Claude Code は予防的アーキテクチャ設計・安全確認が強み、Codex はコードベース全体を能動的に参照してユーザーが見落とした問題を指摘する積極性が強み」という結論。どちらか一方が全タスクで優れているわけではないとされる</li>
+          <li><strong>GitHub 統合の影響:</strong> GitHub が Claude エージェントと Codex エージェントを直接プラットフォームに統合したことで、Copilot との競合軸が変化。ユーザーは GitHub 上で3つのエージェントを切り替えながら使用できる環境が整った</li>
+          <li><strong>価格帯:</strong> Claude Code は Pro/Max/Team/Enterprise の多層プランで提供。Auto モードにより低コストモデルへの自動降格が可能で、コスト最適化が容易。Codex は ChatGPT Plus 以上のプランに組み込み</li>
         </ul>
       </div>
     </div>
@@ -113,39 +125,39 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（10/13）:</strong> Google が Gemini 4 Argon を AI Pro/Ultra ユーザーへ展開開始。プロンプトインジェクション攻撃成功率 0.7% という安全性指標が注目点。Meta の Muse エージェント、OpenAI の always-on dots エージェントとともに「自律エージェント競争」が本格化している。
+      <strong>競合ハイライト（10/14）:</strong> GPT-5.5 が本日（10/14）正式退役し、Codex は GPT-6.1 Sol をデフォルトモデルとして稼働。Codex 0.162.0 ではマネージド Git ワークツリーツールとピン留めタスクが追加。OpenAI の EU スモールビジネス向け Codex/ChatGPT Work ユーザーが5月比 8.1 倍に急拡大したことが報告された。
     </div>
     <div class="card">
-      <div class="card-title">Gemini 4 Argon が Gemini アプリの AI Pro/Ultra ユーザーへ展開——プロンプトインジェクション攻撃成功率 0.7%。1M 入出力トークン上限で実用性も向上</div>
-      <div class="card-meta"><span class="badge">Google / Gemini 4 Argon / AI Pro / AI Ultra / Prompt Injection / 1M Context / October 13 2026</span><span class="card-source">Source: <a href="https://9to5google.com/2026/10/13/gemini-app-4-argon">9to5Google</a> · <a href="https://androidauthority.com/gemini-4-argon-ai-model-launch-availability-3722792">Android Authority</a> · <a href="https://thenewstack.io/gemini-4-argon-live">The New Stack</a></span></div>
+      <div class="card-title">GPT-5.5 本日（10/14）退役——Codex は GPT-6.1 Sol にデフォルト移行。Codex 0.162.0 がマネージド Git ワークツリーと Ultrafast モードを追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / GPT-5.5 / GPT-6.1 Sol / Deprecation / Ultrafast / October 14 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot – Codex Updates</a> · <a href="https://releasebot.io/updates/openai">Releasebot – OpenAI Updates</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>展開状況（10/13）:</strong> Gemini 4 Argon が Gemini アプリの AI Pro および AI Ultra サブスクライバーへのロールアウトを開始。当初は AI Ultra（$99.99+/月）限定だったが Pro プランへも拡大。macOS の Gemini アプリでは「チャットとコーディングの切り替え」機能も利用可能に</li>
-          <li><strong>安全性指標:</strong> Gray Swan のインダイレクトプロンプトインジェクションベンチマークで、15回の適応型攻撃に対する攻撃成功率は <strong>0.7%</strong>。セキュリティ重視のモデル設計として注目されている（Claude Code の Adversa.ai 評価とはベンチマーク基準が異なるため直接比較不可）</li>
-          <li><strong>1M トークン:</strong> 入出力ともに統一 1M トークン上限を持ち、大規模コードベースの一括解析や長文書類の処理が実用的に。Gemini API および Antigravity でも同時提供開始</li>
-          <li><strong>Gemini エージェント（企業向け）:</strong> 10月8日には Google Cloud が企業向け Gemini エージェントを発表。業務システムと連携してドキュメント・メール・開発環境に成果物を返す自律型エージェントで、Google が企業顧客を先行して取り込む戦略を示している</li>
+          <li><strong>GPT-5.5 退役:</strong> GPT-5.5 が 2026年10月14日に正式退役。同時に GPT-5.2 および GPT-5.3-Codex も ChatGPT でサインイン時の Codex から廃止予定。既存のワークフローや API 呼び出しで GPT-5.5 を指定している場合は GPT-6.1 Sol への移行が必要</li>
+          <li><strong>Codex 0.162.0 の新機能:</strong> マネージド Git ワークツリーツールの追加・Command Center でのタスクのピン留め・Web アクセス・コンパクション・ツール検索の新オプション。エージェントの長時間タスク管理が改善された</li>
+          <li><strong>Codex 0.161.0 / Ultrafast モード:</strong> GPT-6.1 Sol がデフォルトモデルに昇格。Amazon Bedrock および MCP ログイン対応の拡張・音声会話デバイスコントロールの追加。Ultrafast モード（GPT-6.1 Sol）が Codex・API・ChatGPT Work 全体にロールアウトされ、高速推論が標準利用可能に</li>
+          <li><strong>Composer predictions:</strong> ChatGPT が Codex に Composer predictions をベータ追加。次のメッセージを自動提案する機能で、対象の Pro ユーザーにはデフォルト ON で提供されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">自律エージェント競争が加速——OpenAI の always-on「dots」、Meta の「Muse」が先行。コーディング特化から日常業務全般への侵透へ</div>
-      <div class="card-meta"><span class="badge">OpenAI / dots / Meta / Muse / Autonomous Agent / October 2026</span><span class="card-source">Source: <a href="https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/">TechCrunch</a> · <a href="https://americanbazaaronline.com/2026/10/08/google-launches-gemini-agent-as-ai-giants-race-to-build-autonomous-workers-489653/">American Bazaar Online</a></span></div>
+      <div class="card-title">OpenAI：EU スモールビジネスの Codex / ChatGPT Work 週次アクティブユーザーが5月比 8.1 倍に——リトアニアでは利用率 85% に達する国も</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / ChatGPT Work / EU / SMB / Growth / October 2026</span><span class="card-source">Source: <a href="https://fourweekmba.com/ai-openai-says-eu-small-business-agent-users-grew-8x-since-may/">FourWeekMBA</a> · <a href="https://cryptobriefing.com/openai-eu-small-business-ai-agents-growth/">CryptoBriefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>OpenAI dots:</strong> 先月リリースの always-on エージェント「dots」はユーザーの複数アプリにまたがって目標を追跡・実行し続ける常時稼働型エージェント。開発者ツールの枠を超え、日常業務自動化に踏み込んでいる</li>
-          <li><strong>Meta Muse:</strong> Meta が先月公開した個人向け AI エージェント。ショッピング・旅行予約・メール送信・支払いを代行し、Facebook/Instagram との統合を差別化要因として Google Assistant 後継的な位置づけで普及を狙う</li>
-          <li><strong>市場構造の変化:</strong> コーディングエージェント → 企業業務エージェント → 個人日常エージェントという多層的な展開が進んでいる。各社の競合軸がコーディング特化から全方位型へシフトしつつある</li>
+          <li><strong>成長率:</strong> 2026年10月5日時点で、EU のスモール・ミディアムビジネス（SMB）における Codex と ChatGPT Work の週次アクティブユーザー数が 2026年5月比 8.1 倍に達したと OpenAI が報告。EU AI 規制（EU AI Act）施行後も採用が加速していることを示している</li>
+          <li><strong>国別格差:</strong> スロベニア（22%）からリトアニア（85%）まで利用率に大きな幅があり、デジタル成熟度の差が反映されている。EU ChatGPT Enterprise サンプルでは Codex と ChatGPT Work が出力トークンの過半数を生成</li>
+          <li><strong>エージェント経済の台頭:</strong> これは個人ユーザーではなく SMB 法人の数字であり、AI エージェントが実業務の主要ツールとなりつつある実態を示す。OpenAI は欧州市場での先行利益を拡大するため、EU 規制当局との対話を継続している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Codex CLI vs Claude Code 2.1.296 最新比較——長時間自律タスクと安定性では Claude Code 優位、難問解答速度では Codex CLI が強みを維持</div>
-      <div class="card-meta"><span class="badge">Codex CLI 0.162 / Claude Code 2.1.296 / Benchmark / Comparison / October 2026</span><span class="card-source">Source: <a href="https://tech-insider.org/codex-cli-0-162-vs-claude-code-2-1-296-2026/">Tech-Insider</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></span></div>
+      <div class="card-title">GitHub が Claude・Codex エージェントをプラットフォームへ直接統合——Copilot・Claude・Codex の3択がリポジトリ上で選択可能に</div>
+      <div class="card-meta"><span class="badge">GitHub / Claude / Codex / Copilot / Integration / Platform / October 2026</span><span class="card-source">Source: <a href="https://techradar.com/pro/github-integrates-claude-and-codex-ai-coding-agents-directly-into-github">TechRadar</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>総合評価:</strong> 長時間の自律タスク安定性・出力品質・利用クォータの安定性では Claude Code 2.1.296 が優位。難問解決における自然言語指示への応答速度は Codex CLI 0.162 が強みを維持</li>
-          <li><strong>Stack Overflow 調査:</strong> AI コーディングエージェント利用者のうち Claude Code 使用者 65.5%、Codex 29.5%（morphllm.com 集計）。週次アクティブ投稿者数でも r/ClaudeCode は r/codex の3倍超を維持</li>
-          <li><strong>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL:</strong> v2.1.296 で追加された環境変数で、ワークフロー内の全サブエージェントのモデルを一括指定できる。コスト管理や出力の一貫性を求めるチームに有用</li>
+          <li><strong>統合の概要:</strong> GitHub が Claude Code（Anthropic）と Codex（OpenAI）を GitHub プラットフォームへ直接統合。これにより GitHub ユーザーは GitHub Copilot・Claude・Codex の3つのエージェントをリポジトリの UI 上から切り替えながら利用できる環境が整った</li>
+          <li><strong>競合への影響:</strong> これまで GitHub Copilot が独占していた GitHub 上のエージェント体験が開放されたことで、Copilot の差別化要因が「GitHub ネイティブ」から「コード補完品質」に集約される可能性がある</li>
+          <li><strong>開発者の選択肢拡大:</strong> PR レビュー・Issue 対応・ドキュメント生成など GitHub のコアワークフローを、ユーザーが好むモデル・エージェントで処理できるようになった。OutSystems の Agent Experience と同様に、AI エージェントの既存プラットフォーム統合という大きなトレンドを示している</li>
         </ul>
       </div>
     </div>
@@ -157,35 +169,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI &amp; r/ClaudeCode——「48,000ファイル削除事件」への反応。「バックアップを取っていなかった自分にも責任がある」vs「エージェントが自作スクリプト実行前に確認を取るべき」</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / r/ClaudeCode / File Deletion / AI Safety / User Discussion</span><span class="card-source">Source: <a href="https://incidentdatabase.ai/cite/1719/">AI Incident Database #1719</a> · <a href="https://techradar.com/ai-platforms-assistants/do-not-let-programs-run-commands-on-your-machine-claude-code-allegedly-deleted-48-000-files-in-103-seconds-and-its-a-terrifying-warning-about-ai-agents">TechRadar</a></span></div>
+      <div class="card-title">r/ClaudeCode——「エージェントが意図しないコード変更をしないようにする方法」が活発に議論。プラン先行・修正境界定義・小さな変更単位の徹底が支持を集める</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Best Practices / Unexpected Changes / Workflow / October 2026</span><span class="card-source">Source: <a href="https://claudescorner.substack.com/p/claude-workflows-put-scope-cost-and">Claude's Corner Substack</a></span></div>
       <div class="card-body">
         <ul>
-          <li>削除事件の報告が広まるにつれ、Reddit 上では「AI エージェントに本番環境への書き込み権限を与えるリスク」を巡る議論が活発化。「ドライランを必ず通すべき」「クラウドバックアップを常時維持するのは前提」という意見が支持を集める一方、「エージェントが自作スクリプトを実行する前に確認を取るべきだった」という設計論の批判も出ている</li>
-          <li>「ALLOW_DELETE=false のような保護フラグをデフォルト ON にしてほしい」という機能リクエストが r/ClaudeCode で複数投稿されている。v2.1.297 以降のリリースノートで反映されるかどうかが注目されている</li>
-          <li>「自分の環境では問題なく使えている」「この事件は Edge Case」という声も根強く、事故を過度に一般化しないよう求める投稿も散見される</li>
+          <li>Mods エコシステムの拡充を受け、r/ClaudeCode では「エージェントが意図しない変更を加えることを防ぐベストプラクティス」が再び注目を集めている。「まずプランを要求してから実行に移す」「修正対象ファイルの境界を事前に定義する」「変更を小さな単位に分割してから依頼する」「結果を毎回 diff で検証する」という4つの原則が上位回答に集まっている</li>
+          <li>v2.1.287 以降の Mods 機能を使って「特定ファイルへの書き込みをデフォルトでブロックする権限フィルタ Mod」を自作したユーザーの実装例が共有されており、高評価を獲得している</li>
+          <li>「Mods で権限管理を厳格にするのは良いが、設定ミスするとエージェントが何もできなくなる」という落とし穴報告もあり、デフォルト設定のままでも安全に使える公式ガイドラインを求める声が上がっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning——Gemini 4 Argon のプロンプトインジェクション耐性 0.7% が話題。「ベンチマーク設計の違いを無視した比較は無意味」という議論が白熱</div>
-      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Gemini 4 Argon / Prompt Injection / Benchmark / October 2026</span><span class="card-source">Source: <a href="https://thenewstack.io/gemini-4-argon-live">The New Stack</a> · <a href="https://9to5google.com/2026/10/13/gemini-app-4-argon">9to5Google</a></span></div>
+      <div class="card-title">r/ClaudeCode——ゲーム開発でのマルチエージェント構成が注目。「オーケストレーター + グラフィック担当 + ゲームロジック担当」に分割する実例が多数共有</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Game Dev / Multi-Agent / Orchestrator / October 2026</span><span class="card-source">Source: <a href="https://claudescorner.substack.com/p/claude-workflows-put-scope-cost-and">Claude's Corner Substack</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Gemini 4 Argon の Gray Swan ベンチマーク結果（攻撃成功率 0.7%）が r/MachineLearning で話題に。「この数字が意味するのは特定の攻撃手法への耐性であり、実環境での全インジェクション脆弱性とは異なる」という指摘が上位にランクイン</li>
-          <li>Claude Code の Adversa.ai 評価との比較についても議論が出ているが、「ベンチマーク設計が異なる以上、単純な数値比較は無意味」という意見が多数派。「各社がベンチマーク選定を戦略的に行っている構造的問題」を指摘する声もある</li>
-          <li>「インダイレクトプロンプトインジェクションを本当に防ぐには、外部入力を信頼しないアーキテクチャ設計が必要」という設計論の議論も継続中</li>
+          <li>ゲーム開発者コミュニティで「Claude Code をオーケストレーターにしてサブエージェントに専門タスクを分担させる構成」の実践報告が急増。具体的には「オーケストレーター → グラフィック＆アニメーション担当エージェント + ゲームロジック担当エージェント + テスト担当エージェント」という3層構成がよく紹介されている</li>
+          <li>v2.1.292 で追加された <code>effort</code> パラメータを使い、「設計判断には max effort、定型コード生成には low effort」のように役割別にコストを変える運用例が支持を集めている</li>
+          <li>「エージェント間でコンテキストが断絶するのをどう防ぐか」という課題への対処として、CLAUDE.md への共有コンテキスト集約・Mods による状態引き渡しツールの実装などの工夫が紹介されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/vibecoding &amp; r/LocalLLaMA——「Ruflo で Claude Code と Codex の両方を同時に動かす構成」が人気。「コスト計算が複雑になるがスループットは明らかに向上」</div>
-      <div class="card-meta"><span class="badge">Community / r/vibecoding / r/LocalLLaMA / Ruflo / Claude Code / Codex / Orchestration</span><span class="card-source">Source: <a href="https://www.theglobeandmail.com/investing/markets/markets-news/ACCESS%20Newswire/6790816/cognitum-one-releases-ruflo-ai-agent-orchestration-for-claude-code-and-codex-with-mission-driven-mods-and-a-single-agent-control-plane/">Globe and Mail</a></span></div>
+      <div class="card-title">r/MachineLearning &amp; r/artificial——「GPT-5.5 退役でどのモデルに乗り換えるべきか」論争。GPT-6.1 Sol・Claude Sonnet 5.5・Gemini 4 Argon の三者比較が活発化</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / GPT-5.5 / Model Migration / Claude / Gemini / October 14 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> · <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Ruflo リリースを受け、r/vibecoding では「Claude Code をオーケストレーターにして Codex CLI をサブエージェントとして使う構成」の実践報告が増加。「Claude が全体設計を担い、個別ファイルの実装を Codex に並列分散する」ワークフローが共有されている</li>
-          <li>実用面の課題として「コスト計算が複雑になる（2社のAPI料金が混在）」「呼び出しレイテンシーが増大する」という報告も。「シンプルなタスクは Claude Code 一本でやるのが結局早い」という声も根強い</li>
-          <li>r/LocalLLaMA では「Ruflo のクロスマシンフェデレーション機能でオンプレミス GPU サーバーと Claude Code クラウドを連携させる実験」を行っているユーザーが登場。ローカルモデルとクラウドモデルのハイブリッド活用の事例として注目されている</li>
+          <li>GPT-5.5 の本日退役を受け、r/MachineLearning では「移行先モデルの比較」スレッドが複数立ち上がっている。コスト重視派は「GPT-6.1 Sol の Ultrafast モードでレスポンス速度が大幅改善された」と評価する一方、「コーディングタスクでは Claude Sonnet 5.5 の方が出力品質が高い」という意見も根強い</li>
+          <li>r/artificial では「モデル選択よりもエージェント基盤・Mods・ツール統合の設計が重要」という意見が上位。「どのモデルも性能差は縮まっており、エコシステムと使いやすさで選ぶ時代に入った」という見解が共感を集めている</li>
+          <li>API 経由での利用者から「GPT-5.5 の廃止による既存プロンプトの動作変化」への懸念も多数。「モデル移行ガイドを公式が充実させるべき」という要望が上がっている</li>
         </ul>
       </div>
     </div>
@@ -194,82 +206,94 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">7 記事</span>
+      <span class="section-count">8 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/13）の主要トピック:</strong> <strong>ウクライナ：エネルギー停戦合意もロシアは攻撃継続</strong>——フーシ派がサウジアラビアを標的にとトランプ発言 / <strong>ブルガリア沖でドローンが船舶2隻を攻撃、船員11人行方不明</strong> / <strong>イギリス：イランが RAF フェアフォード爆撃計画に「ほぼ確実に」関与</strong> / <strong>北朝鮮がミサイル追加発射</strong> / <strong>パキスタンで旅客列車脱線——5人死亡</strong> / <strong>韓国・仁川でショッピングモール刺傷事件——8人負傷</strong> / <strong>IMF：世界成長率を3.1%に小幅上方修正、債務リスク拡大を警告</strong>
+      <strong>本日（10/14）の主要トピック:</strong> <strong>イエメン：サウジがサナア近郊油田を空爆——フーシ派がサウジアラムコ本社を報復攻撃</strong> / <strong>イラン：ホルムズ海峡での新戦術に関する報道</strong> / <strong>ウクライナ：ロシアの夜間攻撃でキーウ死者3人・負傷21人、60万世帯が停電</strong> / <strong>レバノン：イスラエルが占領する約60村のうち48村を破壊との NYT 調査</strong> / <strong>コンゴ（DRC）エボラ：確認例9,000人超・死者4,300人超</strong> / <strong>バチカン：法王レオ（71歳）が肺がん診断</strong> / <strong>アルバニア：学生デモが暴力的展開に——教育省に投石、警察が催涙弾</strong> / <strong>インド：野党「Cockroach Janta Party」幹部2人を拘禁</strong>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ：エネルギー停戦合意後もロシアは攻撃継続——フーシ派が「サウジアラビアを標的に」とトランプが非難。石油価格押し上げ狙いとの見方</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Trump / Ceasefire / Houthis / Saudi Arabia / Energy / October 13 2026</span><span class="card-source">Source: <a href="https://wng.org/podcasts/tuesday-morning-news-october-13-2026-1791845505">WNG Tuesday Morning News</a> · <a href="https://www.jpost.com/middle-east/iran-news/article-911598">Jerusalem Post</a> · <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a></span></div>
+      <div class="card-title">イエメン：サウジアラビアがサナア近郊の油田施設を空爆——フーシ派がサウジアラムコ・ダーラン本社を報復攻撃。原油価格上昇への懸念が高まる</div>
+      <div class="card-meta"><span class="badge">Yemen / Saudi Arabia / Houthis / Aramco / Dhahran / Oil / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-october-14-2026/">Havana Times</a> · <a href="https://www.fdd.org/overnight-brief/october-14-2026/">FDD Overnight Brief</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>エネルギー停戦の形骸化:</strong> トランプ大統領がウクライナとロシアの「エネルギーインフラへの攻撃停止」合意を発表した後もロシア軍の攻撃は継続。ウクライナ当局はロシアがエネルギー施設への攻撃を止めていないと告発しており、合意の実効性が問われている</li>
-          <li><strong>フーシ派とサウジアラビア:</strong> トランプ大統領はフーシ派が「振る舞いが悪い」とし、サウジアラビアを標的として石油価格を人為的に押し上げようとしていると発言。イエメン・サウジの緊張に加えてフーシ派を支援するイランへの批判も続いている</li>
-          <li><strong>民間被害:</strong> イエメン当局によれば過去24時間のフーシ派攻撃でタイズ周辺の民間人少なくとも5人が死亡。食料・生活必需品の配給制が市民に課されているとの報告もある</li>
+          <li><strong>サウジの攻撃:</strong> サウジアラビア軍がサナア近郊の油田施設および他地域の燃料デポを空爆。イエメン・フーシ派が支配する地域の経済インフラへの打撃を狙ったものとみられる</li>
+          <li><strong>フーシ派の報復:</strong> フーシ派はサウジアラビア東部・ダーランのサウジアラムコ本社を攻撃したと声明。石油供給への直接的な打撃を狙う報復であり、原油市場への影響が注目されている</li>
+          <li><strong>背景:</strong> トランプ大統領は前日（10/13）にフーシ派が「振る舞いが悪い」とし、石油価格を人為的に押し上げようとしていると発言。エネルギー停戦合意の形骸化とともに、中東における地政学的緊張が一段と高まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ブルガリア沖・黒海で船舶2隻がドローン攻撃——ブルガリア首相が議会で確認、船員11人行方不明</div>
-      <div class="card-meta"><span class="badge">Bulgaria / Black Sea / Drone Attack / Shipping / October 13 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/13/headlines">Democracy Now Headlines</a> · <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a> · <a href="https://www.justsecurity.org/160525/early-edition-october-13-2026/">Just Security</a></span></div>
+      <div class="card-title">イラン：ホルムズ海峡で船舶に対する新戦術を採用——ロイターが高官の証言を報道。通過船への圧力強化</div>
+      <div class="card-meta"><span class="badge">Iran / Strait of Hormuz / Shipping / Tactics / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://www.justsecurity.org/160738/early-edition-october-14-2026/">Just Security – Oct 14</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>攻撃の概要:</strong> ブルガリアのラデフ首相が、ブルガリア沖の黒海で2隻の船舶がドローン攻撃を受けたことを議会で確認。船員11人の行方が分かっておらず、捜索救助活動が続いている</li>
-          <li><strong>黒海の安全保障:</strong> 黒海での民間船舶へのドローン攻撃が NATO 加盟国沿岸に及んだことは外交的に重大な事態。EU・NATO の対応と事態の帰責問題が焦点になる見通し</li>
-          <li><strong>航行リスクの高まり:</strong> 黒海での航行リスクが改めて浮上しており、穀物輸送や商業海運への影響が懸念されている</li>
+          <li><strong>新戦術の報告:</strong> ロイター通信がイランの上級当局者の証言として、ホルムズ海峡を通過する船舶に対する新たな戦術を採用していると報道。具体的な手法の詳細は明らかにされていないが、通過船への圧力を強化するものとされる</li>
+          <li><strong>国際的懸念:</strong> ホルムズ海峡は世界の石油輸送の約 20% が通過する要衝。新戦術の採用は海運コスト・保険料の上昇を招く可能性があり、原油市場と欧米諸国の対応が注目される</li>
+          <li><strong>地域の連鎖:</strong> イエメンのフーシ派・アラムコ攻撃とホルムズ海峡での動きが重なり、中東における多層的な緊張がエネルギー安全保障上の重大リスクとして浮上している</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イギリス：イランの革命防衛隊が RAF フェアフォード爆撃計画に「ほぼ確実に」関与——バーナム首相が議会表明。イランは関与を否定</div>
-      <div class="card-meta"><span class="badge">UK / Iran / IRGC / RAF Fairford / Terrorism / October 13 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/13/headlines">Democracy Now</a> · <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a> · <a href="https://www.justsecurity.org/160525/early-edition-october-13-2026/">Just Security</a></span></div>
+      <div class="card-title">ウクライナ：ロシアの夜間攻撃でキーウに死者3人・負傷21人——60万世帯が停電。ゼレンスキー大統領が被害状況を報告</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Kyiv / Strike / Electricity / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-october-14-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>議会での表明:</strong> アンディ・バーナム首相が議会で、イランの革命防衛隊（IRGC）が RAF フェアフォード基地（米英の核爆撃機が駐留する主要空軍基地）への攻撃計画に「ほぼ確実に」関与していると述べた</li>
-          <li><strong>イランの否定:</strong> イランはバーナム首相の発言に対し、関与を全面否定する声明を発表。英・イラン関係は一段と悪化する見通しで、対イラン制裁強化の議論が再燃しそうだ</li>
-          <li><strong>UK の対応方針:</strong> イギリス政府はこれまでにも IRGC の英国内活動を問題視しており、テロ指定を求める声が議会内から継続的に上がっている。今回の事案がその動きを加速させる可能性がある</li>
+          <li><strong>被害状況:</strong> ウクライナ非常事態庁によると、ロシアの夜間攻撃でキーウ市内で少なくとも3人が死亡・21人が負傷。ゼレンスキー大統領は「ロシアの攻撃で少なくとも60万人のウクライナ人が電気なしの状態に置かれた」と声明を発表した</li>
+          <li><strong>エネルギー停戦の実態:</strong> 前日のトランプ発表による「エネルギー停戦合意」にもかかわらずロシアの攻撃が継続しており、合意の実効性に改めて疑問符がついている。上院超党派6議員（民主・共和各6人）がトランプに合意撤回を求める書簡を送付した</li>
+          <li><strong>冬を前に:</strong> 10月中旬からの攻撃激化はウクライナが迎える冬のエネルギー危機への布石とみられており、電力インフラの修復と補給が喫緊の課題となっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">北朝鮮が追加ミサイル発射——核搭載可能ミサイルの迎撃困難化を図る。韓国・仁川ではショッピングモールで刺傷事件、8人負傷</div>
-      <div class="card-meta"><span class="badge">North Korea / Missile / South Korea / Incheon / Stabbing / October 13 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a> · <a href="https://www.democracynow.org/2026/10/13/headlines">Democracy Now</a></span></div>
+      <div class="card-title">レバノン：NYT 調査——イスラエルが占領する約60村のうち48村を破壊。ガザ・レバノン双方での人道状況が深刻化</div>
+      <div class="card-meta"><span class="badge">Lebanon / Israel / Destruction / Villages / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://www.justsecurity.org/160738/early-edition-october-14-2026/">Just Security – Oct 14</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>北朝鮮ミサイル:</strong> 北朝鮮が月曜日（10/12）に追加のミサイル発射を実施。増大する核搭載可能ミサイルの迎撃困難化を進める一環とされ、韓国・米国・日本は発射の詳細を分析中</li>
-          <li><strong>韓国・仁川刺傷事件:</strong> 韓国の仁川市にあるショッピングモールで男が少なくとも8人を刃物で刺す事件が発生。警察は容疑者を拘束し、動機を調査中。現時点でテロとの関連は示されていない</li>
+          <li><strong>NYT 調査報道:</strong> ニューヨーク・タイムズの調査報道によると、イスラエル軍が南レバノンで占領している約60の村・町のうち 48 か所が破壊または壊滅状態にある。衛星画像と現地取材の組み合わせによる調査</li>
+          <li><strong>人道状況:</strong> 南レバノンの住民の大部分が避難を余儀なくされており、家屋・インフラの修復には長期間が必要な見通し。国際社会からイスラエルへの停戦圧力が高まっているが、具体的な進展には至っていない</li>
+          <li><strong>外交的影響:</strong> キンバリー・ギルフォイル駐ギリシャ米国大使が辞任（ウォール・ストリート・ジャーナルが資金提供要請に関する報道）。在外公館人事の動揺が中東政策の調整に影響を与える可能性が指摘されている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">パキスタンで旅客列車が脱線——5人死亡・35人負傷。中部パキスタン、原因を調査中</div>
-      <div class="card-meta"><span class="badge">Pakistan / Train Derailment / October 13 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a> · <a href="https://www.democracynow.org/2026/10/13/headlines">Democracy Now</a></span></div>
+      <div class="card-title">コンゴ民主共和国（DRC）エボラ：確認感染者9,000人超・死者4,300人超——WHO が緊急対応を継続</div>
+      <div class="card-meta"><span class="badge">DRC / Ebola / WHO / Health / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-october-14-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>パキスタン中部で旅客列車が脱線し、少なくとも5人が死亡・35人が負傷した。パキスタン鉄道当局のスポークスパーソンが確認。脱線原因については当局が調査を進めている</li>
-          <li>パキスタンでは老朽化した鉄道インフラへの投資が長年の課題とされており、今回の事故はその問題を改めて浮き彫りにした</li>
+          <li>コンゴ民主共和国のエボラ出血熱の確認感染者数が 9,000 人を超え、死者は 4,300 人超に達した。致死率は約 48% に達しており、同国で過去最大規模のアウトブレイクとなっている</li>
+          <li>WHO は引き続き現地での緊急対応を展開しているが、紛争地帯での医療チームへの安全確保・ワクチン物流・医療インフラ不足が対応の障害となっている</li>
+          <li>国際社会の支援拡大を求める声が高まっており、アフリカ連合（AU）および欧米各国政府に対して追加支援の要請が出ている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">連邦捜査官が民主党下院議員イルハン・オマール氏の自宅を家宅捜索——米上院では超党派6議員がトランプの対露合意撤回を要求</div>
-      <div class="card-meta"><span class="badge">US Politics / Ilhan Omar / FBI / Senate / Trump / Russia / October 13 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/13/headlines">Democracy Now</a> · <a href="https://www.justsecurity.org/160525/early-edition-october-13-2026/">Just Security</a></span></div>
+      <div class="card-title">バチカン：法王レオ（71歳）が肺がんと診断——バチカン公式発表。治療方針を検討中</div>
+      <div class="card-meta"><span class="badge">Vatican / Pope Leo / Cancer / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://www.fdd.org/overnight-brief/october-14-2026/">FDD Overnight Brief</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>オマール議員邸の捜索:</strong> 連邦捜査官（FBI）がイルハン・オマール下院議員（民主・ミネソタ州）のワシントン DC の自宅を家宅捜索。具体的な捜索対象や理由は現時点で公表されていない</li>
-          <li><strong>超党派書簡:</strong> 民主党6人・共和党6人の上院議員が連名でトランプ大統領に対し、ロシアとの最近の合意から撤退するよう求める書簡を送付。エネルギー停戦合意をめぐる米・ウクライナ・ロシアの三者の溝が議会内の対立にも波及している</li>
+          <li>バチカンは 71 歳の法王レオが肺がんと診断されたと公式発表。具体的な病期や治療計画はまだ公表されていない。法王は現在も公務を継続しているとされている</li>
+          <li>バチカンによれば、治療オプションについて医師団と協議中であり、詳細は追って発表される予定。カトリック教徒 13 億人以上を擁する世界最大宗教の最高指導者の健康状態に世界的な注目が集まっている</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">IMF：世界経済成長率を3.1%へ小幅上方修正——上昇する債務水準と地政学リスクを警告。バンコクの年次総会で年次世界経済見通し発表</div>
-      <div class="card-meta"><span class="badge">IMF / World Economy / Growth / Debt / Bangkok / Annual Meetings / October 13 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-13-2026">Morning Star</a> · <a href="https://www.justsecurity.org/160525/early-edition-october-13-2026/">Just Security</a> · <a href="https://www.fdd.org/overnight-brief/october-13-2026/">FDD</a></span></div>
+      <div class="card-title">アルバニア：学生デモが暴力的展開——教育省に投石、警察が催涙弾と放水車で応答。フランスでも連帯デモ</div>
+      <div class="card-meta"><span class="badge">Albania / Student Protest / Education / Violence / France / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-october-14-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>成長見通し:</strong> IMF がバンコクの年次総会で発表した年次世界経済見通し（WEO）では、2026年の世界経済成長率予測を3.1%へ小幅に上方修正。ただし「上昇する債務水準と地政学リスクが拡大している」と警告しており、楽観視は禁物としている</li>
-          <li><strong>リスク要因:</strong> 中東紛争の長期化による原油価格上昇、新興国・途上国の債務負担増大、米中間の貿易摩擦の再燃などが下振れリスクとして挙げられている</li>
-          <li><strong>バンコク会議:</strong> IMF・世界銀行年次総会は10月12日にバンコクで開幕（〜18日）。中東戦争の経済ショックと新興国債務が今年の最大テーマとなっており、支援メカニズムの拡充が議論されている</li>
+          <li><strong>アルバニアの状況:</strong> 全国規模の学生デモが暴力的な展開を見せ、デモ参加者が教育省に向けてレンガ・コンクリートを投石。警察は催涙弾と放水車で応じた。デモは教育費の高騰・大学施設の劣化・奨学金制度の不備への抗議が背景にある</li>
+          <li><strong>フランスとの連帯:</strong> フランスでも数万人がアルバニアの学生への連帯デモを実施。欧州全体での学生運動との連携が見られる</li>
+          <li><strong>政治的影響:</strong> アルバニアは EU 加盟交渉の途上にあり、政情不安が加盟プロセスへの影響を懸念する声もある。首相は対話による解決を呼びかけているが、デモ側は要求が満たされるまで継続する姿勢を示している</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">インド：野党系 Cockroach Janta Party の幹部2人が5日間拘禁——有権者名簿改訂を巡る抗議運動への弾圧との批判</div>
+      <div class="card-meta"><span class="badge">India / Cockroach Janta Party / Opposition / Electoral Rolls / October 14 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/10/14/headlines">Democracy Now – Oct 14</a> · <a href="https://sundayguardianlive.com/trending/school-assembly-news-headlines-today-14-october-top-national-business-news-sports-news-education-news-science-tech-news-weather-news-world-news-with-weather-updates-thought-of-the-day-305091/amp/">Sunday Guardian Live</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>インドの裁判所が野党系「Cockroach Janta Party（CJP）」の若手指導者2人を5日間の拘禁命令。有権者名簿の改訂を巡る抗議運動への対応として拘禁が行われたとされており、野党・市民団体は「政治的弾圧」と批判している</li>
+          <li>インドでは有権者名簿の見直しを巡り、与野党の対立が続いている。野党側は「改訂が特定コミュニティへの不均衡な影響をもたらす」と主張している</li>
         </ul>
       </div>
     </div>
@@ -281,15 +305,15 @@
       <span class="section-count">省略</span>
     </div>
     <div class="alert">
-      <strong>10/13 注記（前日比較）:</strong> 本日のリアルタイムランキングデータは取得できなかった。前日（10/12）アーカイブの内容と比較して記事構成に実質的な差異は確認されなかったため、本日は Zenn / Qiita セクションを省略する。継続して注目されているのは Claude Code Mods 活用記事・AI エージェントセキュリティ関連（Pwn2Own 後続検証、Adversa.ai GitSpawn）・48,000ファイル削除事件の技術的考察記事の3本。いずれも前日と実質同内容のため重複掲載は行わない。
+      <strong>10/14 注記（前日比較）:</strong> 本日のリアルタイムランキングデータの取得ができなかった。前日（10/13）アーカイブの主要記事（Claude Code Mods 活用・マルチエージェントオーケストレーション・AI エージェントセキュリティ・GPT-5.5 退役への対応）と実質的に同一の内容が継続してランキング上位に位置していると推定されるため、重複掲載を避けるため本日は省略する。
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年10月13日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: TechRadar · Yahoo Tech · AI Incident Database · InfoWorld · Wersm · Anthropic · Globe and Mail · 9to5Google · Android Authority · The New Stack · TechCrunch · Tech-Insider · MorphLLM · WNG · Jerusalem Post · Morning Star · Democracy Now · Just Security · FDD · IMF.org</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-12/index.html">前版（2026-10-12）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月14日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · MorphLLM · Tech-Insider · TechRadar · Insurance Edge · FourWeekMBA · CryptoBriefing · Tom's Guide · Pasquale Pillitteri · OMC News · Democracy Now · Havana Times · Just Security · FDD · Sunday Guardian Live</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-13/index.html">前版（2026-10-13）</a></p>
 </footer>
 </body>
 </html>
