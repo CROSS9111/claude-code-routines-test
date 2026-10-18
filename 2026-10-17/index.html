@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月17日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.302 リリース——フォークサブエージェントがデフォルト有効化・自動モード分類器のモデル選択に対応 / Codex が GPT-6.1 Sol に移行・GPT-5.5 を廃止 / GitHub Copilot に Gemini 4 Argon + HydraFusion / トランプ大統領がロシア制裁（グラム法）を免除する大統領令署名——ゼレンスキーが「誤り」と非難 / 南カリフォルニア山火事で1万7千人避難 / イスタンブール80年ぶりの大洪水で4人死亡</p>
+  <p class="date">2026年10月17日（土）&nbsp;|&nbsp;<a href="../2026-10-16/index.html">前版（10/16）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/17）のハイライト:</strong> Claude Code v2.1.302 がリリース。フォークサブエージェントが <code>claude -p</code>・Agent SDK・デスクトップアプリ・VS Code でデフォルト有効化され、多数のプラグイン使用時の起動速度も改善。クライアント側の自動モード分類器で使用するモデルを選択できる新環境変数 <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> も追加。前日（10/16）リリースの v2.1.301 に続く連日リリースで、Mods エコシステムの安定化と大規模プロジェクトへの対応強化が今週の主軸となっている。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.302 リリース——フォークサブエージェントがデフォルト有効化・自動モード分類器のモデル選択対応・起動速度改善</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.302 / Fork Subagents / Auto Mode / Performance / Oct 16–17 2026</span><span class="card-source">Source: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.302">GitHub – Release v2.1.302</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>フォークサブエージェント、デフォルト有効化:</strong> <code>claude -p</code>（非対話型パイプラインモード）・Agent SDK・デスクトップアプリ・VS Code 拡張機能において、フォークサブエージェントがデフォルトで有効になった。無効化する場合は環境変数 <code>CLAUDE_CODE_FORK_SUBAGENT=0</code> を設定する。</li>
+          <li><strong>自動モード分類器のモデル選択:</strong> 新環境変数 <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> を設定することで、クライアント側の自動モード分類器が使用するモデルを指定できるようになった。</li>
+          <li><strong>アイドル圧縮の設定 UI:</strong> <code>/config</code> 画面にアイドル時の会話圧縮（Idle compaction）設定行が追加。</li>
+          <li><strong>起動速度と安定性の改善:</strong> 多数のプラグイン（Mods）を有効化している場合の起動速度が改善。クラウドセッション・VS Code・プラグイン・MCP・プロンプトキャッシュに関する複数のバグ修正も含まれる。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code Mods エコシステム成熟化——企業向け Mod の事例が相次いで公開、TypeScript スターターテンプレートも整備</div>
+      <div class="card-meta"><span class="badge">Claude Code / Mods / Enterprise / Community / TypeScript / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>金融・医療・SaaS 各セクターの企業が自社開発の Mod 事例を公開し始めている。ツール呼び出しをインターセプトして社内セキュリティポリシーを適用する Mod などが注目を集めている。</li>
+          <li>コミュニティ有志による Mod 開発スターターテンプレートが複数公開され、ボイラープレートとテスト設定が整備されてきた。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OutSystems Agent Experience が GA——Claude Code・Cursor・Codex・Kiro の4エージェントをローコードプラットフォームから直接呼び出し可能に</div>
+      <div class="card-meta"><span class="badge">OutSystems / Claude Code / Cursor / Codex / Kiro / GA / Integration / Oct 14 2026</span><span class="card-source">Source: <a href="https://insurance-edge.net/2026/10/14/outsysyems-embraces-claude/">Insurance Edge</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>OutSystems は「Agent Experience」の一般提供を発表。Claude Code・Cursor・Codex・Kiro の4つのコーディングエージェントを同社のローコード・ノーコードプラットフォームから直接呼び出せるようになった。</li>
+          <li>従来の「市民開発者」向けプラットフォームにコーディングエージェントを組み込む形で、より複雑な業務システムの開発にも対応範囲を広げた。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub の Claude/Codex/Copilot 三択統合——実利用レポートで「タスク別使い分け」と「エージェント選択疲れ」の両論</div>
+      <div class="card-meta"><span class="badge">GitHub / Claude / Codex / Copilot / Integration / Developer Reports / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「PR レビューは Claude、コード補完は Copilot、大規模リファクタリングは Codex」というタスク別使い分けが直感的にできるという肯定的な意見が多い一方、エージェントごとに文脈がリセットされるという課題も指摘されている。</li>
+          <li>選択肢が3つに増えたことで「エージェント選択疲れ（Agent Picker Fatigue）」という声が r/programming で話題になっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex CLI が GPT-6.1 Sol に移行——GPT-5.5 廃止（10/14）</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / GPT-6.1 Sol / Oct 14 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI は10月14日、Codex CLI の基盤モデルを GPT-6.1 Sol に切り替え、GPT-5.5 の廃止を完了した。</li>
+          <li>Terminal-Bench 4.0 では Claude Code（Opus 5.5）が 64.8%、Codex CLI（GPT-6.1 Sol）が 58.2% を記録。Claude Code が性能面でトップを維持している。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GitHub Copilot が Gemini 4 Argon + HydraFusion を採用——新「Max」ティア追加（10/13）</div>
+      <div class="card-meta"><span class="badge">GitHub Copilot / Gemini 4 Argon / HydraFusion / Max Tier / Oct 13 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Google の Gemini 4 Argon が10月13日に一般提供となり、GitHub Copilot に搭載された。Copilot は HydraFusion という新アーキテクチャで複数モデルを動的統合する「Copilot Max」上位ティアを追加。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI——v2.1.302 の「フォークサブエージェントデフォルト有効化」が大反響</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / v2.1.302 / Fork Subagents / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「やっと！長時間タスクでの並列化が自動になった」という歓迎の声が相次いだ。一方で「CLAUDE_CODE_FORK_SUBAGENT=0 はどういう場面でオフにすべきか？」という疑問も多く寄せられている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming——「AI エージェント PR のガバナンス問題」が白熱議論</div>
+      <div class="card-meta"><span class="badge">Community / r/programming / AI Agents / Governance / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「AI 生成 PR はバグ率が高く PR マージ時間を49%延長する」というデータが共有され、300以上のコメントが寄せられた。「AI エージェント活用の ROI は組織のエンジニアリング成熟度に強く依存する」というコメントが最多アップボートを獲得。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning——「2026年末、AI コーディングエージェントの現実」が急上昇</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / AI Coding / Reality Check / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>「2026年初頭に『AIがエンジニアを不要にする』という予測が多かったが実際は？」というスレッドがトップに。「エンジニアが不要になるのではなく、1人のエンジニアがこなせる仕事の量と複雑さが増した」という意見が支持を集めている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">8 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">トランプ大統領、ロシア制裁（グラム法）を免除する大統領令に署名——ゼレンスキーが「誤り」と非難</div>
+      <div class="card-meta"><span class="badge">USA / Russia / Sanctions / Trump / Oct 17 2026</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html">CNBC</a></span></div>
+      <div class="card-body"><p>トランプ大統領はグラム法に基づくロシア向け制裁・エネルギー関税を免除する大統領令に署名。ゼレンスキー大統領は「これは誤りだ」と即座に非難し、共和党議員からも批判が上がっている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ホルムズ海峡：タンカーさらに1隻炎上——エネルギー市場への影響が深刻化</div>
+      <div class="card-meta"><span class="badge">Hormuz Strait / Tanker / Energy / Oct 17 2026</span></div>
+      <div class="card-body"><p>ホルムズ海峡近辺でさらに1隻のタンカーが炎上。先週の2隻沈没後も攻撃が継続しており、Brent 原油価格は週間ベースで大幅に上昇。IEA は加盟国の備蓄放出を協議中。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">南カリフォルニア：強風による山火事が急拡大——1万7千人超に避難命令</div>
+      <div class="card-meta"><span class="badge">USA / California / Wildfire / Evacuation / Oct 17 2026</span></div>
+      <div class="card-body"><p>サンタアナ風に煽られた山火事が急拡大し、17,000人超に避難命令。カリフォルニア州知事は非常事態宣言を発令した。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">教皇レオ14世、肺がん手術後に退院——11月のラテンアメリカ訪問が予定通り</div>
+      <div class="card-meta"><span class="badge">Vatican / Pope Leo XIV / Oct 17 2026</span></div>
+      <div class="card-body"><p>教皇レオ14世がローマのジェメッリ病院を退院。バチカンは予定通り11月のラテンアメリカ訪問が実施される見通しと発表した。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">フランス：学生デモに一般市民が合流——生活費高騰への抗議が全国規模に拡大</div>
+      <div class="card-meta"><span class="badge">France / Protest / Living Costs / Oct 17 2026</span></div>
+      <div class="card-body"><p>学生主体のデモに一般市民が合流し、生活費・住宅費の高騰に対する抗議活動がパリ・リヨン・マルセイユで拡大。6,800人超が拘束された。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">パキスタン・アフガニスタン：国境付近で両国軍が銃撃戦——緊張が再燃</div>
+      <div class="card-meta"><span class="badge">Pakistan / Afghanistan / Border / Oct 17 2026</span></div>
+      <div class="card-body"><p>パキスタン軍とタリバン支配下のアフガニスタン軍が国境複数地点で銃撃戦。双方に死傷者が出た。国境画定問題や TTP 越境攻撃を巡る緊張の延長線上にある今年数度目の大規模衝突。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">トルコ：イスタンブールで80年ぶりの記録的大洪水——少なくとも4人死亡</div>
+      <div class="card-meta"><span class="badge">Turkey / Istanbul / Flood / Emergency / Oct 17 2026</span></div>
+      <div class="card-body"><p>イスタンブールで80年ぶりの記録的豪雨により大規模洪水が発生。4人死亡、地下鉄全面運休、非常事態宣言が発令された。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">リスボン：住宅費高騰に抗議する数万人規模のデモ</div>
+      <div class="card-meta"><span class="badge">Portugal / Lisbon / Housing / Protest / Oct 17 2026</span></div>
+      <div class="card-body"><p>ポルトガルの首都リスボンで数万人が住宅費高騰に抗議するデモを実施。フランスの生活費デモと時期が重なり、欧州全体で生活コスト上昇への不満が噴出している。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">省略</span>
+    </div>
+    <div class="alert">
+      前日（10/16）アーカイブの主要ランキング記事と実質的に同一の内容が継続してランキング上位に位置していると推定されるため、重複掲載を避けるため本日は省略する。
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月17日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: GitHub Releases · Releasebot · CNBC · ABC News · The Hill · Euronews · NPR · Insurance Edge</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-10-16/index.html">前版（2026-10-16）</a>&nbsp;|&nbsp;<a href="../index.html">最新版</a></p>
+</footer>
+</body>
+</html>
