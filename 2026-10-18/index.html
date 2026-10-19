@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月18日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code コードレビュー機能が Team/Enterprise で GA / Codex CLI 0.163.0 GA・mid-response ステアリングがデフォルト化 / OpenAI が EU でトークンの55%をエージェント製品が生成と報告 / カナダ・アルバータ州の軍事基地火災で兵士4人死亡 / イスラエル：ガザ戦争後初の国政選挙が来週実施予定 / タンザニアがエボラ対策強化</p>
+  <p class="date">2026年10月18日（日）&nbsp;|&nbsp;<a href="../2026-10-17/index.html">前版（10/17）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+  <a href="#qiita">Zenn / Qiita</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/18）のハイライト:</strong> Anthropic が Claude Code の「コードレビュー（Code Review）」機能を Team・Enterprise プランで正式一般公開（GA）。Enterprise 向けに $10,000 分以上のレビュークレジット特典あり。Codex CLI は v0.163.0 で mid-response ステアリングがデフォルト化。OpenAI の EU 向け報告では、CodexとWork製品がEUアカウントのトークン消費の55%を占めると発表され、エージェント利用の急拡大が数値で示された。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code コードレビュー機能が Team・Enterprise で GA——Enterprise 向け $10,000 分のレビュークレジット特典も</div>
+      <div class="card-meta"><span class="badge">Claude Code / Code Review / GA / Team / Enterprise / Oct 2026</span><span class="card-source">Source: <a href="https://www.unite.ai/anthropic-makes-code-review-for-claude-code-generally-available/">Unite.AI</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>正式GA:</strong> Anthropic は、マルチエージェントによる PR レビュー機能「Code Review」を Team・Enterprise プランで正式一般公開した。コードの品質・セキュリティ・スタイルの問題を自動で指摘し、PRごとに詳細なフィードバックを提供する。</li>
+          <li><strong>Enterprise 特典:</strong> Enterprise プランへの新規・移行ユーザー向けに $10,000 分以上のレビュークレジットが付与される期間限定キャンペーンが実施されており、大規模導入のハードルを下げる施策となっている。</li>
+          <li><strong>マルチエージェント連携:</strong> Code Review は Claude Code のサブエージェント機能と統合されており、大規模なリポジトリでも複数のファイルを並列にチェックできる。v2.1.302 でデフォルト有効化されたフォークサブエージェントとの組み合わせで、レビュー速度が大幅に向上すると報告されている。</li>
+          <li><strong>競合との差別化:</strong> GitHub Copilot のコードレビュー機能は個別ファイルへのコメントが中心だが、Claude Code の Code Review は PR 全体の設計的整合性や依存関係を横断して検証する点が差別化ポイントとして強調されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Managed Agents：動的ワークフローのパブリックベータ——最大1,000のサブエージェントを並列実行</div>
+      <div class="card-meta"><span class="badge">Claude / Managed Agents / Dynamic Workflows / Public Beta / Oct 9 2026</span><span class="card-source">Source: <a href="https://qiita.com/lhjjjk4/items/684274826b5c4690e645">Qiita</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Anthropic は Claude Managed Agents の「動的ワークフロー」機能をパブリックベータとして公開した。最大1,000のサブエージェントを並列実行でき、大規模なコードベースの解析やテスト生成、多段階のデータ処理パイプラインの自動化が可能になる。</li>
+          <li>動的ワークフローは Claude Code の Workflow ツールとも統合されており、スクリプト形式でエージェントのオーケストレーションを記述できる。開発者からは「エンタープライズ規模の自動化が現実的になった」という評価が寄せられている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Barclays、Claude Code 採用拡大——2026年末までに開発者の50%が利用予測</div>
+      <div class="card-meta"><span class="badge">Barclays / Claude Code / Enterprise Adoption / Oct 2026</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/barclays-scales-claude">Anthropic</a></span></div>
+      <div class="card-body">
+        <p>英大手銀行 Barclays が Claude Code の採用を積極的に拡大しており、2026年末までに同行の開発者の50%が Claude Code を日常的に利用すると予測している。金融機関でのエンタープライズ AI エージェント導入が本格化していることを示す事例として注目されている。セキュリティ・コンプライアンス要件を満たしつつエージェントを活用するための内部ガイドライン整備も同時に進めているという。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Tom's Guide が Claude Code vs ChatGPT Codex バグ発見テストを実施——Claude Code がアーキテクチャ的説明で優位</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / Benchmark / Tom's Guide / Oct 2026</span><span class="card-source">Source: <a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide</a></span></div>
+      <div class="card-body">
+        <p>Tom's Guide は実際のコードベースでバグを意図的に混入させ、Claude Code と ChatGPT Codex の両エージェントに検出させる比較テストを実施した。Claude Code はバグを発見するだけでなく、なぜそのバグが問題なのかをアーキテクチャ的な観点から説明できる点で優位との評価を得た。Codex は単純なランタイムエラーの特定速度で優れる一方、設計上の問題の指摘は Claude Code が一歩上だという結論となっている。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/18）:</strong> Codex CLI 0.163.0 で mid-response ステアリングがデフォルト化・検索可能な設定パネルを追加。OpenAI の EU 報告では CodexとWork製品がトークンの55%を占めると発表。Cursor は個人・小規模チームで依然として最多採用のAIコーディングツールとの評価が継続。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex CLI 0.163.0 GA——mid-response ステアリングがデフォルト化・設定パネル検索機能を追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / 0.163.0 / GA / Oct 15 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>mid-response ステアリング:</strong> エージェントが長い回答を生成中に途中から方向を変えられる「mid-response ステアリング」機能が全ユーザーにデフォルトで有効化された。長時間のタスクで誤った方向に進み始めた際に素早く修正できる。</li>
+          <li><strong>設定パネルの改善:</strong> 検索可能な設定パネルとリーダーキーショートカット方式を追加。設定項目が増えたことで従来は探しにくかった機能にも素早くアクセスできるようになった。</li>
+          <li><strong>Composer Predictions ベータ:</strong> Codex のスレッドで次のメッセージを予測し、Tab キーで承諾できる「Composer Predictions」が Pro ユーザー向けにデフォルト有効化された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI EU 報告：Codex と Work 製品が EU アカウントのトークン消費の55%を占める</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / EU Report / Agentic / Token Usage / Oct 14 2026</span><span class="card-source">Source: <a href="https://cellcog.ai/blog/openai-eu-agentic-report/">CellCog.ai</a></span></div>
+      <div class="card-body">
+        <p>OpenAI が EU 規制当局向けに提出した報告書において、Codex（コーディングエージェント）と Work 製品（ChatGPT Work などのビジネス向けエージェント機能）が EU アカウント全体のトークン消費の55%を生成していることが明らかになった。わずか1年前まで補助的な機能と見られていたエージェント製品が今やOpenAIの主力消費ドライバーとなっており、エージェントAIの利用が急拡大していることが数値で裏付けられた。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cursor は個人・小規模チームで最多採用——AI コーディングツール市場で独自ポジションを維持</div>
+      <div class="card-meta"><span class="badge">Cursor / AI Coding / Market Share / Reddit / Oct 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/best-ai-agents-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-body">
+        <p>複数の市場調査とRedditコミュニティの分析によると、Cursor は個人開発者と小規模チームにおいて依然として最多採用の AI コーディングツールとなっている。IDE に深く統合されたUXと低い初期設定コストが支持される理由で、Claude Code や Codex が大規模・複雑タスクで強みを持つのに対し、日常的な補完・提案のユースケースでは Cursor が中心的地位を維持している。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code が AI コーディングツール言及数で首位——コンテキストドリフトへの不満と回避策が定着</div>
+      <div class="card-meta"><span class="badge">Community / Reddit / Claude Code / Context / Best Practices / Oct 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/best-ai-agents-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>複数の分析で Claude Code が226件の言及で AI コーディングツール中最多。長時間セッションでのコンテキストドリフトが主な不満点として挙げられている。</li>
+          <li>「タスク間のコンテキストクリア」「プロジェクトメモリファイルの維持」が定番の回避策として定着しており、スレッドでも継続的に共有されている。</li>
+          <li>「AI エージェントで本当に開発者は速くなるか？」を問うスレッドも散見され、実測データを示す投稿が支持を集めている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI——「Claude Code コードレビュー GA」を歓迎する声と「個人プランへの展開はいつ？」という声が並ぶ</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Code Review / GA / Pricing / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Code Review の GA 発表を受け、早速 Enterprise で試した開発者からのファーストインプレッションが投稿され始めている。「PR 全体の設計的整合性を一気にチェックしてくれるのが良い」という評価が多い。</li>
+          <li>一方で Free・Pro プランへの展開時期を問うコメントが多数寄せられており、「Team/Enterprise 限定のまま個人開発者には縁遠い」という声もある。Anthropic からの公式回答はまだ出ていない。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA——「ローカルモデルで Claude Code 相当のエージェントは作れるか？」が話題に</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Local Models / AI Agent / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>プライバシーやコスト観点からクラウド API を使わずにローカルモデルで Claude Code 相当の自律コーディングエージェントを構築できるかを問うスレッドが注目を集めている。</li>
+          <li>「Qwen 3 72B や DeepSeek V3 であれば単純なファイル編集は十分こなせる」「ただし長時間の自律タスクや複数ファイルの一貫した編集ではまだ雲泥の差がある」という評価が上位コメントに並んでいる。ツール呼び出しの安定性とコンテキスト管理が依然として大きな壁とされている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/18）の主要トピック:</strong> <strong>カナダ・アルバータ州の軍事基地で火災——兵士4名死亡・カーニー首相「平時における国内最悪の軍事悲劇の一つ」</strong> / <strong>イスラエル：10月7日以来初の国政選挙が来週実施予定</strong> / <strong>ウクライナ：ゼレンスキーが主要衛星通信サービスへのアクセス喪失は米関与と示唆</strong> / <strong>ファタハ・ハマスがカイロ第2回会談終了——双方「肯定的」と評価</strong> / <strong>タンザニア：コンゴのエボラ拡大受け旅行者へのスクリーニング強化</strong> / <strong>教皇レオ14世：聖ペトロ広場で回復を報告・段階的に通常業務へ復帰</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">カナダ・アルバータ州の軍事基地で火災——兵士4名死亡、数十名負傷。カーニー首相「平時最悪の軍事悲劇の一つ」</div>
+      <div class="card-meta"><span class="badge">Canada / Alberta / Military Base / Fire / Oct 17–18 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>カナダ・アルバータ州の軍事基地で大規模な火災が発生し、カナダ兵士4名が死亡、数十名が負傷した。カーニー首相は「平時における国内最悪の軍事悲劇の一つ」と表現し、調査を表明。</li>
+          <li>与野党双方が犠牲者への哀悼を表明するとともに、軍施設の安全管理体制の見直しを求める声が議会内で上がっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエル：ガザ戦争後初の国政選挙が来週実施予定——多くの国民が「史上最重要の選挙」と表現</div>
+      <div class="card-meta"><span class="badge">Israel / Election / Gaza / National Politics / Oct 2026</span></div>
+      <div class="card-body">
+        <p>ガザ戦争を経てイスラエルとして初の国政選挙が来週実施予定。戦後の国家像と停戦・人質問題への対応が最大の争点。ネタニヤフ首相率いるリクード党と中道・左派連合の接戦が続いている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ：ゼレンスキーが主要衛星通信サービスへのアクセス喪失——米国政府の関与を示唆</div>
+      <div class="card-meta"><span class="badge">Ukraine / Zelenskyy / Satellite / Communications / USA / Oct 2026</span></div>
+      <div class="card-body">
+        <p>ゼレンスキー大統領はウクライナ軍が主要衛星通信サービスへの通常アクセスを失ったと認め、米国政府の関与を示唆。NATO 加盟国が緊急協議を求めており、欧州主導での代替手段確保が急ピッチで進んでいる。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">パレスチナ和平協議（カイロ）：ファタハとハマスが第2回会談終了——双方「肯定的」と評価</div>
+      <div class="card-meta"><span class="badge">Palestine / Fatah / Hamas / Cairo / Peace Talks / Oct 2026</span></div>
+      <div class="card-body">
+        <p>エジプト主催のパレスチナ内部和解に向けた第2回カイロ会談が終了し、双方が「肯定的な雰囲気で終了した」と評価。ガザ統治体制の移行に関する枠組み協議が継続されている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">タンザニア：コンゴのエボラ感染拡大を受け、旅行者へのスクリーニングを強化</div>
+      <div class="card-meta"><span class="badge">Tanzania / Ebola / DRC / Kenya / Health / Oct 2026</span></div>
+      <div class="card-body">
+        <p>タンザニア政府はコンゴ民主共和国でのエボラ感染拡大とケニアの感染事例を受け、国際空港・港湾での旅行者への健康スクリーニングを大幅に強化した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">教皇レオ14世、聖ペトロ広場に姿を現し回復を報告——段階的に通常業務へ復帰</div>
+      <div class="card-meta"><span class="badge">Vatican / Pope Leo XIV / Recovery / Oct 18 2026</span></div>
+      <div class="card-body">
+        <p>肺がん手術からの回復後、教皇レオ14世が聖ペトロ広場に姿を現し、段階的に通常の司教座業務に復帰する意向を表明。11月のラテンアメリカ訪問も予定通り行う見通しを確認した。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qiita">
+    <div class="section-header">
+      <div class="section-title">Zenn / Qiita ─ 本日の注目記事</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日の Zenn/Qiita 注目トピック:</strong> エージェントへ渡すツールを絞ることでトークンを大幅削減する手法・LLMエージェントの長時間シミュレーションで見えたモデル差・Claude Code のオフ会LTレポート・Claude Code の WebFetch 問題・Shift-JIS 文字化けへの対処。
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn】必要なツールのみ Agent に渡してトークン46.9%削減</div>
+      <div class="card-meta"><span class="badge">Zenn / Claude Code / Token Optimization / Agents / Oct 2026</span></div>
+      <div class="card-body">
+        <p>エージェントに渡すツールの数を絞ることでトークン消費を46.9%削減できることを実測した記事。不要なツール定義を全て渡すとシステムプロンプトが肥大化しトークンコストが跳ね上がるという問題を実験的に検証し、タスクに必要なツールのみをフィルタリングして渡す実装パターンを紹介している。♥17 獲得。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn】LLM Agent の長時間シミュレーションで見えたモデル差——推論力だけではわからない実態</div>
+      <div class="card-meta"><span class="badge">Zenn / LLM / Agent / Long-running / Model Comparison / Oct 2026</span></div>
+      <div class="card-body">
+        <p>複数の LLM を用いた長時間の自律シミュレーションを実施し、短期のベンチマークでは見えないモデル間の差異を明らかにした記事。長時間タスクでの指示忠実性の低下・コンテキストドリフトの程度・ツール呼び出しの安定性で各モデルに顕著な違いがあることが示されている。♥12 獲得。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】手ぶらで Claude Code——AIエージェント実装術オフ会LTレポート</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / LT / Community / Oct 16 2026</span><span class="card-source">Source: <a href="https://qiita.com/AlohaYos/items/cbf9270113fd03a8ffbc">Qiita</a></span></div>
+      <div class="card-body">
+        <p>2026年10月16日開催のAIエージェント実装術オフ会で発表された「手ぶらで Claude Code」LT の内容をレポート。Claude Code のセットアップから実際の活用例まで、初心者でも再現できる形でまとめられた記事。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】Claude Code の WebFetch 問題——長いページの後半を読まず「書いていない」と誤答する</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / WebFetch / Bug Report / Oct 2026</span></div>
+      <div class="card-body">
+        <p>Claude Code の WebFetch ツールが長いウェブページの後半部分を取得せず、実際には記載されているにもかかわらず「その情報は書いていない」と誤った回答を返す問題を報告。回避策として複数の URL 分割取得や別の検索アプローチが提案されている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita】Claude Code と Shift-JIS 文字化け問題——日本語ファイルの一部修正で全文字化けが発生</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / Shift-JIS / Encoding / Bug / Oct 16 2026</span></div>
+      <div class="card-body">
+        <p>Claude Code で Shift-JIS エンコードの日本語ファイルの一部のみを修正させたところ、ファイル全体が文字化けした事例を報告。回避策として「事前に UTF-8 に変換してから作業させる」「修正前にファイル全体を読ませる」などの方法が紹介されている。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月18日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Unite.AI · Releasebot · CellCog.ai · Tom's Guide · Nhandan · Qiita · Zenn · AI Tool Discovery · Anthropic</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-10-17/index.html">前版（2026-10-17）</a></p>
+</footer>
+</body>
+</html>
