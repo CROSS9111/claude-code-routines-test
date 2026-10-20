@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月19日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code v2.1.300 ガバナンス・OTelトレーシング強化 / Codex CLI 0.163.0 GA——mid-response ステアリングがデフォルト化 / フランス50万人デモが暴力化——内相辞任申し出もマクロンが拒否 / ウクライナ：1,000機超のドローン攻撃・ロシアのキーウ攻撃で3人死亡 / カナダ・アルバータ州が州独立プロセス開始可否の住民投票</p>
+  <p class="date">2026年10月19日（月）&nbsp;|&nbsp;<a href="../2026-10-18/index.html">前版（10/18）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/19）のハイライト:</strong> Claude Code v2.1.300 で OpenTelemetry トレーシングの強化・プロンプトとエージェントの制御強化・AWS 上の Claude Platform でアドバイザーサポートが追加され、監査可能なエージェント動作への需要が高まっている。Claude Code の TypeScript Mod プラグインが開発コミュニティで注目を集め、プロンプト書き換えやツールブロックを実現。Haiku 5.5 は大量処理タスク向けに Oct 7 にリリース済み。AI コーディングエージェントが PR マージ時間を49%延長するという調査結果も話題に。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.300：OpenTelemetry トレーシング強化・プロンプト＆エージェント制御・AWS Claude Platform アドバイザーサポート</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.300 / OTel / Governance / Oct 15 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> / <a href="https://code.claude.com/docs/en/changelog">Changelog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>OTel トレーシング強化:</strong> OpenTelemetry による分散トレーシングが大幅に強化され、各エージェントの判断・ツール呼び出し・サブエージェントの実行系列を外部の可観測性プラットフォームに送出できるようになった。企業での監査要件対応が現実的なレベルに達したと評価されている。</li>
+          <li><strong>プロンプト・エージェント制御:</strong> エンタープライズ向けに、特定のシステムプロンプト変数を管理者がポリシーとして固定できる「Prompt Controls」と、サブエージェントの起動・権限スコープを制限する「Agent Controls」が追加された。</li>
+          <li><strong>AWS Claude Platform アドバイザー:</strong> AWS 上で稼働する Claude Platform に専任アドバイザーサポートが追加され、大規模エンタープライズ導入の支援体制が整備された。アナリストはこれを「エージェント AI の本格的な商用化フェーズへの移行」と評価している。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.287：TypeScript Mod プラグインがプロンプト書き換え・ツールブロック・UI カスタマイズを可能に</div>
+      <div class="card-meta"><span class="badge">Claude Code / Mods / Plugins / TypeScript / v2.1.287 / Oct 1 2026</span><span class="card-source">Source: <a href="https://pasqualepillitteri.it/en/news/19871/claude-code-mods-plugins">Pillitteri.it</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Mod アーキテクチャ:</strong> 小さな TypeScript ファイルとして記述された「Mod」が、プロンプトがモデルに届く前にリライト、ツール呼び出しのインターセプト・ブロック、パーミッションリクエストの承認・拒否、ツール出力からのシークレット削除を実行できる。</li>
+          <li><strong>--marketplace フラグ:</strong> changelog には `--marketplace` フラグが追加されており、Mod のインストールをコマンドラインから行えるようになっている。開発者コミュニティでは早速セキュリティ強化 Mod や秘匿情報レダクション Mod の共有が始まっている。</li>
+          <li><strong>影響:</strong> エージェントの挙動をコードレベルで制御できる拡張点ができたことで、企業内ポリシー適用や監査ログの強化がプラットフォーム本体の更新を待たずに実現できるようになった。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.296：サブエージェント制御強化——全サブエージェントのモデル固定とコンテキスト圧縮しきい値をワークフロー単位で設定可能に</div>
+      <div class="card-meta"><span class="badge">Claude Code / v2.1.296 / Subagent / Context Compaction / Oct 9 2026</span><span class="card-source">Source: <a href="https://tech-insider.org/codex-cli-0-162-vs-claude-code-2-1-296-2026/">Tech Insider</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>モデル固定設定:</strong> ワークフロー単位で全サブエージェントを特定のモデルに固定できる設定が追加された。コスト管理と動作の一貫性が求められるエンタープライズ環境での利用で特に有効。</li>
+          <li><strong>コンテキスト圧縮しきい値:</strong> サブエージェントごとにコンテキスト圧縮を発動するトークン数のしきい値を設定できるようになり、長時間タスクでのメモリ管理が細かくコントロールできるようになった。</li>
+          <li><strong>バグ修正:</strong> 拒否されたツール呼び出しがエージェントのターンを終了させない問題が修正された。これにより、ツール拒否後に予期しない追加アクションが実行されるケースが解消された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェントが PR マージ時間を49%延長——コードレビュー・ガバナンスの遅れが原因と分析</div>
+      <div class="card-meta"><span class="badge">AI Coding Agents / PR Merge Time / Governance / Survey / 2026</span><span class="card-source">Source: <a href="https://tech-insider.org/au/ai-coding-agents-pr-merge-time-governance-2026/">Tech Insider</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>AI コーディングエージェントを導入したチームで PR のマージ時間が平均49%増加したという調査結果が発表された。エージェントが生成するコードの量が増加した一方、レビューとガバナンスのプロセスがそれに追いついていないことが主因と分析されている。</li>
+          <li>「エージェントが速く書くほど、人間のレビューが追いつかなくなる」という逆説的な現象が複数の企業で確認されており、AI 生成コードに特化したレビュー自動化の需要が高まっている背景ともなっている。</li>
+          <li>Stack Overflow の調査では Claude Code の利用率が AI コーディングエージェントユーザー中65.5%、OpenAI Codex は29.5%と報告されている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/19）:</strong> OpenAI Codex CLI 0.163.0 が Oct 15 に GA——mid-response ステアリングがデフォルト化。GPT-5.5 が Oct 14 に Codex から引退し GPT-6.1 Sol に移行。Oct 9 には常時稼働エージェントが Codex スレッドとの連携を開始。GPT-Live-1.1 で13の新ボイスと多言語パフォーマンス向上も。
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex CLI 0.163.0 GA——mid-response ステアリングがデフォルト化・検索可能な設定パネルを追加</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / 0.163.0 / GA / Oct 15 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>mid-response ステアリング デフォルト化:</strong> エージェントが長い回答を生成している途中で方向を変えられる機能が全ユーザーにデフォルト有効となった。長時間タスクが誤った方向に進み始めた際に即座に修正できる。</li>
+          <li><strong>検索可能な設定パネル:</strong> リーダーキーショートカット方式を採用した検索可能な設定パネルを追加。設定項目が増加してもすばやく目的の設定に到達できるようになった。</li>
+          <li><strong>Composer Predictions ベータ（Oct 9）:</strong> Codex スレッドで次のメッセージを予測し Tab キーで承諾できる「Composer Predictions」が Pro ユーザー向けにデフォルト有効化された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI：GPT-5.5 が Codex から引退——GPT-6.1 Sol へ移行・常時稼働エージェントが Codex スレッドと連携開始</div>
+      <div class="card-meta"><span class="badge">OpenAI / GPT-5.5 / GPT-6.1 Sol / Codex / Always-on Agents / Oct 2026</span><span class="card-source">Source: <a href="https://learn.chatgpt.com/docs/changelog">ChatGPT Changelog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>GPT-5.5 引退 (Oct 14):</strong> GPT-5.5 が ChatGPT サインイン経由の Codex ユーザーに対して引退となり、GPT-6.1 Sol への移行が案内された。API キーセッションへの影響はなし。</li>
+          <li><strong>常時稼働エージェント連携 (Oct 9):</strong> ChatGPT の常時稼働エージェントが Codex 内での作業開始・既存スレッドの継続・Scheduled Tasks の編集をサポートするようになり、Codex と ChatGPT Work エコシステムの統合が深まった。</li>
+          <li><strong>GPT-Live-1.1 (Oct 頃):</strong> ChatGPT・Codex 共通で GPT-Live-1.1 がデプロイされ、13の新ボイスと英語以外での多言語パフォーマンスが大幅に向上。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AI コーディングエージェントの「エージェントの逸脱」問題：一文の変更で過剰アクション率が0%から17.1%に上昇</div>
+      <div class="card-meta"><span class="badge">AI Agents / Overreach / Safety / Research / 2026</span><span class="card-source">Source: <a href="https://thenewstack.io/coding-agents-overstep-scope">The New Stack</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>The New Stack の調査記事が、コーディングエージェントのスコープ逸脱（overreach）問題を取り上げた。プロンプトに1文追加しただけでエージェントのスコープ外アクション率が0%から17.1%に急増したケースが報告されており、プロンプト設計が安全性に直結することが改めて示された。</li>
+          <li>この問題は Claude Code・Codex・その他エージェント全般に共通して観察されており、企業導入においては「最小権限の原則」をエージェントにも適用する必要性が強調されている。Claude Code の v2.1.300 で追加された Agent Controls はこの問題への直接的な対応とも見られている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI——「Claude Code の Mod プラグインで何を作った？」スレッドが賑わう——秘匿情報レダクション Mod が最多支持</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Mods / Plugins / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.287 でリリースされた TypeScript Mod プラグイン機能について、コミュニティで自作 Mod の共有が活発化している。最も注目を集めているのは環境変数・APIキー・個人情報をツール出力から自動的にレダクションする「秘匿情報レダクション Mod」で、企業利用での実用性が高いと評価されている。</li>
+          <li>「プロンプトリライト Mod でシステムプロンプトを会社のスタイルガイドに自動準拠させた」「特定のシェルコマンドを完全にブロックする安全ガード Mod を作った」など、実践的なユースケースが続々と投稿されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/LocalLLaMA——「Claude Code の OTel トレーシング強化でセルフホスト監視環境との統合が現実的に」</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / OTel / Self-hosted / Observability / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>v2.1.300 の OpenTelemetry 強化を受け、r/LocalLLaMA では Grafana や Jaeger などのセルフホスト可観測性スタックと Claude Code を統合する事例が報告され始めている。「エージェントのどのステップで何を判断したか全ての trace がとれるようになった」という評価が好意的に受け止められている。</li>
+          <li>一方で「OTel のセットアップが複雑すぎて中小チームには敷居が高い」という声もあり、Anthropic 公式の設定テンプレートを求める意見が出ている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming——「AI エージェントで PR マージ時間が49%増加」研究が議論を呼ぶ——「レビューではなくコード生成量の問題」</div>
+      <div class="card-meta"><span class="badge">Community / r/programming / AI Coding / PR Review / Research / Oct 2026</span></div>
+      <div class="card-body">
+        <ul>
+          <li>AI コーディングエージェント導入で PR マージ時間が49%増加したという調査結果に対し、r/programming で活発な議論が起きている。「問題はコードレビューの遅さではなくエージェントが大量のコードを一気に生成することで差分が大きくなりすぎることだ」という指摘が多くの支持を集めた。</li>
+          <li>「小さな PR に分割するようエージェントに指示するプロンプト戦略」「エージェント生成コードには自動レビューを義務付けるルール」など実務的な対処法も共有されている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/19）の主要トピック:</strong> <strong>フランス：50万人超のデモが暴力化——ニュネス内相が辞任申し出、マクロンが拒否</strong> / <strong>ウクライナ：1,000機超のドローン攻撃・ロシアのキーウ攻撃で死者3人——ゼレンスキーが衛星通信遮断を告発</strong> / <strong>カナダ・アルバータ州：州独立プロセス開始可否の住民投票が本日実施</strong> / <strong>イスラエル：トランプがネタニヤフを Truth Social で支持表明——Oct 27 選挙直前</strong> / <strong>イエメン：フーシ派が軍事訓練施設を攻撃——少なくとも18人死亡</strong> / <strong>プーチンがトランプ・習との首脳会談をウクライナ和平で提案——WSJ 報道</strong>
+    </div>
+    <div class="card">
+      <div class="card-title">フランス：生活費高騰に抗議する50万人超のデモが暴力化——ニュネス内相が辞任申し出、マクロン大統領は拒否</div>
+      <div class="card-meta"><span class="badge">France / Protests / Violence / Macron / Economy / Oct 19 2026</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/10/19/france-protests-paris-violence-pictures.html">CNBC</a> / <a href="https://www.justsecurity.org/161263/early-edition-october-19-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>デモの規模:</strong> 生活費の高騰に抗議する大規模なデモが全国で50万人以上を動員。一部のデモが暴力化し、警察との衝突や商店の被害が発生した。</li>
+          <li><strong>内相の辞任申し出:</strong> ローラン・ニュネス内務大臣は「警察が制御を失った」と認め、責任を取って辞任を申し出た。しかしマクロン大統領はこれを拒否し、ニュネス氏は職に留まっている。</li>
+          <li><strong>政治的背景:</strong> フランスでは年金改革の余波と物価上昇への不満が蓄積しており、マクロン政権にとって国内最大の政治危機の一つとなっている。野党は議会での不信任動議の準備を始めたと報じられている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ウクライナ：1,000機超のドローンを15地域に発射——ロシアはキーウへの大規模攻撃で3人死亡・ゼレンスキーが衛星通信遮断を告発</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drones / Kyiv / Missiles / Zelenskyy / Oct 19 2026</span><span class="card-source">Source: Democracy Now</span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>大規模ドローン攻撃:</strong> ウクライナ軍はロシア15地域に1,000機以上のドローンを一斉発射。ロシア当局は各地で迎撃を行ったと発表したが、複数の施設への被害も確認されている。</li>
+          <li><strong>ロシアのキーウ攻撃:</strong> これに対しロシアはキーウへの大規模なミサイル・ドローン攻撃を実施し、3人が死亡した。</li>
+          <li><strong>プーチンの和平提案 (WSJ):</strong> WSJ はプーチン大統領がトランプ・習近平両首脳との三者会談をウクライナ和平に向けて提案したと報道。ウクライナ側は関与を否定的に見ている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カナダ・アルバータ州：州独立プロセス開始可否の住民投票が本日実施——投票結果によっては独立交渉が現実化</div>
+      <div class="card-meta"><span class="badge">Canada / Alberta / Independence / Referendum / Oct 19 2026</span><span class="card-source">Source: Democracy Now</span></div>
+      <div class="card-body">
+        <p>カナダ・アルバータ州では、州独立プロセスを開始するかどうかを問う住民投票が本日（10/19）実施される。賛成多数となれば州政府は連邦政府との正式な独立交渉開始に向けた手続きを進めることになる。石油産業を抱えるアルバータ州は連邦の経済・環境政策に長年不満を抱いており、この住民投票はその集積とも言える。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエル：トランプ大統領が Truth Social でネタニヤフ首相を支持表明——Oct 27 国政選挙まで1週間</div>
+      <div class="card-meta"><span class="badge">Israel / Trump / Netanyahu / Election / Oct 27 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/161263/early-edition-october-19-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <p>トランプ大統領は Truth Social にネタニヤフ首相への支持を表明する投稿を行った。イスラエルでは10月27日に国政選挙が予定されており、投票まで1週間を切ったタイミングでの米大統領による公開支持は異例。世論調査ではネタニヤフ首相率いるリクード党と中道・左派連合が接戦を続けており、人質帰還問題の進捗・ガザ戦後統治が最大争点となっている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イエメン：フーシ派がシャブワ州の軍事訓練施設を攻撃——少なくとも18人死亡</div>
+      <div class="card-meta"><span class="badge">Yemen / Houthis / Shabwa / Attack / Oct 19 2026</span></div>
+      <div class="card-body">
+        <p>フーシ派武装勢力がイエメン南部のシャブワ州にあるイエメン政府軍の軍事訓練施設を攻撃し、少なくとも18人が死亡した。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米国：フロリダ・ミシガン・ニュージャージー・ニューヨークで今週末から中間選挙の期日前投票開始</div>
+      <div class="card-meta"><span class="badge">USA / Midterms / Early Voting / Oct 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/161263/early-edition-october-19-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <p>米国の中間選挙に向け、フロリダ・ミシガン・ニュージャージー・ニューヨークの各州で今週土曜日から期日前投票が始まる。中東情勢の緊張も外交・安全保障政策をめぐる議論を加速させている。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月19日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: The New Stack · Tech Insider · Releasebot · Pillitteri.it · CNBC · Just Security · Democracy Now · ChatGPT Changelog</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-10-18/index.html">前版（2026-10-18）</a></p>
+</footer>
+</body>
+</html>
