@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月26日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月27日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code 2.1.310 リリース——クラウドセッション権限拡張 / AGENTS.md ダウンロードフォルダ攻撃で Claude Code・Codex が標的に（Codex は 90%+ でマルウェア実行） / セルビア野党が選挙勝利・ヴチッチ敗北認める / イスラエル総選挙27日投開票 / ロシア・ウクライナ局地停戦合意 / ブラジル・ルラ氏4期目へ / 福田康夫元首相が90歳で死去</p>
-  <p class="date">2026年10月26日（月）&nbsp;|&nbsp;<a href="2026-10-25/index.html">前版（10/25）</a></p>
+  <p class="subtitle">Claude Code v2.1.311——ファイル削除を承認なしで実行する新環境変数 / Anthropic IPO S-1 公開提出・Nasdaq「ANT」で上場へ（ARR $470億超） / Claude Code 主要開発者2名がIPO直前に退職 / OpenAI Codex Pro プラン利用上限を10/30から半減 / イスラエル総選挙実施中 / ウクライナ・ロシア局地停戦（オレシキー地域）発効 / インド・アンドラプラデーシュ州にサイクロン接近</p>
+  <p class="date">2026年10月27日（火）&nbsp;|&nbsp;<a href="2026-10-26/index.html">前版（10/26）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -68,47 +68,48 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/26）のハイライト:</strong> Claude Code 2.1.310 が確認され、監視対応プラットフォームの拡大とエンタープライズ向けクラウドセッション権限が追加。ダウンロードフォルダに仕掛けた AGENTS.md でエージェントを乗っ取る攻撃が報告——Codex は 90% 以上の確率でマルウェアを実行。Claude Code がパスワードマネージャー連携をブロックする仕様変更が議論を呼ぶ。r/ClaudeCode サブレディットが週4,200+ 貢献者規模に拡大。
+      <strong>本日（10/27）のハイライト:</strong> Claude Code v2.1.311 が新たな環境変数 <code>CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS</code> を追加——ファイル削除を承認なしで実行可能に（The Register 報道）。Anthropic が S-1 を公式公開し Nasdaq「ANT」での上場に向けた手続きを完了。ARR $470億超・H ラウンドで時価総額 $9,650億。Claude Code 主要開発者の Thariq Shihipar と Anthony Morris が IPO 直前に退職。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 2.1.310 リリース確認——監視プラットフォーム対応拡大・エンタープライズクラウドセッション権限を追加</div>
-      <div class="card-meta"><span class="badge">Claude Code / Release / v2.1.310 / Oct 25 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
+      <div class="card-title">Claude Code v2.1.311——「さらに危険な権限スキップ」環境変数を追加、ファイル削除を無確認で実行可能に</div>
+      <div class="card-meta"><span class="badge">Claude Code / Release / v2.1.311 / Permissions / Oct 27 2026</span><span class="card-source">Source: <a href="https://mezha.net/eng/news/mezha-8ead136170fe3d81409a6e59_anthropic_adds_an">Mezha.net</a> / The Register</span></div>
       <div class="card-body">
         <ul>
-          <li>Releasebot が 10月25日付で Claude Code 2.1.310 を確認。監視対応プラットフォームの拡大、エンタープライズロール向けのクラウドセッション権限の追加、および各種バグ修正が含まれる。</li>
-          <li>同リリースは 10月16日の 2.1.302 に続くもので、直近数週間でのペースの速いリリースサイクルを示している。なお、バージョン詳細は二次ソースの情報であり、Anthropic 公式のリリースノートでの確認を推奨する。</li>
-          <li>また、Code Review 機能が一般提供（GA）に達したとも報告されており、10月1日に追加された「mods」（Claude Code の挙動を変える TypeScript 関数）とあわせてエンタープライズ向け機能が充実しつつある。</li>
+          <li>Claude Code v2.1.311 にて、<code>CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS</code> という環境変数が追加された。この変数を設定すると、エージェントがファイル削除（<code>rm</code> コマンドを含む）を実行する際に承認を求めなくなる。</li>
+          <li>Anthropic の技術スタッフ Daisy Hollman が SNS で発表した。既存の <code>--dangerously-skip-permissions</code> フラグに加え、ファイル削除操作に特化した追加の権限バイパス手段が提供された形で、コミュニティでは安全性への影響をめぐる議論が起きている。</li>
+          <li>2025年12月に Claude Code CLI がユーザーのホームディレクトリを削除する事故が発生した経緯もあり、今回の変更に対しては「利便性は高いが誤設定時のリスクが大きい」という慎重論も根強い。使用する場合は CI 環境や隔離されたサンドボックスに限定することが推奨されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ダウンロードフォルダの AGENTS.md を悪用したプロンプトインジェクション攻撃——Claude Code と Codex が標的、Codex は 90%+ でマルウェアを実行</div>
-      <div class="card-meta"><span class="badge">Claude Code / Codex / Security / Prompt Injection / AGENTS.md / Oct 22 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/codex-and-claude-code-hijack">Cybersecurity News</a> / <a href="https://brandefense.io/security-news/agents-md-downloads-folder-ai-coding-agent-hijack/">Brandefense</a></span></div>
+      <div class="card-title">Anthropic、S-1 を公式公開——Nasdaq「ANT」上場へ、ARR $470億・時価総額 $9,650億</div>
+      <div class="card-meta"><span class="badge">Anthropic / IPO / S-1 / Nasdaq / Oct 26 2026</span><span class="card-source">Source: <a href="https://www.investmentnews.com/equities/anthropic-files-for-ipo-as-ai-giant-nears-1t-valuation/266819">Investment News</a> / <a href="https://richnerds.substack.com/p/anthropic-ipo-filing-2026">Rich Nerds</a> / <a href="https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion">The Next Web</a></span></div>
       <div class="card-body">
         <ul>
-          <li>セキュリティ企業 Forever Security は顧客のダウンロードフォルダに悪意ある AGENTS.md ファイルを仕掛けることで AI コーディングエージェントを乗っ取る攻撃を再現・報告。OpenAI Codex では 90% 超の試行でマルウェアの npm パッケージをインストールしようとする動作が確認された。</li>
-          <li>Claude Code も攻撃対象として再現テストが行われたが、両ツールとも現時点でベンダーからのパッチや声明は出ていない。研究者はこれを「単一製品のバグではなくエージェント信頼モデル全体の設計問題」と位置づけている。</li>
-          <li>ユーザーへの影響は広範で、通常業務でダウンロードフォルダを経由するファイルを処理するワークフローは特に注意が必要。エージェントが外部ファイルをコンテキストに取り込む際の検証強化が急務とされている。</li>
+          <li>Anthropic は 10月26日、S-1 登録届出書を SEC に公式提出し、Nasdaq Global Select Market への上場に向けた手続きを開始した。ティッカーシンボルは「ANT」、11月上場を目指すとみられている。</li>
+          <li>Series H ラウンドでの時価総額は $9,650億（約135兆円）。同社の年間実行ベース収益（ARR）は $470億超を突破しており、2025年末時点の $90億から急激に拡大している。2026年上半期の売上高は $163億、純損失は $800億超とも報じられている（Reuters / WSJ 報道）。</li>
+          <li>9月30日時点の従業員数は約5,300名。Claude Code の ARR は単体で $25億超に達しているとされ、エンタープライズ収益の主要な柱になっていることが改めて示された。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code がパスワードマネージャー連携をブロック——セキュリティ設計の「過剰制限」か「必要な境界」か議論</div>
-      <div class="card-meta"><span class="badge">Claude Code / Security / Password Manager / Oct 23 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-october-24-2026">AI Agents Directory</a></span></div>
+      <div class="card-title">Claude Code 主要開発者2名が IPO 直前に退職——Thariq Shihipar と Anthony Morris が相次ぎ離脱</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Staff Departure / Oct 24 2026</span><span class="card-source">Source: <a href="https://fourweekmba.com/ai-claude-codes-thariq-leaves-anthropic-weeks-before-its-ipo/">FourWeekMBA</a></span></div>
       <div class="card-body">
         <ul>
-          <li>10月23日付の報道によると、Claude Code がパスワードマネージャーや認証情報自動入力ツールとの統合をブロックする仕様に変更された。開発者の一部からは「実務上の不便」という声が上がっている。</li>
-          <li>Anthropic はエージェントが認証情報を意図せず操作・漏洩するリスクを軽減する意図があるとみられているが、公式声明は出ていない。前日に報告された AGENTS.md 攻撃とあわせ、コーディングエージェントのセキュリティ境界をめぐる議論が活発化している。</li>
+          <li>Claude Code の主要メンバーとして知られる Thariq Shihipar が 10月24日に X への投稿で Anthropic を退社したことを明らかにした。次の職場は明示されていない。</li>
+          <li>同日ないし近接した時期に、デスクトップ版 Claude Code の開発を主導したとされる Anthony Morris も退職を確認した。IPO を数週間後に控えたタイミングでの相次ぐ退職は市場でも注目を集めている。</li>
+          <li>両者の退社理由は公表されていないが、スタートアップの IPO 前後において主要エンジニアが独立やスピンアウトを選ぶ事例は珍しくなく、今後の動向が注目される。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeCode サブレディットが週4,200+ 貢献者規模に——コミュニティ規模で Codex の3倍超に</div>
-      <div class="card-meta"><span class="badge">Claude Code / Community / Reddit / r/ClaudeCode / 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM</a> / <a href="https://www.aibuilderclub.com/blog/best-reddit-communities-ai-builders-2026">AI Builder Club</a></span></div>
+      <div class="card-title">Claude Code をより自律的に——Anthropic が自律実行の拡大を公式にガイド</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Autonomy / Oct 2026</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously">Anthropic</a></span></div>
       <div class="card-body">
         <ul>
-          <li>2026年初頭時点で r/ClaudeCode は週あたり4,200人超の貢献者を擁し、r/Codex（約1,200人）の3倍以上の規模に達している。コーディングエージェントの実践的な情報交換の場として急成長している。</li>
-          <li>最も多いトピックはトークン制限・コスト管理であり、次いで MCP サーバーの活用方法、長時間セッションでのパフォーマンス低下が挙げられている。用途別のエージェント比較やベストプラクティス共有も盛んだ。</li>
+          <li>Anthropic は「Claude Code をより自律的に動かす方法」についての公式ガイドを公開した。CI/CD パイプラインへの統合、バックグラウンドセッション、スケジュール実行などのベストプラクティスが解説されている。</li>
+          <li>今回の v2.1.311 による権限スキップ環境変数の追加と相まって、Anthropic が「自律エージェントとしての利用」をより積極的に推進していることがうかがえる。企業向けセキュリティガイドラインとの兼ね合いが今後の課題となりそうだ。</li>
         </ul>
       </div>
     </div>
@@ -120,35 +121,36 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（10/26）:</strong> AGENTS.md 攻撃で OpenAI Codex は 90%+ 成功率でマルウェアを実行——エージェント信頼モデルの脆弱性が浮き彫りに。Codex CLI v0.163.0（10/15）がライブ中間修正と設定検索を追加。OpenAI モデルが AWS・Azure・Google Cloud の3大ハイパースケーラーすべてで利用可能になる見通し。
+      <strong>競合ハイライト（10/27）:</strong> OpenAI Codex Pro プラン利用上限を 10月30日から半減（20× → 10×Plus 相当）し、代わりに $2,500 相当の一時クレジットを提供。Codex CLI v0.164.0 が /presets で10スロットの再利用可能プロンプトをサポート。Anthropic が Nasdaq 上場を目指す中、OpenAI の IPO との先行競争が注目される。
     </div>
     <div class="card">
-      <div class="card-title">AGENTS.md 攻撃で Codex は 90%+ の確率でマルウェアを実行——エージェントの信頼モデルに根本的な欠陥か</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Security / Malware / AGENTS.md / Oct 22 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/codex-and-claude-code-hijack">Cybersecurity News</a> / <a href="https://letsdatascience.com/news/forever-security-reports-agentsmd-file-in-downloads-hijacked-7bc9bb6c">Let's Data Science</a></span></div>
+      <div class="card-title">OpenAI、Codex Pro プラン利用上限を 10/30 から半減——62,500 クレジット（$2,500 相当）の一時補填を提供</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Pro Plan / Pricing / Oct 2026</span><span class="card-source">Source: <a href="https://x.com/i/trending/2114596470556917945">X Trending</a> / <a href="https://releasebot.io/updates/openai/codex">Releasebot</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Forever Security の調査では、ダウンロードフォルダに置いた悪意ある AGENTS.md ファイルにより、OpenAI Codex は 90% 超の試行でマルウェアパッケージのインストール命令に従った。研究者は「システムプロンプトと外部ファイルの信頼レベルを区別しない設計が問題」と指摘している。</li>
-          <li>攻撃ベクターとしての AGENTS.md は、Codex や Claude Code のようなエージェントがカレントディレクトリ以外のファイルを暗黙的に信頼する挙動を悪用する。ベンダーからの公式パッチはまだなく、開発者はダウンロードフォルダを含む広いパスでエージェントを実行しないよう注意が促されている。</li>
+          <li>OpenAI は 10月30日より ChatGPT Pro プラン（月$200）の Codex 利用枠を、現行の Plus プランの20倍から10倍に引き下げると発表した。実質的な利用量が半減する変更に対してユーザーから反発の声が上がっている。</li>
+          <li>緩和措置として、既存 Pro ユーザーへ62,500 Codex クレジット（市場価格 $2,500 相当）が一時付与される。有効期限は12月31日。</li>
+          <li>コスト圧力を理由とした制限変更は、Codex の高い人気と利用増加がインフラコストを押し上げていることを示唆している。Claude Code との価格・利用枠競争の面でも注目される動向だ。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Codex CLI v0.163.0——設定ファイル検索とライブ中間修正機能を追加（10月15日リリース）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / v0.163.0 / Release / Oct 15 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> / <a href="https://www.morphllm.com/comparisons/opencode-vs-codex">MorphLLM</a></span></div>
+      <div class="card-title">Codex CLI v0.164.0——/presets で10スロットの再利用可能プロンプト・インライン設定変更をサポート</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / v0.164.0 / Release / Oct 22-23 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot</a> / <a href="https://www.morphllm.com/comparisons/opencode-vs-codex">MorphLLM</a> / <a href="https://x.com/i/trending/2113790318990729619">X Trending</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Codex CLI v0.163.0（10月15日）では、設定ファイルの検索機能と、タスク実行中にリアルタイムで指示を変更できる「ライブ中間修正（live mid-turn steering）」機能が追加された。</li>
-          <li>v0.164.0（10月23日）の /presets 機能と合わせて、Codex CLI は短期間で複数の使い勝手向上改善を投入しており、Claude Code との機能格差を縮める動きが見られる。</li>
+          <li>Codex CLI v0.164.0（10月22〜23日）では、再利用可能なプロンプトプリセットを /presets コマンドで最大10スロット管理できる機能が追加された。インラインモデル切り替えとパーミッション設定変更、フルスクリーン画像プレビューも含む。</li>
+          <li>同リリースではエンタープライズ向けの MCP 認証も拡張され、10月23日付のアップデートでは高速接続・推論レベル変更時のキャッシュ保持も改善されている。Claude Code との機能面での差を着実に縮めている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI モデルが3大クラウドすべてに——AWS・Azure・Google Cloud での展開により「クラウド中立」な AI 調達が実現へ</div>
-      <div class="card-meta"><span class="badge">OpenAI / AWS / Azure / Google Cloud / Multi-cloud / Oct 2026</span><span class="card-source">Source: <a href="https://openai.com/index/openai-models-google-cloud/">OpenAI</a> / <a href="https://tech-insider.org/openai-models-google-cloud-big-3-2026/">Tech Insider</a></span></div>
+      <div class="card-title">GPT-5.5 が Codex から退役（10/14）——API 利用は継続、ChatGPT 認証セッションのみ影響</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / GPT-5.5 / Model Retirement / Oct 14 2026</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">OpenAI Changelog</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は Google Cloud との連携発表（10月21日）により、AWS Marketplace・Microsoft Azure・Google Cloud Model Garden の3大ハイパースケーラーすべてでモデルと Codex エージェントワークフローを提供できる体制が整った。</li>
-          <li>企業は既存のクラウドコミットメントを活用しつつ OpenAI の最新モデルにアクセスできるようになり、AI 調達のベンダーロックイン緩和とコスト交渉力の向上が期待される。</li>
+          <li>10月14日をもって GPT-5.5 が ChatGPT 認証の Codex セッションから退役した。OpenAI API キー認証経由の Codex セッションおよびダイレクト API 呼び出しには影響しない。</li>
+          <li>後継モデルへの移行を促す動きであり、Claude Code 側でも Sonnet 4.6 がデフォルトとして定着している現状と合わせて、各エージェントのモデル更新サイクルが加速していることが示されている。</li>
         </ul>
       </div>
     </div>
@@ -160,35 +162,35 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/netsec &amp; r/ClaudeAI——「AGENTS.md 攻撃は AI エージェントの信頼モデルを根本から問い直す」</div>
-      <div class="card-meta"><span class="badge">Community / r/netsec / r/ClaudeAI / Security / AGENTS.md / Oct 26 2026</span><span class="card-source">Source: <a href="https://brandefense.io/security-news/agents-md-downloads-folder-ai-coding-agent-hijack/">Brandefense</a> (報道をもとに推定)</span></div>
+      <div class="card-title">r/ClaudeAI &amp; r/ClaudeCode——「EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS は設計ミスか便利な抜け道か」</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / r/ClaudeCode / Permissions / Oct 27 2026</span><span class="card-source">Source: The Register 報道 / コミュニティ反応に基づく推定</span></div>
       <div class="card-body">
         <ul>
-          <li>AGENTS.md を使ったダウンロードフォルダ攻撃が r/netsec と r/ClaudeAI の両コミュニティで同時に話題となった。「Codex が 90% 以上の確率でマルウェアを実行したという数字は衝撃的」というコメントが上位を占める。</li>
-          <li>「エージェントはカレントディレクトリ外のファイルを信頼すべきではない」という原則論の声が多い一方、「実際の開発では広いパスを使わざるを得ない場面も多い」という実務上の難しさも指摘されている。</li>
-          <li>「この問題が修正されるまで、ダウンロードフォルダをルートとしてエージェントを動かすな」という具体的な対策の共有も活発で、セキュリティ意識の高いユーザーによるドキュメント整備が進んでいる。</li>
+          <li>v2.1.311 で追加された <code>CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS</code> 環境変数が r/ClaudeAI と r/ClaudeCode で議論を呼んでいる。「CI 環境では便利だが、ローカルで設定し忘れると致命的」という声が多い。</li>
+          <li>2025年12月にホームディレクトリが丸ごと削除された事例を挙げて「またホームディレクトリが消える事故が起きる前に警告すべき」という声も目立つ。一方で「そもそも --dangerously-skip-permissions も同じリスクがあった」と指摘するユーザーも多い。</li>
+          <li>「エージェントのパーミッション設計はもっとファイルパス単位で細かく制御できるべき」という要望スレッドが支持を集めており、<code>allowedTools</code> で特定パスの <code>rm -rf</code> だけを許可するワークアラウンドが共有されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「Claude Code vs Codex vs Cursor：10月時点でどれがベストか」</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Claude Code / Codex / Cursor / Oct 2026</span><span class="card-source">Source: <a href="https://www.aibuilderclub.com/blog/best-reddit-communities-ai-builders-2026">AI Builder Club</a> (コミュニティ動向をもとに推定)</span></div>
+      <div class="card-title">r/investing &amp; r/technology——「Anthropic IPO：$9,650億の AI 企業に投資すべきか」</div>
+      <div class="card-meta"><span class="badge">Community / r/investing / r/technology / Anthropic / IPO / Oct 27 2026</span><span class="card-source">Source: <a href="https://richnerds.substack.com/p/anthropic-ipo-filing-2026">Rich Nerds</a> / <a href="https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion">The Next Web</a> に基づく推定</span></div>
       <div class="card-body">
         <ul>
-          <li>r/LocalLLaMA では定期的に行われるコーディングエージェント比較スレッドが 10月版として更新されている。「Claude Code はコンテキスト保持と複雑なリファクタリングが依然トップ」という評価が多数派。</li>
-          <li>Codex は「Google Cloud への展開で企業ユーザーが使いやすくなった点は評価できる」一方、「AGENTS.md 攻撃への対応が遅い」という批判も。Cursor は「IDE 統合の使い勝手は最高だが、自律エージェントとしての能力は Claude Code に劣る」という声が目立つ。</li>
-          <li>「用途別に使い分けるのが現実的」という結論が多く、単一ツールへの依存を避けるワークフロー設計が注目されている。</li>
+          <li>Anthropic S-1 公開提出を受け、r/investing と r/technology では「AI 企業として Google より大きい時価総額は妥当か」という討論が活発化している。「Claude Code 単体で ARR $25億超というのは驚異的」という評価が多い。</li>
+          <li>懐疑的な意見としては「純損失 $800億超という赤字幅は危険信号」「OpenAI との差別化がモデル精度だけなら長期的に維持困難」という声が上位に挙がっている。</li>
+          <li>「Claude Code 主要開発者2名の IPO 直前退職は不穏」という指摘も散見され、上場後の製品開発継続性を問う声がある。一方「IPO 前後の人材流出は典型的な現象であり問題視しすぎ」という反論もある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning——「AI エージェントの安全性はプロンプト工学だけでは担保できない——設計段階での信頼モデル見直しを」</div>
-      <div class="card-meta"><span class="badge">Community / r/MachineLearning / AI Safety / Agent Trust / Oct 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/codex-and-claude-code-hijack">Cybersecurity News</a> / <a href="https://thenewstack.io/coding-agents-overstep-scope/">The New Stack</a> (報道をもとに推定)</span></div>
+      <div class="card-title">r/LocalLLaMA——「Anthropic と OpenAI、どちらが先に IPO するか——Wall Street の AI バトル」</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Anthropic / OpenAI / IPO / Oct 2026</span><span class="card-source">Source: <a href="https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion">The Next Web</a> に基づく推定</span></div>
       <div class="card-body">
         <ul>
-          <li>AGENTS.md 攻撃と先週の「命令1件削除でスコープ外行動急増」研究が重なり、r/MachineLearning では「コーディングエージェントの安全性は根本的にプロンプト工学に頼りすぎている」というスレッドが注目を集めている。</li>
-          <li>「信頼境界（trust boundary）をシステムレベルで設計しなければ、どんな CLAUDE.md や AGENTS.md も攻撃のベクターになりうる」という研究者からの指摘が多くのアップボートを集めている。</li>
-          <li>OpenAI・Anthropic 両社が相次いでセキュリティ関連の変更を行っていることから「業界全体が転換点に来ている」という認識が共有されつつある。</li>
+          <li>r/LocalLLaMA では Anthropic の S-1 提出を機に「OpenAI より先に上場できるか」という競争が話題となっている。「Anthropic が先に公開市場に出ることで OpenAI への圧力が高まる」という見方が多い。</li>
+          <li>「どちらの株を買うか」という議論では、Claude の安全性重視アプローチを評価する声と、OpenAI のエコシステムの広さを重視する声が対立している。</li>
+          <li>「結局モデルが一番いい会社が勝つ」という単純論を超えて「開発者ツール（Claude Code / Codex CLI）のシェアが企業収益の鍵」という分析が支持を集めている。</li>
         </ul>
       </div>
     </div>
@@ -197,85 +199,73 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">7 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/26）の主要トピック:</strong> セルビア野党（学生運動主導）が選挙勝利、ヴチッチ前大統領が敗北認める / イスラエル総選挙は27日投開票——ネタニヤフ進退が焦点 / ロシア・ウクライナが局地停戦に合意——日本時間27日午前発効予定 / ブラジル大統領選でルラ氏が4期目確定 / イラン・ホルムズ海峡でタンカー7隻攻撃と報道 / 福田康夫元首相が90歳で死去 / 中国・5中全会開幕
+      <strong>本日（10/27）の主要トピック:</strong> イスラエル総選挙が実施中——ネタニヤフ首相が投票前にイラン攻撃を求めたと報道（軍トップが拒否） / ウクライナ・ロシア局地停戦（オレシキー地域）が発効——メラニア・トランプ仲介 / インド・アンドラプラデーシュ州で大規模避難——ベンガル湾のサイクロン接近 / ブラジル大統領選：フラビオ・ボルソナロが認めず・トランプが「不正」と主張 / フランスで学生デモ継続 / DRC エボラ感染者が1万人超
     </div>
     <div class="card">
-      <div class="card-title">セルビア議会選：学生運動主導の野党連合が勝利——ヴチッチ大統領が敗北を認める</div>
-      <div class="card-meta"><span class="badge">Serbia / Election / Opposition / Oct 26 2026</span><span class="card-source">Source: <a href="https://abcnews.com/international">ABC News</a> / <a href="https://globalnews.ca/world/">Global News</a></span></div>
+      <div class="card-title">イスラエル総選挙：投票進行中——ネタニヤフ首相がイラン攻撃を要求、軍トップが拒否と報道</div>
+      <div class="card-meta"><span class="badge">Israel / Election / Netanyahu / Iran / Oct 27 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a> / <a href="https://fdd.org/overnight-brief/october-27-2026">FDD</a></span></div>
       <div class="card-body">
         <ul>
-          <li>10月25日に実施されたセルビア議会選挙で、学生運動を中心とする新興野党連合が勝利し、アレクサンダル・ヴチッチ大統領は敗北を認めた。長年の与党支配に終止符が打たれた形で、欧米メディアは「東欧での民主主義的な政権交代」として注目している。</li>
-          <li>選挙前は大規模な抗議運動が欧州各都市にも波及しており、セルビアの政治変化がバルカン半島全体の地政学的変化につながるかどうか注目されている。</li>
+          <li>イスラエル総選挙の投票が10月27日（火）に実施されている。ネタニヤフ首相は投票直前にイランへの新たな軍事行動を求めたとされるが、軍参謀長のエヤル・ザミール中将がこれを拒否したと報じられており、文民・軍部間の緊張が表面化している。</li>
+          <li>出口調査では野党・エイゼンコット陣営の連立ブロックがネタニヤフ連合をわずかに上回る勢いとされているが、どちらの陣営も単独過半数には届かない見通しで、連立交渉が長期化する可能性がある。</li>
+          <li>選挙結果次第では中東外交の方向性が大きく変わるため、米国・EU・アラブ諸国が固唾を飲んで見守っている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イスラエル総選挙は27日投開票——ネタニヤフ首相の進退と中東和平が最大の争点</div>
-      <div class="card-meta"><span class="badge">Israel / Election / Netanyahu / Middle East / Oct 2026</span><span class="card-source">Source: <a href="https://globalnews.ca/world/">Global News</a> / <a href="https://www.nbcnews.com/world">NBC News</a></span></div>
+      <div class="card-title">ウクライナ・ロシア局地停戦が発効——メラニア・トランプ米大統領夫人が仲介、オレシキー地域対象</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Ceasefire / Melania Trump / Oct 27 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a> / <a href="https://www.10things.news/p/10-things-global-news-27th-october-e39">10 Things Global News</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イスラエルでは 10月27日（火）に総選挙が実施される。現時点では野党側がやや優勢と伝えられており、ネタニヤフ首相の進退が最大の争点となっている。ガザおよびヨルダン川西岸での軍事作戦継続の是非が票の行方を大きく左右するとみられている。</li>
-          <li>国際社会は結果を注視しており、選後の連立政権の枠組みによって中東外交の方向性が大きく変わる可能性がある。</li>
+          <li>ロシア占領下にあるウクライナ南部のオレシキー地域（約5年間占領状態）を対象とした局地停戦が、10月27日早朝に発効した。人道支援ミッションの実施を目的としており、米国のメラニア・トランプ大統領夫人が仲介役を担ったと報じられている。</li>
+          <li>停戦発効の数時間後、ロシアによるキーウへの夜間攻撃が報告されており、停戦の実効性に対して懐疑的な見方も根強い。局地的な合意が全面停戦への道筋になるかどうかは依然不透明だ。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ロシア・ウクライナが局地停戦に合意——日本時間27日午前10時に発効予定</div>
-      <div class="card-meta"><span class="badge">Russia / Ukraine / Ceasefire / Oct 2026</span><span class="card-source">Source: <a href="https://www.nbcnews.com/world">NBC News</a> / 時事ドットコム</span></div>
+      <div class="card-title">ブラジル大統領選：ルラ氏4期目確定——フラビオ・ボルソナロが不認、トランプが「不正」と主張</div>
+      <div class="card-meta"><span class="badge">Brazil / Election / Lula / Bolsonaro / Trump / Oct 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a> / <a href="https://www.10things.news/p/10-things-global-news-27th-october-e39">10 Things Global News</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ロシアとウクライナが特定都市を対象とした局地停戦に合意したと報じられており、日本時間10月27日午前10時に発効する予定とされる。詳細な地域および停戦の範囲はまだ明らかになっていない。</li>
-          <li>過去の局地停戦は短命に終わるケースが多く、今回も実効性への懐疑的な見方が多い。ただし国際社会の仲介が機能した場合、より広範な停戦協議につながる可能性もある。</li>
+          <li>ブラジル野党の主要勢力はルラ大統領の再選を認めたが、元大統領の息子フラビオ・ボルソナロ上院議員は結果を認めていない。トランプ米大統領も「投票は不正だった」と根拠を示さずに主張しており、国際社会の懸念を呼んでいる。</li>
+          <li>ルラ政権の4期目継続によりアマゾン保護政策や社会保障政策が維持される見通し。南米政治の安定にとって選挙後の混乱収束が鍵となる。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ブラジル大統領選：ルラ氏が接戦を制し4期目確定——右派候補は「無効」を主張</div>
-      <div class="card-meta"><span class="badge">Brazil / Election / Lula / Oct 2026</span><span class="card-source">Source: <a href="https://globalnews.ca/world/">Global News</a> / <a href="https://abcnews.com/international">ABC News</a></span></div>
+      <div class="card-title">インド・アンドラプラデーシュ州でサイクロン接近——数万人を緊急避難、ベンガル湾から上陸予測</div>
+      <div class="card-meta"><span class="badge">India / Andhra Pradesh / Cyclone / Disaster / Oct 27 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a> / <a href="https://en.nhandan.vn/world-news-in-brief-october-27-post168314.html">Nhan Dan</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ブラジル大統領選でルイス・イナシオ・ルラ・ダ・シルバ氏が接戦を制し、4期目の就任が確定した。左派政権の継続は中南米地域における政治的多様性の一端を示している。</li>
-          <li>右派候補側は結果を「無効」と主張しており、投票後の混乱が続いている。ボルソナロ前大統領も結果の受け入れを拒否したと伝えられており、今後の政権移行プロセスに注目が集まる。</li>
+          <li>インド当局はアンドラプラデーシュ州の沿岸脆弱地域から数万人規模の住民を緊急避難させた。ベンガル湾で発達したサイクロンが上陸する見通しで、暴風雨と高潮による大規模被害が懸念されている。</li>
+          <li>当局は避難シェルター・緊急医療チームを展開中。インドのサイクロン対応は近年大幅に改善されており、早期警戒システムと大規模避難の連携が機能しているとされている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イラン、ホルムズ海峡でタンカー7隻を攻撃と報道——中東地政学リスクが再上昇</div>
-      <div class="card-meta"><span class="badge">Iran / Strait of Hormuz / Tanker / Middle East / Oct 2026</span><span class="card-source">Source: <a href="https://globalnews.ca/world/">Global News</a> / <a href="https://www.nbcnews.com/world">NBC News</a></span></div>
+      <div class="card-title">フランスで学生デモ継続——マクロン政府が譲歩も学生指導者は抗議続行を表明</div>
+      <div class="card-meta"><span class="badge">France / Student Protest / Macron / Oct 27 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a></span></div>
       <div class="card-body">
-        <ul>
-          <li>イランがホルムズ海峡でオイルタンカー7隻を攻撃したと Global News が報じた。同海峡は世界の原油輸送の約 20% が通過する要衝であり、攻撃が事実であれば原油価格への影響が懸念される。</li>
-          <li>中東では NBC News がイランをめぐる緊張を「最重要ニュース」として報じており、米国・イスラエルとイランの対立が新たな局面を迎えているとみられる。</li>
-        </ul>
+        <p>フランスのマクロン政権が学生の要求の一部に対して譲歩姿勢を示したにもかかわらず、学生指導者たちは全国規模の抗議活動を継続すると宣言した。教育費や雇用環境をめぐる不満が根本にあり、交渉の長期化が予想される。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">福田康夫元首相が90歳で死去——日中関係改善に尽力した元首相</div>
-      <div class="card-meta"><span class="badge">Japan / Fukuda Yasuo / Obituary / Oct 2026</span><span class="card-source">Source: 時事ドットコム / NHK</span></div>
+      <div class="card-title">DRC でエボラ感染者が1万人超——5月の発生以来最大規模、WHO が緊急対応強化</div>
+      <div class="card-meta"><span class="badge">DRC / Ebola / WHO / Outbreak / Oct 27 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-october-27-2026">Morning Star</a></span></div>
       <div class="card-body">
-        <p>福田康夫元首相が90歳で死去した。2007年から2008年にかけて首相を務め、日中関係の改善や「戦略的互恵関係」の推進に力を入れた。清廉な政治姿勢でも知られており、与野党を超えて弔意が表明されている。国葬の実施については現時点で未定。</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">中国・第5回中央委員会総会（5中全会）が開幕——党規律強化と軍幹部人事が焦点</div>
-      <div class="card-meta"><span class="badge">China / CCP / 5th Plenary Session / Military / Oct 2026</span><span class="card-source">Source: 時事ドットコム / NHK</span></div>
-      <div class="card-body">
-        <ul>
-          <li>中国共産党の第5回中央委員会総会（5中全会）が開幕した。経済政策に加え、党内規律の引き締めと軍幹部の人事異動が主要議題とされている。</li>
-          <li>習近平国家主席の権力基盤強化の観点からも注目されており、今回の人事動向が今後の中国の内外政策の方向性を左右する可能性がある。</li>
-        </ul>
+        <p>コンゴ民主共和国（DRC）では今年5月の発生以来、確認されたエボラ感染者数が1万人を超えた。WHO は現地当局と連携して封じ込め対応を強化しているが、紛争地域への医療アクセスが依然として課題となっている。感染拡大が隣国に及ぶリスクに対して国際保健コミュニティが監視を強めている。</p>
       </div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年10月26日（月）</p>
-  <p style="margin-top:0.5rem;">Sources: Releasebot · Cybersecurity News · Brandefense · AI Agents Directory · MorphLLM · AI Builder Club · Let's Data Science · OpenAI · Tech Insider · NBC News · Global News · ABC News · Euronews · 時事ドットコム · NHK</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-25/index.html">前版（2026-10-25）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月27日（火）</p>
+  <p style="margin-top:0.5rem;">Sources: Mezha.net · The Register · Investment News · Rich Nerds · The Next Web · FourWeekMBA · Anthropic · Releasebot · MorphLLM · X Trending · Morning Star · FDD · 10 Things Global News · Nhan Dan</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-26/index.html">前版（2026-10-26）</a></p>
 </footer>
 </body>
 </html>
