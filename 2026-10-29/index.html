@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月29日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code 2.1.312 リリース・サンドボックスOSS化 / Codex の AGENTS.md マルウェア注入攻撃（成功率90%超）/ Android Studio が40+エージェント対応 / スペイン列車衝突68名死亡・3日間服喪 / イスラエル選挙：ネタニヤフ勝利も過半数届かず / イラン/ホルムズ：タンカー3隻が機雷で炎上 / ウクライナ：ロシアがドローン613機を首都に向け発射</p>
+  <p class="date">2026年10月29日（木）&nbsp;|&nbsp;<a href="2026-10-28/index.html">前版（10/28）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/29）のハイライト:</strong> Claude Code 2.1.312 が OIDC ユーザー識別の柔軟化とクラウドルーティング制御を追加。Anthropic がサンドボックスランタイムを Apache 2.0 でオープンソース化。Barclays が Claude Code の社内普及率を年内50%に引き上げると発言。Claude・Claude Code・API で40分の部分障害が発生。中国系ハッカーが Claude Code と DeepSeek を使い100社超を侵害（Reuters 報道）。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code 2.1.312 リリース——OIDC 識別の柔軟化・クラウドルーティング制御を追加、信頼性改善</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / v2.1.312 / Release / Oct 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code 2.1.312 は OIDC（OpenID Connect）によるユーザー識別の柔軟化と、クラウドルーティングの詳細制御オプションを追加した。また信頼性・設定・セッション・コードレビュー周りの複数のバグが修正されている。</li>
+          <li>直前リリースの 2.1.310 はより多くのプラットフォームへのモニタリング対応拡大と、エンタープライズロール向けのクラウドセッション権限の拡張を含んでいた。両リリースは企業向け Claude Code の本番利用を強化する方向性を示している。</li>
+          <li>Barclays は Claude Code の社内開発者普及率を「2026年末までに50%に到達させる見込み」と述べており、金融機関での大規模展開事例として注目を集めている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Anthropic、Claude Code サンドボックスランタイムを Apache 2.0 でオープンソース化——Linux / macOS / Windows 対応</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Open Source / Sandbox / Oct 2026</span><span class="card-source">Source: The Information（Releasebot 経由）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>The Information の報道によると、Anthropic は Claude Code のサンドボックスランタイムを Apache 2.0 ライセンスでオープンソースとして公開した。Linux・macOS・Windows の3プラットフォームに対応しており、企業や開発者が独自の隔離環境を構築しやすくなる。</li>
+          <li>Anthropic のエンジニアリングブログが詳述するサンドボックス設計は、ファイルシステム分離（特定ディレクトリのみアクセス可）とネットワーク分離（承認済みサーバーのみ接続可）の2層構造。OSS 化によりサードパーティが独自のサンドボックス実装で貢献できるようになる。</li>
+          <li>E2B・Docker・Novita など既存のサードパーティサンドボックスとの共存・競合関係も今後注目される。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude・Claude Code・API に40分の部分障害——原因は調査中</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Outage / Oct 2026</span><span class="card-source">Source: Releasebot / コミュニティ報告</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude・Claude Code・Anthropic API が約40分にわたって部分的に利用できない障害が発生した。Anthropic は Status ページで状況を更新し、復旧を確認している。原因についての公式な詳細は現時点で公表されていない。</li>
+          <li>企業での本番利用が拡大している中での障害発生は、SLA や可用性保証の整備を求める企業ユーザーの声を改めて高めている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">中国系ハッカー、Claude Code と DeepSeek を使い100社超を侵害——Reuters 報道</div>
+      <div class="card-meta"><span class="badge">Security / Claude Code / DeepSeek / Hacking / Oct 2026</span><span class="card-source">Source: Reuters（Releasebot 経由）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Reuters が報じたところによると、中国系とされるハッカーが Claude Code および DeepSeek の AI エージェント機能を悪用し、農機大手ディア（Deere）やエンジンメーカー Cummins を含む100社以上のシステムを侵害したとされる。</li>
+          <li>AI エージェントが高度なサイバー攻撃ツールとして悪用される最初期の大規模事例として報告されており、AI セキュリティコミュニティで広く議論されている。Anthropic はコメントを求められたが、詳細な回答は現時点で得られていない。</li>
+          <li>先週発覚した Codex の AGENTS.md マルウェア注入問題（成功率90%超）と合わせ、AI コーディングエージェントの攻撃対象化が深刻な懸念として浮上している。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（10/29）:</strong> Codex の AGENTS.md を使ったマルウェア注入攻撃が研究者により実証——成功率90%超。Android Studio が Claude・Codex・Google Antigravity を含む40以上の AI コーディングエージェントに対応。Microsoft 365 E7 が Claude Code・Codex・Copilot を含む60種のローカルエージェントを検出対象に。GPT-5.5 が Codex から退役へ。
+    </div>
+    <div class="card">
+      <div class="card-title">Codex の AGENTS.md を悪用したマルウェア注入攻撃——テストの90%以上で成功</div>
+      <div class="card-meta"><span class="badge">Security / Codex / AGENTS.md / Malware / Oct 26 2026</span><span class="card-source">Source: <a href="https://www.helpnetsecurity.com/2026/10/26/ai-coding-agents-malware-openai-codex/">Help Net Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>セキュリティ研究者らが、Downloads フォルダに悪意ある AGENTS.md ファイルを設置するだけで Codex にマルウェアを実行させられることを実証した。テストの90%以上でマルウェアの実行に成功しており、設定変更がコンピューター全体に及ぶため以降の全 Codex セッションが攻撃者のコマンドを実行する状態になるという。</li>
+          <li>この手法は Codex のプロンプトインジェクション耐性の脆弱性を突いたもので、ファイルシステムアクセスを持つ AI エージェントの根本的なリスクを示している。OpenAI はこの報告に対して現時点でパッチをリリースしていない。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Google Android Studio、Claude・Codex・Antigravity など40以上の AI エージェントに対応</div>
+      <div class="card-meta"><span class="badge">Google / Android Studio / Claude / Codex / Oct 29 2026</span><span class="card-source">Source: <a href="https://www.digitaltrends.com/computing/google-is-letting-claude-and-codex-into-android-studio-and-that-changes-everything/">Digital Trends</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Google は Android Studio が Anthropic の Claude、OpenAI の Codex、Google 自社の Antigravity を含む40以上の AI コーディングエージェントをサポートすると発表した。これにより Android アプリ開発者は自分の好みの AI エージェントを IDE 内で直接利用できるようになる。</li>
+          <li>Google が自社 IDE でライバルの AI エージェントを公式サポートするのは異例で、エコシステムの開放性を重視する姿勢を示している。Claude Code にとってはモバイル開発領域への参入機会が大きく広がる動きだ。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Microsoft 365 E7、Claude Code・Codex・Copilot など60種のローカルエージェントを検出・管理対象に</div>
+      <div class="card-meta"><span class="badge">Microsoft / M365 / Agent Security / Oct 29 2026</span><span class="card-source">Source: <a href="https://securitybrief.asia/story/microsoft-adds-security-tools-for-ai-agents-in-365">SecurityBrief Asia</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Microsoft は Microsoft 365 E7 のアップデートで、Claude Code・OpenAI Codex・GitHub Copilot を含む60種類のローカルエージェントを検出・管理する「エージェントディスカバリー」機能を追加した。これにより IT 管理者は組織内で動作している AI エージェントを一元的に把握できるようになる。</li>
+          <li>AI エージェントの企業導入が加速する中、セキュリティ・コンプライアンス管理ツールの整備も急速に進んでいることを示す動きだ。前述の中国系ハッカーによる侵害事案の直後というタイミングも注目される。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">GPT-5.5 が Codex から退役——GPT-6.1 Sol への移行を推奨</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / GPT-5.5 / GPT-6.1 Sol / Oct 2026</span><span class="card-source">Source: <a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI の Codex 変更履歴によると、GPT-5.5 は10月14日付で Codex の ChatGPT サインインセッションから退役した。プランが対応している場合は GPT-6.1 Sol への移行が案内されており、API キーセッションは影響を受けない。</li>
+          <li>GPT-6.1 シリーズへの集約が進む中、前日リリースの Codex CLI v0.165.0 に追加された GPT-6.1 Terra（コスト最適化版）も含め、モデルラインナップが整理されてきている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode——「Claude Code vs Codex：複雑な推論は Codex が上？——10月版まとめ」</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Codex / Comparison / Oct 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">aitooldiscovery.com</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>10月版のコミュニティ調査では、Claude Code と Codex を直接比較するコメントの65.3%が Codex の方が複雑な推論タスクを得意とすると回答している。一方でマルチファイルリファクタリングや型定義・インポートの一括修正では Claude Code が高く評価されている。</li>
+          <li>「Claude Code が第一選択だが制限時は Codex」というハイブリッド運用が定着しつつある。r/ClaudeCode のアクティブ週次投稿者は4,200人超で r/Codex の3倍以上とされており、ユーザーベースの規模ではまだ Claude Code が優位だ。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/netsec——「Codex の AGENTS.md マルウェア注入——どのエージェントで再現できるか試した」</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / Security / AGENTS.md / Oct 2026</span><span class="card-source">Source: Help Net Security 報道に基づくコミュニティ反応</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex の AGENTS.md マルウェア注入脆弱性が r/netsec で大きく取り上げられており、「Claude Code でも同様のファイルベースのインジェクションが可能か」という検証スレッドが上位に立っている。</li>
+          <li>「Downloads フォルダを信頼しているのは OS の仕様であってエージェントのバグではない」という見方と、「エージェントは外部ファイルを自動実行前に確認すべき」という意見が対立。ユーザーは実行前のツール呼び出し確認設定の重要性を改めて認識している。</li>
+          <li>中国系ハッカーによる Claude Code・DeepSeek 悪用の Reuters 報道と合わせて「エージェントはもうサイバー攻撃のインフラになっている」という危機感が広まっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/androiddev——「Android Studio の40エージェント対応——現場開発者はどれを使うか」</div>
+      <div class="card-meta"><span class="badge">Community / r/androiddev / Android Studio / Claude / Codex / Oct 2026</span><span class="card-source">Source: Digital Trends 報道に基づくコミュニティ反応</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Android Studio への Claude・Codex 統合発表を受け、r/androiddev では「実際どれがいちばん使えるか」というスレッドが急増している。「Gemini は IDE との統合が深いが応答が遅い」「Claude はコンテキスト理解が優秀だが料金が高い」「Codex はコスト優位だが Kotlin のエコシステム理解が浅い」という声が目立つ。</li>
+          <li>「40エージェントも選択肢があっても結局比較する時間がない」という疲弊感も見られ、エージェント選択のガイダンスを求める声が多い。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">7 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（10/29）の主要トピック:</strong> スペイン高速列車衝突——死者68名に拡大・3日間の国家喪 / イスラエル選挙：ネタニヤフ勝利も連立組めず・長期交渉へ / イラン/ホルムズ：機雷でタンカー3隻が炎上・Qatar が仲介へ / ロシア、ドローン613機でモスクワ攻撃試みるも大半を撃墜 / ベネズエラ：マチャド氏が帰国 / 香港：住宅担当大臣が大火惨事の責任で辞任 / 国連総会が米国のキューバ制裁を34年連続で非難
+    </div>
+    <div class="card">
+      <div class="card-title">スペイン高速列車衝突——死者68名に、3日間の国家喪を宣言</div>
+      <div class="card-meta"><span class="badge">Spain / Train Crash / Disaster / Oct 29 2026</span><span class="card-source">Source: Everything Briefing / 10 Things Global News</span></div>
+      <div class="card-body">
+        <ul>
+          <li>スペインのウルダ（トレド近郊）で高速列車2本が衝突し、最終的に68名が死亡したとの報告が出ている。397名の乗客を乗せた Renfe 列車が停車中の Iryo 列車に追突した事故で、数十名が重軽傷を負った。スペイン政府は3日間の国家喪を宣言した。</li>
+          <li>前日の報道では30名とされていた死者数が68名に拡大。当局は事故原因の詳細な調査を進めており、信号系統の不具合が疑われているとの報道もある。外国人乗客も多く含まれており、カナダ人5名が影響を受けたとの報告が続いている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イスラエル選挙：ネタニヤフのリクードが最多議席も、連立政権樹立に必要な61議席に届かず</div>
+      <div class="card-meta"><span class="badge">Israel / Election / Netanyahu / Oct 29 2026</span><span class="card-source">Source: Just Security / Havana Times</span></div>
+      <div class="card-body">
+        <ul>
+          <li>開票が進むイスラエル総選挙で、ネタニヤフ首相率いるリクードが最多議席を獲得したが、ネタニヤフ陣営の政治ブロック全体では連立政権に必要な61議席に届かない可能性が高い。アイゼンコット元参謀長率いる野党連合も単独過半数には達していない。</li>
+          <li>結果確定後には長期的な連立交渉が見込まれており、不安定な政権運営がガザ停戦やイラン政策に影響を与えるとの懸念が強まっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">イラン / ホルムズ海峡：機雷によりタンカー3隻が炎上——Qatar が外交的解決を仲介</div>
+      <div class="card-meta"><span class="badge">Iran / Hormuz / Tanker / Sea Mine / Oct 29 2026</span><span class="card-source">Source: FDD / Everything Briefing</span></div>
+      <div class="card-body">
+        <ul>
+          <li>ホルムズ海峡通過を試みた石油タンカー3隻が機雷に触れて炎上したとの最新報告が出ている。前日の「タンカー7隻攻撃」との報道との差異は確認中だが、海峡での航行リスクが現実のものとなっている。</li>
+          <li>イランの外相はカタールの仲介者と密接に連絡を取り合っていると語り、外交的解決の可能性を示唆した。Qatar 主導の仲介交渉が米国とイランの間で再開される可能性があるとされる。原油市場への影響が懸念されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシア、613機のドローンでモスクワ攻撃を試みるも大半を撃墜——ウクライナの報復作戦か</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drone / Moscow / Oct 29 2026</span><span class="card-source">Source: 10 Things Global News</span></div>
+      <div class="card-body">
+        <ul>
+          <li>モスクワ市長は、ウクライナのドローン613機が首都モスクワに向けて発射されたが、大半を撃墜したと発表した。ロシアが局地停戦地域外でキーウへの砲撃を継続していることへのウクライナの報復作戦とみられている。</li>
+          <li>史上最大規模とされるドローン攻撃の試みは、ウクライナが従来の戦線を超えてロシア本土深くを攻撃する能力と意志を持っていることを示している。停戦交渉への影響が注目される。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ベネズエラ野党指導者マチャド氏が帰国——政治的対話の可能性が浮上</div>
+      <div class="card-meta"><span class="badge">Venezuela / Machado / Politics / Oct 29 2026</span><span class="card-source">Source: Havana Times</span></div>
+      <div class="card-body">
+        <p>ベネズエラの野党指導者マリア・コリナ・マチャド氏がベネズエラに帰国した。国際社会は同国の政治状況の正常化に向けた動きとして注視している。マドゥロ政権との政治的対話の可能性が浮上しているとの報道もあるが、詳細は未確認。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">香港：住宅担当大臣が数十年来最悪の火災惨事を受けて辞任——規制監督の不備が判明</div>
+      <div class="card-meta"><span class="badge">Hong Kong / Fire / Government / Oct 29 2026</span><span class="card-source">Source: Nhan Dan</span></div>
+      <div class="card-body">
+        <p>香港の住宅担当大臣が、市内で数十年ぶりの最悪の死者を出した火災事故の調査報告を受けて辞任した。調査では規制監督の不備が指摘されており、建物の防火対策と監督体制の全面的な見直しを求める声が高まっている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">国連総会、米国のキューバ制裁を34年連続で非難——ブラジル選挙問題も浮上</div>
+      <div class="card-meta"><span class="badge">UN / Cuba / US Embargo / Brazil / Oct 29 2026</span><span class="card-source">Source: Just Security</span></div>
+      <div class="card-body">
+        <ul>
+          <li>国連総会は米国のキューバへの経済封鎖を34年連続で非難する決議を採択した。</li>
+          <li>また、ブラジルではボルソナロ前大統領が国外に逃亡し選挙不正を主張、トランプ米大統領がルラ氏の選挙勝利を「恥だ」と批判するなど、中南米の政治的緊張が続いている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年10月29日（木）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · The Information · Help Net Security · Digital Trends · SecurityBrief Asia · OpenAI Changelog · Everything Briefing · 10 Things Global News · Just Security · FDD · Havana Times · Nhan Dan</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-28/index.html">前版（2026-10-28）</a></p>
+</footer>
+</body>
+</html>
