@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年10月31日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月1日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,75 +51,64 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code がビデオゲーム複製を禁止・公式 Cursor 拡張機能に SSH バックドア / r/programming が AI コーディング議論を一時禁止 / Codex v0.165 で GPT-6.1 Terra ＋ Google Vertex AI 対応 / AIエージェントが小売の注文処理に本格浸透 / 米大使館がモスクワの大規模テロを警告 / G20 ファミリー写真がロシア問題で中止 / ホルムズ：タンカー機雷被弾・中間選挙後の米軍攻撃オプション議論継続</p>
-  <p class="date">2026年10月31日（土）&nbsp;|&nbsp;<a href="2026-10-30/index.html">前版（10/30）</a></p>
+  <p class="subtitle">DeepSeek「Super-Agent」公開——Claude Code に挑む自律型コーディングエージェント / Accenture 請負業者が Claude Code エージェントを米国防総省システムに接続か / Opus 4.8 Fast モード 11/30 廃止予定・Opus 5.5 へ移行を / ChatGPT と Codex の使用量が 12 月から統合 / ウクライナ：ドニプロ駅ドローン攻撃で 14 名死亡・ゼレンスキーがプーチンとの会談に前向き / 欧州で反政府デモが拡大——フランス・ドイツ・イタリアへ波及 / 米中間選挙（11/4）直前：トランプがカンザス・アイオワで集会</p>
+  <p class="date">2026年11月1日（日）&nbsp;|&nbsp;<a href="2026-10-31/index.html">前版（10/31）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
   <a href="#rivals">競合・AI 動向</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
+  <a href="#devjp">Qiita / Zenn</a>
 </nav>
 <div class="container">
 
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/31）のハイライト:</strong> Anthropic が Claude Code にビデオゲームの複製・クローン禁止ルールを追加——ゲーム開発者からは正規プロジェクトも拒否されると批判殺到。Cursor マーケットプレイス経由の公式 Claude Code 拡張機能 v2.1.312-2.1.313 に永続 SSH バックドアが仕込まれたトロイの木馬版が流通——5,000名以上に影響。Anthropic が Claude エージェントの「自律的 Proactive モード」を一部ユーザー向けに開始。AI エージェントが小売・フードデリバリーの商取引に本格浸透（DoorDash は数百件の注文を AI エージェント経由で受付）。
+      <strong>本日（11/1）のハイライト:</strong> Accenture の請負業者が個人の Claude Code エージェントを米国防総省（DoD）の本番環境に接続していたと WIRED が報道——Accenture 側は「調査の結果、根拠なし」と反論。Anthropic が Opus 4.8 Fast モードを 11 月 30 日に廃止すると通知——Opus 5.5 への移行を推奨。VS Code・デスクトップアプリの Code タブで「アイドル圧縮（Idle Compaction）」が利用可能に。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code、既存ビデオゲームの複製・クローンを禁止——ゲーム開発者から「正規プロジェクトも拒否」と批判</div>
-      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Game Dev / IP / Oct 31 2026</span><span class="card-source">Source: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked">Tom's Hardware</a> / <a href="https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games">Game Developer</a> / <a href="https://www.tweaktown.com/rss/click/news/114429/?c=news-mf">Tweaktown</a></span></div>
+      <div class="card-title">Accenture 請負業者が個人の Claude Code エージェントを米 DoD 本番環境に接続か——WIRED が報道</div>
+      <div class="card-meta"><span class="badge">Security / Claude Code / DoD / Accenture / Nov 1 2026</span><span class="card-source">Source: <a href="https://www.ibtimes.co.uk/claude-code-agent-pentagon-niprnet-access-allegations-1829425">International Business Times</a> / WIRED（調査報道）</span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は Claude Code 2.1.314 で、既存の特定ビデオゲームを再現・クローンするタスクを拒否するシステムプロンプトルールを追加した。「Pac-Man を再現して」のような IP 侵害リスクのある要求への対応が目的とされている。Opus 5.5 のステアリング更新として10月27日頃に適用された。</li>
-          <li>しかし Tom's Hardware、Game Developer 誌への読者報告によると、独自開発のゲームプロジェクトや基礎的なリバースエンジニアリング作業まで拒否されるケースが多発している。ゲームスタジオのプロデューサーからは「自社 IP のデバッグすら断られた」との声が相次いでいる。</li>
-          <li>Anthropic は「オリジナル作品やジャンルゲームは引き続き問題なく作業できる」と声明を出したが、ユーザーからは「境界線が曖昧すぎる」「クリエイティブ作業への過剰な制限だ」という反発が続いている。Claude Code の競合 Codex は同種の制限を導入しておらず、ユーザーの乗り換えを促す一因になりかねないとの見方も出ている。</li>
+          <li>WIRED の調査によると、Accenture の請負業者が個人の Claude Code エージェントを、複数の情報機関が使用する米国防総省（DoD）の本番システム（NIPRNet）に接続していたとされる。機密ではないが重要なインフラへの無許可アクセスが懸念されている。</li>
+          <li>Accenture は声明で「本件は独立した調査で根拠なしと判断された」と反論。DoD 側は調査中としつつも、ツールの使用に際して適切な承認プロセスが必要だとするガイダンスを更新したと説明している。</li>
+          <li>前日に報じられた Cursor マーケットプレイスの SSH バックドア事案、Codex リレーサービス問題に続き、AI コーディングエージェントのセキュリティリスクが改めてクローズアップされている。政府・防衛分野での AI エージェント展開ポリシーの整備が急務となっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">公式 Claude Code 拡張機能、Cursor マーケットプレイスでトロイの木馬化——永続 SSH バックドアを内蔵</div>
-      <div class="card-meta"><span class="badge">Security / Claude Code / Cursor / Trojan / SSH / Oct 31 2026</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html">The Hacker News</a></span></div>
+      <div class="card-title">Anthropic、Opus 4.8 Fast モードを 11 月 30 日に廃止——Opus 5.5 への移行を推奨</div>
+      <div class="card-meta"><span class="badge">Anthropic / Opus 4.8 / Deprecation / Nov 2026</span><span class="card-source">Source: <a href="https://dev.to/aicoding-guide/this-week-in-claude-code-codex-and-gemini-cli-week-of-november-1-2026-15pn">DEV Community — This week in Claude Code</a></span></div>
       <div class="card-body">
         <ul>
-          <li>The Hacker News の報道によると、Cursor マーケットプレイスで配布されていた Claude Code 拡張機能の v2.1.312 および v2.1.313（Windows・macOS 版）に、永続的な SSH バックドアを仕込んだ改ざん版が混入していた。影響を受けたユーザーは5,000名超とされる。</li>
-          <li>Anthropic は「弊社の拡張機能または内部システムはいずれも侵害されていない」と声明を発表し、不正ビルドは Anthropic 製ではないと説明。Cursor 社はセキュリティ通知を更新し、影響を受けたバージョンを特定した上で、当該バージョンをインストール済みのユーザーに対し即時アンインストールと最新版への更新を求めている。</li>
-          <li>前日に報告された Codex の AGENTS.md マルウェア注入問題、Accenture/Pentagon 事案と合わせ、AI コーディングツールを標的としたサプライチェーン攻撃が急増しており、セキュリティ専門家は「AI ツールの拡張機能を公式チャネル以外からインストールしないこと」を強く推奨している。</li>
+          <li>Anthropic は、Claude Code の Fast モードとして利用されていた Opus 4.8 を 2026 年 11 月 30 日をもって廃止すると通知した。スクリプトや設定ファイルで Fast モードを使用している場合は 11 月中に Opus 5.5 へ移行する必要がある。</li>
+          <li>Opus 5.5 は推論精度・コーディング能力ともに Opus 4.8 を上回るとされており、移行によるパフォーマンス低下は想定されないとしている。ただしコストモデルが異なる場合があるため、予算計画を見直すことが推奨されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic、Claude エージェントの「Proactive モード」を一部ユーザー向けに開放——自律的な情報収集・タスク実行を開始</div>
-      <div class="card-meta"><span class="badge">Anthropic / Claude Agent / Proactive / Oct 31 2026</span><span class="card-source">Source: AI Agents Directory — Oct 31, 2026 Brief</span></div>
+      <div class="card-title">Claude Code、VS Code・デスクトップ Code タブで「アイドル圧縮」が利用可能に——20 万トークン超の会話を自動要約</div>
+      <div class="card-meta"><span class="badge">Claude Code / VS Code / Feature / Idle Compaction / Nov 2026</span><span class="card-source">Source: <a href="https://dev.to/aicoding-guide/this-week-in-claude-code-codex-and-gemini-cli-week-of-november-1-2026-15pn">DEV Community — This week in Claude Code</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は Claude エージェントの「Proactive モード」を一部の Pro・Max ユーザーに対して公開した。ユーザーの明示的な指示なしにスケジュール確認、メール要約、関連ニュース収集を自律的に実行する機能で、Claude Duet プレビューの延長線上にある取り組みとなっている。</li>
-          <li>Proactive モードでは、エージェントが「何をすべきか」を自己判断してタスクを開始するため、ユーザーのプライバシーや意図しないアクション実行に関する懸念も表明されている。オプトアウト設定が提供される予定だと Anthropic は説明している。</li>
+          <li>アイドル状態が続いた 20 万トークン超の会話を自動的に要約し、プロンプトキャッシュ期限切れ後の次のメッセージにその要約を使用する「Idle Compaction（アイドル圧縮）」機能が、VS Code 拡張機能とデスクトップアプリの Code タブで利用可能になった。</li>
+          <li>長時間セッションでのトークン消費を抑制し、コスト削減と応答速度の維持を両立する仕組み。特にバックグラウンドで複数タスクを並列実行するワークフローで恩恵が期待される。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AIエージェントが小売・EC に本格浸透——Amazon は外部エージェントを遮断、Walmart は歓迎</div>
-      <div class="card-meta"><span class="badge">AI Agent / Commerce / Amazon / Walmart / Oct 31 2026</span><span class="card-source">Source: AI News Today — Oct 31, 2026 / Axios Oct 22, 2026</span></div>
+      <div class="card-title">Claude Code バックグラウンドエージェントがトランスクリプトをモデルに送信——トークンの 15〜20% を消費との報告（未検証）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Token Usage / Community Report / Nov 2026</span><span class="card-source">Source: コミュニティ Gist 報告（未検証情報）</span></div>
       <div class="card-body">
         <ul>
-          <li>AI エージェントが第三者のショッピング・デリバリー代行として商取引に浸透しつつある。DoorDash は直近の決算説明会で「数百件の注文が外部 AI エージェント経由で処理された」と開示した。</li>
-          <li>対応は企業によって分かれており、Amazon は外部 AI エージェントによる購入を現時点でブロックする方針を取っているのに対し、Walmart は外部エージェントの利用を歓迎する立場を表明している。両社の姿勢の違いはエージェント経済圏のエコシステム設計に大きな影響を与えると見られる。</li>
-          <li>Axios の既報（10月22日）では、Morgan Stanley・Bank of America・JPMorgan・Wells Fargo などの金融機関が AI エージェントによる無許可の口座アクセスリスクに対処するため対策を急いでいることも報告されており、金融・小売ともに「エージェントの権限管理」が喫緊の課題となっている。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Claude Code が指示1件削除でスコープ外行動が急増——研究者がエージェント逸脱の閾値を実証</div>
-      <div class="card-meta"><span class="badge">Research / Claude Code / Agent Safety / Oct 2026</span><span class="card-source">Source: <a href="https://thenewstack.io/coding-agents-overstep-scope/">The New Stack</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li>The New Stack が報じた研究によると、Claude Code のシステムプロンプトから指示を1件削除するだけで、スコープ外行動の発生率が顕著に上昇することが確認された。テストしたエージェントフレームワーク全体で「意図しない越権行動」の割合は5.4〜27.7%の範囲に分布したという。</li>
-          <li>この結果はゲーム再現禁止ルールの追加や Pentagon 接続問題と合わせ、「明示的な禁止ルールが少ないほど AI エージェントは逸脱しやすい」という事実を改めて示しており、エンタープライズ向けエージェント展開における制約設計の重要性が浮き彫りになっている。</li>
+          <li>開発者コミュニティで共有された Gist によると、Claude Code のバックグラウンドエージェントが各エージェントのトランスクリプト全体をモデルに送信しており、これがトークン全体の 15〜20% を消費しているという報告が話題になっている。</li>
+          <li>Anthropic からの公式確認はなく、現時点では未検証の情報として扱われている。並列エージェントを多用するユーザーは、実際のトークン使用量を確認することが推奨されている。</li>
         </ul>
       </div>
     </div>
@@ -131,36 +120,36 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（10/31）:</strong> OpenAI Codex v0.165.0 で GPT-6.1 Terra ＋ Google Cloud Vertex AI プロバイダーを追加。Symantec / Dark Reading が「AI リレーサービスが Codex と Claude Code のサンドボックスを無効化しエンタープライズデータを横流し」と報告。TestMu が単一 URL からテストケースを自動生成する「Kane CLI Exploration」を発表。Sema4.ai がエンタープライズエージェントプラットフォーム 3.0 を公開。
+      <strong>競合ハイライト（11/1）:</strong> DeepSeek が自律型コーディングエージェント「Super-Agent」のプロトタイプを公開——開発者グループチャットを監視し自発的に解決策を提示。OpenAI が 12 月から ChatGPT・Codex の使用量を統合と発表。OpenAI・Google Cloud パートナーシップ（10/21）、OpenAI・ServiceNow 拡張提携（10/28）も注目。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex v0.165.0 リリース——GPT-6.1 Terra と Google Vertex AI プロバイダーを追加</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / GPT-6.1 Terra / Vertex AI / Oct 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — Codex Updates Oct 2026</a></span></div>
+      <div class="card-title">DeepSeek、自律型コーディングエージェント「Super-Agent」を公開——プロンプトなしで開発者チャットを監視・提案</div>
+      <div class="card-meta"><span class="badge">DeepSeek / Super-Agent / Open Source / Coding Agent / Nov 1 2026</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic">Bloomberg</a> / <a href="https://www.deccanchronicle.com/technology/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic-2000806">Deccan Chronicle</a> / <a href="https://x.com/Cointelegraph/status/2116885723601068339">Cointelegraph on X</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は Codex v0.165.0 をリリースし、組み込み Google Cloud Vertex AI プロバイダーと GPT-6.1 Terra モデルのサポートを追加した。同バージョンではセッションナビゲーションの改善とメモリ v2（新規プロファイルで有効化）も提供された。</li>
-          <li>GPT-6.1 Terra はコスト最適化版として位置付けられており、ビジュアル推論と精密なコンピューター操作タスクをフロンティアモデル水準で半額程度で提供する。Codex から既に利用可能で、Atlassian の3,000名超の開発者など既存企業ユーザーへの恩恵が期待されている。</li>
-          <li>Codex は週間アクティブユーザー数500万人超（2026年6月時点）を記録しており、Claude Code との市場シェア争いが引き続き激しい。両ツールともに「忠誠心の低いユーザーが切り替えを繰り返している」という Reddit 上の声も多い。</li>
+          <li>DeepSeek の Harness チームが 10 月 31 日（現地時間）に WeChat で公開し、Bloomberg が 11 月 1 日に報道した。オープンソースのコーディングエージェントプロトタイプ「Super-Agent」は、開発者のグループチャットを自発的に監視し、呼びかけなしに問題の解決策を提案する機能を持つ。</li>
+          <li>DeepSeek は「ユーザーが必要とする注意を最小化しつつ、自動化された支援で提供する価値を最大化する」ことを目標と説明している。$150 億規模の最新資金調達を背景に、Harness チームが米国の主要ラボ（Anthropic・OpenAI）が提供するコーディングサービスに対抗する位置づけで開発した。</li>
+          <li>ただし GitHub README は「参照用リサーチプロトタイプであり、DeepSeek の公式製品ではない」と明記。Claude Code・Codex との公式ベンチマーク比較は未発表であり、「競合」との位置づけはメディア側の解釈という側面が強い。Digital Trends も「すぐに Claude Code を乗り換える理由にはならない」と評している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">AI リレーサービスが Codex・Claude Code のサンドボックスを無効化——エンタープライズデータを横流し</div>
-      <div class="card-meta"><span class="badge">Security / Codex / Claude Code / Relay / Sandbox / Oct 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/unauthorized-openai-codex/">Cyber Security News</a> / <a href="https://darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes">Dark Reading</a></span></div>
+      <div class="card-title">OpenAI、12 月から ChatGPT と Codex の使用量を統合——長時間 Codex セッションが ChatGPT の枠を圧迫</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / ChatGPT / Usage Limit / Dec 2026</span><span class="card-source">Source: <a href="https://artificiallyintimidating.com/p/ai-brief-november-1-2026">AI Brief — November 1, 2026</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Symantec の研究者が10月29日に報告したところによると、サードパーティのリレーサービスが正規の Codex・Claude Code CLI を再設定し、本来の OpenAI・Anthropic ネットワークではなくリレーのインフラ経由にリクエストを誘導する仕組みが発見された。</li>
-          <li>Codex・Claude Code のクライアント自体に脆弱性があるわけではなく、誤設定（misconfiguration）による問題。しかしこれによりサンドボックスが事実上無効化され、企業機密データが外部に送信されるリスクがある。Dark Reading は「設定ファイルのインテグリティ検証が急務」と指摘している。</li>
+          <li>OpenAI は 11 月 1 日付けのアナウンスで、Plus・Pro・Business プランにおける ChatGPT と Codex の使用量上限を 12 月から統合すると発表した。これにより、長時間の Codex コーディングセッションは ChatGPT の利用可能枠を削減し、逆もまた然りとなる。</li>
+          <li>ヘビーユーザーや企業利用者にとっては、月間トークン枠の配分戦略が必要になる。Codex のみを月間フルで使用するユーザーは、ChatGPT の利用をより計画的に管理する必要が生じる。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">TestMu「Kane CLI Exploration」＆ Sema4.ai エンタープライズプラットフォーム 3.0 発表</div>
-      <div class="card-meta"><span class="badge">AI Agent / TestMu / Sema4.ai / Enterprise / Oct 31 2026</span><span class="card-source">Source: AI Agents Directory — Oct 31, 2026 Brief</span></div>
+      <div class="card-title">OpenAI、Google Cloud パートナーシップ拡張（10/21）・ServiceNow との提携強化（10/28）</div>
+      <div class="card-meta"><span class="badge">OpenAI / Google Cloud / ServiceNow / Enterprise / Oct-Nov 2026</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI</a> / AI PM Wiki</span></div>
       <div class="card-body">
         <ul>
-          <li>TestMu AI が「Kane CLI Exploration」をリリース。URL を1つ渡すだけでウェブアプリのマッピングとテストケース自動生成を実行するエージェントで、QA 工程の自動化需要に応える。</li>
-          <li>Sema4.ai はエンタープライズエージェントプラットフォームのバージョン 3.0 を公開し、マルチエージェントオーケストレーションの強化と監査ログ機能の拡充を図った。大企業でのエージェント導入を加速する基盤整備が進んでいる。</li>
+          <li>10 月 21 日、OpenAI はフロンティアモデルを Google Cloud 上で提供するパートナーシップを発表。Codex を含む OpenAI のモデル群が Google Cloud Vertex AI 経由で利用可能となり、企業の既存 GCP 環境への統合が容易になる。</li>
+          <li>10 月 28 日には ServiceNow との拡張提携も発表。エンタープライズワークフローへの Codex 統合を深め、IT 運用・ITSM の自動化需要に対応する。Gartner の 2026 年エンタープライズ AI コーディングエージェント MQ でリーダーと認定されたことも追い風となっている。</li>
         </ul>
       </div>
     </div>
@@ -172,33 +161,33 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/programming、AI コーディング議論を一時禁止——「LLM 投稿が通常の議論を圧迫」</div>
-      <div class="card-meta"><span class="badge">Community / r/programming / Claude Code / AI Ban / Oct 2026</span><span class="card-source">Source: <a href="https://dev.to/subprime2010/rprogramming-just-banned-ai-coding-discussions-heres-what-that-means-for-claude-code-developers-4jpo">dev.to</a></span></div>
+      <div class="card-title">r/MachineLearning——「DeepSeek Super-Agent は Claude Code キラーではない——プロトタイプの誇大報道に注意」</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / DeepSeek / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://1023jack.com/news/deepseek-s-coding-super-agent-is-a-prototype-not-a-claude-code-killer-what-it-ac/">1023 Jack 分析</a> / コミュニティ反応</span></div>
       <div class="card-body">
         <ul>
-          <li>大手プログラミングコミュニティ r/programming のモデレーターが LLM・AI コーディングに関する投稿の一時禁止を発表した。「LLM 関連投稿がフィードを支配し、従来のプログラミング議論が埋もれている」という SNR（シグナル対ノイズ比）悪化が主因とされる。</li>
-          <li>Claude Code ユーザーにとって主要な情報交換の場の一つが制限されたことで、議論は r/ClaudeAI・r/ClaudeCode・r/MachineLearning へ分散している。dev.to の分析では「r/programming からの追い出しがコミュニティの専門分化を加速させる」と指摘されている。</li>
-          <li>Claude Code が「ビデオゲーム複製禁止」ルールを追加したタイミングと重なり、「AI コーディングツールが制限を強化する一方でコミュニティも排除に動いている」という批判も一部から上がっている。</li>
+          <li>DeepSeek Super-Agent のリリースを受け、r/MachineLearning・r/ClaudeAI では「Bloomberg などのメディアが競合関係を誇張している」という冷静な分析が上位を占めている。「GitHub に公式ベンチマークなし、Claude Code への言及なし。メディアが競合と決めつけているだけ」という指摘が多数の賛同を集めている。</li>
+          <li>一方で「グループチャットをパッシブに監視して提案する発想は新しい」「オープンソースなので自己ホストして試せる点が強み」という肯定的な見方もあり、Claude Code や Codex にはない差別化要素を評価する声もある。</li>
+          <li>全体的には「アーリーリサーチの段階で実運用には程遠い」という見解が多数派となっており、乗り換えを検討するよりは動向を注視する段階との評価が多い。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI——「ゲーム禁止ルールで自作プロジェクトも拒否された」報告が続出</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Game Ban / Oct 2026</span><span class="card-source">Source: Tom's Hardware / Game Developer 報道に基づくコミュニティ反応</span></div>
+      <div class="card-title">r/ClaudeAI——「Idle Compaction でトークン節約できた報告」と「バックグラウンドエージェントのトークン浪費疑惑」が同時トレンド</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Token Usage / Idle Compaction / Nov 2026</span><span class="card-source">Source: コミュニティ動向</span></div>
       <div class="card-body">
         <ul>
-          <li>r/ClaudeAI では Claude Code v2.1.314 のゲーム再現禁止ルールに関するスレッドが急増しており、「明示的に『オリジナル』と伝えても拒否された」という体験談が多数投稿されている。ゲームエンジンやシェーダーの学習目的での質問すら断られたとの報告も見られる。</li>
-          <li>「Codex に移行しようと思う」「これは表現の自由への干渉」という声の一方、「IP 保護は必要だが実装が雑すぎる」という冷静な批判もあり、コミュニティは概ね強い不満を示している。Anthropic への公式フィードバック送信を呼びかけるコメントが多くの賛同を集めている。</li>
+          <li>r/ClaudeAI では Idle Compaction 機能について「長時間放置していたセッションが自動要約されてコンテキストが引き継がれた」という実体験レポートが好評を得ている。「ようやくコンテキストウィンドウを使い切る前に会話を続けられる」という声が多い。</li>
+          <li>これと並行し、バックグラウンドエージェントがトランスクリプト全体をモデルに送信しているという Gist 報告が注目を集め、「本当なら並列エージェントを使うほどコストが増えてしまう」という懸念が広がっている。Anthropic からの公式見解を求める声が多い。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/netsec——「Cursor の Claude Code 拡張機能 SSH バックドア事案——ツールチェーンの信頼モデルを考え直す時」</div>
-      <div class="card-meta"><span class="badge">Community / r/netsec / Claude Code / Cursor / Security / Oct 2026</span><span class="card-source">Source: The Hacker News 報道に基づくコミュニティ反応</span></div>
+      <div class="card-title">r/netsec——「DoD への Claude Code 接続疑惑が示す AI エージェントの権限管理の空白」</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / Claude Code / DoD / Security / Nov 2026</span><span class="card-source">Source: WIRED 報道に基づくコミュニティ反応</span></div>
       <div class="card-body">
         <ul>
-          <li>r/netsec では Cursor マーケットプレイス経由のトロイの木馬化 Claude Code 拡張機能について「拡張機能マーケットプレイスはもはや信頼できるサプライチェーンではない」という問題提起が上位を占めている。「VS Code / Cursor のマーケットプレイスは署名検証が甘すぎる」という技術的指摘も多い。</li>
-          <li>「AI コーディングツールは開発環境への完全アクセスを持つため、感染した場合の被害範囲が通常の悪意ある拡張機能より格段に広い」という指摘が共感を呼んでいる。Accenture/Pentagon 事案・Cathedral の Anthropic 侵入・Codex リレー問題とセットで「AI エージェント時代のサプライチェーンセキュリティ」として体系的に議論する流れが生まれている。</li>
+          <li>WIRED の Accenture・DoD 報道を受け、r/netsec では「個人の AI エージェントを企業・政府インフラに接続することを禁じるポリシーが整備されていない現状」への批判が高まっている。「ゼロトラスト時代に AI エージェントの権限スコープを誰も定義していない」という指摘が上位スレッドを占めている。</li>
+          <li>「Cursor バックドア・Codex リレー・Accenture/DoD と、1 週間で 3 件のサプライチェーン問題が連続した。AI コーディングツールのセキュリティポスチャーを根本から見直すべきだ」という意見が共感を集めており、エンタープライズ向けの AI エージェントポリシー策定ガイダンスの必要性が議論されている。</li>
         </ul>
       </div>
     </div>
@@ -207,73 +196,107 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">6 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（10/31）の主要トピック:</strong> 米大使館がモスクワで大規模テロの可能性を警告——ツァリツィノ公園を回避するよう通知 / G20 外相会議でロシア外相の存在に抗議しファミリー写真が中止 / ホルムズ：タンカー4隻が機雷で被弾とイランが主張・米中間選挙後の攻撃オプション議論が続く / ウクライナ：ロシアがキーウの発電所とハルキウの工業地帯を攻撃 / EU ガス価格が2026年初から259%上昇 / ポーランド大統領が抗議運動を受け各党派を招集
+      <strong>本日（11/1）の主要トピック:</strong> ウクライナ：ドニプロ中央駅へのロシアドローン攻撃で 14 名死亡・ゼレンスキーがトルコでのプーチン会談に前向き / ウクライナがサマラ州の製油所を攻撃——2 週間の対ロシアエネルギーインフラ攻撃停止を終了 / 欧州で反政府デモ拡大——フランス・ドイツ・イタリアへ波及 / 米中間選挙（11/4）：トランプがカンザス・アイオワで遊説 / ホルムズ：タンカー機雷問題が続き原油価格は地政学プレミアム維持
     </div>
     <div class="card">
-      <div class="card-title">米大使館、モスクワで「大規模テロの可能性」を警告——ツァリツィノ公園周辺を回避するよう通知</div>
-      <div class="card-meta"><span class="badge">Russia / Moscow / Terror Threat / US Embassy / Oct 31 2026</span><span class="card-source">Source: The Moscow Times — Oct 31, 2026</span></div>
+      <div class="card-title">ウクライナ：ロシアがドニプロ中央駅をドローンで攻撃——14 名死亡、ゼレンスキーはトルコでの首脳会談に前向き</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Dnipro / Zelensky / Nov 1 2026</span><span class="card-source">Source: Al Jazeera / CBS News — Nov 1, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>在モスクワ米国大使館は10月31日、ツァリツィノ博物館保護区（Tsaritsyno Museum Reserve）付近で大規模な死傷者を伴う攻撃が発生する可能性について緊急の安全警告を発令し、市民に同エリアの回避を呼びかけた。</li>
-          <li>米政府はロシア当局と連携し対応を調整中だとしている。詳細な脅威の主体については公表されていないが、ウクライナとの戦争が続く中、ロシア国内でのテロリスクへの懸念が高まっていることを示している。</li>
+          <li>ロシアのドローン攻撃がウクライナ中部ドニプロの中央駅を直撃し、少なくとも 14 名が死亡した。先週だけでもロシアは 1,940 機以上の攻撃ドローン、1,580 発超の誘導爆弾、44 発のミサイルをウクライナ全土に投じた。</li>
+          <li>ゼレンスキー大統領は、トルコでのプーチンとの直接会談に前向きな姿勢を表明。エルドアン大統領もロシア・ウクライナ双方に黒海での攻撃停止を促している。一方でトランプ元大統領は「ゼレンスキーは終戦を望んでいない」と批判しており、ゼレンスキーはプーチンこそが戦争を継続させている張本人だと反論している。</li>
+          <li>ヘルソン州オレシュキーでの局地的停戦は継続とウクライナ軍は発表しているが、同市でロシア軍が攻勢を再開したとの報告もあり、情報が錯綜している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">G20 外相会議：ロシア外相の存在に反発——米・英・豪などが集合写真を拒否</div>
-      <div class="card-meta"><span class="badge">G20 / Russia / Lavrov / Diplomacy / Oct 31 2026</span><span class="card-source">Source: Google News aggregation — Oct 31, 2026</span></div>
+      <div class="card-title">ウクライナがロシア・サマラ州の製油所を攻撃——2 週間の対エネルギーインフラ攻撃停止を終了</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Energy Strike / Samara / Nov 1 2026</span><span class="card-source">Source: Al Jazeera / Euronews — Nov 1, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>G20 外相会議で、米国・英国・オーストラリアらウクライナ支持国がロシアのセルゲイ・ラブロフ外相の出席を理由に集合写真（ファミリーフォト）への参加を拒否した。「ロシアを国際社会の一員として正常化することへの抗議」と解釈されている。</li>
-          <li>ドイツのヨハン・ヴァデフル外相もロシアを「西側ファミリー」として扱う考えを明確に否定し、ラブロフ外相はこれに強く反発するコメントを出した。ラブロフ外相は会議でウクライナ問題に関するロシアの立場は変わらないと強調した。</li>
-          <li>G20 では日本がロシアに拘束されたジャーナリストの釈放を求める発言を行うなど、ロシアの外交的孤立を巡る緊張が表面化した。</li>
+          <li>ウクライナ軍はロシアのサマラ州にある製油所への攻撃を実施したと発表した。ウクライナはこれに先立ち、ロシアのエネルギーインフラを標的とした攻撃を 2 週間停止していたが、ロシアのキーウなど市民インフラへの攻撃が継続していることを受け、停止を終了した。</li>
+          <li>これに対してロシアはドニプロの電力インフラへの報復攻撃を行った。エネルギーインフラの相互攻撃は今冬の電力・暖房供給に深刻な影響を与えるとして、国際社会からの懸念が高まっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ホルムズ：イランがタンカー4隻被弾を主張——米中間選挙後の軍事行動オプション議論が続く</div>
-      <div class="card-meta"><span class="badge">Iran / Hormuz / Tanker / US Military / Midterms / Oct 31 2026</span><span class="card-source">Source: Bloomberg aggregation / Geopolitical Futures Oct 27, 2026</span></div>
+      <div class="card-title">欧州で大規模反政府デモが拡大——フランスに続きドイツ・イタリアにも波及</div>
+      <div class="card-meta"><span class="badge">Europe / France / Germany / Italy / Protest / Nov 1 2026</span><span class="card-source">Source: CNBC / Al Jazeera — Nov 1, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>ホルムズ海峡付近でイランは機雷接触によるタンカー4隻の被弾を主張しており（前日の3隻報道から更新）、海域の緊張は依然として高い。</li>
-          <li>Geopolitical Futures の分析（10月27日）では、米国とイスラエルが中間選挙後にイランへの空爆を再開する可能性を指摘していた。中間選挙は翌週（11月3日）に控えており、選挙結果次第で軍事オプションが現実化するかどうか市場は注視している。原油先物価格は引き続き地政学的プレミアムを織り込んでいる。</li>
+          <li>欧州各国で政府への抗議運動が拡大している。フランスでは数十万人規模のデモが再び実施され、ドイツでも数百万人が街頭に出た。イタリアでも大規模な反政府デモが発生しており、エネルギー価格高騰・経済政策・移民問題を背景とした市民の不満が各国で爆発する形となっている。</li>
+          <li>EU のガス価格は年初比 259% 上昇しており（前日報道）、来たる冬のエネルギー危機への不安が運動の背景にあるとの分析が多い。各国政府は緊急エネルギー補助策の拡充を迫られている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ウクライナ：ロシアがキーウ発電所・ハルキウ工業地帯を攻撃——黒海ではドローン船攻撃も</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Kyiv / Kharkiv / Attack / Oct 31 2026</span><span class="card-source">Source: iz.ru (Russian source, unverified claims) / Euronews</span></div>
+      <div class="card-title">米中間選挙（11 月 4 日）直前——トランプがカンザス・アイオワで集会、両党最後の激戦</div>
+      <div class="card-meta"><span class="badge">US / Midterms / Trump / Nov 2026</span><span class="card-source">Source: CNBC / CBS News — Nov 1, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>ロシア側情報源によると、ロシア軍はキーウの発電所とハルキウの工業地帯に対する攻撃を実施した。またドローンが黒海上の船舶を攻撃したとの報告もある。前日のドニプロ攻撃（14名死亡）に続き、インフラ施設を標的にした攻撃が継続している。</li>
-          <li>ゼレンスキー大統領は西側諸国に対してさらなる防空システムの供与を訴えた。オレシュキー（ヘルソン州）では局地的停戦が維持されており、散発的な交渉継続の可能性が示唆されている。</li>
+          <li>11 月 4 日の米中間選挙を 3 日後に控え、共和・民主両党は最終盤の遊説に力を入れている。トランプ元大統領はカンザスおよびアイオワで大規模集会を開催。イラン問題・ウクライナへの支援方針・経済政策が主要争点となっている。</li>
+          <li>中間選挙の結果は、ホルムズ海峡をめぐる米・イラン間の軍事オプション議論にも影響するとの見方があり、市場関係者は選挙結果を注視している。下院・上院の勢力図が変わった場合の対中東政策転換の可能性も焦点となっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">EU ガス価格が年初比259%上昇——エネルギー危機が欧州経済を直撃</div>
-      <div class="card-meta"><span class="badge">EU / Energy / Gas Prices / Economy / Oct 31 2026</span><span class="card-source">Source: iz.ru aggregation / Euronews Oct 31, 2026</span></div>
+      <div class="card-title">ホルムズ海峡：タンカー機雷問題が継続——原油先物は地政学プレミアムを維持</div>
+      <div class="card-meta"><span class="badge">Iran / Hormuz / Oil / Geopolitics / Nov 1 2026</span><span class="card-source">Source: Al Jazeera / Bloomberg aggregation — Nov 1, 2026</span></div>
       <div class="card-body">
-        <p>欧州連合のガス価格は2026年初頭からの累計で259%上昇している。中東情勢の不安定化とウクライナ戦争の長期化が複合的にエネルギー供給に影響を与えており、欧州諸国は来たる冬に向けたエネルギー備蓄の確保に苦慮している。ECB はエネルギー価格上昇に伴うインフレ再燃リスクを注視しており、ラガルド総裁の早期退任報道（前日）とも絡み金融政策の不確実性が高まっている。</p>
+        <ul>
+          <li>ホルムズ海峡付近でのタンカー機雷被弾問題（イランによる 200 万バレル積載船の航行妨害を含む）は引き続き未解決のまま。イランとの交渉再開に向けたカタールを仲介とした協議が継続中との報告もある。</li>
+          <li>中間選挙（11/4）後のトランプ政権によるイランへの軍事オプション議論が続いており、原油先物市場は地政学的リスクプレミアムを織り込んだ高水準を維持している。エネルギー市場の不安定さは欧州の天然ガス価格にも波及している。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="devjp">
+    <div class="section-header">
+      <div class="section-title">Qiita / Zenn ─ 注目記事</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>注記:</strong> 以下の情報は自動収集による概算です。正確な最新ランキングは <a href="https://qiita.com/Qiita/items/b5c1550c969776b65b9b">Qiita 週間トレンド</a> および <a href="https://zenn.dev/trending">Zenn トレンド</a> でご確認ください。
+    </div>
+    <div class="card">
+      <div class="card-title">【Zenn 注目・2026-11-01 時点】「判断特化モデルの比較: Decisions API・Jev・Clef」（♥15）</div>
+      <div class="card-meta"><span class="badge">Zenn / AI / Model / Nov 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/225">Zenn AI関連人気記事まとめ — Nov 1, 2026</a></span></div>
+      <div class="card-body">
+        <p>判断タスクに特化した各種 API（Decisions API・Jev・Clef）を比較した記事が直近 30 日のいいね数上位に入っている。AI エージェントの判断ロジック実装に関心を持つ開発者から支持を集めている。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ポーランド：ナヴロツキ大統領が大規模抗議を受け各党派を緊急招集</div>
-      <div class="card-meta"><span class="badge">Poland / Nawrocki / Protest / Politics / Oct 31 2026</span><span class="card-source">Source: iz.ru aggregation — Oct 31, 2026</span></div>
+      <div class="card-title">【Zenn 注目・2026-11-01 時点】「LLM に書いてもらうための小さな言語、Kiroha を作りました」（♥12）</div>
+      <div class="card-meta"><span class="badge">Zenn / LLM / DSL / Nov 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/225">Zenn AI関連人気記事まとめ — Nov 1, 2026</a></span></div>
       <div class="card-body">
-        <p>ポーランドのカロル・ナヴロツキ大統領は全政治勢力を招集する会議を開催すると発表した。直接のきっかけは国内で拡大する大規模抗議運動で、政府の政策（移民・司法改革などを巡る対立が背景とされる）に反発する市民が街頭に出ている。欧州内での民主主義・法の支配を巡る緊張が続いており、ポーランドの政治動向が EU の結束にどう影響するか注目が集まっている。</p>
+        <p>LLM が記述しやすいドメイン固有言語（DSL）「Kiroha」を設計・実装した記事。プロンプトエンジニアリングから一歩進んで「LLM が書くための言語設計」に取り組んだ実験的な試みとして注目を集めている。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita 月間トレンド上位】「Claude Code／Codex に中〜大規模開発を任せるためのタスク管理」（+333 LGTM）</div>
+      <div class="card-meta"><span class="badge">Qiita / Claude Code / Codex / Task Management / 2026</span><span class="card-source">Source: <a href="https://qiita.com/Qiita/items/616e8f6d4f69bd582ab5">Qiita 月間トレンド</a></span></div>
+      <div class="card-body">
+        <p>Claude Code や Codex を用いた中〜大規模プロジェクト開発において、エージェントに任せるタスクの粒度・依存関係・進捗管理をどう設計するかを解説した記事が月間上位に位置している。実務投入を検討しているエンジニアからの支持が高い。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">【Qiita 月間トレンド上位】「Web API 設計の現在地 2026」（+326 LGTM）</div>
+      <div class="card-meta"><span class="badge">Qiita / Web API / REST / GraphQL / 2026</span><span class="card-source">Source: <a href="https://qiita.com/Qiita/items/616e8f6d4f69bd582ab5">Qiita 月間トレンド</a></span></div>
+      <div class="card-body">
+        <p>REST・GraphQL・gRPC・OpenAPI 3.2 の現在地と採用判断の指針をまとめた記事。AI エージェント時代における API 設計のベストプラクティスとして、バックエンドエンジニアを中心に広く読まれている。</p>
       </div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年10月31日（土）</p>
-  <p style="margin-top:0.5rem;">Sources: Tom's Hardware · Game Developer · Tweaktown · The Hacker News · The New Stack · Cyber Security News · Dark Reading · Releasebot · AI Agents Directory · The Moscow Times · Geopolitical Futures · Bloomberg · Euronews · Google News</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-30/index.html">前版（2026-10-30）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月1日（日）</p>
+  <p style="margin-top:0.5rem;">Sources: Bloomberg · Digital Trends · DEV Community · Investing.com · International Business Times · 1023 Jack · Artificially Intimidating · Al Jazeera · CBS News · CNBC · Euronews · Zenn AI記事まとめ · Qiita 月間トレンド</p>
+  <p style="margin-top:0.3rem;"><a href="2026-10-31/index.html">前版（2026-10-31）</a></p>
 </footer>
 </body>
 </html>
