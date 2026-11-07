@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月6日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月7日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code の PM が Anthropic → OpenAI へ移籍 / OpenAI、Pierre 社買収でCodex 拡張へ / Claude Code 2.1.317 Agent SDK フック強化 / Codex CLI 0.167 エージェントコマンドセンター追加 / トルコ・パキスタン・サウジ防衛協定発効 / 仏全土で大規模抗議400名超逮捕 / イラン、米偵察ドローン撃墜を主張</p>
-  <p class="date">2026年11月6日（金）&nbsp;|&nbsp;<a href="2026-10-31/index.html">前版（10/31）</a></p>
+  <p class="subtitle">Claude Code「承認記憶」機能で2,539件の秘密情報が1,994リポジトリに流出 / メールアドレスUser-Agent漏洩バグも浮上 / Cursor拡張にSSHバックドア（5,000台被害） / OpenAI Pierre買収・規制審査中 / Codex + 半導体設計でNVIDIA 10倍速達成 / ロシア・ウクライナ停戦交渉開始へ / パラグアイ大統領辞任</p>
+  <p class="date">2026年11月7日（土）&nbsp;|&nbsp;<a href="2026-11-06/index.html">前版（11/6）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -68,49 +68,48 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/6）のハイライト:</strong> Claude Code の PM リーダーである Cat Wu 氏が Anthropic を離れ OpenAI のコア製品 PM に転職——10/30 が最終出勤日で後任未発表。Claude Code 2.1.317 ではエージェント SDK フック強化（失敗したコールバックでアクションをブロック可能）・ゲートウェイ制御・プール予算・書き込み保護が追加。Anthropic が2026年11月内の IPO を検討中とされ、Claude Code の年換算収益が25億ドル超に達していると Anthropic の Series G 文書で明示されている。バックグラウンドエージェントの進行状況更新がコスト削減目的で変更された。
+      <strong>本日（11/7）のハイライト:</strong> セキュリティ研究者 Apiiro が、Claude Code の「Yes, and don't ask again」承認でシェルコマンドに含まれたパスワード・API キーが <code>.claude/settings.local.json</code> に永続保存され、1,994 件の公開リポジトリから 2,539 件の秘密情報が流出していると報告。同時期に Claude Code がウェブリクエストの User-Agent ヘッダーにユーザーのメールアドレスを埋め込んでいたバグも表面化（Anthropic は11/2 に確認プロンプト追加で対応）。さらに Cursor マーケットプレイスに偽の Claude Code 拡張が混入し、SSH バックドアが約 5,000 台の開発者マシンに設置されたことも判明。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code の PM リーダー Cat Wu 氏が Anthropic を退社——OpenAI へ移籍しコアプロダクト PM に就任</div>
-      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Leadership / OpenAI / Nov 6 2026</span><span class="card-source">Source: <a href="https://dev.to/shakeelahmed/openai-just-hired-the-woman-who-built-claude-code-the-coding-war-just-got-personal-5dn2">DEV Community</a> / <a href="https://explainx.ai/catch-up-on-ai/2026-11-04">ExplainX AI — Nov 4, 2026</a></span></div>
+      <div class="card-title">Claude Code「承認記憶」機能が2,539件の秘密情報を1,994リポジトリに露出——Apiiroが大規模調査で発覚</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / GitHub / Credentials / Nov 2026</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">The Hacker News</a> / <a href="https://gbhackers.com/claude-codes-dont-ask-again-feature-exposed/">GBHackers</a> / <a href="https://www.startupdefense.io/mitre-atlas-case-studies/aml-cs0067-claude-code-github-action-secret-exposure">StartupDefense / MITRE ATLAS</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code のプロダクトマネジメントを率いてきた Cat Wu 氏が Anthropic を退社し、OpenAI でコアプロダクト PM として勤務を開始した。最終出勤日は10月30日で、11月4日時点で Anthropic は後任を発表していない。</li>
-          <li>Wu 氏は Claude Code が研究プレビューから正式 GA（一般提供）に成長する過程を主導した人物で、開発者コミュニティからは「Claude Code の顔」として認識されていた。OpenAI 側への移籍は「AI コーディングツール市場の競争が人材獲得にまで達した」という象徴的な出来事として注目されている。</li>
-          <li>Business Insider および ExplainX AI の報道では、この人事異動が Anthropic にとって製品戦略上の痛手となり得ると分析しており、後継リーダーシップの人選が今後の Claude Code のロードマップに影響すると指摘している。</li>
+          <li>セキュリティ企業 Apiiro の研究者は、Claude Code の「Yes, and don't ask again（はい、今後は聞かない）」機能がシェルコマンドを <code>.claude/settings.local.json</code> に記録する際、コマンド引数に含まれたパスワード・API キー・接続文字列がそのまま保存される問題を発見した。</li>
+          <li>調査の結果、GitHub 上の公開リポジトリ 1,994 件から合計 2,539 件の秘密情報が露出していることが確認された。多くのプロジェクトで同ファイルが <code>.gitignore</code> に含まれていないことが原因とされる。</li>
+          <li>対策として Anthropic はユーザーに対し、同ファイルを <code>.gitignore</code> に追加すること・露出した認証情報のローテーションを即時実施することを推奨している。リポジトリ管理者は <code>git log -- .claude/settings.local.json</code> でコミット履歴を確認のうえ、必要に応じて BFG Repo Cleaner で削除することが推奨される。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 2.1.317 / 2.1.318 リリース——Agent SDK フック改善・ゲートウェイ制御・プール予算を追加</div>
-      <div class="card-meta"><span class="badge">Claude Code / Release / Agent SDK / Nov 2026</span><span class="card-source">Source: <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually Changelog</a> / <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> / <a href="https://claude-world.com/articles/claude-code-november-2026-whats-new">ClaudeWorld</a></span></div>
+      <div class="card-title">Claude Code がウェブリクエストの User-Agent にメールアドレスを埋め込む——スパム被害報告を受け Anthropic が緊急対応</div>
+      <div class="card-meta"><span class="badge">Claude Code / Privacy / User-Agent / Bug / Nov 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/claude-code-leaks-user-email">CybersecurityNews</a> / <a href="https://x.com/IntCyberDigest/status/2118696401634840918">International Cyber Digest (X)</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code 2.1.317（11月3日付）では、Agent SDK の新しいフックオプションにより「失敗したコールバックがアクションをブロックする」設定が可能になった。これにより、エラー時にエージェントが意図しない操作を続行することを防げる。</li>
-          <li>直近の 2.1.314〜2.1.316 では、ゲートウェイ制御（gateway controls）・プール予算（pooled budgets）・強化された書き込み保護（write protections）が追加されている。</li>
-          <li>ClaudeWorld のまとめによると、2.1.308〜2.1.318 の系列全体でサンドボックスおよびパーミッションの堅牢化が継続的に行われており、最新版 2.1.318 へのアップデートを推奨している。バックグラウンドエージェントの進行状況更新もコスト削減目的で変更された（The Neuron、11月5日）。</li>
+          <li>バグレポートにより、Claude Code がウェブリクエストを送信する際に HTTP User-Agent ヘッダーへユーザーのメールアドレスを含めていたことが判明した。開発者から「1日数十件のスパムメールが届くようになった」との報告が相次ぎ、「スパマーへの金鉱」と表現されている。</li>
+          <li>Anthropic は2026年11月2日にパッチを適用し、外部リクエスト前に確認プロンプトを表示する仕組みに変更した。ただし最新ビルドでも一部ユーザーが問題の再現を報告しており、完全な修正を確認するにはさらなる検証が必要とされている。</li>
+          <li>この問題はメール収集型スパムキャンペーンに悪用される可能性が指摘されており、ツールが外部通信を行う際のプライバシー設計の重要性が改めて問われている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic、2026年11月内の IPO を検討——Claude Code 年換算収益が25億ドル超・Series H で9650億ドル評価</div>
-      <div class="card-meta"><span class="badge">Anthropic / IPO / Revenue / Claude Code / 2026</span><span class="card-source">Source: <a href="https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation">Anthropic Series G 発表</a> / <a href="https://releasebot.io/updates/anthropic">Releasebot — Anthropic Updates</a></span></div>
+      <div class="card-title">Cursor マーケットプレイスに偽 Claude Code 拡張——SSH バックドアが約5,000台の開発者マシンに設置</div>
+      <div class="card-meta"><span class="badge">Claude Code / Cursor / Supply Chain / Backdoor / Security / Nov 2026</span><span class="card-source">Source: <a href="https://aitoolsobserver.com/hub/researchers-find-43-vulnerable-ai-agent-tools-as-claude-code-extension-backdoor-hits-5000-users/">AI Tools Observer</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は2026年5月に Series H で3兆円超の9,650億ドル評価を達成しており、今月（2026年11月）中の IPO を検討しているとされる（Wilson Sonsini を起用して準備中）。ただし Anthropic 広報は「IPO の時期や実施を決定したわけではない」と慎重な姿勢を維持している。</li>
-          <li>Series G 発表（2026年初頭）では、Claude Code の年換算収益（run-rate revenue）が25億ドル超に達し、エンタープライズ用途が全 Claude Code 収益の50%超を占めると明示されている。</li>
-          <li>IPO 実現の場合は OpenAI の公開計画との「IPO 競争」となり、AI 大手2社の資本市場への同時登場という異例の展開が市場で注目されている。</li>
+          <li>セキュリティ研究機関 Phorion が、Cursor の拡張機能マーケットプレイスに混入した改ざん版 Claude Code 拡張を発見した。この拡張はインストール後に SSH バックドアをシステムに設置するもので、推定約 5,000 台の開発者マシンが影響を受けた。</li>
+          <li>同一調査内で、43 件の AI エージェントツールにも脆弱性が確認されており、AI ツールのサプライチェーン全体にわたるセキュリティリスクが浮き彫りになっている。研究者は「拡張機能は必ず公式リポジトリ・発行者を確認してからインストールするべき」と警告している。</li>
+          <li>Cursor 社はマーケットプレイスのレビューポリシーの見直しを表明しており、Anthropic も正規の Claude Code 拡張の識別方法に関する公式ガイドを近日公開すると伝えられている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI 注目スレッド——Claude Code が自動継続（usage limit reset 後）に対応・ローカルモデル連携が話題</div>
-      <div class="card-meta"><span class="badge">Claude Code / Reddit / Auto-continue / Ollama / Nov 2026</span><span class="card-source">Source: <a href="https://www.reddtrends.com/r/claudeai">ReddTrends — r/ClaudeAI</a> / <a href="https://habr.com/en/articles/988538">Habr — Ollama連携</a></span></div>
+      <div class="card-title">TradingAgents リポジトリが急拡散——Claude Code に AI アナリストチームを追加、リアルマネー取引も実行可能に</div>
+      <div class="card-meta"><span class="badge">Claude Code / TradingAgents / Open Source / Finance / Nov 2026</span><span class="card-source">Source: <a href="https://phemex.com/news/article/viral-tradingagents-repo-brings-full-ai-analyst-team-and-live-trade-execution-to-claude-code-102245">Phemex News</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/ClaudeAI の最近の人気投稿では、Claude Code が使用量制限リセット後に自動で作業を再開する「auto-continue」機能が追加されたことが話題を集めた（高評価多数）。長時間タスクの中断が減り、実用性が大幅に向上したとする声が多い。</li>
-          <li>Habr が公開したチュートリアルでは、Claude Code を Ollama 経由のローカルモデルに接続する方法を解説しており、Ollama v0.14.0 以上が必要とされる。クラウドモデルへのコスト懸念を持つユーザーの関心を集めている。</li>
-          <li>また、Claude Code が出力に透かし（ウォーターマーク）を追加するという報告を巡る議論スレッドも高評価を集めており、「Anthropic が生成コンテンツを追跡しようとしているのか」という憶測が飛び交っている。</li>
+          <li>オープンソースの TradingAgents リポジトリが開発者コミュニティで急拡散している。Claude Code に複数の AI アナリストエージェント（テクニカル分析・ファンダメンタルズ・リスク管理など）を追加し、ライブ取引執行まで自動化できる構成が特徴だ。</li>
+          <li>r/ClaudeAI では「実際の証券口座で動かしてみた」投稿が話題を集めており（先日の 2,233 upvotes スレッドと連動）、「AI が自律的に金融判断を下すリスク」についての議論も活発化している。金融当局の規制が追いついていない実験的領域として注目されている。</li>
         </ul>
       </div>
     </div>
@@ -122,36 +121,36 @@
       <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（11/6）:</strong> OpenAI が Pierre Computer 社の買収を発表（11月4日）——Code Storage ツールを Codex に統合して GitHub に対抗へ。Codex CLI 0.167.0（11月6日）でエージェントコマンドセンター追加。OpenAI が内部の Git バックエンド「Pando」を公開（11月2日）——エージェント並列開発の基盤として構築。
+      <strong>競合ハイライト（11/7）:</strong> OpenAI の Pierre Computer 買収は規制審査中で、両社は審査完了まで独立運営。OpenAI と Codex が半導体設計・ハードウェア開発支援に本格参入し、NVIDIA との連携で ML ワークフロー 10 倍高速化を達成。Gartner がエンタープライズ AI コーディングエージェント部門で OpenAI を「リーダー」に認定。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、Pierre Computer 社の買収を発表——Code Storage を Codex に統合し GitHub と真っ向勝負へ</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Pierre / Acquisition / Nov 4 2026</span><span class="card-source">Source: <a href="https://devops.com/openai-acquires-pierre-computer-to-expand-codex-challenge-github">DevOps.com</a> / <a href="https://www.hpcwire.com/aiwire/2026/11/06/openai-plans-to-buy-pierre-maker-of-code-review-tools-used-in-codex/">HPC Wire AIwire</a> / <a href="https://kingy.ai/news/openai-pierre-computer-acquisition/">Kingy AI</a></span></div>
+      <div class="card-title">OpenAI × Pierre 買収——規制審査フェーズに移行、Code Storage の Codex 統合は承認後</div>
+      <div class="card-meta"><span class="badge">OpenAI / Pierre / Codex / Acquisition / Nov 2026</span><span class="card-source">Source: <a href="https://shashi.co/2026/11/openai-buys-pierre-to-give-codex-place.html">Shashi.co</a> / <a href="https://help.apiyi.com/en/openai-acquires-pierre-codex-all-tiers-coding-agent-infrastructure-en.html">Apiyi Blog</a> / <a href="https://devops.com/openai-acquires-pierre-computer-to-expand-codex-challenge-github">DevOps.com</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は11月4日、コードレビューツールメーカーの Pierre Computer 社（Code Storage・Trees・Diffs などのツールを開発）の買収計画を発表した。Trees・Diffs は Codex 内で既に使用されており、買収完了後は Code Storage も Codex に統合される予定。</li>
-          <li>この買収は GitHub のコードホスティング・レビュー分野に直接競合する動きとして解釈されており、AI エージェント時代の「開発ライフサイクル全体をクラウドで完結」という方向性を示している。Pierre の3つのオープンソースツールも継続提供される見通し。</li>
-          <li>Cat Wu 氏の OpenAI 移籍と合わせると、OpenAI が Claude Code との競合を強力に意識した布陣強化を進めていることが読み取れる。</li>
+          <li>OpenAI と Pierre Computer 社は買収合意の詳細を公表しており、現在は規制当局の審査フェーズにある。両社は承認が下りるまで独立して運営を継続する方針で、買収金額は非公開のまま。</li>
+          <li>Pierre が開発する Code Storage・Trees・Diffs は Codex 内で既に活用されており、買収完了後は Code Storage が Codex に正式統合される予定。3 つのオープンソースツールは継続提供される。これにより OpenAI は GitHub が担う「コードの保存・レビュー・バージョン管理」の全工程を Codex エコシステム内に取り込む戦略を明確にしている。</li>
+          <li>Codex は同時に全プラン向けにアクセスを拡大しており、AI コーディングエージェント市場における参入障壁の引き下げを加速させている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Codex CLI 0.167.0 リリース——エージェントコマンドセンターを追加、並列エージェント管理が容易に</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / Release / Nov 6 2026</span><span class="card-source">Source: <a href="https://learn.chatgpt.com/docs/changelog">ChatGPT &amp; Codex Changelog</a></span></div>
+      <div class="card-title">OpenAI Codex、半導体設計・ハードウェア開発に進出——NVIDIA との連携で ML ワークフロー 10 倍高速化を達成</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Hardware / NVIDIA / Nov 3 2026</span><span class="card-source">Source: <a href="https://cryptobriefing.com/openai-chatgpt-codex-hardware-engineering/">CryptoBriefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Codex CLI 0.167.0 が11月6日にリリースされた。目玉機能は「エージェントコマンドセンター」で、<code>codex agents --no-daemon</code> で起動できる。複数のエージェントセッションを一覧表示し、未読の結果をマーキングする機能も追加されている。</li>
-          <li>セッションピッカーでの未読結果表示も改善され、並列エージェントワークフローの管理が大幅に容易になった。ChatGPT デスクトップアプリへの統合（2026年7月）以降も Codex CLI の独立した機能強化は続いており、パワーユーザー向けの需要に応えている。</li>
+          <li>OpenAI は ChatGPT と Codex がハードウェアエンジニアリング領域に本格展開しているケーススタディを公開した（11月3日）。チップ検証作業の大幅削減と、9 ヶ月短縮のテープアウト（量産向け設計確定）事例が含まれている。</li>
+          <li>NVIDIA は Codex with GPT-5.5 を活用することで ML ワークフロー全体のスピードが約 10 倍向上したと報告した。ソフトウェア以外の分野での Codex 活用が加速しており、AI エージェントの適用領域が「コーディング」を超えて拡大している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI、エージェント並列開発向け内製 Git バックエンド「Pando」を公開——Codex 活用急増に対応</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Pando / Git / Engineering / Nov 2 2026</span><span class="card-source">Source: OpenAI Engineering Report — Nov 2, 2026</span></div>
+      <div class="card-title">Gartner Magic Quadrant、エンタープライズ AI コーディングエージェント部門で OpenAI を「リーダー」に認定</div>
+      <div class="card-meta"><span class="badge">OpenAI / Gartner / Enterprise / AI Coding / 2026</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI 公式 — Gartner 2026 認定</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は11月2日、AIエージェントによる並列コーディングタスクの爆発的増加に対応するため内製した Git バックエンド「Pando」に関するエンジニアリングレポートを公開した。従来のインフラでは Codex が多数のタスクを同時実行するスケールに耐えられなくなったことが開発の動機とされる。</li>
-          <li>Pando は Git の基本プロトコルと互換性を保ちながら、エージェントが大量のブランチ・コミットを高頻度で生成するユースケースに特化した最適化を施している。エージェント駆動型開発のインフラ設計事例として開発者コミュニティの注目を集めている。</li>
+          <li>Gartner は 2026 年版 Magic Quadrant「エンタープライズ AI コーディングエージェント」部門で OpenAI（Codex）を「リーダー（Leader）」として認定した。</li>
+          <li>この認定は実行能力（Ability to Execute）とビジョンの完全性（Completeness of Vision）の双方で高い評価を受けた結果とされ、Pierre 買収・Pando（エージェント向け Git バックエンド）公開・Codex 全プラン展開という一連の動きが評価されたとみられる。エンタープライズ市場での Anthropic（Claude Code）との競合がさらに激化する見通しだ。</li>
         </ul>
       </div>
     </div>
@@ -163,33 +162,33 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI 人気投稿——水彩シミュレーター V2 が4,400超の高評価・「Claude Code で株をリアルマネーで取引させてみた」も注目</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://www.reddtrends.com/r/claudeai">ReddTrends — r/ClaudeAI Stats 2026</a></span></div>
+      <div class="card-title">r/ClaudeAI——「Pro プランが 12 プロンプトで枯渇」という使用量制限への不満が最多話題に</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Usage Limits / Pro Plan / Nov 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM — Claude Code Reddit まとめ</a> / <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">AI Tool Discovery</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/ClaudeAI の最近の高評価スレッドでは、Claude Code で構築した水彩画シミュレーター V2 が約4,413 upvotes でトップ。「本物の画家の技法を AI が再現した」として視覚的なインパクトから非エンジニア層にも広まった。</li>
-          <li>「Claude Code に実際の株取引口座を繋げてリアルマネーで自律取引させた」という実験投稿も約2,233 upvotes を獲得。倫理・リスク面での議論とともに「実際にどれだけ稼いだか（または損したか）」への関心が集中した。</li>
-          <li>Claude Code の出力へのウォーターマーク追加を巡る議論スレッドも約1,676 upvotes。「生成コンテンツの追跡」への懸念が根強い一方、「著作権管理のための必要措置」という擁護意見も存在する。</li>
+          <li>r/ClaudeAI および r/ClaudeCode では、月額 $20 の Pro プランが重いプロンプト 12 件程度で上限に達するという不満が最も多い投稿テーマとなっている。上限到達後はセッション途中で他ツールに切り替えざるを得ないケースが多く報告されている。</li>
+          <li>Anthropic は同コミュニティに公式で返答し、一部ユーザーに影響が出ていたパフォーマンスバグの存在を認めた。モデルを意図的に劣化させているという説は否定したが、コミュニティの見方は「信じる派」と「懐疑派」に分かれている。</li>
+          <li>r/ClaudeCode は 4,200 人超の週次アクティブ投稿者を持つとされ、Claude Code の独立したコミュニティとして急成長している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——Claude Code × Ollama ローカル接続チュートリアルが話題・「クラウド不要の AI コーディング」への関心高まる</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Ollama / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://habr.com/en/articles/988538">Habr — Claude Code with Ollama</a></span></div>
+      <div class="card-title">MCP サーバー接続だけで 67,000 トークン消費——「プロンプト前コスト」問題が開発者の間で広まる</div>
+      <div class="card-meta"><span class="badge">Community / MCP / Token / Claude Code / Cost / Nov 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">AI Tool Discovery — Claude Code Reddit</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Habr に掲載された「Claude Code を Ollama 経由でローカルモデルに接続する方法」チュートリアルが r/LocalLLaMA で拡散されている。Ollama v0.14.0 以上が必要で、Claude Code の UI・ワークフローをそのままに、推論部分をローカルモデルに差し替えられる点が評価されている。</li>
-          <li>クラウド API のコストと送信データのプライバシーを懸念する開発者にとって現実的な選択肢として注目されており、「Codex / Claude Code どちらもローカル化できれば AI コーディングの民主化が加速する」というコメントが多数見られる。</li>
+          <li>ある開発者が、4 つの MCP サーバーを接続した状態で Claude Code を起動したところ、最初のプロンプトを入力する前に約 67,000 トークンが消費されていたと報告した。この「プロンプト前コスト」問題が Reddit で拡散し、使用量制限の実質的な削減につながるとして批判が集まっている。</li>
+          <li>Claude Code で MCP サーバーを多数接続するワークフローを組んでいるユーザーにとって、使用量制限との兼ね合いが特に深刻な課題となっており、「本当に必要な MCP サーバーだけを選んで接続する」「セッションごとに不要なサーバーを無効化する」という対策が共有されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning・r/artificial——「Cat Wu の移籍で Claude Code の開発方針はどう変わるか」考察スレが浮上</div>
-      <div class="card-meta"><span class="badge">Community / Reddit / Claude Code / OpenAI / Nov 2026</span><span class="card-source">Source: <a href="https://dev.to/shakeelahmed/openai-just-hired-the-woman-who-built-claude-code-the-coding-war-just-got-personal-5dn2">DEV Community</a> に基づくコミュニティ反応</span></div>
+      <div class="card-title">r/ClaudeAI 技術評価——マルチファイルリファクタリングは「ライバル不在」の最大の強みと評価、セキュリティ懸念で一時利用停止の声も</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Code Quality / Security / Nov 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-ai-reddit">AI Tool Discovery — Claude AI Reddit</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Cat Wu 氏の OpenAI 移籍を受け、r/MachineLearning・r/artificial では「Claude Code の製品方針が変わるのでは」という考察スレが立ち上がっている。「ゲーム禁止ルール・ウォーターマーク・コスト抑制変更と重なり、Anthropic の方向転換が加速するかもしれない」という見方が支持を集めている。</li>
-          <li>「彼女が Codex の製品設計に Claude Code の知見を持ち込む影響」を懸念する Anthropic 寄りのユーザーと、「競争激化は両ツールの改善を促す」と前向きに捉えるユーザーで意見が分かれている。</li>
+          <li>技術的な評価スレッドでは、Claude Code のマルチファイルリファクタリング能力が一貫して最高評価を受けている。インポート・型定義・テストを含む 10 ファイル以上に及ぶ変更を 1 パスで正確に処理した事例が複数報告されており、「この用途ではライバル不在」という意見が主流だ。</li>
+          <li>一方、今週相次いで報道されたセキュリティ問題（settings.local.json の秘密情報露出、メール漏洩バグ、Cursor 拡張バックドア）を受け、「一時的に利用を停止し状況を見守る」という投稿も増加している。コミュニティ全体のセンチメントは「機能は最高だが、セキュリティへの信頼が揺らいでいる」という二律背反の状態にある。</li>
         </ul>
       </div>
     </div>
@@ -198,75 +197,55 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">7 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/6）の主要トピック:</strong> トルコ・パキスタン・サウジアラビアの共同防衛「メッカ協定」をトルコ議会が可決（279対119）/ フランス全土で賃金・生活費を巡る大規模抗議——400名超逮捕・警察官50名以上が負傷 / 欧州で18便に爆破脅迫・緊急着陸や軍機誘導が相次ぐ / イランが米偵察ドローン2機をホルムズ海峡・ケシュム島上空で撃墜と主張 / WHO：イエメンで8月以降1,771名死亡・7,959名負傷 / ロシア：プーチンが JTI のロシア資産を接収・南部でドローン攻撃による倉庫火災 / 米中間選挙後の政局：トランプが弾劾の脅威を一蹴
+      <strong>本日（11/7）の主要トピック:</strong> ロシア・ウクライナ停戦交渉が米国仲介で始動へ——ドローン・ミサイル攻撃で9名負傷と同時進行 / パラグアイのサンティアゴ・ペーニャ大統領がウエノ銀行スキャンダルを受けて辞任表明 / ニュージーランド総選挙が接戦——結果確定には数日を要する見通し / ブルガリアが NATO に対空ドローン迎撃システムと哨戒機の供与を要請 / 中東：エジプト軍の作戦をサウジ防衛支援として位置づける動きが継続、湾岸の地政学的リスクが原油価格を押し上げ
     </div>
     <div class="card">
-      <div class="card-title">トルコ議会、メッカ共同防衛協定を批准——トルコ・パキスタン・サウジアラビアの安保枠組みが発効へ</div>
-      <div class="card-meta"><span class="badge">Turkey / Pakistan / Saudi Arabia / Defense / Nov 6 2026</span><span class="card-source">Source: <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-6-2026/4113576">Anadolu Agency Morning Briefing — Nov 6, 2026</a></span></div>
+      <div class="card-title">ロシア・ウクライナ停戦協議が始動——米国仲介、ドローン・ミサイル攻撃9名負傷と同時並行</div>
+      <div class="card-meta"><span class="badge">Russia / Ukraine / Ceasefire / US / Nov 2026</span><span class="card-source">Source: Google News スナップショット（Euronews / AP ベース）— Nov 7, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>トルコ国民議会は11月6日、トルコ・パキスタン・サウジアラビア3カ国間のメッカ共同防衛協定（Mecca Agreement on Joint Defense）の批准法案を賛成279・反対119で可決した。これにより3カ国の安保協力枠組みが正式に発効する。</li>
-          <li>この協定は中東・南アジアにまたがる新たな地域安全保障ブロックの形成として注目されており、NATO との関係やイランへの牽制として機能するかどうかが地政学的な焦点となっている。欧米諸国は協定内容の透明性を慎重に注視している。</li>
+          <li>米国の仲介のもとでロシア・ウクライナ間の停戦協議が開始に向けた動きが報告されている。ウクライナ側は和平交渉の準備を進める一方、現地では依然としてドローン・ミサイル攻撃が続いており、直近の攻撃で9名が負傷した。</li>
+          <li>交渉が本格化するかは双方の条件の隔たりが大きく、外交専門家は「停戦ラインの設定に関する立場の相違が最大の障壁」と指摘している。欧州各国は米国主導の交渉アプローチを支持しつつも、ウクライナの主権保証を前提条件として譲らない姿勢を維持している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">フランス全土で大規模抗議——賃金・生活費高騰に怒る市民が街頭に、400名超逮捕・警察官50名以上負傷</div>
-      <div class="card-meta"><span class="badge">France / Protest / Cost of Living / Nov 6 2026</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/11/06/latest-news-bulletin-november-6th-2026-midday">Euronews — Nov 6, 2026</a> / <a href="https://newsy-today.com/top-news-stories-and-press-review-for-november-6-2026">Newsy Today — Nov 6, 2026</a></span></div>
+      <div class="card-title">パラグアイのサンティアゴ・ペーニャ大統領がウエノ銀行スキャンダルを受けて辞任表明</div>
+      <div class="card-meta"><span class="badge">Paraguay / Politics / Scandal / Nov 2026</span><span class="card-source">Source: Google News スナップショット — Nov 7, 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>フランス全土で賃金水準と生活費の高騰に抗議する大規模デモが発生し、数十万人が街頭に出た。当局は400名超を逮捕し、警察官50名以上が負傷した。</li>
-          <li>エネルギー価格の高止まりと実質賃金の低下が主な不満として挙げられており、マクロン政権への圧力が一段と高まっている。欧州全体でのインフレと生活苦を背景に、類似した抗議活動が他の EU 諸国にも波及するとの懸念もある。</li>
+          <li>パラグアイのサンティアゴ・ペーニャ大統領がウエノ銀行を巡るスキャンダルを受けて辞任を表明した。ウエノ銀行は日系系銀行として知られ、不正資金の流入疑惑や規制当局との癒着が報じられていた。</li>
+          <li>ペーニャ氏は2023年に就任して以来、農業輸出の拡大や対中外交の見直しを進めてきたが、このスキャンダルが政権の致命的打撃となった。後任人事や国内政治の安定化に向けた議会の動向が今後の焦点となる。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">欧州18便に爆破脅迫——緊急着陸・航路変更・戦闘機護送が相次ぐ</div>
-      <div class="card-meta"><span class="badge">Europe / Aviation / Bomb Threat / Security / Nov 6 2026</span><span class="card-source">Source: Euronews / Newsy Today — Nov 6, 2026</span></div>
+      <div class="card-title">ニュージーランド総選挙——接戦で即日開票確定に至らず、連立協議が焦点に</div>
+      <div class="card-meta"><span class="badge">New Zealand / Election / Nov 2026</span><span class="card-source">Source: Google News スナップショット — Nov 7, 2026</span></div>
+      <div class="card-body">
+        <p>ニュージーランドで総選挙が実施されたが、主要政党間の差が僅少で即日の確定結果には至っていない。選挙管理委員会は数日以内に最終集計を公表する見通し。与野党ともに過半数には届かない状況が予想されており、連立交渉が政権の行方を左右する見込みだ。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ブルガリア、NATO に対空ドローン迎撃システムと哨戒機の供与を要請——東欧の防衛強化が加速</div>
+      <div class="card-meta"><span class="badge">Bulgaria / NATO / Defense / Drones / Nov 2026</span><span class="card-source">Source: Geopolitics News スナップショット — Nov 2026</span></div>
       <div class="card-body">
         <ul>
-          <li>11月6日、欧州各地の航空便少なくとも18便に対して爆破脅迫が相次ぎ、複数の便が緊急着陸・航路変更を余儀なくされ、一部は軍用機の護衛を受けて着陸した。</li>
-          <li>各国の治安当局が連携して調査を進めており、組織的な脅迫行為の可能性も排除されていない。欧州航空当局は国際路線のセキュリティプロトコルの見直しを急いでいる。</li>
+          <li>ブルガリアは NATO に対し、対ドローン迎撃システムおよび哨戒航空機の提供を要請した。ロシア・ウクライナ紛争の長期化に伴い黒海沿岸の安全保障リスクが高まっており、東欧 NATO 加盟国の防衛支出強化・装備近代化の動きが続いている。</li>
+          <li>この要請は NATO の東側フランク強化計画の一環と位置づけられており、NATO 閣僚会議での議論に上がる見通しだ。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イラン、ホルムズ海峡・ケシュム島上空で米偵察ドローン2機を撃墜と主張——米側は確認せず</div>
-      <div class="card-meta"><span class="badge">Iran / Hormuz / Drones / US / IRGC / Nov 6 2026</span><span class="card-source">Source: <a href="https://newsy-today.com/top-news-stories-and-press-review-for-november-6-2026">Newsy Today</a> / Euronews — Nov 6, 2026</span></div>
+      <div class="card-title">中東・湾岸情勢——エジプト軍の作戦をサウジ防衛支援として位置づけ、地政学的リスクが原油価格に上昇圧力</div>
+      <div class="card-meta"><span class="badge">Middle East / Egypt / Saudi Arabia / Yemen / Oil / Nov 2026</span><span class="card-source">Source: <a href="https://www.newsnow.co.uk/h/World+News/Geopolitics">NewsNow — Geopolitics</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イラン革命防衛隊（IRGC）はイラン国営通信社 IRNA を通じ、ホルムズ海峡のケシュム島上空で米国の MQM-170 偵察ドローン2機を撃墜したと発表した。米国側はこの主張を公式には確認していない。</li>
-          <li>この事案はメッカ防衛協定の批准や欧州での爆破脅迫と同日に発生しており、中東の緊張が複合的に高まる局面となっている。ホルムズ海峡の航行安全と原油輸送への影響が引き続き注目される。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">WHO：イエメンで8月以降1,771名死亡・7,959名負傷——戦闘激化が人道危機を深刻化</div>
-      <div class="card-meta"><span class="badge">Yemen / WHO / Humanitarian / Nov 6 2026</span><span class="card-source">Source: Anadolu Agency / Euronews — Nov 6, 2026</span></div>
-      <div class="card-body">
-        <p>世界保健機関（WHO）は2026年8月以降のイエメンの戦闘激化により、少なくとも1,771名が死亡・7,959名が負傷したと発表した。医療インフラへの攻撃も報告されており、国際社会に対し人道支援の緊急拡大を訴えている。</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">ロシア：プーチンが JTI のロシア資産を接収——南部ではドローン攻撃で倉庫が炎上</div>
-      <div class="card-meta"><span class="badge">Russia / JTI / Asset Seizure / Drone / Nov 6 2026</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/11/06/latest-news-bulletin-november-6th-2026-morning">Euronews Morning — Nov 6, 2026</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li>ロシアのプーチン大統領が、日本たばこ産業（JTI）のロシア法人の資産を接収する大統領令に署名した。欧米企業のロシア資産接収の流れが続いており、外資撤退交渉の条件を巡る法的紛争が今後も続く見通し。</li>
-          <li>また、ロシア南部ではドローン攻撃によって倉庫が炎上した。ウクライナ側は同攻撃の関与について公式コメントしていない。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">米国：中間選挙後の政局——トランプが弾劾の脅威を一蹴、イベロアメリカ首脳会議ではゼレンスキーがラテン米に協力呼びかけ</div>
-      <div class="card-meta"><span class="badge">US Politics / Midterms / Trump / Ibero-American Summit / Nov 6 2026</span><span class="card-source">Source: Euronews / Newsy Today — Nov 6, 2026</span></div>
-      <div class="card-body">
-        <ul>
-          <li>Euronews は米中間選挙の結果を受けた政局を報道し、トランプ大統領が弾劾の脅威を「政治的茶番」として一蹴したと伝えた。中間選挙の確定結果は議会勢力図を塗り替えており、今後の政策運営への影響が焦点となっている。</li>
-          <li>同日開催されたイベロアメリカ首脳会議では、ゼレンスキー大統領がラテンアメリカ諸国に対しウクライナの電力網修復への支援を要請した。ミレイ（アルゼンチン）とサンチェス（スペイン）首脳の冷ややかな会談も注目された。米国はキューバに対し、8機関・2個人・石油タンカー5隻を対象とした制裁を発動した。</li>
+          <li>エジプトが実施している軍事作戦は、イエメン方向からのサウジアラビアへの脅威に対する防衛支援として位置づけられており、イエメン攻撃ではないという説明が維持されている。この構図は昨日批准されたメッカ共同防衛協定（トルコ・パキスタン・サウジ）とも連動して地域安保の複合的な動きを形成している。</li>
+          <li>湾岸の地政学的緊張の高まりを受けてブレント原油が地政学的プレミアムを上乗せしており、中東産油国の安定が国際エネルギー市場の焦点となっている。</li>
         </ul>
       </div>
     </div>
@@ -274,9 +253,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月6日（金）</p>
-  <p style="margin-top:0.5rem;">Sources: DEV Community · ExplainX AI · Gradually · Releasebot · ClaudeWorld · The Neuron · DevOps.com · HPC Wire AIwire · Kingy AI · Habr · ReddTrends · Anadolu Agency · Euronews · Newsy Today · WHO</p>
-  <p style="margin-top:0.3rem;"><a href="2026-10-31/index.html">前版（2026-10-31）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月7日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: The Hacker News · GBHackers · CybersecurityNews · AI Tools Observer · Phemex · Apiyi Blog · CryptoBriefing · OpenAI · MorphLLM · AI Tool Discovery · Euronews · AP · NewsNow</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-06/index.html">前版（2026-11-06）</a></p>
 </footer>
 </body>
 </html>
