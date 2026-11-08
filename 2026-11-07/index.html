@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月7日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code「承認記憶」機能で2,539件の秘密情報が1,994リポジトリに流出 / メールアドレスUser-Agent漏洩バグも浮上 / Cursor拡張にSSHバックドア（5,000台被害） / OpenAI Pierre買収・規制審査中 / Codex + 半導体設計でNVIDIA 10倍速達成 / ロシア・ウクライナ停戦交渉開始へ / パラグアイ大統領辞任</p>
+  <p class="date">2026年11月7日（土）&nbsp;|&nbsp;<a href="../2026-11-06/index.html">前版（11/6）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">4 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（11/7）のハイライト:</strong> セキュリティ研究者 Apiiro が、Claude Code の「Yes, and don't ask again」承認でシェルコマンドに含まれたパスワード・API キーが <code>.claude/settings.local.json</code> に永続保存され、1,994 件の公開リポジトリから 2,539 件の秘密情報が流出していると報告。同時期に Claude Code がウェブリクエストの User-Agent ヘッダーにユーザーのメールアドレスを埋め込んでいたバグも表面化（Anthropic は11/2 に確認プロンプト追加で対応）。さらに Cursor マーケットプレイスに偽の Claude Code 拡張が混入し、SSH バックドアが約 5,000 台の開発者マシンに設置されたことも判明。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code「承認記憶」機能が2,539件の秘密情報を1,994リポジトリに露出——Apiiroが大規模調査で発覚</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / GitHub / Credentials / Nov 2026</span><span class="card-source">Source: <a href="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">The Hacker News</a> / <a href="https://gbhackers.com/claude-codes-dont-ask-again-feature-exposed/">GBHackers</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>セキュリティ企業 Apiiro の研究者は、Claude Code の「Yes, and don't ask again（はい、今後は聞かない）」機能がシェルコマンドを <code>.claude/settings.local.json</code> に記録する際、コマンド引数に含まれたパスワード・API キー・接続文字列がそのまま保存される問題を発見した。</li>
+          <li>調査の結果、GitHub 上の公開リポジトリ 1,994 件から合計 2,539 件の秘密情報が露出していることが確認された。多くのプロジェクトで同ファイルが <code>.gitignore</code> に含まれていないことが原因とされる。</li>
+          <li>対策として Anthropic はユーザーに対し、同ファイルを <code>.gitignore</code> に追加すること・露出した認証情報のローテーションを即時実施することを推奨している。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code がウェブリクエストの User-Agent にメールアドレスを埋め込む——スパム被害報告を受け Anthropic が緊急対応</div>
+      <div class="card-meta"><span class="badge">Claude Code / Privacy / User-Agent / Bug / Nov 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/claude-code-leaks-user-email">CybersecurityNews</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>バグレポートにより、Claude Code がウェブリクエストを送信する際に HTTP User-Agent ヘッダーへユーザーのメールアドレスを含めていたことが判明した。開発者から「1日数十件のスパムメールが届くようになった」との報告が相次いだ。</li>
+          <li>Anthropic は2026年11月2日にパッチを適用し、外部リクエスト前に確認プロンプトを表示する仕組みに変更した。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cursor マーケットプレイスに偽 Claude Code 拡張——SSH バックドアが約5,000台の開発者マシンに設置</div>
+      <div class="card-meta"><span class="badge">Claude Code / Cursor / Supply Chain / Backdoor / Security / Nov 2026</span><span class="card-source">Source: <a href="https://aitoolsobserver.com/hub/researchers-find-43-vulnerable-ai-agent-tools-as-claude-code-extension-backdoor-hits-5000-users/">AI Tools Observer</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>セキュリティ研究機関 Phorion が、Cursor の拡張機能マーケットプレイスに混入した改ざん版 Claude Code 拡張を発見した。推定約 5,000 台の開発者マシンが影響を受けた。</li>
+          <li>同一調査内で、43 件の AI エージェントツールにも脆弱性が確認されており、AI ツールのサプライチェーン全体にわたるセキュリティリスクが浮き彫りになっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">TradingAgents リポジトリが急拡散——Claude Code に AI アナリストチームを追加、リアルマネー取引も実行可能に</div>
+      <div class="card-meta"><span class="badge">Claude Code / TradingAgents / Open Source / Finance / Nov 2026</span><span class="card-source">Source: <a href="https://phemex.com/news/article/viral-tradingagents-repo-brings-full-ai-analyst-team-and-live-trade-execution-to-claude-code-102245">Phemex News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>オープンソースの TradingAgents リポジトリが開発者コミュニティで急拡散している。Claude Code に複数の AI アナリストエージェントを追加し、ライブ取引執行まで自動化できる構成が特徴だ。</li>
+          <li>r/ClaudeAI では「実際の証券口座で動かしてみた」投稿が話題を集めており、「AI が自律的に金融判断を下すリスク」についての議論も活発化している。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI × Pierre 買収——規制審査フェーズに移行、Code Storage の Codex 統合は承認後</div>
+      <div class="card-meta"><span class="badge">OpenAI / Pierre / Codex / Acquisition / Nov 2026</span><span class="card-source">Source: <a href="https://devops.com/openai-acquires-pierre-computer-to-expand-codex-challenge-github">DevOps.com</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI と Pierre Computer 社は買収合意の詳細を公表しており、現在は規制当局の審査フェーズにある。両社は承認が下りるまで独立して運営を継続する方針。</li>
+          <li>Pierre が開発する Code Storage・Trees・Diffs は Codex 内で既に活用されており、買収完了後は Code Storage が Codex に正式統合される予定。これにより OpenAI はコードの保存・レビュー・バージョン管理の全工程を Codex エコシステム内に取り込む戦略を明確にしている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">OpenAI Codex、半導体設計・ハードウェア開発に進出——NVIDIA との連携で ML ワークフロー 10 倍高速化を達成</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Hardware / NVIDIA / Nov 3 2026</span><span class="card-source">Source: <a href="https://cryptobriefing.com/openai-chatgpt-codex-hardware-engineering/">CryptoBriefing</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>OpenAI は ChatGPT と Codex がハードウェアエンジニアリング領域に本格展開しているケーススタディを公開した。NVIDIA は Codex with GPT-5.5 を活用することで ML ワークフロー全体のスピードが約 10 倍向上したと報告した。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Gartner Magic Quadrant、エンタープライズ AI コーディングエージェント部門で OpenAI を「リーダー」に認定</div>
+      <div class="card-meta"><span class="badge">OpenAI / Gartner / Enterprise / AI Coding / 2026</span><span class="card-source">Source: <a href="https://openai.com/index/gartner-2026-agentic-coding-leader/">OpenAI 公式</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Gartner は 2026 年版 Magic Quadrant「エンタープライズ AI コーディングエージェント」部門で OpenAI（Codex）を「リーダー（Leader）」として認定した。Pierre 買収・Codex 全プラン展開という一連の動きが評価されたとみられる。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 今週の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI——「Pro プランが 12 プロンプトで枯渇」という使用量制限への不満が最多話題に</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Usage Limits / Pro Plan / Nov 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>月額 $20 の Pro プランが重いプロンプト 12 件程度で上限に達するという不満が最も多い投稿テーマとなっている。Anthropic は一部ユーザーに影響が出ていたパフォーマンスバグの存在を認めたが、コミュニティの見方は「信じる派」と「懐疑派」に分かれている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">MCP サーバー接続だけで 67,000 トークン消費——「プロンプト前コスト」問題が開発者の間で広まる</div>
+      <div class="card-meta"><span class="badge">Community / MCP / Token / Claude Code / Cost / Nov 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>ある開発者が、4 つの MCP サーバーを接続した状態で起動すると最初のプロンプト前に約 67,000 トークンが消費されると報告。使用量制限の実質的な削減につながるとして批判が集まっている。「本当に必要な MCP サーバーだけを選んで接続する」という対策が共有されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeAI 技術評価——マルチファイルリファクタリングは「ライバル不在」の最大の強みと評価、セキュリティ懸念で一時利用停止の声も</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Code Quality / Security / Nov 2026</span><span class="card-source">Source: <a href="https://www.aitooldiscovery.com/guides/claude-ai-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>技術的な評価スレッドでは、Claude Code のマルチファイルリファクタリング能力が一貫して最高評価を受けている。一方、今週相次いで報道されたセキュリティ問題を受け、「一時的に利用を停止し状況を見守る」という投稿も増加している。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシア・ウクライナ停戦協議が始動——米国仲介、ドローン・ミサイル攻撃9名負傷と同時並行</div>
+      <div class="card-meta"><span class="badge">Russia / Ukraine / Ceasefire / US / Nov 2026</span></div>
+      <div class="card-body"><p>米国の仲介のもとでロシア・ウクライナ間の停戦協議が開始に向けた動きが報告されている。現地では依然としてドローン・ミサイル攻撃が続いており、直近の攻撃で9名が負傷した。欧州各国は米国主導の交渉アプローチを支持しつつも、ウクライナの主権保証を前提条件として譲らない姿勢を維持している。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">パラグアイのサンティアゴ・ペーニャ大統領がウエノ銀行スキャンダルを受けて辞任表明</div>
+      <div class="card-meta"><span class="badge">Paraguay / Politics / Scandal / Nov 2026</span></div>
+      <div class="card-body"><p>パラグアイのサンティアゴ・ペーニャ大統領がウエノ銀行を巡る不正資金疑惑・規制当局との癒着スキャンダルを受けて辞任を表明した。後任人事や国内政治の安定化に向けた議会の動向が今後の焦点となる。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ニュージーランド総選挙——接戦で即日開票確定に至らず、連立協議が焦点に</div>
+      <div class="card-meta"><span class="badge">New Zealand / Election / Nov 2026</span></div>
+      <div class="card-body"><p>ニュージーランドで総選挙が実施されたが、主要政党間の差が僅少で即日の確定結果には至っていない。選挙管理委員会は数日以内に最終集計を公表する見通しで、連立交渉が政権の行方を左右する見込みだ。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">ブルガリア、NATO に対空ドローン迎撃システムと哨戒機の供与を要請——東欧の防衛強化が加速</div>
+      <div class="card-meta"><span class="badge">Bulgaria / NATO / Defense / Drones / Nov 2026</span></div>
+      <div class="card-body"><p>ブルガリアは NATO に対し、対ドローン迎撃システムおよび哨戒航空機の提供を要請した。ロシア・ウクライナ紛争の長期化に伴い黒海沿岸の安全保障リスクが高まっており、東欧 NATO 加盟国の防衛支出強化・装備近代化の動きが続いている。</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title">中東・湾岸情勢——エジプト軍の作戦をサウジ防衛支援として位置づけ、地政学的リスクが原油価格に上昇圧力</div>
+      <div class="card-meta"><span class="badge">Middle East / Egypt / Saudi Arabia / Oil / Nov 2026</span></div>
+      <div class="card-body"><p>エジプトが実施している軍事作戦は、イエメン方向からのサウジアラビアへの脅威に対する防衛支援として位置づけられており、湾岸の地政学的緊張の高まりを受けてブレント原油が地政学的プレミアムを上乗せしている。</p></div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月7日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: The Hacker News · GBHackers · CybersecurityNews · AI Tools Observer · Phemex · CryptoBriefing · OpenAI · MorphLLM · AI Tool Discovery</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-11-06/index.html">前版（2026-11-06）</a></p>
+</footer>
+</body>
+</html>
