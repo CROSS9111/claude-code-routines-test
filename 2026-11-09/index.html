@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月9日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      color: #1f2328;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: #0366d6; text-decoration: none; }
+    a:visited { color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #e5e7eb; padding: 2rem 1.5rem 1.5rem; text-align: center; }
+    header h1 { font-size: 1.65rem; font-weight: 700; color: #1f2328; margin-bottom: 0.3rem; }
+    header h1 span { border-bottom: 3px solid #0366d6; padding-bottom: 2px; }
+    header .subtitle { color: #656d76; font-size: 0.88rem; margin-bottom: 0.5rem; }
+    header .date { font-size: 0.83rem; color: #656d76; }
+    nav { border-bottom: 1px solid #e5e7eb; padding: 0.5rem 1.5rem; display: flex; gap: 0.3rem; flex-wrap: wrap; justify-content: center; }
+    nav a { color: #656d76; font-size: 0.83rem; padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid transparent; }
+    nav a:hover { color: #0366d6; border-color: #e5e7eb; text-decoration: none; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 3rem; }
+    .section-header { display: flex; align-items: baseline; gap: 0.7rem; padding-bottom: 0.6rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e5e7eb; }
+    .section-title { font-size: 1.05rem; font-weight: 700; color: #1f2328; }
+    .section-title::before { content: ''; display: inline-block; width: 4px; height: 1em; background: #0366d6; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
+    .section-count { font-size: 0.78rem; color: #656d76; margin-left: auto; }
+    .alert { border: 1px solid #e5e7eb; border-left: 4px solid #0366d6; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 1.2rem; font-size: 0.88rem; color: #1f2328; line-height: 1.65; }
+    .card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1.1rem 1.3rem; margin-bottom: 0.85rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 0.97rem; font-weight: 600; color: #1f2328; margin-bottom: 0.45rem; line-height: 1.45; }
+    .card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 3px; border: 1px solid #e5e7eb; color: #656d76; background: #ffffff; letter-spacing: 0.03em; text-transform: uppercase; }
+    .card-source { font-size: 0.78rem; color: #656d76; }
+    .card-body { font-size: 0.875rem; color: #1f2328; line-height: 1.7; }
+    .card-body p { margin-bottom: 0.45rem; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body ul { padding-left: 1.3rem; }
+    .card-body ul li { margin-bottom: 0.25rem; }
+    footer { border-top: 1px solid #e5e7eb; padding: 1.4rem 1.5rem; text-align: center; font-size: 0.8rem; color: #656d76; }
+    footer a { color: #656d76; }
+    footer a:visited { color: #656d76; }
+    @media (max-width: 600px) { header h1 { font-size: 1.3rem; } .container { padding: 1.2rem 1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
+  <p class="subtitle">Claude Code GitHub シークレット大規模漏洩（2,539件）/ ChatGPT Desktop が SSH エージェントを Codex 経由で転送か（未確認）/ Cursor・Google が音声エージェント追加、Claude Code は未対応 / COP31 開幕（アンタルヤ、米不在）/ ホルムズ海峡再開交渉 / クラクフ銃撃で国家追悼2日間 / ロシアのミサイル攻撃で85万世帯停電</p>
+  <p class="date">2026年11月9日（月）&nbsp;|&nbsp;<a href="../2026-11-08/index.html">前版（11/8）</a></p>
+</header>
+<nav>
+  <a href="#claude">Claude / AI エージェント</a>
+  <a href="#rivals">競合・AI 動向</a>
+  <a href="#reddit">Reddit / コミュニティ</a>
+  <a href="#world">世界情勢</a>
+</nav>
+<div class="container">
+
+  <section class="section" id="claude">
+    <div class="section-header">
+      <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
+      <span class="section-count">5 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（11/9）のハイライト:</strong> GitHub上で Claude Code が利用する認証情報などのシークレットが 1,994 リポジトリ・2,539 件にわたって漏洩していたことを Apiiro が報告。Claude Code リードの Boris Cherny 氏は「対策を検討中」とコメント。また、Cursor と Google が音声エージェント機能を追加する一方で Claude Code は未対応のまま。AlixPartners の 4 万件の契約書テストでは総額 80 万ドルの誤差が発覚。Accenture 社員が個人の Claude Code エージェントに米国防総省ネットワークへの管理者アクセスを付与した疑惑も浮上。
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code GitHub シークレット大規模漏洩——Apiiro が 1,994 リポジトリで 2,539 件を検出、Anthropic が調査へ</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / GitHub / Secrets / Nov 2026</span><span class="card-source">Source: <a href="https://cybernews.com/security/ai-agents-leaking-secrets-on-github/">CyberNews</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>セキュリティ企業 Apiiro の研究者が、Claude Code が承認済みコマンドを認証情報付きでローカル設定ファイルに保存し、それが GitHub にコミットされてしまうという脆弱性を報告。公開リポジトリから 1,994 件（2,539 シークレット）が検出された。</li>
+          <li>Claude Code の開発リード Boris Cherny 氏は「予防策について検討中（looking into what we can do to prevent this）」とコメントしたが、Anthropic からの公式対応はまだ出ていない。</li>
+          <li>影響を受けた開発者は、自身のリポジトリで <code>.claude/settings.local.json</code> または <code>.clauderc</code> に認証情報が含まれていないか至急確認することが推奨される。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cursor・Google が AI コーディングエージェントへ音声機能追加——Claude Code は音声サポートを未実装のまま</div>
+      <div class="card-meta"><span class="badge">Claude Code / Cursor / Google / Voice / AI Agent / Nov 2026</span><span class="card-source">Source: <a href="https://thenewstack.io/cursor-antigravity-voice-agents">The New Stack</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>The New Stack の報道によると、Cursor と Google（Gemini Code Assist）が双方向音声対話機能をコーディングエージェントに追加した。ユーザーは音声でコード変更を指示したり、エージェントの応答を音声で受け取ったりできるようになっている。</li>
+          <li>一方、Claude Code はディクテーション（一方向の音声入力）のみに留まっており、双方向音声には未対応。開発者からは「ハンズフリーでコードレビューができない」という不満の声が上がっている。</li>
+          <li>音声対応は単なる利便性だけでなく、アクセシビリティ向上の観点からも競争上の差別化要因になりつつあるとされている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">AlixPartners の契約書テスト——Claude Code が 4 万件中に 80 万ドルの総額誤差、精度問題が浮上</div>
+      <div class="card-meta"><span class="badge">Claude Code / Accuracy / Enterprise / AlixPartners / Nov 2026</span><span class="card-source">Source: <a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/claude-code-looked-right-and-missed-800k">StartupHub AI</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>コンサルティング大手 AlixPartners が Claude Code を使って 40,000 件の契約書を処理したところ、個別の数値は正しく見えるものの総契約額が約 80 万ドル（約 1.2 億円）ずれていたことが判明した。</li>
+          <li>個々の数値が正しくても集計・演算段階で誤差が累積するという「正しく見えるが間違っている」問題はエンタープライズ利用において深刻なリスクとなる。同社はプロセス設計の見直しを推奨している。</li>
+          <li>大規模なドキュメント処理・財務集計など数値精度が求められる場面では、AI エージェントの出力を人手で二重チェックする体制が引き続き必須と指摘されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Accenture 社員が個人の Claude Code に米国防総省ネットワークへの管理者権限を付与か——WIRED が疑惑を報道</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / Pentagon / Accenture / Nov 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/accenture-contractor-allegedly-gave-claude-access/">CybersecurityNews</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>WIRED が報じた疑惑によると、Accenture の請負社員が個人用の Claude Code エージェントに対して、米国防総省（DoD）のセキュリティ保護されたネットワーク環境への管理者アクセスを許可したとされる（10月30日報道）。</li>
+          <li>現時点では疑惑の段階であり確認された事実ではないが、AI エージェントへの過剰な権限付与が重大インシデントにつながりうることを示す事例として広く引用されている。</li>
+          <li>政府・防衛系プロジェクトにおける AI エージェントのアクセス制御ポリシーの整備を求める声が高まっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Claude Code v2.1.319 リリース——バックグラウンド MCP タスク・拡張 Auto モード・使用量レポート改善</div>
+      <div class="card-meta"><span class="badge">Claude Code / Release / Nov 9 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Anthropic Claude Code</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Claude Code の最新リリース v2.1.319 が公開された。主な変更点はバックグラウンド MCP タスクの安定性改善、拡張された Auto モード、ゲートウェイコントロールの追加、使用量レポートの精度向上。</li>
+          <li>高頻度リリースによる「アップデート疲れ」の声が続く中での更新となったが、Releasebot の変更履歴では実用的な修正が中心と評価されている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rivals">
+    <div class="section-header">
+      <div class="section-title">競合・AI エージェント動向</div>
+      <span class="section-count">3 記事</span>
+    </div>
+    <div class="alert">
+      <strong>競合ハイライト（11/9）:</strong> HN 投稿が ChatGPT Desktop による SSH エージェント転送疑惑を指摘（未確認）。Codex CLI は GitHub Stars 13.4 万超でオープンソース最大規模の AI エージェント CLI へ成長。Pierre 買収は引き続き規制審査中。
+    </div>
+    <div class="card">
+      <div class="card-title">「ChatGPT Desktop が SSH エージェントを Codex 経由で転送」——HN 投稿が警告、OpenAI は未確認</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / SSH / Security / HN / Nov 2026</span><span class="card-source">Source: <a href="https://aiweekly.co/alerts/hn-post-flags-chatgpt-desktop-forwarding-ssh-agent-to-codex">AI Weekly</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Hacker News のユーザー DenGorbachev が「ChatGPT Desktop がユーザーの SSH エージェントを Codex が接続するリモートホストに転送している可能性がある」と報告し注目を集めた。これが悪用されれば、Codex エージェントがプライベートな GitHub リポジトリへのプッシュを実行できる可能性がある。</li>
+          <li>OpenAI は現時点でコメントを発表していない。証拠とされるのは openai/codex の pull request #28131 へのコメントであり、主張は未検証の段階。ただし SSH エージェント転送は既知のセキュリティリスクであるため、Codex 利用時は SSH エージェント転送設定の確認が推奨される。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex CLI が GitHub Stars 13.4 万超——Apache 2.0 だが外部 PR 受け付けず、モデルとクラウドはクローズドのまま</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / Open Source / Nov 2026</span><span class="card-source">Source: <a href="https://pasqualepillitteri.it/en/news/31598/is-codex-open-source">Blog — Is Codex open source?</a> / <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">Wikipedia</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Codex CLI は Apache 2.0 ライセンスで公開されており、2026年11月9日時点で GitHub Stars が約 134,000 に達し、AI エージェント CLI の中でも最大規模となっている。</li>
+          <li>ただし OpenAI は外部からの pull request を受け付けておらず、モデル自体およびクラウドサービスはクローズドソースのまま。「オープンソースと言えるか」という議論がコミュニティで続いている。</li>
+          <li>2026年3月時点で週間アクティブユーザーは 200 万人超。7月に ChatGPT Desktop アプリと統合され、スタンドアロン Codex アプリは廃止された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Qodo（旧 CodiumAI）が OpenAI × Pierre 買収を分析——コードルールの管理場所はどこが正解か</div>
+      <div class="card-meta"><span class="badge">OpenAI / Pierre / Codex / Code Review / Nov 2026</span><span class="card-source">Source: <a href="https://qodo.ai/blog/openai-pierre-codex-code-review">Qodo Blog</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>Qodo（旧 CodiumAI）が OpenAI と Pierre Computer 社の買収を受けて詳細な分析記事を公開。Pierre の Trees・Diffs・Code Storage が Codex に統合されることで、コードレビュールールの管理場所がエディタ・リポジトリ・クラウドに分散する問題を提起している。</li>
+          <li>「開発者体験（DX）の一貫性を保つには、ルール定義を単一の信頼できる情報源（SSOT）に集約するべき」という提言が開発者コミュニティで共感を呼んでいる。Pierre 買収の規制審査は引き続き継続中。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reddit">
+    <div class="section-header">
+      <div class="section-title">Reddit / コミュニティ ─ 本日の議論</div>
+      <span class="section-count">3 トピック</span>
+    </div>
+    <div class="card">
+      <div class="card-title">r/ClaudeCode——GitHub シークレット漏洩報告を受け「<code>.gitignore</code> に追加すべきファイルは何か」スレッドが急増</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeCode / Security / GitHub / Nov 9 2026</span><span class="card-source">Source: Apiiro 報告および開発者コミュニティの反応（CyberNews 経由）</span></div>
+      <div class="card-body">
+        <ul>
+          <li>Apiiro のシークレット漏洩報告が広まった後、r/ClaudeCode では「何を <code>.gitignore</code> に追加すべきか」「<code>.claude/settings.local.json</code> はデフォルトで gitignore に入るべき」という実践的な議論が活発化した。</li>
+          <li>上位コメントでは「<code>.claude/</code> ディレクトリごと除外する」「シークレットはシステム環境変数で管理して設定ファイルに書かない」という対策が推奨されている。Boris Cherny 氏のコメントを受けて、次のリリースでデフォルト設定が変わるとの予測も出ている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/MachineLearning——「Claude Code をコーディング以外の汎用エージェントとして使う」実例スレッドが人気に</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Claude Code / General Agent / Nov 2026</span><span class="card-source">Source: <a href="https://beyondinnovation.substack.com/p/claude-code-the-complete-guide-to">BeyondInnovation Substack</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>「Claude Code はコーディングツールに偽装した汎用 AI エージェントだ」というブログ記事が r/MachineLearning でシェアされ、高評価を獲得した。ドキュメント解析・データパイプライン・ブラウザ操作など非コーディング用途での活用例が多数コメントされた。</li>
+          <li>一方で「ヘビーユースはコストが跳ね上がる」という注意喚起も複数ついており、使用量の見積もりと予算管理の重要性が改めて指摘されている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">r/programming——「動的サブエージェント構成」の Substack 記事が話題——マルチエージェント品質向上の実装例</div>
+      <div class="card-meta"><span class="badge">Community / r/programming / Claude Code / Sub-Agents / Multi-Agent / Nov 2026</span><span class="card-source">Source: <a href="https://shchegrikovich.substack.com/p/dynamic-sub-agents-in-claude-code">Substack — Dynamic Sub Agents</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>「コード作成・レビュー・セキュリティチェックを別々のサブエージェントに割り当てる動的マルチエージェント構成」の実装例を解説した Substack 記事が r/programming で注目されている。</li>
+          <li>著者によると、単一エージェントモードと比較してマルチエージェントモードでは回答品質が顕著に向上したとのこと。コメント欄では「オーケストレーションのプロンプト設計が最大の難所」という意見が多かった。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="world">
+    <div class="section-header">
+      <div class="section-title">世界情勢 重要ニュース</div>
+      <span class="section-count">6 記事</span>
+    </div>
+    <div class="alert">
+      <strong>本日（11/9）の主要トピック:</strong> COP31 がトルコ・アンタルヤで開幕（11/9〜20）、米国は不参加 / ホルムズ海峡の段階的再開をめぐる米イラン交渉——ルビオ国務長官がイラン側提案を「非現実的」と批判 / 米共和党議員がヘグセス国防長官の弾劾動議を提出 / クラクフ銃撃事件を受けポーランドが2日間の国家追悼、テロ捜査開始 / ロシアのミサイル攻撃で85万世帯が停電——EU がアブダビで和平協議チームを派遣 / ANC が南アフリカ地方選で歴史的惨敗
+    </div>
+    <div class="card">
+      <div class="card-title">COP31 開幕（アンタルヤ）——約200か国参加、米国は不参加、第2排出国の欠席で交渉難航が懸念</div>
+      <div class="card-meta"><span class="badge">Climate / COP31 / Turkey / USA / Nov 9–20 2026</span><span class="card-source">Source: <a href="https://justsecurity.org/163775/early-edition-november-9-2026/">Just Security — Early Edition Nov 9</a> / <a href="https://www.10things.news/p/10-things-global-news-9th-november">10 Things Global News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>国連気候変動枠組条約第31回締約国会議（COP31）が11月9日、トルコ・アンタルヤで開幕した。約200か国が参加する一方、世界第2位の排出国である米国は不参加。</li>
+          <li>先進国の資金拠出目標、途上国の適応支援、化石燃料フェーズアウトの時間軸が主要な争点となる見通し。米国の不在が合意形成に与える影響を懸念する声がすでに上がっている。</li>
+          <li>COP31 は11月20日まで開催予定。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ホルムズ海峡再開交渉——米がイランに段階的開放案を提示、ルビオ長官がイラン側提案を「非現実的」と批判</div>
+      <div class="card-meta"><span class="badge">USA / Iran / Hormuz / Diplomacy / Nov 2026</span><span class="card-source">Source: <a href="https://justsecurity.org/163775/early-edition-november-9-2026/">Just Security</a> / <a href="https://www.timesofisrael.com/liveblog-november-9-2026/">Times of Israel</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>米国がイランに対してホルムズ海峡を段階的に再開放する計画を提示したと報じられた。第一段階として封鎖の部分的解除から始める内容とされているが、ルビオ国務長官はイランの対案を「非現実的（unrealistic）」と批判した。</li>
+          <li>ホルムズ海峡の封鎖継続は世界のエネルギー供給に深刻な影響を与えており、ブレント原油は高止まりが続いている。交渉の行方が原油市場・世界経済の焦点となっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">米共和党議員、ヘグセス国防長官の弾劾動議を提出——イランとの戦争対応を問題視</div>
+      <div class="card-meta"><span class="badge">USA / Hegseth / Impeachment / Iran War / Nov 2026</span><span class="card-source">Source: <a href="https://www.timesofisrael.com/liveblog-november-9-2026/">Times of Israel</a></span></div>
+      <div class="card-body">
+        <p>米共和党議員が11月9日、ピート・ヘグセス国防長官に対する弾劾動議を議会に提出した。イランとの軍事衝突への対応における意思決定プロセスと透明性の欠如が主な批判理由とされている。中間選挙で民主党が上下院の過半数を奪還したことを受け、超党派での弾劾手続きが進む可能性がある。</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ポーランド、クラクフ銃撃事件を受け2日間の国家追悼——テロ捜査を開始、全国の公共スペースで警備強化</div>
+      <div class="card-meta"><span class="badge">Poland / Krakow / Terrorism / National Mourning / Nov 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-9th-november">10 Things Global News</a> / <a href="https://www.euronews.com/video/2026/11/09/latest-news-bulletin-november-9th-2026-evening">Euronews</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>ポーランド政府は11月8日に発生したクラクフ中央広場での銃撃・車両突入事件（死者6名・負傷者15名）を受け、11月9〜10日を国家追悼日と定めた。捜査当局はテロ捜査として取り扱いを開始した。</li>
+          <li>犯人の動機・背景は依然として調査中。全国の観光地・商業エリアで警察の増員配備が実施されており、EU 加盟国にも警戒情報が共有された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ロシアのミサイル攻撃でウクライナ85万世帯が停電——EU が和平協議チームをアブダビに派遣</div>
+      <div class="card-meta"><span class="badge">Russia / Ukraine / Power Grid / Peace Talks / Nov 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-9th-november">10 Things Global News</a> / <a href="https://justsecurity.org/163775/early-edition-november-9-2026/">Just Security</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>ロシアの前夜のミサイル攻撃によりウクライナの電力グリッドが被害を受け、約85万世帯が停電に見舞われた。エネルギーインフラへの集中攻撃は冬季を前にした戦略的圧力とみられている。</li>
+          <li>欧州連合はアブダビで行われるウクライナ・ロシア平和協議に共同チームを派遣することを決定した。停戦協議と軍事攻撃が並行するという矛盾した状況が続いており、交渉の実効性に懐疑的な見方が広がっている。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">ANC が南アフリカ地方選で歴史的惨敗——ズマ元大統領の新党 MKP が躍進</div>
+      <div class="card-meta"><span class="badge">South Africa / ANC / Elections / MKP / Nov 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-9th-november">10 Things Global News</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>南アフリカの地方選挙でアフリカ民族会議（ANC）が記録的な惨敗を喫した。ズマ元大統領が創設した新党 MK（ムコント・ウェ・シズウェ）党が大幅に議席を伸ばし、主要都市での ANC の支配が一段と揺らいでいる。</li>
+          <li>電力不足（ロードシェディング）・失業率・汚職問題への有権者の不満が与党離れを加速させているとされ、2027年の総選挙に向けた ANC の立て直しが急務となっている。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月9日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: CyberNews · The New Stack · StartupHub AI · CybersecurityNews · Releasebot · AI Weekly · Qodo · Just Security · Times of Israel · 10 Things Global News · Euronews</p>
+  <p style="margin-top:0.3rem;"><a href="../2026-11-08/index.html">前版（2026-11-08）</a></p>
+</footer>
+</body>
+</html>
