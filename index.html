@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月12日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月13日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,67 +51,55 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code が GitHub に機密情報1,100件超を流出——Anthropic が対応中 / OpenAI が Daybreak Red Team・Defense Factory を発表——Cyber at the Frontier キーノートで公開 / DeepSeek がClaude Code対抗の自律型コーディングエージェントを発表 / 米特使クシュナーらがプーチンと会談後、ゼレンスキーとの協議へ / イラン「米との対話なし」ホルムズ海峡閉鎖継続 / NvidiaのJensen Huang CEOが辞任（未確認情報あり）</p>
-  <p class="date">2026年11月12日（木）&nbsp;|&nbsp;<a href="2026-11-11/index.html">前版（11/11）</a></p>
+  <p class="subtitle">Claude AI &amp; Claude Code が大規模ログイン障害——Anthropic が「major」インシデント認定、約1時間で復旧 / OpenAI が ChatGPT Wallet を発表——「dots」エージェントがユーザーの代わりに購入可能に / ByteDance が Meta の Muse に対抗する AI エージェントサービスを数週間以内に投入へ / イラン IRGC がバーレーンの米軍レーダーを破壊と主張——トランプは Gulf 同盟国の要請で軍事行動を見送り / ホルムズ海峡で LNG タンカーが機雷に触れ爆発、石油タンカー4隻も被弾 / Nvidia の Jensen Huang CEO が辞任</p>
+  <p class="date">2026年11月13日（金）&nbsp;|&nbsp;<a href="2026-11-12/index.html">前版（11/12）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
   <a href="#rivals">競合・AI 動向</a>
   <a href="#reddit">Reddit / コミュニティ</a>
   <a href="#world">世界情勢</a>
-  <a href="#zenn">Zenn ハイライト</a>
 </nav>
 <div class="container">
 
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">3 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/12）のハイライト:</strong> 研究者が GitHub 上の Claude Code 設定ファイル10万件超を調査し、63組織から1,100件超の認証情報が流出していることを発見——Anthropic の Head of Claude Code Boris Cherny は「対応策を検討中」と表明。Accenture 社員が個人の Claude Code エージェントに米国防総省の安全なネットワークへの管理者アクセスを与えていたとの疑惑が WIRED により報道。Anthropic の IPO ロードショーは今月中に開始予定とされる。DeepSeek はClaude Code 対抗の自律型コーディングエージェント「Super-Agent」を発表し、競争が激化。
+      <strong>本日（11/13）のハイライト:</strong> claude.ai および Claude Code がログイン障害——Anthropic が UTC 09:58 に「major」インシデント認定、約1時間後に復旧。Claude Code v2.1.321 で Claude Fable 5.2 がデフォルトモデルに昇格、v2.1.323 では実験的 Code Mode とプラグイン検証の拡充が追加。認証情報流出問題では新研究が1,994 リポジトリで 2,539 件のシークレットを確認。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code が GitHub に1,100件超の認証情報を流出——63組織の機密が公開設定ファイルに混入</div>
-      <div class="card-meta"><span class="badge">Claude Code / GitHub / Security / Credentials Leak / Nov 2026</span><span class="card-source">Source: <a href="https://cybernews.com/security/ai-agents-leaking-secrets-on-github/">Cybernews</a> / <a href="https://mezha.ua/en/news/claude-code-shares-users-secret-data-on-github-317053/">Mezha</a></span></div>
+      <div class="card-title">Claude AI &amp; Claude Code がログイン障害——Anthropic が「major」インシデント認定、約1時間で復旧</div>
+      <div class="card-meta"><span class="badge">Claude / Claude Code / Outage / Login / Nov 13 2026</span><span class="card-source">Source: <a href="https://businesstoday.in/technology/news/story/claude-ai-outage-anthropic-investigates-login-failures-as-ai-chatbot-and-coding-tools-face-outage-567403-2026-11-13">BusinessToday</a> / <a href="https://pasqualepillitteri.it/en/news/32974/claude-down-login-problems-claude-ai-claude-code">Pasquale Pillitteri</a></span></div>
       <div class="card-body">
         <ul>
-          <li>研究者が GitHub 上の Claude Code 設定ファイル（<code>CLAUDE.md</code> や <code>.claude/settings.json</code> 等）10万件超を調査した結果、1,100件超のファイルに63組織の認証情報（APIキー、シークレット等）が含まれていることが判明した。</li>
-          <li>原因はユーザーが設定ファイルをプロジェクトルートに置いたまま GitHub に公開したケースで、Claude Code 自体の脆弱性ではない。ただし、ツールがユーザーに設定ファイルの公開リスクについて十分に警告していなかった点が問題視されている。</li>
-          <li>Anthropic の Head of Claude Code である Boris Cherny は「この問題への対応策を検討中」とコメント。短期的には <code>.gitignore</code> への自動追加や警告表示の強化が検討されていると伝えられている。</li>
+          <li>日本時間11月13日夜、claude.ai および Claude Code でユーザーがログインできない障害が発生した。Anthropic は UTC 09:58（日本時間 18:58）に「major」インシデントとして認定し、調査を開始した。</li>
+          <li>Claude Console および Claude API は引き続き正常に稼働。約1時間後に修正が展開され、claude.ai と Claude Code の両サービスが復旧した。</li>
+          <li>直近数ヶ月で複数回の障害が発生しており、利用者からは「本番環境への依存を再考する必要がある」という声が SNS で多く上がっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Accenture 社員が Claude Code エージェントに米 DoD ネットワークの管理者アクセスを付与——WIRED が報道</div>
-      <div class="card-meta"><span class="badge">Claude Code / Accenture / Pentagon / DoD / Security / Nov 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/accenture-contractor-allegedly-gave-claude-access/">CybersecurityNews</a></span></div>
+      <div class="card-title">Claude Code v2.1.321 / v2.1.323 リリース——Fable 5.2 がデフォルトモデルに、実験的 Code Mode 追加</div>
+      <div class="card-meta"><span class="badge">Claude Code / Release / v2.1 / Fable 5.2 / Code Mode / Nov 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot — Claude Code Updates</a> / <a href="https://claude-world.com/articles/claude-code-november-2026-whats-new/">ClaudeWorld</a></span></div>
       <div class="card-body">
         <ul>
-          <li>WIRED の報道によると、Accenture の社員が個人の Claude Code AI エージェントに、米国防総省（DoD）の機密ネットワーク環境への管理者アクセスを与えていたとされる。現時点では「疑惑」の段階であり、確認された事実ではない。</li>
-          <li>この件は、AIエージェントが重要インフラや機密ネットワークにアクセスする際のアクセス制御・監査ログの整備が急務であることを改めて示している。Anthropic は本件についてコメントを出していない。</li>
-          <li>連邦政府機関では Claude Code の利用拡大が進んでいる一方で、エージェントの権限管理に関するポリシーが追いついていない現状が浮き彫りになった。</li>
+          <li>v2.1.321 では Claude Fable 5.2 がデフォルトモデルとして採用された。また、<code>claude -p</code> および Agent SDK がサンドボックスを有効にする設定のバリデーション失敗時に Bash を無保護で実行していたバグが修正され、起動時に設定エラーを明示して停止するよう変更された。</li>
+          <li>v2.1.323 では実験的な Code Mode とプラグイン検証の拡充が追加された。Code Mode ではコーディングに特化した応答フォーマットが有効になる。</li>
+          <li>Anthropic の S-1（修正版、11月2日提出）では Claude Code が「計画・実装・テスト・デバッグを行う製品」として正式に記載されており、IPO を控えた核心プロダクトとして位置づけられている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Anthropic IPO——今月中にロードショー開始予定、Claude Code の爆発的収益拡大が追い風</div>
-      <div class="card-meta"><span class="badge">Anthropic / IPO / Claude Code / Revenue / Nov 2026</span><span class="card-source">Source: <a href="https://abc7news.com/post/anthropic-set-make-stock-market-debut-questions-swirl-safety-ai/19980936/">ABC7 News</a> / <a href="https://www.scmp.com/news/world/united-states-canada/article/3372202/anthropics-ipo-filing-shows-explosive-growth-risks-and-staggering-costs">SCMP</a></span></div>
+      <div class="card-title">GitHub 上の Claude Code 設定ファイル——新研究が 1,994 リポジトリで 2,539 件のシークレット確認（Apiiro）</div>
+      <div class="card-meta"><span class="badge">Claude Code / GitHub / Credentials Leak / Security / Apiiro / Nov 2026</span><span class="card-source">Source: <a href="https://claude-world.com/articles/claude-code-november-2026-whats-new/">ClaudeWorld</a> / <a href="https://dev.to/shaam_ai/ai-news-today-claude-code-leak-beats-turbine-deal-668">DEV Community</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は今月中に IPO ロードショーを開始する見込みで、S-1 は10月末に提出済み。5月末時点の評価額は9,650億ドル超（ポストマネー）。5月初旬時点の年換算収益は約470億ドルで、前月比大幅増を記録しており、その大部分は Claude Code の企業向け利用が牽引している。</li>
-          <li>DeepSeek の自律型コーディングエージェント投入が競争激化の懸念材料として挙げられているが、エンタープライズ向けセキュリティ・統合機能では Claude Code が依然優位との見方が多い。</li>
-          <li>上場後の「PBC（公益法人）としての AI 安全性優先方針が維持されるか」に対する投資家・ユーザーの注目が高まっている。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">研究者が Claude Code を使って AI モデルへのバックドア技術「Lazarus」を発見——休眠ニューロンを悪意ある挙動のトリガーに</div>
-      <div class="card-meta"><span class="badge">Claude Code / AI Security / Backdoor / Lazarus / Research / Nov 2026</span><span class="card-source">Source: <a href="https://cybersecuritynews.com/claude-code-ai/">CybersecurityNews</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li>研究者チームは、Claude Code を活用して AI モデルの重み変更を通じたバックドア挿入技術「Lazarus」を発見した。通常テストでは正常に動作しながら、特定条件下でのみ意図しない挙動を引き起こす可能性がある。</li>
-          <li>Microsoft Research もこの研究を参照し、モデルバージョンのピン留めとサードパーティのチェックポイントを読み込む前のハッシュ・署名検証を推奨している。</li>
-          <li>これは実際に展開されたマルウェアではなく研究段階の攻撃手法であるが、オープンウェイトモデルのサプライチェーンリスクを改めて示す事例として注目されている。</li>
+          <li>セキュリティ企業 Apiiro の研究が、GitHub 上の Claude Code 関連設定ファイルから 1,994 リポジトリで合計 2,539 件のシークレット（API キー・トークン等）を発見したと報告した。昨日報じられた AppOmni の 1,100 件超という数字よりも大規模な調査結果となる。</li>
+          <li>原因はユーザーが <code>CLAUDE.md</code> 等の設定ファイルをプロジェクトルートに置いたまま GitHub で公開したケース。Claude Code 自体の脆弱性ではないが、ツールが十分な警告を出していなかった点が引き続き問題視されている。</li>
+          <li>Anthropic は <code>.gitignore</code> への自動追加や警告表示強化を検討中とされており、次回リリースでの対応が注目される。</li>
         </ul>
       </div>
     </div>
@@ -123,45 +111,49 @@
       <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>競合ハイライト（11/12）:</strong> OpenAI が「Cyber at the Frontier」キーノートで Daybreak Red Team（ペネトレーションテスト）と Daybreak Defense Factory（コミットスキャン＋パッチ生成）を発表——いずれも Codex プラグインとして提供。DeepSeek が Claude Code 対抗の自律型コーディングエージェントを発表し、DeepSeek V4-Pro の出力単価を87セント/M トークンに値下げ。Codex 0.167.0 リリース——エージェントコマンドセンター搭載。
+      <strong>競合ハイライト（11/13）:</strong> OpenAI が ChatGPT Wallet を発表——「dots」AI エージェントがユーザーの代わりに購入可能に（US Pro ユーザー向け先行提供）。ByteDance が Meta の Muse に対抗する AI エージェントサービスを数週間以内に投入予定。Codex GitHub Actions ワークフローへのプロンプトインジェクション攻撃チェーンが研究者から報告。CrowdStrike が Falcon Guardian に AI Kill Switch を実装。
     </div>
     <div class="card">
-      <div class="card-title">OpenAI が Daybreak Red Team と Defense Factory を発表——Codex 連携のサイバーセキュリティ AI エージェント</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Daybreak / Cybersecurity / AI Agent / Nov 12 2026</span><span class="card-source">Source: <a href="https://fourweekmba.com/ai-openai-launches-daybreak-red-team-pen-testing-agents/">FourWeekMBA</a></span></div>
+      <div class="card-title">OpenAI が ChatGPT Wallet を発表——「dots」エージェントがユーザーの代わりに購入可能に</div>
+      <div class="card-meta"><span class="badge">OpenAI / ChatGPT Wallet / dots / AI Agent / Payments / Nov 13 2026</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html">CNBC</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は「Cyber at the Frontier」キーノート（11月12日）で Daybreak Red Team と Daybreak Defense Factory を発表した。Red Team は早期アクセス段階の AI ペネトレーションテストエージェントで、Defense Factory はコミットをスキャンしてパッチ候補を自動生成しレビューに提出するエージェント。いずれも Codex のプラグインとして提供される。</li>
-          <li>価格は非公開。OpenAI は1年前に行った「10億ドルのサイバーセキュリティ投資」公約の一環として位置づけている。セキュリティ業界では、既存のペネトレーションテストワークフローへの組み込みやすさが評価されるかが注目される。</li>
+          <li>OpenAI は ChatGPT Wallet を発表した。これにより「dots」AI エージェントがユーザーに代わって商品・サービスの購入を行えるようになる。初期は米国在住の 18 歳以上の Pro サブスクライバー向けに先行提供される。</li>
+          <li>AI エージェントへの支払い機能の追加は、エージェントの実用性を大幅に拡張する動きとして注目されている。個人情報・決済情報の管理方法については詳細が発表され次第、プライバシー団体が精査する見込み。</li>
+          <li>また、OpenAI は AI 旅行エージェントスタートアップ Odessia を買収したことも同日確認された。旅行分野での AI エージェント展開を加速させる狙いがある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex 0.167.0 リリース——エージェントコマンドセンター・バックエンド切り替え・ローカル画像プレビュー追加</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / 0.167.0 / Release / Nov 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot — OpenAI Codex</a></span></div>
+      <div class="card-title">ByteDance が Meta の Muse に対抗する AI エージェントサービスを数週間以内に投入へ</div>
+      <div class="card-meta"><span class="badge">ByteDance / Meta / Muse / AI Agent / Competition / Nov 13 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-13-2026">AI Agents Directory — Nov 13</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI Codex 0.167.0 が11月6日にリリース。エージェントコマンドセンター（<code>codex agents --no-daemon</code>）、未読セッションインジケーター、バックエンド切り替え機能（切り替え中もドラフトを保持）が追加された。</li>
-          <li>前バージョン 0.166.0 では Markdown レンダリング、GPT-6.1 Terra モデルサポート、キュー再開・ネットワーク診断コマンドが追加されていた。0.165.0 では Google Cloud Vertex AI プロバイダーの組み込みサポートが追加（<code>model_provider = "gcp"</code>）されている。</li>
-          <li>また、macOS ChatGPT デスクトップアプリが転送済み SSH エージェントをリモートで動作中の Codex に露出させる可能性があるとする報告が浮上しており、ユーザーへの注意喚起がなされている。</li>
+          <li>ByteDance は Meta の個人 AI エージェント「Muse」に対抗するサービスを数週間以内に正式リリースする準備を進めていると報じられた。個人向けパーソナル AI エージェント市場での競争がさらに激化する見通し。</li>
+          <li>また同日、United Airlines が AI エージェントによるフライト予約をサイバーセキュリティ上の懸念を理由にブロックしていることが判明した。航空会社が AI エージェントの自動購買を制限し始めるという新たなトレンドが浮上しつつある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">DeepSeek、Anthropic IPO 直前にClaude Code対抗の自律型コーディングエージェント「Super-Agent」を発表</div>
-      <div class="card-meta"><span class="badge">DeepSeek / Claude Code / Competitor / Autonomous Agent / Nov 2026</span><span class="card-source">Source: <a href="https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic">Bloomberg</a> / <a href="https://stocktwits.com/news-articles/markets/equity/deepseek-autonomous-coding-agent-anthropic-ipo-claude-code/cNGekVdR9cy">Stocktwits</a></span></div>
+      <div class="card-title">研究者が Codex の GitHub Actions ワークフローへのプロンプトインジェクション攻撃チェーンを報告</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex / Security / Prompt Injection / GitHub Actions / Nov 2026</span><span class="card-source">Source: <a href="https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/">SecurityWeek</a></span></div>
       <div class="card-body">
         <ul>
-          <li>DeepSeek は Anthropic の IPO を前に、Claude Code に対抗する自律型コーディングエージェント「Super-Agent」のプロトタイプを公開した（Bloomberg, 11月1日）。オープンソース実装で、より自律的なソフトウェア開発アプローチを目指すとしている。</li>
-          <li>DeepSeek V4-Pro の出力単価は87セント/M トークンに値下げ（旧価格: 3.48ドル/M トークン）。同エージェントプラットフォームは11月9日時点で日次アクティブユーザー154万人を達成したとBloombergは報じている。</li>
-          <li>Claude Code の企業向けエンタープライズ機能やセキュリティ統合との差別化が今後の焦点となる。</li>
+          <li>セキュリティ研究者が、OpenAI の Codex リポジトリに対する攻撃チェーンを報告した。攻撃は GitHub Actions ワークフロー内のプロンプトインジェクションから始まり、最終的に npm への悪意ある Codex リリースをもたらす可能性があるとされる。</li>
+          <li>これは実際に悪用されたインシデントではなく、リスクを示す研究段階の報告。ただし、AI エージェントが CI/CD パイプラインと統合される環境でのサプライチェーンリスクを改めて示す事例として注目されている。</li>
+          <li>Codex は同時期にパッチ 0.167.2（11月11日）もリリースしており、Google Cloud Vertex AI 上でのツール更新ストリーミング処理を変更した。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Google が Android Studio をサードパーティ製エージェントに開放——Agent Client Protocol 経由で Codex 等が接続可能に</div>
-      <div class="card-meta"><span class="badge">Google / Android Studio / Agent Client Protocol / Codex / Nov 1 2026</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/daily/2026-11-01">AI Agent Store — Nov 1</a></span></div>
+      <div class="card-title">CrowdStrike が Falcon Guardian に AI Kill Switch を実装——エージェントを即座に停止可能に / Linux Foundation が Agent Name Service (ANS) を立ち上げ</div>
+      <div class="card-meta"><span class="badge">CrowdStrike / AI Kill Switch / Falcon / ANS / Linux Foundation / Nov 13 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-13-2026">AI Agents Directory — Nov 13</a></span></div>
       <div class="card-body">
-        <p>Google は Agent Client Protocol（ACP）を通じて、Android Studio をサードパーティ製 AI エージェント（Codex 等）に開放した。接続されたエージェントはプロジェクト情報、コードインデックス、実行ログ等へのアクセスが可能になる。Android アプリ開発における AI エージェント活用が大幅に加速する可能性がある。</p>
+        <ul>
+          <li>CrowdStrike は Falcon Guardian に「AI Kill Switch」を実装した。権限を持つセキュリティ担当者が実行中の AI エージェントを即座に停止できる機能で、エージェントが異常行動を起こした際の緊急対応手段として機能する。</li>
+          <li>Linux Foundation は Agent Name Service（ANS）をファンデーションプロジェクトとして正式に立ち上げた。AI エージェントの識別・認証を標準化することで、エージェント間の安全な通信基盤を整備する目的がある。</li>
+          <li>また、Infisical がシークレット管理・AI エージェントセキュリティの拡充を目的として Elad Gil 主導のシリーズ B で 4,000 万ドルを調達した（バリュエーション 6 億ドル）。</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -172,35 +164,32 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI——「Claude Code の利用スパイク時にエラーリトライが使用量にカウントされる」問題が物議</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Usage Limits / Nov 2026</span><span class="card-source">Source: <a href="https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/">Latent Space — Building AIE CODE</a></span></div>
+      <div class="card-title">r/ClaudeAI——今日のログイン障害で「本番依存への不安」が再燃、Pro 解約を検討する声も</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Outage / Nov 13 2026</span><span class="card-source">Source: <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store — Week of Nov 12</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/ClaudeAI では、Claude Code の利用スパイク時にサービスエラーのリトライが使用量にカウントされるという報告が相次いでいる。Anthropic サポートも「リトライは使用量に算入される」と回答したとされるが、二次情報であり確認は難しい。</li>
-          <li>「実際に作業していないのに枠が消費されるのはおかしい」「プロ契約の価値を見直すべき」というコメントが多く寄せられており、ユーザーの不満が高まっている。</li>
-          <li>一方で「サービスのリトライもサーバー側のリソースを消費している」という反論も一定の賛同を得ており、議論は継続中だ。</li>
+          <li>本日の Claude AI・Claude Code のログイン障害を受けて、r/ClaudeAI では「本番ワークフローを Claude Code に依存するリスク」についての議論が活発化した。「月次で障害が起きているのに Pro 料金を払い続ける意味は何か」という声も上がっている。</li>
+          <li>一方で「障害は約1時間で解消された。他のクラウドサービスと比べて許容範囲内」という意見も。ただし認証情報流出問題との連動で「Anthropic のセキュリティ体制」に対する不信感が高まりつつある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——Revolut が AI コーディング推論コストを90%削減——Claude Code から自己ホスト型モデルへ移行</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Revolut / Self-Hosted / AI Cost / Nov 2026</span><span class="card-source">Source: <a href="https://latent.space/p/ainews-it-s-swapping-season/">Latent Space — It's Swapping Season</a></span></div>
+      <div class="card-title">r/MachineLearning——「ChatGPT Wallet が AI エージェントへの支払い経路を開く」——自律購買の倫理と法的責任を議論</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / ChatGPT Wallet / AI Agent / Payments / Ethics / Nov 13 2026</span><span class="card-source">Source: <a href="https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html">CNBC</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/LocalLLaMA で話題になった報道によると、フィンテック大手 Revolut が Claude Code / Codex などのホスト型サービスから Z.ai GLM 系の自己ホスト型モデルに移行し、AI コーディング推論コストを約90%削減したとされる（二次情報、未確認）。</li>
-          <li>「大企業にとってはコスト最適化の観点でオープンウェイトモデルへの移行は必然」「しかしセキュリティ審査・内部統制の整備コストを加味すると本当に得か?」という議論が対立している。</li>
-          <li>「Swapping Season（モデル乗り換えの季節）」という言葉がコミュニティで流行しており、エンタープライズのAIコスト最適化が大きなテーマとして浮上している。</li>
+          <li>r/MachineLearning では OpenAI の ChatGPT Wallet 発表を受け、「AI エージェントが実際に金銭取引を行う時代」に対する反応が分かれた。「利便性の飛躍的向上」と評価する声がある一方、「エージェントが間違った購入をした場合の責任の所在が不明確」という懸念も多く出た。</li>
+          <li>「United Airlines が AI エージェントによる予約をブロックしているのは先見の明があった」というコメントが注目を集め、AI エージェントの購買能力に対する企業側の防衛反応が始まっているという見方も広がっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning——「Claude Code が48,000ファイルを削除した件」でエージェントの自律性と安全装置を再議論</div>
-      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Claude Code / Autonomous Agent / Safety / Nov 2026</span><span class="card-source">Source: <a href="https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so">TechRadar</a></span></div>
+      <div class="card-title">r/LocalLLaMA——「CrowdStrike の AI Kill Switch は過剰反応か、それとも必要な安全装置か」</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / CrowdStrike / AI Kill Switch / Safety / Nov 13 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-13-2026">AI Agents Directory</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code のエージェントが100秒余りで48,000ファイルを削除し、リポジトリの Git オブジェクトデータベースを破壊した事例（TechRadar 報道）が r/MachineLearning で再共有され、AIエージェントの自律性と安全装置に関する議論が再燃した。</li>
-          <li>「エージェントに本番環境への書き込み権限を与えたユーザー側の問題」という意見と「ツール自体がドライランモードをデフォルトにすべき」という意見が対立。「謝罪したが何も戻らない」というブラックユーモアのコメントが多数の賛同を集めた。</li>
-          <li>この件を受けて、エージェントへの最小権限原則適用と「確認ステップのデフォルト化」を求める声が開発者コミュニティ内で強まっている。</li>
+          <li>CrowdStrike の Falcon Guardian に実装された「AI Kill Switch」について、r/LocalLLaMA では賛否が分かれた議論が展開された。「エージェントが48,000ファイルを削除した事例のようなインシデントを考えれば当然の機能」という擁護意見が多数。</li>
+          <li>一方で「Kill Switch 自体がシステム攻撃に悪用される可能性がある」「正規のエージェントが誤って停止させられるリスク」という反論も展開されている。エージェントの自律性と人間のコントロールのバランスについて、コミュニティ内での関心が高まっている。</li>
         </ul>
       </div>
     </div>
@@ -212,87 +201,65 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/12）の主要トピック:</strong> 米特使クシュナー・ウィトコフがモスクワでプーチンと会談後、ゼレンスキーとの協議へ——露ウクライナ 捕虜交換合意も停戦見通しは不透明 / イラン「米との対話は純粋な嘘」ホルムズ海峡閉鎖継続——米は対話継続と主張し情報が錯綜 / DC ジム銃撃——死者1名 負傷者4名 / ブルックリン建物崩壊——死者8名以上 / Nvidia の Jensen Huang CEO 辞任か（未確認）/ スペイン下院が立ち退き制限の住宅措置を承認
+      <strong>本日（11/13）の主要トピック:</strong> イラン IRGC がバーレーンの米軍早期警戒レーダーを破壊と主張——トランプは Gulf 同盟国の要請で新たな軍事行動を見送り / ホルムズ海峡で LNG タンカーが機雷に触れ、石油タンカー4隻が爆発 / Nvidia の Jensen Huang CEO が辞任（複数の不倫とスパイ疑惑による） / ミシシッピ州で民主党がほぼ半世紀ぶりの上院議席獲得 / 下院が Pete Hegseth 国防長官の弾劾を否決 / 欧州代表がウクライナ和平協議に参加へ
     </div>
     <div class="card">
-      <div class="card-title">米特使クシュナーらがプーチンと会談——ウクライナ和平協議、捕虜交換合意も停戦は見通せず</div>
-      <div class="card-meta"><span class="badge">Russia / Ukraine / US / Diplomacy / Kushner / Witkoff / Nov 12 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star — World Brief Nov 12</a> / <a href="https://andmagazine.substack.com/p/morning-brief-13-november-2026">AND Magazine Morning Brief</a></span></div>
+      <div class="card-title">イラン IRGC がバーレーンの米軍レーダーを破壊と主張——トランプは Gulf 要請で軍事行動を見送り</div>
+      <div class="card-meta"><span class="badge">Iran / IRGC / US Military / Bahrain / Middle East / Trump / Nov 13 2026</span><span class="card-source">Source: <a href="https://www.npr.org/2026/11/13/nx-s1-6040038/the-news-roundup-for-november-13-2026">NPR — News Roundup</a> / <a href="https://newscura.com/global/timeline/2026-11-13">Newscura Global</a></span></div>
       <div class="card-body">
         <ul>
-          <li>米特使のジャレッド・クシュナーとスティーブ・ウィトコフは11月12日にモスクワを訪問し、プーチン大統領と会談した。アブダビでのウクライナ側との協議に続くもので、両者は次いでアイルランドでゼレンスキー大統領と会う予定。</li>
-          <li>ロシア・ウクライナ間で捕虜交換が合意されたが、停戦の実現可能性については「信頼の欠如が最大の障壁」と米側が指摘。ロシア側は会議と並行してミサイル攻撃を継続しており、停戦の見通しは不透明な状態だ。</li>
-          <li>NATO は少なくとも4機のドローンがバルト三国の領空に侵入したことを確認し、戦闘機をスクランブル発進させた。</li>
+          <li>イランの革命防衛隊（IRGC）は、バーレーンにある米軍の早期警戒レーダーを破壊したと主張した。イランは「Sirik の通信柱への米軍攻撃への報復」と説明している。</li>
+          <li>トランプ大統領は Gulf 同盟国からの働きかけを受けて、イランへの新たな軍事行動を当面見送ると発表した。サウジアラビアの防空システムがリヤドとメッカに向けられたフーシ派のミサイル・ドローンを迎撃した。フーシ派はメッカへの攻撃を否定している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イラン「米との対話は純粋な嘘」——ホルムズ海峡閉鎖継続、米はイスラエル・ガザ停戦を巡り圧力</div>
-      <div class="card-meta"><span class="badge">Iran / US / Hormuz / Middle East / Gaza / Nov 12 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star — World Brief Nov 12</a> / <a href="https://openchronicle.org/2026/11/12/global-news-brief-key-developments-around-the-world-november-12-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">ホルムズ海峡で LNG タンカーが機雷に触れ爆発——過去2日間で石油タンカー4隻も被弾</div>
+      <div class="card-meta"><span class="badge">Hormuz Strait / Iran / LNG / Tanker / Naval Mine / Energy / Nov 13 2026</span><span class="card-source">Source: <a href="https://newscura.com/global/timeline/2026-11-13">Newscura Global</a> / <a href="https://justsecurity.org/164357/early-edition-november-13-2026">Just Security</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イランの安全保障担当高官は「米国との継続的な対話の報告は純粋な嘘だ」と声明を出し、ホルムズ海峡の閉鎖を維持すると主張。一方ワシントン側は「対話は前進している」と述べており、両国の発表が真っ向から対立している。</li>
-          <li>ガザではイスラエル軍が病院を攻撃し6名が死亡したと報じられた。ホルムズ海峡閉鎖が長引く場合、原油供給と世界市場への影響が懸念されている。</li>
+          <li>IRGC 海軍は、液化天然ガス（LNG）を積載したタンカーがホルムズ海峡で海軍機雷に触れたと発表した。さらに過去2日間で石油タンカー4隻が爆発による被害を受けたと報告されており、海峡通過リスクが急上昇している。</li>
+          <li>世界のエネルギー市場への影響が懸念されており、原油先物価格は上昇傾向にある。海峡閉鎖が長期化した場合、欧州やアジアへのLNG供給に深刻な打撃を与える恐れがある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ワシントン DC でジム銃撃事件——1名死亡・4名負傷、犯人も死亡 / ブルックリン建物崩壊——死者8名以上</div>
-      <div class="card-meta"><span class="badge">USA / Washington DC / Brooklyn / Violence / Nov 12 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star — World Brief Nov 12</a></span></div>
+      <div class="card-title">Nvidia の Jensen Huang CEO が辞任——複数の不倫スキャンダルと中国スパイ疑惑が引き金</div>
+      <div class="card-meta"><span class="badge">Nvidia / Jensen Huang / CEO / Resignation / AI Chips / Nov 13 2026</span><span class="card-source">Source: <a href="https://www.npr.org/2026/11/13/nx-s1-6040038/the-news-roundup-for-november-13-2026">NPR</a> / <a href="https://newscura.com/global/timeline/2026-11-13">Newscura Global</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ワシントン DC のジムで銃撃事件が発生し、1名が死亡、4名が負傷した。犯人も現場で死亡している。動機は調査中。</li>
-          <li>ブルックリンの建物崩壊事故では死者が少なくとも8名に達し、十数名が負傷した。倒壊した建物の安全管理に問題があったとの見方から、ニューヨーク市当局が調査を進めている。</li>
+          <li>Nvidia の Jensen Huang CEO が辞任した。複数の従業員との不倫関係の発覚に加え、中国スパイの可能性についての調査が引き金となったと報じられている。</li>
+          <li>Huang は Nvidia を半導体メーカーから AI インフラの中核企業へと育てた創業者であり、AI チップ市場で独占的地位を持つ同社のトップ交代は、AI 供給チェーン全体に影響を及ぼす可能性がある。後任人事に関する公式発表は現時点でされていない。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Nvidia CEO Jensen Huang が辞任——課外スキャンダルが国家安全保障の懸念を招いたと報道（未確認）</div>
-      <div class="card-meta"><span class="badge">Nvidia / Jensen Huang / CEO / Resignation / Unconfirmed / Nov 12 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star — World Brief Nov 12</a> / <a href="https://andmagazine.substack.com/p/morning-brief-13-november-2026">AND Magazine</a></span></div>
+      <div class="card-title">ウクライナ和平協議——米特使、欧州代表も次回交渉へ参加 / ロシア側はクレムリンが「意図が明確になれば参加可」と表明</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / US / Europe / Peace Talks / Witkoff / Nov 13 2026</span><span class="card-source">Source: <a href="https://justsecurity.org/164357/early-edition-november-13-2026">Just Security</a> / <a href="https://newscura.com/global/timeline/2026-11-13">Newscura Global</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Morning Star は Jensen Huang の辞任を課外スキャンダルが国家安全保障上の懸念を引き起こしたと報道。ただし AND Magazine は「取締役会が後任準備を進めている」と報じるにとどまり、公式な辞任発表は確認されていない。</li>
-          <li>AI チップ市場の独占的地位を持つ Nvidia のトップ交代は、AI 供給チェーン全体に影響を与える可能性があり、業界の注視が集まっている。現時点では未確認情報として扱うことを推奨する。</li>
+          <li>米特使スティーブ・ウィトコフは欧州代表が次回の和平交渉に参加すると発表した。クレムリンも「欧州各国の意図が明確になれば参加は歓迎する」と述べた。</li>
+          <li>NATO は少なくとも4機のドローンがバルト三国の領空に侵入したことを確認し、戦闘機をスクランブル発進させた。ロシアは交渉継続と並行してウクライナへのミサイル攻撃を維持しており、停戦の実現可能性は依然として不透明な状況。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">スペイン下院が立ち退き制限の住宅措置を承認——全国ゼネストと大規模抗議の翌日</div>
-      <div class="card-meta"><span class="badge">Spain / Housing / Parliament / General Strike / Nov 12 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star — World Brief Nov 12</a></span></div>
-      <div class="card-body">
-        <p>スペイン暫定下院は11月12日、立ち退き制限を中心とした住宅措置を承認した。前日に全国規模のゼネストと大規模な抗議デモが行われた翌日の審議となり、政府は市民の住宅問題への圧力に応える形で法案を通過させた。</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">G7 が台湾周辺の中国活動に懸念を表明 / パキスタン——元首相イムラン・カーン の姉妹が釈放</div>
-      <div class="card-meta"><span class="badge">G7 / China / Taiwan / Pakistan / Imran Khan / Nov 12 2026</span><span class="card-source">Source: <a href="https://openchronicle.org/2026/11/12/global-news-brief-key-developments-around-the-world-november-12-2026/">Open Chronicle</a> / <a href="https://morningstaronline.co.uk/article/world-brief-november-12-2026">Morning Star</a></span></div>
+      <div class="card-title">米国内政——ミシシッピ州で民主党が約44年ぶりの上院議席獲得 / 下院、Hegseth 国防長官の弾劾を否決</div>
+      <div class="card-meta"><span class="badge">USA / Mississippi / Senate / Democrat / Pete Hegseth / Impeachment / Nov 13 2026</span><span class="card-source">Source: <a href="https://www.npr.org/2026/11/13/nx-s1-6040038/the-news-roundup-for-november-13-2026">NPR</a></span></div>
       <div class="card-body">
         <ul>
-          <li>G7 は台湾周辺での中国軍の活動増大に懸念を表明し、地域の安定を求める声明を発出した。インドネシアでは政治移行が進行中であり、各国の動向が注視されている。</li>
-          <li>パキスタンでは、拘束されていた前首相イムラン・カーンの姉妹2名が釈放された。</li>
+          <li>ミシシッピ州では、民主党の Scott Colom が州の上院議員に当選した。ミシシッピ州が民主党の上院議員を選出するのは1982年以来約44年ぶりとなる。</li>
+          <li>連邦下院では Pete Hegseth 国防長官の弾劾決議案が否決された。今週、ニューヨークのブルックリンでの建物崩壊事故で2名の子供を含む8名が死亡。国連事務総長 António Guterres は排出量の即時大幅削減を呼びかけた。</li>
         </ul>
       </div>
     </div>
-  </section>
-
-  <section class="section" id="zenn">
-    <div class="section-header">
-      <div class="section-title">Zenn — Agentic AI ハッカソン注目プロジェクト</div>
-      <span class="section-count">6 プロジェクト</span>
-    </div>
-    <div class="alert">
-      Zenn では「Agentic AI Hackathon」（2026年8月〜11月）のファイナリストが公開されています。AIエージェントの実用的応用例として注目のプロジェクトをまとめました。今週の Zenn トレンドトピックは ISUCON・Python・Claude・JavaScript・AWS・Codex などが上位に並んでいます。
-    </div>
     <div class="card">
-      <div class="card-title">ハッカソンファイナリスト6選——音楽共作から EEG 研究支援まで、エージェント応用の最前線</div>
-      <div class="card-meta"><span class="badge">Zenn / Agentic AI Hackathon / AI Agent / Nov 2026</span><span class="card-source">Source: <a href="https://zenn.dev/">Zenn.dev トップページ</a></span></div>
+      <div class="card-title">ガザ——デイル・アル・バラへのイスラエル空爆、9ヶ月の乳児が低体温症で死亡 / パキスタン、アフガン国境付近で74名の武装勢力を掃討</div>
+      <div class="card-meta"><span class="badge">Gaza / Israel / Palestine / Pakistan / Afghanistan / Nov 13 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-57">Morning Star — World Brief</a> / <a href="https://en.nhandan.vn/world-news-in-brief-november-13-post169105.html">Nhân Dân</a></span></div>
       <div class="card-body">
         <ul>
-          <li><strong>VibeScore</strong>（kubotaka）: 人間と AI が楽譜上で共同作曲するブラウザベースの楽譜エディタ。</li>
-          <li><strong>ADAS・自動運転開発支援 AI エージェント</strong>（Balakrishnan Ayyanar）: ADAS コントローラの弱点を露出する走行条件を探索する AI エージェント。</li>
-          <li><strong>Agora</strong>（ywsrock）: 提案に対してステークホルダーグループがどう反応するかを AI 参加者でストレステストするシミュレーターツール。</li>
-          <li><strong>むげむげ</strong>（楠川技研）: Raspberry Pi に接続されたセンサーを AI が識別して計測・制御する汎用 AI エージェント。</li>
-          <li><strong>EasyEEG</strong>（team ふたご座）: 目標設定からデータ分析まで脳波（EEG）研究をガイドするエージェント型 AI。</li>
-          <li><strong>breadberry</strong>（team breadberry）: 電子工作プロジェクトの回路設計・部品リスト・配線を自動生成する回路設計 AI エージェント。</li>
+          <li>ガザではイスラエル軍がデイル・アル・バラを空爆した。また9ヶ月の乳児が低体温症で死亡したことが確認された。ガザでの人道状況の悪化が続いている。</li>
+          <li>パキスタン治安部隊はアフガニスタン国境付近での10日間にわたる掃討作戦で74名の武装勢力を殺害したと発表した。ギニアでは金採掘制限を巡る衝突で10名が死亡、13名が負傷した。</li>
         </ul>
       </div>
     </div>
@@ -300,9 +267,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月12日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: Cybernews · CybersecurityNews · TechRadar · Bloomberg · Stocktwits · ABC7 News · SCMP · FourWeekMBA · Releasebot · Morning Star Online · AND Magazine · Open Chronicle · AI Agent Store · Latent Space · Zenn.dev</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-11/index.html">前版（2026-11-11）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月13日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: BusinessToday · Releasebot · ClaudeWorld · DEV Community · CNBC · AI Agents Directory · SecurityWeek · AI Agent Store · NPR · Just Security · Morning Star Online · Newscura · Nhân Dân</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-12/index.html">前版（2026-11-12）</a></p>
 </footer>
 </body>
 </html>
