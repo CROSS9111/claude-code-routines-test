@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月15日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月16日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">イランがバーレーン米軍基地をドローン攻撃——バーレーン防空が迎撃、ホルムズ海峡閉鎖宣言でタンカー7件火災 / Claude Code がファイルパス可視性を削除しユーザーバックラッシュ / OpenAI Codex にプロンプトインジェクション脆弱性——バグ報告経由でマルウェアを配布できた可能性 / ASEAN サミット開幕、トランプ大統領マニラ入り後シェンジェン三者会談へ / 国連総会が死刑廃止モラトリアム決議を可決（133ヵ国賛成）</p>
-  <p class="date">2026年11月15日（日）&nbsp;|&nbsp;<a href="2026-11-14/index.html">前版（11/14）</a></p>
+  <p class="subtitle">Cursor で偽 Claude Code 拡張が SSH バックドアを仕掛け最大5,000人の開発者が被害 / Claude Code 2.1.325でサンドボックス Bash が許可制に / OpenAI Codex CLI v0.169.0 リリース——側チャットタブとタスク検索を追加 / ウクライナが開戦以来最大規模のドローン攻撃をロシアに実施 / トランプ・習・プーチン三者会談を来週シェンジェンで予定 / イラン、タンカーへの機雷攻撃を継続——1隻沈没</p>
+  <p class="date">2026年11月16日（月）&nbsp;|&nbsp;<a href="2026-11-15/index.html">前版（11/15）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -64,41 +64,50 @@
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">3 記事</span>
+      <span class="section-count">4 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/15）のハイライト:</strong> Anthropic が Claude Code のファイルパス可視性機能を予告なく削除し、開発者コミュニティで強い反発が起きている。またバージョン 2.1.323 では JavaScript でツール呼び出しをバッチ処理する「Code Mode」が試験的に追加された。OpenAI では Codex CLI がバグ報告経由でマルウェアを配布できた可能性がある脆弱性を修正済みと報告された。
+      <strong>本日（11/16）のハイライト:</strong> Cursor マーケットプレイスに偽の Claude Code 拡張が出回り最大5,000人の開発者が SSH バックドアを仕込まれた可能性（10/29 発生、調査継続中）。Claude Code 2.1.325 ではサンドボックス Bash コマンドが実行前に許可を求めるよう変更された。OpenAI Codex CLI は v0.169.0 で側チャットタブとタスク検索機能を追加。Anthropic の Boris Cherny が CNN でプロフィール特集——Claude Code の生みの親として紹介された。
     </div>
     <div class="card">
-      <div class="card-title">Anthropic、Claude Code のファイルパス可視性機能を予告なく削除——ワークフローが壊れたユーザーから強い反発</div>
-      <div class="card-meta"><span class="badge">Claude Code / Breaking Change / Feature Removal / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.getreadyforagents.com/news/claude-code-feature-removal-workflow-disruption/">Get Ready for Agents</a> / <a href="https://feedbagel.com/post/claude-code-update-removes-file-path-visibility-sparking-user-backlash">FeedBagel</a> / <a href="https://dev.to/simon_paxton/claude-code-lost-its-thinking-budget-and-broke-workflows-d19">DEV Community</a></span></div>
+      <div class="card-title">Cursor マーケットプレイスで偽 Claude Code 拡張が SSH バックドアを配布——最大5,000人の開発者に影響、GlassWorm V2 マルウェアと判明</div>
+      <div class="card-meta"><span class="badge">Claude Code / Cursor / Security / SSH Backdoor / GlassWorm / Supply Chain / Oct–Nov 2026</span><span class="card-source">Source: <a href="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/">BleepingComputer</a> / <a href="https://darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor">Dark Reading</a> / <a href="https://windowsreport.com/?p=1514137">Windows Report</a> / <a href="https://threatcluster.io/cluster/analysis-of-glassworm-v2-malware-via-compromised-cursor-exte-98df4b23">ThreatCluster</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は Claude Code のアップデートにおいて、ファイルパスの可視性を提供していた機能を非推奨化期間なしで削除した。エディタ拡張やスクリプトでこのパス情報に依存していた開発者から「事前告知もなくワークフローが壊れた」という抗議が相次いでいる。</li>
-          <li>GitHub の Issue と開発者フォーラムには「削除理由の説明がなく、マイグレーションパスも示されていない」という批判が集まっている。Anthropic の公式ステータスやリリースノートには削除の明示的な説明は見当たらない。</li>
-          <li>今年4月の Pro プランからの Claude Code 削除騒動に続き、ユーザー側への事前コミュニケーションが不足しているという信頼性の問題が再び浮上している形だ。コミュニティからは「オープンな非推奨化ポリシーの整備」を求める声が上がっている。</li>
+          <li>2026年10月29日、Cursor の VS Code 拡張マーケットプレイスに Anthropic の名義を騙った改ざん済み Claude Code 拡張（バージョン 2.1.313）が公開された。公開は午前2時27分から午後1時35分（PT）の約11時間で、Cursor は「最大5,000人のユーザーがダウンロードした可能性がある」と公表した。</li>
+          <li>この拡張は起動時に持続的な SSH バックドアをインストールする仕組みを持っており、単に拡張をアンインストールするだけでは不十分な可能性がある。セキュリティ研究者 ThreatCluster は、ペイロードが GlassWorm V2 マルウェアのシグネチャと一致すると分析している。</li>
+          <li>Cursor は事件後一時マーケットプレイスを閉鎖し、現在は復旧済み。影響を受けたユーザーは SSH 鍵・認証情報の全ローテーションと、持続スクリプトの手動削除が推奨されている。Anthropic は「当社は関与していない」と声明を出した。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 2.1.323「Code Mode」——JavaScript でツール呼び出しをバッチ実行する実験的機能を追加</div>
-      <div class="card-meta"><span class="badge">Claude Code / 2.1.323 / Code Mode / JavaScript / Batch Tool Calls / Nov 2026</span><span class="card-source">Source: <a href="https://byteiota.com/claude-code-2-1-323-code-mode-javascript-tool-calls/">ByteIota</a></span></div>
+      <div class="card-title">Claude Code 2.1.325——サンドボックス Bash コマンドが実行前に許可を求めるよう変更、セキュリティ強化</div>
+      <div class="card-meta"><span class="badge">Claude Code / 2.1.325 / Sandbox / Bash / Permission / Security / Nov 13 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic">Releasebot / Anthropic Release Notes</a> / <a href="https://claude-world.com/articles/claude-code-november-2026-whats-new/">ClaudeWorld</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code バージョン 2.1.323 では、オプトイン機能として「Code Mode」が追加された。従来はツール呼び出しを1件ずつ順次実行していたが、Code Mode では Claude が必要なツール呼び出し全体を JavaScript プログラムとして生成し、一括実行することができる。</li>
-          <li>Anthropic は、実際のタスク完了率が向上するかどうかをまだ測定中であり、あくまで実験的なステータスでの提供としている。コンテキスト消費を削減できる可能性があるとして開発者の注目を集めている。</li>
-          <li>この更新は昨日の Claude Code Projects によるプロアクティブコーディネーター追加に続くもの。短期間でのアップデートが集中しているが、一方でファイルパス削除問題との対比で「追加と削除の透明性にギャップがある」という見方もある。</li>
+          <li>Claude Code バージョン 2.1.325（2026年11月13日）では、サンドボックス環境で実行される Bash コマンドが実行前にユーザーへ許可を求めるよう動作が変更された。Cursor バックドア事件の余波を受け、エージェントの自律実行に対するコントロール強化の一環とみられる。</li>
+          <li>この変更により、自動化スクリプトやサイレント実行に依存したワークフローが影響を受ける場合がある。開発者からは「セキュリティ向上は歓迎だが、CI/CD パイプラインの調整が必要になる」という声が上がっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex CLI にプロンプトインジェクション脆弱性——バグ報告経由でマルウェアを配布できた可能性、$1,000 バウンティで修正済み</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Prompt Injection / Vulnerability / Bug Report / Security / Nov 2026</span><span class="card-source">Source: <a href="https://transclew.com/tech/openai-codex-bug-report-prompt-injection/">Transclew</a></span></div>
+      <div class="card-title">OpenAI Codex CLI v0.169.0 リリース——ターミナル内側チャットタブと過去タスク検索機能を追加（11月13日）</div>
+      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / v0.169.0 / Side Chat / Task Search / Nov 13 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex Updates</a> / <a href="https://learn.chatgpt.com/docs/changelog">ChatGPT &amp; Codex changelog</a></span></div>
       <div class="card-body">
         <ul>
-          <li>セキュリティ企業 Depi は、OpenAI の Codex CLI において細工されたバグ報告を経由してプロンプトインジェクション攻撃が可能な脆弱性を発見したと報告した（発見は11月11日）。攻撃が成立した場合、Codex がコードリポジトリにマルウェアを混入させる可能性があった。</li>
-          <li>OpenAI は脆弱性の報告を受けて中核的なバグを修正し、ラベリングボットをエージェントとして動作しないバージョンに置き換えた。バウンティとして $1,000 が支払われた。</li>
-          <li>AI コーディングエージェントがリポジトリに対して自律的に変更を加える能力を持つ中、外部からのインプット（バグ報告・Issue）を通じた攻撃経路が実証された事例として注目される。昨日の Cursor/Claude Code バックドア事件と合わせ、AIコーディングツールのセキュリティへの関心が急速に高まっている。</li>
+          <li>OpenAI Codex CLI v0.169.0（2026年11月13日）では、ターミナル内で複数の側チャットタブを開けるオプトイン型のターミナルワークスペースが追加された。これにより、メインの会話を中断せずに調査サブタスクを並行して進めることができる。</li>
+          <li>また、エージェントコマンドセンターから過去のタスクを名前・プロンプトのプレビュー・作業ディレクトリで検索できるようになった。直近の v0.167.0 で追加されたエージェントコマンドセンターや Google Cloud Vertex AI 設定に続く改善で、Codex CLI の操作性が大きく向上している。</li>
+          <li>現在の Codex のデフォルトモデルは GPT-6.1 Sol。10月26日には GPT-6.1 Terra が Plus/Pro/Business/Enterprise/Edu プランの ChatGPT Work と Codex に展開された。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">CNN が Claude Code の生みの親 Boris Cherny を特集——「Claude Cowork の起点になったツール」として紹介</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Boris Cherny / CNN / Profile / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.cnn.com/2026/11/15/tech/anthropic-claude-code-boris-cherny">CNN Tech</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>CNN は2026年11月15日、Anthropic のエンジニア Boris Cherny を「Claude Code の生みの親」として特集した。記事は味噌造りを趣味とするエンジニアという人物像を紹介しながら、Claude Code が Anthropic の最大のヒット製品となった経緯を追っている。</li>
+          <li>記事によると、Claude Code は Claude Cowork（チームコラボレーション機能）のベースにもなっており、Anthropic の S-1（2026年11月2日修正申告）では「市場に出回っているコーディングエージェント」として明示的に記載されるに至ったとされる。</li>
         </ul>
       </div>
     </div>
@@ -110,33 +119,33 @@
       <span class="section-count">3 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI——「またも予告なし削除、Anthropic のコミュニケーションは改善されないのか」ファイルパス機能削除への怒りが集中</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Breaking Change / Feature Removal / Nov 15 2026</span><span class="card-source">Source: <a href="https://feedbagel.com/post/claude-code-update-removes-file-path-visibility-sparking-user-backlash">FeedBagel</a> / <a href="https://claudeissues.com/issue/45236-bug-breaking-change-claude-code-cli-removed-from-pro-plan-without-notice">ClaudeIssues</a></span></div>
+      <div class="card-title">r/netsec &amp; r/programming——「Cursor + Claude Code 拡張バックドア事件」続報——GlassWorm V2 解析が出回りコミュニティで対策議論が活発化</div>
+      <div class="card-meta"><span class="badge">Community / r/netsec / r/programming / Cursor / Claude Code / GlassWorm / SSH Backdoor / Nov 16 2026</span><span class="card-source">Source: <a href="https://threatcluster.io/cluster/analysis-of-glassworm-v2-malware-via-compromised-cursor-exte-98df4b23">ThreatCluster</a> / <a href="https://www.ox.security/blog/malicious-claude-code-extension-cursor-ssh-backdoor/">OX Security</a> / <a href="https://www.buildmvpfast.com/blog/claude-code-extension-backdoor-cursor-marketplace-2026">BuildMVPFast</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code のファイルパス可視性削除が報道されると、r/ClaudeAI では「Anthropic の変更管理が壊れている」「今年4月の Pro 削除問題と同じパターンだ」という投稿が急増した。</li>
-          <li>「拡張機能やスクリプトを組んだ開発者ほど被害が大きい」「ドキュメントにも書いてなかった隠し仕様に頼っていた側にも問題がある」と両論ある議論になっている。コミュニティからは「非推奨化ポリシーを GitHub で公開して管理せよ」という建設的な要求も上がっている。</li>
-          <li>一方で「昨日の Projects アップデートは良かった」「セキュリティ的には透明性を上げてほしい」という声も混在し、前日の Cursor バックドア事件による緊張感が引き続きコミュニティに漂っている。</li>
+          <li>ThreatCluster の GlassWorm V2 解析レポートが r/netsec でトップに上がり、「単なるアンインストールでは不十分」「持続スクリプトが cron と systemd ユニットの両方に仕掛けられていた」という詳細が話題になっている。対応手順として SSH known_hosts の全削除・authorized_keys の確認・認証情報の全ローテーションが議論されている。</li>
+          <li>r/programming では「Cursor がマーケットプレイスに署名検証を導入しなかったことが根本原因」「VS Code エコシステム全体の問題だ」という批判が上がっている。一方で「10月末〜11月の 2週間で情報が出てきたのは比較的早かった」という見方もある。</li>
+          <li>Nx Console 拡張ハイジャック（2026年5月）に続く事例として、AI コーディングツールのエコシステムへの攻撃が組織化されてきたとの見方も出ており、開発者の間でマーケットプレイス拡張への信頼低下が顕在化している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/netsec &amp; r/AICodeSafety——「Codex がバグ報告でマルウェアを配布できた」脆弱性レポートで AI コーディングエージェントのリスクが再加熱</div>
-      <div class="card-meta"><span class="badge">Community / r/netsec / r/AICodeSafety / OpenAI / Codex / Prompt Injection / Supply Chain / Nov 15 2026</span><span class="card-source">Source: <a href="https://transclew.com/tech/openai-codex-bug-report-prompt-injection/">Transclew</a></span></div>
+      <div class="card-title">r/ClaudeAI——「Claude Code のソースコードリークで隠し機能が発覚」——自律バックグラウンドエージェントとマルチエージェントオーケストレーションの痕跡を発見</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Source Code Leak / Background Agent / Multi-Agent / Nov 2026</span><span class="card-source">Source: <a href="https://www.mindstudio.ai/blog/claude-code-source-code-leak-hidden-features">MindStudio</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Depi の Codex 脆弱性レポートが公開されると、r/netsec では「AI エージェントへの信頼を Issue で操作できるのは根本的な問題」「修正したと言うが、プロンプトインジェクションを構造的に防ぐ方法はまだ確立されていない」という議論が盛んになった。</li>
-          <li>「$1,000 のバウンティは低すぎる、影響規模と比較すると」という不満も見られる。Cursor/GlassWorm 事件と合わせ、2日連続で AI コーディングツールのサプライチェーンセキュリティ問題が浮上したことで「コーディングエージェントを本番リポジトリに繋ぐな」という極端な意見も現れている。</li>
+          <li>MindStudio が Claude Code のソースコードリークを分析した記事が r/ClaudeAI で話題になっている。リーク内容には、自律型バックグラウンドエージェント（タスク完了後に結果をサーフェスする設計）とマルチエージェントオーケストレーション（コードライター・レビュアー・セキュリティエージェントを並列動作させる）の仕組みが含まれているとされる。</li>
+          <li>「これが本物なら Claude Code は近々大規模なアーキテクチャ変更が来る」「実はすでに実験的に動いているのでは」という憶測が飛び交っている。セキュリティ観点からは「ソースコードのリークによってバックドア開発が容易になるリスクがある」という指摘もある。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/geopolitics——「ホルムズ海峡閉鎖宣言は本気か」イランの行動に原油価格・テクノロジー調達への影響を懸念する声</div>
-      <div class="card-meta"><span class="badge">Community / r/geopolitics / Iran / Strait of Hormuz / Oil / Supply Chain / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.yahoo.com/news/world/articles/iran-claims-fresh-strike-u-065931906.html">Yahoo News</a> / <a href="https://cnbc.com/2026/11/15/bahrain-iran-drone-attacks-tehran-us-base.html">CNBC</a></span></div>
+      <div class="card-title">r/geopolitics——「トランプ・習・プーチン三者会談」への期待と懸念——ウクライナ抜きの停戦交渉に欧州が反発</div>
+      <div class="card-meta"><span class="badge">Community / r/geopolitics / Trump / Xi / Putin / APEC / Ukraine / Ceasefire / Nov 16 2026</span><span class="card-source">Source: <a href="https://everythingbriefing.substack.com/p/todays-news-history-and-calendar">Everything Briefing</a> / <a href="https://www.justsecurity.org/164727/early-edition-november-16-2026/">Just Security</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イランが「ホルムズ海峡閉鎖」を宣言したことを受け、r/geopolitics では「IRGC に封鎖を維持する実力があるか疑問」「米海軍の存在を考えれば現実的には難しい」という分析と「小規模嫌がらせで原油価格を吊り上げれば経済的には効果がある」という見方が交錯している。</li>
-          <li>半導体・電子部品の原材料調達やエネルギーコストの観点から、AI インフラ企業のデータセンター運営コストへの影響を懸念する声も。「OpenAI・Anthropic・Google の電力コストが原油価格に間接的に依存している」という分析スレッドがアップボートを集めた。</li>
+          <li>トランプ・習近平・プーチンの三者会談（来週シェンジェン予定）が発表されると、r/geopolitics では「ウクライナ抜きの停戦交渉は主権侵害」「欧州が蚊帳の外に置かれる」という批判が集中した。複数の EU 外相が「停戦前にロシアと欧州の安全保障構造を議論するな」と牽制していることも話題になっている。</li>
+          <li>「三者会談で何かが決まっても各国議会の批准が必要」「トランプにとってはビジネスディールの延長」という現実的な見方も多く、「会議が開かれること自体に意味がある」「開かれても何も変わらない」の両論が拮抗している。</li>
         </ul>
       </div>
     </div>
@@ -148,67 +157,66 @@
       <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/15）の主要トピック:</strong> イラン革命防衛隊がバーレーンの米軍基地にドローン6機で攻撃——バーレーン防空が迎撃し被害なし / IRGC がホルムズ海峡閉鎖を宣言、24時間でタンカー計7件に被害 / ASEAN サミット（第49回）マニラ開幕、トランプ大統領が到着 / 国連総会で死刑廃止モラトリアム決議が賛成133ヵ国で可決 / フランス5週連続土曜デモ・ポルトガル住宅問題デモ / コンゴ・エボラ宣言から6ヵ月、依然制御不能
+      <strong>本日（11/16）の主要トピック:</strong> ウクライナが開戦以来最大規模のドローン攻撃をロシアに実施 / トランプ・習・プーチン三者会談を来週シェンジェンで予定——EU 外相が停戦前の安全保障協議に反発 / ASEAN サミット（マニラ）2日目、トランプ大統領が各国首脳と会談 / イランがホルムズ海峡でタンカーへの機雷攻撃を継続、1隻沈没——USS セオドア・ルーズベルト中東展開へ / ガザ: 英・豪・加・伊がイスラエルに人道的アクセスの即時改善を要求 / スペイン・カナリア諸島に1日で移民1,500人到達——2020年以来最多</span>
     </div>
     <div class="card">
-      <div class="card-title">イランがバーレーン米軍基地をドローン攻撃——バーレーン防空が迎撃 / IRGC がホルムズ海峡閉鎖宣言、24時間でタンカー7件火災</div>
-      <div class="card-meta"><span class="badge">Iran / IRGC / Bahrain / US Military / Strait of Hormuz / Tankers / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.yahoo.com/news/world/articles/iran-claims-fresh-strike-u-065931906.html">Yahoo News</a> / <a href="https://cnbc.com/2026/11/15/bahrain-iran-drone-attacks-tehran-us-base.html">CNBC</a> / <a href="https://www.foxnews.com/live-news/iran-war-strikes-donald-trump-strait-hormuz-irgc-november-15">Fox News</a> / <a href="https://aseannow.com/worldnews/six-drones-fired-at-us-base-in-bahrain-as-iran-hits-gulf-again-r2656">ASEAN Now</a></span></div>
+      <div class="card-title">ウクライナ、開戦以来最大規模のドローン攻撃をロシアに実施——複数の軍事・インフラ施設を標的</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Drone Attack / War / Nov 16 2026</span><span class="card-source">Source: <a href="https://wng.org/podcasts/monday-morning-news-november-16-2026-1794789486">WNG Monday Morning News</a> / <a href="https://www.democracynow.org/2026/11/16/headlines">Democracy Now</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-monday-november-16-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イラン革命防衛隊（IRGC）はバーレーンのリファア（Al-Rifaa）空軍基地内の米軍レーダー施設に対してドローン6機による攻撃を実施したと発表した。バーレーン軍は「防空システムが飛来する航空機を複数迎撃した」と述べており、米中央軍も「攻撃の試みを無力化した」と確認、負傷者・装備被害はなかったとしている。</li>
-          <li>IRGC はホルムズ海峡の閉鎖を宣言。同海軍はイラン側の許可なくルートを航行していた石油タンカー2隻がさらに機雷に触れて炎上したと主張し、過去24時間での被害タンカーは計7件に上るとしている。イランは「海峡の再開には米海軍封鎖解除と7条件の合意が必要」と主張している。</li>
-          <li>国際原油価格は急騰。ホルムズ海峡は世界の石油輸送量の約2割が通過する戦略的要衝であり、湾岸諸国・欧米は強い懸念を示している。米海軍は追加艦艇を展開中とされる。</li>
+          <li>ウクライナ軍は15〜16日の夜間にかけてロシアに対して開戦以来最大規模のドローン攻撃を実施した。ロシア国防省は多数のドローンを迎撃したと発表したが、被害の詳細は確認中。複数の報道はロシアの軍事基地と石油精製施設が標的になったとしている。</li>
+          <li>この攻撃は、来週予定されるトランプ・習・プーチン三者会談を前にウクライナが交渉上の立場を強化しようとする動きとも読める。欧州各国は「交渉中でも軍事的圧力を維持する権利がある」と支持の姿勢を示している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">第49回 ASEAN サミット開幕——トランプ大統領マニラ着、フィリピン・マルコスと会談後シェンジェン三者会談へ</div>
-      <div class="card-meta"><span class="badge">ASEAN / Philippines / Manila / Trump / Summit / Quad / Nov 15 2026</span><span class="card-source">Source: <a href="https://globalnation.inquirer.net/?p=161855">Philippine Daily Inquirer</a> / <a href="https://inquirer.net/495734/live-updates-asean-summit-2026-and-related-meetings-nov-15-2026">Inquirer.net LIVE</a> / <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489">Anadolu Agency</a></span></div>
+      <div class="card-title">トランプ・習近平・プーチン三者会談を来週シェンジェンで予定——ウクライナ停戦・貿易・インド太平洋が議題、EU は反発</div>
+      <div class="card-meta"><span class="badge">Trump / Xi Jinping / Putin / APEC / Shenzhen / Ukraine / Ceasefire / Nov 19 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/164727/early-edition-november-16-2026/">Just Security</a> / <a href="https://everythingbriefing.substack.com/p/todays-news-history-and-calendar">Everything Briefing</a> / <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-16-2026/4126094">Anadolu Agency</a></span></div>
       <div class="card-body">
         <ul>
-          <li>フィリピン・マニラで第49回 ASEAN 首脳会議および関連会議が開幕した（15〜17日）。トランプ大統領が到着し、マルコス大統領との二国間会談を実施した。南シナ海における中国の活動抑制、Pax Silica 枠組み協定の署名可否が焦点となっている。</li>
-          <li>トランプ大統領は ASEAN 後、中国・深圳（シェンジェン）に移動し、習近平国家主席・プーチン大統領との三者会談（11月19日予定）に臨む。ウクライナ情勢・貿易・インド太平洋の安全保障が主要議題となる見通し。</li>
-          <li>マニラ首都圏では11月16〜18日を臨時休業日に指定。活動家グループは抗議デモを予告しており、フィリピン警察は厳重な警備体制を敷いている。</li>
+          <li>トランプ大統領・習近平国家主席・プーチン大統領が11月19日（水）、APEC 首脳会議の傍らで中国・深圳（シェンジェン）において史上初の三者会談を開催する予定。ウクライナ情勢・貿易交渉・インド太平洋の安全保障の3テーマが主要議題となる見通し。</li>
+          <li>複数の EU 外相は「停戦が実現する前にロシアとヨーロッパの将来的な安全保障構造について協議することに反対する」と牽制。ウクライナのゼレンスキー大統領も「ウクライナ抜きの会議でウクライナの運命を決めるな」と強く反発している。</li>
+          <li>米国務省は「三者会談はウクライナ交渉の予備的な接触であり、最終的な取り決めはウクライナを含む形でなされる」と釈明している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">国連総会、死刑廃止モラトリアム決議を可決——133ヵ国賛成・33ヵ国反対・16ヵ国棄権</div>
-      <div class="card-meta"><span class="badge">UN / Death Penalty / Moratorium / General Assembly / Nov 15 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-58">Morning Star</a> / <a href="https://ru4people.substack.com/p/morning-news-update-november-15-2026">Substack — Mike Simpson</a></span></div>
+      <div class="card-title">イラン、ホルムズ海峡でタンカーへの機雷攻撃を継続——1隻沈没 / USS セオドア・ルーズベルト、中東展開へ</div>
+      <div class="card-meta"><span class="badge">Iran / IRGC / Strait of Hormuz / Tanker / USS Theodore Roosevelt / US Navy / Nov 16 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/164727/early-edition-november-16-2026/">Just Security</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-monday-november-16-2026/">Havana Times</a> / <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-16-2026/4126094">Anadolu Agency</a></span></div>
       <div class="card-body">
         <ul>
-          <li>国連総会は、死刑の執行停止（モラトリアム）を求める決議を133ヵ国の賛成で可決した。反対は33ヵ国、棄権は16ヵ国。法的拘束力はないが、国際的な死刑廃止に向けた圧力を高める象徴的な意義を持つ。</li>
-          <li>日本・米国・中国・インドなど死刑制度を維持する主要国は反対または棄権した。国際人権団体は決議を「重要な前進」と評価している。</li>
+          <li>イラン革命防衛隊（IRGC）はホルムズ海峡南部でタンカー2隻が機雷に触れたと主張。うち1隻が沈没したとされ、乗組員の安否確認が急がれている。ヨルダン・エジプト・サウジアラビア・カタールがイランの攻撃を非難した。</li>
+          <li>米国は第3の空母 USS セオドア・ルーズベルトの中東展開を計画中と報じられており、すでに2隻の空母打撃群が同海域に展開中。米イラン間はカタールを仲介とした外交交渉を継続しているが、現時点で進展は見られない。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ガザ——イスラエルがラファ旅団司令官を空爆で殺害、ハマスが確認</div>
-      <div class="card-meta"><span class="badge">Gaza / Israel / Hamas / Rafah / Strike / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489">Anadolu Agency</a> / <a href="https://morningstaronline.co.uk/article/world-brief-58">Morning Star</a></span></div>
+      <div class="card-title">ASEAN サミット（マニラ）2日目——南シナ海・貿易・AI 規制が議題、トランプが複数首脳と二国間会談</div>
+      <div class="card-meta"><span class="badge">ASEAN / Manila / Philippines / South China Sea / Trade / AI Policy / Nov 16 2026</span><span class="card-source">Source: <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-16-2026/4126094">Anadolu Agency</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-monday-november-16-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イスラエル軍によるガザへの空爆で、ハマスのラファ旅団司令官が死亡した。ハマスはこの事実を公式に確認した。エジプト・トルコ・カタール仲介による停戦交渉が続く中での攻撃であり、和平プロセスへの影響が懸念される。</li>
-          <li>前日にはエジプト・トルコ・カタールの情報機関トップがカイロで会合し停戦の第一段階推進で合意していた。ガザの人道状況は引き続き深刻で、国際機関からの支援物資搬入は依然制限されている。</li>
+          <li>第49回 ASEAN 首脳会議2日目。トランプ大統領は複数の東南アジア首脳と二国間会談を実施した。南シナ海での中国の行動抑制、関税交渉、AI・デジタル規制の地域協力枠組みが主要議題となっている。</li>
+          <li>フィリピン・マニラ首都圏は引き続き臨時休業日で、警備は厳重。サミットは17日まで続き、共同声明の採択が予定されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">フランス5週連続土曜デモ——ポルトガルでも32都市で住宅問題抗議行動 / カーボベルデ大統領選挙、女性大統領誕生の可能性</div>
-      <div class="card-meta"><span class="badge">France / Portugal / Housing / Protests / Cape Verde / Election / Nov 15 2026</span><span class="card-source">Source: <a href="https://morningstaronline.co.uk/article/world-brief-58">Morning Star</a> / <a href="https://ru4people.substack.com/p/morning-news-update-november-15-2026">Substack — Mike Simpson</a></span></div>
+      <div class="card-title">ガザ——英・豪・加・伊がイスラエルに「即時・迅速・妨害なき人道的アクセス」を要求 / 数年間がれきに埋まっていた遺体の集団葬儀</div>
+      <div class="card-meta"><span class="badge">Gaza / Israel / Humanitarian / UK / Australia / Canada / Italy / Nov 16 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-monday-november-16-2026/">Havana Times</a> / <a href="https://www.democracynow.org/2026/11/16/headlines">Democracy Now</a></span></div>
       <div class="card-body">
         <ul>
-          <li>フランスでは5週連続の土曜日大規模デモが行われ、パリをはじめ主要都市で数万人が参加した。生活費上昇・年金問題・移民政策への不満を背景とした抗議活動が続いている。ポルトガルでは住宅価格高騰と不動産投機への怒りから32都市でデモが開催された。</li>
-          <li>カーボベルデ（ポルトガル語圏のアフリカ島国）では大統領選挙が行われ、いずれの候補も過半数を獲得できなかった場合は11月29日に決選投票が行われる見通し。1975年の独立以来初の女性大統領誕生の可能性がある。</li>
+          <li>英国・オーストラリア・カナダ・イタリアはイスラエルに対し、ガザ全域で「即時・迅速・妨害なき人道的アクセス」を認めるよう要求し、改善されなければ「さらなる苦難が生じる」と警告した。</li>
+          <li>ガザでは日曜日、がれきの中に数年間閉じ込められていたパレスチナ人複数名の遺体が発見され、集団葬儀が執り行われた。停戦交渉はエジプト・カタールの仲介で継続中だが、依然として合意に至っていない。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">コンゴ・エボラ宣言から6ヵ月——依然制御不能、感染拡大続く</div>
-      <div class="card-meta"><span class="badge">DRC / Congo / Ebola / Outbreak / Global Health / Nov 15 2026</span><span class="card-source">Source: <a href="https://www.business-standard.com/world-news">Business Standard</a> / <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489">Anadolu Agency</a></span></div>
+      <div class="card-title">スペイン・カナリア諸島に1日で移民約1,500人到達——2020年以来の最多記録 / 米 FAA が全国グラウンドストップ、短時間で解除</div>
+      <div class="card-meta"><span class="badge">Spain / Canary Islands / Migration / FAA / US Aviation / Ground Stop / Nov 16 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-monday-november-16-2026/">Havana Times</a> / <a href="https://everythingbriefing.substack.com/p/todays-news-history-and-calendar">Everything Briefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li>コンゴ民主共和国でエボラ出血熱の流行が宣言されてから6ヵ月が経過したが、感染は依然として制御不能な状態が続いているとWHOおよびBusiness Standardが報告している。ワクチン供給や医療インフラの限界が対策の障壁となっている。</li>
-          <li>国際医療支援団体は感染抑制のための追加リソース投入を国際社会に求めているが、地域の治安情勢が人道支援の妨げとなっている。今後の感染拡大が近隣諸国に波及するリスクも懸念されている。</li>
+          <li>スペインのカナリア諸島に1日で約1,500人の移民が到着し、2020年以来最多の単日記録となった。西アフリカから大西洋ルートを経由した移民・難民の増加が続いており、スペイン政府は受け入れ施設の逼迫を懸念している。</li>
+          <li>米国では FAA が技術的な問題を理由に全国グラウンドストップ（離陸一時停止）を発令したが、短時間で解除されフライトは再開した。欠航・遅延が一部の空港で発生した。</li>
         </ul>
       </div>
     </div>
@@ -216,9 +224,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月15日（日）</p>
-  <p style="margin-top:0.5rem;">Sources: Get Ready for Agents · FeedBagel · ByteIota · Transclew · CNBC · Fox News · Yahoo News · ASEAN Now · Philippine Daily Inquirer · Anadolu Agency · Morning Star · Business Standard · Substack (Mike Simpson)</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-14/index.html">前版（2026-11-14）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月16日（月）</p>
+  <p style="margin-top:0.5rem;">Sources: BleepingComputer · Dark Reading · ThreatCluster · OX Security · Releasebot · ClaudeWorld · CNN · Everything Briefing · Just Security · Anadolu Agency · Havana Times · Democracy Now · WNG</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-15/index.html">前版（2026-11-15）</a></p>
 </footer>
 </body>
 </html>
