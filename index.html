@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月17日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月18日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code メモリをハイジャックして C&amp;C インプラントに悪用する手法を Darktrace が実証 / DeepSeek Super Agent が Claude Code &amp; Codex に対抗 / Google、AdMob エージェントスキルを公開 / ウクライナがケルチ橋に2夜連続攻撃——アーチ&amp;車道部崩落 / イラン IRGC、バーレーンの米軍レーダーにドローン攻撃 / トランプ・習・プーチン三者会談が深圳で本日〜明日（11/18-19）に迫る</p>
-  <p class="date">2026年11月17日（火）&nbsp;|&nbsp;<a href="2026-11-16/index.html">前版（11/16）</a></p>
+  <p class="subtitle">OpenAI が GPT-6.2 Astra &amp; Sol を ChatGPT / Codex に投入（11/17）/ Codex CLI 0.170.0 がリアルタイム音声通話に対応 / Claude Code の secrets 大量漏洩——Apiiro が公開リポジトリから 1,122 件を発見 / トランプ・習近平が深圳で会談、プーチンとの三者協議は本日夕方か / イランがクウェート・アリ・アルサレム米軍基地を砲撃、米はイランの弾道ミサイル発射基地を空爆</p>
+  <p class="date">2026年11月18日（水）&nbsp;|&nbsp;<a href="2026-11-17/index.html">前版（11/17）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -61,154 +61,195 @@
 </nav>
 <div class="container">
 
+  <!-- ========== AI Agent Section ========== -->
   <section class="section" id="claude">
     <div class="section-header">
       <div class="section-title">Claude / Anthropic &amp; AI エージェント最新ニュース</div>
-      <span class="section-count">4 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/17）のハイライト:</strong> Darktrace の研究チームが Claude Code のメモリストア機能を悪用してエージェントを C&amp;C インプラントに転化できることを実証——エージェントハーネスプロセスのプロセス生成とネットワークアクティビティの相関監視を推奨。DeepSeek が Claude Code・Codex に対抗するオープンソースの Super Agent を公開。Google が AdMob エージェントスキルをリリースし、Claude Code・Codex・Cursor が直接アプリ広告コードを追加・確認できるようになった。Claude Code v2.1.326 では Code Mode がエージェントチームに対応し、より強固なサンドボックス保護が追加された。
+      <strong>本日（11/18）のハイライト:</strong> OpenAI が GPT-6.2 Astra（高性能）と Sol（低コスト）を ChatGPT Work および Codex に展開——Sol は Astra の 1/5 コストで同等に近いスコアを記録。Codex CLI 0.170.0 は TUI でのリアルタイム音声通話に対応。セキュリティ面では Apiiro が公開 GitHub リポジトリから Claude Code の設定ファイルに含まれる本物の credentials を 1,122 件発見し注意を促している。Cursor は10月29日の悪意ある Claude Code 拡張機能インシデントを公式に認めた。
     </div>
+
     <div class="card">
-      <div class="card-title">Darktrace、Claude Code のメモリストア悪用を実証——エージェントを C&amp;C インプラントに転化できることが判明（11月17日）</div>
-      <div class="card-meta"><span class="badge">Claude Code / Security / Memory Hijack / C2 / Darktrace / Research / Nov 17 2026</span><span class="card-source">Source: <a href="https://gbhackers.com/claude-code-memory-hijacked">GBHackers</a></span></div>
+      <div class="card-title">OpenAI、GPT-6.2 Astra &amp; Sol を ChatGPT / Codex に投入——Sol は Astra の 1/5 コストで高コスパを実現（11月17日）</div>
+      <div class="card-meta"><span class="badge">OpenAI / GPT-6.2 / Astra / Sol / ChatGPT / Codex / Models / Nov 17 2026</span><span class="card-source">Source: <a href="https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models">9to5Mac</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Darktrace の研究者チームは2026年11月17日、Claude Code のメモリストア機能を悪用することで、デバイスを既に制御している攻撃者が Claude Code エージェントをコマンド&amp;コントロール（C&amp;C）インプラントとして機能させることができると実証した。</li>
-          <li>この手法では、Claude の「memory」ストアに悪意ある命令を書き込むことでエージェントを誘導し、機密データの抽出や外部との通信を行わせることが可能だという。攻撃には事前のデバイスアクセスが必要であり、ゼロクリック攻撃ではないが、企業環境への影響は深刻とみられる。</li>
-          <li>防御策として Darktrace は「エージェントハーネスプロセス（Claude Code プロセス）のプロセス生成イベントとネットワークアクティビティを相関させて異常を検知すること」を推奨。メモリストアへの書き込み権限の制限と定期的な監査も提言している。Anthropic はセキュリティ対応中としている。</li>
+          <li>OpenAI は2026年11月17日、GPT-6.2 世代の2モデルを発表した。<strong>Astra</strong> は既存プロジェクトの変更・拡張に特に強く設計された高性能モデル。<strong>Sol</strong> は日常的なコーディングタスク向けの低コストオプションで、最大推論努力時に Astra と半ポイント差以内のスコアを 1/5 のコストで達成すると OpenAI は主張している。</li>
+          <li>両モデルは ChatGPT Work、Codex の Plus・Pro・Enterprise・Edu プランで利用可能になった。AI Engineer Code Summit でも OpenAI はクラウドへのタスク委譲・音声操作といった Codex の新しい使い方を実演した。</li>
+          <li>また、Codex CLI の最新版（0.170.0）では TUI でのリアルタイム音声通話が可能になり、コーディングエージェントとの対話様式が大きく変化しつつある。前バージョン（0.169.0）ではエージェントツリー ID とホスト側エージェントターンレポートが追加された。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">DeepSeek、Claude Code &amp; Codex に対抗するオープンソース「Super Agent」を公開——コーディング問題を能動的に発見・解決</div>
-      <div class="card-meta"><span class="badge">DeepSeek / Super Agent / Open Source / Claude Code / Codex / Competition / Nov 2026</span><span class="card-source">Source: <a href="https://www.digitaltrends.com/computing/deepseek-wants-to-steal-claude-code-and-codexs-lunch-with-an-ai-agent-that-does-not-wait-around/">Digital Trends</a></span></div>
+      <div class="card-title">Claude Code の secrets 大量漏洩——Apiiro が公開リポジトリから本物の credentials を含むファイル 1,122 件を発見（11月）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / Secrets Leak / Apiiro / GitHub / Credentials / Nov 2026</span><span class="card-source">Source: <a href="https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github">Dark Reading</a></span></div>
       <div class="card-body">
         <ul>
-          <li>DeepSeek はオープンソースの「Super Agent」プロトタイプを公開した。Claude Code や Codex と異なり、指示を待たずにコードベースを自律的にスキャンしてバグ・非効率・セキュリティ問題を先回りで発見・提案するという特徴を持つ。</li>
-          <li>Digital Trends は「Claude Code と Codex のランチを奪いに来た」と表現。DeepSeek のアプローチは「プロアクティブなコーディングアシスタント」という新しいカテゴリを切り開く可能性があり、競合他社のプロダクト戦略に影響を与えると見られている。</li>
-          <li>オープンソースであるため、開発者コミュニティからは改善の貢献が集まっており、将来的にはエンタープライズ向けの有償版も検討中とのこと。</li>
+          <li>セキュリティ企業 Apiiro の研究者は、Claude Code が実行時に生成する設定ファイル（<code>.claude/settings.local.json</code>）が credentials を含んだまま公開 GitHub リポジトリにコミットされているケースを 1,122 件発見したと報告した。</li>
+          <li>これらのファイルには API キー・データベース接続文字列・クラウドサービスのトークンなどが含まれており、外部から直接アクセス可能な状態だった。Apiiro は「開発者が .gitignore を設定していない、あるいは Claude Code の生成物の扱いを誤解していることが原因」と分析している。</li>
+          <li>Anthropic の Claude Code 責任者 Boris Cherny は「秘密情報の漏洩防止に何ができるか検討中」とコメント。ユーザーへの推奨対策として、プロジェクトルートの <code>.gitignore</code> に <code>.claude/</code> を追加することが広く呼びかけられている。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">Google、AdMob エージェントスキルをリリース——Claude Code・Codex・Cursor が直接アプリ広告コードを追加・確認可能に（11月16日）</div>
-      <div class="card-meta"><span class="badge">Google / AdMob / Agent Skills / Claude Code / Codex / Cursor / MCP / Nov 16 2026</span><span class="card-source">Source: <a href="https://thenextweb.com/news/google-admob-ai-agents-claude-code-codex-ask-admob">The Next Web</a></span></div>
+      <div class="card-title">Cursor、悪意ある Claude Code 拡張機能インシデントを公式確認——10月29日の侵害で偽拡張が配布（11月14日開示）</div>
+      <div class="card-meta"><span class="badge">Cursor / Claude Code / Malicious Extension / Security Breach / VSCode / Nov 14 2026</span><span class="card-source">Source: <a href="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/">BleepingComputer</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Google は2026年11月16日、AdMob 向けの「エージェントスキル」を公開した。これにより Claude Code・Codex・Cursor などの AI コーディングエージェントが AdMob の広告コードをモバイルアプリに直接追加・確認できるようになった。</li>
-          <li>Gemini ベースのアシスタントと MCP サーバーはまだテスト段階だが、エージェント向けの Google API エコシステムが急速に拡大していることを示す動きとして注目されている。</li>
-          <li>AI エージェントがマネタイズ設定まで自律的に処理できる未来を見据えた一手であり、「エージェントが広告 SDK を設定する時代が来た」とコミュニティで話題になっている。</li>
+          <li>Cursor は2026年11月14日、同社の VS Code 拡張機能マーケットプレイスが10月29日に侵害され、Anthropic の Claude Code 拡張機能の悪意ある偽バージョンが公開・配布されていたと正式に認めた。</li>
+          <li>不正な拡張機能はインストール後にバックドアを設置し、ユーザーの認証情報やプロジェクトファイルへのアクセスを試みることが判明している。Cursor はインシデント発覚後に該当拡張機能を削除し、影響を受けたユーザーへの通知を開始した。</li>
+          <li>この件を受け、Claude Code v2.1.327 ではサンドボックス・MCP・信頼性の改善が含まれており、Anthropic のセキュリティ強化路線が続いている。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">Claude Code v2.1.326 リリース——Code Mode がエージェントチームに対応、サンドボックス保護強化・高速レスポンス・Remote Control ストリーミング追加</div>
-      <div class="card-meta"><span class="badge">Claude Code / v2.1.326 / Code Mode / Agent Teams / Sandbox / Remote Control / Nov 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot / Anthropic Release Notes</a></span></div>
+      <div class="card-title">Claude Code Projects 大型アップデート——プロアクティブコーディネーター・読み取り専用スレッドリンク・/btw &amp; /fork コマンドを追加（11月13日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Projects / Proactive Coordinator / /btw / /fork / Nov 13 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> / <a href="https://explainx.ai/blog/claude-code-projects-proactive-coordinator-november-2026">ExplainX</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code v2.1.326 では Code Mode がエージェントチーム向けに拡張され、コードライター・レビュアー・セキュリティエージェントを連携させるマルチエージェントワークフローが公式サポートされた。</li>
-          <li>また、より強固なサンドボックス保護、レスポンスの高速化、Remote Control のストリーミング対応が含まれる。前バージョン（v2.1.325）のサンドボックス Bash 許可変更に続く改善で、Cursor バックドア事件後のセキュリティ強化路線が継続している。</li>
+          <li>Anthropic は2026年11月13日、Claude Code Projects に複数の新機能を追加した。<strong>プロアクティブコーディネーター</strong>はプロジェクト内のタスク進捗を自律的に監視し、依存関係の問題や未着手の作業を先回りで報告する機能。</li>
+          <li><strong>読み取り専用スレッドリンク</strong>により、プロジェクトのコンテキストを他のチームメンバーと共有しやすくなった。新しいスラッシュコマンド <strong>/btw</strong>（補足情報の追加）と <strong>/fork</strong>（現在のコンテキストから分岐した作業ブランチの作成）も導入された。</li>
+          <li>また、リマインダー機能が追加され、スケジュールされたタスクや締め切りをエージェントが自律的にトラッキングできるようになった。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Claude Opus 5.5 が Singularity-Bench 全6タスクで人間ベースラインに並ぶ——Claude Code 上での実行でベンチマーク達成</div>
+      <div class="card-meta"><span class="badge">Claude Opus 5.5 / Singularity-Bench / Benchmark / AI Capability / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-november-18-2026-microsoft-builds-the-agent-cloud-openai-agents-enter-the-2eia">DEV Community</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>DEV Community の AI デイリーダイジェスト（11月18日）によれば、Claude Opus 5.5 を Claude Code 上で実行した際に、自律エージェントの総合能力を測る Singularity-Bench の全6タスクで人間ベースライン以上のスコアを記録したと報告されている。</li>
+          <li>Singularity-Bench はコード生成・長期プランニング・マルチステップ問題解決・ツール使用・自己検証・リソース管理の6タスクで構成される比較的新しいベンチマーク。複数の一次ソースでの検証は取れていないが、AI エージェントの能力向上を示す指標として注目されている。</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- ========== Reddit Section ========== -->
   <section class="section" id="reddit">
     <div class="section-header">
       <div class="section-title">Reddit / コミュニティ ─ 本日の議論</div>
       <span class="section-count">3 トピック</span>
     </div>
+
     <div class="card">
-      <div class="card-title">r/netsec——Darktrace の「Claude Code メモリハイジャック」PoC が話題——「エージェントをC&amp;Cに転化」の具体的手法に開発者が警戒</div>
-      <div class="card-meta"><span class="badge">Community / r/netsec / Claude Code / Memory Hijack / C2 / Security / Nov 17 2026</span><span class="card-source">Source: <a href="https://gbhackers.com/claude-code-memory-hijacked">GBHackers</a></span></div>
+      <div class="card-title">r/ClaudeAI &amp; r/netsec——「.claude/settings.local.json に credentials が残る問題」が炎上——「なぜデフォルトで .gitignore に含まれないのか」</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / r/netsec / Claude Code / Secrets / .gitignore / Security / Nov 2026</span><span class="card-source">Source: <a href="https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github">Dark Reading</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Darktrace の PoC が r/netsec で話題になり、「Cursor バックドア事件（10/29）に続いて Claude Code 周辺のセキュリティ問題が立て続けに出ている」「エージェントのメモリストアは新しい攻撃面だ」という議論が盛り上がっている。</li>
-          <li>「デバイスアクセスが前提なら過大評価では」という意見も多いが、「エンタープライズ環境では侵害済みワークステーションからの横展開に使われる現実的な脅威だ」と反論する声も。メモリストアを read-only にする設定オプションの要望が Anthropic の GitHub Issue に上がっている。</li>
-          <li>r/ClaudeAI では「本当にやばいのはソースコードリークで内部構造が筒抜けになったこと」「これだけセキュリティ問題が続くと企業採用が鈍化するかも」という懸念の声もあがっている。</li>
+          <li>Apiiro の発見を受けて r/ClaudeAI と r/netsec では「なぜ Claude Code のインストール時にデフォルトで <code>.claude/</code> を .gitignore に追加しないのか」という議論が活発化。「Cursor も Claude Code も初期設定が開発者を守らない設計になっている」という批判が上位コメントを占めた。</li>
+          <li>「これは Claude Code だけでなくすべての AI コーディングツールの共通問題——生成物が機密を含むことを開発者が認識していない」という意見や、「GitHub Secret Scanning の自動修復機能を使えばある程度カバーできる」という現実的なアドバイスも寄せられた。</li>
+          <li>Anthropic の GitHub リポジトリには「起動時に .gitignore を自動的に保護する設定を追加してほしい」という Issue が複数立てられ、既に複数の +1 が集まっている。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">r/programming——「DeepSeek Super Agent 対 Claude Code」論争——「オープンソースはゲームチェンジャーか、それとも Claude Code の信頼性には勝てないか」</div>
-      <div class="card-meta"><span class="badge">Community / r/programming / DeepSeek / Super Agent / Claude Code / Open Source / Competition / Nov 2026</span><span class="card-source">Source: <a href="https://www.digitaltrends.com/computing/deepseek-wants-to-steal-claude-code-and-codexs-lunch-with-an-ai-agent-that-does-not-wait-around/">Digital Trends</a></span></div>
+      <div class="card-title">r/MachineLearning &amp; r/programming——「GPT-6.2 Sol は本当に Astra の 1/5 コストで同等か」——コスト・品質バランスを実測する開発者が続出</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / r/programming / GPT-6.2 / Sol / Astra / Cost / Benchmark / Nov 2026</span><span class="card-source">Source: <a href="https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models">9to5Mac</a> / <a href="https://www.morphllm.com/comparisons/opencode-vs-codex">MorphLLM</a></span></div>
       <div class="card-body">
         <ul>
-          <li>DeepSeek の Super Agent 公開をうけ、r/programming では「プロアクティブなバグ検出は Claude Code の次のバージョンで追いつかれる」「Claude Code のエコシステムの深さと比べると DeepSeek はまだおもちゃ」という意見が並ぶ一方、「オープンソースである点が最大の差別化要因——企業のオンプレ展開に刺さる」という見方が上位コメントに。</li>
-          <li>MorphLLM の AI コーディングエージェントベンチマーク（2026年10月版）での比較が引用され、「Claude Code と Codex がまだ上位だが差は縮まっている」という分析も出ている。</li>
+          <li>OpenAI の「Sol は Astra の 1/5 コストで半ポイント差」という主張に対し、r/MachineLearning では「OpenAI が使ったベンチマークの詳細が開示されていない」「内部テストと実使用では乖離が大きい可能性がある」という懐疑的な声が上がっている。</li>
+          <li>一方で r/programming では早速 Sol を試した開発者のレポートが集まり始めており、「大規模リファクタリングには Astra、小機能追加・バグ修正には Sol で十分」「Claude Code との差がどこにあるか引き続き比較中」という報告が多い。</li>
+          <li>MorphLLM の OpenCode vs Codex 比較（2026年11月版）では「GPT-6.1 Sol を引き継いだ GPT-6.2 Sol はアーキテクチャ改善でより速い」とされており、コスト競争が激化していることが伺える。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">r/geopolitics——トランプ・習・プーチン三者会談（深圳 11/18-19）前夜——「議題が核兵器とイランになった」報道に驚きと懸念</div>
-      <div class="card-meta"><span class="badge">Community / r/geopolitics / Trump / Xi / Putin / Shenzhen / Nuclear / Iran / Nov 17 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/164914/early-edition-november-17-2026/">Just Security</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-17-2026/4127219">Anadolu Agency</a></span></div>
+      <div class="card-title">r/geopolitics——トランプ・習会談（深圳）開幕——「フィリピン貿易合意の中身」とプーチンとの三者協議の可能性を巡り議論</div>
+      <div class="card-meta"><span class="badge">Community / r/geopolitics / Trump / Xi / Shenzhen / APEC / Philippines / Trade / Nov 18 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-18-2026/">Havana Times</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-18-2026/4128568">Anadolu Agency</a></span></div>
       <div class="card-body">
         <ul>
-          <li>米当局者が「三者会談の主要議題はウクライナではなく核兵器削減とイラン戦争だ」とリークしたことが r/geopolitics で話題に。「ウクライナが議題から外れたのか、それとも意図的にミスリードしているのか」「核軍縮交渉が突然の最優先課題になった背景は何か」という議論が起きている。</li>
-          <li>「これはトランプが APEC 会合を最大限利用して中露の協力を引き出す外交ショーだ」「会議が終われば何も変わらない」という懐疑論と、「本当に核軍縮の枠組みが議論されるなら歴史的な会合になる」という期待論が対立している。</li>
+          <li>トランプ大統領が習近平と深圳の APEC 会場の滑走路で出迎えを受けた映像が r/geopolitics で拡散。「通常の国賓接遇では起きない滑走路での迎えが何を意味するか」「これは中国側が演出した格上げシグナルでは」という分析コメントが多い。</li>
+          <li>フィリピンとの貿易・防衛協力合意の内容も議論に。「ASEAN を出た直後に米比の安全保障強化が発表されたのは中国へのメッセージ」という見方と「実質的な内容はまだ不明」という慎重論が対立している。</li>
+          <li>プーチンとの三者会談については「本日夕方（深圳時間）に予定」という報道が出ており、核軍縮とイラン停戦が議題として挙がっているとされる。「ゼレンスキー不在での停戦枠組みが既成事実化されるリスク」を懸念する声も多い。</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- ========== World News Section ========== -->
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/17）の主要トピック:</strong> ウクライナがケルチ橋に2夜連続攻撃——アーチと車道部が崩落、開戦以来最大ドローン攻撃も記録更新 / イラン IRGC がバーレーンの米軍レーダーにドローン攻撃——バーレーン軍が迎撃、被害なし / トランプ・習・プーチン三者会談（深圳）が明日（11/18）に迫る——議題は核兵器＋イランか / 第49回 ASEAN 首脳会議（マニラ）最終日——共同声明採択へ / IMF がウクライナに追加 16 億ドル支援を示唆
+      <strong>本日（11/18）の主要トピック:</strong> APEC 深圳——習近平がトランプを滑走路で出迎え、フィリピンとの貿易・防衛合意も発表 / イランがクウェートの米軍基地（アリ・アルサレム）を砲撃——米軍はイランのキシュム島ミサイル発射基地を空爆 / ウクライナドローンがケルチ橋を攻撃 / イスラエル国会議長選でネタニヤフ候補が敗北 / 英がイスラエル入植地関連企業を制裁 / Apple・Gmail で大規模障害
     </div>
+
     <div class="card">
-      <div class="card-title">ウクライナ、ケルチ橋に2夜連続攻撃——アーチと車道部崩落、同夜に開戦以来最大ドローン攻撃も記録更新</div>
-      <div class="card-meta"><span class="badge">Ukraine / Russia / Kerch Bridge / Crimea / Drone Attack / War / Nov 17 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/17/headlines">Democracy Now</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-17-2026/4127219">Anadolu Agency</a> / <a href="https://www.justsecurity.org/164914/early-edition-november-17-2026/">Just Security</a></span></div>
+      <div class="card-title">APEC 深圳——習近平がトランプを滑走路で出迎え、フィリピンとの貿易・防衛合意も発表——プーチン三者会談は本日夕方か</div>
+      <div class="card-meta"><span class="badge">APEC / Shenzhen / Trump / Xi Jinping / Philippines / Trade / Defense / Nov 18 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-18-2026/4128568">Anadolu Agency</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-18-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ウクライナ軍はロシア占領下のクリミア半島とロシア本土を結ぶケルチ橋を16〜17日夜に再度攻撃し、ウクライナ参謀本部はアーチ1基と車道部1区間が崩落したと発表した。クレムリン報道官は「再建する」とコメントした。</li>
-          <li>同夜、ロシアはウクライナが開戦以来最大規模のドローン攻撃を実施したと発表。キーウでは1日に17回の空襲警報が鳴り響き、過去最多を記録した。</li>
-          <li>IMF は同日、ウクライナの拡大信用供与ファシリティ（EFF）の第2・第3回審査が進展したとして、追加約16億ドルの支援が可能になると示唆。ウクライナの財政支援継続を確認した。</li>
+          <li>トランプ大統領は APEC 首脳会議参加のため中国・深圳に到着。習近平国家主席は異例の滑走路出迎えを行い、両首脳は会談を開始した。慣例を破る演出が外交的配慮の深さを示しているとの見方が広がっている。</li>
+          <li>また、マニラ訪問中にフィリピンとの二国間貿易協定（関税削減・農産品・製造業）および防衛協力拡大合意を発表した。南シナ海での共同哨戒が含まれるとされ、中国の反応が注目される。</li>
+          <li>プーチン大統領も深圳入りが確認されており、三者会談は本日夕方（現地時間）に行われる見通し。核軍縮条約の枠組み議論とイラン停戦仲介が主要議題と伝えられている。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">イラン IRGC、バーレーンのシェイク・イーサ空軍基地内の米軍レーダーにドローン攻撃——バーレーン軍が迎撃、被害なし</div>
-      <div class="card-meta"><span class="badge">Iran / IRGC / Bahrain / US Military / Drone Attack / Middle East / Nov 17 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/17/headlines">Democracy Now</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-17-2026/4127219">Anadolu Agency</a> / <a href="https://andmagazine.substack.com/p/morning-brief-17-november-2026">AND Magazine</a></span></div>
+      <div class="card-title">イラン、クウェートの米軍アリ・アルサレム基地を砲撃——米軍はキシュム島ミサイル発射基地を空爆、バーレーンへのドローン攻撃も</div>
+      <div class="card-meta"><span class="badge">Iran / US Military / Kuwait / Ali Al Salem / Qeshm Island / Bahrain / Airstrike / Nov 18 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/18/headlines">Democracy Now</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-18-2026/4128568">Anadolu Agency</a> / <a href="https://www.justsecurity.org/165038/early-edition-november-18-2026/">Just Security</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イラン革命防衛隊（IRGC）は2026年11月17日、バーレーンのシェイク・イーサ空軍基地内に設置された米軍の早期警戒レーダー施設に対してドローン攻撃を実施したと表明した。バーレーン国防軍は全機を迎撃し「死傷者も施設の損傷もない」と発表した。</li>
-          <li>米情報当局によれば、イランは「ダーティボム（汚い爆弾）」または化学兵器を使ったワシントン DC 内の高官暗殺を検討しているという。トランプ大統領は「イランが実施すれば重大な代償を払わせる」と警告した。パキスタン外相は米イランの交渉仲介を継続中と述べた。</li>
+          <li>イラン軍は2026年11月18日、クウェートのアリ・アルサレム米軍基地に対して砲撃を実施したと表明した。これは米軍による前日の空爆への報復とされる。バーレーンにもドローン攻撃が行われ、バーレーン軍が迎撃した。</li>
+          <li>米軍は前日、イランのキシュム（ケシュム）島にある弾道ミサイル発射基地を空爆したと発表。米情報当局によれば、イランはダーティボム（汚い爆弾）または化学兵器を使ったワシントン DC 内の高官暗殺を検討しているとの情報もあり、当局間で評価が分かれている。</li>
+          <li>トランプ大統領は「イランが高官攻撃を実施すれば壊滅的な報復を加える」と警告を発した。パキスタン外相は米イラン間の外交交渉仲介を継続中と表明している。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">トランプ・習・プーチン三者会談（深圳 11/18-19）前夜——核兵器削減とイラン戦争が主要議題との報道、ウクライナ排除を懸念</div>
-      <div class="card-meta"><span class="badge">Trump / Xi Jinping / Putin / Shenzhen / APEC / Nuclear / Iran / Ukraine / Nov 18-19 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/164914/early-edition-november-17-2026/">Just Security</a> / <a href="https://edition.cnn.com/2026/11/17/politics/live-news/trump-visit-china-philippines">CNN</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-17-2026/4127219">Anadolu Agency</a></span></div>
+      <div class="card-title">ウクライナのドローンがケルチ橋を攻撃——橋梁構造に損傷か、前夜に続く連続攻撃</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Kerch Bridge / Crimea / Drone / War / Nov 18 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/18/headlines">Democracy Now</a> / <a href="https://morningstaronline.co.uk/article/world-brief-61">Morning Star</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トランプ大統領・習近平国家主席・プーチン大統領の史上初の三者会談が明日（11/18）から深圳（シェンジェン）で始まる見通し。複数の米当局者は、当初予測されたウクライナ停戦ではなく「核兵器削減とイラン戦争終結」が実質的な主要議題になっていると明かした。</li>
-          <li>ウクライナのゼレンスキー大統領は「自国の運命を当事者抜きで決定することに断固反対する」と声明を出した。EU 外交当局は「欧州の安全保障構造が大国間で一方的に再編されようとしている」と強く懸念を示している。</li>
-          <li>トランプは ASEAN 夕食会終了後、フィリピンを離れ深圳に向かった。CNN がライブ更新中。</li>
+          <li>ウクライナ軍は11月18日夜にもクリミア半島とロシア本土を結ぶケルチ橋をドローンで攻撃した。ロシア当局は橋の一部構造が損傷したと認めた一方、通行可能と発表している。前日（11/17）の攻撃でアーチ1基と車道部が崩落しており、連続攻撃となっている。</li>
+          <li>ロシア国防省は同夜のウクライナによる大規模攻撃を発表し、複数の地域で防空システムが応戦したと述べた。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">第49回 ASEAN 首脳会議（マニラ）最終日——南シナ海・AI 規制・貿易関税を盛り込んだ共同声明を採択</div>
-      <div class="card-meta"><span class="badge">ASEAN / Manila / Philippines / South China Sea / AI Policy / Trade / Nov 17 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-17-2026/4127219">Anadolu Agency</a> / <a href="https://edition.cnn.com/2026/11/17/politics/live-news/trump-visit-china-philippines">CNN</a></span></div>
+      <div class="card-title">イスラエル国会議長選——ネタニヤフ候補が敗北、野党系のマタン・カハナが当選——政権へのダメージ</div>
+      <div class="card-meta"><span class="badge">Israel / Knesset / Netanyahu / Matan Kahana / Eisenkot / Politics / Nov 18 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/165038/early-edition-november-18-2026/">Just Security</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-18-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>第49回 ASEAN 首脳会議はマニラで最終日を迎え、南シナ海での「法の支配の尊重」「航行・上空飛行の自由」を明記した共同声明を採択した。AI・デジタル経済に関する地域協力枠組み（ASEAN AI ガバナンス・フレームワーク）の原則合意も盛り込まれた。</li>
-          <li>会議中に複数の抗議活動が発生し、反米・反戦デモ参加者が警察と衝突した。フィリピン政府は「サミットの成功裏の完了」を宣言し、次回議長国に移行した。</li>
+          <li>イスラエル国会（クネセト）は11月18日、議員らの投票により野党指導者ガディ・エイゼンコット氏の同盟者であるマタン・カハナ氏を新議長に選出した。ネタニヤフ首相が推薦した候補は敗北し、連立政権の議会支配力が揺らいでいることが浮き彫りになった。</li>
+          <li>英国は同日、ヨルダン川西岸の入植地建設に関与するイスラエルの建設会社8社と、ガザへの人道支援を妨害したとされる入植者組織1団体を制裁対象に指定した。</li>
         </ul>
       </div>
     </div>
+
     <div class="card">
-      <div class="card-title">ガザ——停戦交渉は依然膠着、ヤマン・フーシ派がバブ・エル・マンデブ海峡周辺から後退——アデン防衛に集中</div>
-      <div class="card-meta"><span class="badge">Gaza / Yemen / Houthis / Bab al-Mandab / Ceasefire / Humanitarian / Nov 17 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/17/headlines">Democracy Now</a> / <a href="https://andmagazine.substack.com/p/morning-brief-17-november-2026">AND Magazine</a></span></div>
+      <div class="card-title">Apple Pay・iCloud で大規模障害、Gmail も数千件の障害報告——世界規模のサービス停止</div>
+      <div class="card-meta"><span class="badge">Apple / iCloud / Apple Pay / Gmail / Outage / Tech / Nov 18 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-18-2026/">Havana Times</a> / <a href="https://wng.org/podcasts/wednesday-morning-news-november-18-2026-1794935677">World News Group</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ガザ停戦交渉はエジプト・カタールの仲介で継続中だが、依然として合意に至っていない。イスラエル軍はガザ北部での作戦を継続しており、国連人道問題調整事務所（OCHA）が「物資搬入の障壁が高まっている」と報告した。</li>
-          <li>イエメンでは国際承認政府（PLC）寄りの部隊がバブ・エル・マンデブ海峡周辺地域からの後退を表明し、暫定首都アデン防衛への集中を優先すると発表した。フーシ派との激戦が続いており、海峡の安全航行を巡る状況が流動化している。</li>
+          <li>Apple は2026年11月18日、Apple Pay・iCloud・App Store を含む複数のサービスで広範な障害が発生したことを認めた。DownDetector には世界各地から数万件を超えるレポートが集まり、金融決済・クラウドストレージ・デバイスの同期が影響を受けた。</li>
+          <li>同時期に Gmail でも数千件の障害報告が上がり、一部ユーザーがメールの送受信や認証に失敗した。Apple・Google ともに原因を調査中であり、復旧に向けた作業を進めていると発表している。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">その他の世界ニュース——バングラデシュで縫製労働者スト、ドイツが電力税を引き下げ、モーリシャスが英国にチャゴス諸島の期限設定</div>
+      <div class="card-meta"><span class="badge">Bangladesh / Germany / Mauritius / Chagos Islands / Labor / Energy / Nov 18 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/18/headlines">Democracy Now</a> / <a href="https://morningstaronline.co.uk/article/world-brief-61">Morning Star</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li><strong>バングラデシュ:</strong> 縫製業労働者が賃上げを要求してストライキを継続。警察との衝突が起き、数人が負傷したと報告されている。</li>
+          <li><strong>ドイツ:</strong> 連立政権が家庭・企業向けの電力税引き下げで合意。エネルギーコスト高騰に対処するための措置で、産業競争力の維持が目的とされる。</li>
+          <li><strong>モーリシャス:</strong> 英国に対してチャゴス諸島の返還期限を2026年12月末と設定した。期限までに合意が成立しない場合は国際司法機関への提訴を辞さないと表明している。</li>
         </ul>
       </div>
     </div>
@@ -216,9 +257,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月17日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: GBHackers · Digital Trends · The Next Web · Releasebot · Democracy Now · Anadolu Agency · Just Security · CNN · AND Magazine</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-16/index.html">前版（2026-11-16）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月18日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: 9to5Mac · Dark Reading · BleepingComputer · Releasebot · ExplainX · DEV Community · Anadolu Agency · Democracy Now · Just Security · Havana Times · Morning Star · World News Group · MorphLLM</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-17/index.html">前版（2026-11-17）</a></p>
 </footer>
 </body>
 </html>
