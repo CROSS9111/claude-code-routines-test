@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月20日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月21日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -51,8 +51,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code v2.1.329 がネットストール後の設定リセットバグを修正 / OpenAI Codex 0.171.0 がリアルタイム音声・リモートセッション制御を追加 / トランプ・習・プーチンが深圳サミット後に共同声明を発表 / ロシアが大規模ドローン攻撃でウクライナのキーウ3橋を直撃、8人死亡 / ポーランドにロシアのミサイル着弾、NATO が「明白な違反」と声明</p>
-  <p class="date">2026年11月20日（金）&nbsp;|&nbsp;<a href="2026-11-19/index.html">前版（11/19）</a></p>
+  <p class="subtitle">Claude Code v2.1.329 がタスク・MCP可視性を強化 / オープンソース Agent-MCTS が Claude Code にモンテカルロ木探索を追加 / CROO Skill でエージェントネットワーク統合 / トランプが「ダーティボム」計画をめぐりイランへの軍事行動を警告 / ロシアのミサイルがポーランドに着弾、NATO が領域侵犯と声明 / メキシコで FBI 最重要指名手配犯「エル・チャポ・イシドロ」逮捕</p>
+  <p class="date">2026年11月21日（土）&nbsp;|&nbsp;<a href="2026-11-20/index.html">前版（11/20）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -68,65 +68,65 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/20）のハイライト:</strong> Claude Code v2.1.329 がリリース——ネットワークストール後に設定ファイルがデフォルトにリセットされるバグを修正。OpenAI Codex CLI 0.171.0 がリアルタイム音声通話・リモートセッション制御・GPT-6.2 Sol 統合を追加。Microsoft Defender の AI エージェント向けランタイム防御機能が Windows で GA 後、エンタープライズ採用が加速中。
+      <strong>本日（11/21）のハイライト:</strong> Claude Code v2.1.329 がタスク・MCP サーバー可視性の強化と Code Mode の拡張サポートを追加（11/20リリース）。オープンソースツール Agent-MCTS が Claude Code にモンテカルロ木探索（MCTS）を組み込み、公式 GitHub リリース（11/21）。CROO Skill が Claude Code・Codex ユーザー向けに専門エージェントネットワークを開放（11/20）。
     </div>
 
     <div class="card">
-      <div class="card-title">Claude Code v2.1.329 リリース——ネットワークストール・ファイルロック後の設定リセットバグを修正（11月20日）</div>
-      <div class="card-meta"><span class="badge">Claude Code / 2.1.329 / Bug Fix / Config / Network / Nov 20 2026</span><span class="card-source">Source: <a href="https://munderdiffl.in/blog/agent-tools-today-2026-11-20/">Agent Tools Today</a> / <a href="https://ai-tldr.dev/tools/claude-code/">ai-tldr.dev</a></span></div>
+      <div class="card-title">Claude Code v2.1.329——タスク・MCP サーバー可視性を強化、Code Mode サポートを拡張（11月20日リリース）</div>
+      <div class="card-meta"><span class="badge">Claude Code / 2.1.329 / MCP / Code Mode / Nov 20 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot / Anthropic</a> / <a href="https://dataconomy.com/2026/11/19/anthropic-adds-code-mode-to-claude-code-for-chained">Dataconomy</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic は2026年11月20日、Claude Code バージョン 2.1.329 をリリースした。主要な修正は、ネットワークストールまたはファイルロックが発生した後に設定ファイル（<code>.claude/settings.json</code>）がデフォルト値にリセットされてしまうバグの解消。CI/CD 環境や不安定なネットワーク接続下で頻発していた問題であり、ユーザーカスタム設定が突然失われるケースに悩まされていた開発者から歓迎の声が上がっている。</li>
-          <li>前バージョン（2.1.328）では、クラウドプロバイダー向け auto モードと /code-review の厳格化が行われており、今回は安定性改善のマイナーリリースと位置づけられる。バージョン番号は ai-tldr.dev のトラッカーに基づくもので、公式チェンジログでの確認を推奨する。</li>
-          <li>また、AI コーディングエージェントが GitHub 上で秘密情報（APIキー等）を公開してしまう問題（Apiiro レポート: .claude/settings.local.json に含まれる秘密情報が 1,122 件確認）に対して、Anthropic が「今後のバージョンで秘密情報スクラビングを追加する可能性を検討中」と述べていることも引き続き注目されている。</li>
+          <li>Anthropic は2026年11月20日、Claude Code バージョン 2.1.329 をリリースした。主要な改善は<strong>タスクおよび MCP サーバー可視性の強化</strong>——実行中のタスクとその接続先 MCP サーバーをより詳細に確認・追跡できるようになった。Code Mode のサポートも拡張されており、より複雑なタスクチェーンへの対応が向上している。</li>
+          <li>また、セッション管理・メモリ・認証・コードレビュー・VS Code 拡張機能にわたる複数のバグが修正された。Code Mode はバージョン 2.1.323（11月12日）から提供されている実験的なオプトイン機能で、JavaScript コードを生成して複数のツール呼び出しを1ステップでチェーンする機能を持つ。</li>
+          <li>前日（11/19）に報告された「ネットワークストール後の設定ファイルリセットバグ」の修正も引き続き含まれており、CI/CD 環境での安定性が向上した。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI Codex CLI 0.171.0 リリース——リアルタイム音声通話・リモートセッション制御・GPT-6.2 Sol 統合を追加（11月18〜20日）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / 0.171.0 / Voice / Remote Session / GPT-6.2 Sol / Nov 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/openai/codex">Releasebot / Codex Updates</a> / <a href="https://news.futureofai.org/2026/11/ai-engineer-code-summit-openai-on-new.html">Future of AI News</a></span></div>
+      <div class="card-title">オープンソース Agent-MCTS——Claude Code にモンテカルロ木探索を追加、GitHub で正式リリース（11月21日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Agent-MCTS / MCTS / Open Source / GitHub / Nov 21 2026</span><span class="card-source">Source: <a href="https://emergent.sh/news/agent-mcts-adds-monte-carlo-search-claude">Emergent.sh</a> / <a href="https://agentskill.sh/plugins/newjerseystyle/mcts">AgentSkill.sh</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI は Codex CLI のバージョン 0.171.0 をリリースした。主要な新機能は3点。第1に<strong>リアルタイム音声通話ネゴシエーション</strong>——TUI（ターミナルUI）内で音声呼び出しの折衝ができるようになり、エージェントとの対話が音声でも可能になった。第2に<strong>デフォルト ON の TUI ワークスペース</strong>——リッチなプレビューとトランスクリプトが標準で有効化される。</li>
-          <li>第3に<strong>リモートセッション制御</strong>——離れた場所から実行中のエージェントセッションを操作・終了できる機能が追加された。また GPT-6.2 Sol および Astra モデルのサポートが追加されたとされるが、これらのモデル名は Releasebot という単一アグリゲーターからの情報であり、OpenAI 公式リリースノートでの確認を推奨する。</li>
-          <li>前バージョン（0.170.0、11月18日リリース）では、MCP サーバーの同名衝突解消・OpenTelemetry エクスポーターの認証リフレッシュなどが追加されていた。AI Engineer Code Summit（11月）での OpenAI のプレゼンテーションでも、Codex を使った新しい作業スタイルが紹介されており、ツール成熟度が急速に向上している。</li>
+          <li>オープンソースツール <strong>Agent-MCTS</strong> が2026年11月21日に GitHub で正式リリースされた。Claude Code のエージェントにモンテカルロ木探索（Monte Carlo Tree Search）を追加するプラグインで、問題解決時に複数のアプローチを木構造で探索し、各ノードでシミュレーションを実施して最良の手順を選択する機能を持つ。</li>
+          <li>研究・計画立案・複雑なコーディングタスクに特に有効とされており、コミュニティでは「長いリファクタリングタスクや多段階の設計判断に使えるか」という観点での検証が進んでいる。インストールは <code>claude plugin install --plugin-dir /path/to/plugin-mcts</code> で行う。</li>
+          <li>ArXiv ではモンテカルロ探索を LLM エージェントに組み込む手法の研究が活発化しており（SWE-Search, Empirical-MCTS, Agent Alpha など）、このツールはそうした学術成果を Claude Code で実用的に利用できる形に落とし込んだ事例として注目されている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">OpenAI「Performance Factory」——Codex エージェントが ChatGPT のパフォーマンス問題 1,700 件超を自律調査、エンジニアが最終承認（詳報）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Performance Factory / ChatGPT / Agents / Human-in-the-Loop / Nov 2026</span><span class="card-source">Source: <a href="https://www.tokenpost.com/news/technology/61650">TokenPost</a> / <a href="https://runtimewire.com/article/openai-codex-performance-factory-chatgpt-regressions">RuntimeWire</a> / <a href="https://cryptobriefing.com/openai-performance-factory-codex-agents/">CryptoBriefing</a></span></div>
+      <div class="card-title">CROO Skill リリース——Claude Code・Codex から専門 AI エージェントネットワークを直接呼び出し可能に（11月20日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / CROO / Skill / Agent Network / Nov 20 2026</span><span class="card-source">Source: <a href="https://yellow.com/press-releases/croo-launches-croo-skill-opening-its-ai-agent-network-to-claude-code-and-codex-users">Yellow.com Press</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI が公表した「Performance Factory」は、Codex エージェントを使って ChatGPT のパフォーマンス低下を自律的に検出・調査する内部システム。3か月間で <strong>1,700 件以上</strong>の調査を完了し、600 件超で根本原因を特定。約400件の修正案をエンジニアに提出した。</li>
-          <li>「Regression Workflow」と呼ばれる主要ワークフローでは、パフォーマンスアラートが発火すると Codex エージェントが自動でタスクを引き受け、調査結果を記録して修正候補をルーティングする。<strong>エンジニアが最終的な変更承認を行う人間-エージェント協調体制</strong>を維持しており、約25%の診断がアドバーサリアルピアレビュー（内部批判プロセス）にさらされる設計になっている。</li>
-          <li>この事例は「エージェントが実際に企業インフラの中で本番稼働している」最も具体的な公式事例の一つとして業界に大きな影響を与えており、類似の内部自動化に着手する企業が増えている。</li>
+          <li>CROO は2026年11月20日、Claude Code および Codex ユーザー向けに「CROO Skill」を発表した。これにより、Claude Code のセッション内から CROO のエージェントネットワークに登録された専門エージェントを直接検索・呼び出しできるようになる。</li>
+          <li>CROO のエージェントネットワークは法務・会計・デザインなどの専門領域に特化した AI エージェントを提供しており、開発作業中に専門知識が必要になった際にツール切り替えなしで活用できる点が訴求ポイントとされている。</li>
+          <li>このような「スキル・エージェントマーケットプレイス型」の拡張は、Claude Code エコシステムの広がりを示す事例の一つ。Microsoft の AI エージェント向け Defender との統合も将来的に検討されているとされる。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">AI コーディングエージェント比較（Claude Code vs Codex vs OpenCode）——コスト・速度・説明品質の三軸で評価、開発者の「2エージェント並行」戦略が浮上</div>
-      <div class="card-meta"><span class="badge">Claude Code / Codex / OpenCode / Benchmark / Cost / Multi-Agent / tmux / Nov 2026</span><span class="card-source">Source: <a href="https://openchamber.dev/blog/codex-vs-claude-code/">OpenChamber</a> / <a href="https://shattered.io/claude-code-codex-cli-opencode-update-4-days-2026/">Shattered.io</a> / <a href="https://www.aitooldiscovery.com/guides/claude-code-reddit">AI Tool Discovery</a></span></div>
+      <div class="card-title">Microsoft Defender の AI エージェント向けランタイム防御が Windows で GA——Claude Code・Copilot CLI 等に対応（11月17日 GA、継続報道）</div>
+      <div class="card-meta"><span class="badge">Microsoft / Defender / Claude Code / AI Agent Security / Windows / GA / Nov 17 2026</span><span class="card-source">Source: <a href="https://finance.biggo.com/news/a4aac4ec-2bb0-4f2c-b787-5d9f189df6dc">BigGo Finance</a> / <a href="https://blog.mean.ceo/claude-code-news-november-2026/">Claude Code News</a></span></div>
       <div class="card-body">
         <ul>
-          <li>複数のブログ・Reddit まとめサイトが Claude Code・Codex CLI・OpenCode の三ツールを比較した分析を公開。コスト面では Claude Opus 5.5 の重い使用が月間数百〜数千ドルに達する事例が報告されており、Qwen3.8-Flash-Next などのローカルモデルへのルーティング戦略が活発に議論されている。</li>
-          <li>「Claude Code はシニア開発者のように意思決定の理由を詳しく説明する、Codex は速度優先の自律エンジニア」という使い分けコンセンサスが Reddit でも形成されつつある。Reddit のスレッド量は Claude Code が Codex の約4倍（ただし500コメントのサンプルベースのため参考値）とされ、ネガティブ率も Claude Code（13〜30%）が Codex（39〜61%）より低い。</li>
-          <li>実践的な戦略として、tmux の2ペインで Claude Code と Codex CLI を並行実行し、一方がもう一方の成果物をレビューする「2エージェント相互チェック」が複数のスレッドで紹介されている。</li>
+          <li>Microsoft は2026年11月17日、AI エージェントを標的とした悪意ある命令（プロンプトインジェクション・不正ツール呼び出し等）をブロックする Defender の新機能を Windows で一般提供（GA）した。対象は Claude Code・GitHub Copilot CLI・OpenClaw・ChatGPT Desktop など主要 AI コーディングエージェント。</li>
+          <li>この機能は企業の IT 管理者が各エージェントの挙動をポリシーベースで制御できる「AI エージェントファイアウォール」として機能する。ゼロトラストアーキテクチャへの統合も可能で、エンタープライズ向け採用が急速に進んでいる。</li>
+          <li>AI コーディングエージェントのセキュリティ問題（Apiiro レポートで確認された 1,122 件の秘密情報露出など）が業界横断の課題となっている中、プラットフォームレベルでの防御レイヤー追加に各社が動いている流れの一環。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">AI コーディングエージェントがセキュリティリスクを拡大——104,185 件の設定ファイルが GitHub 上で公開、1,122 件に実際の秘密情報（継続報道）</div>
-      <div class="card-meta"><span class="badge">Claude Code / Security / Secrets / GitHub / Apiiro / .claude / settings / Nov 2026</span><span class="card-source">Source: <a href="https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github">Dark Reading</a> / <a href="https://cybersecuritynews.com/claude-code-leaks-user-email/">CybersecurityNews</a></span></div>
+      <div class="card-title">AI コーディングエージェント 4日間アップデート比較（Claude Code・Codex CLI・OpenCode）——Code Mode の実力と「2エージェント並行」戦略</div>
+      <div class="card-meta"><span class="badge">Claude Code / Codex / OpenCode / Code Mode / Multi-Agent / tmux / Nov 2026</span><span class="card-source">Source: <a href="https://shattered.io/claude-code-codex-cli-opencode-update-4-days-2026/">Shattered.io</a> / <a href="https://aicodingdaily.substack.com/p/claude-code-tips-and-wild-2026-predictions">AI Coding Daily</a></span></div>
       <div class="card-body">
         <ul>
-          <li>セキュリティ企業 Apiiro の報告（11月10日）が引き続き業界で広く引用されている。GitHub 上で公開されていた <code>.claude/settings.local.json</code> のコピー 104,185 件を検査したところ、1,122 件に API キー・パスワード・トークンなどの実際の秘密情報が含まれていた。これは Claude Code のデフォルト設定が <code>.gitignore</code> に自動追加されない点が根本原因の一つとされている。</li>
-          <li>また、Claude Code が HTTP User-Agent ヘッダーにユーザーのメールアドレスを含めて外部サーバーに送信している問題も注目を集めている。Anthropic は「今後のリリースでメールアドレスをモデルコンテキストから削除する」と述べたが、修正バージョンの日程は未発表。</li>
-          <li>Microsoft の AI エージェント向け Defender 機能（11月17日 GA）とも相まって、AI コーディングエージェントのセキュリティが業界全体の重要課題として認識される流れが加速している。企業ユーザーには egress フィルタリングと <code>.gitignore</code> への設定ファイル追加が推奨されている。</li>
+          <li>複数のブログが直近4日間（11月17〜20日）の Claude Code・Codex CLI・OpenCode の変更を横断比較するまとめを公開した。Code Mode の安定化が最大の変更点とされており、「単一プロンプトで複数ツールをチェーンする複雑なタスクが初めて安定して動いた」という報告が増えている。</li>
+          <li>「Claude Code はなぜその決定をしたかを説明するシニアエンジニア、Codex は速度優先の自律エンジニア」という使い分けコンセンサスが開発者コミュニティで固まりつつある。コスト管理として tmux の2ペインで両エージェントを並行実行し、互いの成果物をレビューさせる「2エージェント相互チェック」戦略が実践的な手法として紹介されている。</li>
+          <li>AI Coding Daily の「2026年の予測」記事では、2027年には「エージェントが書いたコードのほうが多い」状態が標準になるという見通しが示されており、エージェントハーネス（複数エージェントの統括管理）の設計が次の主要課題として浮上しつつある。</li>
         </ul>
       </div>
     </div>
@@ -140,49 +140,49 @@
     </div>
 
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「Kimi K3 重みが公開」「Qwen3.8-27B 発表」——中国系オープンモデルが再び急伸、ローカルエージェントへの応用が活発化</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Kimi K3 / Qwen3.8 / Open Weights / Local LLM / Nov 2026</span><span class="card-source">Source: <a href="https://opentrends.io/sources/reddit-localllama">OpenTrends</a> / <a href="https://www.reddtrends.com/r/localllama">ReddTrends</a></span></div>
+      <div class="card-title">r/ClaudeAI——「Microsoft MAI Code 2 が Claude Opus 5.5 の作業の大半を数分の一のコストで実現」——コミュニティの反応は懐疑的</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Microsoft / MAI Code 2 / Claude Opus 5.5 / Cost / Nov 2026</span><span class="card-source">Source: <a href="https://claudescorner.substack.com/p/claudes-corner-reddit-recap-a-97">Claude's Corner Substack</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/LocalLLaMA 今週のトップ投稿の一つが「Moonshot AI の Kimi K3 がオープン重みとして公開された」という報告。コミュニティでは即座にローカル実行の報告が相次ぎ、Ollama や llama.cpp での動作確認コメントが多数ついている。</li>
-          <li>同時期に Alibaba の Qwen3.8-27B および Qwen3.8-Max（最大パラメータ版）も発表されており、「中国系オープンモデルが質・量ともに急速にキャッチアップしている」というコンセンサスが形成されつつある。Claude Code の裏で動くモデルとして使えないかを探るコメントも複数見られた。</li>
-          <li>「Pocket TTS（1.9M パラメータで音声クローニング対応）」の投稿も週間上位に入っており、LLM だけでなく小型特化モデルへの関心も広がっている。</li>
+          <li>r/ClaudeAI で注目を集めたスレッドが「Microsoft の MAI Code 2 が Claude Opus 5.5 の作業の大半をごく一部のコストで実現できる」という主旨の投稿。大多数のコメントは懐疑的で、「ベンチマーク条件と実使用環境の差」「タスクの性質による大きな差異」を指摘する声が多かった。</li>
+          <li>「コスト圧力がエージェント選択の最大要因になってきた」という状況を反映しており、スレッドではモデルルーティング（コスト感度の高いタスクを Qwen 系やローカルモデルに振り、品質重視タスクだけ Opus 5.5 を使う）戦略の議論に発展した。</li>
+          <li>実際の比較検証を行ったコメントでは「シンプルなコード生成ではコスト差が顕著だが、複雑な推論・設計議論では Opus 5.5 の優位性が維持される」という結論が上位に来ている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「Anthropic はオープン重みに安全審査を義務化しようとしている」——1.1k ポイント超、オープンソース AI の将来をめぐる大型議論</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Anthropic / Open Weights / AI Policy / Safety / Nov 2026</span><span class="card-source">Source: <a href="https://www.reddtrends.com/r/localllama">ReddTrends</a></span></div>
+      <div class="card-title">r/ClaudeAI——「Claude Code の単一プロンプトで 97 KB の水中世界を生成——サブエージェントがレンダリングエラーを自律チェック」</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Multi-Agent / Generative / Showcase / Nov 2026</span><span class="card-source">Source: <a href="https://claudescorner.substack.com/p/claudes-corner-reddit-recap-a-97">Claude's Corner Substack</a> / <a href="https://last30days.ai/research/claude-code">Last30Days.ai</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/LocalLLaMA で 1,100 ポイント超を獲得したスレッドが「Anthropic がオープン重みモデルに対する安全審査の義務化を提案しており、事実上オープンソース AI 開発を禁止しようとしている」という主旨の投稿。数百件のコメントが寄せられ、週間トップ議題の一つとなっている。</li>
-          <li>批判コメントの主流は「Anthropic は商業利益のためにオープンソースコミュニティを規制しようとしている」「安全性を建前にした競争排除」という見方。擁護側は「フロンティアクラスの能力を持つオープン重みには実際にリスクがあり、何らかのゲートキーピングは合理的」と反論している。</li>
-          <li>Anthropic の公式立場については一次ソースでの確認を推奨。コミュニティの反応が先行している状態であり、Anthropic の政策ブログや公式声明での検証が必要。</li>
+          <li>r/ClaudeAI で週間上位に入った投稿が「Claude Code への単一プロンプトから 97 KB のインタラクティブな水中世界を生成した」というショーケース。複数のサブエージェントが並行して動作し、うち一つがレンダリング結果を視覚的に確認してエラーを自律的に検出・修正したと説明されている。</li>
+          <li>コメントでは「Claude Code のビジョン機能とサブエージェント協調の組み合わせが想定以上に強力」「どのサブエージェント構成を使ったか」という技術的な質問が多数ついており、設定ファイルや CLAUDE.md の共有を求める声が上位を占めた。</li>
+          <li>こうした「非コーディング用途での Claude Code 活用」がコミュニティで盛んに共有されており、ゲーム・インタラクティブアート・データビジュアライゼーション分野での事例が増加している。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「Qwen3.8-Flash-Next vs Claude Opus 5.5：本物の Rust コードで6モデル比較」——コスト対性能で Qwen 系が存在感</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Qwen3.8-Flash-Next / Claude Opus 5.5 / Benchmark / Rust / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://opentrends.io/sources/reddit-localllama">OpenTrends</a></span></div>
+      <div class="card-title">r/ClaudeAI——「Opus 5.5 が CLAUDE.md / agents.md の指示に従わなくなった」——使用制限・Windows バグとあわせてユーザー不満が噴出</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Opus 5.5 / CLAUDE.md / Bug / Rate Limit / Nov 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">Last30Days.ai</a></span></div>
       <div class="card-body">
         <ul>
-          <li>r/LocalLLaMA 上位に入ったスレッドが、実際の Rust プロジェクトに本物の機能を追加するタスクで Qwen3.8-Flash-Next と Claude Opus 5.5（Claude Code 経由）など6モデルを比較したベンチマーク。「合成ベンチマークではなくリアルな開発タスク」という点が評価されている。</li>
-          <li>コメントでは「Qwen3.8-Flash-Next は速度と性能のバランスが良く、コスト感度の高い開発者にとって有力な選択肢」「Opus 5.5 は説明品質が高いが遅い・高コスト」という評価が目立つ。Claude Code のバックエンドモデルとして Qwen 系を使う可能性を探るコメントも複数あった。</li>
-          <li>詳細なスコアと試験方法は元の投稿スレッドで確認を推奨。</li>
+          <li>Last30Days.ai のコミュニティ調査レポート（11月2026年版）によると、r/ClaudeAI および r/ClaudeCode では「Opus 5.5 が CLAUDE.md や agents.md に記述された指示に従わなくなった」という報告が複数スレッドで上位を占めている。再現性のある問題として認識されており、ワークアラウンドの共有が活発化している。</li>
+          <li>同時期に使用制限（レートリミット）ヒット後の中断問題、VS Code 拡張機能の接続不安定、Windows 環境での特定バグも複数スレッドで報告されており、「2.1.329 以降で改善した」「まだ再現する」と意見が割れている状況。</li>
+          <li>Anthropic は公式には個別バグへの応答を行っていないが、releasebot のトラッキングではこの期間に関連するバグ修正が連続してリリースされており、問題を把握していると推察されている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">r/geopolitics &amp; r/worldnews——トランプ・習・プーチン「深圳共同声明」——「歴史的サミット後の声明は停戦実現の第一歩か、単なる外交パフォーマンスか」激論</div>
-      <div class="card-meta"><span class="badge">Community / r/geopolitics / r/worldnews / Trump / Xi / Putin / Shenzhen / Joint Statement / Ukraine / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/165471/early-edition-november-20-2026/">Just Security</a> / <a href="https://openchronicle.org/2026/11/20/global-news-brief-key-developments-around-the-world-november-20-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">r/LocalLLaMA——「Qwen3.8-27B と Kimi K3 がオープン重みで公開」——ローカル実行で Claude Code バックエンドとして使えるか検証が始まる</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Qwen3.8-27B / Kimi K3 / Open Weights / Local LLM / Claude Code / Nov 2026</span><span class="card-source">Source: <a href="https://opentrends.io/sources/reddit-localllama">OpenTrends</a> / <a href="https://www.reddtrends.com/r/localllama">ReddTrends</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トランプ・習・プーチン三者会談（深圳）後に共同声明が発表されると、r/geopolitics と r/worldnews で即座に大規模議論が展開された。「これは本物の停戦への第一歩か、ゼレンスキー不在の三者声明は国際法的正統性を欠くパフォーマンスに過ぎないか」が主要論点。</li>
-          <li>「習近平がトランプを滑走路で出迎えた映像は異例の格上げ演出——中国がこのサミットの成立に深くコミットしていることの証拠」という分析コメントが多くの支持を集めた。一方、ロシアがポーランドにミサイルを着弾させた翌日に「平和声明」を出すことへの矛盾を指摘するコメントも上位にある。</li>
-          <li>r/ukraine でも同声明への反応が多く投稿されており、「停戦条件にウクライナの領土主権が明記されていない」という批判が最多スコアを獲得している模様。</li>
+          <li>r/LocalLLaMA 今週のトップ投稿として「Alibaba の Qwen3.8-27B と Moonshot AI の Kimi K3 がオープン重みとして公開された」という報告が上位を占めている。Ollama や llama.cpp での即時動作確認コメントが多数ついており、コミュニティの反応は「中国系オープンモデルが性能で急速にキャッチアップしている」という見方に収束しつつある。</li>
+          <li>Claude Code のカスタムバックエンドとして Qwen3.8-27B を試すコメントが複数見られ、「コスト削減のために重いタスク以外は Qwen を使い、Opus 5.5 はフォールバックにする」というルーティング戦略が具体的に議論されている。</li>
+          <li>また「Anthropic がオープン重みへの安全審査義務化を提案している」という投稿が1,100 ポイント超を獲得して大型議論に発展。商業的動機とオープンソース規制の是非をめぐる論争は今週も継続中。</li>
         </ul>
       </div>
     </div>
@@ -192,89 +192,80 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">7 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/20）の主要トピック:</strong> トランプ・習・プーチン深圳サミット後に共同声明を発表——ウクライナ停戦枠組みを提示 / ロシアが大規模ドローン・ミサイル攻撃——キーウ3橋を直撃、8人死亡 / ポーランドにロシアのミサイルが着弾、NATO が「明白な違反」と声明 / エストニアがロシアとの国境を6か月閉鎖 / ICJ がミャンマーのロヒンギャ族虐殺を認定——人権団体が制裁要求 / COP31 草案に化石燃料削減の文言なし / ソマリアが UAE 大使を72時間以内に退去させるよう要求
+      <strong>本日（11/21）の主要トピック:</strong> トランプ大統領がイランの「ダーティボム」計画疑惑をめぐり軍事行動を警告——同時にイラン決定を先送りとの報道も / ロシアのミサイルがポーランドに着弾、ポーランド・NATO が対応を協議 / デンマークがロシアの国防駐在武官を追放・ロシア人への査証発給を停止 / メキシコでFBI 最重要指名手配犯「エル・チャポ・イシドロ」逮捕——周辺で暴力が激化 / ナスダックが2026年の上昇分を消失——NvidiaもSEC調査報道で急落 / AI兵器に関するUN交渉が暗礁
     </div>
 
     <div class="card">
-      <div class="card-title">トランプ・習・プーチン深圳サミット後に共同声明——ウクライナ停戦の「枠組み」を提示、ゼレンスキー不在に国際社会が反発（11月20日）</div>
-      <div class="card-meta"><span class="badge">Shenzhen / Trump / Xi Jinping / Putin / Joint Statement / Ukraine / Ceasefire / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.justsecurity.org/165471/early-edition-november-20-2026/">Just Security</a> / <a href="https://openchronicle.org/2026/11/20/global-news-brief-key-developments-around-the-world-november-20-2026/">Open Chronicle</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-20-2026/4131638">Anadolu Agency</a></span></div>
+      <div class="card-title">トランプ大統領、イランの「ダーティボム」計画疑惑をめぐり軍事行動を警告——同時に決定先送りとの報道（11月21日）</div>
+      <div class="card-meta"><span class="badge">USA / Iran / Trump / Military / Dirty Bomb / Nov 21 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-21-2026/4132676">Anadolu Agency</a> / <a href="https://newscura.com/global/timeline/2026-11-21">NewsCura</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トランプ大統領・習近平国家主席・プーチン大統領は深圳での三者会談後に共同声明を発表した。声明はウクライナ停戦の「枠組み」を含むとされるが、ゼレンスキー大統領を除外した三者のみによる提示に対して、EU・英国・ウクライナ政府が「国際法的正統性を欠く」と反発している。</li>
-          <li>トランプ政権は「大国間で合意を形成してから当事者に提示する」アプローチを採用していると分析されており、外交アナリストの間でも評価が分かれている。日本の高市首相もプーチンとの個別会談で「コミュニケーション継続」に合意しており、三者枠組みへの間接的な関与が疑われている。</li>
-          <li>一方、同日ロシアはウクライナに対して大規模なドローン・ミサイル攻撃を実施しており、「停戦声明と軍事攻撃の同日実施」という矛盾に各国政府が困惑を示している。</li>
+          <li>トランプ大統領は、ワシントンを標的とした「ダーティボム（汚染爆弾）」計画への関与疑惑をめぐり、イランに対して軍事行動も辞さない姿勢を示した。アナドル通信の朝刊ブリーフィングが伝えた。</li>
+          <li>一方、複数のアウトレットは「トランプ政権が地域諸国の外交的圧力を受け、全面戦争を回避するためイランへの決定を先送りした」とも報じており、緊張緩和に向けた外交交渉が並行して進んでいるとみられる。</li>
+          <li>イランをめぐる地政学的緊張は、前日のトランプ・習・プーチン深圳サミットの余波とも絡み合っており、中東情勢の流動性が高まっている。米議会では12月11日の政府閉鎖期限とイラン戦費をめぐる予算交渉も山場を迎えている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ロシアが大規模ドローン・ミサイル攻撃——キーウで3つの橋を直撃、8人死亡・数十人負傷（11月20日未明）</div>
-      <div class="card-meta"><span class="badge">Russia / Ukraine / Kyiv / Drone / Missile / Bridge / Casualties / War / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/20/headlines">Democracy Now</a> / <a href="https://today.zhudong.net/en/2026-11-20.html">World News Today</a> / <a href="https://www.justsecurity.org/165471/early-edition-november-20-2026/">Just Security</a></span></div>
+      <div class="card-title">ロシアのミサイルがポーランドに着弾——ポーランド各地で空襲警報、NATO が「明白な領域侵犯」と声明（11月21日）</div>
+      <div class="card-meta"><span class="badge">Poland / Russia / NATO / Missile / Air Raid / Nov 21 2026</span><span class="card-source">Source: <a href="https://www.euronews.com/video/2026/11/21/latest-news-bulletin-november-21st-2026-evening">Euronews</a> / <a href="https://newscura.com/global/timeline/2026-11-21">NewsCura</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ロシア軍は2026年11月20日未明、ウクライナに対して大規模なドローンおよびミサイル攻撃を実施した。キーウ（キエフ）では <strong>ドニプロ川にかかる3つの橋</strong>が直撃を受け、少なくとも <strong>8人が死亡・数十人が負傷</strong>した。ウクライナのキーウ市当局が確認している。</li>
-          <li>この攻撃は深圳でのトランプ・習・プーチン三者会談の直後に行われたものであり、「停戦声明と同日の軍事攻撃」という状況が国際社会に強い衝撃を与えている。プーチン大統領はクリミア橋への「重大な攻撃」を受けたとして停戦交渉を拒否すると述べたとの報道もある。</li>
-          <li>ウクライナ空軍は一部のドローン・ミサイルを撃墜したと発表しているが、橋梁インフラへの甚大な被害は否定できない状況。国際社会はロシアを非難する声明を出しており、欧州各国は追加制裁を検討中とされる。</li>
+          <li>ポーランド複数の都市で空襲サイレンが鳴り響き、NATO は「ロシアのミサイルが着弾したことを確認した」と声明を発表した。NATO は「明白な領域侵犯」と位置づけており、同盟の集団防衛条項（第5条）の発動に至るかどうかが焦点となっている。</li>
+          <li>現時点で NATO 諸国は「事実確認中」として慎重な姿勢を取っており、即座の軍事的反撃には踏み切っていない。ポーランド政府は防空システムを最大警戒態勢に引き上げており、東側国境沿いでの部隊展開も確認されている。</li>
+          <li>ロシアはウクライナへの大規模攻撃を継続中であり、前日（11/20）のキーウ3橋直撃に続く事態となっている。トランプ・習・プーチン深圳共同声明が出た直後にNATO 領域への着弾が発生したことで、欧州同盟国の怒りと困惑が広がっている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ポーランドにロシアのミサイルが着弾——NATO 「明白な領域侵犯」、ポーランド首相「挑発の可能性が高い」と声明（11月20日）</div>
-      <div class="card-meta"><span class="badge">Poland / Russia / NATO / Missile / Article 5 / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.washingtonpost.com/world/wires/">Washington Post Wires</a> / <a href="https://www.justsecurity.org/165471/early-edition-november-20-2026/">Just Security</a></span></div>
+      <div class="card-title">デンマーク、ロシアの国防駐在武官を追放——ロシア人への非緊急査証発給を停止（11月21日）</div>
+      <div class="card-meta"><span class="badge">Denmark / Russia / Diplomacy / Expulsion / Visa / Nov 21 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-21-2026/4132676">Anadolu Agency</a> / <a href="https://today.zhudong.net/en/2026-11-21.html">World News Today</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ポーランド政府は、自国領土内にロシアのミサイル2発と疑われるドローン1機が着弾したと発表した。ポーランドのトゥスク首相は「意図的な挑発の可能性が高い」と声明を出し、NATO 加盟国への緊急通知が行われた。NATO は「明白な領域侵犯（clear violation of NATO territory）」と声明した。</li>
-          <li>NATO の集団防衛条項（第5条）の発動に至るかどうかが焦点となっているが、現時点では NATO 諸国は「事実確認中」として慎重な姿勢を取っている。ウクライナ戦争の延焼が NATO 加盟国に直接及んだ場合の対応を問う重大な局面となっている。</li>
-          <li>ポーランドは防空システムを最大警戒態勢に引き上げており、東側隣国との国境沿いで追加部隊の展開が確認されている。</li>
+          <li>デンマークのラスムッセン外務大臣は、ロシアの国防駐在武官に対して国外退去を命じ、ロシア市民への非緊急査証（ビザ）の発給を停止すると発表した。ラスムッセン外相は「ロシアは欧州に対して積極的な諜報・破壊工作活動を続けている」と理由を説明した。</li>
+          <li>この措置は、ポーランドへのミサイル着弾、エストニアのロシア国境閉鎖（6か月）とほぼ同時期に行われており、NATO・EU 加盟の北欧・バルト諸国がロシアへの圧力を一段と強めていることを示している。</li>
+          <li>ロシア外務省は「対抗措置を取る」と警告しているが、具体的な措置の内容は明らかにしていない。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">エストニアがロシアとの国境を少なくとも6か月間閉鎖——ロシアは「対抗措置を取る」と警告（11月20日）</div>
-      <div class="card-meta"><span class="badge">Estonia / Russia / Border / Baltic / NATO / Nov 20 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-20-2026/4131638">Anadolu Agency</a> / <a href="https://www.justsecurity.org/165471/early-edition-november-20-2026/">Just Security</a></span></div>
+      <div class="card-title">メキシコで FBI 最重要指名手配犯「エル・チャポ・イシドロ」逮捕——北西部で暴力が激化（11月21日）</div>
+      <div class="card-meta"><span class="badge">Mexico / Drug Cartel / El Chapo Isidro / FBI / Arrest / Nov 21 2026</span><span class="card-source">Source: <a href="https://newscura.com/global/timeline/2026-11-21">NewsCura</a> / <a href="https://today.zhudong.net/en/2026-11-21.html">World News Today</a></span></div>
       <div class="card-body">
         <ul>
-          <li>エストニア政府は、ロシアとの国境を少なくとも6か月間閉鎖すると発表した。ロシア側は「対抗措置を取る」と警告しており、バルト三国を含む NATO 東側加盟国が一斉に緊張状態に入っている。</li>
-          <li>この措置は、ロシアによるウクライナへの大規模攻撃やポーランドへのミサイル着弾と同日に実施されており、NATO 東側諸国が対露政策を一段と強硬化していることを示している。エストニアはロシアと国境を共有する NATO 加盟国の中でも最も積極的にウクライナ支援を行ってきた国の一つ。</li>
+          <li>FBI の最重要指名手配犯リストに掲載されていたメキシコの麻薬組織幹部「エル・チャポ・イシドロ」（本名未公表）が、メキシコ北西部で逮捕された。逮捕はメキシコ当局と米当局の合同作戦によるものとされる。</li>
+          <li>逮捕直後から当該地域（メキシコ北西部、シナロア州近辺）で組織内部の権力争いとみられる暴力行為が激化しており、現地住民や外国人旅行者への安全警告が発令されている。</li>
+          <li>トランプ政権は就任以来、メキシコに対して麻薬カルテルへの強硬対応を強く求めており、今回の逮捕はメキシコ政府による「対米協調姿勢の示威」とも解釈されている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">ICJ、ミャンマーがロヒンギャ族に対してジェノサイドを行ったと認定——人権団体が対ミャンマー制裁の即時強化を要求（11月20日）</div>
-      <div class="card-meta"><span class="badge">ICJ / Myanmar / Rohingya / Genocide / UN / Sanctions / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/20/headlines">Democracy Now</a> / <a href="https://morningstaronline.co.uk/article/world-brief-62">Morning Star</a> / <a href="https://openchronicle.org/2026/11/20/global-news-brief-key-developments-around-the-world-november-20-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">ナスダックが2026年の上昇分をすべて消失——全3指数が調整局面入り、Nvidia は SEC 調査報道で急落（11月21日）</div>
+      <div class="card-meta"><span class="badge">Markets / Nasdaq / Nvidia / SEC / Correction / Nov 21 2026</span><span class="card-source">Source: <a href="https://newscura.com/global/timeline/2026-11-21">NewsCura</a> / <a href="https://today.zhudong.net/en/2026-11-21.html">World News Today</a></span></div>
       <div class="card-body">
         <ul>
-          <li>国際司法裁判所（ICJ）はミャンマー軍がロヒンギャ族に対してジェノサイドを行ったと認定する判決を言い渡した。この判決はガンビアが2019年に ICJ に申し立てた訴訟に基づくもので、数年間の審理を経て最終的な認定に至った。</li>
-          <li>ヒューマン・ライツ・ウォッチ（HRW）・アムネスティ・インターナショナルなどの人権団体は即座に「制裁の即時強化とミャンマー軍事政権に対する資産凍結を実施せよ」と各国政府に要求した。</li>
-          <li>ミャンマー軍事政権（2021年クーデター以降の政権）は判決を否定している。国際社会の実効的な対応が取られるかどうかは不透明で、安保理常任理事国の中国・ロシアが制裁に反対するとみられることが最大の障壁となっている。</li>
+          <li>米国市場では、ナスダック総合指数が2026年初来の上昇分をすべて消失し、ダウ・S&amp;P500 とあわせた全3主要指数が10%以上下落する「調整局面」に入った。地政学的リスクの高まり（ロシア・ポーランド衝突、イラン緊張）と金融引き締め継続懸念が重なった形。</li>
+          <li>Nvidia の株価は SEC（米証券取引委員会）による調査が報道されたことを受けて急落した。調査の対象と理由は詳細が不明だが、AI 関連株全体への売りを誘発している。</li>
+          <li>感謝祭前の週（Thanksgiving Travel Week）に重なっており、市場参加者の薄さが下落率を増幅させている可能性も指摘されている。両岸での嵐（Storm）予報も旅行・小売セクターへの懸念につながっている。</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">COP31 トルコ——最新草案に化石燃料削減の文言なし、活動家・島嶼国が「後退続く」と猛批判（11月20日）</div>
-      <div class="card-meta"><span class="badge">COP31 / Turkey / Climate / Fossil Fuels / UNFCCC / Islands / Nov 20 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/20/headlines">Democracy Now</a> / <a href="https://openchronicle.org/2026/11/20/global-news-brief-key-developments-around-the-world-november-20-2026/">Open Chronicle</a></span></div>
+      <div class="card-title">AI 兵器に関する国連交渉が暗礁——エチオピア・エリトリア国境で緊張高まる（11月21日）</div>
+      <div class="card-meta"><span class="badge">UN / AI Weapons / Ethiopia / Eritrea / Border / Nov 21 2026</span><span class="card-source">Source: <a href="https://www.npr.org/sections/news/">NPR</a> / <a href="https://newscura.com/global/timeline/2026-11-21">NewsCura</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トルコで開催中の COP31（国連気候変動枠組条約第31回締約国会議）の最新草案テキストに、化石燃料の段階的廃止（フェーズアウト）に関する文言が含まれていないことが明らかになり、気候活動家グループや脆弱な島嶼国から「COP28・29・30 と同様の後退」という激しい批判が噴出している。</li>
-          <li>国連の気候交渉担当者によれば、産油国グループ（OPEC 加盟国を中心）が化石燃料削減に関するいかなる拘束的文言にも反対しており、先進国・小島嶼国との溝が埋まらない状況が続いている。最終合意に向けた閣僚級交渉が最終盤を迎えているが、見通しは厳しい。</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">ソマリアが UAE 大使を72時間以内に退去させるよう要求——湾岸外交に緊張、背景にエリトリア問題との関連も</div>
-      <div class="card-meta"><span class="badge">Somalia / UAE / Diplomacy / Ambassador / Gulf / Horn of Africa / Nov 20 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-20-2026/4131638">Anadolu Agency</a> / <a href="https://today.zhudong.net/en/2026-11-20.html">World News Today</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li>ソマリア政府は2026年11月20日、UAE（アラブ首長国連邦）の大使に対して72時間以内に退去するよう要求した。ソマリア外務省は理由を「内政干渉」と説明しているが、詳細な経緯は明らかにしていない。</li>
-          <li>UAE とソマリアの関係は近年複雑化しており、港湾開発をめぐる対立やエリトリアとの関係強化をめぐる摩擦が背景にあるとみられている。アフリカの角（ホーン・オブ・アフリカ）地域では、エチオピア・エリトリア間の緊張（双方が国境沿いに軍を集結）とも絡み合い、地政学的な不安定性が高まっている。</li>
+          <li>自律型致死兵器システム（LAWS：いわゆる「AI 兵器」）の規制をめぐる国連交渉が暗礁に乗り上げた。主要兵器保有国がいかなる拘束的規制にも反対しており、今回の交渉ラウンドは実質的な成果なしに終わる見通し。</li>
+          <li>アフリカの角（ホーン・オブ・アフリカ）では、エチオピアとエリトリアが互いの国境沿いで軍を集結させており、緊張のエスカレーションへの懸念が高まっている。2018年の和平合意後に改善した両国関係が再び悪化しているとの報告が相次いでいる。</li>
+          <li>AI 兵器の規制問題は、現在活発に議論されている Claude Code 等 AI エージェントのガバナンス問題とも地続きの課題として、AI 政策コミュニティでの関心が高まっている。</li>
         </ul>
       </div>
     </div>
@@ -282,9 +273,9 @@
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月20日（金）</p>
-  <p style="margin-top:0.5rem;">Sources: Agent Tools Today · ai-tldr.dev · Releasebot · Future of AI News · TokenPost · RuntimeWire · CryptoBriefing · OpenChamber · Shattered.io · AI Tool Discovery · Dark Reading · CybersecurityNews · OpenTrends · ReddTrends · Just Security · Open Chronicle · Democracy Now · Anadolu Agency · Washington Post · Morning Star · World News Today</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-19/index.html">前版（2026-11-19）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月21日（土）</p>
+  <p style="margin-top:0.5rem;">Sources: Releasebot · Dataconomy · Emergent.sh · AgentSkill.sh · Yellow.com · BigGo Finance · Shattered.io · AI Coding Daily · Claude's Corner · Last30Days.ai · OpenTrends · ReddTrends · Anadolu Agency · Euronews · NewsCura · World News Today · NPR</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-20/index.html">前版（2026-11-20）</a></p>
 </footer>
 </body>
 </html>
