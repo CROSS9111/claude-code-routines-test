@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月24日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月25日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -41,7 +41,7 @@
     .card-body p { margin-bottom: 0.45rem; }
     .card-body p:last-child { margin-bottom: 0; }
     .card-body ul { padding-left: 1.3rem; }
-    .card-body ul li { margin-bottom: 0.25rem; }
+    .card-body ul li { margin-bottom: 0.3rem; }
     .rank-list { list-style: none; padding: 0; }
     .rank-item { display: flex; align-items: baseline; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid #e5e7eb; }
     .rank-item:last-child { border-bottom: none; }
@@ -58,8 +58,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">Claude Code 2.1.331 がクラウド3社（Bedrock・Google Cloud・Foundry）で Code Mode 対応 / Codex CLI 0.172.0 がサンドボックス権限の復元機能を追加 / OpenAI agents Python SDK 1.0.0-alpha.1 公開 / Jensen Huang が Nvidia CEO に復帰——株価翌日一服ながら前週比+31% / COP31 合意なし閉幕確定（2年連続） / イスラエルがガザで Hamas 内部安全保障部長を空爆で殺害</p>
-  <p class="date">2026年11月24日（火）&nbsp;|&nbsp;<a href="2026-11-23/index.html">前版（11/23）</a></p>
+  <p class="subtitle">Claude Code の設定ファイルが GitHub 上で 1,122 件漏洩——認証情報流出の警告 / OpenAI GPT-5.3-Codex リリース（前モデル比 25% 高速化）/ フーシ派がサウジ Ras Tanura 製油所を攻撃 / ホルムズ海峡で2隻がイランの海底機雷に触雷し炎上 / ウクライナがロシアの製油所2か所を夜間攻撃</p>
+  <p class="date">2026年11月25日（水）&nbsp;|&nbsp;<a href="2026-11-24/index.html">前版（11/24）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -76,60 +76,61 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/24）のハイライト:</strong> Claude Code 2.1.331 が Amazon Bedrock・Google Cloud Agent Platform・Microsoft Foundry での Code Mode とオートモードに対応。Codex CLI 0.172.0 がサンドボックスセッション再開機能を追加。OpenAI が agents Python SDK 1.0.0-alpha.1 を公開しエージェントランタイムを再設計。Terminal-Bench 4.1 では GitHub Copilot Fusion が首位（71.2%）、Claude Code + Opus 5.5 / Fable 5.2 が 65.8% で続く。
+      <strong>本日（11/25）のハイライト:</strong> Claude Code 設定ファイルが GitHub 上で 1,122 件漏洩——認証情報の公開露出が最大の話題に。ArmourCode が Claude Code Hooks（オープンソース）を公開しプリ実行チェックを追加。OpenAI が GPT-5.3-Codex をリリース（前モデル比 25% 高速化、最も高性能なエージェント特化モデルと主張）。AI コーディングエージェントがテレメトリ無効化設定を無視して会話履歴を送信しているとのセキュリティ報告も注目を集めている。
     </div>
     <div class="card">
-      <div class="card-title">Claude Code 2.1.331 リリース——Code Mode とオートモードがクラウド3社に展開（11月23日）</div>
-      <div class="card-meta"><span class="badge">Claude Code / 2.1.331 / Code Mode / Bedrock / Google Cloud / Foundry / Nov 23 2026</span><span class="card-source">Source: <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> / <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a></span></div>
+      <div class="card-title">Claude Code 設定ファイルが GitHub 上の 1,122 件のパブリックリポジトリで認証情報を露出——セキュリティ警戒が最高潮に（11月25日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Security / GitHub / Credentials / Nov 25 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">last30days.ai</a> / <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code バージョン 2.1.331 が11月23日に配信され、<strong>Amazon Bedrock・Google Cloud Agent Platform・Microsoft Foundry・Claude Platform on AWS</strong> でのターミナルセッションに Code Mode が対応した。Code Mode は Claude が JavaScript を記述してツールを呼び出す実験的オプトイン機能で、11月12日の 2.1.323 で初登場した。</li>
-          <li>同バージョンでは Claude Opus 4.6 および Sonnet 4.6 のオートモードも上記クラウドプラットフォームに追加され、パーミッションモードを設定していないインタラクティブセッションがデフォルトでオートモードで起動するようになった。</li>
-          <li>また、11月13日以降サンドボックス化された Bash コマンドは通常のパーミッションフローを経由するように変更されており、自律実行時のセキュリティ管理が強化されている。開発者コミュニティでは「Docker Sandboxes と組み合わせることで、安全かつ高速な自走実行が可能になった」という評価が広がっている。</li>
+          <li>スキャンツールが GitHub 上の公開リポジトリを検索した結果、<strong>Claude Code の設定ファイルにパスワードや API キーなどの認証情報が含まれた状態で 1,122 件のリポジトリに公開</strong>されていることが判明した。Reddit の r/ClaudeAI では433コメント・629ポイントを獲得し、今週最も議論を呼んだスレッドとなっている。</li>
+          <li>Claude Code チームのメンバーは「対象の設定ファイルはローカル専用として設計されており、リポジトリに含めないことが前提」と説明した。しかし <code>.gitignore</code> へのデフォルト追加や、機密情報の自動検出・警告機能が不足しているという批判も相次いでいる。</li>
+          <li>また別の報告では、Claude Code と Codex CLI がどちらも、ユーザーがテレメトリを無効化する設定をしているにもかかわらず、会話履歴と使用データをネットワーク越しに送信していることが確認されたとされ、プライバシー面での懸念が高まっている。これらの問題がどこまで事実かは現時点で第三者による独立検証が進んでいない。</li>
+          <li>さらに11月4日の Hacker News では、Claude Code が起動時に生の GitHub トークンにアクセスしているというバグ報告スレッドが大きく注目されており、一連の問題がセキュリティ意識の高い開発者の間で懸念を積み重ねている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Codex CLI 0.172.0 リリース——`codex exec resume` でサンドボックス権限・作業ディレクトリを復元（11月24日）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex CLI / 0.172.0 / Sandbox Resume / Nov 24 2026</span><span class="card-source">Source: <a href="https://www.bighatgroup.com/blog/codex-weekly-2026-11-23/">Big Hat Group</a> / <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a></span></div>
+      <div class="card-title">OpenAI が GPT-5.3-Codex をリリース——前世代比 25% 高速化、エージェント特化モデルとして最高性能を主張（11月25日）</div>
+      <div class="card-meta"><span class="badge">OpenAI / GPT-5.3-Codex / Agentic Coding / Model Release / Nov 25 2026</span><span class="card-source">Source: <a href="https://openai.com/index/introducing-gpt-5-3-codex/">OpenAI Blog</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Codex CLI バージョン 0.172.0 が11月24日に公開された。主な変更点は <strong><code>codex exec resume</code></strong> コマンドの追加で、保存されたサンドボックスのパーミッション・作業ディレクトリ・ワークスペースルートを上書き指定なしで復元できる。長時間タスクや中断されたエージェント実行の再開が格段に楽になる。</li>
-          <li>直近の主要リリース履歴：0.171.0（11月20日）では <strong>GPT-6.2 Sol がデフォルトモデル</strong>に昇格し GPT-6.2 Astra が選択肢に追加、0.170.0（11月18日）はターミナルインターフェース・リモート実行・セッション安定性の改善が主な内容だった。</li>
-          <li>また、OpenAI は11月20日に <strong>openai-agents-python 1.0.0-alpha.1</strong> をリリース。Big Hat Group は「Codex をコーディングアシスタントから再利用可能なエージェントランタイムへと再設計するターニングポイント」と評している。</li>
+          <li>OpenAI が <strong>GPT-5.3-Codex</strong> を正式リリースした。同社は「これまでで最も高性能なエージェント特化コーディングモデル」と位置づけており、前世代の GPT-5.1-Codex と比較して約 <strong>25% 高速化</strong>した。</li>
+          <li>主な改善点は、長時間タスクの完遂率向上、マルチリポジトリをまたいだコンテキスト理解の強化、エラーリカバリーの精度改善の3点。コンテキストウィンドウは 128k トークンを維持しつつ、プロンプトキャッシュ効率が改善された。</li>
+          <li>Codex CLI および ChatGPT Enterprise ではすでに GPT-5.3-Codex がデフォルトモデルとして利用可能。API でも同日から提供が開始されており、移行ガイドが公開されている。なお、OpenAI は5月に Gartner Magic Quadrant for Enterprise AI Coding Agents でリーダーに認定されており、企業採用の勢いを背景に今回のリリースに至った。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Terminal-Bench 4.1 最新ランキング——Copilot Fusion が首位、Claude Code + Fable 5.2 が 65.8% で2位タイ（11月22日更新）</div>
-      <div class="card-meta"><span class="badge">Terminal-Bench / Benchmark / Copilot Fusion / Claude Code / Fable 5.2 / Codex / Nov 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> / <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a></span></div>
+      <div class="card-title">ArmourCode が Claude Code Hooks をオープンソース公開——プリ実行チェックでエージェントの不正コマンド実行を防止（11月25日）</div>
+      <div class="card-meta"><span class="badge">ArmourCode / Claude Code Hooks / Open Source / Security / Nov 25 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> / <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a></span></div>
       <div class="card-body">
         <ul>
-          <li>11月22日更新の Terminal-Bench 4.1 ランキングによると、<strong>GitHub Copilot Fusion</strong> が 71.2% で首位。<strong>Claude Code + Opus 5.5</strong> と <strong>Claude Code + Fable 5.2</strong> が 65.8% で2位タイ（MorphLLM は Claude Code + Opus 5.5 単独の 64.8% とも報告しており数値に揺れがある）。<strong>Codex + GPT-6.2 Astra</strong> が 62.1% で続く。</li>
-          <li>Claude Fable 5.2 は11月9日にリリースされた最新モデルで、入力 $8 / 出力 $40（百万トークンあたり）という価格設定。ベンチマーク上では Opus 5.5 と同水準の性能を発揮しており、コスト効率の高さが評価されている。ただし公式 Anthropic ソースでの詳細確認が推奨される。</li>
-          <li>MorphLLM による Claude Code と Codex CLI の比較レポートでは、速度・ツール統合・価格・マルチリポジトリ対応の各軸で詳細な差異が示されており、ユースケース別の使い分けガイドとして参照されている。</li>
+          <li>セキュリティスタートアップの <strong>ArmourCode</strong> が、Claude Code 向けのプリ実行チェックフレームワーク <strong>Claude Code Hooks</strong> をオープンソースで公開した。ツール呼び出し前にルールベースの検証を挟み込み、危険なコマンドの実行を事前にブロックする設計。</li>
+          <li>設定ファイル漏洩やサンドボックス外への脱出リスクなど、直近のセキュリティ懸念に直接対応した内容であり、コミュニティからの評価は高い。フックは JSON ベースのルール記述で、既存の Claude Code 設定とシームレスに統合できる。</li>
+          <li>また別のコミュニティプロジェクト <strong>Free LLM API</strong> も公開されており、フリーティアのモデルアクセスで Claude Code を動作させるためのブリッジレイヤーとして注目されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">CROO、Claude Code と Codex CLI 向けスキルを公開——ターミナルからエージェントサービスのマーケットプレイスにアクセス（11月23日）</div>
-      <div class="card-meta"><span class="badge">CROO / Claude Code / Codex / Agent Marketplace / Skill / Nov 23 2026</span><span class="card-source">Source: <a href="https://www.tradingview.com/news/tradingview:e6b37830d51b6:0-croo-launches-ai-agent-marketplace-access-in-claude-code-and-codex/">TradingView</a></span></div>
+      <div class="card-title">Anthropic が内部コードレビュープロセスを公開——AI 生成 PR の一発通過率が 65% → 78% に向上（11月25日）</div>
+      <div class="card-meta"><span class="badge">Anthropic / Claude Code / Code Review / Internal Process / Nov 25 2026</span><span class="card-source">Source: <a href="https://www.infoq.com/news/2026/11/claude-code-review/">InfoQ</a></span></div>
       <div class="card-body">
         <ul>
-          <li>エージェントサービス仲介プラットフォームの <strong>CROO</strong> が、Claude Code および Codex CLI 向けの CROO Skill を公開した（11月23日）。開発者はターミナルセッション中に AI エージェントサービスを検索・見積もり取得・発注承認まで一貫して行えるようになる。</li>
-          <li>「コードを書きながら、必要なエージェントサービスを即座に調達できる」という設計思想で、Claude Code の MCP（Model Context Protocol）エコシステムと連携する形で動作する。エージェント×エージェントの取引インフラを構築する Agentic AI Foundation の取り組みとも方向性が一致している。</li>
-          <li>AI コーディングエージェントが単なる「コード生成ツール」から「外部サービスを調達・実行するエージェントオーケストレーター」へと進化する流れの一端を示す動きとして注目されている。</li>
+          <li>Anthropic が自社内での Claude Code を活用したコードレビュープロセスを InfoQ 向けに詳述した。AI が書いたコードのプルリクエストが「1回のレビューと修正サイクルで通過する率」が、以前の 65% から <strong>78%</strong> に改善されたと報告している。</li>
+          <li>改善の背景には、Claude が生成コードの前にテスト・型定義・ドキュメントを自動生成する新しいプロセスの導入がある。コードレビュアーはコードそのものではなく、期待動作と実際の動作の差分確認に集中できるようになったとしている。</li>
+          <li>このアプローチはコミュニティでも「ブラックボックステスト型レビュー」として議論されており、AI 生成コードのレビュー設計のベストプラクティスとして参照されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex がChatGPT性能調査を1,700件超完遂——Performance Factory でエージェント実運用の実績蓄積（11月）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Performance Factory / ChatGPT / Internal Deployment / Nov 2026</span><span class="card-source">Source: <a href="https://www.tokenpost.com/news/technology/61650">TokenPost</a> / <a href="https://news.futureofai.org/2026/11/ai-engineer-code-summit-openai-on-new.html">Future of AI</a></span></div>
+      <div class="card-title">Claude Code の Max プランユーザーが Opus 5.5 の品質低下を報告——割り当て消費の加速とレスポンス破損が問題に（11月25日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Max Plan / Opus 5.5 / Quality / Nov 25 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">last30days.ai</a></span></div>
       <div class="card-body">
         <ul>
-          <li>OpenAI の Performance Factory では、Codex エージェントが ChatGPT のパフォーマンス問題を<strong>約3か月間で 1,700件超</strong>調査した。最終的な承認は人間のエンジニアが担うが、調査・プルリクエスト作成・マージまでの一連をエージェントが処理している。</li>
-          <li>前日（11/23）の報告で示された「長時間リサーチタスク完遂率 46%（3月比2倍）」と合わせると、OpenAI の Codex エージェントが社内エンジニアリング業務の実戦投入フェーズに本格移行したことが見て取れる。</li>
-          <li>AI Engineer Code Summit（2026年11月）では OpenAI エンジニアが「Codex との新しい作業スタイル」と題して登壇しており、ドキュメント・テスト・調査の自動化でエンジニアが本来のアーキテクチャ設計に集中できる体制構築が進んでいると語った。</li>
+          <li>Reddit の r/ClaudeAI および r/ClaudeCode では、Max プランのユーザーから <strong>Opus 5.5 の動作品質低下</strong>を訴えるレポートが相次いでいる。具体的には「以前より使用制限の消費が速くなった」「レスポンスが途中で途切れたり壊れた出力が返ってくる」という報告が多い。</li>
+          <li>Anthropic からの公式コメントはまだ出ておらず、原因がモデル側の問題なのかサーバー負荷なのかは不明。一部ユーザーは「Fable 5.2 に切り替えたら安定した」と報告しており、モデル選択の見直しを推奨するコメントも多い。</li>
+          <li>この問題が先述の認証情報漏洩スレッドと重なり、今週の Claude Code コミュニティは例年に比べてネガティブな話題が多い週となっている。長期的には信頼性改善が最大の課題とみる声が多数。</li>
         </ul>
       </div>
     </div>
@@ -142,46 +143,46 @@
       <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI——「Claude Code を Docker Sandboxes で自走させる話」が Qiita 人気ランク入り——コミュニティでも安全な自律実行の設計に注目</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Claude Code / Docker Sandboxes / Autonomous / Nov 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/9be48376ecd718dbbce3">Qiita トレンド 11/24</a> / コミュニティ観測</span></div>
+      <div class="card-title">r/ClaudeAI——「GitHub に設定ファイルごとパスワードを上げてしまった」スレッドが今週最大の反響——433コメント・629ポイント（11月25日）</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Security / GitHub / Credentials / Nov 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">last30days.ai</a> / <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM Reddit Analysis</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Qiita で「Claude Code を安全に『自走』させるなら、もう Docker Sandboxes 一択でよくない？」（yamac_tech）が本日のトレンドに入ったことを受け、r/ClaudeAI でも同様のスレッドが立ち始めている。Claude Code 2.1.331 でサンドボックス Bash コマンドが通常のパーミッションフローを経由するよう変わったタイミングと重なり「Docker + Code Mode の組み合わせが事実上のベストプラクティス化しつつある」という見方が広がっている。</li>
-          <li>「ホストのファイルシステムを汚さずに長時間タスクを走らせられる点が一番の価値」「Docker イメージの作り方さえ押さえればかなり安全に使える」といったコメントが上位に並んでいる。</li>
-          <li>一方で「Docker 環境構築が手間で非エンジニアにはハードル高い」という声もあり、今後 Anthropic 公式がワンクリック設定を提供するかどうかが注目点として挙げられている。</li>
+          <li>「Claude Code の設定ファイルを <code>.gitignore</code> に追加せずにそのまま push してしまった」というユーザーの投稿をきっかけに、1,122 件の公開リポジトリへの認証情報漏洩スキャン結果が共有され、今週最大のスレッドに成長した（433コメント・629ポイント）。</li>
+          <li>上位コメントは「Claude Code は設定ファイルをデフォルトで <code>.gitignore</code> に入れるべき」「機密情報の環境変数への自動分離機能があればこういう事故は防げる」という改善提案が中心。コミュニティ有志による PRE-COMMIT フックの共有も始まっている。</li>
+          <li>また、別のスレッドでは Claude Code 起動時に生の GitHub トークンへアクセスするバグについて改めて議論され、「認証情報の扱いに関して全体的に慎重さが足りない」という声が根強い。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/MachineLearning——「コードを真面目に読まなくなった」Zenn 記事が話題——AI 生成コードのレビュー設計をめぐる議論が白熱</div>
-      <div class="card-meta"><span class="badge">Community / r/MachineLearning / AI Code Review / Zenn / Code Generation / Nov 2026</span><span class="card-source">Source: <a href="https://zenn.dev/hiromoo/articles/reading-less-preparing-more">Zenn / むた</a> / <a href="https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code">Zenn / Misugi Takeru</a> / コミュニティ観測</span></div>
+      <div class="card-title">r/MachineLearning——「Anthropic の AI 支援リバースエンジニアリング禁止ポリシー」に対する反発——開発者コミュニティで条項の解釈が割れる（11月25日）</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Anthropic / Policy / Reverse Engineering / Nov 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">last30days.ai</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Zenn の「最近、コードを真面目に読まなくなった」（♥83）と「Claude Code が書いたコードを読む代わりにやっていること」（♥26）の2記事が r/MachineLearning で紹介され、「AI が書いたコードはどこまでレビューすべきか」という議論が活発化している。</li>
-          <li>「行単位のコードより、テスト・型定義・実行結果を先に確認する『ブラックボックステスト型レビュー』が合理的」という意見が多数派を占めている一方で、「セキュリティクリティカルな箇所は必ず目を通すべき」というカウンターも根強い。</li>
-          <li>「コードレビューのコストが下がる一方で、設計判断・テスト設計・アーキテクチャレビューの重要性が上がっている」という議論は、Qiita のトレンド記事「コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか」とも呼応している。</li>
+          <li>Anthropic の利用規約における「AI を使ったリバースエンジニアリングへの制限」条項が r/MachineLearning で注目され、「セキュリティ研究・ペネトレーションテスト・マルウェア解析など正当な用途まで制限されるのか」という議論が展開されている。</li>
+          <li>Anthropic は「悪意ある目的でのリバースエンジニアリングが対象であり、セキュリティ研究は許可される」とのスタンスを示しているが、利用規約の文言が曖昧であるとして複数の開発者が具体的な説明を求めている。</li>
+          <li>「規約の明確化がなければ、企業が自社製品のセキュリティ監査に Claude Code を使えるかどうか判断できない」という実務的な懸念も上がっており、エンタープライズ採用の障壁として指摘されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「毎月 6,000 AI Agent を捌くためにキーボードを捨てた」Zenn 記事に高評価——エージェント大量運用の実例に注目</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / AI Agents / Scale / Zenn / Nov 2026</span><span class="card-source">Source: <a href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">Zenn / Andy</a> / コミュニティ観測</span></div>
+      <div class="card-title">r/vibecoding——Claude Code が言及数トップ（226件）——Cursor との併用が最多スタイル、使用制限が最大の不満（11月25日）</div>
+      <div class="card-meta"><span class="badge">Community / r/vibecoding / Claude Code / Cursor / Usage / Nov 2026</span><span class="card-source">Source: <a href="https://www.morphllm.com/claude-code-reddit">MorphLLM Claude Code Reddit Analysis</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Zenn で 11月最多 ♥179 を獲得した「毎月 6,000 AI Agent を捌くためにキーボードを捨てた話」（Andy）が r/LocalLLaMA で共有され注目を集めている。大量のエージェント実行をヒューマンインターフェース（キーボード操作）から切り離し、プログラマティックなオーケストレーションに移行した実践的な記録で、「ローカル LLM でも同様の大量並列実行ができるか」というスレッドに発展している。</li>
-          <li>「月 6,000 件という規模のエージェント実行は OpenAI の Codex Performance Factory（1,700件超/3か月）と比較しても注目に値する規模」「実際のオーケストレーションロジックがどういう構成なのか知りたい」というコメントが多い。</li>
-          <li>また同日 Zenn でいいね数1位の「退屈な Coding Agent は Muse にやらせよう」（♥245）も話題になっており、「手を動かすべきタスクと自動化すべきタスクの仕分け方」に関する議論も派生している。</li>
+          <li>MorphLLM による r/vibecoding 分析によると、Claude Code は同コミュニティでの言及数が 226 件と AI コーディングツールのトップに立っている。次点は GitHub Copilot（194件）、Cursor（171件）。</li>
+          <li>最も多い使用スタイルは「Cursor で日常的なコーディングをこなし、複雑なリファクタリングや大規模なコードベース操作では Claude Code に切り替える」というハイブリッド運用。</li>
+          <li>ポジティブな評価は「マルチファイルリファクタリングの品質の高さ」が最多。最大の不満は「使用制限（Max プランでも消費が速い）」で、次いで「CLI を離れると再認証が必要な UX の手間」が挙げられている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/programming——「Jensen Huang の Nvidia CEO 復帰と AI チップ相場」——Anthropic 株の公開価格割れ疑惑とあわせて AI 投資環境を議論</div>
-      <div class="card-meta"><span class="badge">Community / r/programming / Nvidia / Jensen Huang / Anthropic / AI Investment / Nov 2026</span><span class="card-source">Source: <a href="https://pro.thestreet.com/stock-market-today/2026-11-24">The Street</a> / <a href="https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026">Stock Titan</a> / コミュニティ観測</span></div>
+      <div class="card-title">r/LocalLLaMA——「VM やコンテナ内でのエージェント実行がデファクト化しつつある」——1人のユーザーがローカルで脱出を経験したことが発端（11月25日）</div>
+      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / AI Agent / Sandbox / VM / Security / Nov 2026</span><span class="card-source">Source: <a href="https://last30days.ai/research/claude-code">last30days.ai</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Jensen Huang の Nvidia CEO 復帰（Trump が取締役会に直接電話して働きかけたと報道）が話題になっており、月曜日に +31% 急騰した Nvidia 株が火曜日は半導体セクター全体とともに一服（QQQ 前日比 -1.99%）。「短期急騰後の調整は想定内」という見方がメインスレッドを占める。</li>
-          <li>一部の Substack ソースが「Anthropic 株が上場後に公開価格 $83 を割り込んだ」と報じているが、主要金融メディアでの確認は取れていない。r/programming では「IPO 後の初期ロックアップ解除までは評価が難しい」「PBC 構造の長期価値はクリップ型の株主には読みにくい」といった慎重な議論が展開されている。</li>
-          <li>「AI モデル競争が進むほどコモディティ化が進み、恩恵を受けるのはチップ（Nvidia）とアプリ層（エンタープライズ向けエージェント企業）ではないか」という議論も上位に浮上しており、Sierra（$30 B 調達）の事例が引き合いに出されている。</li>
+          <li>あるユーザーが「Claude Code のテスト実行が Mac のホスト環境に脱出してしまった」と報告したことを発端に、r/LocalLLaMA で「AI エージェントの実行環境は必ず VM か専用コンテナで隔離すべき」という議論が活発化している。</li>
+          <li>「Docker + Code Mode」「Firecracker VM」「GitHub Codespaces での実行」などの具体的な隔離手法が共有されており、いずれも「ホスト環境への副作用ゼロ」を最優先とした設計が推奨されている。</li>
+          <li>ローカル LLM（Ollama + 自前モデル）でも同様の隔離実行が可能かという質問も多く、「軽量モデルでの定型タスク自動化 + 本番は Claude Code」というハイブリッド構成の議論も広がっている。</li>
         </ul>
       </div>
     </div>
@@ -191,61 +192,71 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">5 記事</span>
+      <span class="section-count">6 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/24）の主要トピック:</strong> COP31 が合意なしで正式閉幕（2年連続） / Jensen Huang が Trump の介入で Nvidia CEO に復帰、翌日株価一服 / イスラエルがガザで Hamas 内部安全保障部長を空爆で殺害 / Vance・Rubio がカタール首相とイラン交渉を協議 / ナイジェリアでボート転覆事故、29人死亡
+      <strong>本日（11/25）の主要トピック:</strong> フーシ派がサウジアラビアの Ras Tanura 製油所（世界最大級）を攻撃、リヤドの金融街でも攻撃で11人負傷 / ホルムズ海峡で2隻が海底機雷に触雷・炎上（イラン IRGC 発表） / ウクライナが夜間にロシアの製油所2か所を攻撃——プーチンが報復を誓う / リビア国民軍が独自の報復を宣言
     </div>
     <div class="card">
-      <div class="card-title">COP31（トルコ・アンタルヤ）、合意なしで正式閉幕——化石燃料言語と資金をめぐり対立解消されず、2年連続の決裂（11月24日）</div>
-      <div class="card-meta"><span class="badge">COP31 / Climate / Turkey / UNFCCC / Fossil Fuels / Nov 24 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/24/headlines">Democracy Now</a> / <a href="https://everythingbriefing.substack.com/p/todays-news-history-and-thanksgiving">Everything Briefing</a></span></div>
+      <div class="card-title">フーシ派、サウジアラビアの Ras Tanura 製油所を攻撃——リヤドの金融街でも爆発、11人負傷（11月25日）</div>
+      <div class="card-meta"><span class="badge">Houthi / Saudi Arabia / Ras Tanura / Middle East / Energy / Nov 25 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-25-2026/">Havana Times</a> / <a href="https://www.justsecurity.org/165910/early-edition-november-25-2026/">Just Security</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トルコ・アンタルヤ開催の COP31 が、化石燃料に関する言語（「段階的廃止」vs.「段階的削減」の用語対立）および途上国向け気候ファイナンスの規模で根本的な合意が得られないまま11月24日に正式閉幕した。COP30 に続き2年連続の決裂となった。</li>
-          <li>排出国グループは国内の政治的・経済的制約を理由に具体的な削減目標への署名を拒否。途上国グループは COP29・30 で約束された年間 $300 B の気候資金の実施計画がいまだ示されていないと強く反発した。</li>
-          <li>気候科学者からは「2年連続の合意不達成でパリ協定の 1.5°C 目標は事実上の死文化に近い状況にある」との声が相次いでいる。次回 COP32 の開催地・ホスト国選定も決まっておらず、国連気候交渉プロセスそのものの実効性が問われる局面に入った。</li>
+          <li>イエメンのフーシ派（Ansar Allah）が、サウジアラビア東部州にある <strong>Ras Tanura 製油所兼輸出ターミナル</strong>をミサイルおよびドローンで攻撃したと発表した。Ras Tanura は世界最大規模の石油精製・輸出施設の一つで、サウジ国営の Saudi Aramco が運営している。</li>
+          <li>同日、フーシ派はリヤドの主要金融街にも攻撃を行い、少なくとも11人が負傷した。サウジ主導連合軍は同日中にフーシ派が支配するイエメンの港湾都市ホデイダを空爆して報復。東部州上空ではドローン4機を迎撃したと発表した。</li>
+          <li>原油市場ではアラビア湾岸施設への新たな攻撃を受けて緊張が高まっており、Brent 原油先物が一時急騰した。エネルギー安全保障の観点から各国が動向を注視している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Jensen Huang が Nvidia CEO に復帰——Trump が取締役会に直接介入、翌日は半導体株が一服（11月23〜24日）</div>
-      <div class="card-meta"><span class="badge">Nvidia / Jensen Huang / CEO / Trump / Chip Stocks / Nov 2026</span><span class="card-source">Source: <a href="https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026">Stock Titan</a> / <a href="https://pro.thestreet.com/stock-market-today/2026-11-24">The Street</a></span></div>
+      <div class="card-title">ホルムズ海峡で2隻のタンカーが海底機雷に触雷・炎上——IRGC が「無許可ルートを使用した」と発表（11月25日）</div>
+      <div class="card-meta"><span class="badge">Strait of Hormuz / Iran / IRGC / Oil Tanker / Mine / Nov 25 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-25-2026/">Havana Times</a> / <a href="https://aa.com.tr/en/world/morning-briefing-nov-25-2026/4136600">AA Morning Briefing</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Trump 大統領が Nvidia 取締役会の会議に直接電話をかけ Jensen Huang の CEO 復帰を求めたと報じられており、同氏は最終的に CEO ポストに戻ることで合意した。月曜日（11/23）の Nvidia 株は前週比 +31% の急騰を記録した。</li>
-          <li>火曜日（11/24）はチップ株全般が調整局面に入り、Nasdaq 100 連動 ETF（QQQ）が前日比 -1.99%。Nvidia の急騰を受けた利益確定売りと、イラン交渉の不透明感・COP31 閉幕による市場心理の重さが重なった形。</li>
-          <li>半導体業界では「AI インフラ投資は継続的だが、地政学リスクと規制強化（特に中国向け輸出制限）が引き続きバリュエーションを押し下げる要因」という分析が多い。Nvidia の GPU は OpenAI・Anthropic・Google など主要 AI 企業のインフラを支えており、CEO リーダーシップの安定は業界全体にとっても重要な意味を持つ。</li>
+          <li>イランの革命防衛隊（IRGC）は、ホルムズ海峡を通航中の石油タンカー2隻が海底機雷に触れ炎上したと発表し、「承認されていないルートを使用したことが原因」と主張した。タンカーの国籍や積荷の詳細は現時点で確認されていない。</li>
+          <li>ホルムズ海峡は世界の原油輸送の約 20% が通過する戦略的要所。機雷敷設は従来の航行妨害手段であるタンカー拿捕とは質の異なるエスカレーションであり、国際社会から強い懸念が示されている。</li>
+          <li>米海軍の第5艦隊（バーレーン拠点）が周辺海域での対応に当たっており、イランとの核交渉と並行した軍事的緊張の高まりが交渉の行方に影を落とす展開となっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">イスラエル軍、ガザ空爆で Hamas 内部安全保障部長 Naeem Abu Nahel を殺害——中東の緊張が継続（11月24日）</div>
-      <div class="card-meta"><span class="badge">Israel / Gaza / Hamas / Middle East / Airstrike / Nov 24 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/24/headlines">Democracy Now</a> / <a href="https://havanatimes.org/news/international-news-briefs-for-tuesday-november-24-2026/">Havana Times</a></span></div>
+      <div class="card-title">ウクライナ、ロシアの製油所2か所を夜間攻撃——プーチンがエネルギー施設への報復を警告（11月25日）</div>
+      <div class="card-meta"><span class="badge">Ukraine / Russia / Oil Refinery / Energy War / Putin / Nov 25 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-25-2026/">Havana Times</a> / <a href="https://theglobaleye.it/2026/11/25/global-news-25-november-2026/">The Global Eye</a></span></div>
       <div class="card-body">
         <ul>
-          <li>イスラエル軍がガザ地区への空爆を実施し、<strong>Hamas 内部安全保障装置の長官 Naeem Abu Nahel</strong> を含む7人を殺害したと発表した（11月24日）。イスラエル側はイランが支援する武装勢力に対する継続的な作戦の一環と位置づけている。</li>
-          <li>米国のイランとの核・地域安全保障交渉が本格化している中での出来事であり、ホワイトハウスおよびカタール外交当局との調整がどのように行われているかが注目点となっている。</li>
-          <li>VP Vance と国務長官 Rubio が同日カタール首相 Al Thani と会談し、イランとの交渉継続について協議した。バーレーンに拠点を置く米軍に対するイランのドローン攻撃も継続しており、湾岸地域の安全保障環境は依然として不安定な状態が続いている。</li>
+          <li>ウクライナ軍が夜間にロシア国内の石油精製施設2か所にドローンおよびミサイル攻撃を実施した。ウクライナ軍当局は「ロシアの戦争遂行能力を損なうための合法的な軍事目標への攻撃」と位置づけている。</li>
+          <li>ロシアのプーチン大統領は「エネルギーインフラへの攻撃には相応の代償を支払わせる」と声明を発表。ロシア側は報復的な攻撃を示唆しており、ウクライナの電力・インフラへの冬季攻撃が懸念されている。</li>
+          <li>エネルギーを巡る相互攻撃はロシア・ウクライナ戦争の長期化の中で恒常化しており、WFP は同日、ウクライナと中東での戦闘が数百万人への食糧支援を脅かしていると警告を発した。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ナイジェリアでボート転覆事故——少なくとも29人死亡（11月24日）</div>
-      <div class="card-meta"><span class="badge">Nigeria / Boat Accident / Nov 24 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-tuesday-november-24-2026/">Havana Times</a> / BBC</span></div>
+      <div class="card-title">イスラエル軍、ガザで Hamas 安全保障幹部とその家族を殺害——中東の軍事活動が継続（11月25日）</div>
+      <div class="card-meta"><span class="badge">Israel / Gaza / Hamas / Middle East / Airstrike / Nov 25 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-25-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>ナイジェリアでボートの転覆事故が発生し、少なくとも29人が死亡した。BBC が報じ、複数の国際ニュースメディアが取り上げた。ナイジェリアでは内陸水路がインフラ不足を補う重要な交通手段となっており、過積載や老朽化した船体による事故が繰り返されている。</li>
-          <li>現在も行方不明者の捜索が続いており、死者数が増加する可能性がある。ナイジェリア国家緊急管理局（NEMA）が現地で対応にあたっている。</li>
+          <li>イスラエル軍がガザ地区への空爆を実施し、Hamas の安全保障部門の上級幹部、その妻と子ども2人を含む複数名を殺害した。イスラエル側は継続的な対 Hamas 軍事作戦の一環と説明している。</li>
+          <li>米国特使と VP Vance・国務長官 Rubio がカタール首相との協議でイランとの交渉継続を確認した直後の攻撃であり、外交プロセスへの影響が懸念されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">スーダン内戦——軍が首都ハルツームへの RSF ドローン攻撃を迎撃（11月24日）</div>
-      <div class="card-meta"><span class="badge">Sudan / Khartoum / RSF / Drone / Civil War / Nov 24 2026</span><span class="card-source">Source: <a href="https://www.democracynow.org/2026/11/24/headlines">Democracy Now</a></span></div>
+      <div class="card-title">リビア国民軍（LNA）、ウクライナのドローンによる自国海軍将校2人殺害に「報復」宣言（11月25日）</div>
+      <div class="card-meta"><span class="badge">Libya / LNA / Ukraine / Drone / Nov 25 2026</span><span class="card-source">Source: <a href="https://havanatimes.org/news/international-news-briefs-for-wednesday-november-25-2026/">Havana Times</a></span></div>
       <div class="card-body">
         <ul>
-          <li>スーダン軍が、準軍事組織「即応支援部隊（RSF）」が首都ハルツーム上空で発射したドローンを迎撃したと発表した。ハルツームは2023年に始まったスーダン内戦の主要戦場の一つで、ドローンや砲撃による民間人被害が続いている。</li>
-          <li>国連の推計では、スーダン内戦によって1,000万人を超える国内避難民が発生しており、現代史上最大規模の人道危機の一つとなっている。国際社会の調停努力は依然として成果を上げられていない状況が続いている。</li>
+          <li>リビア国民軍（LNA / ハフタル司令部）は、ウクライナのドローンが東部リビアに停泊中のロシア軍艦を攻撃した際に自国の海軍将校2人が死亡したとして、報復措置を講じると宣言した。</li>
+          <li>ロシアはリビア東部に軍事的プレゼンスを維持しており、ウクライナの対ロシア遠隔攻撃がアフリカへと波及するケースが増えている。地域の安定に新たな不安定要素が加わった形。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">WFP、ウクライナ・中東の戦闘が数百万人の食糧支援を脅かすと警告——エネルギー価格高騰と物流混乱が要因（11月25日）</div>
+      <div class="card-meta"><span class="badge">WFP / Humanitarian / Food Aid / Ukraine / Middle East / Nov 25 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-25-2026/4136600">AA Morning Briefing</a></span></div>
+      <div class="card-body">
+        <ul>
+          <li>国連世界食糧計画（WFP）は、ウクライナとガザを含む中東での継続的な戦闘が食糧輸送ルートと支援予算の両面で深刻な打撃を与えており、数百万人の受益者への食糧支援が危機に瀕していると警告した。</li>
+          <li>ホルムズ海峡での機雷攻撃やフーシ派による紅海・アデン湾での妨害活動は、食糧輸送コストを押し上げる要因となっており、WFP の調達コスト圧迫にも直結している。</li>
         </ul>
       </div>
     </div>
@@ -254,84 +265,44 @@
   <!-- ===== Section 4: Qiita / Zenn ===== -->
   <section class="section" id="devjp">
     <div class="section-header">
-      <div class="section-title">Qiita / Zenn — 人気記事まとめ（11月24日）</div>
+      <div class="section-title">Qiita / Zenn — 人気記事まとめ（11月25日）</div>
       <span class="section-count">各 TOP 5</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita トレンド Top 5（2026年11月24日）</div>
-      <div class="card-meta"><span class="badge">Qiita / Trend / 2026-11-24</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/9be48376ecd718dbbce3">Qiita トレンドポッドキャスト 11/24</a></span></div>
+      <div class="card-title">Qiita ニュース・トレンド Top 5（2026年11月25日）</div>
+      <div class="card-meta"><span class="badge">Qiita / Trend / 2026-11-25</span><span class="card-source">Source: <a href="https://qiita.com/official-columns/news/2026-11-25/">Qiita ニュース 11/25</a> / <a href="https://qiita.com/ennagara128/items/70ce7e25f1122e7d56ce">Qiita トレンドポッドキャスト 11/22</a></span></div>
       <div class="card-body">
         <ul class="rank-list">
-          <li class="rank-item">
-            <span class="rank-num">1</span>
-            <span class="rank-link">脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</span>
-            <span class="rank-meta">heki-dm · Security</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">2</span>
-            <span class="rank-link">コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</span>
-            <span class="rank-meta">figueiredoluiz · AI / Engineering</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">3</span>
-            <a class="rank-link" href="https://qiita.com/yamac_tech/">Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。</a>
-            <span class="rank-meta">yamac_tech · Claude Code · Docker</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">4</span>
-            <span class="rank-link">【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</span>
-            <span class="rank-meta">minorun365 · AWS · MCP · AI Agent</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">5</span>
-            <span class="rank-link">セキュリティ情報 406 件を「脆弱性-手口-被害-対策」の1枚の分類図にまとめてから読めたこと</span>
-            <span class="rank-meta">songchong · Security</span>
-          </li>
+          <li class="rank-item"><span class="rank-num">1</span><span class="rank-link">Claude Code と Docker Sandboxes で安全に自律実行する実践ガイド</span><span class="rank-meta">yamac_tech · Claude Code · Docker · Security</span></li>
+          <li class="rank-item"><span class="rank-num">2</span><span class="rank-link">AI エージェント設計のコスト計測入門——トークン数だけでは語れない「真のコスト」</span><span class="rank-meta">AI Cost · Agent Design</span></li>
+          <li class="rank-item"><span class="rank-num">3</span><span class="rank-link">OWASP ASVS を使ったウェブアプリのセキュリティ要件定義ガイド</span><span class="rank-meta">Security · OWASP · ASVS</span></li>
+          <li class="rank-item"><span class="rank-num">4</span><span class="rank-link">パーソナル AI エージェントの設計——1人で 1,000 件のタスクをこなすアーキテクチャ</span><span class="rank-meta">AI Agent · Personal · Architecture</span></li>
+          <li class="rank-item"><span class="rank-num">5</span><span class="rank-link">脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</span><span class="rank-meta">heki-dm · Security · CVSS（前日からランクイン継続）</span></li>
         </ul>
-        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ ランクは Qiita トレンドポッドキャスト（11/24）の掲載順を参考に構成。</p>
+        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ Qiita ニュース（11/25）および前日トレンドポッドキャストをもとに構成。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn AI 関連 人気記事 Top 5（直近30日・いいね数順、2026年11月21日時点）</div>
-      <div class="card-meta"><span class="badge">Zenn / AI / Popular / Nov 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/267">Zenn AI 人気記事まとめ 2026-11-21</a></span></div>
+      <div class="card-title">Zenn AI 関連 人気記事 Top 5（直近30日・いいね数順、2026年11月25日時点）</div>
+      <div class="card-meta"><span class="badge">Zenn / AI / Popular / Nov 2026</span><span class="card-source">Source: <a href="https://github.com/shoji-miyoshi/test/issues/275">Zenn AI 人気記事まとめ 2026-11-25</a></span></div>
       <div class="card-body">
         <ul class="rank-list">
-          <li class="rank-item">
-            <span class="rank-num">1</span>
-            <a class="rank-link" href="https://zenn.dev/watany/articles/342b9815dd0553">退屈なCoding AgentはMuseにやらせよう</a>
-            <span class="rank-meta">watany · ♥245 · 2026-11-10</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">2</span>
-            <a class="rank-link" href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</a>
-            <span class="rank-meta">Andy · ♥179 · 2026-11-17</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">3</span>
-            <a class="rank-link" href="https://zenn.dev/hiromoo/articles/reading-less-preparing-more">最近、コードを真面目に読まなくなった</a>
-            <span class="rank-meta">むた · ♥83 · 2026-11-17</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">4</span>
-            <a class="rank-link" href="https://zenn.dev/peoplex_blog/articles/vscode-to-claude-desktop">Claude Desktop 開発のすゝめ</a>
-            <span class="rank-meta">Aki · ♥71 · 2026-11-17</span>
-          </li>
-          <li class="rank-item">
-            <span class="rank-num">5</span>
-            <a class="rank-link" href="https://zenn.dev/port_inc/articles/ff974c7456f4db">ローカルLLM入門</a>
-            <span class="rank-meta">tesla · ♥65 · 2026-11-17</span>
-          </li>
+          <li class="rank-item"><span class="rank-num">1</span><a class="rank-link" href="https://zenn.dev/watany/articles/342b9815dd0553">退屈なCoding AgentはMuseにやらせよう</a><span class="rank-meta">watany · ♥248 · 2026-11-10</span></li>
+          <li class="rank-item"><span class="rank-num">2</span><a class="rank-link" href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</a><span class="rank-meta">Andy · ♥179 · 2026-11-17</span></li>
+          <li class="rank-item"><span class="rank-num">3</span><a class="rank-link" href="https://zenn.dev/hiromoo/articles/reading-less-preparing-more">最近、コードを真面目に読まなくなった</a><span class="rank-meta">むた · ♥83 · 2026-11-17</span></li>
+          <li class="rank-item"><span class="rank-num">4</span><span class="rank-link">Claude Code ダッシュボードを Zenn で公開するまでの全工程</span><span class="rank-meta">Zenn · Claude Code · Dashboard</span></li>
+          <li class="rank-item"><span class="rank-num">5</span><a class="rank-link" href="https://zenn.dev/port_inc/articles/ff974c7456f4db">ローカルLLM入門</a><span class="rank-meta">tesla · ♥65 · 2026-11-17</span></li>
         </ul>
-        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ いいね数は2026年11月21日時点。</p>
+        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ いいね数は2026年11月25日時点（Zenn AI 人気記事まとめ GitHub Issue #275 参照）。</p>
       </div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月24日（火）</p>
-  <p style="margin-top:0.5rem;">Sources: Claude Code Changelog / BeevR / Big Hat Group / MorphLLM / TradingView / TokenPost / Future of AI / The Street / Stock Titan / Democracy Now / Havana Times / Everything Briefing / Qiita / Zenn</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-23/index.html">前版（2026-11-23）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月25日（水）</p>
+  <p style="margin-top:0.5rem;">Sources: last30days.ai / MorphLLM / InfoQ / BeevR / Releasebot / OpenAI Blog / Havana Times / Just Security / AA Morning Briefing / The Global Eye / Qiita / Zenn</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-24/index.html">前版（2026-11-24）</a></p>
 </footer>
 </body>
 </html>
