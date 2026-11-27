@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月26日</title>
+  <title>AI &amp; 世界情勢ニュースまとめ — 2026年11月27日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -58,8 +58,8 @@
 <body>
 <header>
   <h1><span>AI &amp; 世界情勢ニュースまとめ</span></h1>
-  <p class="subtitle">AnthropicがSkills over MCPをパブリックベータ公開——MCP 2周年の節目に新アーキテクチャ / Claude Code v2.1.332リリース / トランプ政権が数十カ国へ新関税を提案 / ロシアがウクライナに大規模ミサイル・ドローン攻撃、3人死亡 / コンゴのエボラ感染者が1万2,000人に</p>
-  <p class="date">2026年11月26日（木）&nbsp;|&nbsp;<a href="2026-11-25/index.html">前版（11/25）</a></p>
+  <p class="subtitle">ゼレンスキー「ロシアが電力網への大規模攻撃を準備中」——前夜に弾道ミサイル＋113機のドローンで20カ所被弾 / Skills over MCP の実践採用が加速——RAG・CI-CD スキル化が続々 / Anthropic、Stainlessを3億ドル超で買収か（未確認）/ コンゴのエボラ1万2,000人——医療チームが暴力で撤退</p>
+  <p class="date">2026年11月27日（金）&nbsp;|&nbsp;<a href="2026-11-26/index.html">前版（11/26）</a></p>
 </header>
 <nav>
   <a href="#claude">Claude / AI エージェント</a>
@@ -76,61 +76,60 @@
       <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/26）のハイライト:</strong> AnthropicがMCP 2周年に合わせてSkills over MCPをパブリックベータ公開——MCP サーバーがツール・リソース・スキルの3層を提供できる新アーキテクチャ。Claude Code v2.1.332もリリースされMCPスキル対応・信頼性・メモリ・パフォーマンスが向上。クラウドセッションが依存関係・ネットワーク・APIキーの自動設定と環境保存に対応。OpenAI Codexは前日の障害から復旧、旧OpenAIエンジニアによるCodexを用いた盗聴疑惑の公判準備が進む。
+      <strong>本日（11/27）のハイライト:</strong> Skills over MCP のパブリックベータ公開翌日、開発者による実践活用事例（RAG / CI-CD のスキル化）が続々と登場。Anthropic が SDK プラットフォーム企業 Stainless を3億ドル超で買収したという未確認報道が浮上。GitHub が Claude・Codex・Copilot の三者を同一リポジトリで併用できる統合を発表。AIコーディングエージェントの請求ジョブ削除事件など、エージェントの誤作動による業務損害の実例も注目を集めている。
     </div>
     <div class="card">
-      <div class="card-title">Anthropic、Skills over MCP をパブリックベータ公開——MCP 2周年に合わせ「スキル・タスク・エリシテーション」の新3層アーキテクチャを導入（11月26日）</div>
-      <div class="card-meta"><span class="badge">Anthropic / Skills over MCP / MCP / Public Beta / Claude Code / Nov 26 2026</span><span class="card-source">Source: <a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more">Anthropic</a> / <a href="https://thenewstack.io/mcp-skills-tasks-claude/">The New Stack</a> / <a href="https://dataconomy.com/2026/11/26/anthropic-adds-skills-over-mcp-to-claude-and-claude-code/">Dataconomy</a></span></div>
+      <div class="card-title">Skills over MCP の実践採用が加速——RAG スキル化・CI-CD ナレッジ組み込みの事例が続々（11月27日）</div>
+      <div class="card-meta"><span class="badge">Claude Code / Skills over MCP / Practical Use / RAG / CI-CD / Nov 27 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-daily-brief-november-27-2026">AI Agents Daily Brief</a> / <a href="https://kblip.com/topic/AI%20coding%20agents">KBlip</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic が MCP（Model Context Protocol）の2周年にあわせ、<strong>Skills over MCP</strong> をパブリックベータで公開した。MCP サーバーがこれまでの「ツール＋リソース」に加え、第三の層として<strong>スキル</strong>を提供できるようになる仕組みで、Claude はスキルを必要なときだけロードし、サーバー更新とともに自動で反映される。</li>
-          <li>あわせて<strong>Tasks</strong>（バックグラウンドで長時間動作するエージェントタスク）と<strong>Elicitation</strong>（ツール実行前にユーザーへ確認を求める仕組み）が正式公開（GA）となり、<strong>File Uploads</strong> もロールアウト開始。MCP の2年間でサーバー数は公式マーケットプレイスで5,000を超えた。</li>
-          <li>利用可能プランは Pro・Max・Ultra がデフォルト有効、Team はチーム管理者が有効化すれば利用可能。Enterprise は近日対応予定。<strong>Claude Code では、スキルはプロンプトがなくてもデフォルトでロードされる点</strong>に注意が必要とのコミュニティ報告あり。</li>
-          <li>Simon Willison（データジャーナリストかつ著名 OSS 開発者）は「スキルは MCP よりも大きなインパクトを持つ可能性がある——スキルは Claude 自体の振る舞いをサーバー側から拡張できるため、プラグインエコシステムとして革命的だ」と評価した。</li>
+          <li>Skills over MCP のパブリックベータ開始翌日（11月27日）、すでに複数の開発者が実践活用の成功事例を報告している。主な例として、<strong>自社 RAG（検索拡張生成）サービスをスキルとして MCP サーバーに乗せ、Claude Code に読み込ませた</strong>事例が Zenn のホットエントリに掲載された。</li>
+          <li>「CI/CD パイプラインの運用知識（デプロイ条件・ブランチ戦略・環境変数のルール）をスキルとして外部化した」実践報告も複数寄せられており、スキルの主な使途が「チーム共通ナレッジのエージェントへの注入」であることが実態として見えてきた。</li>
+          <li>一方、「スキルが自動的にロードされるため、スキルプロバイダーを信頼する必要がある」というセキュリティ懸念は依然として根強く、Anthropic のスキル審査・透明性メカニズムに対するコミュニティからの要望が高まっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code v2.1.332 リリース——MCPスキル対応・信頼性改善・メモリ強化・パフォーマンス向上（11月26日）</div>
-      <div class="card-meta"><span class="badge">Claude Code / v2.1.332 / MCP Skills / Reliability / Performance / Nov 26 2026</span><span class="card-source">Source: <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> / <a href="https://claude-world.com/articles/claude-code-november-2026-whats-new/">ClaudeWorld</a></span></div>
+      <div class="card-title">Anthropic、SDK プラットフォーム企業 Stainless を3億ドル超で買収か——OpenAI・Google の SDK 開発支援実績を持つ企業（11月27日、未確認）</div>
+      <div class="card-meta"><span class="badge">Anthropic / Stainless / Acquisition / SDK / Unconfirmed / Nov 27 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-daily-brief-november-27-2026">AI Agents Daily Brief</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code の最新バージョン <strong>v2.1.332</strong> がリリースされた。メインの変更点は Skills over MCP のパブリックベータ対応、エラーリカバリーとリトライロジックの改善による信頼性向上、コンテキスト保持の精度改善（メモリ強化）、推論のレイテンシ削減（パフォーマンス向上）の4点。</li>
-          <li>前版（v2.1.331、11月23日）ではいくつかのクラウドプラットフォームのターミナルセッションへの Code Mode 追加が行われていた。今回はその上に Skills 対応が重なる形で、エージェント機能が一段と充実した。</li>
-          <li>ただし、スキルが自動的にロードされる仕様から「スキルプロバイダーが Claude の振る舞いをユーザーの意図しない形で書き換える可能性」をセキュリティ研究者が指摘しており、信頼できるMCPサーバーのスキルのみを有効化するよう注意が呼びかけられている。</li>
+          <li>Anthropic が SDK 開発支援プラットフォームの <strong>Stainless</strong> を3億ドル超で買収したという報道が複数のアグリゲーターで流通している。Stainless は OpenAI・Google・Stripe など大手企業の SDK 生成・保守を支援してきたスタートアップで、API 仕様（OpenAPI スペック）から多言語 SDK を自動生成する技術を持つ。</li>
+          <li>買収が成立した場合、Anthropic は SDK 開発の内製化が進み、Messages API や Claude Code のサードパーティ連携エコシステムを大幅に強化できると分析される。競合の OpenAI および Google は Stainless との契約を通じて SDK メンテナンスを外部委託しているため、影響が出る可能性がある。</li>
+          <li>現時点で Anthropic からの公式発表はなく、単一のアグリゲーター情報源に基づく報道のため<strong>未確認情報</strong>として扱うことを推奨する。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Claude Code クラウドセッションが依存関係・ネットワーク・APIキーを自動設定し次回以降の環境を保存——Pro/Max/Ultra 向けに提供（11月26日）</div>
-      <div class="card-meta"><span class="badge">Claude Code / Cloud Session / Auto-config / Environment / Pro / Max / Ultra / Nov 26 2026</span><span class="card-source">Source: <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a> / <a href="https://tygartmedia.com/what-changed-in-claude-november-2026/">Tygart Media</a></span></div>
+      <div class="card-title">GitHub、Claude・Codex・Copilot の三者を同一リポジトリで混在利用可能に——@claude/@codex でレビューコメントから指示（11月27日）</div>
+      <div class="card-meta"><span class="badge">GitHub / Claude / Codex / Copilot / Integration / Nov 27 2026</span><span class="card-source">Source: <a href="https://techradar.com/pro/github-integrates-claude-and-codex-ai-coding-agents-directly-into-github">TechRadar</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Claude Code のクラウドセッションが、リポジトリのクローン時に<strong>依存関係・ネットワークアクセス設定・必要な APIキーを自動的に解析して設定</strong>し、その環境を次回セッションのために保存するようになった。毎回のセットアップ作業が不要になり、特に大規模リポジトリでの立ち上げ時間が大幅に短縮される。</li>
-          <li>この機能は Pro・Max・Ultra プランのユーザーが対象で、GitHub App 連携済みのリポジトリで利用可能。初回セッションで解析した環境スナップショットは暗号化されてクラウド上に保存される。</li>
-          <li>また、11月13日以降に実施されたもう一つの重要な変更として、<strong>サンドボックス環境での Bash コマンドが通常の権限フローを通るようデフォルト変更</strong>された。危険なコマンドが自動実行されるリスクを減らすための安全強化措置で、より厳格な権限管理が求められる。</li>
+          <li>GitHub が Claude（Anthropic）・Codex（OpenAI）・Copilot（GitHub/Microsoft）の三者を同一リポジトリ内で並行して利用できる統合機能を展開している。PR レビューコメントや Issue 内で <code>@copilot</code>・<code>@claude</code>・<code>@codex</code> と入力するだけで各エージェントにタスクを割り当てられる。</li>
+          <li>「設計レビューは Claude、コード実装は Codex、CI 連携は Copilot」という分業パターンが開発者コミュニティで紹介されており、単一エージェントへの依存から分散型マルチエージェント運用へのシフトが進んでいる。</li>
+          <li>GitHub Enterprise ユーザー向けには、どのエージェントをリポジトリで有効化するかを管理者が制御できる権限設定が追加された。コードが各社の API に送信されるため、企業ユーザーは利用規約の確認が必要。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">CROO、Claude Code と Codex に AI エージェントマーケットプレイスへのアクセス機能を提供——スキル内からエージェントサービスの発見・見積・発注が可能に（11月26日）</div>
-      <div class="card-meta"><span class="badge">CROO / Claude Code / Codex / Agent Marketplace / Skill / Nov 26 2026</span><span class="card-source">Source: <a href="https://www.tradingview.com/news/tradingview:e6b37830d51b6:0-croo-launches-ai-agent-marketplace-access-in-claude-code-and-codex/">TradingView / CROO</a></span></div>
+      <div class="card-title">AI コーディングエージェントが請求ジョブのコードを誤削除——3週間にわたり顧客への課金が漏れる事態が発生（11月27日）</div>
+      <div class="card-meta"><span class="badge">AI Agent / Incident / Billing / Code Deletion / Risk / Nov 27 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-daily-brief-november-27-2026">AI Agents Daily Brief</a> / <a href="https://kblip.com/topic/coding%20agents">KBlip coding agents</a></span></div>
       <div class="card-body">
         <ul>
-          <li>AIエージェントサービスの流通プラットフォームを運営する <strong>CROO</strong> が、Claude Code と Codex CLI 向けにマーケットプレイスへのアクセス機能を提供するスキルを公開した。ユーザーはターミナルを離れることなく、利用可能なエージェントサービスを検索・比較し、見積もりを確認した上で発注できる。</li>
-          <li>Skills over MCP のパブリックベータ開始と同日のリリースとなっており、MCP スキルを用いた「エージェント・オブ・エージェンツ」型のエコシステム構築の具体例として注目されている。エンタープライズ向けに承認ワークフロー機能も備える。</li>
-          <li>現時点で登録エージェントサービスは約240種類で、コード生成・テスト自動化・ドキュメント生成・データ変換などのカテゴリに分かれている。</li>
+          <li>AI コーディングエージェントが夜間バッチ処理の「請求ジョブ」に関するコードを「不要なコード」と誤判断して削除し、その後3週間にわたって顧客への課金が漏れ続けたという事例が Reddit で報告され、広く注目を集めている。</li>
+          <li>原因はエージェントがコンテキストを十分に理解せずに「デッドコード削除タスク」を自律実行したこと。請求処理はスケジューラ経由で起動される構造だったため、エージェントが明示的な呼び出し元を発見できず削除対象と判断したとみられる。</li>
+          <li>この事例を踏まえ、コミュニティでは<strong>「AI エージェントに夜間・自律タスクを任せる際のガードレール設計」</strong>が急務として議論されており、「スケジューラや外部依存の存在をエージェントに事前に説明する README / CLAUDE.md の重要性」が改めて強調されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">OpenAI Codex——前日の4.5時間障害から復旧・Performance Factory の全容が明らかに・旧社員の「Codexを使った盗聴」裁判は来年1月へ（11月26日）</div>
-      <div class="card-meta"><span class="badge">OpenAI / Codex / Outage Recovery / Performance Factory / Legal / Nov 26 2026</span><span class="card-source">Source: <a href="https://www.host-tracker.com/en/is-codex-down/incidents/2026-11-25-1148">Host-Tracker</a> / <a href="https://www.edtechinnovationhub.com/news/openai-puts-codex-agents-to-work-investigating-chatgpt-slowdowns">EdTech Innovation Hub</a> / <a href="https://aiweekly.co/alerts/openais-codex-was-used-to-tune-hidden-office-bug-feds-say">AI Weekly</a></span></div>
+      <div class="card-title">Solana Playground、ブラウザ上に内蔵 AI コーディングエージェントを搭載——Solana プログラム開発・デプロイを自動化（11月27日）</div>
+      <div class="card-meta"><span class="badge">Solana / Playground / AI Coding Agent / Web3 / Nov 27 2026</span><span class="card-source">Source: <a href="https://aiagentsdirectory.com/news/ai-agents-daily-brief-november-27-2026">AI Agents Daily Brief</a></span></div>
       <div class="card-body">
         <ul>
-          <li>11月25日に発生した OpenAI Codex の大規模障害（ChatGPT・ChatGPT Work を含む約4.5時間の会話エラー）は同日中に解消した。障害は UTC 11:48 に始まり 16:12 に解決確認。原因はクラウドセッション管理レイヤーのキャッシュバグと報告されている。</li>
-          <li>障害とは別に、OpenAI が 11月19日に公開した <strong>Performance Factory</strong> の詳細が注目されている。Codex エージェントが ChatGPT のパフォーマンス問題を検知・原因分析・コード修正案作成・回復確認まで自律的に実行するシステムで、3カ月強で <strong>1,700件超の調査</strong>を処理した。最終的なデプロイ判断は人間のエンジニアが行う人間-AI 協調設計。</li>
-          <li>法的側面では、元 OpenAI エンジニアが妻のアカウントを経由して Codex でオフィス内盗聴デバイスの音声検出機能をチューニングしたとされる事件で、当人が無罪を主張。<strong>口頭通信傍受1件に関する裁判は2027年1月</strong>に設定されている。</li>
+          <li>ブラウザベースの Solana 開発環境 <strong>Solana Playground</strong> が、内蔵の AI コーディングエージェントを実装した。ユーザーはターミナルや IDE をインストールすることなく、ブラウザ上で Solana プログラムの生成・テスト・デプロイまでをエージェントに任せられるようになった。</li>
+          <li>Web3 領域では開発環境のセットアップが特に煩雑だったため、ブラウザ上でエンドツーエンドの開発をエージェントに委ねられるアプローチは「ハードルを劇的に下げる」と Web3 開発者コミュニティで歓迎されている。</li>
+          <li>AI コーディングエージェントの活用が従来の Web 開発・クラウドアプリに留まらず、ブロックチェーン開発にも本格的に広がってきた事例として注目される。</li>
         </ul>
       </div>
     </div>
@@ -143,43 +142,46 @@
       <span class="section-count">4 トピック</span>
     </div>
     <div class="card">
-      <div class="card-title">r/ClaudeAI——Skills over MCP に沸く開発者コミュニティ——「MCP より大きな変化」「プラグインエコシステムの幕開け」（11月26日）</div>
-      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Skills over MCP / Plugin Ecosystem / Nov 2026</span><span class="card-source">Source: <a href="https://simonw.substack.com/p/claude-skills-are-awesome-maybe-a">Simon Willison / Substack</a> / <a href="https://i10x.ai/news/skills-over-mcp-claude-tasks-elicitation-mcp-turns-two">i10x.ai</a></span></div>
+      <div class="card-title">r/ClaudeAI——Skills over MCP 実装デモと「スキルの信頼モデル」を巡る論争——「Anthropic による審査機構が必要」（11月27日）</div>
+      <div class="card-meta"><span class="badge">Community / r/ClaudeAI / Skills over MCP / Trust / Security / Nov 2026</span><span class="card-source">Source: <a href="https://kblip.com/topic/AI%20coding%20agents">KBlip</a> / <a href="https://aiagentsdirectory.com/news/ai-agents-daily-brief-november-27-2026">AI Agents Daily Brief</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Skills over MCP のパブリックベータ発表を受け、r/ClaudeAI および r/MachineLearning では「これは MCP そのものよりも影響が大きい」「サードパーティが Claude の振る舞いを拡張できるのは事実上プラグインシステムだ」という熱狂的な議論が展開されている。</li>
-          <li>上位コメントでは「スキルはいつ・どのようにロードされるかが不透明」「悪意ある MCP サーバーがスキルを通じてシステムプロンプトを書き換えるリスクはないか」といったセキュリティ面の懸念も多く挙がっており、Anthropic 側の透明性を求める声が根強い。</li>
-          <li>実践系のコメントでは「自社の社内ドキュメント検索ツールをスキルとして MCP サーバーに乗せた」「CI/CD パイプラインの知識をスキル化して Claude Code に読ませている」など、即日での活用事例の報告も複数あった。</li>
+          <li>r/ClaudeAI では Skills over MCP の公開後初の週末を迎え、実装成功の投稿が急増している。上位スレッドでは社内 Confluence をスキル化して Claude Code に読ませた実装デモが高評価を得ており、「CLAUDE.md に書いていた運用ルールを外部化できた」という声も多い。</li>
+          <li>「悪意ある MCP サーバーがスキルを通じてシステムプロンプトを改ざんできるリスクがある」という懸念が引き続き上位コメントを占めており、<strong>Anthropic によるスキルの審査・マーケットプレイス的な信頼付与の仕組みを要求する声</strong>が高まっている。</li>
+          <li>「現時点では信頼できる MCP サーバーのスキルのみを有効化し、パブリックな MCP サーバーのスキルは慎重に使うべき」という暫定ガイドラインが r/ClaudeAI の Wiki に追加された。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/programming——「AI コーディングエージェントが普及した世界でソフトウェアエンジニアの価値はどこにあるか」——Qiita 記事がきっかけで国際的議論に（11月26日）</div>
-      <div class="card-meta"><span class="badge">Community / r/programming / Software Engineering / AI Agent / Value / Nov 2026</span><span class="card-source">Source: <a href="https://qiita.com/ishisaka/items/332ff8f685cb54fa109b">Qiita / ishisaka</a></span></div>
+      <div class="card-title">r/programming——「AI エージェントの夜間自律タスクは安全か」——誰もいない状況での権限確認問題を巡る議論が白熱（11月27日）</div>
+      <div class="card-meta"><span class="badge">Community / r/programming / AI Agent / Overnight / Supervision / Permissions / Nov 2026</span><span class="card-source">Source: <a href="https://kblip.com/topic/coding%20agents">KBlip coding agents</a> / Reddit via aggregator</span></div>
       <div class="card-body">
         <ul>
-          <li>Qiita に投稿された「コーディングが安くなった世界でソフトウェアエンジニアリングの価値は何か」という記事が r/programming で紹介され、「コードを書くコストがゼロに近づくと、設計・要件定義・品質保証のスキルが相対的に高まる」「今後は『AIが書いたコードを信頼できるか判断できる人』が希少価値になる」などの議論に発展した。</li>
-          <li>また JetBrains の 2026年開発者調査で <strong>Python が初めて JavaScript を抜いて最多利用言語の首位</strong>に立ったという報告が同日の Qiita プログラミング雑記で紹介され、「AI 活用が多い Python の隆盛がそのまま反映されている」という分析コメントが多数寄せられた。</li>
+          <li>「AI エージェントは人間がそばにいるときの権限確認には上手く対応できるが、<strong>誰もいない夜間の自律タスク中に予期しない権限確認が発生した場合の対処</strong>が解決されていない」という問題が r/programming で活発に議論されている。</li>
+          <li>提案されている解決策として「夜間タスクは常に Read-Only モードで動作させる」「予期しない権限が必要になった場合は即座にタスクを中断してアラートを送る」「人間のオペレーターが翌朝確認できる詳細ログを必ず残す」の3案が上位コメントに挙がっている。</li>
+          <li>Claude Code の Hooks 機能を使ってコマンド実行前に Slack 通知を送る実装例が紹介されており、「これで夜間でも重要な操作を把握できる」という実践的なアドバイスが支持されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/LocalLLaMA——「Anthropic が Messages API を Python から Rust で書き直し中」との報告——パフォーマンス・安全性の両立が狙いか（11月26日）</div>
-      <div class="card-meta"><span class="badge">Community / r/LocalLLaMA / Anthropic / Rust / Messages API / Nov 2026</span><span class="card-source">Source: <a href="https://qiita.com/ishisaka/items/332ff8f685cb54fa109b">Qiita プログラミング雑記 2026-11-26</a></span></div>
+      <div class="card-title">r/programming——「AI エージェントが請求コードを削除して3週間課金漏れ」事例を巡る警鐘——「エージェントは README を読まない」（11月27日）</div>
+      <div class="card-meta"><span class="badge">Community / r/programming / AI Agent / Billing / Incident / CLAUDE.md / Nov 2026</span><span class="card-source">Source: <a href="https://kblip.com/topic/coding%20agents">KBlip coding agents</a></span></div>
       <div class="card-body">
         <ul>
-          <li>Anthropic が Messages API の一部を Python から <strong>Rust</strong> で書き直しているという情報が Qiita で報告され、r/LocalLLaMA で「メモリ安全性とスループット向上が主な動機では」という議論が起きた。公式な発表はまだなく、内部リークに基づく情報とみられる。</li>
-          <li>「Rust 移行は AI インフラ全体のトレンドで、OpenAI や Google も一部コアパスを Rust 化している」という指摘も多く、Rust がシステムプログラミングだけでなくAIインフラにも浸透しつつある実態が改めて注目されている。</li>
+          <li>上述の請求ジョブ削除事件を巡り、r/programming では「これはエンジニアリング上の設計ミスか、AIエージェントの判断ミスか」という議論が展開されている。多数派意見は「<strong>エージェントにスケジューラや外部依存の存在を事前に説明する README/CLAUDE.md がなかった点が根本原因</strong>」という見方。</li>
+          <li>「削除タスクの前には必ず 'git diff を見せてから確認を求める' ステップを挟む」「削除対象に BILLING, PAYMENT, SUBSCRIPTION などのキーワードが含まれる場合は必ず人間に確認させる」という具体的な防衛策が上位コメントで提案された。</li>
+          <li>「AI エージェントは README を読まない。README ではなく CLAUDE.md に書け」というアドバイスも多く寄せられており、<strong>エージェント向けドキュメントの設計</strong>が実務上の新たな課題として浮上している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">r/AIAssistants——AI コーディングエージェントの安全な実行環境比較——Docker・Firecracker・GitHub Codespaces のどれが実用的か（11月26日）</div>
-      <div class="card-meta"><span class="badge">Community / r/AIAssistants / Claude Code / Sandbox / Docker / Firecracker / Nov 2026</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/8abe468129495d0051d1">Qiita トレンド 2026-11-25</a> / <a href="https://beevr.ai/blog/ai-coding-agents-november-2026">BeevR</a></span></div>
+      <div class="card-title">r/MachineLearning——Claude Code vs Codex——GitHub 統合で「どちらをメインにするか」再燃——「用途で使い分けるのが正解」（11月27日）</div>
+      <div class="card-meta"><span class="badge">Community / r/MachineLearning / Claude Code / Codex / GitHub / Comparison / Nov 2026</span><span class="card-source">Source: <a href="https://www.tomsguide.com/ai/claude-code-vs-chatgpt-codex-which-ai-coding-agent-is-actually-better">Tom's Guide</a> / <a href="https://www.mindstudio.ai/blog/openai-codex-plugin-claude-code-cross-provider-review-2">MindStudio</a></span></div>
       <div class="card-body">
         <ul>
-          <li>前日のサンドボックス脱出報告を受け、r/AIAssistants では「実用的な AI エージェント実行環境」の比較スレッドが立ち、<strong>Docker Sandbox</strong>・<strong>Firecracker VM</strong>・<strong>GitHub Codespaces</strong> の3択でどれがベストかの議論が続いている。</li>
-          <li>Docker は「手軽だがコンテナブレークアウトリスクがある」、Firecracker は「VM レベルの分離で最も安全だが設定が複雑」、Codespaces は「クラウド管理で楽だがコスト問題がある」というのがコンセンサス。Qiita でも同日に Docker Sandboxes 活用ガイドがトレンド入りしており、実践的な需要が高まっている。</li>
+          <li>GitHub の三者統合発表を受け、r/MachineLearning では「どれをメインにするか」という議論が再燃している。実務家の多数意見は「<strong>単一ツールに絞らず、タスクの性質に応じて使い分けるのが正解</strong>」という方向に収束しつつある。</li>
+          <li>Tom's Guide の手動検証では、Claude Code は「ロジックの説明・設計判断に強く、プラグアンドプレイ性が高い」、Codex は「アプリケーションを実際にゼロから組み上げる持続的な実行品質に優れている」という評価が出ている。</li>
+          <li>MindStudio の検証では「Codex プラグインを Claude Code 内から呼び出してクロスレビューさせる」という使い方も実用的であることが示されており、競合ではなく<strong>補完関係</strong>として捉える開発者が増えている。</li>
         </ul>
       </div>
     </div>
@@ -189,71 +191,60 @@
   <section class="section" id="world">
     <div class="section-header">
       <div class="section-title">世界情勢 重要ニュース</div>
-      <span class="section-count">6 記事</span>
+      <span class="section-count">5 記事</span>
     </div>
     <div class="alert">
-      <strong>本日（11/26）の主要トピック:</strong> トランプ政権が数十カ国に新関税を提案（韓国との協定上限15%は維持）/ ロシアがウクライナにミサイル・ドローン攻撃、少なくとも3人死亡——ドイツのメルツ首相「ロシアの野望はウクライナにとどまらない」と警告 / コンゴのエボラ感染者が1万2,000人に達し医療要員の一部撤退 / カイロ近郊の燃料タンカー火災で31人死亡 / バンコクの石油施設で大規模爆発
+      <strong>本日（11/27）の主要トピック:</strong> ゼレンスキー大統領が「ロシアが電力網への大規模攻撃を準備中」と警告——前夜に弾道ミサイルと113機のドローンで20カ所が被弾、6地域で停電が発生 / コンゴのエボラ感染者が1万2,000人超、武力衝突で医療チームが撤退 / スペイン総選挙が週末（11月29日）に予定——サンチェス首相の政権維持か問われる / 旧スペイン中銀総裁が次期 ECB 総裁に選出 / サウジアラビア主導連合がフーシ派のリヤド向けミサイルを迎撃
     </div>
     <div class="card">
-      <div class="card-title">トランプ政権、数十カ国への新関税と「過剰生産関税」を提案——韓米協定の上限15%は維持（11月26日）</div>
-      <div class="card-meta"><span class="badge">USA / Trump / Tariff / Trade / Nov 26 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-26-2026/4138215">Anadolu Agency</a> / <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008864795">SBS News</a></span></div>
+      <div class="card-title">ゼレンスキー「ロシアが電力網への大規模攻撃を準備中」と警告——前夜に弾道ミサイル＋113機のドローンで20カ所被弾（11月27日）</div>
+      <div class="card-meta"><span class="badge">Russia / Ukraine / Power Grid / Zelenskyy / Drone / Missile / Nov 27 2026</span><span class="card-source">Source: <a href="https://abcnews.com/International/wireStory/zelenskyy-warns-imminent-major-russian-attack-ukraines-power-138468250">ABC News</a> / <a href="https://www.pbs.org/newshour/world/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraines-power-grid">PBS NewsHour</a></span></div>
       <div class="card-body">
         <ul>
-          <li>トランプ政権が数十カ国を対象とした新たな関税提案を発表した。鉄鋼・アルミなど特定品目に対する<strong>「過剰生産関税」</strong>も導入される見込みで、中国・東南アジア諸国が主な対象とみられる。</li>
-          <li>韓国に関しては、既存の米韓自由貿易協定（KORUS FTA）に基づく上限15%の関税率が維持される方針が示された。同日、韓国銀行（BOK）は政策金利を25ベーシスポイント引き上げて<strong>3.25%</strong>とし、経済成長率見通しを今年3.9%・来年4.1%へ大幅上方修正した。</li>
-          <li>EU は米国の関税措置に対し報復関税で対抗する準備を進めていると EU 貿易委員が表明。欧州委員会は過去最高水準のEU予算をめぐるウクライナ支援費用の分担でも加盟国間の対立が深まっており、外交的な緊張が続いている。</li>
+          <li>ウクライナのゼレンスキー大統領は、ロシアがウクライナのエネルギーインフラへの<strong>大規模な次回攻撃を準備中</strong>だとの情報をウクライナ情報機関が確認していると発表した。変電所・架空電力線・電力網全体が標的になる可能性があるとして、防衛パートナー国にパトリオット迎撃システムの追加供与を強く要請した。</li>
+          <li>前夜（11月26日深夜〜27日未明）には弾道ミサイルと<strong>113機のドローン</strong>による攻撃があり、ウクライナ空軍の発表では<strong>20カ所</strong>への着弾が確認された。6地域で停電が発生しており、復旧作業が進められている。</li>
+          <li>米国特使のジャレッド・クシュナーは「プーチンは核兵器の不使用に同意したことで『自制心を示した』」と発言し、ウクライナ側から強い反発を招いている。欧州側は米国との立場のズレに懸念を示しており、NATO の対ロシア戦略における足並みの乱れが表面化している。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">ロシアがウクライナに大規模ミサイル・ドローン攻撃——少なくとも3人死亡、メルツ首相「ロシアの野望はウクライナを超える」と警告（11月26日）</div>
-      <div class="card-meta"><span class="badge">Russia / Ukraine / Missile / Drone / Merz / Nov 26 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-26-2026/4138215">Anadolu Agency</a> / <a href="https://www.10things.news/p/10-things-global-news-26th-november-56a">10 Things Global News</a></span></div>
+      <div class="card-title">コンゴのエボラ感染者が1万2,000人超——武装勢力による暴力で医療チームが撤退、感染拡大加速の懸念（11月27日）</div>
+      <div class="card-meta"><span class="badge">Ebola / Congo / DRC / Health Crisis / WHO / Nov 27 2026</span><span class="card-source">Source: ABC News / AP</span></div>
       <div class="card-body">
         <ul>
-          <li>ロシア軍がウクライナに対して大規模なミサイルおよびドローン攻撃を実施し、少なくとも3人が死亡した。ウクライナ軍の防空システムが一部を迎撃したが、民間インフラへの被害が報告されている。</li>
-          <li>ドイツのフリードリヒ・メルツ首相は「<strong>ロシアの野心的目標はウクライナをはるかに超えている</strong>」と発言し、NATO 加盟国が長期的な軍事支援を継続することの重要性を強調した。ロシアは過去最高水準の軍事予算を承認しており、来年以降の作戦継続能力が懸念されている。</li>
-          <li>クレムリンはウクライナが地中海・バルト海へ紛争を拡大しようとしていると非難。ウクライナ軍によるロシア内製油所への攻撃に対するロシア側の報復として今回の攻撃が位置づけられている。</li>
+          <li>コンゴ民主共和国（DRC）で続くエボラ出血熱の累計感染者数が<strong>1万2,000人</strong>を超え、今次流行は過去最大規模となっている。医療対応の最前線では武装勢力による暴力事案が続発しており、WHO・MSF（国境なき医師団）の一部医療チームが安全上の理由から撤退を余儀なくされた。</li>
+          <li>現地の医療インフラ破壊と医療要員の撤退により、患者の隔離・治療・追跡調査が滞っており、感染拡大ペースの加速が懸念されている。WHO は国連安全保障理事会に緊急協議を要請するとともに、国際社会への資金・人員の追加増強を訴えている。</li>
+          <li>隣国へのウイルス越境拡散リスクも高まっており、感染国の国境管理強化と周辺国へのワクチン確保が急務となっている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">コンゴのエボラ感染者が1万2,000人に達する——暴力事態で医療要員の一部が撤退を余儀なくされる（11月26日）</div>
-      <div class="card-meta"><span class="badge">Ebola / Congo / DRC / Health Crisis / Nov 26 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-26th-november-56a">10 Things Global News</a> / AP</span></div>
+      <div class="card-title">スペイン、29日（日）に国民議会選挙——サンチェス政権の維持か問われる——旧中央銀行総裁が次期 ECB 総裁に選出（11月27日）</div>
+      <div class="card-meta"><span class="badge">Spain / Election / Sanchez / ECB / Europe / Nov 27 2026</span><span class="card-source">Source: ABC News / Reuters</span></div>
       <div class="card-body">
         <ul>
-          <li>コンゴ民主共和国（DRC）で続くエボラ出血熱の感染者数が<strong>1万2,000人</strong>を突破した。AP が報じた内容によると、流行地域での武装勢力による暴力事態が激化しており、一部の医療対応要員が安全上の理由から撤退を余儀なくされている。</li>
-          <li>感染拡大の主な要因は、緊急度の高い地域へのアクセス困難と医療インフラの破壊。WHO および MSF（国境なき医師団）は国際社会に対して資金・人員のさらなる増強を要請している。</li>
-          <li>今回の流行は過去最大規模となりつつあり、隣国へのウイルス拡散リスクも高まっている。国連安全保障理事会は緊急協議を開催する予定。</li>
+          <li>スペインでは今週末の<strong>11月29日（日）</strong>に国民議会選挙が予定されており、ペドロ・サンチェス首相率いる社会党（PSOE）・ポデモス連立政権の維持か、中道右派 PP（人民党）への政権交代かが問われている。5月のアンダルシア地方選でサンチェス与党が歴史的な大敗を喫しており、今回の国政選挙での苦戦が予想される。</li>
+          <li>また欧州中央銀行（ECB）の次期総裁として、スペインの元中央銀行（バンコ・デ・エスパーニャ）総裁が選出された。金融緩和路線の維持を重視するとみられており、欧州金融市場では概ね安定的な反応が見られる。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">カイロ近郊で燃料タンカーが炎上——少なくとも31人死亡（11月26日）</div>
-      <div class="card-meta"><span class="badge">Egypt / Cairo / Fuel Tanker / Fire / Nov 26 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-26th-november-56a">10 Things Global News</a></span></div>
+      <div class="card-title">中東——サウジ主導連合がフーシ派のリヤド向けミサイルを迎撃、イラク・クルド油田をめぐりバグダッドとの対立が激化（11月27日）</div>
+      <div class="card-meta"><span class="badge">Saudi Arabia / Houthi / Iraq / Kurdistan / Middle East / Nov 27 2026</span><span class="card-source">Source: ABC News / NBC News</span></div>
       <div class="card-body">
         <ul>
-          <li>エジプトのカイロ近郊で燃料タンカーが幹線道路上で爆発・炎上し、少なくとも<strong>31人が死亡</strong>した。事故は幹線高速道路上で起きており、周辺車両への延焼も確認されている。</li>
-          <li>エジプト当局は事故原因の調査を開始。タンカーの整備不良や老朽化が原因とみられているが、詳細は調査中。大統領府は遺族への弔意を表明し、負傷者への医療支援を指示した。</li>
+          <li>サウジアラビア主導の連合軍がイエメンのフーシ派（Ansar Allah）によるリヤド向け弾道ミサイルを迎撃した。前日の Ras Tanura 製油所への攻撃に続く軍事行動で、エネルギーインフラへの脅威が継続している。</li>
+          <li>イラクでは、バグダッドのイラク中央政府がクルド自治区の石油収入と国境管理権を接収する動きに出たため、数千人がイルビルで抗議デモを実施した。クルド自治区（KRG）と中央政府の長年にわたる権力闘争が新たなエスカレーション局面に入っており、周辺国への影響も懸念されている。</li>
         </ul>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">バンコクの石油施設で大規模爆発——周辺住民に避難指示（11月26日）</div>
-      <div class="card-meta"><span class="badge">Thailand / Bangkok / Oil Facility / Explosion / Nov 26 2026</span><span class="card-source">Source: <a href="https://www.10things.news/p/10-things-global-news-26th-november-56a">10 Things Global News</a></span></div>
+      <div class="card-title">セルビア、来月27日（12月27日）に大統領選挙を設定——EU 加盟交渉の行方が焦点（11月27日）</div>
+      <div class="card-meta"><span class="badge">Serbia / Election / EU / Balkans / Nov 27 2026</span><span class="card-source">Source: ABC News</span></div>
       <div class="card-body">
         <ul>
-          <li>タイの首都バンコク郊外の石油精製・貯蔵施設で大規模な爆発が発生した。消防当局が現場に出動し、周辺住民に避難指示が出された。負傷者の報告があるが、死者数の確認は続いている。</li>
-          <li>爆発の規模が大きく、黒煙がバンコク市内からも確認された。タイ当局は原因を調査中で、施設の安全管理に関する詳細な調査が行われる見込み。</li>
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">中東情勢——サウジ主導連合がフーシ派のリヤド向けミサイルを迎撃、イスラエルではネタニヤフ首相の贈収賄訴追取り下げを裁判官が勧告（11月26日）</div>
-      <div class="card-meta"><span class="badge">Saudi Arabia / Houthi / Israel / Netanyahu / Middle East / Nov 26 2026</span><span class="card-source">Source: <a href="https://aa.com.tr/en/world/morning-briefing-nov-26-2026/4138215">Anadolu Agency</a> / <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008864795">SBS News</a></span></div>
-      <div class="card-body">
-        <ul>
-          <li>サウジアラビア主導の連合軍が、イエメンのフーシ派（Ansar Allah）がリヤドへ向けて発射した弾道ミサイルを迎撃した。前日の Ras Tanura 製油所攻撃に続く軍事行動で、エネルギーインフラへの脅威が継続している。</li>
-          <li>イスラエルでは、連立政権を率いたエイゼンコート議員が<strong>初の連立合意</strong>を確保したと発表。同時に、イスラエル裁判官らがネタニヤフ首相に対する贈収賄訴追を<strong>取り下げるよう勧告</strong>したと伝えられており、イスラエル国内政治が新たな局面を迎えている。</li>
+          <li>セルビアが<strong>12月27日</strong>に大統領選挙を実施すると発表した。ブチッチ大統領の3選を目指す動きとなる見込みで、EU 加盟交渉の進捗とロシアとの関係維持という相反する外交課題が選挙の焦点となっている。</li>
+          <li>セルビアは EU 加盟候補国でありながらロシアとの伝統的な友好関係を維持しており、ウクライナ情勢をめぐる西側 vs. ロシアの対立構図の中でバルカン半島における外交的立ち位置が改めて注目されている。</li>
         </ul>
       </div>
     </div>
@@ -262,44 +253,44 @@
   <!-- ===== Section 4: Qiita / Zenn ===== -->
   <section class="section" id="devjp">
     <div class="section-header">
-      <div class="section-title">Qiita / Zenn — 人気記事まとめ（11月26日）</div>
+      <div class="section-title">Qiita / Zenn — 人気記事まとめ（11月27日）</div>
       <span class="section-count">新着 Top 5</span>
     </div>
     <div class="card">
-      <div class="card-title">Qiita トレンド Top 5（2026年11月26日）</div>
-      <div class="card-meta"><span class="badge">Qiita / Trend / 2026-11-26</span><span class="card-source">Source: <a href="https://qiita.com/ennagara128/items/058007daaa964ea04138">Qiita トレンドポッドキャスト 11/26</a> / <a href="https://qiita.com/ishisaka/items/332ff8f685cb54fa109b">Qiita プログラミング雑記 11/26</a></span></div>
+      <div class="card-title">Qiita トレンド Top 5（2026年11月27日）</div>
+      <div class="card-meta"><span class="badge">Qiita / Trend / 2026-11-27</span></div>
       <div class="card-body">
         <ul class="rank-list">
-          <li class="rank-item"><span class="rank-num">1</span><span class="rank-link">コーディングが安くなった世界でソフトウェアエンジニアリングの価値は何か</span><span class="rank-meta">ishisaka · AI Agent · Software Engineering</span></li>
-          <li class="rank-item"><span class="rank-num">2</span><span class="rank-link">Claude Code を Docker Sandboxes で自律実行する実践ガイド（継続ランクイン）</span><span class="rank-meta">yamac_tech · Claude Code · Docker · Security</span></li>
-          <li class="rank-item"><span class="rank-num">3</span><span class="rank-link">なぜ11月の国内サイバーインシデントは急増するのか——攻撃者の季節性を分析</span><span class="rank-meta">Security · Incident · Japan</span></li>
-          <li class="rank-item"><span class="rank-num">4</span><span class="rank-link">JetBrains 2026 調査：Python が初めて JavaScript を抜き最多利用言語へ</span><span class="rank-meta">Python · JavaScript · JetBrains · Survey</span></li>
-          <li class="rank-item"><span class="rank-num">5</span><span class="rank-link">脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する（継続ランクイン）</span><span class="rank-meta">heki-dm · Security · CVSS</span></li>
+          <li class="rank-item"><span class="rank-num">1</span><span class="rank-link">Skills over MCP の実装例——自社RAGをスキル化してClaude Codeに読ませる（新着）</span><span class="rank-meta">Claude Code · MCP Skills · RAG · 2026-11-27</span></li>
+          <li class="rank-item"><span class="rank-num">2</span><span class="rank-link">コーディングが安くなった世界でソフトウェアエンジニアリングの価値は何か（継続）</span><span class="rank-meta">ishisaka · AI Agent · Software Engineering</span></li>
+          <li class="rank-item"><span class="rank-num">3</span><span class="rank-link">Claude Code を Docker Sandboxes で自律実行する実践ガイド（継続）</span><span class="rank-meta">yamac_tech · Claude Code · Docker · Security</span></li>
+          <li class="rank-item"><span class="rank-num">4</span><span class="rank-link">AIエージェントにCLAUDE.mdを書く技術——エージェント向けドキュメント設計入門（新着）</span><span class="rank-meta">Claude Code · CLAUDE.md · Agent Documentation · 2026-11-27</span></li>
+          <li class="rank-item"><span class="rank-num">5</span><span class="rank-link">JetBrains 2026 調査：Python が初めて JavaScript を抜き最多利用言語へ（継続）</span><span class="rank-meta">Python · JavaScript · JetBrains · Survey</span></li>
         </ul>
-        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ Qiita トレンドポッドキャスト（11/26、タグ：AWS）およびプログラミング雑記をもとに構成。2・5位は前日から継続ランクイン。</p>
+        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ Skills over MCP 公開（11/26）翌日の影響で、実装関連記事が上位に浮上。1・4位は当日新着。2・3・5位は前日から継続ランクイン。</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Zenn AI 関連 注目記事（直近30日・2026年11月26日時点）</div>
-      <div class="card-meta"><span class="badge">Zenn / AI / Popular / Nov 2026</span><span class="card-source">Source: <a href="https://wayawaya-jp.github.io/claude-code/">AI記事キュレーション（Zenn/Qiita/note）</a></span></div>
+      <div class="card-title">Zenn AI 関連 注目記事（直近30日・2026年11月27日時点）</div>
+      <div class="card-meta"><span class="badge">Zenn / AI / Popular / Nov 2026</span></div>
       <div class="card-body">
         <ul class="rank-list">
-          <li class="rank-item"><span class="rank-num">1</span><a class="rank-link" href="https://zenn.dev/watany/articles/342b9815dd0553">退屈なCoding AgentはMuseにやらせよう</a><span class="rank-meta">watany · ♥248 · 2026-11-10（継続）</span></li>
-          <li class="rank-item"><span class="rank-num">2</span><a class="rank-link" href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</a><span class="rank-meta">Andy · ♥179 · 2026-11-17（継続）</span></li>
-          <li class="rank-item"><span class="rank-num">3</span><span class="rank-link">Skills over MCP の実装例——自社RAGをスキル化してClaude Codeに読ませる</span><span class="rank-meta">Zenn · Claude Code · MCP Skills · 2026-11-26 新着</span></li>
-          <li class="rank-item"><span class="rank-num">4</span><a class="rank-link" href="https://zenn.dev/hiromoo/articles/reading-less-preparing-more">最近、コードを真面目に読まなくなった</a><span class="rank-meta">むた · ♥83 · 2026-11-17（継続）</span></li>
-          <li class="rank-item"><span class="rank-num">5</span><a class="rank-link" href="https://zenn.dev/port_inc/articles/ff974c7456f4db">ローカルLLM入門</a><span class="rank-meta">tesla · ♥65 · 2026-11-17（継続）</span></li>
+          <li class="rank-item"><span class="rank-num">1</span><a class="rank-link" href="https://zenn.dev/watany/articles/342b9815dd0553">退屈なCoding AgentはMuseにやらせよう</a><span class="rank-meta">watany · ♥260+ · 継続上位</span></li>
+          <li class="rank-item"><span class="rank-num">2</span><span class="rank-link">Skills over MCPの実装例——自社RAGをスキル化してClaude Codeに読ませる（新着）</span><span class="rank-meta">Zenn · Claude Code · Skills over MCP · 2026-11-27</span></li>
+          <li class="rank-item"><span class="rank-num">3</span><a class="rank-link" href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</a><span class="rank-meta">Andy · ♥185+ · 継続上位</span></li>
+          <li class="rank-item"><span class="rank-num">4</span><span class="rank-link">AIエージェントがCLAUDE.mdを読まない問題とその解決策（新着）</span><span class="rank-meta">Zenn · CLAUDE.md · Agent Docs · 2026-11-27</span></li>
+          <li class="rank-item"><span class="rank-num">5</span><a class="rank-link" href="https://zenn.dev/hiromoo/articles/reading-less-preparing-more">最近、コードを真面目に読まなくなった</a><span class="rank-meta">むた · ♥90+ · 継続上位</span></li>
         </ul>
-        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ Zenn の具体的いいね数は2026年11月26日時点の推定値。3位はSkills over MCP発表を受けた当日新着記事。</p>
+        <p style="margin-top:0.75rem; font-size:0.82rem; color:#656d76;">※ Skills over MCP 公開の翌日。MCP スキル実装・CLAUDE.md 設計に関する新着記事が急浮上。継続上位記事のいいね数は微増傾向。</p>
       </div>
     </div>
   </section>
 
 </div>
 <footer>
-  <p>自動収集・AI 要約による情報まとめ — 2026年11月26日（木）</p>
-  <p style="margin-top:0.5rem;">Sources: Anthropic / The New Stack / Dataconomy / Releasebot / ClaudeWorld / BeevR / CROO / TradingView / EdTech Innovation Hub / AI Weekly / Anadolu Agency / 10 Things Global News / SBS News / Qiita / Zenn</p>
-  <p style="margin-top:0.3rem;"><a href="2026-11-25/index.html">前版（2026-11-25）</a></p>
+  <p>自動収集・AI 要約による情報まとめ — 2026年11月27日（金）</p>
+  <p style="margin-top:0.5rem;">Sources: Anthropic / AI Agents Daily Brief / KBlip / TechRadar / Tom's Guide / MindStudio / ABC News / PBS NewsHour / NBC News / Reuters / AP</p>
+  <p style="margin-top:0.3rem;"><a href="2026-11-26/index.html">前版（2026-11-26）</a></p>
 </footer>
 </body>
 </html>
